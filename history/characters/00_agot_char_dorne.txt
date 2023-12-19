@@ -120,10 +120,17 @@ Martell_4 = {
 	8248.1.1 = {
 		birth = yes
 		effect = {
-			# vassal_contract_set_obligation_level = { #Palatinate for Prince title
-				# type = special_contract
-				# level = 3
-			# } # AGOT Bookmarked
+			if = { # AGOT Bookmarked
+				limit = {
+					NOT = {
+						current_date = 8300.3.1
+					}
+				}
+				vassal_contract_set_obligation_level = { #Palatinate for Prince title
+					type = special_contract
+					level = 3
+				}
+			}
 		}
 	}
 	8257.1.1 = {
