@@ -218,11 +218,11 @@
 		every_vassal_or_below = {
 			limit = {
 				primary_title.tier > tier_barony
-				NOT = {
-					OR = {
-						primary_title = title:k_the_most_devout
-					}
-				}
+				# NOT = { # AGOT Bookmarked Disabled
+					# OR = {
+						# primary_title = title:k_the_most_devout
+					# }
+				# }
 			}
 
 			scope:mw_crown_story = {
@@ -242,12 +242,13 @@
 		LIST = mw_neutral_list
 		PRE_WAR_LIEGE_SCOPE = title:e_the_iron_throne.holder
 	}
-	agot_mw_add_character_to_mw_list = {
-		CHARACTER_SCOPE = title:k_dorne.holder
-		STORY_SCOPE = scope:mw_crown_story
-		LIST = mw_neutral_list
-		PRE_WAR_LIEGE_SCOPE = title:e_the_iron_throne.holder
-	}
+	# AGOT Bookmarked Disabled
+	# agot_mw_add_character_to_mw_list = {
+		# CHARACTER_SCOPE = title:k_dorne.holder
+		# STORY_SCOPE = scope:mw_crown_story
+		# LIST = mw_neutral_list
+		# PRE_WAR_LIEGE_SCOPE = title:e_the_iron_throne.holder
+	# }
 	######
 
 	### SET OPINIONS ###
@@ -264,10 +265,10 @@
 	character:Vyrwel_7 = { agot_create_artifact_vs_darktalon_effect = { OWNER = this } }
 	character:Dayne_7 = { agot_create_artifact_vs_dawn_effect = { OWNER = this }
 		#for some reason Dawn doesn't equip automatically
-		random_character_artifact = {
-			limit  = { has_artifact_modifier = vs_dawn_modifier }
-			equip_artifact_to_owner_replace = yes
-		}
+		# random_character_artifact = { # AGOT Bookmarked Disabled
+			# limit  = { has_artifact_modifier = vs_dawn_modifier }
+			# equip_artifact_to_owner_replace = yes
+		# }
 	}
 	character:Ironsmith_19 = { agot_create_artifact_vs_defiance_effect = { OWNER = this } }
 	character:Whent_8 = { agot_create_artifact_vs_disputant_effect = { OWNER = this }}
@@ -275,7 +276,7 @@
 	#character:Wensington_6 = { create_artifact_vs_eleneis_bulwark_effect = { OWNER = this } }
 	character:Forrester_2 = { agot_create_artifact_vs_iron_will_effect = { OWNER = this } }
 	character:Tarly_1 = { agot_create_artifact_vs_heartsbane_effect = { OWNER = this } }
-	#character:Lannister_1 = { agot_create_artifact_vs_ice_effect = { OWNER = this } }
+	character:Lannister_1 = { agot_create_artifact_vs_ice_effect = { OWNER = this } }
 	#character:Long_1 = { create_artifact_vs_justicar_effect = { OWNER = this } }
 	character:Corbray_2 = { agot_create_artifact_vs_lady_forlorn_effect = { OWNER = this } }
 	character:Stark_7 = { agot_create_artifact_vs_longclaw_effect = { OWNER = this } }
@@ -296,7 +297,7 @@
 	character:Brax_4 = { agot_create_artifact_vs_tranquility_effect = { OWNER = this } }
 	character:Hightower_5 = { agot_create_artifact_vs_vigilance_effect = { OWNER = this } }
 	character:Lydden_4 = { agot_create_artifact_vs_widestripe_effect = { OWNER = this } }
-	character:Baratheon_5 = { agot_create_artifact_vs_widows_wail_effect = { OWNER = this } }
+	#character:Baratheon_5 = { agot_create_artifact_vs_widows_wail_effect = { OWNER = this } }
 	character:Dustin_9 = { agot_create_artifact_vs_wyrmfang_effect = { OWNER = this } }
 	#character:Rowan_1 = { create_artifact_vs_evergold_effect = { OWNER = this } }
 	character:Martell_4 = { agot_create_artifact_martell_wall_shield_effect = { OWNER = this } }    
