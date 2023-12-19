@@ -1,4 +1,5 @@
 ﻿## AGOT ADDED FILE - Bookmark groups
+# AGOT Bookmarked
 agot_bm_group_ACOK = { # A Clash of Kings
 	default_start_date = 8299.3.3
 }
@@ -10,7 +11,3 @@ agot_bm_group_BR = { # Blackfyre Rebellion #1
 #agot_bm_group_TDOD = { # The Dance of Dragons
 #	default_start_date = 8129.4.1
 #}
-
-# agot_bm_group_LN = {
-	# default_start_date = 8320.3.3
-# }
