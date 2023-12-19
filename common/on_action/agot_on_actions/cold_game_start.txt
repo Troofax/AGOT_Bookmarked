@@ -1,0 +1,16 @@
+﻿# Called from code after history generation
+# Empty scope
+on_game_start = {
+	on_actions = {
+		agot_se_on_game_start
+	}
+}
+
+agot_se_on_game_start = {
+	effect = {
+		if = { # manage 8299.3.3 A Clash of Kings scenario
+			limit = { current_date = 8300.3.1 }
+			agot_8300_3_1_affc_scenario_setup = yes
+		}
+	}
+}

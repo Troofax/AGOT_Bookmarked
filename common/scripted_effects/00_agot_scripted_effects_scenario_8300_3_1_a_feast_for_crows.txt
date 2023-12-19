@@ -1,0 +1,273 @@
+﻿############
+#8300#
+agot_8300_3_1_affc_scenario_setup = {
+	### RULER DESIGNER FIX ###
+	# Stannis aganist Lannisters
+	if = { # fire only if you used ruler designer; else there is no war
+		limit = { NOT = { title:k_dragonstone.holder = character:Baratheon_3 } }
+
+		title:k_dragonstone.holder = {
+			start_war = {
+				cb = claim_cb
+				target = title:e_the_iron_throne.holder
+				target_title = title:e_the_iron_throne
+				target_title = title:d_kings_landing
+				target_title = title:c_kings_landing
+				# target_title = title:d_dragonstone
+				# target_title = title:c_dragonstone
+			}
+			every_character_war = {
+				add_attacker = title:d_yronwood.holder
+				add_attacker = title:d_harrenhal.holder
+				add_attacker = title:d_the_sisters.holder
+				add_attacker = title:d_goldenfields.holder
+				add_attacker = title:d_palemarch.holder
+				add_attacker = title:d_sunnyvale.holder
+				add_attacker = title:c_standfast.holder
+				add_attacker = title:c_whisper_point.holder
+				add_attacker = title:d_castamere.holder
+				add_attacker = title:d_crakehall.holder
+			}
+		}
+	}
+	if = { # fire only if you used ruler designer; else there is no war
+		limit = { NOT = { title:e_the_iron_throne.holder = character:Baratheon_7  } }
+
+		title:e_the_iron_throne.holder = {
+			add_character_flag = { flag = mw_init_event_blocker days = 2 }
+			every_character_war = {
+				add_defender = title:k_the_reach.holder
+				add_defender = title:k_dorne.holder
+				add_defender = title:k_the_riverlands.holder
+				add_defender = title:k_the_reach.holder
+				add_defender = title:k_the_vale.holder
+				add_defender = title:k_the_westerlands.holder
+				add_defender = title:d_vellum_coast.holder
+			}
+		}
+	}
+	###
+
+	### SET UP REBEL LEADERS
+	hidden_effect = { # Stannis aganist Lannisters
+		title:k_the_stormlands.holder = {
+			save_scope_as = mw_rebel_leader_stannis
+			agot_mw_scenario_rebel_setup = { # Set up story
+				HELD_TITLE = title:k_the_stormlands
+				CASUS_BELLI = claim_cb
+				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
+				MW_TARGET = title:e_the_iron_throne.holder
+			}
+			# ADD REBEL SUPPORTERS #
+			# Add vassal rebels
+			every_vassal_or_below = {
+				limit = {
+					primary_title.tier > tier_barony
+					NOR = {
+						primary_title = title:k_the_most_devout
+					}
+				}
+
+				scope:mw_rebel_story = {
+					add_to_variable_list = {
+						name = mw_rebel_supporter_list
+						target = prev
+					}
+				}
+			}
+		}
+		# Add independent rebels
+		agot_mw_add_character_to_mw_list = {
+			CHARACTER_SCOPE = title:d_brightwater.holder
+			STORY_SCOPE = scope:mw_rebel_story
+			LIST = mw_rebel_supporter_list
+			PRE_WAR_LIEGE_SCOPE = title:k_the_reach.holder
+		}
+		agot_mw_add_character_to_mw_list = {
+			CHARACTER_SCOPE = title:d_blueburn.holder
+			STORY_SCOPE = scope:mw_rebel_story
+			LIST = mw_rebel_supporter_list
+			PRE_WAR_LIEGE_SCOPE = title:k_the_reach.holder
+		}
+		agot_mw_add_character_to_mw_list = {
+			CHARACTER_SCOPE = title:c_glasswater.holder
+			STORY_SCOPE = scope:mw_rebel_story
+			LIST = mw_rebel_supporter_list
+			PRE_WAR_LIEGE_SCOPE = title:d_masseys_hook.holder
+		}
+		######
+	}
+	hidden_effect = { # Starks aganist Lannisters
+		title:k_the_north.holder = {
+			save_scope_as = mw_rebel_leader_robb
+			agot_mw_scenario_rebel_setup = { # Set up story
+				HELD_TITLE = title:k_the_north
+				CASUS_BELLI = agot_independence_war
+				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
+				MW_TARGET = title:e_the_iron_throne.holder
+			}
+			# ADD REBEL SUPPORTERS #
+			# Add vassal rebels
+			every_vassal_or_below = {
+				limit = {
+					primary_title.tier > tier_barony
+					NOR = {
+						primary_title = title:k_the_most_devout
+					}
+				}
+
+				scope:mw_rebel_story = {
+					add_to_variable_list = {
+						name = mw_rebel_supporter_list
+						target = prev
+					}
+				}
+			}
+		}
+		# Add independent rebels
+		agot_mw_add_character_to_mw_list = {
+			CHARACTER_SCOPE = title:k_the_riverlands.holder
+			STORY_SCOPE = scope:mw_rebel_story
+			LIST = mw_rebel_supporter_list
+			PRE_WAR_LIEGE_SCOPE = title:e_the_iron_throne.holder
+		}
+		######
+	}
+	hidden_effect = { # Greyjoys aganist Lannisters
+		title:k_the_north.holder = {
+			save_scope_as = mw_rebel_leader_balon
+			agot_mw_scenario_rebel_setup = { # Set up story
+				HELD_TITLE = title:k_the_iron_islands
+				CASUS_BELLI = agot_independence_war
+				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
+				MW_TARGET = title:e_the_iron_throne.holder
+			}
+			# ADD REBEL SUPPORTERS #
+			# Add vassal rebels
+			every_vassal_or_below = {
+				limit = {
+					primary_title.tier > tier_barony
+					NOR = {
+						primary_title = title:k_the_most_devout
+					}
+				}
+
+				scope:mw_rebel_story = {
+					add_to_variable_list = {
+						name = mw_rebel_supporter_list
+						target = prev
+					}
+				}
+			}
+		}
+		######
+	}
+
+	### SET UP CROWN
+	agot_mw_scenario_crown_setup = { HELD_TITLE = title:e_the_iron_throne }
+	# ADD LOYALISTS #
+	# Add vassal loyalists
+	title:e_the_iron_throne.holder = {
+		every_vassal_or_below = {
+			limit = {
+				primary_title.tier > tier_barony
+				NOT = { 
+					OR = {
+						primary_title = title:k_the_most_devout
+					}
+				}
+			}
+
+			scope:mw_crown_story = {
+				add_to_variable_list = {
+					name = mw_loyalist_list
+					target = prev
+				}
+			}
+		}
+	}
+	######
+
+	### ADD NEUTRALS ###
+	agot_mw_add_character_to_mw_list = {
+		CHARACTER_SCOPE = title:k_the_vale.holder
+		STORY_SCOPE = scope:mw_crown_story
+		LIST = mw_neutral_list
+		PRE_WAR_LIEGE_SCOPE = title:e_the_iron_throne.holder
+	}
+	agot_mw_add_character_to_mw_list = {
+		CHARACTER_SCOPE = title:k_dorne.holder
+		STORY_SCOPE = scope:mw_crown_story
+		LIST = mw_neutral_list
+		PRE_WAR_LIEGE_SCOPE = title:e_the_iron_throne.holder
+	}
+	######
+
+	### SET OPINIONS ###
+	mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_stannis }
+	mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_robb }
+	mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_balon }
+	######
+
+	#######
+	##### Historical artifacts
+	## AGOT TODO: All commented out are not yet modeled.
+	character:Wyl_1 = { agot_create_artifact_vs_adders_fang_effect = { OWNER = this } }
+	character:Massey_1 = { agot_create_artifact_vs_dancer_effect = { OWNER = this } }
+	character:Vyrwel_7 = { agot_create_artifact_vs_darktalon_effect = { OWNER = this } }
+	character:Dayne_7 = { agot_create_artifact_vs_dawn_effect = { OWNER = this }
+		#for some reason Dawn doesn't equip automatically
+		random_character_artifact = {
+			limit  = { has_artifact_modifier = vs_dawn_modifier }
+			equip_artifact_to_owner_replace = yes
+		}
+	}
+	character:Ironsmith_19 = { agot_create_artifact_vs_defiance_effect = { OWNER = this } }
+	character:Whent_8 = { agot_create_artifact_vs_disputant_effect = { OWNER = this }}
+	#character:Baratheon_2 = { create_artifact_vs_the_dagger_effect = { OWNER = this } }
+	#character:Wensington_6 = { create_artifact_vs_eleneis_bulwark_effect = { OWNER = this } }
+	character:Forrester_2 = { agot_create_artifact_vs_iron_will_effect = { OWNER = this } }
+	character:Tarly_1 = { agot_create_artifact_vs_heartsbane_effect = { OWNER = this } }
+	#character:Lannister_1 = { agot_create_artifact_vs_ice_effect = { OWNER = this } }
+	#character:Long_1 = { create_artifact_vs_justicar_effect = { OWNER = this } }
+	character:Corbray_2 = { agot_create_artifact_vs_lady_forlorn_effect = { OWNER = this } }
+	character:Stark_7 = { agot_create_artifact_vs_longclaw_effect = { OWNER = this } }
+	character:Harlaw_12 = { agot_create_artifact_vs_nightfall_effect = { OWNER = this } }
+	character:Tarth_6 = { create_artifact_vs_oathkeeper_effect = { OWNER = this } }
+	# character:Roxton_8 = { create_artifact_vs_orphan_maker_effect = { OWNER = this } }
+	character:Celtigar_2 = { agot_create_artifact_vs_pincer_effect = { OWNER = this } }
+	character:Jast_2 = { agot_create_artifact_vs_pride_effect = { OWNER = this } }
+	character:Drumm_1 = { agot_create_artifact_vs_red_rain_effect = { OWNER = this } }
+	character:Velaryon_2 = { agot_create_artifact_vs_seafoam_effect = { OWNER = this } }
+	character:Banefort_1 = { agot_create_artifact_vs_skullcleaver_effect = { OWNER = this } }
+	#character:Mallister_4 = { create_artifact_vs_soaring_glory_effect = { OWNER = this } }
+	character:Darke_2 = { agot_create_artifact_vs_stalwart_effect = { OWNER = this } }
+	#character:Beesbury_2 = { create_artifact_vs_sting_effect = { OWNER = this } }
+	character:Serrett_1 = { agot_create_artifact_vs_supremacy_effect = { OWNER = this } }
+	character:Bar_Emmon_3 = { agot_create_artifact_vs_swordfish_effect = { OWNER = this } }
+	#character:Yronwood_2 = { create_artifact_vs_yron_key_effect = { OWNER = this } }
+	character:Brax_4 = { agot_create_artifact_vs_tranquility_effect = { OWNER = this } }
+	character:Hightower_5 = { agot_create_artifact_vs_vigilance_effect = { OWNER = this } }
+	character:Lydden_4 = { agot_create_artifact_vs_widestripe_effect = { OWNER = this } }
+	character:Baratheon_7 = { agot_create_artifact_vs_widows_wail_effect = { OWNER = this } }
+	character:Dustin_9 = { agot_create_artifact_vs_wyrmfang_effect = { OWNER = this } }
+	#character:Rowan_1 = { create_artifact_vs_evergold_effect = { OWNER = this } }
+	character:Martell_4 = { agot_create_artifact_martell_wall_shield_effect = { OWNER = this } }    
+
+
+	##### SCENARIO STORY CYCLE SETUP #####
+	#title:e_the_iron_throne.holder = {
+	#	create_story = { # Initialize A Clash of Kings # TODO
+	#		type = story_agot_scenario_acok
+	#		save_scope_as = scenario_rr_story
+	#	}
+	#	scope:scenario_acok_story = { # TODO
+	#		set_variable = { name = usurper_war value = scope:current_war }
+	#		set_variable = {
+	#			name	= agot_acok_wars_status
+	#			value	= flag:ongoing
+	#		}
+	#	}
+	#}
+	#######
+}
