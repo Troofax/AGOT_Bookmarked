@@ -1,10 +1,13 @@
-﻿# Auto generated file, do not edit manually. Created using console command dump_bookmark_portraits
+﻿# AGOT Bookmarked
+
+# Auto generated file, do not edit manually. Created using console command dump_bookmark_portraits
 # History database id:Targaryen_94
 bookmark_195_daemon_blackfyre={
 	type=male
 	id=15323
 	age=0.250000
-	genes={ 		hair_color={ 47 18 74 14 }
+	genes={
+		hair_color={ 47 18 74 14 }
  		skin_color={ 108 8 112 8 }
  		eye_color={ 251 110 245 92 }
  		gene_chin_forward={ "chin_forward_neg" 145 "chin_forward_neg" 114 }
@@ -155,7 +158,8 @@ bookmark_195_daeron_targaryen={
 	type=male
 	id=13659
 	age=0.420000
-	genes={ 		hair_color={ 4 17 34 5 }
+	genes={
+		hair_color={ 4 17 34 5 }
  		skin_color={ 97 31 84 43 }
  		eye_color={ 249 51 251 223 }
  		gene_chin_forward={ "chin_forward_pos" 73 "chin_forward_neg" 145 }
@@ -305,7 +309,8 @@ bookmark_195_harys_bracken={
 	type=male
 	id=14985
 	age=0.310000
-	genes={ 		hair_color={ 48 211 216 255 }
+	genes={
+		hair_color={ 48 211 216 255 }
  		skin_color={ 74 0 68 29 }
  		eye_color={ 7 252 238 64 }
  		gene_chin_forward={ "chin_forward_neg" 103 "chin_forward_pos" 160 }

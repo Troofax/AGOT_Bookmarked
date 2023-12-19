@@ -1,4 +1,5 @@
-﻿# Cold Bookmarks
+﻿# AGOT Bookmarked
+# Year 8299 A Clash of Kings
 agot_bm_8299 = {
 	start_date = 8299.3.3
 	is_playable = yes
@@ -6,24 +7,6 @@ agot_bm_8299 = {
 	
 	weight = {
 		value = 40
-	}
-
-	# Night King (The Frozen Throne) ID: Others_1
-	character = {
-		name = "bookmark_299_night_king"
-		dynasty_house = house_Night_King
-		dynasty_splendor_level = 6
-		type = male
-		birth = 1.1.1
-		title = e_the_frozen_throne
-		government = lp_feudal_government
-        culture = others
-		religion = gods_of_winter_religion
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-		history_id = Others_1
-		position = { 835 125 }
-	
-		animation = war_attacker
 	}
 
 	# Robb Stark (The North) ID: Stark_6
@@ -131,7 +114,7 @@ agot_bm_8299 = {
 		animation = personality_callous
 	}
 }
-
+# Year 8300 A Feast for Crows
 agot_bm_8300 = {
 	start_date = 8300.3.1
 	is_playable = yes
@@ -211,7 +194,7 @@ agot_bm_8300 = {
 		animation = marshal
 	}
 }
-
+# Year 8195 The First Blackfyre Rebellion
 agot_bm_8195 = {
 	start_date = 8195.3.7
 	is_playable = yes
