@@ -217,10 +217,10 @@ agot_8300_3_1_affc_scenario_setup = {
 	character:Vyrwel_7 = { agot_create_artifact_vs_darktalon_effect = { OWNER = this } }
 	character:Dayne_7 = { agot_create_artifact_vs_dawn_effect = { OWNER = this }
 		#for some reason Dawn doesn't equip automatically
-		random_character_artifact = {
-			limit  = { has_artifact_modifier = vs_dawn_modifier }
-			equip_artifact_to_owner_replace = yes
-		}
+		# random_character_artifact = { # AGOT Bookmarked Disabled
+			# limit  = { has_artifact_modifier = vs_dawn_modifier }
+			# equip_artifact_to_owner_replace = yes
+		# }
 	}
 	character:Ironsmith_19 = { agot_create_artifact_vs_defiance_effect = { OWNER = this } }
 	character:Whent_8 = { agot_create_artifact_vs_disputant_effect = { OWNER = this }}

@@ -121,7 +121,7 @@ Martell_4 = {
 		birth = yes
 		effect = {
 			if = { # AGOT Bookmarked
-				limit = { game_start_date <= 8300.1.1 }
+				limit = { game_start_date < 8300.1.1 }
 				vassal_contract_set_obligation_level = { #Palatinate for Prince title
 					type = special_contract
 					level = 3
