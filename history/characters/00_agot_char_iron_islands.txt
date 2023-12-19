@@ -1101,11 +1101,7 @@ Greyjoy_hh_5 = {
 		employer = Greyjoy_5 # Balon Greyjoy
 		effect = { # Steward of Pyke
 			if = { # AGOT Bookmarked
-				limit = {
-					NOT = {
-						current_date = 8300.3.1
-					}
-				}
+				limit = { game_start_date <= 8300.1.1 }
 				agot_appoint_as_councillor_for_castle_history_effect = { 
 					CASTLE = title:c_pyke 
 					POSITION = councillor_steward
@@ -2691,11 +2687,7 @@ Harlaw_hh_1 = {
 		give_nickname = nick_twelve_tooth
 		effect = { # Steward of Ten Towers
 			if = { # AGOT Bookmarked
-				limit = {
-					NOT = {
-						current_date = 8300.3.1
-					}
-				}
+				limit = { game_start_date <= 8300.1.1 }
 				agot_appoint_as_councillor_for_castle_history_effect = { 
 					CASTLE = title:c_ten_towers 
 					POSITION = councillor_steward

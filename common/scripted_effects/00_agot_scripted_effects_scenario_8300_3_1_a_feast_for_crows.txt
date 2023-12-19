@@ -228,7 +228,7 @@ agot_8300_3_1_affc_scenario_setup = {
 	#character:Wensington_6 = { create_artifact_vs_eleneis_bulwark_effect = { OWNER = this } }
 	character:Forrester_2 = { agot_create_artifact_vs_iron_will_effect = { OWNER = this } }
 	character:Tarly_1 = { agot_create_artifact_vs_heartsbane_effect = { OWNER = this } }
-	#character:Lannister_1 = { agot_create_artifact_vs_ice_effect = { OWNER = this } }
+	character:Lannister_1 = { agot_create_artifact_vs_ice_effect = { OWNER = this } }
 	#character:Long_1 = { create_artifact_vs_justicar_effect = { OWNER = this } }
 	character:Corbray_2 = { agot_create_artifact_vs_lady_forlorn_effect = { OWNER = this } }
 	character:Stark_7 = { agot_create_artifact_vs_longclaw_effect = { OWNER = this } }
@@ -249,7 +249,7 @@ agot_8300_3_1_affc_scenario_setup = {
 	character:Brax_4 = { agot_create_artifact_vs_tranquility_effect = { OWNER = this } }
 	character:Hightower_5 = { agot_create_artifact_vs_vigilance_effect = { OWNER = this } }
 	character:Lydden_4 = { agot_create_artifact_vs_widestripe_effect = { OWNER = this } }
-	character:Baratheon_7 = { agot_create_artifact_vs_widows_wail_effect = { OWNER = this } }
+	#character:Baratheon_7 = { agot_create_artifact_vs_widows_wail_effect = { OWNER = this } }
 	character:Dustin_9 = { agot_create_artifact_vs_wyrmfang_effect = { OWNER = this } }
 	#character:Rowan_1 = { create_artifact_vs_evergold_effect = { OWNER = this } }
 	character:Martell_4 = { agot_create_artifact_martell_wall_shield_effect = { OWNER = this } }    
