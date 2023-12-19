@@ -1100,10 +1100,17 @@ Greyjoy_hh_5 = {
 	8294.1.1 = {
 		employer = Greyjoy_5 # Balon Greyjoy
 		effect = { # Steward of Pyke
-			# agot_appoint_as_councillor_for_castle_history_effect = { 
-				# CASTLE = title:c_pyke 
-				# POSITION = councillor_steward
-			# } # AGOT Bookmarked
+			if = { # AGOT Bookmarked
+				limit = {
+					NOT = {
+						current_date = 8300.3.1
+					}
+				}
+				agot_appoint_as_councillor_for_castle_history_effect = { 
+					CASTLE = title:c_pyke 
+					POSITION = councillor_steward
+				}
+			}
 		}
 	}
 	8299.10.3 = { employer = Greyjoy_6 }
@@ -2683,10 +2690,17 @@ Harlaw_hh_1 = {
 	8285.1.1 = {
 		give_nickname = nick_twelve_tooth
 		effect = { # Steward of Ten Towers
-			# agot_appoint_as_councillor_for_castle_history_effect = { 
-				# CASTLE = title:c_ten_towers 
-				# POSITION = councillor_steward
-			# } # AGOT Bookmarked
+			if = { # AGOT Bookmarked
+				limit = {
+					NOT = {
+						current_date = 8300.3.1
+					}
+				}
+				agot_appoint_as_councillor_for_castle_history_effect = { 
+					CASTLE = title:c_ten_towers 
+					POSITION = councillor_steward
+				}
+			}
 		}
 	}
 	8290.1.1 = { employer = Harlaw_9 } # Rodrik Harlaw
