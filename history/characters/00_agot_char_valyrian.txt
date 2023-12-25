@@ -2610,14 +2610,10 @@ Eunuch_1 = {
 	8284.1.1 = { employer = Baratheon_2 } #Robert Baratheon
 	8298.10.28 = { employer = Baratheon_5 } #Joffrey Baratheon
 	8300.3.1 = {
-		if = { # AGOT Bookmarked
-			limit = { character:Targaryen_12 = { is_alive = yes } }
-			employer = Targaryen_12 # Aegon
-			effect = { # Master of Whisperers
-				# agot_appoint_as_councillor_for_castle_history_effect = { 
-					# CASTLE = title:d_young_griffs_host 
-					# POSITION = councillor_spymaster
-				# }
+		employer = Targaryen_12
+		effect = {
+			if = {
+				limit = { character:Targaryen_12 = { is_alive = yes } }
 				set_relation_friend = character:Targaryen_12
 			}
 		}

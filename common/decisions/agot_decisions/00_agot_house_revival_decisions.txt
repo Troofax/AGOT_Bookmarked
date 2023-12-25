@@ -1,0 +1,387 @@
+﻿darklyn_revival_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+
+	desc = darklyn_revival_desc
+
+	major = yes
+
+	selection_tooltip = house_revival_tooltip
+
+	is_shown = {
+		# AGOT Bookmarked Added
+		game_start_date > 8130.1.1
+		character:Darklyn_45.house = {
+			NOT = {
+				any_house_member = {
+					is_alive = yes
+				}
+			}
+		}
+		dynasty = dynasty:dynn_Darklyn
+	}
+
+	is_valid = {
+		has_title = title:c_duskendale
+		has_title = title:d_duskendale
+	}
+
+	effect = {
+		house = { save_scope_as = house }
+		hidden_effect = { set_house = character:Darklyn_45.house }
+		scope:house = {
+			every_house_member = {
+				set_house = character:Darklyn_45.house
+			}
+		}
+		every_held_title = {
+			set_coa = dynasty:dynn_Darklyn
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+reyne_revival_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+
+	desc = reyne_revival_desc
+
+	major = yes
+
+	selection_tooltip = house_revival_tooltip
+
+	is_shown = {
+		# AGOT Bookmarked Added
+		game_start_date > 8130.1.1
+		character:Reyne_45.house = {
+			NOT = {
+				any_house_member = {
+					is_alive = yes
+				}
+			}
+		}
+		dynasty = dynasty:dynn_Reyne
+	}
+
+	is_valid = {
+		has_title = title:c_castamere
+		has_title = title:d_castamere
+	}
+
+	effect = {
+		house = { save_scope_as = house }
+		hidden_effect = { set_house = character:Reyne_45.house }
+		scope:house = {
+			every_house_member = {
+				set_house = character:Reyne_45.house
+			}
+		}
+		every_held_title = {
+			set_coa = dynasty:dynn_Reyne
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+gardener_revival_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+
+	desc = gardener_revival_desc
+
+	major = yes
+
+	selection_tooltip = house_revival_tooltip
+
+	is_shown = {
+		character:Gardener_95.house = {
+			NOT = {
+				any_house_member = {
+					is_alive = yes
+				}
+			}
+		}
+		dynasty = dynasty:dynn_Gardener
+	}
+
+	is_valid = {
+		has_title = title:c_highgarden
+		has_title = title:d_highgarden
+	}
+
+	effect = {
+		house = { save_scope_as = house }
+		hidden_effect = { set_house = character:Gardener_95.house }
+		scope:house = {
+			every_house_member = {
+				set_house = character:Gardener_95.house
+			}
+		}
+		every_held_title = {
+			set_coa = dynasty:dynn_Gardener
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+durrandon_revival_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+
+	desc = durrandon_revival_desc
+
+	major = yes
+
+	selection_tooltip = house_revival_tooltip
+
+	is_shown = {
+		character:Durrandon_87.house = {
+			NOT = {
+				any_house_member = {
+					is_alive = yes
+				}
+			}
+		}
+		dynasty = dynasty:dynn_Durrandon
+	}
+
+	is_valid = {
+		has_title = title:c_storms_end
+		has_title = title:d_shipbreaker_bay
+	}
+
+	effect = {
+		house = { save_scope_as = house }
+		hidden_effect = { set_house = character:Durrandon_87.house }
+		scope:house = {
+			every_house_member = {
+				set_house = character:Durrandon_87.house
+			}
+		}
+		every_held_title = {
+			set_coa = dynasty:dynn_Durrandon
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+stark_revival_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+
+	desc = stark_revival_desc
+
+	major = yes
+
+	selection_tooltip = house_revival_tooltip
+
+	is_shown = {
+		character:Stark_12.house = {
+			NOT = {
+				any_house_member = {
+					is_alive = yes
+				}
+			}
+		}
+		dynasty = dynasty:dynn_Stark
+	}
+
+	is_valid = {
+		has_title = title:c_winterfell
+		has_title = title:d_winterfell
+	}
+
+	effect = {
+		house = { save_scope_as = house }
+		hidden_effect = { set_house = character:Stark_12.house }
+		scope:house = {
+			every_house_member = {
+				set_house = character:Stark_12.house
+			}
+		}
+		every_held_title = {
+			set_coa = dynasty:dynn_Stark
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+arryn_revival_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+
+	desc = arryn_revival_desc
+
+	major = yes
+
+	selection_tooltip = house_revival_tooltip
+
+	is_shown = {
+		character:Arryn_15.house = {
+			NOT = {
+				any_house_member = {
+					is_alive = yes
+				}
+			}
+		}
+		dynasty = dynasty:dynn_Arryn
+	}
+
+	is_valid = {
+		has_title = title:c_the_eyrie
+		has_title = title:d_the_giants_lance
+	}
+
+	effect = {
+		house = { save_scope_as = house }
+		hidden_effect = { set_house = character:Arryn_15.house }
+		scope:house = {
+			every_house_member = {
+				set_house = character:Arryn_15.house
+			}
+		}
+		every_held_title = {
+			set_coa = dynasty:dynn_Arryn
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+hoare_revival_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+
+	desc = hoare_revival_desc
+
+	major = yes
+
+	selection_tooltip = house_revival_tooltip
+
+	is_shown = {
+		character:Hoare_1.house = {
+			NOT = {
+				any_house_member = {
+					is_alive = yes
+				}
+			}
+		}
+		dynasty = dynasty:dynn_Hoare
+	}
+
+	is_valid = {
+		has_title = title:d_orkmont
+		has_title = title:c_nettlemont
+	}
+
+	effect = {
+		house = { save_scope_as = house }
+		hidden_effect = { set_house = character:Hoare_1.house }
+		scope:house = {
+			every_house_member = {
+				set_house = character:Hoare_1.house
+			}
+		}
+		every_held_title = {
+			set_coa = dynasty:dynn_Hoare
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+lannister_revival_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+
+	desc = lannister_revival_desc
+
+	major = yes
+
+	selection_tooltip = house_revival_tooltip
+
+	is_shown = {
+		character:Lannister_29.house = {
+			NOT = {
+				any_house_member = {
+					is_alive = yes
+				}
+			}
+		}
+		dynasty = dynasty:dynn_Lannister
+	}
+
+	is_valid = {
+		has_title = title:d_casterly_rock
+		has_title = title:c_casterly_rock
+	}
+
+	effect = {
+		house = { save_scope_as = house }
+		hidden_effect = { set_house = character:Lannister_29.house }
+		scope:house = {
+			every_house_member = {
+				set_house = character:Lannister_29.house
+			}
+		}
+		every_held_title = {
+			set_coa = dynasty:dynn_Lannister
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
