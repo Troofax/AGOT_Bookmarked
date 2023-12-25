@@ -1,4 +1,14 @@
 ﻿l_english:
+ #7998
+ bookmark_2bc_aegon_targaryen:0 "Aegon Targaryen"
+ bookmark_2bc_aegon_targaryen_desc:0 "Will you rule the land, or suffer the fate of Valyria?"
+
+ #8129
+ bookmark_129_rhaenyra_targaryen:0 "Queen Rhaenyra I Targaryen"
+ bookmark_129_rhaenyra_targaryen_desc:0 "Blacks."
+ bookmark_129_aegon_targaryen:0 "	King Aegon II Targaryen"
+ bookmark_129_aegon_targaryen_desc:0 "Greens."
+
  #8195
  bookmark_195_daemon_blackfyre:0 "King Daemon I Blackfyre"
  bookmark_195_daemon_blackfyre_desc:0 "You bear the sword."
@@ -8,14 +18,20 @@
 
  bookmark_195_harys_bracken:0 "Lord Harys Bracken"
  bookmark_195_harys_bracken_desc:0 "???"
- #8299
- bookmark_299_night_king:0 "The Night King"
- bookmark_299_night_king_desc:0 "Is it cold in here or is it just me?"
 
+ #8277
+ bookmark_277_tywin_lannister:0 "Lord Tywin Lannister"
+ bookmark_277_tywin_lannister_desc:0 "Golden Lion."
+ bookmark_277_denys_darklyn:0 "Lord Denys Darklyn"
+ bookmark_277_denys_darklyn_desc:0 "Uh oh, spaghetti-o's."
+ bookmark_277_aerys_targaryen:0 "King Aerys II Targaryen"
+ bookmark_277_aerys_targaryen_desc:0 "These bars can't hold me."
+
+ #8299
  bookmark_299_robb_stark:0 "King Robb Stark"
  bookmark_299_robb_stark_desc:0 "Winter is here."
 
- bookmark_299_joffrey_baratheon:0 "King Joffrey Baratheon"
+ bookmark_299_joffrey_baratheon:0 "King Joffrey I Baratheon"
  bookmark_299_joffrey_baratheon_desc:0 "Did dis dude djust did dis?"
 
  bookmark_299_walder_frey:0 "Lord Walder Frey"
@@ -29,15 +45,16 @@
 
  bookmark_299_stannis_baratheon:0 "Lord Stannis Baratheon"
  bookmark_299_stannis_baratheon_desc:0 "Stanly the Manly"
- #8300
- bookmark_300_tywin_lannister:0 "Lord Tywin Lannister"
- bookmark_300_tywin_lannister_desc:0 "Lions fishies and wolves, oh my."
 
- bookmark_300_tommen_baratheon:0 "King Tommen Baratheon"
+ #8300
+ bookmark_300_cersei_lannister:0 "Lady Cersei Lannister"
+ bookmark_300_cersei_lannister_desc:0 "Lions fishies and wolves, oh my."
+
+ bookmark_300_tommen_baratheon:0 "King Tommen I Baratheon"
  bookmark_300_tommen_baratheon_desc:0 "Featuring Ser Pounce."
 
  bookmark_300_stannis_baratheon:0 "Lord Stannis Baratheon"
  bookmark_300_stannis_baratheon_desc:0 "Can you handle this much Mannis?"
 
- bookmark_300_euron_greyjoy:0 "King Euron Greyjoy"
+ bookmark_300_euron_greyjoy:0 "Iron King Euron III Greyjoy"
  bookmark_300_euron_greyjoy_desc:0 "What is salt may never cry."

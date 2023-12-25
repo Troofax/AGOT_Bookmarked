@@ -61,7 +61,7 @@
 				NOT = {
 					OR = {
 						primary_title = title:k_the_most_devout
-						# primary_title = title:d_kingsguard
+						primary_title = title:d_kingsguard
 					}
 				}
 			}

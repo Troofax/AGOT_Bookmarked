@@ -5,4 +5,4 @@ tags={
 	"Gameplay"
 }
 name="1AGOT Bookmarked"
-supported_version="1.11.2"
+supported_version="1.11.3"
