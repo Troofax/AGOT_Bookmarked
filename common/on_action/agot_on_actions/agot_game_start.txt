@@ -2568,12 +2568,12 @@ agot_on_game_start_after_lobby = {
 					has_game_rule = agot_shatter_empires
 				}
 			}
+			# AGOT Bookmarked Added
+			if = { # manage 8195.3.7 1st Blackfyre Rebellion scenario
+				limit = { game_start_date = 8195.3.7 }
 
-			# if = { # manage 8195.3.7 1st Blackfyre Rebellion scenario
-			# 	limit = { game_start_date = 8195.3.7 }
-
-			# 	agot_blackfyre_rebellion_I_scenario_setup = yes
-			# }
+				agot_8195_3_7_br_i_scenario_setup = yes
+			}
 			if = { # manage 8282.9.15 Robert's Rebellion scenario
 				limit = { game_start_date = 8282.9.15 }
 
@@ -2592,12 +2592,14 @@ agot_on_game_start_after_lobby = {
 			if = { # manage 8129.4.1 The Dance of Dragons scenario
 				limit = { game_start_date = 8129.4.1 }
 
-				character:Targaryen_76  = {
-					agot_create_artifact_lucerys_gun_effect  = { OWNER = this }
-					scope:newly_created_artifact = {
-						equip_artifact_to_owner_replace = yes
-					}
-				}
+				agot_8129_4_1_tdod_scenario_setup = yes
+
+				# character:Targaryen_76  = {
+					# agot_create_artifact_lucerys_gun_effect  = { OWNER = this }
+					# scope:newly_created_artifact = {
+						# equip_artifact_to_owner_replace = yes
+					# }
+				# }
 			}
 		}
 
