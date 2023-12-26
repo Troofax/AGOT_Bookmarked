@@ -573,7 +573,7 @@ Baratheon_4 = {
 Baratheon_5 = {
 	name = Joffrey # Canon
 	dynasty = dynn_Baratheon
-	dna = Baratheon_Joffrey # AGOT Bookmarked Added
+	dna = Baratheon_5 # AGOT Bookmarked Added
 
 	martial = 6
 	diplomacy = 4
@@ -599,6 +599,7 @@ Baratheon_5 = {
 		effect = {
 			add_character_flag = flag_secret_bastard
 			set_real_father = character:Lannister_7 # Jaime Lannister
+			make_trait_inactive = gold_hair # AGOT Bookmarked Added
 		}
 	}
 	8290.1.1 = { trait = sadistic }
@@ -805,7 +806,7 @@ Baratheon_6 = {
 	dynasty = dynn_Baratheon
 	female = yes
 
-	dna = Baratheon_Myrcella # AGOT Bookmarked Added
+	dna = Baratheon_Myrcella # AGOT Bookmarked Added/Needs Fixed
 
 	martial = 4
 	diplomacy = 6
@@ -830,6 +831,7 @@ Baratheon_6 = {
 		effect = {
 			add_character_flag = flag_secret_bastard
 			set_real_father = character:Lannister_7 # Jaime Lannister
+			make_trait_inactive = gold_hair # AGOT Bookmarked Added
 		}
 	}
 	8296.1.1 = {
@@ -915,7 +917,7 @@ Baratheon_6 = {
 Baratheon_7 = {
 	name = Tommen # Canon
 	dynasty = dynn_Baratheon
-	dna = Baratheon_Tommen # AGOT Bookmarked Added
+	dna = Baratheon_7 # AGOT Bookmarked Added
 
 	martial = 5
 	diplomacy = 4
@@ -938,6 +940,7 @@ Baratheon_7 = {
 		effect = {
 			add_character_flag = flag_secret_bastard
 			set_real_father = character:Lannister_7 # Jaime Lannister
+			make_trait_inactive = gold_hair # AGOT Bookmarked Added
 		}
 	}
 	8297.1.1 = {
