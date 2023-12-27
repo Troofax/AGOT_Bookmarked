@@ -1,0 +1,4 @@
+﻿agotbm_dragons = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
