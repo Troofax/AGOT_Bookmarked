@@ -1,6 +1,6 @@
-﻿# AGOT Bookmarked
-
-# Lannister Bastards
+﻿###################
+# AGOT Bookmarked #
+###################
 
 # Joffrey Baratheon
 Baratheon_Joffrey = {

@@ -1,6 +1,14 @@
-﻿# AGOT Bookmarked
+﻿###################
+# AGOT Bookmarked #
+###################
 
-# Aegon's Conquest Dragons Units
+##################################
+# Aegon's Conquest Dragons Units #
+##################################
+
+##################
+# Size and Siege #
+##################
 agotbm_dragons_max_size_add = {
 	decimals = 0
 }
@@ -19,6 +27,24 @@ agotbm_dragons_siege_value_mult = {
 	percent = yes
 }
 
+####################################
+# Maintenance and Recruitment Cost #
+####################################
+agotbm_dragons_maintenance_mult = {
+	decimals = 0
+	color = bad
+	percent = yes
+}
+
+agotbm_dragons_recruitment_cost_mult = {
+	decimals = 0
+	color = bad
+	percent = yes
+}
+
+######################
+# Attack and Defense #
+######################
 agotbm_dragons_damage_add = {
 	decimals = 0
 }
@@ -55,60 +81,58 @@ agotbm_dragons_screen_mult = {
 	percent = yes
 }
 
-agotbm_dragons_maintenance_mult = {
-	decimals = 0
-	color = bad
-	percent = yes
-}
-
-agotbm_dragons_recruitment_cost_mult = {
-	decimals = 0
-	color = bad
-	percent = yes
-}
-
-
-
+###################
+# Stationed Units #
+###################
 stationed_agotbm_dragons_damage_add = {
 	prefix = MOD_DAMAGE_PREFIX
 	decimals = 0
 }
+
 stationed_agotbm_dragons_damage_mult = {
 	prefix = MOD_DAMAGE_PREFIX
 	decimals = 0
 	percent = yes
 }
+
 stationed_agotbm_dragons_toughness_add = {
 	prefix = MOD_TOUGHNESS_PREFIX
 	decimals = 0
 }
+
 stationed_agotbm_dragons_toughness_mult = {
 	prefix = MOD_TOUGHNESS_PREFIX
 	decimals = 0
 	percent = yes
 }
+
 stationed_agotbm_dragons_screen_add = {
 	prefix = MOD_SCREEN_PREFIX
 	decimals = 0
 }
+
 stationed_agotbm_dragons_screen_mult = {
 	prefix = MOD_SCREEN_PREFIX
 	decimals = 0
 	percent = yes
 }
+
 stationed_agotbm_dragons_pursuit_add = {
 	prefix = MOD_PURSUIT_PREFIX
 	decimals = 0
 }
+
 stationed_agotbm_dragons_pursuit_mult = {
 	prefix = MOD_PURSUIT_PREFIX
 	decimals = 0
 	percent = yes
 }
+
 stationed_agotbm_dragons_siege_value_add = {
 	prefix = MOD_SIEGE_PROGRESS_PREFIX
 	decimals = 1
 }
+
 stationed_agotbm_dragons_siege_value_mult = {
 	prefix = MOD_SIEGE_PROGRESS_PREFIX
 	decimals = 0

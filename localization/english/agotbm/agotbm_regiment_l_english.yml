@@ -1,65 +1,192 @@
 ﻿l_english:
- # AGOT Bookmarked
+ ###################
+ # AGOT Bookmarked #
+ ###################
 
- # Aegon's Conquest Dragons Units
+ #######################
+ # General Dragon Unit #
+ #######################
  agotbm_dragons_unit:0 "Dragons"
  agotbm_dragons_unit_flavor:0 "Dragons are massive, flying reptiles that can breathe fire. Dragons possess awesome and devastating power, capable of laying waste to armies and burning entire cities to ashes."
 
- agotbm_balerion_unit:0 "Balerion, the Black Dread"
+ ############################
+ # Aegon's Conquest - Units #
+ ############################
+ agotbm_balerion_unit:0 "Balerion"
  agotbm_balerion_unit_flavor:0 "Balerion was named after an ancient god of the Valyrian Freehold. He was born in Valyria, and was one of the five dragons Aenar Targaryen brought with him when he fled to Dragonstone to survive the Doom of Valyria. After the other four of Aenar's dragons died, Balerion became the last creature to have seen the Freehold in its prime."
 
- agotbm_vhagar_unit:0 "Vhagar, the Queen of All Dragons"
+ agotbm_vhagar_unit:0 "Vhagar"
  agotbm_vhagar_unit_flavor:0 "Vhagar hatched from a dragon egg on Dragonstone during the Century of Blood. She was named after a god of the Valyrian Freehold. At some point, Vhagar was claimed by Visenya Targaryen. Visenya first rode Vhagar, demonstrating she was a dragonrider, some time before she married her brother, Aegon."
 
- agotbm_meraxes_unit:0 "Meraxes, the Silver Sister"
+ agotbm_meraxes_unit:0 "Meraxes"
  agotbm_meraxes_unit_flavor:0 "Meraxes was named for a god of the Valyrian Freehold. Her egg hatched on Dragonstone during the Century of Blood. At some point, Meraxes was claimed by Rhaenys Targaryen. Rhaenys first rode Meraxes, demonstrating she was a dragonrider, some time before she married her brother, Aegon. Rhaenys loved to fly, spending more time on dragonback than her brother and sister combined, and was once heard to say that she meant to fly Meraxes across the Sunset Sea to see what lay upon its western shores."
 
- # The Dance of Dragons Units
- agotbm_vhagar2_unit:0 "Vhagar, the Queen of All Dragons"
+
+
+
+
+ ################################
+ # Dance of the Dragons - Units #
+ ################################
+
+ ######################################
+ # The Greens - Specific Dragon Units #
+ ######################################
+ agotbm_vhagar2_unit:0 "Vhagar"
  agotbm_vhagar2_unit_flavor:0 "Vhagar, nicknamed Queen of All Dragons, is the largest dragon in the realm, twice the size of Caraxes. Her scales are a deep jade. Named after a god of Old Valyria, she was ridden by Queen Visenya Targaryen during the conquest of Westeros, and later claimed by Laena Velaryon. After Laena's death, Aemond Targaryen answered Vhagar's call, becoming her rider, much to the dismay of Laena's children."
 
- agotbm_meleys_unit:0 "Meleys, the Red Queen"
- agotbm_meleys_unit_flavor:0 "Meleys, nicknamed the Red Queen, is a she-dragon ridden by Princess Rhaenys Targaryen. Covered in scarlet scales, she has accents of bright copper. It is her unique coloring for which she received her nickname. In her youth, she is said to have outpaced even Caraxes and Vhagar."
+ agotbm_sunfyre_unit:0 "Sunfyre"
+ agotbm_sunfyre_unit_flavor:0 "Sunfyre's egg hatched on Dragonstone. Although his exact year of birth has not been stated, he was described as being a "young" dragon in 120 AC and 129 AC. Although it is unknown when exactly Prince Aegon Targaryen claimed Sunfyre as his mount, he is known to have been claimed by the prince by 120 AC. Sunfyre is the most eye-catching dragon in the realm. His golden scales glisten when the sun shines upon them."
 
- agotbm_vermax_unit:0 "Vermax,"
- agotbm_vermax_unit_flavor:0 "Vermax is a younger dragon, bonded from birth to Jace Velaryon. He has olive green scales and pale orange wing membranes."
+ agotbm_vermithor_unit:0 "Vermithor"
+ agotbm_vermithor_unit_flavor:0 "Vermithor, known as the Bronze Fury, is the largest and oldest living dragon, after Vhagar. He was ridden by Jaehaerys I Targaryen until the king passed. Since then, Vermithor has remained unclaimed. Many men attempted to claim a dragon of their own; Lord Gormon Massey attempted to approach Vermithor, who burned him to death. Eventually, Vermithor bent his neck to a blacksmith’s bastard called Hugh Hammer."
 
- agotbm_moondancer_unit:0 "moondancer, the Queen of All Dragons"
- agotbm_moondancer_unit_flavor:0 "Vhagar hatched from a dragon egg on Dragonstone during the Century of Blood. She was named after a god of the Valyrian Freehold. At some point, Vhagar was claimed by Visenya Targaryen. Visenya first rode Vhagar, demonstrating she was a dragonrider, some time before she married her brother, Aegon."
+ agotbm_silverwing_unit:0 "Silverwing"
+ agotbm_silverwing_unit_flavor:0 "Silverwing was once ridden by Queen Alysanne Targaryen. She is the mate of Vermithor and is currently an unclaimed, wild dragon residing on Dragonmont. Silverwing returned to Dragonstone after Alysanne's death, where she made her lair in one of the smoking caverns of the Dragonmont. She remained there, riderless, until 129 AC, during the Dance of the Dragons. Ultimately, Silverwing accepted a dragonseed man-at-arms called Ulf the White as her new rider."
 
- agotbm_sunfyre_unit:0 "Sunfyre, the Golden"
- agotbm_sunfyre_unit_flavor:0 "Sunfyre is the most eye-catching dragon in the realm. His golden scales glisten when the sun shines upong them."
-
- agotbm_caraxes_unit:0 "Caraxes, the Blood Wyrm"
- agotbm_caraxes_unit_flavor:0 "Caraxes, nicknamed the Blood Wyrm, is ridden by Daemon Targaryen. He is a formidable, lean dragon with blood-red scales and an unusually long neck."
-
- agotbm_syrax_unit:0 "Syrax, the Queen's Mount" # Stopped here
- agotbm_syrax_unit_flavor:0 "Syrax, ridden by Rhaenyra Targaryen, is named after a goddess of Valyria. She is a young dragon with yellow scales and is not yet as forbidding as her counterparts."
-
- agotbm_tyraxes_unit:0 "Tyraxes," # Did not fight
- agotbm_tyraxes_unit_flavor:0 "Tyraxes is a young dragon who is bonded with Joffrey Velaryon. Tyraxes was thriving and growing larger every year, he was slightly smaller than Vermax and Arrax. By the time of the Dance of the Dragons, he had recently being able to fly long distances with its rider, but was not quite big enough for combat yet."
-
- agotbm_dreamfyre_unit:0 "Dreamfyre," # Did not fight
- agotbm_dreamfyre_unit_flavor:0 "Dreamfyre is a slender she-dragon. Her coloration iss primarily pale blue, with silver markings. She has silver crests and pale blue wings. During the reign of King Viserys I Targaryen, Dreamfyre bonded with Princess Helaena Targaryen. Helaena was riding Dreamfyre by age eleven, and the dragon is beloved to her."
-
- agotbm_seasmoke_unit:0 "Seasmoke, the Saltscale Dragon"
- agotbm_seasmoke_unit_flavor:0 "Seasmoke is a pale, silver-grey dragon. Still a young dragon, he is very nimble in the air. During the Dance of the Dragons, Laenor's "son", Prince Jacaerys Velaryon, desired new dragonriders for his faction. He offered knighthood, lands, and riches to whoever could claim the riderless dragons. Most of the attempts to claim a dragon ended in death or heavy burns in an event remember as the Red Sowing. In one of those attempt, Seasmoke killed Ser Steffon Darklyn, one of Rhaenyra Targaryen's Queensguard. Later, the fifteen-year-old Addam of Hull was able to claim and ride Seasmoke, however. Addam used Seasmoke to protect his younger brother, Alyn of Hull, from Sheepstealer during his attempt to claim him."
-
- agotbm_tessarion_unit:0 "Tessarion, the Blue Queen"
+ agotbm_tessarion_unit:0 "Tessarion"
  agotbm_tessarion_unit_flavor:0 "By 120 AC, Tessarion had bonded with Prince Daeron Targaryen, although Daeron had not yet ridden him at the time. Although unknown when Daeron first flew Tessarion, Daeron had become a dragonrider by 129 AC. Tessarion was a beautiful blue she-dragon. Her wings were a dark cobalt, while her claws, crest, and belly scales were the color of bright beaten copper. Her flames were cobalt blue in color as well."
 
- agotbm_vermithor_unit:0 "Vermithor, the Bronze Fury"
- agotbm_vermithor_unit_flavor:0 "Vermithor, known as the Bronze Fury, is the largest and oldest living dragon, after Vhagar. He was ridden by Jaehaerys I Targaryen until the king passed. Since then, Vermithor has remained unclaimed. In 129 AC, after the start of the Dance of the Dragons, Prince Jacaerys Velaryon decided that his mother's faction needed more dragonriders. Many men attempted to claim a dragon of their own; Lord Gormon Massey attempted to approach Vermithor, who burned him to death. Eventually, Vermithor bent his neck to a blacksmith’s bastard called Hugh Hammer."
+ ######################################
+ # The Blacks - Specific Dragon Units #
+ ######################################
+ agotbm_meleys_unit:0 "Meleys"
+ agotbm_meleys_unit_flavor:0 "Meleys, nicknamed the Red Queen, is a she-dragon ridden by Princess Rhaenys Targaryen. Covered in scarlet scales, she has accents of bright copper. It is her unique coloring for which she received her nickname. In her youth, she is said to have outpaced even Caraxes and Vhagar."
 
- agotbm_silverwing_unit:0 "Silverwing,"
- agotbm_silverwing_unit_flavor:0 "Silverwing was once ridden by Queen Alysanne Targaryen. She is the mate of Vermithor and is currently an unclaimed, wild dragon residing on Dragonmont. Silverwing returned to Dragonstone after Alysanne's death, where she made her lair in one of the smoking caverns of the Dragonmont. She remained there, riderless, until 129 AC, during the Dance of the Dragons. When Prince Jacaerys Velaryon decided that his mother Queen Rhaenyra Targaryen's faction, the blacks, needed more dragonriders, he sent out a call for men to claim one of the riderless dragons upon Dragonstone, in an event known as the Sowing of the Seeds."
+ agotbm_caraxes_unit:0 "Caraxes"
+ agotbm_caraxes_unit_flavor:0 "Caraxes, nicknamed the Blood Wyrm, is ridden by Daemon Targaryen. He is a formidable, lean dragon with blood-red scales and an unusually long neck. In battle he iss formidable, fearsome, and experienced."
 
- agotbm_sheepstealer_unit:0 "Sheepstealer, the Queen of All Dragons"
- agotbm_sheepstealer_unit_flavor:0 "Sheepstealer's dragon egg hatched when the Old King Jaehaerys I Targaryen "was still young". Sheepstealer made his lair in the caverns of the Dragonmont on Dragonstone, and would hunt sheep as far as on Driftmark and at the Wendwater. Sheepstealer went unclaimed by any rider in his youth, which made him more and more unused to the presence of men and harder to claim with each passing year. Eventually he spent over seven decades living wild on Dragonstone, snatching sheep from pastures across Blackwater Bay."
+ agotbm_syrax_unit:0 "Syrax"
+ agotbm_syrax_unit_flavor:0 "Syrax, ridden by Rhaenyra Targaryen, is named after a goddess of Valyria. She is a young dragon with yellow scales and is not yet as forbidding as her counterparts."
 
- # Dragons MAA types
+ agotbm_vermax_unit:0 "Vermax"
+ agotbm_vermax_unit_flavor:0 "Vermax is a younger dragon, bonded from birth to Jacaerys Velaryon. He has olive green scales and pale orange wing membranes. By the time the Dance of the Dragons began, Vermax was big enough to ride."
+
+ agotbm_moondancer_unit:0 "Moondancer"
+ agotbm_moondancer_unit_flavor:0 "Moondancer was a slender pale green. Her horns, crest and wingbones were pearl. She was very quick, both in the sky and on the ground. Although in 129 AC Moondancer was not yet considered large enough to carry the thirteen-year old Baela Targaryen upon her back, a year later Baela was able to mount the dragon. At the time, Moondancer was no larger than a warhorse, and weighed less."
+
+ agotbm_seasmoke_unit:0 "Seasmoke"
+ agotbm_seasmoke_unit_flavor:0 "Seasmoke is a pale, silver-grey dragon. Still a young dragon, he is very nimble in the air. During the Dance of the Dragons, Prince Jacaerys Velaryon, desired new dragonriders for his faction. He offered knighthood, lands, and riches to whoever could claim the riderless dragons. The fifteen-year-old Addam of Hull was able to claim and ride Seasmoke. Addam used Seasmoke to protect his younger brother, Alyn of Hull, from Sheepstealer during his attempt to claim him."
+
+ agotbm_sheepstealer_unit:0 "Sheepstealer"
+ agotbm_sheepstealer_unit_flavor:0 "Sheepstealer made his lair in the caverns of the Dragonmont on Dragonstone, and would hunt sheep as far as on Driftmark and at the Wendwater. Sheepstealer went unclaimed by any rider in his youth. A bastard girl named Nettles eventually managed to tame the dragon, through a cunning method. She left out a freshly killed sheep for the dragon every morning, causing the dragon to grow accustomed to her presence, until he allowed her to mount him."
+
+ #################
+ # Did not fight #
+ #################
+ agotbm_tyraxes_unit:0 "Tyraxes"
+ agotbm_tyraxes_unit_flavor:0 "Tyraxes is a young dragon who is bonded with Joffrey Velaryon. Tyraxes was thriving and growing larger every year, he was slightly smaller than Vermax and Arrax. By the time of the Dance of the Dragons, he had recently being able to fly long distances with its rider, but was not quite big enough for combat yet."
+
+ agotbm_dreamfyre_unit:0 "Dreamfyre"
+ agotbm_dreamfyre_unit_flavor:0 "Dreamfyre is a slender she-dragon. Her coloration iss primarily pale blue, with silver markings. She has silver crests and pale blue wings. During the reign of King Viserys I Targaryen, Dreamfyre bonded with Princess Helaena Targaryen. Helaena was riding Dreamfyre by age eleven, and the dragon is beloved to her."
+
+ ######################
+ # Easter Egg Dragons #
+ ######################
+ agotbm_cookie_unit:0 "Crumbs, the Allfather's Dragon"
+ agotbm_cookie_unit_flavor:0 "Baked for 20 minutes until golden brown."
+
+
+
+
+
+ #############################
+ # AGOT Bookmarked MAA Types #
+ #############################
+
+ ##################################################
+ # Unique Unit Types For Displaying Game Concepts #
+ ##################################################
  agotbm_dragons:0 "[agotbm_dragons|E]"
 
- # AGOT Bookmarked Game Concepts
+ agotbm_balerion:0 "[agotbm_balerion|E]"
+ agotbm_vhagar:0 "[agotbm_vhagar|E]"
+ agotbm_meraxes:0 "[agotbm_meraxes|E]"
+
+ agotbm_sunfyre:0 "[agotbm_sunfyre|E]"
+ agotbm_vermithor:0 "[agotbm_vermithor|E]"
+ agotbm_silverwing:0 "[agotbm_silverwing|E]"
+ agotbm_tessarion:0 "[agotbm_tessarion|E]"
+
+ agotbm_meleys:0 "[agotbm_meleys|E]"
+ agotbm_caraxes:0 "[agotbm_caraxes|E]"
+ agotbm_syrax:0 "[agotbm_syrax|E]"
+ agotbm_vermax:0 "[agotbm_vermax|E]"
+ agotbm_moondancer:0 "[agotbm_moondancer|E]"
+ agotbm_seasmoke:0 "[agotbm_seasmoke|E]"
+ agotbm_sheepstealer:0 "[agotbm_sheepstealer|E]"
+
+
+
+
+
+ #################################
+ # AGOT Bookmarked Game Concepts #
+ #################################
+
+ #################################
+ # General Dragon - Unit Concept #
+ #################################
  game_concept_agotbm_dragons:0 "Dragons"
  game_concept_agotbm_dragons_desc:0 "Dragons are massive, flying reptile [men_at_arms|E] that can breathe fire. Dragons possess awesome and devastating power, capable of laying waste to armies and burning entire cities to ashes.\n\nDragons will [counter|E] every known troop type.\n\nSince Dragons can fly, they are not weakened by any sort of [terrain|E] types."
+
+ ####################################
+ # Aegon's Conquest - Unit Concepts #
+ ####################################
+ game_concept_agotbm_balerion:0 "Balerion, the Black Dread"
+ game_concept_agotbm_balerion_desc:0 "Balerion was named after an ancient god of the Valyrian Freehold. He was born in Valyria, and was one of the five dragons Aenar Targaryen brought with him when he fled to Dragonstone to survive the Doom of Valyria. After the other four of Aenar's dragons died, Balerion became the last creature to have seen the Freehold in its prime."
+
+ game_concept_agotbm_vhagar:0 "Vhagar, the Queen of All Dragons"
+ game_concept_agotbm_vhagar_desc:0 "Vhagar hatched from a dragon egg on Dragonstone during the Century of Blood. She was named after a god of the Valyrian Freehold. At some point, Vhagar was claimed by Visenya Targaryen. Visenya first rode Vhagar, demonstrating she was a dragonrider, some time before she married her brother, Aegon."
+
+ game_concept_agotbm_meraxes:0 "Meraxes, the Silver Sister"
+ game_concept_agotbm_meraxes_desc:0 "Meraxes was named for a god of the Valyrian Freehold. Her egg hatched on Dragonstone during the Century of Blood. At some point, Meraxes was claimed by Rhaenys Targaryen. Rhaenys first rode Meraxes, demonstrating she was a dragonrider, some time before she married her brother, Aegon. Rhaenys loved to fly, spending more time on dragonback than her brother and sister combined, and was once heard to say that she meant to fly Meraxes across the Sunset Sea to see what lay upon its western shores."
+
+ ########################################
+ # Dance of the Dragons - Unit Concepts #
+ ########################################
+
+ ##############################################
+ # The Greens - Specific Dragon Unit Concepts #
+ ##############################################
+ game_concept_agotbm_sunfyre:0 "Sunfyre, the Golden"
+ game_concept_agotbm_sunfyre_desc:0 "Sunfyre's egg hatched on Dragonstone. Although his exact year of birth has not been stated, he was described as being a "young" dragon in 120 AC and 129 AC. Although it is unknown when exactly Prince Aegon Targaryen claimed Sunfyre as his mount, he is known to have been claimed by the prince by 120 AC. Sunfyre is the most eye-catching dragon in the realm. His golden scales glisten when the sun shines upon them."
+
+ game_concept_agotbm_vermithor:0 "Vermithor, the Bronze Fury"
+ game_concept_agotbm_vermithor_desc:0 "Vermithor, known as the Bronze Fury, is the largest and oldest living dragon, after Vhagar. He was ridden by Jaehaerys I Targaryen until the king passed. Since then, Vermithor has remained unclaimed. Many men attempted to claim a dragon of their own; Lord Gormon Massey attempted to approach Vermithor, who burned him to death. Eventually, Vermithor bent his neck to a blacksmith’s bastard called Hugh Hammer."
+
+ game_concept_agotbm_silverwing:0 "Silverwing, the Good Queen's Grace"
+ game_concept_agotbm_silverwing_desc:0 "Silverwing was once ridden by Queen Alysanne Targaryen. She is the mate of Vermithor and is currently an unclaimed, wild dragon residing on Dragonmont. Silverwing returned to Dragonstone after Alysanne's death, where she made her lair in one of the smoking caverns of the Dragonmont. She remained there, riderless, until 129 AC, during the Dance of the Dragons. Ultimately, Silverwing accepted a dragonseed man-at-arms called Ulf the White as her new rider."
+
+ game_concept_agotbm_tessarion:0 "Tessarion, the Blue Queen"
+ game_concept_agotbm_tessarion_desc:0 "By 120 AC, Tessarion had bonded with Prince Daeron Targaryen, although Daeron had not yet ridden him at the time. Although unknown when Daeron first flew Tessarion, Daeron had become a dragonrider by 129 AC. Tessarion was a beautiful blue she-dragon. Her wings were a dark cobalt, while her claws, crest, and belly scales were the color of bright beaten copper. Her flames were cobalt blue in color as well."
+
+ ##############################################
+ # The Blacks - Specific Dragon Unit Concepts #
+ ##############################################
+ game_concept_agotbm_meleys:0 "Meleys, the Red Queen"
+ game_concept_agotbm_meleys_desc:0 "Meleys, nicknamed the Red Queen, is a she-dragon ridden by Princess Rhaenys Targaryen. Covered in scarlet scales, she has accents of bright copper. It is her unique coloring for which she received her nickname. In her youth, she is said to have outpaced even Caraxes and Vhagar."
+
+ game_concept_agotbm_caraxes:0 "Caraxes, the Blood Wyrm"
+ game_concept_agotbm_caraxes_desc:0 "Caraxes, nicknamed the Blood Wyrm, is ridden by Daemon Targaryen. He is a formidable, lean dragon with blood-red scales and an unusually long neck. In battle he iss formidable, fearsome, and experienced."
+
+ game_concept_agotbm_syrax:0 "Syrax, the Queen's Mount"
+ game_concept_agotbm_syrax_desc:0 "Syrax, ridden by Rhaenyra Targaryen, is named after a goddess of Valyria. She is a young dragon with yellow scales and is not yet as forbidding as her counterparts."
+
+ game_concept_agotbm_vermax:0 "Vermax, the Cold Blooded"
+ game_concept_agotbm_vermax_desc:0 "Vermax is a younger dragon, bonded from birth to Jacaerys Velaryon. He has olive green scales and pale orange wing membranes. By the time the Dance of the Dragons began, Vermax was big enough to ride."
+
+ game_concept_agotbm_moondancer:0 "Moondancer, the Light in the Dark"
+ game_concept_agotbm_moondancer_desc:0 "Moondancer was a slender pale green. Her horns, crest and wingbones were pearl. She was very quick, both in the sky and on the ground. Although in 129 AC Moondancer was not yet considered large enough to carry the thirteen-year old Baela Targaryen upon her back, a year later Baela was able to mount the dragon. At the time, Moondancer was no larger than a warhorse, and weighed less."
+
+ game_concept_agotbm_seasmoke:0 "Seasmoke, the Saltscale Dragon"
+ game_concept_agotbm_seasmoke_desc:0 "Seasmoke is a pale, silver-grey dragon. Still a young dragon, he is very nimble in the air. During the Dance of the Dragons, Prince Jacaerys Velaryon, desired new dragonriders for his faction. He offered knighthood, lands, and riches to whoever could claim the riderless dragons. The fifteen-year-old Addam of Hull was able to claim and ride Seasmoke. Addam used Seasmoke to protect his younger brother, Alyn of Hull, from Sheepstealer during his attempt to claim him."
+
+ game_concept_agotbm_sheepstealer:0 "Sheepstealer, the Wild Wyrm"
+ game_concept_agotbm_sheepstealer_desc:0 "Sheepstealer made his lair in the caverns of the Dragonmont on Dragonstone, and would hunt sheep as far as on Driftmark and at the Wendwater. Sheepstealer went unclaimed by any rider in his youth. A bastard girl named Nettles eventually managed to tame the dragon, through a cunning method. She left out a freshly killed sheep for the dragon every morning, causing the dragon to grow accustomed to her presence, until he allowed her to mount him."
+
+ ##############################
+ # Easter Egg Dragon Concepts #
+ ##############################
+ game_concept_agotbm_crumbs:0 "Crumbs, the Allfather's Bake"
+ game_concept_agotbm_crumbs_desc:0 "Crumbs was hatched in an oven of the Crossroads Inn. Golden brown with chocolate colored patches, he is a swift and fierce dragon. Crumbs is about the size you would expect for a baked good, however his head was far too large for his body."

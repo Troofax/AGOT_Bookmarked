@@ -573,7 +573,7 @@ Baratheon_4 = {
 Baratheon_5 = {
 	name = Joffrey # Canon
 	dynasty = dynn_Baratheon
-	dna = Baratheon_5 # AGOT Bookmarked Added
+	# dna = Baratheon_5
 
 	martial = 6
 	diplomacy = 4
@@ -806,7 +806,7 @@ Baratheon_6 = {
 	dynasty = dynn_Baratheon
 	female = yes
 
-	dna = Baratheon_Myrcella # AGOT Bookmarked Added/Needs Fixed
+	# dna = Baratheon_6 # AGOT Bookmarked Disabled
 
 	martial = 4
 	diplomacy = 6
@@ -917,7 +917,7 @@ Baratheon_6 = {
 Baratheon_7 = {
 	name = Tommen # Canon
 	dynasty = dynn_Baratheon
-	dna = Baratheon_7 # AGOT Bookmarked Added
+	# dna = Baratheon_7
 
 	martial = 5
 	diplomacy = 4

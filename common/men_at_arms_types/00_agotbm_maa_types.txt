@@ -1,7 +1,15 @@
-﻿# AGOT Bookmarked
+﻿###################
+# AGOT Bookmarked #
+###################
+
+######################
+# Value Designations #
+######################
 @agotbm_dragons_maa_ai_score = 200
 
-# Aegon's Conquest MAA
+#######################
+# General Dragon Unit #
+#######################
 agotbm_dragons_unit = {
 	type = agotbm_dragons
 	fights_in_main_phase = yes
@@ -28,6 +36,7 @@ agotbm_dragons_unit = {
 		skirmishers = 5
 		light_cavalry = 5
 		heavy_cavalry = 5
+		agotbm_dragons = 1
 	}
 
 	buy_cost = { gold = agotbm_dragons_recruitment_cost }
@@ -41,7 +50,14 @@ agotbm_dragons_unit = {
 	icon = agotbm_dragons
 }
 
-agotbm_balerion_unit = {
+##########################
+# Aegon's Conquest Units #
+##########################
+
+###########################################
+# Aegon Targaryen - Specific Dragon Units #
+###########################################
+agotbm_balerion_unit = { # Balerion, the Black Dread
 	type = agotbm_dragons
 	fights_in_main_phase = yes
 	can_recruit = { always = no }
@@ -50,13 +66,13 @@ agotbm_balerion_unit = {
 		# this = { has_trait = dragon_rider }
 	# }
 	
-	damage = 140900
-	toughness = 240400
-	pursuit = 82000
-	screen = 148800
+	damage = 200000
+	toughness = 1800000
+	pursuit = 224000
+	screen = 548000
 
 	#siege_tier = 5
-	siege_value = 2.0
+	siege_value = 11115.2 # #1
 	
 	terrain_bonus = {}
 
@@ -67,6 +83,7 @@ agotbm_balerion_unit = {
 		skirmishers = 5
 		light_cavalry = 5
 		heavy_cavalry = 5
+		agotbm_dragons = 1
 	}
 
 	buy_cost = { gold = agotbm_dragons_recruitment_cost }
@@ -79,7 +96,7 @@ agotbm_balerion_unit = {
 	ai_quality = { value = @agotbm_dragons_maa_ai_score }
 	icon = agotbm_balerion
 }
-agotbm_vhagar_unit = {
+agotbm_vhagar_unit = { # Vhagar, the Queen of All Dragons
 	type = agotbm_dragons
 	fights_in_main_phase = yes
 	can_recruit = { always = no }
@@ -88,13 +105,13 @@ agotbm_vhagar_unit = {
 		# this = { has_trait = dragon_rider }
 	# }
 	
-	damage = 140900
-	toughness = 240400
-	pursuit = 82000
-	screen = 148800
+	damage = 180000
+	toughness = 1740000
+	pursuit = 110000
+	screen = 564000
 
 	#siege_tier = 5
-	siege_value = 2.0
+	siege_value = 11114.8 # #2
 	
 	terrain_bonus = {}
 
@@ -105,6 +122,7 @@ agotbm_vhagar_unit = {
 		skirmishers = 5
 		light_cavalry = 5
 		heavy_cavalry = 5
+		agotbm_dragons = 1
 	}
 
 	buy_cost = { gold = agotbm_dragons_recruitment_cost }
@@ -117,7 +135,7 @@ agotbm_vhagar_unit = {
 	ai_quality = { value = @agotbm_dragons_maa_ai_score }
 	icon = agotbm_vhagar
 }
-agotbm_meraxes_unit = {
+agotbm_meraxes_unit = { # Meraxes, the Silver Sister
 	type = agotbm_dragons
 	fights_in_main_phase = yes
 	can_recruit = { always = no }
@@ -126,13 +144,13 @@ agotbm_meraxes_unit = {
 		# this = { has_trait = dragon_rider }
 	# }
 	
-	damage = 140900
-	toughness = 240400
-	pursuit = 82000
-	screen = 148800
+	damage = 160000
+	toughness = 1630000
+	pursuit = 98000
+	screen = 472000
 
 	#siege_tier = 5
-	siege_value = 2.0
+	siege_value = 11113.8 # #7
 	
 	terrain_bonus = {}
 
@@ -143,6 +161,7 @@ agotbm_meraxes_unit = {
 		skirmishers = 5
 		light_cavalry = 5
 		heavy_cavalry = 5
+		agotbm_dragons = 1
 	}
 
 	buy_cost = { gold = agotbm_dragons_recruitment_cost }
@@ -154,4 +173,528 @@ agotbm_meraxes_unit = {
 	allowed_in_hired_troops = no
 	ai_quality = { value = @agotbm_dragons_maa_ai_score }
 	icon = agotbm_meraxes
+}
+
+##############################
+# Dance of the Dragons Units #
+##############################
+
+######################################
+# The Greens - Specific Dragon Units #
+######################################
+agotbm_vhagar2_unit = { # Vhagar, the Queen of All Dragons
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 180000
+	toughness = 240000
+	pursuit = 110000
+	screen = 164000
+
+	#siege_tier = 5
+	siege_value = 4.8
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_vhagar2
+}
+agotbm_sunfyre_unit = { # Sunfyre, the Golden
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 125000
+	toughness = 140000
+	pursuit = 80000
+	screen = 132000
+
+	#siege_tier = 5
+	siege_value = 4.0 # #6
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_sunfyre
+}
+agotbm_vermithor_unit = { # Vermithor, the Bronze Fury
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 155000
+	toughness = 220000
+	pursuit = 112000
+	screen = 154000
+
+	#siege_tier = 5
+	siege_value = 4.4 # #4
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_vermithor
+}
+agotbm_silverwing_unit = { # Silverwing, the Good Queen's Grace
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 170000
+	toughness = 200000
+	pursuit = 92000
+	screen = 146000
+
+	#siege_tier = 5
+	siege_value = 3.6 # #9
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_silverwing
+}
+agotbm_tessarion_unit = { # Tessarion, the Blue Queen
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 120000
+	toughness = 140000
+	pursuit = 72000
+	screen = 130000
+
+	#siege_tier = 5
+	siege_value = 3.0 # #15
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_tessarion
+}
+
+######################################
+# The Blacks - Specific Dragon Units #
+######################################
+agotbm_meleys_unit = { # Meleys, the Red Queen
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 150000
+	toughness = 180000
+	pursuit = 142000
+	screen = 198000
+
+	#siege_tier = 5
+	siege_value = 4.2 # #5
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_meleys
+}
+agotbm_caraxes_unit = { # Caraxes, the Blood Wyrm
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 150000
+	toughness = 180000
+	pursuit = 136000
+	screen = 192000
+
+	#siege_tier = 5
+	siege_value = 4.6 # #3
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_caraxes
+}
+agotbm_syrax_unit = { # Syrax, the Queen's Mount
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 145000
+	toughness = 160000
+	pursuit = 90000
+	screen = 142000
+
+	#siege_tier = 5
+	siege_value = 3.2 # #14
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_syrax
+}
+agotbm_vermax_unit = { # Vermax, the Cold Blooded
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 100000
+	toughness = 120000
+	pursuit = 70000
+	screen = 130000
+
+	#siege_tier = 5
+	siege_value = 2.8 # #24
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_vermax
+}
+agotbm_moondancer_unit = { # Moondancer, the Light in the Dark
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 100000
+	toughness = 120000
+	pursuit = 68000
+	screen = 140000
+
+	#siege_tier = 5
+	siege_value = 2.8 # #19
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_moondancer
+}
+agotbm_seasmoke_unit = { # Seasmoke, the Saltscale Dragon
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 125000
+	toughness = 140000
+	pursuit = 74000
+	screen = 128000
+
+	#siege_tier = 5
+	siege_value = 2.8 # #16
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_seasmoke
+}
+agotbm_sheepstealer_unit = { # Sheepstealer, the Wild Wyrm
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 170000
+	toughness = 200000
+	pursuit = 94000
+	screen = 148000
+
+	#siege_tier = 5
+	siege_value = 3.4 # #12
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_sheepstealer
+}
+
+####################
+# Easter Egg Units #
+####################
+agotbm_cookie_unit = { # Crumbs, the Allfather's Dragon
+	name = agotbm_cookie_unit
+	type = agotbm_dragons
+	fights_in_main_phase = yes
+	can_recruit = { always = no }
+	# can_recruit = {
+		# exists = this
+		# this = { has_trait = dragon_rider }
+	# }
+	
+	damage = 120000
+	toughness = 160000
+	pursuit = 64000
+	screen = 118000
+
+	#siege_tier = 5
+	siege_value = 3.0
+	
+	terrain_bonus = {}
+
+	counters = {
+		archers = 5
+		heavy_infantry = 5
+		pikemen = 5
+		skirmishers = 5
+		light_cavalry = 5
+		heavy_cavalry = 5
+		agotbm_dragons = 1
+	}
+
+	buy_cost = { gold = agotbm_dragons_recruitment_cost }
+	low_maintenance_cost = { gold = agotbm_dragons_low_maint_cost }
+	high_maintenance_cost = { gold = agotbm_dragons_high_maint_cost }
+
+	stack = 1
+	max_sub_regiments = 1
+	allowed_in_hired_troops = no
+	ai_quality = { value = @agotbm_dragons_maa_ai_score }
+	icon = agotbm_cookie
 }

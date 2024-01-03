@@ -1,19 +1,21 @@
-﻿## AGOT ADDED FILE - Bookmark groups
-# AGOT Bookmarked
+﻿###################
+# AGOT Bookmarked #
+###################
+
 agot_bm_group_AC = { # Aegon's Conquest
 	default_start_date = 7998.1.1
 }
 
-agot_bm_group_TDOD = { # The Dance of Dragons
+agot_bm_group_TDOD = { # Dance of the Dragons
 	default_start_date = 8129.4.1
-}
-
-agot_bm_group_DOD = { # Defiance of Duskendale
-	default_start_date = 8277.1.1
 }
 
 agot_bm_group_BR = { # Blackfyre Rebellion #1
 	default_start_date = 8195.3.7
+}
+
+agot_bm_group_DOD = { # Defiance of Duskendale
+	default_start_date = 8277.1.1
 }
 
 agot_bm_group_ACOK = { # A Clash of Kings

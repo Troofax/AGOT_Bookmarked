@@ -2570,6 +2570,23 @@ agot_on_game_start_after_lobby = {
 			}
 			# AGOT Bookmarked Added
 			if = { # manage 8195.3.7 1st Blackfyre Rebellion scenario
+				limit = { game_start_date = 7998.1.1 }
+
+				agot_7998_1_1_conquest_scenario_setup = yes
+			}
+			if = { # manage 8129.4.1 Dance of the Dragons scenario
+				limit = { game_start_date = 8129.4.1 }
+
+				agot_8129_4_1_dotd_scenario_setup = yes
+				# AGOT Bookmarked Disabled
+				# character:Targaryen_76  = {
+					# agot_create_artifact_lucerys_gun_effect  = { OWNER = this }
+					# scope:newly_created_artifact = {
+						# equip_artifact_to_owner_replace = yes
+					# }
+				# }
+			}
+			if = { # manage 8195.3.7 1st Blackfyre Rebellion scenario
 				limit = { game_start_date = 8195.3.7 }
 
 				agot_8195_3_7_br_i_scenario_setup = yes
@@ -2584,22 +2601,15 @@ agot_on_game_start_after_lobby = {
 
 				agot_8284_6_2_scenario_setup = yes
 			}
+			if = { # manage 8298.12.21 War of the Five Kings scenario
+				limit = { game_start_date = 8298.12.21 }
+
+				agot_8298_12_21_wotfk_scenario_setup = yes
+			}
 			if = { # manage 8299.3.3 A Clash of Kings scenario
 				limit = { game_start_date = 8299.3.3 }
 
 				agot_8299_3_3_acok_scenario_setup = yes
-			}
-			if = { # manage 8129.4.1 The Dance of Dragons scenario
-				limit = { game_start_date = 8129.4.1 }
-
-				agot_8129_4_1_tdod_scenario_setup = yes
-
-				# character:Targaryen_76  = {
-					# agot_create_artifact_lucerys_gun_effect  = { OWNER = this }
-					# scope:newly_created_artifact = {
-						# equip_artifact_to_owner_replace = yes
-					# }
-				# }
 			}
 		}
 
