@@ -1,5 +1,11 @@
-﻿# AGOT Bookmarked COA Additions
-d_southstone = { # Harys Bracken for 195 bookmark
+﻿###################
+# AGOT Bookmarked #
+###################
+
+###############################
+# COA Additions for Bookmarks #
+###############################
+d_southstone = { # Harys Bracken (Southstone) for 195 bookmark
 	pattern="pattern_solid.dds"
 	color1=agot_brown_dark
 	color2=agot_yellow
@@ -11,7 +17,7 @@ d_southstone = { # Harys Bracken for 195 bookmark
 	}
 }
 
-d_duskendale = { # Denys Darklyn for 277 bookmark
+d_duskendale = { # Denys Darklyn (Duskendale) for 277 bookmark
 	pattern = "pattern_solid.dds"
 	color1 = "agot_black"
 	color2 = "agot_yellow"

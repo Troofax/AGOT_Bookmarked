@@ -1,4 +1,94 @@
-﻿agotbm_dragons = {
+﻿#######################
+# General Dragon Unit #
+#######################
+agotbm_dragons = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+############################
+# Aegon's Conquest - Units #
+############################
+
+###########################################
+# Aegon Targaryen - Specific Dragon Units #
+###########################################
+agotbm_balerion = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+agotbm_vhagar = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+agotbm_meraxes = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+################################
+# Dance of the Dragons - Units #
+################################
+
+######################################
+# The Greens - Specific Dragon Units #
+######################################
+agotbm_sunfyre = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+agotbm_vermithor = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+agotbm_silverwing = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+agotbm_tessarion = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+######################################
+# The Blacks - Specific Dragon Units #
+######################################
+agotbm_meleys = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+agotbm_caraxes = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+agotbm_syrax = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+agotbm_vermax = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+agotbm_moondancer = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+agotbm_seasmoke = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}
+
+agotbm_sheepstealer = {
 	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
 	parent = men_at_arms
 }

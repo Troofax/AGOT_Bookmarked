@@ -1,5 +1,8 @@
-﻿############
-#8300#
+﻿###################
+# AGOT Bookmarked #
+###################
+
+# A Feast for Crows Scenario
 agot_8300_3_1_affc_scenario_setup = {
 	### RULER DESIGNER FIX ###
 	# Stannis aganist Lannisters

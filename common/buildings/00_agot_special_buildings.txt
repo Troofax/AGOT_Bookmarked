@@ -168,18 +168,19 @@ dragonpit_01 = {
 	character_modifier = {
 		monthly_prestige_gain_mult = -0.05
 		dread_gain_mult = 0.1
-		# AGOT Bookmarked Added
-		agotbm_dragons_maintenance_mult = 0.25
-		agotbm_dragons_damage_mult = 0.25
-		agotbm_dragons_pursuit_mult = 0.25
-		agotbm_dragons_screen_mult = 0.25
-		agotbm_dragons_toughness_mult = 0.25
-		agotbm_dragons_maintenance_mult = -0.1
 	}
 
 	province_modifier = {
 		defender_holding_advantage = 2
 		monthly_income = -1
+	}
+
+	county_modifier = {
+		# AGOT Bookmarked Added
+		agotbm_dragons_damage_mult = 0.22
+		agotbm_dragons_toughness_mult = 0.25
+		agotbm_dragons_pursuit_mult = 0.18
+		agotbm_dragons_screen_mult = 0.26
 	}
 
 	ai_value = {
@@ -662,16 +663,19 @@ dragonstone_01 = {
 		men_at_arms_maintenance = -0.1
 		knight_effectiveness_mult = 0.2
 		# AGOT Bookmarked Added
-		agotbm_dragons_maintenance_mult = 0.25
-		agotbm_dragons_damage_mult = 0.25
-		agotbm_dragons_pursuit_mult = 0.25
-		agotbm_dragons_screen_mult = 0.25
-		agotbm_dragons_toughness_mult = 0.25
-		agotbm_dragons_maintenance_mult = -0.1
+		agotbm_dragons_damage_mult = 0.05
+		agotbm_dragons_toughness_mult = 0.1
+		agotbm_dragons_pursuit_mult = 0.04
+		agotbm_dragons_screen_mult = 0.08
 	}
 	province_modifier = {
 		defender_holding_advantage = 8
 		fort_level = 6
+
+		agotbm_dragons_damage_mult = 0.40
+		agotbm_dragons_toughness_mult = 0.50
+		agotbm_dragons_pursuit_mult = 0.32
+		agotbm_dragons_screen_mult = 0.48
 	}
 	county_modifier = {
 		development_growth_factor = 0.1

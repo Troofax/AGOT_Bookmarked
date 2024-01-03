@@ -1,7 +1,11 @@
 ﻿l_english:
- # AGOT Bookmarked
+ ###################
+ # AGOT Bookmarked #
+ ###################
 
- # Aegon's Conquest Dragons Units
+ #########################
+ # Dragon Unit Modifiers #
+ #########################
  agotbm_dragons_damage_add:1 "[agotbm_dragons|E] [damage|E]"
  agotbm_dragons_damage_mult:0 "$agotbm_dragons_damage_add$"
  agotbm_dragons_toughness_add:1 "[agotbm_dragons|E] [toughness|E]"

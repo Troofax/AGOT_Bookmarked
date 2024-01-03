@@ -1,0 +1,22 @@
+﻿###################
+# AGOT Bookmarked #
+###################
+
+# Aegon's Conquest Scenario
+agot_7998_1_1_conquest_scenario_setup = {
+	hidden_effect = {
+		if = {
+			limit = { game_start_date = 7998.1.1 }
+		}
+		character:Targaryen_27 = {
+			save_scope_as = aegon_i
+		}
+		scope:aegon_i = {
+			add_pressed_claim = title:e_the_iron_throne
+			add_pressed_claim = title:k_the_crownlands
+			add_pressed_claim = title:d_kings_landing
+			add_pressed_claim = title:c_kings_landing
+			add_pressed_claim = title:b_the_red_keep
+		}
+	}
+}

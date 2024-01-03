@@ -1,16 +1,18 @@
-﻿# AGOT Bookmarked
+﻿###################
+# AGOT Bookmarked #
+###################
 
-on_game_start = {
-	on_actions = {
-		agotbm_on_game_start
-	}
-}
+# on_game_start = {
+	# on_actions = {
+		# agotbm_on_game_start
+	# }
+# }
 
-agotbm_on_game_start = {
-	effect = {
-		if = { # A Feast for Crows Scenario
-			limit = { current_date = 8300.3.1 }
-			agot_8300_3_1_affc_scenario_setup = yes
-		}
-	}
-}
+# agotbm_on_game_start = {
+	# effect = {
+		# if = { # A Feast for Crows Scenario
+			# limit = { current_date = 8300.3.1 }
+			# agot_8300_3_1_affc_scenario_setup = yes
+		# }
+	# }
+# }

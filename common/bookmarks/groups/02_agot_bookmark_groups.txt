@@ -3,7 +3,7 @@ agot_bm_group_AC = { # Aegon's Conquest
 	default_start_date = 7998.1.1
 }
 
-agot_bm_group_TDOD = { # The Dance of Dragons
+agot_bm_group_TDOD = { # Dance of the Dragons
 	default_start_date = 8129.4.1
 }
 
