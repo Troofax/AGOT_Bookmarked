@@ -6,7 +6,7 @@
 
 # Year 7998 The War of Conquest
 agot_bm_7998 = {
-	start_date = 7998.1.1
+	start_date = 7998.1.2 #
 	is_playable = yes
 	group = agot_bm_group_AC # Aegon's Conquest
 
@@ -205,7 +205,7 @@ agot_bm_8195 = {
 	}
 }
 
-# The Defiance of Duskendale
+# Year 8277 The Defiance of Duskendale
 agot_bm_8277 = {
 	start_date = 8277.1.1
 	is_playable = yes
@@ -359,6 +359,23 @@ agot_bm_8298 = {
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Baratheon_3
 		position = { 1122 155 }
+		animation = marshal
+	}
+
+	# Balon Greyjoy (The Iron Islands) ID: Greyjoy_5
+	character = {
+		name = "bookmark_298_balon_greyjoy"
+		dynasty = dynn_Greyjoy
+		dynasty_splendor_level = 4
+		type = male
+		title = k_the_iron_islands
+		religion = drowned_god_main
+		culture = ironborn
+		birth = 8219.1.1
+		government = lp_feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = Greyjoy_5
+		position = { 170 275 }
 		animation = marshal
 	}
 

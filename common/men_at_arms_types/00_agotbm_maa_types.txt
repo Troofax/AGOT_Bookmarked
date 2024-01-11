@@ -67,12 +67,12 @@ agotbm_balerion_unit = { # Balerion, the Black Dread
 	# }
 	
 	damage = 200000
-	toughness = 1800000
-	pursuit = 224000
-	screen = 548000
+	toughness = 300000
+	pursuit = 124000
+	screen = 184000
 
 	#siege_tier = 5
-	siege_value = 11115.2 # #1
+	siege_value = 5.2 # #1
 	
 	terrain_bonus = {}
 
@@ -106,12 +106,12 @@ agotbm_vhagar_unit = { # Vhagar, the Queen of All Dragons
 	# }
 	
 	damage = 180000
-	toughness = 1740000
+	toughness = 240000
 	pursuit = 110000
-	screen = 564000
+	screen = 164000
 
 	#siege_tier = 5
-	siege_value = 11114.8 # #2
+	siege_value = 4.8 # #2
 	
 	terrain_bonus = {}
 
@@ -145,12 +145,12 @@ agotbm_meraxes_unit = { # Meraxes, the Silver Sister
 	# }
 	
 	damage = 160000
-	toughness = 1630000
+	toughness = 230000
 	pursuit = 98000
-	screen = 472000
+	screen = 172000
 
 	#siege_tier = 5
-	siege_value = 11113.8 # #7
+	siege_value = 3.8 # #7
 	
 	terrain_bonus = {}
 

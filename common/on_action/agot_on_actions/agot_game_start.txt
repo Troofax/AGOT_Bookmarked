@@ -2569,8 +2569,8 @@ agot_on_game_start_after_lobby = {
 				}
 			}
 			# AGOT Bookmarked Added
-			if = { # manage 8195.3.7 1st Blackfyre Rebellion scenario
-				limit = { game_start_date = 7998.1.1 }
+			if = {
+				limit = { game_start_date = 7998.1.2 }
 
 				agot_7998_1_1_conquest_scenario_setup = yes
 			}

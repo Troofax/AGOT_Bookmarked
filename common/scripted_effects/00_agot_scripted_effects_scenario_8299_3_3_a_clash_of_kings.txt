@@ -109,12 +109,7 @@ agot_8299_3_3_acok_scenario_setup = {
 			# ADD REBEL SUPPORTERS #
 			# Add vassal rebels
 			every_vassal_or_below = {
-				limit = {
-					primary_title.tier > tier_barony
-					NOR = {
-						primary_title = title:k_the_most_devout
-					}
-				}
+				limit = { primary_title.tier > tier_barony }
 
 				scope:mw_rebel_story = {
 					add_to_variable_list = {
@@ -157,12 +152,7 @@ agot_8299_3_3_acok_scenario_setup = {
 			# ADD REBEL SUPPORTERS #
 			# Add vassal rebels
 			every_vassal_or_below = {
-				limit = {
-					primary_title.tier > tier_barony
-					NOR = {
-						primary_title = title:k_the_most_devout
-					}
-				}
+				limit = { primary_title.tier > tier_barony }
 
 				scope:mw_rebel_story = {
 					add_to_variable_list = {
@@ -182,7 +172,7 @@ agot_8299_3_3_acok_scenario_setup = {
 		######
 	}
 	hidden_effect = { # Greyjoys aganist Lannisters
-		title:k_the_north.holder = {
+		title:k_the_iron_islands.holder = {
 			save_scope_as = mw_rebel_leader_balon
 			agot_mw_scenario_rebel_setup = { # Set up story
 				HELD_TITLE = title:k_the_iron_islands
@@ -193,12 +183,7 @@ agot_8299_3_3_acok_scenario_setup = {
 			# ADD REBEL SUPPORTERS #
 			# Add vassal rebels
 			every_vassal_or_below = {
-				limit = {
-					primary_title.tier > tier_barony
-					NOR = {
-						primary_title = title:k_the_most_devout
-					}
-				}
+				limit = { primary_title.tier > tier_barony }
 
 				scope:mw_rebel_story = {
 					add_to_variable_list = {
@@ -222,6 +207,7 @@ agot_8299_3_3_acok_scenario_setup = {
 				NOT = {
 					OR = {
 						primary_title = title:k_the_most_devout
+						primary_title = title:d_kingsguard
 					}
 				}
 			}

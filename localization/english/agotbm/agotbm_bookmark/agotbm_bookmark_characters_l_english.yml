@@ -4,23 +4,23 @@
  bookmark_2bc_aegon_targaryen_desc:0 "Will Aegon Targaryen unite Westeros under one kingdom, or suffer the fate of Valyria?"
 
  bookmark_2bc_mern_gardener:0 "King Mern IX Gardener"
- bookmark_2bc_mern_gardener_desc:0 "Will Mern Gardener unite Westeros under one kingdom, or suffer the fate of Valyria?"
+ bookmark_2bc_mern_gardener_desc:0 "<insert imagination>"
 
  bookmark_2bc_argilac_durrandon:0 "King Argilac Durrandon"
- bookmark_2bc_argilac_durrandon_desc:0 "Will Argilac Durrandon unite Westeros under one kingdom, or suffer the fate of Valyria?"
+ bookmark_2bc_argilac_durrandon_desc:0 "<insert imagination>"
 
  bookmark_2bc_harren_hoare:0 "King Harren Hoare"
- bookmark_2bc_harren_hoare_desc:0 "Will Harren Hoare unite Westeros under one kingdom, or suffer the fate of Valyria?"
+ bookmark_2bc_harren_hoare_desc:0 "<insert imagination>"
 
  bookmark_2bc_torrhen_stark:0 "King Torrhen Stark"
- bookmark_2bc_torrhen_stark_desc:0 "Will Torrhen Stark unite Westeros under one kingdom, or suffer the fate of Valyria?"
+ bookmark_2bc_torrhen_stark_desc:0 "<insert imagination>"
 
  #8129
  bookmark_129_rhaenyra_targaryen:0 "Queen Rhaenyra I Targaryen"
- bookmark_129_rhaenyra_targaryen_desc:0 "Will Rhaenyra Targaryen take what's rightfully hers, or die an untimely death?"
+ bookmark_129_rhaenyra_targaryen_desc:0 "Rhaenyra was the designated heir of her father, King Viserys I Targaryen. This decision had been confirmed by a proclamation of his will. When Viserys died in 129 AC, Ser Otto Hightower, the Hand of the King, and Ser Criston Cole, Lord Commander of the Kingsguard, defied the king's will and instead crowned Rhaenyra's half-brother, Aegon II. The greens in King's Landing ensured that the news of the Viserys's death did not reach her until Aegon II's coronation had already occurred.\n\nWhen news reached Rhaenyra, she went into early labor, producing a stillborn daughter, Visenya. Rhaenyra blamed this tragedy on those who had stolen her crown. Rhaenyra had a hastily-arranged coronation of her own. Rhaenyra was crowned with her father's crown by her husband and uncle, Prince Daemon Targaryen. When news of her coronation reached King's Landing, she was offered terms to let Rhaenyra and her descendants remain rulers of Dragonstone if she renounced her claims, but she refused. Will Rhaenyra Targaryen take what's rightfully hers?"
 
- bookmark_129_aegon_targaryen:0 "	King Aegon II Targaryen"
- bookmark_129_aegon_targaryen_desc:0 "Will Aegon Targaryen hold the Iron Throne, or die an untimely death?"
+ bookmark_129_aegon_targaryen:0 "King Aegon II Targaryen"
+ bookmark_129_aegon_targaryen_desc:0 "When King Viserys I Targaryen died in 129 AC, Princess Rhaenyra Targaryen was still the heir to the Iron Throne. Since she was pregnant at Dragonstone when her father died, the greens in King's Landing hid the news of Viserys's death, keeping the king's body in his room for seven days, until their preparations for Aegon's coronation were complete. With the exception of Lord Lyman Beesbury, the small council agreed to crown Aegon.\n\nAegon at first refused to be a part of his mother's plans to crown him, insisting Rhaenyra was heir. However, Ser Criston Cole, Lord Commander of the Kingsguard, convinced him that should Rhaenyra take the throne, Aegon and his brothers would be executed. Eustace insists that only this persuaded him to take the crown. Will Aegon Targaryen hold the Iron Throne, or lose it all?"
 
  #8195
  bookmark_195_daemon_blackfyre:0 "King Daemon I Blackfyre"
@@ -57,6 +57,9 @@
 
  bookmark_298_renly_baratheon:0 "Lord Paramount Renly Baratheon"
  bookmark_298_renly_baratheon_desc:0 "As a member of the small council, Lord Paramount Renly Baratheon has been among the first to learn of the war that has broken out between the cruel King Joffrey and the King in the North Robb Stark. His brother, Stannis Baratheon, has declared himself King Stannis of Dragonstone and insists on pressing his claim to the Iron Throne. Will Renly support his older brother's claims with the powerful support he has or use his alliances for his own claim to the Iron Throne?"
+
+ bookmark_298_balon_greyjoy:0 "Lord Balon Greyjoy"
+ bookmark_298_balon_greyjoy_desc:0 "Tired of living under the oppression of the Iron Throne, Lord Balon Greyjoy of the Iron Islands has taken advantage of the chaos unfolding and declare The Iron Islands' independence from the Seven Kingdoms. Will he pay the iron price for the independence of his land or be repelled like so many times before?"
 
  bookmark_298_stannis_baratheon:0 "King Stannis Baratheon"
  bookmark_298_stannis_baratheon_desc:0 "King Stannis Baratheon, now embracing the Lord of Light, has learned of the disputed heritage of the boy King Joffrey Baratheon. The Iron Throne is his by right and he plans to press that claim. He will need powerful allies if he plans to have a chance in the wars to come. The Young Wolf has declared himself King in the North, but Stannis isn't interested in ruling only half a kingdom. Will his brother Renly support his claim or will his own blood oppose him and try to press his own claim to the Iron Throne? Will Stannis be able to garner enough support to crush these pretenders once and for all?"
