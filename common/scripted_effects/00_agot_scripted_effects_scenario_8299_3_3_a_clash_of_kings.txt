@@ -1,4 +1,10 @@
-﻿# A Clash of Kings Scenario
+﻿###################
+# AGOT Bookmarked #
+###################
+
+#############################
+# A Clash of Kings Scenario #
+#############################
 agot_8299_3_3_acok_scenario_setup = {
 	### RULER DESIGNER FIX ###
 	# Stannis aganist Lannisters

@@ -549,8 +549,7 @@ on_game_start = {
 		# 		NEW_DIARCH = character:3050
 		# 		LIEGE = character:3040
 		# }
-		# AGOT Bookmarked Added
-		if = {
+		if = { # AGOT Bookmarked Added
 			limit = { game_start_date > 8130.1.1 }
 			#AGOT Added
 			character:Ruin_Empress = { designate_diarch = character:Ruin_Regent }

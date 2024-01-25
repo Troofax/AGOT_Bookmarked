@@ -1,4 +1,11 @@
-﻿spawn_conquest_dragons = {
+﻿###################
+# AGOT Bookmarked #
+###################
+
+##########################
+# Aegon's Conquest Units #
+##########################
+spawn_conquest_dragons = {
 	if = {
 		limit = {
 			this ?= title:c_dragonstone.holder
@@ -40,7 +47,9 @@
 		debug_log = "Conquest Dragons spawned"
 	}
 }
-
+##############################
+# Dance of the Dragons Units #
+##############################
 spawn_rhaenyras_dragons = {
 	if = {
 		limit = {
@@ -122,7 +131,6 @@ spawn_rhaenyras_dragons = {
 		debug_log = "Rhaenyras Dragons spawned"
 	}
 }
-
 spawn_aegons_dragons = {
 	if = {
 		limit = {

@@ -2,7 +2,9 @@
 # AGOT Bookmarked #
 ###################
 
-# Dance of the Dragons Scenario
+#################################
+# Dance of the Dragons Scenario #
+#################################
 agot_8129_4_1_dotd_scenario_setup = {
 	hidden_effect = {
 		title:k_dragonstone.holder = {

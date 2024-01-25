@@ -2,9 +2,13 @@
 # AGOT Bookmarked #
 ###################
 
-### Aegon's Conquest ###
+####################
+# Aegon's Conquest #
+####################
 
-# Year 7998 The War of Conquest
+#################################
+# Year 7998 The War of Conquest #
+#################################
 agot_bm_7998 = {
 	start_date = 7998.1.2 #
 	is_playable = yes
@@ -98,9 +102,13 @@ agot_bm_7998 = {
 	}
 }
 
-### Dance of the Dragons ###
+########################
+# Dance of the Dragons #
+########################
 
-# Year 8129 Dance of the Dragons
+##################################
+# Year 8129 Dance of the Dragons #
+##################################
 agot_bm_8129 = {
 	start_date = 8129.4.1
 	is_playable = yes
@@ -143,9 +151,13 @@ agot_bm_8129 = {
 	}
 }
 
-### The Blackfyre Rebellion ###
+###########################
+# The Blackfyre Rebellion #
+###########################
 
-# Year 8195 The First Blackfyre Rebellion
+###########################################
+# Year 8195 The First Blackfyre Rebellion #
+###########################################
 agot_bm_8195 = {
 	start_date = 8195.3.7
 	is_playable = yes
@@ -205,7 +217,13 @@ agot_bm_8195 = {
 	}
 }
 
-# Year 8277 The Defiance of Duskendale
+##########################
+# Defiance of Duskendale #
+##########################
+
+########################################
+# Year 8277 The Defiance of Duskendale #
+########################################
 agot_bm_8277 = {
 	start_date = 8277.1.1
 	is_playable = yes
@@ -265,9 +283,13 @@ agot_bm_8277 = {
 	}
 }
 
-# A Clash of Kings
+####################
+# A Clash of Kings #
+####################
 
-# Year 8298 War of the Five Kings
+###################################
+# Year 8298 War of the Five Kings #
+###################################
 agot_bm_8298 = {
 	start_date = 8298.12.21
 	is_playable = yes
@@ -397,7 +419,9 @@ agot_bm_8298 = {
 	}
 }
 
-# Year 8299 A Clash of Kings
+##############################
+# Year 8299 A Clash of Kings #
+##############################
 agot_bm_8299 = {
 	start_date = 8299.3.3
 	is_playable = yes
@@ -510,9 +534,13 @@ agot_bm_8299 = {
 	}
 }
 
-# A Feast for Crows
+#####################
+# A Feast for Crows #
+#####################
 
-# Year 8300 A Feast for Crows
+###############################
+# Year 8300 A Feast for Crows #
+###############################
 # agot_bm_8300 = {
 	# start_date = 8300.3.1
 	# is_playable = yes

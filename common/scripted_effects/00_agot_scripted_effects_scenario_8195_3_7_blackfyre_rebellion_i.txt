@@ -1,4 +1,10 @@
-﻿# The First Blackfyre Rebellion Scenario
+﻿###################
+# AGOT Bookmarked #
+###################
+
+##########################################
+# The First Blackfyre Rebellion Scenario #
+##########################################
 agot_8195_3_7_br_i_scenario_setup = {
 	if = { # fire only if you used ruler designer; else there is no war
 		limit = { NOT = { title:d_the_blackwater_rush.holder = character:Targaryen_94 } }

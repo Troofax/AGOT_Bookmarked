@@ -2,7 +2,9 @@
 # AGOT Bookmarked #
 ###################
 
-# Aegon's Conquest Scenario
+#############################
+# Aegon's Conquest Scenario #
+#############################
 agot_7998_1_1_conquest_scenario_setup = {
 	hidden_effect = {
 		if = {
