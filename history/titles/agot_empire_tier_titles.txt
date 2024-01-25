@@ -504,7 +504,8 @@ e_the_iron_islands = {
 	7960.1.1 = {
 		holder = Hoare_31 # Harren (C)
 	}
-	7998.2.1 = {
+	# AGOT Bookmarked Changed
+	7998.1.1 = {
 		holder = 0
 	}
 	8060.1.1 = {

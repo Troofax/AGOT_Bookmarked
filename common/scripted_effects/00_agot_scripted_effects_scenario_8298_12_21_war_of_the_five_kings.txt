@@ -1,4 +1,10 @@
-﻿# War of the Five Kings Scenario
+﻿###################
+# AGOT Bookmarked #
+###################
+
+##################################
+# War of the Five Kings Scenario #
+##################################
 agot_8298_12_21_wotfk_scenario_setup = {
 	### RULER DESIGNER FIX ###
 

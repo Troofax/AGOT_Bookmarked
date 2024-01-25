@@ -1,4 +1,8 @@
-﻿namespace = aegons_conquest
+﻿###################
+# AGOT Bookmarked #
+###################
+
+namespace = aegons_conquest
 
 ##############################
 # Aegon's Conquest Beginning #
