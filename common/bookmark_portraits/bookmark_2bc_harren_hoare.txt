@@ -97,7 +97,7 @@ bookmark_2bc_harren_hoare={
  		complexion={ "complexion_26" 26 "complexion_23" 81 }
  		gene_height={ "normal_height" 114 "normal_height" 119 }
  		gene_bs_body_type={ "body_fat_head_fat_low" 95 "body_fat_head_fat_medium" 124 }
- 		gene_bs_body_shape={ "body_shape_average" 204 "body_shape_hourglass_full" 0 }
+ 		gene_bs_body_shape={ "body_shape_average" 183 "body_shape_hourglass_full" 0 }
  		gene_bs_bust={ "bust_clothes" 5 "bust_shape_4_half" 149 }
  		gene_age={ "old_3" 7 "old_2" 13 }
  		gene_eyebrows_shape={ "far_spacing_lower_thickness" 188 "avg_spacing_low_thickness" 149 }
@@ -142,6 +142,7 @@ bookmark_2bc_harren_hoare={
  		legwear={ "western_common_legwear" 125 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "northern_high_nobility_clothes" 140 "most_clothes" 0 }
  		headgear={ "iron_isles_crowns" 176 "no_headgear" 0 }
  }

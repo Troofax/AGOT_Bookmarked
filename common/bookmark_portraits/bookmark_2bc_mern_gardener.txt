@@ -142,8 +142,9 @@ bookmark_2bc_mern_gardener={
  		legwear={ "western_common_legwear" 11 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "fp2_christian_high_nobility_clothes" 177 "most_clothes" 0 }
- 		headgear={ "agot_crowns" 71 "no_headgear" 0 }
+ 		headgear={ "agot_crowns" 104 "no_headgear" 0 }
  }
 	entity={ 979141817 979141817 }
 }

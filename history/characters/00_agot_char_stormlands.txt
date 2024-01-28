@@ -170,7 +170,10 @@ Baratheon_2 = {
 	8281.1.1 = { trait = fornicator } # Mya Stone is born
 	8282.9.15 = {
 		effect = {
-			add_character_flag = bookmark_independent
+			if = {
+				limit = { game_start_date = 8282.9.15 }
+				add_character_flag = bookmark_independent
+			}
 			add_unpressed_claim = title:k_the_crownlands
 			add_unpressed_claim = title:d_kings_landing
 			add_unpressed_claim = title:c_kings_landing
@@ -349,6 +352,7 @@ Baratheon_3 = {
 			add_pressed_claim = title:e_the_iron_throne #Presumptive Heir & More Conflict
 			add_pressed_claim = title:d_kings_landing
 			add_pressed_claim = title:c_kings_landing
+			add_character_flag = malding
 		}
 	}
 	8284.6.2 = {
@@ -573,7 +577,7 @@ Baratheon_4 = {
 Baratheon_5 = {
 	name = Joffrey # Canon
 	dynasty = dynn_Baratheon
-	# dna = Baratheon_5
+	# AGOT TODO dna = Baratheon_5
 
 	martial = 6
 	diplomacy = 4
@@ -806,7 +810,7 @@ Baratheon_6 = {
 	dynasty = dynn_Baratheon
 	female = yes
 
-	# dna = Baratheon_6 # AGOT Bookmarked Disabled
+	dna = Baratheon_6
 
 	martial = 4
 	diplomacy = 6
@@ -917,7 +921,7 @@ Baratheon_6 = {
 Baratheon_7 = {
 	name = Tommen # Canon
 	dynasty = dynn_Baratheon
-	# dna = Baratheon_7
+	# AGOT TODO dna = agot_dna_Baratheon_7
 
 	martial = 5
 	diplomacy = 4
@@ -2272,7 +2276,7 @@ Tarth_2 = {
 
 	8250.1.1 = { birth = yes }
 	8266.1.1 = { trait = knight }
-	8270.1.1 = { trait = nightswatch }
+	8270.1.1 = { trait = nightswatch_historical }
 	8299.1.1 = {
 		effect = { # Master-at-arms at Castle Black
 			agot_appoint_as_court_position_for_castle_history_effect = { 

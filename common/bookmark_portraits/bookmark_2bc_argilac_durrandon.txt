@@ -142,6 +142,7 @@ bookmark_2bc_argilac_durrandon={
  		legwear={ "western_common_legwear" 222 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "ep2_western_era3_high_nobility_clothes" 206 "most_clothes" 0 }
  		headgear={ "stormlands_crown" 255 "no_headgear" 0 }
  }

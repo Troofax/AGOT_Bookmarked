@@ -142,6 +142,7 @@ bookmark_299_walder_frey={
  		legwear={ "western_common_legwear" 153 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "ep2_western_era3_high_nobility_clothes" 133 "most_clothes" 0 }
  		headgear={ "no_headgear" 88 "no_headgear" 0 }
  }

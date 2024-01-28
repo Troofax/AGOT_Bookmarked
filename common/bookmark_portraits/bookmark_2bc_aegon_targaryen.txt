@@ -142,6 +142,7 @@ bookmark_2bc_aegon_targaryen={
  		legwear={ "western_common_legwear" 87 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "byzantine_high_nobility_clothes" 246 "most_clothes" 0 }
  		headgear={ "aegonI_crown" 255 "no_headgear" 0 }
  }

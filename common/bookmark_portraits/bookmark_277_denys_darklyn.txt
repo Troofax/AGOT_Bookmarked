@@ -97,7 +97,7 @@ bookmark_277_denys_darklyn={
  		complexion={ "complexion_5" 156 "complexion_5" 156 }
  		gene_height={ "normal_height" 152 "normal_height" 152 }
  		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 107 }
- 		gene_bs_body_shape={ "body_shape_average" 76 "body_shape_average" 25 }
+ 		gene_bs_body_shape={ "body_shape_average" 65 "body_shape_average" 25 }
  		gene_bs_bust={ "bust_clothes" 89 "bust_clothes" 112 }
  		gene_age={ "old_3" 2 "old_3" 2 }
  		gene_eyebrows_shape={ "avg_spacing_avg_thickness" 206 "avg_spacing_avg_thickness" 206 }
@@ -142,6 +142,7 @@ bookmark_277_denys_darklyn={
  		legwear={ "western_common_legwear" 31 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "ep2_western_era3_high_nobility_clothes" 13 "most_clothes" 0 }
  		headgear={ "no_headgear" 35 "no_headgear" 0 }
  }

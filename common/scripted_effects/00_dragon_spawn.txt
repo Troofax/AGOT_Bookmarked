@@ -13,8 +13,14 @@ spawn_conquest_dragons = {
 		}
 		location = { save_scope_as = aegon_i_location }
 		spawn_army = {
+			name = "Valyrian Loyalists"
+			levies = 2500
+			location = scope:aegon_i_location
+			origin = scope:aegon_i_location
+			inheritable = no
+		}
+		spawn_army = {
 			name = agotbm_balerion
-			levies = 1000
 			men_at_arms = {
 				type = agotbm_balerion_unit
 				stacks = 1
@@ -108,9 +114,9 @@ spawn_rhaenyras_dragons = {
 			inheritable = yes
 		}
 		spawn_army = {
-			name = agotbm_meleys
+			name = agotbm_seasmoke
 			men_at_arms = {
-				type = agotbm_meleys_unit
+				type = agotbm_seasmoke_unit
 				stacks = 1
 			}
 			location = scope:rhaenyra_location

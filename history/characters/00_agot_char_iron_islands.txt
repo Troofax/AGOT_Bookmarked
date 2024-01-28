@@ -41,7 +41,14 @@ Greyjoy_1 = {
 	8256.1.1 = { add_spouse = Sunderly_2 } # Asha Sunderly
 	8279.1.1 = { add_spouse = Piper_3 } # Alys Piper
 	8280.1.1 = { trait = infirm }
-	8282.9.15 = { effect = { add_character_flag = bookmark_independent } }
+	8282.9.15 = {
+		effect = {
+			if = {
+				limit = { game_start_date = 8282.9.15 }
+				add_character_flag = bookmark_independent
+			}
+		}
+	}
 	8283.6.1 = {
 		death = {
 			death_reason = death_battle # Battle at the Mander's Mouth
@@ -4780,7 +4787,7 @@ Wynch_3 = {
 
 	8257.1.1 = { birth = yes }
 	8277.1.1 = {
-		trait = nightswatch
+		trait = nightswatch_historical
 		trait = knight
 		#effect = {
 		#	add_character_modifier = nw_ranger # AGOT TODO modifier

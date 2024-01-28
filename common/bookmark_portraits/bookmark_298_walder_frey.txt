@@ -97,7 +97,7 @@ bookmark_298_walder_frey={
  		complexion={ "complexion_5" 0 "complexion_5" 0 }
  		gene_height={ "normal_height" 150 "normal_height" 150 }
  		gene_bs_body_type={ "body_fat_head_fat_low" 101 "body_fat_head_fat_low" 123 }
- 		gene_bs_body_shape={ "body_shape_pear_full" 35 "body_shape_pear_full" 25 }
+ 		gene_bs_body_shape={ "body_shape_pear_full" 76 "body_shape_pear_full" 25 }
  		gene_bs_bust={ "bust_clothes" 91 "bust_clothes" 114 }
  		gene_age={ "old_4" 0 "old_4" 0 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 139 "avg_spacing_lower_thickness" 139 }
@@ -142,6 +142,7 @@ bookmark_298_walder_frey={
  		legwear={ "western_common_legwear" 153 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "ep2_western_era3_high_nobility_clothes" 133 "most_clothes" 0 }
  		headgear={ "no_headgear" 88 "no_headgear" 0 }
  }
