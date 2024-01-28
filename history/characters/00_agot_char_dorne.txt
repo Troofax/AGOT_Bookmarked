@@ -3497,7 +3497,7 @@ Qorgyle_2 = {
 	8232.1.1 = { birth = yes }
 	8248.1.1 = { trait = knight }
 	8251.1.1 = { trait = diligent }
-	8262.1.1 = { trait = nightswatch }
+	8262.1.1 = { trait = nightswatch_historical }
 	8288.1.1 = { death = yes }
 }
 Qorgyle_3 = {

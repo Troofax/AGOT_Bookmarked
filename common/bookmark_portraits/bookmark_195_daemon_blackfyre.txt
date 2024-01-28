@@ -6,7 +6,7 @@ bookmark_195_daemon_blackfyre={
 	age=0.250000
 	genes={ 		hair_color={ 0 0 74 14 }
  		skin_color={ 108 8 112 8 }
- 		eye_color={ 242 163 245 92 }
+ 		eye_color={ 239 191 245 92 }
  		gene_chin_forward={ "chin_forward_neg" 145 "chin_forward_neg" 114 }
  		gene_chin_height={ "chin_height_pos" 133 "chin_height_pos" 158 }
  		gene_chin_width={ "chin_width_pos" 128 "chin_width_neg" 146 }
@@ -143,8 +143,9 @@ bookmark_195_daemon_blackfyre={
  		legwear={ "western_common_legwear" 44 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "byzantine_high_nobility_clothes" 221 "most_clothes" 0 }
- 		headgear={ "agot_crowns" 17 "no_headgear" 0 }
+ 		headgear={ "agot_crowns" 14 "no_headgear" 0 }
  }
 	entity={ 3942081117 3942081117 }
 }

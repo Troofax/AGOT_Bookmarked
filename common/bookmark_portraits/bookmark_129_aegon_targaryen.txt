@@ -6,7 +6,7 @@ bookmark_129_aegon_targaryen={
 	age=0.220000
 	genes={ 		hair_color={ 0 0 12 35 }
  		skin_color={ 62 24 24 16 }
- 		eye_color={ 242 68 226 43 }
+ 		eye_color={ 239 63 226 43 }
  		gene_chin_forward={ "chin_forward_neg" 119 "chin_forward_neg" 145 }
  		gene_chin_height={ "chin_height_pos" 133 "chin_height_pos" 133 }
  		gene_chin_width={ "chin_width_pos" 128 "chin_width_pos" 128 }
@@ -144,6 +144,7 @@ bookmark_129_aegon_targaryen={
  		legwear={ "western_common_legwear" 182 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "byzantine_high_nobility_clothes" 84 "most_clothes" 0 }
  		headgear={ "aegonI_crown" 255 "no_headgear" 0 }
  }

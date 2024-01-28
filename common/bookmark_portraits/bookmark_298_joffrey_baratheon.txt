@@ -143,6 +143,7 @@ bookmark_298_joffrey_baratheon={
  		legwear={ "western_common_legwear" 109 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "ep2_western_era3_high_nobility_clothes" 150 "most_clothes" 0 }
  		headgear={ "joffreyI_crown" 255 "no_headgear" 0 }
  		additive_headgear={ "ep2_western_era3_veils" 209 "no_additive" 0 }

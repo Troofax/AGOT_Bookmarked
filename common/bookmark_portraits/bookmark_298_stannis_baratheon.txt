@@ -139,12 +139,13 @@ bookmark_298_stannis_baratheon={
 		props_right={ "marshal_swords" 255 "no_props" 0 }
  		beards={ "all_beards" 69 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 30 "all_hairstyles" 0 }
+ 		hairstyles={ "all_hairstyles" 26 "all_hairstyles" 0 }
  		legwear={ "western_common_legwear" 189 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "ep2_western_era3_high_nobility_clothes" 229 "most_clothes" 0 }
- 		headgear={ "stannis_crown" 225 "no_headgear" 0 }
+ 		headgear={ "stannis_crown" 255 "no_headgear" 0 }
  }
 	entity={ 3942081117 3942081117 }
 }

@@ -1370,7 +1370,6 @@ agot_on_game_start = {
 						house = character:Velaryon_6.house
 						house = character:Massey_10.house
 						house = character:Mooton_8.house
-						house = character:Martell_23.house
 						house = character:Butterwell_5.house
 						house = character:Sunderland_9.house
 						house = character:Peake_6.house
@@ -1390,7 +1389,6 @@ agot_on_game_start = {
 			if = {
 				limit = {
 					OR = {
-						house = character:Martell_23.house
 						house = character:Butterwell_5.house
 						house = character:Sunderland_9.house
 						house = character:Peake_6.house
@@ -1740,7 +1738,10 @@ agot_on_game_start = {
 			# must be before maester setup to make sure Aemon is set properly
 			if = { # Yeet black brothers back to wall since they will ignore history files to join family
 				limit = {
-					has_trait = nightswatch
+					OR = {
+						has_trait = nightswatch
+						has_trait = nightswatch_historical
+					}
 					NOR = {
 						any_liege_or_above = { has_title = title:d_the_wall }
 						has_title = title:d_the_wall
@@ -2262,34 +2263,12 @@ agot_on_game_start_after_lobby = {
 
 		if = {
 			limit = {
-				exists = title:e_the_wall.holder
-				title:e_the_wall.holder = {
-					has_government = nights_watch_government
-				}
-			}
-			title:e_the_wall.holder = {
-				trigger_event = agot_nightswatch_maintenance.0001 # Removes female courtiers
-			}
-		}
-		if = {
-			limit = {
 				exists = title:k_the_wall.holder
-				title:k_the_wall.holder = {
-					has_government = nights_watch_government
-				}
+				# title:k_the_wall.holder = {
+				# 	has_government = nights_watch_government
+				# }
 			}
 			title:k_the_wall.holder = {
-				trigger_event = agot_nightswatch_maintenance.0001 # Removes female courtiers
-			}
-		}
-		if = {
-			limit = {
-				exists = title:d_the_wall.holder
-				title:d_the_wall.holder = {
-					has_government = nights_watch_government
-				}
-			}
-			title:d_the_wall.holder = {
 				trigger_event = agot_nightswatch_maintenance.0001 # Removes female courtiers
 			}
 		}
@@ -2311,6 +2290,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Amber_1.house
 				save_scope_as = hc_amber
 			}
+			scope:hc_amber = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2319,6 +2299,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Greenwood_1.house
 				save_scope_as = hc_greenwood
 			}
+			scope:hc_greenwood = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2327,6 +2308,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Frost_1.house
 				save_scope_as = hc_frost
 			}
+			scope:hc_frost = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2335,6 +2317,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Greystark_10.house
 				save_scope_as = hc_greystark
 			}
+			scope:hc_greystark = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2343,6 +2326,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Woodfoot_1.house
 				save_scope_as = hc_woodfoot
 			}
+			scope:hc_woodfoot = { add_character_flag = house_customizer_placeholder }
 			## TRIDENT ##
 			create_character = {
 				gender = male
@@ -2352,6 +2336,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Fisher_riverlands_duplicate_8.house
 				save_scope_as = hc_fisher_trident
 			}
+			scope:hc_fisher_trident = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2360,6 +2345,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Harroway_8.house
 				save_scope_as = hc_harroway
 			}
+			scope:hc_harroway = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2368,6 +2354,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Justman_8.house
 				save_scope_as = hc_justman
 			}
+			scope:hc_justman = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2376,6 +2363,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Qoherys_4.house
 				save_scope_as = hc_qoherys
 			}
+			scope:hc_qoherys = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2384,6 +2372,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Teague_6.house
 				save_scope_as = hc_teague
 			}
+			scope:hc_teague = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2392,6 +2381,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Towers_6.house
 				save_scope_as = hc_towers
 			}
+			scope:hc_towers = { add_character_flag = house_customizer_placeholder }
 			## VALE ##
 			create_character = {
 				gender = male
@@ -2401,6 +2391,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Shell_Vale_1.house
 				save_scope_as = hc_shell_vale
 			}
+			scope:hc_shell_vale = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2409,6 +2400,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Brightstone_1.house
 				save_scope_as = hc_brightstone
 			}
+			scope:hc_brightstone = { add_character_flag = house_customizer_placeholder }
 			## Crownlands ##
 			create_character = {
 				gender = male
@@ -2418,6 +2410,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Blackfyre_14.house
 				save_scope_as = hc_blackfyre
 			}
+			scope:hc_blackfyre = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2426,6 +2419,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Darklyn_47.house
 				save_scope_as = hc_darklyn
 			}
+			scope:hc_darklyn = { add_character_flag = house_customizer_placeholder }
 			## STORMLANDS ##
 			create_character = {
 				gender = male
@@ -2435,6 +2429,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Durrandon_87.house
 				save_scope_as = hc_durrandon
 			}
+			scope:hc_durrandon = { add_character_flag = house_customizer_placeholder }
 			## DORNE ##
 			create_character = {
 				gender = male
@@ -2444,6 +2439,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Dryland_1.house
 				save_scope_as = hc_dryland
 			}
+			scope:hc_dryland = { add_character_flag = house_customizer_placeholder }
 			## REACH ##
 			create_character = {
 				gender = male
@@ -2453,6 +2449,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Gardener_95.house
 				save_scope_as = hc_gardener
 			}
+			scope:hc_gardener = { add_character_flag = house_customizer_placeholder }
 			## WESTERLANDS ##
 			create_character = {
 				gender = male
@@ -2462,6 +2459,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Casterly_7.house
 				save_scope_as = hc_casterly
 			}
+			scope:hc_casterly = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2470,6 +2468,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Parren_17.house
 				save_scope_as = hc_parren
 			}
+			scope:hc_parren = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2478,6 +2477,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Reyne_45.house
 				save_scope_as = hc_reyne
 			}
+			scope:hc_reyne = { add_character_flag = house_customizer_placeholder }
 			## IRON ISLANDS (EUGH) ##
 			create_character = {
 				gender = male
@@ -2487,6 +2487,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Greyiron_32.house
 				save_scope_as = hc_greyiron
 			}
+			scope:hc_greyiron = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2495,6 +2496,7 @@ agot_on_game_start_after_lobby = {
 				dynasty_house = character:Hoare_31.house
 				save_scope_as = hc_hoare
 			}
+			scope:hc_hoare = { add_character_flag = house_customizer_placeholder }
 		}
 		every_player = {
 			if = {
@@ -2546,6 +2548,7 @@ agot_on_game_start_after_lobby = {
 				days = 1
 			}
 		}
+
 		every_ruler = {
 			if = {
 				limit = { has_character_flag = bookmark_independent }
