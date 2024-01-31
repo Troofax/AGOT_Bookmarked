@@ -603,7 +603,7 @@ Baratheon_5 = {
 		effect = {
 			add_character_flag = flag_secret_bastard
 			set_real_father = character:Lannister_7 # Jaime Lannister
-			make_trait_inactive = gold_hair # AGOT Bookmarked Added
+			add_character_flag = do_not_assign_strong_seed # AGOT Bookmarked Added
 		}
 	}
 	8290.1.1 = { trait = sadistic }
@@ -810,7 +810,7 @@ Baratheon_6 = {
 	dynasty = dynn_Baratheon
 	female = yes
 
-	dna = Baratheon_6
+	# dna = Baratheon_6
 
 	martial = 4
 	diplomacy = 6
@@ -835,7 +835,7 @@ Baratheon_6 = {
 		effect = {
 			add_character_flag = flag_secret_bastard
 			set_real_father = character:Lannister_7 # Jaime Lannister
-			make_trait_inactive = gold_hair # AGOT Bookmarked Added
+			add_character_flag = do_not_assign_strong_seed # AGOT Bookmarked Added
 		}
 	}
 	8296.1.1 = {
@@ -944,7 +944,7 @@ Baratheon_7 = {
 		effect = {
 			add_character_flag = flag_secret_bastard
 			set_real_father = character:Lannister_7 # Jaime Lannister
-			make_trait_inactive = gold_hair # AGOT Bookmarked Added
+			add_character_flag = do_not_assign_strong_seed # AGOT Bookmarked Added
 		}
 	}
 	8297.1.1 = {
