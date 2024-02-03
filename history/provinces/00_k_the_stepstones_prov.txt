@@ -1,0 +1,186 @@
+﻿########### c_bloodstone - d_western_stepstones ###########
+7294 = {
+	culture = tyroshi
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+		special_building_slot = bloodstone_special
+		special_building = bloodstone_special
+	}
+}
+7295 = {
+	holding = none
+}
+7296 = {
+	holding = none
+}
+
+########### c_veiled_isle - d_western_stepstones ###########
+7297 = {
+	culture = tyroshi
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+7298 = {
+	holding = none
+}
+7299 = {
+	holding = none
+}
+
+########### c_isle_of_serpents - d_western_stepstones ###########
+7300 = {
+	culture = tyroshi
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+7301 = {
+	holding = none
+}
+
+########### c_grey_gallows - d_western_stepstones ###########
+7302 = {
+	culture = tyroshi
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+
+7303 = {
+	holding = none
+}
+
+
+
+########### c_pryr - d_eastern_stepstones ###########
+7304 = {
+	culture = tyroshi
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+
+########### c_highwatch - d_eastern_stepstones ###########
+7305 = {
+	culture = tyroshi
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+7306 = {
+	holding = none
+}
+7307 = {
+	holding = none
+}
+
+########### c_felstrong - d_eastern_stepstones ###########
+7308 = {
+	culture = tyroshi
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+
+########### c_tor - d_eastern_stepstones ###########
+7309 = {
+	culture = tyroshi
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+
+########### c_scarwood - d_eastern_stepstones ###########
+7310 = {
+	culture = tyroshi
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+7311 = {
+	holding = none
+}
+7312 = {
+	holding = none
+}
+
+########### c_guardian - d_southern_stepstones ###########
+7313 = {
+	culture = lyseni
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+7314 = {
+	holding = none
+}
+
+########### c_golden_haven - d_southern_stepstones ###########
+7315 = {
+	culture = lyseni
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+
+########### c_larazors_rock - d_southern_stepstones ###########
+7316 = {
+	culture = lyseni
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+
+########### c_redwater - d_southern_stepstones ###########
+7317 = {
+	culture = lyseni
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+7318 = {
+	holding = none
+}
+7319 = {
+	holding = none
+}
+
+########### c_dustspear - d_southern_stepstones ###########
+7320 = {
+	culture = lyseni
+	religion = mother_rhoyne
+	holding = tribal_holding
+	7998.1.1 = {
+		buildings = { tribe_01 }
+	}
+}
+7321 = {
+	holding = none
+}
