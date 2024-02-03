@@ -1,4 +1,9 @@
-﻿########### c_bloodstone - d_western_stepstones ###########
+﻿################################################
+# AGOT Bookmarked - For COW AGOT Compatibility #
+################################################
+
+
+########### c_bloodstone - d_western_stepstones ###########
 7294 = {
 	culture = tyroshi
 	religion = mother_rhoyne

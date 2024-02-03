@@ -1,4 +1,9 @@
-﻿################# b_casterly_rock #################
+﻿################################################
+# AGOT Bookmarked - For COW AGOT Compatibility #
+################################################
+
+
+################# b_casterly_rock #################
 ######## c_casterly_rock - d_casterly_rock ########
 2855 = {
 	culture = westerman

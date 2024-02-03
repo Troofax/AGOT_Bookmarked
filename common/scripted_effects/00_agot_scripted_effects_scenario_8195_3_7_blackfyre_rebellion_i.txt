@@ -232,7 +232,7 @@ agot_8195_3_7_br_i_scenario_setup = {
 	######
 
 	### SET OPINIONS ###
-	mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_daemon }
+	agot_mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_daemon }
 	######
 
 
