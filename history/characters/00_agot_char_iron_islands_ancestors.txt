@@ -1449,12 +1449,9 @@ Hoare_31 = {
 		}
 	}
 	# AGOT Bookmarked Added
-	7998.1.1 = {
-		if = {
-			limit = { game_start_date = 7998.1.2 }
-			effect = {
-				set_capital_county = title:c_harrenhal
-			}
+	7998.1.2 = {
+		effect = {
+			set_realm_capital = title:c_harrenhal
 		}
 	}
 	7998.2.1 = {
