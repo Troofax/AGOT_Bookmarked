@@ -810,7 +810,7 @@ Baratheon_6 = {
 	dynasty = dynn_Baratheon
 	female = yes
 
-	# dna = Baratheon_6
+	dna = Baratheon_6
 
 	martial = 4
 	diplomacy = 6
@@ -6554,14 +6554,15 @@ Seaworth_1 = {
 	disallow_random_traits = yes
 
 	8251.1.1 = { birth = yes }
-	# 8259.1.1 = { employer = 175300542 } # Roro Uhoris # AGOT TODO Reenable once Stepstones are added
+	8260.1.1 = { employer = Uhoris_1 } # Roro Uhoris
+	8270.1.1 = { employer = Baratheon_1 } # Placeholder V
 	# 8270.1.1 = { employer = 129174366 } # Terro Myrakis, Pentos # AGOT TODO Reenable once Pentos is added
 	8274.1.1 = { add_spouse = Seaworth_rs_1 }
 	8280.1.1 = {
 		effect = { 
 			if = { 
-				limit = { character:119982370 = { is_alive = yes } }
-				set_relation_friend = character:119982370 # Salladhor Saan
+				limit = { character:Saan_2 = { is_alive = yes } }
+				set_relation_friend = character:Saan_2 # Salladhor Saan
 			}
 		}
 	}
@@ -7670,7 +7671,7 @@ Selmy_3 = {
 		}
 	}
 	8298.10.30 = { # Left the kingsguard
-		# employer = 600000040 # Illyrio Mopatis # AGOT TODO Reenable once Pentos is added
+		# employer = Mopatis_1 # Illyrio Mopatis # AGOT TODO Reenable once Pentos is added
 		effect = { 
 			remove_character_flag = agot_is_kingsguard_member 
 			remove_character_flag = agot_is_kingsguard_commander 
@@ -9257,16 +9258,17 @@ Scaly_1 = {
 	prowess = 12
 
 	trait = education_martial_2
+	trait = rowdy 
 	trait = scaly
 	trait = ruthless
 	trait = sadistic
 	trait = ambitious
 
-	8248.1.1 = {
+	8242.1.1 = {
 		birth = yes
 		give_nickname = nick_the_scaly_prefix
 	}
-	8264.1.1 = {
+	8258.1.1 = {
 		trait = education_martial_prowess_4
 		trait = organizer
 		effect = {

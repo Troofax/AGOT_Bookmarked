@@ -70,7 +70,12 @@ agot_8298_12_21_wotfk_scenario_setup = {
 			# ADD REBEL SUPPORTERS #
 			# Add vassal rebels
 			every_vassal_or_below = {
-				limit = { primary_title.tier > tier_barony }
+				limit = {
+					primary_title.tier > tier_barony
+					NOR = {
+						primary_title = title:k_the_most_devout
+					}
+				}
 
 				scope:mw_rebel_story = {
 					add_to_variable_list = {
@@ -101,7 +106,12 @@ agot_8298_12_21_wotfk_scenario_setup = {
 			# ADD REBEL SUPPORTERS #
 			# Add vassal rebels
 			every_vassal_or_below = {
-				limit = { primary_title.tier > tier_barony }
+				limit = {
+					primary_title.tier > tier_barony
+					NOR = {
+						primary_title = title:k_the_most_devout
+					}
+				}
 
 				scope:mw_rebel_story = {
 					add_to_variable_list = {
@@ -156,7 +166,7 @@ agot_8298_12_21_wotfk_scenario_setup = {
 	######
 
 	### SET OPINIONS ###
-	mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_robb }
-	mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_balon }
+	agot_mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_robb }
+	agot_mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_balon }
 	######
 }

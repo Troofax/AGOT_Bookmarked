@@ -558,12 +558,6 @@ on_game_start = {
 				LIEGE = character:Ruin_Empress
 			}
 		}
-		#AGOT Added # AGOT Bookmarked Disabled
-		# character:Ruin_Empress = { designate_diarch = character:Ruin_Regent }
-		# remove_generated_diarch_consequences_effect = {
-			# NEW_DIARCH = character:Ruin_Regent
-			# LIEGE = character:Ruin_Empress
-		# }
 		# Set up anyone who should be in a regency at start whether we have sources or not.
 		## If you start as a child, incapable, or imprisoned, you get a regency.
 		every_ruler = {

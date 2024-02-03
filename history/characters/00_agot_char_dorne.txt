@@ -119,15 +119,6 @@ Martell_4 = {
 
 	8248.1.1 = {
 		birth = yes
-		effect = {
-			if = { # AGOT Bookmarked
-				limit = { game_start_date < 8300.1.1 }
-				vassal_contract_set_obligation_level = { #Palatinate for Prince title
-					type = special_contract
-					level = 3
-				}
-			}
-		}
 	}
 	8257.1.1 = {
 		effect = {
@@ -149,6 +140,10 @@ Martell_4 = {
 	#8270.1.1 = { add_spouse = 8001 } # AGOT TODO Reenable once Essos added
 	8280.1.1 = {
 		effect = {
+			vassal_contract_set_obligation_level = { #Palatinate for Prince title
+				type = special_contract
+				level = 3
+			}
 			agot_set_as_loyalist_history_effect = { LOYALIST = character:Martell_hh_7 } # Areo Hotah
 		}
 	}
@@ -162,7 +157,7 @@ Martell_4 = {
 	# }
 	8295.1.1 = {
 		trait = gout_ridden
-		health = 8 #stop gout insta murking him
+		health = 8 #stop gout insta murking him # AGOTBM TEST
 	}
 	# 8300.3.1 = { #AFFC
 		# effect = {
@@ -364,10 +359,17 @@ Martell_8 = {
 		}
 	}
 	8285.1.1 = {
+		trait = fornicator
 		effect = { 
 			if = {
 				limit = { character:Uller_6 = { is_alive = yes } }
 				set_relation_lover = character:Uller_6 # Ellaria Sand
+				random_secret = {
+					limit = {
+						secret_type = secret_lover
+					}
+					expose_secret = character:Uller_6 # Ellaria Sand
+				}
 			}
 			if = {
 				limit = { character:Uller_6 = { is_alive = yes } }
@@ -878,13 +880,13 @@ Martell_hh_2 = {
 Martell_hh_3 = {
 	name = Myles # Canon
 
+	learning = 10
+
 	religion = the_seven_main
 	culture = salt_dornish
 
 	trait = education_learning_3
 	trait = gluttonous
-
-	learning = 10
 
 	8268.1.1 = { birth = yes }
 	8288.1.1 = {
@@ -5713,7 +5715,8 @@ Dayne_6 = {
 	name = Allyria # Canon, married Beric Dondarrion
 	dynasty = dynn_Dayne
 	female = yes
-	# dna = Dayne_6
+
+	dna = Dayne_6
 
 	religion = the_seven_main
 	culture = stone_dornish

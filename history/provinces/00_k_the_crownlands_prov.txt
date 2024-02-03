@@ -1,4 +1,9 @@
-﻿################## b_the_red_keep #################
+﻿################################################
+# AGOT Bookmarked - For COW AGOT Compatibility #
+################################################
+
+
+################## b_the_red_keep #################
 ######## c_kings_landing - d_kings_landing ########
 4151 = {
 	culture = crownlander

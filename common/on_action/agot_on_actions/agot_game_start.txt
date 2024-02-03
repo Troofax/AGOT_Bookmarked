@@ -33,7 +33,123 @@ agot_on_game_start = {
 					agot_is_wildling_culture = no
 				}
 				add_innovation = innovation_battlements
+			}
+			if = {
+				limit = {
+					agot_is_wildling_culture = no
+					NOR = {
+						this = culture:andalosi
+						this = culture:crannogman
+						this = culture:skagosi
+						this = culture:braavosi
+						this = culture:norvoshi
+						this = culture:pentoshi
+						this = culture:hartalari
+						this = culture:myrish
+						this = culture:tyroshi
+						this = culture:volantene
+					}
+					NAND = {
+						this = culture:bearman
+						game_start_date < 8000.1.1
+					}
+					NAND = {
+						this = culture:krakenman
+						game_start_date < 8000.1.1
+					}
+					NAND = {
+						this = culture:wolfswood_clansman
+						game_start_date < 8000.1.1
+					}
+					NAND = {
+						this = culture:hill_clansman
+						game_start_date < 8100.1.1
+					}
+					NAND = {
+						this = culture:sisterman
+						game_start_date < 8175.1.1
+					}
+					NAND = {
+						this = culture:fingerman
+						game_start_date < 8150.1.1
+					}
+				}
 				add_innovation = innovation_hoardings
+			}
+			if = {
+				limit = {
+					agot_is_wildling_culture = no
+					NOR = {
+						this = culture:andalosi
+						this = culture:crannogman
+						this = culture:skagosi
+						this = culture:braavosi
+						this = culture:norvoshi
+						this = culture:pentoshi
+						this = culture:hartalari
+						this = culture:myrish
+						this = culture:tyroshi
+						this = culture:volantene
+
+						this = culture:crownlander
+						this = culture:fingerman
+						this = culture:sisterman
+						this = culture:clawman
+						this = culture:barrowman
+						this = culture:bearman
+						this = culture:harborman
+						this = culture:krakenman
+						this = culture:hill_clansman
+						this = culture:northman
+						this = culture:wolfswood_clansman
+						this = culture:ironborn
+					}
+					NAND = {
+						this = culture:stormlander
+						game_start_date < 8260.1.1
+					}
+					NAND = {
+						this = culture:marcher
+						game_start_date < 8270.1.1
+					}
+					NAND = {
+						this = culture:vineman
+						game_start_date < 8270.1.1
+					}
+					NAND = {
+						this = culture:honeywiner
+						game_start_date < 8270.1.1
+					}
+					NAND = {
+						this = culture:reachman
+						game_start_date < 8270.1.1
+					}
+					NAND = {
+						this = culture:shieldman
+						game_start_date < 8270.1.1
+					}
+					NAND = {
+						this = culture:riverlander
+						game_start_date < 8270.1.1
+					}
+					NAND = {
+						this = culture:valeman
+						game_start_date < 8270.1.1
+					}
+					NAND = {
+						this = culture:moonman
+						game_start_date < 8270.1.1
+					}
+					NAND = {
+						this = culture:high_valyrian
+						game_start_date < 8270.1.1
+					}
+					NAND = {
+						this = culture:stone_dornish
+						game_start_date < 8280.1.1
+					}
+				}
+				add_innovation = innovation_machicolations
 			}
 		}
 
@@ -69,1234 +185,1531 @@ agot_on_game_start = {
 		# This is done to avoid errors, if the error 'No room left for adding a building' happens, add the province and the building here
 
 		province:77 = {
-			add_building = barracks_04
-			add_building = stables_02
-			add_building = smiths_06
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = stables_02 }
+			agot_add_building_if_possible = { BUILDING = smiths_06 }
 		}
 		province:78 = {
-			add_building = agot_steppe_farms_04
+			agot_add_building_if_possible = { BUILDING = agot_steppe_farms_04 }
 		}
 		province:247 = {
-			add_building = barracks_03
-			add_building = hunting_grounds_02
-			add_building = logging_camps_02
+			agot_add_building_if_possible = { BUILDING = barracks_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_02 }
 		}
 		province:333 = {
-			add_building = barracks_04
-			add_building = smiths_04
-			add_building = hunting_grounds_04
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_04 }
 		}
 		province:423 = {
-			add_building = barracks_04
-			add_building = workshops_04
-			add_building = smiths_04
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = workshops_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
 		}
 		province:424 = {
-			add_building = guild_halls_05
-			add_building = agot_urban_farms_03
+			agot_add_building_if_possible = { BUILDING = guild_halls_05 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
 		}
 		province:426 = {
-			add_building = workshops_02
+			agot_add_building_if_possible = { BUILDING = workshops_02 }
 		}
 		province:431 = {
-			add_building = guild_halls_03
-			add_building = agot_urban_farms_01
+			agot_add_building_if_possible = { BUILDING = guild_halls_03 }
+			agot_add_building_if_possible = { BUILDING = peat_quarries_01 }
 		}
 		province:490 = {
-			add_building = outposts_04
-			add_building = peat_quarries_03
-			add_building = common_tradeport_01
+			agot_add_building_if_possible = { BUILDING = outposts_04 }
+			agot_add_building_if_possible = { BUILDING = peat_quarries_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_01 }
 		}
 		province:617 = {
-			add_building = hill_farms_02
-			add_building = hunting_grounds_02
-			add_building = common_tradeport_01
+			agot_add_building_if_possible = { BUILDING = hill_farms_02 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_01 }
 		}
 		province:664 = {
-			add_building = smiths_01
-			add_building = hill_farms_01
-			#add_building = hunting_grounds_01
-		}
-		# AGOT Bookmarked Added
-		if = {
-			limit = { game_start_date > 8130.1.1 }
-			province:664 = { add_building = hunting_grounds_01 }
+			agot_add_building_if_possible = { BUILDING = smiths_01 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_01 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_01 }
 		}
 		province:886 = {
-			add_building = outposts_02
-			add_building = agot_steppe_farms_02
+			agot_add_building_if_possible = { BUILDING = outposts_02 }
+			agot_add_building_if_possible = { BUILDING = agot_steppe_farms_02 }
 		}
 		province:940 = {
-			add_building = hunting_grounds_02
-			add_building = logging_camps_02
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_02 }
 		}
 		province:1121 = {
-			add_building = smiths_02
-			add_building = hill_farms_02
-			#add_building = hunting_grounds_02
-		}
-		# AGOT Bookmarked Added
-		if = {
-			limit = { game_start_date > 8130.1.1 }
-			province:1121 = { add_building = hunting_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = smiths_02 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_02 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_02 }
 		}
 		province:1122 = {
-			add_building = hill_farms_04
-			add_building = pastures_03
+			agot_add_building_if_possible = { BUILDING = hill_farms_04 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
 		}
 		province:1310 = {
-			add_building = hunting_grounds_02
-			add_building = godswood_06
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = godswood_06 }
 		}
 		province:1636 = {
-			add_building = hunting_grounds_02
-			add_building = logging_camps_02
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_02 }
 		}
 		province:1658 = {
-			add_building = watermills_05
-			add_building = military_camps_03
-			add_building = regimental_grounds_04
+			agot_add_building_if_possible = { BUILDING = watermills_05 }
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_04 }
 		}
 		province:1686 = {
-			add_building = smiths_04
-			add_building = workshops_04
-			add_building = hunting_grounds_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = workshops_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_04 }
 		}
 		province:1718 = {
-			add_building = logging_camps_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = logging_camps_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1723 = {
-			add_building = logging_camps_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = logging_camps_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1725 = {
-			add_building = logging_camps_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = logging_camps_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1728 = {
-			add_building = farm_estates_01
-			add_building = windmills_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = farm_estates_01 }
+			agot_add_building_if_possible = { BUILDING = windmills_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1729 = {
-			add_building = stables_04
-			add_building = smiths_04
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = stables_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:1730 = {
-			add_building = cereal_fields_04
-			add_building = pastures_04
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:1764 = {
-			add_building = cereal_fields_04
-			add_building = common_tradeport_04
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1836 = {
-			add_building = hunting_grounds_03
-			add_building = military_camps_03
-			add_building = peat_quarries_03
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
+			agot_add_building_if_possible = { BUILDING = peat_quarries_03 }
 		}
 		province:1874 = {
-			add_building = farm_estates_02
-			add_building = cereal_fields_02
-			add_building = regimental_grounds_01
+			agot_add_building_if_possible = { BUILDING = farm_estates_02 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_01 }
 		}
 		province:1800 = {
-			add_building = farm_estates_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = farm_estates_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1856 = {
-			add_building = cereal_fields_03
-			add_building = pastures_03
-			add_building = watermills_03
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
+			agot_add_building_if_possible = { BUILDING = watermills_03 }
 		}
 		province:1886 = {
-			add_building = cereal_fields_02
-			add_building = watermills_02
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
+			agot_add_building_if_possible = { BUILDING = watermills_02 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:1887 = {
-			add_building = cereal_fields_02
-			add_building = watermills_02
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
+			agot_add_building_if_possible = { BUILDING = watermills_02 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:1900 = {
-			add_building = cereal_fields_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1910 = {
-			add_building = smiths_04
-			add_building = pastures_04
-			add_building = cereal_fields_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
 		}
 		province:1911 = {
-			add_building = common_tradeport_03
-			add_building = watermills_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = watermills_03 }
 		}
 		province:1913 = {
-			add_building = common_tradeport_03
-			add_building = watermills_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = watermills_03 }
 		}
 		province:1934 = {
-			add_building = barracks_06
-			add_building = stables_06
-			add_building = smiths_06
+			agot_add_building_if_possible = { BUILDING = barracks_06 }
+			agot_add_building_if_possible = { BUILDING = stables_06 }
+			agot_add_building_if_possible = { BUILDING = smiths_06 }
 		}
 		province:1944 = {
-			add_building = cereal_fields_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1945 = {
-			add_building = cereal_fields_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1947 = {
-			add_building = cereal_fields_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1968 = {
-			add_building = cereal_fields_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1971 = {
-			add_building = cereal_fields_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:1972 = {
-			add_building = smiths_04
-			add_building = pastures_04
-			add_building = cereal_fields_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
 		}
 		province:2002 = {
-			add_building = logging_camps_04
-			add_building = smiths_04
-			add_building = stables_04
+			agot_add_building_if_possible = { BUILDING = logging_camps_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = stables_04 }
 		}
 		province:2031 = {
-			add_building = smiths_03
-			add_building = pastures_03
-			add_building = cereal_fields_03
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
 		}
 		province:2032 = {
-			add_building = guild_halls_03
-			add_building = pastures_03
-			add_building = cereal_fields_03
+			agot_add_building_if_possible = { BUILDING = guild_halls_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
 		}
 		province:2058 = {
-			add_building = smiths_04
-			add_building = pastures_04
-			add_building = cereal_fields_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
 		}
 		province:2061 = {
-			add_building = peat_quarries_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = peat_quarries_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2062 = {
-			add_building = peat_quarries_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = peat_quarries_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2064 = {
-			add_building = logging_camps_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = logging_camps_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2065 = {
-			add_building = logging_camps_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = logging_camps_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2066 = {
-			add_building = logging_camps_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = logging_camps_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2081 = {
-			add_building = peat_quarries_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = peat_quarries_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2082 = {
-			add_building = cereal_fields_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2083 = {
-			add_building = cereal_fields_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2102 = {
-			add_building = smiths_03
-			add_building = pastures_03
-			add_building = cereal_fields_03
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
 		}
 		province:2143 = {
-			add_building = smiths_04
-			add_building = barracks_04
-			add_building = hill_farms_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_04 }
 		}
 		province:2189 = {
-			add_building = common_tradeport_03
-			add_building = cereal_fields_02
-			add_building = watermills_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
+			agot_add_building_if_possible = { BUILDING = watermills_03 }
 		}
 		province:2193 = {
-			add_building = common_tradeport_03
-			add_building = cereal_fields_02
-			add_building = watermills_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
+			agot_add_building_if_possible = { BUILDING = watermills_03 }
 		}
 		province:2212 = {
-			add_building = cereal_fields_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2212 = {
-			add_building = logging_camps_01
+			agot_add_building_if_possible = { BUILDING = logging_camps_01 }
 		}
 		province:2216 = {
-			add_building = logging_camps_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = logging_camps_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2217 = {
-			add_building = cereal_fields_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2218 = {
-			add_building = logging_camps_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = logging_camps_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2213 = {
-			add_building = farm_estates_01
-			add_building = watermills_01
+			agot_add_building_if_possible = { BUILDING = farm_estates_01 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
 		province:2251 = {
-			add_building = barracks_03
-			add_building = smiths_04
-			add_building = pastures_04
+			agot_add_building_if_possible = { BUILDING = barracks_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
 		}
 		province:2255 = {
-			add_building = barracks_06
-			add_building = smiths_04
-			add_building = hill_farms_06
+			agot_add_building_if_possible = { BUILDING = barracks_06 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_06 }
 		}
 		province:2277 = {
-			add_building = smiths_04
-			add_building = regimental_grounds_04
-			add_building = farm_estates_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_04 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
 		}
 		province:2308 = {
-			add_building = hill_farms_03
-			add_building = pastures_03
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:2323 = {
-			add_building = farm_estates_06
-			add_building = cereal_fields_06
-			add_building = pastures_06
+			agot_add_building_if_possible = { BUILDING = farm_estates_06 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_06 }
+			agot_add_building_if_possible = { BUILDING = pastures_06 }
 		}
 		province:2344 = {
-			add_building = regimental_grounds_02
-			add_building = farm_estates_02
-			add_building = cereal_fields_02
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_02 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
 		}
 		province:2350 = {
-			add_building = regimental_grounds_04
-			add_building = farm_estates_04
-			add_building = cereal_fields_04
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_04 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
 		}
 		province:2372 = {
-			add_building = hunting_grounds_03
-			add_building = logging_camps_03
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:2392 = {
-			add_building = regimental_grounds_04
-			add_building = farm_estates_04
-			add_building = hunting_grounds_04
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_04 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_04 }
 		}
 		province:2433 = {
-			add_building = barracks_04
-			add_building = smiths_04
-			add_building = military_camps_04
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = military_camps_04 }
 		}
 		province:2434 = {
-			add_building = common_tradeport_04
-			add_building = agot_urban_farms_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
 		}
 		province:2435 = {
-			add_building = agot_urban_farms_02
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_02 }
 		}
 		province:2439 = {
-			add_building = agot_urban_farms_02
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_02 }
 		}
 		province:2442 = {
-			add_building = common_tradeport_04
-			add_building = agot_urban_farms_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
 		}
 		province:2455 = {
-			add_building = stables_06
-			add_building = regimental_grounds_06
-			add_building = farm_estates_06
+			agot_add_building_if_possible = { BUILDING = stables_06 }
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_06 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_06 }
 		}
 		province:2514 = {
-			add_building = smiths_04
-			add_building = hill_farms_04
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:2718 = {
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:2855 = {
-			add_building = godswood_02
-			add_building = stables_06
-			add_building = barracks_04
+			agot_add_building_if_possible = { BUILDING = godswood_02 }
+			agot_add_building_if_possible = { BUILDING = stables_06 }
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
 		}
 		province:2862 = {
-			add_building = barracks_02
-			add_building = smiths_01
+			agot_add_building_if_possible = { BUILDING = barracks_02 }
+			agot_add_building_if_possible = { BUILDING = smiths_01 }
 		}
 		province:2863 = {
-			add_building = guild_halls_06
-			add_building = agot_urban_farms_06
+			agot_add_building_if_possible = { BUILDING = guild_halls_06 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_06 }
 		}
 		province:2865 = {
-			add_building = guild_halls_05
-			add_building = agot_urban_farms_03
+			agot_add_building_if_possible = { BUILDING = guild_halls_05 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
 		}
 		province:2866 = {
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:2884 = {
-			add_building = workshops_04
-			add_building = hunting_grounds_03
-			add_building = logging_camps_03
+			agot_add_building_if_possible = { BUILDING = workshops_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
 		}
 		province:2916 = {
-			add_building = smiths_04
-			add_building = hunting_grounds_03
-			add_building = hill_farms_02
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_02 }
 		}
 		province:2961 = {
-			add_building = smiths_04
-			add_building = hunting_grounds_03
-			add_building = hill_farms_02
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_02 }
 		}
 		province:2999 = {
-			add_building = smiths_04
-			add_building = hunting_grounds_03
-			add_building = quarries_03
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_03 }
 		}
 		province:3023 = {
-			add_building = smiths_04
-			add_building = hunting_grounds_03
-			add_building = cereal_fields_02
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
 		}
 		province:3043 = {
-			add_building = smiths_04
-			add_building = hunting_grounds_03
-			add_building = logging_camps_03
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
 		}
 		province:3067 = {
-			add_building = smiths_03
-			add_building = quarries_04
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_04 }
 		}
 		province:3068 = {
-			add_building = hill_farms_03
-			add_building = quarries_04
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_04 }
 		}
 		province:3072 = {
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:3074 = {
-			add_building = hill_farms_03
-			add_building = quarries_04
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_04 }
 		}
 		province:3089 = {
-			add_building = hill_farms_03
-			add_building = quarries_04
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_04 }
 		}
 		province:3092 = {
-			add_building = smiths_03
-			add_building = hill_farms_03
-			add_building = hunting_grounds_03
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
 		}
 		province:3093 = {
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:3094 = {
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:3104 = {
-			add_building = guild_halls_04
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = guild_halls_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:3114 = {
-			add_building = smiths_03
-			add_building = hunting_grounds_03
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:3122 = {
-			add_building = hunting_grounds_01
-			add_building = pastures_01
-			add_building = cereal_fields_01
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_01 }
+			agot_add_building_if_possible = { BUILDING = pastures_01 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
 		}
 		province:3135 = {
-			add_building = stables_04
-			add_building = smiths_04
-			add_building = hill_farms_04
+			agot_add_building_if_possible = { BUILDING = stables_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_04 }
 		}
 		province:3161 = {
-			add_building = hunting_grounds_01
-			add_building = pastures_01
-			add_building = cereal_fields_01
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_01 }
+			agot_add_building_if_possible = { BUILDING = pastures_01 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
 		}
 		province:3186 = {
-			add_building = smiths_01
-			add_building = pastures_01
-			add_building = cereal_fields_01
+			agot_add_building_if_possible = { BUILDING = smiths_01 }
+			agot_add_building_if_possible = { BUILDING = pastures_01 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
 		}
 		province:3201 = {
-			add_building = smiths_03
-			add_building = cereal_fields_03
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:3202 = {
-			add_building = hunting_grounds_02
-			add_building = logging_camps_02
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_02 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3203 = {
-			add_building = hill_farms_02
-			add_building = quarries_02
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = hill_farms_02 }
+			agot_add_building_if_possible = { BUILDING = quarries_02 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:3205 = {
-			add_building = cereal_fields_03
-			add_building = pastures_03
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:3206 = {
-			add_building = smiths_04
-			add_building = hill_farms_03
-			add_building = quarries_03
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_03 }
 		}
 		province:3223 = {
-			add_building = common_tradeport_03
-			add_building = hill_farms_03
-			add_building = quarries_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_03 }
 		}
 		province:3225 = {
-			add_building = common_tradeport_03
-			add_building = pastures_03
-			add_building = quarries_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_03 }
 		}
 		province:3228 = {
-			add_building = common_tradeport_03
-			add_building = pastures_03
-			add_building = cereal_fields_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
 		}
 		province:3229 = {
-			add_building = common_tradeport_03
-			add_building = pastures_03
-			add_building = quarries_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_03 }
 		}
 		province:3230 = {
-			add_building = common_tradeport_03
-			add_building = pastures_03
-			add_building = quarries_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_03 }
 		}
 		province:3233 = {
-			add_building = common_tradeport_03
-			add_building = pastures_03
-			add_building = quarries_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_03 }
 		}
 		province:3234 = {
-			add_building = common_tradeport_01
-			add_building = pastures_01
-			add_building = cereal_fields_01
+			agot_add_building_if_possible = { BUILDING = common_tradeport_01 }
+			agot_add_building_if_possible = { BUILDING = pastures_01 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
 		}
 		province:3237 = {
-			add_building = hill_farms_08
-			add_building = pastures_04
-			add_building = stables_04
+			agot_add_building_if_possible = { BUILDING = hill_farms_08 }
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
+			agot_add_building_if_possible = { BUILDING = stables_04 }
 		}
 		province:3238 = {
-			add_building = hill_farms_06
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_06 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3239 = {
-			add_building = hill_farms_06
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_06 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3240 = {
-			add_building = hill_farms_06
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_06 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3241 = {
-			add_building = hill_farms_06
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_06 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3245 = {
-			add_building = farm_estates_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3246 = {
-			add_building = farm_estates_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3261 = {
-			add_building = farm_estates_03
-			add_building = common_tradeport_01
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_01 }
 		}
 		province:3262 = {
-			add_building = farm_estates_03
-			add_building = common_tradeport_01
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_01 }
 		}
 		province:3263 = {
-			add_building = farm_estates_03
-			add_building = common_tradeport_01
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_01 }
 		}
 		province:3268 = {
-			add_building = farm_estates_04
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:3269 = {
-			add_building = hill_farms_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3270 = {
-			add_building = farm_estates_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3274 = {
-			add_building = farm_estates_03
-			add_building = cereal_fields_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
 		}
 		province:3278 = {
-			add_building = farm_estates_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3293 = {
-			add_building = stables_03
-			add_building = smiths_03
-			add_building = cereal_fields_03
+			agot_add_building_if_possible = { BUILDING = stables_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
 		}
 		province:3320 = {
-			add_building = barracks_04
-			add_building = smiths_04
-			add_building = hunting_grounds_04
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_04 }
 		}
 		province:3354 = {
-			add_building = workshops_04
-			add_building = smiths_04
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = workshops_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:3407 = {
-			add_building = hunting_grounds_03
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:3422 = {
-			add_building = smiths_03
-			add_building = hunting_grounds_03
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:3455 = {
-			add_building = smiths_04
-			add_building = cereal_fields_04
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3458 = {
-			add_building = cereal_fields_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3459 = {
-			add_building = cereal_fields_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3461 = {
-			add_building = smiths_04
-			add_building = cereal_fields_04
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:3462 = {
-			add_building = common_tradeport_04
-			add_building = cereal_fields_04
-			add_building = pastures_04
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
 		}
 		province:3493 = {
-			add_building = workshops_06
-			add_building = smiths_06
-			add_building = common_tradeport_06
+			agot_add_building_if_possible = { BUILDING = workshops_06 }
+			agot_add_building_if_possible = { BUILDING = smiths_06 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_06 }
 		}
 		province:3494 = {
-			add_building = common_tradeport_07
-			add_building = agot_urban_farms_08
+			agot_add_building_if_possible = { BUILDING = common_tradeport_07 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_08 }
 		}
 		province:3496 = {
-			add_building = common_tradeport_04
-			add_building = agot_urban_farms_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_02 }
 		}
 		province:3497 = {
-			add_building = guild_halls_05
-			add_building = common_tradeport_04
-			add_building = agot_urban_farms_02
+			agot_add_building_if_possible = { BUILDING = guild_halls_05 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_02 }
 		}
 		province:3498 = {
-			add_building = guild_halls_05
-			add_building = agot_urban_farms_02
+			agot_add_building_if_possible = { BUILDING = guild_halls_05 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_02 }
 		}
 		province:3499 = {
-			add_building = common_tradeport_04
-			add_building = agot_urban_farms_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_02 }
 		}
 		province:3500 = {
-			add_building = common_tradeport_03
-			add_building = agot_urban_farms_04
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_04 }
 		}
 		province:3514 = {
-			add_building = cereal_fields_04
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3515 = {
-			add_building = cereal_fields_04
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3530 = {
-			add_building = cereal_fields_04
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3534 = {
-			add_building = smiths_04
-			add_building = cereal_fields_04
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3539 = {
-			add_building = cereal_fields_04
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3564 = {
-			add_building = smiths_04
-			add_building = apiaries_04
-			add_building = cereal_fields_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = apiaries_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
 		}
 		province:3601 = {
-			add_building = farm_estates_03
-			add_building = cereal_fields_03
-			add_building = apiaries_03
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
+			agot_add_building_if_possible = { BUILDING = apiaries_03 }
 		}
 		province:3627 = {
-			add_building = warrior_lodges_03
-			add_building = smiths_03
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = warrior_lodges_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:3655 = {
-			add_building = hunting_grounds_04
-			add_building = pastures_04
-			add_building = hill_farms_04
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_04 }
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_04 }
 		}
 		province:3684 = {
-			add_building = stables_04
-			add_building = farm_estates_04
-			add_building = cereal_fields_04
+			agot_add_building_if_possible = { BUILDING = stables_04 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
 		}
 		province:3730 = {
-			add_building = stables_05
-			add_building = smiths_05
-			add_building = hill_farms_05
+			agot_add_building_if_possible = { BUILDING = stables_05 }
+			agot_add_building_if_possible = { BUILDING = smiths_05 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_05 }
 		}
 		province:3768 = {
-			add_building = smiths_03
-			add_building = hunting_grounds_03
-			add_building = cereal_fields_03
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
 		}
 		province:3813 = {
-			add_building = hill_farms_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3816 = {
-			add_building = hill_farms_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3819 = {
-			add_building = hill_farms_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3823 = {
-			add_building = farm_estates_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3824 = {
-			add_building = hill_farms_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3828 = {
-			add_building = cereal_fields_02
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3831 = {
-			add_building = hill_farms_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3844 = {
-			add_building = stables_03
-			add_building = hunting_grounds_03
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = stables_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:3858 = {
-			add_building = hill_farms_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3859 = {
-			add_building = hill_farms_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3862 = {
-			add_building = logging_camps_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:3886 = {
-			add_building = logging_camps_03
-			add_building = hunting_grounds_03
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
 		}
 		province:3911 = {
-			add_building = cereal_fields_03
-			add_building = hunting_grounds_03
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
 		}
 		province:3938 = {
-			add_building = logging_camps_03
-			add_building = hunting_grounds_03
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
 		}
 		province:3966 = {
-			add_building = hill_farms_01
+			agot_add_building_if_possible = { BUILDING = hill_farms_01 }
 		}
 		province:3967 = {
-			add_building = hill_farms_01
-			add_building = pastures_01
+			agot_add_building_if_possible = { BUILDING = hill_farms_01 }
+			agot_add_building_if_possible = { BUILDING = pastures_01 }
 		}
 		province:4001 = {
-			add_building = farm_estates_02
-			add_building = cereal_fields_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_02 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
 		}
 		province:4005 = {
-			add_building = farm_estates_02
-			add_building = cereal_fields_02
-			add_building = hunting_grounds_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_02 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_02 }
 		}
 		province:4012 = {
-			add_building = hill_farms_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:4033 = {
-			add_building = farm_estates_02
-			add_building = cereal_fields_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_02 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
 		}
 		province:4037 = {
-			add_building = farm_estates_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:4038 = {
-			add_building = farm_estates_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:4072 = {
-			add_building = farm_estates_04
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:4079 = {
-			add_building = farm_estates_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:4102 = {
-			add_building = smiths_04
-			add_building = hunting_grounds_04
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:4107 = {
-			add_building = smiths_03
-			add_building = hunting_grounds_03
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:4111 = {
-			add_building = smiths_03
-			add_building = hunting_grounds_03
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:4116 = {
-			add_building = smiths_03
-			add_building = hunting_grounds_03
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:4124 = {
-			add_building = common_tradeport_05
-			add_building = cereal_fields_05
-			add_building = regimental_grounds_04
+			agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_05 }
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_04 }
 		}
 		province:4125 = {
-			add_building = common_tradeport_05
-			add_building = farm_estates_04
+			agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
 		}
 		province:4126 ={
-			add_building = farm_estates_04
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
 		}
 		province:4127 ={
-			add_building = common_tradeport_05
+			agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
 		}
 		province:4129 ={
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:4131 ={
-			add_building = common_tradeport_05
+			agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
 		}
 		province:4131 ={
-			add_building = common_tradeport_06
+			agot_add_building_if_possible = { BUILDING = common_tradeport_06 }
 		}
 		province:4134 ={
-			add_building = farm_estates_02
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_02 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:4135 ={
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:4136 = {
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:4137 ={
-			add_building = farm_estates_04
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:4138 ={
-			add_building = farm_estates_02
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = farm_estates_02 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:4151 = {
-			add_building = stables_04
-			add_building = workshops_04
-			add_building = godswood_02
+			agot_add_building_if_possible = { BUILDING = stables_04 }
+			agot_add_building_if_possible = { BUILDING = workshops_04 }
+			agot_add_building_if_possible = { BUILDING = godswood_02 }
 		}
 		province:4152 = {
-			add_building = agot_urban_farms_03
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
 		}
 		province:4153 = {
-			add_building = agot_urban_farms_03
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
 		}
 		province:4154 = {
-			add_building = guild_halls_08
-			add_building = agot_urban_farms_08
+			agot_add_building_if_possible = { BUILDING = guild_halls_08 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_08 }
 		}
 		province:4155 = {
-			add_building = agot_urban_farms_03
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
 		}
 		province:4156 = {
-			add_building = military_camps_01
+			agot_add_building_if_possible = { BUILDING = military_camps_01 }
 		}
 		province:4160 = {
-			add_building = military_camps_01
+			agot_add_building_if_possible = { BUILDING = military_camps_01 }
 		}
 		province:4177 = {
-			add_building = pastures_04
-			add_building = stables_03
-			add_building = military_camps_03
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
+			agot_add_building_if_possible = { BUILDING = stables_03 }
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
 		}
 		province:4197 = {
-			add_building = pastures_04
-			add_building = stables_03
-			add_building = military_camps_03
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
+			agot_add_building_if_possible = { BUILDING = stables_03 }
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
 		}
 		province:4217 = {
-			add_building = smiths_04
-			add_building = pastures_04
-			add_building = cereal_fields_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
 		}
 		province:4241 = {
-			add_building = barracks_03
-			add_building = smiths_03
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = barracks_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:4242 = {
-			add_building = logging_camps_04
-			add_building = outposts_04
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = logging_camps_04 }
+			agot_add_building_if_possible = { BUILDING = outposts_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:4268 = {
-			add_building = smiths_04
-			add_building = cereal_fields_03
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:4388 = {
-			add_building = barracks_04
-			add_building = smiths_04
-			add_building = hill_farms_04
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_04 }
 		}
 		province:4415 = {
-			add_building = warrior_lodges_03
-			add_building = smiths_03
-			add_building = quarries_03
+			agot_add_building_if_possible = { BUILDING = warrior_lodges_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_03 }
 		}
 		province:4419 = {
-			add_building = cereal_fields_04
-			add_building = pastures_04
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+			agot_add_building_if_possible = { BUILDING = pastures_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:4420 = {
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:4428 = {
-			add_building = smiths_04
-			add_building = hill_farms_04
-			add_building = common_tradeport_04
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_04 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:4436 = {
-			add_building = barracks_04
-			add_building = hill_farms_05
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_05 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:4439 = {
-			add_building = stables_05
-			add_building = smiths_05
-			add_building = godswood_04
+			agot_add_building_if_possible = { BUILDING = stables_05 }
+			agot_add_building_if_possible = { BUILDING = smiths_05 }
+			agot_add_building_if_possible = { BUILDING = godswood_04 }
 		}
 		province:4468 = {
-			add_building = warrior_lodges_03
-			add_building = smiths_03
-			add_building = hunting_grounds_03
+			agot_add_building_if_possible = { BUILDING = warrior_lodges_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
 		}
 		province:4474 = {
-			add_building = military_camps_03
-			add_building = hunting_grounds_03
-			add_building = logging_camps_03
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
 		}
 		province:4495 = {
-			add_building = military_camps_04
-			add_building = outposts_04
-			add_building = quarries_04
+			agot_add_building_if_possible = { BUILDING = military_camps_04 }
+			agot_add_building_if_possible = { BUILDING = outposts_04 }
+			agot_add_building_if_possible = { BUILDING = quarries_04 }
 		}
 		province:4526 = {
-			add_building = military_camps_03
-			add_building = smiths_02
-			add_building = logging_camps_03
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_02 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
 		}
 		province:4574 = {
-			add_building = military_camps_03
-			add_building = smiths_02
-			add_building = logging_camps_03
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_02 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
 		}
 		province:4581 = {
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:4605 = {
-			add_building = military_camps_03
-			add_building = smiths_02
-			add_building = logging_camps_03
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_02 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
 		}
 		province:4631 = {
-			add_building = quarries_02
-			add_building = barracks_02
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = quarries_02 }
+			agot_add_building_if_possible = { BUILDING = barracks_02 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:4645 = {
-			add_building = military_camps_04
-			add_building = smiths_04
-			add_building = hill_farms_04
+			agot_add_building_if_possible = { BUILDING = military_camps_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_04 }
 		}
 		province:4673 = {
-			add_building = military_camps_03
-			add_building = smiths_03
-			add_building = cereal_fields_03
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
 		}
 		province:4699 = {
-			add_building = stables_04
-			add_building = smiths_03
-			add_building = hill_farms_04
+			agot_add_building_if_possible = { BUILDING = stables_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_04 }
 		}
 		province:4720 = {
-			add_building = military_camps_04
-			add_building = smiths_04
-			add_building = hill_farms_04
+			agot_add_building_if_possible = { BUILDING = military_camps_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_04 }
 		}
 		province:4744 = {
-			add_building = military_camps_04
-			add_building = smiths_04
-			add_building = cereal_fields_03
+			agot_add_building_if_possible = { BUILDING = military_camps_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
 		}
 		province:4803 = {
-			add_building = barracks_03
-			add_building = smiths_02
-			add_building = cereal_fields_03
+			agot_add_building_if_possible = { BUILDING = barracks_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_02 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
 		}
 		province:4832 = {
-			add_building = barracks_04
-			add_building = hunting_grounds_04
-			add_building = logging_camps_04
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_04 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_04 }
 		}
 		province:4875 = {
-			add_building = barracks_04
-			add_building = smiths_03
-			add_building = hill_farms_02
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_02 }
 		}
 		province:4896 = {
-			add_building = barracks_04
-			add_building = smiths_03
-			add_building = cereal_fields_03
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
 		}
 		province:4917 ={
-			add_building = quarries_08
-			add_building = stables_04
-			add_building = cereal_fields_03
+			agot_add_building_if_possible = { BUILDING = quarries_08 }
+			agot_add_building_if_possible = { BUILDING = stables_04 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_03 }
 		}
 		province:4918 ={
-			add_building = logging_camps_03
-			add_building = common_tradeport_06
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_06 }
 		}
 		province:4919 ={
-			add_building = guild_halls_05
+			agot_add_building_if_possible = { BUILDING = guild_halls_05 }
 		}
 		province:4920 ={
-			add_building = guild_halls_05
+			agot_add_building_if_possible = { BUILDING = guild_halls_05 }
 		}
 		province:4925 ={
-			add_building = guild_halls_03
+			agot_add_building_if_possible = { BUILDING = guild_halls_03 }
 		}
 		province:4926 ={
-			add_building = guild_halls_03
+			agot_add_building_if_possible = { BUILDING = guild_halls_03 }
 		}
 		province:4928 ={
-			add_building = common_tradeport_05
+			agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
 		}
 		province:4929 ={
-			add_building = guild_halls_03
+			agot_add_building_if_possible = { BUILDING = guild_halls_03 }
 		}
 		province:4930 ={
-			add_building = common_tradeport_05
-			add_building = hill_farms_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
 		}
 		province:4931 ={
-			add_building = guild_halls_03
+			agot_add_building_if_possible = { BUILDING = guild_halls_03 }
 		}
 		province:4932 ={
-			add_building = common_tradeport_05
+			agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
 		}
 		province:4933 ={
-			add_building = guild_halls_05
+			agot_add_building_if_possible = { BUILDING = guild_halls_05 }
 		}
 		province:4934 ={
-			add_building = guild_halls_05
+			agot_add_building_if_possible = { BUILDING = guild_halls_05 }
 		}
 		province:4937 ={
-			add_building = horse_pastures_04
-			add_building = barracks_04
-			add_building = workshops_04
+			agot_add_building_if_possible = { BUILDING = horse_pastures_04 }
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = workshops_04 }
 		}
 		province:4939 ={
-			add_building = plantations_03
+			agot_add_building_if_possible = { BUILDING = plantations_03 }
 		}
 		province:4940 ={
-			add_building = caravanserai_01
-			add_building = common_tradeport_02
+			agot_add_building_if_possible = { BUILDING = caravanserai_01 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:4945 = {
-			add_building = common_tradeport_05
-			add_building = orchards_05
-			add_building = caravanserai_05
+			agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
+			agot_add_building_if_possible = { BUILDING = orchards_05 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_05 }
 		}
 		province:4946 = {
-			add_building = common_tradeport_03
-			add_building = orchards_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = orchards_02 }
 		}
 		province:4964 = {
-			add_building = common_tradeport_03
-			add_building = orchards_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = orchards_02 }
 		}
 		province:4955 = {
-			add_building = common_tradeport_03
-			add_building = orchards_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = orchards_02 }
 		}
 		province:4956 = {
-			add_building = common_tradeport_03
-			add_building = orchards_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = orchards_02 }
 		}
 		province:4960 = {
-			add_building = regimental_grounds_01
-			add_building = caravanserai_01
-			add_building = common_tradeport_01
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_01 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_01 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_01 }
 		}
 		province:4965 = {
-			add_building = common_tradeport_03
-			add_building = orchards_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = orchards_02 }
 		}
 		province:5002 = {
-			add_building = regimental_grounds_03
-			add_building = common_tradeport_03
-			add_building = caravanserai_03
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_03 }
 		}
 		province:5013 = {
-			add_building = common_tradeport_03
-			add_building = orchards_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = orchards_02 }
 		}
 		province:5017 = {
-			add_building = common_tradeport_03
-			add_building = orchards_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = orchards_02 }
 		}
 		province:5022 = {
-			add_building = common_tradeport_03
-			add_building = orchards_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = orchards_02 }
 		}
 		province:5027 = {
-			add_building = common_tradeport_03
-			add_building = orchards_02
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = orchards_02 }
 		}
 		province:5032 = {
-			add_building = outposts_02
-			add_building = workshops_02
-			add_building = hunting_grounds_02
+			agot_add_building_if_possible = { BUILDING = outposts_02 }
+			agot_add_building_if_possible = { BUILDING = workshops_02 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_02 }
 		}
 		province:5049 = {
-			add_building = barracks_02
-			add_building = hill_farms_02
-			add_building = caravanserai_02
+			agot_add_building_if_possible = { BUILDING = barracks_02 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_02 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_02 }
 		}
 		province:5068 = {
-			add_building = workshops_03
-			add_building = plantations_03
-			add_building = caravanserai_03
+			agot_add_building_if_possible = { BUILDING = workshops_03 }
+			agot_add_building_if_possible = { BUILDING = plantations_03 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_03 }
 		}
 		province:5102 = {
-			add_building = outposts_02
-			add_building = workshops_02
-			add_building = caravanserai_02
+			agot_add_building_if_possible = { BUILDING = outposts_02 }
+			agot_add_building_if_possible = { BUILDING = workshops_02 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_02 }
 		}
 		province:5135 = {
-			add_building = outposts_04
-			add_building = workshops_04
-			add_building = caravanserai_04
+			agot_add_building_if_possible = { BUILDING = outposts_04 }
+			agot_add_building_if_possible = { BUILDING = workshops_04 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_04 }
 		}
 		province:5211 = {
-			add_building = outposts_03
-			add_building = workshops_03
-			add_building = caravanserai_03
+			agot_add_building_if_possible = { BUILDING = outposts_03 }
+			agot_add_building_if_possible = { BUILDING = workshops_03 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_03 }
 		}
 		province:5257 = {
-			add_building = warrior_lodges_04
-			add_building = barracks_03
-			add_building = hill_farms_02
+			agot_add_building_if_possible = { BUILDING = warrior_lodges_04 }
+			agot_add_building_if_possible = { BUILDING = barracks_03 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_02 }
 		}
 		province:5258 = {
-			add_building = common_tradeport_03
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		province:5303 = {
-			add_building = barracks_05
-			add_building = warrior_lodges_05
-			add_building = hill_farms_05
+			agot_add_building_if_possible = { BUILDING = barracks_05 }
+			agot_add_building_if_possible = { BUILDING = warrior_lodges_05 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_05 }
 		}
 		province:5352 = {
-			add_building = barracks_04
-			add_building = quarries_04
-			add_building = caravanserai_03
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+			agot_add_building_if_possible = { BUILDING = quarries_04 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_03 }
 		}
 		province:5412 = {
-			add_building = smiths_04
-			add_building = quarries_03
-			add_building = plantations_03
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+			agot_add_building_if_possible = { BUILDING = quarries_03 }
+			agot_add_building_if_possible = { BUILDING = plantations_03 }
 		}
 		province:5441 = {
-			add_building = barracks_03
-			add_building = quarries_03
-			add_building = caravanserai_03
+			agot_add_building_if_possible = { BUILDING = barracks_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_03 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_03 }
+		}
+		province:7294 = {
+			agot_add_building_if_possible = { BUILDING = agot_pirate_economic_06 }
+			agot_add_building_if_possible = { BUILDING = agot_pirate_fortification_02 }
+		}
+		province:7351 = {
+			agot_add_building_if_possible = { BUILDING = barracks_03 }
+			agot_add_building_if_possible = { BUILDING = agot_slave_camps_06 }
+		}
+		province:7352 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_07 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_04 }
+		}
+		province:7353 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
+		}
+		province:7354 = {
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_02 }
+			agot_add_building_if_possible = { BUILDING = agot_slave_camps_06 }
+		}
+		province:7355 = {
+			agot_add_building_if_possible = { BUILDING =common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
+		}
+		province:7356 = {
+			agot_add_building_if_possible = { BUILDING = barracks_03 }
+			agot_add_building_if_possible = { BUILDING = agot_slave_camps_06 }
+		}
+		province:7357 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
+		}
+		province:7358 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
+			agot_add_building_if_possible = { BUILDING = guild_halls_02 }
+			agot_add_building_if_possible = { BUILDING = agot_slave_camps_06 }
+		}
+		province:7363 = {
+			agot_add_building_if_possible = { BUILDING = cereal_fields_06 }
+		}
+		province:7364 = {
+			agot_add_building_if_possible = { BUILDING = hill_farms_05 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+		}
+		province:7365 = {
+			agot_add_building_if_possible = { BUILDING = hill_farms_05 }
+			agot_add_building_if_possible = { BUILDING = apiaries_02 }
+		}
+		province:7368 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7369 = {
+			agot_add_building_if_possible = { BUILDING = cereal_fields_06 }
+		}
+		province:7370 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7371 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7372 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
+		}
+		province:7373 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
+		}
+		province:7374 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
+		}
+		province:7375 = {
+			agot_add_building_if_possible = { BUILDING = cereal_fields_02 }
+		}
+		province:7381 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
+			agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+		}
+		province:7388 = {
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_04 }
+			agot_add_building_if_possible = { BUILDING = agot_slave_camps_06 }
+		}
+		province:7389 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = military_camps_04 }
+		}
+		province:7390 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_02 }
+		}
+		province:7391 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_04 }
+		}
+		province:7392 = {
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
+			agot_add_building_if_possible = { BUILDING = workshops_03 }
+			agot_add_building_if_possible = { BUILDING = agot_slave_camps_06 }
+		}
+		province:7395 = {
+			agot_add_building_if_possible = { BUILDING = orchards_02 }
+		}
+		province:7396 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
+		}
+		province:7397 = {
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = agot_slave_camps_06 }
+		}
+		province:7400 = {
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_02 }
+		}
+		province:7401 = {
+			agot_add_building_if_possible = { BUILDING = guild_halls_02 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
+			agot_add_building_if_possible = { BUILDING = agot_slave_camps_06 }
+		}
+		province:7402 = {
+			agot_add_building_if_possible = { BUILDING = logging_camps_04 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_06 }
+		}
+		province:7406 = {
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+		}
+		province:7407 = {
+			agot_add_building_if_possible = { BUILDING = military_camps_03 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+		}
+		province:7410 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
+			agot_add_building_if_possible = { BUILDING = hill_farms_04 }
+		}
+		province:7411 = {
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_03 }
+		}
+		province:7413 = {
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7414 = {
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7417 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
+		}
+		province:7418 = {
+			agot_add_building_if_possible = { BUILDING = logging_camps_05 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_04 }
+		}
+		province:7419 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_05 }
+		}
+		province:7420 = {
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_03 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7422 = {
+			agot_add_building_if_possible = { BUILDING = logging_camps_02 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_02 }
+		}
+		province:7424 = {
+			agot_add_building_if_possible = { BUILDING = logging_camps_02 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_02 }
+		}
+		province:7426 = {
+			agot_add_building_if_possible = { BUILDING = pastures_02 }
+		}
+		province:7428 = {
+			agot_add_building_if_possible = { BUILDING = logging_camps_05 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_04 }
+		}
+		province:7429 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_05 }
+		}
+		province:7431 = {
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7432 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_05 }
+		}
+		province:7436 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_01 }
+		}
+		province:7437 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7442 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7447 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7454 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7456 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7471 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7472 = {
+			agot_add_building_if_possible = { BUILDING = elephant_pens_04 }
+			agot_add_building_if_possible = { BUILDING = smiths_04 }
+		}
+		province:7474 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7479 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7487 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7491 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_05 }
+		}
+		province:7492 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7494 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_04 }
+		}
+		province:7501 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_06 }
+		}
+		province:7502 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_02 }
+		}
+		province:7505 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_02 }
+		}
+		province:7506 = {
+			agot_add_building_if_possible = { BUILDING = farm_estates_06 }
+		}
+		province:7517 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
+		}
+		province:7528 = {
+			agot_add_building_if_possible = { BUILDING = caravanserai_05 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
+		}
+		province:7531 = {
+			agot_add_building_if_possible = { BUILDING = regimental_grounds_02 }
+			agot_add_building_if_possible = { BUILDING = farm_estates_03 }
+		}
+		province:7534 = {
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_04 }
+		}
+		province:7535 = {
+			agot_add_building_if_possible = { BUILDING = caravanserai_05 }
+			agot_add_building_if_possible = { BUILDING = hunting_grounds_04 }
+		}
+		province:7545 = {
+			agot_add_building_if_possible = { BUILDING = caravanserai_05 }
+			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
+		}
+		province:7556 = { 
+			agot_add_building_if_possible = { BUILDING = workshops_06 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_04 }
+			agot_add_building_if_possible = { BUILDING = caravanserai_03 }
+		}
+		province:7557 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_06 }
+			agot_add_building_if_possible = { BUILDING = workshops_03 }
+		}
+		province:7558 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_06 }
+			agot_add_building_if_possible = { BUILDING = workshops_03 }
+		}
+		province:7559 = {
+			agot_add_building_if_possible = { BUILDING = workshops_03 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_06 }
+		}
+		province:7560 = {
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_03 }
+			agot_add_building_if_possible = { BUILDING = workshops_03 }
+		}
+		province:7561 = {
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_04 }
+			agot_add_building_if_possible = { BUILDING = workshops_03 }
+		}
+		province:7562 = {
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_04 }
+			agot_add_building_if_possible = { BUILDING = workshops_03 }
+		}
+		province:7563 = {
+			agot_add_building_if_possible = { BUILDING = monastic_schools_05 }
+			agot_add_building_if_possible = { BUILDING = barracks_04 }
+		}
+		province:7564 = {
+			agot_add_building_if_possible = { BUILDING = hill_farms_03 }
+			agot_add_building_if_possible = { BUILDING = pastures_02 }
+		}
+		province:7565 = {
+			agot_add_building_if_possible = { BUILDING = guild_halls_02 }
+			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
 		}
 		### Religion related setup
 		# Setup faiths
@@ -1315,6 +1728,9 @@ agot_on_game_start = {
 		# Manage Incest restrictions
 		dynasty:dynn_Targaryen = { set_variable = agot_allow_adelphogamous_incest }
 		dynasty:dynn_Codd = { set_variable = agot_allow_adelphogamous_incest }
+		dynasty:dynn_Varezys = { set_variable = agot_allow_adelphogamous_incest }
+		dynasty:dynn_Mataeryon = { set_variable = agot_allow_adelphogamous_incest}
+		dynasty:dynn_Belaerys = { set_variable = agot_allow_adelphogamous_incest}
 
 		# Manage valyrian_heritage_dynasty_modifier and other
 		dynasty:dynn_Targaryen = {
@@ -1323,9 +1739,11 @@ agot_on_game_start = {
 		}
 		dynasty:dynn_Velaryon = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
 		dynasty:dynn_Celtigar = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
-		dynasty:dynn_Aranys = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
 		dynasty:dynn_Scales = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
 		dynasty:dynn_Qoherys = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
+		dynasty:dynn_Varezys = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
+		dynasty:dynn_Mataeryon = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
+		dynasty:dynn_Belaerys = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
 
 		# Thrall Houses Modifier
 		dynasty:dynn_Codd = { add_dynasty_modifier = thrall_house_dynasty_modifier }
@@ -1336,6 +1754,9 @@ agot_on_game_start = {
 		dynasty:dynn_Tidewood = { add_dynasty_modifier = thrall_house_dynasty_modifier }
 		dynasty:dynn_Weaver = { add_dynasty_modifier = thrall_house_dynasty_modifier }
 		dynasty:dynn_Netley = { add_dynasty_modifier = thrall_house_dynasty_modifier }
+
+		#Dynasty Divided
+		house:house_Blackfyre ?= { add_house_modifier = divided_dynasty_house_modifier }
 
 		# give Targaryen loyalist modifiers
 		every_ruler = {
@@ -1653,8 +2074,12 @@ agot_on_game_start = {
 					NOT = { has_government = ruins_government }
 				}
 				change_government = lp_feudal_government
-				#every_vassal_or_below = { change_government = lp_feudal_government }
-				#liege = { change_government = lp_feudal_government }
+			}
+			if = {
+				limit = {
+					agot_is_valid_pirate_government_target = yes
+				}
+				change_government = pirate_government
 			}
 			if = {
 				limit = {
@@ -1670,17 +2095,10 @@ agot_on_game_start = {
 			if = { # Night's Watch
 				limit = {
 					agot_is_member_of_nights_watch = yes
-					#always = yes
-				}
-				trigger_event = {
-					id = agot_nights_watch.0003
 				}
 
-				every_vassal_or_below = {
-					trigger_event = {
-						id = agot_nights_watch.0003
-					}
-					add_unpressed_claim = prev.primary_title
+				trigger_event = {
+					id = agot_nights_watch.0003
 				}
 			}
 			if = { # The Citadel
@@ -1693,6 +2111,17 @@ agot_on_game_start = {
 
 				add_realm_law = male_preference_law
 			}
+
+			if = {
+				limit = {
+					has_government = pirate_government
+					primary_title.tier > tier_county
+				}
+				every_held_title = {
+					limit = { tier > tier_county }
+					add_title_law = pirate_succession_law
+				}
+			}
 			###
 
 			if = { # Setup CoA
@@ -1700,7 +2129,25 @@ agot_on_game_start = {
 					agot_is_valid_dyn_coa_target = yes
 				}
 				every_held_title = { reset_coa = yes }
-				trigger_event = agot_coa_events.1
+				trigger_event = agot_coa_events.0001
+			}
+
+			if = {
+				limit = {
+					primary_title.tier >= tier_kingdom
+					OR = {
+						primary_title = { has_title_law = magisterial_limited_succession_law }
+						primary_title = { has_title_law = magisterial_life_succession_law }
+					}
+				}
+				random_powerful_vassal = {
+					limit = { is_adult = yes }
+					prev = {
+						designate_diarch = prev
+						start_diarchy = gonfaloniere
+						set_diarchy_swing = 40
+					}
+				}
 			}
 		}
 
@@ -1724,7 +2171,9 @@ agot_on_game_start = {
 		}
 
 		every_living_character = {
-			trigger_event = agot_prowess.01 # Giving Prowess traits to characters
+			#educations
+			trigger_event = agot_prowess.0001 # Giving Prowess traits to characters
+			trigger_event = agot_events_generic.0009
 
 			#set up patron gods
 			if = {
@@ -1733,6 +2182,14 @@ agot_on_game_start = {
 					age > 13
 				}
 				trigger_event = agot_events_generic.0005
+			}
+
+			#set up dyed hair
+			if = {
+				limit = {
+					age > 13
+				}
+				trigger_event = agot_events_generic.0007
 			}
 
 			# must be before maester setup to make sure Aemon is set properly
@@ -1894,9 +2351,6 @@ agot_on_game_start = {
 			}
 		}
 	}
-	on_actions = {
-		agot_north_holding_cost
-	}
 }
 
 agot_house_feuds = {
@@ -2048,23 +2502,14 @@ agot_north_holding_cost = {
 	effect = {
 		every_county_in_region = {
 			region = world_westeros_the_north
-			limit = {
-				exists = this
-			}
 			add_county_modifier = agot_holding_build_speed_north
 		}
 		every_county_in_region = {
 			region = world_westeros_beyond_the_wall
-			limit = {
-				exists = this
-			}
 			add_county_modifier = agot_holding_build_speed_btw
 		}
 		every_county_in_region = {
 			region = world_westeros_the_wall
-			limit = {
-				exists = this
-			}
 			add_county_modifier = agot_holding_build_speed_north
 		}
 	}
@@ -2277,11 +2722,13 @@ agot_on_game_start_after_lobby = {
 		if = {
 			limit = {
 				OR = {
-					game_start_date = 8282.9.15
-					game_start_date = 8284.6.2
+					game_start_date = 8282.9.15 # Robert's Rebellion
+					game_start_date = 8284.6.2 # Crowned Stag
+					game_start_date = 8258.12.21 # NPK
 				}
 			}
 			## House Customizer Renown Fix - YES I DID TRY ITS OWN ON_ACTION
+			## NORTH ##
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2402,15 +2849,25 @@ agot_on_game_start_after_lobby = {
 			}
 			scope:hc_brightstone = { add_character_flag = house_customizer_placeholder }
 			## Crownlands ##
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Blackfyre_14.house
-				save_scope_as = hc_blackfyre
+			if = {
+				limit = {
+					game_start_date >= 8170.1.1 # Daemon Blackfyre's Birth
+					character:Targaryen_94.house = { # Blackfyres
+						any_house_member = { 
+							count <= 0
+						}
+					}
+				}
+				create_character = {
+					gender = male
+					location = title:e_the_iron_throne.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:e_the_iron_throne.holder.culture
+					dynasty_house = character:Blackfyre_14.house
+					save_scope_as = hc_blackfyre
+				}
+				scope:hc_blackfyre = { add_character_flag = house_customizer_placeholder }
 			}
-			scope:hc_blackfyre = { add_character_flag = house_customizer_placeholder }
 			create_character = {
 				gender = male
 				location = title:e_the_iron_throne.holder.capital_province
@@ -2497,6 +2954,34 @@ agot_on_game_start_after_lobby = {
 				save_scope_as = hc_hoare
 			}
 			scope:hc_hoare = { add_character_flag = house_customizer_placeholder }
+			## OLD VALYRIAN FAMILIES ##
+			create_character = {
+				gender = male
+				location = title:e_the_iron_throne.holder.capital_province
+				faith = faith:the_seven_main
+				culture = title:e_the_iron_throne.holder.culture
+				dynasty_house = character:Varezys_1.house
+				save_scope_as = hc_varezys
+			}
+			scope:hc_varezys = { add_character_flag = house_customizer_placeholder }
+			create_character = {
+				gender = male
+				location = title:e_the_iron_throne.holder.capital_province
+				faith = faith:the_seven_main
+				culture = title:e_the_iron_throne.holder.culture
+				dynasty_house = character:Mataeryon_1.house
+				save_scope_as = hc_mataeryon
+			}
+			scope:hc_mataeryon = { add_character_flag = house_customizer_placeholder }
+			create_character = {
+				gender = male
+				location = title:e_the_iron_throne.holder.capital_province
+				faith = faith:the_seven_main
+				culture = title:e_the_iron_throne.holder.culture
+				dynasty_house = character:Belaerys_1.house
+				save_scope_as = hc_belaerys
+			}
+			scope:hc_belaerys = { add_character_flag = house_customizer_placeholder }
 		}
 		every_player = {
 			if = {
@@ -2534,6 +3019,7 @@ agot_on_game_start_after_lobby = {
 			}
 			agot_clear_patron = yes
 		}
+
 		if = { # If NO player has house_customizer, we will kill these extinct house members used to skirt around the renown bug.
 			limit = {
 				any_player = {
@@ -2593,6 +3079,11 @@ agot_on_game_start_after_lobby = {
 				limit = { game_start_date = 8195.3.7 }
 
 				agot_8195_3_7_br_i_scenario_setup = yes
+			}
+			if = { # manage 8258.12.21 Ninepenny Kings scenario
+				limit = { game_start_date = 8258.12.21 }
+
+				agot_8259_11_1_ninepenny_setup = yes
 			}
 			if = { # manage 8282.9.15 Robert's Rebellion scenario
 				limit = { game_start_date = 8282.9.15 }
@@ -2693,7 +3184,8 @@ agot_on_game_start_after_lobby = {
 		}
 	}
 	events = {
-		agot_house_maintenance.1
+		agot_house_maintenance.0001
+		agot_adventurers_events.0001
 		# agot_nightswatch_maintenance.0001 # Removes female courtiers
 	}
 }

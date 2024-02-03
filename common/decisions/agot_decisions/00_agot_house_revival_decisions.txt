@@ -11,7 +11,7 @@
 	is_shown = {
 		# AGOT Bookmarked Added
 		game_start_date > 8130.1.1
-		character:Darklyn_45.house = {
+		character:Darklyn_1.house = {
 			NOT = {
 				any_house_member = {
 					is_alive = yes
@@ -28,10 +28,10 @@
 
 	effect = {
 		house = { save_scope_as = house }
-		hidden_effect = { set_house = character:Darklyn_45.house }
+		hidden_effect = { set_house = character:Darklyn_1.house }
 		scope:house = {
 			every_house_member = {
-				set_house = character:Darklyn_45.house
+				set_house = character:Darklyn_1.house
 			}
 		}
 		every_held_title = {
@@ -61,7 +61,7 @@ reyne_revival_decision = {
 	is_shown = {
 		# AGOT Bookmarked Added
 		game_start_date > 8130.1.1
-		character:Reyne_45.house = {
+		character:Reyne_1.house = {
 			NOT = {
 				any_house_member = {
 					is_alive = yes
@@ -78,10 +78,10 @@ reyne_revival_decision = {
 
 	effect = {
 		house = { save_scope_as = house }
-		hidden_effect = { set_house = character:Reyne_45.house }
+		hidden_effect = { set_house = character:Reyne_1.house }
 		scope:house = {
 			every_house_member = {
-				set_house = character:Reyne_45.house
+				set_house = character:Reyne_1.house
 			}
 		}
 		every_held_title = {
@@ -109,7 +109,7 @@ gardener_revival_decision = {
 	selection_tooltip = house_revival_tooltip
 
 	is_shown = {
-		character:Gardener_95.house = {
+		character:Gardener_4.house = {
 			NOT = {
 				any_house_member = {
 					is_alive = yes
@@ -126,10 +126,10 @@ gardener_revival_decision = {
 
 	effect = {
 		house = { save_scope_as = house }
-		hidden_effect = { set_house = character:Gardener_95.house }
+		hidden_effect = { set_house = character:Gardener_4.house }
 		scope:house = {
 			every_house_member = {
-				set_house = character:Gardener_95.house
+				set_house = character:Gardener_4.house
 			}
 		}
 		every_held_title = {
@@ -157,7 +157,7 @@ durrandon_revival_decision = {
 	selection_tooltip = house_revival_tooltip
 
 	is_shown = {
-		character:Durrandon_87.house = {
+		character:Durrandon_1.house = {
 			NOT = {
 				any_house_member = {
 					is_alive = yes
@@ -174,10 +174,10 @@ durrandon_revival_decision = {
 
 	effect = {
 		house = { save_scope_as = house }
-		hidden_effect = { set_house = character:Durrandon_87.house }
+		hidden_effect = { set_house = character:Durrandon_1.house }
 		scope:house = {
 			every_house_member = {
-				set_house = character:Durrandon_87.house
+				set_house = character:Durrandon_1.house
 			}
 		}
 		every_held_title = {
