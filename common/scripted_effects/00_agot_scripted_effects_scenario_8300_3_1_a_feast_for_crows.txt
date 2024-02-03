@@ -211,7 +211,7 @@ agot_8300_3_1_affc_scenario_setup = {
 	######
 
 	### SET OPINIONS ###
-	mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_stannis }
+	agot_mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_stannis }
 	###### 
 
 

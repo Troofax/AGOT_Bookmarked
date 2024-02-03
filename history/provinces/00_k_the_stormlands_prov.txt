@@ -1,4 +1,9 @@
-﻿################### b_storms_end ##################
+﻿################################################
+# AGOT Bookmarked - For COW AGOT Compatibility #
+################################################
+
+
+################### b_storms_end ##################
 ######### c_storms_end - d_shipbreaker_bay ########
 4439 = {
 	culture = stormlander
