@@ -4,9 +4,9 @@ bookmark_299_joffrey_baratheon={
 	type=boy
 	id=26043
 	age=0.130000
-	genes={ 		hair_color={ 89 191 151 181 }
+	genes={ 		hair_color={ 110 188 151 181 }
  		skin_color={ 79 30 75 31 }
- 		eye_color={ 229 127 140 106 }
+ 		eye_color={ 140 109 140 106 }
  		gene_chin_forward={ "chin_forward_neg" 145 "chin_forward_neg" 149 }
  		gene_chin_height={ "chin_height_neg" 119 "chin_height_neg" 144 }
  		gene_chin_width={ "chin_width_pos" 174 "chin_width_pos" 109 }
@@ -95,7 +95,7 @@ bookmark_299_joffrey_baratheon={
  		expression_forehead_wrinkles={ "forehead_wrinkles_03" 62 "forehead_wrinkles_03" 161 }
  		expression_other={ "nose_wrinkles_01" 124 "nose_wrinkles_01" 124 }
  		complexion={ "complexion_beauty_1" 0 "complexion_11" 223 }
- 		gene_height={ "normal_height" 171 "normal_height" 146 }
+ 		gene_height={ "normal_height" 146 "normal_height" 146 }
  		gene_bs_body_type={ "body_fat_head_fat_low" 116 "body_fat_head_fat_low" 118 }
  		gene_bs_body_shape={ "body_shape_average" 102 "body_shape_average_clothed" 0 }
  		gene_bs_bust={ "bust_clothes" 50 "bust_clothes" 129 }
@@ -140,12 +140,12 @@ bookmark_299_joffrey_baratheon={
  		beards={ "no_beard" 109 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "western_hairstyles_straight" 109 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 109 "all_legwear" 0 }
+ 		legwear={ "agot_hidden_legwear" 255 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "ep2_western_era3_high_nobility_clothes" 150 "most_clothes" 0 }
- 		headgear={ "joffreyI_crown" 255 "no_headgear" 0 }
+ 		clothes={ "agot_historic_characters" 204 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 0 "no_headgear" 0 }
  		additive_headgear={ "ep2_western_era3_veils" 209 "no_additive" 0 }
  }
 	entity={ 616600735 3478549277 }
