@@ -4,6 +4,6 @@ tags={
 	"Bookmarks"
 	"Gameplay"
 }
-name="1AGOT Bookmarked"
+name="AGOT Bookmarked"
 picture="thumbnail.png"
-supported_version="1.11.4"
+supported_version="1.11.5"
