@@ -369,11 +369,11 @@ c_blackstripe = {
 	7998.2.1 = {
 		holder = Targaryen_27
 	}
-	# AGOT Bookmarked Disabled
-	# 7998.2.27 = {
-		# liege = d_kings_landing
+	7998.2.27 = {
+		liege = d_kings_landing
+		# AGOT Bookmarked Disabled
 		# de_jure_liege = d_kings_landing
-	# }
+	}
 	8037.9.9 = {
 		holder = Targaryen_30
 	}
