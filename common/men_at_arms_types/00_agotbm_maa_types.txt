@@ -659,7 +659,6 @@ agotbm_sheepstealer_unit = { # Sheepstealer, the Wild Wyrm
 # Easter Egg Units #
 ####################
 agotbm_cookie_unit = { # Crumbs, the Allfather's Dragon
-	name = agotbm_cookie_unit
 	type = agotbm_dragons
 	fights_in_main_phase = yes
 	can_recruit = { always = no }
