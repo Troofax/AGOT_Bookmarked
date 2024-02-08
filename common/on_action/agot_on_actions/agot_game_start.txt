@@ -1827,242 +1827,238 @@ agot_on_game_start = {
 			}
 		}
 		###
-		# AGOT Bookmarked Added
+
+		### Iron Throne related setup
 		if = {
-			limit = { game_start_date > 8000.1.1 }
-			### Iron Throne related setup
+			limit = {
+				exists = title:e_the_iron_throne.holder
+				exists = title:k_the_most_devout.holder
+			}
+
+			title:k_the_most_devout.holder = { agot_assign_high_septon_effect = yes }
+		}
+
+		title:c_kings_landing.holder = { # Appoint Commander of the Gold Cloaks
 			if = {
 				limit = {
-					exists = title:e_the_iron_throne.holder
-					exists = title:k_the_most_devout.holder
+					NOT = { has_title = title:b_goldguard_heights }
+				}
+				appoint_court_position = {
+					recipient = title:b_goldguard_heights.holder
+					court_position = goldcloaks_court_position
+				}
+			}
+		}
+
+		#Kingsguard Stuff
+		title:d_dummy_kingsguard = {
+			copy_title_history = title:d_kingsguard
+		}
+		title:d_kingsguard.holder = {
+			change_government = kingsguard_government
+		}
+		title:d_kingsguard = {
+			#destroy_title = title:d_kingsguard
+			set_coa = d_kingsguard 
+		}
+
+		if = { # Setup historical kingsguard members
+			limit = { exists = title:e_the_iron_throne.holder }
+			set_global_variable = agot_startup_fire_councillors
+			title:e_the_iron_throne = { set_variable = agot_kingsguard_can_fire_yes }
+			title:e_the_iron_throne.holder = {
+				save_temporary_scope_as = agot_crown
+			}
+			every_living_character = {
+				limit = {
+					OR = {
+						has_character_flag = agot_is_kingsguard_member
+						has_character_flag = agot_is_kingsguard_commander
+					}
 				}
 
-				title:k_the_most_devout.holder = { agot_assign_high_septon_effect = yes }
-			}
-
-			title:c_kings_landing.holder = { # Appoint Commander of the Gold Cloaks
+				add_trait = kingsguard
+				remove_trait = refusing_marriage
+				remove_character_modifier = training_for_kingsguard
+				add_character_flag = { flag = blocked_from_leaving }
+				if = {
+					limit = { 
+						NOT = { 
+							is_courtier_of = scope:agot_crown 
+							is_ruler = yes #Filter out the Lord Commanders		
+						} 
+					}
+					scope:agot_crown = { add_courtier = prev }
+				}
+				agot_create_artifact_kingsguard_armour_effect = { OWNER = this }
+				agot_create_artifact_kingsguard_sword_effect = { OWNER = this }
 				if = {
 					limit = {
-						NOT = { has_title = title:b_goldguard_heights }
+						has_character_flag = agot_is_kingsguard_member
+						NOT = { has_character_flag = agot_is_kingsguard_commander }
 					}
-					appoint_court_position = {
-						recipient = title:b_goldguard_heights.holder
-						court_position = goldcloaks_court_position
+
+					title:e_the_iron_throne = {
+						add_to_variable_list = {
+							name = kingsguard_members
+							target = prev
+						}
 					}
+					remove_character_flag = agot_is_kingsguard_member
+				}
+				else_if = {
+					limit = { has_character_flag = agot_is_kingsguard_commander }
+
+					add_character_flag = lord_commander
+
+					scope:agot_crown = {
+						assign_councillor_type = {
+							type = kingsguard_lord_commander
+							target = prev
+						}
+					}
+					title:e_the_iron_throne = {
+						set_variable = {
+							name = kingsguard_lord_commander
+							value = prev
+						}
+					}
+					remove_character_flag = agot_is_kingsguard_member
+					remove_character_flag = agot_is_kingsguard_commander
 				}
 			}
+			title:e_the_iron_throne = {
+				random_in_list = {
+					variable = kingsguard_members
 
-			#Kingsguard Stuff
-			title:d_dummy_kingsguard = {
-				copy_title_history = title:d_kingsguard
-			}
-			title:d_kingsguard.holder = {
-				change_government = kingsguard_government
-			}
-			title:d_kingsguard = {
-				#destroy_title = title:d_kingsguard
-				set_coa = d_kingsguard 
-			}
-
-			if = { # Setup historical kingsguard members
-				limit = { exists = title:e_the_iron_throne.holder }
-				set_global_variable = agot_startup_fire_councillors
-				title:e_the_iron_throne = { set_variable = agot_kingsguard_can_fire_yes }
-				title:e_the_iron_throne.holder = {
-					save_temporary_scope_as = agot_crown
-				}
-				every_living_character = {
-					limit = {
-						OR = {
-							has_character_flag = agot_is_kingsguard_member
-							has_character_flag = agot_is_kingsguard_commander
-						}
-					}
-
-					add_trait = kingsguard
-					remove_trait = refusing_marriage
-					remove_character_modifier = training_for_kingsguard
-					add_character_flag = { flag = blocked_from_leaving }
-					if = {
-						limit = { 
-							NOT = { 
-								is_courtier_of = scope:agot_crown 
-								is_ruler = yes #Filter out the Lord Commanders		
-							} 
-						}
-						scope:agot_crown = { add_courtier = prev }
-					}
-					agot_create_artifact_kingsguard_armour_effect = { OWNER = this }
-					agot_create_artifact_kingsguard_sword_effect = { OWNER = this }
-					if = {
-						limit = {
-							has_character_flag = agot_is_kingsguard_member
-							NOT = { has_character_flag = agot_is_kingsguard_commander }
-						}
-
-						title:e_the_iron_throne = {
-							add_to_variable_list = {
-								name = kingsguard_members
-								target = prev
-							}
-						}
-						remove_character_flag = agot_is_kingsguard_member
-					}
-					else_if = {
-						limit = { has_character_flag = agot_is_kingsguard_commander }
-
-						add_character_flag = lord_commander
-
-						scope:agot_crown = {
+					save_temporary_scope_as = kingsguard_member
+					title:e_the_iron_throne = {
+						holder = {
 							assign_councillor_type = {
-								type = kingsguard_lord_commander
-								target = prev
+								type = kingsguard_1
+								target = scope:kingsguard_member
 							}
 						}
-						title:e_the_iron_throne = {
-							set_variable = {
-								name = kingsguard_lord_commander
-								value = prev
-							}
+						set_variable = {
+							name = kingsguard_1
+							value = scope:kingsguard_member
 						}
-						remove_character_flag = agot_is_kingsguard_member
-						remove_character_flag = agot_is_kingsguard_commander
-					}
-				}
-				title:e_the_iron_throne = {
-					random_in_list = {
-						variable = kingsguard_members
-
-						save_temporary_scope_as = kingsguard_member
-						title:e_the_iron_throne = {
-							holder = {
-								assign_councillor_type = {
-									type = kingsguard_1
-									target = scope:kingsguard_member
-								}
-							}
-							set_variable = {
-								name = kingsguard_1
-								value = scope:kingsguard_member
-							}
-							remove_list_variable = {
-								name = kingsguard_members
-								target = prev
-							}
-						}
-					}
-					random_in_list = {
-						variable = kingsguard_members
-
-						save_temporary_scope_as = kingsguard_member
-						title:e_the_iron_throne = {
-							holder = {
-								assign_councillor_type = {
-									type = kingsguard_2
-									target = scope:kingsguard_member
-								}
-							}
-							set_variable = {
-								name = kingsguard_2
-								value = scope:kingsguard_member
-							}
-							remove_list_variable = {
-								name = kingsguard_members
-								target = prev
-							}
-						}
-					}
-					random_in_list = {
-						variable = kingsguard_members
-
-						save_temporary_scope_as = kingsguard_member
-						title:e_the_iron_throne = {
-							holder = {
-								assign_councillor_type = {
-									type = kingsguard_3
-									target = scope:kingsguard_member
-								}
-							}
-							set_variable = {
-								name = kingsguard_3
-								value = scope:kingsguard_member
-							}
-							remove_list_variable = {
-								name = kingsguard_members
-								target = prev
-							}
-						}
-					}
-					random_in_list = {
-						variable = kingsguard_members
-
-						save_temporary_scope_as = kingsguard_member
-						title:e_the_iron_throne = {
-							holder = {
-								assign_councillor_type = {
-									type = kingsguard_4
-									target = scope:kingsguard_member
-								}
-							}
-							set_variable = {
-								name = kingsguard_4
-								value = scope:kingsguard_member
-							}
-							remove_list_variable = {
-								name = kingsguard_members
-								target = prev
-							}
-						}
-					}
-					random_in_list = {
-						variable = kingsguard_members
-
-						save_temporary_scope_as = kingsguard_member
-						title:e_the_iron_throne = {
-							holder = {
-								assign_councillor_type = {
-									type = kingsguard_5
-									target = scope:kingsguard_member
-								}
-							}
-							set_variable = {
-								name = kingsguard_5
-								value = scope:kingsguard_member
-							}
-							remove_list_variable = {
-								name = kingsguard_members
-								target = prev
-							}
-						}
-					}
-					random_in_list = {
-						variable = kingsguard_members
-
-						save_temporary_scope_as = kingsguard_member
-						title:e_the_iron_throne = {
-							holder = {
-								assign_councillor_type = {
-									type = kingsguard_6
-									target = scope:kingsguard_member
-								}
-							}
-							set_variable = {
-								name = kingsguard_6
-								value = scope:kingsguard_member
-							}
-							remove_list_variable = {
-								name = kingsguard_members
-								target = prev
-							}
+						remove_list_variable = {
+							name = kingsguard_members
+							target = prev
 						}
 					}
 				}
-				title:e_the_iron_throne = { remove_variable = agot_kingsguard_can_fire_yes }
-				remove_global_variable = agot_startup_fire_councillors
+				random_in_list = {
+					variable = kingsguard_members
+
+					save_temporary_scope_as = kingsguard_member
+					title:e_the_iron_throne = {
+						holder = {
+							assign_councillor_type = {
+								type = kingsguard_2
+								target = scope:kingsguard_member
+							}
+						}
+						set_variable = {
+							name = kingsguard_2
+							value = scope:kingsguard_member
+						}
+						remove_list_variable = {
+							name = kingsguard_members
+							target = prev
+						}
+					}
+				}
+				random_in_list = {
+					variable = kingsguard_members
+
+					save_temporary_scope_as = kingsguard_member
+					title:e_the_iron_throne = {
+						holder = {
+							assign_councillor_type = {
+								type = kingsguard_3
+								target = scope:kingsguard_member
+							}
+						}
+						set_variable = {
+							name = kingsguard_3
+							value = scope:kingsguard_member
+						}
+						remove_list_variable = {
+							name = kingsguard_members
+							target = prev
+						}
+					}
+				}
+				random_in_list = {
+					variable = kingsguard_members
+
+					save_temporary_scope_as = kingsguard_member
+					title:e_the_iron_throne = {
+						holder = {
+							assign_councillor_type = {
+								type = kingsguard_4
+								target = scope:kingsguard_member
+							}
+						}
+						set_variable = {
+							name = kingsguard_4
+							value = scope:kingsguard_member
+						}
+						remove_list_variable = {
+							name = kingsguard_members
+							target = prev
+						}
+					}
+				}
+				random_in_list = {
+					variable = kingsguard_members
+
+					save_temporary_scope_as = kingsguard_member
+					title:e_the_iron_throne = {
+						holder = {
+							assign_councillor_type = {
+								type = kingsguard_5
+								target = scope:kingsguard_member
+							}
+						}
+						set_variable = {
+							name = kingsguard_5
+							value = scope:kingsguard_member
+						}
+						remove_list_variable = {
+							name = kingsguard_members
+							target = prev
+						}
+					}
+				}
+				random_in_list = {
+					variable = kingsguard_members
+
+					save_temporary_scope_as = kingsguard_member
+					title:e_the_iron_throne = {
+						holder = {
+							assign_councillor_type = {
+								type = kingsguard_6
+								target = scope:kingsguard_member
+							}
+						}
+						set_variable = {
+							name = kingsguard_6
+							value = scope:kingsguard_member
+						}
+						remove_list_variable = {
+							name = kingsguard_members
+							target = prev
+						}
+					}
+				}
 			}
-			###
+			title:e_the_iron_throne = { remove_variable = agot_kingsguard_can_fire_yes }
+			remove_global_variable = agot_startup_fire_councillors
 		}
-		
+		###
 
 
 		every_ruler = {
@@ -2131,24 +2127,6 @@ agot_on_game_start = {
 				every_held_title = { reset_coa = yes }
 				trigger_event = agot_coa_events.0001
 			}
-
-			if = {
-				limit = {
-					primary_title.tier >= tier_kingdom
-					OR = {
-						primary_title = { has_title_law = magisterial_limited_succession_law }
-						primary_title = { has_title_law = magisterial_life_succession_law }
-					}
-				}
-				random_powerful_vassal = {
-					limit = { is_adult = yes }
-					prev = {
-						designate_diarch = prev
-						start_diarchy = gonfaloniere
-						set_diarchy_swing = 40
-					}
-				}
-			}
 		}
 
 		every_barony = { # Gold Cloaks revokations done through council
@@ -2171,9 +2149,7 @@ agot_on_game_start = {
 		}
 
 		every_living_character = {
-			#educations
 			trigger_event = agot_prowess.0001 # Giving Prowess traits to characters
-			trigger_event = agot_events_generic.0009
 
 			#set up patron gods
 			if = {
@@ -2717,7 +2693,6 @@ agot_on_game_start_after_lobby = {
 				trigger_event = agot_nightswatch_maintenance.0001 # Removes female courtiers
 			}
 		}
-
 		### House Customizer related setup
 		if = {
 			limit = {
@@ -3184,8 +3159,7 @@ agot_on_game_start_after_lobby = {
 		}
 	}
 	events = {
-		agot_house_maintenance.0001
-		agot_adventurers_events.0001
+		agot_house_maintenance.1
 		# agot_nightswatch_maintenance.0001 # Removes female courtiers
 	}
 }

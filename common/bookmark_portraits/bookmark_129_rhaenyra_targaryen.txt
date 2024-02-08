@@ -6,7 +6,7 @@ bookmark_129_rhaenyra_targaryen={
 	age=0.320000
 	genes={ 		hair_color={ 0 0 68 10 }
  		skin_color={ 148 1 150 1 }
- 		eye_color={ 244 43 250 39 }
+ 		eye_color={ 242 68 250 39 }
  		gene_chin_forward={ "chin_forward_neg" 145 "chin_forward_neg" 114 }
  		gene_chin_height={ "chin_height_pos" 133 "chin_height_neg" 135 }
  		gene_chin_width={ "chin_width_pos" 128 "chin_width_neg" 146 }
