@@ -2233,6 +2233,7 @@ on_game_start_after_lobby = {
 	#AGOT Added
 	on_actions = {
 		agot_on_game_start_after_lobby
+		agot_north_holding_cost
 	}
 
 	events = {

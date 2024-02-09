@@ -2701,7 +2701,6 @@ Rogare_3 = {
 			}
 		} 
 	}
-		
 	8135.4.1 = { death = { death_reason = death_accident } }
 }
 Rogare_rs_2 = {

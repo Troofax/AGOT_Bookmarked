@@ -1,9 +1,4 @@
-﻿################################################
-# AGOT Bookmarked - For COW AGOT Compatibility #
-################################################
-
-
-################## b_the_red_keep #################
+﻿################## b_the_red_keep #################
 ######## c_kings_landing - d_kings_landing ########
 4151 = {
 	culture = crownlander
@@ -12,11 +7,7 @@
 	special_building = the_red_keep_01
 	duchy_capital_building = seven_gates_01
 	7998.1.1 = {
-		buildings = { 
-			castle_05 
-			curtain_walls_03
-			barracks_03
-		}
+		buildings = { castle_05 curtain_walls_03 barracks_03 }
 	}
 	8161.1.1 = {
 		religion = baelorism
@@ -31,10 +22,7 @@
 	holding = city_holding
 	special_building = dragonpit_01
 	7998.1.1 = {
-		buildings = { 
-			city_03
-			guild_halls_03
-		}
+		buildings = { city_03 guild_halls_03 }
 	}
 }
 ################# b_visenyas_hill #################
@@ -43,10 +31,7 @@
 	holding = church_holding
 	special_building = holy_site_great_sept_01
 	7998.1.1 = {
-		buildings = { 
-			temple_04 
-			monastic_schools_08
-		}
+		buildings = { temple_04 monastic_schools_08 }
 	}
 }
 ################### b_hookmarket ##################
@@ -54,10 +39,7 @@
 4154 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_04
-			common_tradeport_07
-		}
+		buildings = { city_04 common_tradeport_07 }
 	}
 }
 ############### b_goldguard_heights ###############
@@ -65,10 +47,7 @@
 4155 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-		city_05 
-		guild_halls_07
-		}
+		buildings = { city_05 guild_halls_07 }
 	}
 }
 ################## b_landingfield #################
@@ -113,10 +92,7 @@
 4160 = {
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_01 
-			stables_02
-		}
+		buildings = { castle_01 stables_02 }
 	}
 }
 ################ b_shinebridge_hall ###############
@@ -255,11 +231,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_03 
-			curtain_walls_02
-			cereal_fields_04
-		}
+		buildings = { castle_03 curtain_walls_02 cereal_fields_04 }
 	}
 }
 ################### b_brickdale ###################
@@ -413,11 +385,7 @@
 	holding = castle_holding
 	duchy_capital_building = agot_vineyard_01
 	7998.1.1 = {
-		buildings = { 
-			castle_03
-			hill_forts_02
-			hill_farms_07
-		}
+		buildings = { castle_03 hill_forts_02 hill_farms_07 }
 	}
 }
 ################## b_hesperplate ##################
@@ -449,10 +417,7 @@
 4201 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_02 
-			common_tradeport_01
-		}
+		buildings = { city_02 common_tradeport_01 }
 	}
 }
 ################### b_strongmead ##################
@@ -462,9 +427,10 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_02 
-			apiaries_03 
+		buildings = {
+			castle_02
+			apiaries_04
+			windmills_01
 		}
 	}
 }
@@ -586,11 +552,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_03 
-			curtain_walls_04
-			stables_03
-		}
+		buildings = { castle_03 curtain_walls_04 stables_03 }
 	}
 }
 ################### b_faithfield ##################
@@ -653,10 +615,7 @@
 4225 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_01 
-			common_tradeport_01
-		}
+		buildings = { city_01 common_tradeport_01 }
 	}
 }
 ################## b_fieldmaiden ##################
@@ -782,11 +741,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_04
-			hill_forts_04
-			warrior_lodges_03
-		}
+		buildings = { castle_04 hill_forts_04 warrior_lodges_03 }
 	}
 }
 ################### b_duskendale ##################
@@ -794,10 +749,7 @@
 4242 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-		city_03 
-		guild_halls_05
-		}
+		buildings = { city_03 guild_halls_05 }
 	}
 }
 #################### b_highley ####################
@@ -992,11 +944,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_03 
-			curtain_walls_04
-			barracks_03
-		}
+		buildings = { castle_03 curtain_walls_04 barracks_03 }
 	}
 }
 ################### b_cliffhook ###################
@@ -1004,10 +952,7 @@
 4269 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_03 
-			common_tradeport_02
-		}
+		buildings = { city_03 common_tradeport_02 }
 	}
 }
 #################### b_drabline ###################
@@ -1175,10 +1120,11 @@
 ######## c_strongcliffs - d_crackclaw_point #######
 4290 = {
 	holding = castle_holding
+	special_building = agot_whispers_01
 	7998.1.1 = {
 		buildings = { 
 			castle_02 
-			godswood_01
+			godswood_02
 		}
 	}
 }
@@ -1932,11 +1878,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_04 
-			hill_forts_04
-			warrior_lodges_04
-		}
+		buildings = { castle_04 hill_forts_04 warrior_lodges_04 }
 	}
 }
 ################### b_montspire ###################
@@ -2137,238 +2079,4 @@
 ######### c_winded_glade - d_masseys_hook #########
 4414 = {
 	holding = none
-}
-################## b_dragonstone ##################
-########## c_dragonstone - d_dragonstone ##########
-4415 = {
-	culture = high_valyrian
-	religion = the_seven_main
-	holding = castle_holding
-	duchy_capital_building = agot_dragonmont_01
-	special_building = dragonstone_01
-	7998.1.1 = {
-		buildings = { 
-			castle_05
-			hill_forts_06
-			barracks_03
-		}
-	}
-}
-################### b_dragonmont ##################
-########## c_dragonstone - d_dragonstone ##########
-4416 = {
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { castle_03 }
-	}
-}
-################ b_blackglass_port ################
-########## c_dragonstone - d_dragonstone ##########
-4417 = {
-	holding = city_holding
-	7998.1.1 = {
-		buildings = { 
-			city_03 
-			common_tradeport_02
-		}
-	}
-}
-################# b_gargoyles_hook ################
-########## c_dragonstone - d_dragonstone ##########
-4418 = {
-	holding = city_holding
-	7998.1.1 = {
-		buildings = { city_02 }
-	}
-}
-################ b_castle_driftmark ###############
-########### c_driftmark - d_dragonstone ###########
-4419 = {
-	culture = westerosi_valyrian
-	religion = the_seven_main
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { 
-			castle_03 
-			curtain_walls_03
-			military_camps_06
-		}
-	}
-}
-###################### b_hull #####################
-########### c_driftmark - d_dragonstone ###########
-4420 = {
-	holding = city_holding
-	7998.1.1 = {
-		buildings = { 
-			city_05 
-		}
-	}
-}
-################### b_brave_port ##################
-########### c_driftmark - d_dragonstone ###########
-4421 = {
-	holding = city_holding
-	7998.1.1 = {
-		buildings = { city_03 }
-	}
-}
-##################### b_shroud ####################
-########### c_driftmark - d_dragonstone ###########
-4422 = {
-	holding = none
-}
-################## b_silverhorse ##################
-########### c_driftmark - d_dragonstone ###########
-4423 = {
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { castle_03 }
-	}
-}
-################### b_high_tide ###################
-########### c_high_tide - d_dragonstone ###########
-4424 = {
-	culture = westerosi_valyrian
-	religion = the_seven_main
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { castle_04 }
-		special_building_slot = hightide_01
-	}
-}
-################### b_spicetown ###################
-########### c_high_tide - d_dragonstone ###########
-4425 = {
-	holding = city_holding
-	special_building = agot_spicetown_02
-	7998.1.1 = {
-		buildings = { city_01 }
-	}
-}
-################### b_blackhull ###################
-########### c_high_tide - d_dragonstone ###########
-4426 = {
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { castle_02 }
-	}
-}
-################### b_berryport ###################
-########### c_blackmark - d_dragonstone ###########
-4427 = {
-	culture = crownlander
-	religion = the_seven_main
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { castle_01 }
-	}
-}
-################## b_sharp_point ##################
-########## c_sharp_point - d_dragonstone ##########
-4428 = {
-	culture = stormlander
-	religion = the_seven_main
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { 
-			castle_03 
-			hill_forts_03
-			barracks_03
-		}
-	}
-}
-################### b_swordpeaks ##################
-########## c_sharp_point - d_dragonstone ##########
-4429 = {
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { castle_02 }
-	}
-}
-################### b_frettymont ##################
-########## c_sharp_point - d_dragonstone ##########
-4430 = {
-	holding = city_holding
-	7998.1.1 = {
-		buildings = { city_03 }
-	}
-}
-################### b_waycastle ###################
-############ c_longbar - d_dragonstone ############
-4431 = {
-	culture = stormlander
-	religion = the_seven_main
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { castle_01 }
-	}
-}
-################## b_gullet_tower #################
-########## c_gullet_isle - d_dragonstone ##########
-4432 = {
-	culture = crownlander
-	religion = the_seven_main
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { castle_02 }
-	}
-}
-################### b_sweetport ###################
-######## c_sweetport_sound - d_dragonstone ########
-4433 = {
-	culture = crownlander
-	religion = the_seven_main
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { castle_03 }
-	}
-}
-################### b_tally_hill ##################
-######## c_sweetport_sound - d_dragonstone ########
-4434 = {
-	holding = church_holding
-	7998.1.1 = {
-		buildings = { temple_02 }
-	}
-}
-################### b_vallscale ###################
-########### c_the_scales - d_dragonstone ##########
-4435 = {
-	culture = westerosi_valyrian
-	religion = the_seven_main
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { castle_02 }
-	}
-}
-################## b_crabs_return #################
-########### c_claw_isle - d_dragonstone ###########
-4436 = {
-	culture = westerosi_valyrian
-	religion = the_seven_main
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { 
-			castle_03 
-			hill_forts_03
-			stables_03
-		}
-	}
-}
-################### b_brackyore ###################
-########### c_claw_isle - d_dragonstone ###########
-4437 = {
-	holding = city_holding
-	7998.1.1 = {
-		buildings = { city_03 }
-	}
-}
-################## b_gryphonrock ##################
-########### c_claw_isle - d_dragonstone ###########
-4438 = {
-	holding = castle_holding
-	7998.1.1 = {
-		buildings = { castle_02 }
-	}
 }

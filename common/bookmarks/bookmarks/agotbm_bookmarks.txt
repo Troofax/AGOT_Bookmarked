@@ -31,6 +31,32 @@ agot_bm_7998 = {
 		history_id = Targaryen_27
 		position = { 1200 325 }
 		animation = marshal
+
+		# Visenya Targaryen (Dragonstone) ID: Targaryen_28
+		character = {
+			name = "bookmark_2bc_visenya_targaryen"
+			relation = "BOOKMARK_RELATION_SPOUSE_FEMALE"
+			dynasty = dynn_Targaryen
+			type = female
+			religion = valyrian
+			culture = high_valyrian
+			birth = 7971.1.1
+			history_id = Targaryen_28
+			animation = marshal
+		}
+
+		# Rhaenys Targaryen (Dragonstone) ID: Targaryen_29
+		character = {
+			name = "bookmark_2bc_rhaenys_targaryen"
+			relation = "BOOKMARK_RELATION_SPOUSE_FEMALE"
+			dynasty = dynn_Targaryen
+			type = female
+			religion = valyrian
+			culture = high_valyrian
+			birth = 7975.1.1
+			history_id = Targaryen_29
+			animation = idle
+		}
 	}
 
 	# Mern IX Gardener (The Reach) ID: Gardener_95
@@ -125,12 +151,38 @@ agot_bm_8129 = {
 		title = e_the_iron_throne
 		religion = the_seven_main
 		culture = high_valyrian
-		birth = 8107.1.1
+		birth = 8107.2.1
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Targaryen_65
 		position = { 1000 560 }
 		animation = marshal
+
+		# Helaena Targaryen (The Iron Throne) ID: Targaryen_66
+		character = {
+			name = "bookmark_129_helaena_targaryen"
+			relation = "BOOKMARK_RELATION_SPOUSE_FEMALE"
+			dynasty = dynn_Targaryen
+			type = female
+			religion = the_seven_main
+			culture = high_valyrian
+			birth = 8109.1.1
+			history_id = Targaryen_66
+			animation = idle
+		}
+
+		# Aemond Targaryen (The Iron Throne) ID: Targaryen_67
+		character = {
+			name = "bookmark_129_aemond_targaryen"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = dynn_Targaryen
+			type = male
+			religion = the_seven_main
+			culture = high_valyrian
+			birth = 8110.6.1
+			history_id = Targaryen_67
+			animation = marshal
+		}
 	}
 
 	# Rhaenyra Targaryen (Dragonstone) ID: Targaryen_63
@@ -148,6 +200,32 @@ agot_bm_8129 = {
 		history_id = Targaryen_63
 		position = { 1090 300 }
 		animation = worry
+
+		# Daemon Targaryen (Dragonstone) ID: Targaryen_61
+		character = {
+			name = "bookmark_129_daemon_targaryen"
+			relation = "BOOKMARK_RELATION_SPOUSE_MALE"
+			dynasty = dynn_Targaryen
+			type = male
+			religion = the_seven_main
+			culture = high_valyrian
+			birth = 8081.3.1
+			history_id = Targaryen_61
+			animation = marshal
+		}
+
+		# Jacaerys Velaryon (Dragonstone) ID: Targaryen_75
+		character = {
+			name = "bookmark_129_jacaerys_velaryon"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynn_Targaryen
+			type = male
+			religion = the_seven_main
+			culture = high_valyrian
+			birth = 8114.10.1
+			history_id = Targaryen_75
+			animation = idle
+		}
 	}
 }
 
@@ -180,9 +258,35 @@ agot_bm_8195 = {
 		history_id = Targaryen_91
 		position = { 720 220 }
 		animation = thinking
+
+		# Baelor 'Breakspear' Targaryen (The Iron Throne) ID: Targaryen_107
+		character = {
+			name = "bookmark_195_baelor_targaryen"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynn_Targaryen
+			type = male
+			religion = the_seven_main
+			culture = high_valyrian
+			birth = 8170.1.1
+			history_id = Targaryen_107
+			animation = marshal
+		}
+
+		# Maekar Targaryen (The Iron Throne) ID: Targaryen_110
+		character = {
+			name = "bookmark_195_maekar_targaryen"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynn_Targaryen
+			type = male
+			religion = the_seven_main
+			culture = high_valyrian
+			birth = 8174.1.1
+			history_id = Targaryen_110
+			animation = marshal
+		}
 	}
 
-	# Daemon Blackfyre (The Blackfyre Rebellion) ID: Targaryen_94
+	# Daemon Blackfyre (The Blackfyre Host) ID: Targaryen_94
 	character = {
 		name = "bookmark_195_daemon_blackfyre"
 		dynasty_house = house_Blackfyre
@@ -208,12 +312,25 @@ agot_bm_8195 = {
 		birth = 8164.1.1
 		title = d_southstone
 		government = lp_feudal_government
-		culture = riverlander
 		religion = the_seven_main
+		culture = riverlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Bracken_77
 		position = { 215 160 }
 		animation = marshal
+
+		# Aegor 'Bittersteel' Targaryen ID: Targaryen_95
+		character = {
+			name = "bookmark_195_aegor_targaryen"
+			relation = "BOOKMARK_RELATION_NEPHEW"
+			dynasty = dynn_Targaryen
+			type = male
+			religion = the_seven_main
+			culture = westerosi_valyrian
+			birth = 8172.11.1
+			history_id = Targaryen_95
+			animation = marshal
+		}
 	}
 }
 
@@ -240,12 +357,38 @@ agot_bm_8277 = {
 		birth = 8242.1.1
 		title = k_the_westerlands
 		government = lp_feudal_government
-		culture = westerman
 		religion = the_seven_main
+		culture = westerman
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Lannister_1
 		position = { 310 550 }
 		animation = personality_callous
+
+		# Cersei Lannister (The Westerlands) ID: Lannister_6
+		character = {
+			name = "bookmark_277_cersei_lannister"
+			relation = "BOOKMARK_RELATION_DAUGHTER"
+			dynasty = dynn_Lannister
+			type = female
+			religion = the_seven_main
+			culture = westerman
+			birth = 8266.1.1
+			history_id = Lannister_6
+			animation = idle
+		}
+
+		# Jaime Lannister (The Westerlands) ID: Lannister_7
+		character = {
+			name = "bookmark_277_jaime_lannister"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynn_Lannister
+			type = male
+			religion = the_seven_main
+			culture = westerman
+			birth = 8266.1.1
+			history_id = Lannister_7
+			animation = marshal
+		}
 	}
 
 	# Denys Darklyn (Duskendale) ID: Darklyn_47
@@ -257,8 +400,8 @@ agot_bm_8277 = {
 		birth = 8257.1.1
 		title = d_duskendale
 		government = lp_feudal_government
-		culture = crownlander
 		religion = the_seven_main
+		culture = crownlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Darklyn_47
 		position = { 1150 300 }
@@ -274,12 +417,38 @@ agot_bm_8277 = {
 		birth = 8243.6.1
 		title = e_the_iron_throne
 		government = lp_feudal_government
-		culture = high_valyrian
 		religion = the_seven_main
+		culture = high_valyrian
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = Targaryen_1
 		position = { 1000 600 }
 		animation = worry
+
+		# Rhaella Targaryen ID: Targaryen_2
+		character = {
+			name = "bookmark_277_rhaella_targaryen"
+			relation = "BOOKMARK_RELATION_SPOUSE_FEMALE"
+			dynasty = dynn_Targaryen
+			type = female
+			religion = the_seven_main
+			culture = high_valyrian
+			birth = 8245.1.1
+			history_id = Targaryen_2
+			animation = idle
+		}
+
+		# Rhaegar Targaryen ID: Targaryen_3
+		character = {
+			name = "bookmark_277_rhaegar_targaryen"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynn_Targaryen
+			type = male
+			religion = the_seven_main
+			culture = high_valyrian
+			birth = 8259.6.1
+			history_id = Targaryen_3
+			animation = marshal
+		}
 	}
 }
 
@@ -294,7 +463,7 @@ agot_bm_8298 = {
 	start_date = 8298.12.21
 	is_playable = yes
 	group = agot_bm_group_ACOK # War of the Five Kings
-	
+
 	weight = {
 		value = 35
 	}
@@ -308,8 +477,8 @@ agot_bm_8298 = {
 		birth = 8283.1.1
 		title = e_the_north
 		government = lp_feudal_government
-		culture = northman
 		religion = old_gods_south
+		culture = northman
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Stark_6
 		position = { 430 115 }
@@ -325,12 +494,38 @@ agot_bm_8298 = {
 		birth = 8286.1.1
 		title = e_the_iron_throne
 		government = lp_feudal_government
-		culture = stormlander
 		religion = the_seven_main
+		culture = crownlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Baratheon_5
 		position = { 960 365 }
 		animation = agot_widows_wail_2
+
+		# Myrcella Baratheon (The Iron Throne) ID: Baratheon_6
+		character = {
+			name = "bookmark_298_myrcella_baratheon"
+			relation = "BOOKMARK_RELATION_SISTER"
+			dynasty_house = house_BaratheonKL
+			type = female
+			religion = the_seven_main
+			culture = crownlander
+			birth = 8290.1.1
+			history_id = Baratheon_6
+			animation = idle
+		}
+
+		# Tommen Baratheon (The Iron Throne) ID: Baratheon_7
+		character = {
+			name = "bookmark_298_tommen_baratheon"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty_house = house_BaratheonKL
+			type = male
+			religion = the_seven_main
+			culture = crownlander
+			birth = 8291.1.1
+			history_id = Baratheon_7
+			animation = idle
+		}
 	}
 
 	# Walder Frey (The Iron Throne) ID: Frey_1
@@ -342,8 +537,8 @@ agot_bm_8298 = {
 		birth = 8208.1.1
 		title = d_the_crossing
 		government = lp_feudal_government
-		culture = riverlander
 		religion = the_seven_main
+		culture = riverlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Frey_1
 		position = { 630 225 }
@@ -359,8 +554,8 @@ agot_bm_8298 = {
 		birth = 8277.1.1
 		title = k_the_stormlands
 		government = lp_feudal_government
-		culture = stormlander
 		religion = the_seven_main
+		culture = stormlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Baratheon_4
 		position = { 1150 660 }
@@ -376,8 +571,8 @@ agot_bm_8298 = {
 		birth = 8264.1.1
 		title = k_dragonstone
 		government = lp_feudal_government
-		culture = stormlander
 		religion = rhllor_religion
+		culture = stormlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Baratheon_3
 		position = { 1122 155 }
@@ -399,6 +594,32 @@ agot_bm_8298 = {
 		history_id = Greyjoy_5
 		position = { 170 275 }
 		animation = marshal
+
+		# Asha Greyjoy (The Iron Islands) ID: Greyjoy_13
+		character = {
+			name = "bookmark_298_asha_greyjoy"
+			relation = "BOOKMARK_RELATION_DAUGHTER"
+			dynasty = dynn_Greyjoy
+			type = female
+			religion = drowned_god_main
+			culture = ironborn
+			birth = 8276.1.1
+			history_id = Greyjoy_13
+			animation = marshal
+		}
+
+		# Theon Greyjoy (The Iron Islands) ID: Greyjoy_14
+		character = {
+			name = "bookmark_298_theon_greyjoy"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynn_Greyjoy
+			type = male
+			religion = drowned_god_main
+			culture = ironborn
+			birth = 8279.1.1
+			history_id = Greyjoy_14
+			animation = marshal
+		}
 	}
 
 	# Tywin Lannister (The Westerlands) ID: Lannister_1
@@ -410,12 +631,38 @@ agot_bm_8298 = {
 		birth = 8242.1.1
 		title = k_the_westerlands
 		government = lp_feudal_government
-		culture = westerman
 		religion = the_seven_main
+		culture = westerman
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Lannister_1
 		position = { 310 550 }
 		animation = personality_callous
+
+		# Cersei Lannister (The Westerlands) ID: Lannister_6
+		character = {
+			name = "bookmark_298_cersei_lannister"
+			relation = "BOOKMARK_RELATION_DAUGHTER"
+			dynasty = dynn_Lannister
+			type = female
+			religion = the_seven_main
+			culture = westerman
+			birth = 8266.1.1
+			history_id = Lannister_6
+			animation = idle
+		}
+
+		# Jaime Lannister (The Westerlands) ID: Lannister_7
+		character = {
+			name = "bookmark_298_jaime_lannister"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynn_Lannister
+			type = male
+			religion = the_seven_main
+			culture = westerman
+			birth = 8266.1.1
+			history_id = Lannister_7
+			animation = marshal
+		}
 	}
 }
 
@@ -426,7 +673,7 @@ agot_bm_8299 = {
 	start_date = 8299.3.3
 	is_playable = yes
 	group = agot_bm_group_ACOK # A Clash of Kings
-	
+
 	weight = {
 		value = 40
 	}
@@ -440,8 +687,8 @@ agot_bm_8299 = {
 		birth = 8283.1.1
 		title = e_the_north
 		government = lp_feudal_government
-		culture = northman
 		religion = old_gods_south
+		culture = northman
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Stark_6
 		position = { 430 115 }
@@ -457,12 +704,38 @@ agot_bm_8299 = {
 		birth = 8286.1.1
 		title = e_the_iron_throne
 		government = lp_feudal_government
-		culture = stormlander
 		religion = the_seven_main
+		culture = stormlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Baratheon_5
 		position = { 960 365 }
 		animation = agot_widows_wail_2
+
+		# Myrcella Baratheon (The Iron Throne) ID: Baratheon_6
+		character = {
+			name = "bookmark_299_myrcella_baratheon"
+			relation = "BOOKMARK_RELATION_SISTER"
+			dynasty_house = house_BaratheonKL
+			type = female
+			religion = the_seven_main
+			culture = crownlander
+			birth = 8290.1.1
+			history_id = Baratheon_6
+			animation = idle
+		}
+
+		# Tommen Baratheon (The Iron Throne) ID: Baratheon_7
+		character = {
+			name = "bookmark_299_tommen_baratheon"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty_house = house_BaratheonKL
+			type = male
+			religion = the_seven_main
+			culture = crownlander
+			birth = 8291.1.1
+			history_id = Baratheon_7
+			animation = idle
+		}
 	}
 
 	# Walder Frey (The Iron Throne) ID: Frey_1
@@ -474,8 +747,8 @@ agot_bm_8299 = {
 		birth = 8208.1.1
 		title = d_the_crossing
 		government = lp_feudal_government
-		culture = riverlander
 		religion = the_seven_main
+		culture = riverlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Frey_1
 		position = { 630 225 }
@@ -491,8 +764,8 @@ agot_bm_8299 = {
 		birth = 8264.1.1
 		title = k_dragonstone
 		government = lp_feudal_government
-		culture = stormlander
 		religion = rhllor_religion
+		culture = stormlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Baratheon_3
 		position = { 1122 155 }
@@ -514,6 +787,32 @@ agot_bm_8299 = {
 		history_id = Greyjoy_5
 		position = { 170 275 }
 		animation = marshal
+
+		# Asha Greyjoy (The Iron Islands) ID: Greyjoy_13
+		character = {
+			name = "bookmark_299_asha_greyjoy"
+			relation = "BOOKMARK_RELATION_DAUGHTER"
+			dynasty = dynn_Greyjoy
+			type = female
+			religion = drowned_god_main
+			culture = ironborn
+			birth = 8276.1.1
+			history_id = Greyjoy_13
+			animation = marshal
+		}
+
+		# Theon Greyjoy (The Iron Islands) ID: Greyjoy_14
+		character = {
+			name = "bookmark_299_theon_greyjoy"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynn_Greyjoy
+			type = male
+			religion = drowned_god_main
+			culture = ironborn
+			birth = 8279.1.1
+			history_id = Greyjoy_14
+			animation = marshal
+		}
 	}
 
 	# Tywin Lannister (The Westerlands) ID: Lannister_1
@@ -525,12 +824,38 @@ agot_bm_8299 = {
 		birth = 8242.1.1
 		title = k_the_westerlands
 		government = lp_feudal_government
-		culture = westerman
 		religion = the_seven_main
+		culture = westerman
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Lannister_1
 		position = { 310 550 }
 		animation = personality_callous
+
+		# Cersei Lannister (The Westerlands) ID: Lannister_6
+		character = {
+			name = "bookmark_299_cersei_lannister"
+			relation = "BOOKMARK_RELATION_DAUGHTER"
+			dynasty = dynn_Lannister
+			type = female
+			religion = the_seven_main
+			culture = westerman
+			birth = 8266.1.1
+			history_id = Lannister_6
+			animation = idle
+		}
+
+		# Jaime Lannister (The Westerlands) ID: Lannister_7
+		character = {
+			name = "bookmark_299_jaime_lannister"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynn_Lannister
+			type = male
+			religion = the_seven_main
+			culture = westerman
+			birth = 8266.1.1
+			history_id = Lannister_7
+			animation = marshal
+		}
 	}
 }
 

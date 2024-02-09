@@ -2,9 +2,9 @@
 # History database id:Darklyn_47
 bookmark_277_denys_darklyn={
 	type=male
-	id=22094
+	id=25496
 	age=0.200000
-	genes={ 		hair_color={ 21 250 21 250 }
+	genes={ 		hair_color={ 138 229 138 229 }
  		skin_color={ 101 22 101 22 }
  		eye_color={ 103 170 103 170 }
  		gene_chin_forward={ "chin_forward_neg" 114 "chin_forward_neg" 114 }
@@ -95,10 +95,10 @@ bookmark_277_denys_darklyn={
  		expression_forehead_wrinkles={ "forehead_wrinkles_02" 198 "forehead_wrinkles_02" 198 }
  		expression_other={ "cheek_wrinkles_both_01" 138 "cheek_wrinkles_both_01" 138 }
  		complexion={ "complexion_5" 156 "complexion_5" 156 }
- 		gene_height={ "normal_height" 152 "normal_height" 152 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 107 }
- 		gene_bs_body_shape={ "body_shape_average" 96 "body_shape_average" 25 }
- 		gene_bs_bust={ "bust_clothes" 89 "bust_clothes" 112 }
+ 		gene_height={ "normal_height" 132 "normal_height" 132 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 114 "body_fat_head_fat_low" 107 }
+ 		gene_bs_body_shape={ "body_shape_average" 142 "body_shape_average" 0 }
+ 		gene_bs_bust={ "bust_clothes" 71 "bust_clothes" 112 }
  		gene_age={ "old_3" 2 "old_3" 2 }
  		gene_eyebrows_shape={ "avg_spacing_avg_thickness" 206 "avg_spacing_avg_thickness" 206 }
  		gene_eyebrows_fullness={ "layer_2_high_thickness" 202 "layer_2_high_thickness" 202 }
@@ -109,7 +109,7 @@ bookmark_277_denys_darklyn={
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
  		eyelashes_accessory={ "normal_eyelashes" 0 "no_eyelashes" 0 }
  		skin_color_saturation={ "skin_color_saturation" 127 "skin_color_saturation" 127 }
- 		eye_color_saturation={ "eye_color_saturation" 127 "eye_color_saturation" 127 }
+ 		eye_color_saturation={ "eye_color_saturation" 114 "eye_color_saturation" 117 }
  		gene_bs_eye_height_inside={ "eye_height_inside_neg" 0 "eye_height_inside_neg" 0 }
  		gene_bs_eye_height_outisde={ "eye_height_outisde_neg" 106 "eye_height_outisde_neg" 106 }
  		gene_bs_ear_lobe={ "ear_lobe_fused" 83 "ear_lobe_fused" 83 }
@@ -132,19 +132,19 @@ bookmark_277_denys_darklyn={
  		gene_bs_mouth_glamour_lips={ "mouth_glamour_lips" 0 "mouth_glamour_lips" 0 }
  		face_detail_eye_upper_lid_def={ "upper_lid_def" 0 "upper_lid_def" 0 }
  		gene_eyebrow_inner_width={ "eyebrow_inner_width_max" 0 "eyebrow_inner_width_max" 0 }
- 		gene_bs_eye_lower_lid_size={ "vanilla_eye_lower_lid_size" 0 "vanilla_eye_lower_lid_size" 0 }
- 		gene_bs_eye_shape={ "vanilla_eye_shape" 0 "vanilla_eye_shape" 0 }
+ 		gene_bs_eye_lower_lid_size={ "eye_lower_lid_size" 0 "eye_lower_lid_size" 36 }
+ 		gene_bs_eye_shape={ "vanilla_eye_shape" 45 "eye_shape_01" 205 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		pose={ "" 255 "" 0 }
- 		beards={ "western_beards_straight" 31 "no_beard" 0 }
+ 		beards={ "all_beards" 212 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "western_hairstyles_straight" 31 "all_hairstyles" 0 }
- 		legwear={ "agot_hidden_legwear" 255 "all_legwear" 0 }
+ 		hairstyles={ "all_hairstyles" 170 "all_hairstyles" 0 }
+ 		legwear={ "western_common_legwear" 32 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "ep2_western_era3_high_nobility_clothes" 13 "most_clothes" 0 }
- 		headgear={ "no_headgear" 35 "no_headgear" 0 }
+ 		clothes={ "ep2_western_era3_high_nobility_clothes" 193 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 208 "no_headgear" 0 }
  }
 	entity={ 979141817 979141817 }
 }

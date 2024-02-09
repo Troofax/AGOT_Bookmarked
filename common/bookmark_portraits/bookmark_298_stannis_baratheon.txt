@@ -2,9 +2,9 @@
 # History database id:Baratheon_3
 bookmark_298_stannis_baratheon={
 	type=male
-	id=23232
+	id=26880
 	age=0.340000
-	genes={ 		hair_color={ 255 255 0 244 }
+	genes={ 		hair_color={ 20 249 0 244 }
  		skin_color={ 10 20 73 42 }
  		eye_color={ 229 127 219 45 }
  		gene_chin_forward={ "chin_forward_pos" 173 "chin_forward_pos" 127 }
@@ -95,10 +95,10 @@ bookmark_298_stannis_baratheon={
  		expression_forehead_wrinkles={ "forehead_wrinkles_02" 188 "forehead_wrinkles_01" 131 }
  		expression_other={ "nose_wrinkles_01" 0 "nose_wrinkles_01" 134 }
  		complexion={ "complexion_9" 0 "complexion_8" 72 }
- 		gene_height={ "normal_height" 175 "normal_height" 137 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 129 "body_fat_head_fat_full" 131 }
+ 		gene_height={ "normal_height" 175 "normal_height" 150 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 131 "body_fat_head_fat_full" 131 }
  		gene_bs_body_shape={ "body_shape_average" 255 "body_shape_average" 0 }
- 		gene_bs_bust={ "bust_clothes" 28 "bust_shape_3_full" 165 }
+ 		gene_bs_bust={ "bust_clothes" 22 "bust_shape_3_full" 165 }
  		gene_age={ "old_2" 218 "old_1" 25 }
  		gene_eyebrows_shape={ "avg_spacing_high_thickness" 255 "avg_spacing_low_thickness" 201 }
  		gene_eyebrows_fullness={ "layer_2_avg_thickness" 255 "layer_2_avg_thickness" 236 }
@@ -140,11 +140,11 @@ bookmark_298_stannis_baratheon={
  		beards={ "all_beards" 69 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "agot_special_scripted_hairstyles" 71 "all_hairstyles" 0 }
- 		legwear={ "agot_hidden_legwear" 255 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 246 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "agot_western_high_nobility_clothes_male_pants" 162 "most_clothes" 0 }
+ 		clothes={ "ep2_western_era3_high_nobility_clothes" 163 "most_clothes" 0 }
  		headgear={ "stannis_crown" 255 "no_headgear" 0 }
  }
 	entity={ 3942081117 3942081117 }

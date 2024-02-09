@@ -3386,7 +3386,7 @@ Connington_4 = {
 	8283.1.1 = {
 		# employer = Toyne_4 #Myles Toyne # AGOT TODO no golden company title
 		if = { # AGOT Bookmarked
-			limit = { game_start_date < 8299.1.1 }
+			limit = { game_start_date < 8298.1.1 }
 			death = { death_reason = death_drinking_passive } # Officially
 		}
 	}

@@ -518,6 +518,9 @@ Targaryen_28 = {
 	# AGOT Bookmarked Added
 	8000.1.2 = {
 		religion = the_seven_main
+		effect = {
+			#add_character_flag = high_valyrian_polygamy_wife # AGOT TODO
+		}
 	}
 	#8042.1.1 = { trait = suspected_kinslayer } # AGOT TODO trait
 	8044.7.1 = {
@@ -571,6 +574,9 @@ Targaryen_29 = {
 	# AGOT Bookmarked Added
 	8000.1.2 = {
 		religion = the_seven_main
+		effect = {
+			#add_character_flag = high_valyrian_polygamy_wife # AGOT TODO
+		}
 	}
 	8010.1.1 = {
 		add_spouse = Targaryen_27 # for history sake
@@ -2460,6 +2466,7 @@ Targaryen_63 = {
 					reason = rival_fix_relationship_fail # I think it's most likely middle-ground between two versions
 				}
 			}
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_63 COA_KEY = rhaenrya_personal_coa }
 			add_prestige = 200
 		}
 	}
@@ -2573,6 +2580,9 @@ Targaryen_63 = {
 			death_reason = death_execution # Fed to Sunfyre
 			killer = Targaryen_65 # Aegon Targaryen
 		}
+		effect = {
+			agot_prune_personal_coa = yes
+		}
 		give_nickname = nick_the_half_year_queen
 	}
 }
@@ -2627,6 +2637,7 @@ Targaryen_65 = {
 		trait = dragon_rider
 		trait = knight
 		add_spouse = Targaryen_66 # Helaena Targaryen
+		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_65 COA_KEY = aegon_ii_personal_arms }
 		effect = {
 			set_relation_friend = character:Targaryen_67 # Aemond Targaryen
 			set_relation_friend = character:Targaryen_68 # Daeron Targaryen
@@ -2697,6 +2708,9 @@ Targaryen_65 = {
 		death = {
 			death_reason = death_poison
 			killer = Strong_31 # Larys Strong
+		}
+		effect = {
+			agot_prune_personal_coa = yes
 		}
 		# remove_trait = civil_war
 		give_nickname = nick_the_elder #named as such when Aegon III takes the throne
@@ -5244,6 +5258,7 @@ Targaryen_110 = {
 		trait = unyielding_defender
 		trait = knight
 		add_spouse = Dayne_69 # Dyanna Dayne
+		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_110 COA_KEY = maekar_targaryen_personal_arms }
 	}
 	8207.1.1 = {
 		trait = widowed
@@ -5283,6 +5298,9 @@ Targaryen_110 = {
 		death = {
 			death_reason = death_battle # Siege of Starpike
 			killer = Peake_66 # Estyn Peake
+		}
+		effect = {
+			agot_prune_personal_coa = yes
 		}
 	}
 }
@@ -5512,6 +5530,7 @@ Targaryen_118 = {
 		trait = knight
 		give_nickname = nick_the_drunken
 		trait = drunkard
+		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_118 COA_KEY = daeron_targaryen_personal_arms }
 	}
 	8210.1.1 = {
 		add_spouse = Camardoon_7_A # Kiera of Tyrosh
@@ -5519,6 +5538,9 @@ Targaryen_118 = {
 	8229.1.1 = { #Was Lord of Dragonstone at some point
 		trait = lovers_pox
 		death = { death_reason = death_ill }
+		effect = {
+			agot_prune_personal_coa = yes
+		}
 	}
 }
 Targaryen_119 = {
@@ -6941,7 +6963,7 @@ Blackfyre_14 = {
 			add_prestige_level = 1 
 		}
 	}
-	8258.11.1 = { # Ninepenny Kings # AGOT TODO ADD WHEN ESSOS PART IS ADDED
+	8258.11.1 = {
 		effect = {
 			spawn_army = {
 				levies = 0
@@ -6982,9 +7004,9 @@ Blackfyre_14 = {
 					type = war_elephant # 50
 					stacks = 2
 				}
-				location = root.capital_province 
+				location = root.capital_province
 				origin = root.capital_province
-				inheritable = yes 
+				inheritable = no
 			}
 		}
 		###
