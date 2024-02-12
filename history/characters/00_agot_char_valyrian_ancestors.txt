@@ -3313,7 +3313,7 @@ Targaryen_75 = {
 		effect = {
 			#add_character_flag = high_valyrian # AGOT TODO
 			set_real_father = character:Strong_30 # Harwin Strong
-			# AGOT Bookmarked
+			# AGOT Bookmarked Added
 			add_character_flag = do_not_assign_strong_seed
 			make_trait_inactive = brown_eyes
 			make_trait_inactive = brown_hair
@@ -3365,7 +3365,7 @@ Targaryen_76 = {
 		effect = {
 			#add_character_flag = high_valyrian # AGOT TODO
 			set_real_father = character:Strong_30 # Harwin Strong
-			# AGOT Bookmarked
+			# AGOT Bookmarked Added
 			add_character_flag = do_not_assign_strong_seed
 			make_trait_inactive = brown_eyes
 			make_trait_inactive = brown_hair
@@ -3419,7 +3419,7 @@ Targaryen_77 = {
 		effect = {
 			#add_character_flag = high_valyrian # AGOT TODO
 			set_real_father = character:Strong_30 # Harwin Strong
-			# AGOT Bookmarked
+			# AGOT Bookmarked Added
 			add_character_flag = do_not_assign_strong_seed
 			make_trait_inactive = brown_eyes
 			make_trait_inactive = brown_hair
