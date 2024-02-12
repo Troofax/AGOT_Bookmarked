@@ -965,9 +965,12 @@ agot_on_game_start = {
 			add_building = common_tradeport_02
 		}
 		province:4151 = {
-			add_building = stables_04
 			add_building = workshops_04
-			add_building = godswood_02
+			add_building = stables_04
+			if = { # AGOT Bookmarked Added
+				limit = { game_start_date >= 8050.1.1 }
+				add_building = godswood_02
+			}
 		}
 		province:4152 = {
 			add_building = agot_urban_farms_03
