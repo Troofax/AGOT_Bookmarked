@@ -2,12 +2,10 @@
 	# AGOT Bookmarked Added
 	7998.1.2 = {
 		holder = 0
-		liege = e_the_iron_throne
 	}
 	7998.2.1 = {
 		holder = Targaryen_27
-		# AGOT Bookmarked Disabled
-		# liege = e_the_iron_throne
+		liege = e_the_iron_throne
 	}
 	8037.9.9 = {
 		holder = Targaryen_30
@@ -79,7 +77,6 @@ d_kings_landing = {
 	}
 	# AGOT Bookmarked Added
 	7998.1.2 = {
-		holder = 0
 		de_jure_liege = k_the_crownlands
 	}
 	7998.2.1 = {
@@ -185,11 +182,6 @@ c_kings_landing = {
 	}
 	7960.1.1 = {
 		holder = Hoare_31
-	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
-		holder = Hoare_31
-		de_jure_liege = d_kings_landing
 	}
 	7998.2.1 = {
 		holder = Targaryen_27
@@ -369,11 +361,11 @@ c_blackstripe = {
 	7998.2.1 = {
 		holder = Targaryen_27
 	}
-	# AGOT Bookmarked Disabled
-	# 7998.2.27 = {
-		# liege = d_kings_landing
+	7998.2.27 = {
+		liege = d_kings_landing
+		# AGOT Bookmarked Disabled
 		# de_jure_liege = d_kings_landing
-	# }
+	}
 	8037.9.9 = {
 		holder = Targaryen_30
 	}

@@ -145,7 +145,7 @@ bookmark_298_renly_baratheon={
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "ep2_western_era3_high_nobility_clothes" 25 "most_clothes" 0 }
- 		headgear={ "no_headgear" 144 "no_headgear" 0 }
+ 		headgear={ "renly_crown" 255 "no_headgear" 0 }
  }
 	entity={ 979141817 979141817 }
 }
