@@ -4,9 +4,9 @@ bookmark_129_jacaerys_velaryon={
 	type=boy
 	id=11385
 	age=0.140000
-	genes={ 		hair_color={ 0 0 130 244 }
+	genes={ 		hair_color={ 91 239 130 244 }
  		skin_color={ 179 42 167 26 }
- 		eye_color={ 247 53 29 219 }
+ 		eye_color={ 53 63 29 219 }
  		gene_chin_forward={ "chin_forward_pos" 91 "chin_forward_neg" 145 }
  		gene_chin_height={ "chin_height_neg" 135 "chin_height_neg" 119 }
  		gene_chin_width={ "chin_width_pos" 129 "chin_width_neg" 146 }
