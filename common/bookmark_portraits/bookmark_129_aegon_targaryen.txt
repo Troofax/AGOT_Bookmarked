@@ -4,7 +4,7 @@ bookmark_129_aegon_targaryen={
 	type=male
 	id=10865
 	age=0.220000
-	genes={ 		hair_color={ 0 0 12 35 }
+	genes={ 		hair_color={ 0 51 12 35 }
  		skin_color={ 62 24 24 16 }
  		eye_color={ 247 191 226 43 }
  		gene_chin_forward={ "chin_forward_neg" 119 "chin_forward_neg" 145 }

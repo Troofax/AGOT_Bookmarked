@@ -6,6 +6,8 @@ l_english:
  #7998
  bookmark_2bc_aegon_targaryen:0 "Aegon Targaryen"
  bookmark_2bc_aegon_targaryen_desc:0 "Will Aegon Targaryen unite Westeros under one kingdom, or suffer the fate of Valyria?"
+ bookmark_2bc_visenya_targaryen:0 "Visenya Targaryen"
+ bookmark_2bc_rhaenys_targaryen:0 "Rhaenys Targaryen"
 
  bookmark_2bc_mern_gardener:0 "King Mern IX Gardener"
  bookmark_2bc_mern_gardener_desc:0 "<insert imagination>"
@@ -22,9 +24,13 @@ l_english:
  #8129
  bookmark_129_rhaenyra_targaryen:0 "Queen Rhaenyra I Targaryen"
  bookmark_129_rhaenyra_targaryen_desc:0 "Rhaenyra was the designated heir of her father, King Viserys I Targaryen. This decision had been confirmed by a proclamation of his will. When Viserys died in 129 AC, Ser Otto Hightower, the Hand of the King, and Ser Criston Cole, Lord Commander of the Kingsguard, defied the king's will and instead crowned Rhaenyra's half-brother, Aegon II. The greens in King's Landing ensured that the news of the Viserys's death did not reach her until Aegon II's coronation had already occurred.\n\nWhen news reached Rhaenyra, she went into early labor, producing a stillborn daughter, Visenya. Rhaenyra blamed this tragedy on those who had stolen her crown. Rhaenyra had a hastily-arranged coronation of her own. Rhaenyra was crowned with her father's crown by her husband and uncle, Prince Daemon Targaryen. When news of her coronation reached King's Landing, she was offered terms to let Rhaenyra and her descendants remain rulers of Dragonstone if she renounced her claims, but she refused. Will Rhaenyra Targaryen take what's rightfully hers?"
+ bookmark_129_daemon_targaryen:0 "Daemon 'the Rogue Prince' Targaryen"
+ bookmark_129_jacaerys_velaryon:0 "Jacaerys Velaryon"
 
  bookmark_129_aegon_targaryen:0 "King Aegon II Targaryen"
  bookmark_129_aegon_targaryen_desc:0 "When King Viserys I Targaryen died in 129 AC, Princess Rhaenyra Targaryen was still the heir to the Iron Throne. Since she was pregnant at Dragonstone when her father died, the greens in King's Landing hid the news of Viserys's death, keeping the king's body in his room for seven days, until their preparations for Aegon's coronation were complete. With the exception of Lord Lyman Beesbury, the small council agreed to crown Aegon.\n\nAegon at first refused to be a part of his mother's plans to crown him, insisting Rhaenyra was heir. However, Ser Criston Cole, Lord Commander of the Kingsguard, convinced him that should Rhaenyra take the throne, Aegon and his brothers would be executed. Eustace insists that only this persuaded him to take the crown. Will Aegon Targaryen hold the Iron Throne, or lose it all?"
+ bookmark_129_helaena_targaryen:0 "Helaena Targaryen"
+ bookmark_129_aemond_targaryen:0 "Aemond Targaryen"
 
  #8195
  bookmark_195_daemon_blackfyre:0 "King Daemon I Blackfyre"
@@ -32,19 +38,26 @@ l_english:
 
  bookmark_195_daeron_targaryen:0 "King Daeron II Targaryen"
  bookmark_195_daeron_targaryen_desc:0 "Daeron II Targaryen, known as Daeron the Good, is the twelfth Targaryen to sit the Iron Throne. Daeron brought Dorne peacefully into the realm, uniting all the lands of Westeros south of the wall. His bastard half-brother, Daemon Blackfyre, is challenging his rule and this means civil war, the First Blackfyre Rebellion. Will he protect his claim?"
+ bookmark_195_baelor_targaryen:0 "Baelor 'Breakspear' Targaryen"
+ bookmark_195_maekar_targaryen:0 "Maekar Targaryen"
 
  bookmark_195_harys_bracken:0 "Lord Harys Bracken"
  bookmark_195_harys_bracken_desc:0 "Lord Harys Bracken's nephew, Aegor Bittersteel, has entangled him in a war of succession. This could prove to further the status of house Bracken for years to come. Will he succeed in their cause or meet an untimely death?"
+ bookmark_195_aegor_targaryen:0 "Aegor 'Bittersteel' Targaryen"
 
  #8277
  bookmark_277_tywin_lannister:0 "Lord Tywin Lannister"
  bookmark_277_tywin_lannister_desc:0 "Outrage was the response to this news from Duskendale. As Hand of the King, it fell to Lord Tywin Lannister to resolve the crisis. He massed an army and laid siege to the town in what became known as the Defiance of Duskendale. The situation remained in a stalemate for six months, with Lord Denys threatening to execute the king at the first sign that Tywin intended to storm the town. In the end, will the king be rescued or will his rulership be cut short when there comes another who is younger and more beautiful?"
+ bookmark_277_cersei_lannister:0 "Cersei Lannister"
+ bookmark_277_jaime_lannister:0 "Jaime Lannister"
 
  bookmark_277_denys_darklyn:0 "Lord Denys Darklyn"
  bookmark_277_denys_darklyn_desc:0 "Lord Denys asked King Aerys II for certain rights for his citizens and a new town charter for Duskendale. The king refused and Denys refused to pay taxes to the crown. This led to an escalation of events that saw the capture of Aerys and the death of Ser Gwayne Gaunt of the Kingsguard by Ser Symon Hollard during the taking. Will he choose to negotiate or will he take matters into his own hands?"
 
  bookmark_277_aerys_targaryen:0 "King Aerys II Targaryen"
  bookmark_277_aerys_targaryen_desc:0 "Having noticed the deteriorated relationship between Aerys and Tywin, Lord Denys Darklyn of Duskendale decided to withhold his payments to the crown, and instead invited the king to Duskendale to hear his petition for a new charter. While Aerys had intended to decline the invitation, the king changed his mind when Lord Tywin advised him to refuse in the strongest possible terms. Eager to demonstrate his ability to handle the situation without the help of his Hand, Aerys decided to settle the issue personally and bring the defiant Lord Darklyn to heel. Aerys traveled to Duskendale taking a small force led by Ser Gwayne Gaunt of the Kingsguard, against Lord Tywin's advice. The invitation proved to be a trap, however, and Aerys walked right into it. Aerys was taken prisoner, will he escape or perish as a prisoner of war?"
+ bookmark_277_rhaella_targaryen:0 "Queen Rhaella Targaryen"
+ bookmark_277_rhaegar_targaryen:0 "Prince Rhaegar Targaryen"
 
  #8298
  bookmark_298_robb_stark:0 "King Robb Stark"
@@ -52,18 +65,24 @@ l_english:
 
  bookmark_298_joffrey_baratheon:0 "King Joffrey I Baratheon"
  bookmark_298_joffrey_baratheon_desc:0 "Following Robert's death, Joffrey summoned the council and commanded they make arrangements for his coronation as Lord of the Seven Kingdoms. When Ned produced Robert's will, which declared Ned regent and mentions "the heir" rather than specifying Joffrey, Queen Mother Cersei tore it up and advised Ned to swear fealty to her son. Ned in turn revealed that Joffrey has no claim to the throne and that his uncle, Lord Stannis Baratheon, is the true heir. After arresting Eddard and later forcing him to confess his crimes and declare Joffrey the true heir to the Iron Throne, Joffrey's mercy turned out to be Eddard's public beheading by Ser Ilyn Payne right before his daughter Sansa's eyes at the Great Sept of Baelor. Will Joffrey go unpunished or perish at the hands of those more worthy?"
+ bookmark_298_myrcella_baratheon:0 "Myrcella Baratheon"
+ bookmark_298_tommen_baratheon:0 "Tommen Baratheon"
 
  bookmark_298_walder_frey:0 "Lord Walder Frey"
  bookmark_298_walder_frey_desc:0 "The King Joffrey Baratheon has executed Ned Stark, and the Late Lord Walder Frey has the advantage of holding a position of power in the war that has recently broken out between the boy King Joffrey Baratheon and the King in the North Robb Stark. Walder doesn't care much for the Starks, but he has no doubt that he can turn this situation into a direct benefit. Which side of this war will agree to his demands and will he be able to use it to advance his position?"
 
  bookmark_298_tywin_lannister:0 "Lord Tywin Lannister"
  bookmark_298_tywin_lannister_desc:0 "Lord Tywin Lannister's grandson, the King of the Iron Throne Joffrey Baratheon, has thrown the realm into disarray with his brazen decision to behead the Warden of the North Eddard Stark who doubted his claim to the Throne. Faced with a declaration of war by the newly crowned King in the North Robb Stark, Tywin will need to act fast to ensure the survival of his family name. Will he conquer the North and squash the rebellion or will his grandson's tyranny lead to the downfall of the very dynasty Tywin has fought to preserve."
+ bookmark_298_cersei_lannister:0 "Cersei Lannister"
+ bookmark_298_jaime_lannister:0 "Jaime Lannister"
 
  bookmark_298_renly_baratheon:0 "Lord Paramount Renly Baratheon"
  bookmark_298_renly_baratheon_desc:0 "As a member of the small council, Lord Paramount Renly Baratheon has been among the first to learn of the war that has broken out between the cruel King Joffrey and the King in the North Robb Stark. His brother, Stannis Baratheon, has declared himself King Stannis of Dragonstone and insists on pressing his claim to the Iron Throne. Will Renly support his older brother's claims with the powerful support he has or use his alliances for his own claim to the Iron Throne?"
 
  bookmark_298_balon_greyjoy:0 "Lord Balon Greyjoy"
  bookmark_298_balon_greyjoy_desc:0 "Tired of living under the oppression of the Iron Throne, Lord Balon Greyjoy of the Iron Islands has taken advantage of the chaos unfolding and declare The Iron Islands' independence from the Seven Kingdoms. Will he pay the iron price for the independence of his land or be repelled like so many times before?"
+ bookmark_298_asha_greyjoy:0 "Asha Greyjoy"
+ bookmark_298_theon_greyjoy:0 "Theon Greyjoy"
 
  bookmark_298_stannis_baratheon:0 "King Stannis Baratheon"
  bookmark_298_stannis_baratheon_desc:0 "King Stannis Baratheon, now embracing the Lord of Light, has learned of the disputed heritage of the boy King Joffrey Baratheon. The Iron Throne is his by right and he plans to press that claim. He will need powerful allies if he plans to have a chance in the wars to come. The Young Wolf has declared himself King in the North, but Stannis isn't interested in ruling only half a kingdom. Will his brother Renly support his claim or will his own blood oppose him and try to press his own claim to the Iron Throne? Will Stannis be able to garner enough support to crush these pretenders once and for all?"
@@ -74,15 +93,21 @@ l_english:
 
  bookmark_299_joffrey_baratheon:0 "King Joffrey I Baratheon"
  bookmark_299_joffrey_baratheon_desc:0 "Following Robert's death, Joffrey summoned the council and commanded they make arrangements for his coronation as Lord of the Seven Kingdoms. When Ned produced Robert's will, which declared Ned regent and mentions "the heir" rather than specifying Joffrey, Queen Mother Cersei tore it up and advised Ned to swear fealty to her son. Ned in turn revealed that Joffrey has no claim to the throne and that his uncle, Lord Stannis Baratheon, is the true heir. After arresting Eddard and later forcing him to confess his crimes and declare Joffrey the true heir to the Iron Throne, Joffrey's mercy turned out to be Eddard's public beheading by Ser Ilyn Payne right before his daughter Sansa's eyes at the Great Sept of Baelor. Will Joffrey go unpunished or perish at the hands of those more worthy?"
+ bookmark_299_myrcella_baratheon:0 "Myrcella Baratheon"
+ bookmark_299_tommen_baratheon:0 "Tommen Baratheon"
 
  bookmark_299_walder_frey:0 "Lord Walder Frey"
  bookmark_299_walder_frey_desc:0 "The world is full of possibilities, thirty-six of them to be exact. As Lord of The Crossing, the Late Lord Walder Frey holds a position of influence in the ongoing War of the Five Kings. Robb Stark, known as the Young Wolf, has agreed to a betrothal to his daughter Roslin in exchange for the strategic advantage that The Crossing offers. Will the Young Wolf stay true to his word or will he betray Walder and ensure another end to this arrangement?"
 
  bookmark_299_tywin_lannister:0 "Lord Tywin Lannister"
  bookmark_299_tywin_lannister_desc:0 "Lord Tywin Lannister, away on account of the ongoing war and currently stationed in the cursed castle of Harrenhal, has instructed his son Tyrion Lannister to serve as Hand of the King in his stead. He has a plan to end this rebellion as quickly as it started. Robb Stark, known as the Young Wolf has proven himself a successful commander. Will the King in the North become more of a problem for his family than he thought or will the Lannisters prove once more the power of their family name?"
+ bookmark_299_cersei_lannister:0 "Cersei Lannister"
+ bookmark_299_jaime_lannister:0 "Jaime Lannister"
 
  bookmark_299_balon_greyjoy:0 "Lord Balon Greyjoy"
  bookmark_299_balon_greyjoy_desc:0 "Tired of living under the oppression of the Iron Throne, Lord Balon Greyjoy of the Iron Islands has taken advantage of the chaos unfolding and declare The Iron Islands' independence from the Seven Kingdoms. Will he pay the iron price for the independence of his land or be repelled like so many times before?"
+ bookmark_299_asha_greyjoy:0 "Asha Greyjoy"
+ bookmark_299_theon_greyjoy:0 "Theon Greyjoy"
 
  bookmark_299_stannis_baratheon:0 "Lord Stannis Baratheon"
  bookmark_299_stannis_baratheon_desc:0 "King Stannis Baratheon, who is pressing his claim as the rightful heir to the Iron Throne, has declared his intention to take what is his from the bastard born boy King Joffrey Baratheon. Accompanied by the Red Priestess Melisandre, who is filling his mind with prophecies and visions, Stannis believes himself to be the prince who was promised. Will his skills as a tactician prove superior to the illegitimate usurper or will he be mislead by prophecy into a bitter end to his claim?"

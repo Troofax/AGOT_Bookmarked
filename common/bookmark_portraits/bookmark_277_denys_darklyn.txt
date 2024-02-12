@@ -143,7 +143,7 @@ bookmark_277_denys_darklyn={
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "ep2_western_era3_high_nobility_clothes" 13 "most_clothes" 0 }
+ 		clothes={ "ep2_western_era3_high_nobility_clothes" 193 "most_clothes" 0 }
  		headgear={ "no_headgear" 35 "no_headgear" 0 }
  }
 	entity={ 979141817 979141817 }
