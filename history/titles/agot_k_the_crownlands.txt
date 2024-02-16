@@ -56,8 +56,6 @@
 	8259.6.1 = {
 		holder = Targaryen_127
 	}
-	8259.11.1 = {
-	}
 	8262.1.1 = {
 		holder = Targaryen_1
 	}
@@ -274,7 +272,7 @@ b_goldguard_heights = {
 		holder = Redwyne_30
 	}
 	8090.1.1 = {
-		holder = Targaryen_35 # Placeholder
+		holder = Targaryen_35
 	}
 	8104.5.1 = {
 		holder = Targaryen_61
@@ -302,6 +300,15 @@ b_goldguard_heights = {
 	}
 	8162.1.4 = {
 		holder = Harte_19
+	}
+	8165.1.1 = {
+		holder = Dargood_19
+	}
+	8211.1.1 = {
+		holder = Bentley_40
+	}
+	8246.1.1 = {
+		holder = Wendwater_34
 	}
 	8265.1.1 = {
 		holder = Stokeworth_2
