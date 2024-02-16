@@ -1736,6 +1736,25 @@ e_beyond_the_wall = {
 	}
 }
 
+e_three_daughters = {
+	8096.1.1 = {
+		holder = Mallar_9 # Myr first
+		succession_laws = { equal_law magisterial_limited_succession_law }
+	}
+	8099.1.1 = {
+		holder = Basetys_14 #Tyrosh next
+	}
+	8102.1.1 = {
+		holder = Haen_9 #Lys next
+	}
+	8104.1.1 = { # Lys ruler dies, so back to
+		holder = Mallar_8 #Myr
+	}
+	8110.1.1 = { # To be continued
+		holder = 0
+	}
+}
+
 #Blackfyre Rebellion titular title
 e_blackfyre_rebellion = {
 	8195.3.7 = { 
