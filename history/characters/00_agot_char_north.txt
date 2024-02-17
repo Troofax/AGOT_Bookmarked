@@ -1132,7 +1132,7 @@ Stark_Dummy_9 = {
 8059 = {
 	name = Brandon # Canon, THE Bran
 	dynasty = dynn_Stark
-	# AGOT TODO dna = agot_dna_Stark_10
+	dna = 8059
 
 	religion = old_gods_south
 	culture = northman
@@ -1262,7 +1262,7 @@ Stark_Dummy_10 = {
 Stark_11 = {
 	name = Rickon # Canon, THE Rickon
 	dynasty = dynn_Stark
-	# AGOT TODO dna = agot_dna_Stark_11
+	dna = Stark_11
 
 	religion = old_gods_south
 	culture = northman

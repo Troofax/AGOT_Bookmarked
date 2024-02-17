@@ -2944,7 +2944,6 @@ Targaryen_69 = {
 	name = Baela
 	dynasty = dynn_Targaryen
 	female = yes
-
 	dna = Targaryen_69
 
 	prowess = 5
@@ -2995,6 +2994,7 @@ Targaryen_70 = {
 	name = Rhaena
 	dynasty = dynn_Targaryen
 	female = yes
+	dna = Targaryen_70
 
 	father = Targaryen_61 # Daemon Targaryen
 	mother = Velaryon_34
@@ -5498,6 +5498,7 @@ Targaryen_117 = {
 Targaryen_118 = {
 	name = Daeron
 	dynasty = dynn_Targaryen
+	dna = Targaryen_118
 
 	martial = 2
 	diplomacy = 3
@@ -5558,6 +5559,7 @@ Targaryen_118 = {
 Targaryen_119 = {
 	name = Aerion # AKA: Aerion Brightflame
 	dynasty = dynn_Targaryen
+	dna = Targaryen_119
 
 	martial = 2
 	diplomacy = 2
@@ -5950,6 +5952,7 @@ Targaryen_125 = {
 Targaryen_126 = {
 	name = Duncan # Canon, AKA: Duncan the Small
 	dynasty = dynn_Targaryen
+	dna = Targaryen_126
 
 	martial = 9
 	diplomacy = 9
@@ -6140,8 +6143,8 @@ Targaryen_128 = {
 }
 Targaryen_129 = {
 	name = Daeron # Third son of Aegon V
-	# AGOT TODO dna = agot_dna_Targaryen_129
 	dynasty = dynn_Targaryen
+	dna = Targaryen_129
 
 	prowess = 12
 
@@ -6187,6 +6190,7 @@ Targaryen_130 = {
 	name = Rhaelle # Mother of Steffon Baratheon. Wife of the Laughing Storm.
 	female = yes
 	dynasty = dynn_Targaryen
+	dna = Targaryen_130
 
 	religion = the_seven_main
 	culture = high_valyrian
