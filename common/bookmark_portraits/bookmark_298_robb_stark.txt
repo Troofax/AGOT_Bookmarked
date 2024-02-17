@@ -145,7 +145,7 @@ bookmark_298_robb_stark={
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "northern_high_nobility_clothes" 202 "most_clothes" 0 }
- 		headgear={ "no_headgear" 0 "no_headgear" 0 }
+ 		headgear={ "crown_of_winter" 255 "no_headgear" 0 }
  }
 	entity={ 3942081117 3942081117 }
 }
