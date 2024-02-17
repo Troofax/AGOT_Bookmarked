@@ -146,7 +146,7 @@ bookmark_299_balon_greyjoy={
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "northern_high_nobility_clothes" 47 "most_clothes" 0 }
- 		headgear={ "no_headgear" 83 "no_headgear" 0 }
+ 		headgear={ "greyjoy_crown" 83 "no_headgear" 0 }
  }
 	entity={ 979141817 979141817 }
 }

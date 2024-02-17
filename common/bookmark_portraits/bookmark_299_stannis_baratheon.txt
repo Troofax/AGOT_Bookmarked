@@ -145,7 +145,7 @@ bookmark_299_stannis_baratheon={
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "ep2_western_era3_high_nobility_clothes" 163 "most_clothes" 0 }
- 		headgear={ "no_headgear" 29 "no_headgear" 0 }
+ 		headgear={ "stannis_crown" 29 "no_headgear" 0 }
  }
 	entity={ 3942081117 3942081117 }
 }
