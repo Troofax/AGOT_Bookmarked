@@ -51,6 +51,8 @@ agot_8195_3_7_br_i_scenario_setup = {
 		}
 	}
 
+	title:e_the_iron_throne.holder = { save_scope_as = historical_setup }
+
 	### SET UP REBEL LEADERS
 	title:d_the_blackwater_rush.holder = {
 		save_scope_as = mw_rebel_leader_daemon
