@@ -11,6 +11,10 @@ agot_bm_group_BR = { # Blackfyre Rebellion #1
 	default_start_date = 8195.3.7
 }
 
+agot_bm_group_8259 = { # Ninepenny Kings
+	default_start_date = 8259.11.1
+}
+
 agot_bm_group_DOD = { # Defiance of Duskendale
 	default_start_date = 8277.1.1
 }

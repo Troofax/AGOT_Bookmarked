@@ -310,7 +310,7 @@ e_dorne = {
 }
 
 e_the_iron_islands = {
-	1.1.2 = {
+	34.1.1 = {
 		holder = Grey_King_2 # The Grey King
 		#law = succ_kingsmoot_elective # AGOT TODO
 		#law = centralization_1 # AGOT TODO
@@ -679,7 +679,7 @@ e_the_north = {
 	8298.12.20 = {
 		holder = Stark_6 #Robb Stark
 		effect = { # AGOT TODO
-			if = { # AGOT Bookmarked
+			if = { # AGOT Bookmarked Added
 				limit = { character:Stark_6 = { is_alive = yes } }
 				agot_set_empire_tier_realm_paramountcy = yes
 				#	holder = {

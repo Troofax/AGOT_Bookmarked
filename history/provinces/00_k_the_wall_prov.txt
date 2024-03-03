@@ -1,9 +1,4 @@
-﻿################################################
-# AGOT Bookmarked - For COW AGOT Compatibility #
-################################################
-
-
-################## b_castle_black #################
+﻿################## b_castle_black #################
 ########### c_castle_black - d_the_wall ###########
 5 = {
 	culture = northman
@@ -11,8 +6,6 @@
 	holding = castle_holding
 	7998.1.1 = {
 		buildings = { castle_03 }
-		special_building_slot = special_the_wall
-		special_building = special_the_wall
 	}
 }
 #################### b_icemark ####################
@@ -87,10 +80,7 @@
 	religion = old_gods_south
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_02 
-			common_tradeport_01
-		}
+		buildings = { castle_02 common_tradeport_01 }
 	}
 }
 ################### b_sable_hall ##################

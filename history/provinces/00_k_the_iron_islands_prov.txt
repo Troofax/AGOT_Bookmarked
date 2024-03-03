@@ -6,11 +6,7 @@
 	holding = castle_holding
 	special_building = pyke_01
 	7998.1.1 = {
-		buildings = { 
-			castle_05 
-			hill_forts_04
-			common_tradeport_03
-		}
+		buildings = { castle_05 hill_forts_04 common_tradeport_03 }
 	}
 }
 ################## b_neverharrow ##################
@@ -114,10 +110,7 @@
 	religion = drowned_god_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_04 
-			common_tradeport_02
-		}
+		buildings = { castle_04 common_tradeport_02 }
 	}
 }
 ################### b_fetid_hold ##################
@@ -169,10 +162,7 @@
 2741 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_03 
-			common_tradeport_02
-		}
+		buildings = { city_03 common_tradeport_02 }
 	}
 }
 ################### b_mouldering ##################
@@ -295,10 +285,7 @@
 	holding = castle_holding
 	special_building = hardstone_hills_mines_01
 	7998.1.1 = {
-		buildings = { 
-			castle_05 
-			ramparts_06
-		}
+		buildings = { castle_05 ramparts_06 }
 	}
 }
 #################### b_lurrkeep ###################
@@ -346,10 +333,7 @@
 2762 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_02 
-			common_tradeport_02
-		}
+		buildings = { city_02 common_tradeport_02 }
 	}
 }
 ################## b_downdelving ##################
@@ -591,11 +575,7 @@
 	religion = drowned_god_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_04 
-			hill_forts_03
-			common_tradeport_02
-		}
+		buildings = { castle_04 hill_forts_03 common_tradeport_02 }
 	}
 }
 #################### b_port_lye ###################
@@ -737,10 +717,7 @@
 	religion = drowned_god_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_04 
-			common_tradeport_02
-		}
+		buildings = { castle_04 common_tradeport_02 }
 	}
 }
 ################### b_claychest ###################
@@ -789,10 +766,7 @@
 	religion = drowned_god_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_04 
-			common_tradeport_02
-		}
+		buildings = { castle_04 common_tradeport_02 }
 	}
 }
 ################### b_blackcove ###################
@@ -829,11 +803,7 @@
 	holding = castle_holding
 	special_building = harlaw_mines_01
 	7998.1.1 = {
-		buildings = { 
-			castle_05 
-			hill_forts_04
-			common_tradeport_03
-		}
+		buildings = { castle_05 hill_forts_04 common_tradeport_03 }
 	}
 }
 #################### b_mockery ####################
@@ -1107,6 +1077,7 @@
 2854 = {
 	culture = ironborn
 	religion = drowned_god_main
+	special_building = agot_lonely_light_01
 	holding = castle_holding
 	7998.1.1 = {
 		buildings = { castle_01 }

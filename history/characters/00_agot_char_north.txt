@@ -267,7 +267,10 @@ Stark_3 = {
 		effect = { 
 			if = {
 				limit = { character:Tully_4 = { is_alive = yes } }
-				set_relation_lover = character:Tully_4 # Formed a loving relationship
+				set_relation_lover = { # Formed a loving relationship
+					target = character:Tully_4 # Catelyn Tully
+					reason = lover_spouse
+				}	
 			}
 		}
 	}
@@ -312,7 +315,7 @@ Stark_3 = {
 	}
 }
 Stark_4 = {
-	name = Benjen # Canon, Night's Watch
+	name = Benjen # Canon, Night's Watch, Uncle Benjen Stark
 	dynasty = dynn_Stark
 	dna = Stark_4
 
@@ -571,7 +574,10 @@ Stark_6 = {
 		effect = {
 			if = {
 				limit = { character:Westerling_2 = { is_alive = yes } }
-				set_relation_lover = character:Westerling_2 # Jeyne Westerling
+				set_relation_lover = {
+					target = character:Westerling_2 # Jeyne Westerling
+					reason = lover_spouse 
+				}
 				character:Westerling_2 = { # Jeyne Westerling 
 					make_pregnant = {
 						father = ROOT
@@ -1126,7 +1132,7 @@ Stark_Dummy_9 = {
 8059 = {
 	name = Brandon # Canon, THE Bran
 	dynasty = dynn_Stark
-	# AGOT TODO dna = agot_dna_Stark_10
+	dna = 8059
 
 	religion = old_gods_south
 	culture = northman
@@ -1256,7 +1262,7 @@ Stark_Dummy_10 = {
 Stark_11 = {
 	name = Rickon # Canon, THE Rickon
 	dynasty = dynn_Stark
-	# AGOT TODO dna = agot_dna_Stark_11
+	dna = Stark_11
 
 	religion = old_gods_south
 	culture = northman
@@ -1384,6 +1390,7 @@ Stark_Dummy_11 = {
 ### Household
 Stark_hh_1 = {
 	name = Luwin # Canon
+	dna = Stark_hh_1
 
 	martial = 4
 	diplomacy = 9
@@ -2033,9 +2040,10 @@ Stark_hh_22 = {
 ### Household - Old Nan and her descendants
 Stark_hh_23 = {
 	name = Nan # Canon, AKA: The Old Nan
+	dna = Stark_hh_23
 	female = yes
 
-	# health = 12
+	health = 12
 
 	religion = old_gods_south
 	culture = northman
@@ -2165,7 +2173,7 @@ Stark_hh_26 = {
 }
 Stark_hh_2 = {
 	name = Walder # Canon, AKA: Hodor, THE Hodor
-	#dna = "bbjdbwaegax"
+	dna = Stark_hh_2
 
 	martial = 5
 	diplomacy = 2
@@ -2223,6 +2231,7 @@ Stark_hh_2 = {
 Manderly_1 = {
 	name = Brandon # a lord
 	dynasty = dynn_Manderly
+	dna = Manderly_1
 
 	religion = the_seven_main
 	culture = harborman
@@ -2235,6 +2244,7 @@ Manderly_1 = {
 }
 Manderly_rs_1 = {
 	name = Branda
+	dna = Manderly_rs_1
 	female = yes
 
 	religion = the_seven_main
@@ -2247,6 +2257,7 @@ Manderly_rs_1 = {
 Manderly_2 = {
 	name = Medrick # a lord
 	dynasty = dynn_Manderly
+	dna = Manderly_2
 
 	religion = the_seven_main
 	culture = harborman
@@ -2260,6 +2271,7 @@ Manderly_2 = {
 }
 Manderly_rs_2 = {
 	name = Lyanna
+	dna = Manderly_rs_2
 	female = yes
 
 	religion = the_seven_main
@@ -2271,6 +2283,7 @@ Manderly_rs_2 = {
 Manderly_3 = {
 	name = Wynafryd
 	dynasty = dynn_Manderly
+	dna = Manderly_3
 	female = yes
 
 	religion = the_seven_main
@@ -2285,6 +2298,7 @@ Manderly_3 = {
 Manderly_4 = {
 	name = Wylis
 	dynasty = dynn_Manderly
+	dna = Manderly_4
 
 	religion = the_seven_main
 	culture = harborman
@@ -2298,6 +2312,7 @@ Manderly_4 = {
 Manderly_5 = {
 	name = Wendel
 	dynasty = dynn_Manderly
+	dna = Manderly_5
 
 	religion = the_seven_main
 	culture = harborman
@@ -2333,15 +2348,31 @@ Manderly_6 = {
 	
 	disallow_random_traits = yes 
 
-	8239.1.1 = { birth = yes }
+	8239.1.1 = {
+		birth = yes
+		effect = {
+			change_current_weight = 25
+			target_weight_modifier_effect = { VALUE = 25 }
+		}
+	}
 	8245.1.1 = { trait = gluttonous }
 	8250.1.1 = {
 		trait = generous
 		trait = patient
 		trait = vengeful
+		effect = {
+			change_current_weight = 25
+			target_weight_modifier_effect = { VALUE = 25 }
+		}
 	}
 	8254.1.1 = { trait = knight }
-	8260.1.1 = { add_spouse = Manderly_rs_3 }
+	8260.1.1 = {
+		add_spouse = Manderly_rs_3
+		effect = {
+			change_current_weight = 50
+			target_weight_modifier_effect = { VALUE = 50 }
+		}
+	}
 	8280.1.1 = { give_nickname = nick_the_lord_lamprey }
 	8292.1.1 = { trait = widowed }
 	8299.11.5 = { # Red Wedding
@@ -2397,12 +2428,28 @@ Manderly_7 = {
 	
 	disallow_random_traits = yes 
 
-	8261.1.1 = { birth = yes }
-	# 8271.1.1 = { trait = squire } # AGOT TODO
+	8261.1.1 = {
+		birth = yes
+		effect = {
+			change_current_weight = 25
+			target_weight_modifier_effect = { VALUE = 25 }
+		}
+	}
+	8271.1.1 = {
+		#trait = squire
+		effect = {
+			change_current_weight = 25
+			target_weight_modifier_effect = { VALUE = 25 }
+		}
+	}
 	8280.1.1 = { add_spouse = Woolfield_2 } # Leona Woolfield
 	8281.1.1 = {
 		remove_trait = squire 
 		trait = knight
+		effect = {
+			change_current_weight = 50
+			target_weight_modifier_effect = { VALUE = 50 }
+		}
 	}
 	8298.11.2 = { employer = Stark_6 } # Robb Stark
 	8299.2.11 = {
@@ -2454,11 +2501,27 @@ Manderly_8 = {
 	
 	disallow_random_traits = yes 
 
-	8263.1.1 = { birth = yes }
-	# 8274.1.1 = { trait = squire } # AGOT TODO trait
+	8263.1.1 = {
+		birth = yes
+		effect = {
+			change_current_weight = 25
+			target_weight_modifier_effect = { VALUE = 25 }
+		}
+	}
+	8274.1.1 = {
+		#trait = squire
+		effect = {
+			change_current_weight = 25
+			target_weight_modifier_effect = { VALUE = 25 }
+		}
+	}
 	8282.1.1 = {
 		remove_trait = squire 
 		trait = knight
+		effect = {
+			change_current_weight = 50
+			target_weight_modifier_effect = { VALUE = 50 }
+		}
 	}
 	8298.11.2 = { employer = Stark_6 } # Robb Stark
 	8299.11.5 = {
@@ -2548,6 +2611,7 @@ Manderly_11 = {
 Manderly_12 = {
 	name = Donella # Canon, married Halys Hornwood and Ramsay Snow
 	dynasty = dynn_Manderly
+	dna = Manderly_12
 	female = yes
 
 	religion = the_seven_main
@@ -2934,7 +2998,7 @@ Silverfield_19 = {
 Umber_1 = {
 	name = Hoarfrost # Canon, a lord
 	dynasty = dynn_Umber
-	#dna = "dhiigdccgaj"
+	dna = Umber_1
 
 	religion = old_gods_south
 	culture = northman
@@ -2952,6 +3016,8 @@ Umber_1 = {
 Umber_rs_1 = {
 	name = Alysanne
 	female = yes
+
+	dna = Umber_rs_1
 
 	religion = old_gods_south
 	culture = northman
@@ -2981,6 +3047,8 @@ Umber_2 = {
 Umber_rs_2 = {
 	name = Arrana
 	female = yes
+
+	dna = Umber_rs_2
 
 	religion = old_gods_south
 	culture = northman
@@ -3042,6 +3110,8 @@ Umber_3 = {
 Umber_rs_3 = {
 	name = Jorelle # Mentioned
 	female = yes
+
+	dna = Umber_rs_3
 
 	religion = old_gods_south
 	culture = northman
@@ -3110,6 +3180,8 @@ Umber_5 = {
 	name = Rickard # Mentioned
 	dynasty = dynn_Umber
 
+	dna = Umber_5
+
 	religion = old_gods_south
 	culture = northman
 
@@ -3129,6 +3201,8 @@ Umber_5 = {
 Umber_6 = {
 	name = Torrhen # Mentioned
 	dynasty = dynn_Umber
+
+	dna = Umber_6
 
 	religion = old_gods_south
 	culture = northman
@@ -3151,6 +3225,8 @@ Umber_7 = {
 	dynasty = dynn_Umber
 	female = yes
 
+	dna = Umber_7
+
 	religion = old_gods_south
 	culture = northman
 
@@ -3168,6 +3244,7 @@ Umber_7 = {
 Umber_8 = {
 	name = Jon # Canon, AKA: THE Greatjon
 	dynasty = dynn_Umber
+
 	dna = Umber_8
 
 	martial = 8
@@ -3231,7 +3308,8 @@ Umber_rs_5 = {
 Umber_9 = {
 	name = Harmond # Mentioned
 	dynasty = dynn_Umber
-	#dna = "cclhacdheab"
+
+	dna = Umber_9
 
 	martial = 6
 	diplomacy = 5
@@ -3277,7 +3355,8 @@ Umber_9 = {
 Umber_10 = {
 	name = Osric # Mentioned
 	dynasty = dynn_Umber
-	#dna = "bkadescieav"
+
+	dna = Umber_10
 
 	religion = old_gods_south
 	culture = northman
@@ -3406,6 +3485,8 @@ Umber_13 = {
 	name = Branda # Mentioned
 	dynasty = dynn_Umber
 	female = yes
+
+	dna = Umber_13
 
 	religion = old_gods_south
 	culture = northman
@@ -3645,13 +3726,41 @@ Umber_26 = {
 	religion = old_gods_south
 	culture = northman
 
-	trait = education_martial_2
-
 	father = Umber_21
 	mother = Swann_37
 
+	trait = education_martial_2
+	trait = physique_good_1
+
 	8250.1.1 = { birth = yes }
 	8285.1.1 = { death = yes }
+}
+### Issue of Iain, grandsons to Iain
+Umber_62 = {
+	name = Hoarfrost 
+	dynasty = dynn_Umber
+
+	religion = old_gods_south
+	culture = northman
+
+	father = Umber_26
+	
+	trait = physique_good_2
+
+	8276.1.1 = { birth = yes }
+}
+Umber_63 = {
+	name = Osric 
+	dynasty = dynn_Umber
+
+	religion = old_gods_south
+	culture = northman
+
+	father = Umber_26
+	
+	trait = physique_good_2
+
+	8279.1.1 = { birth = yes }
 }
 
 ###### HOUSE KARSTARK (id = house_Karstark)
@@ -5057,6 +5166,8 @@ Poole_1 = {
 	name = Estmond # a lord
 	dynasty = dynn_Poole
 
+	dna = Poole_1
+
 	religion = old_gods_south
 	culture = northman
 
@@ -5641,10 +5752,10 @@ Mollen_3 = {
 	religion = old_gods_south
 	culture = northman
 
-	trait = education_martial_2
-
 	father = Mollen_2
 	mother = Mollen_rs_1
+
+	trait = education_martial_2
 
 	8271.1.1 = { birth = yes }
 	8297.1.1 = {
@@ -5728,6 +5839,7 @@ Cerwyn_1 = {
 }
 Cerwyn_rs_1 = {
 	name = Arya
+	dna = Cerwyn_rs_1
 	female = yes
 
 	religion = old_gods_south
@@ -5741,6 +5853,7 @@ Cerwyn_rs_1 = {
 Cerwyn_4 = {
 	name = Robard
 	dynasty = dynn_Cerwyn
+	dna = Cerwyn_4
 
 	religion = old_gods_south
 	culture = northman
@@ -5755,6 +5868,7 @@ Cerwyn_4 = {
 }
 Cerwyn_rs_2 = {
 	name = Alysanne
+	dna = Cerwyn_rs_2
 	female = yes
 
 	religion = old_gods_south
@@ -5833,6 +5947,7 @@ Cerwyn_3 = {
 Cerwyn_5 = {
 	name = Brandon # Mentioned
 	dynasty = dynn_Cerwyn
+	dna = Cerwyn_5
 
 	religion = old_gods_south
 	culture = northman
@@ -5845,6 +5960,7 @@ Cerwyn_5 = {
 Cerwyn_6 = {
 	name = Harrion # Mentioned
 	dynasty = dynn_Cerwyn
+	dna = Cerwyn_6
 
 	religion = old_gods_south
 	culture = northman
@@ -5929,6 +6045,7 @@ Overton_2 = {
 Hornwood_1 = {
 	name = Daryn # a lord
 	dynasty = dynn_Hornwood
+	dna = Hornwood_1
 
 	religion = old_gods_south
 	culture = northman
@@ -5941,6 +6058,7 @@ Hornwood_1 = {
 }
 Hornwood_rs_1 = {
 	name = Bethany
+	dna = Hornwood_rs_1
 	female = yes
 
 	religion = old_gods_south
@@ -7042,6 +7160,7 @@ WellsN_26 = {
 Mormont_1 = {
 	name = Brandon # a lord
 	dynasty = dynn_Mormont
+	dna = Mormont_1
 
 	religion = old_gods_south
 	culture = bearman
@@ -7054,6 +7173,7 @@ Mormont_1 = {
 }
 Mormont_rs_1 = {
 	name = Marna
+	dna = Mormont_rs_1
 	female = yes
 
 	religion = old_gods_south
@@ -7097,7 +7217,7 @@ Mormont_2 = {
 	8280.1.1 = { trait = widowed }
 	8281.1.1 = {
 		trait = nightswatch_historical
-		give_nickname = nick_the_old_bear
+		give_nickname = nick_the_old_bear_historical
 	}
 	8299.7.8 = {
 		death = {
@@ -7206,7 +7326,7 @@ Mormont_3 = {
 		religion = the_seven_main
 	}
 	8289.9.1 = {
-		add_spouse = Hightower_14  # Lynesse Hightower
+		add_spouse = Hightower_14 # Lynesse Hightower
 		create_character_memory = {
 			type = agot_tournament_winner # Tourney at Lannisport
 			participants = {
@@ -7215,7 +7335,7 @@ Mormont_3 = {
 		}
 	}
 	8293.6.1 = { # Exiled
-		# employer = 88108 # Tregar Ormollen; Reenable once Lys is added
+		employer = Ormollen_1 # Tregar Ormollen
 		effect = {
 			if = {
 				limit = { character:Stark_3 = { is_alive = yes } }
@@ -7230,13 +7350,15 @@ Mormont_3 = {
 			}
 		}
 	}
+	8295.12.31 = { remove_spouse = Hightower_14 } # Lynesse Hightower
 	8296.1.1 = {
-		# employer = 600000040 #Illyrio Mopatis # AGOT TODO; Reenable once Pentos is added
+		employer = Mopatis_1 # Illyrio Mopatis
 	}
+	# AGOT TODO - Fix those when we get to those start dates
 	# 8298.1.1 = { employer = 300100 } # Khal Drogo
-	8298.10.10 = { # Drogo's death
-		employer = Targaryen_9 # Daenerys Targaryen
-	}
+	# 8298.10.10 = { # Drogo's death
+	#	employer = Targaryen_9 # Daenerys Targaryen
+	# }
 	8300.3.1 = {
 		# employer = 147174371 # Malaquo Maegyr; Reenable once Volantis is added
 	}
@@ -8610,6 +8732,7 @@ Goodman_24 = {
 Dustin_46 = {
 	name = Rodrik # Father of Willam Dustin
 	dynasty = dynn_Dustin
+	dna = Dustin_46
 
 	religion = old_gods_south
 	culture = barrowman
@@ -8622,6 +8745,7 @@ Dustin_46 = {
 Dustin_47 = {
 	name = Jorah # Mentioned, famed for his skill with axe
 	dynasty = dynn_Dustin
+	dna = Dustin_47
 
 	prowess = 12
 
@@ -8791,6 +8915,7 @@ Dustin_5 = {
 Dustin_6 = {
 	name = Torrhen
 	dynasty = dynn_Dustin
+	dna = Dustin_6
 
 	religion = old_gods_south
 	culture = barrowman
@@ -8822,6 +8947,7 @@ Dustin_rs_2 = {
 Dustin_7 = {
 	name = Willam
 	dynasty = dynn_Dustin
+	dna = Dustin_7
 
 	religion = old_gods_south
 	culture = barrowman
@@ -9008,7 +9134,12 @@ Ryswell_3 = {
 	trait = education_martial_2
 
 	8234.1.1 = { birth = yes }
-	8250.1.1 = { add_spouse = Ryswell_rs_2 }
+	8250.1.1 = { 
+		add_spouse = Ryswell_rs_2
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Ryswell_3 COA_KEY = rodrick_ryswell_personal_coa }
+		}
+	}
 	8283.8.1 = {
 		effect = {
 			if = { 
@@ -9073,6 +9204,7 @@ Ryswell_4 = {
 			}
 		}
 		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Ryswell_4 COA_KEY = barbery_dustin_personal_coa }
 			create_story = story_agot_widowed
 			if = {
 				limit = { character:Stark_3 = { is_alive = yes } }
@@ -10387,7 +10519,8 @@ Glover_7 = {
 Tallhart_7 = {
 	name = Beren # a lord
 	dynasty = dynn_Tallhart
-	#dna = "dkaiioedbaa"
+
+	dna = Tallhart_7
 
 	religion = old_gods_south
 	culture = wolfswood_clansman
@@ -13527,6 +13660,7 @@ Fenn_1 = {
 }
 Fenn_rs_1 = {
 	name = Eddard
+	dna = Fenn_rs_1
 
 	religion = old_gods_south
 	culture = crannogman
@@ -13566,6 +13700,7 @@ Fenn_25 = {
 Fenn_35 = {
 	name = Ryam # Night's Watch
 	dynasty = dynn_Fenn
+	dna = Fenn_35
 
 	religion = old_gods_south
 	culture = crannogman
@@ -13586,6 +13721,7 @@ Fenn_35 = {
 Fenn_34 = {
 	name = Brandon
 	dynasty = dynn_Fenn
+	dna = Fenn_34
 
 	religion = old_gods_south
 	culture = crannogman
@@ -13598,6 +13734,7 @@ Fenn_34 = {
 Fenn_30 = {
 	name = Karl
 	dynasty = dynn_Fenn
+	dna = Fenn_30
 
 	religion = old_gods_south
 	culture = crannogman
@@ -13610,6 +13747,7 @@ Fenn_30 = {
 Fenn_31 = {
 	name = Wylla # married Brian Boggs
 	dynasty = dynn_Fenn
+	dna = Fenn_31
 	female = yes
 
 	religion = old_gods_south
@@ -13624,6 +13762,7 @@ Fenn_31 = {
 Fenn_29 = {
 	name = Marra
 	dynasty = dynn_Fenn
+	dna = Fenn_29
 	female = yes
 
 	religion = old_gods_south
@@ -13640,6 +13779,7 @@ Fenn_29 = {
 Fenn_28 = {
 	name = Jeor
 	dynasty = dynn_Fenn
+	dna = Fenn_28
 
 	religion = old_gods_south
 	culture = crannogman
@@ -13652,6 +13792,7 @@ Fenn_28 = {
 Fenn_27 = {
 	name = Rickard
 	dynasty = dynn_Fenn
+	dna = Fenn_27
 
 	religion = old_gods_south
 	culture = crannogman
@@ -13663,6 +13804,7 @@ Fenn_27 = {
 Fenn_26 = {
 	name = Sherra
 	dynasty = dynn_Fenn
+	dna = Fenn_26
 	female = yes
 
 	religion = old_gods_south

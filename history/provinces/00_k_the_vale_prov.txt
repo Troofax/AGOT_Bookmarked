@@ -7,11 +7,7 @@
 	special_building = the_eyrie_01
 	duchy_capital_building = military_academy_01
 	7998.1.1 = {
-		buildings = { 
-			castle_03 
-			hill_forts_08
-			outposts_03
-		}
+		buildings = { castle_03 hill_forts_08 outposts_03 }
 	}
 }
 ###################### b_sky ######################
@@ -44,12 +40,14 @@
 	culture = valeman
 	religion = the_seven_main
 	holding = castle_holding
+	4450.1.1 = {
+		special_building = agot_gates_of_the_moon_01
+	}
+	4550.1.1 = {
+		special_building = agot_gates_of_the_moon_02
+	}
 	7998.1.1 = {
-		buildings = { 
-			castle_05
-			hill_forts_06
-			stables_06
-		}
+		buildings = { castle_05 hill_forts_06 stables_06 }
 	}
 }
 #################### b_moontown ###################
@@ -109,11 +107,7 @@
 	holding = castle_holding
 	special_building = the_bloody_gate_01
 	7998.1.1 = {
-		buildings = { 
-			castle_03
-			hill_forts_03
-			outposts_03
-		}
+		buildings = { castle_03 hill_forts_03 outposts_03 }
 	}
 }
 ################### b_godsroost ###################
@@ -219,11 +213,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_03
-			curtain_walls_03
-			stables_03
-		}
+		buildings = { castle_03 curtain_walls_03 stables_03 }
 	}
 }
 ##################### b_pimley ####################
@@ -454,10 +444,7 @@
 2308 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_03 
-			guild_halls_03
-		}
+		buildings = { city_03 guild_halls_03 }
 	}
 }
 ################## b_candle_town ##################
@@ -568,11 +555,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_03
-			curtain_walls_03
-			regimental_grounds_04
-		}
+		buildings = { castle_03 curtain_walls_03 regimental_grounds_04 }
 	}
 }
 ################### b_templeton ###################
@@ -731,11 +714,7 @@
 	holding = castle_holding
 	duchy_capital_building = jousting_lists_01
 	7998.1.1 = {
-		buildings = { 
-			castle_04
-			curtain_walls_04
-			stables_04
-		}
+		buildings = { castle_04 curtain_walls_04 stables_04 }
 	}
 }
 ################## b_broken_lake ##################
@@ -782,11 +761,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_02 
-			curtain_walls_03
-			stables_02
-		}
+		buildings = { castle_02 curtain_walls_03 stables_02 }
 	}
 }
 ################# b_hardvales_town ################
@@ -949,11 +924,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_03 
-			ramparts_04
-			outposts_03
-		}
+		buildings = { castle_03 ramparts_04 outposts_03 }
 	}
 }
 ################## b_kedge_island #################
@@ -966,10 +937,7 @@
 2374 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_03 
-			common_tradeport_02
-		}
+		buildings = { city_03 common_tradeport_02 }
 	}
 }
 #################### b_melford ####################
@@ -1109,11 +1077,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_03 
-			curtain_walls_03
-			stables_04
-		}
+		buildings = { castle_03 curtain_walls_03 stables_04 }
 	}
 }
 ################### b_huntington ##################
@@ -1147,10 +1111,7 @@
 2397 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_03 
-			common_tradeport_01
-		}
+		buildings = { city_03 common_tradeport_01 }
 	}
 }
 ################# b_starfish_spire ################
@@ -1415,11 +1376,7 @@
 	special_building = agot_grafton_keep_01
 	duchy_capital_building = agot_lighthouse_02
 	7998.1.1 = {
-		buildings = { 
-			castle_03 
-			curtain_walls_02
-			stables_02
-		}
+		buildings = { castle_03 curtain_walls_02 stables_02 }
 	}
 }
 #################### b_gulltown ###################
@@ -1427,10 +1384,7 @@
 2434 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_04 
-			guild_halls_03
-		}
+		buildings = { city_04 guild_halls_03 }
 	}
 	8051.1.1 = {
 		special_building = agot_gulltown_01
@@ -1441,10 +1395,7 @@
 2435 = {
 	holding = church_holding
 	7998.1.1 = {
-		buildings = { 
-			temple_04 
-			monastic_schools_03
-		}
+		buildings = { temple_04 monastic_schools_03 }
 	}
 }
 ################## b_gulls_field ##################
@@ -1475,10 +1426,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_02 
-			guild_halls_03
-		}
+		buildings = { castle_02 guild_halls_03 }
 	}
 }
 ################### b_shettswood ##################
@@ -1501,10 +1449,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_03 
-			guild_halls_03
-		}
+		buildings = { castle_03 guild_halls_03 }
 	}
 }
 ################## b_arrynmarket ##################
@@ -2098,11 +2043,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_04 
-			hill_forts_04
-			warrior_lodges_04
-		}
+		buildings = { castle_04 hill_forts_04 warrior_lodges_04 }
 	}
 }
 ################## b_creek_castle #################
@@ -2118,10 +2059,7 @@
 2516 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_03 
-			common_tradeport_02
-		}
+		buildings = { city_03 common_tradeport_02 }
 	}
 }
 ################### b_ravenstoft ##################
@@ -3429,10 +3367,7 @@
 2705 = {
 	holding = city_holding
 	7998.1.1 = {
-		buildings = { 
-			city_01 
-			common_tradeport_01
-		}
+		buildings = { city_01 common_tradeport_01 }
 	}
 }
 ################### b_buckleburn ##################
@@ -3562,9 +3497,7 @@
 	holding = city_holding
 	special_building = agot_sisterton_01
 	7998.1.1 = {
-		buildings = { 
-			city_03 
-		}
+		buildings = { city_03 }
 	}
 }
 #################### b_havenry ####################

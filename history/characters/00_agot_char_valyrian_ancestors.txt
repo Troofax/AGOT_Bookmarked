@@ -47,7 +47,7 @@ Targaryen_rs_1 = {
 Targaryen_14 = {
 	name = Gaemon # Canon, AKA: Gaemon the Glorious
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_14
+	dna = Targaryen_3
 
 	prowess = 10
 
@@ -77,8 +77,6 @@ Targaryen_15 = {
 	name = Daenys # Canon, AKA: Daenys the Dreamer, predicted Doom of Valyria in her dreams
 	dynasty = dynn_Targaryen
 	female = yes
-
-	dna = Targaryen_15
 
 	religion = valyrian
 	culture = high_valyrian
@@ -342,7 +340,7 @@ Targaryen_27 = {
 	religion = valyrian
 	culture = high_valyrian
 
-	trait = education_martial_4
+	trait = education_martial_5
 	trait = dragon_rider # Balerion (C)
 	trait = ambitious
 	trait = diligent
@@ -520,6 +518,9 @@ Targaryen_28 = {
 	# AGOT Bookmarked Added
 	8000.1.2 = {
 		religion = the_seven_main
+		effect = {
+			#add_character_flag = high_valyrian_polygamy_wife # AGOT TODO
+		}
 	}
 	#8042.1.1 = { trait = suspected_kinslayer } # AGOT TODO trait
 	8044.7.1 = {
@@ -573,6 +574,9 @@ Targaryen_29 = {
 	# AGOT Bookmarked Added
 	8000.1.2 = {
 		religion = the_seven_main
+		effect = {
+			#add_character_flag = high_valyrian_polygamy_wife # AGOT TODO
+		}
 	}
 	8010.1.1 = {
 		add_spouse = Targaryen_27 # for history sake
@@ -832,7 +836,6 @@ Targaryen_31 = {
 		add_spouse = Targaryen_32 # Rhaena Targaryen becomes primary spouse
 	}
 	8048.3.7 = {
-		add_spouse = Costayne_19 # for history's sake
 		# Died sitting on the Iron Throne
 		death = {
 			death_reason = death_suicide
@@ -908,41 +911,52 @@ Targaryen_32 = {
 	8043.1.2 = {
 		employer = Farman_21
 		trait = depressed_1
-		trait = widowed
+		effect = {
+			add_trait = widowed
+			if = {
+				limit = { character:Farman_23 = { is_alive = yes } }
+				set_relation_lover = character:Farman_23 # Elissa Farman
+			}
+		}
 	}
 	8044.1.1 = {
-		remove_trait = widowed
+		effect = { remove_trait = widowed }
 	}
 	8047.1.1 = {
 		employer = Targaryen_31
-		trait = disinherited #to prevent her being heir to Maegor
+		effect = { add_trait = disinherited } #to prevent her being heir to Maegor
 	}
 	8048.3.1 = { # Fled to Storm's End
-		effect = {
-			remove_trait = disinherited
-		}
+		effect = { remove_trait = disinherited }
 		employer = Baratheon_20 # Rogar Baratheon
 	}
-	8049.1.1 = {
-		employer = Farman_21
-	}
+	8049.1.1 = { employer = Farman_21 } # Marq Farman
 	8050.1.1 = {
 		effect = {
-			set_relation_lover = character:Velaryon_28 # Larissa Velaryon
+			if = {
+				limit = { character:Velaryon_28 = { is_alive = yes } }
+				set_relation_lover = character:Velaryon_28 # Larissa Velaryon
+			}
 		}
 	}
 	8054.1.1 = {
 		effect = {
-			set_relation_lover = character:Velaryon_22 # Lianna Velaryon
-			set_relation_lover = character:Staunton_15 # Casella Staunton
+			if = {
+				limit = { character:Farman_23 = { is_alive = yes } }
+				remove_relation_lover = character:Farman_23 # Elissa Farman
+			}
+			if = {
+				limit = { character:Staunton_15 = { is_alive = yes } }
+				set_relation_lover = character:Staunton_15 # Casella Staunton
+			}
+			if = {
+				limit = { character:Velaryon_22 = { is_alive = yes } }
+				set_relation_lover = character:Velaryon_22 # Lianna Velaryon
+			}
 		}
 	}
-	8054.9.1 = {
-		effect = { add_trait_force_tooltip = widowed }
-	}
-	8056.5.1 = {
-		employer = Towers_6 # Maegor Towers
-	}
+	8054.9.1 = { trait = widowed }
+	8056.5.1 = { employer = Towers_6 } # Maegor Towers
 	8073.7.1 = { death = yes }
 }
 Targaryen_33 = {
@@ -1127,7 +1141,7 @@ Targaryen_35 = {
 		}
 	}
 	8050.9.20 = {
-		trait = education_diplomacy_4
+		trait = education_stewardship_5
 		trait = education_martial_prowess_2
 		trait = temperate
 	}
@@ -1249,7 +1263,7 @@ Targaryen_36 = {
 		}
 	}
 	8052.6.1 = {
-		trait = education_diplomacy_4
+		trait = education_diplomacy_5
 		trait = generous
 		trait = family_first
 		trait = lifestyle_hunter
@@ -1357,6 +1371,7 @@ Targaryen_41 = {
 	name = Aerea # Twin daughter of Aegon and Rhaena
 	dynasty = dynn_Targaryen
 	female = yes
+
 	dna = Targaryen_41
 
 	religion = the_seven_main
@@ -1396,6 +1411,7 @@ Targaryen_42 = {
 	name = Rhaella # Twin daughter of Aegon and Rhaena
 	dynasty = dynn_Targaryen
 	female = yes
+
 	dna = Targaryen_42
 
 	religion = the_seven_main
@@ -1717,6 +1733,7 @@ Targaryen_48 = {
 Targaryen_49 = {
 	name = Vaegon # 7th
 	dynasty = dynn_Targaryen
+
 	dna = Targaryen_49
 
 	learning = 10
@@ -1834,7 +1851,7 @@ Targaryen_51 = { #9th
 	}
 	8071.1.1 = { trait = arrogant }
 	8075.1.1 = { trait = deceitful }
-	8079.1.1 = { trait = arbitrary }
+	8079.1.1 = { trait = lustful }
 	8082.1.1 = {
 		effect = {
 			if = { 
@@ -1861,8 +1878,8 @@ Targaryen_51 = { #9th
 	}
 	8083.1.1 = { trait = ambitious }
 	8084.1.1 = {
-		#trait = silent_sister # AGOT TODO trait
 		effect = {
+			add_trait = silent_sister
 			if = { 
 				limit = { character:Beesbury_22 = { is_alive = yes } }
 				remove_relation_lover = character:Beesbury_22 # Braxton Beesbury
@@ -1878,13 +1895,14 @@ Targaryen_51 = { #9th
 		}
 	}
 	8085.6.1 = { #ran away
-		# remove_trait = silent_sister # AGOT TODO trait
-		trait = disinherited
-		trait = seducer
-		# employer = 102300523 # Allaquo Lohar, Lys # AGOT TODO Reenable once Lys is added
+		effect = {
+			remove_trait = silent_sister
+			add_trait = disinherited
+			add_trait = seducer
+			set_employer = title:c_lys.holder
+		}
 	}
-	# 8086.1.1 = { employer = 107300540 } # Syrio Erosenes, Lys # AGOT TODO Reenable once Lys is added
-	# 8088.1.1 = { employer = 115174371 } # Benerro Maegyr, Volantis # AGOT TODO Reenable once Volantis is added
+	# 8096.1.1 = { employer = 115174371 } # Benerro Maegyr, Volantis # AGOT TODO Reenable once Volantis is added
 	# 8109.1.1 = { employer = 111174373 } # Colloquo Vhassar, Volantis # AGOT TODO Reenable once Volantis is added
 	# 8114.1.1 = { employer = 115174373 } # Vaeron Vhassar, Volantiss # AGOT TODO Reenable once Volantis is added
 	8124.1.1 = { death = yes }
@@ -1973,6 +1991,7 @@ Targaryen_55 = { #13th
 	name = Gael
 	dynasty = dynn_Targaryen
 	female = yes
+
 	dna = Targaryen_55
 
 	father = Targaryen_35
@@ -2086,6 +2105,7 @@ Targaryen_59 = {
 	name = Rhaenys # The Queen who never was, only daughter of Aemon Targaryen
 	dynasty = dynn_Targaryen
 	female = yes
+
 	dna = Targaryen_59
 
 	diplomacy = 5
@@ -2154,7 +2174,7 @@ Targaryen_60 = {
 	religion = the_seven_main
 	culture = high_valyrian
 
-	trait = education_stewardship_3
+	trait = education_diplomacy_2
 
 	disallow_random_traits = yes
 
@@ -2331,145 +2351,6 @@ Targaryen_61 = {
 		}
 		give_nickname = nick_the_rogue_prince
 	}
-	# 8109.1.1 = { #Make sure vassals aren't high valyrian
-		# effect = {
-			# if = {
-				# limit = { is_ruler = yes }
-				# c_theskulls = {
-					# if = {
-						# limit = { holder_scope = { culture = high_valyrian } }
-						# ROOT = {
-							# create_random_soldier = {
-								# random_traits = yes
-								# dynasty = none
-								# culture = random
-								# religion = pirate
-								# female = no
-							# }
-							# new_character = {
-								# random_list = {
-									# 30 = { trait = education_martial_prowess_1 }
-									# Cassel_2 = { trait = education_martial_prowess_2 }
-									# 10 = { trait = education_martial_prowess_3 }
-								# }
-								# usurp_title = PREVPREV
-							# }
-						# }
-					# }
-				# }
-				# c_wreckstone = {
-					# if = {
-						# limit = { holder_scope = { culture = high_valyrian } }
-						# ROOT = {
-							# create_random_soldier = {
-								# random_traits = yes
-								# dynasty = none
-								# culture = random
-								# religion = pirate
-								# female = no
-							# }
-							# new_character = {
-								# random_list = {
-									# 30 = { trait = education_martial_prowess_1 }
-									# Cassel_2 = { trait = education_martial_prowess_2 }
-									# 10 = { trait = education_martial_prowess_3 }
-								# }
-								# usurp_title = PREVPREV
-							# }
-						# }
-					# }
-				# }
-				# c_torturersdeep = {
-					# if = {
-						# limit = { holder_scope = { culture = high_valyrian } }
-						# ROOT = {
-							# create_random_soldier = {
-								# random_traits = yes
-								# dynasty = none
-								# culture = random
-								# religion = pirate
-								# female = no
-							# }
-							# new_character = {
-								# random_list = {
-									# 30 = { trait = education_martial_prowess_1 }
-									# Cassel_2 = { trait = education_martial_prowess_2 }
-									# 10 = { trait = education_martial_prowess_3 }
-								# }
-								# usurp_title = PREVPREV
-							# }
-						# }
-					# }
-				# }
-				# c_shameisle = {
-					# if = {
-						# limit = { holder_scope = { culture = high_valyrian } }
-						# ROOT = {
-							# create_random_soldier = {
-								# random_traits = yes
-								# dynasty = none
-								# culture = random
-								# religion = pirate
-								# female = no
-							# }
-							# new_character = {
-								# random_list = {
-									# 30 = { trait = education_martial_prowess_1 }
-									# Cassel_2 = { trait = education_martial_prowess_2 }
-									# 10 = { trait = education_martial_prowess_3 }
-								# }
-								# usurp_title = PREVPREV
-							# }
-						# }
-					# }
-				# }
-				# c_greygallows = {
-					# if = {
-						# limit = { holder_scope = { culture = high_valyrian } }
-						# ROOT = {
-							# create_random_soldier = {
-								# random_traits = yes
-								# dynasty = none
-								# culture = random
-								# religion = pirate
-								# female = no
-							# }
-							# new_character = {
-								# random_list = {
-									# 30 = { trait = education_martial_prowess_1 }
-									# Cassel_2 = { trait = education_martial_prowess_2 }
-									# 10 = { trait = education_martial_prowess_3 }
-								# }
-								# usurp_title = PREVPREV
-							# }
-						# }
-					# }
-				# }
-				# c_lastrefuge = {
-					# if = {
-						# limit = { holder_scope = { culture = high_valyrian } }
-						# ROOT = {
-							# create_random_soldier = {
-								# random_traits = yes
-								# dynasty = none
-								# culture = random
-								# religion = pirate
-								# female = no
-							# }
-							# new_character = {
-								# random_list = {
-									# 30 = { trait = education_martial_prowess_1 }
-									# Cassel_2 = { trait = education_martial_prowess_2 }
-									# 10 = { trait = education_martial_prowess_3 }
-								# }
-								# usurp_title = PREVPREV
-							# }
-						# }
-					# }
-				# }
-			# }
-		# }
-	# }
 	8115.1.1 = { add_spouse = Velaryon_34 } # Laena Velaryon
 	8129.4.1 = { #Dance of the Dragons
 		effect = {
@@ -2585,6 +2466,7 @@ Targaryen_63 = {
 					reason = rival_fix_relationship_fail # I think it's most likely middle-ground between two versions
 				}
 			}
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_63 COA_KEY = rhaenrya_personal_coa }
 			add_prestige = 200
 		}
 	}
@@ -2698,6 +2580,9 @@ Targaryen_63 = {
 			death_reason = death_execution # Fed to Sunfyre
 			killer = Targaryen_65 # Aegon Targaryen
 		}
+		effect = {
+			agot_prune_personal_coa = yes
+		}
 		give_nickname = nick_the_half_year_queen
 	}
 }
@@ -2752,6 +2637,7 @@ Targaryen_65 = {
 		trait = dragon_rider
 		trait = knight
 		add_spouse = Targaryen_66 # Helaena Targaryen
+		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_65 COA_KEY = aegon_ii_personal_arms }
 		effect = {
 			set_relation_friend = character:Targaryen_67 # Aemond Targaryen
 			set_relation_friend = character:Targaryen_68 # Daeron Targaryen
@@ -2822,6 +2708,9 @@ Targaryen_65 = {
 		death = {
 			death_reason = death_poison
 			killer = Strong_31 # Larys Strong
+		}
+		effect = {
+			agot_prune_personal_coa = yes
 		}
 		# remove_trait = civil_war
 		give_nickname = nick_the_elder #named as such when Aegon III takes the throne
@@ -2947,7 +2836,7 @@ Targaryen_67 = {
 		trait = dragon_rider
 		trait = knight
 		trait = sadistic
-		give_nickname = nick_one_eye
+		give_nickname = nick_one_eye_historical_aemond
 	}
 	8126.6.1 = {
 		trait = aggressive_attacker
@@ -2983,6 +2872,7 @@ Targaryen_67 = {
 Targaryen_68 = {
 	name = Daeron # 'the Daring'
 	dynasty = dynn_Targaryen
+
 	dna = Targaryen_68
 
 	religion = the_seven_main
@@ -3156,6 +3046,7 @@ Targaryen_71 = { # married Aegon III
 	name = Jaehaera
 	female = yes
 	dynasty = dynn_Targaryen
+
 	dna = Targaryen_71
 
 	religion = the_seven_main
@@ -3194,6 +3085,7 @@ Targaryen_71 = { # married Aegon III
 Targaryen_72 = { # eldest son of Aegon II
 	name = Jaehaerys
 	dynasty = dynn_Targaryen
+
 	dna = Targaryen_72
 
 	religion = the_seven_main
@@ -3220,6 +3112,7 @@ Targaryen_72 = { # eldest son of Aegon II
 Targaryen_73 = { # youngest son of Aegon II
 	name = Maelor
 	dynasty = dynn_Targaryen
+
 	dna = Targaryen_73
 
 	religion = the_seven_main
@@ -3227,8 +3120,6 @@ Targaryen_73 = { # youngest son of Aegon II
 
 	father = Targaryen_65
 	mother = Targaryen_66
-
-	#trait = dragon_egg # AGOT TODO trait
 
 	8127.3.1 = {
 		birth = yes
@@ -3245,7 +3136,6 @@ Targaryen_73 = { # youngest son of Aegon II
 Targaryen_74 = {
 	name = Aemond # acclaimed rightful king of Westeros by his mother
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_74
 	prowess = 5
 
 	religion = the_seven_main
@@ -3560,16 +3450,26 @@ Targaryen_79 = {
 		trait = diligent
 		trait = gregarious
 	}
-	# 8130.1.1 = { #taken to lys # AGOT TODO Reenable once Essos added
-		# effect = {
-			# character:108300539 = { # Lysandro Rogare
-				# imprison = {
-					# target = ROOT
-					# type = house_arrest
-				# }
-			# }
-		# }
-	# }
+	8130.1.1 = { # Captured in The Gullet
+		effect = {
+			character:Lohar_8 = { # Sharako Lohar
+				imprison = {
+					target = ROOT
+					type = house_arrest
+				}
+			}
+		}
+	}
+	8130.3.1 = { # Sold to Lysandro Rogare
+		effect = {
+			character:Rogare_2 = { # Lysandro 'The Magnificent'
+				imprison = {
+					target = ROOT
+					type = house_arrest
+				}
+			}
+		}
+	}
 	8130.6.1 = {
 		trait = patient
 	}
@@ -3589,7 +3489,7 @@ Targaryen_79 = {
 		# }
 	}
 	8138.6.1 = {
-		trait = education_stewardship_4
+		trait = education_stewardship_5
 		trait = knight
 		trait = authoritative
 	}
@@ -3652,7 +3552,7 @@ Targaryen_81 = {
 	religion = the_seven_main
 	culture = high_valyrian
 
-	trait = education_martial_4
+	trait = education_martial_5
 	trait = beauty_good_2
 	trait = bossy
 
@@ -3831,7 +3731,6 @@ Targaryen_81 = {
 Targaryen_82 = {
 	name = Baelor # AKA: Baelor I the Blessed, the Beloved
 	dynasty = dynn_Targaryen
-	dna = Targaryen_82
 
 	martial = 2
 	diplomacy = 2
@@ -3931,7 +3830,6 @@ Targaryen_82 = {
 Targaryen_83 = {
 	name = Daena
 	female = yes
-	dna = Targaryen_83
 
 	dynasty = dynn_Targaryen
 	martial = 9
@@ -3980,7 +3878,6 @@ Targaryen_84 = {
 	name = Rhaena
 	dynasty = dynn_Targaryen
 	female = yes
-	dna = Targaryen_84
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -4022,7 +3919,6 @@ Targaryen_85 = {
 	name = Elaena # Canon, married Ossifer Plumm, Ronnel Penrose and Michael Manwoody
 	dynasty = dynn_Targaryen
 	female = yes
-	dna = Targaryen_85
 
 	stewardship = 10
 
@@ -4054,7 +3950,7 @@ Targaryen_85 = {
 		}
 	}
 	8166.1.1 = {
-		trait = education_stewardship_3
+		trait = education_stewardship_5
 		trait = shrewd
 	}
 	8171.1.1 = {
@@ -4241,7 +4137,7 @@ Targaryen_89 = {
 	culture = high_valyrian
 
 	trait = education_martial_2
-	trait = education_martial_prowess_4
+	trait = education_martial_prowess_5
 	trait = beauty_good_2
 	trait = strong
 	#trait = dragon_egg # AGOT TODO trait
@@ -4391,7 +4287,9 @@ Targaryen_91 = {
 	trait = diligent
 	trait = compassionate
 	trait = scholar
+	
 	trait = education_diplomacy_4
+	trait = education_martial_prowess_1
 
 	father = Targaryen_88
 	mother = Targaryen_90
@@ -4437,7 +4335,7 @@ Targaryen_91 = {
 		}
 	}
 	8190.1.1 = {
-		give_nickname = nick_the_good
+		give_nickname = nick_the_good_historical
 	}
 	8195.1.1 = {
 		trait = disputed_heritage
@@ -4543,7 +4441,6 @@ Targaryen_93 = {
 Targaryen_94 = {
 	name = Daemon # AKA: Daemon I Blackfyre
 	dynasty = dynn_Targaryen
-	dna = Targaryen_94
 
 	martial = 11
 	diplomacy = 4
@@ -4599,7 +4496,7 @@ Targaryen_94 = {
 		}
 	}
 	8184.2.1 = { #14 when married
-		#add_spouse = 77024496 # Rohanne of Tyrosh # AGOT TODO Reenable once Essos added
+		add_spouse = Atuhoris_26 # Rohanne of Tyrosh
 	}
 	8186.1.1 = {
 		trait = education_martial_3
@@ -4630,7 +4527,6 @@ Targaryen_94 = {
 Targaryen_95 = {
 	name = Aegor # AKA: Bittersteel
 	dynasty = dynn_Targaryen
-	dna = Targaryen_95
 
 	martial = 8
 	diplomacy = 2
@@ -4690,7 +4586,7 @@ Targaryen_95 = {
 		trait = strategist
 	}
 	8188.11.1 = {
-		trait = education_martial_4
+		trait = education_martial_5
 		trait = unyielding_defender
 		#trait = heavy_infantry_leader # AGOT TODO trait
 		trait = organizer
@@ -4711,7 +4607,6 @@ Targaryen_95 = {
 Targaryen_96 = {
 	name = Brynden # AKA: Bloodraven
 	dynasty = dynn_Targaryen
-	dna = Targaryen_96
 
 	martial = 12
 	diplomacy = 5
@@ -4725,7 +4620,7 @@ Targaryen_96 = {
 	give_nickname = nick_bloodraven
 
 	trait = bastard
-	trait = education_intrigue_4
+	trait = education_intrigue_5
 
 	trait = albino
 
@@ -4810,7 +4705,8 @@ Targaryen_97 = {
 	name = Shiera # AKA: Shiera Seastar
 	female = yes
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_97
+
+	dna = Targaryen_97
 
 	martial = 2
 	diplomacy = 7
@@ -4825,7 +4721,7 @@ Targaryen_97 = {
 
 	trait = bastard
 	trait = beauty_good_3
-	trait = education_diplomacy_3
+	trait = education_diplomacy_5
 	trait = charming
 
 	disallow_random_traits = yes
@@ -4984,7 +4880,8 @@ Targaryen_102 = {
 	name = Bellenora
 	dynasty_house = house_Otherys
 	female = yes
-	# AGOT TODO dna = agot_dna_Targaryen_102
+
+	dna = Targaryen_102
 
 	#religion = moonsingers
 	religion = princely_arbiter
@@ -5077,7 +4974,6 @@ Targaryen_105 = {
 	name = Mya
 	dynasty = dynn_Targaryen
 	female = yes
-	dna = Targaryen_105
 
 	religion = the_seven_main
 	culture = westerosi_valyrian
@@ -5100,7 +4996,6 @@ Targaryen_106 = {
 	name = Gwenys
 	dynasty = dynn_Targaryen
 	female = yes
-	dna = Targaryen_106
 
 	religion = the_seven_main
 	culture = westerosi_valyrian
@@ -5209,7 +5104,6 @@ Targaryen_107 = {
 Targaryen_108 = {
 	name = Aerys # AKA: Aerys I
 	dynasty = dynn_Targaryen
-	dna = Targaryen_108
 
 	martial = 2
 	diplomacy = 4
@@ -5303,30 +5197,25 @@ Targaryen_109 = {
 	disallow_random_traits = yes
 
 	trait = physique_bad_1
-	trait = lunatic_1
 	trait = gregarious
-	trait = compassionate
+	trait = arbitrary
 	trait = content
+	trait = eccentric
+
 	trait = education_intrigue_1
+	trait = education_martial_prowess_2
 
 	father = Targaryen_91
 	mother = Martell_79
 
 	8173.1.1 = {
 		birth = yes
-		#effect = { # AGOT TODO
-		#	add_character_modifier = {
-		#		name = grandchild_of_incest
-		#	}
-		#}
 	}
 	8192.1.1 = {
 		add_spouse = Arryn_106 # Alys Arryn
 	}
 	8215.1.1 = {
-		death = {
-			death_reason = death_accident # Choked on a pie
-		}
+		death = { death_reason = death_choked } # Pie
 	}
 }
 Targaryen_110 = {
@@ -5382,6 +5271,7 @@ Targaryen_110 = {
 		trait = unyielding_defender
 		trait = knight
 		add_spouse = Dayne_69 # Dyanna Dayne
+		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_110 COA_KEY = maekar_targaryen_personal_arms }
 	}
 	8207.1.1 = {
 		trait = widowed
@@ -5422,6 +5312,9 @@ Targaryen_110 = {
 			death_reason = death_battle # Siege of Starpike
 			killer = Peake_66 # Estyn Peake
 		}
+		effect = {
+			agot_prune_personal_coa = yes
+		}
 	}
 }
 
@@ -5454,7 +5347,7 @@ Targaryen_111 = {
 	}
 	8206.1.1 = {
 		trait = knight
-		add_spouse = Tyrosh_1 # Kiera of Tyrosh
+		add_spouse = Camardoon_7_A # Kiera of Tyrosh
 	}
 	8209.2.1 = {
 		effect = { # Hand of the King
@@ -5507,7 +5400,7 @@ Targaryen_113 = {
 	# AGOT TODO dna = agot_dna_Targaryen_113
 
 	father = Targaryen_111
-	mother = Tyrosh_1
+	mother = Camardoon_7_A
 
 	8206.11.1 = {
 		birth = yes
@@ -5522,7 +5415,7 @@ Targaryen_114 = {
 	culture = high_valyrian
 
 	father = Targaryen_111
-	mother = Tyrosh_1
+	mother = Camardoon_7_A
 
 	8208.8.1 = {
 		birth = yes
@@ -5561,7 +5454,6 @@ Targaryen_116 = {
 	name = Aelora
 	dynasty = dynn_Targaryen
 	female = yes
-	dna = Targaryen_116
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -5653,13 +5545,17 @@ Targaryen_118 = {
 		trait = knight
 		give_nickname = nick_the_drunken
 		trait = drunkard
+		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_118 COA_KEY = daeron_targaryen_personal_arms }
 	}
 	8210.1.1 = {
-		add_spouse = Tyrosh_1 # Kiera of Tyrosh
+		add_spouse = Camardoon_7_A # Kiera of Tyrosh
 	}
 	8229.1.1 = { #Was Lord of Dragonstone at some point
 		trait = lovers_pox
 		death = { death_reason = death_ill }
+		effect = {
+			agot_prune_personal_coa = yes
+		}
 	}
 }
 Targaryen_119 = {
@@ -5676,6 +5572,10 @@ Targaryen_119 = {
 	religion = the_seven_main
 	culture = high_valyrian
 
+	trait = education_martial_1
+	trait = beauty_good_3
+	trait = fashionable
+
 	trait = lunatic_1
 	#trait = dragon_egg # AGOT TODO trait
 
@@ -5690,7 +5590,6 @@ Targaryen_119 = {
 		trait = sadistic
 		trait = arrogant
 		trait = arbitrary
-		trait = education_martial_1
 		trait = lifestyle_mystic
 		give_nickname = nick_brightflame
 	}
@@ -5721,14 +5620,13 @@ Targaryen_119 = {
 Targaryen_120 = {
 	name = Aemon # AKA: Maester Aemon
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_120
 
 	martial = 1
 	diplomacy = 4
 	intrigue = 4
 	stewardship = 6
 	learning = 13
-	# health = 12 # AGOT TODO
+	health = 9
 	prowess = 2
 
 	religion = the_seven_main
@@ -5761,7 +5659,7 @@ Targaryen_120 = {
 		#}
 	}
 	8214.1.1 = {
-		trait = education_learning_4
+		trait = education_learning_5
 		#remove_trait = novice
 		#effect = { add_trait_force_tooltip = acolyte }
 	}
@@ -5795,7 +5693,6 @@ Targaryen_121 = {
 	name = Daella
 	dynasty = dynn_Targaryen
 	female = yes
-	dna = Targaryen_121
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -5830,11 +5727,11 @@ Targaryen_121 = {
 	}
 }
 Targaryen_122 = {
-	name = Aegon # AKA: Aegon V the Unlikely
+	name = Aegon # AKA: Aegon V the Unlikely, Egg 
 	dynasty = dynn_Targaryen
 	dna = Targaryen_122
 
-	martial = 5
+	martial = 7
 	diplomacy = 4
 	intrigue = 4
 	stewardship = 6
@@ -5846,7 +5743,6 @@ Targaryen_122 = {
 
 	trait = education_martial_2
 	trait = intellect_good_2
-	#trait = dragon_egg # AGOT TODO trait
 	trait = bossy
 
 	disallow_random_traits = yes
@@ -5969,7 +5865,6 @@ Targaryen_123 = {
 	name = Rhae
 	dynasty = dynn_Targaryen
 	female = yes
-	dna = Targaryen_123
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -6005,7 +5900,7 @@ Targaryen_124 = {
 	trait = trusting
 
 	father = Targaryen_118
-	mother = Tyrosh_1
+	mother = Camardoon_7_A
 
 	8222.1.1 = {
 		birth = yes
@@ -6030,7 +5925,7 @@ Targaryen_124 = {
 Targaryen_125 = {
 	name = Maegor #infant son, overlooked in succession
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_125
+	dna = Targaryen_125
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -6089,7 +5984,6 @@ Targaryen_126 = {
 		effect = {
 			add_character_flag = do_not_assign_strong_seed
 			make_trait_inactive = black_hair
-			make_trait_inactive = brown_eyes
 		}
 	}
 	8227.8.1 = { trait = compassionate }
@@ -6146,13 +6040,10 @@ Targaryen_126 = {
 		}
 	}
 }
-Targaryen_rs_2 = { # AGOT TODO
+Targaryen_rs_2 = {
 	name = Jenny #Jenny of Oldstones
+	dna = Targaryen_rs_2
 	female = yes
-
-	# AGOT TODO dna = agot_dna_Targaryen_rs_2
-
-	#fertility = 0.25 # AGOT TODO
 
 	religion = the_seven_main
 	culture = riverlander
@@ -6160,6 +6051,8 @@ Targaryen_rs_2 = { # AGOT TODO
 	trait = compassionate
 	trait = eccentric
 	trait = beauty_good_2
+
+	prowess = 3 #Death to girlboss Jenny 
 
 	8222.1.1 = {
 		birth = yes
@@ -6205,7 +6098,10 @@ Targaryen_127 = {
 	}
 	8239.1.1 = {
 		effect = {
-			set_relation_lover = character:Targaryen_128 # Shaera Targaryen
+			set_relation_soulmate = {
+				target = character:Targaryen_128 # Shaera Targaryen
+				reason = soulmate_love_at_court
+			}
 		}
 	}
 	8240.1.1 = { #canon date
@@ -6250,8 +6146,8 @@ Targaryen_128 = {
 }
 Targaryen_129 = {
 	name = Daeron # Third son of Aegon V
-	# AGOT TODO dna = agot_dna_Targaryen_129
 	dynasty = dynn_Targaryen
+	dna = Targaryen_129
 
 	prowess = 12
 
@@ -6266,7 +6162,7 @@ Targaryen_129 = {
 	trait = stubborn
 	trait = compassionate
 	trait = just
-	trait = education_martial_2
+	trait = education_martial_3
 
 	8228.1.1 = { birth = yes } #18 in 246
 	8238.1.1 = { # Squired in Highgarden
@@ -6324,7 +6220,6 @@ Targaryen_130 = {
 Blackfyre_1 = {
 	name = Aegon #Eldest twin son - first to die by Bloodraven's arrows.
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_1
 
 	martial = 8
 	prowess = 5
@@ -6340,7 +6235,7 @@ Blackfyre_1 = {
 	#disallow_random_traits = yes AGOT TODO - stopping the missing childhood trait for 0.1
 
 	father = Targaryen_94
-	#mother = 77024496 # AGOT TODO Reenable once Essos added
+	mother = Atuhoris_26 # Rohanne of Tyrosh
 
 	8184.10.1 = {
 		birth = yes
@@ -6361,7 +6256,6 @@ Blackfyre_1 = {
 Blackfyre_2 = {
 	name = Aemon #Secondborn - died shortly after his twin, and father by Bloodraven's arrows.
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_2
 
 	martial = 8
 	prowess = 5
@@ -6378,7 +6272,7 @@ Blackfyre_2 = {
 	#disallow_random_traits = yes AGOT TODO - stopping the missing childhood trait for 0.1
 
 	father = Targaryen_94
-	#mother = 77024496 # AGOT TODO Reenable once Essos added
+	mother = Atuhoris_26 # Rohanne of Tyrosh
 
 	8184.10.1 = {
 		birth = yes
@@ -6400,13 +6294,12 @@ Blackfyre_3 = {
 	name = Calla #Married Bittersteel
 	dynasty_house = house_Blackfyre
 	female = yes
-	# AGOT TODO dna = agot_dna_Blackfyre_3
 
 	religion = the_seven_main
 	culture = high_valyrian
 
 	father = Targaryen_94
-	#mother = 77024496 # AGOT TODO Reenable once Essos added
+	mother = Atuhoris_26 # Rohanne of Tyrosh
 
 	trait = beauty_good_1
 	trait = education_intrigue_3
@@ -6431,13 +6324,12 @@ Blackfyre_4 = {
 	name = Daenerys
 	dynasty_house = house_Blackfyre
 	female = yes
-	# AGOT TODO dna = agot_dna_Blackfyre_4
 
 	religion = the_seven_main
 	culture = high_valyrian
 
 	father = Targaryen_94
-	#mother = 77024496 # AGOT TODO Reenable once Essos added
+	mother = Atuhoris_26 # Rohanne of Tyrosh
 
 	trait = education_diplomacy_2
 	trait = honorable
@@ -6461,7 +6353,6 @@ Blackfyre_4 = {
 Blackfyre_5 = {
 	name = Daemon # AKA: Daemon II Blackfyre, or "John the Fiddler"
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_5
 
 	diplomacy = 3
 	martial = 8
@@ -6472,7 +6363,7 @@ Blackfyre_5 = {
 	sexuality = homosexual
 
 	father = Targaryen_94
-	#mother = 77024496 # AGOT TODO Reenable once Essos added
+	mother = Atuhoris_26 # Rohanne of Tyrosh
 
 	trait = beauty_good_2
 	trait = dragon_dreams #had a vision about Dunkan the Tall becoming a kingsguard.
@@ -6537,7 +6428,6 @@ Blackfyre_5 = {
 Blackfyre_6 = {
 	name = Haegon #After 2nd rebelion failed, Bittersteel took him to tyrosh.
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_6
 
 	martial = 3
 	prowess = 5
@@ -6546,7 +6436,7 @@ Blackfyre_6 = {
 	culture = high_valyrian
 
 	father = Targaryen_94
-	#mother = 77024496 # AGOT TODO Reenable once Essos added
+	mother = Atuhoris_26 # Rohanne of Tyrosh
 
 	trait = education_martial_2
 	trait = honorable
@@ -6631,7 +6521,6 @@ Blackfyre_6 = {
 Blackfyre_7 = {
 	name = Aenys #Accepted Bloodraven's invitation and was murdered
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_7
 
 	prowess = 5
 
@@ -6639,7 +6528,7 @@ Blackfyre_7 = {
 	culture = high_valyrian
 
 	father = Targaryen_94
-	#mother = 77024496 # AGOT TODO Reenable once Essos added
+	mother = Atuhoris_26 # Rohanne of Tyrosh
 
 	trait = beauty_good_1
 	trait = trusting
@@ -6673,7 +6562,7 @@ Blackfyre_7 = {
 Blackfyre_8 = {
 	name = Aegor
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_8
+	dna = Blackfyre_8
 
 	prowess = 5
 
@@ -6681,7 +6570,7 @@ Blackfyre_8 = {
 	culture = high_valyrian
 
 	father = Targaryen_94
-	#mother = 77024496 # AGOT TODO Reenable once Essos added
+	mother = Atuhoris_26 # Rohanne of Tyrosh
 
 	trait = education_martial_2
 	trait = vengeful
@@ -6708,7 +6597,6 @@ Blackfyre_8 = {
 Blackfyre_9 = {
 	name = Maelys
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_9
 
 	diplomacy = 6
 	martial = 3
@@ -6721,7 +6609,7 @@ Blackfyre_9 = {
 	culture = high_valyrian
 
 	father = Targaryen_94
-	#mother = 77024496 # AGOT TODO Reenable once Essos added
+	mother = Atuhoris_26 # Rohanne of Tyrosh
 
 	disallow_random_traits = yes
 
@@ -6787,14 +6675,14 @@ Blackfyre_9 = {
 Blackfyre_10 = {
 	name = Rhaenys
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_10
+	dna = Blackfyre_10
 	female = yes
 
 	religion = the_seven_main
 	culture = high_valyrian
 
 	father = Targaryen_94
-	#mother = 77024496 # AGOT TODO Reenable once Essos added
+	mother = Atuhoris_26 # Rohanne of Tyrosh
 
 	trait = beauty_good_2
 	trait = education_intrigue_2
@@ -6823,7 +6711,6 @@ Blackfyre_10 = {
 Blackfyre_11 = {
 	name = Daemon # AKA: Daemon III Blackfyre
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_11
 
 	prowess = 5
 
@@ -6913,7 +6800,6 @@ Blackfyre_11 = {
 Blackfyre_12 = {
 	name = Aemon
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_12
 
 	prowess = 5
 
@@ -6956,7 +6842,7 @@ Blackfyre_12 = {
 Blackfyre_13 = {
 	name = Daemon
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_13
+	dna = Blackfyre_13
 
 	martial = 4
 	prowess = 5
@@ -7000,10 +6886,11 @@ Blackfyre_13 = {
 Blackfyre_14 = {
 	name = Maelys # AKA: Maelys the Monstrous
 	dynasty_house = house_Blackfyre
-	# AGOT TODO dna = agot_dna_Blackfyre_14
+	dna = Blackfyre_14
 
 	martial = 8
 	prowess = 6
+	fertility = 1.8 #Compensate for Ugly/Disfigured so he's not an instant game over 
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -7090,50 +6977,61 @@ Blackfyre_14 = {
 	# }
 	8252.11.11 = {
 		trait = kinslayer_2
+		effect = { 
+			add_dread = massive_dread_gain 
+			add_prestige_level = 1 
+		}
 	}
-	8259.11.1 = { # Ninepenny Kings # AGOT TODO ADD WHEN ESSOS PART IS ADDED
+	8258.11.1 = {
+		effect = {
+			spawn_army = {
+				levies = 0
+				name = the_golden_company_name
+				men_at_arms = {
+					type = light_footmen # 2000
+					stacks = 20
+				}
+				men_at_arms = {
+					type = pikemen_unit # 2000
+					stacks = 20
+				}
+				men_at_arms = {
+					type = armored_footmen # 2000
+					stacks = 20
+				}
+				men_at_arms = {
+					type = light_horsemen # 2500
+					stacks = 25
+				}
+				men_at_arms = {
+					type = armored_horsemen # 500
+					stacks = 10
+				}
+				men_at_arms = {
+					type = crossbowmen # 500
+					stacks = 5
+				}
+				men_at_arms = {
+					type = longbowmen # 400
+					stacks = 5
+				}
+				men_at_arms = {
+					type = trebuchet # 50
+					stacks = 5
+				}
+				men_at_arms = {
+					type = war_elephant # 50
+					stacks = 2
+				}
+				location = root.capital_province
+				origin = root.capital_province
+				inheritable = no
+			}
+		}
 		###
 		# MEGAWAR STANCE: MAELYS BLACKFYRE
 		# FILL ONCE MEGAWAR IS RESTORED
 		###
-		#effect = { # AGOT TODO
-		#	spawn_army = {
-		#		name = the_golden_company_name
-		#		men_at_arms = {
-		#			type = light_footmen # 2000
-		#			stacks = 20
-		#		}
-		#		men_at_arms = {
-		#			type = pikemen_unit # 2000
-		#			stacks = 20
-		#		}
-		#		men_at_arms = {
-		#			type = armored_footmen # 2000
-		#			stacks = 20
-		#		}
-		#		men_at_arms = {
-		#			type = light_cavalry # 2500
-		#			stacks = 25
-		#		}
-		#		men_at_arms = {
-		#			type = armored_horsemen # 500
-		#			stacks = 10
-		#		}
-		#		men_at_arms = {
-		#			type = archers # 300
-		#			stacks = 3
-		#		}
-		#		men_at_arms = {
-		#			type = longbowmen # 700
-		#			stacks = 7
-		#		}
-		#		men_at_arms = {
-		#			type = war_elephant # 25
-		#			stacks = 1
-		#		}
-		#		### location = #Bloodstone
-		#		### origin = #King's Landing?
-		#	}
 		#	# narrative_event = { id = ninepenny_kings.2 days = 1 }
 		#	add_character_flag = blackfyre_claimant
 		#	set_global_flag = ninepenny_kings # AGOT TODO
@@ -7143,6 +7041,32 @@ Blackfyre_14 = {
 		death = {
 			death_reason = death_duel
 			killer = Selmy_3 # Barristan Selmy
+		}
+	}
+}
+
+### Issue of Maelys 
+Blackfyre_15 = { #Maenar Blackfyre, semi-canon from unpublished work 
+	name = Maenar 
+	dynasty_house = house_Blackfyre
+	dna = Blackfyre_15
+
+	religion = the_seven_main
+	culture = high_valyrian
+
+	trait = beauty_bad_1
+	trait = physique_good_1
+	trait = rowdy
+
+	father = Blackfyre_14 
+
+	8255.1.1 = {
+		birth = yes 
+	}
+	8259.1.1 = {
+		death = {
+			death_reason = death_burned
+			killer = Blackfyre_14 # Maelys
 		}
 	}
 }
@@ -7759,6 +7683,8 @@ Velaryon_20 = {
 	name = Daemon # Canon, a lord
 	dynasty = dynn_Velaryon
 
+	dna = Velaryon_20
+
 	martial = 6
 	diplomacy = 5
 	intrigue = 5
@@ -7811,6 +7737,8 @@ Velaryon_21 = {
 	name = Lucerys # Mentioned, brother of queen Alyssa Velaryon
 	dynasty = dynn_Velaryon
 
+	dna = Velaryon_21
+
 	religion = the_seven_main
 	culture = high_valyrian
 
@@ -7856,6 +7784,8 @@ Velaryon_23 = {
 	name = Corlys # Mentioned, brother of queen Alyssa Velaryon
 	dynasty = dynn_Velaryon
 
+	dna = Velaryon_23
+
 	religion = the_seven_main
 	culture = high_valyrian
 
@@ -7879,7 +7809,8 @@ Velaryon_24 = {
 	name = Alyssa # Canon, married Aenys Targaryen; married Rogar Baratheon
 	dynasty = dynn_Velaryon
 	female = yes
-	# dna = Velaryon_24
+
+	dna = Velaryon_24
 
 	intrigue = 9
 
@@ -8040,7 +7971,8 @@ Velaryon_36 = {
 Velaryon_31 = {
 	name = Corlys # Canon, THE Sea Snake
 	dynasty = dynn_Velaryon
-	#dna = Velaryon_31
+
+	dna = Velaryon_31
 
 	stewardship = 9
 	diplomacy = 7
@@ -8057,7 +7989,7 @@ Velaryon_31 = {
 	mother = Rosby_13
 
 	trait = arrogant
-	trait = education_stewardship_4
+	trait = education_stewardship_5
 	trait = ambitious
 	trait = diligent
 	trait = gregarious
@@ -8203,7 +8135,8 @@ Velaryon_34 = { # Dance of the Dragons
 Velaryon_35 = {
 	name = Laenor # Canon, married Rhaenrya. Her first husband. Heir to Driftmark.
 	dynasty = dynn_Velaryon
-	#dna = Velaryon_35
+
+	dna = Velaryon_35
 
 	prowess = 6
 
@@ -8790,6 +8723,7 @@ Velaryon_53 = {
 Velaryon_54 = {
 	name = Daeron # a lord, Grandson of Alyn the Oakenfist.
 	dynasty = dynn_Velaryon
+	dna = Velaryon_54
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -8825,6 +8759,7 @@ Velaryon_55 = {
 Velaryon_56 = {
 	name = Jacaerys # a Lord
 	dynasty = dynn_Velaryon
+	dna = Velaryon_56
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -8854,6 +8789,7 @@ Velaryon_p_1 = {
 Velaryon_57 = {
 	name = Rhogar # a Lord, Monford's grandfather, Lucerys' father.
 	dynasty = dynn_Velaryon
+	dna = Velaryon_57
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -8892,10 +8828,7 @@ Celtigar_8 = {
 	religion = valyrian
 	culture = high_valyrian
 
-	7832.1.1 = {
-		birth = yes
-		#effect = { add_character_flag = high_valyrian } # AGOT TODO
-	}
+	7832.1.1 = { birth = yes }
 	7883.1.1 = { death = yes }
 }
 Celtigar_9 = {
@@ -8907,10 +8840,7 @@ Celtigar_9 = {
 
 	father = Celtigar_8
 
-	7851.1.1 = {
-		birth = yes
-		#effect = { add_character_flag = high_valyrian } # AGOT TODO
-	}
+	7851.1.1 = { birth = yes }
 	7900.1.1 = { death = yes }
 }
 Celtigar_10 = {
@@ -8929,26 +8859,26 @@ Celtigar_11 = {
 	name = Crispian # a lord
 	dynasty = dynn_Celtigar
 
-	father = Celtigar_10
-
 	religion = valyrian
 	culture = westerosi_valyrian
+
+	father = Celtigar_10
 
 	7905.1.1 = { birth = yes }
 	7968.1.1 = { death = yes }
 }
 ### Issue of Crispian
 Celtigar_12 = {
-	name = Aerea # Mother of Aerion Targaryen
+	name = Aerea # married Daemion Targaryen
 	dynasty = dynn_Celtigar
 	female = yes
 
 	#dna = "dajdkpmiabk"
 
-	father = Celtigar_11
-
 	religion = valyrian
 	culture = westerosi_valyrian
+
+	father = Celtigar_11
 
 	7928.1.1 = { birth = yes }
 	7975.1.1 = { death = yes }
@@ -8957,10 +8887,10 @@ Celtigar_13 = {
 	name = Terrence # a lord
 	dynasty = dynn_Celtigar
 
-	father = Celtigar_11
-
 	religion = the_seven_main
 	culture = westerosi_valyrian
+
+	father = Celtigar_11
 
 	7930.1.1 = { birth = yes }
 	7946.1.1 = { add_spouse = Celtigar_rs_2 }
@@ -10537,7 +10467,7 @@ Kingsguard_8 = {
 		trait = just
 		trait = scholar
 		trait = celibate
-		trait = education_stewardship_4
+		trait = education_learning_5
 		effect = {
 			add_trait = lifestyle_physician
 			add_trait_xp = {
@@ -11645,95 +11575,6 @@ Kingsguard_8 = {
 	}
 	8063.1.1 = { death = yes }
 }
-88000387 = { # AGOT TODO ID
-	name = Rego #Rego Draz
-	dynasty = dynn_Draz
-
-	stewardship = 10
-
-	culture = pentoshi
-	religion = the_seven_main # AGOT TODO religion = rhllor # AGOT TODO#for lack of better representing religion in the game
-
-	disallow_random_traits = yes
-
-	trait = education_stewardship_4
-	trait = intellect_good_3
-	trait = diligent
-	trait = gregarious
-	trait = gluttonous
-	trait = lustful
-
-	8010.1.1 = { birth = yes }
-	8040.1.1 = {
-		effect = { add_gold = 1500 } #became richest man in Pentos
-	}
-	8050.9.20 = { 
-		effect = { # Master of Coin
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
-				POSITION = councillor_steward
-			}
-		}
-	}
-	8059.2.1 = { death = { death_reason = death_rabble } }
-}
-88000388 = { # AGOT TODO ID
-	name = Gessio
-	dynasty = dynn_Draz #Draz
-
-	stewardship = 8
-
-	culture = pentoshi
-	religion = the_seven_main # AGOT TODO religion = rhllor # AGOT TODO#for lack of better representing religion in the game
-
-	father = 88000387
-
-	trait = bastard
-
-	trait = education_stewardship_3
-	trait = diligent
-
-	8040.1.1 = { birth = yes }
-	8099.1.1 = { death = yes }
-}
-88000389 = { # AGOT TODO ID
-	name = Illyrio
-	dynasty = dynn_Draz #Draz
-
-	stewardship = 8
-
-	culture = pentoshi
-	religion = the_seven_main # AGOT TODO religion = rhllor # AGOT TODO#for lack of better representing religion in the game
-
-	father = 88000387
-
-	trait = bastard
-
-	trait = education_stewardship_3
-	trait = diligent
-
-	8042.1.1 = { birth = yes }
-	8082.1.1 = { death = yes }
-}
-88000390 = { # AGOT TODO ID
-	name = Myrio
-	dynasty = dynn_Draz #Draz
-
-	stewardship = 8
-
-	culture = pentoshi
-	religion = the_seven_main # AGOT TODO religion = rhllor # AGOT TODO#for lack of better representing religion in the game
-
-	father = 88000387
-
-	trait = bastard
-
-	trait = education_stewardship_3
-	trait = diligent
-
-	8044.1.1 = { birth = yes }
-	8118.1.1 = { death = yes }
-}
 88000533 = { # AGOT TODO ID
 	name = Tom	# the Bard of Flea Bottom
 
@@ -11807,10 +11648,10 @@ Kingsguard_8 = {
 
 	8084.1.1 = {
 		birth = yes
-		#employer = 102300523 # Allaquo Lohar, Lys # Allaquo Lohar, Lys # AGOT TODO Reenable once Lys is added
+		effect = {
+			set_employer = title:c_lys.holder
+		}
 	}
-	#8086.1.1 = { employer = 107300540 } # Syrio Erosenes, Lys # AGOT TODO Reenable once Lys is added
-	#8098.1.1 = { employer = 106300539 } # Oro Rogare, Lys # AGOT TODO Reenable once Lys is added
 	8100.1.1 = {
 		give_nickname = nick_the_white_worm
 	}
@@ -11818,6 +11659,12 @@ Kingsguard_8 = {
 		effect = {
 			set_relation_friend = character:Targaryen_61 # Daemon Targaryen
 			set_relation_lover = character:Targaryen_61 # Daemon Targaryen
+			set_employer = character:Targaryen_61.employer
+		}
+	}
+	8105.12.30 = { # Goes back to Lys after Dragonstone but before Stepstones campaign
+		effect = {
+			set_employer = title:c_lys.holder
 		}
 	}
 	8120.1.1 = {
@@ -11846,8 +11693,6 @@ Kingsguard_8 = {
 
 	religion = the_seven_main
 	culture = crownlander
-
-	disallow_random_traits = yes
 
 	trait = education_intrigue_1
 	trait = dwarf
@@ -12097,7 +11942,7 @@ Kingsguard_8 = {
 	}
 }
 1495 = { # AGOT TODO ID
-	name = Harmon # Canon
+	name = Harmon # Canon, one of the Seven who Rode
 	dynasty = dynn_Reeds
 
 	prowess = 6
@@ -12376,14 +12221,4 @@ Kingsguard_8 = {
 		#employer = Targaryen_95 #Bittersteel # AGOT TODO no golden company title
 	}
 	8215.1.1 = { death = yes }
-}
-Tyrosh_1 = {
-	name = Kiera #Kiera of Tyrosh
-	female = yes
-
-	religion = the_seven_main
-	culture = tyroshi
-
-	8187.1.1 = { birth = yes }
-	8250.1.1 = { death = yes }
 }

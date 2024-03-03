@@ -13,99 +13,97 @@
 }
 agot_set_crownlands_legacies = {
 	effect = {
-		if = {
-			dynasty:dynn_Targaryen = {
-				add_dynasty_prestige = 12000
-				add_dynasty_perk = blood_legacy_1
-				add_dynasty_perk = blood_legacy_2
-				add_dynasty_perk = blood_legacy_3
-				add_dynasty_perk = blood_legacy_4
-				add_dynasty_perk = erudition_legacy_1
-				add_dynasty_perk = glory_legacy_1
-				add_dynasty_perk = glory_legacy_2
-			}
-			dynasty:dynn_Bar_Emmon = {
-				add_dynasty_prestige = 1000
-				add_dynasty_perk = guile_legacy_1
-				add_dynasty_perk = kin_legacy_1
-			}
-			dynasty:dynn_Cargyll = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = warfare_legacy_1
-			}
-			dynasty:dynn_Celtigar = {
-				add_dynasty_prestige = 1000
-				add_dynasty_perk = fp2_coterie_legacy_1
-				add_dynasty_perk = fp2_coterie_legacy_2
-			}
-			dynasty:dynn_Chelsted = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = glory_legacy_1
-			}
-			dynasty:dynn_Darklyn = {
-				add_dynasty_prestige = 2250
-				add_dynasty_perk = warfare_legacy_1
-				add_dynasty_perk = fp2_urbanism_legacy_1
-				add_dynasty_perk = fp2_urbanism_legacy_2
-			}
-			dynasty:dynn_Farring = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = kin_legacy_1
-			}
-			dynasty:dynn_Gaunt = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = law_legacy_1
-			}
-			dynasty:dynn_Hayford = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = erudition_legacy_1
-			}
-			dynasty:dynn_Hollard = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = glory_legacy_1
-			}
-			dynasty:dynn_Langward = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = warfare_legacy_1
-			}
-			dynasty:dynn_Massey = {
-				add_dynasty_prestige = 1000
-				add_dynasty_perk = warfare_legacy_1
-				add_dynasty_perk = kin_legacy_1
-			}
-			dynasty:dynn_Rosby = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = kin_legacy_1
-			}
-			dynasty:dynn_Rykker = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = fp2_coterie_legacy_1
-			}
-			dynasty:dynn_Staunton = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = guile_legacy_1
-			}
-			dynasty:dynn_Stokeworth = {
-				add_dynasty_prestige = 2250
-				add_dynasty_perk = law_legacy_1
-				add_dynasty_perk = kin_legacy_1
-				add_dynasty_perk = fp2_urbanism_legacy_1
-			}
-			dynasty:dynn_Thorne = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = warfare_legacy_1
-			}
-			dynasty:dynn_Velaryon = {
-				add_dynasty_prestige = 4000
-				add_dynasty_perk = blood_legacy_1
-				add_dynasty_perk = blood_legacy_2
-				add_dynasty_perk = glory_legacy_1
-				add_dynasty_perk = fp1_adventure_legacy_1
-			}
-			dynasty:dynn_Wendwater = {
-				add_dynasty_prestige = 250
-				add_dynasty_perk = erudition_legacy_1
-			}
+		dynasty:dynn_Targaryen = {
+			add_dynasty_prestige = 12000
+			add_dynasty_perk = blood_legacy_1
+			add_dynasty_perk = blood_legacy_2
+			add_dynasty_perk = blood_legacy_3
+			add_dynasty_perk = blood_legacy_4
+			add_dynasty_perk = erudition_legacy_1
+			add_dynasty_perk = glory_legacy_1
+			add_dynasty_perk = glory_legacy_2
+		}
+		dynasty:dynn_Bar_Emmon = {
+			add_dynasty_prestige = 1000
+			add_dynasty_perk = guile_legacy_1
+			add_dynasty_perk = kin_legacy_1
+		}
+		dynasty:dynn_Cargyll = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = warfare_legacy_1
+		}
+		dynasty:dynn_Celtigar = {
+			add_dynasty_prestige = 1000
+			add_dynasty_perk = fp2_coterie_legacy_1
+			add_dynasty_perk = fp2_coterie_legacy_2
+		}
+		dynasty:dynn_Chelsted = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = glory_legacy_1
+		}
+		dynasty:dynn_Darklyn = {
+			add_dynasty_prestige = 2250
+			add_dynasty_perk = warfare_legacy_1
+			add_dynasty_perk = fp2_urbanism_legacy_1
+			add_dynasty_perk = fp2_urbanism_legacy_2
+		}
+		dynasty:dynn_Farring = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = kin_legacy_1
+		}
+		dynasty:dynn_Gaunt = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = law_legacy_1
+		}
+		dynasty:dynn_Hayford = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = erudition_legacy_1
+		}
+		dynasty:dynn_Hollard = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = glory_legacy_1
+		}
+		dynasty:dynn_Langward = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = warfare_legacy_1
+		}
+		dynasty:dynn_Massey = {
+			add_dynasty_prestige = 1000
+			add_dynasty_perk = warfare_legacy_1
+			add_dynasty_perk = kin_legacy_1
+		}
+		dynasty:dynn_Rosby = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = kin_legacy_1
+		}
+		dynasty:dynn_Rykker = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = fp2_coterie_legacy_1
+		}
+		dynasty:dynn_Staunton = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = guile_legacy_1
+		}
+		dynasty:dynn_Stokeworth = {
+			add_dynasty_prestige = 2250
+			add_dynasty_perk = law_legacy_1
+			add_dynasty_perk = kin_legacy_1
+			add_dynasty_perk = fp2_urbanism_legacy_1
+		}
+		dynasty:dynn_Thorne = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = warfare_legacy_1
+		}
+		dynasty:dynn_Velaryon = {
+			add_dynasty_prestige = 4000
+			add_dynasty_perk = blood_legacy_1
+			add_dynasty_perk = blood_legacy_2
+			add_dynasty_perk = glory_legacy_1
+			add_dynasty_perk = fp1_adventure_legacy_1
+		}
+		dynasty:dynn_Wendwater = {
+			add_dynasty_prestige = 250
+			add_dynasty_perk = erudition_legacy_1
 		}
 	}
 }
