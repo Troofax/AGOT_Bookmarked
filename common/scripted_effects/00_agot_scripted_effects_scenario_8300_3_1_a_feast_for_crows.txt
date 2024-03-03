@@ -53,6 +53,8 @@ agot_8300_3_1_affc_scenario_setup = {
 	}
 	###
 
+	title:e_the_iron_throne.holder = { save_scope_as = historical_setup }
+
 	### SET UP REBEL LEADERS
 	hidden_effect = { # Stannis aganist Lannisters
 		title:k_the_stormlands.holder = {

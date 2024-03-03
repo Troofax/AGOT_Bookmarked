@@ -52,6 +52,8 @@ agot_8299_3_3_acok_scenario_setup = {
 		}
 	}
 
+	title:e_the_iron_throne.holder = { save_scope_as = historical_setup }
+
 	# Starks aganist Lannisters
 	if = { # fire only if you used ruler designer; else there is no war
 		limit = { NOT = { title:k_the_north.holder = character:Stark_6 } }

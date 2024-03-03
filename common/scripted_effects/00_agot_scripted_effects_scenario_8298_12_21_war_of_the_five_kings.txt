@@ -58,6 +58,8 @@ agot_8298_12_21_wotfk_scenario_setup = {
 	}
 	###
 
+	title:e_the_iron_throne.holder = { save_scope_as = historical_setup }
+
 	hidden_effect = { # Starks aganist Lannisters
 		title:k_the_north.holder = {
 			save_scope_as = mw_rebel_leader_robb
