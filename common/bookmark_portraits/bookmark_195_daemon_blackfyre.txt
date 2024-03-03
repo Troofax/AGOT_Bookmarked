@@ -4,9 +4,9 @@ bookmark_195_daemon_blackfyre={
 	type=male
 	id=16962
 	age=0.250000
-	genes={ 		hair_color={ 2 5 29 20 }
+	genes={ 		hair_color={ 51 7 29 20 }
  		skin_color={ 51 26 45 28 }
- 		eye_color={ 242 68 252 77 }
+ 		eye_color={ 247 53 252 77 }
  		gene_chin_forward={ "chin_forward_pos" 73 "chin_forward_pos" 144 }
  		gene_chin_height={ "chin_height_neg" 119 "chin_height_neg" 144 }
  		gene_chin_width={ "chin_width_neg" 154 "chin_width_neg" 118 }

@@ -48,7 +48,7 @@
 	}
 }
 ################# b_radiant_harbor ################
-################# c_lys_3 - d_lys #################
+################# c_pleasure_heights - d_lys #################
 7392 = {
 	culture = lyseni
 	religion = weeping_lady
@@ -56,49 +56,49 @@
 	7998.1.1 = {
 		buildings = {
 			city_04
-			guild_halls_02
+			guild_halls_04
 			common_tradeport_06
 		}
 	}
 }
 ################### b_palm_beach ##################
-################# c_lys_3 - d_lys #################
+################# c_pleasure_heights - d_lys #################
 7393 = {
 	holding = none
 }
 #################### b_tresser ####################
-################# c_lys_3 - d_lys #################
+################# c_pleasure_heights - d_lys #################
 7394 = {
 	holding = church_holding
 	7998.1.1 = {
 		buildings = {
 			temple_03
-			monastic_schools_03
+			monastic_schools_04
 		}
 	}
 }
 ################ b_perfumed_gardens ###############
-################# c_lys_2 - d_lys #################
+################# c_magisters_avenue - d_lys #################
 7395 = {
 	culture = lyseni
 	religion = rhllor
-	holding = castle_holding
+	holding = city_holding
 	7998.1.1 = {
 		buildings = {
-			castle_04
+			city_03
+			guild_halls_05
 			agot_slave_camps_06
-			common_tradeport_05
 		}
 	}
 }
 ################# b_lilac_markets #################
-################# c_lys_2 - d_lys #################
+################# c_magister_avenue - d_lys #################
 7396 = {
 	holding = city_holding
 	7998.1.1 = {
 		buildings = {
 			city_03
-			guild_halls_01
+			guild_halls_04
 		}
 	}
 }
@@ -157,7 +157,7 @@
 	}
 }
 #################### b_boeanare ###################
-########### c_dyreno_hills - d_thaehaes ###########
+########### c_dyreno_hills - d_mangrove_shore ###########
 7402 = {
 	culture = tyroshi
 	religion = rhllor
@@ -169,22 +169,22 @@
 	}
 }
 ################### b_rorsarios ###################
-########### c_dyreno_hills - d_thaehaes ###########
+########### c_dyreno_hills - d_mangrove_shore ###########
 7403 = {
 	holding = city_holding
 }
 ################# b_silvered_bluff ################
-########### c_dyreno_hills - d_thaehaes ###########
+########### c_dyreno_hills - d_mangrove_shore ###########
 7404 = {
 	holding = none
 }
 ################### b_laraokten ###################
-########### c_dyreno_hills - d_thaehaes ###########
+########### c_dyreno_hills - d_mangrove_shore ###########
 7405 = {
 	holding = none
 }
 #################### b_maesonis ###################
-########## c_dyreno_hills_2 - d_thaehaes ##########
+########## c_aercadar - d_mangrove_shore ##########
 7406 = {
 	culture = lyseni
 	religion = weeping_lady
@@ -196,7 +196,7 @@
 	}
 }
 ################### b_kornovear ###################
-########## c_dyreno_hills_2 - d_thaehaes ##########
+########## c_aercadar - d_mangrove_shore ##########
 7407 = {
 	holding = castle_holding
 	7998.1.1 = {
@@ -207,17 +207,17 @@
 	}
 }
 #################### b_qeldlen ####################
-########## c_dyreno_hills_2 - d_thaehaes ##########
+########## c_aercadar - d_mangrove_shore ##########
 7408 = {
 	holding = none
 }
 ################### b_aergantea ###################
-########## c_dyreno_hills_2 - d_thaehaes ##########
+########## c_aercadar - d_mangrove_shore ##########
 7409 = {
 	holding = none
 }
 #################### b_aercadar ###################
-########## c_dyreno_hills_2 - d_thaehaes ##########
+########## c_aercadar - d_mangrove_shore ##########
 7410 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -228,7 +228,7 @@
 	}
 }
 ################### b_unsareanos ##################
-############## c_morghos - d_thaehaes #############
+############## c_morghos - d_mangrove_shore #############
 7411 = {
 	culture = lyseni
 	religion = weeping_lady
@@ -242,12 +242,12 @@
 	}
 }
 #################### b_pagaenne ###################
-############## c_morghos - d_thaehaes #############
+############## c_morghos - d_mangrove_shore #############
 7412 = {
 	holding = none
 }
 #################### b_cloenis ####################
-############## c_morghos - d_thaehaes #############
+############## c_morghos - d_mangrove_shore #############
 7413 = {
 	holding = castle_holding
 	7998.1.1 = {
@@ -258,7 +258,7 @@
 	}
 }
 ###################### b_rren #####################
-############## c_morghos - d_thaehaes #############
+############## c_morghos - d_mangrove_shore #############
 7414 = {
 	holding = castle_holding
 	7998.1.1 = {
@@ -269,17 +269,17 @@
 	}
 }
 #################### b_prunyiha ###################
-############## c_morghos - d_thaehaes #############
+############## c_morghos - d_mangrove_shore #############
 7415 = {
 	holding = none
 }
 ################### b_preceanos ###################
-############## c_morghos - d_thaehaes #############
+############## c_morghos - d_mangrove_shore #############
 7416 = {
 	holding = none
 }
 #################### b_makseon ####################
-############## c_morghos - d_thaehaes #############
+############## c_morghos - d_mangrove_shore #############
 7417 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -290,7 +290,7 @@
 	}
 }
 ################### b_orteohaes ###################
-############ c_orthas_reon - d_thaehaes ###########
+############ c_orthas_reon - d_mangrove_shore ###########
 7418 = {
 	culture = lyseni
 	religion = weeping_lady
@@ -304,7 +304,7 @@
 	}
 }
 ################## b_pillow_coast #################
-############ c_orthas_reon - d_thaehaes ###########
+############ c_orthas_reon - d_mangrove_shore ###########
 7419 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -315,7 +315,7 @@
 	}
 }
 ###################### b_larr #####################
-############ c_orthas_reon - d_thaehaes ###########
+############ c_orthas_reon - d_mangrove_shore ###########
 7420 = {
 	holding = castle_holding
 	7998.1.1 = {
@@ -326,12 +326,12 @@
 	}
 }
 ##################### b_saees #####################
-############ c_orthas_reon - d_thaehaes ###########
+############ c_orthas_reon - d_mangrove_shore ###########
 7421 = {
 	holding = none
 }
 ################## b_doronjistos ##################
-############ c_orthas_reon - d_thaehaes ###########
+############ c_orthas_reon - d_mangrove_shore ###########
 7422 = {
 	holding = church_holding
 	7998.1.1 = {
@@ -342,12 +342,12 @@
 	}
 }
 ################## b_orthas_endos #################
-############ c_orthas_reon - d_thaehaes ###########
+############ c_orthas_reon - d_mangrove_shore ###########
 7423 = {
 	holding = none
 }
 ################## b_slavers_port #################
-########### c_orthas_reon_2 - d_thaehaes ##########
+########### c_fetted_grove - d_mangrove_shore ##########
 7424 = {
 	culture = lyseni
 	religion = weeping_lady
@@ -361,12 +361,12 @@
 	}
 }
 ################### b_munnemmar ###################
-########### c_orthas_reon_2 - d_thaehaes ##########
+########### c_fetted_grove - d_mangrove_shore ##########
 7425 = {
 	holding = none
 }
 ################### b_ormaeqaer ###################
-########### c_orthas_reon_2 - d_thaehaes ##########
+########### c_fetted_grove - d_mangrove_shore ##########
 7426 = {
 	holding = castle_holding
 	7998.1.1 = {
@@ -377,7 +377,7 @@
 	}
 }
 #################### b_lerilksa ###################
-########### c_orthas_reon_2 - d_thaehaes ##########
+########### c_fetted_grove - d_mangrove_shore ##########
 7427 = {
 	holding = none
 }

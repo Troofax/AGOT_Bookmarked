@@ -396,8 +396,8 @@
 	7998.1.1 = {
 		buildings = {
 			pirate_den_02
-			agot_pirate_economic_03
-			agot_pirate_supply_02
+			agot_pirate_economic_06
+			agot_pirate_supply_05
 		}
 	}
 }
@@ -430,8 +430,8 @@
 	7998.1.1 = {
 		buildings = {
 			pirate_den_03
-			agot_pirate_economic_06
-			agot_pirate_supply_06
+			agot_pirate_military_03
+			agot_pirate_troop_02
 		}
 	}
 }

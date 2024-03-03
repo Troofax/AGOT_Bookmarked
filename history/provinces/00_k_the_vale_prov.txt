@@ -40,6 +40,12 @@
 	culture = valeman
 	religion = the_seven_main
 	holding = castle_holding
+	4450.1.1 = {
+		special_building = agot_gates_of_the_moon_01
+	}
+	4550.1.1 = {
+		special_building = agot_gates_of_the_moon_02
+	}
 	7998.1.1 = {
 		buildings = { castle_05 hill_forts_06 stables_06 }
 	}

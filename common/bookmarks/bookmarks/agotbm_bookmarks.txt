@@ -387,7 +387,7 @@ agot_bm_8277 = {
 			culture = westerman
 			birth = 8266.1.1
 			history_id = Lannister_7
-			animation = marshal
+			animation = idle
 		}
 	}
 

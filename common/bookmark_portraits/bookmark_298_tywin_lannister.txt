@@ -2,7 +2,7 @@
 # History database id:Lannister_1
 bookmark_298_tywin_lannister={
 	type=male
-	id=23307
+	id=23324
 	age=0.560000
 	genes={ 		hair_color={ 191 7 198 28 }
  		skin_color={ 79 27 101 31 }
@@ -90,15 +90,15 @@ bookmark_298_tywin_lannister={
  		face_detail_nose_ridge_def={ "nose_ridge_def_pos" 160 "nose_ridge_def_pos" 119 }
  		face_detail_nose_tip_def={ "nose_tip_def" 255 "nose_tip_def" 44 }
  		face_detail_temple_def={ "temple_def" 108 "temple_def" 108 }
- 		expression_brow_wrinkles={ "brow_wrinkles_02" 255 "brow_wrinkles_01" 167 }
- 		expression_eye_wrinkles={ "eye_wrinkles_03" 220 "eye_wrinkles_03" 53 }
+ 		expression_brow_wrinkles={ "brow_wrinkles_02" 226 "brow_wrinkles_01" 167 }
+ 		expression_eye_wrinkles={ "eye_wrinkles_03" 255 "eye_wrinkles_03" 53 }
  		expression_forehead_wrinkles={ "forehead_wrinkles_01" 194 "forehead_wrinkles_03" 62 }
  		expression_other={ "cheek_wrinkles_both_01" 26 "cheek_wrinkles_both_01" 85 }
  		complexion={ "complexion_10" 0 "complexion_12" 0 }
  		gene_height={ "normal_height" 149 "normal_height" 126 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 124 "body_fat_head_fat_low" 126 }
- 		gene_bs_body_shape={ "body_shape_average_clothed" 183 "body_shape_average_clothed" 71 }
- 		gene_bs_bust={ "bust_clothes" 20 "bust_clothes" 154 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 128 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_shape={ "body_shape_average_clothed" 204 "body_shape_average_clothed" 71 }
+ 		gene_bs_bust={ "bust_clothes" 25 "bust_clothes" 154 }
  		gene_age={ "old_4" 148 "old_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 147 "avg_spacing_lower_thickness" 212 }
  		gene_eyebrows_fullness={ "layer_2_lower_thickness" 142 "layer_2_low_thickness" 172 }
@@ -143,9 +143,9 @@ bookmark_298_tywin_lannister={
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "westerlands_war_nobility_clothes" 255 "most_clothes" 0 }
- 		headgear={ "no_headgear" 12 "no_headgear" 0 }
+ 		clothes={ "agot_historic_characters" 204 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 227 "no_headgear" 0 }
  }
-	entity={ 912297863 912297863 }
+	entity={ 979141817 979141817 }
 }
 

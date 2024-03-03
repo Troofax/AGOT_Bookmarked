@@ -2,7 +2,7 @@
 # History database id:Baratheon_3
 bookmark_298_stannis_baratheon={
 	type=male
-	id=26880
+	id=26897
 	age=0.340000
 	genes={ 		hair_color={ 20 249 0 244 }
  		skin_color={ 10 20 73 42 }
@@ -96,7 +96,7 @@ bookmark_298_stannis_baratheon={
  		expression_other={ "nose_wrinkles_01" 0 "nose_wrinkles_01" 134 }
  		complexion={ "complexion_9" 0 "complexion_8" 72 }
  		gene_height={ "normal_height" 175 "normal_height" 150 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 131 "body_fat_head_fat_full" 131 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 120 "body_fat_head_fat_full" 131 }
  		gene_bs_body_shape={ "body_shape_average" 255 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 22 "bust_shape_3_full" 165 }
  		gene_age={ "old_2" 218 "old_1" 25 }
@@ -139,8 +139,8 @@ bookmark_298_stannis_baratheon={
 		props_right={ "marshal_swords" 255 "no_props" 0 }
  		beards={ "all_beards" 69 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "agot_special_scripted_hairstyles" 71 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 246 "all_legwear" 0 }
+ 		hairstyles={ "agot_special_scripted_hairstyles" 62 "all_hairstyles" 0 }
+ 		legwear={ "agot_hidden_legwear" 255 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }

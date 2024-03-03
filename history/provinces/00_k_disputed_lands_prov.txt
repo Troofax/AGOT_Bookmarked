@@ -5,7 +5,7 @@
 	religion = weeping_lady
 	holding = castle_holding
 }
-###################### b_tela #####################
+###################### b_taala #####################
 ############ c_qorena - d_the_shambles ############
 7429 = {
 }
@@ -65,27 +65,27 @@
 		}
 	}
 }
-##################### b_quirys ####################
-######## c_vysos_plains_2 - d_the_shambles ########
+##################### b_nisario_estate ####################
+######## c_pearridge - d_the_shambles ########
 7438 = {
 	culture = hartalari
 	religion = rhllor
 	holding = castle_holding
 }
-################### b_roondytis ###################
-######## c_vysos_plains_2 - d_the_shambles ########
+################### b_roondytish ###################
+######## c_pearridge - d_the_shambles ########
 7439 = {
 }
-##################### b_deryan ####################
-######## c_vysos_plains_2 - d_the_shambles ########
+##################### b_pluckstand ####################
+######## c_pearridge - d_the_shambles ########
 7440 = {
 }
 #################### b_quoorys ####################
-######## c_vysos_plains_2 - d_the_shambles ########
+######## c_pearridge - d_the_shambles ########
 7441 = {
 }
-##################### b_ritis #####################
-######## c_vysos_plains_2 - d_the_shambles ########
+##################### b_ritish #####################
+######## c_pearridge - d_the_shambles ########
 7442 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -126,7 +126,7 @@
 	}
 }
 #################### b_adahurys ###################
-########### c_ysilios_2 - d_the_shambles ##########
+########### c_the_spar - d_the_shambles ##########
 7448 = {
 	culture = hartalari
 	religion = rhllor
@@ -140,30 +140,30 @@
 	}
 }
 #################### b_tambona ####################
-########### c_ysilios_2 - d_the_shambles ##########
+########### c_the_spar - d_the_shambles ##########
 7449 = {
 }
 #################### b_noohutis ###################
-########### c_ysilios_2 - d_the_shambles ##########
+########### c_the_spar - d_the_shambles ##########
 7450 = {
 }
 ################## b_orthythmans ##################
-########### c_ysilios_2 - d_the_shambles ##########
+########### c_the_spar - d_the_shambles ##########
 7451 = {
 }
 #################### b_horahar ####################
-########### c_ysilios_2 - d_the_shambles ##########
+########### c_the_spar - d_the_shambles ##########
 7452 = {
 }
 ################### b_pathmaenne ##################
-############## c_kios - d_shambles_2 ##############
+############## c_kios - d_battle_hills ##############
 7453 = {
 	culture = hartalari
 	religion = rhllor
 	holding = castle_holding
 }
 #################### b_maraembo ###################
-############## c_kios - d_shambles_2 ##############
+############## c_kios - d_battle_hills ##############
 7454 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -174,65 +174,65 @@
 	}
 }
 #################### b_paherios ###################
-############## c_kios - d_shambles_2 ##############
+############## c_kios - d_battle_hills ##############
 7455 = {
 }
 #################### b_illolon ####################
-############## c_kios - d_shambles_2 ##############
+############## c_kios - d_battle_hills ##############
 7456 = {
 }
 ###################### b_soar #####################
-############## c_kios - d_shambles_2 ##############
+############## c_kios - d_battle_hills ##############
 7457 = {
 }
 ##################### b_ormyan ####################
-############# c_kios_2 - d_shambles_2 #############
+############# c_broken_lance - d_battle_hills #############
 7458 = {
 	culture = hartalari
 	religion = trios
 	holding = castle_holding
 }
 ##################### b_tryres ####################
-############# c_kios_2 - d_shambles_2 #############
+############# c_broken_lance - d_battle_hills #############
 7459 = {
 }
 ##################### b_tarys #####################
-############# c_kios_2 - d_shambles_2 #############
+############# c_broken_lance - d_battle_hills #############
 7460 = {
 }
 ##################### b_myraar ####################
-############# c_kios_2 - d_shambles_2 #############
+############# c_broken_lance - d_battle_hills #############
 7461 = {
 }
 ##################### b_adorys ####################
-############# c_kios_2 - d_shambles_2 #############
+############# c_broken_lance - d_battle_hills #############
 7462 = {
 }
 #################### b_nondito ####################
-############ c_staherys - d_shambles_2 ############
+############ c_staherys - d_battle_hills ############
 7463 = {
 	culture = hartalari
 	religion = rhllor
 	holding = castle_holding
 }
 ##################### b_anotys ####################
-############ c_staherys - d_shambles_2 ############
+############ c_staherys - d_battle_hills ############
 7464 = {
 }
 ##################### b_toynis ####################
-############ c_staherys - d_shambles_2 ############
+############ c_staherys - d_battle_hills ############
 7465 = {
 }
 #################### b_sathmens ###################
-############ c_staherys - d_shambles_2 ############
+############ c_staherys - d_battle_hills ############
 7466 = {
 }
 ################### b_qhygandar ###################
-############ c_staherys - d_shambles_2 ############
+############ c_staherys - d_battle_hills ############
 7467 = {
 }
 ##################### b_calete ####################
-########### c_coin_hoard - d_shambles_2 ###########
+########### c_sellswords_perch - d_battle_hills ###########
 7468 = {
 	culture = hartalari
 	religion = weeping_lady
@@ -241,22 +241,15 @@
 		buildings = {
 			castle_01
 			hill_forts_01
-			hill_farms_01
 		}
 	}
 }
-#################### b_hozaqos ####################
-########### c_coin_hoard - d_shambles_2 ###########
-7469 = {
-}
-##################### b_qymbar ####################
-########### c_coin_hoard - d_shambles_2 ###########
-7470 = {
-}
 ###################### b_sens #####################
-########### c_coin_hoard - d_shambles_2 ###########
+########### c_coin_hoard - d_battle_hills ###########
 7471 = {
 	holding = city_holding
+	culture = hartalari
+	religion = weeping_lady
 	7998.1.1 = {
 		buildings = {
 			city_01
@@ -264,8 +257,17 @@
 		}
 	}
 }
+#################### b_hozaqos ####################
+########### c_coin_hoard - d_battle_hills ###########
+7469 = {
+}
+##################### b_qymbar ####################
+########### c_coin_hoard - d_battle_hills ###########
+7470 = {
+}
+
 #################### b_rothmyre ###################
-########## c_coin_hoard_2 - d_shambles_2 ##########
+########## c_sellswords_perch - d_battle_hills ##########
 7478 = {
 	culture = hartalari
 	religion = trios
@@ -279,7 +281,7 @@
 	}
 }
 ##################### b_daeen #####################
-########## c_coin_hoard_2 - d_shambles_2 ##########
+########## c_sellswords_perch - d_battle_hills ##########
 7479 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -290,7 +292,7 @@
 	}
 }
 ################## b_orthathmens ##################
-########## c_coin_hoard_2 - d_shambles_2 ##########
+########## c_sellswords_perch - d_battle_hills ##########
 7480 = {
 }
 ################# b_tree_of_crowns ################
@@ -433,23 +435,23 @@
 		}
 	}
 }
-################## b_ranthmoreon ##################
-######### c_lrolaembar_2 - d_hells_barrens ########
+################## b_tattered_banner ##################
+######### c_ragged_hill - d_hells_barrens ########
 7495 = {
 	culture = hartalari
 	religion = trios
 	holding = castle_holding
 }
 #################### b_adahyris ###################
-######### c_lrolaembar_2 - d_hells_barrens ########
+######### c_ragged_hill - d_hells_barrens ########
 7496 = {
 }
 ###################### b_hare #####################
-######### c_lrolaembar_2 - d_hells_barrens ########
+######### c_ragged_hill - d_hells_barrens ########
 7497 = {
 }
 ###################### b_maer #####################
-######### c_lrolaembar_2 - d_hells_barrens ########
+######### c_ragged_hill - d_hells_barrens ########
 7498 = {
 }
 ################### b_tronambeo ###################
@@ -486,7 +488,7 @@
 	}
 }
 #################### b_pendanne ###################
-######## c_rael_trunos_2 - d_hells_barrens ########
+######## c_pendanne - d_hells_barrens ########
 7503 = {
 	culture = hartalari
 	religion = rhllor
@@ -500,11 +502,11 @@
 	}
 }
 ##################### b_vygyr #####################
-######## c_rael_trunos_2 - d_hells_barrens ########
+######## c_pendanne - d_hells_barrens ########
 7504 = {
 }
 #################### b_bellean ####################
-######## c_rael_trunos_2 - d_hells_barrens ########
+######## c_pendanne - d_hells_barrens ########
 7505 = {
 	holding = church_holding
 	7998.1.1 = {
@@ -515,7 +517,7 @@
 	}
 }
 ##################### b_baqas #####################
-######## c_rael_trunos_2 - d_hells_barrens ########
+######## c_pendanne - d_hells_barrens ########
 7506 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -595,7 +597,7 @@
 7516 = {
 }
 ##################### b_torean ####################
-############## c_devosh_2 - d_aesomyr #############
+############## c_erovosh - d_aesomyr #############
 7517 = {
 	culture = hartalari
 	religion = rhllor
@@ -609,7 +611,7 @@
 	}
 }
 #################### b_qhanodar ###################
-############## c_devosh_2 - d_aesomyr #############
+############## c_erovosh - d_aesomyr #############
 7518 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -620,17 +622,17 @@
 	}
 }
 #################### b_baegerys ###################
-############## c_devosh_2 - d_aesomyr #############
+############## c_erovosh - d_aesomyr #############
 7519 = {
 	holding = none
 }
 ##################### b_robean ####################
-############## c_devosh_2 - d_aesomyr #############
+############## c_erovosh - d_aesomyr #############
 7520 = {
 	holding = none
 }
 ##################### b_dylaon ####################
-############## c_devosh_2 - d_aesomyr #############
+############## c_erovosh - d_aesomyr #############
 7521 = {
 	holding = castle_holding
 	7998.1.1 = {
@@ -641,7 +643,7 @@
 	}
 }
 ################### b_ormozenqos ##################
-############## c_devosh_2 - d_aesomyr #############
+############## c_erovosh - d_aesomyr #############
 7522 = {
 	holding = church_holding
 	7998.1.1 = {
@@ -762,30 +764,30 @@
 7538 = {
 }
 ##################### b_meroo #####################
-########### c_haehees_2 - d_trade_cities ##########
+########### c_timbercut - d_trade_cities ##########
 7539 = {
 	culture = hartalari
 	religion = rhllor
 	holding = castle_holding
 }
 #################### b_tryrombo ###################
-########### c_haehees_2 - d_trade_cities ##########
+########### c_timbercut - d_trade_cities ##########
 7540 = {
 }
 #################### b_markaes ####################
-########### c_haehees_2 - d_trade_cities ##########
+########### c_timbercut - d_trade_cities ##########
 7541 = {
 }
 ###################### b_bron #####################
-########### c_haehees_2 - d_trade_cities ##########
+########### c_timbercut - d_trade_cities ##########
 7542 = {
 }
 ##################### b_qeres #####################
-########### c_haehees_2 - d_trade_cities ##########
+########### c_timbercut - d_trade_cities ##########
 7543 = {
 }
 #################### b_marambo ####################
-########### c_haehees_2 - d_trade_cities ##########
+########### c_timbercut - d_trade_cities ##########
 7544 = {
 }
 #################### b_castian ####################
@@ -819,7 +821,7 @@
 7549 = {
 }
 ###################### b_hes ######################
-######### c_unmecaeros_2 - d_trade_cities #########
+######### c_triarchs_fall - d_trade_cities #########
 7550 = {
 	culture = volantene
 	religion = rhllor
@@ -833,22 +835,22 @@
 	}
 }
 ###################### b_deon #####################
-######### c_unmecaeros_2 - d_trade_cities #########
+######### c_triarchs_fall - d_trade_cities #########
 7551 = {
 }
 ##################### b_tohona ####################
-######### c_unmecaeros_2 - d_trade_cities #########
+######### c_triarchs_fall - d_trade_cities #########
 7552 = {
 }
 ##################### b_tyhoo #####################
-######### c_unmecaeros_2 - d_trade_cities #########
+######### c_triarchs_fall - d_trade_cities #########
 7553 = {
 }
 #################### b_orthran ####################
-######### c_unmecaeros_2 - d_trade_cities #########
+######### c_triarchs_fall - d_trade_cities #########
 7554 = {
 }
 #################### b_dryhaesh ###################
-######### c_unmecaeros_2 - d_trade_cities #########
+######### c_triarchs_fall - d_trade_cities #########
 7555 = {
 }

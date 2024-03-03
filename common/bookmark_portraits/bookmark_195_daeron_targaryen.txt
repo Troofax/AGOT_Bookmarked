@@ -2,7 +2,7 @@
 # History database id:Targaryen_91
 bookmark_195_daeron_targaryen={
 	type=male
-	id=15911
+	id=15928
 	age=0.410000
 	genes={ 		hair_color={ 4 4 3 2 }
  		skin_color={ 45 0 28 8 }
@@ -96,7 +96,7 @@ bookmark_195_daeron_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 0 "cheek_wrinkles_both_01" 0 }
  		complexion={ "complexion_13" 255 "complexion_11" 78 }
  		gene_height={ "normal_height" 139 "normal_height" 125 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 104 "body_fat_head_fat_low" 115 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 93 "body_fat_head_fat_low" 115 }
  		gene_bs_body_shape={ "body_shape_pear_full" 142 "body_shape_average" 51 }
  		gene_bs_bust={ "bust_clothes" 28 "bust_clothes" 70 }
  		gene_age={ "old_3" 255 "old_2" 199 }
@@ -136,13 +136,13 @@ bookmark_195_daeron_targaryen={
  		gene_bs_eye_shape={ "eye_shape_01" 172 "eye_shape_01" 0 }
  		hair_aging={ "vanilla_hair_aging" 0 "vanilla_hair_aging" 127 }
  		pose={ "" 255 "" 0 }
- 		cloaks={ "western_royalty" 79 "no_cloak" 0 }
- 		hairstyles={ "byzantine_hairstyles_wavy" 200 "all_hairstyles" 0 }
- 		legwear={ "agot_hidden_legwear" 255 "all_legwear" 0 }
+ 		cloaks={ "western_royalty" 246 "no_cloak" 0 }
+ 		hairstyles={ "byzantine_hairstyles_wavy" 190 "all_hairstyles" 0 }
+ 		legwear={ "western_common_legwear" 235 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "agot_byzantine_high_nobility_clothes_male_pants" 62 "most_clothes" 0 }
+ 		clothes={ "byzantine_high_nobility_clothes" 236 "most_clothes" 0 }
  		headgear={ "aegonIV_crown" 255 "no_headgear" 0 }
  }
 	entity={ 3942081117 3942081117 }

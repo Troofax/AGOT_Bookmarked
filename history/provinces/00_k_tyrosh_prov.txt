@@ -1,10 +1,11 @@
-﻿##################### b_tyrosh ####################
+﻿##################### b_zobri_bastion ####################
 ############### c_tyrosh - d_tyrosh ###############
 7351 = {
 	culture = tyroshi
 	religion = trios
 	holding = castle_holding
 	duchy_capital_building = agot_dye_works_03
+	special_building = agot_tyrosh_01
 	7998.1.1 = {
 		buildings = {
 			castle_05
@@ -13,7 +14,7 @@
 		}
 	}
 }
-################# b_tyrosh_harbor #################
+################# b_quilt_harbor #################
 ############### c_tyrosh - d_tyrosh ###############
 7352 = {
 	holding = city_holding
@@ -36,7 +37,7 @@
 	}
 }
 #################### b_kerkosh ####################
-############## c_tyrosh_2 - d_tyrosh ##############
+############## c_great_hue - d_tyrosh ##############
 7354 = {
 	culture = tyroshi
 	religion = rhllor
@@ -50,7 +51,7 @@
 	}
 }
 ################### b_soot_dorun ##################
-############## c_tyrosh_2 - d_tyrosh ##############
+############## c_great_hue - d_tyrosh ##############
 7355 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -61,7 +62,7 @@
 	}
 }
 ############### b_the_bleeding_tower ##############
-############## c_tyrosh_3 - d_tyrosh ##############
+############## c_bleeding_bay - d_tyrosh ##############
 7356 = {
 	culture = tyroshi
 	religion = trios
@@ -75,8 +76,8 @@
 		}
 	}
 }
-################## b_bleak_point ##################
-############## c_tyrosh_3 - d_tyrosh ##############
+################## b_brandy_row ##################
+############## c_bleeding_bay - d_tyrosh ##############
 7357 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -87,8 +88,9 @@
 	}
 }
 ################ b_temple_of_trios ################
-############## c_tyrosh_3 - d_tyrosh ##############
+############## c_bleeding_bay - d_tyrosh ##############
 7358 = {
+	special_building = agot_grand_temple_of_trios_01
 	holding = church_holding
 	7998.1.1 = {
 		buildings = {
@@ -97,7 +99,7 @@
 		}
 	}
 }
-#################### b_zernosh ####################
+#################### b_bleak_point ####################
 ############### c_zernosh - d_tyrosh ##############
 7359 = {
 	culture = tyroshi
@@ -111,7 +113,7 @@
 		}
 	}
 }
-#################### b_muricosh ###################
+#################### b_snailery ###################
 ############## c_muricosh - d_tyrosh ##############
 7360 = {
 	culture = tyroshi
@@ -146,8 +148,8 @@
 		}
 	}
 }
-################# b_uhyrosh_harbor ################
-############ c_uhyrosh_coast - d_uhyrys ###########
+################# b_little_tyrosh ################
+############ c_uhyrosh_coast - d_quhyrys ###########
 7363 = {
 	culture = tyroshi
 	religion = trios
@@ -160,8 +162,8 @@
 		}
 	}
 }
-################# b_uhyroshi_hold #################
-############ c_uhyrosh_coast - d_uhyrys ###########
+################# b_droplet_hold #################
+############ c_uhyrosh_coast - d_quhyrys ###########
 7364 = {
 	holding = castle_holding
 	7998.1.1 = {
@@ -172,7 +174,7 @@
 	}
 }
 #################### b_riroorys ###################
-############ c_uhyrosh_coast - d_uhyrys ###########
+############ c_uhyrosh_coast - d_quhyrys ###########
 7365 = {
 	holding = church_holding
 	7998.1.1 = {
@@ -182,18 +184,18 @@
 		}
 	}
 }
-###################### b_tian #####################
-############ c_uhyrosh_coast - d_uhyrys ###########
+###################### b_tean #####################
+############ c_uhyrosh_coast - d_quhyrys ###########
 7366 = {
 	holding = none
 }
 ##################### b_taris #####################
-############ c_uhyrosh_coast - d_uhyrys ###########
+############ c_uhyrosh_coast - d_quhyrys ###########
 7367 = {
 	holding = none
 }
 ################### b_tin_field ###################
-############ c_uhyrosh_coast - d_uhyrys ###########
+############ c_uhyrosh_coast - d_quhyrys ###########
 7368 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -203,8 +205,8 @@
 		}
 	}
 }
-################### b_tandaynis ###################
-############## c_tandaynis - d_uhyrys #############
+################### b_tandaynish ###################
+############## c_tandaynish - d_quhyrys #############
 7369 = {
 	culture = tyroshi
 	religion = trios
@@ -218,7 +220,7 @@
 	}
 }
 ################## b_tanners_wood #################
-############## c_tandaynis - d_uhyrys #############
+############## c_tandaynish - d_quhyrys #############
 7370 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -229,7 +231,7 @@
 	}
 }
 ################### b_stramanosh ##################
-############## c_tandaynis - d_uhyrys #############
+############## c_tandaynish - d_quhyrys #############
 7371 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -240,7 +242,7 @@
 	}
 }
 ################## b_straw_tower ##################
-############## c_tandaynis - d_uhyrys #############
+############## c_tandaynish - d_quhyrys #############
 7372 = {
 	holding = castle_holding
 	7998.1.1 = {
@@ -250,7 +252,7 @@
 	}
 }
 ##################### b_kylos #####################
-################ c_kylos - d_uhyrys ###############
+################ c_kylos - d_quhyrys ###############
 7373 = {
 	culture = tyroshi
 	religion = weeping_lady
@@ -264,7 +266,7 @@
 	}
 }
 #################### b_kycastle ###################
-################ c_kylos - d_uhyrys ###############
+################ c_kylos - d_quhyrys ###############
 7374 = {
 	holding = castle_holding
 	7998.1.1 = {
@@ -275,7 +277,7 @@
 	}
 }
 ################### b_old_kyland ##################
-################ c_kylos - d_uhyrys ###############
+################ c_kylos - d_quhyrys ###############
 7375 = {
 	holding = church_holding
 	7998.1.1 = {
@@ -286,17 +288,17 @@
 	}
 }
 #################### b_adoorys ####################
-################ c_kylos - d_uhyrys ###############
+################ c_kylos - d_quhyrys ###############
 7376 = {
 	holding = none
 }
 #################### b_doorwood ###################
-################ c_kylos - d_uhyrys ###############
+################ c_kylos - d_quhyrys ###############
 7377 = {
 	holding = none
 }
 ################## b_adaron_gates #################
-############### c_kylos_2 - d_uhyrys ##############
+############### c_adaron - d_quhyrys ##############
 7378 = {
 	culture = tyroshi
 	religion = trios
@@ -310,17 +312,17 @@
 	}
 }
 #################### b_kymersh ####################
-############### c_kylos_2 - d_uhyrys ##############
+############### c_adaron - d_quhyrys ##############
 7379 = {
 	holding = none
 }
 ################### b_brandarosh ##################
-############### c_kylos_2 - d_uhyrys ##############
+############### c_adaron - d_quhyrys ##############
 7380 = {
 	holding = none
 }
 ################## b_brand_grains #################
-############### c_kylos_2 - d_uhyrys ##############
+############### c_adaron - d_quhyrys ##############
 7381 = {
 	holding = city_holding
 	7998.1.1 = {
@@ -331,7 +333,7 @@
 	}
 }
 #################### b_vilibosh ###################
-############## c_vilibosh - d_uhyrys ##############
+############## c_vilibosh - d_quhyrys ##############
 7382 = {
 	culture = hartalari
 	religion = trios
@@ -345,7 +347,7 @@
 	}
 }
 ################# b_villains_gate #################
-############## c_vilibosh - d_uhyrys ##############
+############## c_vilibosh - d_quhyrys ##############
 7383 = {
 	holding = castle_holding
 	7998.1.1 = {
@@ -355,18 +357,18 @@
 		}
 	}
 }
-##################### b_quiron ####################
-############## c_vilibosh - d_uhyrys ##############
+##################### b_quirron ####################
+############## c_vilibosh - d_quhyrys ##############
 7384 = {
 	holding = none
 }
 ############## b_the_vilibosh_meadows #############
-############## c_vilibosh - d_uhyrys ##############
+############## c_vilibosh - d_quhyrys ##############
 7385 = {
 	holding = none
 }
 #################### b_the_step ###################
-############# c_vilibosh_2 - d_uhyrys #############
+############# c_cape_basibosh - d_quhyrys #############
 7386 = {
 	culture = tyroshi
 	religion = trios
@@ -378,8 +380,8 @@
 		}
 	}
 }
-##################### b_rutis #####################
-############# c_vilibosh_2 - d_uhyrys #############
+##################### b_rutish #####################
+############# c_cape_basibosh - d_quhyrys #############
 7387 = {
 	holding = none
 }

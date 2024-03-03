@@ -6554,7 +6554,7 @@ Seaworth_1 = {
 	disallow_random_traits = yes
 
 	8251.1.1 = { birth = yes }
-	8260.1.1 = { employer = Uhoris_1 } # Roro Uhoris
+	8260.1.1 = { employer = Uhoris_2 } # Roro Uhoris
 	8270.1.1 = { employer = Baratheon_1 } # Placeholder V
 	# 8270.1.1 = { employer = 129174366 } # Terro Myrakis, Pentos # AGOT TODO Reenable once Pentos is added
 	8274.1.1 = { add_spouse = Seaworth_rs_1 }
@@ -7625,7 +7625,7 @@ Selmy_3 = {
 	}
 	8253.1.1 = {
 		trait = knight
-		trait = education_martial_prowess_4
+		trait = education_martial_prowess_5
 		effect = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Targaryen_122 } # Aegon V Targaryen
 			add_trait = lifestyle_blademaster
@@ -7677,7 +7677,8 @@ Selmy_3 = {
 			remove_character_flag = agot_is_kingsguard_commander 
 		}
 	}
-	8299.6.1 = { employer = Targaryen_9 } # Daenerys Targaryen
+	# AGOT TODO Enable again when we're making those dates and Dany isn't dead anymore
+	#8299.6.1 = { employer = Targaryen_9 } # Daenerys Targaryen
 }
 Selmy_4 = {
 	name = Byron
@@ -12281,6 +12282,674 @@ Spurn_54 = {
  
 	father = Spurn_44
 	mother = Spurn_rs_44
+ 
+	8299.1.1 = { birth = yes }
+}
+
+###### HOUSE RIPPING (id = dynn_Ripping)
+############################
+###
+###
+
+Ripping_5 = { 
+	name = Lymond # a lord
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_6
+ 
+	8171.1.1 = { birth = yes }
+	8229.1.1 = { death = yes }
+}
+Ripping_4 = { 
+	name = Herndon # a lord
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_5
+ 
+	8193.1.1 = { birth = yes }
+	8209.1.1 = { add_spouse = Ripping_rs_4 } 
+	8262.1.1 = { death = yes }
+}
+Ripping_rs_4 = {
+	name = Dalia
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8193.1.1 = { birth = yes }
+	8262.1.1 = { death = yes }
+}
+Ripping_27 = { 
+	name = Leona
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_4
+	mother = Ripping_rs_4
+ 
+	8210.1.1 = { birth = yes }
+	8252.1.1 = { death = yes }
+}
+Ripping_28 = { 
+	name = Greydon
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_4
+	mother = Ripping_rs_4
+ 
+	8216.1.1 = { birth = yes }
+	8218.1.1 = { death = yes }
+}
+Ripping_3 = { 
+	name = Devyn # a lord
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_4
+	mother = Ripping_rs_4
+ 
+	8223.1.1 = { birth = yes }
+	8239.1.1 = { add_spouse = Ripping_rs_3 } 
+	8272.1.1 = { death = yes }
+}
+Ripping_rs_3 = {
+	name = Yrma
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8223.1.1 = { birth = yes }
+	8272.1.1 = { death = yes }
+}
+Ripping_29 = { 
+	name = Gormon
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_4
+	mother = Ripping_rs_4
+ 
+	8224.1.1 = { birth = yes }
+	8247.1.1 = { add_spouse = Ripping_rs_29 } 
+	8291.1.1 = { death = yes }
+}
+Ripping_rs_29 = {
+	name = Alys
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8224.1.1 = { birth = yes }
+	8291.1.1 = { death = yes }
+}
+Ripping_30 = { 
+	name = Mervyn
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_4
+	mother = Ripping_rs_4
+ 
+	8226.1.1 = { birth = yes }
+	8253.1.1 = { add_spouse = Ripping_rs_30 } 
+	8295.1.1 = { death = yes }
+}
+Ripping_rs_30 = {
+	name = Sarissa
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8226.1.1 = { birth = yes }
+	8295.1.1 = { death = yes }
+}
+Ripping_24 = { 
+	name = Elenna
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_3
+	mother = Ripping_rs_3
+ 
+	8240.1.1 = { birth = yes }
+}
+Ripping_2 = { 
+	name = Emerick
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_3
+	mother = Ripping_rs_3
+ 
+	trait = twin
+
+	8250.1.1 = { birth = yes }
+	8271.1.1 = { add_spouse = Ripping_rs_2 } 
+	8278.1.1 = { death = yes }
+}
+Ripping_rs_2 = {
+	name = Jena
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8250.1.1 = { birth = yes }
+	8278.1.1 = { death = yes }
+}
+Ripping_25 = { 
+	name = Gormon
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_3
+	mother = Ripping_rs_3
+ 
+	trait = twin
+
+	8250.1.1 = { birth = yes }
+	8269.1.1 = { add_spouse = Ripping_rs_25 } 
+}
+Ripping_rs_25 = {
+	name = Myrren
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8250.1.1 = { birth = yes }
+}
+Ripping_26 = { 
+	name = Elinor
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_3
+	mother = Ripping_rs_3
+ 
+	8259.1.1 = { birth = yes }
+}
+Ripping_1 = { 
+	name = Torman # a lord
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_2
+	mother = Ripping_rs_2
+ 
+	8272.1.1 = { birth = yes }
+	8292.1.1 = { add_spouse = Ripping_rs_1 } 
+}
+Ripping_rs_1 = {
+	name = Myrena
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8272.1.1 = { birth = yes }
+}
+Ripping_22 = { 
+	name = Lollys
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_2
+	mother = Ripping_rs_2
+ 
+	8275.1.1 = { birth = yes }
+}
+Ripping_23 = { 
+	name = Elmeria
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_2
+	mother = Ripping_rs_2
+ 
+	8276.1.1 = { birth = yes }
+}
+Ripping_31 = { 
+	name = Myrren
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_1
+	mother = Ripping_rs_1
+ 
+	8294.1.1 = { birth = yes }
+}
+Ripping_32 = { 
+	name = Ronnel
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_1
+	mother = Ripping_rs_1
+ 
+	8298.1.1 = { birth = yes }
+}
+Ripping_33 = { 
+	name = Carmella
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_1
+	mother = Ripping_rs_1
+ 
+	8299.1.1 = { birth = yes }
+}
+Ripping_34 = { 
+	name = Elenda
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_25
+	mother = Ripping_rs_25
+ 
+	8273.1.1 = { birth = yes }
+}
+Ripping_35 = { 
+	name = Andrew
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_25
+	mother = Ripping_rs_25
+ 
+	8276.1.1 = { birth = yes }
+	8296.1.1 = { add_spouse = Ripping_rs_35 } 
+}
+Ripping_rs_35 = {
+	name = Floris
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8276.1.1 = { birth = yes }
+}
+Ripping_36 = { 
+	name = Sansara
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_25
+	mother = Ripping_rs_25
+ 
+	8284.1.1 = { birth = yes }
+}
+Ripping_37 = { 
+	name = Rolland
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_25
+	mother = Ripping_rs_25
+ 
+	8285.1.1 = { birth = yes }
+}
+Ripping_38 = { 
+	name = Donald
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_30
+	mother = Ripping_rs_30
+ 
+	8261.1.1 = { birth = yes }
+	8280.1.1 = { add_spouse = Ripping_rs_38 } 
+}
+Ripping_rs_38 = {
+	name = Andria
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8261.1.1 = { birth = yes }
+}
+Ripping_39 = { 
+	name = Sharon
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_30
+	mother = Ripping_rs_30
+ 
+	8262.1.1 = { birth = yes }
+	8296.1.1 = { death = yes }
+}
+Ripping_40 = { 
+	name = Rosalei
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_30
+	mother = Ripping_rs_30
+ 
+	8267.1.1 = { birth = yes }
+	8299.1.1 = { death = yes }
+}
+Ripping_41 = { 
+	name = Unwin
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_30
+	mother = Ripping_rs_30
+ 
+	8269.1.1 = { birth = yes }
+	8290.1.1 = { add_spouse = Ripping_rs_41 } 
+}
+Ripping_rs_41 = {
+	name = Brella
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8269.1.1 = { birth = yes }
+}
+Ripping_42 = { 
+	name = Robin
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_29
+	mother = Ripping_rs_29
+ 
+	8255.1.1 = { birth = yes }
+	8276.1.1 = { add_spouse = Ripping_rs_42 } 
+}
+Ripping_rs_42 = {
+	name = Belissa
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8255.1.1 = { birth = yes }
+}
+Ripping_43 = { 
+	name = Myrena
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_29
+	mother = Ripping_rs_29
+ 
+	8259.1.1 = { birth = yes }
+}
+Ripping_44 = { 
+	name = Lucelle
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_29
+	mother = Ripping_rs_29
+ 
+	8266.1.1 = { birth = yes }
+}
+Ripping_45 = { 
+	name = Greydon
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_29
+	mother = Ripping_rs_29
+ 
+	8269.1.1 = { birth = yes }
+	8296.1.1 = { add_spouse = Ripping_rs_45 } 
+}
+Ripping_rs_45 = {
+	name = Beonelle
+	female = yes
+
+	religion = the_seven_main
+	culture = marcher
+
+	8269.1.1 = { birth = yes }
+}
+Ripping_46 = { 
+	name = Eleanor
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_35
+	mother = Ripping_rs_35
+ 
+	8296.1.1 = { birth = yes }
+}
+Ripping_47 = { 
+	name = Tommard
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_35
+	mother = Ripping_rs_35
+ 
+	8298.1.1 = { birth = yes }
+}
+Ripping_48 = { 
+	name = Elenda
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_35
+	mother = Ripping_rs_35
+ 
+	8299.1.1 = { birth = yes }
+}
+Ripping_49 = { 
+	name = Torgen
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_38
+	mother = Ripping_rs_38
+ 
+	8288.1.1 = { birth = yes }
+}
+Ripping_50 = { 
+	name = Brienne
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_38
+	mother = Ripping_rs_38
+ 
+	8295.1.1 = { birth = yes }
+}
+Ripping_51 = { 
+	name = Maldon
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_38
+	mother = Ripping_rs_38
+ 
+	8299.1.1 = { birth = yes }
+}
+Ripping_52 = { 
+	name = Mylessa
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_42
+	mother = Ripping_rs_42
+ 
+	8285.1.1 = { birth = yes }
+}
+Ripping_53 = { 
+	name = Elinor
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_42
+	mother = Ripping_rs_42
+ 
+	8293.1.1 = { birth = yes }
+}
+Ripping_54 = { 
+	name = Edwyn
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_42
+	mother = Ripping_rs_42
+ 
+	8298.1.1 = { birth = yes }
+}
+Ripping_55 = { 
+	name = Yrma
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_42
+	mother = Ripping_rs_42
+ 
+	8299.1.1 = { birth = yes }
+}
+Ripping_56 = { 
+	name = Tysane
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_45
+	mother = Ripping_rs_45
+ 
+	8299.1.1 = { birth = yes }
+}
+Ripping_57 = { 
+	name = Jeyne
+	dynasty = dynn_Ripping
+	female = yes
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_41
+	mother = Ripping_rs_41
+ 
+	8298.1.1 = { birth = yes }
+}
+Ripping_58 = { 
+	name = Urrathon
+	dynasty = dynn_Ripping
+ 
+	religion = the_seven_main
+	culture = marcher
+ 
+	father = Ripping_41
+	mother = Ripping_rs_41
  
 	8299.1.1 = { birth = yes }
 }

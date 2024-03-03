@@ -2,7 +2,7 @@
 # History database id:Lannister_7
 bookmark_298_jaime_lannister={
 	type=male
-	id=27272
+	id=27289
 	age=0.320000
 	genes={ 		hair_color={ 191 7 198 28 }
  		skin_color={ 138 39 120 90 }
@@ -91,12 +91,12 @@ bookmark_298_jaime_lannister={
  		face_detail_nose_tip_def={ "nose_tip_def" 188 "nose_tip_def" 44 }
  		face_detail_temple_def={ "temple_def" 108 "temple_def" 108 }
  		expression_brow_wrinkles={ "brow_wrinkles_02" 106 "brow_wrinkles_01" 175 }
- 		expression_eye_wrinkles={ "eye_wrinkles_03" 202 "eye_wrinkles_03" 220 }
+ 		expression_eye_wrinkles={ "eye_wrinkles_03" 229 "eye_wrinkles_03" 220 }
  		expression_forehead_wrinkles={ "forehead_wrinkles_03" 62 "forehead_wrinkles_03" 62 }
  		expression_other={ "cheek_wrinkles_both_01" 85 "nose_wrinkles_01" 124 }
  		complexion={ "complexion_beauty_1" 0 "complexion_11a" 163 }
  		gene_height={ "normal_height" 144 "normal_height" 126 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 126 }
  		gene_bs_body_shape={ "body_shape_average_clothed" 255 "body_shape_average_clothed" 0 }
  		gene_bs_bust={ "bust_clothes" 20 "bust_shape_1_full" 156 }
  		gene_age={ "old_1" 148 "old_1" 148 }
@@ -136,6 +136,7 @@ bookmark_298_jaime_lannister={
  		gene_bs_eye_shape={ "eye_shape_01" 199 "eye_shape_01" 244 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		pose={ "" 255 "" 0 }
+		props_right={ "marshal_swords" 255 "no_props" 0 }
  		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "kingsguard_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 170 "all_hairstyles" 0 }
@@ -143,8 +144,8 @@ bookmark_298_jaime_lannister={
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "kingsguard_war_nobility_clothes" 78 "most_clothes" 0 }
- 		headgear={ "no_headgear" 244 "no_headgear" 0 }
+ 		clothes={ "kingsguard_war_nobility_clothes" 20 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 147 "no_headgear" 0 }
  }
 	entity={ 979141817 979141817 }
 }

@@ -483,7 +483,7 @@ Camardoon_8 = {
 	father = Camardoon_9
  
 	8146.1.1 = { birth = yes }
-	8168.1.1 = { add_spouse = Camardoon_rs_5 } 
+	8168.1.1 = { add_spouse = Camardoon_rs_8} 
 	8213.1.1 = { death = yes }
 }
 Camardoon_rs_8 = {
@@ -500,6 +500,7 @@ Camardoon_7_A = {
 	name = Kiera # Canon, Kiera of Tyrosh
 	dynasty = dynn_Camardoon
 	female = yes
+	dna = Camardoon_7_A
  
 	religion = trios
 	culture = tyroshi
@@ -508,6 +509,13 @@ Camardoon_7_A = {
 	mother = Camardoon_rs_8
  
 	8187.1.1 = { birth = yes }
+	8197.1.1 = {
+		effect = {
+			add_character_modifier = {
+				modifier = sunset_on_the_narrows_hair_dye
+			}
+		}
+	}
 	8250.1.1 = { death = yes }
 }
 Camardoon_7 = { 
@@ -10986,7 +10994,7 @@ Mercor_2 = {
  
 	8227.1.1 = { birth = yes }
 	8252.1.1 = { add_spouse = Mercor_rs_2 } 
-	8278.1.1 = { death = yes }
+	8283.1.1 = { death = yes }
 }
 Mercor_rs_2 = {
 	name = Nerys
@@ -16165,4 +16173,73 @@ Baerdoon_20 = {
  
 	8248.1.1 = { birth = yes }
 	8296.1.1 = { death = yes }
+}
+
+###### HOUSE ALTORIS (id = house_Altoris)
+###
+###
+Altoris_1 = {
+	name = Ordello # a lord
+	dynasty = dynn_Uhoris
+
+	religion = trios
+	culture = hartalari
+
+	father = Uhoris_8
+	mother = Uhoris_rs_8
+
+	trait = just
+	trait = honorable
+	trait = compassionate
+
+	8116.1.1 = { birth = yes }
+	8133.1.1 = { employer = Atuhoris_8 }
+	8196.1.1 = { death = yes }
+}
+Altoris_2 = {
+	name = Illyrio # a lord
+	dynasty_house = house_Altoris
+
+	religion = trios
+	culture = hartalari
+
+	father = Altoris_1
+
+	8143.1.1 = { birth = yes }
+	8205.1.1 = { death = yes }
+}
+Altoris_3 = {
+	name = Ordello # a lord
+	dynasty_house = house_Altoris
+
+	religion = trios
+	culture = hartalari
+
+	father = Altoris_2
+
+	8167.1.1 = { birth = yes }
+	8227.1.1 = { death = yes }
+}
+Altoris_4 = {
+	name = Izembaro # a lord
+	dynasty_house = house_Altoris
+
+	religion = trios
+	culture = hartalari
+
+	father = Altoris_3
+
+	8192.1.1 = { birth = yes }
+	8210.1.1 = { add_spouse = Altoris_rs_4 }
+	8249.1.1 = { death = yes }
+}
+Altoris_rs_4 = {
+	name = Cossoma
+	female = yes
+
+	religion = trios
+	culture = hartalari
+
+	8192.1.1 = { birth = yes }
+	8249.1.1 = { death = yes }
 }

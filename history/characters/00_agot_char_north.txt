@@ -7354,10 +7354,11 @@ Mormont_3 = {
 	8296.1.1 = {
 		employer = Mopatis_1 # Illyrio Mopatis
 	}
+	# AGOT TODO - Fix those when we get to those start dates
 	# 8298.1.1 = { employer = 300100 } # Khal Drogo
-	8298.10.10 = { # Drogo's death
-		employer = Targaryen_9 # Daenerys Targaryen
-	}
+	# 8298.10.10 = { # Drogo's death
+	#	employer = Targaryen_9 # Daenerys Targaryen
+	# }
 	8300.3.1 = {
 		# employer = 147174371 # Malaquo Maegyr; Reenable once Volantis is added
 	}

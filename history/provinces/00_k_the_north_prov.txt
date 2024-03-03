@@ -6214,12 +6214,8 @@
 #################### b_knothole ###################
 ##### c_sea_dragon_point - d_sea_dragon_point #####
 991 = {
-	holding = castle_holding
 	culture = wolfswood_clansman
 	religion = old_gods_south
-	7998.1.1 = {
-		buildings = { castle_02 }
-	}
 }
 ################ b_squirrels_ground ###############
 ##### c_sea_dragon_point - d_sea_dragon_point #####

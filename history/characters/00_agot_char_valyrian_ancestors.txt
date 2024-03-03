@@ -1141,7 +1141,7 @@ Targaryen_35 = {
 		}
 	}
 	8050.9.20 = {
-		trait = education_diplomacy_4
+		trait = education_stewardship_5
 		trait = education_martial_prowess_2
 		trait = temperate
 	}
@@ -1263,7 +1263,7 @@ Targaryen_36 = {
 		}
 	}
 	8052.6.1 = {
-		trait = education_diplomacy_4
+		trait = education_diplomacy_5
 		trait = generous
 		trait = family_first
 		trait = lifestyle_hunter
@@ -3489,7 +3489,7 @@ Targaryen_79 = {
 		# }
 	}
 	8138.6.1 = {
-		trait = education_stewardship_4
+		trait = education_stewardship_5
 		trait = knight
 		trait = authoritative
 	}
@@ -3552,7 +3552,7 @@ Targaryen_81 = {
 	religion = the_seven_main
 	culture = high_valyrian
 
-	trait = education_martial_4
+	trait = education_martial_5
 	trait = beauty_good_2
 	trait = bossy
 
@@ -3950,7 +3950,7 @@ Targaryen_85 = {
 		}
 	}
 	8166.1.1 = {
-		trait = education_stewardship_3
+		trait = education_stewardship_5
 		trait = shrewd
 	}
 	8171.1.1 = {
@@ -4137,7 +4137,7 @@ Targaryen_89 = {
 	culture = high_valyrian
 
 	trait = education_martial_2
-	trait = education_martial_prowess_4
+	trait = education_martial_prowess_5
 	trait = beauty_good_2
 	trait = strong
 	#trait = dragon_egg # AGOT TODO trait
@@ -4335,7 +4335,7 @@ Targaryen_91 = {
 		}
 	}
 	8190.1.1 = {
-		give_nickname = nick_the_good
+		give_nickname = nick_the_good_historical
 	}
 	8195.1.1 = {
 		trait = disputed_heritage
@@ -4586,7 +4586,7 @@ Targaryen_95 = {
 		trait = strategist
 	}
 	8188.11.1 = {
-		trait = education_martial_4
+		trait = education_martial_5
 		trait = unyielding_defender
 		#trait = heavy_infantry_leader # AGOT TODO trait
 		trait = organizer
@@ -4620,7 +4620,7 @@ Targaryen_96 = {
 	give_nickname = nick_bloodraven
 
 	trait = bastard
-	trait = education_intrigue_4
+	trait = education_intrigue_5
 
 	trait = albino
 
@@ -4721,7 +4721,7 @@ Targaryen_97 = {
 
 	trait = bastard
 	trait = beauty_good_3
-	trait = education_diplomacy_3
+	trait = education_diplomacy_5
 	trait = charming
 
 	disallow_random_traits = yes
@@ -5183,6 +5183,7 @@ Targaryen_108 = {
 Targaryen_109 = {
 	name = Rhaegel
 	dynasty = dynn_Targaryen
+	dna = Targaryen_109
 
 	martial = 2
 	diplomacy = 2
@@ -5483,6 +5484,7 @@ Targaryen_117 = {
 	name = Daenora
 	dynasty = dynn_Targaryen
 	female = yes
+	dna = Targaryen_117
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -5884,6 +5886,7 @@ Targaryen_124 = {
 	name = Vaella #feeble witted daughter, overlooked in succession
 	dynasty = dynn_Targaryen
 	female = yes
+	dna = Targaryen_124
 
 	#fertility = 0.1 # AGOT TODO
 
@@ -5922,6 +5925,7 @@ Targaryen_124 = {
 Targaryen_125 = {
 	name = Maegor #infant son, overlooked in succession
 	dynasty = dynn_Targaryen
+	dna = Targaryen_125
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -5980,7 +5984,6 @@ Targaryen_126 = {
 		effect = {
 			add_character_flag = do_not_assign_strong_seed
 			make_trait_inactive = black_hair
-			make_trait_inactive = brown_eyes
 		}
 	}
 	8227.8.1 = { trait = compassionate }
@@ -7986,7 +7989,7 @@ Velaryon_31 = {
 	mother = Rosby_13
 
 	trait = arrogant
-	trait = education_stewardship_4
+	trait = education_stewardship_5
 	trait = ambitious
 	trait = diligent
 	trait = gregarious
@@ -10464,7 +10467,7 @@ Kingsguard_8 = {
 		trait = just
 		trait = scholar
 		trait = celibate
-		trait = education_stewardship_4
+		trait = education_learning_5
 		effect = {
 			add_trait = lifestyle_physician
 			add_trait_xp = {

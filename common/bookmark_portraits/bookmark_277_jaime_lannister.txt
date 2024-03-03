@@ -2,7 +2,7 @@
 # History database id:Lannister_7
 bookmark_277_jaime_lannister={
 	type=boy
-	id=27272
+	id=27289
 	age=0.110000
 	genes={ 		hair_color={ 191 7 198 28 }
  		skin_color={ 138 39 120 90 }
@@ -96,7 +96,7 @@ bookmark_277_jaime_lannister={
  		expression_other={ "cheek_wrinkles_both_01" 85 "nose_wrinkles_01" 124 }
  		complexion={ "complexion_beauty_1" 0 "complexion_11a" 163 }
  		gene_height={ "normal_height" 144 "normal_height" 126 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 126 }
  		gene_bs_body_shape={ "body_shape_average_clothed" 102 "body_shape_average_clothed" 0 }
  		gene_bs_bust={ "bust_clothes" 32 "bust_shape_1_full" 156 }
  		gene_age={ "old_1" 148 "old_1" 148 }
@@ -139,7 +139,7 @@ bookmark_277_jaime_lannister={
  		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 170 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 90 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 154 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
