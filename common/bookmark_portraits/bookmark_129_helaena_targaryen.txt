@@ -2,11 +2,11 @@
 # History database id:Targaryen_66
 bookmark_129_helaena_targaryen={
 	type=female
-	id=12208
+	id=12477
 	age=0.200000
-	genes={ 		hair_color={ 2 5 9 42 }
+	genes={ 		hair_color={ 20 2 9 42 }
  		skin_color={ 20 18 26 19 }
- 		eye_color={ 242 163 63 178 }
+ 		eye_color={ 244 43 63 178 }
  		gene_chin_forward={ "chin_forward_pos" 125 "chin_forward_neg" 137 }
  		gene_chin_height={ "chin_height_pos" 133 "chin_height_neg" 130 }
  		gene_chin_width={ "chin_width_neg" 105 "chin_width_pos" 89 }
@@ -96,7 +96,7 @@ bookmark_129_helaena_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 122 "cheek_wrinkles_both_01" 0 }
  		complexion={ "complexion_20" 0 "complexion_25" 0 }
  		gene_height={ "normal_height" 135 "normal_height" 166 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 124 "body_fat_head_fat_low" 97 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 118 "body_fat_head_fat_low" 97 }
  		gene_bs_body_shape={ "body_shape_pear_half" 173 "body_shape_pear_full" 25 }
  		gene_bs_bust={ "bust_clothes" 19 "bust_clothes" 21 }
  		gene_age={ "old_2" 255 "old_2" 199 }
@@ -104,7 +104,7 @@ bookmark_129_helaena_targaryen={
  		gene_eyebrows_fullness={ "layer_2_lower_thickness" 156 "layer_2_avg_thickness" 150 }
  		gene_body_hair={ "body_hair_sparse_low_stubble" 0 "body_hair_sparse_low_stubble" 231 }
  		gene_hair_type={ "hair_wavy" 113 "hair_straight" 96 }
- 		gene_baldness={ "no_baldness" 2 "no_baldness" 255 }
+ 		gene_baldness={ "no_baldness" 255 "no_baldness" 255 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
  		eyelashes_accessory={ "normal_eyelashes" 0 "no_eyelashes" 0 }
@@ -136,15 +136,17 @@ bookmark_129_helaena_targaryen={
  		gene_bs_eye_shape={ "eye_shape_01" 0 "eye_shape_01" 0 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		pose={ "" 255 "" 0 }
- 		beards={ "western_beards_curly" 180 "no_beard" 0 }
+ 		beards={ "western_beards_straight" 88 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 182 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 186 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 88 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "byzantine_high_nobility_clothes" 2 "most_clothes" 0 }
+ 		clothes={ "byzantine_high_nobility_clothes" 83 "most_clothes" 0 }
  		headgear={ "western_high_nobility" 255 "no_headgear" 0 }
+ 		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 807438772 807438772 }
 }

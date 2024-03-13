@@ -117,7 +117,7 @@ Baratheon_2 = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Arryn_3 } # Jon Arryn
 		}
 	}
-	8269.5.1 = { trait = gregarious	}
+	8269.5.1 = { trait = gregarious }
 	8273.1.1 = {
 		trait = wrathful
 		effect = {
@@ -352,7 +352,6 @@ Baratheon_3 = {
 			add_pressed_claim = title:e_the_iron_throne #Presumptive Heir & More Conflict
 			add_pressed_claim = title:d_kings_landing
 			add_pressed_claim = title:c_kings_landing
-			add_character_flag = malding
 		}
 	}
 	8284.6.2 = {

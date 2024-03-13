@@ -2,7 +2,7 @@
 # History database id:Darklyn_47
 bookmark_277_denys_darklyn={
 	type=male
-	id=25513
+	id=26503
 	age=0.200000
 	genes={ 		hair_color={ 138 229 138 229 }
  		skin_color={ 101 22 101 22 }
@@ -96,15 +96,15 @@ bookmark_277_denys_darklyn={
  		expression_other={ "cheek_wrinkles_both_01" 138 "cheek_wrinkles_both_01" 138 }
  		complexion={ "complexion_5" 156 "complexion_5" 156 }
  		gene_height={ "normal_height" 132 "normal_height" 132 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 131 "body_fat_head_fat_low" 107 }
- 		gene_bs_body_shape={ "body_shape_average" 153 "body_shape_average" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 121 "body_fat_head_fat_low" 107 }
+ 		gene_bs_body_shape={ "body_shape_average" 51 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 71 "bust_clothes" 112 }
  		gene_age={ "old_3" 2 "old_3" 2 }
  		gene_eyebrows_shape={ "avg_spacing_avg_thickness" 206 "avg_spacing_avg_thickness" 206 }
  		gene_eyebrows_fullness={ "layer_2_high_thickness" 202 "layer_2_high_thickness" 202 }
  		gene_body_hair={ "body_hair_sparse" 92 "body_hair_sparse" 92 }
  		gene_hair_type={ "hair_straight" 255 "hair_straight" 255 }
- 		gene_baldness={ "no_baldness" 127 "no_baldness" 127 }
+ 		gene_baldness={ "no_baldness" 255 "no_baldness" 255 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
  		eyelashes_accessory={ "normal_eyelashes" 0 "no_eyelashes" 0 }
@@ -142,9 +142,11 @@ bookmark_277_denys_darklyn={
  		legwear={ "agot_hidden_legwear" 255 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "agot_western_high_nobility_clothes_male_pants" 2 "most_clothes" 0 }
- 		headgear={ "no_headgear" 246 "no_headgear" 0 }
+ 		clothes={ "agot_western_high_nobility_clothes_male_pants" 243 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 53 "no_headgear" 0 }
+ 		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 979141817 979141817 }
 }

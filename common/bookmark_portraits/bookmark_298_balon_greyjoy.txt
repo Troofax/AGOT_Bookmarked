@@ -2,7 +2,7 @@
 # History database id:Greyjoy_5
 bookmark_298_balon_greyjoy={
 	type=male
-	id=25518
+	id=26521
 	age=0.410000
 	genes={ 		hair_color={ 20 249 8 242 }
  		skin_color={ 8 8 87 20 }
@@ -96,7 +96,7 @@ bookmark_298_balon_greyjoy={
  		expression_other={ "cheek_wrinkles_both_01" 0 "cheek_wrinkles_both_01" 126 }
  		complexion={ "complexion_5" 158 "complexion_5" 158 }
  		gene_height={ "normal_height" 165 "normal_height" 129 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 122 "body_fat_head_fat_low" 119 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 121 "body_fat_head_fat_low" 119 }
  		gene_bs_body_shape={ "body_shape_average" 255 "body_shape_average" 51 }
  		gene_bs_bust={ "bust_clothes" 45 "bust_clothes" 35 }
  		gene_age={ "old_1" 82 "old_1" 82 }
@@ -104,7 +104,7 @@ bookmark_298_balon_greyjoy={
  		gene_eyebrows_fullness={ "layer_2_lower_thickness" 216 "layer_2_high_thickness" 162 }
  		gene_body_hair={ "body_hair_sparse_low_stubble" 107 "body_hair_sparse_low_stubble" 107 }
  		gene_hair_type={ "hair_wavy" 179 "hair_wavy" 179 }
- 		gene_baldness={ "no_baldness" 127 "no_baldness" 127 }
+ 		gene_baldness={ "no_baldness" 255 "no_baldness" 255 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
  		eyelashes_accessory={ "normal_eyelashes" 0 "no_eyelashes" 0 }
@@ -136,17 +136,18 @@ bookmark_298_balon_greyjoy={
  		gene_bs_eye_shape={ "eye_shape_01" 0 "eye_shape_01" 0 }
  		hair_aging={ "vanilla_hair_aging" 0 "vanilla_hair_aging" 0 }
  		pose={ "" 255 "" 0 }
-		props_right={ "marshal_swords" 255 "no_props" 0 }
  		beards={ "no_beard" 0 "no_beard" 0 }
- 		cloaks={ "fp1_cloak" 62 "no_cloak" 0 }
- 		gene_bs_cloak={ "cloak" 255 "no_cloak" 0 }
+ 		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 154 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 62 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 98 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "fp1_high_nobility_clothes" 154 "most_clothes" 0 }
- 		headgear={ "greyjoy_crown" 94 "no_headgear" 0 }
+ 		clothes={ "northern_high_nobility_clothes" 106 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 60 "no_headgear" 0 }
+ 		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
+		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
 	entity={ 979141817 979141817 }
 }

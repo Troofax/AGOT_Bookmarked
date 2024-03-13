@@ -5,10 +5,40 @@
 ############################
 ### Fire and Blood
 ###
+Targaryen_13_A = { #Aenar's unnamed father for him and his siblings
+	name = Maegor
+	dynasty = dynn_Targaryen
+	# AGOT TODO dna = agot_dna_Targaryen_13_A
+
+	religion = valyrian
+	culture = high_valyrian
+
+	trait = dragon_rider
+
+	7821.1.1 = { birth = yes }
+	7844.1.1 = { add_spouse = Targaryen_13_B }
+	7873.1.1 = { death = yes }
+}
+Targaryen_13_B = { #Aenar's unnamed mother for him and his siblings
+	name = Gael
+	dynasty = dynn_Targaryen
+	female = yes
+	# AGOT TODO dna = agot_dna_Targaryen_13_B
+
+	religion = valyrian
+	culture = high_valyrian
+
+	7828.1.1 = { birth = yes }
+	7889.1.1 = { death = yes }
+}
+### Issue of Maegor
 Targaryen_13 = {
 	name = Aenar # Canon, AKA: Aenar The Exile
 	dynasty = dynn_Targaryen
 	# AGOT TODO dna = agot_dna_Targaryen_13
+
+	father = Targaryen_13_A
+	mother = Targaryen_13_B
 
 	martial = 2
 	diplomacy = 2
@@ -28,21 +58,42 @@ Targaryen_13 = {
 	give_nickname = nick_the_exile
 
 	7846.1.1 = { birth = yes }
-	7866.1.1 = { add_spouse = Targaryen_rs_1 }
+	7866.1.1 = { add_spouse = Targaryen_13_C }
+	7866.2.1 = { add_spouse = Orthys_17_B }
 	7900.1.1 = { death = yes }
 }
-Targaryen_rs_1 = {
+Targaryen_13_C = {
 	name = Rhaella
+dynasty = dynn_Targaryen
 	female = yes
-	# AGOT TODO dna = agot_dna_Targaryen_rs_1
+	# AGOT TODO dna = agot_dna_Targaryen_13_C
+
+	father = Targaryen_13_A
+	mother = Targaryen_13_B
 
 	religion = valyrian
 	culture = high_valyrian
 
-	7846.1.1 = { birth = yes }
-	7900.1.1 = { death = yes }
+	7848.1.1 = { birth = yes }
+	7894.1.1 = { death = yes }
 }
+Targaryen_13_D = {
+	name = Valarr
+	dynasty = dynn_Targaryen
+	# AGOT TODO dna = agot_dna_Targaryen_13_D
 
+	father = Targaryen_13_A
+	mother = Targaryen_13_B
+
+	religion = valyrian
+	culture = high_valyrian
+
+	trait = dragon_rider
+
+	7851.1.1 = { birth = yes }
+	7880.1.1 = { trait = widowed }
+	7907.1.1 = { death = yes }
+}
 ### Issue of Aenar
 Targaryen_14 = {
 	name = Gaemon # Canon, AKA: Gaemon the Glorious
@@ -62,7 +113,7 @@ Targaryen_14 = {
 	trait = arrogant
 
 	father = Targaryen_13
-	mother = Targaryen_rs_1
+	mother = Targaryen_13_C
 
 	7868.1.1 = { birth = yes }
 	7888.1.1 = {
@@ -85,7 +136,7 @@ Targaryen_15 = {
 	trait = dragon_dreams
 
 	father = Targaryen_13
-	mother = Targaryen_rs_1
+	mother = Orthys_17_B
 
 	7870.1.1 = {
 		birth = yes
@@ -114,7 +165,21 @@ Targaryen_15 = {
 	}
 	7930.1.1 = { death = yes }
 }
+### Issue of Valarr
+Targaryen_13_E = {
+	name = Baela
+	dynasty = dynn_Targaryen
+	female = yes
+	# AGOT TODO dna = agot_dna_Targaryen_13_E
 
+	father = Targaryen_13_D
+
+	religion = valyrian
+	culture = high_valyrian
+
+	7879.1.1 = { birth = yes }
+	7932.1.1 = { death = yes }
+}
 ### Issue of Gaemon
 Targaryen_16 = {
 	name = Aegon # Canon
@@ -3186,8 +3251,6 @@ Targaryen_75 = {
 	mother = Targaryen_63 # Rhaenyra Targaryen
 	father = Velaryon_35 # Laenor Velaryon
 
-	#disallow_random_traits = yes AGOT TODO - stopping the missing childhood trait for 0.1
-
 	trait = intellect_good_1
 	trait = beauty_good_1
 	trait = strong
@@ -3196,12 +3259,9 @@ Targaryen_75 = {
 	trait = disputed_heritage
 	trait = charming
 
-	disallow_random_traits = yes
-
 	8114.10.1 = { #Aged 15 in the dance
 		birth = yes
 		effect = {
-			#add_character_flag = high_valyrian # AGOT TODO
 			set_real_father = character:Strong_30 # Harwin Strong
 			# AGOT Bookmarked Added
 			add_character_flag = do_not_assign_strong_seed
@@ -3222,7 +3282,7 @@ Targaryen_75 = {
 		trait = gregarious
 	}
 	8129.4.1 = {
-		effect = { set_relation_lover = character:Stark_88 } # Sara Snow
+		effect = { set_relation_crush = character:Stark_88 } # Sara Snow
 	}
 	8130.1.1 = {
 		death = {
@@ -3248,12 +3308,9 @@ Targaryen_76 = {
 	trait = disputed_heritage
 	trait = curious
 
-	disallow_random_traits = yes
-
 	8115.11.1 = { #Aged 14 in the dance
 		birth = yes
 		effect = {
-			#add_character_flag = high_valyrian # AGOT TODO
 			set_real_father = character:Strong_30 # Harwin Strong
 			# AGOT Bookmarked Added
 			add_character_flag = do_not_assign_strong_seed
@@ -3297,8 +3354,6 @@ Targaryen_77 = {
 	mother = Targaryen_63 # Rhaenyra Targaryen
 	father = Velaryon_35 # Laenor Velaryon
 
-	disallow_random_traits = yes
-
 	trait = beauty_good_1
 	trait = strong
 	trait = disputed_heritage
@@ -3307,7 +3362,6 @@ Targaryen_77 = {
 	8116.9.1 = { #Aged 13 in the dance
 		birth = yes
 		effect = {
-			#add_character_flag = high_valyrian # AGOT TODO
 			set_real_father = character:Strong_30 # Harwin Strong
 			# AGOT Bookmarked Added
 			add_character_flag = do_not_assign_strong_seed
@@ -4159,11 +4213,6 @@ Targaryen_89 = {
 	8149.12.1 = {
 		trait = honorable
 	}
-	8152.6.1 = {
-		effect = {
-			set_relation_lover = character:Targaryen_90 # Naerys Targaryen
-		}
-	}
 	8152.12.1 = {
 		#trait = cavalry_leader # AGOT TODO trait
 		trait = knight
@@ -4298,7 +4347,6 @@ Targaryen_91 = {
 		birth = yes
 		effect = {
 			#add_character_modifier = name = abomination_of_incest # AGOT TODO
-			set_real_father = character:Targaryen_89 # Aemon Targaryen
 			add_character_flag = has_scripted_appearance
 		}
 	}
@@ -8402,35 +8450,33 @@ Velaryon_43 = {
 	religion = the_seven_main
 	culture = high_valyrian
 
-	father = Velaryon_31
 	mother = Velaryon_rs_8
 
 	trait = bastard
 
 	trait = beauty_good_1
 	trait = brave
-	trait = content
-	trait = honorable
 	trait = just
-	trait = honest
+	trait = stubborn
+	trait = loyal
+
+	disallow_random_traits = yes
 
 	8114.1.1 = {
 		birth = yes
-		#effect = {
-			#set_real_father = character:Velaryon_31 # Corlys Velaryon
-		#}
+		effect = {
+			set_real_father = character:Velaryon_31 # Corlys Velaryon
+		}
 	}
 	8129.2.12 = { #acknowledged into House Velaryon by Corlys
 		employer = Targaryen_63
-		trait = arrogant
 		trait = diligent
 		trait = dragon_rider # Seasmoke
-		#trait = disputed_heritage # Disabled for compatibility
-		effect = { add_trait_force_tooltip = legitimized_bastard }
 		dynasty = dynn_Velaryon
-		remove_trait = bastard
 		effect = {
-			#father = character:Velaryon_35 # Laenor Velaryon # AGOT TODO
+			remove_trait = bastard
+			add_trait = legitimized_bastard
+			set_father = character:Velaryon_35 # Laenor Velaryon
 		}
 	}
 	8130.1.1 = {
@@ -8458,7 +8504,6 @@ Velaryon_44 = {
 	religion = the_seven_main
 	culture = high_valyrian
 
-	father = Velaryon_31
 	mother = Velaryon_rs_8
 
 	trait = beauty_good_1
@@ -8469,9 +8514,9 @@ Velaryon_44 = {
 
 	8115.6.1 = {
 		birth = yes
-		#effect = {
-			#set_real_father = character:Velaryon_31 # Corlys Velaryon
-		#}
+		effect = {
+			set_real_father = character:Velaryon_31 # Corlys Velaryon
+		}
 	}
 	8122.8.1 = {
 		trait = arrogant
@@ -8486,11 +8531,10 @@ Velaryon_44 = {
 	8129.2.12 = { #acknowledged into House Velaryon by Corlys
 		employer = Targaryen_63
 		trait = scarred
-		#trait = disputed_heritage # Disabled for compatibility
-		effect = { add_trait_force_tooltip = legitimized_bastard }
 		dynasty = dynn_Velaryon
-		remove_trait = bastard
 		effect = {
+			remove_trait = bastard
+			add_trait = legitimized_bastard
 			set_father = character:Velaryon_35 # Laenor Velaryon
 		}
 	}
@@ -9762,7 +9806,8 @@ Scales_8 = {
 
 	father = Scales_7
 
-	7900.1.1 = { birth = yes }
+	7898.1.1 = { birth = yes }
+	7916.1.1 = { add_spouse = Targaryen_18 }
 	7950.1.1 = { death = yes }
 }
 Scales_9 = {
@@ -9773,6 +9818,7 @@ Scales_9 = {
 	culture = westerosi_valyrian
 
 	father = Scales_8
+	mother = Targaryen_18
 
 	7925.1.1 = { birth = yes }
 	7975.1.1 = { death = yes }
@@ -9991,7 +10037,6 @@ Tall_1 = {
 	trait = education_martial_2
 	trait = physique_good_3
 	trait = strong
-	trait = intellect_bad_1
 	trait = rowdy
 	
 	disallow_random_traits = yes

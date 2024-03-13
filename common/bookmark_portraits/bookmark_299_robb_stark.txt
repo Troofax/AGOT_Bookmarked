@@ -2,7 +2,7 @@
 # History database id:Stark_6
 bookmark_299_robb_stark={
 	type=boy
-	id=29968
+	id=31402
 	age=0.160000
 	genes={ 		hair_color={ 242 153 244 159 }
  		skin_color={ 40 20 47 18 }
@@ -96,15 +96,15 @@ bookmark_299_robb_stark={
  		expression_other={ "cheek_wrinkles_right_01" 94 "cheek_wrinkles_right_01" 2 }
  		complexion={ "complexion_16" 123 "complexion_11" 0 }
  		gene_height={ "normal_height" 141 "normal_height" 134 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 114 "body_fat_head_fat_low" 117 }
- 		gene_bs_body_shape={ "body_shape_pear_half" 224 "body_shape_average_clothed" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 117 "body_fat_head_fat_low" 117 }
+ 		gene_bs_body_shape={ "body_shape_pear_half" 255 "body_shape_average_clothed" 0 }
  		gene_bs_bust={ "bust_clothes" 38 "bust_clothes" 48 }
  		gene_age={ "old_2" 44 "old_2" 44 }
  		gene_eyebrows_shape={ "avg_spacing_avg_thickness" 209 "avg_spacing_lower_thickness" 194 }
  		gene_eyebrows_fullness={ "layer_2_low_thickness" 255 "layer_2_low_thickness" 255 }
  		gene_body_hair={ "body_hair_sparse_low_stubble" 67 "body_hair_sparse_low_stubble" 142 }
  		gene_hair_type={ "hair_curly" 152 "hair_straight" 207 }
- 		gene_baldness={ "no_baldness" 2 "no_baldness" 127 }
+ 		gene_baldness={ "no_baldness" 255 "no_baldness" 255 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
  		eyelashes_accessory={ "normal_eyelashes" 0 "no_eyelashes" 0 }
@@ -136,16 +136,18 @@ bookmark_299_robb_stark={
  		gene_bs_eye_shape={ "eye_shape_01" 199 "eye_shape_01" 199 }
  		hair_aging={ "vanilla_hair_aging" 0 "vanilla_hair_aging" 0 }
  		pose={ "" 255 "" 0 }
-		props_right={ "marshal_swords" 255 "no_props" 0 }
  		beards={ "no_beard" 0 "no_beard" 0 }
- 		cloaks={ "western_royalty" 3 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 130 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 44 "all_legwear" 0 }
+ 		cloaks={ "agot_coa_cloaks_fp1_dynamic_stark" 108 "no_cloak" 0 }
+ 		hairstyles={ "all_hairstyles" 134 "all_hairstyles" 0 }
+ 		legwear={ "western_common_legwear" 7 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "northern_high_nobility_clothes" 244 "most_clothes" 0 }
- 		headgear={ "crown_of_winter" 245 "no_headgear" 0 }
+ 		clothes={ "northern_high_nobility_clothes" 76 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 2 "no_headgear" 0 }
+ 		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
+		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
 	entity={ 3942081117 3942081117 }
 }

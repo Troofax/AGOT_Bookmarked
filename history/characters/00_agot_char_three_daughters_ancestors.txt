@@ -5816,6 +5816,17 @@ Orthys_18 = {
 	culture = lyseni
  
 	father = Orthys_19
+
+	7826.1.1 = { birth = yes }
+	7842.1.1 = { add_spouse = Orthys_rs_18 }
+	7861.1.1 = { death = yes }
+}
+Orthys_rs_18 = { 
+	name = Ashaella
+	female = yes
+ 
+	religion = rhllor
+	culture = lyseni
  
 	7826.1.1 = { birth = yes }
 	7861.1.1 = { death = yes }
@@ -5828,9 +5839,24 @@ Orthys_17 = {
 	culture = lyseni
  
 	father = Orthys_18
+	mother = Orthys_rs_18
  
 	7842.1.1 = { birth = yes }
 	7893.1.1 = { death = yes }
+}
+Orthys_17_B = { 
+	name = Maegelle
+	dynasty = dynn_Orthys
+	female = yes
+ 
+	religion = rhllor
+	culture = lyseni
+ 
+	father = Orthys_18
+	mother = Orthys_rs_18
+ 
+	7850.1.1 = { birth = yes }
+	7888.1.1 = { death = yes }
 }
 Orthys_16 = { 
 	name = Nisario # a lord

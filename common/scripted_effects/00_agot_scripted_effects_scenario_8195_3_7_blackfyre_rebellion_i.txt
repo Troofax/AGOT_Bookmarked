@@ -51,51 +51,6 @@ agot_8195_3_7_br_i_scenario_setup = {
 		}
 	}
 
-	if = { # fire only if you used ruler designer; else there is no war
-		limit = { title:d_the_blackwater_rush.holder = character:Targaryen_94 }
-
-		title:d_the_blackwater_rush.holder = {
-			start_war = {
-				cb = claim_cb
-				target = title:e_the_iron_throne.holder
-				target_title = title:e_the_iron_throne
-				target_title = title:d_kings_landing
-				target_title = title:c_kings_landing
-				target_title = title:k_dragonstone
-				target_title = title:d_dragonstone
-				target_title = title:c_dragonstone
-			}
-			every_character_war = {
-				add_attacker = title:d_yronwood.holder
-				add_attacker = title:d_harrenhal.holder
-				add_attacker = title:d_the_sisters.holder
-				add_attacker = title:d_goldenfields.holder
-				add_attacker = title:d_palemarch.holder
-				add_attacker = title:d_sunnyvale.holder
-				add_attacker = title:c_standfast.holder
-				add_attacker = title:c_whisper_point.holder
-				add_attacker = title:d_castamere.holder
-				add_attacker = title:d_crakehall.holder
-			}
-		}
-	}
-	if = { # fire only if you used ruler designer; else there is no war
-		limit = { title:e_the_iron_throne.holder = character:Targaryen_91 }
-
-		title:e_the_iron_throne.holder = {
-			add_character_flag = { flag = mw_init_event_blocker days = 2 }
-			every_character_war = {
-				add_defender = title:k_the_reach.holder
-				add_defender = title:k_dorne.holder
-				add_defender = title:k_the_riverlands.holder
-				add_defender = title:k_the_reach.holder
-				add_defender = title:k_the_vale.holder
-				add_defender = title:k_the_westerlands.holder
-				add_defender = title:d_vellum_coast.holder
-			}
-		}
-	}
-
 	title:e_the_iron_throne.holder = { save_scope_as = historical_setup }
 
 	### SET UP REBEL LEADERS
@@ -298,4 +253,50 @@ agot_8195_3_7_br_i_scenario_setup = {
 	#	}
 	#}
 	#######
+
+	# AGOT Bookmarked Added
+	if = {
+		limit = { title:d_the_blackwater_rush.holder = character:Targaryen_94 }
+
+		title:d_the_blackwater_rush.holder = {
+			start_war = {
+				cb = claim_cb
+				target = title:e_the_iron_throne.holder
+				target_title = title:e_the_iron_throne
+				target_title = title:d_kings_landing
+				target_title = title:c_kings_landing
+				target_title = title:k_dragonstone
+				target_title = title:d_dragonstone
+				target_title = title:c_dragonstone
+			}
+			every_character_war = {
+				add_attacker = title:d_yronwood.holder
+				add_attacker = title:d_harrenhal.holder
+				add_attacker = title:d_the_sisters.holder
+				add_attacker = title:d_goldenfields.holder
+				add_attacker = title:d_palemarch.holder
+				add_attacker = title:d_sunnyvale.holder
+				add_attacker = title:c_standfast.holder
+				add_attacker = title:c_whisper_point.holder
+				add_attacker = title:d_castamere.holder
+				add_attacker = title:d_crakehall.holder
+			}
+		}
+	}
+	if = {
+		limit = { title:e_the_iron_throne.holder = character:Targaryen_91 }
+
+		title:e_the_iron_throne.holder = {
+			add_character_flag = { flag = mw_init_event_blocker days = 2 }
+			every_character_war = {
+				add_defender = title:k_the_reach.holder
+				add_defender = title:k_dorne.holder
+				add_defender = title:k_the_riverlands.holder
+				add_defender = title:k_the_reach.holder
+				add_defender = title:k_the_vale.holder
+				add_defender = title:k_the_westerlands.holder
+				add_defender = title:d_vellum_coast.holder
+			}
+		}
+	}
 }

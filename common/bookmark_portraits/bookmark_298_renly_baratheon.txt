@@ -2,7 +2,7 @@
 # History database id:Baratheon_4
 bookmark_298_renly_baratheon={
 	type=male
-	id=29007
+	id=30354
 	age=0.210000
 	genes={ 		hair_color={ 20 249 0 244 }
  		skin_color={ 55 49 62 46 }
@@ -96,7 +96,7 @@ bookmark_298_renly_baratheon={
  		expression_other={ "nose_wrinkles_01" 134 "nose_wrinkles_01" 0 }
  		complexion={ "complexion_beauty_1" 0 "complexion_12" 72 }
  		gene_height={ "normal_height" 165 "normal_height" 140 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 120 "body_fat_head_fat_full" 131 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 129 "body_fat_head_fat_full" 131 }
  		gene_bs_body_shape={ "body_shape_average" 142 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 80 "bust_clothes" 35 }
  		gene_age={ "old_2" 218 "old_1" 25 }
@@ -104,7 +104,7 @@ bookmark_298_renly_baratheon={
  		gene_eyebrows_fullness={ "layer_2_low_thickness" 255 "layer_2_avg_thickness" 236 }
  		gene_body_hair={ "body_hair_sparse_low_stubble" 0 "body_hair_dense_low_stubble" 164 }
  		gene_hair_type={ "hair_straight" 175 "hair_wavy" 175 }
- 		gene_baldness={ "no_baldness" 127 "no_baldness" 127 }
+ 		gene_baldness={ "no_baldness" 255 "no_baldness" 255 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
  		eyelashes_accessory={ "normal_eyelashes" 0 "no_eyelashes" 0 }
@@ -136,16 +136,18 @@ bookmark_298_renly_baratheon={
  		gene_bs_eye_shape={ "eye_shape_01" 0 "eye_shape_01" 0 }
  		hair_aging={ "vanilla_hair_aging" 0 "vanilla_hair_aging" 0 }
  		pose={ "" 255 "" 0 }
-		props_right={ "marshal_swords" 255 "no_props" 0 }
  		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 98 "all_hairstyles" 0 }
- 		legwear={ "agot_hidden_legwear" 255 "all_legwear" 0 }
+ 		hairstyles={ "all_hairstyles" 110 "all_hairstyles" 0 }
+ 		legwear={ "western_common_legwear" 10 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "ep2_western_era3_high_nobility_clothes" 16 "most_clothes" 0 }
- 		headgear={ "renly_crown" 108 "no_headgear" 0 }
+ 		clothes={ "ep2_western_era3_high_nobility_clothes" 55 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 6 "no_headgear" 0 }
+ 		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
+		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
 	entity={ 979141817 979141817 }
 }
