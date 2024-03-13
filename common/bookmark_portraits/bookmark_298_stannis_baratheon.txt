@@ -2,7 +2,7 @@
 # History database id:Baratheon_3
 bookmark_298_stannis_baratheon={
 	type=male
-	id=26897
+	id=28008
 	age=0.340000
 	genes={ 		hair_color={ 20 249 0 244 }
  		skin_color={ 10 20 73 42 }
@@ -96,7 +96,7 @@ bookmark_298_stannis_baratheon={
  		expression_other={ "nose_wrinkles_01" 0 "nose_wrinkles_01" 134 }
  		complexion={ "complexion_9" 0 "complexion_8" 72 }
  		gene_height={ "normal_height" 175 "normal_height" 150 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 120 "body_fat_head_fat_full" 131 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 129 "body_fat_head_fat_full" 131 }
  		gene_bs_body_shape={ "body_shape_average" 255 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 22 "bust_shape_3_full" 165 }
  		gene_age={ "old_2" 218 "old_1" 25 }
@@ -104,7 +104,7 @@ bookmark_298_stannis_baratheon={
  		gene_eyebrows_fullness={ "layer_2_avg_thickness" 255 "layer_2_avg_thickness" 236 }
  		gene_body_hair={ "body_hair_dense_low_stubble" 83 "body_hair_sparse_low_stubble" 212 }
  		gene_hair_type={ "hair_wavy" 175 "hair_wavy" 175 }
- 		gene_baldness={ "no_baldness" 127 "no_baldness" 127 }
+ 		gene_baldness={ "no_baldness" 255 "no_baldness" 255 }
  		eye_accessory={ "normal_eyes" 255 "normal_eyes" 255 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
  		eyelashes_accessory={ "normal_eyelashes" 255 "normal_eyelashes" 255 }
@@ -136,16 +136,18 @@ bookmark_298_stannis_baratheon={
  		gene_bs_eye_shape={ "eye_shape_01" 0 "eye_shape_01" 0 }
  		hair_aging={ "vanilla_hair_aging" 0 "vanilla_hair_aging" 0 }
  		pose={ "" 255 "" 0 }
-		props_right={ "marshal_swords" 255 "no_props" 0 }
- 		beards={ "all_beards" 69 "no_beard" 0 }
+ 		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "agot_special_scripted_hairstyles" 62 "all_hairstyles" 0 }
- 		legwear={ "agot_hidden_legwear" 255 "all_legwear" 0 }
+ 		hairstyles={ "all_hairstyles" 35 "all_hairstyles" 0 }
+ 		legwear={ "western_common_legwear" 224 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "ep2_western_era3_high_nobility_clothes" 163 "most_clothes" 0 }
- 		headgear={ "stannis_crown" 255 "no_headgear" 0 }
+ 		clothes={ "ep2_western_era3_high_nobility_clothes" 203 "most_clothes" 0 }
+ 		headgear={ "agot_crowns" 51 "no_headgear" 0 }
+ 		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
+		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
 	entity={ 3942081117 3942081117 }
 }

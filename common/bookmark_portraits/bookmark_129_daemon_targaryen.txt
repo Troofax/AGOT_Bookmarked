@@ -2,11 +2,11 @@
 # History database id:Targaryen_61
 bookmark_129_daemon_targaryen={
 	type=male
-	id=10610
+	id=10854
 	age=0.480000
 	genes={ 		hair_color={ 2 5 28 226 }
  		skin_color={ 19 22 22 22 }
- 		eye_color={ 242 51 120 174 }
+ 		eye_color={ 242 201 120 174 }
  		gene_chin_forward={ "chin_forward_neg" 124 "chin_forward_neg" 124 }
  		gene_chin_height={ "chin_height_pos" 133 "chin_height_pos" 133 }
  		gene_chin_width={ "chin_width_pos" 89 "chin_width_pos" 89 }
@@ -96,8 +96,8 @@ bookmark_129_daemon_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 0 "cheek_wrinkles_both_01" 0 }
  		complexion={ "complexion_beauty_1" 0 "complexion_25" 0 }
  		gene_height={ "normal_height" 148 "normal_height" 163 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 119 "body_fat_head_fat_low" 114 }
- 		gene_bs_body_shape={ "body_shape_average" 244 "body_shape_average" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 110 "body_fat_head_fat_low" 114 }
+ 		gene_bs_body_shape={ "body_shape_average" 224 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 12 "bust_clothes" 34 }
  		gene_age={ "old_2" 199 "old_beauty_1" 1 }
  		gene_eyebrows_shape={ "avg_spacing_avg_thickness" 192 "avg_spacing_avg_thickness" 192 }
@@ -136,16 +136,18 @@ bookmark_129_daemon_targaryen={
  		gene_bs_eye_shape={ "eye_shape_01" 12 "eye_shape_01" 12 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		pose={ "" 255 "" 0 }
-		props_right={ "agot_artifact_weapon_dark_sister" 255 "no_props" 0 }
  		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 238 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 22 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 230 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "byzantine_high_nobility_clothes" 178 "most_clothes" 0 }
- 		headgear={ "no_headgear" 95 "no_headgear" 0 }
+ 		clothes={ "byzantine_high_nobility_clothes" 51 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 147 "no_headgear" 0 }
+ 		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
+		props_right={ "agot_artifact_weapon_dark_sister" 255 "no_props" 0 }
  }
 	entity={ 979141817 979141817 }
 }

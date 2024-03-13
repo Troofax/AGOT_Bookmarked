@@ -2,7 +2,7 @@
 # History database id:Lannister_7
 bookmark_277_jaime_lannister={
 	type=boy
-	id=27289
+	id=28422
 	age=0.110000
 	genes={ 		hair_color={ 191 7 198 28 }
  		skin_color={ 138 39 120 90 }
@@ -96,7 +96,7 @@ bookmark_277_jaime_lannister={
  		expression_other={ "cheek_wrinkles_both_01" 85 "nose_wrinkles_01" 124 }
  		complexion={ "complexion_beauty_1" 0 "complexion_11a" 163 }
  		gene_height={ "normal_height" 144 "normal_height" 126 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 129 "body_fat_head_fat_low" 126 }
  		gene_bs_body_shape={ "body_shape_average_clothed" 102 "body_shape_average_clothed" 0 }
  		gene_bs_bust={ "bust_clothes" 32 "bust_shape_1_full" 156 }
  		gene_age={ "old_1" 148 "old_1" 148 }
@@ -104,7 +104,7 @@ bookmark_277_jaime_lannister={
  		gene_eyebrows_fullness={ "layer_2_low_thickness" 172 "layer_2_low_thickness" 172 }
  		gene_body_hair={ "body_hair_sparse_low_stubble" 88 "body_hair_sparse_low_stubble" 220 }
  		gene_hair_type={ "hair_straight" 161 "hair_straight" 161 }
- 		gene_baldness={ "no_baldness" 127 "no_baldness" 127 }
+ 		gene_baldness={ "no_baldness" 255 "no_baldness" 255 }
  		eye_accessory={ "normal_eyes" 91 "normal_eyes" 91 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
  		eyelashes_accessory={ "normal_eyelashes" 6 "normal_eyelashes" 6 }
@@ -139,12 +139,14 @@ bookmark_277_jaime_lannister={
  		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 170 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 154 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 109 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "western_commoner_clothes" 90 "most_clothes" 0 }
+ 		clothes={ "western_commoner_clothes" 109 "most_clothes" 0 }
  		headgear={ "no_headgear" 0 "no_headgear" 0 }
+ 		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 616600735 3478549277 }
 }
