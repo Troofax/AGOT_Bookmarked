@@ -400,7 +400,7 @@ agot_on_game_start = {
 			agot_add_building_if_possible = { BUILDING = peat_quarries_01 }
 			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
-		province:2062 = {
+		province:2063 = {
 			agot_add_building_if_possible = { BUILDING = peat_quarries_01 }
 			agot_add_building_if_possible = { BUILDING = watermills_01 }
 		}
@@ -3046,11 +3046,20 @@ agot_barony_ruins = {
 		title:b_ruins = {
 			set_coa = ruins_coa
 		}
+		title:b_ruins.title_province = {
+			add_province_modifier = agot_ruin_disease_modifier
+		}
 		title:b_more_ruin = {
 			set_coa = ruins_coa
 		}
+		title:b_more_ruin.title_province = {
+			add_province_modifier = agot_ruin_disease_modifier
+		}
 		title:b_the_most_ruin = {
 			set_coa = ruins_coa
+		}
+		title:b_the_most_ruin.title_province = {
+			add_province_modifier = agot_ruin_disease_modifier
 		}
 		if = {
 			limit = {

@@ -96,3 +96,11 @@ agotbm_sheepstealer = {
 	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
 	parent = men_at_arms
 }
+
+###########################
+# Easter Egg Dragon Units #
+###########################
+agotbm_crumbs = {
+	texture = "gfx/interface/icons/regimenttypes/agotbm_dragons.dds"
+	parent = men_at_arms
+}

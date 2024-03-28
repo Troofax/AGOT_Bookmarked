@@ -83,7 +83,7 @@ l_english:
  ######################
  # Easter Egg Dragons #
  ######################
- agotbm_cookie_unit:0 "Crumbs, the Allfather's Dragon"
+ agotbm_cookie_unit:0 "Crumbs"
  agotbm_cookie_unit_flavor:0 "Baked for 20 minutes until golden brown."
 
 
@@ -116,7 +116,7 @@ l_english:
  agotbm_seasmoke:0 "[agotbm_seasmoke|E]"
  agotbm_sheepstealer:0 "[agotbm_sheepstealer|E]"
 
-
+ agotbm_cookie:0 "[agotbm_crumbs|E]"
 
 
 
@@ -189,4 +189,4 @@ l_english:
  # Easter Egg Dragon Concepts #
  ##############################
  game_concept_agotbm_crumbs:0 "Crumbs, the Allfather's Bake"
- game_concept_agotbm_crumbs_desc:0 "Crumbs was hatched in an oven of the Crossroads Inn. Golden brown with chocolate colored patches, he is a swift and fierce dragon. Crumbs is about the size you would expect for a baked good, however his head was far too large for his body."
+ game_concept_agotbm_crumbs_desc:0 "Crumbs was hatched in an oven of the Crossroads Inn. Golden brown with chocolate colored patches, he is a swift and fierce dragon. Crumbs is about the size you would expect for a baked good, however his head is far too large for his body."

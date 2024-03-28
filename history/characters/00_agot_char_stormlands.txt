@@ -602,6 +602,8 @@ Baratheon_5 = {
 		effect = {
 			add_character_flag = flag_secret_bastard
 			set_real_father = character:Lannister_7 # Jaime Lannister
+			make_trait_inactive = emerald_eyes
+			make_trait_inactive = gold_hair
 			add_character_flag = do_not_assign_strong_seed # AGOT Bookmarked Added
 		}
 	}
