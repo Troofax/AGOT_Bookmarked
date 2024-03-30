@@ -805,11 +805,11 @@ Targaryen_31 = {
 	}
 	8038.1.1 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_castellan
 			}
-		} 
+		}
 	}
 	8039.10.1 = {
 		#employer = 101300526 # Jaqen Thelis, Pentos # AGOT TODO reenable once Pentos is added
@@ -1613,8 +1613,8 @@ Targaryen_45 = { #3rd
 	}
 	8090.1.1 = {
 		effect = { # Master of Laws
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_chancellor
 			}
 		}
@@ -1655,13 +1655,13 @@ Targaryen_46 = { #4th
 		trait = dragon_rider #Vhagar
 		trait = knight
 		effect = {
-			agot_knighted_char_history_effect = { KNIGHT = character:Redwyne_31 } # Rickard Redwyne 
+			agot_knighted_char_history_effect = { KNIGHT = character:Redwyne_31 } # Rickard Redwyne
 		}
 	}
 	8075.1.1 = {
 		add_spouse = Targaryen_47 # Alyssa Targaryen
 		effect = {
-			if = { 
+			if = {
 				limit = { character:Targaryen_47 = { is_alive = yes } }
 				set_relation_lover = character:Targaryen_47 # Alyssa Targaryen
 			}
@@ -1693,11 +1693,11 @@ Targaryen_46 = { #4th
 	}
 	8099.9.1 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_castellan
 			}
-		} 
+		}
 	}
 	8101.9.1 = { # Council of succession after his death, favouring Viserys, his son over Rhaenys his niece.
 		trait = ill
@@ -1721,13 +1721,7 @@ Targaryen_47 = { #5th
 
 	disallow_random_traits = yes
 
-	8060.6.1 = {
-		birth = yes
-		effect = {
-			set_culture = culture:high_valyrian
-			#add_character_modifier = name = abomination_of_incest # AGOT TODO
-		}
-	}
+	8060.6.1 = { birth = yes }
 	8064.1.1 = {
 		trait = diligent
 	}
@@ -1919,23 +1913,23 @@ Targaryen_51 = { #9th
 	8079.1.1 = { trait = lustful }
 	8082.1.1 = {
 		effect = {
-			if = { 
+			if = {
 				limit = { character:Beesbury_22 = { is_alive = yes } }
 				set_relation_lover = character:Beesbury_22 # Braxton Beesbury
 			}
-			if = { 
+			if = {
 				limit = { character:Mooton_27 = { is_alive = yes } }
 				set_relation_lover = character:Mooton_27 # Jonah Mooton
 			}
-			if = { 
+			if = {
 				limit = { character:Connington_27 = { is_alive = yes } }
 				set_relation_lover = character:Connington_27 # Roy Connington
 			}
-			if = { 
+			if = {
 				limit = { character:Turnberry_18 = { is_alive = yes } }
 				set_relation_friend = character:Turnberry_18 # Alys Turnberry
 			}
-			if = { 
+			if = {
 				limit = { character:Moore_24 = { is_alive = yes } }
 				set_relation_friend = character:Moore_24 # Perianne Moore
 			}
@@ -1945,15 +1939,15 @@ Targaryen_51 = { #9th
 	8084.1.1 = {
 		effect = {
 			add_trait = silent_sister
-			if = { 
+			if = {
 				limit = { character:Beesbury_22 = { is_alive = yes } }
 				remove_relation_lover = character:Beesbury_22 # Braxton Beesbury
 			}
-			if = { 
+			if = {
 				limit = { character:Mooton_27 = { is_alive = yes } }
 				remove_relation_lover = character:Mooton_27 # Jonah Mooton
 			}
-			if = { 
+			if = {
 				limit = { character:Connington_27 = { is_alive = yes } }
 				remove_relation_lover = character:Connington_27 # Roy Connington
 			}
@@ -2192,15 +2186,7 @@ Targaryen_59 = {
 	trait = education_diplomacy_2
 	trait = beauty_good_2
 
-	8074.1.1 = {
-		birth = yes
-		# effect = { # AGOT TODO
-			# set_culture = culture:high_valyrian
-			# add_character_modifier = {
-				# name = grandchild_of_incest
-			# }
-		# }
-	}
+	8074.1.1 = { birth = yes }
 	8087.1.1 = {
 		trait = dragon_rider # Meleys
 	}
@@ -2377,17 +2363,17 @@ Targaryen_61 = {
 				limit = { character:Royce_37 = { is_alive = yes } }
 				character:Royce_37 = { # Rhea Royce
 					set_relation_rival = {
-						target = ROOT 
+						target = ROOT
 						reason = rival_bad_chemistry
-					}		
-				}				
+					}
+				}
 			}
 		}
 	}
 	8103.1.1 = {
 		effect = { # Master of Coin
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_steward
 			}
 			add_pressed_claim = title:e_the_iron_throne
@@ -2398,15 +2384,15 @@ Targaryen_61 = {
 	}
 	8104.1.1 = {
 		effect = { # Master of Laws
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_chancellor
 			}
 			character:Hightower_90 = { # Otto Hightower
 				set_relation_rival = {
-					target = ROOT 
+					target = ROOT
 					reason = rival_called_out_sin
-				}		
+				}
 			}
 		}
 	}
@@ -2508,7 +2494,7 @@ Targaryen_63 = {
 				target = character:Hightower_97 # Alicent Hightower
 				reason = rival_heir_wants_throne # Most probable, but debatable
 			}
-			if = { 
+			if = {
 				limit = { character:Cole_11 = { is_alive = yes } }
 				set_relation_lover = character:Cole_11 # Criston Cole
 				add_trait = comfort_eater
@@ -2523,7 +2509,7 @@ Targaryen_63 = {
 				set_relation_lover = character:Strong_30 # Harwin Strong
 				add_trait = comfort_eater
 			}
-			if = { 
+			if = {
 				limit = { character:Cole_11 = { is_alive = yes } }
 				remove_relation_lover = character:Cole_11 # Criston Cole
 				set_relation_rival = {
@@ -2538,18 +2524,18 @@ Targaryen_63 = {
 	8120.3.1 = {
 		add_spouse = Targaryen_61 # Daemon Targaryen
 		effect = {
-			if = { 
+			if = {
 				limit = { character:Strong_30 = { is_alive = yes } }
 				remove_relation_lover = character:Strong_30 # Harwin Strong
 			}
-			if = { 
+			if = {
 				limit = { character:Targaryen_67 = { is_alive = yes } }
 				set_relation_rival = {
 					target = character:Targaryen_67 # Aemond Targaryen
 					reason = rival_inter_heir_rivalry
 				}
 			}
-			if = { 
+			if = {
 				limit = { character:Targaryen_65 = { is_alive = yes } }
 				set_relation_rival = {
 					target = character:Targaryen_65 # Aegon II Targaryen
@@ -3552,11 +3538,11 @@ Targaryen_79 = {
 	}
 	8140.1.1 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_castellan
 			}
-		} 
+		}
 	}
 	8145.1.1 = {
 		trait = widowed
@@ -4012,7 +3998,7 @@ Targaryen_85 = {
 	}
 	8173.1.1 = {
 		effect = {
-			if = { 
+			if = {
 				limit = { character:Velaryon_44 = { is_alive = yes } }
 				set_relation_lover = character:Velaryon_44 # Alyn Velaryon
 			}
@@ -4031,8 +4017,8 @@ Targaryen_85 = {
 	8185.1.1 = {
 		employer = Targaryen_91
 		# effect = { # Wed Daeron's Master of Coin, effectively had position
-			# agot_appoint_as_councillor_for_castle_history_effect = { 
-				# CASTLE = title:e_the_iron_throne 
+			# agot_appoint_as_councillor_for_castle_history_effect = {
+				# CASTLE = title:e_the_iron_throne
 				# POSITION = councillor_steward
 			# }
 		# }
@@ -4236,7 +4222,7 @@ Targaryen_89 = {
 		}
 	}
 	8157.1.1 = {
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_81 } # Baelor I Targaryen
 		}
 	}
@@ -4336,7 +4322,7 @@ Targaryen_91 = {
 	trait = diligent
 	trait = compassionate
 	trait = scholar
-	
+
 	trait = education_diplomacy_4
 	trait = education_martial_prowess_1
 
@@ -4389,7 +4375,7 @@ Targaryen_91 = {
 		trait = disputed_heritage
 	}
 	8195.3.7 = {
-		effect = {			
+		effect = {
 			set_relation_rival = {
 				target = character:Targaryen_94 # Daemon Blackfyre
 				reason = rival_claimed_my_title
@@ -4705,8 +4691,8 @@ Targaryen_96 = {
 	}
 	8195.3.7 = {
 		effect = { # Master of Whisperers
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_spymaster
 			}
 		}
@@ -4726,11 +4712,11 @@ Targaryen_96 = {
 	}
 	8209.6.1 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_castellan
 			}
-		} 
+		}
 	}
 	8211.1.1 = {
 		employer = Targaryen_108
@@ -4779,12 +4765,7 @@ Targaryen_97 = {
 	father = Targaryen_88
 	#mother = 600000047 # AGOT TODO Reenable once Essos added
 
-	8181.1.1 = {
-		birth = yes
-		effect = {
-			set_culture = culture:high_valyrian
-		}
-	}
+	8181.1.1 = { birth = yes }
 	8184.1.1 = {
 		remove_trait = bastard
 		effect = { add_trait_force_tooltip = legitimized_bastard }
@@ -5086,15 +5067,7 @@ Targaryen_107 = {
 	father = Targaryen_91
 	mother = Martell_79
 
-	8170.1.1 = {
-		birth = yes
-		effect = {
-			set_culture = culture:high_valyrian
-			#add_character_modifier = { # AGOT TODO
-			#	name = grandchild_of_incest
-			#}
-		}
-	}
+	8170.1.1 = { birth = yes }
 	8176.8.1 = {
 		trait = generous
 	}
@@ -5134,11 +5107,11 @@ Targaryen_107 = {
 	}
 	8196.6.1 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_castellan
 			}
-		} 
+		}
 	}
 	8209.2.1 = {
 		# Died of a head wound taken in Dunk's trial by combat
@@ -5386,10 +5359,7 @@ Targaryen_111 = {
 	father = Targaryen_107
 	mother = Dondarrion_39
 
-	8190.1.1 = {
-		birth = yes
-		effect = { set_culture = culture:high_valyrian }
-	}
+	8190.1.1 = { birth = yes }
 	8199.1.1 = {
 		give_nickname = nick_the_young_prince
 	}
@@ -5399,11 +5369,11 @@ Targaryen_111 = {
 	}
 	8209.2.1 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_castellan
 			}
-		} 
+		}
 	}
 	8209.6.1 = {
 		# Died in the Great Spring Sickness
@@ -5571,10 +5541,7 @@ Targaryen_118 = {
 
 	8190.1.1 = {
 		birth = yes
-		effect = {
-			set_culture = culture:high_valyrian
-			add_character_flag = potential_targ_lunatic
-		}
+		effect = { add_character_flag = potential_targ_lunatic }
 	}
 	8196.8.1 = {
 		trait = compassionate
@@ -5775,7 +5742,7 @@ Targaryen_121 = {
 	}
 }
 Targaryen_122 = {
-	name = Aegon # AKA: Aegon V the Unlikely, Egg 
+	name = Aegon # AKA: Aegon V the Unlikely, Egg
 	dynasty = dynn_Targaryen
 	dna = Targaryen_122
 
@@ -5826,10 +5793,10 @@ Targaryen_122 = {
 				limit = { character:Targaryen_120 = { is_alive = yes } }
 				set_relation_friend = character:Targaryen_120 # Aemon Targaryen
 			}
-			set_relation_best_friend = { 
-				target = character:Tall_1 # Duncan the Tall  
-				reason = best_friend_bonded_at_tourney 
-			} 
+			set_relation_best_friend = {
+				target = character:Tall_1 # Duncan the Tall
+				reason = best_friend_bonded_at_tourney
+			}
 			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Tall_1 } # Duncan the Tall
 		}
 	}
@@ -5841,7 +5808,7 @@ Targaryen_122 = {
 		}
 	}
 	8217.1.1 = {
-		effect = { 
+		effect = {
 			if = {
 				limit = { character:Blackwood_87 = { is_alive = yes } }
 				set_relation_lover = character:Blackwood_87 # Married for love
@@ -6019,7 +5986,7 @@ Targaryen_126 = {
 
 	father = Targaryen_122
 	mother = Blackwood_87
-	
+
 	trait = education_martial_2
 	trait = charming
 
@@ -6075,11 +6042,11 @@ Targaryen_126 = {
 	}
 	8255.1.1 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_castellan
 			}
-		} 
+		}
 	}
 	8259.6.1 = {
 		death = {
@@ -6100,7 +6067,7 @@ Targaryen_rs_2 = {
 	trait = eccentric
 	trait = beauty_good_2
 
-	prowess = 3 #Death to girlboss Jenny 
+	prowess = 3 #Death to girlboss Jenny
 
 	8222.1.1 = {
 		birth = yes
@@ -6226,7 +6193,7 @@ Targaryen_129 = {
 	}
 	8244.1.1 = {
 		trait = knight
-		trait = education_martial_prowess_3 
+		trait = education_martial_prowess_3
 		effect = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Tyrell_1 } # Denys Tyrell
 		}
@@ -6416,7 +6383,7 @@ Blackfyre_5 = {
 	trait = beauty_good_2
 	trait = dragon_dreams #had a vision about Dunkan the Tall becoming a kingsguard.
 	trait = charming
-	
+
 	disallow_random_traits = yes
 
 	8188.1.1 = {
@@ -6938,7 +6905,7 @@ Blackfyre_14 = {
 
 	martial = 8
 	prowess = 6
-	fertility = 1.8 #Compensate for Ugly/Disfigured so he's not an instant game over 
+	fertility = 1.8 #Compensate for Ugly/Disfigured so he's not an instant game over
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -7025,9 +6992,9 @@ Blackfyre_14 = {
 	# }
 	8252.11.11 = {
 		trait = kinslayer_2
-		effect = { 
-			add_dread = massive_dread_gain 
-			add_prestige_level = 1 
+		effect = {
+			add_dread = massive_dread_gain
+			add_prestige_level = 1
 		}
 	}
 	8258.11.1 = {
@@ -7093,9 +7060,9 @@ Blackfyre_14 = {
 	}
 }
 
-### Issue of Maelys 
-Blackfyre_15 = { #Maenar Blackfyre, semi-canon from unpublished work 
-	name = Maenar 
+### Issue of Maelys
+Blackfyre_15 = { #Maenar Blackfyre, semi-canon from unpublished work
+	name = Maenar
 	dynasty_house = house_Blackfyre
 	dna = Blackfyre_15
 
@@ -7106,10 +7073,10 @@ Blackfyre_15 = { #Maenar Blackfyre, semi-canon from unpublished work
 	trait = physique_good_1
 	trait = rowdy
 
-	father = Blackfyre_14 
+	father = Blackfyre_14
 
 	8255.1.1 = {
-		birth = yes 
+		birth = yes
 	}
 	8259.1.1 = {
 		death = {
@@ -7459,35 +7426,58 @@ Truefyre_1 = { #pretender during the dance
 Velaryon_6 = {
 	name = Jacaerys # a Lord
 	dynasty = dynn_Velaryon
+	dna = Velaryon_6
 
 	religion = valyrian
 	culture = high_valyrian
 
 	7828.1.1 = { birth = yes }
+	7853.1.1 = { add_spouse = Ormollen_18_B }
 	7891.1.1 = { death = yes }
 }
 Velaryon_7 = {
 	name = Vaemond # a Lord
 	dynasty = dynn_Velaryon
+	dna = Velaryon_7
 
 	religion = valyrian
 	culture = high_valyrian
 
 	father = Velaryon_6
+	mother = Ormollen_18_B
 
 	7860.1.1 = { birth = yes }
+	7882.1.1 = { add_spouse = Velaryon_7_B }
 	7912.1.1 = { death = yes }
+}
+Velaryon_7_B = {
+	name = Daenerys
+	dynasty = dynn_Velaryon
+	female = yes
+	# dna = Velaryon_7_B
+
+	religion = valyrian
+	culture = high_valyrian
+
+	father = Velaryon_6
+	mother = Ormollen_18_B
+
+	7863.1.1 = { birth = yes }
+	7920.1.1 = { death = yes }
 }
 Velaryon_8 = {
 	name = Daemion # a Lord
 	dynasty = dynn_Velaryon
+	dna = Velaryon_8
 
 	religion = valyrian
 	culture = high_valyrian
 
 	father = Velaryon_7
+	mother = Velaryon_7_B
 
 	7882.1.1 = { birth = yes }
+	7901.1.1 = { add_spouse = Celtigar_10_A }
 	7941.1.1 = { death = yes }
 }
 Velaryon_9 = {
@@ -7498,8 +7488,10 @@ Velaryon_9 = {
 	culture = high_valyrian
 
 	father = Velaryon_8
+	mother = Celtigar_10_A
 
 	7909.1.1 = { birth = yes }
+	7928.1.1 = { add_spouse = Scales_8_B }
 	7968.1.1 = { death = yes }
 }
 Velaryon_10 = {
@@ -7512,6 +7504,7 @@ Velaryon_10 = {
 	culture = high_valyrian
 
 	father = Velaryon_9
+	mother = Scales_8_B
 
 	7930.1.1 = { birth = yes }
 	7946.1.1 = { add_spouse = Targaryen_25 } # Lyaerys Targaryen
@@ -7540,8 +7533,8 @@ Velaryon_11 = {
 	7971.1.1 = { add_spouse = Celtigar_14 }
 	7998.2.1 = {
 		effect = { # Master of Ships
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_admiral
 			}
 		}
@@ -7596,8 +7589,8 @@ Velaryon_13 = {
 	7992.1.1 = { add_spouse = Massey_26 } # Alarra Massey
 	7998.5.9 = {
 		effect = { # Master of Ships
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_admiral
 			}
 		}
@@ -7658,13 +7651,13 @@ Velaryon_15 = {
 		trait = knight # Knighted when Aegon was anointed King perhaps.
 	}
 	8010.1.1 = {
-		effect = { 
+		effect = {
 			agot_lc_kingsguard_char_history_effect = { KING = character:Targaryen_27 } # Aegon I Targaryen
 		}
 	}
-	8030.1.1 = { 
+	8030.1.1 = {
 		trait = kingsguard
-		death = yes 
+		death = yes
 	}
 }
 Velaryon_16 = {
@@ -7760,12 +7753,12 @@ Velaryon_20 = {
 		#trait = inspiring_leader # AGOT TODO trait
 		trait = knight
 	}
-	8015.1.1 = { add_spouse = Velaryon_rs_4 }
+	8017.1.1 = { add_spouse = Darklyn_12_A }
 	8042.1.1 = {
 		# AGOT TODO: Direct vassalage to Iron Throne
 		# effect = { # Master of Ships
-			# agot_appoint_as_councillor_for_castle_history_effect = { 
-				# CASTLE = title:e_the_iron_throne 
+			# agot_appoint_as_councillor_for_castle_history_effect = {
+				# CASTLE = title:e_the_iron_throne
 				# POSITION = councillor_admiral
 			# }
 		# }
@@ -7773,11 +7766,11 @@ Velaryon_20 = {
 	8050.1.1 = {
 		# AGOT TODO: Direct vassalage to Iron Throne
 		# effect = { # Hand of the King
-			# agot_appoint_as_councillor_for_castle_history_effect = { 
-				# CASTLE = title:e_the_iron_throne 
+			# agot_appoint_as_councillor_for_castle_history_effect = {
+				# CASTLE = title:e_the_iron_throne
 				# POSITION = councillor_castellan
 			# }
-		# } 
+		# }
 	}
 	8086.1.1 = { death = yes }
 }
@@ -7794,20 +7787,9 @@ Velaryon_21 = {
 	mother = Massey_26 # Alarra Massey
 
 	8002.1.1 = { birth = yes }
-	8020.1.1 = {
-		add_spouse = Velaryon_rs_3
-	}
+	8028.1.1 = { add_spouse = Stokeworth_15_B }
+	8030.1.1 = { trait = widowed }
 	8055.1.1 = { death = yes }
-}
-Velaryon_rs_3 = {
-	name = Maegelle
-	female = yes
-
-	religion = the_seven_main
-	culture = high_valyrian
-
-	8006.1.1 = { birth = yes }
-	8070.1.1 = { death = yes }
 }
 Velaryon_22 = {
 	name = Lianna # Canon, friend of princess Rhaena
@@ -7818,7 +7800,7 @@ Velaryon_22 = {
 	culture = high_valyrian
 
 	father = Velaryon_21
-	mother = Velaryon_rs_3
+	mother = Stokeworth_15_B
 
 	8030.1.1 = { birth = yes }
 	8054.9.1 = {
@@ -7842,16 +7824,6 @@ Velaryon_23 = {
 
 	8003.1.1 = { birth = yes }
 	8062.1.1 = { death = yes }
-}
-Velaryon_rs_4 = {
-	name = Daella
-	female = yes
-
-	religion = the_seven_main
-	culture = high_valyrian
-
-	7998.1.1 = { birth = yes }
-	8080.1.1 = { death = yes }
 }
 Velaryon_24 = {
 	name = Alyssa # Canon, married Aenys Targaryen; married Rogar Baratheon
@@ -7901,7 +7873,7 @@ Velaryon_25 = {
 	culture = high_valyrian
 
 	father = Velaryon_20
-	mother = Velaryon_rs_4
+	mother = Darklyn_12_A
 
 	8017.1.1 = { birth = yes }
 	8033.1.1 = {
@@ -7919,7 +7891,7 @@ Velaryon_26 = {
 	culture = high_valyrian
 
 	father = Velaryon_20
-	mother = Velaryon_rs_4
+	mother = Darklyn_12_A
 
 	8019.1.1 = { birth = yes }
 	8035.1.1 = {
@@ -7939,7 +7911,7 @@ Velaryon_27 = {
 	culture = high_valyrian
 
 	father = Velaryon_20
-	mother = Velaryon_rs_4
+	mother = Darklyn_12_A
 
 	8020.1.1 = { birth = yes }
 	8036.1.1 = {
@@ -7957,7 +7929,7 @@ Velaryon_28 = {
 	culture = high_valyrian
 
 	father = Velaryon_20
-	mother = Velaryon_rs_4
+	mother = Darklyn_12_A
 
 	8021.1.1 = { birth = yes }
 	8055.1.1 = { employer = Estermont_19 }
@@ -7975,7 +7947,7 @@ Velaryon_29 = {
 	culture = high_valyrian
 
 	father = Velaryon_20
-	mother = Velaryon_rs_4
+	mother = Darklyn_12_A
 
 	8023.1.1 = { birth = yes }
 	8059.2.1 = {
@@ -7992,7 +7964,7 @@ Velaryon_30 = {
 	culture = high_valyrian
 
 	father = Velaryon_20
-	mother = Velaryon_rs_4
+	mother = Darklyn_12_A
 
 	8024.1.1 = { birth = yes }
 	8059.2.1 = {
@@ -8009,7 +7981,7 @@ Velaryon_36 = {
 	culture = high_valyrian
 
 	father = Velaryon_20
-	mother = Velaryon_rs_4
+	mother = Darklyn_12_A
 
 	8026.1.1 = { birth = yes }
 	8078.1.1 = { death = yes }
@@ -8071,11 +8043,11 @@ Velaryon_31 = {
 	}
 	8129.4.1 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:d_dragonstone 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:d_dragonstone
 				POSITION = councillor_castellan
 			}
-		} 
+		}
 	}
 	8130.5.3 = { # Imprisoned in the Dance, his men left Rhaenyra
 		effect = {
@@ -8108,17 +8080,7 @@ Velaryon_32 = {
 	mother = Rosby_13
 
 	8056.1.1 = { birth = yes }
-	8077.1.1 = { add_spouse = Velaryon_rs_5 } # Elaena Velaryon
-	8115.1.1 = { death = yes }
-}
-Velaryon_rs_5 = {
-	name = Jeyne # not a Lord,
-	female = yes
-
-	religion = the_seven_main
-	culture = crownlander
-
-	8061.1.1 = { birth = yes }
+	8078.1.1 = { add_spouse = Tarth_27_B } # Elaena Velaryon
 	8115.1.1 = { death = yes }
 }
 Velaryon_33 = {
@@ -8134,18 +8096,8 @@ Velaryon_33 = {
 	mother = Rosby_13
 
 	8057.3.1 = { birth = yes }
-	8080.1.1 = { add_spouse = Velaryon_rs_6 }
+	8080.1.1 = { add_spouse = Bar_Emmon_19_B }
 	8110.7.1 = { death = { death_reason = death_accident } }
-}
-Velaryon_rs_6 = {
-	name = Alysanne # not a Lord,
-	female = yes
-
-	religion = the_seven_main
-	culture = crownlander
-
-	8060.1.1 = { birth = yes }
-	8120.1.1 = { death = yes }
 }
 
 ### Issue of Corlys The Sea Snake
@@ -8245,31 +8197,19 @@ Velaryon_37 = {
 	trait = rude
 
 	father = Velaryon_32 # Luceon Velaryon
-	mother = Velaryon_rs_5
+	mother = Tarth_27_B
 
 	8078.1.1 = { birth = yes }
 	8094.1.1 = {
 		trait = education_intrigue_2
 		trait = knight
 	}
-	8096.1.1 = { add_spouse = Velaryon_rs_7 }
+	8096.1.1 = { add_spouse = Quince_21_A }
 	8127.5.4 = {
 		death = {
 			death_reason = death_execution # For accusing Rhaenyra of adultery, head cut off, body fed to Syrax
 			killer = Targaryen_63 # Rhaenyra Targaryen
 		}
-	}
-}
-Velaryon_rs_7 = {
-	name = Daena # married Vaemond Velaryon
-	female = yes
-
-	religion = the_seven_main
-	culture = high_valyrian
-
-	8079.1.1 = { birth = yes }
-	8128.1.1 = {
-		death = { death_reason = death_accident }
 	}
 }
 
@@ -8284,7 +8224,7 @@ Velaryon_38 = {
 	culture = high_valyrian
 
 	father = Velaryon_33 # Daemion Velaryon
-	mother = Velaryon_rs_6
+	mother = Bar_Emmon_19_B
 
 	trait = education_martial_1
 	trait = arrogant
@@ -8312,7 +8252,7 @@ Velaryon_39 = {
 	culture = high_valyrian
 
 	father = Velaryon_33 # Daemion Velaryon
-	mother = Velaryon_rs_6
+	mother = Bar_Emmon_19_B
 
 	trait = education_intrigue_1
 	trait = wrathful
@@ -8341,7 +8281,7 @@ Velaryon_40 = {
 	culture = high_valyrian
 
 	father = Velaryon_33 # Daemion Velaryon
-	mother = Velaryon_rs_6
+	mother = Bar_Emmon_19_B
 
 	trait = education_martial_1
 	trait = wrathful
@@ -8369,7 +8309,7 @@ Velaryon_41 = {
 	culture = high_valyrian
 
 	father = Velaryon_33 # Daemion Velaryon
-	mother = Velaryon_rs_6
+	mother = Bar_Emmon_19_B
 
 	trait = education_intrigue_1
 	trait = ambitious
@@ -8399,7 +8339,7 @@ Velaryon_42 = {
 	culture = high_valyrian
 
 	father = Velaryon_33 # Daemion Velaryon
-	mother = Velaryon_rs_6
+	mother = Bar_Emmon_19_B
 
 	trait = education_intrigue_2
 	trait = ambitious
@@ -8550,8 +8490,8 @@ Velaryon_44 = {
 	8139.1.1 = { trait = lustful }
 	8157.1.1 = {
 		effect = { # Master of Ships
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_admiral
 			}
 		}
@@ -8590,6 +8530,7 @@ Velaryon_45 = {
 	8191.1.1 = {
 		trait = knight
 	}
+	8195.1.1 = { add_spouse = Cargyll_21_C }
 	8235.1.1 = { death = yes }
 }
 Velaryon_46 = {
@@ -8626,7 +8567,7 @@ Velaryon_47 = {
 	culture = high_valyrian
 
 	father = Velaryon_37 # Vaemond Velaryon
-	mother = Velaryon_rs_7
+	mother = Quince_21_A
 
 	trait = education_diplomacy_2
 	trait = arrogant
@@ -8673,14 +8614,14 @@ Velaryon_49 = {
 		trait = brave
 	}
 	8163.4.29 = {
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_82 } # Baelor I Targaryen
 		}
 		employer = Targaryen_82 # Baelor I Targaryen
 	}
-	8178.1.1 = { 
+	8178.1.1 = {
 		trait = kingsguard
-		death = yes 
+		death = yes
 	}
 }
 Velaryon_50 = {
@@ -8693,7 +8634,7 @@ Velaryon_50 = {
 	culture = high_valyrian
 
 	father = Velaryon_37 # Vaemond Velaryon
-	mother = Velaryon_rs_7
+	mother = Quince_21_A
 
 	trait = education_martial_2
 	trait = arrogant
@@ -8737,6 +8678,7 @@ Velaryon_52 = {
 	mother = Targaryen_69
 
 	8137.1.1 = { birth = yes }
+	8160.1.1 = { add_spouse = Rosby_30_B }
 	8197.1.1 = { death= { death_reason = death_battle } } # Blackfyre Rebellions.
 }
 
@@ -8773,11 +8715,13 @@ Velaryon_54 = {
 	culture = high_valyrian
 
 	father = Velaryon_52
+	mother = Rosby_30_B
 
 	8170.1.1 = { birth = yes }
 	8190.1.1 = {
 		trait = knight
 	}
+	8201.1.1 = { add_spouse = Staunton_35_B }
 	8235.1.1 = { death = yes }
 }
 Velaryon_55 = {
@@ -8788,6 +8732,7 @@ Velaryon_55 = {
 	culture = high_valyrian
 
 	father = Velaryon_52
+	mother = Rosby_30_B
 
 	8173.1.1 = { birth = yes }
 	8193.1.1 = {
@@ -8809,24 +8754,13 @@ Velaryon_56 = {
 	culture = high_valyrian
 
 	father = Velaryon_54
+	mother = Staunton_35_B
 
 	8203.1.1 = { birth = yes }
 	8221.1.1 = {
 		trait = knight
 	}
-	8224.1.1 = { add_spouse = Velaryon_p_1 }
-	8258.1.1 = { death = yes }
-}
-Velaryon_p_1 = {
-	name = Jeyne # placeholder wife
-	female = yes
-
-	dna = Velaryon_p_1
-
-	religion = the_seven_main
-	culture = westerosi_valyrian
-
-	8203.1.1 = { birth = yes }
+	8224.1.1 = { add_spouse = Blackberry_9_B }
 	8258.1.1 = { death = yes }
 }
 ### Issue of Jacaerys
@@ -8839,26 +8773,14 @@ Velaryon_57 = {
 	culture = high_valyrian
 
 	father = Velaryon_56
-	mother = Velaryon_p_1
+	mother = Blackberry_9_B
 
 	8225.1.1 = { birth = yes }
-	8243.1.1 = { add_spouse = Velaryon_p_2 }
+	8243.1.1 = { add_spouse = Grafton_1_A }
 	8245.1.1 = {
 		trait = knight
 	}
 	8271.1.1 = { death = yes }
-}
-Velaryon_p_2 = {
-	name = Jeyne # placeholder wife
-	female = yes
-
-	dna = Velaryon_p_2
-
-	religion = the_seven_main
-	culture = westerosi_valyrian
-
-	8225.1.1 = { birth = yes }
-	8282.1.1 = { death = yes }
 }
 
 ###### HOUSE CELTIGAR (id = dynn_Celtigar)
@@ -8898,6 +8820,19 @@ Celtigar_10 = {
 
 	7880.1.1 = { birth = yes }
 	7957.1.1 = { death = yes }
+}
+Celtigar_10_A = {
+	name = Jenette
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = valyrian
+	culture = westerosi_valyrian
+
+	father = Celtigar_9
+
+	7883.1.1 = { birth = yes }
+	7938.1.1 = { death = yes }
 }
 Celtigar_11 = {
 	name = Crispian # a lord
@@ -8987,8 +8922,8 @@ Celtigar_15 = {
 	7969.1.1 = { add_spouse = Celtigar_rs_3 }
 	7998.2.1 = {
 		effect = { # Master of Coin
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_steward
 			}
 		}
@@ -9029,8 +8964,8 @@ Celtigar_16 = {
 	8009.1.1 = {
 		# AGOT TODO: Direct vassalage to Iron Throne
 		# effect = { # Hand of the King
-			# agot_appoint_as_councillor_for_castle_history_effect = { 
-				# CASTLE = title:e_the_iron_throne 
+			# agot_appoint_as_councillor_for_castle_history_effect = {
+				# CASTLE = title:e_the_iron_throne
 				# POSITION = councillor_castellan
 			# }
 		# }
@@ -9081,17 +9016,17 @@ Celtigar_18 = {
 	8044.6.1 = {
 		# AGOT TODO: Direct vassalage to Iron Throne
 		# effect = { # Hand of the King
-			# agot_appoint_as_councillor_for_castle_history_effect = { 
-				# CASTLE = title:e_the_iron_throne 
+			# agot_appoint_as_councillor_for_castle_history_effect = {
+				# CASTLE = title:e_the_iron_throne
 				# POSITION = councillor_castellan
 			# }
-		# } 
+		# }
 	}
 	8048.3.7 = {
 		# AGOT TODO: Direct vassalage to Iron Throne
 		# effect = { # Master of Coin
-			# agot_appoint_as_councillor_for_castle_history_effect = { 
-				# CASTLE = title:e_the_iron_throne 
+			# agot_appoint_as_councillor_for_castle_history_effect = {
+				# CASTLE = title:e_the_iron_throne
 				# POSITION = councillor_steward
 			# }
 		# }
@@ -9810,6 +9745,19 @@ Scales_8 = {
 	7916.1.1 = { add_spouse = Targaryen_18 }
 	7950.1.1 = { death = yes }
 }
+Scales_8_B = {
+	name = Shiera
+	dynasty = dynn_Scales
+	female = yes
+
+	religion = valyrian
+	culture = westerosi_valyrian
+
+	father = Scales_7
+
+	7905.1.1 = { birth = yes }
+	7939.1.1 = { death = yes }
+}
 Scales_9 = {
 	name = Aurion # a lord
 	dynasty = dynn_Scales
@@ -9887,8 +9835,8 @@ Scales_20 = {
 	}
 	8048.1.1 = {
 		effect = { # Master-at-arms at Dragonstone
-			agot_appoint_as_court_position_for_castle_history_effect = { 
-				CASTLE = title:c_dragonstone 
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_dragonstone
 				POSITION = master_at_arms_court_position
 			}
 		}
@@ -10005,6 +9953,7 @@ Longwaters_1 = {
 	culture = westerosi_valyrian
 
 	father = Velaryon_45 #Jon Waters
+	mother = Cargyll_21_C
 
 	8196.1.1 = { birth = yes }
 	8212.1.1 = {
@@ -10030,7 +9979,7 @@ Tall_1 = {
 
 	martial = 8
 	prowess = 12
-	
+
 	religion = the_seven_main
 	culture = crownlander
 
@@ -10038,7 +9987,7 @@ Tall_1 = {
 	trait = physique_good_3
 	trait = strong
 	trait = rowdy
-	
+
 	disallow_random_traits = yes
 
 	8192.1.1 = {
@@ -10091,7 +10040,7 @@ Tall_1 = {
 		employer = Targaryen_110 # Maekar Targaryen
 	}
 	8233.6.1 = {
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_122 } # Aegon V Targaryen
 		}
 		employer = Targaryen_122 # Aegon V Targaryen
@@ -10131,7 +10080,7 @@ Kingsguard_1 = {
 		give_nickname = nick_the_mummer
 	}
 	8010.1.1 = {
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_27 } # Aegon I Targaryen
 		}
 		employer = Targaryen_27 # Aegon I Targaryen
@@ -10163,7 +10112,7 @@ Kingsguard_2 = {
 		give_nickname = nick_the_valiant
 	}
 	8049.7.14 = {
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_35 } # Jaehaerys I Targaryen
 		}
 		trait = kingsguard
@@ -10193,7 +10142,7 @@ Kingsguard_3 = {
 		give_nickname = nick_the_wasp
 	}
 	8049.7.14 = {
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_35 } # Jaehaerys I Targaryen
 		}
 		employer = Targaryen_35 # Jaehaerys I Targaryen
@@ -10218,16 +10167,16 @@ Kingsguard_4 = {
 	8030.1.1 = { birth = yes }
 	8046.1.1 = { give_nickname = nick_the_woodcock }
 	8049.7.14 = {
-		trait = knight 
-		effect = { 
+		trait = knight
+		effect = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Doggett_12 } # Joffrey Doggett
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_35 } # Jaehaerys I Targaryen
 		}
 		employer = Targaryen_35 # Jaehaerys I
 	}
-	8078.1.1 = { 
+	8078.1.1 = {
 		trait = kingsguard
-		death = yes 
+		death = yes
 	}
 }
 Kingsguard_5 = {
@@ -10254,7 +10203,7 @@ Kingsguard_5 = {
 		trait = one_eyed
 	}
 	8049.7.14 = {
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_35 } # Jaehaerys I Targaryen
 		}
 		employer = Targaryen_35 # Jaehaerys I
@@ -10295,17 +10244,17 @@ Kingsguard_6 = {
 	}
 	8130.10.22 = {
 		trait = knight
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_65 } # Aegon II Targaryen
 		}
 	}
 	8135.12.19 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_castellan
 			}
-		} 
+		}
 	}
 	8133.6.1 = {
 		effect = {
@@ -10337,14 +10286,14 @@ Kingsguard_7 = {
 		trait = knight
 	}
 	8207.1.1 = {
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_91 } # Daeron II Targaryen
 		}
 		employer = Targaryen_91 # Daeron II Targaryen
 	}
-	8221.1.1 = { 
+	8221.1.1 = {
 		trait = kingsguard
-		death = yes 
+		death = yes
 	}
 }
 Kingsguard_8 = {
@@ -10367,14 +10316,14 @@ Kingsguard_8 = {
 	8136.1.1 = { birth = yes }
 	8157.1.1 = { trait = knight }
 	8163.4.29 = {
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_82 } # Baelor I Targaryen
 		}
 		employer = Targaryen_82 # Baelor I Targaryen
 	}
-	8188.1.1 = { 
+	8188.1.1 = {
 		trait = kingsguard
-		death = yes 
+		death = yes
 	}
 }
 67012 = { # AGOT TODO ID
@@ -10398,7 +10347,7 @@ Kingsguard_8 = {
 	8191.1.1 = { birth = yes }
 	8207.1.1 = { trait = knight }
 	8213.1.1 = {
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_108 } # Aerys I Targaryen
 		}
 	}
@@ -10437,7 +10386,7 @@ Kingsguard_8 = {
 	8149.1.1 = { birth = yes }
 	8165.1.1 = { trait = knight }
 	8179.1.1 = {
-		effect = { 
+		effect = {
 			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_88 } # Aegon IV Targaryen
 		}
 		give_nickname = nick_the_openhanded
@@ -10478,11 +10427,11 @@ Kingsguard_8 = {
 	}
 	8039.10.1 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_castellan
 			}
-		} 
+		}
 	}
 	8041.6.1 = {
 		death = {
@@ -10532,11 +10481,11 @@ Kingsguard_8 = {
 	}
 	8057.1.1 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_castellan
 			}
-		} 
+		}
 	}
 	8098.11.1 = { death = yes } #or shortly after
 }
@@ -11796,8 +11745,8 @@ Kingsguard_8 = {
 		trait = devoted # Septon
 		trait = celibate
 		# effect = { # Septon of Red Keep, currently the office seems to be reserved for High Septon
-			# agot_appoint_as_court_position_for_castle_history_effect = { 
-				# CASTLE = title:c_kings_landing 
+			# agot_appoint_as_court_position_for_castle_history_effect = {
+				# CASTLE = title:c_kings_landing
 				# POSITION = septon_court_position
 			# }
 		# }

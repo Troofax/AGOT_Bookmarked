@@ -4,10 +4,10 @@
 	culture = northman
 	religion = old_gods_south
 	holding = castle_holding
-	special_building = winterfell_01
+	special_building = winterfell_03
 	duchy_capital_building = agot_glass_gardens_03
 	7998.1.1 = {
-		buildings = { 
+		buildings = {
 			castle_05
 			curtain_walls_06
 			godswood_07
@@ -1086,8 +1086,8 @@
 	holding = castle_holding
 	special_building = agot_karhold_01
 	7998.1.1 = {
-		buildings = { 
-			castle_04 
+		buildings = {
+			castle_04
 			ramparts_04
 			godswood_04
 		}
@@ -1624,7 +1624,7 @@
 	holding = castle_holding
 	special_building = agot_dreadfort_01
 	7998.1.1 = {
-		buildings = { 
+		buildings = {
 			castle_05
 			hill_forts_04
 			godswood_05
@@ -2642,8 +2642,8 @@
 	religion = old_gods_south
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_03 
+		buildings = {
+			castle_03
 			curtain_walls_03
 			godswood_03
 		}
@@ -4390,9 +4390,9 @@
 761 = {
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_01 
-			apiaries_01 
+		buildings = {
+			castle_01
+			apiaries_01
 		}
 	}
 }
@@ -6849,8 +6849,8 @@
 1146 = {
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_01 
+		buildings = {
+			castle_01
 			apiaries_02
 		}
 	}
@@ -9979,8 +9979,8 @@
 	religion = old_gods_south
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_03 
+		buildings = {
+			castle_03
 			ramparts_04
 			godswood_05
 		}

@@ -1324,15 +1324,15 @@ Hoare_28 = {
 		#trait = suspected_kinslayer # AGOT TODO trait
 	}
 	7940.1.1 = {
-		effect = { 
+		effect = {
 			if = {
 				limit = { character:Charlton_10 = { is_alive = yes } }
 				make_concubine = character:Charlton_10 # Walda Charlton
 			}
-		}	
+		}
 	}
 	7945.1.1 = {
-		effect = { 
+		effect = {
 			if = {
 				limit = { character:Paege_11 = { is_alive = yes } }
 				make_concubine = character:Paege_11 # Sylwa Paege
@@ -1340,7 +1340,7 @@ Hoare_28 = {
 		}
 	}
 	7950.1.1 = {
-		effect = { 
+		effect = {
 			if = {
 				limit = { character:Goodbrook_14 = { is_alive = yes } }
 				make_concubine = character:Goodbrook_14 # Jeyne Goodbrook
@@ -2433,7 +2433,7 @@ Greyjoy_57 = {
 
 	8116.1.1 = { birth = yes }
 	8130.1.1 = {
-		effect = { 
+		effect = {
 			if = {
 				limit = { character:Lannister_98 = { is_alive = yes } }
 				make_concubine = character:Lannister_98 # Jenna Hill
@@ -2469,7 +2469,7 @@ Greyjoy_58 = {
 
 	8117.1.1 = { birth = yes }
 	8130.1.1 = {
-		effect = { 
+		effect = {
 			if = {
 				limit = { character:Lannister_97 = { is_alive = yes } }
 				make_concubine = character:Lannister_97 # Joy Hill
@@ -2488,7 +2488,7 @@ Greyjoy_58 = {
 Greyjoy_59 = {
 	name = Dalton # Canon, AKA: The Red Kraken, a lord
 	dynasty = dynn_Greyjoy
-	#dna = wkyjyadlsrn
+	dna = Greyjoy_59
 
 	martial = 9
 	diplomacy = 7
@@ -2582,7 +2582,7 @@ Greyjoy_59 = {
 		}
 	}
 	8130.1.1 = {
-		effect = { 
+		effect = {
 			if = {
 				limit = { character:Lannister_rs_2 = { is_alive = yes } }
 				make_concubine = character:Lannister_rs_2 # Jeyne, Jason Lannister's mistress
@@ -3050,8 +3050,8 @@ Greyjoy_69 = {
 	8196.1.1 = { birth = yes }
 	8211.1.1 = {
 		give_nickname = nick_the_bard
-		effect = { 
-			if = { 
+		effect = {
+			if = {
 				limit = { character:Mallister_52 = { is_alive = yes } }
 				set_relation_friend = character:Mallister_52 # Desmond Mallister
 			}
@@ -3195,15 +3195,15 @@ Greyjoy_hh_20 = {
 
 	religion = drowned_god_main
 	culture = ironborn
-	
+
 	trait = education_martial_1
 
 	8120.1.1 = { birth = yes }
 	8142.1.1 = {
 		employer = Greyjoy_63 # Toron Greyjoy
 		effect = { # Master-at-arms at Pyke
-			agot_appoint_as_court_position_for_castle_history_effect = { 
-				CASTLE = title:c_pyke 
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_pyke
 				POSITION = master_at_arms_court_position
 			}
 		}
@@ -3357,7 +3357,7 @@ Greyjoy_83 = {
 
 	8146.1.1 = { birth = yes }
 	8158.1.1 = {
-		effect = { 
+		effect = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Prester_15 } # Gareth Prester
 		}
 	}
@@ -4774,7 +4774,7 @@ FarwyndLL_16 = {
 	culture = ironborn
 
 	father = FarwyndLL_14
-	
+
 	trait = education_martial_2
 
 	8121.1.1 = { birth = yes }
@@ -4782,8 +4782,8 @@ FarwyndLL_16 = {
 	8158.1.1 = {
 		employer = Saltcliffe_18 # Ralf Saltcliffe
 		effect = { # Captain of the Guard at Saltcliffe
-			agot_appoint_as_court_position_for_castle_history_effect = { 
-				CASTLE = title:c_saltcliffe 
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_saltcliffe
 				POSITION = household_guard_court_position
 			}
 		}
@@ -6947,7 +6947,7 @@ Saltcliffe_26 = {
 	8159.1.1 = { add_spouse = Tyrell_86 } # Reyna Tyrell
 	8162.9.8 = {
 		create_character_memory = {
-			type = agot_tournament_winner # Highgarden Grand Tourney 
+			type = agot_tournament_winner # Highgarden Grand Tourney
 			participants = {
 				TourneyHost = character:Tyrell_90 # Leo Longthorn Tyrell
 			}
@@ -7106,7 +7106,7 @@ Saltcliffe_36 = {
 
 	trait = bastard
 	give_nickname = nick_pyke
-	
+
 	trait = education_learning_1
 
 	8156.1.1 = { birth = yes }
@@ -7177,8 +7177,8 @@ Saltcliffe_hh_1 = {
 		trait = maester
 		employer = Saltcliffe_18 # Ralf Saltcliffe
 		effect = { # Maester of Saltcliffe
-			agot_appoint_as_court_position_for_castle_history_effect = { 
-				CASTLE = title:c_saltcliffe 
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_saltcliffe
 				POSITION = maester_court_position
 			}
 		}
@@ -8279,8 +8279,8 @@ Stonetree_18 = {
 	8136.1.1 = {
 		employer = Blacktyde_18 # Garmon Blacktyde
 		effect = { # Master-at-arms at Blacktyde
-			agot_appoint_as_court_position_for_castle_history_effect = { 
-				CASTLE = title:c_blacktyde 
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_blacktyde
 				POSITION = master_at_arms_court_position
 			}
 		}
@@ -8289,7 +8289,7 @@ Stonetree_18 = {
 		employer = Greyjoy_63 # Toron Greyjoy
 		add_spouse = Greyjoy_76 # Gudrun Greyjoy
 		effect = { # Master-at-arms at Pyke
-			agot_appoint_as_court_position_for_castle_history_effect = { 
+			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:c_pyke
 				POSITION = master_at_arms_court_position
 			}
@@ -10254,15 +10254,15 @@ Orkwood_20 = {
 
 	trait = bastard
 	give_nickname = nick_pyke
-	
+
 	trait = education_martial_2
 
 	8114.1.1 = { birth = yes }
 	8140.1.1 = {
 		employer = Saltcliffe_18 # Ralf Saltcliffe
 		effect = { # Master-at-arms at Saltcliffe
-			agot_appoint_as_court_position_for_castle_history_effect = { 
-				CASTLE = title:c_saltcliffe 
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_saltcliffe
 				POSITION = master_at_arms_court_position
 			}
 		}
@@ -10397,7 +10397,7 @@ Codd_10 = {
 	culture = ironborn
 
 	7760.1.1 = { birth = yes }
-	7798.1.1 = { 
+	7798.1.1 = {
 		effect = {
 			if = {
 				limit = { character:Codd_rs_4 = { is_alive = yes } }
@@ -10450,7 +10450,7 @@ Codd_12 = {
 
 	father = Codd_10
 	mother = Fisher_riverlands_duplicate_9
-	
+
 	trait = bastard
 	give_nickname = nick_pyke
 
@@ -10474,7 +10474,7 @@ Codd_13 = {
 	trait = intellect_good_3
 
 	7822.1.1 = { birth = yes }
-	7840.1.1 = { 
+	7840.1.1 = {
 		effect = {
 			if = {
 				limit = { character:Codd_rs_5 = { is_alive = yes } }
@@ -10662,7 +10662,7 @@ Codd_24 = {
 	trait = beauty_bad_1
 
 	7940.1.1 = { birth = yes }
-	7958.1.1 = { 
+	7958.1.1 = {
 		effect = {
 			if = {
 				limit = { character:Codd_rs_6 = { is_alive = yes } }
@@ -10817,7 +10817,7 @@ Codd_35 = {
 	father = Codd_31
 
 	8106.1.1 = { birth = yes }
-	8124.1.1 = { 
+	8124.1.1 = {
 		effect = {
 			if = {
 				limit = { character:Codd_rs_7 = { is_alive = yes } }
@@ -10872,7 +10872,7 @@ Codd_37 = {
 	mother = Codd_rs_7
 
 	8129.1.1 = { birth = yes }
-	8147.1.1 = { 
+	8147.1.1 = {
 		effect = {
 			if = {
 				limit = { character:Codd_rs_8 = { is_alive = yes } }
@@ -12748,7 +12748,7 @@ Drowned_Men_4 = {
 
 	religion = drowned_god_main
 	culture = ironborn
-	
+
 	trait = bossy
 
 	disallow_random_traits = yes

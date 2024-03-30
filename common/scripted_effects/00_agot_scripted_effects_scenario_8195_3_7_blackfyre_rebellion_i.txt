@@ -53,7 +53,7 @@ agot_8195_3_7_br_i_scenario_setup = {
 
 	title:e_the_iron_throne.holder = { save_scope_as = historical_setup }
 
-	## SET UP REBEL LEADERS
+	### SET UP REBEL LEADERS
 	title:d_the_blackwater_rush.holder = {
 		save_scope_as = mw_rebel_leader_daemon
 		agot_mw_scenario_rebel_setup = {
@@ -235,22 +235,22 @@ agot_8195_3_7_br_i_scenario_setup = {
 
 	### SET OPINIONS ###
 	agot_mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_daemon }
-	#####
+	######
 
 
-	#### SCENARIO STORY CYCLE SETUP #####
-	title:d_the_blackwater_rush.holder = {
-		create_story = { # Initialize Blackfyre Rebellion # TODO
-			type = story_agot_scenario_rr
-			save_scope_as = scenario_rr_story
-		}
-		scope:scenario_rr_story = { # TODO
-			set_variable = { name = usurper_war value = scope:current_war }
-			set_variable = {
-				name	= agot_rr_war_status
-				value	= flag:ongoing
-			}
-		}
-	}
-	#####
+	##### SCENARIO STORY CYCLE SETUP #####
+	#title:d_the_blackwater_rush.holder = {
+	#	create_story = { # Initialize Blackfyre Rebellion # TODO
+	#		type = story_agot_scenario_rr
+	#		save_scope_as = scenario_rr_story
+	#	}
+	#	scope:scenario_rr_story = { # TODO
+	#		set_variable = { name = usurper_war value = scope:current_war }
+	#		set_variable = {
+	#			name	= agot_rr_war_status
+	#			value	= flag:ongoing
+	#		}
+	#	}
+	#}
+	#######
 }

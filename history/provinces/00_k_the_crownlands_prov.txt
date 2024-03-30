@@ -4,10 +4,18 @@
 	culture = crownlander
 	religion = the_seven_main
 	holding = castle_holding
-	special_building = the_red_keep_01
-	duchy_capital_building = seven_gates_01
 	7998.1.1 = {
 		buildings = { castle_05 curtain_walls_03 barracks_03 }
+		special_building = the_red_keep_01
+	}
+	8026.1.1 = {
+		duchy_capital_building = seven_gates_01
+	}
+	8042.1.1 = {
+		special_building = the_red_keep_02
+	}
+	8045.1.1 = {
+		special_building = the_red_keep_03
 	}
 	8161.1.1 = {
 		religion = baelorism
@@ -20,18 +28,28 @@
 ######## c_kings_landing - d_kings_landing ########
 4152 = {
 	holding = city_holding
-	special_building = dragonpit_01
 	7998.1.1 = {
 		buildings = { city_03 guild_halls_03 }
+	}
+	8010.1.1 = {
+		special_building = dragonpit_01
+	}
+	8055.1.1 = {
+		special_building = dragonpit_02
+	}
+	8130.10.9 = {
+		special_building = dragonpit_ruins_02
 	}
 }
 ################# b_visenyas_hill #################
 ######## c_kings_landing - d_kings_landing ########
 4153 = {
 	holding = church_holding
-	special_building = holy_site_great_sept_01
 	7998.1.1 = {
 		buildings = { temple_04 monastic_schools_08 }
+	}
+	8176.1.1 = {
+		special_building = holy_site_great_sept_01
 	}
 }
 ################### b_hookmarket ##################
@@ -1122,8 +1140,8 @@
 	holding = castle_holding
 	special_building = agot_whispers_01
 	7998.1.1 = {
-		buildings = { 
-			castle_02 
+		buildings = {
+			castle_02
 			godswood_02
 		}
 	}

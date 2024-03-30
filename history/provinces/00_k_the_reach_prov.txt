@@ -2071,7 +2071,7 @@
 ############## c_oldtown - d_oldtown ##############
 3499 = {
 	holding = city_holding
-	special_building = the_citadel_01
+	special_building = the_citadel_02
 	7998.1.1 = {
 		buildings = { city_04 guild_halls_04 }
 	}
@@ -2221,9 +2221,9 @@
 3517 = {
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_02 
-			apiaries_04 
+		buildings = {
+			castle_02
+			apiaries_04
 		}
 	}
 }
@@ -2355,8 +2355,8 @@
 3533 = {
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_01 
+		buildings = {
+			castle_01
 			apiaries_02
 		}
 	}
@@ -2750,8 +2750,8 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
-			castle_02 
+		buildings = {
+			castle_02
 			apiaries_02
 		}
 	}

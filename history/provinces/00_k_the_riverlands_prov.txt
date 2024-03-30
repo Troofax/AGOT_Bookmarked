@@ -6,7 +6,7 @@
 	holding = castle_holding
 	special_building = riverrun_01
 	7998.1.1 = {
-		buildings = { castle_04 building_moat_03 godswood_02 }
+		buildings = { castle_04 building_moat_05 godswood_02 }
 	}
 }
 ################### b_riverview ###################
@@ -234,7 +234,7 @@
 	special_building = agot_raventree_hall_01
 	duchy_capital_building = archery_ranges_01
 	7998.1.1 = {
-		buildings = { 
+		buildings = {
 			castle_04
 			curtain_walls_04
 			godswood_06
@@ -1634,7 +1634,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { 
+		buildings = {
 			castle_03
 			building_moat_01
 			godswood_02
@@ -2107,7 +2107,7 @@
 	holding = castle_holding
 	special_building = harrenhal_01
 	7998.1.1 = {
-		buildings = { 
+		buildings = {
 			castle_05
 			curtain_walls_08
 			godswood_08
@@ -3082,16 +3082,16 @@
 ################ b_stallions_grove ################
 ########### c_stone_hedge - d_southstone ##########
 2062 = {
+	holding = none
+}
+################### b_wolfs_bend ##################
+########### c_stone_hedge - d_southstone ##########
+2063 = {
 	holding = city_holding
 	special_building = agot_inn_of_the_kneeling_man_01
 	7998.1.1 = {
 		buildings = { city_02 guild_halls_01 }
 	}
-}
-################### b_wolfs_bend ##################
-########### c_stone_hedge - d_southstone ##########
-2063 = {
-	holding = none
 }
 ################### b_lambswold ###################
 ########### c_stone_hedge - d_southstone ##########
