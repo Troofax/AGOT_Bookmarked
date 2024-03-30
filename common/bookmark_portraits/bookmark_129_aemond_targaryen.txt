@@ -2,11 +2,11 @@
 # History database id:Targaryen_67
 bookmark_129_aemond_targaryen={
 	type=male
-	id=12587
+	id=12610
 	age=0.180000
 	genes={ 		hair_color={ 51 7 19 21 }
  		skin_color={ 38 15 37 15 }
- 		eye_color={ 242 68 252 77 }
+ 		eye_color={ 247 53 252 77 }
  		gene_chin_forward={ "chin_forward_pos" 137 "chin_forward_neg" 148 }
  		gene_chin_height={ "chin_height_neg" 130 "chin_height_neg" 105 }
  		gene_chin_width={ "chin_width_pos" 89 "chin_width_neg" 105 }
@@ -146,10 +146,27 @@ bookmark_129_aemond_targaryen={
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "valyrian_war_nobility_clothes" 169 "most_clothes" 0 }
- 		headgear={ "no_headgear" 118 "no_headgear" 0 }
+ 		headgear={ "no_headgear" 66 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
- 		props_right={ "marshal_swords" 255 "no_props" 0 }
+ 		props_right={ "ep1_artisan_sword_byzantine" 255 "no_props" 0 }
  }
 	entity={ 912297863 912297863 }
+	tags={ {
+			hash=2125534279
+			invert=no
+		}
+ {
+			hash=2670398845
+			invert=no
+		}
+ {
+			hash=681013727
+			invert=no
+		}
+ {
+			hash=1563190100
+			invert=no
+		}
+ }
 }
 

@@ -2,11 +2,11 @@
 # History database id:Targaryen_29
 bookmark_2bc_rhaenys_targaryen={
 	type=female
-	id=6532
+	id=6541
 	age=0.230000
 	genes={ 		hair_color={ 20 2 4 4 }
  		skin_color={ 70 20 161 1 }
- 		eye_color={ 247 150 248 96 }
+ 		eye_color={ 239 63 248 96 }
  		gene_chin_forward={ "chin_forward_neg" 145 "chin_forward_neg" 145 }
  		gene_chin_height={ "chin_height_pos" 133 "chin_height_pos" 133 }
  		gene_chin_width={ "chin_width_pos" 128 "chin_width_pos" 128 }
@@ -90,14 +90,14 @@ bookmark_2bc_rhaenys_targaryen={
  		face_detail_nose_ridge_def={ "nose_ridge_def_neg" 107 "nose_ridge_def_neg" 107 }
  		face_detail_nose_tip_def={ "nose_tip_def" 147 "nose_tip_def" 147 }
  		face_detail_temple_def={ "temple_def" 118 "temple_def" 118 }
- 		expression_brow_wrinkles={ "brow_wrinkles_03" 162 "brow_wrinkles_03" 0 }
+ 		expression_brow_wrinkles={ "brow_wrinkles_03" 148 "brow_wrinkles_03" 0 }
  		expression_eye_wrinkles={ "eye_wrinkles_02" 101 "eye_wrinkles_02" 101 }
  		expression_forehead_wrinkles={ "forehead_wrinkles_02" 0 "forehead_wrinkles_02" 0 }
  		expression_other={ "cheek_wrinkles_right_01" 91 "cheek_wrinkles_right_01" 91 }
  		complexion={ "complexion_beauty_1" 0 "complexion_11" 16 }
  		gene_height={ "normal_height" 142 "normal_height" 157 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 120 "body_fat_head_fat_low" 124 }
- 		gene_bs_body_shape={ "body_shape_pear_full" 204 "body_shape_pear_full" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 116 "body_fat_head_fat_low" 124 }
+ 		gene_bs_body_shape={ "body_shape_pear_full" 183 "body_shape_pear_full" 0 }
  		gene_bs_bust={ "bust_clothes" 35 "bust_clothes" 71 }
  		gene_age={ "old_2" 255 "old_2" 255 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 162 "avg_spacing_lower_thickness" 162 }
@@ -136,7 +136,7 @@ bookmark_2bc_rhaenys_targaryen={
  		gene_bs_eye_shape={ "eye_shape_01" 0 "eye_shape_01" 0 }
  		hair_aging={ "vanilla_hair_aging" 0 "vanilla_hair_aging" 0 }
  		pose={ "" 255 "" 0 }
- 		beards={ "western_beards_straight" 248 "no_beard" 0 }
+ 		beards={ "western_beards_straight" 194 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 131 "all_hairstyles" 0 }
  		legwear={ "valyrian_war_legwear" 169 "all_legwear" 0 }
@@ -149,6 +149,31 @@ bookmark_2bc_rhaenys_targaryen={
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  		props_right={ "ep1_artisan_sword_byzantine" 255 "no_props" 0 }
  }
-	entity={ 807438772 807438772 }
+	entity={ 912297863 912297863 }
+	tags={ {
+			hash=2125534279
+			invert=no
+		}
+ {
+			hash=2670398845
+			invert=no
+		}
+ {
+			hash=1500963499
+			invert=no
+		}
+ {
+			hash=681013727
+			invert=no
+		}
+ {
+			hash=1563190100
+			invert=no
+		}
+ {
+			hash=1945936758
+			invert=no
+		}
+ }
 }
 

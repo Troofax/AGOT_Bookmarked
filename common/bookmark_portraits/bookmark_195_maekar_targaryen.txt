@@ -2,7 +2,7 @@
 # History database id:Targaryen_110
 bookmark_195_maekar_targaryen={
 	type=male
-	id=17600
+	id=17629
 	age=0.210000
 	genes={ 		hair_color={ 4 2 4 2 }
  		skin_color={ 111 20 154 69 }
@@ -90,13 +90,13 @@ bookmark_195_maekar_targaryen={
  		face_detail_nose_ridge_def={ "nose_ridge_def_pos" 105 "nose_ridge_def_pos" 93 }
  		face_detail_nose_tip_def={ "nose_tip_def" 158 "nose_tip_def" 158 }
  		face_detail_temple_def={ "temple_def" 111 "temple_def" 111 }
- 		expression_brow_wrinkles={ "brow_wrinkles_04" 203 "brow_wrinkles_03" 100 }
+ 		expression_brow_wrinkles={ "brow_wrinkles_04" 201 "brow_wrinkles_03" 100 }
  		expression_eye_wrinkles={ "eye_wrinkles_02" 126 "eye_wrinkles_02" 126 }
  		expression_forehead_wrinkles={ "forehead_wrinkles_03" 101 "forehead_wrinkles_03" 101 }
  		expression_other={ "cheek_wrinkles_both_01" 10 "nose_wrinkles_01" 84 }
  		complexion={ "complexion_11" 40 "complexion_31" 40 }
  		gene_height={ "normal_height" 152 "normal_height" 126 }
- 		gene_bs_body_type={ "body_fat_head_fat_medium" 117 "body_fat_head_fat_low" 95 }
+ 		gene_bs_body_type={ "body_fat_head_fat_medium" 111 "body_fat_head_fat_low" 95 }
  		gene_bs_body_shape={ "body_shape_rectangle_half" 255 "body_shape_average" 102 }
  		gene_bs_bust={ "bust_clothes" 15 "bust_clothes" 137 }
  		gene_age={ "old_3" 148 "old_3" 148 }
@@ -145,11 +145,32 @@ bookmark_195_maekar_targaryen={
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "valyrian_war_nobility_clothes" 169 "most_clothes" 0 }
- 		headgear={ "no_headgear" 234 "no_headgear" 0 }
+ 		headgear={ "no_headgear" 57 "no_headgear" 0 }
  		beards={ "all_beards" 176 "no_beard" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  		props_right={ "ep1_artisan_sword_byzantine" 255 "no_props" 0 }
  }
-	entity={ 1863162561 1863162561 }
+	entity={ 912297863 912297863 }
+	tags={ {
+			hash=2125534279
+			invert=no
+		}
+ {
+			hash=2670398845
+			invert=no
+		}
+ {
+			hash=681013727
+			invert=no
+		}
+ {
+			hash=1563190100
+			invert=no
+		}
+ {
+			hash=2793867254
+			invert=no
+		}
+ }
 }
 
