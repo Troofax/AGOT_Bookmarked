@@ -187,6 +187,7 @@ agot_8195_3_7_br_i_scenario_setup = {
 				primary_title.tier > tier_barony
 				NOR = {
 					primary_title = title:k_the_most_devout
+					primary_title = title:d_kingsguard
 				}
 			}
 
@@ -230,6 +231,24 @@ agot_8195_3_7_br_i_scenario_setup = {
 		STORY_SCOPE = scope:mw_crown_story
 		LIST = mw_neutral_list
 		PRE_WAR_LIEGE_SCOPE = title:k_the_reach.holder
+	}
+	agot_mw_add_character_to_mw_list = {
+		CHARACTER_SCOPE = title:c_milkstone.holder
+		STORY_SCOPE = scope:mw_crown_story
+		LIST = mw_neutral_list
+		PRE_WAR_LIEGE_SCOPE = title:d_harrenhal.holder
+	}
+	agot_mw_add_character_to_mw_list = {
+		CHARACTER_SCOPE = title:d_oldtown.holder
+		STORY_SCOPE = scope:mw_crown_story
+		LIST = mw_neutral_list
+		PRE_WAR_LIEGE_SCOPE = title:k_the_reach.holder
+	}
+	agot_mw_add_character_to_mw_list = {
+		CHARACTER_SCOPE = title:d_tarrich.holder
+		STORY_SCOPE = scope:mw_crown_story
+		LIST = mw_neutral_list
+		PRE_WAR_LIEGE_SCOPE = title:k_the_westerlands.holder
 	}
 	######
 

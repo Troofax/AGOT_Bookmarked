@@ -3264,6 +3264,13 @@ agot_on_game_start_after_lobby = {
 					game_start_date = 8282.9.15 # Robert's Rebellion
 					game_start_date = 8284.6.2 # Crowned Stag
 					game_start_date = 8258.12.21 # NPK
+					# AGOT Bookmarked Added
+					game_start_date = 7998.1.2
+					game_start_date = 8129.4.1
+					game_start_date = 8195.3.7
+					game_start_date = 8277.1.1
+					game_start_date = 8298.12.21
+					game_start_date = 8299.3.3
 				}
 			}
 			## House Customizer Renown Fix - YES I DID TRY ITS OWN ON_ACTION

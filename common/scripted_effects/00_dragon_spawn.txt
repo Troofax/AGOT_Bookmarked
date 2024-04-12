@@ -13,7 +13,7 @@ spawn_conquest_dragons = {
 		}
 		location = { save_scope_as = aegon_i_location }
 		spawn_army = {
-			name = "Valyrian Loyalists"
+			name = agotbm_valyrian_loyalists
 			levies = 2500
 			location = scope:aegon_i_location
 			origin = scope:aegon_i_location
