@@ -198,3 +198,10 @@ spawn_aegons_dragons = {
 		debug_log = "Aegons Dragons spawned"
 	}
 }
+# temp
+agot_add_dynasty_perk = {
+	if = {
+		limit = { exists = this.dynast }
+		add_dynasty_perk = $PERK$
+	}
+}

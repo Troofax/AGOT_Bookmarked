@@ -647,7 +647,7 @@ Greyiron_32 = {
 
 ###### HOUSE HOARE (id = dynn_Hoare)
 ############################
-###
+### Lashed in Blood
 ###
 Grey_King_5 = {
 	name = Torgon_the_Terrible # Canon, founder
@@ -1324,15 +1324,15 @@ Hoare_28 = {
 		#trait = suspected_kinslayer # AGOT TODO trait
 	}
 	7940.1.1 = {
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:Charlton_10 = { is_alive = yes } }
 				make_concubine = character:Charlton_10 # Walda Charlton
 			}
-		}
+		}	
 	}
 	7945.1.1 = {
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:Paege_11 = { is_alive = yes } }
 				make_concubine = character:Paege_11 # Sylwa Paege
@@ -1340,7 +1340,7 @@ Hoare_28 = {
 		}
 	}
 	7950.1.1 = {
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:Goodbrook_14 = { is_alive = yes } }
 				make_concubine = character:Goodbrook_14 # Jeyne Goodbrook
@@ -1462,7 +1462,7 @@ Hoare_31 = {
 	}
 }
 Hoare_32 = {
-	name = Harras # Mentioned, a Lord Commander of Night's Watch
+	name = Harras # Mentioned, Lord Commander of the Night's Watch
 	dynasty = dynn_Hoare
 	dna = Hoare_32
 
@@ -1481,7 +1481,16 @@ Hoare_32 = {
 	trait = just
 
 	7947.1.1 = { birth = yes }
-	7969.1.1 = { trait = nightswatch_historical }
+	7969.1.1 = { 
+		trait = nightswatch_historical 
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_eastwatch
+				NW_JOIN_AGE = 22
+			}
+		}
+	}
 	8009.1.1 = { death = yes }
 }
 ### Issue of Harren the Black
@@ -1853,7 +1862,7 @@ Greyjoy_34 = {
 	7932.1.1 = { death = yes }
 }
 Greyjoy_35 = {
-	name = Theon # Night's Watch
+	name = Theon # Mentioned, Lord Commander of the Night's Watch, Shieldhall
 	dynasty = dynn_Greyjoy
 
 	prowess = 6
@@ -1870,7 +1879,16 @@ Greyjoy_35 = {
 		trait = content
 		trait = humble
 	}
-	7894.1.1 = { trait = nightswatch_historical }
+	7894.1.1 = { 
+		trait = nightswatch_historical 
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_eastwatch
+				NW_JOIN_AGE = 19
+			}
+		}
+	}
 	7943.1.1 = { death = yes }
 }
 ### Main Line
@@ -2433,7 +2451,7 @@ Greyjoy_57 = {
 
 	8116.1.1 = { birth = yes }
 	8130.1.1 = {
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:Lannister_98 = { is_alive = yes } }
 				make_concubine = character:Lannister_98 # Jenna Hill
@@ -2469,7 +2487,7 @@ Greyjoy_58 = {
 
 	8117.1.1 = { birth = yes }
 	8130.1.1 = {
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:Lannister_97 = { is_alive = yes } }
 				make_concubine = character:Lannister_97 # Joy Hill
@@ -2485,7 +2503,7 @@ Greyjoy_58 = {
 	}
 }
 ### Issue of Vickon
-Greyjoy_59 = {
+Greyjoy_59 = { # Dance of the Dragons
 	name = Dalton # Canon, AKA: The Red Kraken, a lord
 	dynasty = dynn_Greyjoy
 	dna = Greyjoy_59
@@ -2500,7 +2518,7 @@ Greyjoy_59 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	father = Greyjoy_51 # Vickon Greyjoy
+	father = Greyjoy_51
 	mother = Greyjoy_rs_11
 
 	trait = education_martial_3
@@ -2561,16 +2579,8 @@ Greyjoy_59 = {
 			add_gold = 100
 		}
 	}
-	8129.1.1 = {
-		# trait = inspiring_leader # AGOT TODO trait
-		trait = aggressive_attacker
-	}
-	# 8129.4.1 = { #Dance of the Dragons
-		# effect = {
-			# character_event = { id = dance_of_dragons.17 }
-		# }
-	# }
-	8129.6.8 = {
+	8129.1.1 = { trait = aggressive_attacker }
+	8130.2.21 = {
 		effect = {
 			if = {
 				limit = { character:Lannister_103 = { is_alive = yes } }
@@ -2582,7 +2592,7 @@ Greyjoy_59 = {
 		}
 	}
 	8130.1.1 = {
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:Lannister_rs_2 = { is_alive = yes } }
 				make_concubine = character:Lannister_rs_2 # Jeyne, Jason Lannister's mistress
@@ -3050,8 +3060,8 @@ Greyjoy_69 = {
 	8196.1.1 = { birth = yes }
 	8211.1.1 = {
 		give_nickname = nick_the_bard
-		effect = {
-			if = {
+		effect = { 
+			if = { 
 				limit = { character:Mallister_52 = { is_alive = yes } }
 				set_relation_friend = character:Mallister_52 # Desmond Mallister
 			}
@@ -3195,15 +3205,15 @@ Greyjoy_hh_20 = {
 
 	religion = drowned_god_main
 	culture = ironborn
-
+	
 	trait = education_martial_1
 
 	8120.1.1 = { birth = yes }
 	8142.1.1 = {
 		employer = Greyjoy_63 # Toron Greyjoy
 		effect = { # Master-at-arms at Pyke
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_pyke
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_pyke 
 				POSITION = master_at_arms_court_position
 			}
 		}
@@ -3314,7 +3324,7 @@ Greyjoy_80 = {
 
 	8134.1.1 = { birth = yes }
 	8155.1.1 = {
-		death = { death_reason = death_drowned } # Lost at sea
+		death = { death_reason = death_lost_at_sea } 
 	}
 }
 Greyjoy_81 = {
@@ -3357,7 +3367,7 @@ Greyjoy_83 = {
 
 	8146.1.1 = { birth = yes }
 	8158.1.1 = {
-		effect = {
+		effect = { 
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Prester_15 } # Gareth Prester
 		}
 	}
@@ -3526,7 +3536,7 @@ Greyjoy_93 = {
 
 ###### HOUSE GOODBROTHER (id = dynn_Goodbrother)
 ############################
-###
+### Heed the Call
 ###
 
 ### Hammerhorn Branch
@@ -4345,7 +4355,7 @@ Goodbrother_91 = {
 
 ###### HOUSE FARWYND (id = dynn_Farwynd)
 ############################
-###
+### On the Horizon
 ###
 Farwynd_10 = {
 	name = Lorren # a lord
@@ -4774,7 +4784,7 @@ FarwyndLL_16 = {
 	culture = ironborn
 
 	father = FarwyndLL_14
-
+	
 	trait = education_martial_2
 
 	8121.1.1 = { birth = yes }
@@ -4782,8 +4792,8 @@ FarwyndLL_16 = {
 	8158.1.1 = {
 		employer = Saltcliffe_18 # Ralf Saltcliffe
 		effect = { # Captain of the Guard at Saltcliffe
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_saltcliffe
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_saltcliffe 
 				POSITION = household_guard_court_position
 			}
 		}
@@ -5037,7 +5047,7 @@ FarwyndDL_23 = {
 
 ###### HOUSE HARLAW (id = dynn_Harlaw)
 ############################
-###
+### Reap the Chaff
 ###
 Grey_King_11 = {
 	name = The_Harlaw # Mentioned, founder
@@ -5127,6 +5137,77 @@ Harlaw_32 = {
 	disallow_random_traits = yes
 
 	4393.1.1 = { birth = yes }
+	7480.1.1 = { death = yes }
+}
+Harlaw_53 = {
+	name = Goren # a lord
+	dynasty = dynn_Harlaw
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Harlaw_32
+
+	7480.1.1 = { birth = yes }
+	7535.1.1 = { death = yes }
+}
+### Issue of Goren
+Harlaw_52 = {
+	name = Harras # a lord
+	dynasty = dynn_Harlaw
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Harlaw_53
+
+	7503.1.1 = { birth = yes }
+	7544.1.1 = { death = yes }
+}
+Harlaw_51 = {
+	name = Dagos # Semi-Canon, Night's Watch
+	dynasty = dynn_Harlaw
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Harlaw_53
+
+	7505.1.1 = { birth = yes }
+	7529.1.1 = { 
+		trait = nightswatch_historical 
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 24
+			}
+		}
+	}
+	7535.1.1 = {
+		effect = { # First Ranger of the Night's Watch
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:k_the_wall 
+				POSITION = councillor_marshal
+			}
+		}
+	}
+	7551.1.1 = { death = yes }
+}
+### Main Line
+Harlaw_50 = {
+	name = Line_of_Harras
+	dynasty = dynn_Harlaw
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Harlaw_52 # Harras Harlaw
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7544.1.1 = { birth = yes }
 	7823.1.1 = { death = yes }
 }
 Harlaw_33 = {
@@ -5136,7 +5217,7 @@ Harlaw_33 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	father = Harlaw_32
+	father = Harlaw_50
 
 	7823.1.1 = { birth = yes }
 	7874.1.1 = { death = yes }
@@ -5471,7 +5552,7 @@ Harlaw_49 = {
 
 ###### HOUSE VOLMARK (id = dynn_Volmark)
 ############################
-###
+### Dark, Deep, Hungry
 ###
 Grey_King_13 = {
 	name = Jorl_the_Whale # Canon, founder
@@ -5915,7 +5996,7 @@ Volmark_27 = {
 
 ###### HOUSE WYNCH (id = dynn_Wynch)
 ############################
-###
+### The Blood-Moon Rises
 ###
 Grey_King_15 = {
 	name = The_Wynch # Mentioned, founder
@@ -6208,7 +6289,7 @@ Wynch_24 = {
 
 ###### HOUSE BOTLEY (id = dynn_Botley)
 ############################
-###
+### Mistake Me Not
 ###
 Grey_King_17 = {
 	name = The_Botley # Mentioned, founder
@@ -6552,7 +6633,7 @@ Botley_39 = {
 
 ###### HOUSE SALTCLIFFE (id = dynn_Saltcliffe)
 ############################
-###
+### Ever Watchful
 ###
 Grey_King_19 = {
 	name = The_Saltcliffe # Mentioned, founder
@@ -6947,7 +7028,7 @@ Saltcliffe_26 = {
 	8159.1.1 = { add_spouse = Tyrell_86 } # Reyna Tyrell
 	8162.9.8 = {
 		create_character_memory = {
-			type = agot_tournament_winner # Highgarden Grand Tourney
+			type = agot_tournament_winner # Highgarden Grand Tourney 
 			participants = {
 				TourneyHost = character:Tyrell_90 # Leo Longthorn Tyrell
 			}
@@ -7106,7 +7187,7 @@ Saltcliffe_36 = {
 
 	trait = bastard
 	give_nickname = nick_pyke
-
+	
 	trait = education_learning_1
 
 	8156.1.1 = { birth = yes }
@@ -7174,11 +7255,12 @@ Saltcliffe_hh_1 = {
 	8107.1.1 = { birth = yes }
 	8140.1.1 = {
 		trait = lifestyle_physician
-		trait = maester
+		trait = maester_historical
 		employer = Saltcliffe_18 # Ralf Saltcliffe
 		effect = { # Maester of Saltcliffe
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_saltcliffe
+			agot_maester_starting_setup_history_effect = yes
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_saltcliffe 
 				POSITION = maester_court_position
 			}
 		}
@@ -7188,7 +7270,7 @@ Saltcliffe_hh_1 = {
 
 ###### HOUSE SUNDERLY (id = dynn_Sunderly)
 ############################
-###
+### Dread the Drowned
 ###
 Sunderly_8 = {
 	name = Gevin # a lord
@@ -7248,6 +7330,7 @@ Sunderly_12 = {
 	7940.1.1 = { birth = yes }
 	7990.1.1 = { death = yes }
 }
+### Issue of Lorren 
 Sunderly_13 = {
 	name = Victarion # a lord
 	dynasty = dynn_Sunderly
@@ -7262,6 +7345,55 @@ Sunderly_13 = {
 		death = { death_reason = death_battle } # Killed in chaos after Harren's death
 	}
 }
+Sunderly_23 = {
+	name = Halleck # Night's Watch
+	dynasty = dynn_Sunderly
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Sunderly_12
+
+	7968.1.1 = { birth = yes }
+	7998.2.1 = { 
+		trait = nightswatch_historical 
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = steward
+				CASTLE = title:c_eastwatch
+				NW_JOIN_AGE = 30
+			}
+		}
+	}
+	8032.1.1 = { death = yes }
+}
+### Issue of Halleck
+Sunderly_24 = {
+	name = Goren # Night's Watch, Commander of Eastwatch-By-The-Sea
+	dynasty = dynn_Sunderly
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Sunderly_23
+	
+	trait = bastard
+	give_nickname = nick_pyke
+
+	7987.1.1 = { birth = yes }
+	7998.2.1 = { 
+		trait = nightswatch_historical 
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_eastwatch
+				NW_JOIN_AGE = 12
+			}
+		}
+	}
+	8035.1.1 = { death = yes }
+}
+### Issue of Victarion
 Sunderly_14 = {
 	name = Stygg # a lord
 	dynasty = dynn_Sunderly
@@ -7375,7 +7507,7 @@ Sunderly_22 = {
 
 ###### HOUSE MYRE (id = dynn_Myre)
 ############################
-###
+### Count the Days
 ###
 Grey_King_21 = {
 	name = The_Myre # Mentioned, founder
@@ -7621,7 +7753,7 @@ Myre_rs_2 = {
 
 ###### HOUSE KENNING OF HARLAW (id = dynn_Kenning)
 ############################
-###
+### Bring Your Storm
 ###
 Grey_King_23 = {
 	name = The_Kenning # Mentioned, founder
@@ -8061,7 +8193,7 @@ Kenning_rs_16 = {
 
 ###### HOUSE STONETREE (id = dynn_Stonetree)
 ############################
-###
+### Fear no End
 ###
 Grey_King_25 = {
 	name = The_Stonetree # Mentioned, founder
@@ -8279,8 +8411,8 @@ Stonetree_18 = {
 	8136.1.1 = {
 		employer = Blacktyde_18 # Garmon Blacktyde
 		effect = { # Master-at-arms at Blacktyde
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_blacktyde
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_blacktyde 
 				POSITION = master_at_arms_court_position
 			}
 		}
@@ -8289,7 +8421,7 @@ Stonetree_18 = {
 		employer = Greyjoy_63 # Toron Greyjoy
 		add_spouse = Greyjoy_76 # Gudrun Greyjoy
 		effect = { # Master-at-arms at Pyke
-			agot_appoint_as_court_position_for_castle_history_effect = {
+			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_pyke
 				POSITION = master_at_arms_court_position
 			}
@@ -8353,7 +8485,7 @@ Stonetree_22 = {
 
 ###### HOUSE TAWNEY (id = dynn_Tawney)
 ############################
-###
+### Scourged of Weakness
 ###
 Tawney_6 = {
 	name = Waldon # a lord
@@ -8536,7 +8668,7 @@ Tawney_20 = {
 
 ###### HOUSE BLACKTYDE (id = dynn_Blacktyde)
 ############################
-###
+### Salt the Wound
 ###
 Grey_King_27 = {
 	name = Balon_Blackskin # Canon, Balon Blackskin, founder
@@ -8830,7 +8962,7 @@ Blacktyde_23 = {
 
 ###### HOUSE DRUMM (id = dynn_Drumm)
 ############################
-###
+### Grasp from beyond the Grave
 ###
 Drumm_4 = {
 	name = Dagon # Canon, AKA: Dagon the Necromancer
@@ -9234,7 +9366,7 @@ Drumm_26 = {
 
 ###### HOUSE STONEHOUSE (id = dynn_Stonehouse)
 ############################
-###
+### Feed the Flame
 ###
 Grey_King_29 = {
 	name = Ragged_Ralf # Canon, Ragged Ralf of Old Wyk, founder
@@ -9499,7 +9631,7 @@ Stonehouse_rs_3 = {
 
 ###### HOUSE SPARR (id = dynn_Sparr)
 ############################
-###
+### Unshakeable
 ###
 Sparr_7 = {
 	name = Balon # a lord
@@ -9693,7 +9825,7 @@ Sparr_rs_3 = {
 
 ###### HOUSE MERLYN (id = dynn_Merlyn)
 ############################
-###
+### None May Pass Me Unhindered
 ###
 Grey_King_31 = {
 	name = The_Merlyn # Mentioned, founder
@@ -10043,7 +10175,7 @@ Merlyn_rs_4 = {
 
 ###### HOUSE ORKWOOD (id = dynn_Orkwood)
 ############################
-###
+### On Our Backs
 ###
 Grey_King_33 = {
 	name = The_Orkwood # Mentioned, founder
@@ -10254,15 +10386,15 @@ Orkwood_20 = {
 
 	trait = bastard
 	give_nickname = nick_pyke
-
+	
 	trait = education_martial_2
 
 	8114.1.1 = { birth = yes }
 	8140.1.1 = {
 		employer = Saltcliffe_18 # Ralf Saltcliffe
 		effect = { # Master-at-arms at Saltcliffe
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_saltcliffe
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_saltcliffe 
 				POSITION = master_at_arms_court_position
 			}
 		}
@@ -10397,7 +10529,7 @@ Codd_10 = {
 	culture = ironborn
 
 	7760.1.1 = { birth = yes }
-	7798.1.1 = {
+	7798.1.1 = { 
 		effect = {
 			if = {
 				limit = { character:Codd_rs_4 = { is_alive = yes } }
@@ -10450,7 +10582,7 @@ Codd_12 = {
 
 	father = Codd_10
 	mother = Fisher_riverlands_duplicate_9
-
+	
 	trait = bastard
 	give_nickname = nick_pyke
 
@@ -10474,7 +10606,7 @@ Codd_13 = {
 	trait = intellect_good_3
 
 	7822.1.1 = { birth = yes }
-	7840.1.1 = {
+	7840.1.1 = { 
 		effect = {
 			if = {
 				limit = { character:Codd_rs_5 = { is_alive = yes } }
@@ -10662,7 +10794,7 @@ Codd_24 = {
 	trait = beauty_bad_1
 
 	7940.1.1 = { birth = yes }
-	7958.1.1 = {
+	7958.1.1 = { 
 		effect = {
 			if = {
 				limit = { character:Codd_rs_6 = { is_alive = yes } }
@@ -10817,7 +10949,7 @@ Codd_35 = {
 	father = Codd_31
 
 	8106.1.1 = { birth = yes }
-	8124.1.1 = {
+	8124.1.1 = { 
 		effect = {
 			if = {
 				limit = { character:Codd_rs_7 = { is_alive = yes } }
@@ -10872,7 +11004,7 @@ Codd_37 = {
 	mother = Codd_rs_7
 
 	8129.1.1 = { birth = yes }
-	8147.1.1 = {
+	8147.1.1 = { 
 		effect = {
 			if = {
 				limit = { character:Codd_rs_8 = { is_alive = yes } }
@@ -10983,7 +11115,7 @@ Codd_43 = {
 
 ###### HOUSE HUMBLE (id = dynn_Humble)
 ############################
-###
+### Steadfast Into Tomorrow
 ###
 Humble_12 = {
 	name = Gelmarr # a lord
@@ -11203,7 +11335,7 @@ Humble_rs_7 = {
 
 ###### HOUSE SHEPHERD (id = dynn_Shepherd)
 ############################
-###
+### Slay the Wolf
 ###
 Shepherd_10 = {
 	name = Torwold # a lord
@@ -11386,7 +11518,7 @@ Shepherd_24 = {
 
 ###### HOUSE WEAVER (id = dynn_Weaver)
 ############################
-###
+### Cut from the Cloth
 ###
 Weaver_21 = {
 	name = Wulfe # a lord
@@ -11559,7 +11691,7 @@ Weaver_20 = {
 
 ###### HOUSE NETLEY (id = dynn_Netley)
 ############################
-###
+### We Cast Wide
 ###
 Netley_9 = {
 	name = Nute # a lord
@@ -11720,7 +11852,7 @@ Netley_21 = {
 
 ###### HOUSE SHARP (id = dynn_Sharp)
 ############################
-###
+### Stand and Deliver
 ###
 Sharp_11 = {
 	name = Urrigon # a lord
@@ -11915,7 +12047,7 @@ Sharp_26 = {
 
 ###### HOUSE SALT (id = dynn_Salt)
 ############################
-###
+### We Bleed Black
 ###
 Salt_14 = {
 	name = Sigfry # a lord
@@ -12501,7 +12633,7 @@ Tidewood_31 = {
 
 ###### HOUSE IRONMAKER (id = dynn_Ironmaker)
 ############################
-###
+### Pay the Toll
 ###
 Ironmaker_16 = {
 	name = Torgon # a lord
@@ -12748,7 +12880,7 @@ Drowned_Men_4 = {
 
 	religion = drowned_god_main
 	culture = ironborn
-
+	
 	trait = bossy
 
 	disallow_random_traits = yes

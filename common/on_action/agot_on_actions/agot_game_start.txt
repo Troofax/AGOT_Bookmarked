@@ -12,6 +12,7 @@ on_game_start = {
 		# agot_province_neighbors
 		agot_ruins
 		agot_barony_ruins
+		agot_artifacts_sell
 	}
 }
 
@@ -1688,7 +1689,7 @@ agot_on_game_start = {
 			agot_add_building_if_possible = { BUILDING = caravanserai_05 }
 			agot_add_building_if_possible = { BUILDING = logging_camps_03 }
 		}
-		province:7556 = { 
+		province:7556 = {
 			agot_add_building_if_possible = { BUILDING = workshops_06 }
 			agot_add_building_if_possible = { BUILDING = agot_urban_farms_04 }
 			agot_add_building_if_possible = { BUILDING = watermills_03 }
@@ -2172,7 +2173,7 @@ agot_on_game_start = {
 		}
 		title:d_kingsguard = {
 			#destroy_title = title:d_kingsguard
-			set_coa = d_kingsguard 
+			set_coa = d_kingsguard
 		}
 
 		if = { # Setup historical kingsguard members
@@ -2195,11 +2196,11 @@ agot_on_game_start = {
 				remove_character_modifier = training_for_kingsguard
 				add_character_flag = { flag = blocked_from_leaving }
 				if = {
-					limit = { 
-						NOT = { 
-							is_courtier_of = scope:agot_crown 
-							is_ruler = yes #Filter out the Lord Commanders		
-						} 
+					limit = {
+						NOT = {
+							is_courtier_of = scope:agot_crown
+							is_ruler = yes #Filter out the Lord Commanders
+						}
 					}
 					scope:agot_crown = { add_courtier = prev }
 				}
@@ -2373,6 +2374,9 @@ agot_on_game_start = {
 		}
 		###
 
+		title:b_the_citadel.holder = {
+			trigger_event = agot_citadel_maintenance.0003
+		}
 
 		every_ruler = {
 			### Government Setup
@@ -2409,10 +2413,6 @@ agot_on_game_start = {
 				trigger_event = {
 					id = agot_nights_watch.0003
 				}
-			}
-			if = { # The Citadel
-				limit = { primary_title = title:d_the_citadel }
-				trigger_event = agot_the_citadel.0100
 			}
 
 			if = { # Override default equal succession for Old Gods
@@ -2554,29 +2554,47 @@ agot_on_game_start = {
 
 			if = { # Maester Title and Set-Up
 				limit = {
-					OR = {
-						has_trait = maester
-						# has_trait = archmaester
-					}
+					has_inactive_trait = grandmaester
 				}
+				save_scope_as = grandmaester
+				agot_progress_to_grandmaester_effect = { GRANDMAESTER_CANDIDATE = scope:grandmaester }
+			}
+			else_if = {
+				limit = {
+					has_trait = maester
+				}
+
 				save_scope_as = maester
 				if = {
 					limit = {
 						is_foreign_court_guest = no
 						is_landed = no #stops citadel weirdness
-						exists = scope:maester.liege
-						scope:maester.liege = {
+						scope:maester.employer ?= {
 							highest_held_title_tier > tier_barony
-							NOT = { employs_court_position = maester_court_position }
+							NOR = {
+								employs_court_position = maester_court_position
+								primary_title = title:e_the_iron_throne
+							}
 						}
 					}
-					scope:maester.liege = {
+					scope:maester.employer = {
 						appoint_court_position = {
 							recipient = scope:maester
 							court_position = maester_court_position
 						}
 					}
 				}
+			}
+
+			#Archmaester Artifact Setup
+			if = {
+				limit = {
+					has_trait = archmaester
+				}
+				save_scope_as = archmaester
+				agot_create_artifact_archmaester_mask_effect = { OWNER = scope:archmaester }
+				agot_create_artifact_archmaester_ring_effect = { OWNER = scope:archmaester }
+				agot_create_artifact_archmaester_rod_effect = { OWNER = scope:archmaester }
 			}
 
 			if = { # Lowborn High Valyrian Conversion
@@ -2599,7 +2617,27 @@ agot_on_game_start = {
 					remove_relation_ward = PREV
 				}
 			}
+			if = {
+				limit = { has_trait = lifestyle_blademaster_3_history }
+				remove_trait = lifestyle_blademaster_3_history
+				add_trait = lifestyle_blademaster
+				add_trait_xp = {
+					trait = lifestyle_blademaster
+					value = 100
+				}
+			}
+			if = {
+				limit = { has_trait = lifestyle_blademaster_2_history }
+				remove_trait = lifestyle_blademaster_2_history
+				add_trait = lifestyle_blademaster
+				add_trait_xp = {
+					trait = lifestyle_blademaster
+					value = 50
+				}
+			}
 		}
+
+		agot_seed_archmaesters_effect = yes
 
 		every_empire = {
 			limit = {
@@ -2764,84 +2802,8 @@ agot_on_game_start = {
 			}
 		}
 
-		###Run effects on dead characters
-		if = {
-			limit = {
-				exists = character:Velaryon_43
-				character:Velaryon_43 = { is_alive = no }
-			}
-			character:Velaryon_43 = {
-				set_father = character:Velaryon_35
-				set_real_father = character:Velaryon_31
-				remove_trait = bastard
-				add_trait = legitimized_bastard
-			}
-		}
-		if = {
-			limit = {
-				exists = character:Velaryon_44
-				character:Velaryon_44 = { is_alive = no }
-			}
-			character:Velaryon_44 = {
-				set_father = character:Velaryon_35
-				set_real_father = character:Velaryon_31
-				remove_trait = bastard
-				add_trait = legitimized_bastard
-			}
-		}
-		if = {
-			limit = {
-				exists = character:Targaryen_75
-				character:Targaryen_75 = { is_alive = no }
-			}
-			character:Targaryen_75 = {
-				clear_traits = yes
-				add_trait = intellect_good_1
-				add_trait = beauty_good_1
-				add_trait = strong
-				add_trait = honorable
-				add_trait = diligent
-				add_trait = disputed_heritage
-				add_trait = charming
-				add_trait = dragon_rider
-				add_trait = gregarious
-				set_real_father = character:Strong_30
-			}
-		}
-		if = {
-			limit = {
-				exists = character:Targaryen_76
-				character:Targaryen_76 = { is_alive = no }
-			}
-			character:Targaryen_76 = {
-				clear_traits = yes
-				add_trait = beauty_good_1
-				add_trait = strong
-				add_trait = disputed_heritage
-				add_trait = curious
-				add_trait = trusting
-				add_trait = dragon_rider
-				add_trait = brave
-				add_trait = honest
-				set_real_father = character:Strong_30
-			}
-		}
-		if = {
-			limit = {
-				exists = character:Targaryen_77
-				character:Targaryen_77 = { is_alive = no }
-			}
-			character:Targaryen_77 = {
-				clear_traits = yes
-				add_trait = beauty_good_1
-				add_trait = strong
-				add_trait = disputed_heritage
-				add_trait = rowdy
-				add_trait = brave
-				add_trait = ambitious
-				set_real_father = character:Strong_30
-			}
-		}
+		### Run effects on dead characters
+		agot_apply_posthistory_effect = yes
 	}
 }
 
@@ -3230,6 +3192,7 @@ agot_on_game_start_after_lobby = {
 				}
 				add_trait = nightswatch
 			}
+
 		}
 
 		every_barony = {
@@ -3257,6 +3220,16 @@ agot_on_game_start_after_lobby = {
 				trigger_event = agot_nightswatch_maintenance.0001 # Removes female courtiers
 			}
 		}
+
+		if = {
+			limit = {
+				exists = title:b_the_citadel
+			}
+			title:k_the_wall.holder = {
+				trigger_event = agot_citadel_maintenance.0001 # Removes female courtiers
+			}
+		}
+
 		### House Customizer related setup
 		if = {
 			limit = {
@@ -3271,6 +3244,7 @@ agot_on_game_start_after_lobby = {
 					game_start_date = 8277.1.1
 					game_start_date = 8298.12.21
 					game_start_date = 8299.3.3
+					game_start_date = 8300.3.1
 				}
 			}
 			## House Customizer Renown Fix - YES I DID TRY ITS OWN ON_ACTION
@@ -3399,7 +3373,7 @@ agot_on_game_start_after_lobby = {
 				limit = {
 					game_start_date >= 8170.1.1 # Daemon Blackfyre's Birth
 					character:Targaryen_94.house = { # Blackfyres
-						any_house_member = { 
+						any_house_member = {
 							count <= 0
 						}
 					}
@@ -3612,18 +3586,7 @@ agot_on_game_start_after_lobby = {
 
 				agot_7998_1_1_conquest_scenario_setup = yes
 			}
-			if = { # manage 8129.4.1 Dance of the Dragons scenario
-				limit = { game_start_date = 8129.4.1 }
 
-				agot_8129_4_1_dotd_scenario_setup = yes
-				# AGOT Bookmarked Disabled
-				# character:Targaryen_76  = {
-					# agot_create_artifact_lucerys_gun_effect  = { OWNER = this }
-					# scope:newly_created_artifact = {
-						# equip_artifact_to_owner_replace = yes
-					# }
-				# }
-			}
 			if = { # manage 8195.3.7 1st Blackfyre Rebellion scenario
 				limit = { game_start_date = 8195.3.7 }
 
@@ -3653,6 +3616,18 @@ agot_on_game_start_after_lobby = {
 				limit = { game_start_date = 8299.3.3 }
 
 				agot_8299_3_3_acok_scenario_setup = yes
+			}
+			if = { # manage 8129.4.1 The Dance of Dragons scenario
+				limit = { game_start_date = 8129.4.1 }
+
+				agot_8129_4_1_dotd_scenario_setup = yes
+				# AGOT Bookmarked Disabled
+				# character:Targaryen_76  = {
+					# agot_create_artifact_lucerys_gun_effect  = { OWNER = this }
+					# scope:newly_created_artifact = {
+						# equip_artifact_to_owner_replace = yes
+					# }
+				# }
 			}
 		}
 
@@ -3736,5 +3711,11 @@ agot_on_game_start_after_lobby = {
 		agot_house_maintenance.0001
 		agot_adventurers_events.0001
 		# agot_nightswatch_maintenance.0001 # Removes female courtiers
+	}
+}
+
+agot_artifacts_sell = {
+	effect = {
+		agot_get_artifact_keeper = yes
 	}
 }

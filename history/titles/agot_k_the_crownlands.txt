@@ -16,15 +16,21 @@
 	8048.3.7 = {
 		holder = Targaryen_35
 	}
-	8103.1.1 = {
-		holder = Targaryen_60
+	8092.6.8 = {
+		succession_laws = { male_only_law } # Baelon declared heir
+	}
+	8103.10.3 = {
+		holder = Targaryen_60		#Viserys I
+		succession_laws = { male_preference_law }
+	}
+	8105.9.10 = {
+		succession_laws = { equal_law } # Rhaenyra declared heir
 	}
 	8129.3.3 = {
-		holder = Targaryen_65
+		holder = Targaryen_65	 # Aegon II
+		succession_laws = { male_preference_law }
 	}
-	8129.4.1 = {
-	}
-	8131.1.8 = {
+	8131.1.14 = {
 		holder = Targaryen_78
 	}
 	8157.1.1 = {
@@ -92,15 +98,21 @@ d_kings_landing = {
 	8048.3.7 = {
 		holder = Targaryen_35
 	}
-	8103.1.1 = {
-		holder = Targaryen_60
+	8092.6.8 = {
+		succession_laws = { male_only_law } # Baelon declared heir
+	}
+	8103.10.3 = {
+		holder = Targaryen_60		#Viserys I
+		succession_laws = { male_preference_law }
+	}
+	8105.9.10 = {
+		succession_laws = { equal_law } # Rhaenyra declared heir
 	}
 	8129.3.3 = {
-		holder = Targaryen_65
+		holder = Targaryen_65	 # Aegon II
+		succession_laws = { male_preference_law }
 	}
-	8129.4.1 = {
-	}
-	8131.1.8 = {
+	8131.1.14 = {
 		holder = Targaryen_78
 	}
 	8157.1.1 = {
@@ -205,11 +217,19 @@ c_kings_landing = {
 	8048.3.7 = {
 		holder = Targaryen_35
 	}
-	8103.1.1 = {
-		holder = Targaryen_60
+	8092.6.8 = {
+		succession_laws = { male_only_law } # Baelon declared heir
+	}
+	8103.10.3 = {
+		holder = Targaryen_60		#Viserys I
+		succession_laws = { male_preference_law }
+	}
+	8105.9.10 = {
+		succession_laws = { equal_law } # Rhaenyra declared heir
 	}
 	8129.3.3 = {
-		holder = Targaryen_65
+		holder = Targaryen_65	 # Aegon II
+		succession_laws = { male_preference_law }
 	}
 	8130.6.28 = {
 		holder = Truefyre_1
@@ -217,7 +237,7 @@ c_kings_landing = {
 	8130.7.1 = {
 		holder = Targaryen_65
 	}
-	8131.1.8 = {
+	8131.1.14 = {
 		holder = Targaryen_78
 	}
 	8157.1.1 = {
@@ -274,16 +294,16 @@ b_goldguard_heights = {
 	8090.1.1 = {
 		holder = Targaryen_35
 	}
-	8104.5.1 = {
+	8104.7.12 = {
 		holder = Targaryen_61
 	}
-	8105.12.12 = { # Daemon leaves for Stepstones, goes to Harwin
+	8105.9.12 = { # Daemon leaves for Stepstones, goes to Harwin
 		holder = Strong_30
 	}
 	8113.1.1 = { # Harwin goes with Rhaenyra, goes to Luthor
 		holder = Largent_1
 	}
-	8130.5.22 = {
+	8130.10.8 = {
 		holder = Byrch_18
 	}
 	8133.8.1 = {
@@ -382,11 +402,19 @@ c_blackstripe = {
 	8048.3.7 = {
 		holder = Targaryen_35
 	}
-	8103.1.1 = {
-		holder = Targaryen_60
+	8092.6.8 = {
+		succession_laws = { male_only_law } # Baelon declared heir
+	}
+	8103.10.3 = {
+		holder = Targaryen_60		#Viserys I
+		succession_laws = { male_preference_law }
+	}
+	8105.9.10 = {
+		succession_laws = { equal_law } # Rhaenyra declared heir
 	}
 	8129.3.3 = {
-		holder = Targaryen_65
+		holder = Targaryen_65	 # Aegon II
+		succession_laws = { male_preference_law }
 	}
 	8130.6.28 = {
 		holder = Truefyre_1
@@ -394,7 +422,7 @@ c_blackstripe = {
 	8130.7.1 = {
 		holder = Targaryen_65
 	}
-	8131.1.8 = {
+	8131.1.14 = {
 		holder = Targaryen_78
 	}
 	8157.1.1 = {
@@ -472,9 +500,7 @@ c_bramsfort = {
 	8117.1.1 = {
 		holder = Chelsted_20
 	}
-	8129.4.1 = {
-	}
-	8130.5.1 = {
+	8130.4.28 = {
 		holder = Chelsted_22
 	}
 	8136.1.1 = {
@@ -501,9 +527,6 @@ c_bramsfort = {
 	}
 }
 b_castle_rushbank = {
-	8120.1.1 = {
-		holder = 88000503
-	}
 	8130.5.22 = {
 		holder = Chelsted_22
 	}
@@ -1395,7 +1418,7 @@ d_deerfield = {
 	8100.1.1 = {
 		holder = Buckwell_20
 	}
-	8129.10.1 = {
+	8129.11.21 = {
 		holder = Buckwell_26
 	}
 	8149.12.2 = {
@@ -1456,7 +1479,7 @@ c_antlers = {
 	8100.1.1 = {
 		holder = Buckwell_20
 	}
-	8129.10.1 = {
+	8129.11.21 = {
 		holder = Buckwell_26
 	}
 	8149.12.2 = {
@@ -1512,7 +1535,7 @@ c_brackworth = {
 	8102.1.1 = {
 		holder = Harte_16
 	}
-	8129.8.1 = {
+	8129.9.5 = {
 		holder = Harte_18
 	}
 	8143.1.1 = {
@@ -1576,7 +1599,7 @@ c_point_square = {
 	8100.1.1 = {
 		holder = Buckwell_20
 	}
-	8129.10.1 = {
+	8129.11.21 = {
 		holder = Buckwell_26
 	}
 	8149.12.2 = {
@@ -1637,7 +1660,7 @@ c_tuskford = {
 	8100.1.1 = {
 		holder = Buckwell_20
 	}
-	8129.10.1 = {
+	8129.11.21 = {
 		holder = Buckwell_26
 	}
 	8149.12.2 = {
@@ -1693,7 +1716,7 @@ c_vairs_head = {
 	8102.1.1 = {
 		holder = Harte_16
 	}
-	8129.8.1 = {
+	8129.9.5 = {
 		holder = Harte_18
 	}
 	8143.1.1 = {
@@ -1766,9 +1789,7 @@ d_duskendale = {
 	8120.1.1 = {
 		holder = Darklyn_19
 	}
-	8129.4.1 = {
-	}
-	8129.9.1 = {
+	8129.10.3 = {
 		holder = Darklyn_29
 	}
 	8174.1.1 = {
@@ -1836,7 +1857,7 @@ c_duskendale = {
 	8120.1.1 = {
 		holder = Darklyn_19
 	}
-	8129.9.1 = {
+	8129.10.3 = {
 		holder = Darklyn_29
 	}
 	8174.1.1 = {
@@ -1882,7 +1903,7 @@ b_highley = {
 	8124.1.1 = {
 		holder = Leek_11
 	}
-	8130.1.1 = {
+	8129.10.3 = { 
 		holder = Leek_13
 	}
 	8133.1.1 = {
@@ -2290,9 +2311,7 @@ d_hayford = {
 	8114.1.1 = {
 		holder = Hayford_12
 	}
-	8129.4.1 = {
-	}
-	8129.8.1 = {
+	8129.9.5 = {
 		holder = Hayford_13
 	}
 	8175.1.1 = {
@@ -2351,9 +2370,7 @@ c_hayford = {
 	8114.1.1 = {
 		holder = Hayford_12
 	}
-	8129.4.1 = {
-	}
-	8129.8.1 = {
+	8129.9.5 = {
 		holder = Hayford_13
 	}
 	8175.1.1 = {
@@ -2626,7 +2643,7 @@ d_masseys_hook = {
 	8128.1.1 = {
 		holder = Massey_38
 	}
-	8129.4.1 = {
+	8129.12.6 = {
 		holder = Massey_40
 	}
 	8165.2.19 = {
@@ -2706,7 +2723,7 @@ c_stonedance = {
 	8128.1.1 = {
 		holder = Massey_38
 	}
-	8129.4.1 = {
+	8129.12.6 = {
 		holder = Massey_40
 	}
 	8165.2.19 = {
@@ -2768,7 +2785,7 @@ c_chancedoor = {
 	8123.1.1 = {
 		holder = Rambton_16
 	}
-	8130.1.1 = {
+	8130.1.5 = {
 		holder = Rambton_18
 	}
 	8176.1.1 = {
@@ -3157,7 +3174,7 @@ d_rooks_rest = {
 	8083.1.1 = {
 		holder = Staunton_19
 	}
-	8129.9.2 = {
+	8129.11.21 = {
 		holder = Staunton_25
 	}
 	8174.9.2 = {
@@ -3210,7 +3227,7 @@ c_rooks_rest = {
 	8083.1.1 = {
 		holder = Staunton_19
 	}
-	8129.9.2 = {
+	8129.11.21 = {
 		holder = Staunton_25
 	}
 	8174.9.2 = {
@@ -3319,7 +3336,7 @@ c_risegrave = {
 	8083.1.1 = {
 		holder = Staunton_19
 	}
-	8129.9.2 = {
+	8129.11.21 = {
 		holder = Staunton_25
 	}
 	8174.9.2 = {
@@ -3428,9 +3445,9 @@ d_rosby = {
 		de_jure_liege = k_the_crownlands
 	}
 	7998.2.1 = {
+		liege = e_the_iron_throne
 		# AGOT Bookmarked Disabled
 		# de_jure_liege = k_the_crownlands
-		liege = e_the_iron_throne
 	}
 	8005.1.1 = {
 		holder = Rosby_11
@@ -3444,9 +3461,7 @@ d_rosby = {
 	8123.1.1 = {
 		holder = Rosby_16
 	}
-	8129.4.1 = {
-	}
-	8130.1.26 = {
+	8130.2.28 = {
 		holder = Rosby_22
 	}
 	8141.1.1 = {
@@ -3505,7 +3520,7 @@ c_rosby = {
 	8123.1.1 = {
 		holder = Rosby_16
 	}
-	8130.1.26 = {
+	8130.2.28 = {
 		holder = Rosby_22
 	}
 	8141.1.1 = {
@@ -3850,9 +3865,9 @@ d_stokeworth = {
 		de_jure_liege = k_the_crownlands
 	}
 	7998.2.1 = {
+		liege = e_the_iron_throne
 		# AGOT Bookmarked Disabled
 		# de_jure_liege = k_the_crownlands
-		liege = e_the_iron_throne
 	}
 	8000.1.1 = {
 		holder = Stokeworth_14
@@ -3872,9 +3887,7 @@ d_stokeworth = {
 	8120.1.1 = {
 		holder = Stokeworth_21
 	}
-	8129.4.1 = {
-	}
-	8130.1.26 = {
+	8130.2.28 = {
 		holder = Stokeworth_24
 	}
 	8183.1.1 = {
@@ -3933,7 +3946,7 @@ c_stokeworth = {
 	8120.1.1 = {
 		holder = Stokeworth_21
 	}
-	8130.1.26 = {
+	8130.2.28 = {
 		holder = Stokeworth_24
 	}
 	8183.1.1 = {
@@ -4154,7 +4167,7 @@ c_nessing = {
 	8130.1.1 = {
 		holder = Largent_1
 	}
-	8130.5.22 = {
+	8130.10.8 = {
 		holder = Largent_2
 	}
 	8197.1.1 = {
@@ -4584,9 +4597,7 @@ c_great_fork = {
 	8123.1.1 = {
 		holder = Bourney_35
 	}
-	8129.4.1 = {
-	}
-	8130.5.5 = {
+	8130.6.1 = {
 		holder = Bourney_36
 	}
 	8151.1.1 = {
@@ -4653,7 +4664,7 @@ c_longgrass = {
 	8113.1.1 = {
 		holder = Corne_34
 	}
-	8130.5.5 = {
+	8130.6.1 = {
 		holder = Corne_35
 	}
 	8151.1.1 = {
@@ -4790,7 +4801,7 @@ c_pikemouth = {
 	8113.1.1 = {
 		holder = Corne_34
 	}
-	8130.5.5 = {
+	8130.6.1 = {
 		holder = Corne_35
 	}
 	8151.1.1 = {

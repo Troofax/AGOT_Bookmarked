@@ -739,11 +739,12 @@ agot_set_MHF_reach_legacies = {
 					# add_dynasty_prestige = 250
 					# add_dynasty_perk = fp2_urbanism_legacy_1
 				# }
-				# dynasty:dynn_Florent = {
-					# add_dynasty_prestige = 1000
+				dynasty:dynn_Florent = {
+					add_dynasty_prestige = 1250
 					# add_dynasty_perk = glory_legacy_1
 					# add_dynasty_perk = kin_legacy_1
-				# }
+					add_dynasty_perk = florent_legacy_1
+				}
 				# dynasty:dynn_Fossoway = {
 					# add_dynasty_prestige = 1000
 					# add_dynasty_perk = warfare_legacy_1
@@ -769,13 +770,14 @@ agot_set_MHF_reach_legacies = {
 					# add_dynasty_prestige = 250
 					# add_dynasty_perk = warfare_legacy_1
 				# }
-				# dynasty:dynn_Hightower = {
-					# add_dynasty_prestige = 4000
+				dynasty:dynn_Hightower = {
+					add_dynasty_prestige = 2400
 					# add_dynasty_perk = erudition_legacy_1
 					# add_dynasty_perk = erudition_legacy_2
 					# add_dynasty_perk = glory_legacy_1
 					# add_dynasty_perk = fp2_urbanism_legacy_1
-				# }
+					add_dynasty_perk = hightower_legacy_1
+				}
 				# dynasty:dynn_Hunt = {
 					# add_dynasty_prestige = 250
 					# add_dynasty_perk = warfare_legacy_1
@@ -823,12 +825,13 @@ agot_set_MHF_reach_legacies = {
 					# add_dynasty_perk = guile_legacy_1
 					# add_dynasty_perk = guile_legacy_2
 				# }
-				# dynasty:dynn_Redwyne = {
-					# add_dynasty_prestige = 2250
+				dynasty:dynn_Redwyne = {
+					add_dynasty_prestige = 1850
 					# add_dynasty_perk = law_legacy_1
 					# add_dynasty_perk = glory_legacy_1
 					# add_dynasty_perk = fp2_urbanism_legacy_1
-				# }
+					add_dynasty_perk = redwyne_legacy_1
+				}
 				# dynasty:dynn_Risley = {
 					# add_dynasty_prestige = 250
 					# add_dynasty_perk = law_legacy_1
@@ -839,10 +842,11 @@ agot_set_MHF_reach_legacies = {
 					# add_dynasty_perk = glory_legacy_1
 					add_dynasty_perk = rowan_legacy_1
 				}
-				# dynasty:dynn_Roxton = {
-					# add_dynasty_prestige = 250
+				dynasty:dynn_Roxton = {
+					add_dynasty_prestige = 800
 					# add_dynasty_perk = warfare_legacy_1
-				# }
+					add_dynasty_perk = roxton_legacy_1
+				}
 				# dynasty:dynn_Serry = {
 					# add_dynasty_prestige = 250
 					# add_dynasty_perk = warfare_legacy_1

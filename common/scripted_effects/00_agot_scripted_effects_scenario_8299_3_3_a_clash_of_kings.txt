@@ -9,17 +9,15 @@ agot_8299_3_3_acok_scenario_setup = {
 	### RULER DESIGNER FIX ###
 	# Stannis aganist Lannisters
 	if = { # fire only if you used ruler designer; else there is no war
-		limit = { NOT = { title:k_the_stormlands.holder = character:Baratheon_3 } }
+		limit = { NOT = { title:k_dragonstone.holder = character:Baratheon_3 } }
 
-		title:k_the_stormlands.holder = {
+		title:k_dragonstone.holder = {
 			start_war = {
 				cb = claim_cb
 				target = title:e_the_iron_throne.holder
 				target_title = title:e_the_iron_throne
 				target_title = title:d_kings_landing
 				target_title = title:c_kings_landing
-				target_title = title:d_dragonstone
-				target_title = title:c_dragonstone
 			}
 			every_character_war = {
 				add_attacker = title:d_yronwood.holder

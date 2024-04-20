@@ -35,35 +35,36 @@ Stark_1 = {
 	trait = authoritative
 	trait = just
 	trait = brave
-	trait = bossy
-
-	disallow_random_traits = yes
+	trait = bossy 
+	
+	disallow_random_traits = yes 
 
 	8239.1.1 = { birth = yes }
 	8255.1.1 = { add_spouse = Stark_127 } # Lyarra Stark
+	
 	8281.6.1 = {
 		effect = {
-			if = {
-				limit = {
-					character:Tully_1 = { is_alive = yes }
-					character:Stark_2 = { is_alive = yes }
-					character:Tully_4 = { is_alive = yes }
-				}
+			if = { 
+				limit = { 
+					character:Tully_1 = { is_alive = yes } 
+					character:Stark_2 = { is_alive = yes } 
+					character:Tully_4 = { is_alive = yes } 
+				}			
 				create_alliance = { # By marriage
 					target = character:Tully_1 # Hoster Tully
 					allied_through_owner = character:Stark_2 # Brandon Stark
 					allied_through_target = character:Tully_4 # Catelyn Tully
 				}
 			}
-			if = {
-				limit = {
-					character:Baratheon_2 = { is_alive = yes }
-					character:Stark_5 = { is_alive = yes }
+			if = { 
+				limit = { 
+					character:Baratheon_2 = { is_alive = yes } 
+					character:Stark_5 = { is_alive = yes } 
 				}
 				create_alliance = { # By marriage
 					target = character:Baratheon_2 # Robert Baratheon
-					allied_through_owner = ROOT
-					allied_through_target = character:Stark_5 # Lyanna Stark
+					allied_through_owner = character:Stark_5 # Lyanna Stark
+					allied_through_target = character:Baratheon_2 # Robert Baratheon 
 				}
 			}
 		}
@@ -97,12 +98,12 @@ Stark_2 = {
 
 	trait = education_martial_2
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8262.1.1 = { birth = yes }
 	8274.1.1 = {
-		effect = {
+		effect = { 
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Dustin_46 } # Rodrik Dustin
 		}
 	}
@@ -138,14 +139,11 @@ Stark_2 = {
 	}
 	8281.6.1 = { # Betrothal to Catelyn announced
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Ryswell_4 = { is_alive = yes } }
 				remove_relation_lover = character:Ryswell_4 # Barbrey Ryswell
 			}
-			if = {
-				limit = { character:Tully_4 = { is_alive = yes } }
-				create_betrothal = character:Tully_4 # Catelyn Tully
-			}
+			agot_safe_betrothal_history_effect = { TARGET = character:Tully_4 } # Catelyn Tully
 		}
 	}
 	8282.8.1 = {
@@ -192,7 +190,7 @@ Stark_3 = {
 	8263.1.1 = { birth = yes }
 	8268.1.1 = { trait = honest }
 	8271.1.1 = { # Eight years old
-		effect = {
+		effect = { 
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Arryn_3 } # Jon Arryn
 		}
 	}
@@ -221,24 +219,15 @@ Stark_3 = {
 				limit = { game_start_date = 8282.9.15 }
 				add_character_flag = bookmark_independent
 			}
-			if = {
-				limit = {
-					character:Tully_1 = { is_alive = yes }
-					character:Tully_4 = { is_alive = yes }
+			if = { 
+				limit = { 
+					character:Tully_1 = { is_alive = yes } 
+					character:Tully_4 = { is_alive = yes } 
 				}
 				create_alliance = { # By marriage
 					target = character:Tully_1 # Hoster Tully
 					allied_through_owner = ROOT # Eddard Stark
 					allied_through_target = character:Tully_4 # Catelyn Tully
-				}
-			}
-			if = {
-				limit = {
-					game_start_date = 8282.9.15
-					character:Tully_4 = { is_alive = yes }
-				}
-				character:Tully_4 = { # Catelyn Tully
-					make_pregnant = { father = ROOT } # Robb Stark
 				}
 			}
 			agot_set_as_loyalist_history_effect = { LOYALIST = character:Manderly_6 } # Wyman Manderly
@@ -264,23 +253,23 @@ Stark_3 = {
 		}
 	}
 	8288.1.1 = {
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:Tully_4 = { is_alive = yes } }
 				set_relation_lover = { # Formed a loving relationship
 					target = character:Tully_4 # Catelyn Tully
 					reason = lover_spouse
-				}
+				}	
 			}
 		}
 	}
 	8298.2.24 = {
 		effect = { # Hand of the King
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:e_the_iron_throne
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:e_the_iron_throne 
 				POSITION = councillor_castellan
 			}
-		}
+		} 
 	}
 	8298.10.28 = {
 		effect = {
@@ -290,14 +279,14 @@ Stark_3 = {
 					type = dungeon
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Baratheon_5 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = treachery_opinion
 					target = character:Baratheon_5 # Joffrey Baratheon
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Lannister_6 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = treachery_opinion
@@ -346,19 +335,19 @@ Stark_4 = {
 	8283.1.1 = { trait = content }
 	8285.1.1 = {
 		trait = nightswatch_historical
-		employer = Qorgyle_2 # Jantos Qorgyle
-		# effect = { # AGOT TODO
-			# add_character_modifier = {
-				# modifier = nw_ranger
-			# }
-		# }
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 38
+			}
+		}
 		trait = lifestyle_hunter
 	}
-	8288.1.1 = { employer = Mormont_2 } # Jeor Mormont
 	8290.1.1 = {
 		effect = { # First Ranger of the Night's Watch
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:k_the_wall
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:k_the_wall 
 				POSITION = councillor_marshal
 			}
 			add_trait = lifestyle_hunter
@@ -375,7 +364,7 @@ Stark_4 = {
 		}
 	}
 	8298.6.15 = {
-		death = { death_reason = death_vanished } # Went missing beyond the Wall
+		death = { death_reason = death_disappeared_on_ranging }
 	}
 }
 Stark_5 = {
@@ -418,16 +407,13 @@ Stark_5 = {
 	}
 	8281.6.1 = {
 		effect = {
-			if = {
-				limit = { character:Baratheon_2 = { is_alive = yes } }
-				create_betrothal = character:Baratheon_2 # Robert Baratheon
-			}
+			agot_safe_betrothal_history_effect = { TARGET = character:Baratheon_2 } # Robert Baratheon
 			add_character_modifier = { modifier =  queen_of_love_and_beauty_modifier }
 			set_global_variable = {
 				name = queen_of_love_and_beauty
 				value = character:Stark_5
 			}
-			if = {
+			if = { 
 				limit = { character:Targaryen_3 = { is_alive = yes } }
 				add_opinion = {
 					target = character:Targaryen_3
@@ -446,7 +432,7 @@ Stark_5 = {
 		#trait = has_missing # AGOT TODO trait
 		effect = {
 			add_character_flag = yearly_1010_abducted
-			if = {
+			if = { 
 				limit = { character:Targaryen_3 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = love_opinion
@@ -506,7 +492,6 @@ Stark_6 = {
 	8297.1.1 = {
 		# trait = cavalry_leader # AGOT TODO trait
 		trait = flexible_leader
-		# trait = inspiring_leader # AGOT TODO trait
 	}
 	# 8298.2.24 = { # AGOT TODO
 		# trait = direwolf # Grey Wind # AGOT TODO trait
@@ -529,10 +514,10 @@ Stark_6 = {
 	# }
 	8298.11.2 = {
 		effect = {
-			if = {
-				limit = {
-					character:Tully_1 = { is_alive = yes }
-					character:Tully_4 = { is_alive = yes }
+			if = { 
+				limit = { 
+					character:Tully_1 = { is_alive = yes } 
+					character:Tully_4 = { is_alive = yes } 
 				}
 				create_alliance = { # Grandfather-Grandchild
 					target = character:Tully_1 # Hoster Tully
@@ -552,15 +537,12 @@ Stark_6 = {
 	}
 	8299.2.11 = {
 		effect = {
-			if = {
-				limit = { character:Frey_82 = { is_alive = yes } }
-				create_betrothal = character:Frey_82 # Roslin Frey
-			}
+			agot_safe_betrothal_history_effect = { TARGET = character:Frey_82 } # Roslin Frey
 			if = {
 				limit = { character:Umber_8 = { is_alive = yes } }
 				set_relation_friend = character:Umber_8 # Greatjon Umber
 			}
-			if = {
+			if = { 
 				limit = { character:Baratheon_5 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = treachery_opinion
@@ -576,15 +558,15 @@ Stark_6 = {
 				limit = { character:Westerling_2 = { is_alive = yes } }
 				set_relation_lover = {
 					target = character:Westerling_2 # Jeyne Westerling
-					reason = lover_spouse
+					reason = lover_spouse 
 				}
-				character:Westerling_2 = { # Jeyne Westerling
+				character:Westerling_2 = { # Jeyne Westerling 
 					make_pregnant = {
 						father = ROOT
 					}
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Frey_1 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = broke_betrothal_opinion
@@ -595,10 +577,10 @@ Stark_6 = {
 	}
 	8299.10.15 = {
 		effect = {
-			if = {
-				limit = {
-					character:Tully_7 = { is_alive = yes }
-					character:Tully_4 = { is_alive = yes }
+			if = { 
+				limit = { 
+					character:Tully_7 = { is_alive = yes } 
+					character:Tully_4 = { is_alive = yes } 
 				}
 				create_alliance = { # Uncle-Nephew
 					target = character:Tully_7 # Edmure Tully
@@ -634,7 +616,7 @@ Stark_7 = {
 
 	trait = bastard
 	give_nickname = nick_snow
-
+	
 	trait = education_martial_2
 	trait = pensive
 
@@ -657,7 +639,7 @@ Stark_7 = {
 		trait = brave
 		trait = just
 		trait = honest
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:Stark_6 = { is_alive = yes } }
 				set_relation_friend = character:Stark_6 # Robb Stark
@@ -665,7 +647,7 @@ Stark_7 = {
 		}
 	}
 	8297.1.1 = {
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:Stark_9 = { is_alive = yes } }
 				set_relation_friend = character:Stark_9 # Arya Stark
@@ -693,9 +675,9 @@ Stark_7 = {
 	# }
 	8298.5.20 = {
 		trait = nightswatch_historical
-		effect = { # Personal Steward of the Night's Watch
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:k_the_wall
+		effect = { # Personal Steward of the Lord Commander of the Night's Watch
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:k_the_wall 
 				POSITION = councillor_personal_steward
 			}
 			if = {
@@ -726,23 +708,23 @@ Stark_7 = {
 				limit = { character:Tollett_6 = { is_alive = yes } }
 				set_relation_friend = character:Tollett_6 # Dolorous Edd Tollett
 			}
-			#add_character_modifier = nw_steward # AGOT TODO modifier
-			#add_character_flag = NW_personal_steward # AGOT TODO
+			agot_join_nightswatch_history_effect = {
+				ORDER = steward
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 15
+			}
 		}
 	}
 	8299.1.1 = {
 		employer = Rayder_1 # Mance Rayder
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:574349 = { is_alive = yes } }
 				set_relation_lover = character:574349 # Ygritte
 			}
 		}
 	}
-	8299.2.1 = {
-		#trait = defensive_leader # AGOT TODO trait
-		#trait = inspiring_leader # AGOT TODO trait
-	}
+	8299.2.1 = { trait = unyielding_defender }
 	8299.2.11 = {
 		effect = { add_pressed_claim = title:e_the_north }
 	}
@@ -787,7 +769,7 @@ Stark_7 = {
 	}
 	8300.3.1 = {
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Slynt_1 = { is_alive = yes } }
 				character:Slynt_1 = { # Janos Slynt
 					set_relation_rival = {
@@ -796,7 +778,7 @@ Stark_7 = {
 					}
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Baratheon_3 = { is_alive = yes } }
 				add_opinion = {
 					modifier = respect_opinion
@@ -809,7 +791,7 @@ Stark_7 = {
 					opinion = 60
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Melisandre_1 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = respect_opinion
@@ -858,7 +840,7 @@ Stark_8 = {
 	8292.12.12 = {
 		trait = content
 		trait = fashionable
-		effect = {
+		effect = { 
 			add_trait = arrogant
 			add_trait = trusting
 			agot_set_as_ward_history_effect = { GUARDIAN = character:2001159 } # Septa Mordane
@@ -890,9 +872,9 @@ Stark_8 = {
 	}
 	8298.11.2 = {
 		trait = patient
-		effect = {
+		effect = { 
 			remove_trait = arrogant
-			add_stress = major_stress_gain
+			add_stress = major_stress_gain 
 		}
 	}
 	8299.2.11 = {
@@ -952,7 +934,7 @@ Stark_Dummy_8 = {
 			set_real_mother = character:Tully_4 # Catelyn Tully
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Baelish_2 } # Petyr Baelish
 			set_father = character:Baelish_2
-			if = {
+			if = { 
 				limit = { character:Frey_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -963,7 +945,7 @@ Stark_Dummy_8 = {
 					target = character:Frey_1 # Walder Frey
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Bolton_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -999,14 +981,14 @@ Stark_9 = {
 
 	father = Stark_3
 	mother = Tully_4
-
+	
 	trait = rowdy
 
 	disallow_random_traits = yes
 
 	8289.1.1 = { birth = yes }
 	8295.1.1 = {
-		effect = {
+		effect = { 
 			agot_set_as_ward_history_effect = { GUARDIAN = character:2001159 } # Septa Mordane
 		}
 	}
@@ -1037,7 +1019,7 @@ Stark_9 = {
 	}
 	# 8298.7.27 = { remove_trait = direwolf } # AGOT TODO trait
 	# 8298.8.20 = {
-		# effect = {
+		# effect = { 
 			# agot_set_as_ward_history_effect = { GUARDIAN = character:126009 } # Syrio Forel AGOT TODO Reenable when Braavosi is added
 		# }
 	# }
@@ -1098,7 +1080,7 @@ Stark_Dummy_9 = {
 	8299.9.1 = { employer = Cox_1 } # Quincy Cox
 	8299.11.5 = {
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Frey_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -1109,7 +1091,7 @@ Stark_Dummy_9 = {
 					target = character:Frey_1 # Walder Frey
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Bolton_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -1139,7 +1121,7 @@ Stark_Dummy_9 = {
 
 	father = Stark_3
 	mother = Tully_4
-
+	
 	trait = curious
 
 	disallow_random_traits = yes
@@ -1196,7 +1178,7 @@ Stark_Dummy_10 = {
 
 	religion = old_gods_south
 	culture = northman
-
+	
 	trait = curious
 
 	disallow_random_traits = yes
@@ -1234,7 +1216,7 @@ Stark_Dummy_10 = {
 	}
 	8299.11.5 = {
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Frey_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -1245,7 +1227,7 @@ Stark_Dummy_10 = {
 					target = character:Frey_1 # Walder Frey
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Bolton_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -1271,8 +1253,8 @@ Stark_11 = {
 	mother = Tully_4
 
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8295.1.1 = {
 		birth = yes
@@ -1333,8 +1315,8 @@ Stark_Dummy_11 = {
 	culture = northman
 
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8295.1.1 = {
 		birth = yes
@@ -1362,7 +1344,7 @@ Stark_Dummy_11 = {
 	}
 	8299.11.5 = {
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Frey_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -1373,7 +1355,7 @@ Stark_Dummy_11 = {
 					target = character:Frey_1 # Walder Frey
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Bolton_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -1412,22 +1394,16 @@ Stark_hh_1 = {
 
 	8247.1.1 = { birth = yes }
 	8272.1.1 = {
-		trait = maester
+		trait = maester_historical
 		employer = Stark_1 # Rickard Stark
 		effect = { # Maester of Winterfell
+			agot_maester_forge_link_history_effect = { METAL = vs }
+			agot_maester_forge_link_history_effect = { METAL = brass }
+			agot_maester_forge_link_history_effect = { METAL = bronze }
+			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:c_winterfell
 				POSITION = maester_court_position
-			}
-			add_trait = lifestyle_physician
-			add_trait_xp = {
-				trait = lifestyle_physician
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_low
-						max = medium_lifestyle_random_xp_high
-					}
-				}
 			}
 		}
 	}
@@ -1455,10 +1431,10 @@ Stark_hh_3 = {
 		birth = yes
 		employer = Stark_1 # Rickard Stark
 	}
-	8282.1.1 = {
+	8282.1.1 = { 
 		trait = septon # Septon
 		effect = { # Septon of Winterfell
-			agot_appoint_as_court_position_for_castle_history_effect = {
+			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_winterfell
 				POSITION = septon_court_position
 			}
@@ -1532,8 +1508,8 @@ Stark_hh_5 = {
 	trait = authoritative
 	trait = gregarious
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8272.1.1 = {
 		birth = yes
@@ -1591,9 +1567,9 @@ Stark_hh_7 = {
 	trait = content
 	trait = diligent
 	trait = gluttonous
-	trait = rowdy
-
-	disallow_random_traits = yes
+	trait = rowdy 
+	
+	disallow_random_traits = yes 
 
 	8250.1.1 = {
 		birth = yes
@@ -1692,7 +1668,7 @@ Stark_hh_10 = {
 		employer = Stark_3 # Eddard Stark
 	}
 	8294.1.1 = {
-		effect = {
+		effect = { 
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Stark_hh_9 } # Cayn
 		}
 	}
@@ -1718,8 +1694,8 @@ Stark_hh_11 = {
 
 	trait = education_martial_2
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8266.1.1 = { birth = yes }
 	8282.9.15 = {
@@ -1781,8 +1757,8 @@ Stark_hh_13 = {
 	trait = zealous
 	# trait = wildling # AGOT TODO trait
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8280.1.1 = { birth = yes }
 	8296.1.1 = { trait = scarred }
@@ -1805,8 +1781,8 @@ Stark_hh_14 = {
 		trait = brave
 		trait = stubborn
 		effect = { # Smith at Winterfell
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_winterfell
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_winterfell 
 				POSITION = court_smith_court_position
 			}
 		}
@@ -2190,8 +2166,8 @@ Stark_hh_2 = {
 	trait = physique_good_3
 	trait = giant
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8263.1.1 = {
 		birth = yes
@@ -2345,8 +2321,8 @@ Manderly_6 = {
 
 	trait = education_intrigue_3
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8239.1.1 = {
 		birth = yes
@@ -2377,14 +2353,14 @@ Manderly_6 = {
 	8292.1.1 = { trait = widowed }
 	8299.11.5 = { # Red Wedding
 		effect = { # Wendel killed, hostile toward Boltons and Freys
-			if = {
+			if = { 
 				limit = { character:Bolton_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
 					target = character:Bolton_1 # Roose Bolton
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Frey_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -2425,8 +2401,8 @@ Manderly_7 = {
 	trait = patient
 	trait = gluttonous
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8261.1.1 = {
 		birth = yes
@@ -2444,7 +2420,7 @@ Manderly_7 = {
 	}
 	8280.1.1 = { add_spouse = Woolfield_2 } # Leona Woolfield
 	8281.1.1 = {
-		remove_trait = squire
+		remove_trait = squire 
 		trait = knight
 		effect = {
 			change_current_weight = 50
@@ -2498,8 +2474,8 @@ Manderly_8 = {
 	trait = gluttonous
 	trait = brave
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8263.1.1 = {
 		birth = yes
@@ -2516,7 +2492,7 @@ Manderly_8 = {
 		}
 	}
 	8282.1.1 = {
-		remove_trait = squire
+		remove_trait = squire 
 		trait = knight
 		effect = {
 			change_current_weight = 50
@@ -2548,8 +2524,8 @@ Manderly_9 = {
 	trait = patient
 	trait = deceitful
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8280.1.1 = { birth = yes }
 }
@@ -2570,8 +2546,8 @@ Manderly_10 = {
 	trait = wrathful
 	trait = brave
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8284.1.1 = { birth = yes }
 }
@@ -2600,8 +2576,8 @@ Manderly_11 = {
 	8274.1.1 = {
 		trait = knight
 		effect = { # Captain of the Guard at White Harbor
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_white_harbor
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_white_harbor 
 				POSITION = household_guard_court_position
 			}
 		}
@@ -2757,22 +2733,26 @@ Marsh_5 = {
 	trait = arrogant
 	trait = cynical
 	trait = pensive
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8253.1.1 = { birth = yes }
 	8281.1.1 = {
 		trait = nightswatch_historical
 		employer = Qorgyle_2 # Jantos Qorgyle
-		# effect = {
-			# add_character_modifier = nw_steward # AGOT TODO modifier
-		# }
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = steward
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 28
+			}
+		}
 	}
 	8288.1.1 = { employer = Mormont_2 } # Jeor Mormont
 	8294.1.1 = {
 		effect = { # First Steward of the Night's Watch
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:k_the_wall
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:k_the_wall 
 				POSITION = councillor_steward
 			}
 		}
@@ -2848,7 +2828,7 @@ Waterman_2 = {
 	8281.1.1 = { trait = content }
 }
 Waterman_24 = {
-	name = Faye
+	name = Faye 
 	dynasty = dynn_Waterman
 	female = yes
 
@@ -3080,12 +3060,12 @@ Umber_3 = {
 	trait = brave
 	trait = drunkard
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8228.1.1 = { birth = yes }
 	8256.1.1 = { add_spouse = Umber_rs_3 }
-	8265.1.1 = {
+	8265.1.1 = { 
 		effect = { add_trait = widowed }
 	}
 	8279.1.1 = {
@@ -3097,13 +3077,13 @@ Umber_3 = {
 	}
 	8291.1.1 = {
 		effect = { # Co-Castellan of Last Hearth
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:c_last_hearth
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:c_last_hearth 
 				POSITION = councillor_castellan
 			}
 		}
 	}
-	8297.1.1 = {
+	8297.1.1 = { 
 		effect = { remove_trait = widowed }
 	}
 }
@@ -3144,24 +3124,24 @@ Umber_4 = {
 	trait = callous
 	trait = drunkard
 	trait = curious
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8234.1.1 = { birth = yes }
 	8254.1.1 = { give_nickname = nick_whoresbane }
 	8256.1.1 = { add_spouse = Umber_rs_4 }
 	8291.1.1 = {
 		effect = { # Co-Castellan of Last Hearth
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:c_last_hearth
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:c_last_hearth 
 				POSITION = councillor_marshal
 			}
 		}
 	}
-	8293.1.1 = {
+	8293.1.1 = { 
 		effect = { add_trait = widowed }
 	}
-	8297.1.1 = {
+	8297.1.1 = { 
 		effect = { remove_trait = widowed }
 	}
 }
@@ -3237,7 +3217,7 @@ Umber_7 = {
 
 	8265.1.1 = { birth = yes }
 	8290.1.1 = {
-		death = { death_reason = death_vanished } # Abducted by Wildlings
+		death = { death_reason = death_wildlings } # Abducted by Wildlings
 	}
 }
 ### Issue of Brandon
@@ -3269,8 +3249,8 @@ Umber_8 = {
 	trait = authoritative
 	trait = stubborn
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8252.1.1 = { birth = yes }
 	8270.1.1 = { add_spouse = Umber_rs_5 }
@@ -3422,8 +3402,8 @@ Umber_11 = {
 	trait = physique_good_2
 	trait = strong
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8279.1.1 = { birth = yes }
 	8281.1.1 = { give_nickname = nick_smalljon }
@@ -3432,11 +3412,11 @@ Umber_11 = {
 		trait = honorable
 		trait = just
 	}
-	8298.11.2 = {
+	8298.11.2 = { 
 		employer = Stark_6 # Robb Stark
 		effect = { # Bodyguard to Robb Stark
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_winterfell
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_winterfell 
 				POSITION = bodyguard_court_position
 			}
 		}
@@ -3598,7 +3578,16 @@ Umber_19 = {
 	trait = physique_good_2
 
 	8225.1.1 = { birth = yes }
-	8249.1.1 = { trait = nightswatch_historical }
+	8249.1.1 = { 
+		trait = nightswatch_historical 
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_the_shadow_tower
+				NW_JOIN_AGE = 24
+			}
+		}
+	}
 	8275.1.1 = { death = { death_reason = death_froze_to_death } }
 }
 Umber_20 = {
@@ -3737,27 +3726,27 @@ Umber_26 = {
 }
 ### Issue of Iain, grandsons to Iain
 Umber_62 = {
-	name = Hoarfrost
+	name = Hoarfrost 
 	dynasty = dynn_Umber
 
 	religion = old_gods_south
 	culture = northman
 
 	father = Umber_26
-
+	
 	trait = physique_good_2
 
 	8276.1.1 = { birth = yes }
 }
 Umber_63 = {
-	name = Osric
+	name = Osric 
 	dynasty = dynn_Umber
 
 	religion = old_gods_south
 	culture = northman
 
 	father = Umber_26
-
+	
 	trait = physique_good_2
 
 	8279.1.1 = { birth = yes }
@@ -3803,23 +3792,23 @@ Karstark_2 = {
 	trait = deceitful
 	trait = callous
 	trait = bossy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8232.1.1 = { birth = yes }
 	8248.1.1 = { add_spouse = Hornwood_30 } # Arsa Hornwood
 	8290.1.1 = { trait = hunchbacked }
 	8298.10.28 = {
 		effect = { # Castellan of Karhold
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:c_karhold
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:c_karhold 
 				POSITION = councillor_castellan
 			}
 		}
 	}
 	8300.8.10 = {
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Baratheon_3 = { is_alive = yes } }
 				character:Baratheon_3 = { # Stannis Baratheon
 					imprison = {
@@ -3855,8 +3844,8 @@ Karstark_4 = {
 	trait = arrogant
 	trait = callous
 	trait = bossy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8247.1.1 = { birth = yes }
 	8266.1.1 = { add_spouse = Karstark_rs_1 }
@@ -3899,8 +3888,8 @@ Karstark_5 = {
 	trait = rude
 	trait = callous
 	trait = bossy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8249.1.1 = { birth = yes }
 	8270.1.1 = { add_spouse = Karstark_rs_2 }
@@ -3964,7 +3953,7 @@ Karstark_9 = {
 	8277.1.1 = { add_spouse = Karstark_rs_4 }
 	8300.8.10 = {
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Baratheon_3 = { is_alive = yes } }
 				character:Baratheon_3 = { # Stannis Baratheon
 					imprison = {
@@ -4079,7 +4068,7 @@ Karstark_10 = {
 	8278.1.1 = { birth = yes }
 	8300.8.10 = {
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Baratheon_3 = { is_alive = yes } }
 				character:Baratheon_3 = { # Stannis Baratheon
 					imprison = {
@@ -4110,7 +4099,7 @@ Karstark_11 = {
 	8300.8.10 = {
 		trait = one_handed
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Baratheon_3 = { is_alive = yes } }
 				character:Baratheon_3 = { # Stannis Baratheon
 					imprison = {
@@ -4141,7 +4130,7 @@ Karstark_12 = {
 	8300.8.10 = {
 		trait = wounded_1
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Baratheon_3 = { is_alive = yes } }
 				character:Baratheon_3 = { # Stannis Baratheon
 					imprison = {
@@ -4277,14 +4266,14 @@ Karstark_19 = {
 	trait = brave
 	trait = honorable
 	trait = bossy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8284.1.1 = { birth = yes }
 	8300.7.1 = {
 		effect = {
 			add_pressed_claim = title:d_karhold
-			if = {
+			if = { 
 				limit = { character:Stark_7 = { is_alive = yes } }
 				add_opinion = {
 					modifier = helped_me_against_tyrant_opinion
@@ -4309,12 +4298,12 @@ Karstark_hh_1 = {
 
 	8256.1.1 = { birth = yes }
 	8272.1.1 = {
-		trait = maester
-		trait = lifestyle_physician
+		trait = maester_historical
 		employer = Karstark_4 # Rickard Karstark
 		effect = { # Maester of Karhold
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_karhold
+			agot_maester_starting_setup_history_effect = yes
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_karhold 
 				POSITION = maester_court_position
 			}
 		}
@@ -4396,10 +4385,10 @@ Bolton_1 = {
 	8299.1.1 = {
 		add_spouse = Frey_52 # Fat Walda Frey
 		effect = {
-			if = {
-				limit = {
-					character:Frey_1 = { is_alive = yes }
-					character:Frey_52 = { is_alive = yes }
+			if = { 
+				limit = { 
+					character:Frey_1 = { is_alive = yes } 
+					character:Frey_52 = { is_alive = yes } 
 				}
 			}
 			create_alliance = { # By marriage
@@ -4412,7 +4401,7 @@ Bolton_1 = {
 	8299.11.5 = {
 		trait = murderer
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Stark_7 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = murdered_close_family_crime
@@ -4423,7 +4412,7 @@ Bolton_1 = {
 					target = character:Stark_7 # Jon Snow
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Stark_Dummy_8 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = murdered_close_family_crime
@@ -4434,7 +4423,7 @@ Bolton_1 = {
 					target = character:Stark_Dummy_8 # Sansa Stark
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Stark_Dummy_9 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = murdered_close_family_crime
@@ -4445,7 +4434,7 @@ Bolton_1 = {
 					target = character:Stark_Dummy_9 # Arya Stark
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Stark_Dummy_10 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = murdered_close_family_crime
@@ -4456,7 +4445,7 @@ Bolton_1 = {
 					target = character:Stark_Dummy_10 # Brandon Stark
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Stark_Dummy_11 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = murdered_close_family_crime
@@ -4467,7 +4456,7 @@ Bolton_1 = {
 					target = character:Stark_Dummy_11 # Rickon Stark
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Baratheon_3 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = treachery_opinion
@@ -4543,14 +4532,14 @@ Bolton_4 = {
 	mother = Ryswell_5 # Bethany Ryswell
 
 	trait = education_martial_2
-	trait = charming
-
-	disallow_random_traits = yes
+	trait = charming 
+	
+	disallow_random_traits = yes 
 
 	8280.7.1 = { birth = yes }
 	8285.1.1 = {
 		trait = diligent
-		effect = {
+		effect = { 
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Ryswell_4 } # Barbrey Ryswell
 		}
 	}
@@ -4589,7 +4578,7 @@ Bolton_4 = {
 		}
 	}
 	8295.1.1 = {
-		remove_trait = squire
+		remove_trait = squire 
 		effect = {
 			every_relation = {
 				type = agot_knight
@@ -4622,27 +4611,27 @@ Bolton_5 = {
 	father = Bolton_1
 
 	give_nickname = nick_snow
-
+	
 	trait = education_martial_2
 	trait = beauty_bad_1
 	trait = intellect_good_1
 	trait = lunatic_1
 	trait = rowdy
+	
+	disallow_random_traits = yes 
 
-	disallow_random_traits = yes
-
-	8279.1.1 = {
-		birth = yes
+	8279.1.1 = { 	
+		birth = yes 
 		effect = { add_trait = bastard }
 	}
 	8285.1.1 = {
-		effect = {
+		effect = { 
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Bolton_hh_2 } # Heke AKA: Reek
 		}
 	}
 	8287.1.1 = {
 		trait = ambitious
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:Bolton_hh_2 = { is_alive = yes } }
 				set_relation_friend = character:Bolton_hh_2 # Heke AKA: Reek
@@ -4659,21 +4648,21 @@ Bolton_5 = {
 	}
 	8297.6.1 = {
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Ryswell_4 = { is_alive = yes } }
 				character:Ryswell_4 = { # Barbrey Ryswell
-					set_relation_rival = {
+					set_relation_rival = { 
 						target = ROOT
 						reason = rival_murderer # Domeric Bolton
-					}
-				}
+					} 
+				}		
 			}
 		}
 	}
 	8298.10.28 = {
 		effect = { # Castellan of Dreadfort
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:c_the_dreadfort
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:c_the_dreadfort 
 				POSITION = councillor_castellan
 			}
 			add_trait = lifestyle_hunter
@@ -4701,7 +4690,7 @@ Bolton_5 = {
 		effect = {
 			remove_trait = bastard
 			remove_nickname = yes
-			if = {
+			if = { 
 				limit = { character:Stark_7 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = murdered_close_family_crime
@@ -4712,7 +4701,7 @@ Bolton_5 = {
 					target = character:Stark_7 # Jon Snow
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Stark_Dummy_8 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = murdered_close_family_crime
@@ -4723,7 +4712,7 @@ Bolton_5 = {
 					target = character:Stark_Dummy_8 # Sansa Stark
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Stark_Dummy_9 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = murdered_close_family_crime
@@ -4734,7 +4723,7 @@ Bolton_5 = {
 					target = character:Stark_Dummy_9 # Arya Stark
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Stark_Dummy_10 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = murdered_close_family_crime
@@ -4745,7 +4734,7 @@ Bolton_5 = {
 					target = character:Stark_Dummy_10 # Brandon Stark
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Stark_Dummy_11 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = murdered_close_family_crime
@@ -4756,7 +4745,7 @@ Bolton_5 = {
 					target = character:Stark_Dummy_11 # Rickon Stark
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Baratheon_3 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = treachery_opinion
@@ -4781,10 +4770,10 @@ Bolton_hh_1 = {
 
 	8230.1.1 = { birth = yes }
 	8250.1.1 = {
-		trait = maester
-		trait = lifestyle_physician
+		trait = maester_historical
 		employer = Bolton_42 # Donnel Bolton
 		effect = { # Maester of Dreadfort
+			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:c_the_dreadfort
 				POSITION = maester_court_position
@@ -4806,10 +4795,10 @@ Bolton_hh_2 = {
 	trait = lustful
 	trait = wrathful
 	trait = pensive
-
+	
 	give_nickname = nick_reek
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8262.1.1 = {
 		birth = yes
@@ -4859,8 +4848,8 @@ Bolton_hh_3 = {
 		trait = callous
 		trait = content
 		effect = { # Captain of the Guard at Dreadfort
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_the_dreadfort
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_the_dreadfort 
 				POSITION = household_guard_court_position
 			}
 		}
@@ -4924,8 +4913,8 @@ Bolton_hh_6 = {
 	trait = wrathful
 	trait = craven
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8277.1.1 = {
 		birth = yes
@@ -5052,7 +5041,7 @@ Lightfoot_rs_1 = {
 	8262.1.1 = { birth = yes }
 }
 Lightfoot_21 = {
-	name = Gilesa
+	name = Gilesa 
 	dynasty = dynn_Lightfoot
 	female = yes
 
@@ -5133,7 +5122,7 @@ Lake_2 = {
 	8272.1.1 = { birth = yes }
 }
 Lake_21 = {
-	name = Lunella
+	name = Lunella 
 	dynasty = dynn_Lake
 	female = yes
 
@@ -5146,7 +5135,7 @@ Lake_21 = {
 	8275.1.1 = { birth = yes }
 }
 Lake_22 = {
-	name = Owen
+	name = Owen 
 	dynasty = dynn_Lake
 
 	religion = old_gods_south
@@ -5215,8 +5204,8 @@ Poole_2 = {
 	8282.9.15 = {
 		employer = Stark_3 # Eddard Stark
 		effect = { # Steward of Winterfell
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:c_winterfell
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:c_winterfell 
 				POSITION = councillor_steward
 			}
 		}
@@ -5240,7 +5229,7 @@ Poole_rs_2 = {
 	8260.1.1 = { birth = yes }
 }
 Poole_21 = {
-	name = Petra
+	name = Petra 
 	dynasty = dynn_Poole
 	female = yes
 
@@ -5441,8 +5430,8 @@ Cassel_3 = {
 	trait = stubborn
 	trait = trusting
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8254.1.1 = { birth = yes }
 	8270.1.1 = {
@@ -5453,8 +5442,8 @@ Cassel_3 = {
 	8282.9.15 = {
 		employer = Stark_3 # Eddard Stark
 		effect = { # Master-at-arms at Winterfell
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_winterfell
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_winterfell 
 				POSITION = master_at_arms_court_position
 			}
 		}
@@ -5463,8 +5452,8 @@ Cassel_3 = {
 	8290.1.1 = { trait = widowed }
 	8298.12.20 = {
 		effect = { # Castellan of Winterfell
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:c_winterfell
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:c_winterfell 
 				POSITION = councillor_castellan
 			}
 		}
@@ -5538,15 +5527,15 @@ Cassel_4 = {
 	trait = compassionate
 	trait = diligent
 	trait = pensive
-
+	
 	disallow_random_traits = yes
 
 	8270.1.1 = { birth = yes }
 	8282.9.15 = { employer = Stark_3 } # Eddard Stark
 	8290.1.1 = {
 		effect = { # Captain of the Guard at Winterfell
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_winterfell
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_winterfell 
 				POSITION = household_guard_court_position
 			}
 		}
@@ -5691,7 +5680,7 @@ Cassel_11 = {
 
 	father = Cassel_3
 	mother = Cassel_rs_4
-
+	
 	trait = sickly
 
 	8280.1.1 = { birth = yes }
@@ -5761,8 +5750,8 @@ Mollen_3 = {
 	8297.1.1 = {
 		employer = Stark_3 # Robb Stark
 		effect = { # Captain of the Guard at Winterfell
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_winterfell
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_winterfell 
 				POSITION = household_guard_court_position
 			}
 		}
@@ -5928,7 +5917,7 @@ Cerwyn_3 = {
 		}
 	}
 	8298.1.1 = {
-		effect = {
+		effect = { 
 			if = {
 				limit = { character:Stark_11 = { is_alive = yes } }
 				set_relation_friend = character:Stark_11 # Rickon Stark
@@ -5983,10 +5972,10 @@ Cerwyn_hh_1 = {
 
 	8254.1.1 = { birth = yes }
 	8270.1.1 = {
-		trait = maester
-		trait = lifestyle_physician
+		trait = maester_historical
 		employer = Cerwyn_34 # Daryn Cerwyn
 		effect = { # Maester of Castle Cerwyn
+			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:c_trenchwood
 				POSITION = maester_court_position
@@ -6094,8 +6083,8 @@ Hornwood_2 = {
 	trait = compassionate
 	trait = honorable
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8258.1.1 = { birth = yes }
 	8276.1.1 = { add_spouse = Manderly_12 } # Donella Manderly
@@ -6170,13 +6159,13 @@ Hornwood_4 = {
 
 	trait = bastard
 	give_nickname = nick_snow
-
+	
 	trait = brave
 	trait = diligent
 
 	8288.1.1 = { birth = yes }
 	8296.1.1 = {
-		effect = {
+		effect = { 
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Glover_4 } # Galbart Glover
 		}
 	}
@@ -6211,10 +6200,10 @@ Hornwood_hh_1 = {
 
 	8260.1.1 = { birth = yes }
 	8276.1.1 = {
-		trait = maester
-		trait = lifestyle_physician
+		trait = maester_historical
 		employer = Hornwood_2 # Halys Hornwood
 		effect = { # Maester of Hornwood
+			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:c_hornwood
 				POSITION = maester_court_position
@@ -6471,14 +6460,14 @@ Flint_5 = {
 	8273.1.2 = { add_matrilineal_spouse = Flint_rs_3 }
 	8299.11.5 = { # Red Wedding
 		effect = { # Robin killed, hostile toward Boltons and Freys
-			if = {
+			if = { 
 				limit = { character:Bolton_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
 					target = character:Bolton_1 # Roose Bolton
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Frey_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -6550,9 +6539,15 @@ Flint_7 = {
 	8293.1.1 = {
 		trait = knight
 		trait = nightswatch_historical
-		employer = Mormont_2 # Jeor Mormont
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_the_shadow_tower
+				NW_JOIN_AGE = 16
+			}
+		}
 	}
-	8299.7.8 = {
+	8299.8.8 = {
 		death = {
 			death_reason = death_murder_known # Mutiny at Craster's Keep
 			killer = 121415 # Clubfoot Karl
@@ -6679,7 +6674,7 @@ Flint_14 = {
 
 	8262.1.1 = { birth = yes }
 	8284.1.1 = {
-		death = { death_reason = death_vanished } # Abducted by Weeper
+		death = { death_reason = death_wildlings } # Abducted by Weeper
 	}
 }
 Flint_15 = {
@@ -6715,7 +6710,7 @@ Flint_11 = {
 
 	8275.1.1 = { birth = yes }
 	8290.1.1 = {
-		death = { death_reason = death_vanished } # Abducted by Weeper
+		death = { death_reason = death_wildlings } # Abducted by Weeper
 	}
 }
 Flint_12 = {
@@ -6779,7 +6774,7 @@ Flint_18 = {
 
 	8267.1.1 = { birth = yes }
 	8287.1.1 = {
-		death = { death_reason = death_vanished } # Abducted by Weeper
+		death = { death_reason = death_wildlings } # Abducted by Weeper
 	}
 }
 
@@ -6824,21 +6819,21 @@ Locke_1 = {
 	trait = rude
 	trait = zealous
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8228.1.1 = { birth = yes }
 	8250.1.1 = { add_spouse = Locke_rs_1 }
 	8299.11.5 = { # Red Wedding
 		effect = { # Donnel killed, hostile toward Boltons and Freys
-			if = {
+			if = { 
 				limit = { character:Bolton_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
 					target = character:Bolton_1 # Roose Bolton
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Frey_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -6933,16 +6928,20 @@ Locke_3 = {
 	8270.1.1 = {
 		trait = nightswatch_historical
 		trait = knight
-		employer = Buckler_41 # Kyle Buckler
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 18
+			}
+		}
 	}
-	8276.1.1 = { employer = Qorgyle_2 } # Jantos Qorgyle
-	8288.1.1 = { employer = Mormont_2 } # Jeor Mormont
 	8299.7.7 = {
-		death = { death_reason = death_battle } # Fist of First Men
+		death = { death_reason = death_battle } # Fist of the First Men
 	}
 }
 Locke_51 = {
-	name = Katrina
+	name = Katrina 
 	dynasty = dynn_Locke
 	female = yes
 
@@ -7093,8 +7092,8 @@ WellsN_2 = {
 	trait = brave
 	trait = just
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8261.1.1 = { birth = yes }
 	8277.1.1 = { trait = knight }
@@ -7154,7 +7153,16 @@ WellsN_26 = {
 
 	8278.1.1 = { birth = yes }
 	8294.1.1 = { trait = knight }
-	8300.1.1 = { trait = nightswatch_historical }
+	8300.1.1 = { 
+		trait = nightswatch_historical 
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 22
+			}
+		}
+	}
 }
 
 ###### HOUSE MORMONT (id = dynn_Mormont)
@@ -7213,8 +7221,8 @@ Mormont_2 = {
 	#trait = crow # AGOT TODO trait
 	trait = authoritative
 	trait = bossy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8230.1.1 = { birth = yes }
 	8255.1.1 = { add_spouse = Mormont_rs_2 }
@@ -7222,8 +7230,15 @@ Mormont_2 = {
 	8281.1.1 = {
 		trait = nightswatch_historical
 		give_nickname = nick_the_old_bear_historical
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 51
+			}
+		}
 	}
-	8299.7.8 = {
+	8299.8.8 = {
 		death = {
 			death_reason = death_murder_known # Mutiny at Craster's Keep
 			killer = 121009 # Ollo Lophand
@@ -7269,21 +7284,21 @@ Mormont_4 = {
 	trait = stubborn
 	trait = refusing_marriage
 	trait = bossy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8249.1.1 = { birth = yes }
 	8299.11.5 = { # Red Wedding
 		#trait = in_hiding # Gone into the Neck and nobody knows what happened to her # AGOT TODO trait
 		effect = { # Dacey killed, hostile toward Boltons and Freys
-			if = {
+			if = { 
 				limit = { character:Bolton_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
 					target = character:Bolton_1 # Roose Bolton
 				}
 			}
-			if = {
+			if = { 
 				limit = { character:Frey_1 = { is_alive = yes } }
 				add_opinion = {
 					modifier = murdered_close_family_crime
@@ -7320,8 +7335,8 @@ Mormont_3 = {
 	trait = cynical
 	trait = stubborn
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8255.1.1 = { birth = yes }
 	8276.1.1 = { add_spouse = Glover_3 } # Erena Glover
@@ -7393,18 +7408,18 @@ Mormont_5 = {
 	trait = brave
 	trait = compassionate
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8273.1.1 = {
 		birth = yes
 		add_character_flag = tomboy
 	}
-	8298.11.2 = {
+	8298.11.2 = { 
 		employer = Stark_6 # Robb Stark
 		effect = { # Bodyguard to Robb Stark
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_winterfell
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_winterfell 
 				POSITION = bodyguard_court_position
 			}
 		}
@@ -7441,15 +7456,15 @@ Mormont_6 = {
 	trait = compassionate
 	trait = wrathful
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8275.1.1 = {
 		birth = yes
 		add_character_flag = tomboy
 	}
 	8284.1.1 = { give_nickname = nick_the_shebear }
-	8299.11.5 = {
+	8299.11.5 = { 
 		effect = {
 			agot_appoint_as_regent_for_castle_history_effect = { CASTLE = title:c_mormont }
 		}
@@ -7807,9 +7822,12 @@ Holt_3 = {
 	8272.1.1 = {
 		trait = nightswatch_historical
 		trait = knight
-		effect = {
-			set_employer = title:c_eastwatch.holder
-			# add_character_modifier = nw_ranger # AGOT TODO modifier
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_eastwatch
+				NW_JOIN_AGE = 20
+			}
 		}
 	}
 }
@@ -7859,7 +7877,16 @@ Holt_6 = {
 	mother = Holt_rs_2
 
 	8279.1.1 = { birth = yes }
-	8300.1.1 = { trait = nightswatch_historical }
+	8300.1.1 = { 
+		trait = nightswatch_historical 
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 21
+			}
+		}
+	}
 }
 ### Issue of Walton
 Holt_7 = {
@@ -7904,7 +7931,7 @@ Long_1 = {
 	8265.1.1 = { birth = yes }
 }
 Long_24 = {
-	name = Leona
+	name = Leona 
 	dynasty = dynn_Long
 	female = yes
 
@@ -8551,7 +8578,7 @@ Blackbrow_16 = {
 }
 ### Issue of Jore
 Blackbrow_17 = {
-	name = Marek
+	name = Marek # Semi-Canon
 	dynasty = dynn_Blackbrow
 
 	religion = old_gods_south
@@ -8563,7 +8590,7 @@ Blackbrow_17 = {
 	8247.1.1 = { birth = yes }
 }
 Blackbrow_18 = {
-	name = Helos
+	name = Helos # Semi-Canon
 	dynasty = dynn_Blackbrow
 
 	religion = old_gods_south
@@ -8575,9 +8602,8 @@ Blackbrow_18 = {
 	8249.1.1 = { birth = yes }
 }
 Blackbrow_19 = {
-	name = Emilia # married Finn Greenleaf
+	name = Emilia # Semi-Canon, married Finn Greenleaf
 	dynasty = dynn_Blackbrow
-
 	female = yes
 
 	religion = old_gods_south
@@ -8657,27 +8683,16 @@ Goodman_1 = {
 	trait = education_martial_4
 	trait = physique_good_2
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8268.1.1 = { birth = yes }
 	8280.1.1 = {
 		religion = the_seven_main
 		trait = callous
 		trait = brave
+		trait = lifestyle_blademaster_2_history 
 		employer = Bolton_1 # Roose Bolton
-		effect = {
-			add_trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_low
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
 	}
 	8284.1.1 = {
 		trait = education_martial_prowess_4
@@ -8805,11 +8820,11 @@ Dustin_1 = {
 	trait = gregarious
 	trait = just
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8253.1.1 = { birth = yes }
-	8282.3.1 = {
+	8282.3.1 = { 
 		trait = education_martial_prowess_3
 		add_spouse = Ryswell_4 # Barbrey Ryswell
 	}
@@ -9138,7 +9153,7 @@ Ryswell_3 = {
 	trait = education_martial_2
 
 	8234.1.1 = { birth = yes }
-	8250.1.1 = {
+	8250.1.1 = { 
 		add_spouse = Ryswell_rs_2
 		effect = {
 			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Ryswell_3 COA_KEY = rodrick_ryswell_personal_coa }
@@ -9146,7 +9161,7 @@ Ryswell_3 = {
 	}
 	8283.8.1 = {
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Ryswell_4 = { is_alive = yes } }
 				create_alliance = { # Same Dynasty
 					target = character:Ryswell_4 #Barbrey Ryswell
@@ -9193,10 +9208,10 @@ Ryswell_4 = {
 	trait = vengeful
 	trait = arrogant
 	trait = stubborn
-	trait = deceitful
+	trait = deceitful 
 	trait = bossy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8259.1.1 = { birth = yes }
 	8283.8.1 = {
@@ -9209,7 +9224,28 @@ Ryswell_4 = {
 		}
 		effect = {
 			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Ryswell_4 COA_KEY = barbery_dustin_personal_coa }
-			create_story = story_agot_widowed
+			random_list = {
+				0 = {
+					modifier = {
+						add = agot_historic_event_chance
+					}
+				}
+				0 = {
+					modifier = {
+						add = agot_nonhistoric_event_chance
+					}
+					create_story = story_agot_widowed
+					random_owned_story = {
+						limit = {
+							story_type = story_agot_widowed
+						}
+						set_variable = {
+							name = dead_lover
+							value = character:Dustin_1
+						}
+					}
+				}
+			}
 			if = {
 				limit = { character:Stark_3 = { is_alive = yes } }
 				add_opinion = {
@@ -9230,7 +9266,7 @@ Ryswell_4 = {
 	}
 	8299.11.5 = {
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Bolton_1 = { is_alive = yes } }
 				add_opinion = { # Small opinion boost toward Roose to keep her from hating him like the rest of the barrowman
 					modifier = helped_me_against_tyrant_opinion
@@ -9330,8 +9366,8 @@ Ryswell_10 = {
 	trait = compassionate
 	trait = honorable
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8252.1.1 = { birth = yes }
 	8270.1.1 = { add_spouse = Ryswell_rs_4 }
@@ -9470,10 +9506,10 @@ Slate_hh_1 = {
 
 	8272.1.1 = { birth = yes }
 	8290.1.1 = {
-		trait = maester
-		trait = lifestyle_physician
+		trait = maester_historical
 		employer = Slate_1 # Rorge Slate
 		effect = { # Maester of Blackpool
+			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:c_blackpool
 				POSITION = maester_court_position
@@ -9510,7 +9546,7 @@ Condon_1 = {
 
 	father = Condon_21
 	mother = Condon_rs_2
-
+	
 	8273.1.1 = { birth = yes }
 	8289.1.1 = {
 		trait = knight
@@ -9521,7 +9557,7 @@ Condon_1 = {
 	8299.6.29 = { employer = Cerwyn_2 } # Jonella Cerwyn
 }
 Condon_26 = {
-	name = Vivian
+	name = Vivian 
 	dynasty = dynn_Condon
 	female = yes
 
@@ -9536,7 +9572,7 @@ Condon_26 = {
 	8275.6.8 = { birth = yes }
 }
 Condon_27 = {
-	name = Enger
+	name = Enger 
 	dynasty = dynn_Condon
 
 	#dna = Condon_27
@@ -9648,19 +9684,22 @@ Stout_1 = {
 
 	8203.1.1 = { birth = yes }
 	8220.1.1 = {
-		trait = nightswatch_historical
 		trait = knight
-		employer = Musgood_25 # Sleepy Jack Musgood
-		# effect = {
-			# add_character_modifier = nw_ranger # AGOT TODO
-		# }
+		trait = nightswatch_historical
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 17
+			}
+		}
 	}
 	8239.1.1 = { employer = Targaryen_96 } # Brynden Rivers
 	8252.6.1 = { employer = Buckler_41 } # Kyle Buckler
 	8276.1.1 = { employer = Qorgyle_2 } # Jantos Qorgyle
 	8288.1.1 = { employer = Mormont_2 } # Jeor Mormont
 	8290.1.1 = { trait = incapable }
-	8299.7.8 = { employer = Slynt_1 } # Janos Slynt
+	8299.8.8 = { employer = Slynt_1 } # Janos Slynt
 	8300.3.1 = { employer = Stark_7 } # Jon Snow
 }
 ### Issue of Willam
@@ -9774,7 +9813,7 @@ Ironsmith_rs_4 = {
 	8246.1.1 = { birth = yes }
 }
 Ironsmith_20 = {
-	name = Bethany
+	name = Bethany 
 	dynasty = dynn_Ironsmith
 	female = yes
 
@@ -9972,7 +10011,7 @@ Glenmore_6 = {
 	mother = Glenmore_rs_1
 
 	trait = education_martial_2
-	trait = bossy
+	trait = bossy 
 
 	disallow_random_traits = yes
 
@@ -10046,9 +10085,9 @@ Brownbarrow_1 = {
 
 	8255.1.1 = { birth = yes }
 	8290.1.1 = {
-		effect = {
+		effect = { 
 			if = {
-				limit = { character:Forrester_2 = { is_alive = yes } }
+				limit = { character:Forrester_2 = { is_alive = yes } } 
 				set_relation_friend = character:Forrester_2 # Gregor the Good
 			}
 		}
@@ -10411,8 +10450,8 @@ Glover_4 = {
 	trait = content
 	trait = diligent
 	trait = pensive
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8262.1.1 = { birth = yes }
 	8284.1.1 = { add_spouse = Glover_rs_2 }
@@ -10451,8 +10490,8 @@ Glover_5 = {
 	trait = compassionate
 	trait = just
 	trait = pensive
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8264.1.1 = { birth = yes }
 	8291.1.1 = { add_spouse = Locke_5 } # Sybelle Locke
@@ -10609,8 +10648,8 @@ Tallhart_4 = {
 	8281.1.1 = {
 		employer = Tallhart_1 # Helman Tallhart
 		effect = { # Castellan of Torrhen's Square
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:c_torrhens_square
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:c_torrhens_square 
 				POSITION = councillor_castellan
 			}
 		}
@@ -10642,8 +10681,8 @@ Tallhart_2 = {
 	trait = arrogant
 	trait = brave
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8281.1.1 = { birth = yes }
 	8299.4.1 = {
@@ -10784,8 +10823,8 @@ Forrester_2 = {
 
 	trait = education_martial_3
 	trait = pensive
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8250.1.1 = { birth = yes }
 	8256.1.1 = {
@@ -10839,8 +10878,8 @@ Forrester_3 = {
 
 	trait = education_martial_3
 	trait = pensive
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8273.1.1 = { birth = yes }
 	8289.1.1 = {
@@ -10884,8 +10923,8 @@ Forrester_4 = {
 
 	trait = education_martial_3
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8278.1.1 = { birth = yes }
 	8294.1.1 = {
@@ -10899,7 +10938,7 @@ Forrester_4 = {
 		trait = disinherited
 		# employer = 1684230 #Tattered Prince # AGOT TODO, no windblown title
 		effect = {
-			if = {
+			if = { 
 				limit = { character:Forrester_2 = { is_alive = yes } }
 				add_opinion = {
 					modifier = disinherited_opinion
@@ -10930,8 +10969,8 @@ Forrester_5 = {
 
 	trait = education_diplomacy_3
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8283.1.1 = { birth = yes }
 	8299.1.1 = {
@@ -10942,9 +10981,9 @@ Forrester_5 = {
 	}
 	8300.1.1 = {
 		employer = Baratheon_7 # Joffrey Baratheon
-		effect = {
+		effect = { 
 			if = {
-				limit = { character:Tyrell_14 = { is_alive = yes } }
+				limit = { character:Tyrell_14 = { is_alive = yes } } 
 				set_relation_friend = character:Tyrell_14 # Margaery Tyrell
 			}
 		}
@@ -10965,8 +11004,8 @@ Forrester_6 = {
 
 	trait = twin
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8286.1.1 = { birth = yes }
 	8299.1.1 = {
@@ -10996,8 +11035,8 @@ Forrester_7 = {
 
 	trait = twin
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8286.1.1 = { birth = yes }
 	8299.1.1 = {
@@ -11048,21 +11087,20 @@ Forrester_30 = {
 	religion = old_gods_south
 	culture = wolfswood_clansman
 
-	father = Forrester_2
 	mother = Forrester_rs_4
 
 	trait = bastard
 	give_nickname = nick_snow
-
+	
 	trait = education_martial_2
 	trait = twin
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8270.1.1 = {
 		birth = yes
-		# effect = { set_real_father = character:Forrester_2 } # Gregor Forrester
+		effect = { set_real_father = character:Forrester_2 } # Gregor Forrester
 	}
 	8286.1.1 = {
 		trait = callous
@@ -11086,24 +11124,22 @@ Forrester_31 = {
 	religion = old_gods_south
 	culture = wolfswood_clansman
 
-	father = Forrester_2
 	mother = Forrester_rs_4
 
 	trait = bastard
 	give_nickname = nick_snow
-
+	
 	trait = education_diplomacy_3
 	trait = twin
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8270.1.1 = {
 		birth = yes
-		# effect = { set_real_father = character:Forrester_2 } # Gregor Forrester
+		effect = { set_real_father = character:Forrester_2 } # Gregor Forrester
 	}
 	8286.1.1 = {
-		# trait = back_seat_leader # AGOT TODO trait
 		trait = callous
 		trait = gregarious
 		trait = brave
@@ -11138,14 +11174,14 @@ Whitehill_1 = {
 
 	trait = education_martial_2
 
-	disallow_random_traits = yes
+	disallow_random_traits = yes 
 
 	8252.1.1 = { birth = yes }
 	8273.1.1 = { add_spouse = Whitehill_rs_1 }
 	8300.1.1 = {
 		effect = {
 			add_pressed_claim = title:c_ironrath
-			if = {
+			if = { 
 				limit = { character:Forrester_8 = { is_alive = yes } }
 				reverse_add_opinion = {
 					target = character:Forrester_8 # Ryon Forrester
@@ -11206,21 +11242,20 @@ Whitehill_3 = {
 
 	8273.1.1 = { birth = yes }
 	8285.1.1 = {
-		employer = Citadel_27 # Archmaester Ryam
-		# effect = { # AGOT TODO
-			# add_character_modifier = {
-				# name = maester_education
-				# duration = -1
-			# }
-		# }
+		effect = { 
+			if = {
+				limit = { NOT = { has_trait = maester_historical } }
+				agot_send_to_citadel_effect = { MAESTER_CANDIDATE = ROOT }
+			}
+		}
 	}
 	8291.1.1 = {
-		trait = maester
-		trait = lifestyle_physician
-		# effect = { remove_character_modifier = maester_education } # AGOT TODO trait
+		trait = maester_historical
+		effect = {
+			agot_maester_in_the_citadel_history_effect = { METAL = bismuth }
+			agot_maester_starting_setup_history_effect = yes
+		}
 	}
-	8292.1.1 = { employer = Citadel_22 } # Archmaester Norren
-	8298.1.1 = { employer = Citadel_28 } # Archmaester Theobald
 }
 Whitehill_4 = {
 	name = Torrhen # Semi-Canon
@@ -11272,8 +11307,8 @@ Whitehill_6 = {
 	trait = craven
 	trait = sadistic
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8281.1.1 = { birth = yes }
 	8297.1.1 = { employer = Bolton_1 } # Roose Bolton
@@ -11875,9 +11910,9 @@ Grayson_2 = {
 
 	8255.1.1 = { birth = yes }
 	8290.1.1 = {
-		effect = {
+		effect = { 
 			if = {
-				limit = { character:Forrester_2 = { is_alive = yes } }
+				limit = { character:Forrester_2 = { is_alive = yes } } 
 				set_relation_friend = character:Forrester_2 # Gregor the Good
 			}
 		}
@@ -11885,7 +11920,7 @@ Grayson_2 = {
 	8296.1.1 = { death = yes }
 }
 Grayson_5 = {
-	name = Ondrew
+	name = Ondrew 
 	dynasty = dynn_Grayson
 
 	religion = old_gods_south
@@ -11925,9 +11960,9 @@ Grayson_3 = {
 
 	8280.1.1 = { birth = yes }
 	8295.1.1 = {
-		effect = {
+		effect = { 
 			if = {
-				limit = { character:Forrester_2 = { is_alive = yes } }
+				limit = { character:Forrester_2 = { is_alive = yes } } 
 				set_relation_friend = character:Forrester_2 # Gregor the Good
 			}
 		}
@@ -11972,9 +12007,9 @@ Elliver_1 = {
 
 	8239.1.1 = { birth = yes }
 	8290.1.1 = {
-		effect = {
+		effect = { 
 			if = {
-				limit = { character:Forrester_2 = { is_alive = yes } }
+				limit = { character:Forrester_2 = { is_alive = yes } } 
 				set_relation_friend = character:Forrester_2 # Gregor the Good
 			}
 		}
@@ -12124,7 +12159,7 @@ Moss_3 = {
 	8253.1.1 = { birth = yes }
 }
 Moss_23 = {
-	name = Erena
+	name = Erena 
 	dynasty = dynn_Moss
 	female = yes
 
@@ -12434,8 +12469,8 @@ Degore_1 = {
 
 	trait = education_martial_4
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8255.1.1 = { birth = yes }
 	8271.1.1 = {
@@ -12452,8 +12487,8 @@ Degore_1 = {
 	}
 	8299.1.1 = {
 		effect = { # Master-at-arms at Ironrath
-			agot_appoint_as_court_position_for_castle_history_effect = {
-				CASTLE = title:c_ironrath
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_ironrath 
 				POSITION = master_at_arms_court_position
 			}
 		}
@@ -12518,8 +12553,8 @@ Tuttle_4 = {
 	trait = honest
 	trait = just
 	trait = pensive
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8250.1.1 = {
 		birth = yes
@@ -12528,8 +12563,8 @@ Tuttle_4 = {
 	#8283.3.1 = { employer = Forrester_2 } # Gregor Forrester
 	8299.1.1 = {
 		effect = { # Castellan of Ironrath
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:c_ironrath
+			agot_appoint_as_councillor_for_castle_history_effect = { 
+				CASTLE = title:c_ironrath 
 				POSITION = councillor_castellan
 			}
 		}
@@ -12597,8 +12632,8 @@ Tuttle_5 = {
 	trait = honorable
 	trait = compassionate
 	trait = pensive
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8281.1.1 = {
 		birth = yes
@@ -12606,7 +12641,7 @@ Tuttle_5 = {
 	}
 	8283.3.1 = { employer = Forrester_2 } # Gregor Forrester
 	8293.1.1 = {
-		effect = {
+		effect = { 
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Forrester_2 } # Gregor Forrester
 		}
 	}
@@ -12614,7 +12649,7 @@ Tuttle_5 = {
 		employer = Forrester_6 # Ethan Forrester
 		effect = {
 			if = {
-				limit = { character:Warrick_7 = { is_alive = yes } }
+				limit = { character:Warrick_7 = { is_alive = yes } } 
 				set_relation_rival = character:Warrick_7 # Britt Warrick
 			}
 		}
@@ -12630,7 +12665,11 @@ Tuttle_5 = {
 				limit = { character:121424 = { is_alive = yes } }
 				set_relation_friend = character:121424 # Cotter
 			}
-			# add_character_modifier = nw_ranger # AGOT TODO modifier
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 19
+			}
 		}
 	}
 }
@@ -12824,7 +12863,7 @@ Norrey_2 = {
 	mother = Norrey_rs_1
 
 	trait = education_martial_2
-
+	
 	give_nickname = nick_the_younger
 
 	8255.1.1 = { birth = yes }
@@ -12962,7 +13001,7 @@ Knott_3 = {
 	8263.1.1 = { birth = yes }
 }
 Knott_26 = {
-	name = Josera
+	name = Josera 
 	dynasty = dynn_Knott
 	female = yes
 
@@ -13088,7 +13127,7 @@ Wull_3 = {
 	8272.1.1 = { birth = yes }
 }
 Wull_23 = {
-	name = Mira
+	name = Mira 
 	dynasty = dynn_Wull
 	female = yes
 
@@ -13152,8 +13191,8 @@ Liddle_5 = {
 	trait = content
 	trait = honorable
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8250.1.1 = { birth = yes }
 }
@@ -13174,8 +13213,8 @@ Liddle_2 = {
 	trait = education_martial_2
 	trait = physique_good_2
 	trait = charming
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8261.1.1 = { birth = yes }
 	8272.1.1 = { trait = humble }
@@ -13186,9 +13225,13 @@ Liddle_2 = {
 	8280.1.1 = { give_nickname = nick_big_liddle }
 	8283.1.1 = {
 		trait = nightswatch_historical
-		# effect = {
-			# add_character_modifier = nw_ranger # AGOT TODO trait
-		# }
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 22
+			}
+		}
 	}
 }
 Liddle_3 = {
@@ -13207,8 +13250,8 @@ Liddle_3 = {
 	trait = education_martial_2
 	trait = physique_good_1
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8264.1.1 = { birth = yes }
 	8268.6.1 = { give_nickname = nick_middle_liddle }
@@ -13310,11 +13353,15 @@ Harclay_3 = {
 	8250.1.1 = { birth = yes }
 	8270.1.1 = {
 		trait = nightswatch_historical
-		# effect = {
-			# add_character_modifier = nw_ranger # AGOT TODO
-		# }
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 19
+			}
+		}
 	}
-	8299.7.8 = {
+	8299.8.8 = {
 		death = {
 			death_reason = death_murder_known # Mutiny at Craster's Keep
 			killer = 121415 # Clubfoot Karl
@@ -13365,7 +13412,7 @@ Harclay_21 = {
 	8278.8.12 = { birth = yes }
 }
 Harclay_22 = {
-	name = Robett
+	name = Robett 
 	dynasty = dynn_Harclay
 
 	#dna = Harclay_22
@@ -13440,8 +13487,8 @@ Reed_1 = {
 	trait = patient
 	trait = brave
 	trait = pensive
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8264.1.1 = { birth = yes }
 	8280.1.1 = {
@@ -13504,8 +13551,8 @@ Reed_2 = {
 	trait = compassionate
 	trait = brave
 	trait = rowdy
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8283.1.1 = { birth = yes }
 	8290.1.1 = {
@@ -13563,8 +13610,8 @@ Reed_3 = {
 	trait = brave
 	trait = greensight
 	trait = pensive
-
-	disallow_random_traits = yes
+	
+	disallow_random_traits = yes 
 
 	8285.1.1 = { birth = yes }
 	8299.1.1 = {
@@ -13720,11 +13767,14 @@ Fenn_35 = {
 	8242.1.1 = { birth = yes }
 	8270.1.1 = {
 		trait = nightswatch_historical
-		employer = Buckler_41 # Kyle Buckler
+		effect = { 
+			agot_join_nightswatch_history_effect = {
+				ORDER = steward
+				CASTLE = title:c_the_shadow_tower
+				NW_JOIN_AGE = 28
+			}
+		}
 	}
-	8276.1.1 = { employer = Qorgyle_2 } # Jantos Qorgyle
-	8288.1.1 = { employer = Mormont_2 } # Jeor Mormont
-	8299.7.8 = { employer = Slynt_1 } # Janos Slynt
 	8300.1.1 = { death = yes }
 }
 ### Issue of Ryam
@@ -14083,7 +14133,7 @@ Peat_4 = {
 	8300.1.1 = { death = yes }
 }
 Peat_25 = {
-	name = Gwyn
+	name = Gwyn 
 	dynasty = dynn_Peat
 	female = yes
 
@@ -14253,18 +14303,7 @@ BoggsN_23 = {
 	8262.9.1 = { birth = yes }
 	8278.9.1 = {
 		trait = education_martial_prowess_3
-		effect = {
-			add_trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = {
-					integer_range = {
-						min = medium_lifestyle_random_xp_low
-						max = medium_lifestyle_random_xp_high
-					}
-				}
-			}
-		}
+		trait = lifestyle_blademaster
 	}
 }
 BoggsN_24 = {
@@ -14474,7 +14513,7 @@ Hayes_17 = {
 	# 8272.2.25 = { add_spouse = vanity_Hamilton_1 } # AGOT TODO: She was disabled along with the rest of vanity chars, he was not, tragic love story -AlexKucz
 }
 Hayes_18 = {
-	name = Thormor
+	name = Thormor 
 	dynasty = dynn_Hayes
 
 	#dna = Hayes_18
@@ -14488,7 +14527,7 @@ Hayes_18 = {
 	8267.9.1 = { add_spouse = Hayes_rs_1 }
 }
 Hayes_19 = {
-	name = Dacey
+	name = Dacey 
 	dynasty = dynn_Hayes
 	female = yes
 
@@ -14502,7 +14541,7 @@ Hayes_19 = {
 	8253.8.4 = { birth = yes }
 }
 Hayes_rs_1 = {
-	name = Helya
+	name = Helya 
 	female = yes
 
 	#dna = Hayes_rs_1
@@ -14514,7 +14553,7 @@ Hayes_rs_1 = {
 }
 ### Issue of Thormor
 Hayes_20 = {
-	name = Benfred
+	name = Benfred 
 	dynasty = dynn_Hayes
 
 	#dna = Hayes_20
@@ -14528,7 +14567,7 @@ Hayes_20 = {
 	8269.4.20 = { birth = yes }
 }
 Hayes_21 = {
-	name = Oshara
+	name = Oshara 
 	dynasty = dynn_Hayes
 	female = yes
 

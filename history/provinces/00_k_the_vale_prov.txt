@@ -209,7 +209,7 @@
 ################## b_the_redfort ##################
 ########## c_the_redfort - d_strongstone ##########
 2277 = {
-	culture = valeman
+	culture = moonman
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
@@ -300,7 +300,7 @@
 ################# b_slabstone_keep ################
 ############# c_brume - d_strongstone #############
 2289 = {
-	culture = valeman
+	culture = moonman
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
@@ -598,7 +598,7 @@
 #################### b_kipress ####################
 ############# c_kipress - d_ninestars #############
 2329 = {
-	culture = valeman
+	culture = moonman
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {

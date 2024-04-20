@@ -7,7 +7,11 @@
 	special_building = sunspear_01
 	duchy_capital_building = leisure_palace_02
 	7998.1.1 = {
-		buildings = { castle_05 watchtowers_08 caravanserai_05 }
+		buildings = { 
+			castle_05 
+			watchtowers_08 
+			caravanserai_05 
+		}
 	}
 }
 ################## b_isle_nymeros #################

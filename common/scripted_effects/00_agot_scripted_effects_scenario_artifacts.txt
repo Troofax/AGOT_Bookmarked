@@ -1,0 +1,1067 @@
+﻿### SETUP EFFECTS ###
+
+agot_historical_artifacts_setup = {
+	##### Historical artifacts
+	# AGOT Bookmarked Added
+	if = {
+		limit = {
+			game_start_date > 8300.1.1
+		}
+		character:Baratheon_7 = { agot_create_artifact_vs_widows_wail_effect = { OWNER = this } }
+		# character:Tarth_6 = { create_artifact_vs_oathkeeper_effect = { OWNER = this } }
+	}
+	#character:Baratheon_7 = { agot_create_artifact_vs_widows_wail_effect = { OWNER = this } }
+	# character:Tarth_6 = { create_artifact_vs_oathkeeper_effect = { OWNER = this } }
+	#character:Baratheon_2 = { create_artifact_vs_the_dagger_effect = { OWNER = this } }
+	#character:Wensington_6 = { create_artifact_vs_eleneis_bulwark_effect = { OWNER = this } }
+	# character:Massey_1 = { create_artifact_vs_dancer_effect = { OWNER = this } }
+	#character:Long_1 = { create_artifact_vs_justicar_effect = { OWNER = this } }
+	#character:Mallister_4 = { create_artifact_vs_soaring_glory_effect = { OWNER = this } }
+	#character:Yronwood_2 = { create_artifact_vs_yron_key_effect = { OWNER = this } }
+	#character:Beesbury_2 = { create_artifact_vs_sting_effect = { OWNER = this } }
+	## AGOT TODO: All commented out are not yet modeled.
+
+	#THRONES
+	if = {
+		limit = {
+			game_start_date > 8000.1.1
+		}
+		title:b_the_red_keep.holder = {
+			agot_create_artifact_iron_throne_effect = { OWNER = this }
+		}
+	}
+
+	title:b_pyke.holder = {
+		agot_create_artifact_seastone_chair_effect = { OWNER = this }
+	}
+
+	title:b_casterly_rock.holder = {
+		agot_create_artifact_gilded_throne_effect = { OWNER = this }
+	}
+
+	#SWORDOS
+	if = {
+		limit = {
+			exists = dynasty:dynn_Wyl
+			exists = dynasty:dynn_Wyl.dynast
+			NOT = {
+				dynasty:dynn_Wyl.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Wyl.dynast = { agot_create_artifact_vs_adders_fang_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Vyrwel
+			exists = dynasty:dynn_Vyrwel.dynast
+			NOT = {
+				dynasty:dynn_Vyrwel.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Vyrwel.dynast = { agot_create_artifact_vs_darktalon_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Dayne
+			exists = dynasty:dynn_Dayne.dynast
+			NOT = {
+				dynasty:dynn_Dayne.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		if = {
+			limit = {
+				game_start_date >= 8275.1.1
+				game_start_date < 8284.1.1
+			}
+			character:Dayne_5 = { 
+				agot_create_artifact_vs_dawn_effect = { OWNER = this }
+				#for some reason Dawn doesn't equip automatically
+				random_character_artifact = {
+					limit  = { has_artifact_modifier = vs_dawn_modifier }
+					equip_artifact_to_owner_replace = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8219.1.1
+				game_start_date < 8265.1.1
+			}
+			character:Dayne_72 = { 
+				agot_create_artifact_vs_dawn_effect = { OWNER = this }
+				#for some reason Dawn doesn't equip automatically
+				random_character_artifact = {
+					limit  = { has_artifact_modifier = vs_dawn_modifier }
+					equip_artifact_to_owner_replace = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8191.1.1
+				game_start_date < 8206.1.1
+			}
+			character:Dayne_70 = { 
+				agot_create_artifact_vs_dawn_effect = { OWNER = this }
+				#for some reason Dawn doesn't equip automatically
+				random_character_artifact = {
+					limit  = { has_artifact_modifier = vs_dawn_modifier }
+					equip_artifact_to_owner_replace = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8083.1.1
+				game_start_date < 8112.1.1
+			}
+			character:Dayne_36 = { 
+				agot_create_artifact_vs_dawn_effect = { OWNER = this }
+				#for some reason Dawn doesn't equip automatically
+				random_character_artifact = {
+					limit  = { has_artifact_modifier = vs_dawn_modifier }
+					equip_artifact_to_owner_replace = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 7839.1.1
+				game_start_date < 7870.1.1
+			}
+			character:Dayne_20 = { 
+				agot_create_artifact_vs_dawn_effect = { OWNER = this }
+				#for some reason Dawn doesn't equip automatically
+				random_character_artifact = {
+					limit  = { has_artifact_modifier = vs_dawn_modifier }
+					equip_artifact_to_owner_replace = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 7320.1.1
+				game_start_date < 7355.1.1
+			}
+			character:Dayne_18 = { 
+				agot_create_artifact_vs_dawn_effect = { OWNER = this }
+				#for some reason Dawn doesn't equip automatically
+				random_character_artifact = {
+					limit  = { has_artifact_modifier = vs_dawn_modifier }
+					equip_artifact_to_owner_replace = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 7320.1.1
+				game_start_date < 7355.1.1
+			}
+			character:Dayne_18 = { 
+				agot_create_artifact_vs_dawn_effect = { OWNER = this }
+				#for some reason Dawn doesn't equip automatically
+				random_character_artifact = {
+					limit  = { has_artifact_modifier = vs_dawn_modifier }
+					equip_artifact_to_owner_replace = yes
+				}
+			}
+		}
+		else = {
+			dynasty:dynn_Dayne.dynast = { agot_create_artifact_vs_dawn_effect = { OWNER = this } }
+		}
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Ironsmith
+			exists = dynasty:dynn_Ironsmith.dynast
+			NOT = {
+				dynasty:dynn_Ironsmith.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Ironsmith.dynast = { agot_create_artifact_vs_defiance_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			game_start_date < 8229.1.1
+			exists = dynasty:dynn_Lothston
+			exists = dynasty:dynn_Lothston.dynast
+			NOT = {
+				dynasty:dynn_Lothston.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Lothston.dynast = { agot_create_artifact_vs_disputant_effect = { OWNER = this } }
+	}
+	else_if = {
+		limit = {
+			game_start_date >= 8229.1.1
+			exists = dynasty:dynn_Whent
+			exists = dynasty:dynn_Whent.dynast
+			NOT = {
+				dynasty:dynn_Whent.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Whent.dynast = { agot_create_artifact_vs_disputant_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Forrester
+			exists = dynasty:dynn_Forrester.dynast
+			NOT = {
+				dynasty:dynn_Forrester.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Forrester.dynast = { agot_create_artifact_vs_iron_will_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Tarly
+			exists = dynasty:dynn_Tarly.dynast
+			NOT = {
+				dynasty:dynn_Tarly.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Tarly.dynast = { agot_create_artifact_vs_heartsbane_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Stark
+			exists = dynasty:dynn_Stark.dynast
+			NOT = {
+				dynasty:dynn_Stark.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Stark.dynast = { agot_create_artifact_vs_ice_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Corbray
+			exists = dynasty:dynn_Corbray.dynast
+			NOT = {
+				dynasty:dynn_Corbray.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		if = {
+			limit = {
+				game_start_date >= 8283.3.1
+			}
+			character:Corbray_3 = { agot_create_artifact_vs_lady_forlorn_effect = { OWNER = this } }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8184.1.1
+				game_start_date < 8205.1.1
+			}
+			character:Corbray_47 = { agot_create_artifact_vs_lady_forlorn_effect = { OWNER = this } }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 7940.1.1
+				game_start_date < 7996.1.1
+			}
+			character:Corbray_14 = { agot_create_artifact_vs_lady_forlorn_effect = { OWNER = this } }
+		}
+		else = {
+			dynasty:dynn_Corbray.dynast = { agot_create_artifact_vs_lady_forlorn_effect = { OWNER = this } }
+		}
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Mormont
+			exists = dynasty:dynn_Mormont.dynast
+			NOT = {
+				dynasty:dynn_Mormont.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Mormont.dynast = { agot_create_artifact_vs_longclaw_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Harlaw
+			exists = dynasty:dynn_Harlaw.dynast
+			NOT = {
+				dynasty:dynn_Harlaw.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		if = {
+			limit = {
+				game_start_date >= 8282.1.1
+			}
+			character:Harlaw_12 = { agot_create_artifact_vs_nightfall_effect = { OWNER = this } }
+		}
+		else = {
+			dynasty:dynn_Harlaw.dynast = { agot_create_artifact_vs_nightfall_effect = { OWNER = this } }
+		}
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Roxton
+			exists = dynasty:dynn_Roxton.dynast
+			NOT = {
+				dynasty:dynn_Roxton.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Roxton.dynast = { create_artifact_vs_orphan_maker_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Celtigar
+			exists = dynasty:dynn_Celtigar.dynast
+			NOT = {
+				dynasty:dynn_Celtigar.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Celtigar.dynast = { agot_create_artifact_vs_pincer_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Jast
+			exists = dynasty:dynn_Jast.dynast
+			NOT = {
+				dynasty:dynn_Jast.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Jast.dynast = { agot_create_artifact_vs_pride_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Drumm
+			exists = dynasty:dynn_Drumm.dynast
+			NOT = {
+				dynasty:dynn_Drumm.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Drumm.dynast = { agot_create_artifact_vs_red_rain_effect = { OWNER = this } }
+		if = {
+			limit = {
+				exists = dynasty:dynn_Reyne
+				exists = character:Reyne_1.house.house_head
+				NOT = {
+					character:Reyne_1.house.house_head = { has_character_flag = house_customizer_placeholder }
+				}
+			}
+			character:Reyne_1.house = { add_house_artifact_claim = scope:newly_created_artifact }
+		}
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Velaryon
+			exists = dynasty:dynn_Velaryon.dynast
+			NOT = {
+				dynasty:dynn_Velaryon.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Velaryon.dynast = { agot_create_artifact_vs_seafoam_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Banefort
+			exists = dynasty:dynn_Banefort.dynast
+			NOT = {
+				dynasty:dynn_Banefort.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Banefort.dynast = { agot_create_artifact_vs_skullcleaver_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Darklyn
+			exists = character:Darklyn_1.house.house_head
+			NOT = {
+				character:Darklyn_1.house.house_head = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		character:Darklyn_1.house.house_head = { agot_create_artifact_vs_stalwart_effect = { OWNER = this } }
+	}
+	else_if = {
+		limit = {
+			exists = house:house_Darke
+			exists = house:house_Darke.house_head
+			NOT = {
+				house:house_Darke.house_head = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		house:house_Darke.house_head = { agot_create_artifact_vs_stalwart_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Serrett
+			exists = dynasty:dynn_Serrett.dynast
+			NOT = {
+				dynasty:dynn_Serrett.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Serrett.dynast = { agot_create_artifact_vs_supremacy_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Bar_Emmon
+			exists = dynasty:dynn_Bar_Emmon.dynast
+			NOT = {
+				dynasty:dynn_Bar_Emmon.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Bar_Emmon.dynast = { agot_create_artifact_vs_swordfish_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Brax
+			exists = dynasty:dynn_Brax.dynast
+			NOT = {
+				dynasty:dynn_Brax.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Brax.dynast = { agot_create_artifact_vs_tranquility_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Hightower
+			exists = dynasty:dynn_Hightower.dynast
+			NOT = {
+				dynasty:dynn_Hightower.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Hightower.dynast = { agot_create_artifact_vs_vigilance_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Lydden
+			exists = dynasty:dynn_Lydden.dynast
+			NOT = {
+				dynasty:dynn_Lydden.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Lydden.dynast = { agot_create_artifact_vs_widestripe_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Cargyll
+			exists = dynasty:dynn_Cargyll.dynast
+			NOT = {
+				dynasty:dynn_Cargyll.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Cargyll.dynast = { agot_create_artifact_vs_remige_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Dustin
+			exists = dynasty:dynn_Dustin.dynast
+			NOT = {
+				dynasty:dynn_Dustin.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Dustin.dynast = { agot_create_artifact_vs_wyrmfang_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Rowan
+			exists = dynasty:dynn_Rowan.dynast
+			NOT = {
+				dynasty:dynn_Rowan.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Rowan.dynast = { create_artifact_vs_evergold_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Rogare
+			exists = dynasty:dynn_Rogare.dynast
+		}
+		dynasty:dynn_Rogare.dynast = { agot_create_artifact_vs_truth_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Targaryen
+			exists = dynasty:dynn_Targaryen.dynast
+			NOT = {
+				dynasty:dynn_Targaryen.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+			game_start_date < 8241.1.3
+		}
+		if = {
+			limit = {
+				game_start_date = 8037.9.9
+			}
+			character:Targaryen_31 = { agot_create_artifact_vs_blackfyre_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8037.9.17
+				game_start_date < 8048.3.6
+			}
+			character:Targaryen_31 = { agot_create_artifact_vs_blackfyre_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date = 8048.3.6
+			}
+			character:Targaryen_32 = { agot_create_artifact_vs_blackfyre_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date = 8130.12.1
+			}
+			character:Broome_18 = { agot_create_artifact_vs_blackfyre_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8182.1.1
+				game_start_date < 8196.6.1
+			}
+			character:Targaryen_94 = { agot_create_artifact_vs_blackfyre_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date = 8196.6.1
+			}
+			character:Blackfyre_2 = { agot_create_artifact_vs_blackfyre_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8196.1.2
+				game_start_date < 8241.1.3
+			}
+			character:Targaryen_95 = { agot_create_artifact_vs_blackfyre_effect = { OWNER = this} }
+		}
+		else = {
+			dynasty:dynn_Targaryen.dynast = { agot_create_artifact_vs_blackfyre_effect = { OWNER = this} }
+		}
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Targaryen
+			exists = dynasty:dynn_Targaryen.dynast
+			NOT = {
+				dynasty:dynn_Targaryen.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+			game_start_date < 8252.6.1
+		}
+		if = {
+			limit = {
+				game_start_date >= 7900.1.1
+				game_start_date < 7930.1.1
+			}
+			character:Targaryen_15 = { agot_create_artifact_vs_dark_sister_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 7930.1.1
+				game_start_date < 7950.1.1
+			}
+			character:Targaryen_17 = { agot_create_artifact_vs_dark_sister_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 7950.1.1
+				game_start_date < 7955.1.1
+			}
+			character:Targaryen_21 = { agot_create_artifact_vs_dark_sister_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 7996.1.1
+				game_start_date < 8044.7.1
+			}
+			character:Targaryen_28 = { agot_create_artifact_vs_dark_sister_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8092.1.1
+				game_start_date < 8101.9.1
+			}
+			character:Targaryen_46 = { agot_create_artifact_vs_dark_sister_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8101.9.1
+				game_start_date < 8130.5.22
+			}
+			character:Targaryen_61 = { agot_create_artifact_vs_dark_sister_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8161.6.9
+				game_start_date < 8178.6.1
+			}
+			character:Targaryen_89 = { agot_create_artifact_vs_dark_sister_effect = { OWNER = this} }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8178.6.1
+				game_start_date < 8252.6.1
+			}
+			character:Targaryen_96 = { agot_create_artifact_vs_dark_sister_effect = { OWNER = this} }
+		}
+		else = {
+			dynasty:dynn_Targaryen.dynast = { agot_create_artifact_vs_dark_sister_effect = { OWNER = this } }
+		}
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Royce
+			exists = dynasty:dynn_Royce.dynast
+			NOT = {
+				dynasty:dynn_Royce.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+			game_start_date < 8130.5.29
+		}
+		if = {
+			limit = {
+				game_start_date >= 8083.1.1
+				game_start_date < 8097.1.1
+			}
+			character:Royce_33 = { agot_create_artifact_vs_lamentation_effect = { OWNER = this } }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8102.1.1
+				game_start_date < 8111.1.1
+			}
+			character:Royce_38 = { agot_create_artifact_vs_lamentation_effect = { OWNER = this } }
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8111.1.1
+				game_start_date < 8130.5.29
+			}
+			# AGOT Bookmarked Modified
+			# character:Royce_38 = { agot_create_artifact_vs_lamentation_effect = { OWNER = this } }
+			character:Royce_39 = { agot_create_artifact_vs_lamentation_effect = { OWNER = this } }
+		}
+		else = {
+			dynasty:dynn_Royce.dynast = { agot_create_artifact_vs_lamentation_effect = { OWNER = this } }
+		}
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Adarys
+			exists = dynasty:dynn_Adarys.dynast
+			NOT = {
+				dynasty:dynn_Adarys.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Adarys.dynast = { agot_create_artifact_vs_cloudbreak_effect = { OWNER = this } }
+	}
+
+	#CROWNS
+	if = {
+		limit = {
+			exists = dynasty:dynn_Targaryen
+			exists = dynasty:dynn_Targaryen.dynast
+			game_start_date >= 8000.1.1
+			game_start_date < 8162.1.1
+		}
+		dynasty:dynn_Targaryen.dynast = { agot_create_artifact_aegon_i_crown_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = character:Targaryen_28
+			character:Targaryen_28 = { is_alive = yes }
+			game_start_date >= 8000.1.1
+		}
+		character:Targaryen_28 = { agot_create_artifact_visenya_circlet_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = character:Targaryen_29
+			character:Targaryen_29 = { is_alive = yes }
+		}
+		character:Targaryen_29 = { agot_create_artifact_rhaenys_circlet_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Targaryen
+			exists = dynasty:dynn_Targaryen.dynast
+			game_start_date >= 8037.1.1
+			game_start_date < 8284.6.1
+		}
+		dynasty:dynn_Targaryen.dynast = { agot_create_artifact_aenys_crown_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Targaryen
+			exists = dynasty:dynn_Targaryen.dynast
+			game_start_date >= 8054.9.20
+			game_start_date < 8130.1.1
+		}
+		dynasty:dynn_Targaryen.dynast = { agot_create_artifact_jaehaerys_crown_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = character:Targaryen_36
+			character:Targaryen_36 = { is_alive = yes }
+		}
+		character:Targaryen_36 = { agot_create_artifact_alysanne_crown_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = character:Targaryen_61
+			character:Targaryen_61 = { is_alive = yes }
+			character:Targaryen_61 = { has_title = title:k_the_stepstones }
+		}
+		character:Targaryen_61 = { agot_create_artifact_daemon_stepstone_crown_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Targaryen
+			exists = dynasty:dynn_Targaryen.dynast
+			game_start_date >= 8136.1.1
+			game_start_date < 8284.6.1
+		}
+		dynasty:dynn_Targaryen.dynast = { agot_create_artifact_aegon_iii_crown_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Targaryen
+			exists = dynasty:dynn_Targaryen.dynast
+			game_start_date >= 8161.1.1
+			game_start_date < 8171.1.1
+		}
+		dynasty:dynn_Targaryen.dynast = { agot_create_artifact_baelors_crown_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Targaryen
+			exists = dynasty:dynn_Targaryen.dynast
+			game_start_date >= 8172.1.1
+			game_start_date < 8284.6.1
+		}
+		dynasty:dynn_Targaryen.dynast = { agot_create_artifact_aegon_iv_crown_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Targaryen
+			exists = dynasty:dynn_Targaryen.dynast
+			game_start_date >= 8233.6.1
+			game_start_date < 8284.6.1
+		}
+		dynasty:dynn_Targaryen.dynast = { agot_create_artifact_maekars_crown_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = character:Targaryen_2
+			character:Targaryen_2 = { is_alive = yes }
+			game_start_date >= 8262.1.1
+		}
+		character:Targaryen_2 = { agot_create_artifact_rhaella_crown_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = character:Baratheon_2
+			character:Baratheon_2 = { is_alive = yes }
+			game_start_date >= 8284.6.1
+		}
+		character:Baratheon_2 = { agot_create_artifact_robertI_crown_historical_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Martell
+			exists = dynasty:dynn_Martell.dynast
+			NOT = {
+				dynasty:dynn_Wyl.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Martell.dynast = { agot_create_artifact_dorne_crown_effect = { OWNER = this } }
+	}
+
+	#EQUIP CROWNS
+	if = {
+		limit = {
+			exists = character:Targaryen_122
+			character:Targaryen_122 = { is_alive = yes }
+			game_start_date >= 8233.6.1
+		}
+		character:Targaryen_122 = {
+			random_character_artifact = {
+				limit = { has_variable = crown_aegon_iii_artifact }
+				equip_artifact_to_owner_replace = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			exists = character:Targaryen_127
+			character:Targaryen_127 = { is_alive = yes }
+			game_start_date >= 8259.6.1
+		}
+		character:Targaryen_127 = {
+			random_character_artifact = {
+				limit = { has_variable = crown_maekar_artifact }
+				equip_artifact_to_owner_replace = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			exists = character:Targaryen_1
+			character:Targaryen_1 = { is_alive = yes }
+			game_start_date >= 8262.1.1
+		}
+		character:Targaryen_1 = {
+			random_character_artifact = {
+				limit = { has_variable = crown_aegon_iv_artifact }
+				equip_artifact_to_owner_replace = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			exists = character:Targaryen_2
+			character:Targaryen_2 = { is_alive = yes }
+			game_start_date >= 8262.1.1
+		}
+		character:Targaryen_2 = {
+			random_character_artifact = {
+				limit = { has_variable = crown_rhaella_artifact }
+				equip_artifact_to_owner_replace = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			exists = character:Baratheon_2
+			character:Baratheon_2 = { is_alive = yes }
+			game_start_date >= 8284.6.1
+		}
+		character:Baratheon_2 = {
+			random_character_artifact = {
+				limit = { has_variable = robertI_crown_artifact }
+				equip_artifact_to_owner_replace = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Martell
+			exists = dynasty:dynn_Martell.dynast
+			NOT = {
+				dynasty:dynn_Wyl.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Martell.dynast = {
+			random_character_artifact = {
+				limit = { has_variable = dorne_crown_artifact }
+				equip_artifact_to_owner_replace = yes
+			}
+		}
+	}
+
+	#MISC
+	if = {
+		limit = {
+			exists = dynasty:dynn_Martell
+			exists = dynasty:dynn_Martell.dynast
+			NOT = {
+				dynasty:dynn_Wyl.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Martell.dynast = { agot_create_artifact_martell_wall_shield_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Uller
+			exists = dynasty:dynn_Uller.dynast
+			game_start_date >= 8010.10.25
+		}
+		dynasty:dynn_Uller.dynast = { agot_create_artifact_uller_skull_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = dynasty:dynn_Wyl
+			exists = dynasty:dynn_Wyl.dynast
+			game_start_date >= 8007.1.1
+		}
+		dynasty:dynn_Wyl.dynast = { agot_create_hands_hand_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = character:Targaryen_3
+			character:Targaryen_3 = { is_alive = yes }
+			game_start_date >= 8275.6.1
+		}
+
+		character:Targaryen_3 = { agot_create_artifact_rhaegars_armour_effect = { OWNER = this } }
+		character:Targaryen_3 = { agot_create_artifact_rhaegar_sword_effect = { OWNER = this } }
+	}
+
+	if = {
+		limit = {
+			exists = character:Baratheon_2
+			character:Baratheon_2 = { is_alive = yes }
+			game_start_date >= 8278.1.1
+			game_start_date < 8283.3.1
+		}
+
+		character:Baratheon_2 = { agot_create_artifact_roberts_armour_effect = { OWNER = this } }
+		character:Baratheon_2 = {
+			agot_create_artifact_bobby_hammer_effect = {
+				OWNER = this
+				CREATOR = character:Noye_1
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			exists = character:Baratheon_2
+			character:Baratheon_2 = { is_alive = yes }
+			game_start_date >= 8283.3.1
+		}
+
+		character:Baratheon_2 = { agot_create_artifact_roberts_armour_effect = { OWNER = this } }
+		character:Baratheon_2 = {
+			agot_create_artifact_bobby_hammer_cooler_effect = {
+			OWNER = this
+			CREATOR = character:Noye_1
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			exists = character:Stark_5
+			character:Stark_5 = { is_alive = yes }
+			game_start_date >= 8281.6.1
+		}
+
+		character:Stark_5 = {
+			set_variable = {
+				name = tourney_location
+				value = province:1934
+			}
+			character:Targaryen_3 = { save_scope_as = contest_winner }
+			agot_create_artifact_crown_of_qolab_winter_roses_lyanna_effect = { OWNER = this }
+			remove_variable = tourney_location
+		}
+	}
+
+	if = {
+		limit = {
+			exists = character:Seaworth_1
+			character:Seaworth_1 = { is_alive = yes }
+			game_start_date >= 8284.1.1
+		}
+
+		character:Seaworth_1 = {
+			agot_create_smugglers_fingers_effect = { OWNER = this }
+		}
+	}
+	if = {
+		limit = {
+			exists = title:d_kingsguard.holder
+		}
+		title:d_kingsguard.holder = {
+			agot_create_artifact_the_white_book_effect = {
+				OWNER = this 
+				CREATOR = character:Targaryen_28 #Visenya Targaryen
+			}
+		}
+	}
+	#Skulls
+	if  = {
+		limit = {
+			exists = title:k_golden_company.holder
+		}
+		if = {
+			limit = { game_start_date >= 8241.1.1 }
+			title:k_golden_company.holder = {
+				agot_create_artifact_bittersteel_skull_effect = { OWNER = title:k_golden_company.holder }
+			}
+		}
+		if = {
+			limit = { game_start_date >= 8252.11.11 }
+			title:k_golden_company.holder = {
+				agot_create_artifact_bittersteel_skull_effect = { OWNER = title:k_golden_company.holder }
+			}
+		}
+		if = {
+			limit = { game_start_date >= 8260.10.1 }
+			title:k_golden_company.holder = {
+				agot_create_artifact_maelys_skull_effect = { OWNER = title:k_golden_company.holder }
+			}
+		}
+	}
+
+	#Scenarios
+	#Seven Eggs for Seven Gods
+	if = {
+		limit = {
+			exists = character:Targaryen_122
+			character:Targaryen_122 = { is_alive = yes }
+			game_start_date = 8258.12.21
+		}
+		character:Targaryen_122 = {
+			create_artifact_dragon_egg_rainbow_effect = { OWNER = character:Targaryen_122 }
+			create_artifact_dragon_egg_red_effect = { OWNER = character:Targaryen_122 }
+			create_artifact_dragon_egg_orange_effect = { OWNER = character:Targaryen_122 }
+			create_artifact_dragon_egg_yellow_effect = { OWNER = character:Targaryen_122 }
+			create_artifact_dragon_egg_green_1_effect = { OWNER = character:Targaryen_122 }
+			create_artifact_dragon_egg_blue_effect = { OWNER = character:Targaryen_122 }
+			create_artifact_dragon_egg_purple_effect = { OWNER = character:Targaryen_122 }
+		}
+	}
+	if = {
+		limit = {
+			exists = character:Blackfyre_14
+			character:Blackfyre_14 = { is_alive = yes }
+			game_start_date = 8258.12.21
+		}
+		character:Blackfyre_14 = {
+			create_artifact_dragon_egg_black_effect = { OWNER = character:Blackfyre_14 }
+			agot_create_artifact_bittersteel_skull_effect = { OWNER = character:Blackfyre_14 }
+			agot_create_artifact_daemon_blackfyre_skull_effect = { OWNER = character:Blackfyre_14 }
+			agot_create_artifact_maelys_armour_effect = { OWNER = character:Blackfyre_14 }
+		}
+	}
+}

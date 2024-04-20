@@ -87,9 +87,14 @@
 ############ c_high_tide - d_driftmark ############
 4425 = {
 	holding = city_holding
-	special_building = agot_spicetown_02
 	7998.1.1 = {
 		buildings = { city_01 }
+	}
+	8077.1.1 = {
+		special_building = agot_spicetown_01
+	}
+	8130.1.6 = {
+		special_building = agot_ruins_spicetown_01
 	}
 }
 ################### b_blackhull ###################

@@ -20,16 +20,8 @@
 	8033.1.1 = {
 		holder = Greyjoy_41
 	}
-	8043.1.1 = {
-	}
-	8048.3.1 = {
-	}
-	8048.6.2 = {
-	}
 	8052.1.1 = {
 		holder = Greyjoy_42
-	}
-	8060.1.1 = {
 	}
 	8070.1.1 = {
 		holder = Greyjoy_43
@@ -46,7 +38,7 @@
 	8129.4.1 = {
 		liege = 0
 	}
-	8131.1.8 = {
+	8131.1.14 = {
 		liege = e_the_iron_throne
 	}
 	8133.12.1 = {
@@ -1067,6 +1059,9 @@ c_downdelving = {
 	8242.1.1 = {
 		holder = Goodbrother_57
 	}
+	8276.1.1 = {
+		holder = Goodbrother_1
+	}
 	8279.1.1 = {
 		holder = Goodbrother_33
 	}
@@ -1249,6 +1244,12 @@ d_harlaw = {
 	}
 	4393.1.1 = {
 		holder = 0
+	}
+	7513.1.1 = {
+		holder = Harlaw_53
+	}
+	7535.1.1 = {
+		holder = Harlaw_52
 	}
 	7859.1.1 = {
 		holder = Harlaw_33
