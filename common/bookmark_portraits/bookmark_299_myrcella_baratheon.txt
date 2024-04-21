@@ -2,7 +2,7 @@
 # History database id:Baratheon_6
 bookmark_299_myrcella_baratheon={
 	type=girl
-	id=32457
+	id=32733
 	age=0.090000
 	genes={ 		hair_color={ 181 51 198 28 }
  		skin_color={ 51 27 76 39 }
@@ -96,8 +96,8 @@ bookmark_299_myrcella_baratheon={
  		expression_other={ "cheek_wrinkles_both_01" 104 "nose_wrinkles_01" 124 }
  		complexion={ "complexion_beauty_1" 0 "complexion_12" 163 }
  		gene_height={ "normal_height" 136 "normal_height" 140 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 120 "body_fat_head_fat_low" 126 }
- 		gene_bs_body_shape={ "body_shape_hourglass_full" 71 "body_shape_average_clothed" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 129 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_full" 91 "body_shape_average_clothed" 0 }
  		gene_bs_bust={ "bust_clothes" 41 "bust_shape_3_full" 124 }
  		gene_age={ "old_beauty_1" 148 "old_beauty_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 150 "avg_spacing_lower_thickness" 212 }
@@ -136,31 +136,18 @@ bookmark_299_myrcella_baratheon={
  		gene_bs_eye_shape={ "eye_shape_01" 255 "eye_shape_01" 199 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		pose={ "" 255 "" 0 }
- 		beards={ "no_beard" 217 "no_beard" 0 }
+ 		beards={ "no_beard" 107 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 194 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 203 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 64 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "western_commoner_clothes" 203 "most_clothes" 0 }
+ 		clothes={ "western_commoner_clothes" 64 "most_clothes" 0 }
  		headgear={ "no_headgear" 0 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 616600735 3478549277 }
-	tags={ {
-			hash=2125534279
-			invert=no
-		}
- {
-			hash=2670398845
-			invert=no
-		}
- {
-			hash=681013727
-			invert=no
-		}
- }
 }
 

@@ -2,7 +2,7 @@
 # History database id:Stark_66
 bookmark_2bc_torrhen_stark={
 	type=male
-	id=5899
+	id=6069
 	age=0.400000
 	genes={ 		hair_color={ 127 216 118 218 }
  		skin_color={ 96 14 95 13 }
@@ -96,8 +96,8 @@ bookmark_2bc_torrhen_stark={
  		expression_other={ "nose_wrinkles_01" 99 "cheek_wrinkles_both_01" 119 }
  		complexion={ "complexion_2" 29 "complexion_3" 29 }
  		gene_height={ "normal_height" 132 "normal_height" 133 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 122 "body_fat_head_fat_low" 110 }
- 		gene_bs_body_shape={ "body_shape_average_clothed" 142 "body_shape_average_clothed" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 118 "body_fat_head_fat_low" 110 }
+ 		gene_bs_body_shape={ "body_shape_average_clothed" 163 "body_shape_average_clothed" 0 }
  		gene_bs_bust={ "bust_clothes" 87 "bust_clothes" 87 }
  		gene_age={ "old_2" 255 "old_1" 0 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 255 "avg_spacing_low_thickness" 253 }
@@ -137,46 +137,17 @@ bookmark_2bc_torrhen_stark={
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		pose={ "" 255 "" 0 }
  		beards={ "all_beards" 9 "no_beard" 0 }
- 		cloaks={ "agot_coa_cloaks_fp1_dynamic_stark" 147 "no_cloak" 0 }
+ 		cloaks={ "agot_coa_cloaks_fp1_dynamic_stark" 7 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 95 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 106 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 89 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "northern_high_nobility_clothes" 137 "most_clothes" 0 }
+ 		clothes={ "northern_high_nobility_clothes" 79 "most_clothes" 0 }
  		headgear={ "agot_crowns" 59 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 3942081117 3942081117 }
-	tags={ {
-			hash=2125534279
-			invert=no
-		}
- {
-			hash=681013727
-			invert=no
-		}
- {
-			hash=2793867254
-			invert=no
-		}
- {
-			hash=2670398845
-			invert=no
-		}
- {
-			hash=1500963499
-			invert=no
-		}
- {
-			hash=1563190100
-			invert=no
-		}
- {
-			hash=1945936758
-			invert=no
-		}
- }
 }
 

@@ -2,11 +2,11 @@
 # History database id:Targaryen_63
 bookmark_129_rhaenyra_targaryen={
 	type=female
-	id=11715
+	id=11918
 	age=0.320000
 	genes={ 		hair_color={ 51 7 91 28 }
  		skin_color={ 46 20 40 19 }
- 		eye_color={ 242 51 216 37 }
+ 		eye_color={ 247 191 216 37 }
  		gene_chin_forward={ "chin_forward_pos" 136 "chin_forward_pos" 136 }
  		gene_chin_height={ "chin_height_neg" 144 "chin_height_neg" 144 }
  		gene_chin_width={ "chin_width_pos" 89 "chin_width_neg" 91 }
@@ -96,8 +96,8 @@ bookmark_129_rhaenyra_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 0 "cheek_wrinkles_both_01" 0 }
  		complexion={ "complexion_beauty_1" 0 "complexion_25" 0 }
  		gene_height={ "normal_height" 121 "normal_height" 143 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 108 "body_fat_head_fat_low" 114 }
- 		gene_bs_body_shape={ "body_shape_hourglass_full" 61 "body_shape_hourglass_full" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 119 "body_fat_head_fat_low" 114 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_full" 71 "body_shape_hourglass_full" 0 }
  		gene_bs_bust={ "bust_clothes" 45 "bust_shape_3_full" 95 }
  		gene_age={ "old_beauty_1" 148 "old_beauty_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 192 "avg_spacing_low_thickness" 192 }
@@ -136,35 +136,18 @@ bookmark_129_rhaenyra_targaryen={
  		gene_bs_eye_shape={ "eye_shape_01" 0 "eye_shape_01" 0 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		pose={ "" 255 "" 0 }
- 		beards={ "no_beard" 209 "no_beard" 0 }
+ 		beards={ "no_beard" 4 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 131 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 197 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 239 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "byzantine_high_nobility_clothes" 58 "most_clothes" 0 }
- 		headgear={ "no_headgear" 209 "no_headgear" 0 }
+ 		clothes={ "byzantine_high_nobility_clothes" 9 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 4 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 979141817 979141817 }
-	tags={ {
-			hash=2125534279
-			invert=no
-		}
- {
-			hash=2670398845
-			invert=no
-		}
- {
-			hash=681013727
-			invert=no
-		}
- {
-			hash=2842715111
-			invert=no
-		}
- }
 }
 

@@ -2,11 +2,11 @@
 # History database id:Targaryen_61
 bookmark_129_daemon_targaryen={
 	type=male
-	id=10874
+	id=11068
 	age=0.480000
 	genes={ 		hair_color={ 20 2 28 226 }
  		skin_color={ 19 22 22 22 }
- 		eye_color={ 239 191 120 174 }
+ 		eye_color={ 239 135 120 174 }
  		gene_chin_forward={ "chin_forward_neg" 124 "chin_forward_neg" 124 }
  		gene_chin_height={ "chin_height_pos" 133 "chin_height_pos" 133 }
  		gene_chin_width={ "chin_width_pos" 89 "chin_width_pos" 89 }
@@ -96,8 +96,8 @@ bookmark_129_daemon_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 0 "cheek_wrinkles_both_01" 0 }
  		complexion={ "complexion_beauty_1" 0 "complexion_25" 0 }
  		gene_height={ "normal_height" 148 "normal_height" 163 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 108 "body_fat_head_fat_low" 114 }
- 		gene_bs_body_shape={ "body_shape_average" 204 "body_shape_average" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 124 "body_fat_head_fat_low" 114 }
+ 		gene_bs_body_shape={ "body_shape_average" 255 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 12 "bust_clothes" 34 }
  		gene_age={ "old_2" 199 "old_beauty_1" 1 }
  		gene_eyebrows_shape={ "avg_spacing_avg_thickness" 192 "avg_spacing_avg_thickness" 192 }
@@ -139,37 +139,16 @@ bookmark_129_daemon_targaryen={
  		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 238 "all_hairstyles" 0 }
- 		legwear={ "agot_hidden_legwear" 255 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 128 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "agot_byzantine_high_nobility_clothes_male_pants" 31 "most_clothes" 0 }
- 		headgear={ "no_headgear" 8 "no_headgear" 0 }
+ 		clothes={ "byzantine_high_nobility_clothes" 214 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 217 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "agot_artifact_weapon_dark_sister" 255 "no_props" 0 }
  }
 	entity={ 979141817 979141817 }
-	tags={ {
-			hash=2125534279
-			invert=no
-		}
- {
-			hash=2670398845
-			invert=no
-		}
- {
-			hash=681013727
-			invert=no
-		}
- {
-			hash=726151402
-			invert=no
-		}
- {
-			hash=1563190100
-			invert=no
-		}
- }
 }
 
