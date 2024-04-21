@@ -148,24 +148,8 @@ bookmark_300_cersei_lannister={
  		clothes={ "agot_historic_characters" 126 "most_clothes" 0 }
  		headgear={ "no_headgear" 31 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
+		props_right={ "bp1_goblet" 255 "no_props" 0 }
  }
 	entity={ 2268070609 2268070609 }
-	tags={ {
-			hash=2125534279
-			invert=no
-		}
- {
-			hash=2670398845
-			invert=no
-		}
- {
-			hash=681013727
-			invert=no
-		}
- {
-			hash=1563190100
-			invert=no
-		}
- }
 }
 

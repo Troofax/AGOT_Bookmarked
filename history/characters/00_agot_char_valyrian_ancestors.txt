@@ -438,13 +438,19 @@ Targaryen_27 = { # Aegon's Conquest
 	7997.1.1 = { 
 		# AGOT Bookmarked Disabled
 		# religion = the_seven_main 
-		trait = incestuous # Visenya Targaryen and Rhaenys Targaryen
+		# trait = incestuous # Visenya Targaryen and Rhaenys Targaryen
 		effect = {
-			divorce = character:Targaryen_29 # Rhaenys Targaryen
-			make_concubine = character:Targaryen_29 # Rhaenys Targaryen
+			# AGOT Bookmarked Disabled
+			# divorce = character:Targaryen_29 # Rhaenys Targaryen
+			# make_concubine = character:Targaryen_29 # Rhaenys Targaryen
 			if = { # Safecheck
 				limit = { character:Targaryen_28 = { is_married = no } }
 				marry = character:Targaryen_28 # Visenya Targaryen
+			}
+			# AGOT Bookmarked Added
+			if = { # Safecheck
+				limit = { character:Targaryen_29 = { is_married = no } }
+				marry = character:Targaryen_29 # Rhaenys Targaryen
 			}
 		}
 	}
@@ -543,11 +549,11 @@ Targaryen_28 = {
 		trait = open_terrain_expert
 		trait = lifestyle_mystic
 	}
-	7997.1.1 = { 
-		# AGOT Bookmarked Disabled
+	# AGOT Bookmarked Disabled
+	# 7997.1.1 = { 
 		# religion = the_seven_main 
-		trait = incestuous # Aegon I Targaryen
-	}
+		# trait = incestuous # Aegon I Targaryen
+	# }
 	# AGOT Bookmarked Added
 	8000.1.2 = { religion = the_seven_main }
 	# 8042.1.1 = { trait = suspected_kinslayer } # Aenys Targaryen, AGOT TODO trait
@@ -589,11 +595,11 @@ Targaryen_29 = {
 		trait = lustful
 	}
 	7996.1.1 = { trait = dragon_rider } # Meraxes (C)
-	7997.1.1 = { 
-		# AGOT Bookmarked Disabled
+	# AGOT Bookmarked Disabled
+	# 7997.1.1 = { 
 		# religion = the_seven_main 
-		trait = incestuous # Aegon I Targaryen
-	}
+		# trait = incestuous # Aegon I Targaryen
+	# }
 	# AGOT Bookmarked Added
 	8000.1.2 = { religion = the_seven_main }
 	8010.1.1 = {

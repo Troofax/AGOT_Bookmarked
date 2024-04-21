@@ -923,7 +923,7 @@ agot_bm_8300 = {
 		history_id = Lannister_6
 		dynasty_splendor_level = 5
 		position = { 300 475 }
-		animation = boredom
+		animation = drink
 	}
 
 	# Euron Greyjoy (The Iron Islands) ID: Greyjoy_6
