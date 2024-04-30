@@ -13514,6 +13514,13 @@ Reed_1 = {
 			#remove_character_flag = TOJ_companion # AGOT TODO
 		}
 	}
+	# AGOT Bookmarked Added
+	8298.11.3 = {
+		add_secret = {
+			type = secret_agot_disputed_heritage
+			target = character:Stark_7
+		}
+	}
 }
 Reed_rs_1 = {
 	name = Jyana

@@ -12,9 +12,9 @@
 agot_bm_7998 = {
 	start_date = 7998.1.2 #
 	is_playable = yes
-	group = agot_bm_group_AC # Aegon's Conquest
+	group = agot_bm_group_agotbm # Aegon's Conquest
 
-	weight = { value = 0 }
+	weight = { value = 50 }
 
 	# Aegon I Targaryen (Dragonstone) ID: Targaryen_27
 	character = {
@@ -29,7 +29,7 @@ agot_bm_7998 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Targaryen_27
-		position = { 1200 325 }
+		position = { 1170 325 }
 		animation = marshal
 
 		# Visenya Targaryen (Dragonstone) ID: Targaryen_28
@@ -72,8 +72,8 @@ agot_bm_7998 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = Gardener_95
-		position = { 540 700 }
-		animation = worry
+		position = { 320 820 }
+		animation = paranoia
 	}
 
 	# Torrhen Stark (The North) ID: Stark_66
@@ -89,7 +89,7 @@ agot_bm_7998 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Stark_66
-		position = { 430 120 }
+		position = { 415 105 }
 		animation = thinking
 	}
 
@@ -106,7 +106,7 @@ agot_bm_7998 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = Durrandon_87
-		position = { 1150 660 }
+		position = { 1110 720 }
 		animation = personality_callous
 	}
 
@@ -123,7 +123,7 @@ agot_bm_7998 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Hoare_31
-		position = { 870 250 }
+		position = { 860 240 }
 		animation = personality_cynical
 	}
 }
@@ -138,9 +138,9 @@ agot_bm_7998 = {
 agot_bm_8129 = {
 	start_date = 8129.4.1
 	is_playable = yes
-	group = agot_bm_group_TDOD # Dance of the Dragons
+	group = agot_bm_group_agotbm # Dance of the Dragons
 
-	weight = { value = 0 }
+	weight = { value = 35 }
 
 	# Aegon II Targaryen (The Iron Throne) ID: Targaryen_65
 	character = {
@@ -155,7 +155,7 @@ agot_bm_8129 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Targaryen_65
-		position = { 1000 560 }
+		position = { 1020 550 }
 		animation = marshal
 
 		# Helaena Targaryen (The Iron Throne) ID: Targaryen_66
@@ -198,8 +198,8 @@ agot_bm_8129 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Targaryen_63
-		position = { 1090 300 }
-		animation = worry
+		position = { 1060 320 }
+		animation = personality_vengeful
 
 		# Daemon Targaryen (Dragonstone) ID: Targaryen_61
 		character = {
@@ -239,9 +239,9 @@ agot_bm_8129 = {
 agot_bm_8195 = {
 	start_date = 8195.3.7
 	is_playable = yes
-	group = agot_bm_group_BR # The Blackfyre Rebellion
+	group = agot_bm_group_agotbm # The Blackfyre Rebellion
 
-	weight = { value = 0 }
+	weight = { value = 25 }
 
 	# Daeron Targaryen (The Iron Throne) ID: Targaryen_81
 	character = {
@@ -256,7 +256,7 @@ agot_bm_8195 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = Targaryen_91
-		position = { 720 220 }
+		position = { 650 220 }
 		animation = thinking
 
 		# Baelor 'Breakspear' Targaryen (The Iron Throne) ID: Targaryen_107
@@ -299,7 +299,7 @@ agot_bm_8195 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Targaryen_94
-		position = { 400 420 }
+		position = { 440 460 }
 		animation = marshal
 	}
 
@@ -316,7 +316,7 @@ agot_bm_8195 = {
 		culture = riverlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Bracken_77
-		position = { 215 160 }
+		position = { 300 225 }
 		animation = marshal
 
 		# Aegor 'Bittersteel' Targaryen ID: Targaryen_95
@@ -344,7 +344,7 @@ agot_bm_8195 = {
 agot_bm_8277 = {
 	start_date = 8277.1.1
 	is_playable = yes
-	group = agot_bm_group_DOD # Defiance of Duskendale
+	group = agot_bm_group_agotbm # Defiance of Duskendale
 
 	weight = { value = 10 }
 
@@ -361,7 +361,7 @@ agot_bm_8277 = {
 		culture = westerman
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Lannister_1
-		position = { 310 550 }
+		position = { 250 360 }
 		animation = personality_callous
 
 		# Cersei Lannister (The Westerlands) ID: Lannister_6
@@ -404,7 +404,7 @@ agot_bm_8277 = {
 		culture = crownlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Darklyn_47
-		position = { 1150 300 }
+		position = { 1085 140 }
 		animation = steward
 	}
 
@@ -421,7 +421,7 @@ agot_bm_8277 = {
 		culture = high_valyrian
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = Targaryen_1
-		position = { 1000 600 }
+		position = { 935 362 }
 		animation = worry
 
 		# Rhaella Targaryen ID: Targaryen_2
@@ -462,11 +462,9 @@ agot_bm_8277 = {
 agot_bm_8298 = {
 	start_date = 8298.12.21
 	is_playable = yes
-	group = agot_bm_group_ACOK # War of the Five Kings
+	group = agot_bm_group_agotbm # War of the Five Kings
 
-	weight = {
-		value = 35
-	}
+	weight = { value = 40 }
 
 	# Robb Stark (The North) ID: Stark_6
 	character = {
@@ -481,7 +479,7 @@ agot_bm_8298 = {
 		culture = northman
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Stark_6
-		position = { 430 115 }
+		position = { 450 140 }
 		animation = marshal
 	}
 
@@ -498,8 +496,8 @@ agot_bm_8298 = {
 		culture = crownlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Baratheon_5
-		position = { 960 365 }
-		animation = agot_widows_wail_2
+		position = { 900 500 }
+		animation = marshal
 
 		# Myrcella Baratheon (The Iron Throne) ID: Baratheon_6
 		character = {
@@ -541,7 +539,7 @@ agot_bm_8298 = {
 		culture = riverlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Frey_1
-		position = { 630 225 }
+		position = { 690 240 }
 		animation = steward
 	}
 
@@ -558,7 +556,7 @@ agot_bm_8298 = {
 		culture = stormlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Baratheon_4
-		position = { 1150 660 }
+		position = { 1015 720 }
 		animation = marshal
 	}
 
@@ -575,7 +573,7 @@ agot_bm_8298 = {
 		culture = stormlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Baratheon_3
-		position = { 1122 155 }
+		position = { 1115 350 }
 		animation = marshal
 	}
 
@@ -592,7 +590,7 @@ agot_bm_8298 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Greyjoy_5
-		position = { 170 275 }
+		position = { 250 270 }
 		animation = marshal
 
 		# Asha Greyjoy (The Iron Islands) ID: Greyjoy_13
@@ -635,7 +633,7 @@ agot_bm_8298 = {
 		culture = westerman
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Lannister_1
-		position = { 310 550 }
+		position = { 248 518 }
 		animation = personality_callous
 
 		# Cersei Lannister (The Westerlands) ID: Lannister_6
@@ -672,11 +670,9 @@ agot_bm_8298 = {
 agot_bm_8299 = {
 	start_date = 8299.3.3
 	is_playable = yes
-	group = agot_bm_group_ACOK # A Clash of Kings
+	group = agot_bm_group_agotbm # A Clash of Kings
 
-	weight = {
-		value = 40
-	}
+	weight = { value = 30 }
 
 	# Robb Stark (The North) ID: Stark_6
 	character = {
@@ -691,7 +687,7 @@ agot_bm_8299 = {
 		culture = northman
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Stark_6
-		position = { 430 115 }
+		position = { 450 140 }
 		animation = marshal
 	}
 
@@ -708,8 +704,8 @@ agot_bm_8299 = {
 		culture = stormlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Baratheon_5
-		position = { 960 365 }
-		animation = agot_widows_wail_2
+		position = { 900 500 }
+		animation = marshal
 
 		# Myrcella Baratheon (The Iron Throne) ID: Baratheon_6
 		character = {
@@ -751,7 +747,7 @@ agot_bm_8299 = {
 		culture = riverlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Frey_1
-		position = { 630 225 }
+		position = { 690 240 }
 		animation = steward
 	}
 
@@ -768,7 +764,7 @@ agot_bm_8299 = {
 		culture = stormlander
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Baratheon_3
-		position = { 1122 155 }
+		position = { 1115 350 }
 		animation = marshal
 	}
 
@@ -785,7 +781,7 @@ agot_bm_8299 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Greyjoy_5
-		position = { 170 275 }
+		position = { 250 270 }
 		animation = marshal
 
 		# Asha Greyjoy (The Iron Islands) ID: Greyjoy_13
@@ -828,7 +824,7 @@ agot_bm_8299 = {
 		culture = westerman
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Lannister_1
-		position = { 310 550 }
+		position = { 248 518 }
 		animation = personality_callous
 
 		# Cersei Lannister (The Westerlands) ID: Lannister_6
@@ -869,11 +865,9 @@ agot_bm_8299 = {
 agot_bm_8300 = {
 	start_date = 8300.3.1
 	is_playable = yes
-	group = agot_bm_group_ACOK # A Clash of Kings
+	group = agot_bm_group_agotbm # A Clash of Kings
 
-	weight = {
-		value = 20
-	}
+	weight = { value = 20 }
 
 	# Tommen Baratheon (The Iron Throne) ID: Baratheon_7
 	character = {
@@ -888,7 +882,7 @@ agot_bm_8300 = {
 		religion = the_seven_main
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Baratheon_7
-		position = { 900 475 }
+		position = { 980 530 }
 		animation = thinking
 	}
 
@@ -905,7 +899,7 @@ agot_bm_8300 = {
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Baratheon_3
 		dynasty_splendor_level = 3
-		position = { 1200 325 }
+		position = { 1110 320 }
 		animation = marshal
 	}
 
@@ -922,7 +916,7 @@ agot_bm_8300 = {
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = Lannister_6
 		dynasty_splendor_level = 5
-		position = { 300 475 }
+		position = { 300 460 }
 		animation = drink
 	}
 
@@ -939,7 +933,7 @@ agot_bm_8300 = {
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = Greyjoy_6
 		dynasty_splendor_level = 4
-		position = { 400 200 }
+		position = { 400 190 }
 		animation = marshal
 	}
 }
