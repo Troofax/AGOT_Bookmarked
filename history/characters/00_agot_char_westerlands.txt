@@ -53,8 +53,8 @@ Lannister_1 = {
 		}
 	}
 	8259.11.1 = {
-		add_pressed_claim = title:k_the_westerlands
 		effect = {
+			add_pressed_claim = title:k_the_westerlands
 			if = {
 				limit = { character:Reyne_45 = { is_alive = yes } }
 				set_relation_rival = {
@@ -63,7 +63,6 @@ Lannister_1 = {
 				}
 			}
 		}
-		# trait = back_seat_leader # AGOT TODO trait
 	}
 	8261.11.1 = { # Massacred Reynes and Tarbecks
 		effect = { 
@@ -120,11 +119,27 @@ Lannister_1 = {
 	8284.1.1 = { # Crowned Stag
 		effect = {
 			remove_variable = pre_war_liege
-			dynasty:dynn_Martell = {
-				every_dynasty_member = {
+			character:Martell_7 = { # Elia Martell
+				every_close_or_extended_family_member = {
 					add_opinion = {
 						target = ROOT
-						modifier = murdered_close_family_crime
+						modifier = murdered_close_family_crime 				
+					}
+				}
+			}
+			character:Targaryen_10 = { # Rhaenys Targaryen
+				every_close_or_extended_family_member = {
+					add_opinion = {
+						target = ROOT
+						modifier = murdered_close_family_crime 				
+					}
+				}
+			}
+			character:Targaryen_11 = { # Aegon Targaryen
+				every_close_or_extended_family_member = {
+					add_opinion = {
+						target = ROOT
+						modifier = murdered_close_family_crime 				
 					}
 				}
 			}
@@ -243,13 +258,13 @@ Lannister_2 = {
 
 	8244.1.1 = { birth = yes }
 	8252.1.1 = { trait = patient }
-	8254.1.1 = { trait = diligent }
-	8256.1.1 = { trait = authoritative }
 	8252.1.1 = { 
 		effect = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Reyne_45 } # Roger Reyne
 		}
 	}
+	8254.1.1 = { trait = diligent }
+	8256.1.1 = { trait = authoritative }
 	8257.1.1 = {
 		effect = {
 			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Reyne_45 } # Roger Reyne
@@ -280,18 +295,6 @@ Lannister_2 = {
 	}
 	8267.1.1 = {
 		effect = { add_gold = 400 } # Large inheritance and incomes
-	}
-	8284.1.1 = {
-		effect = {
-			dynasty:dynn_Martell = {
-				every_dynasty_member = {
-					add_opinion = {
-						target = ROOT
-						modifier = murdered_close_family_crime
-					}
-				}
-			}
-		}
 	}
 	8298.1.1 = { employer = Lannister_1 } # Tywin Lannister
 	8299.7.1 = {
@@ -426,12 +429,10 @@ Lannister_5 = {
 			if = {
 				limit = { character:Lannister_rs_1 = { is_alive = yes } }
 				set_relation_lover = character:Lannister_rs_1 # Briony
-				random_secret = {
-					limit = {
-						secret_type = secret_lover
-					}
-					expose_secret = character:Lannister_rs_1 # Briony
-				}
+			}
+			every_secret = {
+				limit = { secret_type = secret_lover }
+				expose_secret = ROOT
 			}
 		}
 	}
@@ -531,14 +532,6 @@ Lannister_6 = {
 	}
 	8284.1.1 = {
 		effect = {
-			dynasty:dynn_Martell = {
-				every_dynasty_member = {
-					add_opinion = {
-						target = ROOT
-						modifier = murdered_close_family_crime
-					}
-				}
-			}
 			if = {
 				limit = { character:Baratheon_2 = { is_alive = yes } }
 				set_relation_historical_unfruitful_marriage = character:Baratheon_2 # Robert Baratheon
@@ -575,19 +568,12 @@ Lannister_6 = {
 	}
 	8298.11.2 = { # Execution of Eddard Stark
 		effect = {
-			dynasty:dynn_Stark = {
-				every_dynasty_member = {
+			character:Stark_3 = { # Eddard Stark
+				every_close_or_extended_family_member = {
 					add_opinion = {
 						target = ROOT
-						modifier = murdered_close_family_crime
+						modifier = executed_close_family_crime 				
 					}
-				}
-			}
-			if = {
-				limit = { character:Tully_4 = { is_alive = yes } }
-				reverse_add_opinion = {
-					target = character:Tully_4 # Catelyn Tully
-					modifier = murdered_close_family_crime
 				}
 			}
 		}
@@ -603,23 +589,6 @@ Lannister_6 = {
 					AMOUNT = 3000
 				}
 			}
-			# d_nightswatch = { # Stark-Lannister Blood Feud
-				# holder_scope = {
-					# random_courtier = {
-						# limit = { dynasty = dynn_Stark }
-						# set_dynasty_flag = in_blood_feud
-						# trait = blood_feud #blood feud tracker
-						# character_event = { id = feast_for_crows.30 days = 1 }
-						# every_dynasty_member = {
-							# limit = {
-								# is_alive = yes
-								# NOT = { character = PREV }
-							# }
-							# character_event = { id = feast_for_crows.30 days = 1 }
-						# }
-					# }
-				# }
-			# }
 		}
 	}
 
@@ -707,9 +676,12 @@ Lannister_7 = {
 		trait = lifestyle_blademaster_3_history 
 	}
 	8281.1.1 = {
+		trait = knight
 		effect = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Dayne_5 } # Arthur Dayne
-			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_1 } # Aerys Targaryen
+			agot_join_kingsguard_char_history_effect = { # Predecessor: Harlan Grandison
+				KING = character:Targaryen_1 # Aerys Targaryen
+			}
 		}
 	}
 	8282.1.1 = {
@@ -726,11 +698,11 @@ Lannister_7 = {
 		trait = murderer
 		give_nickname = nick_the_kingslayer
 		effect = {
-			dynasty:dynn_Martell = {
-				every_dynasty_member = {
+			character:Targaryen_1 = { # Aerys Targaryen
+				every_close_or_extended_family_member = {
 					add_opinion = {
 						target = ROOT
-						modifier = murdered_close_family_crime
+						modifier = murdered_close_family_crime 				
 					}
 				}
 			}
@@ -787,25 +759,8 @@ Lannister_7 = {
 	}
 	8298.10.30 = {
 		effect = {
-			agot_lc_kingsguard_char_history_effect = { KING = character:Baratheon_5 } # Joffrey Baratheon
-		}
-	}
-	8298.11.2 = {
-		effect = {
-			dynasty:dynn_Stark = {
-				every_dynasty_member = {
-					add_opinion = {
-						target = ROOT
-						modifier = murdered_close_family_crime
-					}
-				}
-			}
-			if = {
-				limit = { character:Tully_4 = { is_alive = yes } }
-				reverse_add_opinion = {
-					target = character:Tully_4 # Catelyn Tully
-					modifier = murdered_close_family_crime
-				}
+			agot_lc_kingsguard_char_history_effect = { # Previous Lord Commander: Barristan Selmy
+				KING = character:Baratheon_5 # Joffrey Baratheon
 			}
 		}
 	}
@@ -865,15 +820,6 @@ Lannister_7 = {
 		add_trait = humble
 		trait = honorable
 	}
-	# AGOT TODO
-	# 8299.12.1 = { #given Oathkeeper by Tywin
-	# 	#trait = oathkeeper # AGOT TODO trait
-	# 	# effect = { set_global_flag = ice_stolen_and_reforged }
-	# }
-	# AGOT TODO
-	# 8299.12.7 = {
-	# 	remove_trait = oathkeeper #gives Oathkeeper (artifact) to Brienne
-	# }
 }
 Lannister_8 = {
 	name = Tyrion # Canon, AKA: The Imp
@@ -942,9 +888,9 @@ Lannister_8 = {
 		}
 	}
 	8283.8.1 = { trait = gregarious }
-	8286.3.1 = { add_spouse = Lannister_rs_8 }
+	8286.3.1 = { add_spouse = Lannister_rs_8 } # Tysha
 	8286.3.14 = {
-		remove_spouse = Lannister_rs_8
+		remove_spouse = Lannister_rs_8 # Tysha
 		trait = drunkard
 		effect = {
 			if = {
@@ -980,21 +926,6 @@ Lannister_8 = {
 				CASTLE = title:e_the_iron_throne 
 				POSITION = councillor_castellan
 			}
-			dynasty:dynn_Stark = {
-				every_dynasty_member = {
-					add_opinion = {
-						target = ROOT
-						modifier = murdered_close_family_crime
-					}
-				}
-			}
-			if = {
-				limit = { character:Tully_4 = { is_alive = yes } }
-				reverse_add_opinion = {
-					target = character:Tully_4 # Catelyn Tully
-					modifier = murdered_close_family_crime
-				}
-			}
 		}
 	}
 	8299.2.11 = {
@@ -1025,25 +956,26 @@ Lannister_8 = {
 			}
 		}
 	}
-	8300.1.1 = {
-		remove_spouse = Stark_8 # Sansa Stark
-	}
+	8300.1.1 = { remove_spouse = Stark_8 } # Sansa Stark
 	8300.2.9 = {
 		trait = murderer
 		trait = kinslayer_3
-		#employer = Mopatis_1 #Illyrio Mopatis # AGOT TODO Reenable once Pentos is added
+		employer = Mopatis_1 # Illyrio Mopatis
 		effect = {
-			every_close_or_extended_family_member = {
-				add_opinion = {
-					target = ROOT
-					modifier = murdered_close_family_crime
+			character:Lannister_1 = { # Tywin Lannister
+				every_close_or_extended_family_member = {
+					limit = { NOT = { THIS = ROOT } }
+					add_opinion = {
+						target = ROOT
+						modifier = murdered_close_family_crime
+					}
 				}
 			}
 		}
 	}
 }
 Lannister_rs_8 = {
-	name = Tysha
+	name = Tysha # Canon, married Tyrion Lannister
 	female = yes
 
 	religion = the_seven_main
@@ -1052,12 +984,14 @@ Lannister_rs_8 = {
 	trait = beauty_good_2
 	trait = charming
 
-	disallow_random_traits = yes
-
+	# disallow_random_traits = yes # FORBIDDEN - use agot_scripted_effects_posthistory_effects instead
+	
 	8272.1.1 = {
 		birth = yes
 		make_trait_inactive = blue_eyes
-		effect = { set_employer = title:b_hillview.holder }
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:b_hillview }
+		}
 	}
 	8278.1.1 = { trait = trusting }
 	8280.1.1 = { trait = humble }
@@ -1080,8 +1014,8 @@ Lannister_137 = {
 	8280.1.1 = {
 		birth = yes
 		effect = {
-			set_employer = title:b_goldguard_heights.holder
 			set_real_father = character:Lannister_1 # Tywin Lannister
+			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
 			make_trait_inactive = gold_hair
 			make_trait_inactive = emerald_eyes
 		}
@@ -1158,7 +1092,7 @@ Lannister_9 = {
 		remove_spouse = Frey_50 # Amarei Frey
 		trait = order_member # Warrior's Sons
 		# effect = { # AGOT TODO
-			# set_employer = title:d_warriors_sons.holder
+			# agot_safe_set_location_history_effect = { CASTLE = title:d_warriors_sons }
 		# }
 	}
 }
@@ -1503,7 +1437,6 @@ Lannister_23 = {
 		trait = knight
 	}
 	8300.2.9 = {
-		employer = Lannister_6 # Cersei Lannister
 		effect = { # Castellan of Casterly Rock
 			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_casterly_rock 
@@ -1675,9 +1608,8 @@ Lannister_hh_1 = {
 	trait = education_learning_3
 
 	8255.1.1 = { birth = yes }
-	8275.1.1 = {
+	8280.1.1 = {
 		trait = maester_historical
-		employer = Lannister_1 # Tywin Lannister
 		effect = { # Maester of Casterly Rock
 			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = { 
@@ -1686,7 +1618,6 @@ Lannister_hh_1 = {
 			}
 		}
 	}
-	8300.2.9 = { employer = Lannister_6 } # Cersei Lannister
 }
 Lannister_hh_2 = {
 	name = Saranella_My_Detested # Canon
@@ -1753,7 +1684,6 @@ Lannister_hh_4 = {
 		}
 	}
 	8299.11.5 = {
-		employer = Lannister_1 # Tywin Lannister
 		effect = { # Captain of the Guard at Casterly Rock
 			release_from_prison = yes
 			agot_appoint_as_court_position_for_castle_history_effect = { 
@@ -1762,7 +1692,6 @@ Lannister_hh_4 = {
 			}
 		}
 	}
-	8300.2.9 = { employer = Lannister_6 } # Cersei Lannister
 }
 Lannister_hh_5 = {
 	name = Jyck # Canon
@@ -1798,6 +1727,30 @@ Lannister_hh_6 = {
 		trait = wounded_1
 		death = { death_reason = death_wounded_1 } # Killed by Mountain Clansmen
 	}
+}
+Lannister_hh_7 = {
+	name = Volarik # Semi-Canon
+	
+	religion = the_seven_main
+	culture = westerman
+	
+	trait = education_learning_2
+	trait = callous 
+	trait = deceitful
+	
+	8220.1.1 = { birth = yes }
+	8243.1.1 = { 
+		trait = maester_historical
+		trait = lustful
+		effect = { # Maester of Casterly Rock
+			agot_maester_starting_setup_history_effect = yes
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_casterly_rock 
+				POSITION = maester_court_position
+			}
+		}
+	}
+	8280.1.1 = { death = yes }
 }
 
 ### Lannisport Branch
@@ -1927,13 +1880,11 @@ LannisterLP_4 = {
 
 	8265.1.1 = { birth = yes }
 	8278.1.1 = {
-		employer = Citadel_27 # Archmaester Ryam
 		trait = maester_historical
+		effect = { agot_maester_starting_setup_history_effect = yes }
 	}
 	8285.1.1 = {
-		employer = Manderly_6 # Wyman Manderly
 		effect = { # Maester of White Harbor
-			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_white_harbor 
 				POSITION = maester_court_position
@@ -2278,8 +2229,16 @@ Clegane_3 = {
 	8283.9.2 = { 
 		trait = murderer # Elia Martell and Aegon Targaryen
 		effect = {
-			dynasty:dynn_Martell = {
-				every_dynasty_member = {
+			character:Martell_7 = { # Elia Martell
+				every_close_or_extended_family_member = {
+					add_opinion = {
+						target = ROOT
+						modifier = murdered_close_family_crime
+					}
+				}
+			}
+			character:Targaryen_11 = { # Aegon Targaryen
+				every_close_or_extended_family_member = {
 					add_opinion = {
 						target = ROOT
 						modifier = murdered_close_family_crime
@@ -2315,6 +2274,22 @@ Clegane_3 = {
 			add_secret = {
 				type = secret_murder
 				target = character:Clegane_rs_4 # Second wife
+			}
+		}
+	}
+	8299.2.11 = {
+		effect = {
+			character:Bracken_12 = { # Alysanne Bracken
+				add_opinion = {
+					target = ROOT
+					modifier = tortured_me # actually opinion_forced_upon_me, so TODO
+				}
+				every_close_family_member = {
+					add_opinion = {
+						target = ROOT
+						modifier = tortured_family_member # actually opinion_forced_upon_kin, so TODO
+					}
+				}
 			}
 		}
 	}
@@ -2413,12 +2388,14 @@ Clegane_4 = {
 	}
 	8298.10.28 = { employer = Baratheon_5 } # Joffrey I Baratheon
 	8299.1.1 = {
-		effect = { 
-			agot_join_kingsguard_char_history_effect = { KING = character:Baratheon_5 } # Joffrey Baratheon
+		effect = {
+			agot_join_kingsguard_char_history_effect = { # Predecessor: Barristan Selmy
+				KING = character:Baratheon_5 # Joffrey Baratheon
+			}
 		}
 	}
 	8299.7.1 = {
-		effect = { remove_character_flag = agot_is_kingsguard_member }
+		effect = { remove_character_flag = agot_is_kingsguard_member } # Successor: Boros Blount
 		#employer = 0 # AGOT TODO Set him landless or put him somewhere
 	}
 	8300.1.8 = {
@@ -2465,12 +2442,12 @@ Clegane_hh_1 = {
 	trait = gregarious
 	trait = wrathful
 	trait = sadistic
-	trait = lustful
 	trait = rowdy
 
 	disallow_random_traits = yes
 
 	8245.1.1 = { birth = yes }
+	8260.1.1 = { trait = lustful }
 	8262.1.1 = { employer = Clegane_1 } # Clarent Clegane
 	8264.1.1 = { employer = Clegane_2 } # Robert Clegane
 	8287.1.1 = { employer = Clegane_3 } # Gregor Clegane
@@ -2587,7 +2564,6 @@ Clegane_hh_5 = {
 		employer = Clegane_2 # Robert Clegane
 	}
 	8287.1.1 = { 
-		employer = Clegane_3 # Gregor Clegane
 		trait = torturer
 		give_nickname = nick_the_tickler
 		effect = { # Gregor Clegane's torturer
@@ -2845,7 +2821,6 @@ Broom_5 = {
 	8256.1.1 = { birth = yes }
 	8272.1.1 = {
 		trait = knight
-		employer = Lannister_1 # Tywin Lannister
 		effect = { # Master-at-arms at Casterly Rock
 			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_casterly_rock 
@@ -2853,7 +2828,6 @@ Broom_5 = {
 			}
 		}
 	}
-	8300.2.9 = { employer = Lannister_6 } # Cersei Lannister
 }
 ### Issue of Willem
 Broom_4 = {
@@ -3188,23 +3162,13 @@ Payne_6 = {
 		}
 	}
 	8284.1.1 = {
-		effect = {
-			title:c_casterly_rock.holder = {
-				revoke_court_position = {
-					court_position = household_guard_court_position # Captain of Tywin's Guard
-				}
-			}
-			set_employer = title:c_kings_landing.holder
-			title:c_kings_landing.holder = {
-				appoint_court_position = {
-					recipient = ROOT
-					court_position = executioner_court_position # King's Justice
-				}
+		effect = { # King's Justice
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_kings_landing
+				POSITION = executioner_court_position
 			}
 		}
 	}
-	8298.11.2 = { employer = Baratheon_5 } # Joffrey Baratheon
-	8300.1.1 = { employer = Baratheon_7 } # Tommen Baratheon
 }
 ### Issue of Tybert, nephews to Ilyn
 Payne_7 = {
@@ -3267,7 +3231,7 @@ Payne_9 = {
 	
 	8252.1.1 = { birth = yes }
 	8263.1.1 = { trait = compassionate }
-	8266.1.1 = {
+	8270.1.1 = {
 		trait = knight
 		trait = brave
 	}
@@ -3867,21 +3831,15 @@ Swyft_1 = {
 	trait = intellect_bad_2
 	trait = craven
 	trait = rude
-	trait = lustful
 	trait = pensive
 	
 	disallow_random_traits = yes
 
 	8236.1.1 = { birth = yes }
-	8251.1.1 = {
+	8250.1.1 = { trait = lustful }
+	8254.1.1 = {
 		trait = knight
 		add_spouse = Swyft_rs_1
-	}
-	8260.1.1 = { # Reynes of Castamere
-		###
-		# MEGAWAR STANCE: NEUTRAL
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
 	}
 	8300.2.9 = {
 		effect = { # Hand of the King
@@ -4243,12 +4201,6 @@ Greenfield_1 = {
 	trait = education_martial_2
 
 	8248.1.1 = { birth = yes }
-	8259.11.1 = { # Reynes of Castamere
-		###
-		# MEGAWAR STANCE: NEUTRAL
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
-	}
 	8264.1.1 = { trait = knight }
 	8264.1.7 = { add_spouse = Turnberry_6 } # Leonette Turnberry
 	8299.2.11 = { # Battle of Riverrun
@@ -4308,12 +4260,14 @@ Greenfield_3 = {
 		remove_trait = squire 
 	}
 	8284.1.1 = {
-		effect = { 
-			agot_join_kingsguard_char_history_effect = { KING = character:Baratheon_2 } # Robert Baratheon
+		effect = {
+			agot_join_kingsguard_char_history_effect = { # Post-Aerys Reconstruction
+				KING = character:Baratheon_2 # Robert Baratheon
+			}
 		}
 	}
 	8299.5.1 = {
-		trait = kingsguard
+		trait = kingsguard # Successor: Balon Swann
 		death = {
 			death_reason = death_attacked # Riot in King's Landing
 		}
@@ -6024,7 +5978,6 @@ Westerling_hh_1 = {
 	8245.1.1 = { birth = yes }
 	8275.1.1 = { 
 		trait = maester_historical
-		employer = Westerling_1 # Gawen Westerling
 		effect = { # Maester of the Crag
 			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = { 
@@ -6343,16 +6296,14 @@ KenningK_3 = {
 	trait = education_martial_1
 	trait = diligent
 	trait = wrathful
-	trait = lustful
 	trait = charming
 
 	disallow_random_traits = yes
 
 	8265.1.1 = { birth = yes }
 	8273.1.1 = { employer = KenningK_1 } # Terrence Kenning
-	8281.1.1 = {
-		trait = knight
-	}
+	8280.1.1 = { trait = lustful }
+	8281.1.1 = { trait = knight }
 }
 
 ###### HOUSE PRESTER (id = dynn_Prester)
@@ -6666,7 +6617,7 @@ Marbrand_66 = {
 }
 ### Issue of Damon
 Marbrand_4 = {
-	name = Addam # Canon
+	name = Addam # Canon, Commander of the Gold Cloaks
 	dynasty = dynn_Marbrand
 
 	dna = Marbrand_4
@@ -6704,10 +6655,7 @@ Marbrand_4 = {
 			}
 		}
 	}
-	8278.1.1 = {
-		#trait = cavalry_leader # AGOT TODO trait
-		trait = knight
-	}
+	8278.1.1 = { trait = knight }
 	8285.1.1 = {
 		add_spouse = Marbrand_rs_1
 		employer = Lannister_1 # Tywin Lannister
@@ -7841,17 +7789,13 @@ Lorch_2 = {
 		trait = knight 
 	}
 	8284.1.1 = {
+		trait = murderer # Rhaenys Targaryen
 		effect = {
-			if = {
-				limit = { character:Martell_4 = { is_alive = yes } }
-				character:Martell_4 = { # Doran Martell
-					dynasty = { # House Martell
-						every_dynasty_member = {
-							add_opinion = {
-								target = ROOT
-								modifier = murdered_close_family_crime
-							}
-						}
+			character:Targaryen_10 = { # Rhaenys Targaryen
+				every_close_or_extended_family_member = {
+					add_opinion = {
+						target = ROOT
+						modifier = murdered_close_family_crime 				
 					}
 				}
 			}
@@ -8093,7 +8037,6 @@ Plumm_4 = {
 		trait = greedy
 	}
 	8299.11.12 = { 
-		employer = Lannister_9 # Lancel Lannister
 		effect = { # Commander of the Garrison at Darry
 			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_darry 
@@ -8101,7 +8044,6 @@ Plumm_4 = {
 			}
 		}
 	}
-	8300.4.1 = { employer = Lannister_11 } # Martyn Lannister
 }
 
 ### Essosi Branch
@@ -8128,15 +8070,14 @@ Plumm_5 = {
 
 	8246.1.1 = {
 		birth = yes
-		# effect = { 
-			# set_employer = title:d_second_sons.holder # AGOT TODO
+		# effect = {  # AGOT TODO
+			# agot_safe_set_location_history_effect = { CASTLE = title:d_second_sons }
 		# }
 	}
 	8268.1.1 = {
 		trait = callous
 		trait = arbitrary
 	}
-	#8282.1.1 = { employer = 1660000 } # Mero the Titan's Bastard # AGOT TODO no second sons title
 	8288.1.1 = {
 		trait = ambitious
 		trait = deceitful
@@ -8375,7 +8316,10 @@ Sarwyck_4 = {
 
 	8258.1.1 = { birth = yes }
 	8274.1.1 = { trait = knight }
-	8285.1.1 = { trait = depressed_1 }
+	8285.1.1 = { 
+		trait = depressed_1 
+		employer = Valduran_1 # Drakhos Valduran, Myr
+	}
 	8286.1.1 = {
 		religion = rhllor
 		trait = zealous
@@ -8485,7 +8429,7 @@ Sarwyck_7 = {
 			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Sarwyck_4 } # Alester Sarwyck
 		}
 	}
-	8285.1.1 = { 
+	8285.1.1 = {
 		effect = { # Alester Sarwyck exiles himself to Essos
 			every_relation = {
 				type = guardian
@@ -8568,7 +8512,6 @@ Sarwyck_hh_1 = {
 	8231.1.1 = { birth = yes }
 	8255.1.1 = {
 		trait = maester_historical
-		employer = Sarwyck_24 # Reginald Sarwyck
 		effect = { # Maester of Riverspring
 			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = { 
@@ -8577,9 +8520,6 @@ Sarwyck_hh_1 = {
 			}
 		}
 	}
-	8256.1.1 = { employer = Sarwyck_1 } # Raynald Sarwyck
-	8298.1.1 = { employer = Sarwyck_4 } # Alester Sarwyck
-	8298.11.1 = { employer = Sarwyck_8 } # Ryman Sarwyck
 }
 Sarwyck_hh_2 = {
 	name = Ravella # Semi-canon
@@ -8592,7 +8532,6 @@ Sarwyck_hh_2 = {
 	
 	8241.1.1 = { birth = yes }
 	8260.1.1 = {
-		employer = Sarwyck_1 # Raynald Sarwyck
 		trait = septon # Septa
 		effect = {
 			agot_appoint_as_court_position_for_castle_history_effect = { 
@@ -8601,8 +8540,6 @@ Sarwyck_hh_2 = {
 			}
 		}
 	}
-	8298.1.1 = { employer = Sarwyck_4 } # Alester Sarwyck
-	8298.11.1 = { employer = Sarwyck_8 } # Ryman Sarwyck
 }
 
 ###### HOUSE BETTLEY (id = dynn_Bettley)
@@ -9087,7 +9024,7 @@ Moreland_1 = {
 	trait = generous
 
 	8265.1.1 = { birth = yes }
-	8280.1.1 = { trait = knight }
+	8282.1.1 = { trait = knight }
 	8283.1.1 = { add_spouse = Moreland_rs_1 }
 }
 Moreland_2 = {
@@ -9800,14 +9737,16 @@ Stillwood_3 = {
 	disallow_random_traits = yes
 
 	8285.1.1 = { birth = yes }
-	8293.1.1 = { trait = lustful }
 	8295.1.1 = {
 		trait = sadistic
 		effect = {
 			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Clegane_3 } # Gregor Clegane
 		}
 	}
-	8297.1.1 = { trait = diligent }
+	8297.1.1 = { 
+		trait = diligent
+		trait = lustful 
+	}
 }
 
 ###### HOUSE LANNY (id = house_Lanny)
@@ -10016,10 +9955,9 @@ Lantell_1 = {
 	father = Lantell_46
 	trait = giant
 
-	8248.1.1 = {
-		birth = yes
-		give_nickname = nick_the_big
-	}
+	give_nickname = nick_the_big
+	
+	8248.1.1 = { birth = yes }
 	8265.1.1 = { add_spouse = Lantell_rs_1 }
 	8269.1.1 = { trait = knight }
 }
@@ -11072,8 +11010,6 @@ Ruskyn_24 = {
 	mother = Ruskyn_18_spouse
 
 	8234.1.1 = { birth = yes }
-	8248.1.1 = { trait = knight }
-
 	8255.1.1 = {
 		effect = {
 			if = {
@@ -11098,8 +11034,8 @@ Ruskyn_20 = {
 	father = Ruskyn_19
 
 	8255.1.1 = { birth = yes }
+	8271.1.1 = { trait = knight }
 	8273.1.1 = { add_spouse = Ruskyn_27	} # Ellyn Ruskyn
-	8268.1.1 = { trait = knight }
 }
 Ruskyn_21 = {
 	name = Marq
@@ -11136,7 +11072,7 @@ Ruskyn_25 = {
 	father = Ruskyn_23
 
 	8253.1.1 = { birth = yes }
-	8268.1.1 = { trait = knight }
+	8270.1.1 = { trait = knight }
 	8271.1.1 = { add_spouse = Ruskyn_25_spouse }
 	8275.1.1 = {
 		effect = {
@@ -11347,7 +11283,6 @@ Tortoll_17_a_spouse = {
 	culture = westerman
 
 	8188.1.1 = { birth = yes }
-	8205.1.1 = { trait = knight	}
 	8250.1.1 = { death = yes }
 }
 ### Issue of Tion
@@ -11428,7 +11363,7 @@ Tortoll_20 = {
 	father = Tortoll_19
 
 	8255.1.1 = { birth = yes }
-	8268.1.1 = { trait = knight }
+	8272.1.1 = { trait = knight }
 }
 Tortoll_21 = {
 	name = Robert
@@ -11465,7 +11400,7 @@ Tortoll_25 = {
 	father = Tortoll_23
 
 	8253.1.1 = { birth = yes }
-	8268.1.1 = { trait = knight }
+	8270.1.1 = { trait = knight }
 	8271.1.1 = { add_spouse = Tortoll_25_spouse }
 }
 Tortoll_25_spouse = {
@@ -11698,7 +11633,7 @@ Tarwick_20 = {
 	father = Tarwick_19
 
 	8254.1.1 = { birth = yes }
-	8268.1.1 = { trait = knight }
+	8271.1.1 = { trait = knight }
 	8280.1.1 = { death = { death_reason = death_accident } }
 }
 Tarwick_21 = {
@@ -11736,7 +11671,7 @@ Tarwick_25 = {
 	father = Tarwick_23
 
 	8253.1.1 = { birth = yes }
-	8268.1.1 = { trait = knight }
+	8270.1.1 = { trait = knight }
 	8271.1.1 = { add_spouse = Tarwick_25_spouse }
 }
 Tarwick_25_spouse = {
@@ -12045,7 +11980,7 @@ Merrell_20 = {
 	father = Merrell_19
 
 	8256.1.1 = { birth = yes }
-	8268.1.1 = { trait = knight }
+	8274.1.1 = { trait = knight }
 }
 Merrell_21 = {
 	name = Denys
@@ -12081,8 +12016,8 @@ Merrell_25 = {
 	father = Merrell_19
 
 	8257.1.1 = { birth = yes }
-	8268.1.1 = { trait = knight }
 	8270.1.1 = { give_nickname = nick_hot }
+	8273.1.1 = { trait = knight }
 	8299.7.1 = { employer = Baratheon_5 } # Joffrey Baratheon
 	8300.1.1 = { employer = Baratheon_7 } # Tommen Baratheon
 }
@@ -12139,7 +12074,7 @@ Merrell_30 = {
 	father = Merrell_28
 
 	8221.1.1 = { birth = yes }
-	8236.1.1 = { trait = knight	}
+	8240.1.1 = { trait = knight	}
 	8260.1.1 = { death = { death_reason = death_battle } }
 }
 ### Issue of Gerold
@@ -12313,7 +12248,7 @@ Lanster_20 = {
 	father = Lanster_19
 
 	8256.1.1 = { birth = yes }
-	8268.1.1 = { trait = knight }
+	8273.1.1 = { trait = knight }
 }
 Lanster_21 = {
 	name = Tywald
@@ -12337,7 +12272,7 @@ Lanster_25 = {
 	father = Lanster_19
 
 	8257.1.1 = { birth = yes }
-	8268.1.1 = { trait = knight }
+	8274.1.1 = { trait = knight }
 }
 ### Issue of Lancel
 Lanster_22 = {
@@ -12401,7 +12336,7 @@ Lanster_30 = {
 	father = Lanster_28
 
 	8221.1.1 = { birth = yes }
-	8236.1.1 = { trait = knight	}
+	8238.1.1 = { trait = knight	}
 	8260.1.1 = { death = { death_reason = death_battle } }
 }
 ### Issue of Loreon
@@ -12844,7 +12779,6 @@ Dulver_hh_1 = {
 	8260.1.1 = { birth = yes }
 	8294.1.1 = {
 		trait = maester_historical
-		employer = Dulver_2 # Harrold Dulver
 		effect = { # Maester of Darrows
 			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = {
@@ -12923,8 +12857,8 @@ Lugus_36 = {
 	mother = Lugus_rs_51
 
 	8219.1.1 = { birth = yes }
-	8240.1.1 = { trait = knight }
 	8236.1.1 = { add_spouse = Lugus_rs_36 }
+	8240.1.1 = { trait = knight }
 	8260.1.1 = {
 		death = {
 			death_reason = death_murder_known
@@ -14090,8 +14024,8 @@ Taves_3 = {
 	mother = Taves_4
  
 	8177.1.1 = { birth = yes }
-	8195.1.1 = { trait = knight }
 	8193.1.1 = { add_spouse = Taves_rs_3 } 
+	8195.1.1 = { trait = knight }
 	8241.1.1 = { death = yes }
 }
 Taves_rs_3 = {
@@ -14313,8 +14247,8 @@ Taves_30 = {
 	mother = Taves_rs_23
  
 	8222.1.1 = { birth = yes }
-	8243.1.1 = { trait = knight }
 	8239.1.1 = { add_spouse = Taves_rs_30 } 
+	8243.1.1 = { trait = knight }
 	8283.1.1 = { death = yes }
 }
 Taves_rs_30 = {
@@ -14468,8 +14402,8 @@ Taves_39 = {
 	mother = Taves_rs_30
  
 	8250.1.1 = { birth = yes }
-	8269.1.1 = { trait = knight }
 	8268.1.1 = { add_spouse = Taves_rs_39 } 
+	8269.1.1 = { trait = knight }
 	8291.1.1 = { death = yes }
 }
 Taves_rs_39 = {
@@ -14704,8 +14638,8 @@ Merchant_3 = {
 	mother = Merchant_rs_4
  
 	8230.1.1 = { birth = yes }
-	8248.1.1 = { trait = knight }
 	8246.1.1 = { add_spouse = Merchant_rs_3 } 
+	8248.1.1 = { trait = knight }
 	8264.1.1 = { death = yes }
 }
 Merchant_rs_3 = {
@@ -14743,8 +14677,8 @@ Merchant_26 = {
 	mother = Merchant_rs_4
  
 	8236.1.1 = { birth = yes }
-	8262.1.1 = { trait = knight }
 	8259.1.1 = { add_spouse = Merchant_rs_26 } 
+	8262.1.1 = { trait = knight }
 	8294.1.1 = { death = yes }
 }
 Merchant_rs_26 = {
@@ -14769,8 +14703,8 @@ Merchant_2 = {
 	mother = Merchant_rs_3
  
 	8247.1.1 = { birth = yes }
-	8272.1.1 = { trait = knight }
 	8267.1.1 = { add_spouse = Merchant_rs_2 } 
+	8272.1.1 = { trait = knight }
 	8280.1.1 = { death = yes }
 }
 Merchant_rs_2 = {

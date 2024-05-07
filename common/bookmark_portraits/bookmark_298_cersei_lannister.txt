@@ -2,7 +2,7 @@
 # History database id:Lannister_6
 bookmark_298_cersei_lannister={
 	type=female
-	id=28727
+	id=28964
 	age=0.320000
 	genes={ 		hair_color={ 191 7 198 28 }
  		skin_color={ 36 19 120 90 }
@@ -93,11 +93,11 @@ bookmark_298_cersei_lannister={
  		expression_brow_wrinkles={ "brow_wrinkles_01" 255 "brow_wrinkles_02" 163 }
  		expression_eye_wrinkles={ "eye_wrinkles_03" 255 "eye_wrinkles_03" 61 }
  		expression_forehead_wrinkles={ "forehead_wrinkles_03" 62 "forehead_wrinkles_02" 70 }
- 		expression_other={ "cheek_wrinkles_both_01" 174 "cheek_wrinkles_both_01" 85 }
+ 		expression_other={ "cheek_wrinkles_both_01" 156 "cheek_wrinkles_both_01" 85 }
  		complexion={ "complexion_beauty_1" 0 "complexion_12" 255 }
  		gene_height={ "normal_height" 126 "normal_height" 138 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 126 }
- 		gene_bs_body_shape={ "body_shape_average_clothed" 91 "body_shape_average_clothed" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 134 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_shape={ "body_shape_average_clothed" 112 "body_shape_average_clothed" 0 }
  		gene_bs_bust={ "bust_clothes" 154 "bust_shape_1_full" 156 }
  		gene_age={ "old_1" 148 "old_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 212 "avg_spacing_lower_thickness" 212 }
@@ -136,7 +136,7 @@ bookmark_298_cersei_lannister={
  		gene_bs_eye_shape={ "eye_shape_01" 199 "eye_shape_01" 244 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		pose={ "" 255 "" 0 }
- 		beards={ "no_beard" 31 "no_beard" 0 }
+ 		beards={ "no_beard" 186 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 224 "all_hairstyles" 0 }
  		legwear={ "agot_trousers" 255 "all_legwear" 0 }
@@ -145,9 +145,26 @@ bookmark_298_cersei_lannister={
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "agot_historic_characters" 126 "most_clothes" 0 }
- 		headgear={ "no_headgear" 31 "no_headgear" 0 }
+ 		headgear={ "no_headgear" 186 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 2268070609 2268070609 }
+	tags={ {
+			hash=2125534279
+			invert=no
+		}
+ {
+			hash=2670398845
+			invert=no
+		}
+ {
+			hash=681013727
+			invert=no
+		}
+ {
+			hash=1563190100
+			invert=no
+		}
+ }
 }
 

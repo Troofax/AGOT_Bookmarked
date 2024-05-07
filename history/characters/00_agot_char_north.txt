@@ -208,10 +208,6 @@ Stark_3 = {
 			}
 		}
 	}
-	8280.1.1 = {
-		# trait = heavy_infantry_leader # AGOT TODO trait
-		# trait = back_seat_leader # AGOT TODO trait
-	}
 	8282.9.15 = { # Robert's Rebellion
 		add_spouse = Tully_4 # Catelyn Tully
 		effect = {
@@ -234,23 +230,20 @@ Stark_3 = {
 		}
 	}
 	8283.8.2 = { # Created the next day for bug reasons
-		add_secret = {
-			type = secret_agot_disputed_heritage
-			target = character:Stark_7
-		}
-		every_secret = {
-			limit = { secret_type = secret_agot_disputed_heritage }
-			reveal_to = character:Reed_1
-			reveal_to = character:Stark_4
+		effect = {
+			add_secret = {
+				type = secret_agot_disputed_heritage
+				target = character:Stark_7
+			}
+			every_secret = {
+				limit = { secret_type = secret_agot_disputed_heritage }
+				reveal_to = character:Reed_1
+				reveal_to = character:Stark_4
+			}
 		}
 	}
 	8284.1.1 = { # Crowned Stag
-		effect = {
-			# character_event = { id = roberts_rebellion.14 }
-			remove_variable = pre_war_liege
-			add_character_flag = one_beheading
-			add_character_flag = experienced_beheader
-		}
+		effect = { remove_variable = pre_war_liege }
 	}
 	8288.1.1 = {
 		effect = { 
@@ -296,7 +289,6 @@ Stark_3 = {
 		}
 	}
 	8298.11.2 = {
-		#trait = dead_target # For the finding Stark children events # AGOT TODO
 		death = {
 			death_reason = death_execution # Beheaded
 			killer = Baratheon_5 # Joffrey Baratheon
@@ -396,9 +388,6 @@ Stark_5 = {
 		birth = yes
 		add_character_flag = tomboy
 	}
-	8280.1.1 = {
-		# effect = { character_event = { id = tower_of_joy.5099 } } # AGOT TODO
-	}
 	8281.1.1 = {
 		trait = compassionate
 		trait = brave
@@ -429,7 +418,6 @@ Stark_5 = {
 		}
 	}
 	8282.7.15 = {
-		#trait = has_missing # AGOT TODO trait
 		effect = {
 			add_character_flag = yearly_1010_abducted
 			if = { 
@@ -489,29 +477,8 @@ Stark_6 = {
 		trait = just
 	}
 	8291.8.1 = { trait = honorable }
-	8297.1.1 = {
-		# trait = cavalry_leader # AGOT TODO trait
-		trait = flexible_leader
-	}
-	# 8298.2.24 = { # AGOT TODO
-		# trait = direwolf # Grey Wind # AGOT TODO trait
-		# effect = {
-			# e_rebels = {
-				# create_random_steward = {
-					# name = Grey_Wind
-					# random_traits = yes
-					# dynasty = none
-					# female = no
-					# culture = direwolf_culture
-					# religion = ROOT
-				# }
-				# new_character = {
-					# ROOT = { save_persistent_event_target = { name = direwolf_name scope = PREV } }
-					# death = yes
-				# }
-			# }
-		# }
-	# }
+	8297.1.1 = { trait = flexible_leader }
+	# 8298.2.24 = { trait = direwolf } # Grey Wind # AGOT TODO trait
 	8298.11.2 = {
 		effect = {
 			if = { 
@@ -529,12 +496,7 @@ Stark_6 = {
 			agot_set_as_loyalist_history_effect = { LOYALIST = character:Umber_8 } # Greatjon Umber
 		}
 	}
-	8298.12.20 = {
-		# effect = {
-			# k_the_north = { destroy_landed_title = THIS }
-		# }
-		give_nickname = nick_the_young_wolf
-	}
+	8298.12.20 = { give_nickname = nick_the_young_wolf }
 	8299.2.11 = {
 		effect = {
 			agot_safe_betrothal_history_effect = { TARGET = character:Frey_82 } # Roslin Frey
@@ -654,25 +616,7 @@ Stark_7 = {
 			}
 		}
 	}
-	# 8298.2.24 = {
-		# trait = direwolf # Ghost # AGOT TODO trait
-		# effect = {
-			# e_rebels = {
-				# create_random_steward = {
-					# name = Ghost
-					# random_traits = yes
-					# dynasty = none
-					# female = no
-					# culture = direwolf_culture
-					# religion = ROOT
-				# }
-				# new_character = {
-					# ROOT = { save_persistent_event_target = { name = direwolf_name scope = PREV } }
-					# death = yes
-				# }
-			# }
-		# }
-	# }
+	# 8298.2.24 = { trait = direwolf } # Ghost # AGOT TODO trait
 	8298.5.20 = {
 		trait = nightswatch_historical
 		effect = { # Personal Steward of the Lord Commander of the Night's Watch
@@ -737,34 +681,6 @@ Stark_7 = {
 					reason = rival_abducted_loved_one # Arya Stark, officially
 				}
 			}
-			# d_the_crossing = { #Frey Blood Feud # AGOT TODO
-				# holder_scope = {
-					# set_dynasty_flag = in_blood_feud
-					# trait = blood_feud #blood feud tracker
-					# character_event = { id = feast_for_crows.29 days = 1 }
-					# any_dynasty_member = {
-						# limit = {
-							# is_alive = yes
-							# NOT = { character = PREV }
-						# }
-						# character_event = { id = feast_for_crows.29 days = 1 }
-					# }
-				# }
-			# }
-			# k_the_westerlands = { #Stark-Lannister Blood Feud # AGOT TODO
-				# holder_scope = {
-					# set_dynasty_flag = in_blood_feud
-					# trait = blood_feud #blood feud tracker
-					# character_event = { id = feast_for_crows.30 days = 1 }
-					# any_dynasty_member = {
-						# limit = {
-							# is_alive = yes
-							# NOT = { character = PREV }
-						# }
-						# character_event = { id = feast_for_crows.30 days = 1 }
-					# }
-				# }
-			# }
 		}
 	}
 	8300.3.1 = {
@@ -846,26 +762,12 @@ Stark_8 = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:2001159 } # Septa Mordane
 		}
 	}
-	# 8298.2.24 = {
-		# trait = direwolf # Lady # AGOT TODO trait
-		# effect = {
-			# e_rebels = {
-				# create_random_steward = {
-					# name = Lady
-					# random_traits = yes
-					# dynasty = none
-					# female = yes
-					# culture = direwolf_culture
-					# religion = ROOT
-				# }
-				# new_character = {
-					# ROOT = { save_persistent_event_target = { name = direwolf_name scope = PREV } }
-					# death = yes
-				# }
-			# }
-		# }
+	# 8298.2.24 = { 
+		# effect = { add_trait = direwolf } # Lady # AGOT TODO trait
 	# }
-	# 8298.7.27 = { remove_trait = direwolf } # AGOT TODO trait
+	# 8298.7.27 = { 
+		# effect = { remove_trait = direwolf } # AGOT TODO trait
+	# }
 	8298.10.28 = {
 		employer = Baratheon_5 # Joffrey Baratheon
 		effect = { remove_trait = trusting }
@@ -999,25 +901,11 @@ Stark_9 = {
 	8298.2.24 = {
 		trait = lifestyle_blademaster
 		trait = honorable
-		# trait = direwolf # Nymeria # AGOT TODO trait
-		# effect = {
-			# e_rebels = {
-				# create_random_steward = {
-					# name = Nymeria
-					# random_traits = yes
-					# dynasty = none
-					# female = yes
-					# culture = direwolf_culture
-					# religion = ROOT
-				# }
-				# new_character = {
-					# ROOT = { save_persistent_event_target = { name = direwolf_name scope = PREV } }
-					# death = yes
-				# }
-			# }
-		# }
+		# effect = { add_trait = direwolf } # Nymeria # AGOT TODO trait
 	}
-	# 8298.7.27 = { remove_trait = direwolf } # AGOT TODO trait
+	# 8298.7.27 = { 
+		# effect = { remove_trait = direwolf } # AGOT TODO trait
+	# }
 	# 8298.8.20 = {
 		# effect = { 
 			# agot_set_as_ward_history_effect = { GUARDIAN = character:126009 } # Syrio Forel AGOT TODO Reenable when Braavosi is added
@@ -1137,28 +1025,12 @@ Stark_Dummy_9 = {
 		}
 	}
 	8297.8.1 = { trait = brave }
-	# 8298.2.24 = {
-		#trait = direwolf # Summer # AGOT TODO trait
-	# }
+	# 8298.2.24 = { trait = direwolf } # Summer # AGOT TODO trait
 	8298.5.8 = {
 		trait = crippled
 		trait = honorable
 		effect = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Stark_hh_1 } # Maester Luwin
-			# e_rebels = {
-				# create_random_steward = {
-					# name = Summer
-					# random_traits = yes
-					# dynasty = none
-					# female = no
-					# culture = direwolf_culture
-					# religion = ROOT
-				# }
-				# new_character = {
-					# ROOT = { save_persistent_event_target = { name = direwolf_name scope = PREV } }
-					# death = yes
-				# }
-			# }
 		}
 	}
 	8298.8.4 = { trait = greensight } # Starts to have visions
@@ -1211,7 +1083,7 @@ Stark_Dummy_10 = {
 				limit = { character:Stark_hh_2 = { is_alive = yes } }
 				set_relation_friend = character:Stark_hh_2 # Hodor
 			}
-			set_employer = title:c_denbarrows.holder # Move him Beyond the Wall
+			agot_safe_set_location_history_effect = { CASTLE = title:c_denbarrows } # Move him Beyond the Wall
 		}
 	}
 	8299.11.5 = {
@@ -1271,20 +1143,6 @@ Stark_11 = {
 		trait = wrathful
 		effect = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Stark_hh_1 } # Maester Luwin
-			# e_rebels = {
-				# create_random_steward = {
-					# name = Shaggydog
-					# random_traits = yes
-					# dynasty = none
-					# female = no
-					# culture = direwolf_culture
-					# religion = ROOT
-				# }
-				# new_character = {
-					# ROOT = { save_persistent_event_target = { name = direwolf_name scope = PREV } }
-					# death = yes
-				# }
-			# }
 		}
 	}
 	8299.2.11 = {
@@ -1395,7 +1253,6 @@ Stark_hh_1 = {
 	8247.1.1 = { birth = yes }
 	8272.1.1 = {
 		trait = maester_historical
-		employer = Stark_1 # Rickard Stark
 		effect = { # Maester of Winterfell
 			agot_maester_forge_link_history_effect = { METAL = vs }
 			agot_maester_forge_link_history_effect = { METAL = brass }
@@ -1407,8 +1264,6 @@ Stark_hh_1 = {
 			}
 		}
 	}
-	8282.9.15 = { employer = Stark_3 } # Eddard Stark
-	8298.11.2 = { employer = Stark_6 } # Robb Stark
 	8299.6.29 = {
 		death = {
 			death_reason = death_battle
@@ -1440,8 +1295,6 @@ Stark_hh_3 = {
 			}
 		}
 	}
-	8282.9.15 = { employer = Stark_3 } # Eddard Stark
-	8298.11.2 = { employer = Stark_6 } # Robb Stark
 	8299.5.4 = {
 		death = {
 			death_reason = death_execution # Thrown into well
@@ -1787,8 +1640,6 @@ Stark_hh_14 = {
 			}
 		}
 	}
-	8282.9.15 = { employer = Stark_3 } # Eddard Stark
-	8298.11.2 = { employer = Stark_6 } # Robb Stark
 	8299.5.4 = {
 		death = {
 			death_reason = death_execution # Throat cut
@@ -2189,9 +2040,7 @@ Stark_hh_2 = {
 	8299.6.29 = {
 		#trait = has_missing # AGOT TODO trait
 		effect = {
-			#Put him somewhere Beyond the Wall
-			# character_event = { id = clash_of_kings.47 days = 3650 } # reveal after 10 years
-			set_employer = title:c_denbarrows.holder # Move him Beyond the Wall
+			agot_safe_set_location_history_effect = { CASTLE = title:c_denbarrows } # Move him Beyond the Wall
 		}
 	}
 }
@@ -2341,7 +2190,7 @@ Manderly_6 = {
 			target_weight_modifier_effect = { VALUE = 25 }
 		}
 	}
-	8254.1.1 = { trait = knight }
+	8256.1.1 = { trait = knight }
 	8260.1.1 = {
 		add_spouse = Manderly_rs_3
 		effect = {
@@ -2632,7 +2481,7 @@ Manderly_hh_1 = {
 	trait = honorable
 
 	8234.1.1 = { birth = yes }
-	8240.1.1 = {
+	8250.1.1 = {
 		trait = drunkard
 		employer = Manderly_1 # Brandon Manderly
 	}
@@ -3058,12 +2907,12 @@ Umber_3 = {
 	trait = wrathful
 	trait = authoritative
 	trait = brave
-	trait = drunkard
 	trait = rowdy
 	
 	disallow_random_traits = yes 
 
 	8228.1.1 = { birth = yes }
+	8242.1.1 = { trait = drunkard }
 	8256.1.1 = { add_spouse = Umber_rs_3 }
 	8265.1.1 = { 
 		effect = { add_trait = widowed }
@@ -3071,9 +2920,7 @@ Umber_3 = {
 	8279.1.1 = {
 		give_nickname = nick_crowfood
 		trait = one_eyed
-		effect = {
-			add_character_flag = has_eyegem_black
-		}
+		effect = { add_character_flag = has_eyegem_black }
 	}
 	8291.1.1 = {
 		effect = { # Co-Castellan of Last Hearth
@@ -3122,12 +2969,12 @@ Umber_4 = {
 	trait = arrogant
 	trait = wrathful
 	trait = callous
-	trait = drunkard
 	trait = curious
 	
 	disallow_random_traits = yes 
 
 	8234.1.1 = { birth = yes }
+	8250.1.1 = { trait = drunkard }
 	8254.1.1 = { give_nickname = nick_whoresbane }
 	8256.1.1 = { add_spouse = Umber_rs_4 }
 	8291.1.1 = {
@@ -4299,7 +4146,6 @@ Karstark_hh_1 = {
 	8256.1.1 = { birth = yes }
 	8272.1.1 = {
 		trait = maester_historical
-		employer = Karstark_4 # Rickard Karstark
 		effect = { # Maester of Karhold
 			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = { 
@@ -4308,7 +4154,6 @@ Karstark_hh_1 = {
 			}
 		}
 	}
-	8299.8.1 = { employer = Karstark_16 } # Harrion Karstark
 }
 
 ###### HOUSE BOLTON (id = dynn_Bolton)
@@ -4346,7 +4191,6 @@ Bolton_1 = {
 	8265.8.1 = { trait = authoritative }
 	8271.1.1 = {
 		trait = cautious_leader
-		#trait = back_seat_leader # AGOT TODO trait
 		trait = logistician
 	}
 	8272.1.2 = { add_spouse = Bolton_rs_1 }
@@ -4771,7 +4615,6 @@ Bolton_hh_1 = {
 	8230.1.1 = { birth = yes }
 	8250.1.1 = {
 		trait = maester_historical
-		employer = Bolton_42 # Donnel Bolton
 		effect = { # Maester of Dreadfort
 			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = {
@@ -4780,7 +4623,6 @@ Bolton_hh_1 = {
 			}
 		}
 	}
-	8261.1.1 = { employer = Bolton_1 } # Roose Bolton
 }
 Bolton_hh_2 = {
 	name = Heke # Canon, original Reek
@@ -4792,7 +4634,6 @@ Bolton_hh_2 = {
 	trait = lunatic_1
 	trait = torturer
 	trait = paranoid
-	trait = lustful
 	trait = wrathful
 	trait = pensive
 	
@@ -4805,6 +4646,7 @@ Bolton_hh_2 = {
 		employer = Bolton_1 # Roose Bolton
 	}
 	8278.1.1 = {
+		trait = lustful
 		trait = lifestyle_reveler
 		effect = {
 			add_trait = lifestyle_hunter
@@ -4985,7 +4827,6 @@ Bolton_hh_9 = {
 	trait = sadistic
 	trait = wrathful
 	trait = rude
-	trait = lustful
 	trait = bossy
 
 	disallow_random_traits = yes
@@ -4994,6 +4835,7 @@ Bolton_hh_9 = {
 		birth = yes
 		employer = Bolton_1 # Roose Bolton
 	}
+	8284.1.1 = { trait = lustful }
 	8292.1.1 = { trait = mute }
 	8299.11.5 = { employer = Bolton_5 } # Ramsay Snow
 }
@@ -5379,11 +5221,6 @@ Cassel_2 = {
 		add_spouse = Cassel_rs_2
 		trait = knight
 	}
-	8282.9.15 = { # Robert's Rebellion
-		effect = {
-			# character_event = { id = tower_of_joy.1 days = 2 }
-		}
-	}
 	8283.8.1 = {
 		death = {
 			death_reason = death_duel # Tower of Joy
@@ -5748,7 +5585,6 @@ Mollen_3 = {
 
 	8271.1.1 = { birth = yes }
 	8297.1.1 = {
-		employer = Stark_3 # Robb Stark
 		effect = { # Captain of the Guard at Winterfell
 			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_winterfell 
@@ -5756,7 +5592,6 @@ Mollen_3 = {
 			}
 		}
 	}
-	8298.11.2 = { employer = Stark_6 } # Robb Stark
 }
 Mollen_4 = {
 	name = Hycinth
@@ -5973,7 +5808,6 @@ Cerwyn_hh_1 = {
 	8254.1.1 = { birth = yes }
 	8270.1.1 = {
 		trait = maester_historical
-		employer = Cerwyn_34 # Daryn Cerwyn
 		effect = { # Maester of Castle Cerwyn
 			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = {
@@ -5982,9 +5816,6 @@ Cerwyn_hh_1 = {
 			}
 		}
 	}
-	8282.1.1 = { employer = Cerwyn_1 } # Medger Cerwyn
-	8299.5.1 = { employer = Cerwyn_3 } # Cley Cerwyn
-	8299.6.29 = { employer = Cerwyn_2 } # Jonella Cerwyn
 }
 
 ###### HOUSE OVERTON (id = dynn_Overton)
@@ -6201,7 +6032,6 @@ Hornwood_hh_1 = {
 	8260.1.1 = { birth = yes }
 	8276.1.1 = {
 		trait = maester_historical
-		employer = Hornwood_2 # Halys Hornwood
 		effect = { # Maester of Hornwood
 			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = {
@@ -6210,9 +6040,6 @@ Hornwood_hh_1 = {
 			}
 		}
 	}
-	8299.1.16 = { employer = Manderly_12 } # Donella Manderly
-	8299.3.7 = { employer = Manderly_6 } # Wyman Manderly
-	8300.1.1 = { employer = Bolton_5 } # Ramsay Snow
 }
 
 ###### HOUSE WOOLFIELD (id = dynn_Woolfield)
@@ -6870,9 +6697,9 @@ Locke_2 = {
 	mother = Locke_rs_1
 
 	trait = education_martial_2
-	trait = knight
 
 	8250.1.1 = { birth = yes }
+	8268.1.1 = { trait = knight }
 	8270.1.1 = { add_spouse = Locke_rs_2 }
 	8299.1.16 = { # Battle of the Green Fork
 		effect = {
@@ -8739,6 +8566,28 @@ Goodman_24 = {
 
 	8294.1.1 = { birth = yes }
 }
+### Household 
+Goodman_hh_1 = {
+	name = Wolkan # Semi-Canon
+	
+	religion = old_gods_south
+	culture = northman
+	
+	trait = education_learning_2
+	trait = craven
+	trait = content
+	
+	8240.1.1 = { birth = yes }
+	8266.1.1 = {
+		effect = { # Maester of Tyve Hold
+			agot_maester_starting_setup_history_effect = yes
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_rightwell 
+				POSITION = maester_court_position
+			}
+		}
+	}	
+}
 
 
 ############################        BARROWLANDS         ############################
@@ -8827,11 +8676,6 @@ Dustin_1 = {
 	8282.3.1 = { 
 		trait = education_martial_prowess_3
 		add_spouse = Ryswell_4 # Barbrey Ryswell
-	}
-	8282.9.15 = { # Robert's Rebellion
-		effect = {
-			# character_event = { id = tower_of_joy.1 days = 2 }
-		}
 	}
 	8283.8.1 = {
 		death = {
@@ -9235,7 +9079,7 @@ Ryswell_4 = {
 						add = agot_nonhistoric_event_chance
 					}
 					create_story = story_agot_widowed
-					random_owned_story = {
+						random_owned_story = {
 						limit = {
 							story_type = story_agot_widowed
 						}
@@ -9309,9 +9153,12 @@ Ryswell_7 = {
 
 	trait = ambitious
 	trait = arrogant
-	trait = lustful
+	trait = bossy
+	
+	disallow_random_traits = yes
 
 	8259.1.1 = { birth = yes }
+	8274.1.1 = { trait = lustful }
 }
 Ryswell_6 = {
 	name = Roger # Canon
@@ -9361,7 +9208,6 @@ Ryswell_10 = {
 	father = Ryswell_9
 	mother = Ryswell_rs_3
 
-	trait = knight
 	trait = brave
 	trait = compassionate
 	trait = honorable
@@ -9370,11 +9216,9 @@ Ryswell_10 = {
 	disallow_random_traits = yes 
 
 	8252.1.1 = { birth = yes }
-	8270.1.1 = { add_spouse = Ryswell_rs_4 }
-	8282.9.15 = { # Robert's Rebellion
-		effect = {
-			# character_event = { id = tower_of_joy.1 days = 2 }
-		}
+	8270.1.1 = { 
+		add_spouse = Ryswell_rs_4 
+		trait = knight
 	}
 	8283.8.1 = {
 		death = {
@@ -9535,7 +9379,7 @@ Condon_22 = {
 	8270.1.1 = { birth = yes }
 }
 Condon_1 = {
-	name = Kyle # Canon, Knight in service to Medger Cerwyn.
+	name = Kyle # Canon, Knight in service to Medger Cerwyn
 	dynasty = dynn_Condon
 
 	martial = 10
@@ -12493,8 +12337,6 @@ Degore_1 = {
 			}
 		}
 	}
-	8299.11.5 = { employer = Forrester_6 } # Ethan Forrester
-	8300.1.1 = { employer = Forrester_3 } # Rodrik Forrester
 }
 ### Issue of Rodrik
 Degore_2 = {
@@ -12560,7 +12402,6 @@ Tuttle_4 = {
 		birth = yes
 		employer = Forrester_1 # Thorren Forrester
 	}
-	#8283.3.1 = { employer = Forrester_2 } # Gregor Forrester
 	8299.1.1 = {
 		effect = { # Castellan of Ironrath
 			agot_appoint_as_councillor_for_castle_history_effect = { 
@@ -12569,8 +12410,6 @@ Tuttle_4 = {
 			}
 		}
 	}
-	8299.11.5 = { employer = Forrester_6 } # Ethan Forrester
-	8300.1.1 = { employer = Forrester_3 } # Rodrik Forrester
 
 }
 Tuttle_1 = {
@@ -13101,11 +12940,6 @@ Wull_4 = {
 
 	8262.1.1 = { birth = yes }
 	8278.1.1 = { give_nickname = nick_buckets }
-	8282.9.15 = { # Robert's Rebellion
-		effect = {
-			# character_event = { id = tower_of_joy.1 days = 2 }
-		}
-	}
 	8284.1.1 = {
 		death = {
 			death_reason = death_duel # Tower of Joy
@@ -13504,16 +13338,6 @@ Reed_1 = {
 			}
 		}
 	}
-	8282.9.15 = { # Robert's Rebellion
-		effect = {
-			# character_event = { id = tower_of_joy.1 days = 2 }
-		}
-	}
-	8284.1.1 = { # Crowned Stag
-		effect = {
-			#remove_character_flag = TOJ_companion # AGOT TODO
-		}
-	}
 	# AGOT Bookmarked Added
 	8298.11.3 = {
 		add_secret = {
@@ -13579,9 +13403,7 @@ Reed_2 = {
 		}
 	}
 	8299.6.29 = {
-		# trait = has_missing # AGOT TODO trait
 		effect = {
-			# character_event = { id = clash_of_kings.47 days = 3650 } # Reveal after 10 years
 			if = {
 				limit = { character:Reed_3 = { is_alive = yes } }
 				set_relation_friend = character:Reed_3 # Jojen Reed
@@ -13590,7 +13412,7 @@ Reed_2 = {
 				limit = { character:Stark_hh_2 = { is_alive = yes } }
 				set_relation_friend = character:Stark_hh_2 # Hodor
 			}
-			set_employer = title:c_denbarrows.holder # Move her Beyond the Wall
+			agot_safe_set_location_history_effect = { CASTLE = title:c_denbarrows } # Move him Beyond the Wall
 		}
 	}
 }
@@ -13612,6 +13434,7 @@ Reed_3 = {
 	father = Reed_1
 	mother = Reed_rs_1
 
+	trait = education_diplomacy_4
 	trait = physique_bad_2
 	trait = arrogant
 	trait = brave
@@ -13625,18 +13448,13 @@ Reed_3 = {
 		trait = lifestyle_mystic
 	}
 	8299.6.29 = {
-		# trait = has_missing # AGOT TODO trait
 		effect = {
-			# character_event = { id = clash_of_kings.47 days = 3650 } # Reveal after 10 years
 			if = {
 				limit = { character:Stark_hh_2 = { is_alive = yes } }
 				set_relation_friend = character:Stark_hh_2 # Hodor
 			}
-			set_employer = title:c_denbarrows.holder # Move him Beyond the Wall
+			agot_safe_set_location_history_effect = { CASTLE = title:c_denbarrows } # Move him Beyond the Wall
 		}
-	}
-	8301.1.1 = {
-		trait = education_diplomacy_4
 	}
 }
 ### Issue of Ryam, first cousins to Howland

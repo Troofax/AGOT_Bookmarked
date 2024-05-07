@@ -2,7 +2,7 @@
 # History database id:Lannister_7
 bookmark_299_jaime_lannister={
 	type=male
-	id=28728
+	id=28965
 	age=0.330000
 	genes={ 		hair_color={ 191 7 198 28 }
  		skin_color={ 138 39 120 90 }
@@ -91,12 +91,12 @@ bookmark_299_jaime_lannister={
  		face_detail_nose_tip_def={ "nose_tip_def" 188 "nose_tip_def" 44 }
  		face_detail_temple_def={ "temple_def" 108 "temple_def" 108 }
  		expression_brow_wrinkles={ "brow_wrinkles_02" 106 "brow_wrinkles_01" 175 }
- 		expression_eye_wrinkles={ "eye_wrinkles_03" 207 "eye_wrinkles_03" 220 }
+ 		expression_eye_wrinkles={ "eye_wrinkles_03" 252 "eye_wrinkles_03" 220 }
  		expression_forehead_wrinkles={ "forehead_wrinkles_03" 62 "forehead_wrinkles_03" 62 }
  		expression_other={ "cheek_wrinkles_both_01" 85 "nose_wrinkles_01" 124 }
  		complexion={ "complexion_beauty_1" 0 "complexion_11a" 163 }
  		gene_height={ "normal_height" 144 "normal_height" 126 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 134 "body_fat_head_fat_low" 126 }
  		gene_bs_body_shape={ "body_shape_average_clothed" 255 "body_shape_average_clothed" 0 }
  		gene_bs_bust={ "bust_clothes" 20 "bust_shape_1_full" 156 }
  		gene_age={ "old_1" 148 "old_1" 148 }
@@ -144,11 +144,28 @@ bookmark_299_jaime_lannister={
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "kingsguard_war_nobility_clothes" 119 "most_clothes" 0 }
- 		headgear={ "no_headgear" 148 "no_headgear" 0 }
+ 		clothes={ "kingsguard_war_nobility_clothes" 110 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 73 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
 	entity={ 979141817 979141817 }
+	tags={ {
+			hash=2125534279
+			invert=no
+		}
+ {
+			hash=2670398845
+			invert=no
+		}
+ {
+			hash=681013727
+			invert=no
+		}
+ {
+			hash=1563190100
+			invert=no
+		}
+ }
 }
 

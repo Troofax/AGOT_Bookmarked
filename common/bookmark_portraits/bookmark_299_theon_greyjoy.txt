@@ -2,7 +2,7 @@
 # History database id:Greyjoy_14
 bookmark_299_theon_greyjoy={
 	type=male
-	id=30948
+	id=31188
 	age=0.200000
 	genes={ 		hair_color={ 20 249 6 240 }
  		skin_color={ 68 20 74 20 }
@@ -91,13 +91,13 @@ bookmark_299_theon_greyjoy={
  		face_detail_nose_tip_def={ "nose_tip_def" 244 "nose_tip_def" 187 }
  		face_detail_temple_def={ "temple_def" 92 "temple_def" 166 }
  		expression_brow_wrinkles={ "brow_wrinkles_02" 120 "brow_wrinkles_01" 69 }
- 		expression_eye_wrinkles={ "eye_wrinkles_02" 150 "eye_wrinkles_02" 191 }
+ 		expression_eye_wrinkles={ "eye_wrinkles_02" 196 "eye_wrinkles_02" 191 }
  		expression_forehead_wrinkles={ "forehead_wrinkles_01" 121 "forehead_wrinkles_01" 158 }
  		expression_other={ "cheek_wrinkles_right_01" 177 "cheek_wrinkles_both_01" 0 }
  		complexion={ "complexion_beauty_1" 0 "complexion_5" 158 }
  		gene_height={ "normal_height" 152 "normal_height" 142 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 119 "body_fat_head_fat_low" 122 }
- 		gene_bs_body_shape={ "body_shape_apple_full" 234 "body_shape_average" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 137 "body_fat_head_fat_low" 122 }
+ 		gene_bs_body_shape={ "body_shape_apple_full" 255 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 22 "bust_clothes" 118 }
  		gene_age={ "old_4" 5 "old_1" 82 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 209 "far_spacing_avg_thickness" 255 }
@@ -139,15 +139,36 @@ bookmark_299_theon_greyjoy={
  		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 170 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 214 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 25 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "fp1_commoner_clothes" 126 "most_clothes" 0 }
- 		headgear={ "no_headgear" 89 "no_headgear" 0 }
+ 		clothes={ "northern_commoner_clothes" 238 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 92 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 979141817 979141817 }
+	tags={ {
+			hash=2125534279
+			invert=no
+		}
+ {
+			hash=2670398845
+			invert=no
+		}
+ {
+			hash=681013727
+			invert=no
+		}
+ {
+			hash=1563190100
+			invert=no
+		}
+ {
+			hash=1945936758
+			invert=no
+		}
+ }
 }
 

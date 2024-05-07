@@ -234,7 +234,7 @@
 	special_building = agot_raventree_hall_01
 	duchy_capital_building = archery_ranges_01
 	7998.1.1 = {
-		buildings = {
+		buildings = { 
 			castle_04
 			curtain_walls_04
 			godswood_06
@@ -1634,7 +1634,7 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = {
+		buildings = { 
 			castle_03
 			building_moat_01
 			godswood_02
@@ -2107,7 +2107,7 @@
 	holding = castle_holding
 	special_building = harrenhal_01
 	7998.1.1 = {
-		buildings = {
+		buildings = { 
 			castle_05
 			curtain_walls_08
 			godswood_08
@@ -2196,8 +2196,14 @@
 ############# c_harroway - d_harrenhal ############
 1945 = {
 	holding = city_holding
-	7998.1.1 = {
-		buildings = { city_03 guild_halls_03 }
+	7800.1.1 = {
+		buildings = { city_01 guild_halls_01 }
+	}
+	7964.1.1 = {
+		buildings = { city_02 guild_halls_02 }		
+	}	
+	7991.1.1 = {
+		buildings = { city_03 guild_halls_03 }		
 	}
 }
 #################### b_gowdall ####################
@@ -2212,7 +2218,7 @@
 ############# c_harroway - d_harrenhal ############
 1947 = {
 	holding = city_holding
-	7998.1.1 = {
+	7800.1.1 = {
 		buildings = { city_02 guild_halls_01 }
 	}
 }

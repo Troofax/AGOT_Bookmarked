@@ -2,7 +2,7 @@
 # History database id:Lannister_1
 bookmark_299_tywin_lannister={
 	type=male
-	id=24411
+	id=24631
 	age=0.570000
 	genes={ 		hair_color={ 191 7 198 28 }
  		skin_color={ 79 27 101 31 }
@@ -96,8 +96,8 @@ bookmark_299_tywin_lannister={
  		expression_other={ "cheek_wrinkles_both_01" 26 "cheek_wrinkles_both_01" 85 }
  		complexion={ "complexion_10" 0 "complexion_12" 0 }
  		gene_height={ "normal_height" 149 "normal_height" 126 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 138 "body_fat_head_fat_low" 126 }
- 		gene_bs_body_shape={ "body_shape_average_clothed" 193 "body_shape_average_clothed" 71 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 142 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_shape={ "body_shape_average_clothed" 214 "body_shape_average_clothed" 71 }
  		gene_bs_bust={ "bust_clothes" 20 "bust_clothes" 154 }
  		gene_age={ "old_4" 148 "old_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 147 "avg_spacing_lower_thickness" 212 }
@@ -145,10 +145,31 @@ bookmark_299_tywin_lannister={
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "westerlands_war_nobility_clothes" 255 "most_clothes" 0 }
- 		headgear={ "no_headgear" 42 "no_headgear" 0 }
+ 		headgear={ "no_headgear" 242 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
 	entity={ 912297863 912297863 }
+	tags={ {
+			hash=1367985987
+			invert=no
+		}
+ {
+			hash=2125534279
+			invert=no
+		}
+ {
+			hash=2670398845
+			invert=no
+		}
+ {
+			hash=681013727
+			invert=no
+		}
+ {
+			hash=1563190100
+			invert=no
+		}
+ }
 }
 

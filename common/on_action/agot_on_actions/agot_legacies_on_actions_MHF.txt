@@ -26,105 +26,105 @@ agot_set_MHF_crownlands_legacies = {
 			limit = { has_global_variable = MHF_loaded }
 			# dynasty:dynn_Targaryen = {
 				# add_dynasty_prestige = 12000
-				# agot_add_dynasty_perk = { PERK = blood_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = blood_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = blood_legacy_3 }
-				# agot_add_dynasty_perk = { PERK = blood_legacy_4 }
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_3 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_4 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_2 }
 			# }
 			# dynasty:dynn_Bar_Emmon = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Cargyll = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			dynasty:dynn_Celtigar = {
 				add_dynasty_prestige = 1500
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_2 }
-				agot_add_dynasty_perk = { PERK = celtigar_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_2 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = celtigar_legacy_1 }
 			}
 			# dynasty:dynn_Chelsted = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Darklyn = {
 				# add_dynasty_prestige = 2250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_2 }
 			# }
 			# dynasty:dynn_Farring = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Gaunt = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Hayford = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
 			# }
 			# dynasty:dynn_Hollard = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Langward = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Massey = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Rosby = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Rykker = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_1 }
 			# }
 			dynasty:dynn_Scales ?= {
 				add_dynasty_prestige = 500
-				agot_add_dynasty_perk = { PERK = scales_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = scales_legacy_1 }
 			}
 			dynasty:dynn_Sunglass ?= {
 				add_dynasty_prestige = 500
-				agot_add_dynasty_perk = { PERK = sunglass_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = sunglass_legacy_1 }
 			}
 			# dynasty:dynn_Staunton = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Stokeworth = {
 				# add_dynasty_prestige = 2250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
 			# }
 			# dynasty:dynn_Thorne = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			dynasty:dynn_Velaryon = {
 				add_dynasty_prestige = 2500
-				agot_add_dynasty_perk = { PERK = velaryon_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = blood_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = blood_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp1_adventure_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = velaryon_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_adventure_legacy_1 }
 			}
 			# dynasty:dynn_Wendwater = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
 			# }
 		}
 	}
@@ -136,83 +136,83 @@ agot_set_MHF_north_legacies = {
 			limit = { has_global_variable = MHF_loaded }
 			# dynasty:dynn_Stark = {
 				# add_dynasty_prestige = 6250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_3 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_3 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_2 }
 			# }
 			dynasty:dynn_Bolton = {
 				add_dynasty_prestige = 2000
-				agot_add_dynasty_perk = { PERK = bolton_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = guile_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = guile_legacy_3 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = bolton_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_3 }
 			}
 			# dynasty:dynn_Cerwyn = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Dustin = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Flint = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Glover = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Hornwood = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Locke = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
 			# }
 			dynasty:dynn_Manderly = {
 				add_dynasty_prestige = 2500
-				agot_add_dynasty_perk = { PERK = manderly_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_3 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_4 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = manderly_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_3 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_4 }
 			}
 			# dynasty:dynn_Mormont = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
 			# }
 			# dynasty:dynn_Reed = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
 			# }
 			# dynasty:dynn_Ryswell = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Tallhart = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Umber = {
 				# add_dynasty_prestige = 2085
-				# agot_add_dynasty_perk = { PERK = umber_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = blood_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = blood_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = umber_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_2 }
 			# }
 			# dynasty:dynn_Wull = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			dynasty:dynn_Forrester = {
 				add_dynasty_prestige = 1000
-				agot_add_dynasty_perk = { PERK = forrester_legacy_1_MHF }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = forrester_legacy_1_MHF }
 			}
 		}
 	}
@@ -224,99 +224,99 @@ agot_set_MHF_vale_legacies = {
 			limit = { has_global_variable = MHF_loaded }
 			# dynasty:dynn_Arryn = {
 				# add_dynasty_prestige = 6250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_3 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_3 }
 			# }
 			# dynasty:dynn_Belmore = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_1 }
 			# }
 			# dynasty:dynn_Coldwater = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Corbray = {
 				# add_dynasty_prestige = 2250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_3 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_3 }
 			# }
 			# dynasty:dynn_Egen = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			dynasty:dynn_Grafton = {
 				add_dynasty_prestige = 1500
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_2 }
-				agot_add_dynasty_perk = { PERK = grafton_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_2 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = grafton_legacy_1 }
 			}
 			# dynasty:dynn_Hardyng = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Hunter = {
 				# add_dynasty_prestige = 250
 			# }
 			# dynasty:dynn_Lynderly = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Melcolm = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp1_adventure_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_adventure_legacy_1 }
 			# }
 			# dynasty:dynn_Moore = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_2 }
 			# }
 			# dynasty:dynn_Redfort = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			dynasty:dynn_Royce = {
 				add_dynasty_prestige = 2500
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_2 }
-				agot_add_dynasty_perk = { PERK = royce_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_2 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = royce_legacy_1 }
 			}
 			# dynasty:dynn_Ruthermont = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Templeton = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
 			# }
 			# dynasty:dynn_Tollett = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			dynasty:dynn_Shett ?= {
 				add_dynasty_prestige = 250
-				agot_add_dynasty_perk = { PERK = shett_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = shett_legacy_1 }
 			}
 			# dynasty:dynn_Waxley = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
 			# }
 			# dynasty:dynn_Waynwood = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_1 }
 			# }
 			# dynasty:dynn_Borrell = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = borrell_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = borrell_legacy_1 }
 			# }
 		}
 	}
@@ -328,113 +328,113 @@ agot_set_MHF_riverlands_legacies = {
 			limit = { has_global_variable = MHF_loaded }
 			# dynasty:dynn_Tully = {
 				# add_dynasty_prestige = 2250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_2 }
 			# }
 			dynasty:dynn_Blackwood = {
 				add_dynasty_prestige = 4250
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				agot_add_dynasty_perk = { PERK = blackwood_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = blackwood_legacy_1 }
 			}
 			dynasty:dynn_Bracken = {
 				add_dynasty_prestige = 2000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				agot_add_dynasty_perk = { PERK = bracken_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = bracken_legacy_1 }
 			}
 			# dynasty:dynn_Chambers = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_1 }
 			# }
 			# dynasty:dynn_Darry = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Deddings = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Frey = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_1 }
 			# }
 			# dynasty:dynn_Goodbrook = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Lothston = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Lychester = {
 				# add_dynasty_prestige = 250
 			# }
 			# dynasty:dynn_Mallister = {
 				# add_dynasty_prestige = 4000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_3 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_3 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Mooton = {
 				# add_dynasty_prestige = 2250
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
 			# }
 			# dynasty:dynn_Mudd = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Piper = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = blood_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_1 }
 			# }
 			# dynasty:dynn_Ryger = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Smallwood = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Strong = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = blood_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			dynasty:dynn_Vance = {
 				add_dynasty_prestige = 1600
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp1_adventure_legacy_1 }
-				agot_add_dynasty_perk = { PERK = vance_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_adventure_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = vance_legacy_1 }
 			}
 			dynasty:dynn_Vypren = {
 				add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				agot_add_dynasty_perk = { PERK = vypren_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = vypren_legacy_1 }
 			}
 			# dynasty:dynn_Vypren = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Wayn = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Whent = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 		}
 	}
@@ -446,60 +446,60 @@ agot_set_MHF_iron_islands_legacies = {
 			limit = { has_global_variable = MHF_loaded }
 			# dynasty:dynn_Greyjoy = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = ironborn_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = ironborn_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = ironborn_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = ironborn_legacy_2 }
 			# }
 			# dynasty:dynn_Blacktyde = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp1_pillage_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_pillage_legacy_1 }
 			# }
 			# dynasty:dynn_Botley = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp1_pillage_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_pillage_legacy_1 }
 			# }
 			# dynasty:dynn_Drumm = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp1_pillage_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_pillage_legacy_1 }
 			# }
 			# dynasty:dynn_Farwynd = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp1_adventure_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_adventure_legacy_1 }
 			# }
 			# dynasty:dynn_Goodbrother = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp1_pillage_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_pillage_legacy_1 }
 			# }
 			# dynasty:dynn_Harlaw = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp1_pillage_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_pillage_legacy_1 }
 			# }
 			# dynasty:dynn_Hoare = {
 				# add_dynasty_prestige = 2250
-				# agot_add_dynasty_perk = { PERK = blood_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp1_pillage_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_pillage_legacy_1 }
 			# }
 			# dynasty:dynn_Kenning = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Orkwood = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp1_pillage_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_pillage_legacy_1 }
 			# }
 			# dynasty:dynn_Saltcliffe = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp1_pillage_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_pillage_legacy_1 }
 			# }
 			# dynasty:dynn_Stonehouse = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp1_pillage_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_pillage_legacy_1 }
 			# }
 			# dynasty:dynn_Volmark = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp1_pillage_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_pillage_legacy_1 }
 			# }
 		}
 	}
@@ -511,151 +511,151 @@ agot_set_MHF_westerlands_legacies = {
 			limit = { has_global_variable = MHF_loaded }
 			# dynasty:dynn_Lannister = {
 				# add_dynasty_prestige = 6250
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_3 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_3 }
 			# }
 			# dynasty:dynn_Banefort = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = guile_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_2 }
 			# }
 			# dynasty:dynn_Brax = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			dynasty:dynn_Bricker ?= {
 				add_dynasty_prestige = 4100
-				agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
-				agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_2 }
-				agot_add_dynasty_perk = { PERK = bricker_legacy_1 }
-				agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				agot_add_dynasty_perk = { PERK = fp1_adventure_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_2 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = bricker_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_adventure_legacy_1 }
 			}
 			# dynasty:dynn_Broom = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Casterly = { # Casterly's are dead, so this breaks the game!
 			# 	add_dynasty_prestige = 1000
-			# 	agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-			# 	agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+			# 	agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+			# 	agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			dynasty:dynn_Clegane ?= {
 				add_dynasty_prestige = 1100
-				agot_add_dynasty_perk = { PERK = clegane_legacy_1 }
-				agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = clegane_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			}
 			# dynasty:dynn_Crakehall = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
 			# }
 			# dynasty:dynn_Drox = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Falwell = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
 			# }
 			# dynasty:dynn_Farman = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp1_adventure_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_adventure_legacy_1 }
 			# }
 			# dynasty:dynn_Foote = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = ep1_culture_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = ep1_culture_legacy_1 }
 			# }
 			# dynasty:dynn_Greenfield = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Hetherspoon = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Jast = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Lefford = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Lorch = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
 			# }
 			# dynasty:dynn_Lydden = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Marbrand = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
 			# }
 			# dynasty:dynn_Moreland = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Myatt = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
 			# }
 			# dynasty:dynn_Payne = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_1 }
 			# }
 			# dynasty:dynn_Plumm = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Prester = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			dynasty:dynn_Reyne = {
 				add_dynasty_prestige = 2000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				agot_add_dynasty_perk = { PERK = reyne_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = reyne_legacy_1 }
 			}
 			# dynasty:dynn_Sarsfield = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = sarsfield_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = sarsfield_legacy_1 }
 			# }
 			# dynasty:dynn_Serrett = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = blood_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_1 }
 			# }
 			# dynasty:dynn_Swyft = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Tarbeck = {
 			# 	add_dynasty_prestige = 250
-			# 	agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+			# 	agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Westerling = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Yarwyck = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Yew = {
 				# add_dynasty_prestige = 250
@@ -670,198 +670,198 @@ agot_set_MHF_reach_legacies = {
 			limit = { has_global_variable = MHF_loaded }
 			# dynasty:dynn_Tyrell = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_coterie_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_2 }
 			# }
 			# dynasty:dynn_Ambrose = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Appleton = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Ashford = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
 			# }
 			# dynasty:dynn_Beesbury = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Blackbar = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Bulwer = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
 			# }
 			# dynasty:dynn_Caswell = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Chester = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Cockshaw = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Costayne = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Crane = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Cuy = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
 			# }
 			dynasty:dynn_Florent = {
 				add_dynasty_prestige = 1250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
-				agot_add_dynasty_perk = { PERK = florent_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = florent_legacy_1 }
 			}
 			# dynasty:dynn_Fossoway = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Gardener = {
 				# add_dynasty_prestige = 6250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_3 }
-				# agot_add_dynasty_perk = { PERK = ep1_culture_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_3 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = ep1_culture_legacy_1 }
 			# }
 			# dynasty:dynn_Graceford = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Grimm = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Hewett = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			dynasty:dynn_Hightower = {
 				add_dynasty_prestige = 2400
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
-				agot_add_dynasty_perk = { PERK = hightower_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = hightower_legacy_1 }
 			}
 			# dynasty:dynn_Hunt = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Inchfield = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Leygood = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Meadows = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Merryweather = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Middlebury = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Norcross = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Norridge = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Oakheart = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
 			# }
 			dynasty:dynn_Osgrey ?= {
 				add_dynasty_prestige = 1200
-				agot_add_dynasty_perk = { PERK = osgrey_legacy_1 }
-				agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = osgrey_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			}
 			# dynasty:dynn_Peake = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = guile_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_2 }
 			# }
 			dynasty:dynn_Redwyne = {
 				add_dynasty_prestige = 1850
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp2_urbanism_legacy_1 }
-				agot_add_dynasty_perk = { PERK = redwyne_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = redwyne_legacy_1 }
 			}
 			# dynasty:dynn_Risley = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			dynasty:dynn_Rowan = {
 				add_dynasty_prestige = 1500
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				agot_add_dynasty_perk = { PERK = rowan_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = rowan_legacy_1 }
 			}
 			dynasty:dynn_Roxton = {
 				add_dynasty_prestige = 800
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				agot_add_dynasty_perk = { PERK = roxton_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = roxton_legacy_1 }
 			}
 			# dynasty:dynn_Serry = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			dynasty:dynn_Tarly = {
 				add_dynasty_prestige = 1500
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
-				agot_add_dynasty_perk = { PERK = tarly_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = tarly_legacy_1 }
 			}
 			# dynasty:dynn_Uffering = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Varner = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Vyrwel = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Webber = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Willum = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
 			# }
 			# dynasty:dynn_Wythers = {
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Yelshire = {
 				# add_dynasty_prestige = 250
@@ -876,122 +876,122 @@ agot_set_MHF_stormlands_legacies = {
 			limit = { has_global_variable = MHF_loaded }
 			# dynasty:dynn_Baratheon = {
 				# add_dynasty_prestige = 4000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_2 }
 			# }
 			# dynasty:dynn_Buckler = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Cafferen = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Caron = {
 				# add_dynasty_prestige = 2250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_3 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_3 }
 			# }
 			# dynasty:dynn_Connington = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Dondarrion = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
 			# }
 			# dynasty:dynn_Durrandon = {
 				# add_dynasty_prestige = 6250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_3 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_3 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Errol = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Estermont = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp1_adventure_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_adventure_legacy_1 }
 			# }
 			# dynasty:dynn_Fell = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Gower = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Grandison = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Horpe = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Lonmouth = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Mertyns = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
 			# }
 			# dynasty:dynn_Morrigen = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Peasebury = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Penrose = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_2 }
 			# }
 			# dynasty:dynn_Rogers = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			# dynasty:dynn_Selmy = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Staedmon = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Swann = {
 				# add_dynasty_prestige = 2250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Tarth = {
 				# add_dynasty_prestige = 2250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = fp1_adventure_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_adventure_legacy_1 }
 			# }
 			# dynasty:dynn_Trant = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Wylde = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 		}
 	}
@@ -1003,85 +1003,85 @@ agot_set_MHF_dorne_legacies = {
 			limit = { has_global_variable = MHF_loaded }
 			# dynasty:dynn_Martell = {
 				# add_dynasty_prestige = 6250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = ep1_culture_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = ep1_culture_legacy_1 }
 			# }
 			# dynasty:dynn_Allyrion = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_2 }
 			# }
 			# dynasty:dynn_Blackmont = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Dalt = {
 			# }
 			dynasty:dynn_Dayne = {
 				add_dynasty_prestige = 5250
-				# agot_add_dynasty_perk = { PERK = dayne_legacy_1 }
-				agot_add_dynasty_perk = { PERK = dayne_legacy_1_MHF }
-				agot_add_dynasty_perk = { PERK = dayne_legacy_2_MHF }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = dayne_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = dayne_legacy_1_MHF }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = dayne_legacy_2_MHF }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			}
 			# dynasty:dynn_Fowler = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			# dynasty:dynn_Gargalen = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = kin_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
 			# }
 			# dynasty:dynn_Jordayne = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = erudition_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
 			# }
 			# dynasty:dynn_Ladybright = {
 			# }
 			# dynasty:dynn_Manwoody = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
 			# }
 			# dynasty:dynn_Qorgyle = {
 				# add_dynasty_prestige = 1000
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
 			# }
 			# dynasty:dynn_Santagar = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = fp1_adventure_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = fp1_adventure_legacy_1 }
 			# }
 			# dynasty:dynn_Toland = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
 			# }
 			dynasty:dynn_Uller = {
 				add_dynasty_prestige = 1200
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				agot_add_dynasty_perk = { PERK = uller_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = uller_legacy_1 }
 			}
 			# dynasty:dynn_Vaith = {
 				# add_dynasty_prestige = 250
-				# agot_add_dynasty_perk = { PERK = law_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = law_legacy_1 }
 			# }
 			dynasty:dynn_Wyl = {
 				add_dynasty_prestige = 600
-				# agot_add_dynasty_perk = { PERK = guile_legacy_1 }
-				agot_add_dynasty_perk = { PERK = wyl_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = guile_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = wyl_legacy_1 }
 			}
 			dynasty:dynn_Yronwood = {
 				add_dynasty_prestige = 2600
-				# agot_add_dynasty_perk = { PERK = blood_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_1 }
-				# agot_add_dynasty_perk = { PERK = warfare_legacy_2 }
-				# agot_add_dynasty_perk = { PERK = glory_legacy_1 }
-				agot_add_dynasty_perk = { PERK = yronwood_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = blood_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_1 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = warfare_legacy_2 }
+				# agot_safe_add_dynasty_perk_history_effect = { PERK = glory_legacy_1 }
+				agot_safe_add_dynasty_perk_history_effect = { PERK = yronwood_legacy_1 }
 			}
 		}
 	}

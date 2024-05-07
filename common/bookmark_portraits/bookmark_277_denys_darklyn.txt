@@ -2,7 +2,7 @@
 # History database id:Darklyn_47
 bookmark_277_denys_darklyn={
 	type=male
-	id=26801
+	id=27032
 	age=0.200000
 	genes={ 		hair_color={ 138 229 138 229 }
  		skin_color={ 101 22 101 22 }
@@ -96,8 +96,8 @@ bookmark_277_denys_darklyn={
  		expression_other={ "cheek_wrinkles_both_01" 138 "cheek_wrinkles_both_01" 138 }
  		complexion={ "complexion_5" 156 "complexion_5" 156 }
  		gene_height={ "normal_height" 132 "normal_height" 132 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 119 "body_fat_head_fat_low" 107 }
- 		gene_bs_body_shape={ "body_shape_average" 173 "body_shape_average" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 72 "body_fat_head_fat_low" 107 }
+ 		gene_bs_body_shape={ "body_shape_average" 40 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 71 "bust_clothes" 112 }
  		gene_age={ "old_3" 2 "old_3" 2 }
  		gene_eyebrows_shape={ "avg_spacing_avg_thickness" 206 "avg_spacing_avg_thickness" 206 }
@@ -139,15 +139,40 @@ bookmark_277_denys_darklyn={
  		beards={ "all_beards" 212 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 170 "all_hairstyles" 0 }
- 		legwear={ "agot_hidden_legwear" 255 "all_legwear" 0 }
+ 		legwear={ "western_common_legwear" 117 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "agot_western_high_nobility_clothes_male_pants" 51 "most_clothes" 0 }
- 		headgear={ "no_headgear" 41 "no_headgear" 0 }
+ 		clothes={ "ep2_western_era3_high_nobility_clothes" 216 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 161 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 979141817 979141817 }
+	tags={ {
+			hash=2125534279
+			invert=no
+		}
+ {
+			hash=2670398845
+			invert=no
+		}
+ {
+			hash=681013727
+			invert=no
+		}
+ {
+			hash=1563190100
+			invert=no
+		}
+ {
+			hash=2793867254
+			invert=no
+		}
+ {
+			hash=1945936758
+			invert=no
+		}
+ }
 }
 

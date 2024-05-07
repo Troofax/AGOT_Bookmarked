@@ -206,6 +206,9 @@ Greyiron_4 = {
 	trait = authoritative
 	trait = brave
 	trait = ambitious
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	2958.1.1 = { birth = yes }
 	2974.1.1 = { give_nickname = nick_flatnose }
@@ -572,10 +575,9 @@ Greyiron_28 = {
 	trait = line_of_char
 	disallow_random_traits = yes
 
-	5203.1.1 = {
-		birth = yes
-		give_nickname = nick_redhand
-	}
+	give_nickname = nick_redhand
+	
+	5203.1.1 = { birth = yes }
 	6457.1.1 = { death = yes }
 }
 Greyiron_29 = {
@@ -826,14 +828,16 @@ Hoare_5 = {
 	trait = callous
 	trait = wrathful
 	trait = ambitious
-	trait = lustful
 	trait = rowdy
 
 	disallow_random_traits = yes
 
 	6582.1.1 = { birth = yes }
-	6592.1.1 = { give_nickname = nick_the_raper }
-	6598.1.1 = {
+	6600.1.1 = { 
+		trait = lustful
+		give_nickname = nick_the_raper 
+	}
+	6605.1.1 = {
 		death = {
 			death_reason = death_duel # Duel over Bear Island
 			killer = Stark_21 # Theon Stark
@@ -852,8 +856,8 @@ Hoare_6 = {
 
 	father = Hoare_5
 
-	6596.1.1 = { birth = yes }
-	6612.1.1 = { give_nickname = nick_the_eagle }
+	6600.1.1 = { birth = yes }
+	6616.1.1 = { give_nickname = nick_the_eagle }
 	6645.1.1 = { death = yes }
 }
 ### Main Line
@@ -1131,10 +1135,9 @@ Hoare_20 = {
 	trait = line_of_char
 	disallow_random_traits = yes
 
-	7622.1.1 = {
-		birth = yes
-		give_nickname = nick_the_heartless
-	}
+	give_nickname = nick_the_heartless
+	
+	7622.1.1 = { birth = yes }
 	7764.1.1 = { death = yes }
 }
 Hoare_21 = {
@@ -1185,7 +1188,7 @@ Hoare_23 = {
 	father = Hoare_22
 
 	7805.1.1 = { birth = yes }
-	7880.1.1 = { death = yes }
+	7860.1.1 = { death = yes }
 }
 ### Issue of Harrald
 Hoare_24 = {
@@ -1198,7 +1201,45 @@ Hoare_24 = {
 	father = Hoare_23
 
 	7832.1.1 = { birth = yes }
-	7869.1.1 = { death = yes }
+	7849.1.1 = { death = yes }
+}
+Hoare_25 = { # Doom of Valyria
+	name = Qhorwyn # Canon, AKA: Qhorwyn the Cunning
+	dynasty = dynn_Hoare
+
+	martial = 2
+	stewardship = 7
+	intrigue = 5
+	learning = 4
+	diplomacy = 3
+	prowess = 3
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Hoare_23
+
+	trait = education_stewardship_4
+	trait = intellect_good_2
+	trait = greedy
+	trait = patient
+	trait = diligent
+	trait = authoritative
+	trait = curious
+
+	disallow_random_traits = yes
+
+	7836.1.1 = { birth = yes }
+	7861.1.1 = { give_nickname = nick_the_cunning }
+	7865.1.1 = { add_spouse = Wynch_9 } # Wylla Wynch
+	7878.1.1 = { add_spouse = Sunderly_25 } # Siglynd Sunderly
+	7899.1.1 = {
+		trait = infirm
+		trait = ill
+	}
+	7901.1.3 = {
+		death = { death_reason = death_ill }
+	}
 }
 Hoare_38 = {
 	name = Horgan # Progenitor of House Salt
@@ -1214,44 +1255,6 @@ Hoare_38 = {
 	7840.1.1 = { birth = yes }
 	7889.1.1 = { death = yes }
 }
-### Issue of Hagon
-Hoare_25 = {
-	name = Qhorwyn # Canon, AKA: Qhorwyn the Cunning
-	dynasty = dynn_Hoare
-
-	martial = 2
-	stewardship = 7
-	intrigue = 5
-	learning = 4
-	diplomacy = 3
-	prowess = 3
-
-	religion = drowned_god_main
-	culture = ironborn
-
-	father = Hoare_24
-
-	trait = education_stewardship_4
-	trait = intellect_good_2
-	trait = greedy
-	trait = patient
-	trait = diligent
-	trait = authoritative
-	trait = curious
-
-	disallow_random_traits = yes
-
-	7862.1.1 = { birth = yes }
-	7878.1.1 = { give_nickname = nick_the_cunning }
-	7885.1.1 = { add_spouse = Wynch_9 } # Wylla Wynch
-	7922.1.1 = {
-		trait = infirm
-		trait = ill
-	}
-	7923.1.1 = {
-		death = { death_reason = death_ill }
-	}
-}
 ### Issue of Qhorwyn
 Hoare_26 = {
 	name = Harmund # Mentioned
@@ -1261,10 +1264,10 @@ Hoare_26 = {
 	culture = ironborn
 
 	father = Hoare_25
-	mother = Wynch_9
+	mother = Wynch_9 # Wylla Wynch
 
-	7888.1.1 = { birth = yes }
-	7921.1.1 = {
+	7868.1.1 = { birth = yes }
+	7899.1.1 = {
 		trait = greyscale
 		death = { death_reason = death_greyscale }
 	}
@@ -1279,10 +1282,10 @@ Hoare_27 = {
 	culture = ironborn
 
 	father = Hoare_25
-	mother = Wynch_9
+	mother = Wynch_9 # Wylla Wynch
 
-	7890.1.1 = { birth = yes }
-	7922.12.26 = {
+	7873.1.1 = { birth = yes }
+	7900.12.28 = {
 		death = {
 			death_reason = death_horse_riding_accident # Officially
 			# death_reason = death_murder_known
@@ -1305,11 +1308,10 @@ Hoare_28 = {
 	culture = ironborn
 
 	father = Hoare_25
-	mother = Wynch_9
+	mother = Sunderly_25 # Siglynd Sunderly
 
 	trait = education_martial_4
 	trait = intellect_good_1
-	trait = lustful
 	trait = arrogant
 	trait = callous
 	trait = ambitious
@@ -1317,13 +1319,15 @@ Hoare_28 = {
 
 	disallow_random_traits = yes
 
-	7892.1.1 = { birth = yes }
-	7917.1.1 = { add_spouse = Goodbrother_42 } # Gysella Goodbrother
-	7922.12.26 = {
+	7879.1.1 = { birth = yes }
+	7894.1.1 = { trait = lustful }
+	7898.1.1 = { employer = Uteuran_18 } # Malko Uteuran, Myr
+	7900.12.28 = {
 		give_nickname = nick_hardhand
 		#trait = suspected_kinslayer # AGOT TODO trait
 	}
-	7940.1.1 = {
+	7907.1.1 = { 
+		add_spouse = Goodbrother_42 # Gysella Goodbrother
 		effect = { 
 			if = {
 				limit = { character:Charlton_10 = { is_alive = yes } }
@@ -1331,7 +1335,7 @@ Hoare_28 = {
 			}
 		}	
 	}
-	7945.1.1 = {
+	7912.1.1 = {
 		effect = { 
 			if = {
 				limit = { character:Paege_11 = { is_alive = yes } }
@@ -1339,7 +1343,7 @@ Hoare_28 = {
 			}
 		}
 	}
-	7950.1.1 = {
+	7923.1.1 = {
 		effect = { 
 			if = {
 				limit = { character:Goodbrook_14 = { is_alive = yes } }
@@ -1347,7 +1351,7 @@ Hoare_28 = {
 			}
 		}
 	}
-	7956.1.1 = { death = yes }
+	7943.1.1 = { death = yes }
 }
 Hoare_29 = {
 	name = Asha # Mentioned, married Maron Volmark
@@ -1358,10 +1362,10 @@ Hoare_29 = {
 	culture = ironborn
 
 	father = Hoare_25
-	mother = Wynch_9
+	mother = Sunderly_25 # Siglynd Sunderly
 
-	7900.1.1 = { birth = yes }
-	7952.1.1 = { death = yes }
+	7890.1.1 = { birth = yes }
+	7945.1.1 = { death = yes }
 }
 ### Issue of Harwyn
 Hoare_30 = {
@@ -1386,8 +1390,8 @@ Hoare_30 = {
 
 	disallow_random_traits = yes
 
-	7918.1.1 = { birth = yes }
-	7942.1.1 = { add_spouse = Volmark_9 } # Alannys Volmark
+	7912.1.1 = { birth = yes }
+	7936.1.1 = { add_spouse = Volmark_9 } # Alannys Volmark
 	7960.1.1 = { death = yes }
 }
 ### Issue of Halleck
@@ -1418,14 +1422,7 @@ Hoare_31 = {
 
 	disallow_random_traits = yes
 
-	7944.1.1 = {
-		birth = yes
-		# effect = {
-			# 107 = {
-				# add_province_modifier = { name = completeharren3 duration = -1 }
-			# }
-		# }
-	}
+	7940.1.1 = { birth = yes }
 	7970.1.1 = { add_spouse = Greyjoy_39 } # Gwynesse Greyjoy
 	7980.1.1 = {
 		give_nickname = nick_the_black
@@ -1435,17 +1432,8 @@ Hoare_31 = {
 	}
 	7996.1.1 = {
 		effect = {
-			add_prestige = 750
-			# if = {
-				# limit = { NOT = { year = 7998 } }
-				# any_vassal = {
-					# opinion = {
-						# who = ROOT
-						# modifier = opinion_defeated_major_revolt
-						# multiplier = 2
-					# }
-				# }
-			# }
+			add_prestige_level = 1
+			add_dread = medium_dread_gain
 		}
 	}
 	# AGOT Bookmarked Added
@@ -1454,7 +1442,7 @@ Hoare_31 = {
 			set_realm_capital = title:c_harrenhal
 		}
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		death = {
 			death_reason = death_battle # Burning of Harrenhal
 			killer = Targaryen_27 # Aegon I Targaryen
@@ -1520,7 +1508,7 @@ Hoare_33 = {
 	disallow_random_traits = yes
 
 	7974.1.1 = { birth = yes }
-	7998.2.1 = {
+	7999.8.15 = {
 		death = {
 			death_reason = death_battle # Burning of Harrenhal
 			killer = Targaryen_27 # Aegon I Targaryen
@@ -1538,7 +1526,7 @@ Hoare_34 = {
 	mother = Greyjoy_39
 
 	7976.1.1 = { birth = yes }
-	7998.2.1 = {
+	7999.8.15 = {
 		death = {
 			death_reason = death_battle # Burning of Harrenhal
 			killer = Targaryen_27 # Aegon I Targaryen
@@ -1556,7 +1544,7 @@ Hoare_35 = {
 	mother = Greyjoy_39
 
 	7978.1.1 = { birth = yes }
-	7998.1.25 = {
+	7999.8.1 = {
 		death = {
 			death_reason = death_battle # Battle at Wailing Willows
 			killer = Targaryen_27 # Aegon I Targaryen
@@ -1574,7 +1562,7 @@ Hoare_36 = {
 	mother = Greyjoy_39
 
 	7979.1.1 = { birth = yes }
-	7998.2.1 = {
+	7999.8.15 = {
 		death = {
 			death_reason = death_battle # Burning of Harrenhal
 			killer = Targaryen_27 # Aegon I Targaryen
@@ -1592,7 +1580,7 @@ Hoare_37 = {
 	mother = Greyjoy_39
 
 	7980.1.1 = { birth = yes }
-	7998.1.25 = {
+	7999.8.1 = {
 		death = {
 			death_reason = death_battle # Battle at Wailing Willows
 			killer = Targaryen_27 # Aegon I Targaryen
@@ -1940,9 +1928,9 @@ Greyjoy_39 = {
 	father = Greyjoy_37
 
 	7950.1.1 = { birth = yes }
-	7998.2.1 = {
+	7999.8.15 = {
 		death = {
-			death_reason = death_battle # Harrenhal
+			death_reason = death_battle # Burning of Harrenhal
 			killer = Targaryen_27 # Aegon I Targaryen
 		}
 	}
@@ -2142,8 +2130,8 @@ Greyjoy_46 = {
 	trait = sadistic
 
 	8086.1.1 = { birth = yes }
-	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8112.1.1 = { add_spouse = Greyjoy_rs_10 }
+	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
@@ -2263,6 +2251,9 @@ Greyjoy_51 = {
 
 	trait = content
 	trait = just
+	trait = pensive
+	
+	disallow_random_traits = yes
 
 	8097.1.1 = { birth = yes }
 	8112.1.1 = { add_spouse = Greyjoy_rs_11 }
@@ -2307,7 +2298,6 @@ Greyjoy_52 = {
 	8113.1.1 = { add_spouse = Greyjoy_rs_12 }
 	8123.1.1 = { trait = reaver }
 	8128.8.2 = {
-		#trait = on_reaving # AGOT TODO trait
 		death = { death_reason = death_battle } # Raiding the Stepstones
 	}
 }
@@ -2336,12 +2326,12 @@ Greyjoy_53 = {
 	trait = education_martial_2
 	trait = gregarious
 	trait = gluttonous
-	trait = drunkard
 	trait = rowdy
 
 	disallow_random_traits = yes
 
 	8100.1.1 = { birth = yes }
+	8114.1.1 = { trait = drunkard }
 	8116.1.1 = { add_spouse = Greyjoy_rs_13 }
 	8133.1.1 = {
 		death = {
@@ -2862,31 +2852,7 @@ Greyjoy_64 = {
 	trait = child_of_concubine_male
 
 	8129.1.1 = { birth = yes }
-	# 8133.12.1 = { # AGOT TODO
-	  # effect = {
-	      # if = {
-	          # limit = { NOT = { game_start_date = 8134.5.1 } }
-	          # set_employer = title:d_harlaw.holder
-	          # title:d_harlaw = {
-	              # holder_scope = {
-	                  # start_faction = {
-	                      # faction = faction_claimant
-	                      # title = k_the_iron_islands
-	                      # thirdparty = ROOT
-	                  # }
-	                  # character:Blacktyde_17 = { join_faction = { faction = faction_claimant faction_leader = PREV } }
-	                  # faction_claimant = { # The target (title) of the faction
-	                      # reverse_unsafe_war = {
-	                          # target = PREV
-	                          # casus_belli = other_claim_on_liege
-	                          # faction = faction_claimant
-	                      # }
-	                  # }
-	              # }
-	          # }
-	      # }
-	  # }
-	# }
+	8133.12.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = { # Half a year after death of Dalton Greyjoy
 		trait = eunuch
 		effect = {
@@ -3210,7 +3176,6 @@ Greyjoy_hh_20 = {
 
 	8120.1.1 = { birth = yes }
 	8142.1.1 = {
-		employer = Greyjoy_63 # Toron Greyjoy
 		effect = { # Master-at-arms at Pyke
 			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_pyke 
@@ -3224,6 +3189,29 @@ Greyjoy_hh_20 = {
 			killer = Saltcliffe_26 # Dagur Saltcliffe
 		}
 	}
+}
+Greyjoy_hh_21 = {
+	name = Theron # Canon, wrote Strange Stone
+	
+	religion = drowned_god_main
+	culture = ironborn
+	
+	trait = education_learning_2
+	trait = bastard
+	
+	8159.1.1 = { birth = yes }
+	8183.1.1 = { 
+		trait = maester_historical
+		effect = { # Maester of Pyke
+			agot_maester_in_the_citadel_history_effect = { METAL = pewter }
+			agot_maester_starting_setup_history_effect = yes
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_pyke
+				POSITION = maester_court_position
+			}
+		}
+	}
+	8222.1.1 = { death = yes }
 }
 
 ### Junior Branch
@@ -3624,10 +3612,9 @@ Goodbrother_38 = {
 	trait = line_of_char
 	disallow_random_traits = yes
 
-	5089.1.1 = {
-		birth = yes
-		give_nickname = nick_badbrother
-	}
+	give_nickname = nick_badbrother
+	
+	5089.1.1 = { birth = yes }
 	7943.1.1 = { death = yes }
 }
 Goodbrother_39 = {
@@ -3674,7 +3661,7 @@ Goodbrother_47 = {
 		trait = brave
 		employer = Hoare_31 # Harren the Black
 	}
-	7998.2.1 = {
+	8000.2.1 = {
 		death = { death_reason = death_battle } # Maybe killed in chaos after Harren's death
 	}
 }
@@ -3759,7 +3746,7 @@ Goodbrother_46 = {
 		trait = content
 		trait = brave
 	}
-	7998.2.1 = {
+	8000.2.1 = {
 		death = { death_reason = death_battle } # Maybe killed in chaos after Harren's death
 	}
 }
@@ -3819,12 +3806,12 @@ Goodbrother_51 = {
 	trait = education_martial_2
 	trait = strong
 	trait = wrathful
-	trait = lustful
 	trait = rowdy
 
 	disallow_random_traits = yes
 
 	8100.1.1 = { birth = yes }
+	8115.1.1 = { trait = lustful }
 	8133.12.1 = {
 		effect = {
 			if = {
@@ -3934,6 +3921,30 @@ Goodbrother_rs_9 = {
 
 	8220.1.1 = { birth = yes }
 	8276.1.1 = { death = yes }
+}
+### Household 
+Goodbrother_hh_2 = {
+	name = Kirth # Canon 
+	
+	religion = the_seven_main
+	culture = riverlander
+	
+	trait = education_learning_2
+	
+	8205.1.1 = { birth = yes }
+	8227.1.1 = {
+		trait = maester_historical
+		effect = { # Maester of Hammerhorn
+			agot_maester_forge_link_history_effect = { METAL = copper }
+			agot_maester_forge_link_history_effect = { METAL = copper }
+			agot_maester_starting_setup_history_effect = yes
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_hammerhorn 
+				POSITION = maester_court_position
+			}
+		}
+	}
+	8266.1.1 = { death = yes }
 }
 
 ### Shatterstone Branch
@@ -4790,7 +4801,6 @@ FarwyndLL_16 = {
 	8121.1.1 = { birth = yes }
 	8137.1.1 = { give_nickname = nick_the_longknife }
 	8158.1.1 = {
-		employer = Saltcliffe_18 # Ralf Saltcliffe
 		effect = { # Captain of the Guard at Saltcliffe
 			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_saltcliffe 
@@ -4798,7 +4808,6 @@ FarwyndLL_16 = {
 			}
 		}
 	}
-	8178.1.1 = { employer = Saltcliffe_27 } # Roryn Saltcliffe
 	8180.1.1 = { death = yes }
 }
 ### Main Line
@@ -5173,6 +5182,8 @@ Harlaw_51 = {
 
 	father = Harlaw_53
 
+	trait = education_martial_4
+
 	7505.1.1 = { birth = yes }
 	7529.1.1 = { 
 		trait = nightswatch_historical 
@@ -5281,7 +5292,7 @@ Harlaw_37 = {
 
 	7955.1.1 = { birth = yes }
 	7973.1.1 = { add_spouse = Harlaw_rs_13 }
-	7998.2.1 = {
+	8000.2.1 = {
 		death = { death_reason = death_battle } # Maybe killed in chaos after Harren's death
 	}
 }
@@ -5613,10 +5624,11 @@ Volmark_6 = {
 	father = Volmark_5
 
 	7859.1.1 = { birth = yes }
-	7903.1.1 = { death = yes }
+	7902.1.1 = { death = { death_reason = death_battle } }
 }
+### Issue of Lenwood
 Volmark_7 = {
-	name = Vickon # a lord
+	name = Vickon
 	dynasty = dynn_Volmark
 
 	religion = drowned_god_main
@@ -5625,7 +5637,7 @@ Volmark_7 = {
 	father = Volmark_6
 
 	7881.1.1 = { birth = yes }
-	7925.1.1 = { death = yes }
+	7902.1.1 = { death = { death_reason = death_battle } }
 }
 Volmark_8 = {
 	name = Maron # Mentioned, a lord
@@ -5634,13 +5646,13 @@ Volmark_8 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	father = Volmark_7
+	father = Volmark_6
 
-	7905.1.1 = { birth = yes }
-	7925.1.1 = { add_spouse = Hoare_29 } # Asha Hoare
-	7970.1.1 = { death = yes }
+	7887.1.1 = { birth = yes }
+	7908.1.1 = { add_spouse = Hoare_29 } # Asha Hoare
+	7950.1.1 = { death = yes }
 }
-### Issue of Maron Bolmark
+### Issue of Maron
 Volmark_9 = {
 	name = Alannys # married Halleck Hoare
 	dynasty = dynn_Volmark
@@ -5652,8 +5664,8 @@ Volmark_9 = {
 	father = Volmark_8
 	mother = Hoare_29
 
-	7928.1.1 = { birth = yes }
-	7952.1.1 = {
+	7914.1.1 = { birth = yes }
+	7945.1.1 = {
 		effect = { add_unpressed_claim = title:e_the_iron_islands }
 	}
 	7980.1.1 = { death = yes }
@@ -5668,12 +5680,12 @@ Volmark_10 = {
 	father = Volmark_8
 	mother = Hoare_29
 
-	7931.1.1 = { birth = yes }
-	7949.1.1 = { add_spouse = Volmark_rs_2 }
-	7952.1.1 = {
+	7926.1.1 = { birth = yes }
+	7945.1.1 = {
 		effect = { add_unpressed_claim = title:e_the_iron_islands }
 	}
-	7990.1.1 = { death = yes }
+	7959.1.1 = { add_spouse = Volmark_rs_2 }
+	7977.1.1 = { death = yes }
 }
 Volmark_rs_2 = {
 	name = Ynys
@@ -5682,7 +5694,7 @@ Volmark_rs_2 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	7931.1.1 = { birth = yes }
+	7941.1.1 = { birth = yes }
 	7990.1.1 = { death = yes }
 }
 ### Issue of Rodrik
@@ -5707,16 +5719,11 @@ Volmark_11 = {
 	trait = ambitious
 	trait = arrogant
 
-	7970.1.1 = { birth = yes }
+	7960.1.1 = { birth = yes }
 	7990.1.1 = {
 		effect = { add_unpressed_claim = title:e_the_iron_islands }
 	}
 	7993.1.1 = { add_spouse = Volmark_rs_3 }
-	# 7998.2.1 = {
-		# effect = {
-			# character_event = { id = aegons_landing.15 days = 1 } #rebellion
-		# }
-	# }
 	8002.1.1 = {
 		death = {
 			death_reason = death_battle
@@ -5773,7 +5780,7 @@ Volmark_14 = {
 	father = Volmark_11
 	mother = Volmark_rs_3
 
-	8000.1.1 = { birth = yes } # Newly born at the time of his father's death
+	8001.1.1 = { birth = yes } # Newly born at the time of his father's death
 	8033.1.1 = {
 		death = {
 			death_reason = death_execution # Rebelled against Greyjoys
@@ -6048,6 +6055,7 @@ Wynch_7 = {
 	7821.1.1 = { birth = yes }
 	7867.1.1 = { death = yes }
 }
+### Issue of Wulfgar
 Wynch_8 = {
 	name = Eldred # a lord
 	dynasty = dynn_Wynch
@@ -6060,7 +6068,6 @@ Wynch_8 = {
 	7847.1.1 = { birth = yes }
 	7900.1.1 = { death = yes }
 }
-### Issue of Eldred
 Wynch_9 = {
 	name = Wylla # married Qhorwyn Hoare
 	dynasty = dynn_Wynch
@@ -6069,11 +6076,12 @@ Wynch_9 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	father = Wynch_8
+	father = Wynch_7
 
-	7869.1.1 = { birth = yes }
-	7923.1.1 = { death = yes }
+	7848.1.1 = { birth = yes }
+	7873.1.1 = { death = { death_reason = death_childbirth } }
 }
+### Main Line
 Wynch_10 = {
 	name = Gunnar # a lord
 	dynasty = dynn_Wynch
@@ -6081,12 +6089,11 @@ Wynch_10 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	father = Wynch_8
+	father = Wynch_8 # Eldred Wynch
 
 	7872.1.1 = { birth = yes }
 	7911.1.1 = { death = yes }
 }
-### Main Line
 Wynch_11 = {
 	name = Erik # a lord
 	dynasty = dynn_Wynch
@@ -6094,7 +6101,7 @@ Wynch_11 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	father = Wynch_10 # Gunnar Wynch
+	father = Wynch_10
 
 	7900.1.1 = { birth = yes }
 	7954.1.1 = { death = yes }
@@ -6210,12 +6217,12 @@ Wynch_19 = {
 	trait = education_martial_2
 	trait = intellect_good_1
 	trait = deceitful
-	trait = lustful
 	trait = pensive
 
 	disallow_random_traits = yes
 
 	8086.1.1 = { birth = yes }
+	8100.1.1 = { trait = lustful }
 	8134.1.1 = {
 		death = {
 			death_reason = death_murder_known
@@ -6400,6 +6407,7 @@ Botley_rs_5 = {
 	7920.1.1 = { birth = yes }
 	7980.1.1 = { death = yes }
 }
+### Issue of Harlon
 Botley_24 = {
 	name = Victarion # a lord
 	dynasty = dynn_Botley
@@ -6412,6 +6420,20 @@ Botley_24 = {
 
 	7947.1.1 = { birth = yes }
 	8007.1.1 = { death = { death_reason = death_accident } }
+}
+Botley_40 = {
+	name = Katla
+	dynasty = dynn_Botley
+	female = yes
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Botley_23
+	mother = Botley_rs_5
+
+	7948.1.1 = { birth = yes }
+	8010.1.1 = { death = yes }
 }
 ### Issue of Victarion
 Botley_25 = {
@@ -6998,7 +7020,7 @@ Saltcliffe_25 = {
 	8180.1.1 = { death = yes }
 }
 Saltcliffe_26 = {
-	name = Dagur # Semi-canon, AKA: The Iron Serpent
+	name = Dagur # Semi-canon, AKA: The Iron Serpent, Commander of the Gold Cloaks
 	dynasty = dynn_Saltcliffe
 
 	prowess = 8
@@ -7012,13 +7034,13 @@ Saltcliffe_26 = {
 	trait = education_martial_4
 	trait = cynical
 	trait = brave
-	trait = lustful
 	trait = deceitful
 	trait = rowdy
 
 	disallow_random_traits = yes
 
 	8140.1.1 = { birth = yes }
+	8154.1.1 = { trait = lustful }
 	8157.1.1 = {
 		trait = disinherited
 		religion = the_seven_main
@@ -7256,7 +7278,6 @@ Saltcliffe_hh_1 = {
 	8140.1.1 = {
 		trait = lifestyle_physician
 		trait = maester_historical
-		employer = Saltcliffe_18 # Ralf Saltcliffe
 		effect = { # Maester of Saltcliffe
 			agot_maester_starting_setup_history_effect = yes
 			agot_appoint_as_court_position_for_castle_history_effect = { 
@@ -7282,6 +7303,20 @@ Sunderly_8 = {
 	7840.1.1 = { birth = yes }
 	7890.1.1 = { death = yes }
 }
+### Issue of Gevin
+Sunderly_25 = {
+	name = Siglynd # married Qhorwyn Hoare 
+	dynasty = dynn_Sunderly
+	female = yes 
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Sunderly_8
+
+	7862.1.1 = { birth = yes }
+	7921.1.1 = { death = yes }
+}
 Sunderly_9 = {
 	name = Harmund # a lord
 	dynasty = dynn_Sunderly
@@ -7294,6 +7329,7 @@ Sunderly_9 = {
 	7865.1.1 = { birth = yes }
 	7915.1.1 = { death = yes }
 }
+### Main Line
 Sunderly_10 = {
 	name = Kemmett # a lord
 	dynasty = dynn_Sunderly
@@ -7301,7 +7337,7 @@ Sunderly_10 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	father = Sunderly_9
+	father = Sunderly_9 # Harmund Sunderly
 
 	7890.1.1 = { birth = yes }
 	7940.1.1 = { death = yes }
@@ -7341,7 +7377,7 @@ Sunderly_13 = {
 	father = Sunderly_12
 
 	7967.1.1 = { birth = yes }
-	7998.2.1 = {
+	8000.2.1 = {
 		death = { death_reason = death_battle } # Killed in chaos after Harren's death
 	}
 }
@@ -7355,7 +7391,7 @@ Sunderly_23 = {
 	father = Sunderly_12
 
 	7968.1.1 = { birth = yes }
-	7998.2.1 = { 
+	8000.2.1 = {
 		trait = nightswatch_historical 
 		effect = { 
 			agot_join_nightswatch_history_effect = {
@@ -7381,7 +7417,7 @@ Sunderly_24 = {
 	give_nickname = nick_pyke
 
 	7987.1.1 = { birth = yes }
-	7998.2.1 = { 
+	8000.2.1 = {
 		trait = nightswatch_historical 
 		effect = { 
 			agot_join_nightswatch_history_effect = {
@@ -8409,7 +8445,6 @@ Stonetree_18 = {
 		give_nickname = nick_bloodaxe
 	}
 	8136.1.1 = {
-		employer = Blacktyde_18 # Garmon Blacktyde
 		effect = { # Master-at-arms at Blacktyde
 			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_blacktyde 
@@ -8418,7 +8453,6 @@ Stonetree_18 = {
 		}
 	}
 	8150.1.1 = {
-		employer = Greyjoy_63 # Toron Greyjoy
 		add_spouse = Greyjoy_76 # Gudrun Greyjoy
 		effect = { # Master-at-arms at Pyke
 			agot_appoint_as_court_position_for_castle_history_effect = { 
@@ -8728,13 +8762,13 @@ Blacktyde_8 = {
 	trait = education_martial_2
 	trait = sadistic
 	trait = ambitious
-	trait = lustful
 	trait = authoritative
 	trait = rowdy
 
 	disallow_random_traits = yes
 
 	4371.1.1 = { birth = yes }
+	4387.1.1 = { trait = lustful }
 	4393.1.1 = { give_nickname = nick_maidensbane }
 	4449.1.1 = { death = yes }
 }
@@ -8750,10 +8784,9 @@ Blacktyde_9 = {
 	trait = line_of_char
 	disallow_random_traits = yes
 
-	4449.1.1 = {
-		birth = yes
-		give_nickname = nick_maidensbane
-	}
+	give_nickname = nick_maidensbane
+	
+	4449.1.1 = { birth = yes }
 	7851.1.1 = { death = yes }
 }
 Blacktyde_10 = {
@@ -8815,7 +8848,7 @@ Blacktyde_13 = {
 
 	7972.1.1 = { birth = yes }
 	7990.1.1 = { add_spouse = Blacktyde_rs_4 }
-	7998.2.1 = {
+	8000.2.1 = {
 		death = { death_reason = death_battle } # Maybe killed in chaos after Harren's death
 	}
 }
@@ -8976,12 +9009,12 @@ Drumm_4 = {
 
 	father = Grey_King_2 # The Grey King
 
+	trait = education_martial_2
 	trait = physique_good_3
 	trait = brave
 
 	88.1.1 = { birth = yes }
 	104.1.1 = {
-		trait = education_martial_2
 		give_nickname = nick_the_necromancer
 		effect = {
 			add_trait = lifestyle_mystic
@@ -9972,7 +10005,7 @@ Merlyn_12 = {
 
 	7975.1.1 = { birth = yes }
 	7993.1.1 = { add_spouse = Merlyn_rs_3 }
-	7998.2.1 = {
+	8000.2.1 = {
 		death = { death_reason = death_battle } # Maybe killed in chaos after Harren's death
 	}
 }
@@ -10391,7 +10424,6 @@ Orkwood_20 = {
 
 	8114.1.1 = { birth = yes }
 	8140.1.1 = {
-		employer = Saltcliffe_18 # Ralf Saltcliffe
 		effect = { # Master-at-arms at Saltcliffe
 			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_saltcliffe 
@@ -10838,7 +10870,7 @@ Codd_26 = {
 
 	7978.1.1 = { birth = yes }
 	7996.1.1 = { employer = Hoare_31 } # Harren Hoare
-	7998.2.1 = {
+	8000.2.1 = {
 		death = { death_reason = death_battle } # Maybe killed in chaos after Harren's death
 	}
 }
@@ -11960,6 +11992,7 @@ Sharp_19 = {
 	8037.1.1 = { birth = yes }
 	8084.1.1 = { death = yes }
 }
+### Issue of Sam
 Sharp_20 = {
 	name = Bennarion # a lord
 	dynasty = dynn_Sharp
@@ -11972,6 +12005,43 @@ Sharp_20 = {
 	8061.1.1 = { birth = yes }
 	8105.1.1 = { death = yes }
 }
+Sharp_27 = {
+	name = Burton
+	dynasty = dynn_Sharp
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Sharp_19
+
+	8062.1.1 = { birth = yes }
+	8121.1.1 = { death = yes }	
+}
+### Issue of Burton
+Sharp_28 = {
+	name = Howland # Semi-Canon
+	dynasty = dynn_Sharp
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Sharp_27
+
+	8080.1.1 = { birth = yes }
+	8100.1.1 = { trait = lifestyle_hunter }
+	8105.1.1 = {
+		religion = the_seven_main
+		trait = knight
+		effect = { # Master of Hunt of the Red Keep
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_kings_landing
+				POSITION = master_of_hunt_court_position
+			}
+		}
+	}
+	8121.1.1 = { death = yes }	
+}
+### Main Line
 Sharp_21 = {
 	name = Alton # a lord
 	dynasty = dynn_Sharp
@@ -11979,7 +12049,7 @@ Sharp_21 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	father = Sharp_20
+	father = Sharp_20 # Bennarion
 
 	8094.1.1 = { birth = yes }
 	8141.1.1 = { death = yes }
@@ -12199,27 +12269,6 @@ Salt_1 = {
 	8104.1.1 = { employer = Goodbrother_50 } # Rodrik Goodbrother
 	8133.12.1 = {
 		effect = { add_pressed_claim = title:k_the_iron_islands }
-		effect = {
-			# if = {
-				# limit = { NOT = { game_start_date = 8134.5.1 } }
-				# d_hardstone_hills = {
-					# holder_scope = {
-						# start_faction = {
-							# faction = faction_claimant
-							# title = k_the_iron_islands
-							# thirdparty = ROOT
-						# }
-						# faction_claimant = { # The target (title) of the faction
-							# reverse_unsafe_war = {
-								# target = PREV
-								# casus_belli = other_claim_on_liege
-								# faction = faction_claimant
-							# }
-						# }
-					# }
-				# }
-			# }
-		}
 	}
 	8134.5.1 = {
 		death = { death_reason = death_battle }
@@ -12861,10 +12910,7 @@ Drowned_Men_3 = {
 
 	7971.1.1 = { birth = yes }
 	7987.1.1 = { trait = drowned_man } # Drowned Man
-	# 7998.2.1 = {
-		# effect = { character_event = { id = aegons_landing.14 days = 1 } }
-	# }
-	8001.1.1 = {
+	8002.1.1 = {
 		death = { death_reason = death_suicide }
 	}
 }
@@ -12901,9 +12947,6 @@ Drowned_Men_4 = {
 			change_first_name = Lodos
 		}
 	}
-	# 8037.9.9 = {
-		# effect = { character_event = { id = aegons_landing.14 days = 1 } }
-	# }
 	8038.1.1 = {
 		death = {
 			death_reason = death_execution

@@ -147,7 +147,6 @@ Baratheon_2 = {
 		trait = education_martial_prowess_3
 		trait = aggressive_attacker
 		trait = organizer
-		#trait = heavy_infantry_leader # AGOT TODO trait
 		trait = knight
 		effect = {
 			set_variable = {
@@ -254,14 +253,6 @@ Baratheon_2 = {
 					opinion = -150
 				}
 			}
-			dynasty:dynn_Martell = {
-				every_dynasty_member = {
-					add_opinion = {
-						target = ROOT
-						modifier = murdered_close_family_crime
-					}
-				}
-			}
 		}
 		add_spouse = Lannister_6 # Cersei Lannister
 		trait = drunkard
@@ -341,7 +332,6 @@ Baratheon_3 = {
 		trait = unyielding_defender
 		trait = forder
 		trait = military_engineer
-		#trait = back_seat_leader # AGOT TODO trait
 		trait = knight
 		employer = Baratheon_2 # Robert Baratheon
 	}
@@ -401,7 +391,6 @@ Baratheon_3 = {
 	8298.10.28 = {
 		religion = rhllor
 		dynasty_house = house_BaratheonDS  
-		#trait = lightbringer # AGOT TODO trait
 		trait = faith_warrior # Chosen by Rhllor
 		effect = {
 			add_piety = 400
@@ -409,12 +398,6 @@ Baratheon_3 = {
 			# set_global_flag = chosen_by_rhllor_found
 			# letter_event = { id = clash_of_kings.3699 days = 1 } # Bastard letter
 		}
-	}
-	8299.1.4 = {
-		###
-		# MEGAWAR STANCE: STANNIS BARATHEON
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
 	}
 	8299.2.20 = {
 		add_piety = -200
@@ -561,15 +544,6 @@ Baratheon_4 = {
 			}
 		}
 	}
-	8299.2.11 = {
-		effect = {
-			# character_event = { id = clash_of_kings.508 }
-			###
-			# MEGAWAR STANCE: RENLY BARATHEON
-			# FILL ONCE MEGAWAR IS RESTORED
-			###
-		}
-	}
 	8299.3.3 = {
 		death = {
 			death_reason = death_murder_known
@@ -661,14 +635,6 @@ Baratheon_5 = {
 					modifier = perk_negotiated_alliance_opinion
 				}	
 			}
-			dynasty:dynn_Martell = { 
-				every_dynasty_member = {
-					add_opinion = {
-						target = ROOT
-						modifier = murdered_close_family_crime
-					}
-				}
-			}
 			if = {
 				limit = { character:Stark_3 = { is_alive = yes } }
 				reverse_add_opinion = {
@@ -715,27 +681,11 @@ Baratheon_5 = {
 	}
 	8298.11.2 = { # Execution of Eddard Stark
 		effect = {
-			dynasty:dynn_Stark = { 
-				every_dynasty_member = {
+			character:Stark_3 = { # Eddard Stark
+				every_close_or_extended_family_member = {
 					add_opinion = {
 						target = ROOT
-						modifier = executed_close_family_crime
-					}
-				}
-			}
-			dynasty:dynn_Tully = {
-				every_dynasty_member = {
-					add_opinion = {
-						target = ROOT
-						modifier = executed_close_family_crime
-					}
-				}
-			}
-			dynasty:dynn_Arryn = { 
-				every_dynasty_member = {
-					add_opinion = {
-						target = ROOT
-						modifier = executed_close_family_crime
+						modifier = executed_close_family_crime 				
 					}
 				}
 			}
@@ -770,12 +720,6 @@ Baratheon_5 = {
 			}
 		}
 	}
-	8299.2.11 = { # A Clash of Kings
-		###
-		# MEGAWAR STANCE: LANNISTER
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
-	}
 	8299.3.3 = {
 		add_spouse = Tyrell_14 # Margaery Tyrell
 		effect = {
@@ -790,12 +734,6 @@ Baratheon_5 = {
 					allied_through_target = character:Tyrell_14 # Margaery Tyrell
 				}
 			}
-		}
-	}
-	8299.7.2 = { # A Storm of Swords
-		effect = {
-			#character_event = { id = 999900234 }
-			add_character_flag = brightwater_keep_promised
 		}
 	}
 	# 8299.12.1 = {
@@ -855,16 +793,6 @@ Baratheon_6 = {
 		dynasty_house = house_BaratheonKL 
 		trait = disputed_heritage
 		effect = {
-			#add_character_flag = lannister_scum # AGOT TODO
-
-			dynasty:dynn_Martell = {
-				every_dynasty_member = {
-					add_opinion = {
-						target = ROOT
-						modifier = murdered_close_family_crime
-					}
-				}
-			}
 			if = {
 				limit = { character:Stark_3 = { is_alive = yes } }
 				reverse_add_opinion = {
@@ -963,16 +891,6 @@ Baratheon_7 = {
 		dynasty_house = house_BaratheonKL 
 		trait = disputed_heritage
 		effect = {
-			#add_character_flag = lannister_scum # AGOT TODO
-
-			dynasty:dynn_Martell = { # Doran Martell
-				every_dynasty_member = {
-					add_opinion = {
-						target = ROOT
-						modifier = murdered_close_family_crime
-					}
-				}
-			}
 			if = {
 				limit = { character:Stark_3 = { is_alive = yes } }
 				reverse_add_opinion = {
@@ -1018,13 +936,9 @@ Baratheon_7 = {
 		}
 	}
 	8300.1.1 = { # Inherited from Joffrey
-		#trait = widowswail # AGOT TODO trait
 		effect = {
 			add_character_flag = crowned_by_high_septon
-			# trait = civil_war
 			add_character_flag = depose_liege_target
-			#add_character_flag = king_iron_throne # AGOT TODO
-			add_character_flag = brightwater_keep_promised
 			# Iron bank Loan
 			add_character_flag = loaned_from_iron_bank_flag
 			add_character_flag = first_tier_iron_bank_loan_flag
@@ -1105,7 +1019,6 @@ Baratheon_11 = {
 	trait = bastard
 	give_nickname = nick_rivers
 
-	#father = Baratheon_2
 	mother = Baratheon_rs_7
 
 	8282.1.1 = {
@@ -1132,7 +1045,6 @@ Baratheon_rs_6 = {
 	religion = the_seven_main
 	culture = riverlander
 
-	#father = Baratheon_2
 	mother = Baratheon_rs_5
 
 	trait = bastard
@@ -1142,7 +1054,7 @@ Baratheon_rs_6 = {
 		birth = yes
 		effect = {
 			set_real_father = character:Baratheon_2 # Robert Baratheon
-			set_employer = title:b_stoney_sept.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_stoney_sept }
 			make_trait_inactive = blue_eyes
 			make_trait_inactive = black_hair
 			make_trait_inactive = smol_tol
@@ -1156,7 +1068,6 @@ Baratheon_103 = {
 	religion = the_seven_main
 	culture = stormlander
 
-	# father = Baratheon_2
 	mother = Baratheon_rs_12
 	
 	trait = bastard
@@ -1167,7 +1078,7 @@ Baratheon_103 = {
 		birth = yes
 		effect = {
 			set_real_father = character:Baratheon_2 # Robert Baratheon
-			set_employer = title:c_summerfield.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:c_summerfield }
 			make_trait_inactive = blue_eyes
 			make_trait_inactive = black_hair
 			make_trait_inactive = smol_tol
@@ -1188,7 +1099,6 @@ Baratheon_9 = {
 	religion = the_seven_main
 	culture = crownlander
 
-	# father = Baratheon_2
 	mother = Baratheon_rs_1
 
 	trait = bastard
@@ -1207,8 +1117,8 @@ Baratheon_9 = {
 	8284.6.1 = {
 		birth = yes
 		effect = {
-			set_employer = title:b_goldguard_heights.holder
 			set_real_father = character:Baratheon_2 # Robert Baratheon
+			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
 			make_trait_inactive = blue_eyes
 			make_trait_inactive = black_hair
 			make_trait_inactive = smol_tol
@@ -1216,7 +1126,7 @@ Baratheon_9 = {
 	}
 	8298.10.28 = {
 		effect = {
-			set_employer = title:b_harrentown.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_harrentown }
 		}
 	}
 	8299.2.1 = { # Joins brotherhood (a little bit earlier than in canon so he's present in ACoK bookmark with Beric)
@@ -1242,14 +1152,13 @@ Baratheon_12 = {
 	trait = bastard
 	give_nickname = nick_waters
 
-	#father = Baratheon_2
 	mother = Baratheon_rs_8
 
 	8285.1.1 = {
 		birth = yes
 		effect = {
-			set_employer = title:b_hookmarket.holder
 			set_real_father = character:Baratheon_2 # Robert Baratheon
+			agot_safe_set_location_history_effect = { CASTLE = title:b_hookmarket }
 			make_trait_inactive = blue_eyes
 			make_trait_inactive = black_hair
 			make_trait_inactive = smol_tol
@@ -1269,7 +1178,6 @@ Baratheon_106 = {
 	religion = the_seven_main
 	culture = crownlander
 
-	# father = Baratheon_2
 	mother = Baratheon_rs_13
 	
 	trait = bastard
@@ -1280,7 +1188,7 @@ Baratheon_106 = {
 		birth = yes
 		effect = {
 			set_real_father = character:Baratheon_2 # Robert Baratheon
-			set_employer = title:b_goldguard_heights.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
 			make_trait_inactive = blue_eyes
 			make_trait_inactive = black_hair
 			make_trait_inactive = smol_tol
@@ -1356,7 +1264,6 @@ Baratheon_105 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	# father = Baratheon_2
 	mother = Baratheon_rs_19
 	
 	trait = bastard
@@ -1367,7 +1274,7 @@ Baratheon_105 = {
 		birth = yes
 		effect = {
 			set_real_father = character:Baratheon_2 # Robert Baratheon
-			set_employer = title:b_lordsport.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_lordsport }
 			make_trait_inactive = blue_eyes
 			make_trait_inactive = black_hair
 			make_trait_inactive = smol_tol
@@ -1380,7 +1287,6 @@ Baratheon_104 = {
 	religion = the_seven_main
 	culture = reachman
 
-	# father = Baratheon_2
 	mother = Baratheon_rs_14
 	
 	trait = bastard
@@ -1393,7 +1299,7 @@ Baratheon_104 = {
 		birth = yes
 		effect = {
 			set_real_father = character:Baratheon_2 # Robert Baratheon
-			set_employer = title:b_lush_town.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_lush_town }
 			make_trait_inactive = blue_eyes
 			make_trait_inactive = black_hair
 			make_trait_inactive = smol_tol
@@ -1407,7 +1313,6 @@ Baratheon_107 = {
 	religion = the_seven_main
 	culture = crownlander
 
-	# father = Baratheon_2
 	mother = Baratheon_rs_16
 	
 	trait = bastard
@@ -1419,7 +1324,7 @@ Baratheon_107 = {
 		birth = yes
 		effect = {
 			set_real_father = character:Baratheon_2 # Robert Baratheon
-			set_employer = title:b_hookmarket.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_hookmarket }
 			make_trait_inactive = blue_eyes
 			make_trait_inactive = black_hair
 			make_trait_inactive = smol_tol
@@ -1439,7 +1344,6 @@ Baratheon_90 = {
 	religion = the_seven_main
 	culture = westerman
 
-	# father = Baratheon_2
 	mother = Baratheon_rs_11
 	
 	trait = bastard 
@@ -1468,7 +1372,6 @@ Baratheon_91 = {
 	religion = the_seven_main
 	culture = westerman
 
-	# father = Baratheon_2
 	mother = Baratheon_rs_11
 	
 	trait = bastard 
@@ -1496,7 +1399,6 @@ Baratheon_109 = {
 	religion = the_seven_main
 	culture = crownlander
 
-	# father = Baratheon_2
 	mother = Baratheon_rs_17
 	
 	trait = bastard
@@ -1507,7 +1409,7 @@ Baratheon_109 = {
 		birth = yes
 		effect = {
 			set_real_father = character:Baratheon_2 # Robert Baratheon
-			set_employer = title:b_landingfield.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_landingfield }
 			make_trait_inactive = blue_eyes
 			make_trait_inactive = black_hair
 			make_trait_inactive = smol_tol
@@ -1527,7 +1429,6 @@ Baratheon_108 = {
 	religion = the_seven_main
 	culture = crownlander
 
-	# father = Baratheon_2
 	mother = Baratheon_rs_18
 	
 	trait = bastard
@@ -1539,7 +1440,7 @@ Baratheon_108 = {
 		birth = yes
 		effect = {
 			set_real_father = character:Baratheon_2 # Robert Baratheon
-			set_employer = title:b_hookmarket.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_hookmarket }
 			make_trait_inactive = blue_eyes
 			make_trait_inactive = black_hair
 			make_trait_inactive = smol_tol
@@ -1560,7 +1461,6 @@ Baratheon_rs_4 = {
 	religion = the_seven_main
 	culture = crownlander
 
-	# father = Baratheon_2
 	mother = Baratheon_rs_3
 
 	trait = bastard
@@ -1570,7 +1470,7 @@ Baratheon_rs_4 = {
 		birth = yes
 		effect = {
 			set_real_father = character:Baratheon_2 # Robert Baratheon
-			set_employer = title:b_goldguard_heights.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
 			make_trait_inactive = blue_eyes
 			make_trait_inactive = black_hair
 			make_trait_inactive = smol_tol
@@ -1662,15 +1562,15 @@ Baratheon_rs_5 = {
 	sexuality = bisexual # by popular demand
 
 	trait = beauty_good_3
-	trait = lustful
 	trait = physique_good_1
 
 	8260.1.1 = {
 		birth = yes
 		effect = {
-			set_employer = title:b_stoney_sept.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_stoney_sept }
 		}
 	}
+	8274.1.1 = { trait = lustful }
 	8299.1.1 = { death = yes }
 }
 Baratheon_rs_1 = {
@@ -1687,7 +1587,7 @@ Baratheon_rs_1 = {
 	8283.6.1 = { employer = Baratheon_2 } # Robert Baratheon
 	8284.6.1 = {
 		effect = {
-			set_employer = title:b_goldguard_heights.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
 		}
 		trait = fornicator # Gendry is born
 	}
@@ -1703,7 +1603,7 @@ Baratheon_rs_8 = {
 	8265.1.1 = { birth = yes }
 	8285.1.1 = {
 		effect = {
-			set_employer = title:b_hookmarket.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_hookmarket }
 		}
 	}
 	8296.1.1 = { death = yes }
@@ -1722,7 +1622,7 @@ Baratheon_rs_3 = {
 	8280.1.1 = {
 		birth = yes
 		effect = {
-			set_employer = title:b_goldguard_heights.holder
+			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
 		}
 	}
 	8299.1.1 = {
@@ -1764,7 +1664,9 @@ Baratheon_rs_12 = {
 	
 	8263.1.1 = { birth = yes }
 	8280.1.1 = { 
-		effect = { set_employer = title:c_summerfield.holder }
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:c_summerfield }
+		}
 	}			
 }
 Baratheon_rs_13 = {
@@ -1778,7 +1680,9 @@ Baratheon_rs_13 = {
 	
 	8269.1.1 = { birth = yes }
 	8285.1.1 = { 
-		effect = { set_employer = title:b_goldguard_heights.holder }
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
+		}
 	}			
 }
 Baratheon_rs_14 = {
@@ -1792,7 +1696,9 @@ Baratheon_rs_14 = {
 	
 	8270.1.1 = { 
 		birth = yes 
-		effect = { set_employer = title:b_lush_town.holder }
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:b_lush_town }
+		}
 	}			
 }
 Baratheon_rs_19 = {
@@ -1806,7 +1712,9 @@ Baratheon_rs_19 = {
 	
 	8273.1.1 = { birth = yes }			
 	8285.1.1 = { 
-		effect = { set_employer = title:b_lordsport.holder }
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:b_lordsport }
+		}
 	}			
 }
 Baratheon_rs_16 = {
@@ -1820,7 +1728,9 @@ Baratheon_rs_16 = {
 	
 	8272.1.1 = { birth = yes }			
 	8285.1.1 = { 
-		effect = { set_employer = title:b_hookmarket.holder }
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:b_hookmarket }
+		}
 	}		
 	8299.1.1 = {
 		death = {
@@ -1840,7 +1750,9 @@ Baratheon_rs_17 = {
 	
 	8275.1.1 = { birth = yes }			
 	8293.1.1 = { 
-		effect = { set_employer = title:b_landingfield.holder }
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:b_landingfield }
+		}
 	}		
 	8299.1.1 = { trait = depressed_1 }		
 }
@@ -1855,7 +1767,9 @@ Baratheon_rs_18 = {
 	
 	8276.1.1 = { birth = yes }			
 	8296.1.1 = { 
-		effect = { set_employer = title:b_hookmarket.holder }
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:b_hookmarket }
+		}
 	}
 }
 ### Household
@@ -1878,7 +1792,6 @@ Baratheon_rs_18 = {
 
 	8219.1.1 = { birth = yes }
 	8235.1.1 = {
-		employer = Baratheon_71 # Lyonel Baratheon
 		trait = humble
 		trait = celibate
 		trait = just
@@ -1893,9 +1806,6 @@ Baratheon_rs_18 = {
 			}
 		}
 	}
-	8250.1.1 = { employer = Baratheon_75 } # Ormund Baratheon
-	8259.11.10 = { employer = Baratheon_1 } # Steffon Baratheon
-	8278.1.1 = { employer = Baratheon_2 } # Robert Baratheon
 	8284.1.1 = {
 		effect = { # Maester of Dragonstone
 			agot_appoint_as_court_position_for_castle_history_effect = {
@@ -2027,18 +1937,18 @@ Melisandre_1 = {
 
 	8273.1.1 = {
 		birth = yes
-		effect = { # AGOT TODO
-			add_trait = slave
-			# if = {
-				# limit = { NOT = { year = 8284 } }
-				# set_employer = title:d_rhllor.holder
-				# d_rhllor = {
+		effect = { 
+			# add_trait = slave
+			# agot_safe_set_location_history_effect = { CASTLE = title:k_the_red_priesthood }
+			if = {
+				limit = { NOT = { has_trait = devoted } }
+				# d_rhllor = { # AGOT TODO
 					# holder_scope = {
 						# opinion = { who = ROOT modifier = opinion_my_slave }
 						# reverse_opinion = { who = ROOT modifier = opinion_my_owner }
 					# }
 				# }
-			# }
+			}
 		}
 	}
 	8284.1.1 = {
@@ -2056,7 +1966,11 @@ Melisandre_1 = {
 			}
 		}
 	}
-	8298.1.1 = { employer = Baratheon_3 } # Stannis Baratheon
+	8298.1.1 = { 
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
+		}
+	}
 	8298.10.28 = {
 		effect = { # Red Priestess of Dragonstone
 			agot_appoint_as_councillor_for_castle_history_effect = { 
@@ -2110,8 +2024,7 @@ Melisandre_1 = {
 		}
 	}
 	8284.1.1 = { 
-		employer = Baratheon_3 # Stannis Baratheon
-		effect = {
+		effect = { # Court Jester of Dragonstone
 			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_dragonstone 
 				POSITION = court_jester_court_position
@@ -2150,7 +2063,7 @@ Melisandre_1 = {
 	8300.1.1 = { employer = Baratheon_7 } # Tommen Baratheon
 }
 333000654 = {
-	name = Malegorn # Canon
+	name = Malegorn # Canon, Queen's Man
 	dynasty = dynn_Redpool # of the Red Pool
 
 	prowess = 6
@@ -2234,12 +2147,6 @@ Tarth_1 = {
 	}
 	8264.1.1 = { add_spouse = Tarth_rs_1 }
 	8282.1.1 = { trait = lustful }
-	8299.7.2 = { # Storm of Swords
-		###
-		# MEGAWAR STANCE: NEUTRAL
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
-	}
 }
 Tarth_rs_1 = {
 	name = Jocelyn 
@@ -2401,9 +2308,6 @@ Tarth_6 = {
 	8299.1.1 = { employer = Baratheon_4 } # Renly Baratheon
 	8299.2.11 = {
 		give_nickname = nick_the_blue
-		effect = {
-			#add_character_flag = rainbow_guard # AGOT TODO
-		}
 		create_character_memory = {
 			type = agot_melee_winner # Melee at Bitterbridge
 			participants = {
@@ -2451,9 +2355,6 @@ Tarth_6 = {
 			release_from_prison = yes
 		}
 	}
-	8299.11.5 = { #given Oathkeeper by Jaime
-		#trait = oathkeeper # AGOT TODO trait
-	}
 	8300.1.2 = { employer = Baratheon_7 } # Tommen Baratheon
 	8300.5.3 = {
 		trait = disfigured # Bit off half face
@@ -2480,7 +2381,6 @@ Tarth_hh_1 = {
 	8237.1.1 = { birth = yes }
 	8260.1.1 = { trait = knight }
 	8279.1.1 = {
-		employer = Tarth_1 # Selwyn Tarth
 		effect = { # Master-at-arms at Evenfall Hall
 			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_evenfall 
@@ -2503,7 +2403,6 @@ Tarth_hh_2 = {
 	8247.1.1 = { birth = yes }
 	8265.1.1 = { trait = septon } # Septa
 	8279.1.1 = {
-		employer = Tarth_1 # Selwyn Tarth
 		effect = { # Septa at Evenfall Hall
 			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_evenfall
@@ -2693,12 +2592,6 @@ Errol_2 = {
 
 	8280.1.1 = { birth = yes }
 	8296.1.1 = { trait = knight }
-	8299.7.2 = { # Storm of Swords
-		###
-		# MEGAWAR STANCE: NEUTRAL
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
-	}
 }
 Errol_3 = {
 	name = Serwyn
@@ -2726,8 +2619,8 @@ Errol_23 = {
 	mother = Crowell_19_B
 
 	8251.1.1 = { birth = yes }
-	8270.1.1 = { add_spouse = Morrison_22}
 	8267.1.1 = { trait = knight }
+	8270.1.1 = { add_spouse = Morrison_22 } # Semiona Morrison
 }
 Errol_24 = {
 	name = Shireen
@@ -2850,18 +2743,6 @@ Hasty_2 = {
 		trait = celibate
 	}
 	8275.1.1 = { give_nickname = nick_the_good }
-	8282.9.15 = { # Robert's Rebellion
-		###
-		# MEGAWAR STANCE: AERYS II TARGARYEN
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
-	}
-	8299.7.2 = { # Battle of Blackwater
-		###
-		# MEGAWAR STANCE: NEUTRAL
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
-	}
 }
 Hasty_3 = {
 	name = Barristan
@@ -3067,7 +2948,7 @@ Buckler_3 = {
 	8281.1.1 = { employer = Buckler_1 } # Ralph Buckler
 }
 Buckler_4 = {
-	name = Brus # Canon
+	name = Brus # Canon, Queen's Man
 	dynasty = dynn_Buckler
 	# AGOT TODO dna = agot_dna_Buckler_4
 
@@ -3114,14 +2995,8 @@ Fell_1 = {
 
 	8246.1.1 = { birth = yes }
 	8262.1.1 = {
-		add_spouse = Grandison_32
+		add_spouse = Grandison_32 # Ella Grandison
 		trait = knight
-	}
-	8282.9.15 = { # Roberts Rebellion
-		###
-		# MEGAWAR STANCE: AERYS II TARGARYEN
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
 	}
 	8282.12.1 = {
 		death = {
@@ -3353,15 +3228,19 @@ Connington_4 = {
 		} 
 	}
 	8283.1.1 = {
-		# employer = Toyne_4 #Myles Toyne # AGOT TODO no golden company title
-		if = { # AGOT Bookmarked Added
-			limit = { game_start_date < 8298.1.1 }
-			death = { death_reason = death_drinking_passive } # Officially
+		effect = { 
+			agot_join_golden_company_history_effect = yes 
+			# AGOT Bookmarked Added
+			if = {
+				limit = { game_start_date < 8298.1.1 }
+				death = { death_reason = death_drinking_passive } # Officially
+			}
 		}
 	}
-	8296.1.1 = { employer = Strickland_1 } # Harry Strickland
 	8300.3.1 = {
-		# employer = Targaryen_12 #Young Griff
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:e_targaryen_host_title }
+		} 
 		trait = greyscale
 	}
 }
@@ -3428,12 +3307,6 @@ Connington_6 = {
 	8290.1.1 = {
 		trait = knight
 		trait = aggressive_attacker
-	}
-	8299.7.2 = {
-		###
-		# MEGAWAR STANCE: NEUTRAL
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
 	}
 }
 Connington_7 = {
@@ -3739,12 +3612,6 @@ Grandison_1 = {
 		add_spouse = Cafferen_31 # Ysme Cafferen
 		trait = knight
 	}
-	8282.9.15 = { # Robert's Rebellion
-		###
-		# MEGAWAR STANCE: AERYS II TARGARYEN
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
-	}
 	8283.3.1 = { trait = wounded_1 } # Battle of Trident
 	8283.6.1 = {
 		death = { death_reason = death_wounded_1 }
@@ -3776,17 +3643,17 @@ Grandison_2 = {
 	8238.1.1 = { 
 		trait = knight 
 		trait = refusing_marriage
-		effect = {
-			add_character_modifier = training_for_kingsguard
-		}
+		effect = { add_character_modifier = training_for_kingsguard }
 	}
 	8259.6.1 = {
 		effect = { 
-			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_127 } # Jaehaerys II Targaryen
+			agot_join_kingsguard_char_history_effect = { # Predecessor: Lucifer Hardy 
+				KING = character:Targaryen_127 # Jaehaerys II Targaryen
+			}
 		}
 	}
 	8281.1.1 = {
-		trait = kingsguard
+		trait = kingsguard # Successor: Jaime Lannister
 		death = yes
 	}
 }
@@ -3821,7 +3688,7 @@ Grandison_3 = {
 	8287.1.1 = { give_nickname = nick_greybeard }
 }
 Grandison_32 = {
-	name = Ella
+	name = Ella # married Lucas Fell
 	dynasty = dynn_Grandison
 	female = yes
 
@@ -3889,7 +3756,7 @@ Grandison_35 = {
 	8263.1.1 = { birth = yes }
 }
 Grandison_5 = {
-	name = Narbert # Canon
+	name = Narbert # Canon, Queen's Man
 	dynasty = dynn_Grandison
 	dna = Grandison_5
 
@@ -4060,12 +3927,10 @@ Morrigen_4 = {
 		trait = poet
 	}
 	8298.10.28 = { employer = Baratheon_4 } # Renly Baratheon
-	8299.2.11 = {
-		effect = {
-			#add_character_flag = rainbow_guard # AGOT TODO
-			#add_ambition = obj_become_kingsguard # AGOT TODO
-		}
+	8299.2.11 = { 
+		trait = refusing_marriage
 		give_nickname = nick_the_green
+		effect = { add_character_modifier = training_for_kingsguard }
 	}
 	8299.3.3 = { employer = Baratheon_3 } # Stannis Baratheon
 	8299.7.1 = {
@@ -4092,8 +3957,8 @@ Kellington_1 = {
 	mother = Kellington_p_2
 
 	8262.1.1 = { birth = yes }
-	8278.1.1 = { trait = knight }
 	8277.1.1 = { add_spouse = Kellington_rs_1 }
+	8278.1.1 = { trait = knight }
 }
 Kellington_25 = {
 	name = Cara
@@ -4311,7 +4176,6 @@ Wylde_5 = {
 		add_spouse = Wylde_rs_4
 	}
 	8270.1.1 = {
-		employer = Baratheon_1 # Steffon Baratheon
 		effect = { # Master-at-arms at Storm's End
 			agot_appoint_as_court_position_for_castle_history_effect = { 
 				CASTLE = title:c_storms_end 
@@ -4319,7 +4183,6 @@ Wylde_5 = {
 			}
 		}
 	}
-	8278.1.1 = { employer = Baratheon_2 } # Robert Baratheon
 	8283.3.1 = {
 		death = {
 			death_reason = death_dungeon # Siege of Storm's End
@@ -4349,7 +4212,7 @@ Wylde_4 = {
 	mother = Wylde_rs_2
 
 	8260.1.1 = { birth = yes }
-	8262.1.1 = {
+	8282.1.1 = {
 		add_spouse = Wylde_rs_3
 		trait = knight
 	}
@@ -4361,7 +4224,7 @@ Wylde_rs_3 = {
 	religion = the_seven_main
 	culture = stormlander
 
-	8246.1.1 = { birth = yes }
+	8266.1.1 = { birth = yes }
 }
 Wylde_12 = {
 	name = Jon # Canon
@@ -4499,12 +4362,6 @@ Estermont_1 = {
 		add_spouse = Estermont_rs_1
 		trait = knight
 	}
-	8299.7.2 = {
-		###
-		# MEGAWAR STANCE: NEUTRAL
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
-	}
 	8300.1.4 = { death = yes }
 }
 Estermont_rs_1 = {
@@ -4550,12 +4407,6 @@ Estermont_3 = {
 	8246.1.1 = {
 		add_spouse = Baratheon_76 # Cassandra Baratheon, great-aunt of Stannis Baratheon
 		trait = knight
-	}
-	8300.1.4 = {
-		###
-		# MEGAWAR STANCE: NEUTRAL
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
 	}
 	8300.3.1 = { add_spouse = Santagar_3 } # Spotted Sylva Santagar
 }
@@ -5486,8 +5337,10 @@ Trant_2 = {
 		trait = education_martial_prowess_2
 	}
 	8284.1.1 = { 
-		effect = { 
-			agot_join_kingsguard_char_history_effect = { KING = character:Baratheon_2 } # Robert Baratheon
+		effect = {
+			agot_join_kingsguard_char_history_effect = { # Post-Aerys Reconstruction
+				KING = character:Baratheon_2 # Robert Baratheon
+			}
 		}
 	}
 }
@@ -5663,15 +5516,17 @@ Peasebury_kg = {
 		effect = { add_character_modifier = training_for_kingsguard }
 	}
 	8284.1.1 = { 
-		effect = { 
-			agot_join_kingsguard_char_history_effect = { KING = character:Baratheon_2 } # Robert Baratheon
+		effect = {
+			agot_join_kingsguard_char_history_effect = { # Post-Aerys Reconstruction
+				KING = character:Baratheon_2 # Robert Baratheon
+			}
 		}
 	}
 	8288.1.1 = { # too many peas :(
 		trait = gout_ridden
 	}
 	8289.6.1 = { # Died at Pyke
-		trait = kingsguard
+		trait = kingsguard # Successor: Arys Oakheart
 		death = {
 			death_reason = death_drowned # Fell off a boat, drowned in his armour :(
 		}
@@ -6494,8 +6349,8 @@ Seaworth_1 = {
 
 	8251.1.1 = { birth = yes }
 	8260.1.1 = { employer = Uhoris_2 } # Roro Uhoris
-	8270.1.1 = { employer = Baratheon_1 } # Placeholder V
-	# 8270.1.1 = { employer = 129174366 } # Terro Myrakis, Pentos # AGOT TODO Reenable once Pentos is added
+	8270.1.1 = { employer = Myrakis_2 } # Gerolo Myrakis, Pentos 
+	8273.1.1 = { employer = Narratys_1 } # Yoro Narratys, Pentos 
 	8274.1.1 = { add_spouse = Seaworth_rs_1 }
 	8280.1.1 = {
 		effect = { 
@@ -6505,6 +6360,7 @@ Seaworth_1 = {
 			}
 		}
 	}
+	8283.1.1 = { employer = Togaraz_1 } # Lerio Togaraz, Pentos 
 	8284.1.1 = {
 		effect = {
 			if = {
@@ -6536,7 +6392,7 @@ Seaworth_1 = {
 		give_nickname = nick_the_onion_lord
 		effect = { # Hand of the King
 			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:e_the_iron_throne 
+				CASTLE = title:k_the_stormlands 
 				POSITION = councillor_castellan
 			}
 		} 
@@ -6781,7 +6637,7 @@ Seaworth_8 = {
 ###
 ###
 Suggs_1 = {
-	name = Clayton # Canon
+	name = Clayton # Canon, Queen's Man
 	dynasty = dynn_Suggs
 
 	martial = 7
@@ -6795,20 +6651,18 @@ Suggs_1 = {
 	trait = physique_good_2
 	trait = zealous
 	trait = sadistic
-	trait = lustful
 	trait = brave
 	trait = rowdy 
 	
 	disallow_random_traits = yes
 
 	8266.1.1 = { birth = yes }
+	8280.1.1 = { trait = lustful }
 	8284.1.1 = {
 		employer = Baratheon_3 # Stannis Baratheon
 		trait = knight
 	}
-	8298.1.1 = {
-		religion = rhllor
-	}
+	8298.1.1 = { religion = rhllor }
 }
 
 ###### HOUSE TOYNE (id = dynn_Toyne)
@@ -6825,7 +6679,9 @@ Toyne_1 = {
 	father = Toyne_26 # Leo Toyne
 
 	8170.1.1 = { birth = yes }
-	# 8196.6.1 = { employer = Targaryen_95 } # Aegor Bittersteel # AGOT TODO
+	8196.6.1 = { 
+		effect = { agot_join_golden_company_history_effect = yes } 
+	}
 	8233.1.1 = { death = yes }
 }
 Toyne_2 = {
@@ -6839,10 +6695,8 @@ Toyne_2 = {
 
 	8195.1.1 = { 
 		birth = yes
-		# employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title 
+		effect = { agot_join_golden_company_history_effect = yes } 
 	}
-	# 8241.1.1 = { employer = Blackfyre_9 } # Aerys Blackfyre 
-	# 8251.1.1 = { employer = Blackfyre_14 } # Maelys the Monstrous 
 	8252.1.1 = { death = yes }
 }
 Toyne_3 = {
@@ -6856,19 +6710,12 @@ Toyne_3 = {
 
 	8216.1.1 = { 
 		birth = yes
-		# employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title 
+		effect = { agot_join_golden_company_history_effect = yes }
 	}
-	# 8241.1.1 = { employer = Blackfyre_9 } # Aerys Blackfyre 
-	# 8251.1.1 = { employer = Blackfyre_14 } # Maelys the Monstrous 
-	# 8259.1.1 = { employer = Fossoway_58 } # Derrick Fossoway 
-	# 8262.1.1 = { employer = Strickland_18 } # Randyll Strickland 
-	# 8265.1.1 = { employer = Strickland_19 } # Hosman Strickland 
-	# 8268.1.1 = { employer = Peake_75 } # Utherydes Peake
-	# 8272.1.1 = { employer = Toyne_4 } # Myles Toyne 
 	8277.1.1 = { death = yes }
 }
 Toyne_4 = {
-	name = Myles # Canon, AKA: The Blackheart
+	name = Myles # Canon, AKA: The Blackheart, Captain-General of the Golden Company
 	dynasty = dynn_Toyne
 
 	martial = 10
@@ -6890,16 +6737,9 @@ Toyne_4 = {
 
 	8244.1.1 = { 
 		birth = yes
-		# employer = Blackfyre_9 # Aerys Blackfyre 
+		effect = { agot_join_golden_company_history_effect = yes }
 	}
-	# 8251.1.1 = { employer = Blackfyre_14 } # Maelys the Monstrous 
-	# 8259.1.1 = { employer = Fossoway_58 } # Derrick Fossoway 
-	# 8262.1.1 = { employer = Strickland_18 } # Randyll Strickland
-	8265.1.1 = {
-		# employer = Strickland_19 # Hosman Stickland # AGOT TODO
-		give_nickname = nick_blackheart
-	}
-	# 8268.1.1 = { employer = Peake_75 } # Utherydes Peake
+	8265.1.1 = { give_nickname = nick_blackheart }
 	8296.1.1 = { death = yes }
 }
 
@@ -6966,9 +6806,6 @@ Toyne_8 = {
 	disallow_random_traits = yes
 
 	8248.1.1 = { birth = yes }
-	# 8280.1.1 = {
-		# effect = { character_event = { id = roberts_rebellion.Cassel_2 days = 1 } } #Kingswood Brotherhood # AGOT TODO
-	# }
 	8281.6.1 = {
 		death = {
 			death_reason = death_duel
@@ -7342,10 +7179,10 @@ Caron_4 = {
 	father = Caron_1 
 	mother = Caron_p_1
 
-	trait = lustful
 	trait = deceitful
 
 	8261.1.1 = { birth = yes }
+	8278.1.1 = { trait = lustful }
 }
 ### Issue of Bryen
 Caron_6 = {
@@ -7434,9 +7271,10 @@ Caron_8 = {
 
 	father = Caron_2
 	mother = Caron_rs_1
+	
+	trait = pensive
 
 	8277.1.1 = { birth = yes }
-	#8283.1.1 = { trait = timid } # AGOT TODO trait
 	8288.12.1 = { trait = typhus }
 	8289.1.1 = {
 		death = { death_reason = death_typhus }
@@ -7570,9 +7408,11 @@ Selmy_3 = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Targaryen_122 } # Aegon V Targaryen
 		}
 	}
-	8260.1.1 = { 
+	8260.9.1 = { 
 		effect = { 
-			agot_join_kingsguard_char_history_effect = { KING = character:Targaryen_127 } # Jaehaerys II Targaryen
+			agot_join_kingsguard_char_history_effect = { # Predecessor: Jon Darklyn
+				KING = character:Targaryen_127 # Jaehaerys II Targaryen
+			}
 		}
 	}
 	8260.12.31 = {
@@ -7593,7 +7433,9 @@ Selmy_3 = {
 	}
 	8284.1.1 = {
 		effect = {
-			agot_lc_kingsguard_char_history_effect = { KING = character:Baratheon_2 } # Robert Baratheon
+			agot_lc_kingsguard_char_history_effect = { # Previous Lord Commander: Gerold Hightower
+				KING = character:Baratheon_2 # Robert Baratheon
+			}
 		}
 		trait = celibate
 	}
@@ -7606,9 +7448,9 @@ Selmy_3 = {
 		}
 	}
 	8298.10.30 = { # Left the kingsguard
-		# employer = Mopatis_1 # Illyrio Mopatis # AGOT TODO Reenable once Pentos is added
+		employer = Mopatis_1 # Illyrio Mopatis
 		effect = { 
-			remove_character_flag = agot_is_kingsguard_member 
+			remove_character_flag = agot_is_kingsguard_member # Successor: Sandor Clegane; Next Lord Commander: Jaime Lannister
 			remove_character_flag = agot_is_kingsguard_commander 
 		}
 	}
@@ -7861,7 +7703,7 @@ Swann_38 = {
 	mother = Swann_rs_5
 
 	8223.1.1 = { birth = yes }
-	8227.1.1 = { trait = knight }
+	8241.1.1 = { trait = knight }
 	8263.1.1 = { death = yes }
 }
 Swann_7 = {
@@ -7899,9 +7741,9 @@ Swann_39 = {
 	8227.1.1 = { birth = yes }
 	8241.1.1 = {
 		trait = septon
-		# effect = { # AGOT TODO
-			# set_employer = title:b_starry_sept.holder
-		# }
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:b_the_starry_sept }
+		}
 	}
 }
 Swann_8 = {
@@ -7971,13 +7813,7 @@ Swann_1 = {
 		trait = knight
 		add_spouse = Swann_rs_1
 	}
-	8299.2.11 = {
-		trait = ill
-		###
-		# MEGAWAR STANCE: NEUTRAL
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
-	}
+	8299.2.11 = { trait = ill }
 }
 Swann_rs_1 = {
 	name = Jeyne
@@ -8089,8 +7925,10 @@ Swann_6 = {
 	8297.1.1 = { employer = Baratheon_2 } # Robert Baratheon
 	8298.10.28 = { employer = Baratheon_5 } # Joffrey Baratheon
 	8299.5.3 = {
-		effect = { 
-			agot_join_kingsguard_char_history_effect = { KING = character:Baratheon_5 } # Joffrey Baratheon
+		effect = {
+			agot_join_kingsguard_char_history_effect = { # Predecessor: Preston Greenfield
+				KING = character:Baratheon_5 # Joffrey Baratheon
+			}
 		}
 	}
 }
@@ -8226,9 +8064,7 @@ Dondarrion_2 = {
 			}	
 		}
 	}
-	8299.2.11 = {
-		trait = one_eyed # Lost an eye in fight with Ser Gregor
-	}
+	8299.2.11 = { trait = one_eyed } # Lost an eye in fight with Ser Gregor
 	8299.10.7 = {
 		effect = { add_gold = 80 }
 	}
@@ -8250,12 +8086,6 @@ Dondarrion_3 = {
 	mother = Dondarrion_rs_1
 
 	8278.1.1 = { birth = yes }
-	8299.2.11 = {
-		###
-		# MEGAWAR STANCE: NEUTRAL
-		# FILL ONCE MEGAWAR IS RESTORED
-		###
-	}
 }
 Dondarrion_4 = {
 	name = Jena
@@ -8315,13 +8145,6 @@ Cafferen_1 = {
 	8248.1.1 = { birth = yes }
 	8264.1.1 = { trait = knight }
 	8268.1.1 = { add_spouse = Cafferen_rs_1 }
-	8282.9.15 = { # Robert's Rebellion
-		###
-		# MEGAWAR STANCE: AERYS II TARGARYEN
-		# FILL ONCE MEGAWAR IS RESTORED
-		# EXPIRES ON 8282.12.15
-		###
-	}
 	8283.1.1 = {
 		death = {
 			death_reason = death_duel # Battle of Ashford
@@ -8506,7 +8329,7 @@ Cole_33 = {
 	mother = Wensington_2
 
 	8277.1.1 = { birth = yes }
-	8290.1.1 = { trait = knight }
+	8295.1.1 = { trait = knight }
 }
 Cole_34 = {
 	name = Willem
@@ -8535,19 +8358,11 @@ Cole_20 = {
 	mother = Cole_rs_7
 
 	8233.1.1 = { birth = yes }
-	8249.1.1 = {
-		trait = lifestyle_blademaster
-		# employer = Blackfyre_9 # Aerys Blackfyre AGOT TODO no blackyfre title
+	8241.1.1 = { 
+		effect = { agot_join_golden_company_history_effect = yes }
 	}
-	8251.1.1 = { 
-		# employer = Blackfyre_14 # Maelys the Monstrous 
-		add_spouse = Cole_rs_8 
-	} 
-	# 8259.1.1 = { employer = Fossoway_58 } # Derrick Fossoway 
-	# 8262.1.1 = { employer = Strickland_18 } # Randyll Strickland 
-	# 8265.1.1 = { employer = Strickland_19 } # Hosman Strickland 
-	# 8268.1.1 = { employer = Peake_75 } # Utherydes Peake
-	# 8272.1.1 = { employer = Toyne_4 } # Myles Toyne 
+	8249.1.1 = { trait = lifestyle_blademaster }
+	8252.11.11 = { add_spouse = Cole_rs_8 } 
 	8288.1.1 = { death = yes }
 }
 Cole_rs_8 = {
@@ -8577,11 +8392,8 @@ Cole_21 = {
 
 	8267.1.1 = { 
 		birth = yes 
-		# employer = Strickland_19 # Hosman Strickland 
+		effect = { agot_join_golden_company_history_effect = yes }
 	}
-	# 8268.1.1 = { employer = Peake_75 } # Utherydes Peake
-	# 8272.1.1 = { employer = Toyne_4 } # Myles Toyne 
-	# 8296.1.1 = { employer = Strickland_1 } # Harry Strickland 
 }
 Cole_22 = {
 	name = Will # Canon
@@ -8599,10 +8411,8 @@ Cole_22 = {
 
 	8268.1.1 = { 
 		birth = yes 
-		# employer = Peake_75 # Utherydes Peake
+		effect = { agot_join_golden_company_history_effect = yes }
 	}
-	# 8272.1.1 = { employer = Toyne_4 } # Myles Toyne
-	# 8296.1.1 = { employer = Strickland_1 } # Harry Strickland 
 }
 
 ###### HOUSE STRAW (id = dynn_Straw)
@@ -8619,7 +8429,7 @@ Straw_1 = {
 	father = Straw_22
 
 	8227.1.1 = { birth = yes }
-	8242.1.1 = { trait = knight }
+	8245.1.1 = { trait = knight }
 	8246.1.1 = { add_spouse = Shaw_7 } # Shyra Shaw
 	8278.1.1 = { death = yes }
 }
@@ -9230,10 +9040,9 @@ Scaly_1 = {
 	trait = sadistic
 	trait = ambitious
 
-	8242.1.1 = {
-		birth = yes
-		give_nickname = nick_the_scaly_prefix
-	}
+	give_nickname = nick_the_scaly_prefix
+	
+	8242.1.1 = { birth = yes }
 	8258.1.1 = {
 		trait = education_martial_prowess_4
 		trait = organizer
@@ -9385,7 +9194,7 @@ Morrison_21 = {
 	8270.1.1 = { death = yes }
 }
 Morrison_22 = { 
-	name = Semiona
+	name = Semiona # married Triston Errol
 	dynasty = dynn_Morrison
 	female = yes
  

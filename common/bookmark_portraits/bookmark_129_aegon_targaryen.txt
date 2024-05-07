@@ -2,11 +2,11 @@
 # History database id:Targaryen_65
 bookmark_129_aegon_targaryen={
 	type=male
-	id=12586
+	id=12747
 	age=0.220000
-	genes={ 		hair_color={ 20 2 19 21 }
+	genes={ 		hair_color={ 51 7 19 21 }
  		skin_color={ 24 18 28 18 }
- 		eye_color={ 242 38 252 77 }
+ 		eye_color={ 247 191 252 77 }
  		gene_chin_forward={ "chin_forward_neg" 148 "chin_forward_neg" 137 }
  		gene_chin_height={ "chin_height_neg" 130 "chin_height_neg" 130 }
  		gene_chin_width={ "chin_width_neg" 109 "chin_width_neg" 109 }
@@ -96,8 +96,8 @@ bookmark_129_aegon_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 0 "cheek_wrinkles_both_01" 0 }
  		complexion={ "complexion_beauty_1" 0 "complexion_beauty_1" 0 }
  		gene_height={ "normal_height" 148 "normal_height" 161 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 120 "body_fat_head_fat_low" 114 }
- 		gene_bs_body_shape={ "body_shape_apple_full" 132 "body_shape_average" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 116 "body_fat_head_fat_low" 114 }
+ 		gene_bs_body_shape={ "body_shape_apple_full" 153 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 50 "bust_clothes" 48 }
  		gene_age={ "old_2" 255 "old_2" 199 }
  		gene_eyebrows_shape={ "avg_spacing_avg_thickness" 156 "avg_spacing_low_thickness" 192 }
@@ -136,7 +136,7 @@ bookmark_129_aegon_targaryen={
  		gene_bs_eye_shape={ "eye_shape_01" 0 "eye_shape_01" 0 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		pose={ "" 255 "" 0 }
- 		gene_drunkard={ "drunkard" 224 "drunkard" 0 }
+ 		gene_drunkard={ "drunkard" 194 "drunkard" 0 }
  		beards={ "all_beards" 29 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 107 "all_hairstyles" 0 }
@@ -145,11 +145,36 @@ bookmark_129_aegon_targaryen={
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "agot_byzantine_high_nobility_clothes_male_pants" 114 "most_clothes" 0 }
+ 		clothes={ "agot_byzantine_high_nobility_clothes_male_pants" 218 "most_clothes" 0 }
  		headgear={ "agot_crowns" 2 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "agot_artifact_weapon_blackfyre" 255 "no_props" 0 }
  }
 	entity={ 979141817 979141817 }
+	tags={ {
+			hash=2125534279
+			invert=no
+		}
+ {
+			hash=2670398845
+			invert=no
+		}
+ {
+			hash=1500963499
+			invert=no
+		}
+ {
+			hash=726151402
+			invert=no
+		}
+ {
+			hash=681013727
+			invert=no
+		}
+ {
+			hash=1563190100
+			invert=no
+		}
+ }
 }
 

@@ -1,28 +1,33 @@
 ﻿# The Seven Kingdoms
 e_the_iron_throne = {
 	1.1.1 = {
-		#holder = 0
-		#law = centralization_2 # AGOT TODO
-		#law = investiture_law_2 # AGOT TODO
-		#law = first_night_1 # AGOT TODO
-		#law = slavery_0 # AGOT TODO
-		#name = e_the_iron_throne # AGOT TODO
-		#adjective = E_WESTEROS_ADJ # AGOT TODO
-		#effect = { # AGOT TODO
-		#	#make sure the Red Keep is always the capital
-		#	b_red_keep = {
-		#		ROOT = {
-		#			holder_scope = {
-		#				if = {
-		#					limit = { has_landed_title = PREVPREV }
-		#					capital = PREVPREV
-		#				}
-		#			}
-		#		}
-		#	}
-		#}
+		# law = centralization_2 # AGOT TODO
+		# law = investiture_law_2 # AGOT TODO
+		# law = first_night_1 # AGOT TODO
+		# law = slavery_0 # AGOT TODO
+		# name = e_the_iron_throne # AGOT TODO
+		# adjective = E_WESTEROS_ADJ # AGOT TODO
+		# effect = { # AGOT TODO
+			# # make sure the Red Keep is always the capital
+			# b_red_keep = {
+				# ROOT = {
+					# holder_scope = {
+						# if = {
+							# limit = { has_landed_title = PREVPREV }
+							# capital = PREVPREV
+						# }
+					# }
+				# }
+			# }
+		# }
 	}
-	7998.1.2 = {
+	# AGOT Bookmarked Added
+	7998.1.1 = {
+		effect = {
+			set_variable = kingsguard
+		}
+	}
+	7999.4.1 = {
 		holder = Targaryen_27	 # Aegon I 'the Conqueror'
 		#law = slavery_0
 		effect = { # AGOT TODO
@@ -40,46 +45,37 @@ e_the_iron_throne = {
 					}
 				}
 			}
-			# AGOT Bookmarked Added
-			set_variable = kingsguard
-		#	set_global_flag = e_iron_throne_created
-		#	set_title_flag = aegons_crown #record which crowns have been forged for crown forgin event
-		#	holder_scope = { add_character_flag = iron_throne_crown_event }
+			# set_global_flag = e_iron_throne_created
+			# set_title_flag = aegons_crown #record which crowns have been forged for crown forgin event
+			# holder_scope = { add_character_flag = iron_throne_crown_event }
 		}
 	}
-	#7998.1.2 = { # AGOT TODO
-	#	reset_name = yes
-	#	reset_adjective = yes
-	#}
-	#8000.1.1 = { # AGOT TODO
-	#	capital = 226 #Kings Landing established
-	#}
+	# 8001.6.1 = { # AGOT TODO
+		# reset_name = yes
+		# reset_adjective = yes
+		# capital = 226 #Kings Landing established
+	# }
+	# AGOT Bookmarked Disabled
 	# 8010.1.1 = { # Visenya founds Kingsguard
-		# effect = { # AGOT Bookmarked Disabled
+		# effect = {
 			# set_variable = kingsguard
 		# }
 	# }
 	8037.9.9 = {
 		holder = Targaryen_30	 # Aenys I
-		#effect = { # AGOT TODO
-		#	set_title_flag = aenys_crown
-		#}
 	}
 	8042.1.1 = {
 		holder = Targaryen_31		#Maegor I 'the Cruel'
 	}
 	8048.3.7 = {
 		holder = Targaryen_35		#Jaehaerys I 'the Conciliator'
-		#effect = { # AGOT TODO
-		#	set_title_flag = jaehaerys_crown
-		#}
 	}
 	8048.6.2 = {
 		#law = investiture_law_1 # AGOT TODO
 	}
-	#8060.1.1 = { # AGOT TODO
-	#	law = first_night_0 #First Night abolished
-	#}
+	# 8060.1.1 = { # AGOT TODO
+		# law = first_night_0 #First Night abolished
+	# }
 	8092.6.8 = {
 		succession_laws = { male_only_law } # Baelon declared heir
 	}
@@ -97,7 +93,7 @@ e_the_iron_throne = {
 	8131.1.14 = {
 		holder = Targaryen_78	 # Aegon III the Unlucky
 	}
-	8157.1.1 = {
+	8157.1.13 = {
 		holder = Targaryen_81		#Daeron I the Young Dragon
 	}
 	8161.6.9 = {
@@ -108,9 +104,6 @@ e_the_iron_throne = {
 	}
 	8172.1.1 = {
 		holder = Targaryen_88	 # Aegon IV the Unworthy
-		#effect = { # AGOT TODO
-		#	set_title_flag = aegon_IV_crown
-		#}
 	}
 	8184.1.1 = {
 		holder = Targaryen_91		#Daeron II the Good
@@ -120,9 +113,6 @@ e_the_iron_throne = {
 	}
 	8221.1.1 = {
 		holder = Targaryen_110		#Maekar I
-		#effect = { # AGOT TODO
-		#	set_title_flag = maekars_crown
-		#}
 	}
 	8233.6.1 = {
 		holder = Targaryen_122	 # Aegon V the Unlikley
@@ -143,32 +133,32 @@ e_the_iron_throne = {
 		holder = Baratheon_7 #Tommen I "Baratheon"
 	}
 	8300.3.1 = {
-		#law = investiture_law_2 # AGOT TODO
-		#effect = { # AGOT TODO
-		#	k_the_most_devout = {
-		#		holder_scope = {
-		#			d_warriors_sons = {
-		#				holder_scope = {
-		#					set_defacto_liege = PREVPREV
-		#					#dynasty = father_bastard
-		#					add_trait = knight
-		#					add_trait = zealous
-		#					add_trait = blademaster_2
-		#					add_trait = celibate
-		#				}
-		#			}
-		#			d_poor_fellows = {
-		#				holder_scope = {
-		#					set_defacto_liege = PREVPREV
-		#					add_trait = knight
-		#					add_trait = zealous
-		#					add_trait = blademaster_2
-		#					add_trait = celibate
-		#				}
-		#			}
-		#		}
-		#	}
-		#}
+		# law = investiture_law_2 # AGOT TODO
+		# effect = { # AGOT TODO
+			# k_the_most_devout = {
+				# holder_scope = {
+					# d_warriors_sons = {
+						# holder_scope = {
+							# set_defacto_liege = PREVPREV
+							# # dynasty = father_bastard
+							# add_trait = knight
+							# add_trait = zealous
+							# add_trait = blademaster_2
+							# add_trait = celibate
+						# }
+					# }
+					# d_poor_fellows = {
+						# holder_scope = {
+							# set_defacto_liege = PREVPREV
+							# add_trait = knight
+							# add_trait = zealous
+							# add_trait = blademaster_2
+							# add_trait = celibate
+						# }
+					# }
+				# }
+			# }
+		# }
 	}
 }
 
@@ -256,7 +246,7 @@ e_dorne = {
 		holder = Martell_51 # Ryon (nc)
 	}
 	7940.1.1 = {
-		holder = Martell_53 # Mariya (C)
+		holder = Martell_53 # Meria (C)
 	}
 	8013.6.1 = {
 		holder = Martell_54 # Nymor (C)
@@ -294,7 +284,7 @@ e_dorne = {
 	8147.1.1 = {
 		holder = Martell_72 #Marence
 	}
-	8157.8.7 = { # Daeron I's Conquest of Dorne
+	8158.1.3 = { # Daeron I's Conquest of Dorne
 		#holder = 0
 	}
 	8160.1.4 = { # Dornish Rebellion
@@ -497,10 +487,10 @@ e_the_iron_islands = {
 	7880.1.1 = {
 		holder = Hoare_25 # Qhorwyn
 	}
-	7923.1.1 = {
+	7901.1.3 = {
 		holder = Hoare_28 # Harwyn
 	}
-	7956.1.1 = {
+	7943.1.1 = {
 		holder = Hoare_30 # Harrock
 	}
 	7960.1.1 = {
@@ -510,7 +500,7 @@ e_the_iron_islands = {
 	7998.1.1 = {
 		holder = 0
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		holder = 0
 	}
 	8060.1.1 = {
@@ -518,21 +508,6 @@ e_the_iron_islands = {
 	}
 	8289.1.1 = {
 		holder = Greyjoy_5 #Balon
-		#effect = { # AGOT TODO
-		#	holder = {
-		#		any_realm_lord = {
-		#			any_demesne_title = {
-		#				limit = {
-		#					NOT = {
-		#					holder = { culture = ruin } }
-		#					NOT = { tier = BARON }
-		#					NOT = { tier = EMPEROR }
-		#				}
-		#				set_variable = { which = "de_facto_empire" value = 1 }
-		#			}
-		#		}
-		#	}
-		#}
 	}
 	8289.6.1 = {
 		holder = 0
@@ -540,22 +515,6 @@ e_the_iron_islands = {
 	8299.3.4 = {
 		holder = Greyjoy_5 #Balon
 		#law = centralization_2 # AGOT TODO
-		#effect = { # AGOT TODO
-		#	holder = {
-		#		any_realm_lord = {
-		#			any_demesne_title = {
-		#				limit = {
-		#					NOT = {
-		#						holder = { culture = ruin }
-		#					}
-		#					NOT = { tier = BARON }
-		#					NOT = { tier = EMPEROR }
-		#				}
-		#				set_variable = { which = "de_facto_empire" value = 3 }
-		#			}
-		#		}
-		#	}
-		#}
 	}
 	8299.10.3 = {
 		#law = succ_feudal_elective #kingsmoot # AGOT TODO
@@ -673,30 +632,19 @@ e_the_north = {
 	7988.1.1 = {
 		holder = Stark_66 # Torrhen (C)
 	}
-	7999.1.1 = {
+	8000.12.1 = {
 		holder = 0
 	}
-	#8060.1.1 = {
-	#	law = first_night_0 #First Night abolished # AGOT TODO
-	#}
+	# 8060.1.1 = {
+		# law = first_night_0 #First Night abolished # AGOT TODO
+	# }
 	8298.12.20 = {
 		holder = Stark_6 #Robb Stark
 		effect = { # AGOT TODO
-			if = { # AGOT Bookmarked Added
+			# AGOT Bookmarked Added
+			if = {
 				limit = { character:Stark_6 = { is_alive = yes } }
 				agot_set_empire_tier_realm_paramountcy = yes
-				#	holder = {
-				#		any_realm_lord = {
-				#			any_demesne_title = {
-				#				limit = {
-				#					NOT = { holder = { culture = ruin } }
-				#					NOT = { tier = BARON }
-				#					NOT = { tier = EMPEROR }
-				#				}
-				#				set_variable = { which = "de_facto_empire" value = 1 }
-				#			}
-				#		}
-				#	}
 			}
 		}
 	}
@@ -927,7 +875,7 @@ e_the_reach = {
 	7980.5.8 = {
 		holder = Gardener_95 #Mern IX
 	}
-	7998.6.6 = {
+	8000.5.1 = {
 		holder = 0
 	}
 	8048.6.2 = {
@@ -1056,7 +1004,7 @@ e_the_riverlands = {
 
 	###House Justman
 	6939.1.1 = {
-		holder = Justman_1 	 # Benedict (C) # House Jusman
+		holder = Justman_1 	 # Benedict (C) # House Justman
 	}
 	6962.1.1 = {
 		holder = Justman_2 	 # Benedict (C)
@@ -1134,37 +1082,33 @@ e_the_riverlands = {
 	7867.1.1 = {
 		holder = Durrandon_76 #Angron
 	}
-	7921.1.1 = {
-		holder = Durrandon_77 #Durran
+	7896.1.1 = {
+		holder = Durrandon_77 # Erich IX
 	}
-	7925.1.1 = {
-		holder = Durrandon_79 #Angron
+	7898.1.1 = {
+		holder = Durrandon_81 # Arrec III 
 	}
-	7932.1.1 = {
-		holder = Durrandon_81 #Arrec (C)
-	}
-
 	#Hoares of the Iron Islands conquer Riverlands
-	7933.1.1 = {
-		holder = Hoare_28 # Harwyn (C)
+	7902.1.1 = {
+		holder = Hoare_28 # Harwyn
 		succession_laws = { male_only_law }
 	}
-	7956.1.1 = {
-		holder = Hoare_30 # Harrock (nc)
+	7943.1.1 = {
+		holder = Hoare_30 # Harrock
 	}
 	7960.1.1 = {
 		holder = Hoare_31 # Harren (C)
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		holder = 0
 		succession_laws = { male_preference_law }
 	}
 	8048.6.2 = {
 		#law = investiture_law_1 # AGOT TODO
 	}
-	#8060.1.1 = {
-	#	law = first_night_0 #First Night abolished # AGOT TODO
-	#}
+	# 8060.1.1 = {
+		# law = first_night_0 #First Night abolished # AGOT TODO
+	# }
 }
 
 e_the_stormlands = {
@@ -1391,25 +1335,22 @@ e_the_stormlands = {
 	7867.1.1 = {
 		holder = Durrandon_76 #Angron
 	}
-	7921.1.1 = {
-		holder = Durrandon_77 #Durran
+	7896.1.1 = {
+		holder = Durrandon_77
+	}
+	7898.1.1 = {
+		holder = Durrandon_81
 	}
 	7925.1.1 = {
-		holder = Durrandon_79 #Angron
+		holder = Durrandon_85
 	}
-	7932.1.1 = {
-		holder = Durrandon_81 #Arrec (C)
+	7947.1.1 = {
+		holder = Durrandon_87
 	}
-	7945.1.1 = {
-		holder = Durrandon_85 #Arlan V(C)
-	}
-	7955.1.1 = {
-		holder = Durrandon_87 # Argilac the Arrogant (C)
-	}
-	7998.2.27 = {
+	7999.9.10 = {
 		holder = Durrandon_88 # Argella
 	}
-	7998.3.1 = {
+	7999.9.15 = {
 		holder = 0 # Aegon's Conquest
 	}
 	8048.6.2 = {
@@ -1418,12 +1359,12 @@ e_the_stormlands = {
 	8060.1.1 = {
 		#law = first_night_0 #First Night abolished # AGOT TODO
 	}
-	#8239.6.1 = {
-	#	holder = Baratheon_71 # Lyonel Baratheon (C) Took the mantle of the Storm Kings after a broken betrothal.
-	#}
-	#8240.1.1 = {
-	#	holder = 0
-	#}
+	8239.6.1 = {
+		holder = Baratheon_71 # Lyonel Baratheon (C) Took the mantle of the Storm Kings after a broken betrothal.
+	}
+	8240.1.1 = {
+		holder = 0
+	}
 }
 
 e_the_vale = {
@@ -1434,9 +1375,9 @@ e_the_vale = {
 		#law = slavery_0 # AGOT TODO
 	}
 
-	#6537.1.1 = {
-	#	holder = Royce_18 # Robar II Royce
-	#}
+	# 6537.1.1 = {
+		# holder = Royce_18 # Robar II Royce
+	# }
 	6539.1.1 = {
 		holder = Arryn_15 	 # Artys I Arryn
 	}
@@ -1521,7 +1462,7 @@ e_the_vale = {
 	7995.1.1 = {
 		holder = Arryn_61 #Ronnel Arryn - The Arryn that bent the knee. Last person to wear the Falcon Crown.
 	}
-	7999.1.1 = {
+	8000.12.15 = {
 		holder = 0
 	}
 	8048.6.2 = {
@@ -1651,7 +1592,7 @@ e_the_westerlands = {
 	7992.1.1 = {
 		holder = Lannister_79 #Loren the Last (C)
 	}
-	7998.7.6 = {
+	8000.5.2 = {
 		holder = 0
 	}
 	8048.6.2 = {
@@ -1774,6 +1715,9 @@ e_blackfyre_rebellion = {
 		holder = Blackfyre_11 #Daemon III Blackfyre
 	}
 	8236.3.2 = { #day of Daemon III's death
+		holder = Blackfyre_13 # Daemon Blackfyre 
+	}
+	8252.11.11 = {
 		holder = Blackfyre_14 #Maelys I Blackfyre
 	}
 	8260.10.2 = { #day of Maelys I's death

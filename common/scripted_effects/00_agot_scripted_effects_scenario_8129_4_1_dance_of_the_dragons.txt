@@ -109,21 +109,31 @@ agot_8129_4_1_dotd_scenario_setup = {
 				add_defender = title:d_the_rainwood.holder
 			}
 		}
-	}
-
-	# Invalidation For Custom Character
-	if = {
-		limit = {
-			NOR = {
-				title:e_the_iron_throne.holder = character:Targaryen_65 
-				title:k_dragonstone.holder = character:Targaryen_63 
+		# Invalidation For Custom Character
+		if = {
+			limit = {
+				NOT = { title:e_the_iron_throne.holder = character:Targaryen_65 }
+			}
+			character:Targaryen_63 = {
+				random_character_war = {
+					limit = { using_cb = claim_cb }
+					save_scope_as = dance_of_the_invalid
+				}
 			}
 		}
-		every_living_character = {
-			every_character_war = {
-				limit = { always = yes }
-				end_war = invalidated
+		else_if = {
+			limit = {
+				NOT = { title:k_dragonstone.holder = character:Targaryen_63 }
 			}
+			character:Targaryen_65 = {
+				random_character_war = {
+					limit = { using_cb = claim_cb }
+					save_scope_as = dance_of_the_invalid
+				}
+			}
+		}
+		scope:dance_of_the_invalid ?= {
+			end_war = invalidated
 		}
 		debug_log = "Dance of the Dragons Invalidated"
 	}

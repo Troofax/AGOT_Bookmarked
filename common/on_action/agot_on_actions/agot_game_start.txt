@@ -2168,7 +2168,7 @@ agot_on_game_start = {
 		title:d_dummy_kingsguard = {
 			copy_title_history = title:d_kingsguard
 		}
-		title:d_kingsguard.holder ?= { # AGOT Bookmarked Changed
+		title:d_kingsguard.holder ?= {
 			change_government = kingsguard_government
 		}
 		title:d_kingsguard = {
@@ -3238,7 +3238,7 @@ agot_on_game_start_after_lobby = {
 					game_start_date = 8284.6.2 # Crowned Stag
 					game_start_date = 8258.12.21 # NPK
 					# AGOT Bookmarked Added
-					game_start_date = 7998.1.2
+					# game_start_date = 7998.1.2
 					game_start_date = 8129.4.1
 					game_start_date = 8195.3.7
 					game_start_date = 8277.1.1
@@ -3581,7 +3581,7 @@ agot_on_game_start_after_lobby = {
 				}
 			}
 			# AGOT Bookmarked Added
-			if = {
+			if = { # manage 7998.1.2 Aegon's Conquest scenario
 				limit = { game_start_date = 7998.1.2 }
 
 				agot_7998_1_1_conquest_scenario_setup = yes
@@ -3705,6 +3705,15 @@ agot_on_game_start_after_lobby = {
 				}
 			}
 			add_character_flag = inform_nw_succession
+		}
+		## Override blockade for firing canon councillors 
+		every_ruler = {
+			limit = { is_ai = yes }
+			every_councillor = { 
+				limit = { has_character_flag = canon_councillor }
+				block_firing_councillor_effect = { COURT_OWNER = PREV }
+				remove_character_flag = canon_councillor
+			}
 		}
 	}
 	events = {
