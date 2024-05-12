@@ -1,28 +1,8 @@
 ﻿# The Seven Kingdoms
 e_the_iron_throne = {
-	1.1.1 = {
-		# law = centralization_2 # AGOT TODO
-		# law = investiture_law_2 # AGOT TODO
-		# law = first_night_1 # AGOT TODO
-		# law = slavery_0 # AGOT TODO
-		# name = e_the_iron_throne # AGOT TODO
-		# adjective = E_WESTEROS_ADJ # AGOT TODO
-		# effect = { # AGOT TODO
-			# # make sure the Red Keep is always the capital
-			# b_red_keep = {
-				# ROOT = {
-					# holder_scope = {
-						# if = {
-							# limit = { has_landed_title = PREVPREV }
-							# capital = PREVPREV
-						# }
-					# }
-				# }
-			# }
-		# }
-	}
 	# AGOT Bookmarked Added
 	7998.1.1 = {
+		holder = Targaryen_27
 		effect = {
 			set_variable = kingsguard
 		}
@@ -1604,14 +1584,9 @@ e_the_westerlands = {
 }
 
 e_the_wall = {
-	1.1.1 = {
-		#liege = e_the_iron_throne
-		succession_laws = { male_only_law nights_watch_succession_law }
-		#law = centralization_2 # AGOT TODO
-		#law = slavery_0 # AGOT TODO
-	}
 	128.1.1 = {
 		holder = Stark_13 #The Night's King
+		succession_laws = { male_only_law nights_watch_succession_law }
 	}
 	141.1.1 = {
 		holder = 0
@@ -1727,9 +1702,6 @@ e_blackfyre_rebellion = {
 
 #Faegon titular title
 e_targaryen_host_title = {
-	1.1.1 = {
-		holder = 0
-	}
 	8300.3.1 = { #supposed date of aegons landing (based on history file at least)
 		holder = Targaryen_12 #Aegon "Young Griff" Targaryen
 	}

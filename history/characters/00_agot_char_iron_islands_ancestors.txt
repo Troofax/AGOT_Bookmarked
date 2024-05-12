@@ -3177,9 +3177,9 @@ Greyjoy_hh_20 = {
 	8120.1.1 = { birth = yes }
 	8142.1.1 = {
 		effect = { # Master-at-arms at Pyke
-			agot_appoint_as_court_position_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_pyke 
-				POSITION = master_at_arms_court_position
+				POSITION = councillor_marshal
 			}
 		}
 	}
@@ -8446,18 +8446,18 @@ Stonetree_18 = {
 	}
 	8136.1.1 = {
 		effect = { # Master-at-arms at Blacktyde
-			agot_appoint_as_court_position_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_blacktyde 
-				POSITION = master_at_arms_court_position
+				POSITION = councillor_marshal
 			}
 		}
 	}
 	8150.1.1 = {
 		add_spouse = Greyjoy_76 # Gudrun Greyjoy
 		effect = { # Master-at-arms at Pyke
-			agot_appoint_as_court_position_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_pyke
-				POSITION = master_at_arms_court_position
+				POSITION = councillor_marshal
 			}
 		}
 	}
@@ -10425,9 +10425,9 @@ Orkwood_20 = {
 	8114.1.1 = { birth = yes }
 	8140.1.1 = {
 		effect = { # Master-at-arms at Saltcliffe
-			agot_appoint_as_court_position_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_saltcliffe 
-				POSITION = master_at_arms_court_position
+				POSITION = councillor_marshal
 			}
 		}
 	}

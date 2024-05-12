@@ -2822,9 +2822,9 @@ Broom_5 = {
 	8272.1.1 = {
 		trait = knight
 		effect = { # Master-at-arms at Casterly Rock
-			agot_appoint_as_court_position_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_casterly_rock 
-				POSITION = master_at_arms_court_position
+				POSITION = councillor_marshal
 			}
 		}
 	}

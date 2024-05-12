@@ -7038,7 +7038,7 @@ Blackfyre_15 = {
 	8255.1.1 = { birth = yes }
 	8259.1.1 = {
 		death = {
-			death_reason = death_burned
+			death_reason = death_burned_witch # Sacrificed
 			killer = Blackfyre_14 # Maelys Blackfyre
 		}
 	}
@@ -10345,9 +10345,9 @@ Scales_20 = {
 	}
 	8048.1.1 = {
 		effect = { # Master-at-arms at Dragonstone
-			agot_appoint_as_court_position_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_dragonstone 
-				POSITION = master_at_arms_court_position
+				POSITION = councillor_marshal
 			}
 		}
 	}
@@ -12669,7 +12669,7 @@ Grand_Maester_38 = {
 	8045.6.1 = {
 		trait = witch
 		death = {
-			death_reason = death_burned
+			death_reason = death_burned_witch # Burned alive
 			killer = Targaryen_31 # Maegor Targaryen
 		}
 	}

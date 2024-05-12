@@ -3097,11 +3097,9 @@ c_blackblood = {
 	}
 }
 b_hoare_castle = {
-	1.1.1 = {
-		succession_laws = { male_only_law single_heir_succession_law }
-	}
 	3670.1.1 = {
 		holder = Hoare_1
+		succession_laws = { male_only_law single_heir_succession_law }
 	}
 	6584.1.1 = {
 		holder = Hoare_3

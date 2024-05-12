@@ -2078,7 +2078,11 @@ Melisandre_1 = {
 	}
 	8284.1.1 = { employer = Baratheon_3 } # Stannis Baratheon
 	8299.1.1 = { religion = rhllor }
-	8300.8.17 = { add_spouse = Kingsblood_7 } # Grisel Redbeard
+	8300.8.17 = { 
+		effect = {
+			agot_safe_betrothal_history_effect = { TARGET = character:Kingsblood_8 } # Grisel Redbeard
+		}
+	}
 }
 88000501 = {
 	name = Colen # Canon
@@ -2382,9 +2386,9 @@ Tarth_hh_1 = {
 	8260.1.1 = { trait = knight }
 	8279.1.1 = {
 		effect = { # Master-at-arms at Evenfall Hall
-			agot_appoint_as_court_position_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_evenfall 
-				POSITION = master_at_arms_court_position
+				POSITION = councillor_marshal
 			}
 		}
 	}
@@ -2966,7 +2970,11 @@ Buckler_4 = {
 	8270.1.1 = { trait = knight }
 	8284.1.1 = { employer = Baratheon_3 } # Stannis Baratheon
 	8299.1.1 = { religion = rhllor }
-	8300.8.17 = { add_spouse = Kingsblood_7 } # Gerra Redbeard
+	8300.8.17 = { 
+		effect = {
+			agot_safe_betrothal_history_effect = { TARGET = character:Kingsblood_7 } # Gerra Redbeard
+		}
+	}
 }
 
 ###### HOUSE FELL (id = dynn_Fell)
@@ -4177,9 +4185,9 @@ Wylde_5 = {
 	}
 	8270.1.1 = {
 		effect = { # Master-at-arms at Storm's End
-			agot_appoint_as_court_position_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_storms_end 
-				POSITION = master_at_arms_court_position
+				POSITION = councillor_marshal
 			}
 		}
 	}

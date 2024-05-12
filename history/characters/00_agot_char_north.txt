@@ -102,6 +102,12 @@ Stark_2 = {
 	disallow_random_traits = yes 
 
 	8262.1.1 = { birth = yes }
+	8272.1.1 = {
+		trait = wrathful
+		trait = authoritative
+		trait = brave
+		trait = arrogant
+	}
 	8274.1.1 = {
 		effect = { 
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Dustin_46 } # Rodrik Dustin
@@ -109,10 +115,6 @@ Stark_2 = {
 	}
 	8278.1.1 = {
 		trait = lifestyle_blademaster
-		trait = wrathful
-		trait = authoritative
-		trait = brave
-		trait = arrogant
 		trait = strong
 		effect = {
 			if = {
@@ -1325,12 +1327,10 @@ Stark_hh_4 = {
 	8262.1.1 = { employer = Stark_1 } # Rickard Stark
 	8282.9.15 = {
 		employer = Stark_3 # Eddard Stark
-		effect = {
-			title:c_winterfell.holder = {
-				appoint_court_position = {
-					recipient = ROOT
-					court_position = master_of_horse_court_position # Master of Horse at Winterfell
-				}
+		effect = { # Master of Horse of Winterfell
+			agot_appoint_as_court_position_for_castle_history_effect = { 
+				CASTLE = title:c_winterfell 
+				POSITION = master_of_horse_court_position
 			}
 		}
 	}
@@ -1608,7 +1608,6 @@ Stark_hh_13 = {
 	trait = patient
 	trait = diligent
 	trait = zealous
-	# trait = wildling # AGOT TODO trait
 	trait = rowdy
 	
 	disallow_random_traits = yes 
@@ -1870,12 +1869,20 @@ Stark_hh_23 = {
 	dna = Stark_hh_23
 	female = yes
 
+	martial = 1
 	health = 12
 
 	religion = old_gods_south
 	culture = northman
 
 	trait = education_diplomacy_2
+	trait = calm
+	trait = diligent
+	trait = humble
+	trait = compassionate
+	trait = charming
+	
+	disallow_random_traits = yes 	
 
 	8197.1.1 = {
 		birth = yes
@@ -3435,7 +3442,7 @@ Umber_19 = {
 			}
 		}
 	}
-	8275.1.1 = { death = { death_reason = death_froze_to_death } }
+	8275.1.1 = { death = { death_reason = death_hypothermia } }
 }
 Umber_20 = {
 	name = Finn # Semi-canon
@@ -5279,9 +5286,9 @@ Cassel_3 = {
 	8282.9.15 = {
 		employer = Stark_3 # Eddard Stark
 		effect = { # Master-at-arms at Winterfell
-			agot_appoint_as_court_position_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_winterfell 
-				POSITION = master_at_arms_court_position
+				POSITION = councillor_marshal
 			}
 		}
 	}
@@ -12331,9 +12338,9 @@ Degore_1 = {
 	}
 	8299.1.1 = {
 		effect = { # Master-at-arms at Ironrath
-			agot_appoint_as_court_position_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:c_ironrath 
-				POSITION = master_at_arms_court_position
+				POSITION = councillor_marshal
 			}
 		}
 	}
