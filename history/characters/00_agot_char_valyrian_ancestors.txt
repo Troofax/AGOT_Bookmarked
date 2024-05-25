@@ -3017,26 +3017,38 @@ Targaryen_68 = {
 		effect = {
 			# add_character_modifier = grandchild_of_incest # AGOT TODO
 			add_character_flag = potential_targ_lunatic
+			clear_traits = yes # Character dead as a child
+			add_trait = intellect_good_1
+			add_trait = beauty_good_2
+			add_trait = charming
 		}
 	}
 	8120.1.1 = {
-		trait = vengeful
-		trait = gregarious
+		# trait = vengeful
+		# trait = gregarious
 		effect = {
+			add_trait = vengeful
+			add_trait = gregarious
 			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Hightower_92 } # Ormund Hightower
 		}
 	}
 	8127.1.1 = {
-		trait = dragon_rider # Tessarion (C)
-		trait = humble
-		trait = brave
-		employer = Targaryen_60 # Viserys I Targaryen
-	}
-	8129.3.3 = { employer = Targaryen_65 } # Aegon II Targaryen
-	8130.1.20 = {
-		trait = knight
-		trait = education_martial_prowess_2
+		# trait = dragon_rider # Tessarion (C)
+		# trait = humble
+		# trait = brave
+		# trait = education_martial_prowess_2
+		employer = Hightower_92 # Ormund Hightower
 		effect = {
+			add_trait = dragon_rider # Tessarion (C)
+			add_trait = humble
+			add_trait = brave
+			add_trait = education_martial_prowess_2			
+		}
+	}
+	8130.1.20 = {
+		# trait = knight
+		effect = {
+			add_trait = knight
 			agot_knighted_char_history_effect = { KNIGHT = character:Hightower_92 } # Ormund Hightower
 		}
 		give_nickname = nick_the_daring
@@ -3188,7 +3200,7 @@ Targaryen_74 = {
 	}
 }
 ### Issue of Rhaenyra
-Targaryen_75 = {
+Targaryen_75 = { 
 	name = Jacaerys # Canon
 	dynasty = dynn_Velaryon 
 	#dna = Targaryen_75
@@ -3215,7 +3227,18 @@ Targaryen_75 = {
 
 	8114.11.29 = { 
 		birth = yes
-		effect = { set_real_father = character:Strong_30 } # Harwin Strong
+		effect = { 
+			set_real_father = character:Strong_30 # Harwin Strong
+			clear_traits = yes # Character dead as a child
+			add_trait = intellect_good_1
+			add_trait = beauty_good_1
+			add_trait = strong
+			add_trait = honorable
+			add_trait = diligent
+			add_trait = trusting 
+			add_trait = disputed_heritage
+			add_trait = charming
+		}
 		# AGOT Bookmarked Added
 		add_character_flag = do_not_assign_strong_seed
 		make_trait_inactive = brown_eyes
@@ -3226,10 +3249,17 @@ Targaryen_75 = {
 			agot_safe_betrothal_history_effect = { TARGET = character:Targaryen_69 } # Baela Targaryen
 		}
 	}
-	# 8123.10.1 = { trait = squire } # AGOT TODO trait
+	8123.10.1 = { 
+		# trait = squire # AGOT TODO trait	
+		# effect = { add_trait = squire } 
+	}
 	8129.1.1 = {
 		trait = dragon_rider # Vermax (C)
 		trait = gregarious
+		effect = {
+			add_trait = dragon_rider # Vermax (C)
+			add_trait = gregarious
+		}
 	}
 	8129.5.1 = {
 		effect = { 
@@ -3268,7 +3298,15 @@ Targaryen_76 = {
 	
 	8115.10.3 = {
 		birth = yes
-		effect = { set_real_father = character:Strong_30 } # Harwin Strong
+		effect = { 
+			set_real_father = character:Strong_30 # Harwin Strong
+			clear_traits = yes # Character dead as a child
+			add_trait = beauty_good_1
+			add_trait = strong
+			add_trait = diligent
+			add_trait = disputed_heritage
+			add_trait = curious
+		}
 		# AGOT Bookmarked Added
 		add_character_flag = do_not_assign_strong_seed
 		make_trait_inactive = brown_eyes
@@ -3279,12 +3317,23 @@ Targaryen_76 = {
 			agot_safe_betrothal_history_effect = { TARGET = character:Targaryen_70 } # Rhaena Targaryen
 		}
 	}
-	# 8123.11.1 = { trait = squire } # AGOT TODO trait
-	8126.6.1 = { trait = trusting }
+	8123.11.1 = { 
+		# trait = squire # AGOT TODO trait	
+		# effect = { add_trait = squire } 
+	}
+	8126.6.1 = { 
+		trait = trusting 
+		effect = { add_trait = trusting }
+	}
 	8129.1.1 = {
 		trait = dragon_rider # Arrax (C)
 		trait = brave
 		trait = honest
+		effect = {
+			add_trait = dragon_rider # Arrax (C)
+			add_trait = brave
+			add_trait = honest			
+		}
 	}
 	8129.4.10 = {
 		death = {
@@ -3315,7 +3364,14 @@ Targaryen_77 = {
 	
 	8117.3.14 = {
 		birth = yes
-		effect = { set_real_father = character:Strong_30 } # Harwin Strong
+		effect = { 
+			set_real_father = character:Strong_30 # Harwin Strong
+			clear_traits = yes # Character dead as a child
+			add_trait = beauty_good_1
+			add_trait = strong
+			add_trait = disputed_heritage
+			add_trait = rowdy
+		}
 		# AGOT Bookmarked Added
 		add_character_flag = do_not_assign_strong_seed
 		make_trait_inactive = brown_eyes
@@ -3324,9 +3380,19 @@ Targaryen_77 = {
 	8123.4.1 = { 
 		trait = brave 
 		trait = impatient
+		effect = {
+			add_trait = brave 
+			add_trait = impatient
+		}
 	}
-	8125.4.1 = { trait = ambitious }
-	# 8126.9.1 = { trait = squire } # AGOT TODO trait
+	8125.4.1 = { 
+		trait = ambitious 
+		effect = { add_trait = ambitious }
+	}
+	8126.9.1 = { 
+		# trait = squire # AGOT TODO trait	
+		# effect = { add_trait = squire } 
+	}
 	8130.4.1 = {
 		effect = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Grafton_27 } # Gawen Grafton
@@ -4607,7 +4673,7 @@ Targaryen_98 = {
 
 	father = Targaryen_88
 	mother = 30509011 # Merry Megette
-	
+
 	trait = education_learning_1
 
 	8155.10.1 = { 
@@ -4643,7 +4709,7 @@ Targaryen_99 = {
 
 	father = Targaryen_88
 	mother = 30509011 # Merry Megette
-	
+
 	trait = education_learning_1
 
 	8156.9.1 = { 
@@ -4679,7 +4745,7 @@ Targaryen_100 = {
 
 	father = Targaryen_88
 	mother = 30509011 # Merry Megette
-	
+
 	trait = education_learning_1
 
 	8157.8.1 = { 
@@ -4715,7 +4781,7 @@ Targaryen_101 = {
 
 	father = Targaryen_88
 	mother = 30509011 # Merry Megette
-	
+
 	trait = education_learning_1
 
 	8158.7.1 = { 
@@ -4991,6 +5057,7 @@ Targaryen_95 = {
 		give_nickname = nick_bittersteel
 		trait = unyielding_defender
 		trait = organizer
+		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_95 COA_KEY = Bittersteel_personal_coa }
 	}
 	8190.1.1 = { employer = Targaryen_94 } # Daemon Blackfyre
 	8194.6.1 = { add_spouse = Blackfyre_3 } # Calla Blackfyre
@@ -5975,9 +6042,9 @@ Targaryen_124 = {
 	trait = content
 	trait = trusting
 	trait = pensive
-	
+
 	disallow_random_traits = yes
-	
+
 	give_nickname = nick_the_simple
 
 	8222.1.1 = { birth = yes }
@@ -6485,7 +6552,7 @@ Blackfyre_5 = {
 	trait = dragon_dreams 
 	trait = charming
 	give_nickname = nick_the_younger
-	
+
 	disallow_random_traits = yes
 	
 	8188.1.1 = { birth = yes }
@@ -7276,6 +7343,7 @@ White_1 = {
 
 	8091.1.1 = {
 		birth = yes
+		effect = { make_trait_inactive = neutral_silver_hair }
 		culture = westerosi_valyrian
 	}
 	8105.9.10 = { employer = Targaryen_63 } # Rhaenyra Targaryen
@@ -7332,7 +7400,14 @@ Truefyre_1 = {
 	8115.1.1 = {
 		birth = yes
 		culture = crownlander
-		effect = { set_real_father = character:Targaryen_60 } # Viserys Targaryen
+		effect = { 
+			set_real_father = character:Targaryen_60 # Viserys I Targaryen
+			clear_traits = yes # Character dead as a child
+			add_trait = brave
+			add_trait = ambitious
+			add_trait = bossy
+			add_trait = bastard
+		}
 	}
 	8125.1.1 = {
 		effect = {
@@ -7357,9 +7432,6 @@ Truefyre_1 = {
 	8130.10.10 = { dynasty = dynn_Truefyre }
 	8130.12.25 = {
 		trait = knight
-		effect = {
-			agot_knighted_char_history_effect = { KNIGHT = character:Kingsguard_6 } # Marston Waters
-		}
 		death = {
 			death_reason = death_execution
 			killer = Targaryen_65 # Aegon II Targaryen
@@ -9791,6 +9863,7 @@ Celtigar_33 = {
 	trait = wrathful
 	trait = gregarious
 	trait = brave
+	trait = humble
 	trait = rowdy
 	
 	disallow_random_traits = yes
@@ -10203,7 +10276,7 @@ Scales_6 = {
 
 	religion = valyrian
 	culture = westerosi_valyrian
-	
+
 	father = Scales_23
 
 	7846.1.1 = { birth = yes }
@@ -10346,7 +10419,7 @@ Scales_20 = {
 	8048.1.1 = {
 		effect = { # Master-at-arms at Dragonstone
 			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:c_dragonstone 
+				CASTLE = title:c_dragonstone
 				POSITION = councillor_marshal
 			}
 		}
@@ -11016,6 +11089,10 @@ Kingsguard_4 = {
 	trait = education_martial_2
 	trait = just
 	trait = brave
+	trait = diligent
+	trait = charming
+	
+	disallow_random_traits = yes
 
 	8030.1.1 = { birth = yes }
 	8046.1.1 = { give_nickname = nick_the_woodcock }
@@ -11047,6 +11124,10 @@ Kingsguard_5 = {
 	trait = education_martial_3
 	trait = honorable
 	trait = brave
+	trait = stubborn
+	trait = charming
+	
+	disallow_random_traits = yes
 
 	7987.1.1 = { birth = yes }
 	8002.1.1 = {
@@ -13617,6 +13698,10 @@ Silver_Denys_2 = {
 	trait = education_learning_3
 	trait = callous
 	trait = diligent
+	trait = content
+	trait = curious
+	
+	disallow_random_traits = yes
 
 	8114.1.1 = { birth = yes }
 	8130.1.1 = {
@@ -13775,7 +13860,7 @@ Knight_Kings_Landing_8 = {
 	trait = ambitious
 	trait = gregarious
 	trait = curious
-	
+
 	disallow_random_traits = yes
 
 	8175.1.1 = { birth = yes }
@@ -13835,9 +13920,13 @@ Targaryen_rs_2 = {
 	religion = the_seven_main
 	culture = riverlander
 
+	trait = beauty_good_2
 	trait = compassionate
 	trait = eccentric
-	trait = beauty_good_2
+	trait = gregarious
+	trait = charming
+
+	disallow_random_traits = yes
 
 	give_nickname = nick_of_oldstones
 	

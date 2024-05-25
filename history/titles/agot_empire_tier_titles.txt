@@ -5,12 +5,6 @@ e_the_iron_throne = {
 		holder = Targaryen_27
 		effect = {
 			set_variable = kingsguard
-		}
-	}
-	7999.4.1 = {
-		holder = Targaryen_27	 # Aegon I 'the Conqueror'
-		#law = slavery_0
-		effect = { # AGOT TODO
 			agot_set_empire_tier_realm_paramountcy = yes
 			if = {	# Set Court Language to Common
 				limit = {
@@ -25,11 +19,32 @@ e_the_iron_throne = {
 					}
 				}
 			}
+		}
+	}
+	# AGOT Bookmarked Disabled
+	# 7999.4.1 = {
+		# holder = Targaryen_27	 # Aegon I 'the Conqueror'
+		#law = slavery_0
+		# effect = { # AGOT TODO
+			# agot_set_empire_tier_realm_paramountcy = yes
+			# if = {	# Set Court Language to Common
+				# limit = {
+					# exists = holder
+					# has_dlc_feature = royal_court
+				# }
+				# holder = {
+					# set_court_language = language_common
+					# if = {
+						# limit = { NOT = { knows_court_language_of = this } }
+						# learn_court_language_of = this
+					# }
+				# }
+			# }
 			# set_global_flag = e_iron_throne_created
 			# set_title_flag = aegons_crown #record which crowns have been forged for crown forgin event
 			# holder_scope = { add_character_flag = iron_throne_crown_event }
-		}
-	}
+		# }
+	# }
 	# 8001.6.1 = { # AGOT TODO
 		# reset_name = yes
 		# reset_adjective = yes
@@ -227,6 +242,12 @@ e_dorne = {
 	}
 	7940.1.1 = {
 		holder = Martell_53 # Meria (C)
+	}
+	# AGOT Bookmarked Added
+	7998.1.1 = {
+		effect = {
+			agot_set_empire_tier_realm_paramountcy = yes
+		}
 	}
 	8013.6.1 = {
 		holder = Martell_54 # Nymor (C)
@@ -612,6 +633,12 @@ e_the_north = {
 	7988.1.1 = {
 		holder = Stark_66 # Torrhen (C)
 	}
+	# AGOT Bookmarked Added
+	7998.1.1 = {
+		effect = {
+			agot_set_empire_tier_realm_paramountcy = yes
+		}
+	}
 	8000.12.1 = {
 		holder = 0
 	}
@@ -855,6 +882,12 @@ e_the_reach = {
 	7980.5.8 = {
 		holder = Gardener_95 #Mern IX
 	}
+	# AGOT Bookmarked Added
+	7998.1.1 = {
+		effect = {
+			agot_set_empire_tier_realm_paramountcy = yes
+		}
+	}
 	8000.5.1 = {
 		holder = 0
 	}
@@ -1078,6 +1111,12 @@ e_the_riverlands = {
 	}
 	7960.1.1 = {
 		holder = Hoare_31 # Harren (C)
+	}
+	# AGOT Bookmarked Added
+	7998.1.1 = {
+		effect = {
+			agot_set_empire_tier_realm_paramountcy = yes
+		}
 	}
 	7999.8.15 = {
 		holder = 0
@@ -1327,6 +1366,12 @@ e_the_stormlands = {
 	7947.1.1 = {
 		holder = Durrandon_87
 	}
+	# AGOT Bookmarked Added
+	7998.1.1 = {
+		effect = {
+			agot_set_empire_tier_realm_paramountcy = yes
+		}
+	}
 	7999.9.10 = {
 		holder = Durrandon_88 # Argella
 	}
@@ -1441,6 +1486,12 @@ e_the_vale = {
 	}
 	7995.1.1 = {
 		holder = Arryn_61 #Ronnel Arryn - The Arryn that bent the knee. Last person to wear the Falcon Crown.
+	}
+	# AGOT Bookmarked Added
+	7998.1.1 = {
+		effect = {
+			agot_set_empire_tier_realm_paramountcy = yes
+		}
 	}
 	8000.12.15 = {
 		holder = 0
@@ -1571,6 +1622,12 @@ e_the_westerlands = {
 	}
 	7992.1.1 = {
 		holder = Lannister_79 #Loren the Last (C)
+	}
+	# AGOT Bookmarked Added
+	7998.1.1 = {
+		effect = {
+			agot_set_empire_tier_realm_paramountcy = yes
+		}
 	}
 	8000.5.2 = {
 		holder = 0

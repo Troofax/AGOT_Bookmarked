@@ -195,6 +195,7 @@
 	culture = westerosi_valyrian
 	religion = the_seven_main
 	holding = castle_holding
+	special_building = agot_claw_isle_01
 	7998.1.1 = {
 		buildings = { castle_03 hill_forts_03 stables_03 }
 	}

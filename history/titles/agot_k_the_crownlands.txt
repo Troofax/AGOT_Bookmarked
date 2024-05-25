@@ -1,12 +1,14 @@
 ﻿k_the_crownlands = {
 	# AGOT Bookmarked Added
-	7998.1.2 = {
-		holder = 0
-	}
-	7999.4.1 = {
+	7998.1.1 = {
 		holder = Targaryen_27
 		liege = e_the_iron_throne
 	}
+	# AGOT Bookmarked Disabled
+	# 7999.4.1 = {
+		# holder = Targaryen_27
+		# liege = e_the_iron_throne
+	# }
 	8037.9.9 = {
 		holder = Targaryen_30
 	}
@@ -80,7 +82,7 @@ d_kings_landing = {
 		de_jure_liege = k_the_riverlands
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = k_the_crownlands
 	}
 	7999.4.1 = {
@@ -269,7 +271,7 @@ c_kings_landing = {
 }
 b_goldguard_heights = {
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		holder = 0
 	}
 	7999.4.1 = {
@@ -408,7 +410,7 @@ c_blackstripe = {
 		holder = Durrandon_87
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = d_kings_landing
 	}
 	7999.9.10 = {
@@ -607,7 +609,7 @@ c_briarcrest = {
 		holder = Greenhill_9
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = d_kings_landing
 	}
 	8000.5.1 = {
@@ -815,7 +817,7 @@ c_wings_pass = {
 		holder = Belgrave_11
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = d_kings_landing
 	}
 	7999.9.15 = {
@@ -883,7 +885,7 @@ d_crackclaw_point = {
 		holder = 0
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = k_the_crownlands
 	}
 	# AGOT Bookmarked Disabled
@@ -1447,7 +1449,7 @@ d_deerfield = {
 		holder = Buckwell_14
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = k_the_crownlands
 	}
 	7999.6.1 = {
@@ -1816,7 +1818,7 @@ d_duskendale = {
 		holder = Darklyn_5
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = k_the_crownlands
 	}
 	7999.6.1 = {
@@ -2341,7 +2343,7 @@ d_hayford = {
 		holder = Hayford_8
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = k_the_crownlands
 	}
 	7999.5.1 = {
@@ -2666,7 +2668,7 @@ d_masseys_hook = {
 		holder = Massey_25
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = k_the_crownlands
 	}
 	7999.4.1 = {
@@ -3206,7 +3208,7 @@ d_rooks_rest = {
 		holder = Staunton_9
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = k_the_crownlands
 	}
 	7999.6.1 = {
@@ -3489,7 +3491,7 @@ d_rosby = {
 		holder = Rosby_10
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = k_the_crownlands
 	}
 	7999.5.1 = {
@@ -3909,7 +3911,7 @@ d_stokeworth = {
 		holder = Stokeworth_13
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = k_the_crownlands
 	}
 	7999.5.1 = {
@@ -4965,7 +4967,7 @@ d_wendwater_forest = {
 		holder = Farring_11
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = k_the_crownlands
 	}
 	7999.9.15 = {

@@ -71,7 +71,7 @@ Stark_1 = {
 	}
 	8282.9.15 = {
 		death = {
-			death_reason = death_wildfire_killer # death_execution_burning # Burned alive in his armor
+			death_reason = death_wildfire_killer # Burned alive in his armor
 			killer = Targaryen_1 # Aerys II Targaryen
 		}
 	}
@@ -661,7 +661,11 @@ Stark_7 = {
 			}
 		}
 	}
-	8299.1.1 = {
+	8299.2.1 = { trait = unyielding_defender }
+	8299.2.11 = {
+		effect = { add_pressed_claim = title:e_the_north }
+	}
+	8299.7.1 = {
 		employer = Rayder_1 # Mance Rayder
 		effect = { 
 			if = {
@@ -669,10 +673,6 @@ Stark_7 = {
 				set_relation_lover = character:574349 # Ygritte
 			}
 		}
-	}
-	8299.2.1 = { trait = unyielding_defender }
-	8299.2.11 = {
-		effect = { add_pressed_claim = title:e_the_north }
 	}
 	8299.11.5 = {
 		effect = {
@@ -685,6 +685,7 @@ Stark_7 = {
 			}
 		}
 	}
+	8300.1.1 = { employer = Slynt_1 } # Janos Slynt
 	8300.3.1 = {
 		effect = {
 			if = { 
@@ -828,16 +829,17 @@ Stark_Dummy_8 = {
 	8300.1.1 = { # Replaces Sansa Stark, pretending to be Alayne
 		employer = Baelish_2 # Petyr Baelish
 		dynasty_house = house_BaelishHH # House Baelish of Harrenhal
-		trait = bastard
 		give_nickname = nick_stone
 		effect = {
-			copy_traits = character:Stark_8 # Sansa Stark
 			copy_inheritable_appearance_from = character:Stark_8 # Sansa Stark
+			clear_traits = yes
+			copy_traits = character:Stark_8 # Sansa Stark
 			change_first_name = Alayne
+			add_trait = bastard
 			set_real_father = character:Stark_3 # Eddard Stark
 			set_real_mother = character:Tully_4 # Catelyn Tully
-			agot_set_as_ward_history_effect = { GUARDIAN = character:Baelish_2 } # Petyr Baelish
 			set_father = character:Baelish_2
+			agot_set_as_ward_history_effect = { GUARDIAN = character:Baelish_2 } # Petyr Baelish
 			if = { 
 				limit = { character:Frey_1 = { is_alive = yes } }
 				add_opinion = {
@@ -860,10 +862,6 @@ Stark_Dummy_8 = {
 					target = character:Bolton_1 # Roose Bolton
 				}
 			}
-			# Seems that traits aren't copied properly, make sure these do not repeat
-			# remove_trait = direwolf
-			remove_trait = trusting
-			remove_trait = arrogant
 		}
 	}
 }
@@ -886,6 +884,7 @@ Stark_9 = {
 	father = Stark_3
 	mother = Tully_4
 	
+	trait = education_intrigue_4
 	trait = rowdy
 
 	disallow_random_traits = yes
@@ -948,9 +947,10 @@ Stark_Dummy_9 = {
 	}
 	8298.10.28 = { # Replaces Arya Stark, pretending to be many people
 		effect = {
-			add_intrigue_skill = 2
-			copy_traits = character:Stark_9 # Arya Stark
 			copy_inheritable_appearance_from = character:Stark_9 # Arya Stark
+			clear_traits = yes
+			copy_traits = character:Stark_9 # Arya Stark
+			add_intrigue_skill = 2
 			change_first_name = Arry
 			agot_set_as_ward_history_effect = { GUARDIAN = character:121007 } # Yoren
 			set_real_father = character:Stark_3 # Eddard Stark
@@ -1068,8 +1068,9 @@ Stark_Dummy_10 = {
 	}
 	8299.6.29 = { # Replaces Brandon Stark
 		effect = {
-			copy_traits = character:8059 # Brandon Stark
 			copy_inheritable_appearance_from = character:8059 # Brandon Stark
+			clear_traits = yes
+			copy_traits = character:8059 # Brandon Stark
 			change_first_name = Brandon
 			set_real_father = character:Stark_3 # Eddard Stark
 			set_real_mother = character:Tully_4 # Catelyn Tully
@@ -1190,8 +1191,9 @@ Stark_Dummy_11 = {
 	8299.6.29 = { # Replaces Rickon Stark
 		employer = Magnar_1 # Hagen Magnar
 		effect = {
-			copy_traits = character:Stark_11 # Rickon Stark
 			copy_inheritable_appearance_from = character:Stark_11 # Rickon Stark
+			clear_traits = yes
+			copy_traits = character:Stark_11 # Rickon Stark
 			change_first_name = Rickon
 			set_real_father = character:Stark_3 # Eddard Stark
 			set_real_mother = character:Tully_4 # Catelyn Tully
@@ -1319,6 +1321,10 @@ Stark_hh_4 = {
 	trait = education_martial_2
 	trait = diligent
 	trait = honorable
+	trait = zealous
+	trait = curious
+	
+	disallow_random_traits = yes
 
 	8248.1.1 = {
 		birth = yes
@@ -2609,7 +2615,7 @@ Marsh_5 = {
 		effect = { # First Steward of the Night's Watch
 			agot_appoint_as_councillor_for_castle_history_effect = { 
 				CASTLE = title:k_the_wall 
-				POSITION = councillor_steward
+				POSITION = councillor_castellan
 			}
 		}
 	}
@@ -3693,8 +3699,8 @@ Karstark_4 = {
 
 	father = Karstark_1
 
-	trait = wrathful
 	trait = education_martial_2
+	trait = wrathful
 	trait = arrogant
 	trait = callous
 	trait = bossy
@@ -3705,7 +3711,7 @@ Karstark_4 = {
 	8266.1.1 = { add_spouse = Karstark_rs_1 }
 	8299.8.1 = {
 		death = {
-			death_reason = death_execution # Executed for killing hostages
+			death_reason = death_execution # Executed for killing prisoners
 			killer = Stark_6 # Robb Stark
 		}
 	}
@@ -4018,6 +4024,10 @@ Karstark_16 = {
 	trait = education_martial_2
 	trait = brave
 	trait = wrathful
+	trait = diligent
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8275.1.1 = { birth = yes }
 	8299.1.16 = { # Battle of the Green Fork
@@ -4740,6 +4750,10 @@ Bolton_hh_5 = {
 
 	trait = education_martial_1
 	trait = sadistic
+	trait = arrogant
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8275.1.1 = {
 		birth = yes
@@ -5144,8 +5158,9 @@ Poole_Dummy_3 = {
 	8299.11.5 = { # Replaces Jeyne Poole, pretending to be Arya Stark
 		dynasty = dynn_Stark
 		effect = {
-			copy_traits = character:Poole_3 # Jeyne Poole
 			copy_inheritable_appearance_from = character:Poole_3 # Jeyne Poole
+			clear_traits = yes
+			copy_traits = character:Poole_3 # Jeyne Poole
 			change_first_name = Arya
 			set_father = character:Stark_3 # Eddard Stark
 			set_mother = character:Tully_4 # Catelyn Tully
@@ -5287,7 +5302,7 @@ Cassel_3 = {
 		employer = Stark_3 # Eddard Stark
 		effect = { # Master-at-arms at Winterfell
 			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:c_winterfell 
+				CASTLE = title:c_winterfell
 				POSITION = councillor_marshal
 			}
 		}
@@ -5457,12 +5472,15 @@ Cassel_5 = {
 	religion = old_gods_south
 	culture = northman
 
+	father = Cassel_3
+	mother = Cassel_rs_3
+
 	trait = compassionate
 	trait = gregarious
 	trait = humble
-
-	father = Cassel_3
-	mother = Cassel_rs_3
+	trait = charming
+	
+	disallow_random_traits = yes
 
 	8288.1.1 = { birth = yes }
 	8299.6.29 = { # Sack of Winterfell
@@ -5647,6 +5665,11 @@ Cerwyn_1 = {
 	trait = education_martial_1
 	trait = compassionate
 	trait = honorable
+	trait = calm
+	trait = ambitious
+	trait = charming
+	
+	disallow_random_traits = yes
 
 	8244.1.1 = { birth = yes }
 	8260.1.1 = { add_spouse = Cerwyn_rs_1 }
@@ -5740,6 +5763,10 @@ Cerwyn_3 = {
 
 	trait = gregarious
 	trait = brave
+	trait = honest
+	trait = bossy
+	
+	disallow_random_traits = yes
 
 	8285.1.1 = { birth = yes }
 	8295.1.1 = {
@@ -6527,6 +6554,10 @@ Flint_15 = {
 	trait = education_martial_2
 	trait = brave
 	trait = zealous
+	trait = stubborn
+	trait = bossy
+	
+	disallow_random_traits = yes
 
 	8264.1.1 = { birth = yes }
 }
@@ -6803,6 +6834,11 @@ Locke_4 = {
 	trait = education_diplomacy_3
 	trait = gluttonous
 	trait = honest
+	trait = brave
+	trait = compassionate
+	trait = bossy
+	
+	disallow_random_traits = yes
 
 	8271.1.1 = { birth = yes }
 	8291.1.1 = { employer = Manderly_6 } # Wyman Manderly
@@ -6821,6 +6857,10 @@ Locke_5 = {
 	trait = education_diplomacy_1
 	trait = zealous
 	trait = compassionate
+	trait = forgiving
+	trait = charming
+	
+	disallow_random_traits = yes
 
 	8275.1.1 = { birth = yes }
 	8299.6.29 = {
@@ -9198,6 +9238,9 @@ Ryswell_8 = {
 	trait = ambitious
 	trait = arrogant
 	trait = rude
+	trait = bossy
+	
+	disallow_random_traits = yes 
 
 	8265.1.1 = { birth = yes }
 }
@@ -9256,6 +9299,11 @@ Ryswell_11 = {
 
 	trait = arrogant
 	trait = ambitious
+	trait = wrathful
+	trait = stubborn
+	trait = bossy
+	
+	disallow_random_traits = yes
 
 	8272.1.1 = { birth = yes }
 }
@@ -9271,6 +9319,11 @@ Ryswell_12 = {
 
 	trait = arrogant
 	trait = ambitious
+	trait = greedy
+	trait = vengeful
+	trait = bossy
+	
+	disallow_random_traits = yes
 
 	8274.1.1 = { birth = yes }
 }
@@ -9286,6 +9339,11 @@ Ryswell_13 = {
 
 	trait = arrogant
 	trait = ambitious
+	trait = impatient
+	trait = fickle
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8276.1.1 = { birth = yes }
 }
@@ -9549,7 +9607,9 @@ Stout_1 = {
 	8252.6.1 = { employer = Buckler_41 } # Kyle Buckler
 	8276.1.1 = { employer = Qorgyle_2 } # Jantos Qorgyle
 	8288.1.1 = { employer = Mormont_2 } # Jeor Mormont
-	8290.1.1 = { trait = incapable }
+	8290.1.1 = { 
+		effect = { add_trait = incapable } 
+	}
 	8299.8.8 = { employer = Slynt_1 } # Janos Slynt
 	8300.3.1 = { employer = Stark_7 } # Jon Snow
 }
@@ -10037,7 +10097,9 @@ Ryder_2 = {
 
 	8252.1.1 = { birth = yes }
 	8270.1.1 = { add_spouse = Ryder_rs_2 }
-	8295.1.1 = { trait = incapable }
+	8295.1.1 = { 
+		effect = { add_trait = incapable } 
+	}
 }
 Ryder_rs_2 = {
 	name = Marna
@@ -11071,6 +11133,10 @@ Whitehill_2 = {
 
 	trait = arrogant
 	trait = brave
+	trait = compassionate
+	trait = charming
+	
+	disallow_random_traits = yes
 
 	8271.1.1 = { birth = yes }
 	8297.1.1 = {
@@ -11120,7 +11186,6 @@ Whitehill_4 = {
 	mother = Whitehill_rs_1
 
 	trait = arrogant
-	trait = sadistic
 
 	8276.1.1 = { birth = yes }
 	8297.1.1 = { employer = Bolton_1 } # Roose Bolton
@@ -12339,7 +12404,7 @@ Degore_1 = {
 	8299.1.1 = {
 		effect = { # Master-at-arms at Ironrath
 			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:c_ironrath 
+				CASTLE = title:c_ironrath
 				POSITION = councillor_marshal
 			}
 		}

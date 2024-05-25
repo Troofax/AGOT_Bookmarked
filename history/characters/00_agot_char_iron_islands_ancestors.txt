@@ -1437,7 +1437,7 @@ Hoare_31 = {
 		}
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		effect = {
 			set_realm_capital = title:c_harrenhal
 		}
@@ -2326,6 +2326,8 @@ Greyjoy_53 = {
 	trait = education_martial_2
 	trait = gregarious
 	trait = gluttonous
+	trait = brave
+	trait = greedy
 	trait = rowdy
 
 	disallow_random_traits = yes
@@ -2365,6 +2367,10 @@ Greyjoy_54 = {
 
 	trait = ambitious
 	trait = sadistic
+	trait = greedy
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8115.1.1 = { birth = yes }
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2388,7 +2394,11 @@ Greyjoy_55 = {
 	mother = Greyjoy_rs_12
 
 	trait = ambitious
-	trait = sadistic
+	trait = greedy
+	trait = vengeful
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8116.1.1 = { birth = yes }
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2411,8 +2421,12 @@ Greyjoy_56 = {
 	father = Greyjoy_52
 	mother = Greyjoy_rs_12
 
-	trait = ambitious
-	trait = sadistic
+	trait = vengeful
+	trait = wrathful
+	trait = greedy
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8117.1.1 = { birth = yes }
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2437,7 +2451,11 @@ Greyjoy_57 = {
 	mother = Greyjoy_rs_13
 
 	trait = ambitious
-	trait = sadistic
+	trait = vengeful
+	trait = wrathful
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8116.1.1 = { birth = yes }
 	8130.1.1 = {
@@ -2472,8 +2490,12 @@ Greyjoy_58 = {
 	father = Greyjoy_53
 	mother = Greyjoy_rs_13
 
-	trait = ambitious
+	trait = brave
+	trait = greedy
 	trait = sadistic
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8117.1.1 = { birth = yes }
 	8130.1.1 = {
@@ -2737,6 +2759,10 @@ Greyjoy_60 = {
 	mother = Greyjoy_rs_11
 
 	trait = education_martial_2
+	trait = wrathful
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8114.1.1 = { birth = yes }
 	8127.1.1 = {
@@ -2768,6 +2794,10 @@ Greyjoy_61 = {
 
 	trait = ambitious
 	trait = sadistic
+	trait = wrathful
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8115.1.1 = { birth = yes }
 	8134.5.1 = {
@@ -2788,8 +2818,12 @@ Greyjoy_62 = {
 	father = Greyjoy_51
 	mother = Greyjoy_rs_11
 
-	trait = ambitious
-	trait = sadistic
+	trait = greedy
+	trait = callous
+	trait = vengeful
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8116.1.1 = { birth = yes }
 	8134.5.1 = {
@@ -3178,7 +3212,7 @@ Greyjoy_hh_20 = {
 	8142.1.1 = {
 		effect = { # Master-at-arms at Pyke
 			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:c_pyke 
+				CASTLE = title:c_pyke
 				POSITION = councillor_marshal
 			}
 		}
@@ -3325,6 +3359,14 @@ Greyjoy_81 = {
 
 	father = Greyjoy_75
 	mother = Wynch_21 # Shera Wynch
+
+	trait = temperate
+	trait = stubborn
+	trait = wrathful
+	trait = paranoid
+	trait = bossy
+	
+	disallow_random_traits = yes
 
 	8138.1.1 = { birth = yes }
 	8193.1.1 = { death = yes }
@@ -3806,6 +3848,7 @@ Goodbrother_51 = {
 	trait = education_martial_2
 	trait = strong
 	trait = wrathful
+	trait = vengeful
 	trait = rowdy
 
 	disallow_random_traits = yes
@@ -5718,6 +5761,10 @@ Volmark_11 = {
 	trait = education_martial_2
 	trait = ambitious
 	trait = arrogant
+	trait = impatient
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	7960.1.1 = { birth = yes }
 	7990.1.1 = {
@@ -6217,6 +6264,7 @@ Wynch_19 = {
 	trait = education_martial_2
 	trait = intellect_good_1
 	trait = deceitful
+	trait = stubborn
 	trait = pensive
 
 	disallow_random_traits = yes
@@ -8447,7 +8495,7 @@ Stonetree_18 = {
 	8136.1.1 = {
 		effect = { # Master-at-arms at Blacktyde
 			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:c_blacktyde 
+				CASTLE = title:c_blacktyde
 				POSITION = councillor_marshal
 			}
 		}
@@ -10426,7 +10474,7 @@ Orkwood_20 = {
 	8140.1.1 = {
 		effect = { # Master-at-arms at Saltcliffe
 			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:c_saltcliffe 
+				CASTLE = title:c_saltcliffe
 				POSITION = councillor_marshal
 			}
 		}
@@ -12942,6 +12990,7 @@ Drowned_Men_4 = {
 	}
 	8037.9.9 = { # Replaces Lodos
 		effect = {
+			clear_traits = yes
 			copy_traits = character:Drowned_Men_3 # Lodos
 			copy_inheritable_appearance_from = character:Drowned_Men_3 # Lodos
 			change_first_name = Lodos

@@ -264,6 +264,7 @@
 	culture = reachman
 	religion = the_seven_main
 	holding = castle_holding
+	special_building = agot_cider_hall_01
 	duchy_capital_building = archery_ranges_01
 	7998.1.1 = {
 		buildings = { castle_04 curtain_walls_02 regimental_grounds_04 }
@@ -2221,9 +2222,9 @@
 3517 = {
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = {
-			castle_02
-			apiaries_04
+		buildings = { 
+			castle_02 
+			apiaries_04 
 		}
 	}
 }
@@ -2355,8 +2356,8 @@
 3533 = {
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = {
-			castle_01
+		buildings = { 
+			castle_01 
 			apiaries_02
 		}
 	}
@@ -2750,8 +2751,8 @@
 	religion = the_seven_main
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = {
-			castle_02
+		buildings = { 
+			castle_02 
 			apiaries_02
 		}
 	}

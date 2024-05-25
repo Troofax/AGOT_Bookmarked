@@ -354,6 +354,7 @@ Baratheon_3 = {
 			limit = {
 				agot_has_historical_events_trigger = yes
 				NOT = { has_character_flag = rooloo_blocker }
+				NOT = { game_start_date >= 8298.1.1 }
 			}
 			random_list = {
 				0 = {
@@ -1244,7 +1245,7 @@ Baratheon_8 = {
 		}
 	}
 	8299.12.1 = {
-		employer = Bazanne_1 # Errano Bazanne
+		employer = Bazanne_1 # Errano Bazanne, Lys
 		effect = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Estermont_7 } # Andrew Estermont
 			if = {
@@ -1941,7 +1942,7 @@ Melisandre_1 = {
 			# add_trait = slave
 			# agot_safe_set_location_history_effect = { CASTLE = title:k_the_red_priesthood }
 			if = {
-				limit = { NOT = { has_trait = devoted } }
+				limit = { NOT = { has_trait = red_priest } }
 				# d_rhllor = { # AGOT TODO
 					# holder_scope = {
 						# opinion = { who = ROOT modifier = opinion_my_slave }
@@ -1952,7 +1953,7 @@ Melisandre_1 = {
 		}
 	}
 	8284.1.1 = {
-		trait = devoted # Red Priestess
+		trait = red_priest # Red Priestess
 		trait = fire_obsessed
 		trait = witch
 		#trait = former_slave # AGOT TODO trait
@@ -2109,13 +2110,28 @@ Melisandre_1 = {
 
 	religion = the_seven_main
 	culture = stormlander
-
+	
+	trait = education_martial_1
+	
 	8262.1.1 = { birth = yes }
 	8278.1.1 = { trait = knight }
 	8290.1.1 = { give_nickname = nick_the_scrapesword }
 	8299.2.11 = { employer = Baratheon_4 } # Renly Baratheon
 	8299.3.3 = { employer = Baratheon_3 } # Stannis Baratheon
 	8299.7.1 = { employer = Baratheon_5 } # Joffrey Baratheon
+}
+Baratheon_hh_2 = {
+	name = Lewys # Canon, AKA: Lewys the Fishwife
+	
+	religion = the_seven_main
+	culture = stormlander
+	
+	trait = education_martial_1
+	
+	8266.1.1 = { birth = yes }
+	8284.1.1 = { give_nickname = nick_the_fishwife }
+	8284.6.1 = { employer = Baratheon_3 } # Stannis Baratheon
+	8299.12.1 = { employer = Bazanne_1 } # Errano Bazanne, Lys
 }
 
 ###### HOUSE TARTH (id = dynn_Tarth)
@@ -2387,7 +2403,7 @@ Tarth_hh_1 = {
 	8279.1.1 = {
 		effect = { # Master-at-arms at Evenfall Hall
 			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:c_evenfall 
+				CASTLE = title:c_evenfall
 				POSITION = councillor_marshal
 			}
 		}
@@ -3521,10 +3537,13 @@ Rogers_37 = {
 	mother = Stark_126
 
 	trait = education_stewardship_3
+	trait = beauty_good_1
 	trait = compassionate
 	trait = shy
 	trait = curious
-	trait = beauty_good_1
+	trait = pensive
+	
+	disallow_random_traits = yes
 
 	8275.1.1 = { birth = yes }
 	8291.1.1 = { trait = humble }
@@ -4186,7 +4205,7 @@ Wylde_5 = {
 	8270.1.1 = {
 		effect = { # Master-at-arms at Storm's End
 			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:c_storms_end 
+				CASTLE = title:c_storms_end
 				POSITION = councillor_marshal
 			}
 		}
@@ -4364,6 +4383,10 @@ Estermont_1 = {
 
 	trait = patient
 	trait = zealous
+	trait = temperate
+	trait = pensive
+	
+	disallow_random_traits = yes
 
 	8212.1.1 = { birth = yes }
 	8230.1.1 = {
@@ -4490,6 +4513,11 @@ Estermont_4 = {
 	trait = education_martial_3
 	trait = just
 	trait = diligent
+	trait = stubborn
+	trait = arrogant
+	trait = bossy
+	
+	disallow_random_traits = yes
 
 	8248.1.1 = { 
 		birth = yes 
@@ -4727,6 +4755,9 @@ Mertyns_2 = {
 	trait = arrogant
 	trait = diligent
 	trait = vengeful
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8250.1.1 = { birth = yes }
 	8266.1.1 = { trait = knight }
@@ -5511,6 +5542,9 @@ Peasebury_kg = {
 	trait = gluttonous
 	trait = content
 	trait = generous
+	trait = rowdy 
+	
+	disallow_random_traits = yes
 
 	8265.1.1 = { birth = yes }
 	8281.1.1 = {
@@ -6495,6 +6529,10 @@ Seaworth_3 = {
 	trait = education_martial_2
 	trait = brave
 	trait = wrathful
+	trait = impatient
+	trait = rowdy
+	
+	disallow_random_traits = yes
 
 	8276.1.1 = { birth = yes }
 	8284.1.1 = { 
@@ -7240,6 +7278,11 @@ Caron_5 = {
 	trait = education_martial_3
 	trait = brave
 	trait = diligent
+	trait = cynical
+	trait = arrogant
+	trait = bossy
+	
+	disallow_random_traits = yes
 
 	8275.1.1 = { birth = yes }
 	8291.1.1 = { trait = knight }
@@ -8057,7 +8100,6 @@ Dondarrion_2 = {
 		# }
 		trait = scarred
 		trait = temperate
-		trait = patient
 		trait = holy_warrior
 		religion = rhllor
 		trait = faith_warrior # Favored by Rhllor
@@ -8124,11 +8166,14 @@ Dondarrion_44 = {
 	father = Dondarrion_42
 	mother = Dondarrion_p_3
 
+	trait = physique_bad_1
+	trait = beauty_good_1
 	trait = compassionate
 	trait = temperate
 	trait = shy
-	trait = physique_bad_1
-	trait = beauty_good_1
+	trait = pensive
+	
+	disallow_random_traits = yes
 
 	8249.1.1 = { birth = yes }
 	8283.6.1 = { trait = depressed_1 }
@@ -8600,6 +8645,10 @@ Wormwood_2 = {
 
 	trait = arbitrary
 	trait = compassionate
+	trait = forgiving
+	trait = charming
+	
+	disallow_random_traits = yes
 
 	8262.1.1 = { birth = yes }
 }
@@ -8657,6 +8706,9 @@ Wormwood_7 = {
 	trait = lazy
 	trait = humble
 	trait = gregarious
+	trait = charming
+	
+	disallow_random_traits = yes
 
 	8266.1.1 = { birth = yes }
 }

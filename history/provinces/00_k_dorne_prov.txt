@@ -27,7 +27,7 @@
 4939 = {
 	holding = castle_holding
 	7998.1.1 = {
-		buildings = { castle_01 caravanserai_02 }
+		buildings = { castle_01 hospices_03 }
 	}
 	8188.1.1 = {
 		special_building = agot_the_water_gardens_01
