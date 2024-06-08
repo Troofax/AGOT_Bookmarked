@@ -27,6 +27,7 @@
 ##################### b_antyne ####################
 ################## c_myrish_docks - d_myr ##################
 7558 = {
+	special_building = agot_myr_cliffs_01
 	holding = city_holding
 	7998.1.1 = {
 		buildings = {
@@ -42,7 +43,7 @@
 	religion = rhllor
 	holding = castle_holding
 	special_building = agot_myr_01
-	duchy_capital_building = agot_scholastic_guilds_03
+	duchy_capital_building = agot_myr_walls_01
 	7998.1.1 = {
 		buildings = {
 			castle_05 

@@ -2056,6 +2056,7 @@
 ############## c_oldtown - d_oldtown ##############
 3497 = {
 	holding = church_holding
+	special_building = agot_seven_shrines_01
 	7998.1.1 = {
 		buildings = { temple_04 monastic_schools_04 }
 	}

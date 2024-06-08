@@ -3,7 +3,7 @@
 7708 = {
 	culture = pentoshi
 	religion = princely_arbiter
-	duchy_capital_building = tax_assessor_02
+	duchy_capital_building = agot_pentos_walls_01
 	holding = city_holding
 	7998.1.1 = {
 		buildings = {

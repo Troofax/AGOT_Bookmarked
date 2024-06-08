@@ -275,4 +275,8 @@ agot_8299_3_3_acok_scenario_setup = {
 	#	}
 	#}
 	#######
+
+	### CANON CHILDREN STORY CYCLE SETUP ###
+	agot_canon_children_setup_story_cycles_effect = yes
+	######
 }

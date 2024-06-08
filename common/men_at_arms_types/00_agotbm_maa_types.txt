@@ -18,7 +18,7 @@ agotbm_dragons_unit = {
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 140900
 	toughness = 240400
 	pursuit = 82000
@@ -26,7 +26,7 @@ agotbm_dragons_unit = {
 
 	#siege_tier = 5
 	siege_value = 2.0
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -65,7 +65,7 @@ agotbm_balerion_unit = { # Balerion, the Black Dread
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 200000
 	toughness = 300000
 	pursuit = 124000
@@ -73,7 +73,7 @@ agotbm_balerion_unit = { # Balerion, the Black Dread
 
 	#siege_tier = 5
 	siege_value = 5.2 # #1
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -104,7 +104,7 @@ agotbm_vhagar_unit = { # Vhagar, the Queen of All Dragons
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 180000
 	toughness = 240000
 	pursuit = 110000
@@ -112,7 +112,7 @@ agotbm_vhagar_unit = { # Vhagar, the Queen of All Dragons
 
 	#siege_tier = 5
 	siege_value = 4.8 # #2
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -143,7 +143,7 @@ agotbm_meraxes_unit = { # Meraxes, the Silver Sister
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 160000
 	toughness = 230000
 	pursuit = 98000
@@ -151,7 +151,7 @@ agotbm_meraxes_unit = { # Meraxes, the Silver Sister
 
 	#siege_tier = 5
 	siege_value = 3.8 # #7
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -190,7 +190,7 @@ agotbm_vhagar2_unit = { # Vhagar, the Queen of All Dragons
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 180000
 	toughness = 240000
 	pursuit = 110000
@@ -198,7 +198,7 @@ agotbm_vhagar2_unit = { # Vhagar, the Queen of All Dragons
 
 	#siege_tier = 5
 	siege_value = 4.8
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -229,7 +229,7 @@ agotbm_sunfyre_unit = { # Sunfyre, the Golden
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 125000
 	toughness = 140000
 	pursuit = 80000
@@ -237,7 +237,7 @@ agotbm_sunfyre_unit = { # Sunfyre, the Golden
 
 	#siege_tier = 5
 	siege_value = 4.0 # #6
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -268,7 +268,7 @@ agotbm_vermithor_unit = { # Vermithor, the Bronze Fury
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 155000
 	toughness = 220000
 	pursuit = 112000
@@ -276,7 +276,7 @@ agotbm_vermithor_unit = { # Vermithor, the Bronze Fury
 
 	#siege_tier = 5
 	siege_value = 4.4 # #4
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -307,7 +307,7 @@ agotbm_silverwing_unit = { # Silverwing, the Good Queen's Grace
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 170000
 	toughness = 200000
 	pursuit = 92000
@@ -315,7 +315,7 @@ agotbm_silverwing_unit = { # Silverwing, the Good Queen's Grace
 
 	#siege_tier = 5
 	siege_value = 3.6 # #9
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -346,7 +346,7 @@ agotbm_tessarion_unit = { # Tessarion, the Blue Queen
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 120000
 	toughness = 140000
 	pursuit = 72000
@@ -354,7 +354,7 @@ agotbm_tessarion_unit = { # Tessarion, the Blue Queen
 
 	#siege_tier = 5
 	siege_value = 3.0 # #15
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -389,7 +389,7 @@ agotbm_meleys_unit = { # Meleys, the Red Queen
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 150000
 	toughness = 180000
 	pursuit = 142000
@@ -397,7 +397,7 @@ agotbm_meleys_unit = { # Meleys, the Red Queen
 
 	#siege_tier = 5
 	siege_value = 4.2 # #5
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -428,7 +428,7 @@ agotbm_caraxes_unit = { # Caraxes, the Blood Wyrm
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 150000
 	toughness = 180000
 	pursuit = 136000
@@ -436,7 +436,7 @@ agotbm_caraxes_unit = { # Caraxes, the Blood Wyrm
 
 	#siege_tier = 5
 	siege_value = 4.6 # #3
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -467,7 +467,7 @@ agotbm_syrax_unit = { # Syrax, the Queen's Mount
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 145000
 	toughness = 160000
 	pursuit = 90000
@@ -475,7 +475,7 @@ agotbm_syrax_unit = { # Syrax, the Queen's Mount
 
 	#siege_tier = 5
 	siege_value = 3.2 # #14
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -506,7 +506,7 @@ agotbm_vermax_unit = { # Vermax, the Cold Blooded
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 100000
 	toughness = 120000
 	pursuit = 70000
@@ -514,7 +514,7 @@ agotbm_vermax_unit = { # Vermax, the Cold Blooded
 
 	#siege_tier = 5
 	siege_value = 2.8 # #24
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -545,7 +545,7 @@ agotbm_moondancer_unit = { # Moondancer, the Light in the Dark
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 100000
 	toughness = 120000
 	pursuit = 68000
@@ -553,7 +553,7 @@ agotbm_moondancer_unit = { # Moondancer, the Light in the Dark
 
 	#siege_tier = 5
 	siege_value = 2.8 # #19
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -584,7 +584,7 @@ agotbm_seasmoke_unit = { # Seasmoke, the Saltscale Dragon
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 125000
 	toughness = 140000
 	pursuit = 74000
@@ -592,7 +592,7 @@ agotbm_seasmoke_unit = { # Seasmoke, the Saltscale Dragon
 
 	#siege_tier = 5
 	siege_value = 2.8 # #16
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -623,7 +623,7 @@ agotbm_sheepstealer_unit = { # Sheepstealer, the Wild Wyrm
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 170000
 	toughness = 200000
 	pursuit = 94000
@@ -631,7 +631,7 @@ agotbm_sheepstealer_unit = { # Sheepstealer, the Wild Wyrm
 
 	#siege_tier = 5
 	siege_value = 3.4 # #12
-	
+
 	terrain_bonus = {}
 
 	counters = {
@@ -666,7 +666,7 @@ agotbm_cookie_unit = { # Crumbs, the Allfather's Dragon
 		# exists = this
 		# this = { has_trait = dragon_rider }
 	# }
-	
+
 	damage = 120000
 	toughness = 160000
 	pursuit = 64000
@@ -674,7 +674,7 @@ agotbm_cookie_unit = { # Crumbs, the Allfather's Dragon
 
 	#siege_tier = 5
 	siege_value = 3.0
-	
+
 	terrain_bonus = {}
 
 	counters = {

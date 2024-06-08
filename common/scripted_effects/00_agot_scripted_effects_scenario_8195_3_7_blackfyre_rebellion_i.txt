@@ -272,4 +272,8 @@ agot_8195_3_7_br_i_scenario_setup = {
 	#	}
 	#}
 	#######
+
+	### CANON CHILDREN STORY CYCLE SETUP ###
+	agot_canon_children_setup_story_cycles_effect = yes
+	######
 }

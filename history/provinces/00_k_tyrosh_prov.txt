@@ -4,7 +4,7 @@
 	culture = tyroshi
 	religion = trios
 	holding = castle_holding
-	duchy_capital_building = agot_dye_works_03
+	duchy_capital_building = agot_tyrosh_walls_01
 	special_building = agot_tyrosh_01
 	7998.1.1 = {
 		buildings = {
@@ -53,11 +53,12 @@
 ################### b_soot_dorun ##################
 ############## c_great_hue - d_tyrosh ##############
 7355 = {
-	holding = city_holding
+	special_building = agot_red_temple_tyrosh_01
+	holding = church_holding
 	7998.1.1 = {
 		buildings = {
-			city_01
-			guild_halls_04
+			temple_04
+			monastic_schools_04
 		}
 	}
 }

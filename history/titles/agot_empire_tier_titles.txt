@@ -1734,25 +1734,39 @@ e_three_daughters = {
 
 #Blackfyre Rebellion titular title
 e_blackfyre_rebellion = {
+	# First Blackfyre Rebellion
 	8195.3.7 = { 
-		holder = Targaryen_94 #Daemon I Blackfyre
+		holder = Targaryen_94 # Daemon I Blackfyre
 	}
-	8196.6.1 = { #day of Daemon I's death
-		holder = Blackfyre_5 #Daemon II Blackfyre
+	8196.6.1 = { 
+		holder = 0 
 	}
-	8218.6.1 = { #day of Daemon II's death
-		holder = Blackfyre_6 #Haegon I Blackfyre
+	# Second Blackfyre Rebellion
+	8212.1.1 = {
+		holder = Blackfyre_5 # Daemon II Blackfyre
 	}
-	8220.1.1 = { #day of Haegon I's death
-		holder = Blackfyre_11 #Daemon III Blackfyre
+	8212.1.2 = {
+		holder = 0
 	}
-	8236.3.2 = { #day of Daemon III's death
-		holder = Blackfyre_13 # Daemon Blackfyre 
+	# Third Blackfyre Rebellion
+	8219.1.1 = { 
+		holder = Blackfyre_6 # Haegon I Blackfyre
 	}
+	8220.1.1 = {
+		holder = 0
+	}
+	# Fourth Blackfyre Rebellion
+	8236.1.1 = {
+		holder = Blackfyre_11 # Daemon III Blackfyre
+	}
+	8236.3.2 = { 
+		holder = 0
+	}
+	# War of the Ninepenny Kings
 	8252.11.11 = {
-		holder = Blackfyre_14 #Maelys I Blackfyre
+		holder = Blackfyre_14 # Maelys I Blackfyre
 	}
-	8260.10.2 = { #day of Maelys I's death
+	8260.10.2 = { 
 		holder = 0
 	}
 }

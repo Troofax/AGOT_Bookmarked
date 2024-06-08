@@ -1298,7 +1298,7 @@ agot_on_game_start = {
 			agot_add_building_if_possible = { BUILDING = plantations_03 }
 		}
 		province:4940 ={
-			agot_add_building_if_possible = { BUILDING = caravanserai_01 }
+			agot_add_building_if_possible = { BUILDING = agot_urban_farms_04 }
 			agot_add_building_if_possible = { BUILDING = common_tradeport_02 }
 		}
 		province:4945 = {
@@ -2142,16 +2142,26 @@ agot_on_game_start = {
 		}
 		###
 
-		### Iron Throne related setup
-		if = {
-			limit = {
-				exists = title:e_the_iron_throne.holder
-				exists = title:k_the_most_devout.holder
+		### Most Devout Setup
+		title:k_the_most_devout = {
+			every_past_holder = {
+				limit = { has_any_nickname = no }
+				agot_assign_high_septon_nickname_effect = yes
 			}
 
-			title:k_the_most_devout.holder = { agot_assign_high_septon_effect = yes }
+			holder ?= {
+				if = {
+					limit = { has_any_nickname = no }
+					agot_assign_high_septon_nickname_effect = yes
+				}
+				if = {
+					limit = { exists = title:e_the_iron_throne.holder }
+					agot_assign_high_septon_effect = yes
+				}
+			}
 		}
 
+		### Iron Throne related setup
 		title:c_kings_landing.holder = { # Appoint Commander of the Gold Cloaks
 			if = {
 				limit = {
@@ -2376,6 +2386,16 @@ agot_on_game_start = {
 
 		title:b_the_citadel.holder = {
 			trigger_event = agot_citadel_maintenance.0003
+		}
+
+		#every_ruler doesn't catch barons
+		every_barony = {
+			limit = {
+				exists = holder
+				holder.highest_held_title_tier = tier_barony
+				holder.faith = faith:old_gods_south
+			}
+			holder = { add_realm_law = male_preference_law }
 		}
 
 		every_ruler = {
@@ -2798,6 +2818,208 @@ agot_on_game_start = {
 							}
 						}
 					}
+				}
+			}
+			#Willam Dustin
+			character:Dustin_1 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+				}
+			}
+			#Ethan Glover
+			character:Glover_2 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+				}
+			}
+			#Martyn Cassel
+			character:Cassel_2 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+				}
+			}
+			#Theo Wull
+			character:Wull_4 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+				}
+			}
+			#Ser Mark Ryswell
+			character:Ryswell_10 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+				}
+			}
+			#Arthur Dayne
+			character:Dayne_5 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+				}
+			}
+			#Oswell Whent
+			character:Whent_5 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+				}
+			}
+			#Gerold Hightower
+			character:Hightower_3 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+				}
+			}
+			#Rhaegar
+			character:Targaryen_3 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+				}
+			}
+			#Aerys
+			character:Targaryen_1 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+				}
+			}
+			#Rhaella
+			character:Targaryen_2 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+				}
+			}
+
+			#Lyanna
+			character:Stark_5 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+
+				}
+			}
+
+			#Rickard
+			character:Stark_2 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+
+				}
+			}
+
+			#Brandon
+			character:Stark_1 = {
+				if = {
+					limit = {
+						is_alive = no
+					}
+
+					set_dead_character_variable = {
+						name = body_has_been_disposed
+						value = yes
+						years = 5
+					}
+
 				}
 			}
 		}

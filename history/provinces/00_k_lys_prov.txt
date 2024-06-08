@@ -4,7 +4,7 @@
 	culture = lyseni
 	religion = weeping_lady
 	holding = city_holding
-	duchy_capital_building = royal_garden_03
+	duchy_capital_building = agot_lys_walls_01
 	special_building = agot_lys_02
 	7998.1.1 = {
 		buildings = {
@@ -51,7 +51,7 @@
 ################# c_pleasure_heights - d_lys #################
 7392 = {
 	culture = lyseni
-	religion = weeping_lady
+	religion = rhllor
 	holding = city_holding
 	7998.1.1 = {
 		buildings = {
@@ -70,6 +70,7 @@
 ################# c_pleasure_heights - d_lys #################
 7394 = {
 	holding = church_holding
+	special_building = agot_red_temple_lys_01
 	7998.1.1 = {
 		buildings = {
 			temple_03
@@ -81,7 +82,7 @@
 ################# c_magisters_avenue - d_lys #################
 7395 = {
 	culture = lyseni
-	religion = rhllor
+	religion = weeping_lady
 	holding = city_holding
 	7998.1.1 = {
 		buildings = {

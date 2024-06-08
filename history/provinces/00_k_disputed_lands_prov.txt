@@ -138,6 +138,12 @@
 			farm_estates_03
 		}
 	}
+	8096.1.1 = {
+		special_building = agot_triarchy_council_01
+	}
+	8131.10.3 = {
+		special_building = agot_ruins_triarchy_council_01
+	}
 }
 #################### b_tambona ####################
 ########### c_the_spar - d_the_shambles ##########
@@ -825,6 +831,7 @@
 7550 = {
 	culture = volantene
 	religion = rhllor
+	special_building_slot = agot_monument_of_borderland_01
 	holding = castle_holding
 	7998.1.1 = {
 		buildings = {
@@ -832,6 +839,9 @@
 			hill_forts_03
 			outposts_04
 		}
+	}
+	8096.1.1 = {
+		special_building = agot_monument_of_borderland_01
 	}
 }
 ###################### b_deon #####################

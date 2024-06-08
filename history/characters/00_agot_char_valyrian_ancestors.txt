@@ -1701,7 +1701,7 @@ Targaryen_48 = {
 	}
 }
 Targaryen_49 = {
-	name = Vaegon # Canon, Archmaester of Sums, Red Gold
+	name = Vaegon # Canon, Archmaester of Sums, Yellow Gold
 	dynasty = dynn_Targaryen
 	dna = Targaryen_49
 
@@ -1730,8 +1730,8 @@ Targaryen_49 = {
 	8073.1.1 = { trait = chaste }
 	8078.1.1 = {
 		trait = maester_historical
-		effect = { 
-			agot_maester_in_the_citadel_history_effect = { METAL = red_gold }
+		effect = {
+			agot_maester_in_the_citadel_history_effect = { METAL = yellow_gold }
 			agot_maester_starting_setup_history_effect = yes
 		}
 		give_nickname = nick_the_dragonless
@@ -1740,7 +1740,7 @@ Targaryen_49 = {
 		trait = archmaester
 		trait = administrator
 		effect = {
-			make_trait_inactive = archmaester_red_gold
+			make_trait_inactive = archmaester_yellow_gold
 			add_character_flag = choosing_hermetic_art
 			add_character_flag = specialisation_math
 		}
@@ -3024,8 +3024,8 @@ Targaryen_68 = {
 		}
 	}
 	8120.1.1 = {
-		# trait = vengeful
-		# trait = gregarious
+		trait = vengeful
+		trait = gregarious
 		effect = {
 			add_trait = vengeful
 			add_trait = gregarious
@@ -3033,10 +3033,10 @@ Targaryen_68 = {
 		}
 	}
 	8127.1.1 = {
-		# trait = dragon_rider # Tessarion (C)
-		# trait = humble
-		# trait = brave
-		# trait = education_martial_prowess_2
+		trait = dragon_rider # Tessarion (C)
+		trait = humble
+		trait = brave
+		trait = education_martial_prowess_2
 		employer = Hightower_92 # Ormund Hightower
 		effect = {
 			add_trait = dragon_rider # Tessarion (C)
@@ -3046,7 +3046,7 @@ Targaryen_68 = {
 		}
 	}
 	8130.1.20 = {
-		# trait = knight
+		trait = knight
 		effect = {
 			add_trait = knight
 			agot_knighted_char_history_effect = { KNIGHT = character:Hightower_92 } # Ormund Hightower
@@ -5162,6 +5162,9 @@ Targaryen_96 = {
 	}
 	8186.1.1 = { trait = just }
 	8187.6.1 = { trait = callous }
+	8191.6.1 = {
+		effect = { agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_96 COA_KEY = bloodraven_personal_coa } }
+	}
 	8195.1.1 = { 
 		trait = knight 
 		trait = spider 
@@ -5516,6 +5519,7 @@ Targaryen_111 = {
 		trait = knight
 		trait = lifestyle_blademaster
 		add_spouse = Camardoon_7_A # Kiera of Tyrosh
+		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_111 COA_KEY = valarr_targaryen_personal_coa }
 	}
 	8209.2.1 = {
 		effect = { # Hand of the King
@@ -6517,7 +6521,7 @@ Blackfyre_4 = {
 
 	8187.1.1 = { birth = yes }
 	8196.6.1 = {
-		# employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title
+		employer = Targaryen_95 # Aegor Bittersteel
 		effect = {
 			add_unpressed_claim = title:e_the_iron_throne
 			add_unpressed_claim = title:k_the_crownlands
@@ -6528,8 +6532,8 @@ Blackfyre_4 = {
 			add_unpressed_claim = title:c_dragonstone
 		}
 	}
-	8218.6.1 = { employer = Blackfyre_6 } # Haegon Blackfyre 
-	8220.1.1 = { employer = Blackfyre_11 } # Daemon III Blackfyre
+	8219.1.1 = { employer = Blackfyre_6 } # Haegon I Blackfyre
+	8220.1.1 = { employer = Targaryen_95 } # Aegor Bittersteel
 	8228.1.1 = { death = yes }
 }
 Blackfyre_5 = {
@@ -6566,7 +6570,6 @@ Blackfyre_5 = {
 		}
 	}
 	8196.6.1 = {
-		# employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title
 		effect = {
 			add_pressed_claim = title:e_the_iron_throne
 			add_pressed_claim = title:k_the_crownlands
@@ -6639,8 +6642,8 @@ Blackfyre_6 = {
 
 	8189.1.1 = { birth = yes }
 	8196.6.1 = {
-		# employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title
 		effect = {
+			agot_join_golden_company_history_effect = yes 
 			add_pressed_claim = title:e_the_iron_throne
 			add_pressed_claim = title:k_the_crownlands
 			add_pressed_claim = title:d_kings_landing
@@ -6685,8 +6688,8 @@ Blackfyre_7 = {
 
 	8190.1.1 = { birth = yes }
 	8196.6.1 = {
-		# employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title
 		effect = {
+			agot_join_golden_company_history_effect = yes 
 			add_pressed_claim = title:e_the_iron_throne
 			add_pressed_claim = title:k_the_crownlands
 			add_pressed_claim = title:d_kings_landing
@@ -6698,8 +6701,6 @@ Blackfyre_7 = {
 	}
 	8206.1.1 = { trait = knight }
 	8216.1.1 = { add_spouse = Peake_65 } # Alysanne Peake
-	8218.6.1 = { employer = Blackfyre_6 } # Haegon Blackfyre 
-	8220.1.1 = { employer = Blackfyre_11 } # Daemon III Blackfyre
 	8233.1.1 = {
 		death = {
 			death_reason = death_execution
@@ -6730,8 +6731,8 @@ Blackfyre_8 = {
 
 	8192.1.1 = { birth = yes }
 	8196.6.1 = {
-		# employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title
 		effect = {
+			agot_join_golden_company_history_effect = yes 
 			add_pressed_claim = title:e_the_iron_throne
 			add_pressed_claim = title:k_the_crownlands
 			add_pressed_claim = title:d_kings_landing
@@ -6743,8 +6744,6 @@ Blackfyre_8 = {
 	}
 	8208.1.1 = { trait = knight }
 	8215.1.1 = { add_spouse = Blackfyre_10 } # Daena Blackfyre
-	8218.6.1 = { employer = Blackfyre_6 } # Haegon Blackfyre 
-	8220.1.1 = { employer = Blackfyre_11 } # Daemon III Blackfyre 
 	8235.1.1 = { death = yes }
 }
 Blackfyre_9 = {
@@ -6771,8 +6770,8 @@ Blackfyre_9 = {
 
 	8193.1.1 = { birth = yes }
 	8196.6.1 = {
-		# employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title
 		effect = {
+			agot_join_golden_company_history_effect = yes
 			add_pressed_claim = title:e_the_iron_throne
 			add_pressed_claim = title:k_the_crownlands
 			add_pressed_claim = title:d_kings_landing
@@ -6790,9 +6789,6 @@ Blackfyre_9 = {
 		trait = aggressive_attacker
 		trait = knight
 	}
-	8218.6.1 = { employer = Blackfyre_6 } # Haegon Blackfyre 
-	8220.1.1 = { employer = Blackfyre_11 } # Daemon III Blackfyre 
-	8241.1.1 = { employer = Blackfyre_13 } # Daemon Blackfyre 
 	8251.1.1 = { death = yes }
 }
 Blackfyre_10 = {
@@ -6818,7 +6814,7 @@ Blackfyre_10 = {
 
 	8195.1.1 = { birth = yes }
 	8196.6.1 = {
-		# employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title
+		employer = Targaryen_95 # Aegor Bittersteel
 		effect = {
 			add_unpressed_claim = title:e_the_iron_throne
 			add_unpressed_claim = title:k_the_crownlands
@@ -6829,9 +6825,11 @@ Blackfyre_10 = {
 			add_unpressed_claim = title:c_dragonstone
 		}
 	}
-	8218.6.1 = { employer = Blackfyre_6 } # Haegon Blackfyre 
-	8220.1.1 = { employer = Blackfyre_11 } # Daemon III Blackfyre 
-	8241.1.1 = { employer = Blackfyre_13 } # Daemon Blackfyre 
+	8219.1.1 = { employer = Blackfyre_6 } # Haegon I Blackfyre
+	8220.1.1 = { employer = Targaryen_95 } # Aegor Bittersteel
+	8236.1.1 = { employer = Blackfyre_11 } # Daemon III Blackfyre
+	8236.3.2 = { employer = Targaryen_95 } # Aegor Bittersteel
+	8241.1.1 = { employer = Blackfyre_9 } # Maelys Blackfyre 
 	8249.1.1 = { death = yes }
 }
 ### Issue of Haegon
@@ -6857,9 +6855,8 @@ Blackfyre_11 = {
 
 	8212.1.1 = {
 		birth = yes
-		# employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title
+		effect = { agot_join_golden_company_history_effect = yes }
 	}
-	8218.6.1 = { employer = Blackfyre_6 } # Haegon Blackfyre 
 	8220.1.1 = {
 		effect = {
 			add_pressed_claim = title:e_the_iron_throne
@@ -6901,10 +6898,8 @@ Blackfyre_12 = {
 
 	8214.1.1 = {
 		birth = yes
-		#employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title
+		effect = { agot_join_golden_company_history_effect = yes }
 	}
-	8218.6.1 = { employer = Blackfyre_6 } # Haegon Blackfyre 
-	8220.1.1 = { employer = Blackfyre_11 } # Daemon III Blackfyre 
 	8220.1.1 = {
 		effect = {
 			add_pressed_claim = title:e_the_iron_throne
@@ -6947,10 +6942,8 @@ Blackfyre_13 = {
 
 	8217.1.1 = {
 		birth = yes
-		# employer = Targaryen_95 # Aegor Bittersteel # AGOT TODO no golden company title
+		effect = { agot_join_golden_company_history_effect = yes }
 	}
-	8218.6.1 = { employer = Blackfyre_6 } # Haegon Blackfyre 
-	8220.1.1 = { employer = Blackfyre_11 } # Daemon III Blackfyre 
 	8233.1.1 = {
 		effect = {
 			add_pressed_claim = title:e_the_iron_throne
@@ -7002,7 +6995,7 @@ Blackfyre_14 = {
 
 	8220.1.1 = {
 		birth = yes
-		employer = Blackfyre_11 # Daemon III Blackfyre 
+		effect = { agot_join_golden_company_history_effect = yes }
 	}
 	8224.1.1 = { trait = wrathful }
 	8226.8.1 = { trait = ambitious }
@@ -7025,7 +7018,6 @@ Blackfyre_14 = {
 		trait = organizer
 		trait = knight
 	}
-	8241.1.1 = { employer = Blackfyre_13 } # Daemon Blackfyre 
 	8252.11.11 = {
 		trait = kinslayer_2 # Daemon Blackfyre
 		effect = { 
@@ -13803,7 +13795,7 @@ Silver_Denys_2 = {
 		give_nickname = nick_the_grey
 	}
 	8190.1.1 = { employer = Targaryen_94 } # Daemon Blackfyre
-	# 8196.6.1 = { employer = Targaryen_95 } # Aegor Bittersteel # AGOT TODO no golden company title
+	8196.6.1 = { agot_join_golden_company_history_effect = yes } 
 	8220.1.1 = { death = yes }
 }
 301057 = { # AGOT TODO ID
@@ -13828,7 +13820,7 @@ Silver_Denys_2 = {
 		trait = lifestyle_blademaster_2_history
 	}
 	8190.1.1 = { employer = Targaryen_94 } # Daemon Blackfyre
-	# 8196.6.1 = { employer = Targaryen_95 } # Aegor Bittersteel # AGOT TODO no golden company title
+	8196.6.1 = { agot_join_golden_company_history_effect = yes } 
 	8215.1.1 = { death = yes }
 }
 Blackfyre_hh_1 = {

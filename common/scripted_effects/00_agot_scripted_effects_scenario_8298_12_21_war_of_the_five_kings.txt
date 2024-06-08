@@ -171,4 +171,8 @@ agot_8298_12_21_wotfk_scenario_setup = {
 	agot_mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_robb }
 	agot_mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_balon }
 	######
+
+	### CANON CHILDREN STORY CYCLE SETUP ###
+	agot_canon_children_setup_story_cycles_effect = yes
+	######
 }

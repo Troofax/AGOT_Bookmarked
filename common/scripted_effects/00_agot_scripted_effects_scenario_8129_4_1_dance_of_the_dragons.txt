@@ -137,4 +137,8 @@ agot_8129_4_1_dotd_scenario_setup = {
 		}
 		debug_log = "Dance of the Dragons Invalidated"
 	}
+
+	### CANON CHILDREN STORY CYCLE SETUP ###
+	agot_canon_children_setup_story_cycles_effect = yes
+	######
 }

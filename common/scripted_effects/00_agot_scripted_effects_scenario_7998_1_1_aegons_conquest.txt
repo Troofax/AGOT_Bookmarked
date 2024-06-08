@@ -22,4 +22,8 @@ agot_7998_1_1_conquest_scenario_setup = {
 			}
 		}
 	}
+
+	### CANON CHILDREN STORY CYCLE SETUP ###
+	agot_canon_children_setup_story_cycles_effect = yes
+	######
 }

@@ -39,6 +39,18 @@ agot_historical_artifacts_setup = {
 		agot_create_artifact_gilded_throne_effect = { OWNER = this }
 	}
 
+	#STATUES 
+	if = {
+		limit = {
+			exists = dynasty:dynn_Velaryon
+			exists = dynasty:dynn_Velaryon.dynast
+			NOT = {
+				dynasty:dynn_Velaryon.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+		}
+		dynasty:dynn_Velaryon.dynast = { agot_create_artifact_seahorse_statue_effect = { OWNER = this } }
+	}
+
 	#SWORDOS
 	if = {
 		limit = {

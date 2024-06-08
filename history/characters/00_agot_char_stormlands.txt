@@ -5370,7 +5370,15 @@ Trant_2 = {
 	
 	disallow_random_traits = yes
 
-	8253.1.1 = { birth = yes }
+	8253.1.1 = {
+		birth = yes
+		effect = {
+			trigger_event = {
+				id = agot_character_history.0001 # Kingsguard Training
+				days = 5475
+			}
+		}
+	}
 	8269.1.1 = {
 		trait = knight
 		trait = education_martial_prowess_2

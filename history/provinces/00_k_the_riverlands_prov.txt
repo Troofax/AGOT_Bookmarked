@@ -2105,7 +2105,7 @@
 	culture = riverlander
 	religion = the_seven_main
 	holding = castle_holding
-	special_building = harrenhal_01
+	special_building = ruins_harrenhal_01
 	7998.1.1 = {
 		buildings = { 
 			castle_05
