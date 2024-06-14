@@ -2865,6 +2865,7 @@
 ########### c_stoney_sept - d_knellstone ##########
 2032 = {
 	holding = city_holding
+	special_building = agot_stoney_sept_01
 	7998.1.1 = {
 		buildings = { city_03 monastic_schools_03 }
 	}

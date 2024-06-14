@@ -682,6 +682,7 @@
 	culture = marcher
 	religion = the_seven_main
 	holding = castle_holding
+	special_building = agot_starpike_01
 	duchy_capital_building = march_01
 	7998.1.1 = {
 		buildings = { castle_04 ramparts_06 outposts_04 }

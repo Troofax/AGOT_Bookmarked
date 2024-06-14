@@ -491,6 +491,7 @@
 	religion = the_seven_main
 	duchy_capital_building = agot_vineyard_02
 	holding = castle_holding
+	special_building = agot_godsgrace_01
 	7998.1.1 = {
 		buildings = { castle_03 curtain_walls_03 orchards_03 }
 	}
@@ -1724,6 +1725,10 @@
 ############ c_brimstone - d_brimstone ############
 5155 = {
 	holding = castle_holding
+	special_building = agot_hellgate_hall_01
+	7300.1.1 = {
+		special_building = agot_ruins_hellgate_hall_01
+	}
 	7998.1.1 = {
 		buildings = { castle_02 }
 	}

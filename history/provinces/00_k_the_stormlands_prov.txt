@@ -61,6 +61,7 @@
 	culture = stormlander
 	religion = the_seven_main
 	holding = castle_holding
+	special_building = agot_bronzegate_01
 	7998.1.1 = {
 		buildings = { castle_04 }
 	}
@@ -1100,8 +1101,12 @@
 	culture = stormlander
 	religion = the_seven_main
 	holding = castle_holding
+	special_building = agot_weeping_tower_01
 	7998.1.1 = {
 		buildings = { castle_03 }
+	}
+	8162.1.1 = {
+		special_building = agot_weeping_tower_02
 	}
 }
 ################## b_weeping_town #################
@@ -1406,6 +1411,7 @@
 	culture = stormlander
 	religion = the_seven_main
 	holding = castle_holding
+	special_building = agot_paintwood_01
 	7998.1.1 = {
 		buildings = { castle_01 }
 	}
@@ -3098,6 +3104,12 @@
 	holding = castle_holding
 	7998.1.1 = {
 		buildings = { castle_01 }
+	}
+	8275.1.1 = {
+		special_building = agot_kingswood_brotherhood_01
+	}
+	8281.1.1 = {
+		special_building = agot_ruins_kingswood_brotherhood_01
 	}
 }
 ################## b_shady_pines ##################

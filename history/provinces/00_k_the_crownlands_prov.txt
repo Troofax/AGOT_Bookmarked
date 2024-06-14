@@ -1,6 +1,7 @@
 ﻿################## b_the_red_keep #################
 ######## c_kings_landing - d_kings_landing ########
 4151 = {
+	special_building_slot = the_red_keep_01
 	culture = crownlander
 	religion = the_seven_main
 	holding = castle_holding
@@ -27,6 +28,7 @@
 ################# b_rhaenyss_hill #################
 ######## c_kings_landing - d_kings_landing ########
 4152 = {
+	special_building_slot = dragonpit_01
 	holding = city_holding
 	7998.1.1 = {
 		buildings = { city_03 guild_halls_03 }
@@ -44,6 +46,7 @@
 ################# b_visenyas_hill #################
 ######## c_kings_landing - d_kings_landing ########
 4153 = {
+	special_building_slot = holy_site_great_sept_01
 	holding = church_holding
 	7998.1.1 = {
 		buildings = { temple_04 monastic_schools_08 }
@@ -63,9 +66,13 @@
 ############### b_goldguard_heights ###############
 ######## c_kings_landing - d_kings_landing ########
 4155 = {
+	special_building_slot = cobblers_square_01
 	holding = city_holding
 	7998.1.1 = {
 		buildings = { city_05 guild_halls_07 }
+	}
+	8042.1.1 = {
+		special_building = cobblers_square_01
 	}
 }
 ################## b_landingfield #################
@@ -761,6 +768,9 @@
 	7998.1.1 = {
 		buildings = { castle_04 hill_forts_04 warrior_lodges_03 }
 	}
+	8010.1.1 = {
+		special_building = agot_duskendale_01
+	}
 }
 ################### b_duskendale ##################
 ########### c_duskendale - d_duskendale ###########
@@ -1140,8 +1150,8 @@
 	holding = castle_holding
 	special_building = agot_whispers_01
 	7998.1.1 = {
-		buildings = {
-			castle_02
+		buildings = { 
+			castle_02 
 			godswood_02
 		}
 	}
@@ -1895,6 +1905,7 @@
 	culture = stormlander
 	religion = the_seven_main
 	holding = castle_holding
+	special_building = agot_stonedance_01
 	7998.1.1 = {
 		buildings = { castle_04 hill_forts_04 warrior_lodges_04 }
 	}

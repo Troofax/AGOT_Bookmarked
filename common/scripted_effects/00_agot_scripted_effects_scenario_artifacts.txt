@@ -30,6 +30,15 @@ agot_historical_artifacts_setup = {
 			agot_create_artifact_iron_throne_effect = { OWNER = this }
 		}
 	}
+	# AGOT Bookmarked Added
+	if = {
+		limit = {
+			game_start_date < 8000.1.1
+		}
+		title:e_the_iron_throne.holder = {
+			agot_create_artifact_iron_throne_effect = { OWNER = this }
+		}
+	}
 
 	title:b_pyke.holder = {
 		agot_create_artifact_seastone_chair_effect = { OWNER = this }

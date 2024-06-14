@@ -7,6 +7,9 @@
 	7998.1.1 = {
 		buildings = { castle_03 }
 	}
+	300.1.1 = {
+		special_building = agot_castle_black_01
+	}
 }
 #################### b_icemark ####################
 ########### c_castle_black - d_the_wall ###########
@@ -47,6 +50,9 @@
 	7998.1.1 = {
 		buildings = { castle_02 }
 	}
+	300.1.1 = {
+		special_building = agot_shadow_tower_01
+	}
 }
 ############ b_westwatch_by_the_bridge ############
 ######### c_the_shadow_tower - d_the_wall #########
@@ -81,6 +87,9 @@
 	holding = castle_holding
 	7998.1.1 = {
 		buildings = { castle_02 common_tradeport_01 }
+	}
+	300.1.1 = {
+		special_building = agot_eastwatch_01
 	}
 }
 ################### b_sable_hall ##################

@@ -2039,9 +2039,6 @@ agot_on_game_start = {
 		# Manage Incest restrictions
 		dynasty:dynn_Targaryen = { set_variable = agot_allow_adelphogamous_incest }
 		dynasty:dynn_Codd = { set_variable = agot_allow_adelphogamous_incest }
-		dynasty:dynn_Varezys = { set_variable = agot_allow_adelphogamous_incest }
-		dynasty:dynn_Mataeryon = { set_variable = agot_allow_adelphogamous_incest}
-		dynasty:dynn_Belaerys = { set_variable = agot_allow_adelphogamous_incest}
 
 		# Manage valyrian_heritage_dynasty_modifier and other
 		dynasty:dynn_Targaryen = {
@@ -3800,6 +3797,7 @@ agot_on_game_start_after_lobby = {
 				NOR = {
 					has_game_rule = agot_shatter_duchies
 					has_game_rule = agot_shatter_duchies_even
+					has_game_rule = agot_shatter_petty_kingdoms
 					has_game_rule = agot_shatter_kingdoms
 					has_game_rule = agot_shatter_empires
 				}

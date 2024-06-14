@@ -212,6 +212,7 @@
 	culture = moonman
 	religion = the_seven_main
 	holding = castle_holding
+	special_building = agot_redfort_01
 	7998.1.1 = {
 		buildings = { castle_03 curtain_walls_03 stables_03 }
 	}
@@ -712,6 +713,7 @@
 	culture = valeman
 	religion = the_seven_main
 	holding = castle_holding
+	special_building = agot_ironoaks_01
 	duchy_capital_building = jousting_lists_01
 	7998.1.1 = {
 		buildings = { castle_04 curtain_walls_04 stables_04 }
@@ -1119,6 +1121,7 @@
 2398 = {
 	culture = valeman
 	religion = the_seven_main
+	special_building = agot_ruthermont_01
 	holding = castle_holding
 	7998.1.1 = {
 		buildings = { castle_03 }
@@ -2246,6 +2249,7 @@
 2541 = {
 	culture = moonman
 	religion = the_seven_main
+	special_building = agot_strongsong_01
 	holding = castle_holding
 	7998.1.1 = {
 		buildings = { castle_04 }
