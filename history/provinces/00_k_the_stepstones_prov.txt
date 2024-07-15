@@ -3,6 +3,7 @@
 7294 = {
 	culture = tyroshi
 	religion = trios
+	special_building_slot = agot_racallios_fort_01
 	holding = pirate_den_holding
 	7998.1.1 = {
 		buildings = {
@@ -10,6 +11,9 @@
 			agot_pirate_control_06
 			agot_pirate_military_06
 		}
+	}
+	8131.11.12 = {
+		special_building = agot_racallios_fort_01
 	}
 }
 ################### b_bloodstain ##################
@@ -321,8 +325,25 @@
 7333 = {
 	culture = lyseni
 	religion = trios
+	special_building_slot = agot_crab_fields_01
 	holding = pirate_den_holding
 	7998.1.1 = {
+		buildings = {
+			pirate_den_02
+			agot_pirate_control_06
+			agot_pirate_economic_06
+		}
+	}
+	8098.1.1 = {
+		holding = castle_holding
+		special_building = agot_crab_fields_01
+		buildings = {
+			common_tradeport_02
+			workshops_02
+		}
+	}
+	8108.12.05 = {
+		holding = pirate_den_holding
 		buildings = {
 			pirate_den_02
 			agot_pirate_control_06

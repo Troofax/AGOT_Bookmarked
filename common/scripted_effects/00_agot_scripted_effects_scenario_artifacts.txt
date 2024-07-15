@@ -21,43 +21,106 @@ agot_historical_artifacts_setup = {
 	#character:Beesbury_2 = { create_artifact_vs_sting_effect = { OWNER = this } }
 	## AGOT TODO: All commented out are not yet modeled.
 
-	#THRONES
+	#COURT ARTIFACTS
 	if = {
-		limit = {
-			game_start_date > 8000.1.1
-		}
-		title:b_the_red_keep.holder = {
-			agot_create_artifact_iron_throne_effect = { OWNER = this }
-		}
-	}
-	# AGOT Bookmarked Added
-	if = {
-		limit = {
-			game_start_date < 8000.1.1
-		}
-		title:e_the_iron_throne.holder = {
-			agot_create_artifact_iron_throne_effect = { OWNER = this }
-		}
-	}
-
-	title:b_pyke.holder = {
-		agot_create_artifact_seastone_chair_effect = { OWNER = this }
-	}
-
-	title:b_casterly_rock.holder = {
-		agot_create_artifact_gilded_throne_effect = { OWNER = this }
-	}
-
-	#STATUES 
-	if = {
-		limit = {
-			exists = dynasty:dynn_Velaryon
-			exists = dynasty:dynn_Velaryon.dynast
-			NOT = {
-				dynasty:dynn_Velaryon.dynast = { has_character_flag = house_customizer_placeholder }
+		limit = { has_dlc_feature = royal_court }
+		#THRONES
+		if = {
+			limit = {
+				game_start_date > 8000.1.1
+			}
+			title:b_the_red_keep.holder = {
+				agot_create_artifact_iron_throne_effect = { OWNER = this }
 			}
 		}
-		dynasty:dynn_Velaryon.dynast = { agot_create_artifact_seahorse_statue_effect = { OWNER = this } }
+		# AGOT Bookmarked Added
+		if = {
+			limit = {
+				game_start_date < 8000.1.1
+			}
+			title:e_the_iron_throne.holder = {
+				agot_create_artifact_iron_throne_effect = { OWNER = this }
+			}
+		}
+
+		title:b_pyke.holder = {
+			agot_create_artifact_seastone_chair_effect = { OWNER = this }
+		}
+
+		title:b_casterly_rock.holder = {
+			agot_create_artifact_gilded_throne_effect = { OWNER = this }
+		}
+
+		title:b_highgarden.holder = {
+			agot_create_artifact_ruined_oakenseat_effect = { OWNER = this }
+		}
+
+		#STATUES
+		if = {
+			limit = {
+				exists = dynasty:dynn_Velaryon
+				exists = dynasty:dynn_Velaryon.dynast
+				NOT = {
+					dynasty:dynn_Velaryon.dynast = { has_character_flag = house_customizer_placeholder }
+				}
+			}
+			dynasty:dynn_Velaryon.dynast = { agot_create_artifact_seahorse_statue_effect = { OWNER = this } }
+		}
+
+		#SKULLS
+		if  = {
+			limit = {
+				exists = title:k_golden_company.holder
+			}
+			if = {
+				limit = { game_start_date >= 8241.1.1 }
+				title:k_golden_company.holder = {
+					agot_create_artifact_bittersteel_skull_effect = { OWNER = title:k_golden_company.holder }
+				}
+			}
+			if = {
+				limit = { game_start_date >= 8252.11.11 }
+				title:k_golden_company.holder = {
+					agot_create_artifact_bittersteel_skull_effect = { OWNER = title:k_golden_company.holder }
+				}
+			}
+			if = {
+				limit = { game_start_date >= 8260.10.1 }
+				title:k_golden_company.holder = {
+					agot_create_artifact_maelys_skull_effect = { OWNER = title:k_golden_company.holder }
+				}
+			}
+		}
+
+		#MISC
+		if = {
+			limit = {
+				exists = dynasty:dynn_Martell
+				exists = dynasty:dynn_Martell.dynast
+				NOT = {
+					dynasty:dynn_Wyl.dynast = { has_character_flag = house_customizer_placeholder }
+				}
+			}
+			dynasty:dynn_Martell.dynast = { agot_create_artifact_martell_wall_shield_effect = { OWNER = this } }
+		}
+
+		if = {
+			limit = {
+				exists = dynasty:dynn_Uller
+				exists = dynasty:dynn_Uller.dynast
+				game_start_date >= 8010.10.25
+			}
+			dynasty:dynn_Uller.dynast = { agot_create_artifact_uller_skull_effect = { OWNER = this } }
+		}
+
+		if = {
+			limit = {
+				exists = dynasty:dynn_Wyl
+				exists = dynasty:dynn_Wyl.dynast
+				game_start_date >= 8007.1.1
+			}
+			dynasty:dynn_Wyl.dynast = { agot_create_hands_hand_effect = { OWNER = this } }
+		}
 	}
 
 	#SWORDOS
@@ -96,7 +159,7 @@ agot_historical_artifacts_setup = {
 				game_start_date >= 8275.1.1
 				game_start_date < 8284.1.1
 			}
-			character:Dayne_5 = { 
+			character:Dayne_5 = {
 				agot_create_artifact_vs_dawn_effect = { OWNER = this }
 				#for some reason Dawn doesn't equip automatically
 				random_character_artifact = {
@@ -110,7 +173,7 @@ agot_historical_artifacts_setup = {
 				game_start_date >= 8219.1.1
 				game_start_date < 8265.1.1
 			}
-			character:Dayne_72 = { 
+			character:Dayne_72 = {
 				agot_create_artifact_vs_dawn_effect = { OWNER = this }
 				#for some reason Dawn doesn't equip automatically
 				random_character_artifact = {
@@ -124,7 +187,7 @@ agot_historical_artifacts_setup = {
 				game_start_date >= 8191.1.1
 				game_start_date < 8206.1.1
 			}
-			character:Dayne_70 = { 
+			character:Dayne_70 = {
 				agot_create_artifact_vs_dawn_effect = { OWNER = this }
 				#for some reason Dawn doesn't equip automatically
 				random_character_artifact = {
@@ -138,7 +201,7 @@ agot_historical_artifacts_setup = {
 				game_start_date >= 8083.1.1
 				game_start_date < 8112.1.1
 			}
-			character:Dayne_36 = { 
+			character:Dayne_36 = {
 				agot_create_artifact_vs_dawn_effect = { OWNER = this }
 				#for some reason Dawn doesn't equip automatically
 				random_character_artifact = {
@@ -152,7 +215,7 @@ agot_historical_artifacts_setup = {
 				game_start_date >= 7839.1.1
 				game_start_date < 7870.1.1
 			}
-			character:Dayne_20 = { 
+			character:Dayne_20 = {
 				agot_create_artifact_vs_dawn_effect = { OWNER = this }
 				#for some reason Dawn doesn't equip automatically
 				random_character_artifact = {
@@ -166,7 +229,7 @@ agot_historical_artifacts_setup = {
 				game_start_date >= 7320.1.1
 				game_start_date < 7355.1.1
 			}
-			character:Dayne_18 = { 
+			character:Dayne_18 = {
 				agot_create_artifact_vs_dawn_effect = { OWNER = this }
 				#for some reason Dawn doesn't equip automatically
 				random_character_artifact = {
@@ -180,7 +243,7 @@ agot_historical_artifacts_setup = {
 				game_start_date >= 7320.1.1
 				game_start_date < 7355.1.1
 			}
-			character:Dayne_18 = { 
+			character:Dayne_18 = {
 				agot_create_artifact_vs_dawn_effect = { OWNER = this }
 				#for some reason Dawn doesn't equip automatically
 				random_character_artifact = {
@@ -915,36 +978,6 @@ agot_historical_artifacts_setup = {
 		}
 	}
 
-	#MISC
-	if = {
-		limit = {
-			exists = dynasty:dynn_Martell
-			exists = dynasty:dynn_Martell.dynast
-			NOT = {
-				dynasty:dynn_Wyl.dynast = { has_character_flag = house_customizer_placeholder }
-			}
-		}
-		dynasty:dynn_Martell.dynast = { agot_create_artifact_martell_wall_shield_effect = { OWNER = this } }
-	}
-
-	if = {
-		limit = {
-			exists = dynasty:dynn_Uller
-			exists = dynasty:dynn_Uller.dynast
-			game_start_date >= 8010.10.25
-		}
-		dynasty:dynn_Uller.dynast = { agot_create_artifact_uller_skull_effect = { OWNER = this } }
-	}
-
-	if = {
-		limit = {
-			exists = dynasty:dynn_Wyl
-			exists = dynasty:dynn_Wyl.dynast
-			game_start_date >= 8007.1.1
-		}
-		dynasty:dynn_Wyl.dynast = { agot_create_hands_hand_effect = { OWNER = this } }
-	}
-
 	if = {
 		limit = {
 			exists = character:Targaryen_3
@@ -1024,32 +1057,8 @@ agot_historical_artifacts_setup = {
 		}
 		title:d_kingsguard.holder = {
 			agot_create_artifact_the_white_book_effect = {
-				OWNER = this 
+				OWNER = this
 				CREATOR = character:Targaryen_28 #Visenya Targaryen
-			}
-		}
-	}
-	#Skulls
-	if  = {
-		limit = {
-			exists = title:k_golden_company.holder
-		}
-		if = {
-			limit = { game_start_date >= 8241.1.1 }
-			title:k_golden_company.holder = {
-				agot_create_artifact_bittersteel_skull_effect = { OWNER = title:k_golden_company.holder }
-			}
-		}
-		if = {
-			limit = { game_start_date >= 8252.11.11 }
-			title:k_golden_company.holder = {
-				agot_create_artifact_bittersteel_skull_effect = { OWNER = title:k_golden_company.holder }
-			}
-		}
-		if = {
-			limit = { game_start_date >= 8260.10.1 }
-			title:k_golden_company.holder = {
-				agot_create_artifact_maelys_skull_effect = { OWNER = title:k_golden_company.holder }
 			}
 		}
 	}

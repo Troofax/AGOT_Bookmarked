@@ -1646,12 +1646,16 @@ Targaryen_47 = {
 	
 	trait = education_diplomacy_2
 	trait = rowdy
+	trait = heterochromia_eyes
 
 	disallow_random_traits = yes
 
 	8060.6.1 = { 
 		birth = yes 
-		effect = { add_trait = strong }
+		effect = { 
+			add_trait = strong
+			make_trait_inactive = heterochromia_purple2 
+		}
 	}
 	8064.1.1 = { trait = diligent }
 	8068.1.1 = { trait = gregarious }
@@ -5240,6 +5244,7 @@ Targaryen_97 = {
 	trait = education_diplomacy_5
 	trait = beauty_good_3
 	trait = bossy
+	trait = heterochromia_eyes
 
 	disallow_random_traits = yes
 
@@ -5248,7 +5253,10 @@ Targaryen_97 = {
 
 	8181.1.1 = { 
 		birth = yes 
-		effect = { add_trait = bastard }
+		effect = { 
+			add_trait = bastard
+			make_trait_inactive = heterochromia_green1 
+		}
 	}
 	8184.1.1 = {
 		effect = { remove_trait = bastard }
@@ -5833,7 +5841,12 @@ Targaryen_120 = {
 			}
 		}
 	}
-	8275.1.1 = { trait = aged }
+	8275.1.1 = { 
+		trait = blind
+		effect = {
+			make_trait_inactive = aged
+		}
+	}
 	8300.6.1 = { death = yes }
 }
 Targaryen_121 = {

@@ -2567,7 +2567,7 @@ c_sows_horn = {
 	7852.1.1 = {
 		holder = Hogg_4
 	}
-	7858 = {
+	7858.1.1 = {
 		liege = d_hayford
 	}
 	7859.1.1 = {

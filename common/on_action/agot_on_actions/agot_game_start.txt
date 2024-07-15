@@ -3387,34 +3387,6 @@ agot_on_game_start_after_lobby = {
 		##### General setup start #####
 		### Night's Watch related setup
 		title:d_the_wall = { clear_title_laws = yes }
-		every_ruler = {
-			if = { # Changes goverment to Nightwatch for Custom Characters
-				limit = {
-					AND = {
-						has_title = title:k_the_wall
-						is_from_ruler_designer = yes
-					}
-				}
-				change_government = nights_watch_government
-			}
-
-			if = { # Adds Nightwatch trait for Custom Characters without it
-				limit = {
-					NOT = {
-						has_trait = nightswatch
-					}
-					AND = {
-						any_held_title = {
-							tier = tier_county
-							title_province = { geographical_region = world_westeros_the_wall }
-						}
-						is_from_ruler_designer = yes
-					}
-				}
-				add_trait = nightswatch
-			}
-
-		}
 
 		every_barony = {
 			if = {
@@ -3732,6 +3704,10 @@ agot_on_game_start_after_lobby = {
 				trigger_event = {
 					id = agot_house_customizer.0001
 				}
+			}
+			if = {
+				limit = { has_trait = heterochromia_customizer }
+				trigger_event = agot_heterochromia_customizer.1000
 			}
 			# RP Events
 			if = {

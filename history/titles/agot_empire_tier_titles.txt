@@ -1643,7 +1643,6 @@ e_the_westerlands = {
 e_the_wall = {
 	128.1.1 = {
 		holder = Stark_13 #The Night's King
-		succession_laws = { male_only_law nights_watch_succession_law }
 	}
 	141.1.1 = {
 		holder = 0
@@ -1659,11 +1658,11 @@ e_beyond_the_wall = {
 		#law = centralization_0 # AGOT TODO
 		#law = slavery_0 # AGOT TODO
 	}
-	1000.1.1 ={
+	100.1.1 ={
 		holder = 904347			# Joramun
 		#law = centralization_2 # AGOT TODO
 	}
-	1025.1.1 ={
+	152.1.1 ={
 		holder = 0
 		#law = centralization_0 # AGOT TODO
 	}
