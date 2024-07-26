@@ -2,9 +2,9 @@
 # History database id:Lannister_1
 bookmark_298_tywin_lannister={
 	type=male
-	id=24631
+	id=24663
 	age=0.560000
-	genes={ 		hair_color={ 191 7 198 28 }
+	genes={ 		hair_color={ 201 10 198 28 }
  		skin_color={ 79 27 101 31 }
  		eye_color={ 158 104 165 110 }
  		gene_chin_forward={ "chin_forward_neg" 145 "chin_forward_neg" 136 }
@@ -96,8 +96,8 @@ bookmark_298_tywin_lannister={
  		expression_other={ "cheek_wrinkles_both_01" 26 "cheek_wrinkles_both_01" 85 }
  		complexion={ "complexion_10" 0 "complexion_12" 0 }
  		gene_height={ "normal_height" 149 "normal_height" 126 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 142 "body_fat_head_fat_low" 126 }
- 		gene_bs_body_shape={ "body_shape_average_clothed" 193 "body_shape_average_clothed" 71 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_shape={ "body_shape_average_clothed" 132 "body_shape_average_clothed" 71 }
  		gene_bs_bust={ "bust_clothes" 20 "bust_clothes" 154 }
  		gene_age={ "old_4" 148 "old_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 147 "avg_spacing_lower_thickness" 212 }
@@ -118,7 +118,6 @@ bookmark_298_tywin_lannister={
  		gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 77 "lower_lip_profile" 25 }
  		gene_bs_eye_outer_width={ "eye_outer_width" 127 "eye_outer_width" 0 }
  		gene_bs_head_asymmetry_1={ "head_asymmetry_7" 164 "vanilla_head_asymmetry_1" 0 }
- 		gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
  		gene_bs_mouth_center_curve={ "mouth_center_curve_min" 94 "mouth_center_curve_min" 94 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 113 "eyebrow_straight" 113 }
  		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
@@ -144,8 +143,13 @@ bookmark_298_tywin_lannister={
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
+ 		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
+ 		cosmetics_eyeshadow={ "eyeshadow_none" 255 "eyeshadow_none" 0 }
+ 		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
+ 		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
+ 		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		clothes={ "westerlands_war_nobility_clothes" 255 "most_clothes" 0 }
- 		headgear={ "no_headgear" 242 "no_headgear" 0 }
+ 		headgear={ "no_headgear" 5 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  		props_right={ "marshal_swords" 255 "no_props" 0 }
  }

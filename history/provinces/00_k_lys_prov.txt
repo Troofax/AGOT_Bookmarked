@@ -1,27 +1,27 @@
-﻿###################### b_lys ######################
-################## c_lys - d_lys ##################
-7388 = {
-	culture = lyseni
-	religion = weeping_lady
-	holding = city_holding
-	duchy_capital_building = agot_lys_walls_01
-	special_building = agot_lys_02
-	7998.1.1 = {
-		buildings = {
-			city_05
-			guild_halls_04
-			common_tradeport_06
-		}
-	}
-}
-################# b_graced_castle #################
+﻿################# b_graced_castle #################
 ################## c_lys - d_lys ##################
 7389 = {
+	culture = lyseni
+	religion = weeping_lady
+	duchy_capital_building = agot_lys_walls_01
+	special_building = agot_lys_02
 	holding = castle_holding
 	7998.1.1 = {
 		buildings = {
 			castle_05
 			curtain_walls_03
+			agot_slave_camps_06
+		}
+	}
+}
+###################### b_lys ######################
+################## c_lys - d_lys ##################
+7388 = {
+	holding = city_holding
+	7998.1.1 = {
+		buildings = {
+			city_05
+			guild_halls_07
 		}
 	}
 }
