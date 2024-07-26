@@ -4,9 +4,9 @@ bookmark_195_baelor_targaryen={
 	type=male
 	id=17756
 	age=0.250000
-	genes={ 		hair_color={ 0 38 4 2 }
+	genes={ 		hair_color={ 0 76 4 2 }
  		skin_color={ 149 57 156 72 }
- 		eye_color={ 242 201 251 80 }
+ 		eye_color={ 244 51 251 80 }
  		gene_chin_forward={ "chin_forward_pos" 144 "chin_forward_neg" 120 }
  		gene_chin_height={ "chin_height_pos" 139 "chin_height_neg" 115 }
  		gene_chin_width={ "chin_width_pos" 89 "chin_width_neg" 144 }

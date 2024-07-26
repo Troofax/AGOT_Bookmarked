@@ -4,9 +4,9 @@ bookmark_195_daemon_blackfyre={
 	type=male
 	id=17755
 	age=0.250000
-	genes={ 		hair_color={ 0 38 0 244 }
+	genes={ 		hair_color={ 0 76 0 244 }
  		skin_color={ 57 31 66 28 }
- 		eye_color={ 244 178 99 155 }
+ 		eye_color={ 242 68 99 155 }
  		gene_chin_forward={ "chin_forward_pos" 144 "chin_forward_neg" 144 }
  		gene_chin_height={ "chin_height_pos" 102 "chin_height_pos" 102 }
  		gene_chin_width={ "chin_width_neg" 102 "chin_width_pos" 102 }
@@ -97,7 +97,7 @@ bookmark_195_daemon_blackfyre={
  		complexion={ "complexion_11" 0 "complexion_12" 255 }
  		gene_height={ "normal_height" 139 "normal_height" 128 }
  		gene_bs_body_type={ "body_fat_head_fat_full" 108 "body_fat_head_fat_medium" 114 }
- 		gene_bs_body_shape={ "body_shape_pear_full" 239 "body_shape_rectangle_half" 0 }
+ 		gene_bs_body_shape={ "body_shape_pear_full" 224 "body_shape_rectangle_half" 0 }
  		gene_bs_bust={ "bust_clothes" 88 "bust_shape_3_half" 171 }
  		gene_age={ "old_3" 148 "old_3" 148 }
  		gene_eyebrows_shape={ "avg_spacing_avg_thickness" 192 "avg_spacing_low_thickness" 192 }
@@ -136,7 +136,7 @@ bookmark_195_daemon_blackfyre={
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		pose={ "" 255 "" 0 }
  		gene_beauty_details={ "beauty_details" 127 "beauty_details" 0 }
- 		beards={ "western_beards_straight" 98 "no_beard" 0 }
+ 		beards={ "no_beard" 255 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "byzantine_hairstyles_wavy" 130 "all_hairstyles" 0 }
  		legwear={ "western_common_legwear" 98 "all_legwear" 0 }
@@ -151,9 +151,15 @@ bookmark_195_daemon_blackfyre={
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		clothes={ "byzantine_high_nobility_clothes" 236 "most_clothes" 0 }
  		headgear={ "no_headgear" 227 "no_headgear" 0 }
- 		gene_balding_hair_effect={ "baldness_stage_2" 255 "no_baldness" 0 }
+ 		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
+	override={
+		portrait_modifier_overrides={
+			custom_beards=male_empty
+		}
+	}
+
 	entity={ 3942081117 3942081117 }
 	tags={ {
 			hash=2125534279
@@ -161,10 +167,6 @@ bookmark_195_daemon_blackfyre={
 		}
  {
 			hash=2670398845
-			invert=no
-		}
- {
-			hash=2951898311
 			invert=no
 		}
  {

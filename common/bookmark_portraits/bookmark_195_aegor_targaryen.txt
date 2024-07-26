@@ -4,9 +4,9 @@ bookmark_195_aegor_targaryen={
 	type=male
 	id=17924
 	age=0.220000
-	genes={ 		hair_color={ 0 76 182 236 }
+	genes={ 		hair_color={ 0 38 182 236 }
  		skin_color={ 76 35 72 32 }
- 		eye_color={ 242 51 238 64 }
+ 		eye_color={ 244 178 238 64 }
  		gene_chin_forward={ "chin_forward_neg" 0 "chin_forward_pos" 144 }
  		gene_chin_height={ "chin_height_pos" 144 "chin_height_pos" 120 }
  		gene_chin_width={ "chin_width_neg" 118 "chin_width_neg" 159 }

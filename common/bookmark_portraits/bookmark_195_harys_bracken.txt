@@ -150,7 +150,7 @@ bookmark_195_harys_bracken={
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		clothes={ "agot_stormlander_low_fabrics" 136 "most_clothes" 0 }
  		headgear={ "no_headgear" 159 "no_headgear" 0 }
- 		gene_balding_hair_effect={ "baldness_stage_2" 255 "no_baldness" 0 }
+ 		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
 	entity={ 979141817 979141817 }
@@ -163,19 +163,15 @@ bookmark_195_harys_bracken={
 			invert=no
 		}
  {
-			hash=2951898311
-			invert=no
-		}
- {
 			hash=681013727
 			invert=no
 		}
  {
-			hash=2793867254
+			hash=1563190100
 			invert=no
 		}
  {
-			hash=1563190100
+			hash=2793867254
 			invert=no
 		}
  }
