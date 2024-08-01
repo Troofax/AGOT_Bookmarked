@@ -11588,13 +11588,22 @@ Kingsguard_10 = {
 		trait = archmaester
 		effect = { make_trait_inactive = archmaester_bronze }
 	}
-	8005.1.1 = {
+	# AGOT Bookmarked Added
+	7998.1.1 = {
 		employer = Targaryen_27 # Aegon I Targaryen
 		effect = { 
 			remove_trait = archmaester_bronze
 			make_trait_inactive = grandmaester 
 		}
 	}
+	# AGOT Bookmarked Disabled
+	# 8005.1.1 = {
+		# employer = Targaryen_27 # Aegon I Targaryen
+		# effect = { 
+			# remove_trait = archmaester_bronze
+			# make_trait_inactive = grandmaester 
+		# }
+	# }
 	8005.10.1 = { death = yes }
 }
 88000265 = { # AGOT TODO ID
