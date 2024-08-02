@@ -7894,8 +7894,8 @@ Velaryon_15 = {
 	7980.1.1 = { birth = yes }
 	7992.1.1 = { religion = the_seven_main }
 	7996.1.1 = { trait = content }
-	8001.1.1 = { trait = knight }
-	8010.1.1 = {
+	# AGOT Bookmarked Added
+	7998.1.1 = {
 		effect = { 
 			agot_join_kingsguard_char_history_effect = { # Original Kingsguard
 				KING = character:Targaryen_27 # Aegon I Targaryen
@@ -7905,6 +7905,18 @@ Velaryon_15 = {
 			}
 		}
 	}
+	8001.1.1 = { trait = knight }
+	# AGOT Bookmarked Disabled
+	# 8010.1.1 = {
+		# effect = { 
+			# agot_join_kingsguard_char_history_effect = { # Original Kingsguard
+				# KING = character:Targaryen_27 # Aegon I Targaryen
+			# }
+			# agot_lc_kingsguard_char_history_effect = { # Original Lord Commander of the Kingsguard
+				# KING = character:Targaryen_27 # Aegon I Targaryen
+			# }
+		# }
+	# }
 	8030.1.1 = { 
 		trait = kingsguard # Successor: Davos Darklyn; Next Lord Commander: Serwyn Errol
 		death = yes 
