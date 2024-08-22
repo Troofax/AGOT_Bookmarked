@@ -62,7 +62,7 @@ e_the_iron_throne = {
 	8037.9.9 = {
 		holder = Targaryen_30	 # Aenys I
 	}
-	8042.1.1 = {
+	8042.3.1 = {
 		holder = Targaryen_31		#Maegor I 'the Cruel'
 	}
 	8048.3.7 = {
@@ -106,7 +106,7 @@ e_the_iron_throne = {
 	8184.1.1 = {
 		holder = Targaryen_91		#Daeron II the Good
 	}
-	8209.6.1 = {
+	8209.9.1 = {
 		holder = Targaryen_108	 # Aerys I
 	}
 	8221.1.1 = {
@@ -121,16 +121,16 @@ e_the_iron_throne = {
 	8262.1.1 = {
 		holder = Targaryen_1	 # Aerys II the Mad
 	}
-	8283.6.1 = {
+	8283.9.1 = {
 		holder = Baratheon_2		#Robert I Baratheon
 	}
-	8298.10.28 = {
+	8298.10.24 = {
 		holder = Baratheon_5 #Joffrey I "Baratheon"
 	}
 	8300.1.1 = {
 		holder = Baratheon_7 #Tommen I "Baratheon"
 	}
-	8300.3.1 = {
+	8300.4.10 = {
 		# law = investiture_law_2 # AGOT TODO
 		# effect = { # AGOT TODO
 			# k_the_most_devout = {
@@ -516,11 +516,11 @@ e_the_iron_islands = {
 	8289.6.1 = {
 		holder = 0
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		holder = Greyjoy_5 #Balon
 		#law = centralization_2 # AGOT TODO
 	}
-	8299.10.3 = {
+	8299.11.15 = {
 		#law = succ_feudal_elective #kingsmoot # AGOT TODO
 		holder = Greyjoy_6 #Euron
 		#law = centralization_2 # AGOT TODO
@@ -648,7 +648,7 @@ e_the_north = {
 	# 8060.1.1 = {
 		# law = first_night_0 #First Night abolished # AGOT TODO
 	# }
-	8298.12.20 = {
+	8299.1.16 = {
 		holder = Stark_6 #Robb Stark
 		effect = { # AGOT TODO
 			# AGOT Bookmarked Added
@@ -658,7 +658,7 @@ e_the_north = {
 			}
 		}
 	}
-	8299.11.5 = {
+	8299.12.15 = {
 		holder = 0
 	}
 }
@@ -900,237 +900,6 @@ e_the_reach = {
 	8060.1.1 = {
 		#law = first_night_0 #First Night abolished # AGOT TODO
 	}
-}
-
-e_the_riverlands = {
-	900.1.1 = {
-		#law = investiture_law_2 # AGOT TODO
-		#law = first_night_1 # AGOT TODO
-		#law = slavery_0 # AGOT TODO
-	}
-
-	###House Fisher
-	3306.1.1 = {
-		holder = Fisher_riverlands_duplicate_1 	 # Ryman (nc) # House Fisher
-	}
-	3323.1.1 = {
-		holder = Fisher_riverlands_duplicate_2 	 # Patrek (nc)
-	}
-	3331.1.1 = {
-		holder = Fisher_riverlands_duplicate_3 	 # Addan (nc)
-	}
-	3390.1.1 = {
-		holder = Fisher_riverlands_duplicate_4 	 # Tristan (nc)
-	}
-	3408.1.1 = {
-		holder = Fisher_riverlands_duplicate_5 	 # Eyman (nc)
-	}
-	3442.1.1 = {
-		holder = Fisher_riverlands_duplicate_6 	 # Edmure (nc)
-	}
-	3456.1.1 = {
-		holder = 0
-	}
-
-	###House Mudd
-	5917.1.1 = {
-		holder = Mudd_3 	 # Tristan (nc) # House Mudd
-	}
-	5981.1.1 = {
-		holder = Mudd_4 	 # Addam (nc)
-	}
-	6000.1.1 = {
-		holder = Mudd_5 	 # Tristifer (C)
-	}
-	6034.1.1 = {
-		holder = Mudd_6 	 # Tristan (nc)
-	}
-	6072.1.1 = {
-		holder = Mudd_8 	 # Tristifer (C)
-	}
-	6122.1.1 = {
-		holder = Mudd_9 	 # Roslin (nc)
-	}
-	6141.1.1 = {
-		holder = Mudd_11 	 # Tristan (nc)
-	}
-	6150.1.1 = {
-		holder = Mudd_12 	 # Jon (nc)
-	}
-	6165.1.1 = {
-		holder = Mudd_13 	 # Hosteen (nc)
-	}
-	6226.1.1 = {
-		holder = Mudd_14 	 # Addan (nc)
-	}
-	6261.1.1 = {
-		holder = Mudd_16 	 # Tristan (nc)
-	}
-	6266.1.1 = {
-		holder = Mudd_17 	 # Addan (nc)
-	}
-	6291.1.1 = {
-		holder = Mudd_18 	 # Marq (nc)
-	}
-	6318.1.1 = {
-		holder = Mudd_19 	 # Tristifer (C)
-	}
-	6344.1.1 = {
-		holder = Mudd_20 	 # Tyston (nc)
-	}
-	6349.1.1 = {
-		holder = Mudd_21 	 # Brynden (nc)
-	}
-	6390.1.1 = {
-		holder = Mudd_22 	 # Tristan (nc)
-	}
-	6402.1.1 = {
-		holder = Mudd_23 	 # Roslin (nc)
-	}
-	6453.1.1 = {
-		holder = Mudd_24 	 # Brynden (nc)
-	}
-	6475.1.1 = {
-		holder = Mudd_25 	 # Addan (nc)
-	}
-	6497.1.1 = {
-		holder = Mudd_26 	 # Tristan (nc)
-	}
-	6535.1.1 = {
-		holder = Mudd_27 	 # Arson (nc)
-	}
-	6558.1.1 = {
-		holder = Mudd_28 	 # Brynden (nc)
-	}
-	6572.1.1 = {
-		holder = Mudd_29 	 # Tristan (nc)
-	}
-	6620.1.1 = {
-		holder = Mudd_30 	 # Elmar (nc)
-	}
-	6642.1.1 = {
-		holder = Mudd_31 	 # Tristifer (C)
-	}
-	6651.1.1 = {
-		holder = Mudd_32 	 # Tristifer (C)
-	}
-	6670.1.1 = {
-		holder = 0	 # Mudd royal line extinct
-	}
-
-	###House Justman
-	6939.1.1 = {
-		holder = Justman_1 	 # Benedict (C) # House Justman
-	}
-	6962.1.1 = {
-		holder = Justman_2 	 # Benedict (C)
-	}
-	7022.1.1 = {
-		holder = Justman_4 	 # Bernarr (C)
-	}
-	7029.1.1 = {
-		holder = Justman_5 	 # Edwyn (nc)
-	}
-	7038.1.1 = {
-		holder = Justman_6 	 # Brynden (nc)
-	}
-	7086.1.1 = {
-		holder = Justman_8 	 # Bernarr (C)
-	}
-	7092.1.1 = {
-		holder = 0 	 # Justman royal line extinct
-	}
-
-	###House Teague
-	7200.1.1 = {
-		holder = Teague_1 	 # Torrence (C) # House Teague
-	}
-	7250.1.1 = {
-		holder = Teague_2 	 # Brynden (nc)
-	}
-	7251.1.1 = {
-		holder = Teague_3 	 # Petyr (nc)
-	}
-	7275.1.1 = {
-		holder = Teague_4 	 # Theo (C)
-	}
-	7290.1.1 = {
-		holder = 0
-	}
-	7653.1.1 = {
-		holder = Teague_6 	 # Humfrey (C)
-	}
-	7680.1.1 = {
-		holder = Teague_8 	 # Humfrey II( C)
-	}
-	7680.1.2 = {
-		holder = Teague_9 	 # Hollis ( C)
-	}
-	7680.1.3 = {
-		holder = Teague_10 	 # Tyler C)
-	}
-	7680.1.4 = {
-		holder = Teague_7 	 # Damon( C)
-	}
-
-	#Durrandons of the Stormlands
-	7680.1.5 = {
-		holder = Durrandon_69 #Arlan III
-	}
-	7701.1.1 = {
-		holder = Durrandon_70 #Arlan IV
-	}
-	7719.1.1 = {
-		holder = Durrandon_71 #Anrec
-	}
-	7757.1.1 = {
-		holder = Durrandon_72 #Arcon
-	}
-	7760.1.1 = {
-		holder = Durrandon_73 #Durran
-	}
-	7803.1.1 = {
-		holder = Durrandon_74 #Alrec
-	}
-	7840.1.1 = {
-		holder = Durrandon_75 #Durran
-	}
-	7867.1.1 = {
-		holder = Durrandon_76 #Angron
-	}
-	7896.1.1 = {
-		holder = Durrandon_77 # Erich IX
-	}
-	7898.1.1 = {
-		holder = Durrandon_81 # Arrec III 
-	}
-	#Hoares of the Iron Islands conquer Riverlands
-	7902.1.1 = {
-		holder = Hoare_28 # Harwyn
-		succession_laws = { male_only_law }
-	}
-	7943.1.1 = {
-		holder = Hoare_30 # Harrock
-	}
-	7960.1.1 = {
-		holder = Hoare_31 # Harren (C)
-	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		effect = {
-			agot_set_empire_tier_realm_paramountcy = yes
-		}
-	}
-	7999.8.15 = {
-		holder = 0
-		succession_laws = { male_preference_law }
-	}
-	8048.6.2 = {
-		#law = investiture_law_1 # AGOT TODO
-	}
-	# 8060.1.1 = {
-		# law = first_night_0 #First Night abolished # AGOT TODO
-	# }
 }
 
 e_the_stormlands = {
@@ -1395,6 +1164,237 @@ e_the_stormlands = {
 	}
 }
 
+e_the_riverlands = {
+	900.1.1 = {
+		#law = investiture_law_2 # AGOT TODO
+		#law = first_night_1 # AGOT TODO
+		#law = slavery_0 # AGOT TODO
+	}
+
+	###House Fisher
+	3306.1.1 = {
+		holder = Fisher_riverlands_duplicate_1 	 # Ryman (nc) # House Fisher
+	}
+	3323.1.1 = {
+		holder = Fisher_riverlands_duplicate_2 	 # Patrek (nc)
+	}
+	3331.1.1 = {
+		holder = Fisher_riverlands_duplicate_3 	 # Addan (nc)
+	}
+	3390.1.1 = {
+		holder = Fisher_riverlands_duplicate_4 	 # Tristan (nc)
+	}
+	3408.1.1 = {
+		holder = Fisher_riverlands_duplicate_5 	 # Eyman (nc)
+	}
+	3442.1.1 = {
+		holder = Fisher_riverlands_duplicate_6 	 # Edmure (nc)
+	}
+	3456.1.1 = {
+		holder = 0
+	}
+
+	###House Mudd
+	5917.1.1 = {
+		holder = Mudd_3 	 # Tristan (nc) # House Mudd
+	}
+	5981.1.1 = {
+		holder = Mudd_4 	 # Addam (nc)
+	}
+	6000.1.1 = {
+		holder = Mudd_5 	 # Tristifer (C)
+	}
+	6034.1.1 = {
+		holder = Mudd_6 	 # Tristan (nc)
+	}
+	6072.1.1 = {
+		holder = Mudd_8 	 # Tristifer (C)
+	}
+	6122.1.1 = {
+		holder = Mudd_9 	 # Roslin (nc)
+	}
+	6141.1.1 = {
+		holder = Mudd_11 	 # Tristan (nc)
+	}
+	6150.1.1 = {
+		holder = Mudd_12 	 # Jon (nc)
+	}
+	6165.1.1 = {
+		holder = Mudd_13 	 # Hosteen (nc)
+	}
+	6226.1.1 = {
+		holder = Mudd_14 	 # Addan (nc)
+	}
+	6261.1.1 = {
+		holder = Mudd_16 	 # Tristan (nc)
+	}
+	6266.1.1 = {
+		holder = Mudd_17 	 # Addan (nc)
+	}
+	6291.1.1 = {
+		holder = Mudd_18 	 # Marq (nc)
+	}
+	6318.1.1 = {
+		holder = Mudd_19 	 # Tristifer (C)
+	}
+	6344.1.1 = {
+		holder = Mudd_20 	 # Tyston (nc)
+	}
+	6349.1.1 = {
+		holder = Mudd_21 	 # Brynden (nc)
+	}
+	6390.1.1 = {
+		holder = Mudd_22 	 # Tristan (nc)
+	}
+	6402.1.1 = {
+		holder = Mudd_23 	 # Roslin (nc)
+	}
+	6453.1.1 = {
+		holder = Mudd_24 	 # Brynden (nc)
+	}
+	6475.1.1 = {
+		holder = Mudd_25 	 # Addan (nc)
+	}
+	6497.1.1 = {
+		holder = Mudd_26 	 # Tristan (nc)
+	}
+	6535.1.1 = {
+		holder = Mudd_27 	 # Arson (nc)
+	}
+	6558.1.1 = {
+		holder = Mudd_28 	 # Brynden (nc)
+	}
+	6572.1.1 = {
+		holder = Mudd_29 	 # Tristan (nc)
+	}
+	6620.1.1 = {
+		holder = Mudd_30 	 # Elmar (nc)
+	}
+	6642.1.1 = {
+		holder = Mudd_31 	 # Tristifer (C)
+	}
+	6651.1.1 = {
+		holder = Mudd_32 	 # Tristifer (C)
+	}
+	6670.1.1 = {
+		holder = 0	 # Mudd royal line extinct
+	}
+
+	###House Justman
+	6939.1.1 = {
+		holder = Justman_1 	 # Benedict (C) # House Justman
+	}
+	6962.1.1 = {
+		holder = Justman_2 	 # Benedict (C)
+	}
+	7022.1.1 = {
+		holder = Justman_4 	 # Bernarr (C)
+	}
+	7029.1.1 = {
+		holder = Justman_5 	 # Edwyn (nc)
+	}
+	7038.1.1 = {
+		holder = Justman_6 	 # Brynden (nc)
+	}
+	7086.1.1 = {
+		holder = Justman_8 	 # Bernarr (C)
+	}
+	7092.1.1 = {
+		holder = 0 	 # Justman royal line extinct
+	}
+
+	###House Teague
+	7200.1.1 = {
+		holder = Teague_1 	 # Torrence (C) # House Teague
+	}
+	7250.1.1 = {
+		holder = Teague_2 	 # Brynden (nc)
+	}
+	7251.1.1 = {
+		holder = Teague_3 	 # Petyr (nc)
+	}
+	7275.1.1 = {
+		holder = Teague_4 	 # Theo (C)
+	}
+	7290.1.1 = {
+		holder = 0
+	}
+	7653.1.1 = {
+		holder = Teague_6 	 # Humfrey (C)
+	}
+	7680.1.1 = {
+		holder = Teague_8 	 # Humfrey II( C)
+	}
+	7680.1.2 = {
+		holder = Teague_9 	 # Hollis ( C)
+	}
+	7680.1.3 = {
+		holder = Teague_10 	 # Tyler C)
+	}
+	7680.1.4 = {
+		holder = Teague_7 	 # Damon( C)
+	}
+
+	#Durrandons of the Stormlands
+	7680.1.5 = {
+		holder = Durrandon_69 #Arlan III
+	}
+	7701.1.1 = {
+		holder = Durrandon_70 #Arlan IV
+	}
+	7719.1.1 = {
+		holder = Durrandon_71 #Anrec
+	}
+	7757.1.1 = {
+		holder = Durrandon_72 #Arcon
+	}
+	7760.1.1 = {
+		holder = Durrandon_73 #Durran
+	}
+	7803.1.1 = {
+		holder = Durrandon_74 #Alrec
+	}
+	7840.1.1 = {
+		holder = Durrandon_75 #Durran
+	}
+	7867.1.1 = {
+		holder = Durrandon_76 #Angron
+	}
+	7896.1.1 = {
+		holder = Durrandon_77 # Erich IX
+	}
+	7898.1.1 = {
+		holder = Durrandon_81 # Arrec III 
+	}
+	#Hoares of the Iron Islands conquer Riverlands
+	7902.1.1 = {
+		holder = Hoare_28 # Harwyn
+		succession_laws = { male_only_law }
+	}
+	7943.1.1 = {
+		holder = Hoare_30 # Harrock
+	}
+	7960.1.1 = {
+		holder = Hoare_31 # Harren (C)
+	}
+	# AGOT Bookmarked Added
+	7998.1.1 = {
+		effect = {
+			agot_set_empire_tier_realm_paramountcy = yes
+		}
+	}
+	7999.8.15 = {
+		holder = 0
+		succession_laws = { male_preference_law }
+	}
+	8048.6.2 = {
+		#law = investiture_law_1 # AGOT TODO
+	}
+	# 8060.1.1 = {
+		# law = first_night_0 #First Night abolished # AGOT TODO
+	# }
+}
+
 e_the_vale = {
 	2500.1.1 = {
 		#law = centralization_1 # AGOT TODO
@@ -1608,7 +1608,7 @@ e_the_westerlands = {
 	7880.1.1 = {
 		holder = Lannister_62 # Tommen II (C)
 	}
-	7900.1.1 = {
+	7901.1.1 = {
 		holder = Lannister_63 # Tyrion IV (C)
 	}
 	7920.1.1 = {
@@ -1655,81 +1655,129 @@ e_the_wall = {
 # Other Titles
 
 e_beyond_the_wall = {
-	900.1.1 ={
+	100.1.1 = {
+		holder = King_Beyond_The_Wall_1 # Joramun
 		succession_laws = { male_only_law confederate_partition_succession_law }
-		#law = succ_turkish_succession # AGOT TODO
-		#law = centralization_0 # AGOT TODO
-		#law = slavery_0 # AGOT TODO
 	}
-	100.1.1 ={
-		holder = 904347			# Joramun
-		#law = centralization_2 # AGOT TODO
-	}
-	152.1.1 ={
+	152.1.1 = {
 		holder = 0
-		#law = centralization_0 # AGOT TODO
 	}
-	4000.1.1 ={
-		holder = 903347			# The Horned King
-		#law = centralization_2 # AGOT TODO
+	4000.1.1 = {
+		holder = King_Beyond_The_Wall_2 # The Horned King
 	}
-	4025.1.1 ={
+	4025.1.1 = {
 		holder = 0
-		#law = centralization_0 # AGOT TODO
 	}
-	5000.1.1 ={
-		holder = 901347			# Gorne
-		#law = centralization_2 # AGOT TODO
+	5000.1.1 = {
+		holder = King_Beyond_The_Wall_4 # Gorne
 	}
-	5024.6.1 ={
-		holder = 902347			# Gendel
+	5024.6.1 = {
+		holder = King_Beyond_The_Wall_5 # Gendel
 	}
-	5025.1.1 ={
+	5025.1.1 = {
 		holder = 0
-		#law = centralization_0 # AGOT TODO
 	}
-	7270.1.1 ={
-		holder = Bael_1			# Bael the Bard
-		#law = centralization_2 # AGOT TODO
+	7270.1.1 = {
+		holder = Bael_1 # Bael the Bard
 	}
-	7374.1.1 ={
+	7374.1.1 = {
 		holder = 0
-		#law = centralization_0 # AGOT TODO
 	}
-	8213.1.1={
-		holder = Forester_15			# Raymun Redbeard
-		#law = centralization_2 # AGOT TODO
+	8213.1.1 = {
+		holder = Forester_15 # Raymun Redbeard
 	}
-	8226.9.9={
+	8226.9.9 = {
 		holder = 0
-		#law = centralization_0 # AGOT TODO
 	}
-	8297.1.1={
-		holder = Rayder_1			# Mance Rayder
-		#law = centralization_2 # AGOT TODO
+	8297.1.1 = {
+		holder = Rayder_1 # Mance Rayder
 	}
-	8300.2.10={
+	8300.1.29 = {
 		holder = 0
-		#law = centralization_0 # AGOT TODO
 	}
 }
 
 e_three_daughters = {
+	# Myrish Term
 	8096.1.1 = {
-		holder = Mallar_9 # Myr first
+		holder = Mercor_9 # Ghorgho 
 		succession_laws = { equal_law magisterial_limited_succession_law }
 		government = free_city_government
+		effect = {
+			holder ?= {
+				if = {
+					limit = { has_title = title:c_myr }
+					set_realm_capital = title:c_myr
+				}
+				else_if = {
+					limit = { has_title = title:c_lys }
+					set_realm_capital = title:c_lys
+				}
+				else_if = {
+					limit = { has_title = title:c_tyrosh }
+					set_realm_capital = title:c_tyrosh
+				}
+			}
+		}
 	}
+	# Tyroshi Term
 	8099.1.1 = {
-		holder = Basetys_14 #Tyrosh next
+		holder = Basetys_14 
 	}
+	# Lyseni Term
 	8102.1.1 = {
-		holder = Haen_9 #Lys next
+		holder = Haen_9 
 	}
-	8104.1.1 = { # Lys ruler dies, so back to
-		holder = Myrahar_8 #Myr
+	8104.1.1 = { 
+		holder = Haen_8
 	}
-	8110.1.1 = { # To be continued
+	# Myrish Term
+	8105.1.1 = {
+		holder = Mercor_9
+	}
+	8106.1.1 = {	
+		holder = Naelor_9
+	}
+	# Tyroshi Term
+	8108.1.1 = {
+		holder = Basetys_14 # Malo
+	}
+	8110.1.1 = { 
+		holder = Atuhoris_8 # Allaro
+	}
+	# Lyseni Term
+	8111.1.1 = {
+		holder = Haen_8 # Silvario
+	}
+	# Myrish Term
+	8114.1.1 = {
+		holder = Naelor_9 # Costos		
+	}
+	# Tyroshi Term
+	8117.1.1 = {
+		holder = Atuhoris_8 # Allaro
+	} 
+	# Lyseni Term 
+	8120.1.1 = {
+		holder = Haen_8 # Silvario
+	}
+	# Myrish Term
+	8123.1.1 = {
+		holder = Naelor_9 # Costos		
+	}
+	8124.1.1 = {
+		holder = Myrahar_8 # Qonane
+	}
+	# Tyroshi Term
+	8126.1.1 = {
+		holder = Atuhoris_8 # Allaro		
+	}
+	# Lyseni Term
+	8129.1.1 = {
+		holder = Rogare_2 # Lysandro the Magnificent - C		
+	}
+	# Daughters War
+	8132.1.1 = {
 		holder = 0
 	}
 }
@@ -1775,7 +1823,7 @@ e_blackfyre_rebellion = {
 
 #Faegon titular title
 e_targaryen_host_title = {
-	8300.3.1 = { #supposed date of aegons landing (based on history file at least)
+	8300.6.14 = { 
 		holder = Targaryen_12 #Aegon "Young Griff" Targaryen
 	}
 }

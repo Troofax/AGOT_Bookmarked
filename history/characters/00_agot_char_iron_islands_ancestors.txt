@@ -7,7 +7,7 @@
 ###
 Grey_King_1 = {
 	name = The_Father # The Grey King's father
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	martial = 10
 	prowess = 10
@@ -15,6 +15,7 @@ Grey_King_1 = {
 	religion = drowned_god_main
 	culture = ironborn
 
+	trait = education_diplomacy_4
 	trait = intellect_good_3
 	trait = physique_good_3
 	trait = just
@@ -24,20 +25,12 @@ Grey_King_1 = {
 	disallow_random_traits = yes
 
 	2.1.1 = { birth = yes } # changed from 1.1.1 to 2.1.1 because the game doesn't like 1.1.1
-	18.1.1 = {
-		effect = {
-			add_trait = lifestyle_mystic
-			add_trait_xp = {
-				trait = lifestyle_mystic
-				value = trait_third_level
-			}
-		}
-	}
+	18.1.1 = { trait = lifestyle_mystic_3_history }
 	1001.1.1 = { death = yes }
 }
 Grey_King_2 = {
 	name = The_Grey_King # Canon, The Grey King, don't leave his name blank again, it messes up the numeration of all ironborn kings
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	martial = 10
 	prowess = 20
@@ -57,16 +50,11 @@ Grey_King_2 = {
 
 	disallow_random_traits = yes
 
-	18.1.2 = { birth = yes }
-	34.1.1 = {
-		effect = {
-			add_trait = lifestyle_mystic
-			add_trait_xp = {
-				trait = lifestyle_mystic
-				value = trait_third_level
-			}
-		}
+	18.1.2 = {
+		birth = yes
+		add_character_flag = canon_status_canon
 	}
+	34.1.1 = { trait = lifestyle_mystic_3_history }
 	1008.1.1 = { death = yes }
 }
 
@@ -76,7 +64,7 @@ Grey_King_2 = {
 ###
 Grey_King_3 = {
 	name = The_Greyiron # Mentioned, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 7
 
@@ -94,12 +82,15 @@ Grey_King_3 = {
 
 	disallow_random_traits = yes
 
-	85.1.1 = { birth = yes }
+	85.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	130.1.1 = { death = yes }
 }
 Grey_King_4 = {
 	name = Line_of_The_Greyiron
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -137,7 +128,10 @@ Greyiron_1 = {
 
 	disallow_random_traits = yes
 
-	2894.1.1 = { birth = yes }
+	2894.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	2910.1.1 = { give_nickname = nick_ironfoot }
 	2942.1.1 = {
 		trait = wounded_3
@@ -170,7 +164,10 @@ Greyiron_2 = {
 
 	disallow_random_traits = yes
 
-	2913.1.1 = { birth = yes }
+	2913.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	2929.1.1 = { give_nickname = nick_the_ugly }
 	2965.1.1 = { death = yes }
 }
@@ -202,15 +199,19 @@ Greyiron_4 = {
 
 	father = Greyiron_3
 
+	trait = education_martial_3
 	trait = strong
 	trait = authoritative
 	trait = brave
 	trait = ambitious
 	trait = rowdy
-	
+
 	disallow_random_traits = yes
 
-	2958.1.1 = { birth = yes }
+	2958.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	2974.1.1 = { give_nickname = nick_flatnose }
 	3009.1.1 = { death = yes }
 }
@@ -403,7 +404,10 @@ Greyiron_19 = {
 
 	father = Greyiron_18
 
-	5023.1.1 = { birth = yes }
+	5023.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	5039.1.1 = { give_nickname = nick_the_bald_historical }
 	5087.1.1 = { death = yes }
 }
@@ -432,7 +436,10 @@ Greyiron_20 = {
 
 	disallow_random_traits = yes
 
-	5060.1.1 = { birth = yes }
+	5060.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	5089.1.1 = { give_nickname = nick_the_latecomer }
 	5129.1.1 = { death = yes }
 }
@@ -448,7 +455,10 @@ Greyiron_21 = {
 	trait = ambitious
 	trait = greedy
 
-	5061.1.1 = { birth = yes }
+	5061.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	5087.1.1 = {
 		death = {
 			death_reason = death_murder_known
@@ -468,7 +478,10 @@ Greyiron_22 = {
 	trait = ambitious
 	trait = greedy
 
-	5063.1.1 = { birth = yes }
+	5063.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	5087.1.1 = {
 		death = {
 			death_reason = death_murder_known
@@ -488,7 +501,10 @@ Greyiron_23 = {
 	trait = ambitious
 	trait = greedy
 
-	5065.1.1 = { birth = yes }
+	5065.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	5087.1.1 = {
 		death = {
 			death_reason = death_murder_known
@@ -506,7 +522,10 @@ Greyiron_24 = {
 
 	father = Greyiron_20
 
-	5104.1.1 = { birth = yes }
+	5104.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	5181.1.1 = { death = yes }
 }
 Greyiron_25 = {
@@ -550,6 +569,7 @@ Greyiron_27 = {
 
 	father = Greyiron_26
 
+	trait = education_martial_3
 	trait = intellect_good_2
 	trait = callous
 	trait = ambitious
@@ -559,7 +579,10 @@ Greyiron_27 = {
 
 	disallow_random_traits = yes
 
-	5159.1.1 = { birth = yes }
+	5159.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	5181.1.1 = { give_nickname = nick_redhand }
 	5203.1.1 = { death = yes }
 }
@@ -576,7 +599,7 @@ Greyiron_28 = {
 	disallow_random_traits = yes
 
 	give_nickname = nick_redhand
-	
+
 	5203.1.1 = { birth = yes }
 	6457.1.1 = { death = yes }
 }
@@ -641,7 +664,10 @@ Greyiron_32 = {
 
 	disallow_random_traits = yes
 
-	6542.1.1 = { birth = yes }
+	6542.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	6584.1.1 = {
 		death = { death_reason = death_battle } # Brought down by pirates, sellswords, warlords and Andals
 	}
@@ -653,7 +679,7 @@ Greyiron_32 = {
 ###
 Grey_King_5 = {
 	name = Torgon_the_Terrible # Canon, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 10
 
@@ -664,20 +690,25 @@ Grey_King_5 = {
 
 	trait = education_martial_4
 	trait = intellect_good_2
-	trait = reaver
-	trait = torturer
 	trait = brave
 	trait = callous
 	trait = bossy
 
 	disallow_random_traits = yes
 
-	86.1.1 = { birth = yes }
+	86.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	105.1.1 = { 
+		trait = torturer 
+		trait = reaver
+	}
 	156.1.1 = { death = yes }
 }
 Grey_King_6 = {
 	name = Line_of_Torgon_the_Terrible
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -717,7 +748,10 @@ Hoare_1 = {
 
 	disallow_random_traits = yes
 
-	3655.1.1 = { birth = yes }
+	3655.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	3671.1.1 = { give_nickname = nick_the_cruel }
 	3745.1.1 = { death = yes }
 }
@@ -750,7 +784,10 @@ Hoare_3 = {
 
 	father = Hoare_2
 
-	6550.1.1 = { birth = yes }
+	6550.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	6584.1.1 = {
 		give_nickname = nick_stump_hand
 		trait = one_handed
@@ -783,7 +820,10 @@ Hoare_4 = {
 
 	disallow_random_traits = yes
 
-	6568.1.1 = { birth = yes }
+	6568.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	6629.1.1 = { death = yes }
 }
 Hoare_7 = {
@@ -803,7 +843,10 @@ Hoare_7 = {
 
 	disallow_random_traits = yes
 
-	6589.1.1 = { birth = yes }
+	6589.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	6666.1.1 = { give_nickname = nick_the_widowmaker }
 	6670.1.1 = { death = yes }
 }
@@ -832,10 +875,13 @@ Hoare_5 = {
 
 	disallow_random_traits = yes
 
-	6582.1.1 = { birth = yes }
-	6600.1.1 = { 
+	6582.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	6600.1.1 = {
 		trait = lustful
-		give_nickname = nick_the_raper 
+		give_nickname = nick_the_raper
 	}
 	6605.1.1 = {
 		death = {
@@ -856,7 +902,10 @@ Hoare_6 = {
 
 	father = Hoare_5
 
-	6600.1.1 = { birth = yes }
+	6600.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	6616.1.1 = { give_nickname = nick_the_eagle }
 	6645.1.1 = { death = yes }
 }
@@ -892,7 +941,10 @@ Hoare_9 = {
 
 	disallow_random_traits = yes
 
-	6690.1.1 = { birth = yes }
+	6690.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	6723.1.1 = { give_nickname = nick_priestkiller }
 	6742.1.1 = { death = yes }
 }
@@ -942,7 +994,10 @@ Hoare_12 = {
 
 	disallow_random_traits = yes
 
-	7429.1.1 = { birth = yes }
+	7429.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7458.1.1 = { give_nickname = nick_the_fierce }
 	7470.1.1 = { death = yes }
 }
@@ -964,7 +1019,10 @@ Hoare_13 = {
 
 	disallow_random_traits = yes
 
-	7455.1.1 = { birth = yes }
+	7455.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7470.1.1 = { give_nickname = nick_the_soulless }
 	7518.1.1 = { death = yes }
 }
@@ -985,7 +1043,10 @@ Hoare_14 = {
 
 	disallow_random_traits = yes
 
-	7486.1.1 = { birth = yes }
+	7486.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7518.1.1 = { give_nickname = nick_the_demonlover }
 	7539.1.1 = { death = yes }
 }
@@ -1007,7 +1068,10 @@ Hoare_15 = {
 
 	disallow_random_traits = yes
 
-	7508.1.1 = { birth = yes }
+	7508.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7539.1.1 = { give_nickname = nick_of_the_red_smile }
 	7547.1.1 = { death = yes }
 }
@@ -1028,7 +1092,10 @@ Hoare_16 = {
 
 	disallow_random_traits = yes
 
-	7535.1.1 = { birth = yes }
+	7535.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7551.1.1 = { give_nickname = nick_the_host }
 	7598.1.1 = { death = yes }
 }
@@ -1049,7 +1116,10 @@ Hoare_17 = {
 
 	disallow_random_traits = yes
 
-	7560.1.1 = { birth = yes }
+	7560.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7576.1.1 = {
 		give_nickname = nick_the_haggler
 		add_spouse = Lannister_50 # Lelia lannister
@@ -1070,14 +1140,17 @@ Hoare_18 = {
 	trait = education_diplomacy_2
 	trait = beauty_good_2
 	trait = zealous
-	trait = honorable
+	trait = just
 	trait = compassionate
 	trait = diligent
 	trait = charming
 
 	disallow_random_traits = yes
 
-	7588.1.1 = { birth = yes }
+	7588.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7604.1.1 = { give_nickname = nick_the_handsome }
 	7615.1.1 = {
 		trait = blind
@@ -1103,6 +1176,7 @@ Hoare_19 = {
 	father = Hoare_17
 	mother = Lannister_50
 
+	trait = education_martial_1
 	trait = greedy
 	trait = callous
 	trait = ambitious
@@ -1111,7 +1185,10 @@ Hoare_19 = {
 
 	disallow_random_traits = yes
 
-	7590.1.1 = { birth = yes }
+	7590.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7615.1.1 = { give_nickname = nick_the_heartless }
 	7622.1.1 = {
 		trait = blind
@@ -1136,7 +1213,7 @@ Hoare_20 = {
 	disallow_random_traits = yes
 
 	give_nickname = nick_the_heartless
-	
+
 	7622.1.1 = { birth = yes }
 	7764.1.1 = { death = yes }
 }
@@ -1149,7 +1226,10 @@ Hoare_21 = {
 
 	father = Hoare_20
 
-	7764.1.1 = { birth = yes }
+	7764.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7800.1.1 = {
 		trait = drowned_man # Drowned Man
 		give_nickname = nick_the_half_drowned
@@ -1170,7 +1250,10 @@ Hoare_22 = {
 
 	father = Hoare_21
 
-	7784.1.1 = { birth = yes }
+	7784.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	7815.1.1 = {
 		death= {
 			death_reason = death_duel # Battle of Lann's point
@@ -1229,7 +1312,10 @@ Hoare_25 = { # Doom of Valyria
 
 	disallow_random_traits = yes
 
-	7836.1.1 = { birth = yes }
+	7836.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7861.1.1 = { give_nickname = nick_the_cunning }
 	7865.1.1 = { add_spouse = Wynch_9 } # Wylla Wynch
 	7878.1.1 = { add_spouse = Sunderly_25 } # Siglynd Sunderly
@@ -1250,7 +1336,7 @@ Hoare_38 = {
 
 	father = Hoare_23
 
-	trait = child_of_concubine_male
+	trait = child_of_concubine_female
 
 	7840.1.1 = { birth = yes }
 	7889.1.1 = { death = yes }
@@ -1266,7 +1352,10 @@ Hoare_26 = {
 	father = Hoare_25
 	mother = Wynch_9 # Wylla Wynch
 
-	7868.1.1 = { birth = yes }
+	7868.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	7899.1.1 = {
 		trait = greyscale
 		death = { death_reason = death_greyscale }
@@ -1284,7 +1373,10 @@ Hoare_27 = {
 	father = Hoare_25
 	mother = Wynch_9 # Wylla Wynch
 
-	7873.1.1 = { birth = yes }
+	7873.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7900.12.28 = {
 		death = {
 			death_reason = death_horse_riding_accident # Officially
@@ -1319,35 +1411,35 @@ Hoare_28 = {
 
 	disallow_random_traits = yes
 
-	7879.1.1 = { birth = yes }
+	7879.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7894.1.1 = { trait = lustful }
 	7898.1.1 = { employer = Uteuran_18 } # Malko Uteuran, Myr
 	7900.12.28 = {
 		give_nickname = nick_hardhand
 		#trait = suspected_kinslayer # AGOT TODO trait
 	}
-	7907.1.1 = { 
+	7907.1.1 = {
 		add_spouse = Goodbrother_42 # Gysella Goodbrother
-		effect = { 
-			if = {
-				limit = { character:Charlton_10 = { is_alive = yes } }
-				make_concubine = character:Charlton_10 # Walda Charlton
+		effect = {
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Charlton_10 # Walda Charlton
 			}
-		}	
+		}
 	}
 	7912.1.1 = {
-		effect = { 
-			if = {
-				limit = { character:Paege_11 = { is_alive = yes } }
-				make_concubine = character:Paege_11 # Sylwa Paege
+		effect = {
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Paege_11 # Sylwa Paege
 			}
 		}
 	}
 	7923.1.1 = {
-		effect = { 
-			if = {
-				limit = { character:Goodbrook_14 = { is_alive = yes } }
-				make_concubine = character:Goodbrook_14 # Jeyne Goodbrook
+		effect = {
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Goodbrook_14 # Jeyne Goodbrook
 			}
 		}
 	}
@@ -1364,7 +1456,10 @@ Hoare_29 = {
 	father = Hoare_25
 	mother = Sunderly_25 # Siglynd Sunderly
 
-	7890.1.1 = { birth = yes }
+	7890.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	7945.1.1 = { death = yes }
 }
 ### Issue of Harwyn
@@ -1384,13 +1479,16 @@ Hoare_30 = {
 	trait = authoritative
 	trait = wrathful
 	trait = sadistic
-	trait = torturer
 	trait = zealous
 	trait = rowdy
 
 	disallow_random_traits = yes
 
-	7912.1.1 = { birth = yes }
+	7912.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	7930.1.1 = { trait = torturer }
 	7936.1.1 = { add_spouse = Volmark_9 } # Alannys Volmark
 	7960.1.1 = { death = yes }
 }
@@ -1422,7 +1520,11 @@ Hoare_31 = {
 
 	disallow_random_traits = yes
 
-	7940.1.1 = { birth = yes }
+	7940.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_canon
+	}
 	7970.1.1 = { add_spouse = Greyjoy_39 } # Gwynesse Greyjoy
 	7980.1.1 = {
 		give_nickname = nick_the_black
@@ -1465,13 +1567,17 @@ Hoare_32 = {
 	mother = Volmark_9
 
 	trait = education_martial_2
-	trait = honorable
+	trait = honest
 	trait = just
 
-	7947.1.1 = { birth = yes }
-	7969.1.1 = { 
-		trait = nightswatch_historical 
-		effect = { 
+	7947.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_mentioned
+	}
+	7969.1.1 = {
+		trait = nightswatch_historical
+		effect = {
 			agot_join_nightswatch_history_effect = {
 				ORDER = ranger
 				CASTLE = title:c_eastwatch
@@ -1507,7 +1613,10 @@ Hoare_33 = {
 
 	disallow_random_traits = yes
 
-	7974.1.1 = { birth = yes }
+	7974.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	7999.8.15 = {
 		death = {
 			death_reason = death_battle # Burning of Harrenhal
@@ -1525,7 +1634,10 @@ Hoare_34 = {
 	father = Hoare_31
 	mother = Greyjoy_39
 
-	7976.1.1 = { birth = yes }
+	7976.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	7999.8.15 = {
 		death = {
 			death_reason = death_battle # Burning of Harrenhal
@@ -1543,7 +1655,10 @@ Hoare_35 = {
 	father = Hoare_31
 	mother = Greyjoy_39
 
-	7978.1.1 = { birth = yes }
+	7978.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	7999.8.1 = {
 		death = {
 			death_reason = death_battle # Battle at Wailing Willows
@@ -1561,7 +1676,10 @@ Hoare_36 = {
 	father = Hoare_31
 	mother = Greyjoy_39
 
-	7979.1.1 = { birth = yes }
+	7979.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	7999.8.15 = {
 		death = {
 			death_reason = death_battle # Burning of Harrenhal
@@ -1579,7 +1697,10 @@ Hoare_37 = {
 	father = Hoare_31
 	mother = Greyjoy_39
 
-	7980.1.1 = { birth = yes }
+	7980.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	7999.8.1 = {
 		death = {
 			death_reason = death_battle # Battle at Wailing Willows
@@ -1594,7 +1715,7 @@ Hoare_37 = {
 ###
 Grey_King_7 = {
 	name = Hrothgar_of_Pyke # Canon, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 9
 
@@ -1611,12 +1732,15 @@ Grey_King_7 = {
 
 	disallow_random_traits = yes
 
-	87.1.1 = { birth = yes }
+	87.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	137.1.1 = { death = yes }
 }
 Grey_King_8 = {
 	name = Line_of_Hrothgar_of_Pyke
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -1648,7 +1772,10 @@ Greyjoy_21 = {
 	trait = education_martial_4
 	trait = ambitious
 
-	3543.1.1 = { birth = yes }
+	3543.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	3608.1.1 = { give_nickname = nick_the_old_kraken }
 	3632.1.1 = { death = yes }
 }
@@ -1718,7 +1845,10 @@ Greyjoy_25 = {
 
 	disallow_random_traits = yes
 
-	4206.1.1 = { birth = yes }
+	4206.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	4238.1.1 = {
 		death = {
 			death_reason = death_duel
@@ -1766,7 +1896,10 @@ Greyjoy_28 = {
 	trait = diligent
 	trait = authoritative
 
-	4278.1.1 = { birth = yes }
+	4278.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	4294.1.1 = { give_nickname = nick_coldwind }
 	4337.1.1 = { death = yes }
 }
@@ -1862,14 +1995,17 @@ Greyjoy_35 = {
 
 	trait = education_martial_2
 
-	7875.1.1 = { birth = yes }
+	7875.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	7891.1.1 = {
 		trait = content
 		trait = humble
 	}
-	7894.1.1 = { 
-		trait = nightswatch_historical 
-		effect = { 
+	7894.1.1 = {
+		trait = nightswatch_historical
+		effect = {
 			agot_join_nightswatch_history_effect = {
 				ORDER = ranger
 				CASTLE = title:c_eastwatch
@@ -1961,7 +2097,10 @@ Greyjoy_40 = { # Aegon's Conquest
 
 	disallow_random_traits = yes
 
-	7967.1.1 = { birth = yes }
+	7967.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7985.1.1 = { add_spouse = Greyjoy_rs_4 }
 	8033.1.1 = { death = yes }
 }
@@ -2001,7 +2140,10 @@ Greyjoy_41 = {
 
 	disallow_random_traits = yes
 
-	7995.1.1 = { birth = yes }
+	7995.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8013.1.1 = { add_spouse = Greyjoy_rs_5 }
 	8052.1.1 = { death = yes }
 }
@@ -2042,6 +2184,7 @@ Greyjoy_rs_6 = {
 Greyjoy_43 = {
 	name = Balon # a lord
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_43
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2056,6 +2199,7 @@ Greyjoy_43 = {
 Greyjoy_rs_7 = {
 	name = Helya
 	female = yes
+	dna = Greyjoy_rs_7
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2067,6 +2211,7 @@ Greyjoy_rs_7 = {
 Greyjoy_44 = {
 	name = Aeron # a lord
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_44
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2081,6 +2226,7 @@ Greyjoy_44 = {
 Greyjoy_rs_8 = {
 	name = Gwynesse
 	female = yes
+	dna = Greyjoy_rs_8
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2091,6 +2237,7 @@ Greyjoy_rs_8 = {
 Greyjoy_45 = {
 	name = Maron
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_45
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2105,6 +2252,7 @@ Greyjoy_45 = {
 Greyjoy_rs_9 = {
 	name = Yara
 	female = yes
+	dna = Greyjoy_rs_9
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2117,6 +2265,7 @@ Greyjoy_rs_9 = {
 Greyjoy_46 = {
 	name = Goren # Mentioned
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_46
 
 	prowess = 6
 
@@ -2129,7 +2278,10 @@ Greyjoy_46 = {
 	trait = ambitious
 	trait = sadistic
 
-	8086.1.1 = { birth = yes }
+	8086.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8112.1.1 = { add_spouse = Greyjoy_rs_10 }
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = {
@@ -2152,6 +2304,7 @@ Greyjoy_rs_10 = {
 Greyjoy_47 = {
 	name = Loron # Mentioned
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_47
 
 	prowess = 6
 
@@ -2164,7 +2317,10 @@ Greyjoy_47 = {
 	trait = ambitious
 	trait = sadistic
 
-	8087.1.1 = { birth = yes }
+	8087.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = {
 		death = {
@@ -2176,6 +2332,7 @@ Greyjoy_47 = {
 Greyjoy_48 = {
 	name = Alton # Mentioned
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_48
 
 	prowess = 6
 
@@ -2188,7 +2345,10 @@ Greyjoy_48 = {
 	trait = ambitious
 	trait = sadistic
 
-	8088.1.1 = { birth = yes }
+	8088.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = {
 		death = {
@@ -2200,6 +2360,7 @@ Greyjoy_48 = {
 Greyjoy_49 = {
 	name = Harlon # Mentioned
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_49
 
 	prowess = 6
 
@@ -2212,7 +2373,10 @@ Greyjoy_49 = {
 	trait = ambitious
 	trait = sadistic
 
-	8089.1.1 = { birth = yes }
+	8089.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = {
 		death = {
@@ -2222,9 +2386,10 @@ Greyjoy_49 = {
 	}
 }
 Greyjoy_50 = {
-	name = Disa # Semi-canon, married Ewan Prester.
+	name = Disa # Semi-Canon, married Ewan Prester.
 	dynasty = dynn_Greyjoy
 	female = yes
+	dna = Greyjoy_50
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2232,13 +2397,17 @@ Greyjoy_50 = {
 	father = Greyjoy_45
 	mother = Greyjoy_rs_9
 
-	8093.1.1 = { birth = yes }
+	8093.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8135.1.1 = { death = yes }
 }
 ### Issue of Aeron
 Greyjoy_51 = {
 	name = Vickon # Mentioned, a lord
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_51
 
 	martial = 8
 	prowess = 6
@@ -2249,13 +2418,17 @@ Greyjoy_51 = {
 	father = Greyjoy_44
 	mother = Greyjoy_rs_8
 
+	trait = education_martial_2
 	trait = content
 	trait = just
 	trait = pensive
-	
+
 	disallow_random_traits = yes
 
-	8097.1.1 = { birth = yes }
+	8097.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8112.1.1 = { add_spouse = Greyjoy_rs_11 }
 	8113.1.1 = {
 		trait = arrogant
@@ -2266,6 +2439,7 @@ Greyjoy_51 = {
 Greyjoy_rs_11 = {
 	name = Jeyne
 	female = yes
+	dna = Greyjoy_rs_11
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2276,6 +2450,7 @@ Greyjoy_rs_11 = {
 Greyjoy_52 = {
 	name = Euron # Mentioned
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_52
 
 	martial = 5
 	prowess = 6
@@ -2294,7 +2469,10 @@ Greyjoy_52 = {
 
 	disallow_random_traits = yes
 
-	8099.1.1 = { birth = yes }
+	8099.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8113.1.1 = { add_spouse = Greyjoy_rs_12 }
 	8123.1.1 = { trait = reaver }
 	8128.8.2 = {
@@ -2314,6 +2492,7 @@ Greyjoy_rs_12 = {
 Greyjoy_53 = {
 	name = Balon # Mentioned
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_53
 
 	prowess = 6
 
@@ -2332,7 +2511,10 @@ Greyjoy_53 = {
 
 	disallow_random_traits = yes
 
-	8100.1.1 = { birth = yes }
+	8100.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8114.1.1 = { trait = drunkard }
 	8116.1.1 = { add_spouse = Greyjoy_rs_13 }
 	8133.1.1 = {
@@ -2365,14 +2547,18 @@ Greyjoy_54 = {
 	father = Greyjoy_52
 	mother = Greyjoy_rs_12
 
+	trait = education_martial_1
 	trait = ambitious
 	trait = sadistic
 	trait = greedy
 	trait = rowdy
-	
+
 	disallow_random_traits = yes
 
-	8115.1.1 = { birth = yes }
+	8115.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = {
 		death = {
@@ -2393,14 +2579,18 @@ Greyjoy_55 = {
 	father = Greyjoy_52
 	mother = Greyjoy_rs_12
 
+	trait = education_martial_1
 	trait = ambitious
 	trait = greedy
 	trait = vengeful
 	trait = rowdy
-	
+
 	disallow_random_traits = yes
 
-	8116.1.1 = { birth = yes }
+	8116.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = {
 		death = {
@@ -2421,14 +2611,18 @@ Greyjoy_56 = {
 	father = Greyjoy_52
 	mother = Greyjoy_rs_12
 
+	trait = education_martial_1
 	trait = vengeful
 	trait = wrathful
 	trait = greedy
 	trait = rowdy
-	
+
 	disallow_random_traits = yes
 
-	8117.1.1 = { birth = yes }
+	8117.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = {
 		death = {
@@ -2450,23 +2644,25 @@ Greyjoy_57 = {
 	father = Greyjoy_53
 	mother = Greyjoy_rs_13
 
+	trait = education_martial_1
 	trait = ambitious
 	trait = vengeful
 	trait = wrathful
 	trait = rowdy
-	
+
 	disallow_random_traits = yes
 
-	8116.1.1 = { birth = yes }
-	8130.1.1 = {
-		effect = { 
-			if = {
-				limit = { character:Lannister_98 = { is_alive = yes } }
-				make_concubine = character:Lannister_98 # Jenna Hill
+	8116.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	8130.2.20 = {
+		effect = {
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Lannister_98 # Jenna Hill
 			}
-			if = {
-				limit = { character:LannisterLP_36 = { is_alive = yes } }
-				make_concubine = character:LannisterLP_36 # Ella Lannister of Lannisport
+			agot_safe_concubine_history_effect = {
+				TARGET = character:LannisterLP_36 # Ella Lannister of Lannisport
 			}
 		}
 	}
@@ -2490,19 +2686,22 @@ Greyjoy_58 = {
 	father = Greyjoy_53
 	mother = Greyjoy_rs_13
 
+	trait = education_martial_1
 	trait = brave
 	trait = greedy
 	trait = sadistic
 	trait = rowdy
-	
+
 	disallow_random_traits = yes
 
-	8117.1.1 = { birth = yes }
-	8130.1.1 = {
-		effect = { 
-			if = {
-				limit = { character:Lannister_97 = { is_alive = yes } }
-				make_concubine = character:Lannister_97 # Joy Hill
+	8117.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	8130.2.20 = {
+		effect = {
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Lannister_97 # Joy Hill
 			}
 		}
 	}
@@ -2539,7 +2738,11 @@ Greyjoy_59 = { # Dance of the Dragons
 
 	disallow_random_traits = yes
 
-	8113.1.1 = { birth = yes }
+	8113.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_canon
+	}
 	8116.1.1 = { trait = brave }
 	8119.8.1 = { trait = wrathful }
 	8121.8.1 = { trait = callous }
@@ -2561,21 +2764,17 @@ Greyjoy_59 = { # Dance of the Dragons
 		trait = reaver
 		effect = {
 			## Following Salt Wives are disabled, due to 3 Salt Wives mechanical limit
-			# if = {
-				# limit = { character:Greyjoy_rs_14 = { is_alive = yes } }
-				# make_concubine = character:Greyjoy_rs_14 # Kobijja
+			# agot_safe_concubine_history_effect = {
+				# TARGET = character:Greyjoy_rs_14 # Kobijja
 			# }
-			# if = {
-				# limit = { character:Greyjoy_rs_15 = { is_alive = yes } }
-				# make_concubine = character:Greyjoy_rs_15 # Gwahura
+			# agot_safe_concubine_history_effect = {
+				# TARGET = character:Greyjoy_rs_15 # Gwahura
 			# }
-			# if = {
-				# limit = { character:Greyjoy_rs_16 = { is_alive = yes } }
-				# make_concubine = character:Greyjoy_rs_16 # Azzea
+			# agot_safe_concubine_history_effect = {
+				# TARGET = character:Greyjoy_rs_16 # Azzea
 			# }
-			# if = {
-				# limit = { character:Greyjoy_rs_17 = { is_alive = yes } }
-				# make_concubine = character:Greyjoy_rs_17 # Yorka
+			# agot_safe_concubine_history_effect = {
+				# TARGET = character:Greyjoy_rs_17 # Yorka
 			# }
 			add_prestige = 150
 			add_piety = 75
@@ -2603,49 +2802,51 @@ Greyjoy_59 = { # Dance of the Dragons
 			}
 		}
 	}
-	8130.1.1 = {
-		effect = { 
-			if = {
-				limit = { character:Lannister_rs_2 = { is_alive = yes } }
-				make_concubine = character:Lannister_rs_2 # Jeyne, Jason Lannister's mistress
+	8130.2.20 = {
+		effect = {
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Lannister_rs_2 # Jeyne, Jason Lannister's mistress
 			}
-			if = {
-				limit = { character:395194 = { is_alive = yes } }
-				make_concubine = character:395194 # Tess
+		}
+	}
+	8130.4.20 = {
+		effect = {
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Farman_hh_2 # Tess
 			}
-			if = {
-				limit = { character:Farman_30 = { is_alive = yes } }
-				make_concubine = character:Farman_30 # Edella Farman
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Farman_30 # Edella Farman
 			}
 			## Following Salt Wives are disabled, due to 3 Salt Wives mechanical limit
-			# if = {
-				# limit = { character:Farman_31 = { is_alive = yes } }
-				# make_concubine = character:Farman_31 # Meera Farman
+			# agot_safe_concubine_history_effect = {
+				# TARGET = character:Farman_31 # Meera Farman
 			# }
-			# if = {
-				# limit = { character:Farman_34 = { is_alive = yes } }
-				# make_concubine = character:Farman_34 # Lysa Farman
+			# agot_safe_concubine_history_effect = {
+				# TARGET = character:Farman_34 # Lysa Farman
 			# }
-			# if = {
-				# limit = { character:Farman_35 = { is_alive = yes } }
-				# make_concubine = character:Farman_35 # Alysandra Farman
+			# agot_safe_concubine_history_effect = {
+				# TARGET = character:Farman_35 # Alysandra Farman
 			# }
-			# if = {
-				# limit = { character:KenningK_rs_4 = { is_alive = yes } }
-				# make_concubine = character:KenningK_rs_4 # Wife of Knight of Kayce
+		}
+	}
+	8131.1.15 = {
+		effect = {
+			# agot_safe_concubine_history_effect = {
+				# TARGET = character:KenningK_rs_4 # Wife of Knight of Kayce
 			# }
 		}
 	}
 	8133.12.1 = {
 		death = {
 			death_reason = death_murder_known
-			killer = 395194 # Tess
+			killer = Farman_hh_2 # Tess
 		}
 	}
 }
 Greyjoy_rs_14 = {
 	name = Kobijja # Mentioned
 	female = yes
+	dna = Greyjoy_rs_14
 
 	#religion = corsair #AGOT TODO
 	religion = princely_arbiter
@@ -2654,7 +2855,10 @@ Greyjoy_rs_14 = {
 	trait = education_intrigue_1
 	trait = beauty_good_1
 
-	8113.1.1 = { birth = yes }
+	8113.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8127.1.1 = {
 		effect = {
 			if = {
@@ -2725,6 +2929,7 @@ Greyjoy_rs_16 = {
 Greyjoy_rs_17 = {
 	name = Yorka
 	female = yes
+	dna = Greyjoy_rs_17
 
 	religion = rhllor
 	culture = lyseni
@@ -2749,6 +2954,7 @@ Greyjoy_rs_17 = {
 Greyjoy_60 = {
 	name = Veron # Canon
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_60
 
 	prowess = 6
 
@@ -2761,19 +2967,21 @@ Greyjoy_60 = {
 	trait = education_martial_2
 	trait = wrathful
 	trait = rowdy
-	
+
 	disallow_random_traits = yes
 
-	8114.1.1 = { birth = yes }
+	8114.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8127.1.1 = {
 		trait = arrogant
 		trait = sadistic
 	}
-	8130.1.1 = {
+	8130.4.20 = {
 		effect = {
-			if = {
-				limit = { character:Farman_33 = { is_alive = yes } }
-				make_concubine = character:Farman_33 # Evelyn Farman
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Farman_33 # Evelyn Farman
 			}
 		}
 	}
@@ -2785,6 +2993,7 @@ Greyjoy_61 = {
 	name = Gwin # Mentioned
 	dynasty = dynn_Greyjoy
 	female = yes
+	dna = Greyjoy_61
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2792,14 +3001,18 @@ Greyjoy_61 = {
 	father = Greyjoy_51
 	mother = Greyjoy_rs_11
 
+	trait = education_stewardship_1
 	trait = ambitious
 	trait = sadistic
 	trait = wrathful
 	trait = rowdy
-	
+
 	disallow_random_traits = yes
 
-	8115.1.1 = { birth = yes }
+	8115.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
@@ -2811,6 +3024,7 @@ Greyjoy_62 = {
 	name = Gysella # Mentioned
 	dynasty = dynn_Greyjoy
 	female = yes
+	dna = Greyjoy_62
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2818,14 +3032,18 @@ Greyjoy_62 = {
 	father = Greyjoy_51
 	mother = Greyjoy_rs_11
 
+	trait = education_martial_1
 	trait = greedy
 	trait = callous
 	trait = vengeful
 	trait = rowdy
-	
+
 	disallow_random_traits = yes
 
-	8116.1.1 = { birth = yes }
+	8116.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
@@ -2837,6 +3055,7 @@ Greyjoy_62 = {
 Greyjoy_63 = {
 	name = Toron # Canon, a lord
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_63
 
 	prowess = 6
 
@@ -2846,9 +3065,12 @@ Greyjoy_63 = {
 	father = Greyjoy_59
 	mother = Greyjoy_rs_14
 
-	trait = child_of_concubine_male
+	trait = child_of_concubine_female
 
-	8128.1.1 = { birth = yes }
+	8128.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8133.12.1 = {
 		effect = {
 			if = {
@@ -2866,6 +3088,7 @@ Greyjoy_63 = {
 Greyjoy_rs_18 = {
 	name = Mera
 	female = yes
+	dna = Greyjoy_rs_18
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2876,6 +3099,7 @@ Greyjoy_rs_18 = {
 Greyjoy_64 = {
 	name = Rodrik # Canon
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_64
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -2883,9 +3107,12 @@ Greyjoy_64 = {
 	father = Greyjoy_59
 	mother = Greyjoy_rs_17
 
-	trait = child_of_concubine_male
+	trait = child_of_concubine_female
 
-	8129.1.1 = { birth = yes }
+	8129.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8133.12.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = { # Half a year after death of Dalton Greyjoy
 		trait = eunuch
@@ -2920,6 +3147,7 @@ Greyjoy_64 = {
 Greyjoy_65 = {
 	name = Alton # Canon, AKA: The Holy Fool
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_65
 
 	martial = 1
 	diplomacy = 2
@@ -2943,7 +3171,10 @@ Greyjoy_65 = {
 
 	disallow_random_traits = yes
 
-	8151.1.1 = { birth = yes }
+	8151.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8168.1.1 = { add_spouse = Greyjoy_rs_19 }
 	8195.3.7 = { # Blackfyre Rebellion
 		give_nickname = nick_the_holy_fool
@@ -2988,7 +3219,11 @@ Greyjoy_66 = {
 
 	disallow_random_traits = yes
 
-	8178.1.1 = { birth = yes }
+	8178.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_canon
+	}
 	8196.1.1 = { add_spouse = Goodbrother_56 } # Shierle Goodbrother
 	8211.1.1 = {
 		trait = reaver
@@ -2999,7 +3234,7 @@ Greyjoy_66 = {
 	}
 	8216.1.1 = {
 		give_nickname = nick_the_last_reaver
-		death = { death_reason = death_execution} # Defeated by Targaryens, probably executed
+		death = { death_reason = death_execution } # Defeated by Targaryens, probably executed
 	}
 }
 Greyjoy_67 = {
@@ -3034,6 +3269,7 @@ Greyjoy_68 = {
 Greyjoy_69 = {
 	name = Loron # Canon, AKA: The Bard, a lord
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_69
 
 	martial = 2
 	diplomacy = 4
@@ -3057,11 +3293,14 @@ Greyjoy_69 = {
 
 	disallow_random_traits = yes
 
-	8196.1.1 = { birth = yes }
+	8196.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8211.1.1 = {
 		give_nickname = nick_the_bard
-		effect = { 
-			if = { 
+		effect = {
+			if = {
 				limit = { character:Mallister_52 = { is_alive = yes } }
 				set_relation_friend = character:Mallister_52 # Desmond Mallister
 			}
@@ -3073,6 +3312,7 @@ Greyjoy_70 = {
 	name = Gysella
 	dynasty = dynn_Greyjoy
 	female = yes
+	dna = Greyjoy_70
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -3086,6 +3326,7 @@ Greyjoy_70 = {
 Greyjoy_71 = {
 	name = Torwyn # Canon, a lord, betrayed Bittersteel
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_71
 
 	martial = 6
 	diplomacy = 10
@@ -3108,13 +3349,17 @@ Greyjoy_71 = {
 
 	disallow_random_traits = yes
 
-	8198.1.1 = { birth = yes }
+	8198.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8216.1.1 = { add_spouse = Greyjoy_rs_20 }
 	8250.1.1 = { death = yes }
 }
 Greyjoy_rs_20 = {
 	name = Jeyne
 	female = yes
+	dna = Greyjoy_rs_20
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -3125,6 +3370,7 @@ Greyjoy_rs_20 = {
 Greyjoy_72 = {
 	name = Toron
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_72
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -3205,13 +3451,16 @@ Greyjoy_hh_20 = {
 
 	religion = drowned_god_main
 	culture = ironborn
-	
+
 	trait = education_martial_1
 
-	8120.1.1 = { birth = yes }
+	8120.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8142.1.1 = {
 		effect = { # Master-at-arms at Pyke
-			agot_appoint_as_councillor_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = {
 				CASTLE = title:c_pyke
 				POSITION = councillor_marshal
 			}
@@ -3226,15 +3475,18 @@ Greyjoy_hh_20 = {
 }
 Greyjoy_hh_21 = {
 	name = Theron # Canon, wrote Strange Stone
-	
+
 	religion = drowned_god_main
 	culture = ironborn
-	
+
 	trait = education_learning_2
 	trait = bastard
-	
-	8159.1.1 = { birth = yes }
-	8183.1.1 = { 
+
+	8159.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	8183.1.1 = {
 		trait = maester_historical
 		effect = { # Maester of Pyke
 			agot_maester_in_the_citadel_history_effect = { METAL = pewter }
@@ -3253,7 +3505,7 @@ Greyjoy_hh_21 = {
 
 ### Issue of Goren, first cousins once-removed to Dalton
 Greyjoy_75 = {
-	name = Vickon # Semi-canon
+	name = Vickon # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	religion = drowned_god_main
@@ -3262,13 +3514,16 @@ Greyjoy_75 = {
 	father = Greyjoy_46
 	mother = Greyjoy_rs_10
 
-	8113.1.1 = { birth = yes }
+	8113.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8130.1.1 = { add_spouse = Wynch_21 } # Shera Wynch
 	8141.1.1 = { add_spouse = Merlyn_20 } # Alrya Merlyn
 	8175.1.1 = { death = yes }
 }
 Greyjoy_77 = {
-	name = Eurik # Semi-canon
+	name = Eurik # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	martial = 2
@@ -3281,12 +3536,15 @@ Greyjoy_77 = {
 	father = Greyjoy_46
 	mother = Greyjoy_rs_10
 
-	8116.1.1 = { birth = yes }
+	8116.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8139.1.1 = { add_spouse = Stonehouse_19 } # Sona Stonehouse
 	8188.1.1 = { death = yes }
 }
 Greyjoy_76 = {
-	name = Gudrun # Semi-canon, married Garmon Blacktyde and Tormund Stonetree
+	name = Gudrun # Semi-Canon, married Garmon Blacktyde and Tormund Stonetree
 	dynasty = dynn_Greyjoy
 	female = yes
 
@@ -3296,11 +3554,14 @@ Greyjoy_76 = {
 	father = Greyjoy_46
 	mother = Greyjoy_rs_10
 
-	8120.1.1 = { birth = yes }
+	8120.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8192.1.1 = { death = yes }
 }
 Greyjoy_78 = {
-	name = Rurik # Semi-canon
+	name = Rurik # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	prowess = 12
@@ -3311,7 +3572,10 @@ Greyjoy_78 = {
 	father = Greyjoy_46
 	mother = Greyjoy_rs_10
 
-	8124.1.1 = { birth = yes }
+	8124.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8145.1.1 = {
 		trait = poet
 		give_nickname = nick_the_raven
@@ -3321,7 +3585,7 @@ Greyjoy_78 = {
 }
 ### Issue of Vickon
 Greyjoy_79 = {
-	name = Quellon # Semi-canon
+	name = Quellon # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	religion = drowned_god_main
@@ -3330,12 +3594,15 @@ Greyjoy_79 = {
 	father = Greyjoy_75
 	mother = Wynch_21 # Shera Wynch
 
-	8131.1.1 = { birth = yes }
+	8131.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8142.1.1 = { add_spouse = Goodbrother_54 } # Gwynesse Goodbrother
 	8188.1.1 = { death = yes }
 }
 Greyjoy_80 = {
-	name = Dagon # Semi-canon
+	name = Dagon # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	religion = drowned_god_main
@@ -3344,13 +3611,16 @@ Greyjoy_80 = {
 	father = Greyjoy_75
 	mother = Wynch_21 # Shera Wynch
 
-	8134.1.1 = { birth = yes }
+	8134.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8155.1.1 = {
-		death = { death_reason = death_lost_at_sea } 
+		death = { death_reason = death_lost_at_sea }
 	}
 }
 Greyjoy_81 = {
-	name = Katla # Semi-canon, married Justyn Serry
+	name = Katla # Semi-Canon, married Justyn Serry
 	dynasty = dynn_Greyjoy
 	female = yes
 
@@ -3360,19 +3630,23 @@ Greyjoy_81 = {
 	father = Greyjoy_75
 	mother = Wynch_21 # Shera Wynch
 
+	trait = education_intrigue_1
 	trait = temperate
 	trait = stubborn
 	trait = wrathful
 	trait = paranoid
 	trait = bossy
-	
+
 	disallow_random_traits = yes
 
-	8138.1.1 = { birth = yes }
+	8138.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8193.1.1 = { death = yes }
 }
 Greyjoy_82 = {
-	name = Dacey # Semi-canon
+	name = Dacey # Semi-Canon
 	dynasty = dynn_Greyjoy
 	female = yes
 
@@ -3382,11 +3656,14 @@ Greyjoy_82 = {
 	father = Greyjoy_75
 	mother = Merlyn_20 # Alrya Merlyn
 
-	8144.1.1 = { birth = yes }
+	8144.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8155.1.1 = { death = yes }
 }
 Greyjoy_83 = {
-	name = Urron # Semi-canon
+	name = Urron # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	religion = drowned_god_main
@@ -3395,9 +3672,12 @@ Greyjoy_83 = {
 	father = Greyjoy_75
 	mother = Merlyn_20 # Alrya Merlyn
 
-	8146.1.1 = { birth = yes }
+	8146.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8158.1.1 = {
-		effect = { 
+		effect = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Prester_15 } # Gareth Prester
 		}
 	}
@@ -3405,7 +3685,7 @@ Greyjoy_83 = {
 }
 ### Issue of Eurik
 Greyjoy_84 = {
-	name = Dyssa # Semi-canon
+	name = Dyssa # Semi-Canon
 	dynasty = dynn_Greyjoy
 	female = yes
 
@@ -3415,11 +3695,14 @@ Greyjoy_84 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	8140.1.1 = { birth = yes }
+	8140.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8186.1.1 = { death = yes }
 }
 Greyjoy_85 = {
-	name = Greydon # Semi-canon
+	name = Greydon # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	religion = drowned_god_main
@@ -3428,11 +3711,14 @@ Greyjoy_85 = {
 	father = Greyjoy_77
 	mother = Stonehouse_19
 
-	8142.1.1 = { birth = yes }
+	8142.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8200.1.1 = { death = yes }
 }
 Greyjoy_86 = {
-	name = Aeron # Semi-canon
+	name = Aeron # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	religion = drowned_god_main
@@ -3441,11 +3727,14 @@ Greyjoy_86 = {
 	father = Greyjoy_77
 	mother = Stonehouse_19
 
-	8147.1.1 = { birth = yes }
+	8147.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8199.1.1 = { death = yes }
 }
 Greyjoy_87 = {
-	name = Morissa # Semi-canon
+	name = Morissa # Semi-Canon
 	dynasty = dynn_Greyjoy
 	female = yes
 
@@ -3455,12 +3744,15 @@ Greyjoy_87 = {
 	father = Greyjoy_77
 	mother = Stonehouse_19
 
-	8153.1.1 = { birth = yes }
+	8153.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8215.1.1 = { death = yes }
 }
 ### Issue of Rurik
 Greyjoy_88 = {
-	name = Ryam # Semi-canon
+	name = Ryam # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	religion = drowned_god_main
@@ -3471,11 +3763,14 @@ Greyjoy_88 = {
 
 	trait = clubfooted # Lame from birth
 
-	8148.1.1 = { birth = yes }
+	8148.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8181.1.1 = { death = yes }
 }
 Greyjoy_89 = {
-	name = Sigrik # Semi-canon
+	name = Sigrik # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	religion = drowned_god_main
@@ -3484,12 +3779,15 @@ Greyjoy_89 = {
 	father = Greyjoy_78
 	mother = Mallister_36
 
-	8152.1.1 = { birth = yes }
+	8152.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8201.1.1 = { death = yes }
 }
 ### Issue of Quellon
 Greyjoy_91 = {
-	name = Hilde # Semi-canon
+	name = Hilde # Semi-Canon
 	dynasty = dynn_Greyjoy
 	female = yes
 
@@ -3499,11 +3797,14 @@ Greyjoy_91 = {
 	father = Greyjoy_79
 	mother = Goodbrother_54
 
-	8151.1.1 = { birth = yes }
+	8151.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8202.1.1 = { death = yes }
 }
 Greyjoy_92 = {
-	name = Siglind # Semi-canon
+	name = Siglind # Semi-Canon
 	dynasty = dynn_Greyjoy
 	female = yes
 
@@ -3513,14 +3814,17 @@ Greyjoy_92 = {
 	father = Greyjoy_79
 	mother = Goodbrother_54
 
-	8154.1.1 = { birth = yes }
+	8154.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8156.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
 	}
 }
 Greyjoy_94 = {
-	name = Siglynd # Semi-canon, married Farryl Prester
+	name = Siglynd # Semi-Canon, married Farryl Prester
 	dynasty = dynn_Greyjoy
 	female = yes
 
@@ -3530,11 +3834,14 @@ Greyjoy_94 = {
 	father = Greyjoy_79
 	mother = Goodbrother_54
 
-	8157.1.1 = { birth = yes }
+	8157.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8198.1.1 = { death = yes }
 }
 Greyjoy_90 = {
-	name = Marlon # Semi-canon
+	name = Marlon # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	religion = drowned_god_main
@@ -3545,11 +3852,14 @@ Greyjoy_90 = {
 	trait = bastard
 	give_nickname = nick_pyke
 
-	8145.1.1 = { birth = yes }
+	8145.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8214.1.1 = { death = yes }
 }
 Greyjoy_93 = {
-	name = Tarle # Semi-canon
+	name = Tarle # Semi-Canon
 	dynasty = dynn_Greyjoy
 
 	religion = drowned_god_main
@@ -3560,7 +3870,10 @@ Greyjoy_93 = {
 	trait = bastard
 	give_nickname = nick_pyke
 
-	8156.1.1 = { birth = yes }
+	8156.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8226.1.1 = { death = yes }
 }
 
@@ -3573,7 +3886,7 @@ Greyjoy_93 = {
 ############################
 Grey_King_9 = {
 	name = The_Goodbrother # Mentioned, The Grey King's brother, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	martial = 10
 	prowess = 7
@@ -3583,6 +3896,7 @@ Grey_King_9 = {
 
 	father = Grey_King_1 # The Father
 
+	trait = education_martial_3
 	trait = physique_good_2
 	trait = intellect_good_2
 	trait = family_first
@@ -3592,22 +3906,16 @@ Grey_King_9 = {
 
 	disallow_random_traits = yes
 
-	20.1.1 = { birth = yes }
-	36.1.1 = {
-		trait = education_martial_3
-		effect = {
-			add_trait = lifestyle_mystic
-			add_trait_xp = {
-				trait = lifestyle_mystic
-				value = trait_third_level
-			}
-		}
+	20.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
 	}
+	36.1.1 = { trait = lifestyle_mystic_3_history }
 	600.1.1 = { death = yes }
 }
 Grey_King_10 = {
 	name = Line_of_The_Goodbrother
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -3638,7 +3946,10 @@ Goodbrother_37 = {
 
 	disallow_random_traits = yes
 
-	5058.1.1 = { birth = yes }
+	5058.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	5087.1.1 = { give_nickname = nick_badbrother }
 	5089.1.1 = { death = { death_reason = death_murder } }
 }
@@ -3655,7 +3966,7 @@ Goodbrother_38 = {
 	disallow_random_traits = yes
 
 	give_nickname = nick_badbrother
-	
+
 	5089.1.1 = { birth = yes }
 	7943.1.1 = { death = yes }
 }
@@ -3825,7 +4136,10 @@ Goodbrother_50 = {
 
 	father = Goodbrother_49
 
-	8067.1.1 = { birth = yes }
+	8067.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
@@ -3853,13 +4167,15 @@ Goodbrother_51 = {
 
 	disallow_random_traits = yes
 
-	8100.1.1 = { birth = yes }
+	8100.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8115.1.1 = { trait = lustful }
 	8133.12.1 = {
 		effect = {
-			if = {
-				limit = { character:Farman_34 = { is_alive = yes } }
-				make_concubine = character:Farman_34 # Lysa Farman
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Farman_34 # Lysa Farman
 			}
 		}
 	}
@@ -3882,7 +4198,10 @@ Goodbrother_52 = {
 	trait = wrathful
 	trait = brave
 
-	8106.1.1 = { birth = yes }
+	8106.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8165.1.1 = { death = yes }
 }
 ### Issue of Arthur
@@ -3899,7 +4218,7 @@ Goodbrother_53 = {
 	8197.1.1 = { death = yes }
 }
 Goodbrother_54 = {
-	name = Gwynesse # Semi-canon
+	name = Gwynesse # Semi-Canon
 	dynasty = dynn_Goodbrother
 	female = yes
 
@@ -3908,7 +4227,10 @@ Goodbrother_54 = {
 
 	father = Goodbrother_52
 
-	8131.1.1 = { birth = yes }
+	8131.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8201.1.1 = { death = yes }
 }
 ### Issue of Roryn
@@ -3928,6 +4250,7 @@ Goodbrother_56 = {
 	name = Shierle
 	dynasty = dynn_Goodbrother
 	female = yes
+	dna = Goodbrother_56
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -3949,7 +4272,10 @@ Goodbrother_57 = {
 
 	father = Goodbrother_55
 
-	8220.1.1 = { birth = yes }
+	8220.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8245.1.1 = { add_spouse = Goodbrother_rs_9 }
 	8276.1.1 = { death = yes }
 }
@@ -3962,27 +4288,33 @@ Goodbrother_rs_9 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	8220.1.1 = { birth = yes }
+	8220.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8276.1.1 = { death = yes }
 }
-### Household 
+### Household
 Goodbrother_hh_2 = {
-	name = Kirth # Canon 
-	
+	name = Kirth # Canon
+
 	religion = the_seven_main
 	culture = riverlander
-	
+
 	trait = education_learning_2
-	
-	8205.1.1 = { birth = yes }
+
+	8205.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8227.1.1 = {
 		trait = maester_historical
 		effect = { # Maester of Hammerhorn
 			agot_maester_forge_link_history_effect = { METAL = copper }
 			agot_maester_forge_link_history_effect = { METAL = copper }
 			agot_maester_starting_setup_history_effect = yes
-			agot_appoint_as_court_position_for_castle_history_effect = { 
-				CASTLE = title:c_hammerhorn 
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_hammerhorn
 				POSITION = maester_court_position
 			}
 		}
@@ -4677,7 +5009,10 @@ Farwynd_44 = {
 	father = Farwynd_43
 	mother = Farwynd_rs_8
 
-	8256.1.1 = { birth = yes }
+	8256.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 }
 
 ### Lonely Light Branch
@@ -4829,7 +5164,7 @@ FarwyndLL_15 = {
 	8160.1.1 = { death = yes }
 }
 FarwyndLL_16 = {
-	name = Erik # Semi-canon, AKA: Erik Longknife
+	name = Erik # Semi-Canon, AKA: Erik Longknife
 	dynasty_house = house_FarwyndLL
 
 	prowess = 7
@@ -4838,15 +5173,18 @@ FarwyndLL_16 = {
 	culture = ironborn
 
 	father = FarwyndLL_14
-	
+
 	trait = education_martial_2
 
-	8121.1.1 = { birth = yes }
+	8121.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8137.1.1 = { give_nickname = nick_the_longknife }
 	8158.1.1 = {
 		effect = { # Captain of the Guard at Saltcliffe
-			agot_appoint_as_court_position_for_castle_history_effect = { 
-				CASTLE = title:c_saltcliffe 
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_saltcliffe
 				POSITION = household_guard_court_position
 			}
 		}
@@ -5103,7 +5441,7 @@ FarwyndDL_23 = {
 ###
 Grey_King_11 = {
 	name = The_Harlaw # Mentioned, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 7
 
@@ -5121,12 +5459,15 @@ Grey_King_11 = {
 
 	disallow_random_traits = yes
 
-	92.1.1 = { birth = yes }
+	92.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	137.1.1 = { death = yes }
 }
 Grey_King_12 = {
 	name = Line_of_The_Harlaw
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -5155,7 +5496,10 @@ Harlaw_30 = {
 	trait = ambitious
 	trait = authoritative
 
-	4313.1.1 = { birth = yes }
+	4313.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	4376.1.1 = { death = yes }
 }
 Harlaw_31 = {
@@ -5173,7 +5517,10 @@ Harlaw_31 = {
 	trait = strong
 	trait = brave
 
-	4347.1.1 = { birth = yes }
+	4347.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	4393.1.1 = { death = yes }
 }
 Harlaw_32 = {
@@ -5227,10 +5574,13 @@ Harlaw_51 = {
 
 	trait = education_martial_4
 
-	7505.1.1 = { birth = yes }
-	7529.1.1 = { 
-		trait = nightswatch_historical 
-		effect = { 
+	7505.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
+	7529.1.1 = {
+		trait = nightswatch_historical
+		effect = {
 			agot_join_nightswatch_history_effect = {
 				ORDER = ranger
 				CASTLE = title:c_castle_black
@@ -5240,8 +5590,8 @@ Harlaw_51 = {
 	}
 	7535.1.1 = {
 		effect = { # First Ranger of the Night's Watch
-			agot_appoint_as_councillor_for_castle_history_effect = { 
-				CASTLE = title:k_the_wall 
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:k_the_wall
 				POSITION = councillor_marshal
 			}
 		}
@@ -5371,7 +5721,10 @@ Harlaw_39 = {
 
 	father = Harlaw_38
 
-	8007.1.1 = { birth = yes }
+	8007.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8025.1.1 = { add_spouse = Tarth_22 } # Ellyn Tarth
 	8060.1.1 = { death = yes }
 }
@@ -5409,7 +5762,10 @@ Harlaw_42 = {
 
 	father = Harlaw_41
 
-	8083.1.1 = { birth = yes }
+	8083.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
@@ -5438,17 +5794,25 @@ Harlaw_44 = {
 
 	religion = drowned_god_main
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Harlaw_43
 
 	trait = education_stewardship_4
-	trait = irritable
 	trait = diligent
 	trait = curious
 
 	disallow_random_traits = yes
 
-	8132.1.1 = { birth = yes }
+	8132.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
+	}
+	8145.1.1 = { 
+		trait = lustful 
+		trait = irritable
+	}
 	8148.1.1 = { add_spouse = Harlaw_rs_14 }
 	8153.1.1 = { add_spouse = Harlaw_rs_15 }
 	8165.1.1 = { add_spouse = Harlaw_rs_16 }
@@ -5466,7 +5830,10 @@ Harlaw_rs_14 = {
 
 	trait = education_diplomacy_1
 
-	8115.1.1 = { birth = yes }
+	8115.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8152.1.1 = { death = { death_reason = death_accident } }
 }
 Harlaw_rs_15 = {
@@ -5478,7 +5845,10 @@ Harlaw_rs_15 = {
 
 	trait = education_diplomacy_1
 
-	8131.1.1 = { birth = yes }
+	8131.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8162.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -5493,7 +5863,10 @@ Harlaw_rs_16 = {
 
 	trait = education_diplomacy_1
 
-	8127.1.1 = { birth = yes }
+	8127.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8178.1.1 = { death = yes }
 }
 Harlaw_rs_17 = {
@@ -5505,7 +5878,10 @@ Harlaw_rs_17 = {
 
 	trait = education_diplomacy_1
 
-	8153.1.1 = { birth = yes }
+	8153.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8180.1.1 = { death = { death_reason = death_accident } }
 }
 Harlaw_rs_18 = {
@@ -5517,7 +5893,10 @@ Harlaw_rs_18 = {
 
 	trait = education_diplomacy_1
 
-	8150.1.1 = { birth = yes }
+	8150.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8190.1.1 = { death = yes }
 }
 Harlaw_rs_19 = {
@@ -5529,7 +5908,10 @@ Harlaw_rs_19 = {
 
 	trait = education_diplomacy_1
 
-	8135.1.1 = { birth = yes }
+	8135.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8208.1.1 = { death = yes }
 }
 Harlaw_45 = {
@@ -5541,7 +5923,10 @@ Harlaw_45 = {
 
 	father = Harlaw_43
 
-	8140.1.1 = { birth = yes }
+	8140.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8156.1.1 = { add_spouse = Saltcliffe_25 } # Tanda Saltcliffe
 	8192.1.1 = { death = yes }
 }
@@ -5556,7 +5941,10 @@ Harlaw_46 = {
 	father = Harlaw_44
 	mother = Harlaw_rs_16
 
-	8166.1.1 = { birth = yes }
+	8166.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8167.1.1 = { death = yes }
 }
 Harlaw_47 = {
@@ -5569,7 +5957,10 @@ Harlaw_47 = {
 	father = Harlaw_44
 	mother = Harlaw_rs_16
 
-	8169.1.1 = { birth = yes }
+	8169.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8169.5.1 = { death = yes }
 }
 Harlaw_48 = {
@@ -5582,7 +5973,10 @@ Harlaw_48 = {
 	father = Harlaw_44
 	mother = Harlaw_rs_16
 
-	8175.1.1 = { birth = yes }
+	8175.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8175.4.1 = { death = yes }
 }
 Harlaw_49 = {
@@ -5599,7 +5993,10 @@ Harlaw_49 = {
 
 	trait = education_martial_2
 
-	8180.1.1 = { birth = yes }
+	8180.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8208.1.1 = { add_spouse = Greyjoy_68 } # Gwin Greyjoy
 	8234.1.1 = { death = yes }
 }
@@ -5610,7 +6007,7 @@ Harlaw_49 = {
 ###
 Grey_King_13 = {
 	name = Jorl_the_Whale # Canon, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 10
 
@@ -5627,12 +6024,15 @@ Grey_King_13 = {
 
 	disallow_random_traits = yes
 
-	90.1.1 = { birth = yes }
+	90.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	131.1.1 = { death = yes }
 }
 Grey_King_14 = {
 	name = Line_of_Jorl_the_Whale
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -5691,7 +6091,10 @@ Volmark_8 = {
 
 	father = Volmark_6
 
-	7887.1.1 = { birth = yes }
+	7887.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	7908.1.1 = { add_spouse = Hoare_29 } # Asha Hoare
 	7950.1.1 = { death = yes }
 }
@@ -5763,10 +6166,13 @@ Volmark_11 = {
 	trait = arrogant
 	trait = impatient
 	trait = rowdy
-	
+
 	disallow_random_traits = yes
 
-	7960.1.1 = { birth = yes }
+	7960.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7990.1.1 = {
 		effect = { add_unpressed_claim = title:e_the_iron_islands }
 	}
@@ -5827,7 +6233,10 @@ Volmark_14 = {
 	father = Volmark_11
 	mother = Volmark_rs_3
 
-	8001.1.1 = { birth = yes } # Newly born at the time of his father's death
+	8001.1.1 = {
+		birth = yes # Newly born at the time of his father's death
+		add_character_flag = canon_status_mentioned
+	}
 	8033.1.1 = {
 		death = {
 			death_reason = death_execution # Rebelled against Greyjoys
@@ -5870,7 +6279,10 @@ Volmark_17 = {
 
 	father = Volmark_16
 
-	8080.1.1 = { birth = yes }
+	8080.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
@@ -5906,7 +6318,7 @@ Volmark_18 = {
 }
 ### Issue of Donnel
 Volmark_19 = {
-	name = Wylla # Semi-canon, married Alvyn Saltcliffe
+	name = Wylla # Semi-Canon, married Alvyn Saltcliffe
 	dynasty = dynn_Volmark
 	female = yes
 
@@ -5915,7 +6327,10 @@ Volmark_19 = {
 
 	father = Volmark_18
 
-	8123.1.1 = { birth = yes }
+	8123.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8175.1.1 = { death = yes }
 }
 Volmark_20 = {
@@ -5931,7 +6346,7 @@ Volmark_20 = {
 	8181.1.1 = { death = yes }
 }
 Volmark_21 = {
-	name = Kemmett # Semi-canon
+	name = Kemmett # Semi-Canon
 	dynasty = dynn_Volmark
 
 	religion = drowned_god_main
@@ -5939,7 +6354,10 @@ Volmark_21 = {
 
 	father = Volmark_18
 
-	8132.1.1 = { birth = yes }
+	8132.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8150.1.1 = { add_spouse = Botley_32 } # Belona Botley
 	8181.1.1 = { death = { death_reason = death_battle } }
 }
@@ -6030,7 +6448,10 @@ Volmark_26 = {
 	father = Volmark_25
 	mother = Volmark_rs_5
 
-	8259.1.1 = { birth = yes }
+	8259.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 }
 Volmark_27 = {
 	name = Alannys
@@ -6045,7 +6466,10 @@ Volmark_27 = {
 	father = Volmark_25
 	mother = Volmark_rs_5
 
-	8262.1.1 = { birth = yes }
+	8262.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 }
 
 ###### HOUSE WYNCH (id = dynn_Wynch)
@@ -6054,7 +6478,7 @@ Volmark_27 = {
 ###
 Grey_King_15 = {
 	name = The_Wynch # Mentioned, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 8
 
@@ -6072,12 +6496,15 @@ Grey_King_15 = {
 
 	disallow_random_traits = yes
 
-	98.1.1 = { birth = yes }
+	98.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	136.1.1 = { death = yes }
 }
 Grey_King_16 = {
 	name = Line_of_The_Wynch
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -6269,7 +6696,10 @@ Wynch_19 = {
 
 	disallow_random_traits = yes
 
-	8086.1.1 = { birth = yes }
+	8086.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8100.1.1 = { trait = lustful }
 	8134.1.1 = {
 		death = {
@@ -6292,7 +6722,7 @@ Wynch_20 = {
 	8167.1.1 = { death = yes }
 }
 Wynch_21 = {
-	name = Shera # Semi-canon, married Vickon Greyjoy
+	name = Shera # Semi-Canon, married Vickon Greyjoy
 	dynasty = dynn_Wynch
 	female = yes
 
@@ -6301,7 +6731,10 @@ Wynch_21 = {
 
 	father = Wynch_18
 
-	8115.1.1 = { birth = yes }
+	8115.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8143.1.1 = { death = { death_reason = death_accident } }
 }
 ### Main Line
@@ -6348,7 +6781,7 @@ Wynch_24 = {
 ###
 Grey_King_17 = {
 	name = The_Botley # Mentioned, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 7
 
@@ -6366,12 +6799,15 @@ Grey_King_17 = {
 
 	disallow_random_traits = yes
 
-	97.1.1 = { birth = yes }
+	97.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	140.1.1 = { death = yes }
 }
 Grey_King_18 = {
 	name = Line_of_The_Botley
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -6556,7 +6992,10 @@ Botley_30 = {
 
 	father = Botley_29
 
-	8076.1.1 = { birth = yes }
+	8076.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
@@ -6565,7 +7004,7 @@ Botley_30 = {
 	}
 }
 Botley_31 = {
-	name = Harrag # Semi-canon, a lord
+	name = Harrag # Semi-Canon, a lord
 	dynasty = dynn_Botley
 
 	prowess = 12
@@ -6575,13 +7014,16 @@ Botley_31 = {
 
 	father = Botley_30
 
-	8110.1.1 = { birth = yes }
+	8110.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8130.1.1 = { add_spouse = Saltcliffe_17 } # Gysella Saltcliffe
 	8145.1.1 = { death = yes }
 }
 ### Issue of Harrag
 Botley_32 = {
-	name = Belona # Semi-canon
+	name = Belona # Semi-Canon
 	dynasty = dynn_Botley
 	female = yes
 
@@ -6591,11 +7033,14 @@ Botley_32 = {
 	father = Botley_31
 	mother = Saltcliffe_17
 
-	8134.1.1 = { birth = yes }
+	8134.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8196.1.1 = { death = yes }
 }
 Botley_33 = {
-	name = Rafe # Semi-canon, a lord
+	name = Rafe # Semi-Canon, a lord
 	dynasty = dynn_Botley
 
 	religion = drowned_god_main
@@ -6604,7 +7049,10 @@ Botley_33 = {
 	father = Botley_31
 	mother = Saltcliffe_17
 
-	8138.1.1 = { birth = yes }
+	8138.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8165.1.1 = { add_spouse = Botley_rs_6 }
 	8183.1.1 = { death = yes }
 }
@@ -6619,7 +7067,7 @@ Botley_rs_6 = {
 	8183.1.1 = { death = yes }
 }
 Botley_34 = {
-	name = Mera # Semi-canon
+	name = Mera # Semi-Canon
 	dynasty = dynn_Botley
 	female = yes
 
@@ -6629,11 +7077,14 @@ Botley_34 = {
 	father = Botley_31
 	mother = Saltcliffe_17
 
-	8140.1.1 = { birth = yes }
+	8140.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8200.1.1 = { death = yes }
 }
 Botley_35 = {
-	name = Harren # Semi-canon
+	name = Harren # Semi-Canon
 	dynasty = dynn_Botley
 
 	religion = drowned_god_main
@@ -6642,7 +7093,10 @@ Botley_35 = {
 	father = Botley_31
 	mother = Saltcliffe_17
 
-	8143.1.1 = { birth = yes }
+	8143.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8154.1.1 = { death = { death_reason = death_accident } }
 }
 ### Issue of Rafe
@@ -6660,7 +7114,7 @@ Botley_37 = {
 	8195.1.1 = { death = yes }
 }
 Botley_36 = {
-	name = Alla # Semi-canon
+	name = Alla # Semi-Canon
 	dynasty = dynn_Botley
 	female = yes
 
@@ -6672,7 +7126,10 @@ Botley_36 = {
 	trait = bastard
 	give_nickname = nick_pyke
 
-	8155.1.1 = { birth = yes }
+	8155.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8179.1.1 = { death = yes }
 }
 ### Main Line
@@ -6707,7 +7164,7 @@ Botley_39 = {
 ###
 Grey_King_19 = {
 	name = The_Saltcliffe # Mentioned, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 8
 
@@ -6725,12 +7182,15 @@ Grey_King_19 = {
 
 	disallow_random_traits = yes
 
-	100.1.1 = { birth = yes }
+	100.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	146.1.1 = { death = yes }
 }
 Grey_King_20 = {
 	name = Line_of_The_Saltcliffe
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -6900,7 +7360,7 @@ Saltcliffe_rs_3 = {
 }
 ### Issue of Vickon
 Saltcliffe_17 = {
-	name = Gysella # Semi-canon, married Harrag Botley
+	name = Gysella # Semi-Canon, married Harrag Botley
 	dynasty = dynn_Saltcliffe
 	female = yes
 
@@ -6910,11 +7370,14 @@ Saltcliffe_17 = {
 	father = Saltcliffe_16
 	mother = Saltcliffe_rs_3
 
-	8114.1.1 = { birth = yes }
+	8114.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8143.1.1 = { death = { death_reason = death_childbirth } }
 }
 Saltcliffe_18 = {
-	name = Ralf # Semi-canon, a lord
+	name = Ralf # Semi-Canon, a lord
 	dynasty = dynn_Saltcliffe
 
 	prowess = 6
@@ -6934,12 +7397,15 @@ Saltcliffe_18 = {
 
 	disallow_random_traits = yes
 
-	8118.1.1 = { birth = yes }
+	8118.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8135.1.1 = { add_spouse = Merlyn_19 } # Rina Merlyn
 	8178.1.1 = { death = yes }
 }
 Saltcliffe_19 = {
-	name = Stavryn # Semi-canon
+	name = Stavryn # Semi-Canon
 	dynasty = dynn_Saltcliffe
 
 	religion = drowned_god_main
@@ -6948,12 +7414,15 @@ Saltcliffe_19 = {
 	father = Saltcliffe_16
 	mother = Saltcliffe_rs_3
 
-	8120.1.1 = { birth = yes }
+	8120.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8130.1.1 = { trait = wrathful }
 	8140.1.1 = { death = { death_reason = death_fight } } # Died in a brawl
 }
 Saltcliffe_20 = {
-	name = Alvyn # Semi-canon
+	name = Alvyn # Semi-Canon
 	dynasty = dynn_Saltcliffe
 
 	prowess = 9
@@ -6964,7 +7433,10 @@ Saltcliffe_20 = {
 	father = Saltcliffe_16
 	mother = Saltcliffe_rs_3
 
-	8121.1.1 = { birth = yes }
+	8121.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8137.1.1 = {
 		trait = brave
 		trait = reaver
@@ -6974,7 +7446,7 @@ Saltcliffe_20 = {
 	8184.1.1 = { death = { death_reason = death_battle } }
 }
 Saltcliffe_21 = {
-	name = Lucan # Semi-canon
+	name = Lucan # Semi-Canon
 	dynasty = dynn_Saltcliffe
 
 	religion = drowned_god_main
@@ -6985,7 +7457,10 @@ Saltcliffe_21 = {
 
 	trait = zealous
 
-	8124.1.1 = { birth = yes }
+	8124.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8144.1.1 = {
 		trait = drowned_man # Drowned Man
 		give_nickname = nick_the_crab
@@ -6994,7 +7469,7 @@ Saltcliffe_21 = {
 }
 ### Issue of Alvyn
 Saltcliffe_22 = {
-	name = Romny # Semi-canon
+	name = Romny # Semi-Canon
 	dynasty = dynn_Saltcliffe
 
 	religion = drowned_god_main
@@ -7003,11 +7478,14 @@ Saltcliffe_22 = {
 	father = Saltcliffe_20
 	mother = Volmark_19
 
-	8138.1.1 = { birth = yes }
+	8138.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8176.1.1 = { death = yes }
 }
 Saltcliffe_23 = {
-	name = Gunnar # Semi-canon
+	name = Gunnar # Semi-Canon
 	dynasty = dynn_Saltcliffe
 
 	religion = drowned_god_main
@@ -7018,12 +7496,15 @@ Saltcliffe_23 = {
 
 	trait = zealous
 
-	8140.1.1 = { birth = yes }
+	8140.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8160.1.1 = { trait = drowned_man } # Drowned Man
 	8198.1.1 = { death = yes }
 }
 Saltcliffe_40 = {
-	name = Steffaria # Semi-canon
+	name = Steffaria # Semi-Canon
 	dynasty = dynn_Saltcliffe
 	female = yes
 
@@ -7033,12 +7514,15 @@ Saltcliffe_40 = {
 	father = Saltcliffe_20
 	mother = Volmark_19
 
-	8142.1.1 = { birth = yes }
+	8142.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8201.1.1 = { death = yes }
 }
 ### Issue of Romny
 Saltcliffe_24 = {
-	name = Rus # Semi-canon
+	name = Rus # Semi-Canon
 	dynasty = dynn_Saltcliffe
 
 	religion = drowned_god_main
@@ -7049,12 +7533,15 @@ Saltcliffe_24 = {
 	trait = bastard
 	give_nickname = nick_pyke
 
-	8157.1.1 = { birth = yes }
+	8157.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8194.1.1 = { death = yes }
 }
 ### Issue of Ralf
 Saltcliffe_25 = {
-	name = Tanda # Semi-canon
+	name = Tanda # Semi-Canon
 	dynasty = dynn_Saltcliffe
 	female = yes
 
@@ -7064,11 +7551,14 @@ Saltcliffe_25 = {
 	father = Saltcliffe_18
 	mother = Merlyn_19
 
-	8138.1.1 = { birth = yes }
+	8138.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8180.1.1 = { death = yes }
 }
 Saltcliffe_26 = {
-	name = Dagur # Semi-canon, AKA: The Iron Serpent, Commander of the Gold Cloaks
+	name = Dagur # Semi-Canon, AKA: The Iron Serpent, Commander of the Gold Cloaks
 	dynasty = dynn_Saltcliffe
 
 	prowess = 8
@@ -7087,10 +7577,14 @@ Saltcliffe_26 = {
 
 	disallow_random_traits = yes
 
-	8140.1.1 = { birth = yes }
+	8140.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8154.1.1 = { trait = lustful }
 	8157.1.1 = {
 		trait = disinherited
+		add_character_flag = historical_disinheritance
 		religion = the_seven_main
 		trait = knight
 		give_nickname = nick_the_iron_serpent
@@ -7098,7 +7592,7 @@ Saltcliffe_26 = {
 	8159.1.1 = { add_spouse = Tyrell_86 } # Reyna Tyrell
 	8162.9.8 = {
 		create_character_memory = {
-			type = agot_tournament_winner # Highgarden Grand Tourney 
+			type = agot_tournament_winner # Highgarden Grand Tourney
 			participants = {
 				TourneyHost = character:Tyrell_90 # Leo Longthorn Tyrell
 			}
@@ -7107,7 +7601,7 @@ Saltcliffe_26 = {
 	8188.1.1 = { death = yes }
 }
 Saltcliffe_27 = {
-	name = Roryn # Semi-canon, a lord
+	name = Roryn # Semi-Canon, a lord
 	dynasty = dynn_Saltcliffe
 
 	religion = drowned_god_main
@@ -7116,12 +7610,15 @@ Saltcliffe_27 = {
 	father = Saltcliffe_18
 	mother = Merlyn_19
 
-	8142.1.1 = { birth = yes }
+	8142.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8175.1.1 = { add_spouse = Westerling_41 } # Calynne Westerling
 	8210.1.1 = { death = yes }
 }
 Saltcliffe_28 = {
-	name = Gran # Semi-canon
+	name = Gran # Semi-Canon
 	dynasty = dynn_Saltcliffe
 
 	religion = drowned_god_main
@@ -7132,12 +7629,13 @@ Saltcliffe_28 = {
 
 	8143.4.21 = {
 		birth = yes
+		add_character_flag = canon_status_semicanon
 		trait = greyscale
 	}
 	8143.8.1 = { death = { death_reason = death_greyscale } }
 }
 Saltcliffe_29 = {
-	name = Sawane # Semi-canon
+	name = Sawane # Semi-Canon
 	dynasty = dynn_Saltcliffe
 
 	religion = drowned_god_main
@@ -7146,11 +7644,14 @@ Saltcliffe_29 = {
 	father = Saltcliffe_18
 	mother = Merlyn_19
 
-	8145.1.1 = { birth = yes }
+	8145.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8157.1.1 = { death = { death_reason = death_accident } } # Struck by lightning
 }
 Saltcliffe_30 = {
-	name = Perra # Semi-canon
+	name = Perra # Semi-Canon
 	dynasty = dynn_Saltcliffe
 	female = yes
 
@@ -7160,11 +7661,14 @@ Saltcliffe_30 = {
 	father = Saltcliffe_18
 	mother = Merlyn_19
 
-	8150.1.1 = { birth = yes }
+	8150.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8205.1.1 = { death = yes }
 }
 Saltcliffe_31 = {
-	name = Rodmar # Semi-canon
+	name = Rodmar # Semi-Canon
 	dynasty = dynn_Saltcliffe
 
 	religion = drowned_god_main
@@ -7173,12 +7677,15 @@ Saltcliffe_31 = {
 	father = Saltcliffe_18
 	mother = Merlyn_19
 
-	8152.1.1 = { birth = yes }
+	8152.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8217.1.1 = { death = yes }
 }
 ### Issue of Dagur
 Saltcliffe_32 = {
-	name = Thoryn # Semi-canon
+	name = Thoryn # Semi-Canon
 	dynasty = dynn_Saltcliffe
 
 	religion = the_seven_main
@@ -7187,15 +7694,18 @@ Saltcliffe_32 = {
 	father = Saltcliffe_26
 	mother = Tyrell_86
 
+	trait = disinherited
+
 	8159.1.1 = {
 		birth = yes
-		trait = disinherited
+		add_character_flag = canon_status_semicanon
+		add_character_flag = historical_disinheritance
 	}
 	8177.1.1 = { trait = knight }
 	8203.1.1 = { death = yes }
 }
 Saltcliffe_33 = {
-	name = Rhiannyn # Semi-canon
+	name = Rhiannyn # Semi-Canon
 	dynasty = dynn_Saltcliffe
 	female = yes
 
@@ -7205,14 +7715,17 @@ Saltcliffe_33 = {
 	father = Saltcliffe_26
 	mother = Tyrell_86
 
+	trait = disinherited
+
 	8160.1.1 = {
 		birth = yes
-		trait = disinherited
+		add_character_flag = canon_status_semicanon
+		add_character_flag = historical_disinheritance
 	}
 	8203.1.1 = { death = yes }
 }
 Saltcliffe_34 = {
-	name = Aeron # Semi-canon
+	name = Aeron # Semi-Canon
 	dynasty = dynn_Saltcliffe
 
 	religion = the_seven_main
@@ -7221,15 +7734,18 @@ Saltcliffe_34 = {
 	father = Saltcliffe_26
 	mother = Tyrell_86
 
+	trait = disinherited
+
 	8163.1.1 = {
 		birth = yes
-		trait = disinherited
+		add_character_flag = canon_status_semicanon
+		add_character_flag = historical_disinheritance
 	}
 	8181.1.1 = { trait = knight }
 	8196.6.1 = { death = { death_reason = death_battle } }
 }
 Saltcliffe_35 = {
-	name = Carys # Semi-canon
+	name = Carys # Semi-Canon
 	dynasty = dynn_Saltcliffe
 	female = yes
 
@@ -7239,14 +7755,17 @@ Saltcliffe_35 = {
 	father = Saltcliffe_26
 	mother = Tyrell_86
 
+	trait = disinherited
+	
 	8169.1.1 = {
 		birth = yes
-		trait = disinherited
+		add_character_flag = canon_status_semicanon	
+		add_character_flag = historical_disinheritance
 	}
 	8229.1.1 = { death = yes }
 }
 Saltcliffe_36 = {
-	name = Astryd # Semi-canon
+	name = Astryd # Semi-Canon
 	dynasty = dynn_Saltcliffe
 	female = yes
 
@@ -7257,10 +7776,13 @@ Saltcliffe_36 = {
 
 	trait = bastard
 	give_nickname = nick_pyke
-	
+
 	trait = education_learning_1
 
-	8156.1.1 = { birth = yes }
+	8156.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8157.1.1 = { religion = the_seven_main }
 	8172.1.1 = { trait = septon } # Septa
 	8220.1.1 = { death = yes }
@@ -7322,14 +7844,17 @@ Saltcliffe_hh_1 = {
 
 	trait = education_learning_2
 
-	8107.1.1 = { birth = yes }
+	8107.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8140.1.1 = {
 		trait = lifestyle_physician
 		trait = maester_historical
 		effect = { # Maester of Saltcliffe
 			agot_maester_starting_setup_history_effect = yes
-			agot_appoint_as_court_position_for_castle_history_effect = { 
-				CASTLE = title:c_saltcliffe 
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_saltcliffe
 				POSITION = maester_court_position
 			}
 		}
@@ -7353,9 +7878,9 @@ Sunderly_8 = {
 }
 ### Issue of Gevin
 Sunderly_25 = {
-	name = Siglynd # married Qhorwyn Hoare 
+	name = Siglynd # married Qhorwyn Hoare
 	dynasty = dynn_Sunderly
-	female = yes 
+	female = yes
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -7414,7 +7939,7 @@ Sunderly_12 = {
 	7940.1.1 = { birth = yes }
 	7990.1.1 = { death = yes }
 }
-### Issue of Lorren 
+### Issue of Lorren
 Sunderly_13 = {
 	name = Victarion # a lord
 	dynasty = dynn_Sunderly
@@ -7440,8 +7965,8 @@ Sunderly_23 = {
 
 	7968.1.1 = { birth = yes }
 	8000.2.1 = {
-		trait = nightswatch_historical 
-		effect = { 
+		trait = nightswatch_historical
+		effect = {
 			agot_join_nightswatch_history_effect = {
 				ORDER = steward
 				CASTLE = title:c_eastwatch
@@ -7460,14 +7985,14 @@ Sunderly_24 = {
 	culture = ironborn
 
 	father = Sunderly_23
-	
+
 	trait = bastard
 	give_nickname = nick_pyke
 
 	7987.1.1 = { birth = yes }
 	8000.2.1 = {
-		trait = nightswatch_historical 
-		effect = { 
+		trait = nightswatch_historical
+		effect = {
 			agot_join_nightswatch_history_effect = {
 				ORDER = ranger
 				CASTLE = title:c_eastwatch
@@ -7595,7 +8120,7 @@ Sunderly_22 = {
 ###
 Grey_King_21 = {
 	name = The_Myre # Mentioned, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 10
 
@@ -7613,12 +8138,15 @@ Grey_King_21 = {
 
 	disallow_random_traits = yes
 
-	96.1.1 = { birth = yes }
+	96.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	150.1.1 = { death = yes }
 }
 Grey_King_22 = {
 	name = Line_of_The_Myre
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -7841,7 +8369,7 @@ Myre_rs_2 = {
 ###
 Grey_King_23 = {
 	name = The_Kenning # Mentioned, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 11
 
@@ -7859,12 +8387,15 @@ Grey_King_23 = {
 
 	disallow_random_traits = yes
 
-	95.1.1 = { birth = yes }
+	95.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	153.1.1 = { death = yes }
 }
 Grey_King_24 = {
 	name = Line_of_The_Kenning
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -8281,7 +8812,7 @@ Kenning_rs_16 = {
 ###
 Grey_King_25 = {
 	name = The_Stonetree # Mentioned, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 20
 
@@ -8299,12 +8830,15 @@ Grey_King_25 = {
 
 	disallow_random_traits = yes
 
-	94.1.1 = { birth = yes }
+	94.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	148.1.1 = { death = yes }
 }
 Grey_King_26 = {
 	name = Line_of_The_Stonetree
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -8475,7 +9009,7 @@ Stonetree_17 = {
 	8159.1.1 = { death = yes }
 }
 Stonetree_18 = {
-	name = Tormund # Semi-canon
+	name = Tormund # Semi-Canon
 	dynasty = dynn_Stonetree
 
 	prowess = 12
@@ -8487,14 +9021,17 @@ Stonetree_18 = {
 
 	trait = education_martial_2
 
-	8115.1.1 = { birth = yes }
+	8115.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8131.1.1 = {
 		trait = brave
 		give_nickname = nick_bloodaxe
 	}
 	8136.1.1 = {
 		effect = { # Master-at-arms at Blacktyde
-			agot_appoint_as_councillor_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = {
 				CASTLE = title:c_blacktyde
 				POSITION = councillor_marshal
 			}
@@ -8503,7 +9040,7 @@ Stonetree_18 = {
 	8150.1.1 = {
 		add_spouse = Greyjoy_76 # Gudrun Greyjoy
 		effect = { # Master-at-arms at Pyke
-			agot_appoint_as_councillor_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = {
 				CASTLE = title:c_pyke
 				POSITION = councillor_marshal
 			}
@@ -8526,7 +9063,7 @@ Stonetree_19 = {
 }
 ### Issue of Tormund
 Stonetree_20 = {
-	name = Sigmund # Semi-canon
+	name = Sigmund # Semi-Canon
 	dynasty = dynn_Stonetree
 
 	religion = drowned_god_main
@@ -8535,11 +9072,14 @@ Stonetree_20 = {
 	father = Stonetree_18
 	mother = Greyjoy_76
 
-	8152.1.1 = { birth = yes }
+	8152.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8205.1.1 = { death = yes }
 }
 Stonetree_21 = {
-	name = Donel # Semi-canon
+	name = Donel # Semi-Canon
 	dynasty = dynn_Stonetree
 
 	religion = drowned_god_main
@@ -8548,7 +9088,10 @@ Stonetree_21 = {
 	father = Stonetree_18
 	mother = Greyjoy_76
 
-	8155.1.1 = { birth = yes }
+	8155.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8171.1.1 = { death = yes }
 }
 ### Issue of Urras
@@ -8754,7 +9297,7 @@ Tawney_20 = {
 ###
 Grey_King_27 = {
 	name = Balon_Blackskin # Canon, Balon Blackskin, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 10
 
@@ -8773,12 +9316,15 @@ Grey_King_27 = {
 
 	disallow_random_traits = yes
 
-	89.1.1 = { birth = yes }
+	89.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	140.1.1 = { death = yes }
 }
 Grey_King_28 = {
 	name = Line_of_Balon_Blackskin
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -8815,7 +9361,10 @@ Blacktyde_8 = {
 
 	disallow_random_traits = yes
 
-	4371.1.1 = { birth = yes }
+	4371.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	4387.1.1 = { trait = lustful }
 	4393.1.1 = { give_nickname = nick_maidensbane }
 	4449.1.1 = { death = yes }
@@ -8833,7 +9382,7 @@ Blacktyde_9 = {
 	disallow_random_traits = yes
 
 	give_nickname = nick_maidensbane
-	
+
 	4449.1.1 = { birth = yes }
 	7851.1.1 = { death = yes }
 }
@@ -8960,7 +9509,7 @@ Blacktyde_17 = {
 	8136.1.1 = { death = yes }
 }
 Blacktyde_18 = {
-	name = Garmon # Semi-canon, a lord
+	name = Garmon # Semi-Canon, a lord
 	dynasty = dynn_Blacktyde
 
 	religion = drowned_god_main
@@ -8968,13 +9517,16 @@ Blacktyde_18 = {
 
 	father = Blacktyde_17
 
-	8118.1.1 = { birth = yes }
+	8118.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8140.1.1 = { add_spouse = Greyjoy_76 } # Gudrun Greyjoy
 	8150.1.1 = { death = { death_reason = death_drowned } }
 }
 ### Issue of Garmon
 Blacktyde_19 = {
-	name = Andrik # Semi-canon, a lord
+	name = Andrik # Semi-Canon, a lord
 	dynasty = dynn_Blacktyde
 
 	religion = drowned_god_main
@@ -8983,12 +9535,15 @@ Blacktyde_19 = {
 	father = Blacktyde_18
 	mother = Greyjoy_76
 
-	8140.1.1 = { birth = yes }
+	8140.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8163.1.1 = { give_nickname = nick_the_trueborn }
 	8189.1.1 = { death = yes }
 }
 Blacktyde_20 = {
-	name = Esgred # Semi-canon
+	name = Esgred # Semi-Canon
 	dynasty = dynn_Blacktyde
 	female = yes
 
@@ -9000,7 +9555,10 @@ Blacktyde_20 = {
 
 	trait = disputed_heritage
 
-	8151.1.1 = { birth = yes }
+	8151.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8204.1.1 = { death = yes }
 }
 ### Main Line
@@ -9061,16 +9619,13 @@ Drumm_4 = {
 	trait = physique_good_3
 	trait = brave
 
-	88.1.1 = { birth = yes }
+	88.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	104.1.1 = {
 		give_nickname = nick_the_necromancer
-		effect = {
-			add_trait = lifestyle_mystic
-			add_trait_xp = {
-				trait = lifestyle_mystic
-				value = trait_third_level
-			}
-		}
+		trait = lifestyle_mystic_3_history
 	}
 	148.1.1 = { death = yes }
 }
@@ -9114,7 +9669,10 @@ Drumm_6 = {
 
 	disallow_random_traits = yes
 
-	2912.1.1 = { birth = yes }
+	2912.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	2928.1.1 = { give_nickname = nick_raven_feeder }
 	2956.1.1 = { death = yes }
 }
@@ -9146,7 +9704,6 @@ Drumm_8 = {
 
 	trait = education_martial_2
 	trait = strong
-	trait = torturer
 	trait = callous
 	trait = ambitious
 	trait = brave
@@ -9154,8 +9711,14 @@ Drumm_8 = {
 
 	disallow_random_traits = yes
 
-	7749.1.1 = { birth = yes }
-	7769.1.1 = { give_nickname = nick_the_dread }
+	7749.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	7769.1.1 = { 
+		trait = torturer
+		give_nickname = nick_the_dread 
+	}
 	7819.1.1 = { death = yes }
 }
 Drumm_9 = {
@@ -9202,7 +9765,10 @@ Drumm_11 = {
 
 	disallow_random_traits = yes
 
-	7824.1.1 = { birth = yes }
+	7824.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7844.1.1 = { give_nickname = nick_the_reaver }
 	7879.1.1 = { death = yes }
 }
@@ -9234,8 +9800,8 @@ Drumm_14 = {
 	name = Gormond # Canon, a lord, AKA: Gormond the Oldfather
 	dynasty = dynn_Drumm
 
-	# health = 11
-	#fertility = 2.5 # AGOT TODO
+	health = 9
+	fertility = 1
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -9246,9 +9812,10 @@ Drumm_14 = {
 	trait = fecund
 	trait = rowdy
 
-	disallow_random_traits = yes
-
-	7891.1.1 = { birth = yes }
+	7891.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7907.1.1 = {
 		trait = lustful
 		trait = lifestyle_reveler
@@ -9325,7 +9892,10 @@ Drumm_17 = {
 
 	disallow_random_traits = yes
 
-	7964.1.1 = { birth = yes }
+	7964.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7990.1.1 = { give_nickname = nick_the_cunning }
 	8018.1.1 = { death = yes }
 }
@@ -9376,7 +9946,10 @@ Drumm_21 = {
 
 	father = Drumm_20
 
-	8061.1.1 = { birth = yes }
+	8061.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
@@ -9451,7 +10024,7 @@ Drumm_26 = {
 ###
 Grey_King_29 = {
 	name = Ragged_Ralf # Canon, Ragged Ralf of Old Wyk, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 6
 
@@ -9468,12 +10041,15 @@ Grey_King_29 = {
 
 	disallow_random_traits = yes
 
-	91.1.1 = { birth = yes }
+	91.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	146.1.1 = { death = yes }
 }
 Grey_King_30 = {
 	name = Line_of_Ragged_Ralf
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -9627,7 +10203,10 @@ Stonehouse_17 = {
 
 	father = Stonehouse_16
 
-	8102.1.1 = { birth = yes }
+	8102.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
@@ -9649,7 +10228,7 @@ Stonehouse_18 = {
 	8172.1.1 = { death = yes }
 }
 Stonehouse_19 = {
-	name = Sona # Semi-canon, married Eurik Greyjoy
+	name = Sona # Semi-Canon, married Eurik Greyjoy
 	dynasty = dynn_Stonehouse
 	female = yes
 
@@ -9658,7 +10237,10 @@ Stonehouse_19 = {
 
 	father = Stonehouse_17
 
-	8124.1.1 = { birth = yes }
+	8124.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8177.1.1 = { death = yes }
 }
 ### Main Line
@@ -9910,7 +10492,7 @@ Sparr_rs_3 = {
 ###
 Grey_King_31 = {
 	name = The_Merlyn # Mentioned, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 8
 
@@ -9928,12 +10510,15 @@ Grey_King_31 = {
 
 	disallow_random_traits = yes
 
-	99.1.1 = { birth = yes }
+	99.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	132.1.1 = { death = yes }
 }
 Grey_King_32 = {
 	name = Line_of_The_Merlyn
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -10142,7 +10727,7 @@ Merlyn_18 = {
 	8152.1.1 = { death = yes }
 }
 Merlyn_19 = {
-	name = Rina # Semi-canon
+	name = Rina # Semi-Canon
 	dynasty = dynn_Merlyn
 	female = yes
 
@@ -10153,20 +10738,26 @@ Merlyn_19 = {
 
 	trait = zealous
 
-	8120.1.1 = { birth = yes }
+	8120.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8173.1.1 = { death = yes }
 }
 Merlyn_20 = {
-	name = Alrya # Semi-canon
+	name = Alrya # Semi-Canon
 	dynasty = dynn_Merlyn
 	female = yes
 
-	religion = the_seven_main
+	religion = drowned_god_main
 	culture = ironborn
 
 	father = Merlyn_17
 
-	8126.1.1 = { birth = yes }
+	8126.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8157.1.1 = { death = { death_reason = death_childbirth } }
 }
 ### Main Line
@@ -10260,7 +10851,7 @@ Merlyn_rs_4 = {
 ###
 Grey_King_33 = {
 	name = The_Orkwood # Mentioned, founder
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	prowess = 7
 
@@ -10278,12 +10869,15 @@ Grey_King_33 = {
 
 	disallow_random_traits = yes
 
-	93.1.1 = { birth = yes }
+	93.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
 	145.1.1 = { death = yes }
 }
 Grey_King_34 = {
 	name = Line_of_The_Orkwood
-	dynasty = dynn_grey_king
+	dynasty = dynn_Grey_King
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -10455,7 +11049,7 @@ Orkwood_19 = {
 }
 ### Issue of Drennan
 Orkwood_20 = {
-	name = Norfryd # Semi-canon
+	name = Norfryd # Semi-Canon
 	dynasty = dynn_Orkwood # House uncertain
 
 	prowess = 6
@@ -10467,13 +11061,16 @@ Orkwood_20 = {
 
 	trait = bastard
 	give_nickname = nick_pyke
-	
+
 	trait = education_martial_2
 
-	8114.1.1 = { birth = yes }
+	8114.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8140.1.1 = {
 		effect = { # Master-at-arms at Saltcliffe
-			agot_appoint_as_councillor_for_castle_history_effect = { 
+			agot_appoint_as_councillor_for_castle_history_effect = {
 				CASTLE = title:c_saltcliffe
 				POSITION = councillor_marshal
 			}
@@ -10582,7 +11179,10 @@ Orkwood_28 = {
 
 	father = Orkwood_27
 
-	8233.1.1 = { birth = yes }
+	8233.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8251.1.1 = { add_spouse = Orkwood_rs_3 }
 	8285.1.1 = { death = yes }
 }
@@ -10609,12 +11209,9 @@ Codd_10 = {
 	culture = ironborn
 
 	7760.1.1 = { birth = yes }
-	7798.1.1 = { 
+	7798.1.1 = {
 		effect = {
-			if = {
-				limit = { character:Codd_rs_4 = { is_alive = yes } }
-				make_concubine = character:Codd_rs_4
-			}
+			agot_safe_concubine_history_effect = { TARGET = character:Codd_rs_4 }
 		}
 	}
 	7803.1.1 = {
@@ -10662,7 +11259,7 @@ Codd_12 = {
 
 	father = Codd_10
 	mother = Fisher_riverlands_duplicate_9
-	
+
 	trait = bastard
 	give_nickname = nick_pyke
 
@@ -10686,12 +11283,9 @@ Codd_13 = {
 	trait = intellect_good_3
 
 	7822.1.1 = { birth = yes }
-	7840.1.1 = { 
+	7840.1.1 = {
 		effect = {
-			if = {
-				limit = { character:Codd_rs_5 = { is_alive = yes } }
-				make_concubine = character:Codd_rs_5
-			}
+			agot_safe_concubine_history_effect = { TARGET = character:Codd_rs_5 }
 		}
 	}
 	7876.1.1 = { death = yes }
@@ -10874,12 +11468,9 @@ Codd_24 = {
 	trait = beauty_bad_1
 
 	7940.1.1 = { birth = yes }
-	7958.1.1 = { 
+	7958.1.1 = {
 		effect = {
-			if = {
-				limit = { character:Codd_rs_6 = { is_alive = yes } }
-				make_concubine = character:Codd_rs_6
-			}
+			agot_safe_concubine_history_effect = { TARGET = character:Codd_rs_6 }
 		}
 	}
 	7995.1.1 = { death = yes }
@@ -11029,12 +11620,9 @@ Codd_35 = {
 	father = Codd_31
 
 	8106.1.1 = { birth = yes }
-	8124.1.1 = { 
+	8124.1.1 = {
 		effect = {
-			if = {
-				limit = { character:Codd_rs_7 = { is_alive = yes } }
-				make_concubine = character:Codd_rs_7
-			}
+			agot_safe_concubine_history_effect = { TARGET = character:Codd_rs_7 }
 		}
 	}
 	8182.1.1 = {
@@ -11084,12 +11672,9 @@ Codd_37 = {
 	mother = Codd_rs_7
 
 	8129.1.1 = { birth = yes }
-	8147.1.1 = { 
+	8147.1.1 = {
 		effect = {
-			if = {
-				limit = { character:Codd_rs_8 = { is_alive = yes } }
-				make_concubine = character:Codd_rs_8
-			}
+			agot_safe_concubine_history_effect = { TARGET = character:Codd_rs_8 }
 		}
 	}
 	8194.1.1 = { death = yes }
@@ -11099,7 +11684,7 @@ Codd_rs_8 = {
 	female = yes
 
 	religion = valyrian
-	culture = essosi_valyrian # AGOT TODO: Is this right?
+	culture = essosi_valyrian
 
 	8129.1.1 = { birth = yes }
 	8194.1.1 = { death = yes }
@@ -11204,7 +11789,7 @@ Humble_12 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	trait = child_of_concubine_male
+	trait = child_of_concubine_female
 
 	7910.1.1 = { birth = yes }
 	7949.1.1 = { death = yes }
@@ -11601,7 +12186,7 @@ Shepherd_24 = {
 ### Cut from the Cloth
 ###
 Weaver_21 = {
-	name = Wulfe # a lord
+	name = Wulfe
 	dynasty = dynn_Weaver
 
 	religion = drowned_god_main
@@ -11780,7 +12365,7 @@ Netley_9 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	trait = child_of_concubine_male
+	trait = child_of_concubine_female
 
 	7899.1.1 = { birth = yes }
 	7944.1.1 = { death = yes }
@@ -12063,7 +12648,7 @@ Sharp_27 = {
 	father = Sharp_19
 
 	8062.1.1 = { birth = yes }
-	8121.1.1 = { death = yes }	
+	8121.1.1 = { death = yes }
 }
 ### Issue of Burton
 Sharp_28 = {
@@ -12075,7 +12660,10 @@ Sharp_28 = {
 
 	father = Sharp_27
 
-	8080.1.1 = { birth = yes }
+	8080.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
 	8100.1.1 = { trait = lifestyle_hunter }
 	8105.1.1 = {
 		religion = the_seven_main
@@ -12087,7 +12675,7 @@ Sharp_28 = {
 			}
 		}
 	}
-	8121.1.1 = { death = yes }	
+	8121.1.1 = { death = yes }
 }
 ### Main Line
 Sharp_21 = {
@@ -12168,7 +12756,7 @@ Sharp_26 = {
 ### We Bleed Black
 ###
 Salt_14 = {
-	name = Sigfry # a lord
+	name = Sigfry
 	dynasty_house = house_Salt
 
 	religion = drowned_god_main
@@ -12180,7 +12768,7 @@ Salt_14 = {
 	7909.1.1 = { death = yes }
 }
 Salt_15 = {
-	name = Harrag # a lord
+	name = Harrag
 	dynasty_house = house_Salt
 
 	religion = drowned_god_main
@@ -12192,7 +12780,7 @@ Salt_15 = {
 	7919.1.1 = { death = yes }
 }
 Salt_16 = {
-	name = Hagen # a lord
+	name = Hagen
 	dynasty_house = house_Salt
 
 	religion = drowned_god_main
@@ -12204,7 +12792,7 @@ Salt_16 = {
 	7939.1.1 = { death = yes }
 }
 Salt_17 = {
-	name = Vickon # a lord
+	name = Vickon
 	dynasty_house = house_Salt
 
 	religion = drowned_god_main
@@ -12216,7 +12804,7 @@ Salt_17 = {
 	7965.1.1 = { death = yes }
 }
 Salt_18 = {
-	name = Urras # a lord
+	name = Urras
 	dynasty_house = house_Salt
 
 	religion = drowned_god_main
@@ -12297,7 +12885,7 @@ Salt_1 = {
 
 	prowess = 7
 
-	religion = the_seven_main
+	religion = drowned_god_main
 	culture = ironborn
 
 	father = Salt_23
@@ -12313,7 +12901,10 @@ Salt_1 = {
 
 	disallow_random_traits = yes
 
-	8101.1.1 = { birth = yes }
+	8101.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	8104.1.1 = { employer = Goodbrother_50 } # Rodrik Goodbrother
 	8133.12.1 = {
 		effect = { add_pressed_claim = title:k_the_iron_islands }
@@ -12395,7 +12986,7 @@ Freeborn_14 = {
 	religion = drowned_god_main
 	culture = ironborn
 
-	trait = child_of_concubine_male
+	trait = child_of_concubine_female
 
 	7862.1.1 = { birth = yes }
 	7909.1.1 = { death = yes }
@@ -12930,7 +13521,10 @@ Drowned_Men_2 = {
 
 	disallow_random_traits = yes
 
-	7570.1.1 = { birth = yes }
+	7570.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7630.1.1 = { death = yes }
 }
 Drowned_Men_3 = {
@@ -12956,7 +13550,10 @@ Drowned_Men_3 = {
 
 	disallow_random_traits = yes
 
-	7971.1.1 = { birth = yes }
+	7971.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
 	7987.1.1 = { trait = drowned_man } # Drowned Man
 	8002.1.1 = {
 		death = { death_reason = death_suicide }
@@ -12974,13 +13571,15 @@ Drowned_Men_4 = {
 
 	religion = drowned_god_main
 	culture = ironborn
-	
+
+	trait = education_diplomacy_4
 	trait = bossy
 
 	disallow_random_traits = yes
 
 	7971.1.1 = {
 		birth = yes
+		add_character_flag = canon_status_canon
 		effect = {
 			if = { # Kill off character if the game is loaded before Lodos came back from dead
 				limit = { game_start_date < 8037.9.9 }
@@ -12996,7 +13595,7 @@ Drowned_Men_4 = {
 			change_first_name = Lodos
 		}
 	}
-	8038.1.1 = {
+	8038.3.1 = {
 		death = {
 			death_reason = death_execution
 			killer = Greyjoy_41 # Goren Greyjoy

@@ -15,7 +15,7 @@ agot_7998_1_1_conquest_scenario_setup = {
 				}
 			}
 			title:c_dragonstone.holder = {
-				spawn_conquest_dragons = yes
+				# spawn_conquest_dragons = yes
 				add_pressed_claim = title:k_the_crownlands
 				add_pressed_claim = title:d_kings_landing
 				add_pressed_claim = title:c_kings_landing

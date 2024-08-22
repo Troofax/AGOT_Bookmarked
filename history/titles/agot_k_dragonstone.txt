@@ -17,10 +17,10 @@
 	7955.1.1 = {
 		holder = Targaryen_22
 	}
-	7959.1.1 = {
+	7955.6.1 = { 
 		holder = Targaryen_23
 	}
-	7963.1.1 = {
+	7957.1.1 = {
 		holder = Targaryen_24
 	}
 	7971.1.1 = {
@@ -96,7 +96,7 @@
 	8209.2.1 = {
 		holder = Targaryen_111
 	}
-	8209.6.1 = {
+	8209.9.1 = {
 		holder = Targaryen_109
 	}
 	8215.1.1 = {
@@ -114,7 +114,7 @@
 	8232.1.1 = {
 		holder = Targaryen_110
 	}
-	8233.1.1 = {
+	8233.6.1 = {
 		holder = Targaryen_126
 	}
 	8239.1.1 = {
@@ -126,13 +126,13 @@
 	8262.1.1 = {
 		holder = Targaryen_3
 	}
-	8283.3.1 = {
-		holder = Targaryen_1
+	8283.8.4 = {
+		holder = Targaryen_8
 	}
-	8283.6.1 = {
+	8284.5.17 = {
 		holder = Baratheon_3
 	}
-	8298.11.10 = {
+	8298.10.24 = {
 		liege = 0
 	}
 }
@@ -155,10 +155,10 @@ d_dragonstone = {
 	7955.1.1 = {
 		holder = Targaryen_22
 	}
-	7959.1.1 = {
+	7955.6.1 = { 
 		holder = Targaryen_23
 	}
-	7963.1.1 = {
+	7957.1.1 = {
 		holder = Targaryen_24
 	}
 	7971.1.1 = {
@@ -234,7 +234,7 @@ d_dragonstone = {
 	8209.2.1 = {
 		holder = Targaryen_111
 	}
-	8209.6.1 = {
+	8209.9.1 = {
 		holder = Targaryen_109
 	}
 	8215.1.1 = {
@@ -252,7 +252,7 @@ d_dragonstone = {
 	8232.1.1 = {
 		holder = Targaryen_110
 	}
-	8233.1.1 = {
+	8233.6.1 = {
 		holder = Targaryen_126
 	}
 	8239.1.1 = {
@@ -264,21 +264,38 @@ d_dragonstone = {
 	8262.1.1 = {
 		holder = Targaryen_3
 	}
-	8283.3.1 = {
-		holder = Targaryen_1
+	8283.8.4 = {
+		holder = Targaryen_8
 	}
-	8283.6.1 = {
+	8284.5.17 = {
 		holder = Baratheon_3
-		succession_laws = { male_preference_law }
-	}
-	8298.11.10 = {
-		liege = 0
 	}
 }
 c_dragonstone = {
 	7887.1.1 = {
 		liege = d_dragonstone
 		holder = Targaryen_13
+		effect = {
+			if = {
+				limit = {
+					any_living_dragon = { exists = yes }
+				}
+				set_variable = has_dragonkeeper_order
+			}
+			if = {
+				limit = {
+					has_ep1_dlc_trigger = yes
+					holder.primary_title.tier >= tier_kingdom
+					holder = { agot_can_use_dragonpit_amenities = yes }
+				}
+				holder = {
+					set_amenity_level = {
+						type = agot_dragonpit_amenities
+						value = 4 # High
+					}
+				}
+			}
+		}
 	}
 	7900.1.1 = {
 		holder = Targaryen_14
@@ -295,10 +312,10 @@ c_dragonstone = {
 	7955.1.1 = {
 		holder = Targaryen_22
 	}
-	7959.1.1 = {
+	7955.6.1 = { 
 		holder = Targaryen_23
 	}
-	7963.1.1 = {
+	7957.1.1 = {
 		holder = Targaryen_24
 	}
 	7971.1.1 = {
@@ -367,7 +384,7 @@ c_dragonstone = {
 	8209.2.1 = {
 		holder = Targaryen_111
 	}
-	8209.6.1 = {
+	8209.9.1 = {
 		holder = Targaryen_109
 	}
 	8215.1.1 = {
@@ -385,7 +402,7 @@ c_dragonstone = {
 	8232.1.1 = {
 		holder = Targaryen_110
 	}
-	8233.1.1 = {
+	8233.6.1 = {
 		holder = Targaryen_126
 	}
 	8239.1.1 = {
@@ -397,10 +414,10 @@ c_dragonstone = {
 	8262.1.1 = {
 		holder = Targaryen_3
 	}
-	8283.3.1 = {
-		holder = Targaryen_1
+	8283.8.4 = {
+		holder = Targaryen_8
 	}
-	8283.6.1 = {
+	8284.5.17 = {
 		holder = Baratheon_3
 	}
 }
@@ -408,42 +425,29 @@ c_longbar = {
 	6453.1.1 = {
 		de_jure_liege = d_sharp_point
 		liege = d_sharp_point
-		holder = Massey_12
 	}
-	6473.1.1 = {
-		holder = Massey_13
-	}
-	6512.1.1 = {
-		holder = Massey_14
-	}
-	6534.1.1 = {
-		holder = Massey_15
-	}
-	6544.1.1 = {
-		holder = Massey_16
-	}
-	6546.1.1 = {
-		holder = Bar_Emmon_5
-	}
-	7841.1.1 = {
+	7850.1.1 = {
 		holder = Bar_Emmon_7
 	}
 	7869.1.1 = {
 		holder = Bar_Emmon_8
 	}
-	7908.1.1 = {
+	7897.1.1 = {
 		holder = Bar_Emmon_9
 	}
-	7910.1.1 = {
+	7925.1.1 = {
 		holder = Bar_Emmon_10
 	}
-	7933.1.1 = {
-		holder = Bar_Emmon_11
+	7946.1.1 = {
+		holder = Bar_Emmon_55
 	}
-	7950.1.1 = {
-		holder = Bar_Emmon_12
+	7973.1.1 = {
+		holder = Bar_Emmon_59
 	}
 	7982.1.1 = {
+		holder = Bar_Emmon_62
+	}
+	7999.1.1 = {
 		holder = Bullock_1
 	}
 	7999.4.1 = {
@@ -451,24 +455,21 @@ c_longbar = {
 		de_jure_liege = d_dragonstone
 	}
 	8042.1.1 = {
-		holder = Bullock_2
-	}
-	8062.1.1 = {
 		holder = Bullock_6
 	}
-	8088.1.1 = {
-		holder = Bullock_7
+	8070.1.1 = {
+		holder = Bullock_28
 	}
-	8113.2.1 = {
-		holder = Bullock_8
+	8098.1.1 = {
+		holder = Bullock_29
 	}
-	8149.1.1 = {
-		holder = Bullock_9
+	8120.1.1 = {
+		holder = Bullock_30
 	}
-	8164.1.1 = {
-		holder = Bullock_22
+	8159.1.1 = {
+		holder = Bullock_31
 	}
-	8181.1.1 = {
+	8163.1.1 = {
 		holder = Bullock_10
 	}
 	8186.1.1 = {
@@ -536,10 +537,10 @@ d_driftmark = {
 	8271.1.1 = {
 		holder = Velaryon_1
 	}
-	8284.1.1 = {
+	8284.5.17 = {
 		holder = Velaryon_2
 	}
-	8299.7.1 = {
+	8299.9.8 = {
 		holder = Velaryon_3
 	}
 }
@@ -547,6 +548,9 @@ c_driftmark = {
 	7854.1.1 = {
 		liege = d_driftmark
 		holder = Velaryon_6
+		effect = {
+			title:b_hull = { set_title_name = b_driftage_shore }
+		}
 	}
 	7891.1.1 = {
 		holder = Velaryon_7
@@ -569,6 +573,11 @@ c_driftmark = {
 	8035.1.1 = {
 		holder = Velaryon_20
 	}
+	8082.1.1 = {
+		effect = {
+			title:b_hull = { reset_title_name = yes }
+		}
+	}
 	8086.1.1 = {
 		holder = Velaryon_31
 	}
@@ -590,10 +599,10 @@ c_driftmark = {
 	8271.1.1 = {
 		holder = Velaryon_1
 	}
-	8284.1.1 = {
+	8284.5.17 = {
 		holder = Velaryon_2
 	}
-	8299.7.1 = {
+	8299.9.8 = {
 		holder = Velaryon_3
 	}
 }
@@ -611,16 +620,16 @@ b_silverhorse = {
 		holder = Velaryon_71 # Aelyx
 	}
 	8178.1.1 = { 
-		holder = Velaryon_70 # Rhaena
+		holder = Velaryon_70
 	}
-	8211.1.1 = { 
-		holder = Velaryon_69 # Maegon
+	8211.1.1 = {
+		holder = Velaryon_67
 	}
-	8234.1.1 = { 
-		holder = Velaryon_68 # Rhaegar
+	8232.1.1 = {
+		holder = Velaryon_72
 	}
-	8250.1.1 = { 
-		holder = Velaryon_66 # Maegor
+	8265.1.1 = {
+		holder = Velaryon_66 # Maegon
 	}
 	8273.1.1 = { 
 		holder = Velaryon_65 # Rhogar
@@ -633,6 +642,11 @@ c_high_tide = {
 	7854.1.1 = {
 		liege = d_driftmark
 		holder = Velaryon_6
+		effect = {
+			set_title_name = c_mermont
+			title:b_high_tide = { set_title_name = b_mermont }
+			title:b_spicetown = { set_title_name = b_flotsam_coast }
+		}
 	}
 	7891.1.1 = {
 		holder = Velaryon_7
@@ -655,8 +669,19 @@ c_high_tide = {
 	8035.1.1 = {
 		holder = Velaryon_20
 	}
+	8077.1.1 = {
+		effect = {
+			title:b_spicetown = { reset_title_name = yes }
+		}
+	}
 	8086.1.1 = {
 		holder = Velaryon_31
+	}
+	8088.1.1 = {
+		effect = {
+			reset_title_name = yes
+			title:b_high_tide = { reset_title_name = yes }
+		}
 	}
 	8132.3.6 = {
 		holder = Velaryon_44
@@ -676,10 +701,10 @@ c_high_tide = {
 	8271.1.1 = {
 		holder = Velaryon_1
 	}
-	8284.1.1 = {
+	8284.5.17 = {
 		holder = Velaryon_2
 	}
-	8299.7.1 = {
+	8299.9.8 = {
 		holder = Velaryon_3
 	}
 }
@@ -711,10 +736,10 @@ b_blackhull = {
 	8271.1.1 = {
 		holder = Velaryon_1
 	}
-	8284.1.1 = {
+	8284.5.17 = {
 		holder = Velaryon_2
 	}
-	8299.7.1 = {
+	8299.9.8 = {
 		holder = Velaryon_3
 	}
 }
@@ -741,28 +766,28 @@ d_sharp_point = {
 	6546.1.1 = {
 		holder = Bar_Emmon_5
 	}
-	7841.1.1 = {
+	7850.1.1 = {
 		holder = Bar_Emmon_7
 	}
 	7869.1.1 = {
 		holder = Bar_Emmon_8
 	}
-	7908.1.1 = {
+	7897.1.1 = {
 		holder = Bar_Emmon_9
 	}
-	7910.1.1 = {
+	7925.1.1 = {
 		holder = Bar_Emmon_10
 	}
-	7933.1.1 = {
-		holder = Bar_Emmon_11
+	7946.1.1 = {
+		holder = Bar_Emmon_55
 	}
-	7950.1.1 = {
-		holder = Bar_Emmon_12
+	7973.1.1 = {
+		holder = Bar_Emmon_59
 	}
-	7988.1.1 = {
-		holder = Bar_Emmon_13
+	7982.1.1 = {
+		holder = Bar_Emmon_62
 	}
-	7995.1.1 = {
+	8002.1.1 = {
 		holder = Bar_Emmon_14
 	}
 	# AGOT Bookmarked Added
@@ -782,12 +807,9 @@ d_sharp_point = {
 		holder = Bar_Emmon_17
 	}
 	8059.2.1 = {
-		holder = Bar_Emmon_18
+		holder = Bar_Emmon_87
 	}
-	8081.1.1 = {
-		holder = Bar_Emmon_19
-	}
-	8092.1.1 = {
+	8112.1.1 = {
 		holder = Bar_Emmon_20
 	}
 	8139.1.1 = {
@@ -879,52 +901,49 @@ c_blackmark = {
 		liege = d_driftmark
 		holder = Blackberry_24 # Illister
 	}
-	7876.1.1 = { 
-		holder = Blackberry_22 # Tymon
+	7863.1.1 = {
+		holder = Blackberry_24
 	}
-	7892.1.1 = { 
-		holder = Blackberry_21 # Rymund
+	7876.1.1 = {
+		holder = Blackberry_25
 	}
-	7932.1.1 = { 
-		holder = Blackberry_20 # Ermen
+	7877.1.1 = {
+		holder = Blackberry_27
 	}
-	7944.1.1 = { 
-		holder = Blackberry_19 # Grover
+	7910.1.1 = {
+		holder = Blackberry_28
 	}
-	7975.1.1 = { 
-		holder = Blackberry_18 # Marq
+	7942.1.1 = {
+		holder = Blackberry_30
 	}
-	7985.1.1 = { 
-		holder = Blackberry_17 # Gaston
+	7955.1.1 = {
+		holder = Blackberry_31
 	}
-	7991.1.1 = { 
-		holder = Blackberry_1 # Addam
+	7997.1.1 = {
+		holder = Blackberry_33
 	}
-	8031.1.1 = {
-		holder = Blackberry_2
+	8020.1.1 = {
+		holder = Blackberry_38
 	}
-	8058.1.1 = {
-		holder = Blackberry_3
+	8063.1.1 = {
+		holder = Blackberry_39
 	}
-	8079.1.1 = {
-		holder = Blackberry_4
+	8090.1.1 = {
+		holder = Blackberry_41
 	}
-	8129.1.1 = {
-		holder = Blackberry_5
+	8115.1.1 = {
+		holder = Blackberry_46
 	}
-	8130.1.5 = {
-		holder = Blackberry_6
+	8137.1.1 = {
+		holder = Blackberry_52
 	}
-	8158.5.9 = {
-		holder = Blackberry_7
+	8174.1.1 = {
+		holder = Blackberry_60
 	}
-	8161.1.1 = {
-		holder = Blackberry_8
+	8209.1.1 = {
+		holder = Blackberry_62
 	}
-	8226.1.1 = {
-		holder = Blackberry_9
-	}
-	8232.3.6 = {
+	8240.1.1 = {
 		holder = Blackberry_10
 	}
 	8269.1.1 = {
@@ -951,28 +970,28 @@ c_sharp_point = {
 	6546.1.1 = {
 		holder = Bar_Emmon_5
 	}
-	7841.1.1 = {
+	7850.1.1 = {
 		holder = Bar_Emmon_7
 	}
 	7869.1.1 = {
 		holder = Bar_Emmon_8
 	}
-	7908.1.1 = {
+	7897.1.1 = {
 		holder = Bar_Emmon_9
 	}
-	7910.1.1 = {
+	7925.1.1 = {
 		holder = Bar_Emmon_10
 	}
-	7933.1.1 = {
-		holder = Bar_Emmon_11
+	7946.1.1 = {
+		holder = Bar_Emmon_55
 	}
-	7950.1.1 = {
-		holder = Bar_Emmon_12
+	7973.1.1 = {
+		holder = Bar_Emmon_59
 	}
-	7988.1.1 = {
-		holder = Bar_Emmon_13
+	7982.1.1 = {
+		holder = Bar_Emmon_62
 	}
-	7995.1.1 = {
+	8002.1.1 = {
 		holder = Bar_Emmon_14
 	}
 	8031.1.1 = {
@@ -982,12 +1001,9 @@ c_sharp_point = {
 		holder = Bar_Emmon_17
 	}
 	8059.2.1 = {
-		holder = Bar_Emmon_18
+		holder = Bar_Emmon_87
 	}
-	8081.1.1 = {
-		holder = Bar_Emmon_19
-	}
-	8092.1.1 = {
+	8112.1.1 = {
 		holder = Bar_Emmon_20
 	}
 	8139.1.1 = {
@@ -1019,79 +1035,66 @@ c_gullet_isle = {
 	6453.1.1 = {
 		de_jure_liege = d_sharp_point
 		liege = d_sharp_point
-		holder = Massey_12
 	}
-	6473.1.1 = {
-		holder = Massey_13
-	}
-	6512.1.1 = {
-		holder = Massey_14
-	}
-	6534.1.1 = {
-		holder = Massey_15
-	}
-	6544.1.1 = {
-		holder = Massey_16
-	}
-	6546.1.1 = {
-		holder = Bar_Emmon_5
-	}
-	7841.1.1 = {
+	7850.1.1 = {
 		holder = Bar_Emmon_7
 	}
 	7869.1.1 = {
 		holder = Bar_Emmon_8
 	}
-	7908.1.1 = {
+	7897.1.1 = {
 		holder = Bar_Emmon_9
 	}
-	7910.1.1 = {
+	7925.1.1 = {
 		holder = Bar_Emmon_10
 	}
-	7933.1.1 = {
-		holder = Bar_Emmon_11
+	7946.1.1 = {
+		holder = Bar_Emmon_55
 	}
-	7950.1.1 = {
-		holder = Bar_Emmon_12
+	7973.1.1 = {
+		holder = Bar_Emmon_59
+	}
+	7982.1.1 = {
+		holder = Bar_Emmon_62
 	}
 	7988.1.1 = {
 		holder = Quince_1
 	}
 	8004.1.1 = {
-		holder = Quince_2
+		holder = Quince_22
 	}
 	7999.4.1 = {
 		liege = d_driftmark
 		de_jure_liege = d_driftmark
 	}
-	8059.1.1 = {
-		holder = Quince_3
+	8048.1.1 = {
+		holder = Quince_24
 	}
-	8067.1.1 = {
-		holder = Quince_4
+	8074.1.1 = {
+		holder = Quince_32
 	}
-	8091.2.1 = {
-		holder = Quince_5
+	8097.1.1 = {
+		holder = Quince_33
 	}
-	8111.1.1 = {
-		holder = Quince_6
+	8121.1.1 = {
+		holder = Quince_37
 	}
-	8137.1.1 = {
-		holder = Quince_9
-	}
-	8161.1.1 = {
-		holder = Quince_10
+	8147.1.1 = {
+		holder = Quince_39
 	}
 	8179.1.1 = {
-		holder = Quince_11
+		holder = Quince_40
 	}
-	8182.1.1 = {
-		holder = Quince_12
+	8196.1.1 = {
+		holder = Quince_43
 	}
-	8229.1.1 = {
-		holder = Quince_13
+	8210.1.1 = {
+		holder = Quince_44
 	}
-	8255.1.1 = {
+	8256.1.1 = {
+		holder = Quince_45
+	}
+	8266.1.1 = {
 		holder = Quince_14
 	}
 	8296.1.1 = {
@@ -1101,117 +1104,119 @@ c_gullet_isle = {
 c_sweetport_sound = {
 	7869.1.1 = {
 		liege = d_sharp_point
+	}
+	7871.1.1 = {
 		holder = Sunglass_9
 	}
 	7880.1.1 = {
-		holder = Sunglass_10
+		holder = Sunglass_7
 	}
-	7910.1.1 = {
-		holder = Sunglass_11
+	7902.1.1 = {
+		holder = Sunglass_8
 	}
 	7939.1.1 = {
+		holder = Sunglass_10
+	}
+	7966.1.1 = {
 		holder = Sunglass_12
 	}
-	7957.1.1 = {
-		holder = Sunglass_13
+	7972.1.1 = {
+		holder = Sunglass_16
 	}
-	7985.1.1 = {
-		holder = Sunglass_14
-	}
-	8025.1.1 = {
-		holder = Sunglass_15
-	}
-	8037.1.1 = {
+	8010.1.1 = {
 		holder = Sunglass_18
 	}
-	8051.1.1 = {
+	8036.1.1 = {
 		holder = Sunglass_19
 	}
-	8084.1.1 = {
-		holder = Sunglass_20
-	}
-	8112.1.1 = {
+	8050.1.1 = {
 		holder = Sunglass_21
 	}
-	8135.1.1 = {
-		holder = Sunglass_22
+	8073.1.1 = {
+		holder = Sunglass_42
+	}
+	8093.1.1 = {
+		holder = Sunglass_43
+	}
+	8132.1.1 = {
+		holder = Sunglass_45
 	}
 	8165.1.1 = {
-		holder = Sunglass_35
-	}
-	8167.1.1 = {
-		holder = Sunglass_36
+		holder = Sunglass_46
 	}
 	8175.1.1 = {
-		holder = Sunglass_37
+		holder = Sunglass_48
 	}
-	8211.1.1 = {
-		holder = Sunglass_30
+	8209.1.1 = {
+		holder = Sunglass_49
 	}
-	8234.1.1 = {
-		holder = Sunglass_32
+	8220.1.1 = {
+		holder = Sunglass_53
 	}
-	8251.1.1 = {
+	8246.1.1 = {
+		holder = Sunglass_54 
+	}
+	8267.1.1 = {
 		holder = Sunglass_1
 	}
 	8276.1.1 = {
 		holder = Sunglass_2
 	}
-	8299.7.1 = {
+	8299.9.8 = {
 		holder = Sunglass_3
 	}
 }
 c_the_scales = {
-	7846.1.1 = {
-		holder = Scales_23
-	}
 	7868.1.1 = {
 		liege = d_claw_isle
+	}
+	7877.1.1 = {
+		holder = Scales_23
 	}
 	7888.1.1 = {
 		holder = Scales_6
 	}
 	7900.1.1 = {
-		holder = Scales_7
-	}
-	7925.1.1 = {
-		holder = Scales_8
-	}
-	7950.1.1 = {
-		holder = Scales_9
-	}
-	7975.1.1 = {
-		holder = Scales_10
-	}
-	7998.1.1 = {
-		holder = Scales_11
-	}
-	8021.1.1 = {
 		holder = Scales_12
 	}
-	8052.1.1 = {
-		holder = Scales_13
-	}
-	8073.1.1 = {
-		holder = Scales_14
-	}
-	8105.1.1 = {
-		holder = Scales_15
-	}
-	8129.1.1 = {
-		holder = Scales_16
-	}
-	8154.1.1 = {
+	7933.1.1 = {
 		holder = Scales_17
 	}
-	8183.1.1 = {
-		holder = Scales_18
+	7965.1.1 = {
+		holder = Scales_25
 	}
-	8202.1.1 = {
-		holder = Scales_19
+	7988.1.1 = {
+		holder = Scales_27
 	}
-	8231.1.1 = {
-		holder = Scales_4
+	8025.1.1 = {
+		holder = Scales_30
+	}
+	8044.1.1 = {
+		holder = Scales_39
+	}
+	8082.1.1 = {
+		holder = Scales_41
+	}
+	8105.1.1 = {
+		holder = Scales_48
+	}
+	8122.1.1 = {
+		holder = Scales_49
+	}
+	8133.1.1 = {
+		holder = Scales_51
+	}
+	8134.1.1 = {
+		holder = Scales_50
+	}
+	8142.1.1 = {
+		holder = Scales_55
+	}
+	8173.1.1 = {
+		holder = Scales_56
+	}
+	8214.1.1 = {
+		holder = Scales_62
 	}
 	8243.1.1 = {
 		holder = Scales_3

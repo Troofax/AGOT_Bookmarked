@@ -18,7 +18,6 @@ on_game_start = {
 
 agot_on_game_start = {
 	effect = {
-
 		##AGOT IS LOADED## - FOR OTHER MODS TO HOOK WITH
 		set_global_variable = {
 			name = AGOT_is_loaded
@@ -1141,12 +1140,82 @@ agot_on_game_start = {
 			agot_add_building_if_possible = { BUILDING = quarries_03 }
 		}
 		province:4419 = {
+			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 			agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
 			agot_add_building_if_possible = { BUILDING = pastures_04 }
-			agot_add_building_if_possible = { BUILDING = common_tradeport_04 }
 		}
 		province:4420 = {
-			agot_add_building_if_possible = { BUILDING = common_tradeport_03 }
+			if = {
+				limit = {
+					game_start_date > 8086.1.1
+					game_start_date < 8130.1.6
+				}
+				agot_add_building_if_possible = { BUILDING = city_04 }
+				agot_add_building_if_possible = { BUILDING = common_tradeport_08 }
+				agot_add_building_if_possible = { BUILDING = guild_halls_06 }
+				agot_add_building_if_possible = { BUILDING = cereal_fields_06 }
+			}
+		}
+		province:4421 = {
+			if = {
+				limit = {
+					game_start_date > 8086.1.1
+					game_start_date < 8130.1.6
+				}
+				agot_add_building_if_possible = { BUILDING = city_03 }
+				agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
+				agot_add_building_if_possible = { BUILDING = guild_halls_03 }
+				agot_add_building_if_possible = { BUILDING = cereal_fields_06 }
+			}
+		}
+		province:4423 = {
+			if = {
+				limit = {
+					game_start_date > 8086.1.1
+					game_start_date < 8130.1.6
+				}
+				agot_add_building_if_possible = { BUILDING = castle_03 }
+				agot_add_building_if_possible = { BUILDING = curtain_walls_03 }
+				agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
+				agot_add_building_if_possible = { BUILDING = cereal_fields_05 }
+			}
+		}
+		province:4424 = {
+			if = {
+				limit = {
+					game_start_date > 8086.1.1
+					game_start_date < 8130.1.6
+				}
+				agot_add_building_if_possible = { BUILDING = castle_04 }
+				agot_add_building_if_possible = { BUILDING = hill_forts_06 }
+				agot_add_building_if_possible = { BUILDING = smiths_08 }
+				agot_add_building_if_possible = { BUILDING = common_tradeport_08 }
+				agot_add_building_if_possible = { BUILDING = hill_farms_06 }
+			}
+		}
+		province:4425 = {
+			if = {
+				limit = {
+					game_start_date > 8086.1.1
+					game_start_date < 8130.1.6
+				}
+				agot_add_building_if_possible = { BUILDING = city_04 }
+				agot_add_building_if_possible = { BUILDING = common_tradeport_07 }
+				agot_add_building_if_possible = { BUILDING = guild_halls_06 }
+				agot_add_building_if_possible = { BUILDING = cereal_fields_06 }
+			}
+		}
+		province:4426 = {
+			if = {
+				limit = {
+					game_start_date > 8086.1.1
+					game_start_date < 8130.1.6
+				}
+				agot_add_building_if_possible = { BUILDING = castle_03 }
+				agot_add_building_if_possible = { BUILDING = curtain_walls_03 }
+				agot_add_building_if_possible = { BUILDING = common_tradeport_05 }
+				agot_add_building_if_possible = { BUILDING = cereal_fields_05 }
+			}
 		}
 		province:4428 = {
 			agot_add_building_if_possible = { BUILDING = smiths_04 }
@@ -2047,7 +2116,6 @@ agot_on_game_start = {
 		# Manage valyrian_heritage_dynasty_modifier and other
 		dynasty:dynn_Targaryen = {
 			add_dynasty_modifier = valyrian_heritage_dynasty_modifier
-			set_variable = { name = blood_legacy_4_beauty_good_1 value = yes }
 		}
 		dynasty:dynn_Velaryon = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
 		dynasty:dynn_Celtigar = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
@@ -2056,6 +2124,8 @@ agot_on_game_start = {
 		dynasty:dynn_Varezys = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
 		dynasty:dynn_Mataeryon = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
 		dynasty:dynn_Belaerys = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
+		dynasty:dynn_Urnebar = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
+		dynasty:dynn_Sonaryen = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
 
 		# Thrall Houses Modifier
 		dynasty:dynn_Codd = { add_dynasty_modifier = thrall_house_dynasty_modifier }
@@ -2070,6 +2140,15 @@ agot_on_game_start = {
 		#Codd
 		dynasty:dynn_Codd = { add_dynasty_modifier = codd_dynasty_modifier }
 
+		#Dragonriders
+		dynasty:dynn_Targaryen.dynasty_founder.house = { add_house_modifier = dragonrider_house_modifier }
+		house:house_Blackfyre ?= { add_house_modifier = dragonrider_house_modifier }
+		house:house_Brightflame ?= { add_house_modifier = dragonrider_house_modifier }
+		dynasty:dynn_Belaerys.dynasty_founder.house = { add_house_modifier = dragonrider_house_modifier }
+		dynasty:dynn_Urnebar.dynasty_founder.house = { add_house_modifier = dragonrider_house_modifier }
+		dynasty:dynn_Mataeryon.dynasty_founder.house = { add_house_modifier = dragonrider_house_modifier }
+		dynasty:dynn_Varezys.dynasty_founder.house = { add_house_modifier = dragonrider_house_modifier }
+
 		#Dynasty Divided
 		house:house_Blackfyre ?= { add_house_modifier = divided_dynasty_house_modifier }
 
@@ -2083,40 +2162,40 @@ agot_on_game_start = {
 			if = {
 				limit = {
 					OR = {
-						house = character:Hayford_3.house
-						house = character:Darry_12.house
-						house = character:Goodbrook_9.house
-						house = character:Rowan_6.house
-						house = character:Oakheart_5.house
-						house = character:Tarly_8.house
-						house = character:Hightower_18.house
-						house = character:Hasty_6.house
-						house = character:Lonmouth_4.house
-						house = character:Rykker_7.house
-						house = character:Ashford_5.house
-						house = character:Boggs_14.house
-						house = character:Brune_9.house
-						house = character:Brownhollow_5.house
-						house = character:Bush_5.house
-						house = character:Pyne_3.house
-						house = character:Hardy_11.house
-						house = character:Cave_30.house
-						house = character:Crabb_13.house
-						house = character:Celtigar_8.house
-						house = character:Velaryon_6.house
-						house = character:Massey_10.house
-						house = character:Mooton_8.house
-						house = character:Butterwell_5.house
-						house = character:Sunderland_9.house
-						house = character:Peake_6.house
-						house = character:Osgrey_7.house
-						house = character:Ball_4.house
-						house = character:Yronwood_8.house
-						house = character:Mooton_8.house
-						house = character:Vyrwel_10.house
-						house = character:Bracken_28.house
-						house = character:Hersy_4.house
-						house = character:Tyrell_40.house
+						house = dynasty:dynn_Hayford.dynasty_founder.house
+						house = dynasty:dynn_Darry.dynasty_founder.house
+						house = dynasty:dynn_Goodbrook.dynasty_founder.house
+						house = dynasty:dynn_Rowan.dynasty_founder.house
+						house = dynasty:dynn_Oakheart.dynasty_founder.house
+						house = dynasty:dynn_Tarly.dynasty_founder.house
+						house = dynasty:dynn_Hightower.dynasty_founder.house
+						house = dynasty:dynn_Hasty.dynasty_founder.house
+						house = dynasty:dynn_Lonmouth.dynasty_founder.house
+						house = dynasty:dynn_Rykker.dynasty_founder.house
+						house = dynasty:dynn_Ashford.dynasty_founder.house
+						house = dynasty:dynn_Boggs.dynasty_founder.house
+						house = dynasty:dynn_Brune.dynasty_founder.house
+						house = house:house_Brownhollow
+						house = dynasty:dynn_Bush.dynasty_founder.house
+						house = dynasty:dynn_Pyne.dynasty_founder.house
+						house = dynasty:dynn_Hardy.dynasty_founder.house
+						house = dynasty:dynn_Cave.dynasty_founder.house
+						house = dynasty:dynn_Crabb.dynasty_founder.house
+						house = dynasty:dynn_Celtigar.dynasty_founder.house
+						house = dynasty:dynn_Velaryon.dynasty_founder.house
+						house = dynasty:dynn_Massey.dynasty_founder.house
+						house = dynasty:dynn_Mooton.dynasty_founder.house
+						house = dynasty:dynn_Butterwell.dynasty_founder.house
+						house = dynasty:dynn_Sunderland.dynasty_founder.house
+						house = dynasty:dynn_Peake.dynasty_founder.house
+						house = dynasty:dynn_Osgrey.dynasty_founder.house
+						house = dynasty:dynn_Ball.dynasty_founder.house
+						house = dynasty:dynn_Yronwood.dynasty_founder.house
+						house = dynasty:dynn_Mooton.dynasty_founder.house
+						house = dynasty:dynn_Vyrwel.dynasty_founder.house
+						house = dynasty:dynn_Bracken.dynasty_founder.house
+						house = dynasty:dynn_Hersy.dynasty_founder.house
+						house = dynasty:dynn_Tyrell.dynasty_founder.house
 					}
 				}
 
@@ -2125,16 +2204,16 @@ agot_on_game_start = {
 			if = {
 				limit = {
 					OR = {
-						house = character:Butterwell_5.house
-						house = character:Sunderland_9.house
-						house = character:Peake_6.house
-						house = character:Osgrey_7.house
-						house = character:Ball_4.house
-						house = character:Yronwood_8.house
-						house = character:Vyrwel_10.house
-						house = character:Bracken_28.house
-						house = character:Hightower_18.house
-						house = character:Hersy_4.house
+						house = dynasty:dynn_Butterwell.dynasty_founder.house
+						house = dynasty:dynn_Sunderland.dynasty_founder.house
+						house = dynasty:dynn_Peake.dynasty_founder.house
+						house = dynasty:dynn_Osgrey.dynasty_founder.house
+						house = dynasty:dynn_Ball.dynasty_founder.house
+						house = dynasty:dynn_Yronwood.dynasty_founder.house
+						house = dynasty:dynn_Vyrwel.dynasty_founder.house
+						house = dynasty:dynn_Bracken.dynasty_founder.house
+						house = dynasty:dynn_Hightower.dynasty_founder.house
+						house = dynasty:dynn_Hersy.dynasty_founder.house
 					}
 				}
 
@@ -2142,6 +2221,12 @@ agot_on_game_start = {
 			}
 		}
 		###
+
+		### War of Succession Usurpation Setup
+		title:d_dummy_empire = {
+			copy_title_history = title:c_kings_landing
+			set_coa = c_kings_landing
+		}
 
 		### Most Devout Setup
 		title:k_the_most_devout = {
@@ -2166,6 +2251,7 @@ agot_on_game_start = {
 		title:c_kings_landing.holder = { # Appoint Commander of the Gold Cloaks
 			if = {
 				limit = {
+					exists = title:b_goldguard_heights.holder
 					NOT = { has_title = title:b_goldguard_heights }
 				}
 				appoint_court_position = {
@@ -2385,10 +2471,6 @@ agot_on_game_start = {
 		}
 		###
 
-		title:b_the_citadel.holder = {
-			trigger_event = agot_citadel_maintenance.0003
-		}
-
 		#every_ruler doesn't catch barons
 		every_barony = {
 			limit = {
@@ -2535,7 +2617,38 @@ agot_on_game_start = {
 			}
 		}
 
+		### Enhanced Siren on Steroids System
+		every_ruler = {
+			limit = { has_character_flag = supersiren_flag }
+			every_held_county = {
+				save_scope_as = siren_distribution_title
+				random_direct_de_jure_vassal_title = {
+					title_province = { save_scope_as = siren_distribution_province }
+				}
+				create_character = {
+					location = character:Local_Rulers.capital_province
+					random_traits = yes
+					culture = scope:siren_distribution_province.culture
+					faith = scope:siren_distribution_province.faith
+					age = { 16 55 }
+					gender = male
+					dynasty = generate
+					after_creation = {
+						get_title = scope:siren_distribution_title
+					}
+				}
+			}
+			death = natural
+		}
 		every_living_character = {
+			limit = { has_character_flag = supersiren_flag }
+			death = natural
+		}
+
+		every_living_character = {
+			limit = {
+				is_human = yes
+			}
 			#educations
 			trigger_event = agot_prowess.0001 # Giving Prowess traits to characters
 			trigger_event = agot_events_generic.0009
@@ -2553,8 +2666,15 @@ agot_on_game_start = {
 			if = {
 				limit = {
 					age > 13
+					NOT = { has_character_flag = canon_status_canon }
 				}
 				trigger_event = agot_events_generic.0007
+			}
+
+			#purge unproper traits on children
+			if = {
+				limit = { is_adult = no }
+				agot_adjust_adult_traits_posthistory_effect = yes
 			}
 
 			# must be before maester setup to make sure Aemon is set properly
@@ -2638,7 +2758,7 @@ agot_on_game_start = {
 					remove_relation_ward = PREV
 				}
 			}
-			if = {
+			if = { # Apply blademaster effects
 				limit = { has_trait = lifestyle_blademaster_3_history }
 				remove_trait = lifestyle_blademaster_3_history
 				add_trait = lifestyle_blademaster
@@ -2656,9 +2776,150 @@ agot_on_game_start = {
 					value = 50
 				}
 			}
+			if = { # Apply burned effects
+				limit = { has_trait = burned_3_history }
+				remove_trait = burned_3_history
+				add_trait = burned
+				add_trait_xp = {
+					trait = burned
+					track = burned
+					value = 100
+				}
+			}
+			if = {
+				limit = { has_trait = burned_2_history }
+				remove_trait = burned_2_history
+				add_trait = burned
+				add_trait_xp = {
+					trait = burned
+					track = burned
+					value = 50
+				}
+			}
+			if = { # Apply mystic effects
+				limit = { has_trait = lifestyle_mystic_3_history }
+				remove_trait = lifestyle_mystic_3_history
+				add_trait = lifestyle_mystic
+				add_trait_xp = {
+					trait = lifestyle_mystic
+					value = 100
+				}
+			}
+			if = {
+				limit = { has_trait = lifestyle_mystic_2_history }
+				remove_trait = lifestyle_mystic_2_history
+				add_trait = lifestyle_mystic
+				add_trait_xp = {
+					trait = lifestyle_mystic
+					value = 50
+				}
+			}
+			if = { # Apply physician effects
+				limit = { has_trait = lifestyle_physician_3_history }
+				remove_trait = lifestyle_physician_3_history
+				add_trait = lifestyle_physician
+				add_trait_xp = {
+					trait = lifestyle_physician
+					value = 100
+				}
+			}
+			if = {
+				limit = { has_trait = lifestyle_physician_2_history }
+				remove_trait = lifestyle_physician_2_history
+				add_trait = lifestyle_physician
+				add_trait_xp = {
+					trait = lifestyle_physician
+					value = 50
+				}
+			}
+			if = { # Apply reveler effects
+				limit = { has_trait = lifestyle_reveler_3_history }
+				remove_trait = lifestyle_reveler_3_history
+				add_trait = lifestyle_reveler
+				add_trait_xp = {
+					trait = lifestyle_reveler
+					value = 100
+				}
+			}
+			if = {
+				limit = { has_trait = lifestyle_reveler_2_history }
+				remove_trait = lifestyle_reveler_2_history
+				add_trait = lifestyle_reveler
+				add_trait_xp = {
+					trait = lifestyle_reveler
+					value = 50
+				}
+			}
+			if = { # Apply hunter effects
+				limit = { has_trait = lifestyle_hunter_3_history }
+				remove_trait = lifestyle_hunter_3_history
+				add_trait = lifestyle_hunter
+				add_trait_xp = {
+					trait = lifestyle_hunter
+					track = hunter
+					value = 100
+				}
+			}
+			if = {
+				limit = { has_trait = lifestyle_hunter_2_history }
+				remove_trait = lifestyle_hunter_2_history
+				add_trait = lifestyle_hunter
+				add_trait_xp = {
+					trait = lifestyle_hunter
+					track = hunter
+					value = 50
+				}
+			}
+			if = {
+				limit = { has_trait = lifestyle_falconer_3_history }
+				remove_trait = lifestyle_falconer_3_history
+				add_trait = lifestyle_hunter
+				add_trait_xp = {
+					trait = lifestyle_hunter
+					track = falconer
+					value = 100
+				}
+			}
+			if = {
+				limit = { has_trait = lifestyle_falconer_2_history }
+				remove_trait = lifestyle_falconer_2_history
+				add_trait = lifestyle_hunter
+				add_trait_xp = {
+					trait = lifestyle_hunter
+					track = falconer
+					value = 50
+				}
+			}
+			if = { # Apply knight effects
+				limit = { has_trait = knight }
+				remove_trait = knight
+				add_trait = squire
+				add_trait_xp = {
+					trait = squire
+					value = 100
+				}
+			}
+			if = { # Apply scarred effects
+				limit = { has_trait = scarred_3_history }
+				remove_trait = scarred_3_history
+				add_trait = scarred
+				add_trait_xp = {
+					trait = scarred
+					track = scarred
+					value = 100
+				}
+			}
+			if = {
+				limit = { has_trait = scarred_2_history }
+				remove_trait = scarred_2_history
+				add_trait = scarred
+				add_trait_xp = {
+					trait = scarred
+					track = scarred
+					value = 50
+				}
+			}
 		}
-
-		agot_seed_archmaesters_effect = yes
 
 		every_empire = {
 			limit = {
@@ -2733,6 +2994,59 @@ agot_on_game_start = {
 			limit = { NOT = { is_landed = yes } }
 			trigger_event = agot_error_destroyer_9000.1 # X is being set/used but not used/set error destroyer
 		}
+
+		## Maester Set Up
+		set_global_variable = {
+			name = citadel_title
+			value = title:b_the_citadel
+		}
+		global_var:citadel_title.holder = {
+			trigger_event = agot_citadel_maintenance.0003
+		}
+		agot_seed_archmaesters_effect = yes
+
+		# Magic Level set up
+		if = {
+			limit = {
+				any_living_dragon = {
+					count = 0
+				}
+			}
+			set_global_variable = {
+				name = magic_level
+				value = 0 # no magic
+			}
+		}
+		else_if = {
+			limit = {
+				any_living_dragon = {
+					count < 10
+				}
+			}
+
+			set_global_variable = {
+				name = magic_level
+				value = 1 # some magic
+			}
+		}
+		else = {
+			set_global_variable = {
+				name = magic_level
+				value = 2 # more magic
+			}
+		}
+
+		## Gold Cloak Setup
+		if = {
+			limit = {
+				game_start_date > 8104.1.1
+			}
+			add_to_global_variable_list = {
+				name = agot_goldcloaks_founded
+				target = flag:goldcloaks_founded
+			}
+		}
+
 		##### Basic setup end #####
 
 		### Scenario setup
@@ -2821,6 +3135,8 @@ agot_on_game_start = {
 					}
 				}
 			}
+
+
 			#Willam Dustin
 			character:Dustin_1 = {
 				if = {
@@ -3025,10 +3341,28 @@ agot_on_game_start = {
 			}
 		}
 
+		every_living_dragon = {
+			limit = {
+				NOR = {
+					has_character_flag = in_dragonpit
+					has_character_flag = owned_dragon
+				}
+			}
+			if = {
+				limit = {
+					exists = location.county
+					NOT = { location.county = { has_county_modifier = agot_wild_dragon_modifier } }
+				}
+				location = {
+					add_travel_point_of_interest = agot_poi_wild_dragon
+					county = {
+						add_county_modifier = agot_wild_dragon_modifier
+					}
+				}
+			}
+		}
 		### Run effects on dead characters
 		agot_apply_posthistory_effect = yes
-		### Mark all canon, semi-canon and mentioned characters
-		agot_assign_canon_vars = yes
 	}
 }
 
@@ -3383,6 +3717,34 @@ agot_barony_ruins = {
 				scope:ruin_holder = { change_government = ruins_government }
 			}
 		}
+		# Shandystone
+		if = {
+			limit = {
+				game_start_date >= 8200.1.1
+			}
+			title:b_shandystone.title_province = {
+				set_holding_type = ruin_holding
+				add_building = small_ruin_01
+				add_building = ruin_desolate_01
+			}
+			title:b_shandystone = {
+				set_coa = ruins_coa
+			}
+		}
+		# Hoare Castle
+		if = {
+			limit = {
+				game_start_date >= 7622.1.1
+			}
+			title:b_hoare_castle.title_province = {
+				set_holding_type = ruin_holding
+				add_building = large_ruin_01
+				add_building = ruin_renowned_01
+			}
+			title:b_hoare_castle = {
+				set_coa = ruins_coa
+			}
+		}
 	}
 }
 
@@ -3446,285 +3808,445 @@ agot_on_game_start_after_lobby = {
 
 		if = {
 			limit = {
-				exists = title:b_the_citadel
+				exists = global_var:citadel_title
 			}
-			title:k_the_wall.holder = {
+			global_var:citadel_title.holder = {
 				trigger_event = agot_citadel_maintenance.0001 # Removes female courtiers
 			}
 		}
 
 		### House Customizer related setup
+		## House Customizer Renown Fix - YES I DID TRY ITS OWN ON_ACTION
 		if = {
 			limit = {
-				OR = {
-					game_start_date = 8282.9.15 # Robert's Rebellion
-					game_start_date = 8284.6.2 # Crowned Stag
-					game_start_date = 8258.12.21 # NPK
-					# AGOT Bookmarked Added
-					game_start_date = 7998.1.2
-					game_start_date = 8129.4.1
-					game_start_date = 8195.3.7
-					game_start_date = 8277.1.1
-					game_start_date = 8298.12.21
-					game_start_date = 8299.3.3
-					game_start_date = 8300.3.1
-				}
+				any_player = { has_trait = house_customizer }
 			}
-			## House Customizer Renown Fix - YES I DID TRY ITS OWN ON_ACTION
 			## NORTH ##
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Amber_1.house
-				save_scope_as = hc_amber
-			}
-			scope:hc_amber = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Greenwood_1.house
-				save_scope_as = hc_greenwood
-			}
-			scope:hc_greenwood = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Frost_1.house
-				save_scope_as = hc_frost
-			}
-			scope:hc_frost = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Greystark_10.house
-				save_scope_as = hc_greystark
-			}
-			scope:hc_greystark = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Woodfoot_1.house
-				save_scope_as = hc_woodfoot
-			}
-			scope:hc_woodfoot = { add_character_flag = house_customizer_placeholder }
-			## TRIDENT ##
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Fisher_riverlands_duplicate_8.house
-				save_scope_as = hc_fisher_trident
-			}
-			scope:hc_fisher_trident = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Harroway_8.house
-				save_scope_as = hc_harroway
-			}
-			scope:hc_harroway = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Justman_8.house
-				save_scope_as = hc_justman
-			}
-			scope:hc_justman = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Qoherys_4.house
-				save_scope_as = hc_qoherys
-			}
-			scope:hc_qoherys = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Teague_6.house
-				save_scope_as = hc_teague
-			}
-			scope:hc_teague = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Towers_6.house
-				save_scope_as = hc_towers
-			}
-			scope:hc_towers = { add_character_flag = house_customizer_placeholder }
-			## VALE ##
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Shell_Vale_1.house
-				save_scope_as = hc_shell_vale
-			}
-			scope:hc_shell_vale = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Brightstone_1.house
-				save_scope_as = hc_brightstone
-			}
-			scope:hc_brightstone = { add_character_flag = house_customizer_placeholder }
-			## Crownlands ##
 			if = {
 				limit = {
-					game_start_date >= 8170.1.1 # Daemon Blackfyre's Birth
-					character:Targaryen_94.house = { # Blackfyres
-						any_house_member = {
-							count <= 0
-						}
-					}
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Amber_1 }
 				}
 				create_character = {
 					gender = male
-					location = title:e_the_iron_throne.holder.capital_province
+					location = title:c_kings_landing.holder.capital_province
 					faith = faith:the_seven_main
-					culture = title:e_the_iron_throne.holder.culture
-					dynasty_house = character:Blackfyre_14.house
-					save_scope_as = hc_blackfyre
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Amber_dummy
+					save_scope_as = hc_amber
 				}
-				scope:hc_blackfyre = { add_character_flag = house_customizer_placeholder }
+				scope:hc_amber = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
 			}
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Darklyn_47.house
-				save_scope_as = hc_darklyn
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Greenwood_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Greenwood_dummy
+					save_scope_as = hc_greenwood
+				}
+				scope:hc_greenwood = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
 			}
-			scope:hc_darklyn = { add_character_flag = house_customizer_placeholder }
-			## STORMLANDS ##
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Durrandon_87.house
-				save_scope_as = hc_durrandon
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Frost_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Frost_dummy
+					save_scope_as = hc_frost
+				}
+				scope:hc_frost = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
 			}
-			scope:hc_durrandon = { add_character_flag = house_customizer_placeholder }
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Woodfoot_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Woodfoot_dummy
+					save_scope_as = hc_woodfoot
+				}
+				scope:hc_woodfoot = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
+			}
+			## TRIDENT ##
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Fisher_riverlands_duplicate_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Fisher_dummy
+					save_scope_as = hc_fisher_trident
+				}
+				scope:hc_fisher_trident = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Harroway_5 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Harroway_dummy
+					save_scope_as = hc_harroway
+				}
+				scope:hc_harroway = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Justman_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Justman_dummy
+					save_scope_as = hc_justman
+				}
+				scope:hc_justman = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Qoherys_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Qoherys_dummy
+					save_scope_as = hc_qoherys
+				}
+				scope:hc_qoherys = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Teague_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Teague_dummy
+					save_scope_as = hc_teague
+				}
+				scope:hc_teague = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Towers_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Towers_dummy
+					save_scope_as = hc_towers
+				}
+				scope:hc_towers = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
+			}
+			## VALE ##
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Shell_Vale_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Shell_Vale_dummy
+					save_scope_as = hc_shell_vale
+				}
+				scope:hc_shell_vale = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Brightstone_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Brightstone_dummy
+					save_scope_as = hc_brightstone
+				}
+				scope:hc_brightstone = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
+			}
 			## DORNE ##
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Dryland_1.house
-				save_scope_as = hc_dryland
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Dryland_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Dryland_dummy
+					save_scope_as = hc_dryland
+				}
+				scope:hc_dryland = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
 			}
-			scope:hc_dryland = { add_character_flag = house_customizer_placeholder }
-			## REACH ##
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Gardener_95.house
-				save_scope_as = hc_gardener
-			}
-			scope:hc_gardener = { add_character_flag = house_customizer_placeholder }
 			## WESTERLANDS ##
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Casterly_7.house
-				save_scope_as = hc_casterly
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Casterly_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Casterly_dummy
+					save_scope_as = hc_casterly
+				}
+				scope:hc_casterly = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
+
 			}
-			scope:hc_casterly = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Parren_17.house
-				save_scope_as = hc_parren
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Parren_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Parren_dummy
+					save_scope_as = hc_parren
+				}
+				scope:hc_parren = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
 			}
-			scope:hc_parren = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Reyne_45.house
-				save_scope_as = hc_reyne
-			}
-			scope:hc_reyne = { add_character_flag = house_customizer_placeholder }
 			## IRON ISLANDS (EUGH) ##
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Greyiron_32.house
-				save_scope_as = hc_greyiron
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Greyiron_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Greyiron_dummy
+					save_scope_as = hc_greyiron
+				}
+				scope:hc_greyiron = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
 			}
-			scope:hc_greyiron = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Hoare_31.house
-				save_scope_as = hc_hoare
-			}
-			scope:hc_hoare = { add_character_flag = house_customizer_placeholder }
 			## OLD VALYRIAN FAMILIES ##
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Varezys_1.house
-				save_scope_as = hc_varezys
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Varezys_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Varezys_dummy
+					save_scope_as = hc_varezys
+				}
+				scope:hc_varezys = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
 			}
-			scope:hc_varezys = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Mataeryon_1.house
-				save_scope_as = hc_mataeryon
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Mataeryon_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Mataeryon_dummy
+					save_scope_as = hc_mataeryon
+				}
+				scope:hc_mataeryon = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
 			}
-			scope:hc_mataeryon = { add_character_flag = house_customizer_placeholder }
-			create_character = {
-				gender = male
-				location = title:e_the_iron_throne.holder.capital_province
-				faith = faith:the_seven_main
-				culture = title:e_the_iron_throne.holder.culture
-				dynasty_house = character:Belaerys_1.house
-				save_scope_as = hc_belaerys
+			if = {
+				limit = {
+					agot_is_house_extinct_history_trigger = { FOUNDER = character:Belaerys_1 }
+				}
+				create_character = {
+					gender = male
+					location = title:c_kings_landing.holder.capital_province
+					faith = faith:the_seven_main
+					culture = title:c_kings_landing.holder.culture
+					dynasty_house = house:house_Belaerys_dummy
+					save_scope_as = hc_belaerys
+				}
+				scope:hc_belaerys = {
+					add_character_flag = house_customizer_placeholder
+					house = {
+						add_to_global_variable_list = {
+							name = dummy_houses_for_hc
+							target = this
+						}
+					}
+				}
 			}
-			scope:hc_belaerys = { add_character_flag = house_customizer_placeholder }
 		}
 		every_player = {
 			if = {
@@ -3743,8 +4265,7 @@ agot_on_game_start_after_lobby = {
 			if = {
 				limit = {
 					NOT = { has_trait = house_customizer }
-					any_held_title = {
-						tier = tier_county
+					any_held_county = {
 						title_province = { geographical_region = world_westeros_beyond_the_wall }
 					}
 					is_from_ruler_designer = yes
@@ -3772,8 +4293,8 @@ agot_on_game_start_after_lobby = {
 
 		if = { # If NO player has house_customizer, we will kill these extinct house members used to skirt around the renown bug.
 			limit = {
-				any_player = {
-					NOT = { has_trait = house_customizer }
+				NOT = {
+					any_player = { has_trait = house_customizer }
 				}
 			}
 			trigger_event = agot_house_customizer.0024
@@ -3792,10 +4313,54 @@ agot_on_game_start_after_lobby = {
 				trigger_event = agot_events_generic.0006
 			}
 		}
+
+		# Dragon related setup
+
+		if = {
+			limit = {
+				game_start_date < 8153.1.1 # Dragons extinct after this date
+			}
+			title:c_dragonstone = { # Adding dragonkeeper variable to dragonstone
+				agot_dragonpit_gamestart_init_pit_effect = yes
+			}
+			title:c_dragonstone.holder ?= {
+				agot_generate_dragonstone_head_dragonkeeper = yes
+				appoint_court_position = {
+					recipient = scope:head_dragonkeeper
+					court_position = head_dragonkeeper_court_position
+				}
+			}
+		}
+		if = {
+			limit = {
+				game_start_date > 8055.1.1 # KL Dragonpit was built by this date
+				game_start_date < 8130.10.9 # KL Dragonpit abandoned by this date
+			}
+			# Adding dragonkeeper variable to KL
+			title:c_kings_landing = {
+				agot_dragonpit_gamestart_init_pit_effect = yes
+			}
+			title:e_the_iron_throne.holder ?= {
+				agot_generate_IT_head_dragonkeeper = yes
+				appoint_court_position = {
+					recipient = scope:head_dragonkeeper
+					court_position = head_dragonkeeper_court_position
+				}
+			}
+		}
+		every_living_dragon = { # Dragons get aging effects and start story cycles
+			agot_back_apply_dragon_aging_effect = yes
+			create_story = story_dragon_alive
+		}
+
+
+		### End of Dragons List
+		############################
+
 		##### Basic setup end #####
 
-
 		##### Scenario setup start #####
+		agot_historical_dragons_setup = yes
 		agot_historical_artifacts_setup = yes
 
 		if = {
@@ -3808,13 +4373,23 @@ agot_on_game_start_after_lobby = {
 					has_game_rule = agot_shatter_empires
 				}
 			}
+
+			# if = { # manage 8195.3.7 1st Blackfyre Rebellion scenario
+			# 	limit = { game_start_date = 8195.3.7 }
+
+			# 	agot_blackfyre_rebellion_I_scenario_setup = yes
+			# }
 			# AGOT Bookmarked Added
 			if = { # manage 7998.1.2 Aegon's Conquest scenario
 				limit = { game_start_date = 7998.1.2 }
 
 				agot_7998_1_1_conquest_scenario_setup = yes
 			}
+			if = { # manage 8106.2.10 The Rogue Prince
+				limit = { game_start_date = 8106.4.18 }
 
+				agot_8106_4_18_scenario_setup = yes
+			}
 			if = { # manage 8195.3.7 1st Blackfyre Rebellion scenario
 				limit = { game_start_date = 8195.3.7 }
 
@@ -3857,6 +4432,53 @@ agot_on_game_start_after_lobby = {
 					# }
 				# }
 			}
+			#Bookmarks after the Dance of the Dragons will start with +1 on the War of Succession counter for House Targaryen
+			if = {
+				limit = { game_start_date > 8129.4.1 } # The Dance of Dragons scenario
+				dynasty:dynn_Targaryen = {
+					set_variable = {
+						name = war_of_succession_number
+						value = 1
+					}
+				}
+			}
+		}
+
+		### Count Blackfyre Rebellions
+		if = {
+			limit = { game_start_date > 8252.11.11 }
+			set_global_variable = {
+				name = number_of_blackfyre_rebellions
+				value = 5
+			}
+		}
+		else_if = {
+			limit = { game_start_date > 8236.1.1 }
+			set_global_variable = {
+				name = number_of_blackfyre_rebellions
+				value = 4
+			}
+		}
+		else_if = {
+			limit = { game_start_date > 8219.1.1 }
+			set_global_variable = {
+				name = number_of_blackfyre_rebellions
+				value = 3
+			}
+		}
+		else_if = {
+			limit = { game_start_date > 8212.1.1 }
+			set_global_variable = {
+				name = number_of_blackfyre_rebellions
+				value = 2
+			}
+		}
+		else_if = {
+			limit = { game_start_date > 8195.3.7 }
+			set_global_variable = {
+				name = number_of_blackfyre_rebellions
+				value = 1
+			}
 		}
 
 		every_player = { # Send exposition events
@@ -3892,6 +4514,39 @@ agot_on_game_start_after_lobby = {
 		}
 		##### Scenario setup end #####
 
+		## Override blockade for firing canon councillors
+		every_ruler = {
+			limit = { is_ai = yes }
+			every_councillor = {
+				limit = { has_character_flag = canon_councillor }
+				block_firing_councillor_effect = { COURT_OWNER = PREV }
+				remove_character_flag = canon_councillor
+			}
+		}
+
+		## Override engine changing sexuality of non-adults
+		every_living_character = {
+			limit = {
+				age >= 10
+				OR = {
+					has_character_flag = sexuality_ensure_heterosexual
+					has_character_flag = sexuality_ensure_homosexual
+					has_character_flag = sexuality_ensure_bisexual
+					has_character_flag = sexuality_ensure_asexual
+					has_character_flag = sexuality_ensure_equal_chance
+					has_character_flag = sexuality_ensure_not_heterosexual
+					has_character_flag = sexuality_ensure_not_homosexual
+					has_character_flag = sexuality_ensure_not_bisexual
+					has_character_flag = sexuality_ensure_not_asexual
+					has_character_flag = sexuality_raise_chance_heterosexual
+					has_character_flag = sexuality_raise_chance_homosexual
+					has_character_flag = sexuality_raise_chance_bisexual
+					has_character_flag = sexuality_raise_chance_asexual
+				}
+			}
+			agot_advanced_sexuality_randomizer_history_effect = yes
+		}
+
 		##### Global events setup flag setup ####
 		## Iron Throne Succession ##
 		every_player = {
@@ -3901,8 +4556,7 @@ agot_on_game_start_after_lobby = {
 					has_title = title:e_the_iron_throne
 				}
 				OR = {
-					any_held_title = {
-						tier = tier_county
+					any_held_county = {
 						title_province = {
 							geographical_region = world_westeros
 							NOT = {
@@ -3926,21 +4580,44 @@ agot_on_game_start_after_lobby = {
 					has_title = title:e_the_iron_throne
 					has_title = title:e_the_north
 					has_title = title:k_the_north
-					any_held_title = {
-						tier = tier_county
+					any_held_county = {
 						title_province = { geographical_region = world_westeros_the_north }
 					}
 				}
 			}
 			add_character_flag = inform_nw_succession
 		}
-		## Override blockade for firing canon councillors 
-		every_ruler = {
-			limit = { is_ai = yes }
-			every_councillor = { 
-				limit = { has_character_flag = canon_councillor }
-				block_firing_councillor_effect = { COURT_OWNER = PREV }
-				remove_character_flag = canon_councillor
+
+		# Dragons Notifications
+		every_player = {
+			limit = {
+				always = yes
+			}
+			add_character_flag = inform_dragon_death
+			add_character_flag = inform_dragonrider_death
+			add_character_flag = inform_dragon_egg_hatched
+			add_character_flag = inform_dragon_tamed
+		}
+
+		# Ruler Designer Dragon Riders
+		every_player = {
+			limit = {
+				has_trait = dragonrider
+				is_from_ruler_designer = yes
+			}
+			if = {
+				limit = {
+					capital_county.title_province ?= {
+						OR = {
+							geographical_region = world_westeros_beyond_the_wall
+							geographical_region = world_westeros_the_wall
+						}
+					}
+				}
+				trigger_event = agot_dragon_designer.2000
+			}
+			else = {
+				trigger_event = agot_dragon_designer.0001
 			}
 		}
 	}

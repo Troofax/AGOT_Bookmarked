@@ -1,10 +1,17 @@
-﻿## AGOT ADDED FILE - Bookmark groups
-agot_bm_group_agotbm = {
+﻿agot_bm_group_agotbm = {
 	default_start_date = 7998.1.2
 }
 
+agot_bm_group_8082 = { # Golden Age
+	default_start_date = 8082.1.1
+}
+
+agot_bm_group_8106 = { # The Rogue Prince
+	default_start_date = 8106.4.18
+}
+
 agot_bm_group_8259 = { # Ninepenny Kings
-	default_start_date = 8259.11.1
+	default_start_date = 8258.12.21
 }
 
 agot_bm_group_8282 = { # Robert's Rebellion
