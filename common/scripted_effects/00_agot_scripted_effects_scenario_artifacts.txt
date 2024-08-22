@@ -123,6 +123,19 @@ agot_historical_artifacts_setup = {
 		}
 	}
 
+	#Moon's Rod
+	if = {
+		limit = {
+			exists = dynasty:dynn_Hightower 
+			exists = dynasty:dynn_Hightower.dynast
+			NOT = {
+				dynasty:dynn_Hightower.dynast = { has_character_flag = house_customizer_placeholder }
+			}
+			game_start_date > 8048.6.1 #Moon's Death
+		}
+		dynasty:dynn_Hightower.dynast = { agot_create_artifact_moons_rod_effect = { OWNER = this } }
+	}
+	
 	#SWORDOS
 	if = {
 		limit = {

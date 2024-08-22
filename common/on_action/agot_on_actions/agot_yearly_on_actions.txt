@@ -1,0 +1,287 @@
+﻿agot_yearly_high_val_conversion = {
+	effect = {
+		every_living_character = {
+			limit = {
+				is_lowborn = yes
+				has_culture = culture:high_valyrian
+				#stop bastards from getting converted before they are assigned a house
+				trigger_if = {
+					limit = {
+						exists = mother
+						exists = mother.dynasty
+					}
+					NOT = { mother.culture = culture:high_valyrian }
+				}
+			}
+			set_culture = culture:westerosi_valyrian
+		}
+	}
+}
+
+yearly_global_pulse = {
+	on_actions = {
+		agot_assign_slave_master
+		agot_artifact_market_management
+	}
+}
+
+agot_assign_slave_master = {
+	effect = {
+		every_ruler = {
+			limit = {
+				agot_has_slave_population_trigger = yes
+			}
+			add_trait = slave_master
+		}
+	}
+}
+
+agot_yearly_playable_pulse = {
+	events = {
+	}
+	on_actions = {
+		on_wall_election
+		on_yearly_btw_struggle
+	}
+}
+
+on_faegon_and_blackfyre = {
+	effect = {
+		if = {
+			limit = {
+				OR = {
+					game_start_date >= 8282.9.15
+					game_start_date >= 8284.6.2
+					# AGOT Bookmarked Added
+					game_start_date = 8277.1.1
+				}
+				current_date >= 8299.1.1
+				current_date <= 8349.1.1
+				NOT = {
+					any_ruler = {
+						any_owned_story = {
+							story_type = story_agot_scenario_rr #make sure there is no RR goin on :)
+						}
+					}
+					title:e_the_iron_throne = {
+						exists = var:agot_faegon_rando_time_before_spawn
+					}
+				}
+				NOR = { #make sure it will not happen on shattered world (not counting Empire shattering) since in others IT does not exist
+					has_game_rule = agot_shatter_duchies
+					has_game_rule = agot_shatter_duchies
+					has_game_rule = agot_shatter_petty_kingdoms
+					has_game_rule = agot_shatter_kingdoms
+				}
+				NOT = { has_game_rule = agot_faegon_disabled }
+			}
+
+			debug_log = "on_faegon_and_blackfyre triggered on: "
+			debug_log_date = yes
+
+			if = {
+				limit = {
+					NOT = {
+						title:e_the_iron_throne = {
+							exists = var:agot_faegon_rando_time_before_spawn_was_set
+						}
+					}
+				}
+				title:e_the_iron_throne = {
+					random = {
+						chance = 50
+
+						set_variable = agot_faegon_rando_time_before_spawn_was_set
+						set_variable = {
+							name = agot_faegon_rando_time_before_spawn
+							years = { 1 11 }
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						has_global_variable = agot_faegon_invision_started
+						has_global_variable = agot_6th_blackfyre_rebellion_happened
+						title:e_the_iron_throne = {
+							exists = var:agot_faegon_rando_time_before_spawn
+						}
+					}
+					title:e_the_iron_throne.holder = {
+						dynasty = dynasty:dynn_Targaryen
+						NOT = { house = house:house_Blackfyre }
+					}
+					OR = {
+						has_game_rule = agot_faegon_enabled
+						has_game_rule = agot_faegon_blackfyre_only
+					}
+				}
+				random_ruler = {
+					trigger_event = {
+						id = faegon_landing.0005
+						days = { 20 100 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_variable = agot_faegon_landing_cooldown
+						has_global_variable = agot_faegon_invision_started
+						title:e_the_iron_throne = {
+							exists = var:agot_faegon_rando_time_before_spawn
+						}
+					}
+
+					#Only triggers with no living targs
+					OR = {
+						NOT = { exists = character:Targaryen_13.house.house_head }
+						character:Targaryen_13.house.house_head ?= character:Targaryen_120
+						AND = {
+							exists = character:Stark_7
+							character:Targaryen_13.house.house_head ?= character:Stark_7
+						}
+						character:Targaryen_13.house.house_head ?= { has_character_flag = is_jon_snow }
+						character:Targaryen_13.house.house_head ?= { has_character_flag = is_jeyne_snow }
+					}
+
+					trigger_if = { # this is to ensure 2 invasions wont happen at the same time
+						limit = {
+							has_global_variable = agot_6th_blackfyre_rebellion_happened
+							has_global_variable = agot_faegon_blackfyre_won
+						}
+						has_global_variable = agot_faegon_blackfyre_won
+					}
+					trigger_if = {
+						limit = {
+							has_global_variable = agot_6th_blackfyre_rebellion_happened
+							NOT = { has_global_variable = agot_faegon_blackfyre_won }
+						}
+						NOT = { has_global_variable = agot_6th_blackfyre_rebellion_happened }
+					}
+					title:e_the_iron_throne.holder = {
+						OR = {
+							NOT = { dynasty = dynasty:dynn_Targaryen }
+							house = house:house_Blackfyre
+						}
+					}
+					OR = {
+						has_game_rule = agot_faegon_enabled
+						has_game_rule = agot_faegon_faegon_only
+					}
+				}
+				random_ruler = {
+					trigger_event = {
+						id = faegon_landing.0001
+						days = { 20 100 }
+					}
+				}
+			}
+		}
+	}
+}
+
+agot_jon_snow_learns = {
+	effect = {
+		random = {
+			chance = 10 # MTTH 10 years
+			every_ruler = {
+				limit = {
+					OR = {
+						has_character_flag = is_jon_snow
+						has_character_flag = is_jeyne_snow
+					}
+					exists = real_father
+					NOT = { father = real_father }
+				}
+				trigger_event = { # Can happen any time that year
+					id = agot_events_bastard.0920
+					days = { 1 364 }
+				}
+			}
+		}
+	}
+}
+
+agot_citadel_yearly_pulse = {
+	on_actions = {
+		agot_citadel_election
+		agot_citadel_find_lowborns
+		agot_citadel_find_lost_maesters
+		#agot_citadel_seed_archmaesters
+	}
+}
+
+agot_citadel_election = {
+	effect = {
+		title:b_the_citadel.holder ?= {
+			trigger_event = agot_maester.9904
+		}
+	}
+}
+
+# Hunt for lowborns to help fill the citadel
+agot_citadel_find_lowborns = {
+	effect = {
+		while = {
+			count < 3
+			random_living_character = {
+				limit = {
+					agot_is_maester_candidate = yes
+				}
+				save_scope_as = maester_candidate
+				scope:maester_candidate ?= {
+					agot_send_to_citadel_effect = { MAESTER_CANDIDATE = scope:maester_candidate }
+				}
+			}
+		}
+	}
+}
+
+agot_citadel_find_lost_maesters = {
+	effect = {
+		every_living_maester = {
+			agot_citadel_recover_lost_lambs_effect = yes
+		}
+	}
+}
+
+# if there are any dead archmaesters fix it
+#Disabled for now, can turn back on if we find cases where Archmaester are dying poorly
+# agot_citadel_seed_archmaesters = {
+# 	effect = {
+# 		agot_seed_archmaesters_effect = yes
+# 	}
+# }
+#5 Year Pulse Events which exist to create more instabiliy in enormous realms 
+
+agot_instability = {
+	#chance_to_happen = 50
+	random_events = {
+		chance_of_no_event = {
+			value = 50
+			if = {
+				limit = {
+					has_game_rule = lesser_realm_stability
+				}
+				add = -30
+			}
+			if = {
+				limit = {
+					has_game_rule = higher_realm_stability
+				}
+				add = 50
+			}
+			if = {
+				limit = {
+					has_game_rule = extreme_realm_stability
+				}
+				add = 100
+			}
+		}
+		1 = agot_instability.1001 # Greyjoy Rebellion / Laughing Storm Rebellion
+		1 = agot_instability.1100 # Exant Blackfyre Invaders
+	}
+}
