@@ -592,7 +592,7 @@ Lannister_6 = {
 		}
 	}
 	# AGOT Bookmarked Added
-	8286.1.2 = {
+	8286.2.11 = {
 		effect = {
 			add_secret = {
 				type = secret_agot_disputed_heritage
@@ -781,7 +781,7 @@ Lannister_7 = {
 		}
 	}
 	# AGOT Bookmarked Added
-	8286.1.2 = {
+	8286.2.11 = {
 		effect = {
 			add_secret = {
 				type = secret_agot_disputed_heritage

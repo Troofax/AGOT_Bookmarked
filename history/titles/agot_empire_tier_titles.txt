@@ -19,9 +19,6 @@ e_the_iron_throne = {
 					}
 				}
 			}
-			set_global_flag = e_iron_throne_created
-			set_title_flag = aegons_crown #record which crowns have been forged for crown forgin event
-			holder_scope = { add_character_flag = iron_throne_crown_event }
 		}
 	}
 	# AGOT Bookmarked Disabled

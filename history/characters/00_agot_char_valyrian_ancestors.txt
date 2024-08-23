@@ -8533,16 +8533,16 @@ Velaryon_15 = {
 	7992.1.1 = { religion = the_seven_main }
 	7996.1.1 = { trait = content }
 	# AGOT Bookmarked Added
-	7998.1.1 = {
+	7998.1.2 = {
 		trait = knight
-		# effect = {
-			# agot_join_kingsguard_char_history_effect = { # Original Kingsguard
-				# KING = character:Targaryen_27 # Aegon I Targaryen
-			# }
-			# agot_lc_kingsguard_char_history_effect = { # Original Lord Commander of the Kingsguard
-				# KING = character:Targaryen_27 # Aegon I Targaryen
-			# }
-		# }
+		effect = {
+			agot_join_kingsguard_char_history_effect = { # Original Kingsguard
+				KING = character:Targaryen_27 # Aegon I Targaryen
+			}
+			agot_lc_kingsguard_char_history_effect = { # Original Lord Commander of the Kingsguard
+				KING = character:Targaryen_27 # Aegon I Targaryen
+			}
+		}
 	}
 	# AGOT Bookmarked Disabled
 	# 8001.1.1 = { trait = knight }

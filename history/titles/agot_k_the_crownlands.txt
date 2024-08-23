@@ -1757,11 +1757,9 @@ c_vairs_head = {
 		holder = Harte_13
 	}
 	7991.1.1 = {
-		holder = Harte_14
-	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
-		holder = Harte_13
+		#AGOT Bookmarked Modified
+		# holder = Harte_14
+		holder = Harte_15
 	}
 	8050.1.1 = {
 		holder = Harte_31

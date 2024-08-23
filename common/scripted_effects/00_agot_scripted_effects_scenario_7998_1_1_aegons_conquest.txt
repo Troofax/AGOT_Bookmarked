@@ -8,12 +8,7 @@
 agot_7998_1_1_conquest_scenario_setup = {
 	hidden_effect = {
 		if = {
-			limit = {
-				AND = {
-					game_start_date = 7998.1.2
-					character:Targaryen_27 = { has_title = title:c_dragonstone }
-				}
-			}
+			limit = { character:Targaryen_27 = { has_title = title:c_dragonstone } }
 			title:c_dragonstone.holder = {
 				# spawn_conquest_dragons = yes
 				add_pressed_claim = title:k_the_crownlands
