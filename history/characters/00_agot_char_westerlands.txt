@@ -475,7 +475,7 @@ Lannister_5 = {
 				limit = { character:Lannister_rs_1 = { is_alive = yes } }
 				set_relation_lover = character:Lannister_rs_1 # Briony
 			}
-			agot_safe_reveal_lovers_history_effect = yes 
+			agot_safe_reveal_lovers_history_effect = yes
 		}
 	}
 	8291.1.1 = { # Went missing looking for Brightroar
@@ -533,7 +533,7 @@ Lannister_6 = {
 	}
 	8272.12.1 = {
 		effect = {
-			agot_safe_lover_history_effect = { 
+			agot_safe_lover_history_effect = {
 				TARGET = character:Lannister_7 # Jaime Lannister
 			}
 		}
@@ -593,21 +593,27 @@ Lannister_6 = {
 	}
 	# AGOT Bookmarked Added
 	8286.1.2 = {
-		add_secret = {
-			type = secret_agot_disputed_heritage
-			target = character:Baratheon_5
+		effect = {
+			add_secret = {
+				type = secret_agot_disputed_heritage
+				target = character:Baratheon_5
+			}
 		}
 	}
 	8290.1.2 = {
-		add_secret = {
-			type = secret_agot_disputed_heritage
-			target = character:Baratheon_6
+		effect = {
+			add_secret = {
+				type = secret_agot_disputed_heritage
+				target = character:Baratheon_6
+			}
 		}
 	}
 	8291.1.2 = {
-		add_secret = {
-			type = secret_agot_disputed_heritage
-			target = character:Baratheon_7
+		effect = {
+			add_secret = {
+				type = secret_agot_disputed_heritage
+				target = character:Baratheon_7
+			}
 		}
 	}
 	8298.10.24 = { # Death of Robert Baratheon
@@ -776,21 +782,27 @@ Lannister_7 = {
 	}
 	# AGOT Bookmarked Added
 	8286.1.2 = {
-		add_secret = {
-			type = secret_agot_disputed_heritage
-			target = character:Baratheon_5
+		effect = {
+			add_secret = {
+				type = secret_agot_disputed_heritage
+				target = character:Baratheon_5
+			}
 		}
 	}
 	8290.1.2 = {
-		add_secret = {
-			type = secret_agot_disputed_heritage
-			target = character:Baratheon_6
+		effect = {
+			add_secret = {
+				type = secret_agot_disputed_heritage
+				target = character:Baratheon_6
+			}
 		}
 	}
 	8291.1.2 = {
-		add_secret = {
-			type = secret_agot_disputed_heritage
-			target = character:Baratheon_7
+		effect = {
+			add_secret = {
+				type = secret_agot_disputed_heritage
+				target = character:Baratheon_7
+			}
 		}
 	}
 	8289.9.1 = {
@@ -942,7 +954,7 @@ Lannister_8 = {
 	8274.1.1 = { give_nickname = nick_the_imp }
 	8279.8.1 = { trait = cynical }
 	8281.8.1 = {
-		trait = diligent
+		trait = inquisitive
 		effect = { # Good Education
 			education_point_acquisition_effect = yes
 			education_point_acquisition_effect = yes
@@ -965,6 +977,7 @@ Lannister_8 = {
 	8286.3.14 = {
 		remove_spouse = Lannister_rs_8 # Tysha
 		trait = drunkard
+		trait = lustful
 		effect = {
 			if = {
 				limit = { character:Lannister_1 = { is_alive = yes } }
@@ -1713,7 +1726,7 @@ Lannister_148 = {
 	mother = Lannister_p_1
 
 	trait = education_stewardship_2
-	trait = shy 
+	trait = shy
 	trait = craven
 	trait = fickle
 	trait = pensive
@@ -2427,8 +2440,8 @@ Clegane_3 = {
 		trait = vengeful
 		trait = irritable
 	}
-	8273.1.1 = { 
-		effect = { agot_handle_knightless_squire_history_effect = yes } 
+	8273.1.1 = {
+		effect = { agot_handle_knightless_squire_history_effect = yes }
 	}
 	8273.8.1 = { trait = brave }
 	8277.1.1 = { trait = torturer }
@@ -3385,7 +3398,7 @@ Payne_4 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	8255.1.1 = { add_spouse = Payne_rs_4 }
+	8251.1.1 = { add_spouse = Payne_rs_4 }
 	8271.1.1 = { death = yes }
 }
 Payne_rs_4 = {
@@ -3896,7 +3909,7 @@ Crakehall_1 = {
 		add_character_flag = canon_status_canon
 	}
 	8236.1.1 = { trait = knight }
-	8246.1.1 = { add_spouse = Crakehall_rs_1 }
+	8239.1.1 = { add_spouse = Crakehall_rs_1 }
 	8281.1.1 = { death = yes }
 }
 Crakehall_rs_1 = {
@@ -4239,10 +4252,8 @@ Swyft_1 = {
 		add_character_flag = sexuality_ensure_heterosexual
 	}
 	8250.1.1 = { trait = lustful }
-	8254.1.1 = {
-		trait = knight
-		add_spouse = Swyft_rs_1
-	}
+	8251.1.1 = { add_spouse = Swyft_rs_1 }
+	8254.1.1 = { trait = knight }
 	8300.2.7 = {
 		effect = { # Hand of the King
 			agot_appoint_as_councillor_for_castle_history_effect = {
@@ -4309,31 +4320,6 @@ Swyft_p_2 = {
 	8246.1.1 = { birth = yes }
 }
 ### Issue of Harys
-Swyft_3 = {
-	name = Steffon # Canon
-	dynasty = dynn_Swyft
-
-	dna = Swyft_3
-
-	martial = 8
-
-	religion = the_seven_main
-	culture = westerman
-
-	father = Swyft_1
-	mother = Swyft_rs_1
-
-	trait = education_martial_2
-	trait = gregarious
-
-	8260.1.1 = {
-		birth = yes
-		add_character_flag = has_scripted_appearance
-		add_character_flag = canon_status_canon
-	}
-	8276.1.1 = { trait = knight }
-	8281.1.1 = { add_spouse = Serrett_4 } # Lysana Serrett
-}
 Swyft_4 = {
 	name = Dorna # Canon, married Kevan Lannister
 	dynasty = dynn_Swyft
@@ -4365,6 +4351,31 @@ Swyft_4 = {
 	8263.8.1 = { trait = compassionate }
 	8265.8.1 = { trait = content }
 	8267.8.1 = { trait = humble }
+}
+Swyft_3 = {
+	name = Steffon # Canon
+	dynasty = dynn_Swyft
+
+	dna = Swyft_3
+
+	martial = 8
+
+	religion = the_seven_main
+	culture = westerman
+
+	father = Swyft_1
+	mother = Swyft_rs_1
+
+	trait = education_martial_2
+	trait = gregarious
+
+	8260.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_canon
+	}
+	8276.1.1 = { trait = knight }
+	8281.1.1 = { add_spouse = Serrett_4 } # Lysana Serrett
 }
 Swyft_5 = {
 	name = Shierle # Canon, married Melwyn Sarsfield.
@@ -4454,8 +4465,8 @@ Jast_1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	8270.1.1 = { trait = knight }
-	8273.1.1 = { add_spouse = Jast_rs_1 }
+	8264.1.1 = { add_spouse = Jast_rs_1 }
+	8267.1.1 = { trait = knight }
 	8295.1.1 = { death = yes }
 }
 Jast_rs_1 = {
@@ -4467,7 +4478,7 @@ Jast_rs_1 = {
 	religion = the_seven_main
 	culture = westerman
 
-	8250.1.1 = {
+	8248.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
@@ -4598,8 +4609,8 @@ Jast_5 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
-	8294.1.1 = { 
-		effect = { agot_handle_knightless_squire_history_effect = yes } 
+	8294.1.1 = {
+		effect = { agot_handle_knightless_squire_history_effect = yes }
 	}
 	8299.6.7 = { # Battle of Oxcross
 		effect = {
@@ -4644,8 +4655,8 @@ Greenfield_1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
+	8262.1.1 = { add_spouse = Turnberry_6 } # Leonette Turnberry
 	8264.1.1 = { trait = knight }
-	8264.1.7 = { add_spouse = Turnberry_6 } # Leonette Turnberry
 	8299.1.15 = { # Battle of Riverrun
 		effect = {
 			title:d_blackwood_vale.holder = { # Tytos Blackwood
@@ -4674,6 +4685,20 @@ Greenfield_2 = {
 	8252.1.1 = { birth = yes }
 }
 ### Issue of Garth
+Greenfield_4 = {
+	name = Gareth
+	dynasty = dynn_Greenfield
+
+	religion = the_seven_main
+	culture = westerman
+
+	father = Greenfield_1
+	mother = Turnberry_6
+
+	8263.1.1 = { birth = yes }
+	8281.1.1 = { trait = knight }
+	8283.4.18 = { add_spouse = Turnberry_3 } # Leysia Turnberry
+}
 Greenfield_3 = {
 	name = Preston # Canon, a Kingsguard
 	dynasty = dynn_Greenfield
@@ -4714,20 +4739,6 @@ Greenfield_3 = {
 			death_reason = death_attacked # Riot in King's Landing
 		}
 	}
-}
-Greenfield_4 = {
-	name = Gareth
-	dynasty = dynn_Greenfield
-
-	religion = the_seven_main
-	culture = westerman
-
-	father = Greenfield_1
-	mother = Turnberry_6
-
-	8263.1.1 = { birth = yes }
-	8281.1.1 = { trait = knight }
-	8283.4.18 = { add_spouse = Turnberry_3 } # Leysia Turnberry
 }
 Greenfield_5 = {
 	name = Cersei # married Halder Falwell
@@ -6905,10 +6916,8 @@ KenningK_31 = {
 	mother = KenningK_p_1
 
 	8261.1.1 = { birth = yes }
-	8279.1.1 = {
-		trait = knight
-		add_spouse = KenningK_rs_1
-	}
+	8276.6.1 = { add_spouse = KenningK_rs_1 }
+	8279.1.1 = { trait = knight }
 	8291.1.1 = { death = { death_reason = death_accident } }
 }
 KenningK_rs_1 = {
@@ -6921,6 +6930,18 @@ KenningK_rs_1 = {
 	8260.1.1 = { birth = yes }
 }
 ### Issue of Burton
+KenningK_3 = {
+	name = Tywin
+	dynasty_house = house_KenningK
+
+	religion = the_seven_main
+	culture = westerman
+
+	father = KenningK_31
+	mother = KenningK_rs_1
+
+	8277.1.1 = { birth = yes }
+}
 KenningK_2 = {
 	name = Elinor
 	dynasty_house = house_KenningK
@@ -6933,18 +6954,6 @@ KenningK_2 = {
 	mother = KenningK_rs_1
 
 	8279.1.1 = { birth = yes }
-}
-KenningK_3 = {
-	name = Tywin
-	dynasty_house = house_KenningK
-
-	religion = the_seven_main
-	culture = westerman
-
-	father = KenningK_31
-	mother = KenningK_rs_1
-
-	8277.1.1 = { birth = yes }
 }
 ### Household
 KenningK_hh_1 = {
@@ -7270,10 +7279,8 @@ Marbrand_1 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
-	8258.1.1 = {
-		add_spouse = Vikary_22 # Elenya Vikary
-		trait = knight
-	}
+	8256.1.1 = { add_spouse = Vikary_22 } # Elenya Vikary
+	8258.1.1 = { trait = knight }
 }
 Marbrand_2 = {
 	name = Dorna # married Gareth Farman
@@ -7513,8 +7520,8 @@ Yarwyck_1 = {
 	father = Yarwyck_p_1
 
 	8233.1.1 = { birth = yes }
+	8249.1.1 = { add_spouse = Yarwyck_rs_1 }
 	8253.1.1 = { trait = knight }
-	8257.1.1 = { add_spouse = Yarwyck_rs_1 }
 }
 Yarwyck_rs_1 = {
 	name = Lietta
@@ -7523,7 +7530,7 @@ Yarwyck_rs_1 = {
 	religion = the_seven_main
 	culture = westerman
 
-	8235.1.1 = { birth = yes }
+	8232.1.1 = { birth = yes }
 }
 ### Issue of Doryn
 Yarwyck_2 = {
@@ -9086,7 +9093,7 @@ Sarwyck_2 = {
 		add_character_flag = canon_status_semicanon
 	}
 	8252.1.1 = { trait = knight }
-	8255.1.1 = { add_spouse = Sarwyck_rs_2 }
+	8253.1.1 = { add_spouse = Sarwyck_rs_2 }
 	8287.1.1 = { death = yes }
 }
 Sarwyck_rs_2 = {
@@ -10324,23 +10331,6 @@ Doggett_28 = {
 ############################
 ### A Wise Spirit
 ###
-Stackspear_1 = {
-	name = Selmond # Canon, a lord
-	dynasty = dynn_Stackspear
-
-	religion = the_seven_main
-	culture = westerman
-
-	father = Stackspear_25
-	mother = Stackspear_p_2
-
-	8251.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_canon
-	}
-	8267.1.1 = { trait = knight }
-	8279.1.1 = { add_spouse = Banefort_4 } # Edyth Banefort
-}
 Stackspear_26 = {
 	name = Lira # married Norwin Wrexley
 	dynasty = dynn_Stackspear
@@ -10361,6 +10351,23 @@ Stackspear_26 = {
 	disallow_random_traits = yes
 
 	8248.1.1 = { birth = yes }
+}
+Stackspear_1 = {
+	name = Selmond # Canon, a lord
+	dynasty = dynn_Stackspear
+
+	religion = the_seven_main
+	culture = westerman
+
+	father = Stackspear_25
+	mother = Stackspear_p_2
+
+	8251.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	8267.1.1 = { trait = knight }
+	8275.1.1 = { add_spouse = Banefort_4 } # Edyth Banefort
 }
 ### Issue of Selmond
 Stackspear_2 = {
@@ -10508,7 +10515,7 @@ Algood_22 = {
 
 	8222.1.1 = { birth = yes }
 	8240.1.1 = { trait = knight }
-	8250.1.1 = { add_spouse = Clegane_7 } # Violet Clegane
+	8248.1.1 = { add_spouse = Clegane_7 } # Violet Clegane
 	8292.1.1 = { death = yes }
 }
 ### Issue of Daven
@@ -10573,9 +10580,9 @@ Algood_3 = {
 	father = Algood_2
 	mother = Algood_p_2
 
-	8269.1.1 = { 
+	8269.1.1 = {
 		birth = yes
-		add_character_flag = canon_status_semicanon 
+		add_character_flag = canon_status_semicanon
 	}
 	8289.1.1 = { trait = knight }
 }
@@ -10708,31 +10715,31 @@ Stillwood_3 = {
 ### The Noble Kin
 ###
 ### Issue of Dormund
-Lanny_30 = { 
+Lanny_30 = {
 	name = Albin
 	dynasty_house = house_Lanny
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_4
 	mother = Lanny_rs_4
- 
+
 	8250.1.1 = { birth = yes }
 	8263.1.1 = { death = yes }
 }
-Lanny_3 = { 
+Lanny_3 = {
 	name = Burton
 	dynasty_house = house_Lanny
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_4
 	mother = Lanny_rs_4
- 
+
 	8254.1.1 = { birth = yes }
-	8269.1.1 = { add_spouse = Lanny_rs_3 } 
+	8269.1.1 = { add_spouse = Lanny_rs_3 }
 	8273.1.1 = { trait = knight }
 	8289.1.1 = { death = yes }
 }
@@ -10747,19 +10754,19 @@ Lanny_rs_3 = {
 	8289.1.1 = { death = yes }
 }
 ### Issue of Burton
-Lanny_2 = { 
+Lanny_2 = {
 	name = Damon # a lord
 	dynasty_house = house_Lanny
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_3
 	mother = Lanny_rs_3
- 
+
 	8270.1.1 = { birth = yes }
 	8289.1.1 = { trait = knight }
-	8291.1.1 = { add_spouse = Lanny_rs_2 } 
+	8291.1.1 = { add_spouse = Lanny_rs_2 }
 }
 Lanny_rs_2 = {
 	name = Gisella
@@ -10770,148 +10777,148 @@ Lanny_rs_2 = {
 
 	8270.1.1 = { birth = yes }
 }
-Lanny_26 = { 
+Lanny_26 = {
 	name = Reginald
 	dynasty_house = house_Lanny
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_3
 	mother = Lanny_rs_3
- 
+
 	8276.1.1 = { birth = yes }
 	8292.1.1 = { trait = knight }
 }
-Lanny_27 = { 
+Lanny_27 = {
 	name = Morgon
 	dynasty_house = house_Lanny
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_3
 	mother = Lanny_rs_3
- 
+
 	8282.1.1 = { birth = yes }
 	8298.1.1 = { trait = knight }
 }
-Lanny_28 = { 
+Lanny_28 = {
 	name = Chiswyck
 	dynasty_house = house_Lanny
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_3
 	mother = Lanny_rs_3
- 
+
 	8284.1.1 = { birth = yes }
 }
-Lanny_29 = { 
+Lanny_29 = {
 	name = Pascal
 	dynasty_house = house_Lanny
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_3
 	mother = Lanny_rs_3
- 
+
 	8288.1.1 = { birth = yes }
 }
 ### Issue of Pascal
-Lanny_35 = { 
+Lanny_35 = {
 	name = Ramera
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_2
 	mother = Lanny_rs_2
- 
+
 	8291.1.1 = { birth = yes }
 }
-Lanny_36 = { 
+Lanny_36 = {
 	name = Geremy
 	dynasty_house = house_Lanny
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_2
 	mother = Lanny_rs_2
- 
+
 	8292.1.1 = { birth = yes }
 }
-Lanny_37 = { 
+Lanny_37 = {
 	name = Elwenne
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_2
 	mother = Lanny_rs_2
- 
+
 	8293.1.1 = { birth = yes }
 }
-Lanny_38 = { 
+Lanny_38 = {
 	name = Shirenna
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_2
 	mother = Lanny_rs_2
- 
+
 	8295.1.1 = { birth = yes }
 }
-Lanny_39 = { 
+Lanny_39 = {
 	name = Erena
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_2
 	mother = Lanny_rs_2
- 
+
 	8297.1.1 = { birth = yes }
 }
-Lanny_40 = { 
+Lanny_40 = {
 	name = Lynora
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_2
 	mother = Lanny_rs_2
- 
+
 	8298.1.1 = { birth = yes }
 }
 ### Issue of Dunaver
-Lanny_41 = { 
+Lanny_41 = {
 	name = Daric
 	dynasty_house = house_Lanny
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_34
 	mother = Lanny_rs_34
- 
+
 	8265.1.1 = { birth = yes }
 	8282.1.1 = { trait = knight }
-	8291.1.1 = { add_spouse = Lanny_rs_41 } 
+	8291.1.1 = { add_spouse = Lanny_rs_41 }
 }
 Lanny_rs_41 = {
 	name = Mylana
@@ -10923,122 +10930,122 @@ Lanny_rs_41 = {
 	8265.1.1 = { birth = yes }
 }
 ### Issue of Emory
-Lanny_42 = { 
+Lanny_42 = {
 	name = Malanna
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_32
 	mother = Lanny_rs_32
- 
+
 	8253.1.1 = { birth = yes }
 }
-Lanny_43 = { 
+Lanny_43 = {
 	name = Tyshara
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_32
 	mother = Lanny_rs_32
- 
+
 	8255.1.1 = { birth = yes }
 }
 ### Issue of Daric
-Lanny_44 = { 
+Lanny_44 = {
 	name = Joanna
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_41
 	mother = Lanny_rs_41
- 
+
 	8291.1.1 = { birth = yes }
 }
-Lanny_45 = { 
+Lanny_45 = {
 	name = Kirsta
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_41
 	mother = Lanny_rs_41
- 
+
 	8292.1.1 = { birth = yes }
 }
-Lanny_46 = { 
+Lanny_46 = {
 	name = Melara
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_41
 	mother = Lanny_rs_41
- 
+
 	8294.1.1 = { birth = yes }
 }
-Lanny_47 = { 
+Lanny_47 = {
 	name = Cyrelle
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_41
 	mother = Lanny_rs_41
- 
+
 	8296.1.1 = { birth = yes }
 }
-Lanny_48 = { 
+Lanny_48 = {
 	name = Myerna
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_41
 	mother = Lanny_rs_41
- 
+
 	8297.1.1 = { birth = yes }
 }
-Lanny_49 = { 
+Lanny_49 = {
 	name = Amarya
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_41
 	mother = Lanny_rs_41
- 
+
 	8298.1.1 = { birth = yes }
 }
-Lanny_52 = { 
+Lanny_52 = {
 	name = Bonessa
 	dynasty_house = house_Lanny
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanny_41
 	mother = Lanny_rs_41
- 
+
 	8299.1.1 = { birth = yes }
 }
 
@@ -11046,19 +11053,19 @@ Lanny_52 = {
 ############################
 ### Building A Home
 ###
-Lantell_2 = { 
+Lantell_2 = {
 	name = Elenna
 	dynasty_house = house_Lantell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lantell_3
 	mother = Lantell_rs_3
- 
+
 	8225.1.1 = { birth = yes }
-	8250.1.1 = { add_matrilineal_spouse = Lantell_rs_2 } 
+	8250.1.1 = { add_matrilineal_spouse = Lantell_rs_2 }
 	8269.1.1 = { death = yes }
 }
 Lantell_rs_2 = {
@@ -11071,46 +11078,46 @@ Lantell_rs_2 = {
 	8242.1.1 = { trait = knight }
 	8269.1.1 = { death = yes }
 }
-Lantell_24 = { 
+Lantell_24 = {
 	name = Adela
 	dynasty_house = house_Lantell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lantell_3
 	mother = Lantell_rs_3
- 
+
 	8232.1.1 = { birth = yes }
 	8273.1.1 = { death = yes }
 }
-Lantell_25 = { 
+Lantell_25 = {
 	name = Celyria
 	dynasty_house = house_Lantell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lantell_3
 	mother = Lantell_rs_3
- 
+
 	8235.1.1 = { birth = yes }
 	8295.1.1 = { death = yes }
 }
 ### Issue of Elenna
-Lantell_22 = { 
+Lantell_22 = {
 	name = Molianne
 	dynasty_house = house_Lantell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lantell_rs_2
 	mother = Lantell_2
- 
+
 	8251.1.1 = { birth = yes }
 }
 Lantell_1 = {
@@ -11119,7 +11126,7 @@ Lantell_1 = {
 
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lantell_rs_2
 	mother = Lantell_2
 
@@ -11129,7 +11136,7 @@ Lantell_1 = {
 
 	8252.1.1 = { birth = yes }
 	8269.1.1 = { trait = knight }
-	8276.1.1 = { add_spouse = Lantell_rs_1 } 
+	8276.1.1 = { add_spouse = Lantell_rs_1 }
 }
 Lantell_rs_1 = {
 	name = Hemona
@@ -11140,44 +11147,44 @@ Lantell_rs_1 = {
 
 	8252.1.1 = { birth = yes }
 }
-Lantell_23 = { 
+Lantell_23 = {
 	name = Sherei
 	dynasty_house = house_Lantell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lantell_rs_2
 	mother = Lantell_2
- 
+
 	8256.1.1 = { birth = yes }
 }
 ### Issue of Joffrey
-Lantell_27 = { 
+Lantell_27 = {
 	name = Marina
 	dynasty_house = house_Lantell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lantell_1
 	mother = Lantell_rs_1
- 
+
 	8277.1.1 = { birth = yes }
 }
-Lantell_28 = { 
+Lantell_28 = {
 	name = Maya
 	dynasty_house = house_Lantell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lantell_1
 	mother = Lantell_rs_1
- 
+
 	8278.1.1 = { birth = yes }
 }
 
@@ -11186,32 +11193,32 @@ Lantell_28 = {
 ############################
 ### Fruit On The Tree
 ###
-Lannett_26 = { 
+Lannett_26 = {
 	name = Egon
 	dynasty_house = house_Lannett
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_3
 	mother = Lannett_rs_3
- 
+
 	8214.1.1 = { birth = yes }
 	8232.1.1 = { death = yes }
 }
-Lannett_2 = { 
+Lannett_2 = {
 	name = Corlos # a lord
 	dynasty_house = house_Lannett
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_3
 	mother = Lannett_rs_3
- 
+
 	8220.1.1 = { birth = yes }
 	8237.1.1 = { trait = knight }
-	8238.1.1 = { add_spouse = Lannett_rs_2 } 
+	8238.1.1 = { add_spouse = Lannett_rs_2 }
 	8270.1.1 = { death = yes }
 }
 Lannett_rs_2 = {
@@ -11225,46 +11232,46 @@ Lannett_rs_2 = {
 	8270.1.1 = { death = yes }
 }
 ### Issue of Corlos
-Lannett_23 = { 
+Lannett_23 = {
 	name = Jorelle
 	dynasty_house = house_Lannett
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_2
 	mother = Lannett_rs_2
- 
+
 	8239.1.1 = { birth = yes }
 	8289.1.1 = { death = yes }
 }
-Lannett_24 = { 
+Lannett_24 = {
 	name = Tyland
 	dynasty_house = house_Lannett
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_2
 	mother = Lannett_rs_2
- 
+
 	8241.1.1 = { birth = yes }
 	8245.1.1 = { death = yes }
 }
-Lannett_1 = { 
+Lannett_1 = {
 	name = Jon # a lord
 	dynasty_house = house_Lannett
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_2
 	mother = Lannett_rs_2
- 
+
 	8247.1.1 = { birth = yes }
 	8263.1.1 = { trait = knight }
-	8268.1.1 = { add_spouse = Lannett_rs_1 } 
+	8268.1.1 = { add_spouse = Lannett_rs_1 }
 	8290.1.1 = { death = yes }
 }
 Lannett_rs_1 = {
@@ -11277,85 +11284,85 @@ Lannett_rs_1 = {
 	8247.1.1 = { birth = yes }
 	8290.1.1 = { death = yes }
 }
-Lannett_25 = { 
+Lannett_25 = {
 	name = Ellyn
 	dynasty_house = house_Lannett
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_2
 	mother = Lannett_rs_2
- 
+
 	8250.1.1 = { birth = yes }
 }
 ### Issue of Jon
-Lannett_29 = { 
+Lannett_29 = {
 	name = Thea
 	dynasty_house = house_Lannett
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_1
 	mother = Lannett_rs_1
- 
+
 	8269.1.1 = { birth = yes }
 }
-Lannett_30 = { 
+Lannett_30 = {
 	name = Sybell
 	dynasty_house = house_Lannett
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_1
 	mother = Lannett_rs_1
- 
+
 	8270.1.1 = { birth = yes }
 }
-Lannett_31 = { 
+Lannett_31 = {
 	name = Elene
 	dynasty_house = house_Lannett
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_1
 	mother = Lannett_rs_1
- 
+
 	8272.1.1 = { birth = yes }
 }
-Lannett_32 = { 
+Lannett_32 = {
 	name = Tamena
 	dynasty_house = house_Lannett
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_1
 	mother = Lannett_rs_1
- 
+
 	8274.1.1 = { birth = yes }
 }
-Lannett_33 = { 
+Lannett_33 = {
 	name = Damion # a lord
 	dynasty_house = house_Lannett
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_1
 	mother = Lannett_rs_1
- 
+
 	8276.1.1 = { birth = yes }
 	8293.1.1 = { trait = knight }
-	8296.1.1 = { add_spouse = Lannett_rs_33 } 
+	8296.1.1 = { add_spouse = Lannett_rs_33 }
 }
 Lannett_rs_33 = {
 	name = Kellyn
@@ -11366,30 +11373,30 @@ Lannett_rs_33 = {
 
 	8276.1.1 = { birth = yes }
 }
-Lannett_34 = { 
+Lannett_34 = {
 	name = Orena
 	dynasty_house = house_Lannett
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_1
 	mother = Lannett_rs_1
- 
+
 	8277.1.1 = { birth = yes }
 }
 ### Issue of Damion
-Lannett_35 = { 
+Lannett_35 = {
 	name = Fenton
 	dynasty_house = house_Lannett
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lannett_33
 	mother = Lannett_rs_33
- 
+
 	8296.1.1 = { birth = yes }
 }
 
@@ -11397,16 +11404,16 @@ Lannett_35 = {
 ############################
 ###
 ###
-Lansdale_21 = { 
+Lansdale_21 = {
 	name = Edwell
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_3
 	mother = Lansdale_rs_3
- 
+
 	8203.1.1 = { birth = yes }
 	8221.1.1 = { trait = knight }
 	8223.1.1 = { death = { death_reason = death_accident } }
@@ -11417,7 +11424,7 @@ Lansdale_2 = {
 
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_3
 	mother = Lansdale_rs_3
 
@@ -11426,16 +11433,16 @@ Lansdale_2 = {
 	8240.1.1 = { add_spouse = Dulver_44 } # Jeyne Dulver
 	8272.1.1 = { death = yes }
 }
-Lansdale_45 = { 
+Lansdale_45 = {
 	name = Leo
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_3
 	mother = Lansdale_rs_3
- 
+
 	8212.1.1 = { birth = yes }
 	8229.1.1 = { trait = knight }
 	8235.1.1 = { add_spouse = Lansdale_rs_45 }
@@ -11451,45 +11458,45 @@ Lansdale_rs_45 = {
 	8217.1.1 = { birth = yes }
 	8272.1.1 = { death = yes }
 }
-Lansdale_23 = { 
+Lansdale_23 = {
 	name = Leonella
 	dynasty = dynn_Lansdale
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_3
 	mother = Lansdale_rs_3
- 
+
 	8211.1.1 = { birth = yes }
 	8280.1.1 = { death = yes }
 }
-Lansdale_24 = { 
+Lansdale_24 = {
 	name = Elinor
 	dynasty = dynn_Lansdale
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_3
 	mother = Lansdale_rs_3
- 
+
 	8213.1.1 = { birth = yes }
 	8279.1.1 = { death = yes }
 }
-Lansdale_25 = { 
+Lansdale_25 = {
 	name = Rosamund
 	dynasty = dynn_Lansdale
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_3
 	mother = Lansdale_rs_3
- 
+
 	8216.1.1 = { birth = yes }
 	8254.1.1 = { death = yes }
 }
@@ -11522,19 +11529,19 @@ Lansdale_1 = {
 	8267.1.1 = { add_spouse = Yew_27 } # Ella Yew
 }
 ### Issue of Leo
-Lansdale_27 = { 
+Lansdale_27 = {
 	name = Merlon
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_45
 	mother = Lansdale_rs_45
- 
+
 	8236.1.1 = { birth = yes }
 	8254.1.1 = { trait = knight }
-	8259.1.1 = { add_spouse = Lansdale_rs_27 } 
+	8259.1.1 = { add_spouse = Lansdale_rs_27 }
 	8293.1.1 = { death = yes }
 }
 Lansdale_rs_27 = {
@@ -11546,47 +11553,47 @@ Lansdale_rs_27 = {
 
 	8236.1.1 = { birth = yes }
 }
-Lansdale_28 = { 
+Lansdale_28 = {
 	name = Elene
 	dynasty = dynn_Lansdale
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_45
 	mother = Lansdale_rs_45
- 
+
 	8237.1.1 = { birth = yes }
 	8286.1.1 = { death = yes }
 }
 ### Issue of Merlon
-Lansdale_29 = { 
+Lansdale_29 = {
 	name = Maya
 	dynasty = dynn_Lansdale
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_27
 	mother = Lansdale_rs_27
- 
+
 	8260.1.1 = { birth = yes }
 }
-Lansdale_30 = { 
+Lansdale_30 = {
 	name = Reginald
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_27
 	mother = Lansdale_rs_27
- 
+
 	8262.1.1 = { birth = yes }
 	8280.1.1 = { trait = knight }
-	8285.1.1 = { add_spouse = Lansdale_rs_30 } 
+	8285.1.1 = { add_spouse = Lansdale_rs_30 }
 }
 Lansdale_rs_30 = {
 	name = Edrina
@@ -11597,34 +11604,34 @@ Lansdale_rs_30 = {
 
 	8262.1.1 = { birth = yes }
 }
-Lansdale_33 = { 
+Lansdale_33 = {
 	name = Albin
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_27
 	mother = Lansdale_rs_27
- 
+
 	8265.1.1 = { birth = yes }
 	8282.1.1 = { trait = knight }
 	8289.1.1 = { death = yes }
 }
 ### Issue of Lanwell
-Lansdale_34 = { 
+Lansdale_34 = {
 	name = Sumner
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_1
 	mother = Yew_27
- 
+
 	8268.1.1 = { birth = yes }
 	8284.1.1 = { trait = knight }
-	8295.1.1 = { add_spouse = Lansdale_rs_34 } 
+	8295.1.1 = { add_spouse = Lansdale_rs_34 }
 }
 Lansdale_rs_34 = {
 	name = Jeyne
@@ -11636,129 +11643,129 @@ Lansdale_rs_34 = {
 	8267.1.1 = { birth = yes }
 }
 ### Issue of Reginald
-Lansdale_35 = { 
+Lansdale_35 = {
 	name = Sylvina
 	dynasty = dynn_Lansdale
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_30
 	mother = Lansdale_rs_30
- 
+
 	8285.1.1 = { birth = yes }
 }
-Lansdale_36 = { 
+Lansdale_36 = {
 	name = Lambert
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_30
 	mother = Lansdale_rs_30
- 
+
 	8286.1.1 = { birth = yes }
 }
-Lansdale_37 = { 
+Lansdale_37 = {
 	name = Leomella
 	dynasty = dynn_Lansdale
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_30
 	mother = Lansdale_rs_30
- 
+
 	8288.1.1 = { birth = yes }
 }
-Lansdale_38 = { 
+Lansdale_38 = {
 	name = Farin
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_30
 	mother = Lansdale_rs_30
- 
+
 	8289.1.1 = { birth = yes }
 }
-Lansdale_39 = { 
+Lansdale_39 = {
 	name = Lorent
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_30
 	mother = Lansdale_rs_30
- 
+
 	8290.1.1 = { birth = yes }
 }
-Lansdale_40 = { 
+Lansdale_40 = {
 	name = Philena
 	dynasty = dynn_Lansdale
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_30
 	mother = Lansdale_rs_30
- 
+
 	8291.1.1 = { birth = yes }
 }
 ### Issue of Sumner
-Lansdale_41 = { 
+Lansdale_41 = {
 	name = Sirona
 	dynasty = dynn_Lansdale
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_34
 	mother = Lansdale_rs_34
- 
+
 	8295.1.1 = { birth = yes }
 }
-Lansdale_42 = { 
+Lansdale_42 = {
 	name = Russell
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_34
 	mother = Lansdale_rs_34
- 
+
 	8297.1.1 = { birth = yes }
 }
-Lansdale_43 = { 
+Lansdale_43 = {
 	name = Steffon
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_34
 	mother = Lansdale_rs_34
- 
+
 	8298.1.1 = { birth = yes }
 }
-Lansdale_44 = { 
+Lansdale_44 = {
 	name = Emrick
 	dynasty = dynn_Lansdale
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lansdale_34
 	mother = Lansdale_rs_34
- 
+
 	8299.1.1 = { birth = yes }
 }
 
@@ -11766,18 +11773,18 @@ Lansdale_44 = {
 ############################
 ###
 ###
-Dabell_2 = { 
+Dabell_2 = {
 	name = Alloren # a lord
 	dynasty = dynn_Dabell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_3
 	mother = Dabell_rs_3
- 
+
 	8233.1.1 = { birth = yes }
-	8250.1.1 = { add_spouse = Dabell_rs_2 } 
+	8250.1.1 = { add_spouse = Dabell_rs_2 }
 	8252.1.1 = { trait = knight }
 	8279.1.1 = { death = yes }
 }
@@ -11791,28 +11798,28 @@ Dabell_rs_2 = {
 	8233.1.1 = { birth = yes }
 	8279.1.1 = { death = yes }
 }
-Dabell_24 = { 
+Dabell_24 = {
 	name = Adela
 	dynasty = dynn_Dabell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_3
 	mother = Dabell_rs_3
 
 	trait = twin
- 
+
 	8236.1.1 = { birth = yes }
 }
-Dabell_29 = { 
+Dabell_29 = {
 	name = Bennifer
 	dynasty = dynn_Dabell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_3
 	mother = Dabell_rs_3
 
@@ -11834,19 +11841,19 @@ Dabell_rs_29 = {
 	8287.1.1 = { death = yes }
 }
 ### Issue of Alloren
-Dabell_1 = { 
+Dabell_1 = {
 	name = Genna # a lord
 	dynasty = dynn_Dabell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_2
 	mother = Dabell_rs_2
- 
+
 	8251.1.1 = { birth = yes }
-	8268.1.1 = { add_matrilineal_spouse = Dabell_rs_1 } 
+	8268.1.1 = { add_matrilineal_spouse = Dabell_rs_1 }
 }
 Dabell_rs_1 = {
 	name = Edmar
@@ -11858,19 +11865,19 @@ Dabell_rs_1 = {
 	8268.1.1 = { trait = knight }
 }
 ### Issue of Bennifer
-Dabell_23 = { 
+Dabell_23 = {
 	name = Gregor
 	dynasty = dynn_Dabell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_29
 	mother = Dabell_rs_29
- 
+
 	8254.1.1 = { birth = yes }
 	8273.1.1 = { trait = knight }
-	8275.1.1 = { add_spouse = Dabell_rs_23 } 
+	8275.1.1 = { add_spouse = Dabell_rs_23 }
 }
 Dabell_rs_23 = {
 	name = Tarina
@@ -11882,33 +11889,33 @@ Dabell_rs_23 = {
 	8254.1.1 = { birth = yes }
 }
 ### Issue of Gregor
-Dabell_31 = { 
+Dabell_31 = {
 	name = Genna
 	dynasty = dynn_Dabell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_23
 	mother = Dabell_rs_23
- 
+
 	8275.1.1 = { birth = yes }
 	8286.1.1 = { death = yes }
 }
-Dabell_32 = { 
+Dabell_32 = {
 	name = Cerion
 	dynasty = dynn_Dabell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_23
 	mother = Dabell_rs_23
- 
+
 	8276.1.1 = { birth = yes }
 	8295.1.1 = { trait = knight }
-	8297.1.1 = { add_spouse = Dabell_rs_32 } 
+	8297.1.1 = { add_spouse = Dabell_rs_32 }
 }
 Dabell_rs_32 = {
 	name = Leona
@@ -11919,19 +11926,19 @@ Dabell_rs_32 = {
 
 	8276.1.1 = { birth = yes }
 }
-Dabell_33 = { 
+Dabell_33 = {
 	name = Eldon
 	dynasty = dynn_Dabell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_23
 	mother = Dabell_rs_23
- 
+
 	8277.1.1 = { birth = yes }
 	8296.1.1 = { trait = knight }
-	8297.1.1 = { add_spouse = Dabell_rs_33 } 
+	8297.1.1 = { add_spouse = Dabell_rs_33 }
 }
 Dabell_rs_33 = {
 	name = Arnessa
@@ -11942,33 +11949,33 @@ Dabell_rs_33 = {
 
 	8277.1.1 = { birth = yes }
 }
-Dabell_34 = { 
+Dabell_34 = {
 	name = Androw
 	dynasty = dynn_Dabell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_23
 	mother = Dabell_rs_23
- 
+
 	8278.1.1 = { birth = yes }
 	8285.1.1 = { death = yes }
 }
 ### Issue of Genna
-Dabell_35 = { 
+Dabell_35 = {
 	name = Roger
 	dynasty = dynn_Dabell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_rs_1
 	mother = Dabell_1
- 
+
 	8268.1.1 = { birth = yes }
 	8287.1.1 = { trait = knight }
-	8298.1.1 = { add_spouse = Dabell_rs_35 } 
+	8298.1.1 = { add_spouse = Dabell_rs_35 }
 }
 Dabell_rs_35 = {
 	name = Rosamund
@@ -11980,68 +11987,68 @@ Dabell_rs_35 = {
 	8268.1.1 = { birth = yes }
 }
 ### Issue of Cerion
-Dabell_36 = { 
+Dabell_36 = {
 	name = Tyburn
 	dynasty = dynn_Dabell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_32
 	mother = Dabell_rs_32
- 
+
 	8297.1.1 = { birth = yes }
 }
-Dabell_37 = { 
+Dabell_37 = {
 	name = Elinor
 	dynasty = dynn_Dabell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_32
 	mother = Dabell_rs_32
- 
+
 	8298.1.1 = { birth = yes }
 }
 ### Issue of Eldon
-Dabell_38 = { 
+Dabell_38 = {
 	name = Cyril
 	dynasty = dynn_Dabell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_33
 	mother = Dabell_rs_33
- 
+
 	8298.1.1 = { birth = yes }
 }
-Dabell_39 = { 
+Dabell_39 = {
 	name = Tymos
 	dynasty = dynn_Dabell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_33
 	mother = Dabell_rs_33
- 
+
 	8299.1.1 = { birth = yes }
 }
 ### Issue of Roger
-Dabell_40 = { 
+Dabell_40 = {
 	name = Bella
 	dynasty = dynn_Dabell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Dabell_35
 	mother = Dabell_rs_35
- 
+
 	8298.1.1 = { birth = yes }
 }
 
@@ -12065,19 +12072,19 @@ Ruskyn_84 = {
 		death = { death_reason = death_heart_attack }
 	}
 }
-Ruskyn_3 = { 
+Ruskyn_3 = {
 	name = Loren # a lord
 	dynasty = dynn_Ruskyn
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_75
 	mother = Ruskyn_rs_75
- 
+
 	8225.1.1 = { birth = yes }
 	8243.1.1 = { trait = knight }
-	8243.1.1 = { add_spouse = Ruskyn_rs_3 } 
+	8243.1.1 = { add_spouse = Ruskyn_rs_3 }
 	8279.1.1 = { death = yes }
 }
 Ruskyn_rs_3 = {
@@ -12090,24 +12097,24 @@ Ruskyn_rs_3 = {
 	8225.1.1 = { birth = yes }
 	8279.1.1 = { death = yes }
 }
-Ruskyn_27 = { 
+Ruskyn_27 = {
 	name = Ingram
 	dynasty = dynn_Ruskyn
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_75
 	mother = Ruskyn_rs_75
- 
+
 	8226.1.1 = { birth = yes }
 	8242.1.1 = { trait = knight }
-	8254.1.1 = { add_spouse = Ruskyn_rs_27 } 
+	8254.1.1 = { add_spouse = Ruskyn_rs_27 }
 	8281.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_execution
-			killer = Myre_1 # Tristifer Myre 
-		} 
+			killer = Myre_1 # Tristifer Myre
+		}
 	}
 }
 Ruskyn_rs_27 = {
@@ -12120,58 +12127,58 @@ Ruskyn_rs_27 = {
 	8226.1.1 = { birth = yes }
 	8289.1.1 = { death = yes }
 }
-Ruskyn_28 = { 
+Ruskyn_28 = {
 	name = Gwyn
 	dynasty = dynn_Ruskyn
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_75
 	mother = Ruskyn_rs_75
- 
+
 	8228.1.1 = { birth = yes }
 	8275.1.1 = { death = yes }
 }
 ### Issue of Loren
-Ruskyn_26 = { 
+Ruskyn_26 = {
 	name = Wynda
 	dynasty = dynn_Ruskyn
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_3
 	mother = Ruskyn_rs_3
- 
+
 	8244.1.1 = { birth = yes }
 	8281.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_execution
-			killer = Myre_1 # Tristifer Myre 
-		} 
+			killer = Myre_1 # Tristifer Myre
+		}
 	}
 }
-Ruskyn_2 = { 
+Ruskyn_2 = {
 	name = Raynald # a lord
 	dynasty = dynn_Ruskyn
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_3
 	mother = Ruskyn_rs_3
- 
+
 	8254.1.1 = { birth = yes }
-	8271.1.1 = { add_spouse = Ruskyn_rs_2 } 
+	8271.1.1 = { add_spouse = Ruskyn_rs_2 }
 	8272.1.1 = { trait = knight }
 	8281.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_execution
-			killer = Myre_1 # Tristifer Myre 
-		} 
+			killer = Myre_1 # Tristifer Myre
+		}
 	}
 }
 Ruskyn_rs_2 = {
@@ -12185,34 +12192,34 @@ Ruskyn_rs_2 = {
 	8281.1.1 = { death = yes }
 }
 ### Issue of Raynald
-Ruskyn_25 = { 
+Ruskyn_25 = {
 	name = Meldrick
 	dynasty = dynn_Ruskyn
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_2
 	mother = Ruskyn_rs_2
- 
+
 	8272.1.1 = { birth = yes }
 	8281.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_execution
-			killer = Myre_1 # Tristifer Myre 
-		} 
+			killer = Myre_1 # Tristifer Myre
+		}
 	}
 }
-Ruskyn_1 = { 
+Ruskyn_1 = {
 	name = Addam # a lord
 	dynasty = dynn_Ruskyn
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_2
 	mother = Ruskyn_rs_2
- 
+
 	8275.1.1 = { birth = yes }
 	8281.1.1 = {
 		effect = {
@@ -12226,7 +12233,7 @@ Ruskyn_1 = {
 		}
 	}
 	8292.1.1 = { trait = knight }
-	8296.1.1 = { add_spouse = Ruskyn_rs_1 } 
+	8296.1.1 = { add_spouse = Ruskyn_rs_1 }
 }
 Ruskyn_rs_1 = {
 	name = Olyvia
@@ -12238,19 +12245,19 @@ Ruskyn_rs_1 = {
 	8275.1.1 = { birth = yes }
 }
 ### Issue of Ingram
-Ruskyn_29 = { 
+Ruskyn_29 = {
 	name = Symond
 	dynasty = dynn_Ruskyn
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_27
 	mother = Ruskyn_rs_27
- 
+
 	8254.1.1 = { birth = yes }
 	8272.1.1 = { trait = knight }
-	8275.1.1 = { add_spouse = Ruskyn_rs_29 } 
+	8275.1.1 = { add_spouse = Ruskyn_rs_29 }
 	8281.1.1 = {
 		effect = {
 			if = {
@@ -12263,10 +12270,10 @@ Ruskyn_29 = {
 		}
 	}
 	8288.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_execution
-			killer = Myre_1 # Tristifer Myre 
-		} 
+			killer = Myre_1 # Tristifer Myre
+		}
 	}
 }
 Ruskyn_rs_29 = {
@@ -12279,17 +12286,17 @@ Ruskyn_rs_29 = {
 	8254.1.1 = { birth = yes }
 	8288.1.1 = { death = yes }
 }
-Ruskyn_30 = { 
+Ruskyn_30 = {
 	name = Celyria
 	dynasty = dynn_Ruskyn
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_27
 	mother = Ruskyn_rs_27
- 
+
 	8255.1.1 = { birth = yes }
 	8281.1.1 = {
 		effect = {
@@ -12304,17 +12311,17 @@ Ruskyn_30 = {
 	}
 }
 ### Issue of Symond
-Ruskyn_31 = { 
+Ruskyn_31 = {
 	name = Arwen
 	dynasty = dynn_Ruskyn
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_29
 	mother = Ruskyn_rs_29
- 
+
 	8276.1.1 = { birth = yes }
 	8288.1.1 = {
 		effect = {
@@ -12328,16 +12335,16 @@ Ruskyn_31 = {
 		}
 	}
 }
-Ruskyn_32 = { 
+Ruskyn_32 = {
 	name = Loreon
 	dynasty = dynn_Ruskyn
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_29
 	mother = Ruskyn_rs_29
- 
+
 	8277.1.1 = { birth = yes }
 	8288.1.1 = {
 		effect = {
@@ -12351,7 +12358,7 @@ Ruskyn_32 = {
 		}
 	}
 	8296.1.1 = { trait = knight }
-	8298.1.1 = { add_spouse = Ruskyn_rs_32 } 
+	8298.1.1 = { add_spouse = Ruskyn_rs_32 }
 }
 Ruskyn_rs_32 = {
 	name = Elspeth
@@ -12362,17 +12369,17 @@ Ruskyn_rs_32 = {
 
 	8277.1.1 = { birth = yes }
 }
-Ruskyn_33 = { 
+Ruskyn_33 = {
 	name = Gallisa
 	dynasty = dynn_Ruskyn
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_29
 	mother = Ruskyn_rs_29
- 
+
 	8278.1.1 = { birth = yes }
 	8288.1.1 = {
 		effect = {
@@ -12386,16 +12393,16 @@ Ruskyn_33 = {
 		}
 	}
 }
-Ruskyn_34 = { 
+Ruskyn_34 = {
 	name = Cyril
 	dynasty = dynn_Ruskyn
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_29
 	mother = Ruskyn_rs_29
- 
+
 	8280.1.1 = { birth = yes }
 	8288.1.1 = {
 		effect = {
@@ -12411,56 +12418,56 @@ Ruskyn_34 = {
 	8299.1.1 = { trait = knight }
 }
 ### Issue of Loreon
-Ruskyn_35 = { 
+Ruskyn_35 = {
 	name = Bonessa
 	dynasty = dynn_Ruskyn
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_32
 	mother = Ruskyn_rs_32
- 
+
 	8298.1.1 = { birth = yes }
 }
-Ruskyn_36 = { 
+Ruskyn_36 = {
 	name = Joanna
 	dynasty = dynn_Ruskyn
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_32
 	mother = Ruskyn_rs_32
- 
+
 	8299.1.1 = { birth = yes }
 }
 ### Issue of Addam
-Ruskyn_37 = { 
+Ruskyn_37 = {
 	name = Preston
 	dynasty = dynn_Ruskyn
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_1
 	mother = Ruskyn_rs_1
- 
+
 	8296.1.1 = { birth = yes }
 }
-Ruskyn_38 = { 
+Ruskyn_38 = {
 	name = Helen
 	dynasty = dynn_Ruskyn
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Ruskyn_1
 	mother = Ruskyn_rs_1
- 
+
 	8297.1.1 = { birth = yes }
 }
 
@@ -12468,32 +12475,32 @@ Ruskyn_38 = {
 ############################
 ###
 ###
-Tortoll_25 = { 
+Tortoll_25 = {
 	name = Landra
 	dynasty = dynn_Tortoll
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_3
 	mother = Tortoll_rs_3
- 
+
 	8243.1.1 = { birth = yes }
 	8283.1.1 = { death = yes }
 }
-Tortoll_2 = { 
+Tortoll_2 = {
 	name = Gerion
 	dynasty = dynn_Tortoll
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_3
 	mother = Tortoll_rs_3
- 
+
 	8247.1.1 = { birth = yes }
-	8262.1.1 = { add_spouse = Tortoll_rs_2 } 
+	8262.1.1 = { add_spouse = Tortoll_rs_2 }
 	8264.1.1 = { trait = knight }
 	8272.1.1 = { death = yes }
 }
@@ -12507,19 +12514,19 @@ Tortoll_rs_2 = {
 	8247.1.1 = { birth = yes }
 	8279.1.1 = { death = yes }
 }
-Tortoll_26 = { 
+Tortoll_26 = {
 	name = Everard
 	dynasty = dynn_Tortoll
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_3
 	mother = Tortoll_rs_3
- 
+
 	8251.1.1 = { birth = yes }
 	8270.1.1 = { trait = knight }
-	8274.1.1 = { add_spouse = Tortoll_rs_26 } 
+	8274.1.1 = { add_spouse = Tortoll_rs_26 }
 	8286.1.1 = { death = yes }
 }
 Tortoll_rs_26 = {
@@ -12532,19 +12539,19 @@ Tortoll_rs_26 = {
 	8251.1.1 = { birth = yes }
 	8286.1.1 = { death = yes }
 }
-Tortoll_27 = { 
+Tortoll_27 = {
 	name = Dunsen
 	dynasty = dynn_Tortoll
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_3
 	mother = Tortoll_rs_3
- 
+
 	8257.1.1 = { birth = yes }
 	8274.1.1 = { trait = knight }
-	8284.1.1 = { add_spouse = Tortoll_rs_27 } 
+	8284.1.1 = { add_spouse = Tortoll_rs_27 }
 }
 Tortoll_rs_27 = {
 	name = Lyrene
@@ -12556,19 +12563,19 @@ Tortoll_rs_27 = {
 	8257.1.1 = { birth = yes }
 }
 ### Issue of Gerion
-Tortoll_1 = { 
+Tortoll_1 = {
 	name = Jason # a lord
 	dynasty = dynn_Tortoll
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_2
 	mother = Tortoll_rs_2
- 
+
 	8263.1.1 = { birth = yes }
 	8279.1.1 = { trait = knight }
-	8291.1.1 = { add_spouse = Tortoll_rs_1 } 
+	8291.1.1 = { add_spouse = Tortoll_rs_1 }
 }
 Tortoll_rs_1 = {
 	name = Joanna
@@ -12579,19 +12586,19 @@ Tortoll_rs_1 = {
 
 	8263.1.1 = { birth = yes }
 }
-Tortoll_23 = { 
+Tortoll_23 = {
 	name = Rolder
 	dynasty = dynn_Tortoll
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_2
 	mother = Tortoll_rs_2
- 
+
 	8269.1.1 = { birth = yes }
 	8285.1.1 = { trait = knight }
-	8296.1.1 = { add_spouse = Tortoll_rs_23 } 
+	8296.1.1 = { add_spouse = Tortoll_rs_23 }
 }
 Tortoll_rs_23 = {
 	name = Ellaene
@@ -12603,146 +12610,146 @@ Tortoll_rs_23 = {
 	8269.1.1 = { birth = yes }
 }
 ### Issue of Rolder
-Tortoll_31 = { 
+Tortoll_31 = {
 	name = Jaime
 	dynasty = dynn_Tortoll
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_23
 	mother = Tortoll_rs_23
- 
+
 	8297.1.1 = { birth = yes }
 }
-Tortoll_32 = { 
+Tortoll_32 = {
 	name = Polliver
 	dynasty = dynn_Tortoll
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_23
 	mother = Tortoll_rs_23
- 
+
 	8298.1.1 = { birth = yes }
 }
-Tortoll_33 = { 
+Tortoll_33 = {
 	name = Garrison
 	dynasty = dynn_Tortoll
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_23
 	mother = Tortoll_rs_23
- 
+
 	8299.1.1 = { birth = yes }
 }
 ### Issue of Jason
-Tortoll_34 = { 
+Tortoll_34 = {
 	name = Pascal
 	dynasty = dynn_Tortoll
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_1
 	mother = Tortoll_rs_1
- 
+
 	8291.1.1 = { birth = yes }
 }
-Tortoll_35 = { 
+Tortoll_35 = {
 	name = Montfroy
 	dynasty = dynn_Tortoll
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_1
 	mother = Tortoll_rs_1
- 
+
 	8293.1.1 = { birth = yes }
 }
 ### Issue of Dunsen
-Tortoll_36 = { 
+Tortoll_36 = {
 	name = Jaimera
 	dynasty = dynn_Tortoll
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_27
 	mother = Tortoll_rs_27
- 
+
 	8284.1.1 = { birth = yes }
 }
 ### Issue of Everard
-Tortoll_37 = { 
+Tortoll_37 = {
 	name = Lanna
 	dynasty = dynn_Tortoll
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_26
 	mother = Tortoll_rs_26
- 
+
 	8275.1.1 = { birth = yes }
 	8288.1.1 = { death = yes }
 }
-Tortoll_38 = { 
+Tortoll_38 = {
 	name = Calynne
 	dynasty = dynn_Tortoll
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_26
 	mother = Tortoll_rs_26
- 
+
 	8276.1.1 = { birth = yes }
 }
-Tortoll_39 = { 
+Tortoll_39 = {
 	name = Arram
 	dynasty = dynn_Tortoll
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_26
 	mother = Tortoll_rs_26
- 
+
 	8277.1.1 = { birth = yes }
 	8296.1.1 = { trait = knight }
 }
-Tortoll_40 = { 
+Tortoll_40 = {
 	name = Aleona
 	dynasty = dynn_Tortoll
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_26
 	mother = Tortoll_rs_26
- 
+
 	8279.1.1 = { birth = yes }
 }
-Tortoll_41 = { 
+Tortoll_41 = {
 	name = Dolessa
 	dynasty = dynn_Tortoll
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tortoll_26
 	mother = Tortoll_rs_26
- 
+
 	8280.1.1 = { birth = yes }
 }
 
@@ -12750,19 +12757,19 @@ Tortoll_41 = {
 ############################
 ### Stronger Than Stone
 ###
-Tarwick_2 = { 
+Tarwick_2 = {
 	name = Joss
 	dynasty = dynn_Tarwick
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_3
 	mother = Tarwick_rs_3
- 
+
 	8235.1.1 = { birth = yes }
 	8252.1.1 = { trait = knight }
-	8254.1.1 = { add_spouse = Tarwick_rs_2 } 
+	8254.1.1 = { add_spouse = Tarwick_rs_2 }
 	8274.1.1 = { death = yes }
 }
 Tarwick_rs_2 = {
@@ -12775,19 +12782,19 @@ Tarwick_rs_2 = {
 	8235.1.1 = { birth = yes }
 	8274.1.1 = { death = yes }
 }
-Tarwick_27 = { 
+Tarwick_27 = {
 	name = Argett
 	dynasty = dynn_Tarwick
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_3
 	mother = Tarwick_rs_3
- 
+
 	8238.1.1 = { birth = yes }
 	8254.1.1 = { trait = knight }
-	8261.1.1 = { add_spouse = Tarwick_rs_27 } 
+	8261.1.1 = { add_spouse = Tarwick_rs_27 }
 }
 Tarwick_rs_27 = {
 	name = Bella
@@ -12799,36 +12806,36 @@ Tarwick_rs_27 = {
 	8238.1.1 = { birth = yes }
 }
 ### Issue of Joss
-Tarwick_25 = { 
+Tarwick_25 = {
 	name = Sharra
 	dynasty = dynn_Tarwick
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_2
 	mother = Tarwick_rs_2
- 
+
 	8255.1.1 = { birth = yes }
 	8298.1.1 = { death = yes }
 }
-Tarwick_1 = { 
+Tarwick_1 = {
 	name = Garibald # Semi-Canon, a lord
 	dynasty = dynn_Tarwick
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_2
 	mother = Tarwick_rs_2
- 
+
 	8256.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
 	}
 	8274.1.1 = { trait = knight }
-	8290.1.1 = { add_spouse = Tarwick_rs_1 } 
+	8290.1.1 = { add_spouse = Tarwick_rs_1 }
 }
 Tarwick_rs_1 = {
 	name = Irena
@@ -12839,73 +12846,73 @@ Tarwick_rs_1 = {
 
 	8260.1.1 = { birth = yes }
 }
-Tarwick_26 = { 
+Tarwick_26 = {
 	name = Melara
 	dynasty = dynn_Tarwick
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_2
 	mother = Tarwick_rs_2
- 
+
 	8263.1.1 = { birth = yes }
 }
 ### Issue of Garibald
-Tarwick_29 = { 
+Tarwick_29 = {
 	name = Shalla
 	dynasty = dynn_Tarwick
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_1
 	mother = Tarwick_rs_1
- 
+
 	8291.1.1 = { birth = yes }
 }
-Tarwick_30 = { 
+Tarwick_30 = {
 	name = Mina
 	dynasty = dynn_Tarwick
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_1
 	mother = Tarwick_rs_1
- 
+
 	8292.1.1 = { birth = yes }
 }
 ### Issue of Argett
-Tarwick_31 = { 
+Tarwick_31 = {
 	name = Milerra
 	dynasty = dynn_Tarwick
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_27
 	mother = Tarwick_rs_27
- 
+
 	8261.1.1 = { birth = yes }
 }
-Tarwick_32 = { 
+Tarwick_32 = {
 	name = Valarr
 	dynasty = dynn_Tarwick
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_27
 	mother = Tarwick_rs_27
- 
+
 	8263.1.1 = { birth = yes }
 	8280.1.1 = { trait = knight }
-	8292.1.1 = { add_spouse = Tarwick_rs_32 } 
+	8292.1.1 = { add_spouse = Tarwick_rs_32 }
 	8297.1.1 = { death = yes }
 }
 Tarwick_rs_32 = {
@@ -12918,66 +12925,66 @@ Tarwick_rs_32 = {
 	8263.1.1 = { birth = yes }
 	8297.1.1 = { death = yes }
 }
-Tarwick_33 = { 
+Tarwick_33 = {
 	name = Nora
 	dynasty = dynn_Tarwick
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_27
 	mother = Tarwick_rs_27
- 
+
 	8265.1.1 = { birth = yes }
 }
 ### Issue of Valarr
-Tarwick_34 = { 
+Tarwick_34 = {
 	name = Ingram
 	dynasty = dynn_Tarwick
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_32
 	mother = Tarwick_rs_32
- 
+
 	8292.1.1 = { birth = yes }
 }
-Tarwick_35 = { 
+Tarwick_35 = {
 	name = Alfryn
 	dynasty = dynn_Tarwick
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_32
 	mother = Tarwick_rs_32
- 
+
 	8294.1.1 = { birth = yes }
 }
-Tarwick_36 = { 
+Tarwick_36 = {
 	name = Montfroy
 	dynasty = dynn_Tarwick
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_32
 	mother = Tarwick_rs_32
- 
+
 	8295.1.1 = { birth = yes }
 }
-Tarwick_37 = { 
+Tarwick_37 = {
 	name = Franklyn
 	dynasty = dynn_Tarwick
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Tarwick_32
 	mother = Tarwick_rs_32
- 
+
 	8296.1.1 = { birth = yes }
 }
 
@@ -12985,19 +12992,19 @@ Tarwick_37 = {
 ############################
 ###
 ###
-Merrell_1 = { 
+Merrell_1 = {
 	name = Marq # a lord
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_2
 	mother = Merrell_rs_2
- 
+
 	8210.1.1 = { birth = yes }
 	8226.1.1 = { trait = knight }
-	8233.1.1 = { add_spouse = Merrell_rs_1 } 
+	8233.1.1 = { add_spouse = Merrell_rs_1 }
 	8283.1.1 = { death = yes }
 }
 Merrell_rs_1 = {
@@ -13010,33 +13017,33 @@ Merrell_rs_1 = {
 	8210.1.1 = { birth = yes }
 	8283.1.1 = { death = yes }
 }
-Merrell_20 = { 
+Merrell_20 = {
 	name = Coranne
 	dynasty = dynn_Merrell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_2
 	mother = Merrell_rs_2
- 
+
 	8213.1.1 = { birth = yes }
 	8257.1.1 = { death = yes }
 }
-Merrell_21 = { 
+Merrell_21 = {
 	name = Talard
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_2
 	mother = Merrell_rs_2
- 
+
 	8222.1.1 = { birth = yes }
 	8240.1.1 = { trait = knight }
-	8253.1.1 = { add_spouse = Merrell_rs_21 } 
+	8253.1.1 = { add_spouse = Merrell_rs_21 }
 	8285.1.1 = { death = yes }
 }
 Merrell_rs_21 = {
@@ -13050,18 +13057,18 @@ Merrell_rs_21 = {
 	8285.1.1 = { death = yes }
 }
 ### Issue of Talard
-Merrell_27 = { 
+Merrell_27 = {
 	name = Gregor
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_21
 	mother = Merrell_rs_21
- 
+
 	8253.1.1 = { birth = yes }
-	8270.1.1 = { add_spouse = Merrell_rs_27 } 
+	8270.1.1 = { add_spouse = Merrell_rs_27 }
 	8272.1.1 = { trait = knight }
 }
 Merrell_rs_27 = {
@@ -13093,19 +13100,19 @@ Merrell_25 = {
 	8300.1.1 = { employer = Baratheon_7 } # Tommen Baratheon
 }
 ### Issue of Marq
-Merrell_28 = { 
+Merrell_28 = {
 	name = Rodmund # a lord
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_1
 	mother = Merrell_rs_1
- 
+
 	8234.1.1 = { birth = yes }
 	8250.1.1 = { trait = knight }
-	8259.1.1 = { add_spouse = Merrell_rs_28 } 
+	8259.1.1 = { add_spouse = Merrell_rs_28 }
 }
 Merrell_rs_28 = {
 	name = Aleona
@@ -13116,19 +13123,19 @@ Merrell_rs_28 = {
 
 	8234.1.1 = { birth = yes }
 }
-Merrell_29 = { 
+Merrell_29 = {
 	name = Garrison
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_1
 	mother = Merrell_rs_1
- 
+
 	8235.1.1 = { birth = yes }
 	8252.1.1 = { trait = knight }
-	8258.1.1 = { add_spouse = Merrell_rs_29 } 
+	8258.1.1 = { add_spouse = Merrell_rs_29 }
 }
 Merrell_rs_29 = {
 	name = Maya
@@ -13140,19 +13147,19 @@ Merrell_rs_29 = {
 	8235.1.1 = { birth = yes }
 }
 ### Issue of Gregor
-Merrell_30 = { 
+Merrell_30 = {
 	name = Reginald
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_27
 	mother = Merrell_rs_27
- 
+
 	8270.1.1 = { birth = yes }
 	8286.1.1 = { trait = knight }
-	8292.1.1 = { add_spouse = Merrell_rs_30 } 
+	8292.1.1 = { add_spouse = Merrell_rs_30 }
 }
 Merrell_rs_30 = {
 	name = Willemina
@@ -13163,19 +13170,19 @@ Merrell_rs_30 = {
 
 	8270.1.1 = { birth = yes }
 }
-Merrell_31 = { 
+Merrell_31 = {
 	name = Atheon
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_27
 	mother = Merrell_rs_27
- 
+
 	8272.1.1 = { birth = yes }
 	8291.1.1 = { trait = knight }
-	8294.1.1 = { add_spouse = Merrell_rs_31 } 
+	8294.1.1 = { add_spouse = Merrell_rs_31 }
 }
 Merrell_rs_31 = {
 	name = Delena
@@ -13187,32 +13194,32 @@ Merrell_rs_31 = {
 	8272.1.1 = { birth = yes }
 }
 ### Issue of Rodmund
-Merrell_32 = { 
+Merrell_32 = {
 	name = Jeane
 	dynasty = dynn_Merrell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_28
 	mother = Merrell_rs_28
- 
+
 	8260.1.1 = { birth = yes }
 }
-Merrell_33 = { 
+Merrell_33 = {
 	name = Byron
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_28
 	mother = Merrell_rs_28
- 
+
 	8261.1.1 = { birth = yes }
 	8279.1.1 = { trait = knight }
-	8288.1.1 = { add_spouse = Merrell_rs_33 } 
+	8288.1.1 = { add_spouse = Merrell_rs_33 }
 }
 Merrell_rs_33 = {
 	name = Lynora
@@ -13224,18 +13231,18 @@ Merrell_rs_33 = {
 	8261.1.1 = { birth = yes }
 }
 ### Issue of Garrison
-Merrell_34 = { 
+Merrell_34 = {
 	name = Esmer
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_29
 	mother = Merrell_rs_29
- 
+
 	8259.1.1 = { birth = yes }
-	8276.1.1 = { add_spouse = Merrell_rs_34 } 
+	8276.1.1 = { add_spouse = Merrell_rs_34 }
 	8277.1.1 = { trait = knight }
 }
 Merrell_rs_34 = {
@@ -13247,19 +13254,19 @@ Merrell_rs_34 = {
 
 	8259.1.1 = { birth = yes }
 }
-Merrell_35 = { 
+Merrell_35 = {
 	name = Viserys
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_29
 	mother = Merrell_rs_29
- 
+
 	8261.1.1 = { birth = yes }
 	8278.1.1 = { trait = knight }
-	8285.1.1 = { add_spouse = Merrell_rs_35 } 
+	8285.1.1 = { add_spouse = Merrell_rs_35 }
 }
 Merrell_rs_35 = {
 	name = Leonella
@@ -13270,112 +13277,112 @@ Merrell_rs_35 = {
 
 	8261.1.1 = { birth = yes }
 }
-Merrell_36 = { 
+Merrell_36 = {
 	name = Celessa
 	dynasty = dynn_Merrell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_29
 	mother = Merrell_rs_29
- 
+
 	8263.1.1 = { birth = yes }
 }
-Merrell_37 = { 
+Merrell_37 = {
 	name = Beranda
 	dynasty = dynn_Merrell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_29
 	mother = Merrell_rs_29
- 
+
 	8265.1.1 = { birth = yes }
 }
 ### Issue of Reginald
-Merrell_38 = { 
+Merrell_38 = {
 	name = Joshua
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_30
 	mother = Merrell_rs_30
- 
+
 	8293.1.1 = { birth = yes }
 }
 ### Issue of Atheon
-Merrell_39 = { 
+Merrell_39 = {
 	name = Gisella
 	dynasty = dynn_Merrell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_31
 	mother = Merrell_rs_31
- 
+
 	8294.1.1 = { birth = yes }
 }
 ### Issue of Byron
-Merrell_40 = { 
+Merrell_40 = {
 	name = Celyria
 	dynasty = dynn_Merrell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_33
 	mother = Merrell_rs_33
- 
+
 	8289.1.1 = { birth = yes }
 }
-Merrell_41 = { 
+Merrell_41 = {
 	name = Corlos
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_33
 	mother = Merrell_rs_33
- 
+
 	8290.1.1 = { birth = yes }
 }
 ### Issue of Esmer
-Merrell_42 = { 
+Merrell_42 = {
 	name = Merlon
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_34
 	mother = Merrell_rs_34
- 
+
 	8276.1.1 = { birth = yes }
 	8295.1.1 = { trait = knight }
 }
-Merrell_43 = { 
+Merrell_43 = {
 	name = Gerion
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_34
 	mother = Merrell_rs_34
- 
+
 	8278.1.1 = { birth = yes }
 	8294.1.1 = { trait = knight }
-	8298.1.1 = { add_spouse = Merrell_rs_43 } 
+	8298.1.1 = { add_spouse = Merrell_rs_43 }
 }
 Merrell_rs_43 = {
 	name = Cyrelle
@@ -13386,82 +13393,82 @@ Merrell_rs_43 = {
 
 	8278.1.1 = { birth = yes }
 }
-Merrell_44 = { 
+Merrell_44 = {
 	name = Caster
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_34
 	mother = Merrell_rs_34
- 
+
 	8280.1.1 = { birth = yes }
 	8296.1.1 = { trait = knight }
 }
-Merrell_45 = { 
+Merrell_45 = {
 	name = Lessa
 	dynasty = dynn_Merrell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_34
 	mother = Merrell_rs_34
- 
+
 	8281.1.1 = { birth = yes }
 }
-Merrell_46 = { 
+Merrell_46 = {
 	name = Emrick
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_34
 	mother = Merrell_rs_34
- 
+
 	8283.1.1 = { birth = yes }
 }
 ### Issue of Viserys
-Merrell_47 = { 
+Merrell_47 = {
 	name = Olyvia
 	dynasty = dynn_Merrell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_35
 	mother = Merrell_rs_35
- 
+
 	8285.1.1 = { birth = yes }
 }
 ### Issue of Gerion
-Merrell_48 = { 
+Merrell_48 = {
 	name = Reynard
 	dynasty = dynn_Merrell
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_43
 	mother = Merrell_rs_43
- 
+
 	8298.1.1 = { birth = yes }
 }
-Merrell_49 = { 
+Merrell_49 = {
 	name = Isidora
 	dynasty = dynn_Merrell
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Merrell_43
 	mother = Merrell_rs_43
- 
+
 	8299.1.1 = { birth = yes }
 }
 
@@ -13469,19 +13476,19 @@ Merrell_49 = {
 ############################
 ###
 ###
-Lanster_2 = { 
+Lanster_2 = {
 	name = Eston
 	dynasty = dynn_Lanster
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_3
 	mother = Lanster_rs_3
- 
+
 	8230.1.1 = { birth = yes }
 	8249.1.1 = { trait = knight }
-	8255.1.1 = { add_spouse = Lanster_rs_2 } 
+	8255.1.1 = { add_spouse = Lanster_rs_2 }
 	8279.1.1 = { death = yes }
 }
 Lanster_rs_2 = {
@@ -13494,35 +13501,35 @@ Lanster_rs_2 = {
 	8230.1.1 = { birth = yes }
 	8279.1.1 = { death = yes }
 }
-Lanster_25 = { 
+Lanster_25 = {
 	name = Victoria
 	dynasty = dynn_Lanster
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_3
 	mother = Lanster_rs_3
- 
+
 	8235.1.1 = { birth = yes }
 }
 ### Issue of Eston
-Lanster_1 = { 
+Lanster_1 = {
 	name = Tyrek # a lord
 	dynasty = dynn_Lanster
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_2
 	mother = Lanster_rs_2
- 
+
 	trait = twin
 
 	8256.1.1 = { birth = yes }
 	8272.1.1 = { trait = knight }
-	8279.1.1 = { add_spouse = Lanster_rs_1 } 
+	8279.1.1 = { add_spouse = Lanster_rs_1 }
 }
 Lanster_rs_1 = {
 	name = Tysha
@@ -13533,47 +13540,47 @@ Lanster_rs_1 = {
 
 	8256.1.1 = { birth = yes }
 }
-Lanster_22 = { 
+Lanster_22 = {
 	name = Alise
 	dynasty = dynn_Lanster
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_2
 	mother = Lanster_rs_2
- 
+
 	trait = twin
 
 	8256.1.1 = { birth = yes }
 }
-Lanster_23 = { 
+Lanster_23 = {
 	name = Maya
 	dynasty = dynn_Lanster
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_2
 	mother = Lanster_rs_2
- 
+
 	8258.1.1 = { birth = yes }
 }
-Lanster_24 = { 
+Lanster_24 = {
 	name = Tyland
 	dynasty = dynn_Lanster
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_2
 	mother = Lanster_rs_2
- 
+
 	8263.1.1 = { birth = yes }
 	8280.1.1 = { trait = knight }
-	8293.1.1 = { add_spouse = Lanster_rs_24 } 
+	8293.1.1 = { add_spouse = Lanster_rs_24 }
 }
 Lanster_rs_24 = {
 	name = Sybell
@@ -13585,96 +13592,96 @@ Lanster_rs_24 = {
 	8263.1.1 = { birth = yes }
 }
 ### Issue of Tyland
-Lanster_31 = { 
+Lanster_31 = {
 	name = Presford
 	dynasty = dynn_Lanster
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_24
 	mother = Lanster_rs_24
- 
+
 	8294.1.1 = { birth = yes }
 }
-Lanster_32 = { 
+Lanster_32 = {
 	name = Tysha
 	dynasty = dynn_Lanster
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_24
 	mother = Lanster_rs_24
- 
+
 	8295.1.1 = { birth = yes }
 }
-Lanster_33 = { 
+Lanster_33 = {
 	name = Lelia
 	dynasty = dynn_Lanster
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_24
 	mother = Lanster_rs_24
- 
+
 	8297.1.1 = { birth = yes }
 }
 ### Issue of Tyrek
-Lanster_34 = { 
+Lanster_34 = {
 	name = Briony
 	dynasty = dynn_Lanster
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_1
 	mother = Lanster_rs_1
- 
+
 	8280.1.1 = { birth = yes }
 }
-Lanster_35 = { 
+Lanster_35 = {
 	name = Joss
 	dynasty = dynn_Lanster
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_1
 	mother = Lanster_rs_1
- 
+
 	8281.1.1 = { birth = yes }
 }
-Lanster_36 = { 
+Lanster_36 = {
 	name = Ermond
 	dynasty = dynn_Lanster
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_1
 	mother = Lanster_rs_1
- 
+
 	8283.1.1 = { birth = yes }
 }
 ### Issue of Norwin
-Lanster_37 = { 
+Lanster_37 = {
 	name = Atheon
 	dynasty = dynn_Lanster
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_28
 	mother = Lanster_rs_28
- 
+
 	8213.1.1 = { birth = yes }
 	8230.1.1 = { trait = knight }
-	8232.1.1 = { add_spouse = Lanster_rs_37 } 
+	8232.1.1 = { add_spouse = Lanster_rs_37 }
 	8270.1.1 = { death = yes }
 }
 Lanster_rs_37 = {
@@ -13687,47 +13694,47 @@ Lanster_rs_37 = {
 	8213.1.1 = { birth = yes }
 	8270.1.1 = { death = yes }
 }
-Lanster_38 = { 
+Lanster_38 = {
 	name = Nora
 	dynasty = dynn_Lanster
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_28
 	mother = Lanster_rs_28
- 
+
 	8214.1.1 = { birth = yes }
 	8248.1.1 = { death = yes }
 }
-Lanster_40 = { 
+Lanster_40 = {
 	name = Darlessa
 	dynasty = dynn_Lanster
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_28
 	mother = Lanster_rs_28
- 
+
 	8216.1.1 = { birth = yes }
 	8282.1.1 = { death = yes }
 }
-Lanster_41 = { 
+Lanster_41 = {
 	name = Lorent
 	dynasty = dynn_Lanster
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_28
 	mother = Lanster_rs_28
- 
+
 	8217.1.1 = { birth = yes }
 	8233.1.1 = { trait = knight }
-	8247.1.1 = { add_spouse = Lanster_rs_41 } 
+	8247.1.1 = { add_spouse = Lanster_rs_41 }
 	8276.1.1 = { death = yes }
 }
 Lanster_rs_41 = {
@@ -13741,44 +13748,44 @@ Lanster_rs_41 = {
 	8276.1.1 = { death = yes }
 }
 ### Issue of Atheon
-Lanster_42 = { 
+Lanster_42 = {
 	name = Tyran
 	dynasty = dynn_Lanster
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_37
 	mother = Lanster_rs_37
- 
+
 	8233.1.1 = { birth = yes }
-	8263.1.1 = { death = yes }
+	8267.1.1 = { death = yes }
 }
 ### Issue of Lorent
-Lanster_43 = { 
+Lanster_43 = {
 	name = Joanne
 	dynasty = dynn_Lanster
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_41
 	mother = Lanster_rs_41
- 
+
 	8247.1.1 = { birth = yes }
 }
-Lanster_44 = { 
+Lanster_44 = {
 	name = Arnessa
 	dynasty = dynn_Lanster
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Lanster_41
 	mother = Lanster_rs_41
- 
+
 	8248.1.1 = { birth = yes }
 }
 ### Issue of Tyran
@@ -14261,10 +14268,10 @@ Dulver_hh_3 = {
 			}
 		}
 	}
-	8293.1.1 = { 
+	8293.1.1 = {
 		trait = incapable
-		employer = Dulver_2 # Harrold Dulver 
-	} 
+		employer = Dulver_2 # Harrold Dulver
+	}
 	8294.1.1 = { death = { death_reason = death_incapable } }
 }
 Dulver_hh_4 = {
@@ -14285,9 +14292,9 @@ Dulver_hh_4 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
 	}
-	8265.1.1 = { 
+	8265.1.1 = {
 		trait = one_legged
-		give_nickname = nick_littlefoot 
+		give_nickname = nick_littlefoot
 	}
 	8268.1.1 = { employer = Dulver_2 } # Harrold Dulver
 }
@@ -15404,6 +15411,7 @@ Lugus_54 = {
 
 	8227.1.1 = { birth = yes }
 	8245.1.1 = { trait = knight }
+	8249.1.1 = { add_spouse = Lugus_rs_54 }
 	8253.1.1 = {
 		death = {
 			death_reason = death_murder_known
@@ -15543,19 +15551,19 @@ Lugus_hh_3 = {
 ############################
 ###
 ###
-Avery_3 = { 
+Avery_3 = {
 	name = Dunsen # a lord
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_4
 	mother = Avery_rs_4
- 
+
 	8223.1.1 = { birth = yes }
 	8241.1.1 = { trait = knight }
-	8244.1.1 = { add_spouse = Avery_rs_3 } 
+	8244.1.1 = { add_spouse = Avery_rs_3 }
 	8273.1.1 = { death = yes }
 }
 Avery_rs_3 = {
@@ -15569,19 +15577,19 @@ Avery_rs_3 = {
 	8273.1.1 = { death = yes }
 }
 ### Issue of Dunsen
-Avery_2 = { 
+Avery_2 = {
 	name = Erwin
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_3
 	mother = Avery_rs_3
- 
+
 	8245.1.1 = { birth = yes }
 	8265.1.1 = { trait = knight }
-	8269.1.1 = { add_spouse = Avery_rs_2 } 
+	8269.1.1 = { add_spouse = Avery_rs_2 }
 	8276.1.1 = { death = yes }
 }
 Avery_rs_2 = {
@@ -15594,19 +15602,19 @@ Avery_rs_2 = {
 	8245.1.1 = { birth = yes }
 	8276.1.1 = { death = yes }
 }
-Avery_22 = { 
+Avery_22 = {
 	name = Romond
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_3
 	mother = Avery_rs_3
- 
+
 	8246.1.1 = { birth = yes }
 	8268.1.1 = { trait = knight }
-	8268.1.1 = { add_spouse = Avery_rs_22 } 
+	8268.1.1 = { add_spouse = Avery_rs_22 }
 }
 Avery_rs_22 = {
 	name = Amfrya
@@ -15618,18 +15626,18 @@ Avery_rs_22 = {
 	8246.1.1 = { birth = yes }
 }
 ### Issue of Erwin
-Avery_1 = { 
+Avery_1 = {
 	name = Harrold # a lord
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_2
 	mother = Avery_rs_2
- 
+
 	8270.1.1 = { birth = yes }
-	8287.1.1 = { add_spouse = Avery_rs_1 } 
+	8287.1.1 = { add_spouse = Avery_rs_1 }
 	8292.1.1 = { trait = knight }
 }
 Avery_rs_1 = {
@@ -15641,71 +15649,71 @@ Avery_rs_1 = {
 
 	8270.1.1 = { birth = yes }
 }
-Avery_21 = { 
+Avery_21 = {
 	name = Andron
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_2
 	mother = Avery_rs_2
- 
+
 	8271.1.1 = { birth = yes }
 	8293.1.1 = { trait = knight }
 }
 ### Issue of Harrold
-Avery_26 = { 
+Avery_26 = {
 	name = Tyshara
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_1
 	mother = Avery_rs_1
- 
+
 	8288.1.1 = { birth = yes }
 }
-Avery_27 = { 
+Avery_27 = {
 	name = Godwyn
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_1
 	mother = Avery_rs_1
- 
+
 	8289.1.1 = { birth = yes }
 }
-Avery_28 = { 
+Avery_28 = {
 	name = Erwin
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_1
 	mother = Avery_rs_1
- 
+
 	8290.1.1 = { birth = yes }
 }
 ### Issue of Romond
-Avery_29 = { 
+Avery_29 = {
 	name = Albin
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_22
 	mother = Avery_rs_22
- 
+
 	8269.1.1 = { birth = yes }
 	8289.1.1 = { trait = knight }
-	8294.1.1 = { add_spouse = Avery_rs_29 } 
+	8294.1.1 = { add_spouse = Avery_rs_29 }
 }
 Avery_rs_29 = {
 	name = Lelia
@@ -15716,19 +15724,19 @@ Avery_rs_29 = {
 
 	8269.1.1 = { birth = yes }
 }
-Avery_30 = { 
+Avery_30 = {
 	name = Selmond
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_22
 	mother = Avery_rs_22
- 
+
 	8270.1.1 = { birth = yes }
 	8287.1.1 = { trait = knight }
-	8291.1.1 = { add_spouse = Avery_rs_30 } 
+	8291.1.1 = { add_spouse = Avery_rs_30 }
 }
 Avery_rs_30 = {
 	name = Gisella
@@ -15739,19 +15747,19 @@ Avery_rs_30 = {
 
 	8270.1.1 = { birth = yes }
 }
-Avery_31 = { 
+Avery_31 = {
 	name = Tyburn
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_22
 	mother = Avery_rs_22
- 
+
 	8271.1.1 = { birth = yes }
 	8293.1.1 = { trait = knight }
-	8298.1.1 = { add_spouse = Avery_rs_31 } 
+	8298.1.1 = { add_spouse = Avery_rs_31 }
 }
 Avery_rs_31 = {
 	name = Orena
@@ -15763,154 +15771,154 @@ Avery_rs_31 = {
 	8271.1.1 = { birth = yes }
 }
 ### Issue of Albin
-Avery_35 = { 
+Avery_35 = {
 	name = Kyra
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_29
 	mother = Avery_rs_29
- 
+
 	8294.1.1 = { birth = yes }
 }
-Avery_36 = { 
+Avery_36 = {
 	name = Bella
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_29
 	mother = Avery_rs_29
- 
+
 	8296.1.1 = { birth = yes }
 }
-Avery_37 = { 
+Avery_37 = {
 	name = Cynna
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_29
 	mother = Avery_rs_29
- 
+
 	8297.1.1 = { birth = yes }
 }
 ### Issue of Selmond
-Avery_38 = { 
+Avery_38 = {
 	name = Chiswyck
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_30
 	mother = Avery_rs_30
- 
+
 	8292.1.1 = { birth = yes }
 }
-Avery_39 = { 
+Avery_39 = {
 	name = Adela
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_30
 	mother = Avery_rs_30
- 
+
 	8293.1.1 = { birth = yes }
 }
-Avery_40 = { 
+Avery_40 = {
 	name = Tyanne
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_30
 	mother = Avery_rs_30
- 
+
 	8295.1.1 = { birth = yes }
 }
 ### Issue of Tyburn
-Avery_41 = { 
+Avery_41 = {
 	name = Elana
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_31
 	mother = Avery_rs_31
- 
+
 	8298.1.1 = { birth = yes }
 }
-Avery_42 = { 
+Avery_42 = {
 	name = Kathryn
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_31
 	mother = Avery_rs_31
- 
+
 	8299.1.1 = { birth = yes }
 }
 
 ### Branch of Adrian
 ############################
-Avery_32 = { 
+Avery_32 = {
 	name = Arwen
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_25
 	mother = Avery_rs_25
- 
+
 	8219.1.1 = { birth = yes }
 	8268.1.1 = { death = yes }
 }
-Avery_33 = { 
+Avery_33 = {
 	name = Jonalla
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_25
 	mother = Avery_rs_25
- 
+
 	8221.1.1 = { birth = yes }
 	8279.1.1 = { death = yes }
 }
-Avery_34 = { 
+Avery_34 = {
 	name = Tommen
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_25
 	mother = Avery_rs_25
- 
+
 	8222.1.1 = { birth = yes }
-	8241.1.1 = { add_spouse = Avery_rs_34 } 
+	8241.1.1 = { add_spouse = Avery_rs_34 }
 	8244.1.1 = { trait = knight }
 	8271.1.1 = { death = yes }
 }
@@ -15925,19 +15933,19 @@ Avery_rs_34 = {
 	8271.1.1 = { death = yes }
 }
 ### Issue of Tommen
-Avery_43 = { 
+Avery_43 = {
 	name = Berion
 	dynasty = dynn_Avery
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_34
 	mother = Avery_rs_34
- 
+
 	8242.1.1 = { birth = yes }
 	8259.1.1 = { trait = knight }
-	8265.1.1 = { add_spouse = Avery_rs_43 } 
+	8265.1.1 = { add_spouse = Avery_rs_43 }
 	8270.1.1 = { death = yes }
 }
 Avery_rs_43 = {
@@ -15950,72 +15958,72 @@ Avery_rs_43 = {
 	8242.1.1 = { birth = yes }
 	8270.1.1 = { death = yes }
 }
-Avery_44 = { 
+Avery_44 = {
 	name = Nalla
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_34
 	mother = Avery_rs_34
- 
+
 	8243.1.1 = { birth = yes }
 	8280.1.1 = { death = yes }
 }
-Avery_45 = { 
+Avery_45 = {
 	name = Emma
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_34
 	mother = Avery_rs_34
- 
+
 	8244.1.1 = { birth = yes }
 }
 ### Issue of Berion
-Avery_46 = { 
+Avery_46 = {
 	name = Domella
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_43
 	mother = Avery_rs_43
- 
+
 	8265.1.1 = { birth = yes }
 	8285.1.1 = { death = yes }
 }
-Avery_47 = { 
+Avery_47 = {
 	name = Elle
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_43
 	mother = Avery_rs_43
- 
+
 	8267.1.1 = { birth = yes }
 }
-Avery_48 = { 
+Avery_48 = {
 	name = Ryone
 	dynasty = dynn_Avery
 	female = yes
- 
+
 	religion = the_seven_main
 	culture = westerman
- 
+
 	father = Avery_43
 	mother = Avery_rs_43
- 
+
 	8269.1.1 = { birth = yes }
 }
 

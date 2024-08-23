@@ -2,11 +2,11 @@
 # History database id:Baratheon_3
 bookmark_300_stannis_baratheon={
 	type=male
-	id=28610
+	id=48840
 	age=0.360000
-	genes={ 		hair_color={ 20 249 0 244 }
+	genes={ 		hair_color={ 0 244 0 244 }
  		skin_color={ 10 20 73 42 }
- 		eye_color={ 229 127 219 45 }
+ 		eye_color={ 233 199 219 45 }
  		gene_chin_forward={ "chin_forward_pos" 173 "chin_forward_pos" 127 }
  		gene_chin_height={ "chin_height_neg" 132 "chin_height_neg" 154 }
  		gene_chin_width={ "chin_width_neg" 71 "chin_width_neg" 96 }
@@ -95,19 +95,58 @@ bookmark_300_stannis_baratheon={
  		expression_forehead_wrinkles={ "forehead_wrinkles_02" 188 "forehead_wrinkles_01" 131 }
  		expression_other={ "nose_wrinkles_01" 0 "nose_wrinkles_01" 134 }
  		complexion={ "complexion_9" 0 "complexion_8" 72 }
- 		gene_height={ "normal_height" 162 "normal_height" 150 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 142 "body_fat_head_fat_full" 131 }
- 		gene_bs_body_shape={ "body_shape_average" 153 "body_shape_average" 0 }
+ 		gene_height={ "normal_height" 150 "normal_height" 150 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 120 "body_fat_head_fat_full" 131 }
+ 		gene_bs_body_shape={ "body_shape_average" 137 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 22 "bust_shape_3_full" 165 }
  		gene_age={ "old_2" 218 "old_1" 25 }
  		gene_eyebrows_shape={ "avg_spacing_high_thickness" 255 "avg_spacing_low_thickness" 201 }
  		gene_eyebrows_fullness={ "layer_2_avg_thickness" 255 "layer_2_avg_thickness" 236 }
  		gene_body_hair={ "body_hair_dense_low_stubble" 83 "body_hair_sparse_low_stubble" 212 }
  		gene_hair_type={ "hair_wavy" 175 "hair_wavy" 175 }
- 		gene_baldness={ "no_baldness" 255 "no_baldness" 255 }
+ 		gene_baldness={ "male_pattern_baldness" 55 "male_pattern_baldness" 55 }
  		eye_accessory={ "normal_eyes" 255 "normal_eyes" 255 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
  		eyelashes_accessory={ "normal_eyelashes" 255 "normal_eyelashes" 255 }
+ 		gene_dragon={ "human_body" 0 "human_body" 0 }
+ 		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
+ 		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
+ 		gene_dragon_aging={ "non_dragon_aging" 127 "non_dragon_aging" 127 }
+ 		gene_camera_zoom={ "no_camera_zoom" 0 "no_camera_zoom" 0 }
+ 		gene_dragon_size={ "non_dragon_size" 127 "non_dragon_size" 127 }
+ 		gene_dragon_skin_hue={ "dragon_skin_hue" 127 "dragon_skin_hue" 127 }
+ 		gene_dragon_skin_value={ "dragon_skin_value" 127 "dragon_skin_value" 127 }
+ 		gene_dragon_highlight_hue={ "dragon_highlight_hue" 127 "dragon_highlight_hue" 127 }
+ 		gene_dragon_highlight_value={ "dragon_highlight_value" 127 "dragon_highlight_value" 127 }
+ 		gene_dragon_eye_hue={ "dragon_eye_hue" 127 "dragon_eye_hue" 127 }
+ 		gene_dragon_eye_value={ "dragon_eye_value" 127 "dragon_eye_value" 127 }
+ 		gene_dragon_horn_hue={ "dragon_horn_hue" 127 "dragon_horn_hue" 127 }
+ 		gene_dragon_horn_value={ "dragon_horn_value" 127 "dragon_horn_value" 127 }
+ 		gene_dragon_brow_width={ "" 127 "" 127 }
+ 		gene_dragon_cheek_width={ "" 127 "" 127 }
+ 		gene_dragon_chin_profile={ "" 127 "" 127 }
+ 		gene_dragon_crest_depth={ "" 127 "" 127 }
+ 		gene_dragon_head_roundness={ "" 127 "" 127 }
+ 		gene_dragon_horns_eyebrow_length={ "" 127 "" 127 }
+ 		gene_dragon_main_horn_shape={ "" 127 "" 127 }
+ 		gene_dragon_jaw_width={ "" 127 "" 127 }
+ 		gene_dragon_lower_jaw_height={ "" 127 "" 127 }
+ 		gene_dragon_lower_jaw_width={ "" 127 "" 127 }
+ 		gene_dragon_old_neck={ "" 127 "" 127 }
+ 		gene_dragon_outer_brow_height={ "" 127 "" 127 }
+ 		gene_dragon_snout_height={ "" 127 "" 127 }
+ 		gene_dragon_snout_length={ "" 127 "" 127 }
+ 		gene_dragon_snout_profile={ "" 127 "" 127 }
+ 		gene_dragon_snout_width={ "" 127 "" 127 }
+ 		gene_dragon_upper_jaw_width={ "" 127 "" 127 }
+ 		gene_dragon_back_spike_size={ "" 127 "" 127 }
+ 		gene_dragon_center_fin_size={ "" 127 "" 127 }
+ 		gene_dragon_horns_eyebrow={ "" 127 "" 127 }
+ 		gene_dragon_neck_spike_size={ "" 127 "" 127 }
+ 		gene_dragon_side_fin_size={ "" 127 "" 127 }
+ 		gene_dragon_snout_end_width={ "" 127 "" 127 }
+ 		gene_dragon_neck_length={ "" 127 "" 127 }
+ 		gene_dragon_tail_length={ "" 127 "" 127 }
  		skin_color_saturation={ "skin_color_saturation" 127 "skin_color_saturation" 127 }
  		eye_color_saturation={ "eye_color_saturation" 112 "eye_color_saturation" 118 }
  		gene_bs_eye_height_inside={ "eye_height_inside_pos" 25 "eye_height_inside_pos" 25 }
@@ -133,6 +172,7 @@ bookmark_300_stannis_baratheon={
  		gene_eyebrow_inner_width={ "eyebrow_inner_width_min" 146 "eyebrow_inner_width_min" 72 }
  		gene_bs_eye_lower_lid_size={ "eye_lower_lid_size" 0 "eye_lower_lid_size" 0 }
  		gene_bs_eye_shape={ "eye_shape_01" 0 "eye_shape_01" 0 }
+ 		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "vanilla_hair_aging" 0 "vanilla_hair_aging" 0 }
  		pose={ "" 255 "" 0 }
  		beards={ "no_beard" 0 "no_beard" 0 }
@@ -140,6 +180,7 @@ bookmark_300_stannis_baratheon={
  		hairstyles={ "all_hairstyles" 35 "all_hairstyles" 0 }
  		legwear={ "agot_boots_legwear" 255 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
+ 		gene_shrink_agot={ "shrink_bodice" 255 "shrink_bodice" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
@@ -150,8 +191,7 @@ bookmark_300_stannis_baratheon={
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		clothes={ "agot_historic_characters" 167 "most_clothes" 0 }
  		headgear={ "agot_crowns" 51 "no_headgear" 0 }
- 		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
-		props_right={ "marshal_swords" 255 "no_props" 0 }
+ 		gene_balding_hair_effect={ "baldness_stage_1" 255 "no_baldness" 0 }
  }
 	entity={ 3942081117 3942081117 }
 	tags={ {
@@ -172,6 +212,10 @@ bookmark_300_stannis_baratheon={
 		}
  {
 			hash=1563190100
+			invert=no
+		}
+ {
+			hash=3500802322
 			invert=no
 		}
  }

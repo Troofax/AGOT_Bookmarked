@@ -797,18 +797,13 @@ Stark_8 = {
 
 	8286.12.5 = {
 		birth = yes
-		# AGOT Bookmarked Modified
-		# add_character_flag = has_scripted_appearance
-		# add_character_flag = canon_status_canon
-		# add_character_flag = sexuality_ensure_heterosexual
-		effect = {
-			add_character_flag = has_scripted_appearance
-			add_character_flag = canon_status_canon
-			add_character_flag = sexuality_ensure_heterosexual
-			add_character_flag = do_not_assign_strong_seed
-			make_trait_inactive = auburn_hair
-			make_trait_inactive = blue_eyes
-		}
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
+		# AGOT Bookmarked Added
+		add_character_flag = do_not_assign_strong_seed
+		make_trait_inactive = auburn_hair
+		make_trait_inactive = blue_eyes
 	}
 	8292.12.12 = {
 		trait = content
@@ -965,6 +960,7 @@ Stark_9 = {
 		effect = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Tully_hh_4 } # Septa Mordane
 		}
+		trait = inquisitive
 	}
 	8295.8.1 = {
 		trait = wrathful
@@ -1092,18 +1088,17 @@ Stark_10 = {
 
 	8290.7.7 = {
 		birth = yes
-		# AGOT Bookmarked Modified
-		# add_character_flag = has_scripted_appearance
-		# add_character_flag = canon_status_canon
-		effect = {
-			add_character_flag = has_scripted_appearance
-			add_character_flag = canon_status_canon
-			add_character_flag = do_not_assign_strong_seed
-			make_trait_inactive = auburn_hair
-			make_trait_inactive = blue_eyes
-		}
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_canon
+		# AGOT Bookmarked Added
+		add_character_flag = do_not_assign_strong_seed
+		make_trait_inactive = auburn_hair
+		make_trait_inactive = blue_eyes
 	}
-	8297.8.1 = { trait = brave }
+	8297.8.1 = { 
+		trait = brave
+		trait = inquisitive 
+	}
 	# 8298.3.1 = { trait = direwolf } # Summer # AGOT TODO trait
 	8298.5.8 = {
 		trait = crippled
@@ -1212,16 +1207,12 @@ Stark_11 = {
 
 	8295.1.1 = {
 		birth = yes
-		# AGOT Bookmarked Modified
-		# add_character_flag = has_scripted_appearance
-		# add_character_flag = canon_status_canon
-		effect = {
-			add_character_flag = has_scripted_appearance
-			add_character_flag = canon_status_canon
-			add_character_flag = do_not_assign_strong_seed
-			make_trait_inactive = auburn_hair
-			make_trait_inactive = blue_eyes
-		}
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_canon
+		# AGOT Bookmarked Added
+		add_character_flag = do_not_assign_strong_seed
+		make_trait_inactive = auburn_hair
+		make_trait_inactive = blue_eyes
 	}
 	8298.3.1 = {
 		# trait = direwolf # AGOT TODO trait
@@ -4537,11 +4528,11 @@ Karstark_60 = {
 	religion = old_gods_south
 	culture = northman
 
-	father = Karstark_55 
+	father = Karstark_55
 	mother = Karstark_rs_55
 	
 	8235.1.1 = { birth = yes }
-	8262.1.1 = { add_spouse = Karstark_rs_60 }
+	8252.1.1 = { add_spouse = Karstark_rs_60 }
 	8288.1.1 = { death = yes }
 }
 Karstark_rs_60 = {
@@ -4549,7 +4540,7 @@ Karstark_rs_60 = {
 	female = yes
 
 	religion = old_gods_south
-	culture = northman 
+	culture = northman
 	
 	8235.1.1 = { birth = yes }
 	8288.1.1 = { death = yes }
@@ -4563,7 +4554,7 @@ Karstark_61 = {
 	religion = old_gods_south
 	culture = northman
 
-	father = Karstark_60 
+	father = Karstark_60
 	mother = Karstark_rs_60
 	
 	8253.1.1 = {
@@ -4578,7 +4569,7 @@ Karstark_62 = {
 	religion = old_gods_south
 	culture = northman
 
-	father = Karstark_60 
+	father = Karstark_60
 	mother = Karstark_rs_60
 
 	trait = education_stewardship_2
@@ -5711,6 +5702,7 @@ Cassel_28 = {
 Cassel_1 = {
 	name = Brandon # a lord
 	dynasty_house = house_Cassel
+	dna = Cassel_1
 
 	religion = old_gods_south
 	culture = northman
@@ -5773,6 +5765,7 @@ Cassel_2 = {
 Cassel_rs_2 = {
 	name = Gilliane
 	female = yes
+	dna = Cassel_rs_2
 
 	trait = education_diplomacy_1
 
@@ -5868,6 +5861,7 @@ Cassel_rs_5 = {
 Cassel_rs_4 = {
 	name = Berena # Mentioned
 	female = yes
+	dna = Cassel_rs_4
 
 	religion = old_gods_south
 	culture = northman
@@ -9092,42 +9086,6 @@ Greenleaf_14 = {
 	}
 	8240.1.1 = { death = yes }
 }
-Greenleaf_22 = {
-	name = Brandon
-	dynasty = dynn_Greenleaf
-
-	religion = old_gods_south
-	culture = northman
-
-	father = Greenleaf_13
-
-	8232.1.1 = { birth = yes }
-}
-### Issue of Brandon
-Greenleaf_20 = {
-	name = Harrion
-	dynasty = dynn_Greenleaf
-
-	religion = old_gods_south
-	culture = northman
-
-	father = Greenleaf_22
-
-	8262.1.1 = { birth = yes }
-	8300.1.1 = { death = yes }
-}
-Greenleaf_21 = {
-	name = Ryam
-	dynasty = dynn_Greenleaf
-
-	religion = old_gods_south
-	culture = northman
-
-	father = Greenleaf_22
-
-	8263.1.1 = { birth = yes }
-	8300.1.1 = { death = yes }
-}
 ### Issue of Mickon
 Greenleaf_15 = {
 	name = Marya # Semi-Canon, married Finn Umber
@@ -9156,6 +9114,42 @@ Greenleaf_16 = {
 
 	8231.1.1 = { birth = yes }
 	8298.1.1 = { death = yes }
+}
+Greenleaf_22 = {
+	name = Brandon
+	dynasty = dynn_Greenleaf
+
+	religion = old_gods_south
+	culture = northman
+
+	father = Greenleaf_14
+
+	8232.1.1 = { birth = yes }
+}
+### Issue of Brandon
+Greenleaf_20 = {
+	name = Harrion
+	dynasty = dynn_Greenleaf
+
+	religion = old_gods_south
+	culture = northman
+
+	father = Greenleaf_22
+
+	8262.1.1 = { birth = yes }
+	8300.1.1 = { death = yes }
+}
+Greenleaf_21 = {
+	name = Ryam
+	dynasty = dynn_Greenleaf
+
+	religion = old_gods_south
+	culture = northman
+
+	father = Greenleaf_22
+
+	8263.1.1 = { birth = yes }
+	8300.1.1 = { death = yes }
 }
 ### Issue of Galbart
 Greenleaf_17 = {
@@ -9219,6 +9213,37 @@ Blackbrow_16 = {
 	}
 	8244.1.1 = { add_spouse = Umber_22 } # Emilia Umber
 	8300.1.1 = { death = yes }
+}
+Blackbrow_15 = {
+	name = Sansa
+	dynasty = dynn_Blackbrow
+	female = yes
+
+	religion = old_gods_south
+	culture = northman
+
+	father = Blackbrow_14
+	mother = Blackbrow_rs_14
+
+	trait = twin
+	
+	8230.1.1 = { birth = yes }
+	8290.1.1 = { death = yes }
+}
+Blackbrow_20 = {
+	name = Jon
+	dynasty = dynn_Blackbrow
+
+	religion = old_gods_south
+	culture = northman
+
+	father = Blackbrow_14
+	mother = Blackbrow_rs_14
+
+	trait = twin
+
+	8230.1.1 = { birth = yes }
+	8290.1.1 = { death = yes }
 }
 ### Issue of Jore
 Blackbrow_17 = {
@@ -9433,9 +9458,9 @@ Orlych_45 = {
 	father = Orlych_63
 	mother = Orlych_rs_63
 
-	8247.1.1 = { 
+	8247.1.1 = {
 		birth = yes
-		add_character_flag = canon_status_semicanon 
+		add_character_flag = canon_status_semicanon
 	}
 	8271.1.1 = { add_spouse = Karstark_61 } # Mercena Karstark
 }
@@ -9566,8 +9591,8 @@ Orlych_50 = {
 	father = Orlych_45
 	mother = Karstark_61
 
-	8278.1.1 = { 
-		birth = yes 
+	8278.1.1 = {
+		birth = yes
 		add_character_flag = canon_status_semicanon
 	}
 	8298.1.1 = { add_spouse = Orlych_rs_50 }
@@ -9593,8 +9618,8 @@ Orlych_69 = {
 	father = Orlych_45
 	mother = Karstark_61
 
-	8283.1.1 = { 
-		birth = yes 
+	8283.1.1 = {
+		birth = yes
 		add_character_flag = canon_status_semicanon
 	}
 }
@@ -9698,7 +9723,7 @@ Orlych_53 = {
 	mother = Orlych_rs_48
 
 	8272.1.1 = { birth = yes }
-	8292.1.1 = { add_spouse = Orlych_rs_53 } 
+	8292.1.1 = { add_spouse = Orlych_rs_53 }
 }
 Orlych_rs_53 = {
 	name = Marya
@@ -9746,11 +9771,11 @@ Orlych_hh_1 = {
 	
 	trait = education_stewardship_2
 
-	8265.1.1 = { 
+	8265.1.1 = {
 		birth = yes
-		add_character_flag = canon_status_semicanon 
+		add_character_flag = canon_status_semicanon
 	}
-	8289.1.1 = { 
+	8289.1.1 = {
 		employer = Orlych_45 # Brandon Orlych
 		effect = { # Master of Hunt in Grey Cliff Point
 			agot_appoint_as_court_position_for_castle_history_effect = {
@@ -9768,13 +9793,13 @@ Orlych_hh_2 = {
 	culture = riverlander
 
 	trait = bastard
-	give_nickname = nick_rivers 
+	give_nickname = nick_rivers
 	
 	trait = education_martial_2
 
-	8269.1.1 = { 
+	8269.1.1 = {
 		birth = yes
-		add_character_flag = canon_status_semicanon 
+		add_character_flag = canon_status_semicanon
 	}
 	8285.1.1 = { trait = knight }
 	8290.1.1 = { employer = Orlych_45 } # Brandon Orlych
@@ -9805,7 +9830,7 @@ Dustin_46 = {
 	8281.1.1 = { death = yes }
 }
 Dustin_47 = {
-	name = Jorah # Mentioned, 
+	name = Jorah # Mentioned,
 	dynasty = dynn_Dustin
 	dna = Dustin_47
 
@@ -9830,7 +9855,7 @@ Dustin_47 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
-	8258.1.1 = { 
+	8258.1.1 = {
 		trait = education_martial_prowess_3 # famed for his skill with axe
 		trait = lifestyle_blademaster
 	}
@@ -10893,7 +10918,7 @@ Stout_2 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
-	8274.1.1 = { add_spouse = Stout_rs_1 }
+	8270.1.1 = { add_spouse = Stout_rs_1 }
 	8283.1.1 = {
 		trait = one_handed
 		trait = maimed
@@ -11783,7 +11808,7 @@ Glover_7 = {
 		}
 	}
 }
-### Issue of Gregor 
+### Issue of Gregor
 Glover_32 = {
 	name = Gawen # Semi-Canon
 	dynasty = dynn_Glover
@@ -11793,8 +11818,8 @@ Glover_32 = {
 
 	father = Glover_31
 
-	8268.1.1 = { 
-		birth = yes 
+	8268.1.1 = {
+		birth = yes
 		add_character_flag = canon_status_semicanon
 	}
 }
@@ -12123,7 +12148,7 @@ Forrester_2 = {
 		trait = knight
 		give_nickname = nick_the_good
 	}
-	8279.1.1 = { add_spouse = Branfield_1 } # Elissa Branfield
+	8272.1.1 = { add_spouse = Branfield_1 } # Elissa Branfield
 	8299.12.15 = {
 		death = {
 			death_reason = death_bloody_wedding # The Red Wedding
@@ -12487,7 +12512,7 @@ Forrester_33 = {
 	8274.1.1 = { add_spouse = Forrester_rs_33 }
 }
 Forrester_rs_33 = {
-	name = Frella 
+	name = Frella
 	female = yes
 
 	religion = old_gods_south
@@ -12519,9 +12544,9 @@ Forrester_35 = {
 	father = Forrester_33
 	mother = Forrester_rs_33
 
-	8278.1.1 = { 
+	8278.1.1 = {
 		birth = yes
-		add_character_flag = canon_status_semicanon 
+		add_character_flag = canon_status_semicanon
 	}
 }
 
@@ -12559,7 +12584,7 @@ Whitehill_1 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
-	8273.1.1 = { add_spouse = Whitehill_rs_1 }
+	8270.1.1 = { add_spouse = Whitehill_rs_1 }
 	8300.1.15 = {
 		effect = {
 			add_pressed_claim = title:c_ironrath
@@ -12894,11 +12919,11 @@ Woods_29 = {
 		trait = knight
 		religion = the_seven_main
 	}
-	8297.3.12 = { 
-		death = { 
+	8297.3.12 = {
+		death = {
 			death_reason = death_poison # Tears of Lys
 			killer = Lugus_8 # Orten Lugus
-		} 
+		}
 	}
 }
 ### Issue of Barba, first cousins to Cellador
@@ -13219,6 +13244,7 @@ Bole_7 = {
 	mother = Bole_2
 
 	8251.1.1 = { birth = yes }
+	8269.1.1 = { add_matrilineal_spouse = Bole_rs_6 }
 }
 Bole_rs_6 = {
 	name = Tomard
@@ -13227,7 +13253,6 @@ Bole_rs_6 = {
 	culture = wolfswood_clansman
 
 	8251.1.1 = { birth = yes }
-	8269.1.1 = { add_spouse = Bole_7 }
 }
 ### Issue of Porther
 Bole_8 = {
@@ -14306,7 +14331,16 @@ Norrey_2 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
-	8275.1.1 = { add_spouse = Norrey_rs_2 }
+	8270.1.1 = { add_spouse = Norrey_rs_2 }
+}
+Norrey_rs_2 = {
+	name = Jonnele
+	female = yes
+
+	religion = old_gods_south
+	culture = hill_clansman
+
+	8255.1.1 = { birth = yes }
 }
 Norrey_3 = {
 	name = Errold
@@ -14319,15 +14353,6 @@ Norrey_3 = {
 	mother = Norrey_rs_1
 
 	8258.1.1 = { birth = yes }
-}
-Norrey_rs_2 = {
-	name = Jonnele
-	female = yes
-
-	religion = old_gods_south
-	culture = hill_clansman
-
-	8255.1.1 = { birth = yes }
 }
 ### Issue of Brandon
 Norrey_4 = {
@@ -14924,7 +14949,7 @@ Burley_24 = {
 
 	father = Burley_23
 
-	8267.7.24 = { birth = yes }
+	8261.7.24 = { birth = yes }
 }
 
 
@@ -14957,6 +14982,7 @@ Reed_1 = {
 	trait = shy
 	trait = patient
 	trait = brave
+	trait = inquisitive
 	trait = pensive
 
 	disallow_random_traits = yes
@@ -16015,8 +16041,8 @@ Hayes_80 = {
 	trait = sickly
 
 	8238.1.1 = { birth = yes }
-	8240.1.1 = { 
-		death = { death_reason = death_sickly } 
+	8240.1.1 = {
+		death = { death_reason = death_sickly }
 	}
 }
 Hayes_17 = {

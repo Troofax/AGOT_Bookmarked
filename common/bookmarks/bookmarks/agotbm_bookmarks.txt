@@ -89,7 +89,7 @@ agot_bm_7998 = {
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Stark_66
-		position = { 415 105 }
+		position = { 415 130 }
 		animation = thinking
 	}
 

@@ -512,7 +512,7 @@ d_blacktyde = {
 	8136.1.1 = {
 		holder = Blacktyde_18
 	}
-	8150.1.1 = {
+	8151.1.1 = {
 		holder = Blacktyde_19
 	}
 	8189.1.1 = {
@@ -579,7 +579,7 @@ c_blacktyde = {
 	8136.1.1 = {
 		holder = Blacktyde_18
 	}
-	8150.1.1 = {
+	8151.1.1 = {
 		holder = Blacktyde_19
 	}
 	8189.1.1 = {
@@ -2931,7 +2931,7 @@ c_pebbleton = {
 	8115.1.1 = {
 		holder = Merlyn_17
 	}
-	8124.1.1 = {
+	8126.1.1 = {
 		holder = Merlyn_18
 	}
 	8152.1.1 = {

@@ -700,8 +700,8 @@ Grey_King_5 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	105.1.1 = { 
-		trait = torturer 
+	105.1.1 = {
+		trait = torturer
 		trait = reaver
 	}
 	156.1.1 = { death = yes }
@@ -3968,7 +3968,7 @@ Goodbrother_38 = {
 	give_nickname = nick_badbrother
 
 	5089.1.1 = { birth = yes }
-	7943.1.1 = { death = yes }
+	7968.1.1 = { death = yes }
 }
 Goodbrother_39 = {
 	name = Harlon # a lord
@@ -3994,29 +3994,6 @@ Goodbrother_40 = {
 
 	7869.1.1 = { birth = yes }
 	7903.1.1 = { death = yes }
-}
-Goodbrother_47 = {
-	name = Quellon
-	dynasty = dynn_Goodbrother
-
-	prowess = 10
-
-	religion = drowned_god_main
-	culture = ironborn
-
-	father = Goodbrother_39
-
-	trait = strong
-
-	7980.1.1 = { birth = yes }
-	7990.1.1 = { trait = content }
-	7996.1.1 = {
-		trait = brave
-		employer = Hoare_31 # Harren the Black
-	}
-	8000.2.1 = {
-		death = { death_reason = death_battle } # Maybe killed in chaos after Harren's death
-	}
 }
 ### Issue of Gelmarr
 Goodbrother_41 = {
@@ -4081,6 +4058,7 @@ Goodbrother_45 = {
 	7962.1.1 = { birth = yes }
 	7991.1.1 = { death = yes }
 }
+### Issue of Dale
 Goodbrother_46 = {
 	name = Torwold # a lord
 	dynasty = dynn_Goodbrother
@@ -4103,6 +4081,30 @@ Goodbrother_46 = {
 		death = { death_reason = death_battle } # Maybe killed in chaos after Harren's death
 	}
 }
+Goodbrother_47 = {
+	name = Quellon
+	dynasty = dynn_Goodbrother
+
+	prowess = 10
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	father = Goodbrother_45
+
+	trait = strong
+
+	7980.1.1 = { birth = yes }
+	7990.1.1 = { trait = content }
+	7996.1.1 = {
+		trait = brave
+		employer = Hoare_31 # Harren the Black
+	}
+	8000.2.1 = {
+		death = { death_reason = death_battle } # Maybe killed in chaos after Harren's death
+	}
+}
+### Main Line
 Goodbrother_48 = {
 	name = Joseran # a lord
 	dynasty = dynn_Goodbrother
@@ -4634,10 +4636,10 @@ Goodbrother_83 = {
 	name = Goren # a lord
 	dynasty_house = house_GoodbrotherOM
 
-	father = Goodbrother_38
-
 	religion = drowned_god_main
 	culture = ironborn
+
+	father = Goodbrother_38
 
 	7968.1.1 = { birth = yes }
 	8013.1.1 = { death = yes }
@@ -5809,8 +5811,8 @@ Harlaw_44 = {
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_heterosexual
 	}
-	8145.1.1 = { 
-		trait = lustful 
+	8145.1.1 = {
+		trait = lustful
 		trait = irritable
 	}
 	8148.1.1 = { add_spouse = Harlaw_rs_14 }
@@ -7822,7 +7824,7 @@ Saltcliffe_39 = {
 	father = Saltcliffe_38
 
 	8220.1.1 = { birth = yes }
-	8241.1.1 = { add_spouse = Saltcliffe_rs_4 }
+	8234.1.1 = { add_spouse = Saltcliffe_rs_4 }
 	8282.1.1 = { death = yes }
 }
 Saltcliffe_rs_4 = {
@@ -8418,7 +8420,7 @@ Kenning_10 = {
 	father = Grey_King_24
 
 	5270.1.1 = { birth = yes }
-	5330.1.1 = { death = yes }
+	5333.1.1 = { death = yes }
 }
 Kenning_11 = {
 	name = Line_of_Harren
@@ -8528,7 +8530,7 @@ Kenning_17 = {
 	father = Kenning_16
 
 	7942.1.1 = { birth = yes }
-	7990.1.1 = { add_spouse = Kenning_rs_5 }
+	7970.1.1 = { add_spouse = Kenning_rs_5 }
 	7995.1.1 = { death = yes }
 }
 Kenning_rs_5 = {
@@ -8792,7 +8794,7 @@ Kenning_28 = {
 	mother = Kenning_rs_15
 
 	8215.1.1 = { birth = yes }
-	8232.1.1 = { add_spouse = Kenning_rs_16 }
+	8229.1.1 = { add_spouse = Kenning_rs_16 }
 	8244.1.1 = { death = { death_reason = death_battle } }
 }
 Kenning_rs_16 = {
@@ -9522,7 +9524,7 @@ Blacktyde_18 = {
 		add_character_flag = canon_status_semicanon
 	}
 	8140.1.1 = { add_spouse = Greyjoy_76 } # Gudrun Greyjoy
-	8150.1.1 = { death = { death_reason = death_drowned } }
+	8151.1.1 = { death = { death_reason = death_drowned } }
 }
 ### Issue of Garmon
 Blacktyde_19 = {
@@ -9715,9 +9717,9 @@ Drumm_8 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	7769.1.1 = { 
+	7769.1.1 = {
 		trait = torturer
-		give_nickname = nick_the_dread 
+		give_nickname = nick_the_dread
 	}
 	7819.1.1 = { death = yes }
 }
@@ -10711,7 +10713,7 @@ Merlyn_17 = {
 	father = Merlyn_16
 
 	8093.1.1 = { birth = yes }
-	8124.1.1 = { death = yes }
+	8126.1.1 = { death = yes }
 }
 ### Issue of Urron
 Merlyn_18 = {
