@@ -2286,6 +2286,7 @@ Targaryen_59 = {
 
 	religion = the_seven_main
 	culture = high_valyrian
+	sexuality = heterosexual
 
 	father = Targaryen_45
 	mother = Baratheon_33
@@ -2304,6 +2305,8 @@ Targaryen_59 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 		effect = {
 			add_character_flag = do_not_assign_strong_seed
 			make_trait_inactive = black_hair
@@ -2354,6 +2357,7 @@ Targaryen_60 = {
 
 	religion = the_seven_main
 	culture = high_valyrian
+	sexuality = heterosexual
 
 	father = Targaryen_46
 	mother = Targaryen_47
@@ -2367,6 +2371,8 @@ Targaryen_60 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 		effect = {
 			# add_character_modifier = abomination_of_incest # AGOT TODO
 		}
@@ -8997,6 +9003,7 @@ Velaryon_31 = { # Dance of the Dragons
 
 	religion = the_seven_main
 	culture = high_valyrian
+	sexuality = heterosexual
 
 	father = Velaryon_25
 	mother = Rosby_13
@@ -9015,6 +9022,8 @@ Velaryon_31 = { # Dance of the Dragons
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
 	8068.10.1 = {
 		trait = knight
