@@ -645,7 +645,18 @@ e_the_north = {
 	# 8060.1.1 = {
 		# law = first_night_0 #First Night abolished # AGOT TODO
 	# }
-	8299.1.16 = {
+	# AGOT Bookmarked Modified
+	# 8299.1.16 = {
+		# holder = Stark_6 #Robb Stark
+		# effect = { # AGOT TODO
+			# # AGOT Bookmarked Added
+			# if = {
+				# limit = { character:Stark_6 = { is_alive = yes } }
+				# agot_set_empire_tier_realm_paramountcy = yes
+			# }
+		# }
+	# }
+	8298.12.20 = {
 		holder = Stark_6 #Robb Stark
 		effect = { # AGOT TODO
 			# AGOT Bookmarked Added

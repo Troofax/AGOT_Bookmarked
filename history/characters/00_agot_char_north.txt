@@ -308,7 +308,14 @@ Stark_3 = {
 			}
 		}
 	}
-	8299.1.10 = {
+	# AGOT Bookmarked Modified
+	# 8299.1.10 = {
+		# death = {
+			# death_reason = death_execution # Beheaded
+			# killer = Baratheon_5 # Joffrey Baratheon
+		# }
+	# }
+	8298.12.20 = {
 		death = {
 			death_reason = death_execution # Beheaded
 			killer = Baratheon_5 # Joffrey Baratheon
