@@ -14,7 +14,7 @@ agot_8298_12_21_wotfk_scenario_setup = {
 
 		title:k_the_north.holder = {
 			start_war = {
-				cb = agot_independence_war
+				cb = rv_revenge_war
 				target = title:e_the_iron_throne.holder
 			}
 			every_character_war = {
@@ -60,12 +60,59 @@ agot_8298_12_21_wotfk_scenario_setup = {
 
 	title:e_the_iron_throne.holder = { save_scope_as = historical_setup }
 
+	hidden_effect = { # Greyjoys aganist Lannisters
+		title:k_the_iron_islands.holder = {
+			save_scope_as = mw_rebel_leader_balon
+			agot_mw_scenario_rebel_setup = { # Set up story
+				MODE = flag:mw_internal
+				REBEL_MAY_VASSALIZE = no
+				HELD_TITLE = title:k_the_iron_islands
+				CASUS_BELLI = agot_independence_war
+				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
+				MW_TARGET = title:e_the_iron_throne.holder
+			}
+			# ADD REBEL SUPPORTERS #
+			# Add vassal rebels
+			every_vassal_or_below = {
+				limit = { primary_title.tier > tier_barony }
+
+				scope:mw_rebel_story = {
+					add_to_variable_list = {
+						name = mw_rebel_supporter_list
+						target = prev
+					}
+				}
+			}
+		}
+		# Add independent rebels
+		agot_mw_add_character_to_mw_list = {
+			CHARACTER_SCOPE = title:d_brightwater.holder
+			STORY_SCOPE = scope:mw_rebel_story
+			LIST = mw_rebel_supporter_list
+			PRE_WAR_LIEGE_SCOPE = title:k_the_reach.holder
+		}
+		agot_mw_add_character_to_mw_list = {
+			CHARACTER_SCOPE = title:d_blueburn.holder
+			STORY_SCOPE = scope:mw_rebel_story
+			LIST = mw_rebel_supporter_list
+			PRE_WAR_LIEGE_SCOPE = title:k_the_reach.holder
+		}
+		agot_mw_add_character_to_mw_list = {
+			CHARACTER_SCOPE = title:c_glasswater.holder
+			STORY_SCOPE = scope:mw_rebel_story
+			LIST = mw_rebel_supporter_list
+			PRE_WAR_LIEGE_SCOPE = title:d_masseys_hook.holder
+		}
+		######
+	}
 	hidden_effect = { # Starks aganist Lannisters
 		title:k_the_north.holder = {
 			save_scope_as = mw_rebel_leader_robb
 			agot_mw_scenario_rebel_setup = { # Set up story
+				MODE = flag:mw_internal
+				REBEL_MAY_VASSALIZE = no
 				HELD_TITLE = title:k_the_north
-				CASUS_BELLI = agot_independence_war
+				CASUS_BELLI = rv_revenge_war
 				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
 				MW_TARGET = title:e_the_iron_throne.holder
 			}
@@ -95,6 +142,8 @@ agot_8298_12_21_wotfk_scenario_setup = {
 		title:k_the_iron_islands.holder = {
 			save_scope_as = mw_rebel_leader_balon
 			agot_mw_scenario_rebel_setup = { # Set up story
+				MODE = flag:mw_internal
+				REBEL_MAY_VASSALIZE = no
 				HELD_TITLE = title:k_the_iron_islands
 				CASUS_BELLI = agot_independence_war
 				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
@@ -103,7 +152,12 @@ agot_8298_12_21_wotfk_scenario_setup = {
 			# ADD REBEL SUPPORTERS #
 			# Add vassal rebels
 			every_vassal_or_below = {
-				limit = { primary_title.tier > tier_barony }
+				limit = {
+					primary_title.tier > tier_barony
+					NOR = {
+						primary_title = title:k_the_most_devout
+					}
+				}
 
 				scope:mw_rebel_story = {
 					add_to_variable_list = {

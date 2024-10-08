@@ -530,7 +530,7 @@ Stark_6 = {
 				limit = { character:Baratheon_5 = { is_alive = yes } }
 				reverse_add_opinion = {
 					modifier = treachery_opinion
-					target = character:Baratheon_5 #Joffrey Baratheon
+					target = character:Baratheon_5 # Joffrey Baratheon
 				}
 			}
 		}
@@ -628,12 +628,12 @@ Stark_7 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
-		add_character_flag = is_jon_snow
 		add_character_flag = sexuality_ensure_not_homosexual
 		add_character_flag = sexuality_ensure_not_asexual
 		add_character_flag = sexuality_raise_chance_heterosexual
 		add_character_flag = sexuality_raise_chance_bisexual
 		effect = {
+			make_trait_inactive = is_stark_7
 			set_real_father = character:Targaryen_3 # Rhaegar Targaryen
 			set_real_mother = character:Stark_5 # Lyanna Stark
 		}
@@ -1991,6 +1991,35 @@ Stark_hh_22 = {
 		}
 	}
 }
+Stark_hh_33 = {
+	name = Ros # Semi-Canon
+	female = yes
+
+	religion = old_gods_south
+	culture = northman
+	
+	trait = education_intrigue_1
+	trait = beauty_good_1
+	trait = ambitious
+	trait = brave
+	trait = diligent
+	trait = bossy
+
+	disallow_random_traits = yes
+
+	8274.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:b_winter_town }
+		}
+	}
+	8298.2.24 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:b_hookmarket }
+		}
+	}
+}
 ### Household - Old Nan and her descendants
 Stark_hh_23 = {
 	name = Nan # Canon, AKA: The Old Nan
@@ -2383,12 +2412,14 @@ Manderly_6 = {
 	8256.1.1 = { trait = knight }
 	8260.1.1 = {
 		add_spouse = Manderly_rs_3
+	}
+	8284.1.1 = { 
+		give_nickname = nick_the_lord_lamprey
 		effect = {
 			change_current_weight = 50
 			target_weight_modifier_effect = { VALUE = 50 }
 		}
 	}
-	8280.1.1 = { give_nickname = nick_the_lord_lamprey }
 	8292.1.1 = { trait = widowed }
 	8299.12.15 = { # Red Wedding
 		effect = { # Wendel killed, hostile toward Boltons and Freys
@@ -2461,6 +2492,8 @@ Manderly_7 = {
 	8280.1.1 = { add_spouse = Woolfield_2 } # Leona Woolfield
 	8281.1.1 = {
 		trait = knight
+	}
+	8290.1.1 = {
 		effect = {
 			change_current_weight = 50
 			target_weight_modifier_effect = { VALUE = 50 }
@@ -2533,6 +2566,8 @@ Manderly_8 = {
 	}
 	8282.1.1 = {
 		trait = knight
+	}
+	8290.1.1 = {
 		effect = {
 			change_current_weight = 50
 			target_weight_modifier_effect = { VALUE = 50 }
@@ -4973,19 +5008,6 @@ Bolton_5 = {
 		trait = arrogant
 		trait = torturer
 	}
-	8297.6.1 = {
-		effect = {
-			if = {
-				limit = { character:Ryswell_4 = { is_alive = yes } }
-				character:Ryswell_4 = { # Barbrey Ryswell
-					set_relation_rival = {
-						target = ROOT
-						reason = rival_murderer # Domeric Bolton
-					}
-				}
-			}
-		}
-	}
 	8298.1.1 = {
 		trait = lifestyle_hunter_2_history
 		effect = { # Castellan of Dreadfort
@@ -5184,7 +5206,7 @@ Bolton_hh_4 = {
 	8289.1.1 = { give_nickname = nick_yellow }
 	8299.12.15 = { employer = Bolton_5 } # Ramsay Snow
 	8300.8.4 = {
-		trait = eunuch
+		trait = eunuch_1
 		death = {
 			death_reason = death_murder
 			killer = Rayder_1 # Mance Rayder
@@ -5346,6 +5368,30 @@ Bolton_hh_10 = {
 			}
 		}
 	}
+}
+Bolton_hh_11 = {
+	name = Myranda # Semi-Canon
+	female = yes
+
+	religion = old_gods_south
+	culture = northman
+	
+	trait = education_intrigue_1
+	trait = beauty_good_1
+	trait = sadistic
+	trait = lustful
+	trait = deceitful
+	trait = calm
+	trait = bossy
+
+	disallow_random_traits = yes
+
+	8280.1.1 = { 
+		birth = yes
+		add_character_flag = canon_status_semicanon
+		employer = Bolton_1 # Roose Bolton
+	}
+	8299.12.15 = { employer = Bolton_5 } # Ramsay Snow
 }
 
 ###### HOUSE SHORT (id = dynn_Short)
@@ -7988,6 +8034,11 @@ Mormont_3 = {
 	8299.12.1 = {
 		# employer = 147174371 # Malaquo Maegyr; Reenable once Volantis is added
 	}
+	8300.7.9 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_second_sons }
+		}
+	}
 }
 ### Issue of Maege
 Mormont_5 = {
@@ -8625,13 +8676,24 @@ Long_22 = {
 	father = Long_23
 
 	trait = education_martial_2
+	trait = vengeful
 
 	8264.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
 	8280.1.1 = { trait = knight }
-	# 8282.1.1 = { employer = 1684230 } # Tattered Prince # AGOT TODO no windblown title
+	8282.1.1 = { 
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_windblown }
+		}
+	}
+	8297.1.1 = { 
+		if = {
+			limit = { character:Windblown_1 = { is_alive = yes } }
+			set_relation_grudge = character:Windblown_1 # Caggo the Corpsekiller
+		}
+	}
 }
 
 ###### HOUSE MAZIN (id = dynn_Mazin)
@@ -10353,18 +10415,21 @@ Ryswell_4 = {
 			}
 			if = {
 				limit = { character:Stark_3 = { is_alive = yes } }
-				add_opinion = {
-					target = character:Stark_3 # Eddard Stark
-					modifier = hate_opinion
-					opinion = -50
-				}
+				set_relation_grudge = character:Stark_3 # Eddard Stark
 			}
 			if = {
 				limit = { character:Stark_6 = { is_alive = yes } }
-				add_opinion = {
-					target = character:Stark_6 # Robb Stark
-					modifier = opinion_of_predecessor
-					opinion = -50
+				set_relation_grudge = character:Stark_6 # Robb Stark
+			}
+		}
+	}
+	8297.6.1 = {
+		effect = {
+			if = {
+				limit = { character:Bolton_5 = { is_alive = yes } }
+				set_relation_grudge = {
+					target = character:Bolton_5 # Ramsay Snow
+					reason = rival_murderer # Domeric Bolton
 				}
 			}
 		}
@@ -12755,6 +12820,48 @@ Whitehill_6 = {
 	}
 	8297.1.1 = { employer = Bolton_1 } # Roose Bolton
 	8300.1.1 = { employer = Whitehill_1 } # Ludd Whitehill
+}
+### Household
+Whitehill_hh_1 = {
+	name = Harys # Semi-Canon
+
+	religion = the_seven_main
+	culture = wolfswood_clansman
+
+	trait = education_martial_2
+	trait = calm
+	trait = sadistic
+	trait = diligent
+	trait = brave
+	trait = pensive
+
+	disallow_random_traits = yes
+	
+	8254.1.1 = { 
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
+	8268.1.1 = { 
+		trait = education_martial_prowess_2
+		trait = strong 
+	}
+	8270.1.1 = { trait = knight }
+	8277.1.1 = { 
+		employer = Whitehill_1 # Ludd Whitehill
+		trait = lifestyle_blademaster
+		effect = { # Bodyguard of house Whitehill
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_highpoint
+				POSITION = bodyguard_court_position
+			}
+		}
+	}
+	8300.1.30 = {
+		death = {
+			death_reason = death_duel
+			killer = Forrester_3 # Rodrik Forrester
+		}
+	}
 }
 
 ###### HOUSE WOODS (id = dynn_Woods)

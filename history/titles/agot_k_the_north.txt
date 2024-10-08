@@ -11,6 +11,7 @@
 					POSITION = warden_of_the_north_court_position 
 				}
 			}
+			set_variable = agot_historical_march
 		}
 	}
 	8014.1.1 = {
@@ -97,6 +98,8 @@
 	# }
 	8298.12.20 = {
 		holder = Stark_6
+	}
+	8299.1.16 = {
 		liege = e_the_north
 	}
 	8299.12.15 = {
@@ -5986,6 +5989,9 @@ c_wynmend = {
 d_last_lands = {
 	6500.1.1 = {
 		liege = e_the_north
+		effect = {
+			set_variable = agot_historical_march
+		}
 	}
 	7553.1.1 = { 
 		holder = Umber_78 # Gawen
@@ -10188,6 +10194,9 @@ c_wraithfeld = {
 d_the_neck = {
 	6500.1.1 = {
 		liege = e_the_north
+		effect = {
+			set_variable = agot_historical_march
+		}
 	}
 	7859.1.1 = {
 		holder = Reed_6

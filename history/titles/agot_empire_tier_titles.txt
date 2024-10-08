@@ -1708,81 +1708,77 @@ e_beyond_the_wall = {
 e_three_daughters = {
 	# Myrish Term
 	8096.1.1 = {
-		holder = Mercor_9 # Ghorgho 
+		holder = Mallar_82 
 		succession_laws = { equal_law magisterial_limited_succession_law }
 		government = free_city_government
 		effect = {
 			holder ?= {
-				if = {
-					limit = { has_title = title:c_myr }
-					set_realm_capital = title:c_myr
-				}
-				else_if = {
-					limit = { has_title = title:c_lys }
-					set_realm_capital = title:c_lys
-				}
-				else_if = {
-					limit = { has_title = title:c_tyrosh }
-					set_realm_capital = title:c_tyrosh
-				}
+				set_realm_capital = title:c_the_spar
 			}
 		}
+		# effect = {
+		# 	holder ?= {
+		# 		if = {
+		# 			limit = { has_title = title:c_myr }
+		# 			set_realm_capital = title:c_myr
+		# 		}
+		# 		else_if = {
+		# 			limit = { has_title = title:c_lys }
+		# 			set_realm_capital = title:c_lys
+		# 		}
+		# 		else_if = {
+		# 			limit = { has_title = title:c_tyrosh }
+		# 			set_realm_capital = title:c_tyrosh
+		# 		}
+		# 	}
+		# }
 	}
 	# Tyroshi Term
 	8099.1.1 = {
-		holder = Basetys_14 
+		holder = Tyraanis_95
 	}
 	# Lyseni Term
 	8102.1.1 = {
-		holder = Haen_9 
-	}
-	8104.1.1 = { 
-		holder = Haen_8
+		holder = Haen_92
 	}
 	# Myrish Term
 	8105.1.1 = {
-		holder = Mercor_9
-	}
-	8106.1.1 = {	
-		holder = Naelor_9
+		holder = Mallar_82
 	}
 	# Tyroshi Term
 	8108.1.1 = {
-		holder = Basetys_14 # Malo
-	}
-	8110.1.1 = { 
-		holder = Atuhoris_8 # Allaro
+		holder = Tyraanis_95
 	}
 	# Lyseni Term
 	8111.1.1 = {
-		holder = Haen_8 # Silvario
+		holder = Haen_92
 	}
 	# Myrish Term
 	8114.1.1 = {
-		holder = Naelor_9 # Costos		
+		holder = Mallar_93
+	}
+	8116.1.1 = {
+		holder = Unerelos_64
 	}
 	# Tyroshi Term
 	8117.1.1 = {
-		holder = Atuhoris_8 # Allaro
+		holder = Tyraanis_95
 	} 
 	# Lyseni Term 
 	8120.1.1 = {
-		holder = Haen_8 # Silvario
+		holder = Haen_92
 	}
 	# Myrish Term
 	8123.1.1 = {
-		holder = Naelor_9 # Costos		
-	}
-	8124.1.1 = {
-		holder = Myrahar_8 # Qonane
+		holder = Mallar_93
 	}
 	# Tyroshi Term
 	8126.1.1 = {
-		holder = Atuhoris_8 # Allaro		
+		holder = Tyraanis_95		
 	}
 	# Lyseni Term
 	8129.1.1 = {
-		holder = Rogare_2 # Lysandro the Magnificent - C		
+		holder = Haen_8 	
 	}
 	# Daughters War
 	8132.1.1 = {

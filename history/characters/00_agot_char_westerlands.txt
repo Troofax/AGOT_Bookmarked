@@ -586,6 +586,7 @@ Lannister_6 = {
 			if = {
 				limit = { character:Baratheon_2 = { is_alive = yes } }
 				set_relation_historical_unfruitful_marriage = character:Baratheon_2 # Robert Baratheon
+				set_relation_grudge = character:Baratheon_2 # Robert Baratheon
 			}
 			agot_set_as_loyalist_history_effect = { LOYALIST = character:Moore_2 } # Mandon Moore
 			agot_set_as_loyalist_history_effect = { LOYALIST = character:Blount_3 } # Boros Blount
@@ -867,17 +868,17 @@ Lannister_7 = {
 					reveal_to = character:Tully_4 # Catelyn Tully
 				}
 			}
-			# release_from_prison = yes
-			# title:d_brave_companions.holder = { # Vargo Hoat AGOT TODO
-				# imprison = {
-					# target = ROOT
-					# type = dungeon
-				# }
-				# reverse_add_opinion = {
-					# target = ROOT
-					# modifier = tortured_me #opinion_mutilated_me
-				# }
-			# }
+			release_from_prison = yes
+			title:d_laamp_merc_brave_companions.holder = { # Vargo Hoat 
+				imprison = {
+					target = ROOT
+					type = dungeon
+				}
+				reverse_add_opinion = {
+					target = ROOT
+					modifier = tortured_me #opinion_mutilated_me
+				}
+			}
 		}
 	}
 	8299.11.13 = {
@@ -1046,6 +1047,11 @@ Lannister_8 = {
 					}
 				}
 			}
+		}
+	}
+	8300.7.9 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_second_sons }
 		}
 	}
 }
@@ -8581,7 +8587,7 @@ Lorch_2 = {
 	8299.8.16 = {
 		death = {
 			death_reason = death_execution #death_execution_bear
-			# killer = 80012560 # Vargo Hoat AGOT TODO Reenable once Mercs Characters are finished
+			killer = Hoat_1 # Vargo Hoat
 		}
 	}
 }
@@ -8837,7 +8843,7 @@ Plumm_4 = {
 ### Essosi Branch
 ############################
 Plumm_5 = {
-	name = Ben # Canon, AKA: Brown Ben Plumm
+	name = Ben # Canon, AKA: Brown Ben Plumm, Commander of Second Sons
 	dynasty = dynn_Plumm
 
 	dna = Plumm_5
@@ -8860,9 +8866,9 @@ Plumm_5 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
-		# effect = {  # AGOT TODO
-			# agot_safe_set_location_history_effect = { CASTLE = title:d_second_sons }
-		# }
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_second_sons }
+		}
 	}
 	8268.1.1 = {
 		trait = callous
@@ -9145,7 +9151,9 @@ Sarwyck_4 = {
 	8274.1.1 = { trait = knight }
 	8285.1.1 = {
 		trait = depressed_1
-		employer = Valduran_1 # Drakhos Valduran, Myr
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_myr }
+		}
 	}
 	8286.1.1 = {
 		religion = rhllor
@@ -12758,7 +12766,7 @@ Tortoll_41 = {
 ### Stronger Than Stone
 ###
 Tarwick_2 = {
-	name = Joss
+	name = Erwin # Semi-Canon, cut-content
 	dynasty = dynn_Tarwick
 
 	religion = the_seven_main
@@ -12767,7 +12775,10 @@ Tarwick_2 = {
 	father = Tarwick_3
 	mother = Tarwick_rs_3
 
-	8235.1.1 = { birth = yes }
+	8235.1.1 = { 
+		birth = yes 
+		add_character_flag = canon_status_semicanon
+	}
 	8252.1.1 = { trait = knight }
 	8254.1.1 = { add_spouse = Tarwick_rs_2 }
 	8274.1.1 = { death = yes }
@@ -12820,6 +12831,22 @@ Tarwick_25 = {
 	8255.1.1 = { birth = yes }
 	8298.1.1 = { death = yes }
 }
+Tarwick_81 = {
+	name = Harrold # Semi-Canon, mentioned, cut-content
+	dynasty = dynn_Tarwick
+
+	religion = the_seven_main
+	culture = westerman
+
+	father = Tarwick_2
+	mother = Tarwick_rs_2
+
+	8256.1.1 = { 
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
+	8269.1.1 = { death = { death_reason = death_accident } }
+}
 Tarwick_1 = {
 	name = Garibald # Semi-Canon, a lord
 	dynasty = dynn_Tarwick
@@ -12830,14 +12857,27 @@ Tarwick_1 = {
 	father = Tarwick_2
 	mother = Tarwick_rs_2
 
-	8256.1.1 = {
+	8257.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
 	}
 	8274.1.1 = { trait = knight }
-	8290.1.1 = { add_spouse = Tarwick_rs_1 }
 }
-Tarwick_rs_1 = {
+Tarwick_80 = {
+	name = Willem
+	dynasty = dynn_Tarwick
+
+	religion = the_seven_main
+	culture = westerman
+
+	father = Tarwick_2
+	mother = Tarwick_rs_2
+
+	8259.1.1 = { birth = yes }
+	8276.1.1 = { trait = knight }
+	8290.1.1 = { add_spouse = Tarwick_rs_80 }
+}
+Tarwick_rs_80 = {
 	name = Irena
 	female = yes
 
@@ -12868,8 +12908,8 @@ Tarwick_29 = {
 	religion = the_seven_main
 	culture = westerman
 
-	father = Tarwick_1
-	mother = Tarwick_rs_1
+	father = Tarwick_80
+	mother = Tarwick_rs_80
 
 	8291.1.1 = { birth = yes }
 }
@@ -12881,8 +12921,8 @@ Tarwick_30 = {
 	religion = the_seven_main
 	culture = westerman
 
-	father = Tarwick_1
-	mother = Tarwick_rs_1
+	father = Tarwick_80
+	mother = Tarwick_rs_80
 
 	8292.1.1 = { birth = yes }
 }
@@ -13801,12 +13841,17 @@ Lanster_39 = {
 	father = Lanster_42
 
 	trait = education_martial_2
+	trait = deceitful
 
 	8266.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	#8282.1.1 = { employer = 1684230 } # Tattered Prince # AGOT TODO no windblown title
+	8282.1.1 = { 
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_windblown }
+		}
+	}
 }
 
 ###### HOUSE DULVER (id = dynn_Dulver)
@@ -16847,8 +16892,8 @@ Merchant_rs_26 = {
 }
 ### Issue of Lyle
 Merchant_2 = {
-	name = Tygett # a lord
-	dynasty = dynn_Merchant
+	name = Andros # Semi-Canon, a lord
+	dynasty = dynn_Merchant # House uncertain
 
 	religion = the_seven_main
 	culture = westerman
@@ -16856,20 +16901,24 @@ Merchant_2 = {
 	father = Merchant_3
 	mother = Merchant_rs_3
 
-	8247.1.1 = { birth = yes }
+	8247.1.1 = { 
+		birth = yes 
+		add_character_flag = canon_status_semicanon
+	}
 	8267.1.1 = { add_spouse = Merchant_rs_2 }
 	8272.1.1 = { trait = knight }
-	8280.1.1 = { death = yes }
 }
 Merchant_rs_2 = {
-	name = Ryalla
+	name = Ryalla # Semi-Canon, mentioned
 	female = yes
 
 	religion = the_seven_main
 	culture = westerman
 
-	8247.1.1 = { birth = yes }
-	8280.1.1 = { death = yes }
+	8247.1.1 = { 
+		birth = yes
+		add_character_flag = canon_status_semicanon 
+	}
 }
 Merchant_24 = {
 	name = Tyta
@@ -16899,7 +16948,7 @@ Merchant_23 = {
 	8268.1.1 = { birth = yes }
 }
 Merchant_1 = {
-	name = Morgan # a lord
+	name = Morgan 
 	dynasty = dynn_Merchant
 
 	religion = the_seven_main

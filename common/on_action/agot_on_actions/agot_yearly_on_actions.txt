@@ -550,8 +550,7 @@ on_faegon_and_blackfyre = {
 							exists = character:Stark_7
 							character:Targaryen_13.house.house_head ?= character:Stark_7
 						}
-						character:Targaryen_13.house.house_head ?= { has_character_flag = is_jon_snow }
-						character:Targaryen_13.house.house_head ?= { has_character_flag = is_jeyne_snow }
+						character:Targaryen_13.house.house_head ?= { is_character_stark_7 = yes }
 					}
 
 					trigger_if = { # this is to ensure 2 invasions wont happen at the same time
@@ -596,10 +595,7 @@ agot_jon_snow_learns = {
 			chance = 10 # MTTH 10 years
 			every_ruler = {
 				limit = {
-					OR = {
-						has_character_flag = is_jon_snow
-						has_character_flag = is_jeyne_snow
-					}
+					is_character_stark_7 = yes
 					exists = real_father
 					NOT = { father = real_father }
 				}

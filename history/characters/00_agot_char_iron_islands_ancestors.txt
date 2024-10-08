@@ -1416,7 +1416,16 @@ Hoare_28 = {
 		add_character_flag = canon_status_canon
 	}
 	7894.1.1 = { trait = lustful }
-	7898.1.1 = { employer = Uteuran_18 } # Malko Uteuran, Myr
+	7898.1.1 = { 
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_myr }
+		}		
+	}
+	# 7899.6.1 = { # AGOT TODO - extend Second Sons
+		# effect = {
+			# agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_second_sons }
+		# }
+	# }
 	7900.12.28 = {
 		give_nickname = nick_hardhand
 		#trait = suspected_kinslayer # AGOT TODO trait
@@ -3115,7 +3124,7 @@ Greyjoy_64 = {
 	}
 	8133.12.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = { # Half a year after death of Dalton Greyjoy
-		trait = eunuch
+		trait = eunuch_1
 		effect = {
 			title:c_casterly_rock.holder = { # Loreon Lannister
 				imprison = {

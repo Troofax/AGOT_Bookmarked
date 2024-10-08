@@ -406,7 +406,7 @@ dragon_balerion = {
 			DRAGON = ROOT
 		}
 	}
-	8056.4.14 = { # Aerea's death
+	8056.3.14 = { # Aerea's death
 		effect = {
 			add_trait = dragon_wounded_3
 			agot_assign_dragon_to_pit_history_effect = {
@@ -2550,7 +2550,7 @@ dragon_moondancer = {
 			}
 			set_variable = {
 				name = color_grading
-				value = flag:middle
+				value = flag:lighter
 			}
 			set_variable = {
 				name = color
@@ -2600,6 +2600,14 @@ dragon_rhaena_1 = {
 			}
 			agot_assign_dragon_to_pit_history_effect = {
 				DRAGONPIT_COUNTY = title:c_dragonstone
+			}
+			set_variable = {
+				name = color_grading
+				value = flag:lighter
+			}
+			set_variable = {
+				name = color
+				value = flag:blue
 			}
 		}
 	}
@@ -2690,7 +2698,8 @@ dragon_morghul = {
 	}
 	8130.10.9 = {
 		death = {
-			death_reason = death_torn_to_pieces_by_mob # Storming of the Dragonpit
+			death_reason = death_dragon_slain # Storming of the Dragonpit
+			killer = Knight_Kings_Landing_17 # The Burning Knight
 		}
 	}
 }
@@ -2731,7 +2740,7 @@ dragon_vermax = {
 			}
 			set_variable = {
 				name = color_grading
-				value = flag:middle
+				value = flag:darker
 			}
 			set_variable = {
 				name = color
@@ -2799,11 +2808,11 @@ dragon_arrax = {
 			}
 			set_variable = {
 				name = color_grading
-				value = flag:middle
+				value = flag:lightest
 			}
 			set_variable = {
 				name = color
-				value = flag:green
+				value = flag:white
 			}
 		}
 	}
@@ -2865,11 +2874,11 @@ dragon_tyraxes = {
 			}
 			set_variable = {
 				name = color_grading
-				value = flag:middle
+				value = flag:darkest
 			}
 			set_variable = {
 				name = color
-				value = flag:green
+				value = flag:black
 			}
 		}
 	}
@@ -2921,11 +2930,11 @@ dragon_stormcloud = {
 			}
 			set_variable = {
 				name = color_grading
-				value = flag:middle
+				value = flag:darker
 			}
 			set_variable = {
 				name = color
-				value = flag:green
+				value = flag:blue
 			}
 		}
 	}
@@ -2945,6 +2954,8 @@ dragon_morning = {
 
 	trait = dragon
 	trait = education_dragon_2
+	trait = dragon_friendly # "everywhere that Rhaena went came Morning, her young dragon, oft as not coiled about her shoulders like a stole."
+	trait = dragon_accepting
 
 	disallow_random_traits = yes
 
@@ -2959,11 +2970,11 @@ dragon_morning = {
 			}
 			set_variable = {
 				name = color_grading
-				value = flag:middle
+				value = flag:lighter
 			}
 			set_variable = {
 				name = color
-				value = flag:green
+				value = flag:pink
 			}
 		}
 	}
@@ -2987,6 +2998,43 @@ dragon_morning = {
 		death = {
 			death_reason = death_battle_dragon
 			killer = dragon_nightfyre # Nightfyre
+		}
+	}
+}
+dragon_laena_1 = {
+	name = agot_empty # Mentioned, cradle-egg of Laena Velaryon. Named this way because it should only have a nickname.
+
+	religion = valyrian
+	culture = dragon
+
+	mother = dragon_syrax
+
+	trait = dragon
+	trait = dragon_physique_bad_3
+	trait = dragon_spindly # Described as a "wyrm"
+	trait = dragon_blind
+	#AGOT TODO - "Flightless" trait if it ever gets made
+	trait = dragon_bloodthirsty # "Within moments of hatching, the creature turned upon the babe in her cradle and tore a bloody chunk from her arm."
+
+	disallow_random_traits = yes
+
+	8135.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+		effect = {
+			set_variable = {
+				name = color_grading
+				value = flag:lighter
+			}
+			set_variable = {
+				name = color
+				value = flag:white
+			}
+		}
+		give_nickname = nick_dragon_the_blind_maggot
+		death = {
+			death_reason = death_hacked_to_pieces # Attacked Laena in her cradle
+			killer = Velaryon_44 # Alyn Velaryon
 		}
 	}
 }
@@ -3437,7 +3485,7 @@ dragon_rovax = {
 	7902.1.1 = {
 		death = {
 			death_reason = death_dragon_scorpion
-			killer = Camardoon_21 # Casuto Camardoon
+			killer = Atuhoris_42 # Nello Atuhoris
 		}
 	}
 }

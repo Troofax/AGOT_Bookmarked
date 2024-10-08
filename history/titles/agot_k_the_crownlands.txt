@@ -644,8 +644,6 @@ c_briarcrest = {
 		holder = Greenhill_17
 	}
 	7998.1.1 = {
-		# AGOT Bookmarked Added
-		de_jure_liege = d_kings_landing
 		holder = Greenhill_35
 	}
 	8000.1.1 = {
@@ -653,8 +651,7 @@ c_briarcrest = {
 	}
 	8000.5.1 = {
 		liege = d_kings_landing
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = d_kings_landing
+		de_jure_liege = d_kings_landing
 	}
 	8038.1.1 = {
 		holder = Greenhill_68
@@ -819,7 +816,7 @@ c_shinebridge = {
 	8092.1.1 = {
 		holder = Thorne_66
 	}
-	8099.1.1 = {
+	8103.1.1 = {
 		holder = Thorne_67
 	}
 	8139.1.1 = {
@@ -864,14 +861,9 @@ c_wings_pass = {
 	7961.1.1 = {
 		holder = Belgrave_38
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		de_jure_liege = d_kings_landing
-	}
 	7999.9.15 = {
 		liege = d_kings_landing
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = d_kings_landing
+		de_jure_liege = d_kings_landing
 	}
 	8014.1.1 = {
 		holder = Belgrave_12
@@ -932,14 +924,9 @@ d_crackclaw_point = {
 	7902.1.1 = {
 		holder = 0
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
+	7999.11.15 = {
 		de_jure_liege = k_the_crownlands
 	}
-	# AGOT Bookmarked Disabled
-	# 7999.11.15 = {
-		# de_jure_liege = k_the_crownlands
-	# }
 }
 c_dyre_den = {
 	5025.1.1 = {
@@ -1463,14 +1450,9 @@ d_deerfield = {
 	7969.1.1 = {
 		holder = Buckwell_47
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		de_jure_liege = k_the_crownlands
-	}
 	7999.6.1 = {
 		liege = k_the_crownlands
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
+		de_jure_liege = k_the_crownlands
 	}
 	8004.1.1 = {
 		holder = Buckwell_53
@@ -1493,7 +1475,7 @@ d_deerfield = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8175.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1548,7 +1530,7 @@ c_antlers = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8175.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1664,7 +1646,7 @@ c_point_square = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8175.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1721,7 +1703,7 @@ c_tuskford = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8175.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1757,9 +1739,13 @@ c_vairs_head = {
 		holder = Harte_13
 	}
 	7991.1.1 = {
-		#AGOT Bookmarked Modified
-		# holder = Harte_14
-		holder = Harte_15
+		holder = Harte_42
+	}
+	7992.1.1 = {
+		holder = Harte_29
+	}
+	8008.1.1 = {
+		holder = Harte_14
 	}
 	8050.1.1 = {
 		holder = Harte_31
@@ -1821,14 +1807,9 @@ d_duskendale = {
 	7966.1.1 = {
 		holder = Darklyn_5
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		de_jure_liege = k_the_crownlands
-	}
 	7999.6.1 = {
 		liege = k_the_crownlands
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
+		de_jure_liege = k_the_crownlands
 		holder = Darklyn_7
 	}
 	8018.1.1 = {
@@ -2401,14 +2382,9 @@ d_hayford = {
 	7976.1.1 = {
 		holder = Hayford_38
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		de_jure_liege = k_the_crownlands
-	}
 	7999.5.1 = {
 		liege = k_the_crownlands
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
+		de_jure_liege = k_the_crownlands
 	}
 	8014.1.1 = {
 		holder = Hayford_9
@@ -2723,14 +2699,9 @@ d_masseys_hook = {
 	7992.1.1 = {
 		holder = Massey_25
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		de_jure_liege = k_the_crownlands
-	}
 	7999.4.1 = {
 		liege = k_the_crownlands
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
+		de_jure_liege = k_the_crownlands
 	}
 	8023.1.1 = {
 		holder = Massey_27
@@ -3217,13 +3188,8 @@ d_rooks_rest = {
 	7975.1.1 = {
 		holder = Staunton_9
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		de_jure_liege = k_the_crownlands
-	}
 	7999.6.1 = {
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
+		de_jure_liege = k_the_crownlands
 		liege = k_the_crownlands
 	}
 	8006.1.1 = {
@@ -3506,14 +3472,9 @@ d_rosby = {
 	7996.1.1 = {
 		holder = Rosby_10
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		de_jure_liege = k_the_crownlands
-	}
 	7999.5.1 = {
 		liege = k_the_crownlands
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
+		de_jure_liege = k_the_crownlands
 	}
 	8005.1.1 = {
 		holder = Rosby_11
@@ -3917,14 +3878,9 @@ d_stokeworth = {
 	7996.1.1 = {
 		holder = Stokeworth_35
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		de_jure_liege = k_the_crownlands
-	}
 	7999.5.1 = {
 		liege = k_the_crownlands
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
+		de_jure_liege = k_the_crownlands
 	}
 	8031.1.1 = {
 		holder = Stokeworth_15
@@ -4608,7 +4564,7 @@ c_greyhelm = {
 	8241.1.1 = {
 		holder = Pyle_50
 	}
-	8249.1.1 = {
+	8252.1.1 = {
 		holder = Pyle_1
 	}
 }
@@ -4997,14 +4953,9 @@ d_wendwater_forest = {
 	7989.1.1 = {
 		holder = Farring_20
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		de_jure_liege = k_the_crownlands
-	}
 	7999.9.15 = {
 		liege = k_the_crownlands
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
+		de_jure_liege = k_the_crownlands
 	}
 	8002.1.1 = {
 		holder = Farring_29
