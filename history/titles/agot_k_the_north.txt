@@ -93,9 +93,6 @@
 	# 8299.1.10 = {
 		# holder = Stark_6
 	# }
-	# 8299.1.16 = {
-		# liege = e_the_north
-	# }
 	8298.12.20 = {
 		holder = Stark_6
 	}

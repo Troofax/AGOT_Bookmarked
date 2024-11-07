@@ -24,6 +24,9 @@ agot_on_game_start = {
 		}
 
 		##### General setup start #####
+		
+		# House Customizer Dummies Spawn
+		agot_house_customizer_spawn_dummies_effect = yes
 
 		### Murder Historical characters before their spawn year
 		if = { # Jalabhar Xho
@@ -185,7 +188,27 @@ agot_on_game_start = {
 				value = culture:ironborn
 			}
 		}
-
+		culture:fangman = {
+			set_variable =  wildling_culture
+		}
+		culture:forestman = {
+			set_variable =  wildling_culture
+		}
+		culture:nightrunner = {
+			set_variable =  wildling_culture
+		}
+		culture:frozen_shoreman = {
+			set_variable =  wildling_culture
+		}
+		culture:hornfoot = {
+			set_variable =  wildling_culture
+		}
+		culture:lakeman = {
+			set_variable =  wildling_culture
+		}
+		culture:thenn = {
+			set_variable =  wildling_culture
+		}
 		### Buildings set up
 		# This is done to avoid errors, if the error 'No room left for adding a building' happens, add the province and the building here
 		agot_add_buildings_on_start = yes
@@ -628,7 +651,6 @@ agot_on_game_start = {
 
 			if = { # Override default equal succession for Old Gods
 				limit = { faith = faith:old_gods_south }
-
 				add_realm_law = male_preference_law
 			}
 
@@ -1910,7 +1932,7 @@ agot_on_game_start_after_lobby = {
 			limit = {
 				exists = title:k_the_wall.holder
 				# title:k_the_wall.holder = {
-				# 	has_government = nights_watch_government
+				# 	government_has_flag = government_is_nw
 				# }
 			}
 			title:k_the_wall.holder = {
@@ -1975,438 +1997,6 @@ agot_on_game_start_after_lobby = {
 		}
 
 		### House Customizer related setup
-		## House Customizer Renown Fix - YES I DID TRY ITS OWN ON_ACTION
-		if = {
-			limit = {
-				any_player = { has_trait = house_customizer }
-			}
-			## NORTH ##
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Amber_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Amber_dummy
-					save_scope_as = hc_amber
-				}
-				scope:hc_amber = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Greenwood_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Greenwood_dummy
-					save_scope_as = hc_greenwood
-				}
-				scope:hc_greenwood = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Frost_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Frost_dummy
-					save_scope_as = hc_frost
-				}
-				scope:hc_frost = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Woodfoot_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Woodfoot_dummy
-					save_scope_as = hc_woodfoot
-				}
-				scope:hc_woodfoot = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			## TRIDENT ##
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Fisher_riverlands_duplicate_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Fisher_dummy
-					save_scope_as = hc_fisher_trident
-				}
-				scope:hc_fisher_trident = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Harroway_5 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Harroway_dummy
-					save_scope_as = hc_harroway
-				}
-				scope:hc_harroway = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Justman_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Justman_dummy
-					save_scope_as = hc_justman
-				}
-				scope:hc_justman = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Qoherys_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Qoherys_dummy
-					save_scope_as = hc_qoherys
-				}
-				scope:hc_qoherys = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Teague_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Teague_dummy
-					save_scope_as = hc_teague
-				}
-				scope:hc_teague = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Towers_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Towers_dummy
-					save_scope_as = hc_towers
-				}
-				scope:hc_towers = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			## VALE ##
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Shell_Vale_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Shell_Vale_dummy
-					save_scope_as = hc_shell_vale
-				}
-				scope:hc_shell_vale = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Brightstone_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Brightstone_dummy
-					save_scope_as = hc_brightstone
-				}
-				scope:hc_brightstone = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			## DORNE ##
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Dryland_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Dryland_dummy
-					save_scope_as = hc_dryland
-				}
-				scope:hc_dryland = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			## WESTERLANDS ##
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Casterly_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Casterly_dummy
-					save_scope_as = hc_casterly
-				}
-				scope:hc_casterly = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Parren_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Parren_dummy
-					save_scope_as = hc_parren
-				}
-				scope:hc_parren = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			## IRON ISLANDS (EUGH) ##
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Greyiron_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Greyiron_dummy
-					save_scope_as = hc_greyiron
-				}
-				scope:hc_greyiron = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			## OLD VALYRIAN FAMILIES ##
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Varezys_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Varezys_dummy
-					save_scope_as = hc_varezys
-				}
-				scope:hc_varezys = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Mataeryon_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Mataeryon_dummy
-					save_scope_as = hc_mataeryon
-				}
-				scope:hc_mataeryon = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					agot_is_house_extinct_history_trigger = { FOUNDER = character:Belaerys_1 }
-				}
-				create_character = {
-					gender = male
-					location = title:c_kings_landing.holder.capital_province
-					faith = faith:the_seven_main
-					culture = title:c_kings_landing.holder.culture
-					dynasty_house = house:house_Belaerys_dummy
-					save_scope_as = hc_belaerys
-				}
-				scope:hc_belaerys = {
-					add_character_flag = house_customizer_placeholder
-					house = {
-						add_to_global_variable_list = {
-							name = dummy_houses_for_hc
-							target = this
-						}
-					}
-				}
-			}
-		}
 		every_player = {
 			if = {
 				limit = {
@@ -2511,6 +2101,21 @@ agot_on_game_start_after_lobby = {
 		every_living_dragon = { # Dragons get aging effects and start story cycles
 			agot_back_apply_dragon_aging_effect = yes
 			create_story = story_dragon_alive
+		}
+		
+		# Halloween / April Fool's Jokes
+		if = {
+			limit = { has_game_rule = agot_silly_mode }
+			random_list = {
+				199 = { # Regular Silliness
+				}
+				1 = { # Freypocalypse
+					every_living_character = {
+						limit = { is_human = yes }
+						trigger_event = agot_easter_egg.0001
+					}
+				}
+			}
 		}
 
 

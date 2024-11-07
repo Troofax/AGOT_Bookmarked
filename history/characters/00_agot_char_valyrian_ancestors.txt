@@ -2662,7 +2662,7 @@ Targaryen_63 = {
 			remove_claim = title:d_the_giants_lance
 			remove_claim = title:c_the_eyrie
 			remove_claim = title:c_moongates
-			remove_claim = title:c_high_road
+			remove_claim = title:c_godsroost
 			remove_claim = title:c_the_bloody_gate
 			remove_claim = title:c_midlor_point
 		}
@@ -3198,21 +3198,6 @@ Targaryen_66 = {
 				imprison = {
 					target = ROOT
 					type = house_arrest
-				}
-			}
-		}
-	}
-	8130.4.1 = {
-		effect = { # Brothel Queens
-			if = {
-				limit = { character:Targaryen_63 = { is_alive = yes } }
-				add_opinion = {
-					target = character:Targaryen_63 # Rhaenyra Targaryen
-					modifier = tortured_me # opinion_forced_upon_me
-				}
-				add_opinion = {
-					target = character:Targaryen_63 # Rhaenyra Targaryen
-					modifier = tortured_family_member # opinion_forced_upon_kin
 				}
 			}
 		}
@@ -5205,6 +5190,7 @@ Targaryen_102 = {
 	}
 	8185.1.1 = {
 		#trait = courtesan # AGOT TODO trait
+		trait = refusing_marriage
 		give_nickname = nick_black_pearl
 	}
 	8219.1.1 = { effect = { remove_nickname = yes } }
@@ -5385,6 +5371,7 @@ Targaryen_95 = {
 	intrigue = 5
 	stewardship = 3
 	prowess = 5
+	fertility = 0.1
 
 	religion = the_seven_main
 	culture = westerosi_valyrian
@@ -5445,13 +5432,24 @@ Targaryen_95 = {
 	8190.1.1 = { employer = Targaryen_94 } # Daemon Blackfyre
 	8194.6.1 = { add_matrilineal_spouse = Blackfyre_3 } # Calla Blackfyre
 	8196.6.1 = {
-		effect = { agot_safe_set_location_history_effect = { CASTLE = title:c_tyrosh } }
+		effect = { 
+			agot_safe_set_location_history_effect = { CASTLE = title:c_tyrosh }
+			add_opinion = {
+				target = character:Blackfyre_5
+				modifier = agot_unworthy_opinion
+				opinion = -85
+			}
+		}
 	}
 	# 8211.1.1 = { # AGOT TODO - extend Second Sons
 		# effect = {
 			# agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_second_sons }
 		# }
 	# }
+	8212.1.1 = {
+		trait = adventurer_follower
+		make_trait_inactive = left_second_sons
+	}
 	8241.1.1 = { # 69 on death
 		death = { death_reason = death_battle }
 	}
@@ -5524,6 +5522,7 @@ Targaryen_96 = {
 	intrigue = 7
 	stewardship = 13
 	prowess = 5
+	fertility = 0.1
 
 	religion = old_gods_south
 	culture = high_valyrian
@@ -5542,6 +5541,7 @@ Targaryen_96 = {
 	8175.6.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		add_character_flag = has_scripted_appearance
 		effect = { add_trait = bastard }
 	}
 	8182.1.1 = { trait = patient }
@@ -5573,7 +5573,6 @@ Targaryen_96 = {
 	8196.6.1 = { # Redgrass Field
 		trait = one_eyed
 		trait = kinslayer_3 # Daemon Blackfyre
-		trait = scarred
 	}
 	8198.1.1 = {
 		trait = fornicator # Shiera Seastar
@@ -5650,6 +5649,9 @@ Targaryen_97 = {
 		effect = { remove_trait = bastard }
 		trait = legitimized_bastard
 		give_nickname = nick_seastar
+	}
+	8187.1.1 = {
+		effect = { add_character_modifier = contraceptives_modifier }
 	}
 	8187.8.1 = { trait = diligent }
 	8189.8.1 = {
@@ -6188,6 +6190,8 @@ Targaryen_119 = {
 	8217.1.1 = {
 		effect = { remove_trait = disinherited }
 		employer = Targaryen_110 # Maekar Targaryen
+		trait = adventurer_follower
+		make_trait_inactive = left_second_sons
 	}
 	8230.1.1 = {
 		add_spouse = Targaryen_117 # Daenora Targaryen
@@ -7586,7 +7590,7 @@ Blackfyre_14 = {
 	}
 	8258.11.1 = {
 		effect = {
-			generate_golden_company_special_troops = { LOCATION = root.capital_province ORIGIN = root.capital_province }
+			generate_golden_company_special_troops = { LOCATION = root.capital_province ORIGIN = root.capital_province ARMY_NAME = the_golden_company_name }
 		}
 	}
 	8260.10.1 = {
@@ -8063,10 +8067,11 @@ Truefyre_hh_1 = {
 	8112.1.1 = {
 		trait = knight
 		give_nickname = nick_the_flea
-		employer = Targaryen_60 # Viserys Targaryen
+		# employer = Targaryen_60 # Viserys Targaryen
 	}
-	8129.3.3 = { employer = Targaryen_65 } # Aegon II Targaryen
-	8130.10.10 = { employer = Truefyre_1 } # Trystane Truefyre
+	### AGOT TODO - Use vassal effect instead
+	# 8129.3.3 = { employer = Targaryen_65 } # Aegon II Targaryen
+	# 8130.10.10 = { employer = Truefyre_1 } # Trystane Truefyre
 	8131.1.28 = {
 		trait = nightswatch_historical
 		effect = {
@@ -8127,7 +8132,7 @@ Palehair_1 = {
 				POSITION = cupbearer_court_position
 			}
 		}
-		give_nickname = nick_palehair
+		give_nickname = nick_palehair_gaemon
 	}
 	8135.5.1 = {
 		death = {
@@ -13316,7 +13321,7 @@ Tall_1 = {
 		trait = compassionate
 		employer = Tyrell_90 # Leo Longthorn
 		effect = {
-			give_nickname = nick_the_tall
+			give_nickname = nick_the_tall_duncan
 			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Pennytree_2 } # Arlan of Pennytree
 		}
 	}
@@ -13350,13 +13355,15 @@ Tall_1 = {
 	#8212.6.1 = { employer = Stark_112 } # Beron Stark
 	#8212.9.1 = { employer = Stark_114 } # Donnor Stark
 	#8213.1.1 = { employer = Targaryen_110 } # Maekar Targaryen
+	8233.1.1 = {
+		employer = Targaryen_122 # Aegon V Targaryen
+	}
 	8233.6.1 = {
 		effect = {
 			agot_join_kingsguard_char_history_effect = { # Predecessor: Tomas Pyne
 				KING = character:Targaryen_122 # Aegon V Targaryen
 			}
 		}
-		employer = Targaryen_122 # Aegon V Targaryen
 	}
 	8236.3.2 = {
 		effect = {
@@ -16417,7 +16424,7 @@ Targaryen_hh_6 = {
 	8110.1.1 = { trait = lustful }
 	8124.1.1 = {
 		# trait = former_slave # AGOT TODO trait
-		give_nickname = nick_the_tiger
+		give_nickname = nick_the_tiger_tessario
 		effect = { # Captain of Unwin Peake's personal guard
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:c_starpike

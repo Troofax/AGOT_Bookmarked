@@ -76,32 +76,31 @@ scripted_trigger only_ai_if_ai_only_trigger = {
 	}
 }
 
-#AGOT Disabled
 
-# game_rule.1000 = {
-# 	scope = none
-# 	hidden = yes
+game_rule.1000 = {
+	scope = none
+	hidden = yes
 
-# 	trigger = {
-# 		OR = {
-# 			has_game_rule = on_generate_families
-# 			has_game_rule = on_generate_families_ai_only
-# 		}
-# 	}
+	trigger = {
+		OR = {
+			has_game_rule = on_generate_families
+			has_game_rule = on_generate_families_ai_only
+		}
+	}
 
-# 	immediate = {
-# 		every_independent_ruler = {
-# 			if = {
-# 				limit = { only_ai_if_ai_only_trigger = yes }
-# 				trigger_event = game_rule.1001
-# 			}
-# 			every_vassal_or_below = {
-# 				limit = { only_ai_if_ai_only_trigger = yes }
-# 				trigger_event = game_rule.1001
-# 			}
-# 		}
-# 	}
-# }
+	immediate = {
+		every_independent_ruler = {
+			if = {
+				limit = { only_ai_if_ai_only_trigger = yes }
+				trigger_event = game_rule.1001
+			}
+			every_vassal_or_below = {
+				limit = { only_ai_if_ai_only_trigger = yes }
+				trigger_event = game_rule.1001
+			}
+		}
+	}
+}
 
 game_rule.1001 = { #by Mathilda Bjarnehed
 	type = character_event
@@ -128,15 +127,14 @@ game_rule.1001 = { #by Mathilda Bjarnehed
 			is_holy_order = no
 		}
 		NOR = {
-			government_has_flag = government_is_republic
-			government_has_flag = government_is_theocracy
-			has_character_flag = do_not_generate_starting_family
 			#AGOT Disabled
-			#AND = {
-			#	exists = character:7757
-			#	this = character:7757 #Matilda Canossa, her bookmark start is about overcoming the issue of no heir
-			#}
+			#government_has_flag = government_is_republic
+			#government_has_flag = government_is_theocracy
+			has_character_flag = do_not_generate_starting_family
 		}
+		#AGOT Added, Only enable this for wildlings with tribal government
+		government_has_flag = government_is_tribal
+		culture = { agot_is_wildling_culture = yes }
 	}
 
 

@@ -583,7 +583,7 @@ Greyiron_27 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	5181.1.1 = { give_nickname = nick_redhand }
+	5181.1.1 = { give_nickname = nick_redhand_urron }
 	5203.1.1 = { death = yes }
 }
 Greyiron_28 = {
@@ -598,7 +598,7 @@ Greyiron_28 = {
 	trait = line_of_char
 	disallow_random_traits = yes
 
-	give_nickname = nick_redhand
+	give_nickname = nick_redhand_line
 
 	5203.1.1 = { birth = yes }
 	6457.1.1 = { death = yes }
@@ -1427,6 +1427,8 @@ Hoare_28 = {
 		# }
 	# }
 	7900.12.28 = {
+		trait = adventurer_follower
+		make_trait_inactive = left_second_sons
 		give_nickname = nick_hardhand
 		#trait = suspected_kinslayer # AGOT TODO trait
 	}
@@ -1536,7 +1538,7 @@ Hoare_31 = {
 	}
 	7970.1.1 = { add_spouse = Greyjoy_39 } # Gwynesse Greyjoy
 	7980.1.1 = {
-		give_nickname = nick_the_black
+		give_nickname = nick_the_black_harren
 		trait = architect
 		#trait = slave_owner AGOT TODO Trait
 		effect = { add_tyranny = massive_tyranny_gain }
@@ -13612,4 +13614,31 @@ Drowned_Men_4 = {
 			killer = Greyjoy_41 # Goren Greyjoy
 		}
 	}
+}
+
+### LAAMPS
+Knight_Iron_Isles_1 = {
+	name = Ralf # Modcanon - LAAMP
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	trait = physique_bad_2
+	trait = weak
+
+	trait = deceitful
+	trait = temperate
+	trait = callous
+	trait = charming
+
+	disallow_random_traits = yes
+
+	8058.1.1 = {
+		birth = yes
+		give_nickname = nick_bonesuckled
+	}
+	8074.1.1 = {
+		trait = education_intrigue_3
+	}
+	8087.1.1 = { death = yes }
 }

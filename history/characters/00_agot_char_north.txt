@@ -3255,7 +3255,7 @@ Umber_4 = {
 		add_character_flag = sexuality_ensure_homosexual
 	}
 	8250.1.1 = { trait = drunkard }
-	8254.1.1 = { give_nickname = nick_whoresbane }
+	8254.1.1 = { give_nickname = nick_whoresbane_hother }
 	8256.1.1 = { add_spouse = Umber_rs_4 }
 	8291.1.1 = {
 		effect = { # Co-Castellan of Last Hearth
@@ -8025,9 +8025,13 @@ Mormont_3 = {
 		}
 	}
 	8295.12.31 = { remove_spouse = Hightower_14 } # Lynesse Hightower
-	8296.1.1 = { employer = Mopatis_1 } # Illyrio Mopatis
+	8297.12.21 = { 
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_targaryen_exiles }
+		}
+	}
 	# AGOT TODO - Fix those when we get to those start dates
-	# 8297.12.21 = { employer = 300100 } # Khal Drogo
+	# 8298.11.10 = { employer = 300100 } # Khal Drogo
 	# 8299.1.22 = { # Drogo's death
 	#	employer = Targaryen_9 # Daenerys Targaryen
 	# }
@@ -12330,7 +12334,6 @@ Forrester_4 = {
 	8297.1.1 = { # Banished to Essos, became a mercenary
 		trait = disinherited
 		add_character_flag = historical_disinheritance
-		# employer = 1684230 #Tattered Prince # AGOT TODO, no windblown title
 		effect = {
 			if = {
 				limit = { character:Forrester_2 = { is_alive = yes } }
@@ -12339,8 +12342,16 @@ Forrester_4 = {
 					target = character:Forrester_2 # Gregor Forrester
 				}
 			}
+			if = {
+				limit = { game_start_date < 8298.1.1 }
+				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_windblown }
+			}
 			# set_relation_friend = character:1684248 # Beskha # ESSOS TODO
 		}
+	}
+	8298.1.1 = { # Leaves the Windblown at some point
+		trait = adventurer_follower
+		make_trait_inactive = left_windblown
 	}
 }
 Forrester_5 = {

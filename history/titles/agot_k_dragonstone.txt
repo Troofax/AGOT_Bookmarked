@@ -31,6 +31,21 @@
 	}
 	7999.4.1 = {
 		liege = e_the_iron_throne
+		effect = {
+			if = {	# Set Court Language to Common
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_common
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
 	}
 	8025.6.1 = {
 		holder = Targaryen_31

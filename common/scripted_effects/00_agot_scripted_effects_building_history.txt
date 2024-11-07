@@ -366,7 +366,8 @@
 	province:2855 = {
 		agot_add_building_if_possible = { BUILDING = godswood_02 }
 		agot_add_building_if_possible = { BUILDING = stables_06 }
-		agot_add_building_if_possible = { BUILDING = barracks_04 }
+		agot_add_building_if_possible = { BUILDING = smiths_05 }
+		agot_add_building_if_possible = { BUILDING = quarries_05 }
 	}
 	province:2862 = {
 		agot_add_building_if_possible = { BUILDING = barracks_02 }
@@ -468,6 +469,19 @@
 		agot_add_building_if_possible = { BUILDING = hunting_grounds_01 }
 		agot_add_building_if_possible = { BUILDING = pastures_01 }
 		agot_add_building_if_possible = { BUILDING = cereal_fields_01 }
+	}
+	province:3180 = {
+		if = {
+			limit = {
+				game_start_date < 8261.11.1
+			}
+			#agot_add_building_if_possible = { BUILDING = hill_forts_01 }
+			agot_add_building_if_possible = { BUILDING = outposts_03 }
+			agot_add_building_if_possible = { BUILDING = warrior_lodges_05 }
+			agot_add_building_if_possible = { BUILDING = smiths_03 }
+			agot_add_building_if_possible = { BUILDING = quarries_04 }
+			agot_add_building_if_possible = { BUILDING = watermills_01 }
+		}
 	}
 	province:3186 = {
 		agot_add_building_if_possible = { BUILDING = smiths_01 }
@@ -715,8 +729,8 @@
 	}
 	province:3684 = {
 		agot_add_building_if_possible = { BUILDING = stables_04 }
-		agot_add_building_if_possible = { BUILDING = farm_estates_04 }
-		agot_add_building_if_possible = { BUILDING = cereal_fields_04 }
+		agot_add_building_if_possible = { BUILDING = watermills_04  }
+		agot_add_building_if_possible = { BUILDING = logging_camps_04 }
 	}
 	province:3730 = {
 		agot_add_building_if_possible = { BUILDING = stables_05 }
@@ -1976,7 +1990,7 @@ agot_add_camp_buildings_on_start = {
 			add_domicile_building = supply_tent_arsenal
 		}
 	}
-	title:d_laamp_duncan_the_tall.holder.domicile ?= {
+	title:d_laamp_Tall_1.holder.domicile ?= {
 		if = {
 			limit = {
 				is_domicile_type = camp

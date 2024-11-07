@@ -2,7 +2,8 @@
 # History database id:Targaryen_94
 bookmark_195_daemon_blackfyre={
 	type=male
-	id=3944973141
+	id=45537
+	random_seed=3944973141
 	age=0.250000
 	genes={ 		hair_color={ 58 15 58 15 }
  		skin_color={ 32 17 32 17 }
@@ -96,8 +97,8 @@ bookmark_195_daemon_blackfyre={
  		expression_other={ "cheek_wrinkles_both_01" 80 "cheek_wrinkles_both_01" 80 }
  		complexion={ "complexion_beauty_1" 60 "complexion_beauty_1" 60 }
  		gene_height={ "normal_height" 135 "normal_height" 135 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 127 "body_fat_head_fat_full" 126 }
- 		gene_bs_body_shape={ "body_shape_hourglass_half" 249 "body_shape_hourglass_half" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 124 "body_fat_head_fat_full" 126 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_half" 254 "body_shape_hourglass_half" 0 }
  		gene_bs_bust={ "bust_clothes" 103 "bust_default" 129 }
  		gene_age={ "old_2" 137 "old_2" 137 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 150 "avg_spacing_lower_thickness" 150 }
@@ -108,21 +109,21 @@ bookmark_195_daemon_blackfyre={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 31 "normal_eyelashes" 0 }
+ 		eyelashes_accessory={ "dark_eyelashes" 13 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
  		gene_dragon_aging={ "non_dragon_aging" 127 "non_dragon_aging" 127 }
  		gene_camera_zoom={ "no_camera_zoom" 0 "no_camera_zoom" 0 }
  		gene_dragon_size={ "non_dragon_size" 127 "non_dragon_size" 127 }
- 		gene_dragon_skin_hue={ "dragon_skin_hue" 127 "dragon_skin_hue" 127 }
- 		gene_dragon_skin_value={ "dragon_skin_value" 127 "dragon_skin_value" 127 }
- 		gene_dragon_highlight_hue={ "dragon_highlight_hue" 127 "dragon_highlight_hue" 127 }
- 		gene_dragon_highlight_value={ "dragon_highlight_value" 127 "dragon_highlight_value" 127 }
- 		gene_dragon_eye_hue={ "dragon_eye_hue" 127 "dragon_eye_hue" 127 }
- 		gene_dragon_eye_value={ "dragon_eye_value" 127 "dragon_eye_value" 127 }
- 		gene_dragon_horn_hue={ "dragon_horn_hue" 127 "dragon_horn_hue" 127 }
- 		gene_dragon_horn_value={ "dragon_horn_value" 127 "dragon_horn_value" 127 }
+ 		gene_dragon_primary_color_hue={ "dragon_primary_color_hue" 127 "dragon_primary_color_hue" 127 }
+ 		gene_dragon_primary_color_value={ "dragon_primary_color_value" 127 "dragon_primary_color_value" 127 }
+ 		gene_dragon_secondary_hue={ "dragon_secondary_hue" 127 "dragon_secondary_hue" 127 }
+ 		gene_dragon_secondary_value={ "dragon_secondary_value" 127 "dragon_secondary_value" 127 }
+ 		gene_dragon_eye_color_hue={ "dragon_eye_color_hue" 127 "dragon_eye_color_hue" 127 }
+ 		gene_dragon_eye_color_value={ "dragon_eye_color_value" 127 "dragon_eye_color_value" 127 }
+ 		gene_dragon_horn_color_hue={ "dragon_horn_color_hue" 127 "dragon_horn_color_hue" 127 }
+ 		gene_dragon_horn_color_value={ "dragon_horn_color_value" 127 "dragon_horn_color_value" 127 }
  		gene_dragon_brow_width={ "dragon_brow_width" 127 "dragon_brow_width" 127 }
  		gene_dragon_cheek_width={ "dragon_cheek_width" 127 "dragon_cheek_width" 127 }
  		gene_dragon_chin_profile={ "dragon_chin_profile" 127 "dragon_chin_profile" 127 }
@@ -148,6 +149,7 @@ bookmark_195_daemon_blackfyre={
  		gene_dragon_snout_end_width={ "dragon_snout_end_width" 127 "dragon_snout_end_width" 127 }
  		gene_dragon_neck_length={ "dragon_neck_length" 127 "dragon_neck_length" 127 }
  		gene_dragon_tail_length={ "dragon_tail_length" 127 "dragon_tail_length" 127 }
+ 		gene_dragon_scales_effect={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
  		skin_color_saturation={ "vanilla_skin_saturation" 127 "vanilla_skin_saturation" 127 }
  		eye_color_saturation={ "eye_color_saturation" 145 "eye_color_saturation" 145 }
  		gene_bs_eye_height_inside={ "eye_height_inside_neg" 52 "eye_height_inside_neg" 52 }
@@ -178,10 +180,9 @@ bookmark_195_daemon_blackfyre={
  		gene_beauty_details={ "beauty_details" 25 "beauty_details" 0 }
  		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 23 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 29 "all_legwear" 0 }
+ 		hairstyles={ "all_hairstyles" 20 "all_hairstyles" 0 }
+ 		legwear={ "stormlands_war_legwear" 255 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
- 		gene_shrink_agot={ "shrink_bodice" 255 "shrink_bodice" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
@@ -190,7 +191,7 @@ bookmark_195_daemon_blackfyre={
  		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
- 		clothes={ "ep2_western_era3_high_nobility_clothes" 103 "most_clothes" 0 }
+ 		clothes={ "agot_all_armors" 255 "most_clothes" 0 }
  		headgear={ "no_headgear" 53 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }
@@ -210,10 +211,6 @@ bookmark_195_daemon_blackfyre={
 		}
  {
 			hash=1563190100
-			invert=no
-		}
- {
-			hash=1945936758
 			invert=no
 		}
  }
