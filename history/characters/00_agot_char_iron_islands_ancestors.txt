@@ -3861,7 +3861,6 @@ Greyjoy_90 = {
 	father = Greyjoy_79
 
 	trait = bastard
-	give_nickname = nick_pyke
 
 	8145.1.1 = {
 		birth = yes
@@ -3879,7 +3878,6 @@ Greyjoy_93 = {
 	father = Greyjoy_79
 
 	trait = bastard
-	give_nickname = nick_pyke
 
 	8156.1.1 = {
 		birth = yes
@@ -7137,7 +7135,6 @@ Botley_36 = {
 	father = Botley_33
 
 	trait = bastard
-	give_nickname = nick_pyke
 
 	8155.1.1 = {
 		birth = yes
@@ -7544,7 +7541,6 @@ Saltcliffe_24 = {
 	father = Saltcliffe_22
 
 	trait = bastard
-	give_nickname = nick_pyke
 
 	8157.1.1 = {
 		birth = yes
@@ -7788,7 +7784,6 @@ Saltcliffe_36 = {
 	father = Saltcliffe_26
 
 	trait = bastard
-	give_nickname = nick_pyke
 
 	trait = education_learning_1
 
@@ -8000,7 +7995,6 @@ Sunderly_24 = {
 	father = Sunderly_23
 
 	trait = bastard
-	give_nickname = nick_pyke
 
 	7987.1.1 = { birth = yes }
 	8000.2.1 = {
@@ -11073,7 +11067,6 @@ Orkwood_20 = {
 	father = Orkwood_19
 
 	trait = bastard
-	give_nickname = nick_pyke
 
 	trait = education_martial_2
 
@@ -11274,9 +11267,11 @@ Codd_12 = {
 	mother = Fisher_riverlands_duplicate_9
 
 	trait = bastard
-	give_nickname = nick_pyke
 
-	7800.1.1 = { birth = yes }
+	7800.1.1 = { 
+		birth = yes
+		make_trait_inactive = surname_pyke 
+	}
 	7818.1.1 = { trait = incestuous }
 	7870.1.1 = { death = yes }
 }
@@ -11667,7 +11662,6 @@ Codd_36 = {
 	mother = Codd_32
 
 	trait = bastard
-	give_nickname = nick_pyke
 
 	8120.1.1 = { birth = yes }
 	8141.1.1 = { trait = incestuous }
@@ -11715,7 +11709,6 @@ Codd_38 = {
 	mother = Codd_32
 
 	trait = bastard
-	give_nickname = nick_pyke
 
 	8141.1.1 = { birth = yes }
 	8166.1.1 = { trait = incestuous }

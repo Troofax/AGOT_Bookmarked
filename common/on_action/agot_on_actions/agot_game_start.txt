@@ -24,7 +24,7 @@ agot_on_game_start = {
 		}
 
 		##### General setup start #####
-		
+
 		# House Customizer Dummies Spawn
 		agot_house_customizer_spawn_dummies_effect = yes
 
@@ -1066,6 +1066,115 @@ agot_on_game_start = {
 					value = 50
 				}
 			}
+
+			if = { # Distribute Bastard nicknames
+				### Outliers that have to be assigned manually:
+				# lowborn bastards with last name
+				# bastards of Rhoynish and High Valyrian cultures
+				# bastards who have their last name mismatched with their cultures
+				# probably most of Crownlands
+				# bastards who retained their surname after legitimization
+				limit = {
+					has_trait = bastard
+					is_lowborn = no
+					NOR = {
+						has_inactive_trait = surname_flowers
+						has_inactive_trait = surname_sand
+						has_inactive_trait = surname_stone
+						has_inactive_trait = surname_snow
+						has_inactive_trait = surname_pyke
+						has_inactive_trait = surname_storm
+						has_inactive_trait = surname_hill
+						has_inactive_trait = surname_waters
+						has_inactive_trait = surname_rivers
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = culture:reachman
+							culture = culture:vineman
+							culture = culture:honeywiner
+							culture = culture:shieldman
+							culture = culture:marcher
+						}
+					}
+					make_trait_inactive = surname_flowers
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = culture:sand_dornish
+							culture = culture:salt_dornish
+							culture = culture:stone_dornish
+						}
+					}
+					make_trait_inactive = surname_sand
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = culture:valeman
+							culture = culture:moonman
+							culture = culture:fingerman
+							culture = culture:sisterman
+						}
+					}
+					make_trait_inactive = surname_stone
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = culture:barrowman
+							culture = culture:bearman
+							culture = culture:crannogman
+							culture = culture:fangman
+							culture = culture:first_man
+							culture = culture:forestman
+							culture = culture:frozen_shoreman
+							culture = culture:harborman
+							culture = culture:hill_clansman
+							culture = culture:hornfoot
+							culture = culture:ice_riverman
+							culture = culture:krakenman
+							culture = culture:lakeman
+							culture = culture:nightrunner
+							culture = culture:northman
+							culture = culture:sisterman
+							culture = culture:skagosi
+							culture = culture:thenn
+							culture = culture:wolfswood_clansman
+						}
+					}
+					make_trait_inactive = surname_snow
+				}
+				else_if = {
+					limit = { culture = culture:ironborn }
+					make_trait_inactive = surname_pyke
+				}
+				else_if = {
+					limit = { culture = culture:riverlander }
+					make_trait_inactive = surname_rivers
+				}
+				else_if = {
+					limit = { culture = culture:stormlander }
+					make_trait_inactive = surname_storm
+				}
+				else_if = {
+					limit = { culture = culture:westerman }
+					make_trait_inactive = surname_hill
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = culture:crownlander
+							culture = culture:westerosi_valyrian
+							culture = culture:clawman
+						}
+					}
+					make_trait_inactive = surname_waters
+				}
+			}
 		}
 
 		every_empire = {
@@ -1223,11 +1332,11 @@ agot_on_game_start = {
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					character:Arryn_13 = { is_alive = yes }
 				}
 				character:Arryn_3 = {
-					set_designated_heir = character:Arryn_13
+					set_designated_heir_unsafe = character:Arryn_13
 				}
 			}
 			# Nightswatch cleanup TO-DO set up by date
@@ -1954,7 +2063,7 @@ agot_on_game_start_after_lobby = {
 					create_character = {
 						location = title:k_the_wall.holder.capital_province
 						template = agot_northman_character
-						dynasty = no
+						dynasty = none
 						gender = male
 						save_scope_as = new_mayor
 					}
@@ -2102,7 +2211,7 @@ agot_on_game_start_after_lobby = {
 			agot_back_apply_dragon_aging_effect = yes
 			create_story = story_dragon_alive
 		}
-		
+
 		# Halloween / April Fool's Jokes
 		if = {
 			limit = { has_game_rule = agot_silly_mode }
@@ -2327,7 +2436,7 @@ agot_on_game_start_after_lobby = {
 				var:target_employer = { add_courtier = PREV }
 			}
 		}
-		
+
 		# Ruler Designer Dragon Riders
 		every_player = {
 			limit = {

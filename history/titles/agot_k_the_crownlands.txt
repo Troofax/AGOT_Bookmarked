@@ -1553,11 +1553,11 @@ c_brackworth = {
 	7853.1.1 = {
 		holder = Holk_2
 	}
-	7868.1.1 = {
-		liege = d_deerfield
-	}
 	7886.1.1 = {
 		holder = Holk_4
+	}
+	7888.1.1 = {
+		liege = d_deerfield
 	}
 	7891.1.1 = {
 		holder = Holk_9
@@ -1607,11 +1607,10 @@ c_brackworth = {
 }
 c_point_square = {
 	7868.1.1 = {
-		liege = d_deerfield
 		holder = Buckwell_8
 	}
 	7888.1.1 = {
-		holder = Buckwell_8
+		liege = d_deerfield
 	}
 	7895.1.1 = {
 		holder = Buckwell_11
@@ -1664,11 +1663,10 @@ c_point_square = {
 }
 c_tuskford = {
 	7868.1.1 = {
-		liege = d_deerfield
 		holder = Buckwell_8
 	}
 	7888.1.1 = {
-		holder = Buckwell_8
+		liege = d_deerfield
 	}
 	7895.1.1 = {
 		holder = Buckwell_11
@@ -1723,11 +1721,11 @@ c_vairs_head = {
 	7859.1.1 = {
 		holder = Harte_7
 	}
-	7877.1.1 = {
-		liege = d_deerfield
-	}
 	7886.1.1 = {
 		holder = Harte_8
+	}
+	7888.1.1 = {
+		liege = d_deerfield
 	}
 	7923.1.1 = {
 		holder = Harte_10

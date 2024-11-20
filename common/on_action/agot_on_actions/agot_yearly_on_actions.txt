@@ -6,7 +6,6 @@
 		agot_jon_snow_learns
 		agot_citadel_yearly_pulse
 		agot_king_is_dying
-		agot_dragon_binding_pulse
 	}
 }
 
@@ -705,6 +704,7 @@ agot_king_is_dying = {
 				highest_held_title_tier = tier_empire
 				is_landed = yes
 				health < death_chance_starts_health
+				NOT = { government_has_flag = government_is_administrative }
 			}
 			add_character_flag = king_is_dying
 			if = {
@@ -712,25 +712,6 @@ agot_king_is_dying = {
 				add_character_flag = already_has_know_thyself_perk
 			}
 			else = { add_perk = know_thyself_perk }
-		}
-	}
-}
-
-# Every year we adjust strength of horn blowers
-agot_dragon_binding_pulse = {
-	effect = {
-		every_living_dragon = {
-			limit = {
-				AND = {
-					has_variable = horn_binder
-					has_variable = binding_strength
-				}
-			}
-			remove_character_flag = recently_rebound
-			trigger_event = {
-				id = agot_decisions_events.0104
-				days = { 1 364 }
-			}
 		}
 	}
 }

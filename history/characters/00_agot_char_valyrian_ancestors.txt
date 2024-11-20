@@ -3473,7 +3473,6 @@ Targaryen_74 = {
 	mother = Strong_34 # Alys Rivers
 
 	trait = bastard
-	give_nickname = nick_rivers
 
 	trait = education_martial_2
 	trait = beauty_good_1
@@ -3489,6 +3488,7 @@ Targaryen_74 = {
 			add_pressed_claim = title:k_the_crownlands
 			add_pressed_claim = title:d_kings_landing
 			add_pressed_claim = title:c_kings_landing
+			make_trait_inactive = surname_rivers
 		}
 	}
 	8144.1.1 = { trait = dragonrider } # Nightfyre (nc)
@@ -5028,7 +5028,7 @@ Targaryen_98 = {
 		add_character_flag = has_scripted_appearance
 		effect = {
 			add_trait = bastard
-			give_nickname = nick_waters
+			make_trait_inactive = surname_waters
 		}
 	}
 	8159.11.14 = { # Sent to Faith by Viserys II
@@ -5038,10 +5038,7 @@ Targaryen_98 = {
 		}
 	}
 	8184.1.1 = {
-		effect = {
-			remove_trait = bastard
-			remove_nickname = yes
-		}
+		effect = { remove_trait = bastard }
 		trait = legitimized_bastard
 	}
 	8200.1.1 = { death = yes }
@@ -5066,7 +5063,7 @@ Targaryen_99 = {
 		add_character_flag = has_scripted_appearance
 		effect = {
 			add_trait = bastard
-			give_nickname = nick_waters
+			make_trait_inactive = surname_waters
 		}
 	}
 	8159.11.14 = { # Sent to Faith by Viserys II
@@ -5076,10 +5073,7 @@ Targaryen_99 = {
 		}
 	}
 	8184.1.1 = {
-		effect = {
-			remove_trait = bastard
-			remove_nickname = yes
-		}
+		effect = { remove_trait = bastard }
 		trait = legitimized_bastard
 	}
 	8211.1.1 = { death = yes }
@@ -5104,7 +5098,7 @@ Targaryen_100 = {
 		add_character_flag = has_scripted_appearance
 		effect = {
 			add_trait = bastard
-			give_nickname = nick_waters
+			make_trait_inactive = surname_waters
 		}
 	}
 	8159.11.14 = { # Sent to Faith by Viserys II
@@ -5114,10 +5108,7 @@ Targaryen_100 = {
 		}
 	}
 	8184.1.1 = {
-		effect = {
-			remove_trait = bastard
-			remove_nickname = yes
-		}
+		effect = { remove_trait = bastard }
 		trait = legitimized_bastard
 	}
 	8189.1.1 = { death = yes }
@@ -5142,7 +5133,7 @@ Targaryen_101 = {
 		add_character_flag = has_scripted_appearance
 		effect = {
 			add_trait = bastard
-			give_nickname = nick_waters
+			make_trait_inactive = surname_waters
 		}
 	}
 	8159.11.14 = { # Sent to Faith by Viserys II
@@ -5152,10 +5143,7 @@ Targaryen_101 = {
 		}
 	}
 	8184.1.1 = {
-		effect = {
-			remove_trait = bastard
-			remove_nickname = yes
-		}
+		effect = { remove_trait = bastard }
 		trait = legitimized_bastard
 	}
 	8208.1.1 = { death = yes }
@@ -5270,8 +5258,6 @@ Targaryen_94 = {
 	father = Targaryen_88
 	mother = Targaryen_83 # Daena Targaryen
 
-	give_nickname = nick_waters
-
 	trait = education_martial_3
 	trait = beauty_good_3
 	trait = physique_good_1
@@ -5287,6 +5273,7 @@ Targaryen_94 = {
 		effect = {
 			add_trait = bastard
 			add_character_flag = potential_targ_lunatic
+			make_trait_inactive = surname_waters
 		}
 	}
 	8176.8.1 = { trait = gregarious }
@@ -5297,6 +5284,7 @@ Targaryen_94 = {
 		effect = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Targaryen_88 } # Aegon IV Targaryen
 			add_prestige_level = 1
+			agot_remove_bastard_nickname_effect = yes #Removes surname
 		}
 		trait = ambitious
 		dynasty_house = house_Blackfyre
@@ -5379,8 +5367,6 @@ Targaryen_95 = {
 	father = Targaryen_88
 	mother = Bracken_76 # Barbara Braken
 
-	give_nickname = nick_rivers
-
 	trait = education_martial_5
 	trait = physique_good_2
 	trait = pensive
@@ -5390,7 +5376,10 @@ Targaryen_95 = {
 	8172.11.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
-		effect = { add_trait = bastard }
+		effect = { 
+			add_trait = bastard
+			make_trait_inactive = surname_rivers 
+		}
 		employer = Targaryen_88 # Aegon IV Targaryen
 		add_character_flag = has_scripted_appearance
 	}
@@ -5474,7 +5463,7 @@ Targaryen_105 = {
 		add_character_flag = has_scripted_appearance
 		effect = {
 			add_trait = bastard
-			give_nickname = nick_rivers
+			make_trait_inactive = surname_rivers
 		}
 	}
 	8184.1.1 = {
@@ -5503,7 +5492,7 @@ Targaryen_106 = {
 		add_character_flag = has_scripted_appearance
 		effect = {
 			add_trait = bastard
-			give_nickname = nick_rivers
+			make_trait_inactive = surname_rivers
 		}
 	}
 	8184.1.1 = {
@@ -5542,7 +5531,10 @@ Targaryen_96 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 		add_character_flag = has_scripted_appearance
-		effect = { add_trait = bastard }
+		effect = { 
+			add_trait = bastard
+			make_trait_inactive = surname_rivers 
+		}
 	}
 	8182.1.1 = { trait = patient }
 	8184.1.1 = {
@@ -5573,6 +5565,7 @@ Targaryen_96 = {
 	8196.6.1 = { # Redgrass Field
 		trait = one_eyed
 		trait = kinslayer_3 # Daemon Blackfyre
+		trait = scarred
 	}
 	8198.1.1 = {
 		trait = fornicator # Shiera Seastar
@@ -5624,8 +5617,6 @@ Targaryen_97 = {
 	religion = the_seven_main
 	culture = high_valyrian
 
-	give_nickname = nick_waters
-
 	trait = education_diplomacy_5
 	trait = beauty_good_3
 	trait = bossy
@@ -5643,6 +5634,7 @@ Targaryen_97 = {
 		effect = {
 			add_trait = bastard
 			make_trait_inactive = heterochromia_blue2
+			make_trait_inactive = surname_waters
 		}
 	}
 	8184.1.1 = {
@@ -8191,7 +8183,6 @@ Palehair_hh_2 = {
 	religion = the_seven_main
 	culture = salt_dornish
 
-	give_nickname = nick_sand
 	trait = bastard
 
 	trait = education_intrigue_2
@@ -8206,6 +8197,7 @@ Palehair_hh_2 = {
 	8093.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		make_trait_inactive = surname_sand
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
 		}
@@ -9845,7 +9837,6 @@ Velaryon_45 = {
 	mother = Targaryen_85 # Elaena Targaryen
 
 	trait = bastard
-	give_nickname = nick_waters
 
 	trait = education_martial_2
 	trait = beauty_good_1
@@ -9855,6 +9846,7 @@ Velaryon_45 = {
 	8175.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		make_trait_inactive = surname_waters
 	}
 	8191.1.1 = { trait = knight }
 	8195.1.1 = { add_spouse = Cargyll_21_C } # Lynett Cargyll
@@ -9873,7 +9865,6 @@ Velaryon_46 = {
 	mother = Targaryen_85 # Elaena Targaryen
 
 	trait = bastard
-	give_nickname = nick_waters
 
 	trait = beauty_good_1
 	trait = twin
@@ -9881,6 +9872,7 @@ Velaryon_46 = {
 	8175.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		make_trait_inactive = surname_waters
 	}
 	8240.1.1 = { death = yes }
 }
@@ -10809,7 +10801,6 @@ Celtigar_31 = {
 	mother = Celtigar_30
 
 	trait = bastard
-	give_nickname = nick_waters
 
 	trait = gregarious
 
@@ -13581,7 +13572,6 @@ Kingsguard_6 = {
 	mother = Tangletongue_2
 
 	trait = bastard
-	give_nickname = nick_waters
 
 	trait = education_martial_2
 	trait = diligent
@@ -13595,6 +13585,7 @@ Kingsguard_6 = {
 	8105.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		make_trait_inactive = surname_waters
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_blackglass_port }
 		}
@@ -15303,7 +15294,6 @@ Poor_Fellows_2 = {
 	culture = westerman
 
 	trait = bastard
-	give_nickname = nick_hill
 
 	trait = education_martial_1
 	trait = zealous
@@ -15318,6 +15308,7 @@ Poor_Fellows_2 = {
 	8011.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		make_trait_inactive = surname_hill
 	}
 	8028.1.1 = { trait = knight }
 	8045.6.1 = {
@@ -16044,7 +16035,6 @@ Knight_Kings_Landing_16 = {
 	culture = westerosi_valyrian
 
 	trait = bastard
-	give_nickname = nick_waters
 
 	trait = education_martial_1
 	trait = gregarious
@@ -16058,6 +16048,7 @@ Knight_Kings_Landing_16 = {
 	8104.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
+		make_trait_inactive = surname_waters
 	}
 	8122.1.1 = {
 		trait = knight
@@ -16607,7 +16598,6 @@ Knight_Kings_Landing_12 = {
 	culture = reachman
 
 	trait = bastard
-	give_nickname = nick_flowers
 
 	trait = education_martial_2
 	trait = wrathful
@@ -16616,10 +16606,12 @@ Knight_Kings_Landing_12 = {
 	8170.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		make_trait_inactive = surname_flowers
 	}
 	8186.1.1 = {
 		trait = knight
 		trait = lifestyle_blademaster_2_history
+		give_nickname = nick_the_black_prefix
 	}
 	8190.1.1 = { employer = Targaryen_94 } # Daemon Blackfyre
 	8196.6.1 = { agot_join_golden_company_history_effect = yes }

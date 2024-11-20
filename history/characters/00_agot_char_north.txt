@@ -617,7 +617,6 @@ Stark_7 = {
 	father = Stark_3
 
 	trait = bastard
-	give_nickname = nick_snow
 
 	trait = education_martial_2
 	trait = pensive
@@ -861,7 +860,8 @@ Stark_8 = {
 		}
 	}
 	8300.1.1 = {
-		remove_spouse = Lannister_8 # Tyrion Lannister
+		#AGOT TODO : Marry them first
+		#remove_spouse = Lannister_8 # Tyrion Lannister
 		death = { death_reason = death_vanished }
 	}
 }
@@ -898,7 +898,7 @@ Stark_Dummy_8 = {
 	8300.1.1 = { # Replaces Sansa Stark, pretending to be Alayne
 		employer = Baelish_2 # Petyr Baelish
 		dynasty_house = house_BaelishHH # House Baelish of Harrenhal
-		give_nickname = nick_stone
+		make_trait_inactive = surname_stone
 		effect = {
 			copy_inheritable_appearance_from = character:Stark_8 # Sansa Stark
 			clear_traits = yes
@@ -4970,8 +4970,6 @@ Bolton_5 = {
 
 	father = Bolton_1
 
-	give_nickname = nick_snow
-
 	trait = education_martial_2
 	trait = beauty_bad_1
 	trait = intellect_good_1
@@ -5028,7 +5026,6 @@ Bolton_5 = {
 		trait = murderer
 		effect = {
 			remove_trait = bastard
-			remove_nickname = yes
 			if = {
 				limit = { character:Stark_7 = { is_alive = yes } }
 				reverse_add_opinion = {
@@ -6693,7 +6690,6 @@ Hornwood_4 = {
 	father = Hornwood_2
 
 	trait = bastard
-	give_nickname = nick_snow
 
 	trait = brave
 	trait = diligent
@@ -9866,13 +9862,13 @@ Orlych_hh_2 = {
 	culture = riverlander
 
 	trait = bastard
-	give_nickname = nick_rivers
 	
 	trait = education_martial_2
 
 	8269.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
+		make_trait_inactive = surname_rivers 
 	}
 	8285.1.1 = { trait = knight }
 	8290.1.1 = { employer = Orlych_45 } # Brandon Orlych
@@ -12514,7 +12510,6 @@ Forrester_30 = {
 	mother = Forrester_rs_4
 
 	trait = bastard
-	give_nickname = nick_snow
 
 	trait = education_martial_2
 	trait = twin
@@ -12527,6 +12522,7 @@ Forrester_30 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 		effect = { set_real_father = character:Forrester_2 } # Gregor Forrester
+		make_trait_inactive = surname_snow
 	}
 	8286.1.1 = {
 		trait = callous
@@ -12556,7 +12552,6 @@ Forrester_31 = {
 	mother = Forrester_rs_4
 
 	trait = bastard
-	give_nickname = nick_snow
 
 	trait = education_diplomacy_3
 	trait = twin
@@ -12569,6 +12564,7 @@ Forrester_31 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 		effect = { set_real_father = character:Forrester_2 } # Gregor Forrester
+		make_trait_inactive = surname_snow
 	}
 	8286.1.1 = {
 		trait = callous
@@ -15463,7 +15459,6 @@ Fenn_29 = {
 	father = Fenn_30
 
 	trait = bastard
-	give_nickname = nick_snow
 
 	8270.1.1 = {
 		birth = yes
