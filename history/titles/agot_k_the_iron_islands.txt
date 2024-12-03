@@ -618,7 +618,7 @@ c_blacktyde = {
 c_needlefin = {
 	4393.1.1 = {
 		liege = d_blacktyde
-		succession_laws = { male_only_law single_heir_succession_law }		
+		succession_laws = { male_only_law single_heir_succession_law }
 		holder = Blacktyde_8
 	}
 	7878.1.1 = {
@@ -2430,7 +2430,7 @@ b_galleywood = {
 c_greygrave = {
 	2917.1.1 = {
 		liege = d_orkmont
-		succession_laws = { male_only_law single_heir_succession_law }		
+		succession_laws = { male_only_law single_heir_succession_law }
 		holder = Greyiron_1
 	}
 	2942.1.1 = {

@@ -347,25 +347,25 @@ b_goldguard_heights = {
 	}
 	8041.1.1 = {
 		holder = Manning_22 # Manly Manning (m)
-	}	
+	}
 	8048.3.7 = {
 		holder = Targaryen_35 # Qarl Corbray (C) is landed
 	}
 	8059.2.1 = {
 		holder = Redwyne_30 # Robert Redwyne (C)
-	}	
+	}
 	8090.1.1 = {
 		holder = Conklyn_37 # Clement Conklyn (nc)
-	}	
+	}
 	8104.7.12 = {
 		holder = Targaryen_61 # Daemon Targaryen (C)
 	}
 	8105.9.12 = { # Daemon leaves for Stepstones, goes to Harwin
 		holder = Strong_30 # Harwin Strong (C)
 	}
-	8113.1.1 = { 
+	8113.1.1 = {
 		holder = Langward_26 # Hareth Langward (m)
-	}	
+	}
 	8129.3.3 = {
 		holder = Largent_1 # Luthor Largent
 	}
@@ -380,7 +380,7 @@ b_goldguard_heights = {
 	}
 	8133.2.3 = {
 		holder = Byrne_35 # Braxton Byrne (m)
-	}	
+	}
 	8133.2.12 = {
 		holder = Targaryen_78 # UNFILLED
 	}
@@ -405,7 +405,7 @@ b_goldguard_heights = {
 	8165.1.1 = {
 		holder = Smallwood_30 # Luthor Rivers (sc)
 	}
-	8188.1.1 = {	
+	8188.1.1 = {
 		holder = Dargood_19 # Jeremy Dargood (nc)
 	}
 	8211.1.1 = {
@@ -749,7 +749,7 @@ c_riverline = {
 		holder = Mallery_43
 	}
 	8218.1.1 = {
-		holder = Mallery_45 
+		holder = Mallery_45
 	}
 	8222.1.1 = {
 		holder = Mallery_19
@@ -1778,7 +1778,7 @@ b_fallowpoint = {
 		holder = Bartheld_1
 	}
 	8297.6.1 = {
-		holder = Bartheld_7 
+		holder = Bartheld_7
 	}
 }
 d_duskendale = {
@@ -2244,7 +2244,7 @@ c_shadowshield = {
 		holder = Darke_2
 	}
 }
-c_spinney = {	
+c_spinney = {
 	7862.1.1 = {
 		liege = d_duskendale
 		holder = Darklyn_1
@@ -2738,7 +2738,7 @@ d_masseys_hook = {
 		holder = Massey_1
 	}
 	8298.10.24 = {
-		liege = 0 
+		liege = 0
 	}
 }
 c_stonedance = {
@@ -3027,7 +3027,7 @@ c_sweetmont = {
 	8175.1.1 = {
 		holder = Sweet_71
 	}
-	8204.1.1 = {		
+	8204.1.1 = {
 		holder = Sweet_1
 	}
 	8250.1.1 = {
@@ -3969,40 +3969,40 @@ c_stokeworth = {
 	}
 }
 c_bentbranch = {
-	7570.1.1 = { 
+	7570.1.1 = {
 		holder = Baxter_30 # Baelor
 	}
-	7578.1.1 = { 
+	7578.1.1 = {
 		holder = Baxter_29 # Alyn
 	}
-	7621.1.1 = { 
+	7621.1.1 = {
 		holder = Baxter_28 # Herman
 	}
-	7638.1.1 = { 
+	7638.1.1 = {
 		holder = Baxter_27 # Jate
 	}
-	7670.1.1 = { 
+	7670.1.1 = {
 		holder = Baxter_26 # Brannad
 	}
-	7680.1.1 = { 
+	7680.1.1 = {
 		holder = Baxter_25 # Ammon
 	}
-	7707.1.1 = { 
+	7707.1.1 = {
 		holder = Baxter_24 # Harys
 	}
-	7715.1.1 = { 
+	7715.1.1 = {
 		holder = Baxter_23 # Vaellyn
 	}
-	7748.1.1 = { 
+	7748.1.1 = {
 		holder = Baxter_22 # Harrold
 	}
-	7760.1.1 = { 
+	7760.1.1 = {
 		holder = Baxter_21 # Willas
 	}
-	7798.1.1 = { 
+	7798.1.1 = {
 		holder = Baxter_20 # Quenton
 	}
-	7801.1.1 = { 
+	7801.1.1 = {
 		holder = Baxter_19 # Beron
 	}
 	7817.1.1 = {
@@ -4715,7 +4715,7 @@ c_longgrass = {
 		de_jure_liege = d_tumbleton
 		effect = {
 			title:b_redgrass_field  = { set_title_name = b_longgrass_field }
-		} 
+		}
 	}
 	7858.1.1 = {
 		holder = Corne_22
@@ -4737,7 +4737,7 @@ c_longgrass = {
 	}
 	7982.1.1 = {
 		holder = Corne_76
-	}	
+	}
 	7992.1.1 = {
 		holder = Corne_79
 	}
@@ -4775,7 +4775,7 @@ c_longgrass = {
 		holder = Corne_50
 		effect = {
 			title:b_redgrass_field  = { reset_title_name = yes }
-		} 
+		}
 	}
 	8258.6.1 = {
 		holder = Corne_1
@@ -4879,7 +4879,7 @@ c_pikemouth = {
 	}
 	7982.1.1 = {
 		holder = Corne_76
-	}	
+	}
 	7992.1.1 = {
 		holder = Corne_79
 	}
@@ -4989,7 +4989,7 @@ d_wendwater_forest = {
 		holder = Farring_1
 	}
 	8298.10.24 = {
-		liege = 0 
+		liege = 0
 	}
 }
 c_wendwater_fork = {
@@ -5121,7 +5121,7 @@ c_darkgroves = {
 	7848.1.1 = {
 		holder = Groves_39
 	}
-	7870.1.1 = { 
+	7870.1.1 = {
 		liege = d_wendwater_forest
 	}
 	7893.1.1 = {

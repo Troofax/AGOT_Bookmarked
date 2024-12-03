@@ -6,9 +6,9 @@
 		effect = {
 			agot_set_kingdom_tier_realm_paramountcy = yes
 			holder = {
-				agot_appoint_as_court_position_for_castle_history_effect = { 
-					CASTLE = title:e_the_iron_throne 
-					POSITION = warden_of_the_north_court_position 
+				agot_appoint_as_court_position_for_castle_history_effect = {
+					CASTLE = title:e_the_iron_throne
+					POSITION = warden_of_the_north_court_position
 				}
 			}
 			set_variable = agot_historical_march
@@ -2059,7 +2059,7 @@ d_edgewood = {
 	8281.1.1 = {
 		holder = Tallhart_1
 	}
-	8299.11.2 = { 
+	8299.11.2 = {
 		holder = Tallhart_3
 	}
 }
@@ -2118,7 +2118,7 @@ c_torrhens_square = {
 	8281.1.1 = {
 		holder = Tallhart_1
 	}
-	8299.11.2 = { 
+	8299.11.2 = {
 		holder = Tallhart_3
 	}
 }
@@ -2178,7 +2178,7 @@ c_amber_lake = {
 	8281.1.1 = {
 		holder = Tallhart_1
 	}
-	8299.11.2 = { 
+	8299.11.2 = {
 		holder = Tallhart_3
 	}
 }
@@ -3491,49 +3491,49 @@ c_coldenside = {
 	7553.1.1 = {
 		liege = d_last_lands
 	}
-	7553.1.1 = { 
+	7553.1.1 = {
 		holder = Umber_78 # Gawen
 	}
-	7556.1.1 = { 
+	7556.1.1 = {
 		holder = Umber_77 # Martyn
 	}
-	7586.1.1 = { 
+	7586.1.1 = {
 		holder = Umber_76 # Rogar
 	}
-	7595.1.1 = { 
+	7595.1.1 = {
 		holder = Umber_75 # Daveth
 	}
-	7629.1.1 = { 
+	7629.1.1 = {
 		holder = Umber_74 # Andrin
 	}
-	7652.1.1 = { 
+	7652.1.1 = {
 		holder = Umber_73 # Erik
 	}
-	7669.1.1 = { 
+	7669.1.1 = {
 		holder = Umber_72 # Edwyn
 	}
-	7691.1.1 = { 
+	7691.1.1 = {
 		holder = Umber_71 # Belden
 	}
-	7704.1.1 = { 
+	7704.1.1 = {
 		holder = Umber_70 # Maran
 	}
-	7736.1.1 = { 
+	7736.1.1 = {
 		holder = Umber_69 # Connold
 	}
-	7754.1.1 = { 
+	7754.1.1 = {
 		holder = Umber_67 # Blayne
 	}
-	7781.1.1 = { 
+	7781.1.1 = {
 		holder = Umber_66 # Rodwell
 	}
-	7814.1.1 = { 
+	7814.1.1 = {
 		holder = Umber_65 # Sherrit
 	}
-	7845.1.1 = { 
+	7845.1.1 = {
 		holder = Umber_64 # Alwin
 	}
-	7864.1.1 = { 
+	7864.1.1 = {
 		holder = Umber_27 # Jon
 	}
 	7880.1.1 = {
@@ -5990,49 +5990,49 @@ d_last_lands = {
 			set_variable = agot_historical_march
 		}
 	}
-	7553.1.1 = { 
+	7553.1.1 = {
 		holder = Umber_78 # Gawen
 	}
-	7556.1.1 = { 
+	7556.1.1 = {
 		holder = Umber_77 # Martyn
 	}
-	7586.1.1 = { 
+	7586.1.1 = {
 		holder = Umber_76 # Rogar
 	}
-	7595.1.1 = { 
+	7595.1.1 = {
 		holder = Umber_75 # Daveth
 	}
-	7629.1.1 = { 
+	7629.1.1 = {
 		holder = Umber_74 # Andrin
 	}
-	7652.1.1 = { 
+	7652.1.1 = {
 		holder = Umber_73 # Erik
 	}
-	7669.1.1 = { 
+	7669.1.1 = {
 		holder = Umber_72 # Edwyn
 	}
-	7691.1.1 = { 
+	7691.1.1 = {
 		holder = Umber_71 # Belden
 	}
-	7704.1.1 = { 
+	7704.1.1 = {
 		holder = Umber_70 # Maran
 	}
-	7736.1.1 = { 
+	7736.1.1 = {
 		holder = Umber_69 # Connold
 	}
-	7754.1.1 = { 
+	7754.1.1 = {
 		holder = Umber_67 # Blayne
 	}
-	7781.1.1 = { 
+	7781.1.1 = {
 		holder = Umber_66 # Rodwell
 	}
-	7814.1.1 = { 
+	7814.1.1 = {
 		holder = Umber_65 # Sherrit
 	}
-	7845.1.1 = { 
+	7845.1.1 = {
 		holder = Umber_64 # Alwin
 	}
-	7864.1.1 = { 
+	7864.1.1 = {
 		holder = Umber_27 # Jon
 	}
 	7880.1.1 = {
@@ -6098,46 +6098,46 @@ c_last_hearth = {
 		liege = d_last_lands
 		holder = Umber_78 # Gawen
 	}
-	7556.1.1 = { 
+	7556.1.1 = {
 		holder = Umber_77 # Martyn
 	}
-	7586.1.1 = { 
+	7586.1.1 = {
 		holder = Umber_76 # Rogar
 	}
-	7595.1.1 = { 
+	7595.1.1 = {
 		holder = Umber_75 # Daveth
 	}
-	7629.1.1 = { 
+	7629.1.1 = {
 		holder = Umber_74 # Andrin
 	}
-	7652.1.1 = { 
+	7652.1.1 = {
 		holder = Umber_73 # Erik
 	}
-	7669.1.1 = { 
+	7669.1.1 = {
 		holder = Umber_72 # Edwyn
 	}
-	7691.1.1 = { 
+	7691.1.1 = {
 		holder = Umber_71 # Belden
 	}
-	7704.1.1 = { 
+	7704.1.1 = {
 		holder = Umber_70 # Maran
 	}
-	7736.1.1 = { 
+	7736.1.1 = {
 		holder = Umber_69 # Connold
 	}
-	7754.1.1 = { 
+	7754.1.1 = {
 		holder = Umber_67 # Blayne
 	}
-	7781.1.1 = { 
+	7781.1.1 = {
 		holder = Umber_66 # Rodwell
 	}
-	7814.1.1 = { 
+	7814.1.1 = {
 		holder = Umber_65 # Sherrit
 	}
-	7845.1.1 = { 
+	7845.1.1 = {
 		holder = Umber_64 # Alwin
 	}
-	7864.1.1 = { 
+	7864.1.1 = {
 		holder = Umber_27 # Jon
 	}
 	7880.1.1 = {
@@ -6309,46 +6309,46 @@ c_sullen_hills = {
 		liege = d_last_lands
 		holder = Umber_78 # Gawen
 	}
-	7556.1.1 = { 
+	7556.1.1 = {
 		holder = Umber_77 # Martyn
 	}
-	7586.1.1 = { 
+	7586.1.1 = {
 		holder = Umber_76 # Rogar
 	}
-	7595.1.1 = { 
+	7595.1.1 = {
 		holder = Umber_75 # Daveth
 	}
-	7629.1.1 = { 
+	7629.1.1 = {
 		holder = Umber_74 # Andrin
 	}
-	7652.1.1 = { 
+	7652.1.1 = {
 		holder = Umber_73 # Erik
 	}
-	7669.1.1 = { 
+	7669.1.1 = {
 		holder = Umber_72 # Edwyn
 	}
-	7691.1.1 = { 
+	7691.1.1 = {
 		holder = Umber_71 # Belden
 	}
-	7704.1.1 = { 
+	7704.1.1 = {
 		holder = Umber_70 # Maran
 	}
-	7736.1.1 = { 
+	7736.1.1 = {
 		holder = Umber_69 # Connold
 	}
-	7754.1.1 = { 
+	7754.1.1 = {
 		holder = Umber_67 # Blayne
 	}
-	7781.1.1 = { 
+	7781.1.1 = {
 		holder = Umber_66 # Rodwell
 	}
-	7814.1.1 = { 
+	7814.1.1 = {
 		holder = Umber_65 # Sherrit
 	}
-	7845.1.1 = { 
+	7845.1.1 = {
 		holder = Umber_64 # Alwin
 	}
-	7864.1.1 = { 
+	7864.1.1 = {
 		holder = Umber_27 # Jon
 	}
 	7880.1.1 = {
@@ -6411,46 +6411,46 @@ c_whitemore = {
 		liege = d_last_lands
 		holder = Umber_78 # Gawen
 	}
-	7556.1.1 = { 
+	7556.1.1 = {
 		holder = Umber_77 # Martyn
 	}
-	7586.1.1 = { 
+	7586.1.1 = {
 		holder = Umber_76 # Rogar
 	}
-	7595.1.1 = { 
+	7595.1.1 = {
 		holder = Umber_75 # Daveth
 	}
-	7629.1.1 = { 
+	7629.1.1 = {
 		holder = Umber_74 # Andrin
 	}
-	7652.1.1 = { 
+	7652.1.1 = {
 		holder = Umber_73 # Erik
 	}
-	7669.1.1 = { 
+	7669.1.1 = {
 		holder = Umber_72 # Edwyn
 	}
-	7691.1.1 = { 
+	7691.1.1 = {
 		holder = Umber_71 # Belden
 	}
-	7704.1.1 = { 
+	7704.1.1 = {
 		holder = Umber_70 # Maran
 	}
-	7736.1.1 = { 
+	7736.1.1 = {
 		holder = Umber_69 # Connold
 	}
-	7754.1.1 = { 
+	7754.1.1 = {
 		holder = Umber_67 # Blayne
 	}
-	7781.1.1 = { 
+	7781.1.1 = {
 		holder = Umber_66 # Rodwell
 	}
-	7814.1.1 = { 
+	7814.1.1 = {
 		holder = Umber_65 # Sherrit
 	}
-	7845.1.1 = { 
+	7845.1.1 = {
 		holder = Umber_64 # Alwin
 	}
-	7864.1.1 = { 
+	7864.1.1 = {
 		holder = Umber_27 # Jon
 	}
 	7880.1.1 = {
@@ -9479,7 +9479,7 @@ d_the_dreadfort = {
 	}
 	6480.1.1 = {
 		liege = e_the_north
-	}	
+	}
 	6486.1.1 = {
 		holder = 0
 	}

@@ -1416,10 +1416,10 @@ Hoare_28 = {
 		add_character_flag = canon_status_canon
 	}
 	7894.1.1 = { trait = lustful }
-	7898.1.1 = { 
+	7898.1.1 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_myr }
-		}		
+		}
 	}
 	# 7899.6.1 = { # AGOT TODO - extend Second Sons
 		# effect = {
@@ -7765,10 +7765,10 @@ Saltcliffe_35 = {
 	mother = Tyrell_86
 
 	trait = disinherited
-	
+
 	8169.1.1 = {
 		birth = yes
-		add_character_flag = canon_status_semicanon	
+		add_character_flag = canon_status_semicanon
 		add_character_flag = historical_disinheritance
 	}
 	8229.1.1 = { death = yes }
@@ -11268,9 +11268,9 @@ Codd_12 = {
 
 	trait = bastard
 
-	7800.1.1 = { 
+	7800.1.1 = {
 		birth = yes
-		make_trait_inactive = surname_pyke 
+		make_trait_inactive = surname_pyke
 	}
 	7818.1.1 = { trait = incestuous }
 	7870.1.1 = { death = yes }

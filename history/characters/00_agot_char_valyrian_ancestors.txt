@@ -610,7 +610,7 @@ Targaryen_27 = { # Aegon's Conquest
 			add_gold = 150
 		}
 	}
-	7997.1.1 = { 
+	7997.1.1 = {
 		# AGOT Bookmarked Disabled
 		# trait = incestuous # Visenya Targaryen and Rhaenys Targaryen
 		effect = {
@@ -651,7 +651,7 @@ Targaryen_27 = { # Aegon's Conquest
 					modifier = received_title_kingdom
 				}
 			}
-		}	
+		}
 	}
 	# AGOT Bookmarked Added
 	8000.1.1 = { religion = the_seven_main }
@@ -1339,7 +1339,7 @@ Targaryen_35 = {
 				limit = { character:Targaryen_36 = { is_alive = yes } }
 				remove_relation_lover = character:Targaryen_36 # Alysanne Targaryen
 			}
-		}	
+		}
 	}
 	8090.1.1 = { give_nickname = nick_the_old_king }
 	8100.7.1 = {
@@ -2021,8 +2021,8 @@ Targaryen_51 = {
 		trait = disinherited
 		add_character_flag = historical_disinheritance
 		trait = seducer
-		effect = { 
-			remove_trait = silent_sister 
+		effect = {
+			remove_trait = silent_sister
 			agot_safe_set_location_history_effect = { CASTLE = title:c_lys }
 		}
 	}
@@ -2543,7 +2543,7 @@ Targaryen_61 = {
 					set_relation_rival = {
 						target = ROOT
 						reason = rival_called_out_sin
-					}	
+					}
 				}
 			}
 		}
@@ -3071,7 +3071,7 @@ Targaryen_65 = {
 				every_close_or_extended_family_member = {
 					add_opinion = {
 						target = ROOT
-						modifier = executed_close_family_crime 			
+						modifier = executed_close_family_crime
 					}
 				}
 			}
@@ -3079,7 +3079,7 @@ Targaryen_65 = {
 				every_close_or_extended_family_member = {
 					add_opinion = {
 						target = ROOT
-						modifier = executed_close_family_crime 			
+						modifier = executed_close_family_crime
 					}
 				}
 			}
@@ -3087,7 +3087,7 @@ Targaryen_65 = {
 				every_close_or_extended_family_member = {
 					add_opinion = {
 						target = ROOT
-						modifier = executed_close_family_crime 			
+						modifier = executed_close_family_crime
 					}
 				}
 			}
@@ -3095,7 +3095,7 @@ Targaryen_65 = {
 				every_close_or_extended_family_member = {
 					add_opinion = {
 						target = ROOT
-						modifier = executed_close_family_crime 			
+						modifier = executed_close_family_crime
 					}
 				}
 			}
@@ -3103,7 +3103,7 @@ Targaryen_65 = {
 				every_close_or_extended_family_member = {
 					add_opinion = {
 						target = ROOT
-						modifier = executed_close_family_crime 			
+						modifier = executed_close_family_crime
 					}
 				}
 			}
@@ -3111,7 +3111,7 @@ Targaryen_65 = {
 				every_close_or_extended_family_member = {
 					add_opinion = {
 						target = ROOT
-						modifier = executed_close_family_crime 			
+						modifier = executed_close_family_crime
 					}
 				}
 			}
@@ -3339,7 +3339,7 @@ Targaryen_68 = {
 			add_trait = dragonrider # Tessarion (C)
 			add_trait = humble
 			add_trait = brave
-			add_trait = education_martial_prowess_2		
+			add_trait = education_martial_prowess_2
 		}
 	}
 	8130.1.20 = {
@@ -3639,7 +3639,7 @@ Targaryen_76 = {
 		effect = {
 			add_trait = dragonrider # Arrax (C)
 			add_trait = brave
-			add_trait = honest		
+			add_trait = honest
 		}
 	}
 	8129.4.10 = {
@@ -4037,7 +4037,7 @@ Targaryen_70_B = {
 
 	father = Targaryen_61
 	mother = Velaryon_34 # Laena Velaryon
-	
+
 	trait = hunchbacked
 	trait = spindly
 
@@ -4530,7 +4530,7 @@ Targaryen_88 = {
 			}
 			agot_safe_reveal_lovers_history_effect = yes
 		}
-	}	
+	}
 	8161.6.9 = {
 		employer = Targaryen_82 # Baelor Targaryen
 		effect = {
@@ -4541,7 +4541,7 @@ Targaryen_88 = {
 			if = {
 				limit = { character:Otherys_2 = { is_alive = yes } }
 				set_relation_lover = character:Otherys_2 # Bellegere Otherys
-			} 
+			}
 		}
 	}
 	8171.1.1 = {
@@ -5159,7 +5159,7 @@ Targaryen_102 = {
 	culture = braavosi
 
 	father = Targaryen_88
-	mother = Otherys_2 # Bellegere Otherys 
+	mother = Otherys_2 # Bellegere Otherys
 
 	trait = beauty_good_2
 
@@ -5195,7 +5195,7 @@ Targaryen_103 = {
 	culture = braavosi
 
 	father = Targaryen_88
-	mother = Otherys_2 # Bellegere Otherys 
+	mother = Otherys_2 # Bellegere Otherys
 
 	8165.1.1 = {
 		birth = yes
@@ -5222,7 +5222,7 @@ Targaryen_104 = {
 	culture = braavosi
 
 	father = Targaryen_88
-	mother = Otherys_2 # Bellegere Otherys 
+	mother = Otherys_2 # Bellegere Otherys
 
 	trait = beauty_good_1
 
@@ -5376,9 +5376,9 @@ Targaryen_95 = {
 	8172.11.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
-		effect = { 
+		effect = {
 			add_trait = bastard
-			make_trait_inactive = surname_rivers 
+			make_trait_inactive = surname_rivers
 		}
 		employer = Targaryen_88 # Aegon IV Targaryen
 		add_character_flag = has_scripted_appearance
@@ -5421,7 +5421,7 @@ Targaryen_95 = {
 	8190.1.1 = { employer = Targaryen_94 } # Daemon Blackfyre
 	8194.6.1 = { add_matrilineal_spouse = Blackfyre_3 } # Calla Blackfyre
 	8196.6.1 = {
-		effect = { 
+		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_tyrosh }
 			add_opinion = {
 				target = character:Blackfyre_5
@@ -5531,9 +5531,9 @@ Targaryen_96 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 		add_character_flag = has_scripted_appearance
-		effect = { 
+		effect = {
 			add_trait = bastard
-			make_trait_inactive = surname_rivers 
+			make_trait_inactive = surname_rivers
 		}
 	}
 	8182.1.1 = { trait = patient }
@@ -6159,7 +6159,7 @@ Targaryen_119 = {
 			}
 			if = {
 				limit = {
-					character:Tall_1 = { is_alive = yes} 
+					character:Tall_1 = { is_alive = yes}
 				}
 				set_relation_rival = {
 					target = character:Tall_1 # Duncan the Tall
@@ -6409,7 +6409,7 @@ Targaryen_122 = {
 				limit = { character:Baratheon_71 = { is_alive = yes } }
 				reverse_add_opinion = {
 					target = character:Baratheon_71 # Lyonel Baratheon
-					modifier = broke_betrothal_opinion 				
+					modifier = broke_betrothal_opinion
 				}
 			}
 		}
@@ -6421,14 +6421,14 @@ Targaryen_122 = {
 				limit = { character:Tyrell_1 = { is_alive = yes } }
 				reverse_add_opinion = {
 					target = character:Tyrell_1 # Leo Tyrell
-					modifier = broke_betrothal_opinion 				
+					modifier = broke_betrothal_opinion
 				}
 			}
 			if = {
 				limit = { character:Tully_66 = { is_alive = yes } }
 				reverse_add_opinion = {
 					target = character:Tully_66 # Steffon Tully
-					modifier = broke_betrothal_opinion 				
+					modifier = broke_betrothal_opinion
 				}
 			}
 		}
@@ -6439,7 +6439,7 @@ Targaryen_122 = {
 				limit = { character:Redwyne_43 = { is_alive = yes } }
 				reverse_add_opinion = {
 					target = character:Redwyne_43 # Runceford Redwyne
-					modifier = broke_betrothal_opinion 				
+					modifier = broke_betrothal_opinion
 				}
 			}
 		}
@@ -6692,7 +6692,7 @@ Targaryen_127 = {
 				limit = { character:Tully_66 = { is_alive = yes } }
 				reverse_add_opinion = {
 					target = character:Tully_66 # Steffon Tully
-					modifier = broke_betrothal_opinion 				
+					modifier = broke_betrothal_opinion
 				}
 			}
 		}
@@ -6745,7 +6745,7 @@ Targaryen_128 = {
 				limit = { character:Tyrell_1 = { is_alive = yes } }
 				reverse_add_opinion = {
 					target = character:Tyrell_1 # Leo Tyrell
-					modifier = broke_betrothal_opinion 				
+					modifier = broke_betrothal_opinion
 				}
 			}
 		}
@@ -6821,7 +6821,7 @@ Targaryen_129 = {
 				limit = { character:Redwyne_43 = { is_alive = yes } }
 				reverse_add_opinion = {
 					target = character:Redwyne_43 # Runceford Redwyne
-					modifier = broke_betrothal_opinion 				
+					modifier = broke_betrothal_opinion
 				}
 			}
 		}
@@ -7147,7 +7147,7 @@ Blackfyre_6 = {
 	}
 	8196.6.1 = {
 		effect = {
-			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_blackfyre }	
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_blackfyre }
 			add_pressed_claim = title:e_the_iron_throne
 			add_pressed_claim = title:k_the_crownlands
 			add_pressed_claim = title:d_kings_landing
@@ -7670,7 +7670,7 @@ Brightflame_7 = {
 		}
 	}
 	8230.1.1 = { trait = knight }
-	8232.1.1 = { 
+	8232.1.1 = {
 		dynasty_house = house_Brightflame
 		effect = { remove_trait = bastard }
 		add_trait = bastard_founder
@@ -7697,10 +7697,10 @@ Brightflame_2 = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_lys }
 		}
 	}
-	8232.1.1 = { 
+	8232.1.1 = {
 		dynasty_house = house_Brightflame
 		effect = { remove_trait = bastard }
-		add_trait = bastard_founder 
+		add_trait = bastard_founder
 	}
 	8233.1.1 = { trait = knight }
 	8237.1.1 = { add_spouse = Brightflame_rs_2 }
@@ -7736,10 +7736,10 @@ Brightflame_8 = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_lys }
 		}
 	}
-	8232.1.1 = { 
+	8232.1.1 = {
 		dynasty_house = house_Brightflame
 		effect = { remove_trait = bastard }
-		add_trait = bastard_founder  
+		add_trait = bastard_founder
 	}
 	8235.1.1 = { trait = knight }
 	8247.1.1 = { add_spouse = Brightflame_rs_8 }
@@ -7804,7 +7804,7 @@ Hammer_2 = {
 
 	religion = the_seven_main
 	culture = crownlander
-	
+
 	trait = education_stewardship_1
 	trait = physique_good_2
 	trait = diligent
@@ -7830,7 +7830,7 @@ Hammer_3 = {
 
 	religion = the_seven_main
 	culture = high_valyrian
-	
+
 	trait = bastard
 
 	8080.1.1 = {
@@ -8542,7 +8542,7 @@ Velaryon_83 = {
 	mother = Targaryen_137
 
 	trait = beauty_good_1
-	
+
 	7986.1.1 = { birth = yes }
 	7992.1.1 = { religion = the_seven_main }
 	8003.1.1 = { add_spouse = Staunton_47 } # Sybell Staunton
@@ -9258,7 +9258,7 @@ Velaryon_38 = {
 				limit = { character:Targaryen_63 = { is_alive = yes } }
 				add_opinion = {
 					target = character:Targaryen_63 # Rhaenyra Targaryen
-					modifier = executed_close_family # Vaemond Velaryon		
+					modifier = executed_close_family # Vaemond Velaryon
 				}
 			}
 		}
@@ -9302,7 +9302,7 @@ Velaryon_39 = {
 				limit = { character:Targaryen_63 = { is_alive = yes } }
 				add_opinion = {
 					target = character:Targaryen_63 # Rhaenyra Targaryen
-					modifier = executed_close_family # Vaemond Velaryon		
+					modifier = executed_close_family # Vaemond Velaryon
 				}
 			}
 		}
@@ -9347,7 +9347,7 @@ Velaryon_40 = {
 				limit = { character:Targaryen_63 = { is_alive = yes } }
 				add_opinion = {
 					target = character:Targaryen_63 # Rhaenyra Targaryen
-					modifier = executed_close_family # Vaemond Velaryon		
+					modifier = executed_close_family # Vaemond Velaryon
 				}
 			}
 		}
@@ -9391,7 +9391,7 @@ Velaryon_41 = {
 				limit = { character:Targaryen_63 = { is_alive = yes } }
 				add_opinion = {
 					target = character:Targaryen_63 # Rhaenyra Targaryen
-					modifier = executed_close_family # Vaemond Velaryon		
+					modifier = executed_close_family # Vaemond Velaryon
 				}
 			}
 		}
@@ -9438,7 +9438,7 @@ Velaryon_42 = {
 				limit = { character:Targaryen_63 = { is_alive = yes } }
 				add_opinion = {
 					target = character:Targaryen_63 # Rhaenyra Targaryen
-					modifier = executed_close_family # Vaemond Velaryon		
+					modifier = executed_close_family # Vaemond Velaryon
 				}
 			}
 		}
@@ -9737,7 +9737,7 @@ Velaryon_49 = {
 		}
 		employer = Targaryen_82 # Baelor I Targaryen
 	}
-	8163.6.27 = {		
+	8163.6.27 = {
 		create_character_memory = {
 			type = agot_tournament_winner # Tourney of Love and Beauty
 			participants = {
@@ -13142,7 +13142,7 @@ Urnebar_2 = {
 	7878.1.1 = { birth = yes }
 	7899.1.1 = {
 		trait = lifestyle_blademaster_2_history
-		effect = { 
+		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_tyrosh }
 		}
 	}
@@ -13211,8 +13211,8 @@ Sonaryen_1 = {
 	7879.1.1 = { trait = dragonrider } # Neltharion (nc)
 	7891.1.1 = { trait = lifestyle_reveler }
 	7899.1.1 = {
-		effect = { 
-			add_tyranny = major_tyranny_gain 
+		effect = {
+			add_tyranny = major_tyranny_gain
 			agot_safe_set_location_history_effect = { CASTLE = title:c_lys }
 		}
 	}
@@ -13230,7 +13230,7 @@ Sonaryen_2 = {
 	father = Sonaryen_1
 
 	7889.1.1 = { birth = yes }
-	7899.1.1 = { 
+	7899.1.1 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_lys }
 		}
@@ -13248,14 +13248,14 @@ Sonaryen_3 = {
 	father = Sonaryen_1
 
 	7895.1.1 = { birth = yes }
-	7899.1.1 = { 
+	7899.1.1 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_lys }
 		}
 	}
 	7904.1.1 = {
 		effect = {
-			title:c_lys.holder = { 
+			title:c_lys.holder = {
 				imprison = {
 					target = ROOT
 					type = house_arrest
@@ -15752,7 +15752,7 @@ Targaryen_hh_3 = {
 		}
 	}
 	8100.1.1 = { give_nickname = nick_the_white_worm }
-	8103.10.3 = { 
+	8103.10.3 = {
 		employer = Targaryen_60 # Viserys I Targaryen
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_kings_landing }
@@ -16072,7 +16072,7 @@ Knight_Kings_Landing_16 = {
 }
 Knight_Kings_Landing_17 = {
 	name = The_Burning_Knight # Canon
-	
+
 	religion = the_seven_main
 	culture = crownlander
 
@@ -16089,21 +16089,21 @@ Knight_Kings_Landing_17 = {
 	8100.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
-		effect = { 
-			change_first_name = Allard 
+		effect = {
+			change_first_name = Allard
 			agot_safe_set_location_history_effect = { CASTLE = title:b_hookmarket }
 		}
 	}
-	8115.1.1 = { 
+	8115.1.1 = {
 		trait = education_martial_prowess_3
 		trait = lifestyle_blademaster
 	}
 	8130.10.9 = {
 		trait = burned_3_history
 		trait = dragonslayer
-		death = { 
+		death = {
 			death_reason = death_battle_dragon_fire # Storming of the Dragonpit
-			killer = dragon_morghul # Morghul 
+			killer = dragon_morghul # Morghul
 		}
 	}
 }
@@ -16217,7 +16217,7 @@ Silver_Denys_5 = {
 
 	8100.1.1 = {
 		birth = yes
-		add_character_flag = canon_status_mentioned	
+		add_character_flag = canon_status_mentioned
 		employer = Targaryen_46 # Baelon Targaryen
 	}
 	8101.2.3 = { employer = Targaryen_35 } # Jaehaerys I Targaryen
@@ -16241,7 +16241,7 @@ Silver_Denys_6 = {
 
 	8102.1.1 = {
 		birth = yes
-		add_character_flag = canon_status_mentioned	
+		add_character_flag = canon_status_mentioned
 		employer = Targaryen_60 # Viserys I Targaryen
 	}
 	8105.9.10 = { employer = Targaryen_63 } # Rhaenyra Targaryen
@@ -16362,9 +16362,9 @@ The_Shepherd_1 = {
 	trait = brave
 	trait = stubborn
 	trait = bossy
-	
+
 	disallow_random_traits = yes
-	
+
 	8057.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
@@ -16740,14 +16740,14 @@ Otherys_1 = {
 
 	religion = weeping_lady
 	culture = braavosi
-	
+
 	8121.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
 	8171.1.1 = {
 		trait = ill
-		death = { death_reason = death_ill }		
+		death = { death_reason = death_ill }
 	}
 }
 Otherys_rs_1 = {
@@ -16759,12 +16759,12 @@ Otherys_rs_1 = {
 	culture = jhalani
 
 	8121.1.1 = {
-		birth = yes 
+		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
 	8171.1.1 = {
-		death = { death_reason = death_ill }		
-	}	
+		death = { death_reason = death_ill }
+	}
 }
 ### Issue of Zonario
 Otherys_2 = {
@@ -16774,7 +16774,7 @@ Otherys_2 = {
 
 	religion = weeping_lady
 	culture = braavosi
-	
+
 	father = Otherys_1
 	mother = Otherys_rs_1
 

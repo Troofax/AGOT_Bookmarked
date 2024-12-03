@@ -48,7 +48,7 @@ Stark_1 = {
 					character:Tully_1 = { is_alive = yes }
 					character:Stark_2 = { is_alive = yes }
 					character:Tully_4 = { is_alive = yes }
-				}	
+				}
 				create_alliance = { # By marriage
 					target = character:Tully_1 # Hoster Tully
 					allied_through_owner = character:Stark_2 # Brandon Stark
@@ -665,7 +665,7 @@ Stark_7 = {
 				ORDER = steward
 				CASTLE = title:c_castle_black
 				NW_JOIN_AGE = 15
-			}		
+			}
 		}
 	}
 	8298.8.14 = {
@@ -1102,9 +1102,9 @@ Stark_10 = {
 		make_trait_inactive = auburn_hair
 		make_trait_inactive = blue_eyes
 	}
-	8297.8.1 = { 
+	8297.8.1 = {
 		trait = brave
-		trait = inquisitive 
+		trait = inquisitive
 	}
 	# 8298.3.1 = { trait = direwolf } # Summer # AGOT TODO trait
 	8298.5.8 = {
@@ -1997,7 +1997,7 @@ Stark_hh_33 = {
 
 	religion = old_gods_south
 	culture = northman
-	
+
 	trait = education_intrigue_1
 	trait = beauty_good_1
 	trait = ambitious
@@ -2413,7 +2413,7 @@ Manderly_6 = {
 	8260.1.1 = {
 		add_spouse = Manderly_rs_3
 	}
-	8284.1.1 = { 
+	8284.1.1 = {
 		give_nickname = nick_the_lord_lamprey
 		effect = {
 			change_current_weight = 50
@@ -4572,7 +4572,7 @@ Karstark_60 = {
 
 	father = Karstark_55
 	mother = Karstark_rs_55
-	
+
 	8235.1.1 = { birth = yes }
 	8252.1.1 = { add_spouse = Karstark_rs_60 }
 	8288.1.1 = { death = yes }
@@ -4583,7 +4583,7 @@ Karstark_rs_60 = {
 
 	religion = old_gods_south
 	culture = northman
-	
+
 	8235.1.1 = { birth = yes }
 	8288.1.1 = { death = yes }
 }
@@ -4598,7 +4598,7 @@ Karstark_61 = {
 
 	father = Karstark_60
 	mother = Karstark_rs_60
-	
+
 	8253.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
@@ -4981,7 +4981,7 @@ Bolton_5 = {
 	8279.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
-		add_character_flag = canon_status_canon	
+		add_character_flag = canon_status_canon
 		effect = { add_trait = bastard }
 	}
 	8285.1.1 = {
@@ -5372,7 +5372,7 @@ Bolton_hh_11 = {
 
 	religion = old_gods_south
 	culture = northman
-	
+
 	trait = education_intrigue_1
 	trait = beauty_good_1
 	trait = sadistic
@@ -5383,7 +5383,7 @@ Bolton_hh_11 = {
 
 	disallow_random_traits = yes
 
-	8280.1.1 = { 
+	8280.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
 		employer = Bolton_1 # Roose Bolton
@@ -8021,7 +8021,7 @@ Mormont_3 = {
 		}
 	}
 	8295.12.31 = { remove_spouse = Hightower_14 } # Lynesse Hightower
-	8297.12.21 = { 
+	8297.12.21 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_targaryen_exiles }
 		}
@@ -8683,12 +8683,12 @@ Long_22 = {
 		add_character_flag = canon_status_canon
 	}
 	8280.1.1 = { trait = knight }
-	8282.1.1 = { 
-		effect = { 
+	8282.1.1 = {
+		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_windblown }
 		}
 	}
-	8297.1.1 = { 
+	8297.1.1 = {
 		if = {
 			limit = { character:Windblown_1 = { is_alive = yes } }
 			set_relation_grudge = character:Windblown_1 # Caggo the Corpsekiller
@@ -9295,7 +9295,7 @@ Blackbrow_15 = {
 	mother = Blackbrow_rs_14
 
 	trait = twin
-	
+
 	8230.1.1 = { birth = yes }
 	8290.1.1 = { death = yes }
 }
@@ -9834,10 +9834,10 @@ Orlych_58 = {
 ### Household
 Orlych_hh_1 = {
 	name = Mikael # Semi-Canon
-	
+
 	religion = old_gods_south
 	culture = northman
-	
+
 	trait = education_stewardship_2
 
 	8265.1.1 = {
@@ -9862,13 +9862,13 @@ Orlych_hh_2 = {
 	culture = riverlander
 
 	trait = bastard
-	
+
 	trait = education_martial_2
 
 	8269.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
-		make_trait_inactive = surname_rivers 
+		make_trait_inactive = surname_rivers
 	}
 	8285.1.1 = { trait = knight }
 	8290.1.1 = { employer = Orlych_45 } # Brandon Orlych
@@ -12843,17 +12843,17 @@ Whitehill_hh_1 = {
 	trait = pensive
 
 	disallow_random_traits = yes
-	
-	8254.1.1 = { 
+
+	8254.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
 	}
-	8268.1.1 = { 
+	8268.1.1 = {
 		trait = education_martial_prowess_2
-		trait = strong 
+		trait = strong
 	}
 	8270.1.1 = { trait = knight }
-	8277.1.1 = { 
+	8277.1.1 = {
 		employer = Whitehill_1 # Ludd Whitehill
 		trait = lifestyle_blademaster
 		effect = { # Bodyguard of house Whitehill

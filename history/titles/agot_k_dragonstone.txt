@@ -17,7 +17,7 @@
 	7955.1.1 = {
 		holder = Targaryen_22
 	}
-	7955.6.1 = { 
+	7955.6.1 = {
 		holder = Targaryen_23
 	}
 	7957.1.1 = {
@@ -67,7 +67,7 @@
 	}
 	8056.5.1 = {
 		holder = Targaryen_35
-	}	
+	}
 	8062.1.1 = {
 		holder = Targaryen_45
 	}
@@ -170,7 +170,7 @@ d_dragonstone = {
 	7955.1.1 = {
 		holder = Targaryen_22
 	}
-	7955.6.1 = { 
+	7955.6.1 = {
 		holder = Targaryen_23
 	}
 	7957.1.1 = {
@@ -205,7 +205,7 @@ d_dragonstone = {
 	}
 	8056.5.1 = {
 		holder = Targaryen_35
-	}	
+	}
 	8062.1.1 = {
 		holder = Targaryen_45
 	}
@@ -327,7 +327,7 @@ c_dragonstone = {
 	7955.1.1 = {
 		holder = Targaryen_22
 	}
-	7955.6.1 = { 
+	7955.6.1 = {
 		holder = Targaryen_23
 	}
 	7957.1.1 = {
@@ -359,7 +359,7 @@ c_dragonstone = {
 	}
 	8056.5.1 = {
 		holder = Targaryen_35
-	}	
+	}
 	8062.1.1 = {
 		holder = Targaryen_45
 	}
@@ -626,15 +626,15 @@ b_silverhorse = {
 		holder = Hammer_1 # Hard Hugh Hammer
 	}
 	8130.4.28 = {
-		holder = Velaryon_31 # Corlys 
+		holder = Velaryon_31 # Corlys
 	}
 	8132.3.6 = {
-		holder = Velaryon_47 # Daemion 
+		holder = Velaryon_47 # Daemion
 	}
-	8134.1.1 = { 
+	8134.1.1 = {
 		holder = Velaryon_71 # Aelyx
 	}
-	8178.1.1 = { 
+	8178.1.1 = {
 		holder = Velaryon_70
 	}
 	8211.1.1 = {
@@ -646,10 +646,10 @@ b_silverhorse = {
 	8265.1.1 = {
 		holder = Velaryon_66 # Maegon
 	}
-	8273.1.1 = { 
+	8273.1.1 = {
 		holder = Velaryon_65 # Rhogar
 	}
-	8291.1.1 = { 
+	8291.1.1 = {
 		holder = Velaryon_81 # Naerys
 	}
 }
@@ -728,10 +728,10 @@ b_blackhull = {
 		holder = White_1 # Ulf White
 	}
 	8130.4.28 = {
-		holder = Velaryon_31 # Corlys 
+		holder = Velaryon_31 # Corlys
 	}
 	8132.3.6 = {
-		holder = Velaryon_50 # Daeron 
+		holder = Velaryon_50 # Daeron
 	}
 	8133.6.1 = {
 		holder = Velaryon_44
@@ -912,7 +912,7 @@ d_claw_isle = {
 	}
 }
 c_blackmark = {
-	7870.1.1 = { 
+	7870.1.1 = {
 		liege = d_driftmark
 		holder = Blackberry_24 # Illister
 	}
@@ -1169,7 +1169,7 @@ c_sweetport_sound = {
 		holder = Sunglass_53
 	}
 	8246.1.1 = {
-		holder = Sunglass_54 
+		holder = Sunglass_54
 	}
 	8267.1.1 = {
 		holder = Sunglass_1
