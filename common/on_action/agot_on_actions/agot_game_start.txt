@@ -818,6 +818,15 @@ agot_on_game_start = {
 				trigger_event = agot_events_generic.0007
 			}
 
+			#set up weapon of choice
+			if = {
+				limit = { 
+					age > 5 
+					is_human = yes
+				}
+				trigger_event = agot_events_generic.0012
+			}
+
 			#purge unproper traits on children
 			if = {
 				limit = { is_adult = no }
@@ -2259,7 +2268,7 @@ agot_on_game_start_after_lobby = {
 
 				agot_7998_1_1_conquest_scenario_setup = yes
 			}
-			if = { # manage 8106.2.10 The Rogue Prince
+			if = { # manage 8106.2.10 The Rogue Prince scenario
 				limit = { game_start_date = 8106.4.18 }
 
 				agot_8106_4_18_scenario_setup = yes
@@ -2269,16 +2278,24 @@ agot_on_game_start_after_lobby = {
 
 				agot_8195_3_7_br_i_scenario_setup = yes
 			}
-			if = { # manage 8258.12.21 Ninepenny Kings scenario
+			if = {
+				limit = { game_start_date = 8233.2.8 }
+
+				agot_8233_peake_uprising_setup = yes
+			}
+			if = { # manage 8258.12.21 The Ninepenny Kings scenario
 				limit = { game_start_date = 8258.12.21 }
 
 				agot_8259_11_1_ninepenny_setup = yes
 			}
-			if = { # manage 8209.2.1 After Ashford scenario
-				limit = {
-					game_start_date = 8209.2.1
-				}
+			if = { # manage 8209.2.1 Shadows of Ashford scenario
+				limit = { game_start_date = 8209.2.1 }
 				agot_8209_2_1_scenario_setup = yes
+			}
+			if = { # manage 8277.1.1 Defiance of Duskendale scenario
+				limit = { game_start_date = 8277.1.1 }
+
+				agot_8277_1_1_dd_scenario_setup = yes
 			}
 			if = { # manage 8282.9.15 Robert's Rebellion scenario
 				limit = { game_start_date = 8282.9.15 }

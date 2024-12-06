@@ -5423,10 +5423,13 @@ Targaryen_95 = {
 	8196.6.1 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_tyrosh }
-			add_opinion = {
-				target = character:Blackfyre_5
-				modifier = agot_unworthy_opinion
-				opinion = -85
+			if = {
+				limit = { character:Blackfyre_5 ?= { is_alive = yes } }
+				add_opinion = {
+					target = character:Blackfyre_5
+					modifier = agot_unworthy_opinion
+					opinion = -85
+				}
 			}
 		}
 	}
@@ -5847,7 +5850,7 @@ Targaryen_110 = {
 	}
 	8180.8.1 = { trait = irritable }
 	8182.8.1 = { trait = stubborn }
-	8184.1.1 = { trait = scarred } # Pox scars
+	#8184.1.1 = { trait = scarred } # Pox scars
 	8184.8.1 = { trait = diligent } # Energetic
 	8188.1.1 = {
 		trait = callous
@@ -7179,6 +7182,11 @@ Blackfyre_7 = {
 	dna = Blackfyre_7
 
 	prowess = 5
+	diplomacy = 8
+	stewardship = 7
+	learning = 7
+	intrigue = 2
+	martial = 2
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -7222,7 +7230,7 @@ Blackfyre_7 = {
 		}
 	}
 	8216.1.1 = { add_spouse = Peake_65 } # Alysanne Peake
-	8233.1.1 = {
+	8233.7.7 = {
 		death = {
 			death_reason = death_execution
 			killer = Targaryen_96 # Brynden Bloodraven
