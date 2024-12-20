@@ -409,6 +409,7 @@ Stark_5 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
 		add_character_flag = tomboy
 	}
 	8281.1.1 = {
@@ -12746,9 +12747,8 @@ Whitehill_3 = {
 	}
 	8285.1.1 = {
 		effect = {
-			if = {
-				limit = { NOT = { has_trait = maester_historical } }
-				agot_send_to_citadel_effect = { MAESTER_CANDIDATE = ROOT }
+			agot_safe_set_location_history_effect = {
+				CASTLE = title:b_the_citadel
 			}
 		}
 	}

@@ -4441,6 +4441,7 @@ Targaryen_88 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
 	}
 	8149.3.14 = {
 		effect = {
@@ -4656,6 +4657,7 @@ Targaryen_89 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
 	}
 	8143.1.1 = {
 		trait = compassionate
@@ -4777,6 +4779,7 @@ Targaryen_90 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
 		effect = { add_trait = sickly }
 	}
 	8140.1.1 = {
@@ -6234,9 +6237,8 @@ Targaryen_120 = {
 	8207.1.1 = { trait = dragon_dreams }
 	8208.1.1 = {
 		effect = {
-			if = {
-				limit = { NOT = { has_trait = maester_historical } }
-				agot_send_to_citadel_effect = { MAESTER_CANDIDATE = ROOT }
+			agot_safe_set_location_history_effect = {
+				CASTLE = title:b_the_citadel
 			}
 		}
 	}
@@ -6350,6 +6352,7 @@ Targaryen_122 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
 		effect = { add_character_flag = potential_targ_lunatic }
 	}
 	8205.1.1 = { trait = diligent }
@@ -6671,6 +6674,7 @@ Targaryen_127 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual	
 	}
 	8237.1.1 = {
 		effect = {
@@ -6741,6 +6745,7 @@ Targaryen_128 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
 	}
 	8240.1.1 = {
 		effect = {
@@ -8166,6 +8171,7 @@ Palehair_hh_1 = {
 	8092.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_bisexual
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
 		}
@@ -8205,6 +8211,7 @@ Palehair_hh_2 = {
 	8093.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_bisexual
 		make_trait_inactive = surname_sand
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
@@ -13309,6 +13316,7 @@ Tall_1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
 		effect = {
 			if = {
 				limit = { age < 6 }
