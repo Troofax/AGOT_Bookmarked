@@ -1,5 +1,5 @@
 ﻿agot_bm_group_agotbm = {
-	default_start_date = 7998.1.2
+	default_start_date = 7899.7.22
 }
 
 # agot_bm_group_era_1 = { # Century of Blood
