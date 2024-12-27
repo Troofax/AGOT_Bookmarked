@@ -9,17 +9,15 @@ agot_8299_3_3_acok_scenario_setup = {
 	### RULER DESIGNER FIX ###
 	# Stannis aganist Lannisters
 	if = { # fire only if you used ruler designer; else there is no war
-		limit = { NOT = { title:k_the_stormlands.holder = character:Baratheon_3 } }
+		limit = { NOT = { title:k_dragonstone.holder = character:Baratheon_3 } }
 
-		title:k_the_stormlands.holder = {
+		title:k_dragonstone.holder = {
 			start_war = {
 				cb = claim_cb
 				target = title:e_the_iron_throne.holder
 				target_title = title:e_the_iron_throne
 				target_title = title:d_kings_landing
 				target_title = title:c_kings_landing
-				target_title = title:d_dragonstone
-				target_title = title:c_dragonstone
 			}
 			every_character_war = {
 				add_attacker = title:d_yronwood.holder
@@ -60,7 +58,7 @@ agot_8299_3_3_acok_scenario_setup = {
 
 		title:k_the_north.holder = {
 			start_war = {
-				cb = agot_independence_war
+				cb = rv_revenge_war
 				target = title:e_the_iron_throne.holder
 			}
 			every_character_war = {
@@ -109,6 +107,8 @@ agot_8299_3_3_acok_scenario_setup = {
 		title:k_the_stormlands.holder = {
 			save_scope_as = mw_rebel_leader_stannis
 			agot_mw_scenario_rebel_setup = { # Set up story
+				MODE = flag:mw_internal
+				REBEL_MAY_VASSALIZE = no
 				HELD_TITLE = title:k_the_stormlands
 				CASUS_BELLI = claim_cb
 				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
@@ -152,20 +152,17 @@ agot_8299_3_3_acok_scenario_setup = {
 		title:k_the_north.holder = {
 			save_scope_as = mw_rebel_leader_robb
 			agot_mw_scenario_rebel_setup = { # Set up story
+				MODE = flag:mw_internal
+				REBEL_MAY_VASSALIZE = no
 				HELD_TITLE = title:k_the_north
-				CASUS_BELLI = agot_independence_war
+				CASUS_BELLI = rv_revenge_war
 				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
 				MW_TARGET = title:e_the_iron_throne.holder
 			}
 			# ADD REBEL SUPPORTERS #
 			# Add vassal rebels
 			every_vassal_or_below = {
-				limit = {
-					primary_title.tier > tier_barony
-					NOR = {
-						primary_title = title:k_the_most_devout
-					}
-				}
+				limit = { primary_title.tier > tier_barony }
 
 				scope:mw_rebel_story = {
 					add_to_variable_list = {
@@ -188,6 +185,8 @@ agot_8299_3_3_acok_scenario_setup = {
 		title:k_the_iron_islands.holder = {
 			save_scope_as = mw_rebel_leader_balon
 			agot_mw_scenario_rebel_setup = { # Set up story
+				MODE = flag:mw_internal
+				REBEL_MAY_VASSALIZE = no
 				HELD_TITLE = title:k_the_iron_islands
 				CASUS_BELLI = agot_independence_war
 				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
@@ -261,20 +260,7 @@ agot_8299_3_3_acok_scenario_setup = {
 	agot_mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_balon }
 	######
 
-
-	##### SCENARIO STORY CYCLE SETUP #####
-	#title:e_the_iron_throne.holder = {
-	#	create_story = { # Initialize A Clash of Kings # TODO
-	#		type = story_agot_scenario_acok
-	#		save_scope_as = scenario_rr_story
-	#	}
-	#	scope:scenario_acok_story = { # TODO
-	#		set_variable = { name = usurper_war value = scope:current_war }
-	#		set_variable = {
-	#			name	= agot_acok_wars_status
-	#			value	= flag:ongoing
-	#		}
-	#	}
-	#}
-	#######
+	### CANON CHILDREN STORY CYCLE SETUP ###
+	agot_canon_children_setup_story_cycles_effect = yes
+	######
 }

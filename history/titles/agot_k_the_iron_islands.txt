@@ -6,7 +6,7 @@
 	7998.1.1 = {
 		holder = Hoare_31
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = e_the_iron_throne
 		de_jure_liege = e_the_iron_throne
 		holder = Targaryen_27
@@ -14,22 +14,14 @@
 			agot_set_kingdom_tier_realm_paramountcy = yes
 		}
 	}
-	8001.1.1 = {
+	8002.1.1 = {
 		holder = Greyjoy_40
 	}
 	8033.1.1 = {
 		holder = Greyjoy_41
 	}
-	8043.1.1 = {
-	}
-	8048.3.1 = {
-	}
-	8048.6.2 = {
-	}
 	8052.1.1 = {
 		holder = Greyjoy_42
-	}
-	8060.1.1 = {
 	}
 	8070.1.1 = {
 		holder = Greyjoy_43
@@ -46,7 +38,7 @@
 	8129.4.1 = {
 		liege = 0
 	}
-	8131.1.8 = {
+	8131.1.14 = {
 		liege = e_the_iron_throne
 	}
 	8133.12.1 = {
@@ -63,6 +55,8 @@
 	}
 	8206.1.1 = {
 		holder = Greyjoy_66
+	}
+	8211.1.1 = {
 		liege = 0
 	}
 	8216.1.1 = {
@@ -78,11 +72,9 @@
 	8282.9.15 = {
 		liege = 0
 	}
-	8282.12.31 = {
-		liege = e_the_iron_throne
-	}
-	8283.6.1 = {
+	8283.10.1 = {
 		holder = Greyjoy_5
+		liege = e_the_iron_throne
 	}
 	8289.1.1 = {
 		holder = 0
@@ -94,13 +86,13 @@
 		liege = e_the_iron_throne
 		de_jure_liege = e_the_iron_throne
 	}
-	8299.2.10 = {
+	8298.10.24 = {
 		liege = 0
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
-	8299.11.3 = {
+	8299.11.15 = {
 		holder = Greyjoy_6
 	}
 }
@@ -162,7 +154,7 @@ d_pyke = {
 	7993.9.1 = {
 		holder = Greyjoy_40
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
 	}
 	8033.1.1 = {
@@ -201,7 +193,7 @@ d_pyke = {
 	8250.1.1 = {
 		holder = Greyjoy_1
 	}
-	8283.6.1 = {
+	8283.10.1 = {
 		holder = Greyjoy_5
 	}
 	8289.1.1 = {
@@ -210,18 +202,16 @@ d_pyke = {
 	8289.6.1 = {
 		liege = k_the_iron_islands
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
-	8299.10.3 = {
+	8299.11.15 = {
 		holder = Greyjoy_6
 	}
 }
 c_pyke = {
-	623.1.1 = {
-		liege = d_pyke
-	}
 	3578.1.1 = {
+		liege = d_pyke
 		holder = Greyjoy_21
 	}
 	3632.1.1 = {
@@ -302,15 +292,15 @@ c_pyke = {
 	8250.1.1 = {
 		holder = Greyjoy_1
 	}
-	8283.6.1 = {
+	8283.10.1 = {
 		holder = Greyjoy_5
 	}
-	8299.10.3 = {
+	8299.11.15 = {
 		holder = Greyjoy_6
 	}
 }
 c_iron_holt = {
-	900.1.1 = {
+	3578.1.1 = {
 		liege = d_pyke
 	}
 	7854.1.1 = {
@@ -366,7 +356,7 @@ c_iron_holt = {
 	}
 }
 c_lordsport = {
-	900.1.1 = {
+	3578.1.1 = {
 		liege = d_pyke
 	}
 	7855.1.1 = {
@@ -426,12 +416,12 @@ c_lordsport = {
 	8281.1.1 = {
 		holder = Botley_3
 	}
-	8299.10.3 = {
+	8299.11.15 = {
 		holder = Botley_4
 	}
 }
 c_seagrave = {
-	623.1.1 = {
+	3578.1.1 = {
 		liege = d_pyke
 	}
 	7881.1.1 = {
@@ -506,8 +496,10 @@ d_blacktyde = {
 	7993.1.1 = {
 		holder = Blacktyde_13
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
+	}
+	8000.2.1 = {
 		holder = Blacktyde_14
 	}
 	8047.1.1 = {
@@ -522,7 +514,7 @@ d_blacktyde = {
 	8136.1.1 = {
 		holder = Blacktyde_18
 	}
-	8150.1.1 = {
+	8151.1.1 = {
 		holder = Blacktyde_19
 	}
 	8189.1.1 = {
@@ -549,19 +541,17 @@ d_blacktyde = {
 	8289.6.1 = {
 		liege = k_the_iron_islands
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
-	8300.1.1 = {
+	8300.1.30 = {
 		holder = Blacktyde_2
 	}
 }
 c_blacktyde = {
-	1.1.1 = {
+	4393.1.1 = {
 		liege = d_blacktyde
 		succession_laws = { male_only_law single_heir_succession_law }
-	}
-	4393.1.1 = {
 		holder = Blacktyde_8
 	}
 	7878.1.1 = {
@@ -576,7 +566,7 @@ c_blacktyde = {
 	7993.1.1 = {
 		holder = Blacktyde_13
 	}
-	7998.2.1 = {
+	8000.2.1 = {
 		holder = Blacktyde_14
 	}
 	8047.1.1 = {
@@ -591,7 +581,7 @@ c_blacktyde = {
 	8136.1.1 = {
 		holder = Blacktyde_18
 	}
-	8150.1.1 = {
+	8151.1.1 = {
 		holder = Blacktyde_19
 	}
 	8189.1.1 = {
@@ -618,19 +608,17 @@ c_blacktyde = {
 	8289.6.1 = {
 		liege = k_the_iron_islands
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
-	8300.1.1 = {
+	8300.1.30 = {
 		holder = Blacktyde_2
 	}
 }
 c_needlefin = {
-	1.1.1 = {
+	4393.1.1 = {
 		liege = d_blacktyde
 		succession_laws = { male_only_law single_heir_succession_law }
-	}
-	4393.1.1 = {
 		holder = Blacktyde_8
 	}
 	7878.1.1 = {
@@ -717,8 +705,10 @@ d_hardstone_hills = {
 	7991.1.1 = {
 		holder = Goodbrother_46
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
+	}
+	8000.2.1 = {
 		holder = Goodbrother_48
 	}
 	8055.1.1 = {
@@ -748,15 +738,13 @@ d_hardstone_hills = {
 	8289.6.1 = {
 		liege = k_the_iron_islands
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
 }
 c_hammerhorn = {
-	900.1.1 = {
-		liege = d_hardstone_hills
-	}
 	5087.1.1 = {
+		liege = d_hardstone_hills
 		holder = Goodbrother_37
 	}
 	7871.1.1 = {
@@ -780,7 +768,7 @@ c_hammerhorn = {
 	7991.1.1 = {
 		holder = Goodbrother_46
 	}
-	7998.2.1 = {
+	8000.2.1 = {
 		holder = Goodbrother_48
 	}
 	8055.1.1 = {
@@ -806,10 +794,8 @@ c_hammerhorn = {
 	}
 }
 c_corpse_lake = {
-	900.1.1 = {
-		liege = d_hardstone_hills
-	}
 	5087.1.1 = {
+		liege = d_hardstone_hills
 		holder = Goodbrother_37
 	}
 	7871.1.1 = {
@@ -833,7 +819,7 @@ c_corpse_lake = {
 	7991.1.1 = {
 		holder = Goodbrother_46
 	}
-	7998.2.1 = {
+	8000.2.1 = {
 		holder = Goodbrother_48
 	}
 	8055.1.1 = {
@@ -854,12 +840,12 @@ c_corpse_lake = {
 	8242.1.1 = {
 		holder = Goodbrother_57
 	}
-	8275.1.1 = {
+	8276.1.1 = {
 		holder = Goodbrother_25
 	}
 }
 c_cradlewatch = {
-	900.1.1 = {
+	5087.1.1 = {
 		liege = d_hardstone_hills
 	}
 	7845.1.1 = {
@@ -912,10 +898,22 @@ c_cradlewatch = {
 	}
 }
 c_crow_spike = {
-	900.1.1 = {
+	5087.1.1 = {
 		liege = d_hardstone_hills
 	}
+	7883.1.1 = {
+		holder = Goodbrother_40
+	}
+	7903.1.1 = {
+		holder = Goodbrother_41
+	}
+	7933.1.1 = {
+		holder = Goodbrother_43
+	}
 	7960.1.1 = {
+		holder = Goodbrother_44
+	}
+	7972.1.1 = {
 		holder = Goodbrother_72
 	}
 	8000.1.1 = {
@@ -956,7 +954,7 @@ c_crow_spike = {
 	}
 }
 c_deadlock = {
-	900.1.1 = {
+	5087.1.1 = {
 		liege = d_hardstone_hills
 	}
 	7853.1.1 = {
@@ -1018,11 +1016,9 @@ c_deadlock = {
 	}
 }
 c_downdelving = {
-	900.1.1 = {
+	5087.1.1 = {
 		succession_laws = { male_only_law single_heir_succession_law }
 		liege = d_hardstone_hills
-	}
-	5087.1.1 = {
 		holder = Goodbrother_37
 	}
 	7871.1.1 = {
@@ -1046,7 +1042,7 @@ c_downdelving = {
 	7991.1.1 = {
 		holder = Goodbrother_46
 	}
-	7998.2.1 = {
+	8000.2.1 = {
 		holder = Goodbrother_48
 	}
 	8055.1.1 = {
@@ -1067,12 +1063,15 @@ c_downdelving = {
 	8242.1.1 = {
 		holder = Goodbrother_57
 	}
+	8276.1.1 = {
+		holder = Goodbrother_1
+	}
 	8279.1.1 = {
 		holder = Goodbrother_33
 	}
 }
 c_scatterchain = {
-	900.1.1 = {
+	5087.1.1 = {
 		liege = d_hardstone_hills
 	}
 	7893.1.1 = {
@@ -1128,7 +1127,7 @@ c_scatterchain = {
 	}
 }
 c_sealskin_point = {
-	900.1.1 = {
+	5087.1.1 = {
 		liege = d_hardstone_hills
 	}
 	7862.1.1 = {
@@ -1187,7 +1186,7 @@ c_sealskin_point = {
 	}
 }
 c_seastone_isles = {
-	900.1.1 = {
+	5087.1.1 = {
 		liege = d_hardstone_hills
 	}
 	7895.1.1 = {
@@ -1250,6 +1249,12 @@ d_harlaw = {
 	4393.1.1 = {
 		holder = 0
 	}
+	7513.1.1 = {
+		holder = Harlaw_53
+	}
+	7535.1.1 = {
+		holder = Harlaw_52
+	}
 	7859.1.1 = {
 		holder = Harlaw_33
 	}
@@ -1265,8 +1270,10 @@ d_harlaw = {
 	7975.1.1 = {
 		holder = Harlaw_37
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
+	}
+	8000.2.1 = {
 		holder = Harlaw_38
 	}
 	8032.1.1 = {
@@ -1305,16 +1312,20 @@ d_harlaw = {
 	8290.1.1 = {
 		holder = Harlaw_9
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
 }
 c_ten_towers = {
 	900.1.1 = {
 		succession_laws = { male_only_law single_heir_succession_law }
-		liege = d_harlaw
+		effect = {
+			set_title_name = c_harlaw_hall
+			title:b_ten_towers = { set_title_name = b_scythe_hills }
+		}
 	}
 	4337.1.1 = {
+		liege = d_harlaw
 		holder = Harlaw_30
 	}
 	4376.1.1 = {
@@ -1335,7 +1346,7 @@ c_ten_towers = {
 	7975.1.1 = {
 		holder = Harlaw_37
 	}
-	7998.2.1 = {
+	8000.2.1 = {
 		holder = Harlaw_38
 	}
 	8032.1.1 = {
@@ -1356,6 +1367,12 @@ c_ten_towers = {
 	8163.1.1 = {
 		holder = Harlaw_44
 	}
+	8178.1.1 = {
+		effect = {
+			reset_title_name = yes
+			title:b_ten_towers = { reset_title_name = yes }
+		}
+	}
 	8201.1.1 = {
 		holder = Harlaw_49
 	}
@@ -1372,6 +1389,13 @@ c_ten_towers = {
 b_harlaw_hall = {
 	900.1.1 = {
 		succession_laws = { male_only_law single_heir_succession_law }
+		effect = {
+			if = {
+				limit = { game_start_date < 8178.1.1 }
+				set_capital_barony = yes
+				title:b_ten_towers.title_province = { remove_holding = yes }
+			}
+		}
 	}
 	4337.1.1 = {
 		holder = Harlaw_30
@@ -1394,7 +1418,7 @@ b_harlaw_hall = {
 	7975.1.1 = {
 		holder = Harlaw_37
 	}
-	7998.2.1 = {
+	8000.2.1 = {
 		holder = Harlaw_38
 	}
 	8032.1.1 = {
@@ -1425,9 +1449,9 @@ b_harlaw_hall = {
 c_glimmering_shore = {
 	900.1.1 = {
 		succession_laws = { male_only_law single_heir_succession_law }
-		liege = d_harlaw
 	}
 	4337.1.1 = {
+		liege = d_harlaw
 		holder = Harlaw_30
 	}
 	4376.1.1 = {
@@ -1448,7 +1472,7 @@ c_glimmering_shore = {
 	7975.1.1 = {
 		holder = Harlaw_37
 	}
-	7998.2.1 = {
+	8000.2.1 = {
 		holder = Harlaw_38
 	}
 	8032.1.1 = {
@@ -1485,9 +1509,9 @@ c_glimmering_shore = {
 c_grey_garden = {
 	900.1.1 = {
 		succession_laws = { male_only_law single_heir_succession_law }
-		liege = d_harlaw
 	}
 	4337.1.1 = {
+		liege = d_harlaw
 		holder = Harlaw_30
 	}
 	4376.1.1 = {
@@ -1508,7 +1532,7 @@ c_grey_garden = {
 	7975.1.1 = {
 		holder = Harlaw_37
 	}
-	7998.2.1 = {
+	8000.2.1 = {
 		holder = Harlaw_38
 	}
 	8032.1.1 = {
@@ -1543,7 +1567,7 @@ c_grey_garden = {
 	}
 }
 c_dulewood = {
-	900.1.1 = {
+	4337.1.1 = {
 		liege = d_harlaw
 	}
 	7835.1.1 = {
@@ -1599,10 +1623,8 @@ c_dulewood = {
 	}
 }
 c_harridan_hills = {
-	900.1.1 = {
-		liege = d_harlaw
-	}
 	4337.1.1 = {
+		liege = d_harlaw
 		holder = Harlaw_30
 	}
 	4376.1.1 = {
@@ -1623,7 +1645,7 @@ c_harridan_hills = {
 	7975.1.1 = {
 		holder = Harlaw_37
 	}
-	7998.2.1 = {
+	8000.2.1 = {
 		holder = Harlaw_38
 	}
 	8032.1.1 = {
@@ -1658,7 +1680,7 @@ c_harridan_hills = {
 	}
 }
 c_ternehandle = {
-	900.1.1 = {
+	4337.1.1 = {
 		liege = d_harlaw
 	}
 	7868.1.1 = {
@@ -1711,7 +1733,7 @@ c_ternehandle = {
 	}
 }
 c_the_flenches = {
-	900.1.1 = {
+	4337.1.1 = {
 		liege = d_harlaw
 	}
 	5286.1.1 = {
@@ -1776,7 +1798,7 @@ c_volmark = {
 	100.1.1 = {
 		succession_laws = { male_only_law single_heir_succession_law }
 	}
-	900.1.1 = {
+	4337.1.1 = {
 		liege = d_harlaw
 	}
 	7864.1.1 = {
@@ -1785,23 +1807,16 @@ c_volmark = {
 	7879.1.1 = {
 		holder = Volmark_6
 	}
-	7903.1.1 = {
-		holder = Volmark_7
-	}
-	7925.1.1 = {
+	7902.1.1 = {
 		holder = Volmark_8
 	}
-	7970.1.1 = {
+	7950.1.1 = {
 		holder = Volmark_10
 	}
-	7990.1.1 = {
+	7977.1.1 = {
 		holder = Volmark_11
 	}
-	7998.2.1 = {
-		liege = k_the_iron_islands
-	}
 	8002.1.1 = {
-		liege = d_harlaw
 		holder = Volmark_14
 	}
 	8033.1.1 = {
@@ -1861,7 +1876,7 @@ d_lonely_light = {
 	7966.1.1 = {
 		holder = FarwyndLL_8
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
 	}
 	8009.1.1 = {
@@ -1906,17 +1921,17 @@ d_lonely_light = {
 	8289.6.1 = {
 		liege = k_the_iron_islands
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
 }
 c_lonely_light = {
 	900.1.1 = {
 		succession_laws = { male_only_law single_heir_succession_law }
-		liege = d_lonely_light
 	}
 	7862.1.1 = {
 		holder = Farwynd_10
+		liege = d_lonely_light
 	}
 	7875.1.1 = {
 		holder = Farwynd_11
@@ -2008,7 +2023,7 @@ d_old_wyk = {
 	7996.1.1 = {
 		holder = Drumm_17
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
 	}
 	8018.1.1 = {
@@ -2044,7 +2059,7 @@ d_old_wyk = {
 	8289.6.1 = {
 		liege = k_the_iron_islands
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
 }
@@ -2110,7 +2125,7 @@ c_bleachbone = {
 	}
 }
 c_shatterstone = {
-	900.1.1 = {
+	100.1.1 = {
 		succession_laws = { male_only_law single_heir_succession_law }
 		liege = d_old_wyk
 	}
@@ -2161,7 +2176,7 @@ c_shatterstone = {
 	}
 }
 d_orkmont = {
-	1.1.1 = {
+	34.1.1 = {
 		liege = e_the_iron_islands
 		succession_laws = { male_only_law single_heir_succession_law }
 	}
@@ -2289,21 +2304,21 @@ d_orkmont = {
 	7880.1.1 = {
 		holder = Hoare_25
 	}
-	7923.1.1 = {
+	7901.1.3 = {
 		holder = Hoare_28
 	}
-	7956.1.1 = {
+	7943.1.1 = {
 		holder = Hoare_30
 	}
 	7960.1.1 = {
 		holder = Hoare_31
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		holder = 0
 	}
 }
 c_nettlemont = {
-	1.1.1 = {
+	2917.1.1 = {
 		liege = d_orkmont
 		succession_laws = { male_only_law single_heir_succession_law }
 	}
@@ -2325,7 +2340,7 @@ c_nettlemont = {
 	7973.1.1 = {
 		holder = Tawney_11
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
 	}
 	8006.1.1 = {
@@ -2370,7 +2385,7 @@ c_nettlemont = {
 	8293.1.1 = {
 		holder = Tawney_4
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
 }
@@ -2413,11 +2428,9 @@ b_galleywood = {
 	}
 }
 c_greygrave = {
-	1.1.1 = {
+	2917.1.1 = {
 		liege = d_orkmont
 		succession_laws = { male_only_law single_heir_succession_law }
-	}
-	2917.1.1 = {
 		holder = Greyiron_1
 	}
 	2942.1.1 = {
@@ -2553,7 +2566,7 @@ c_greygrave = {
 	7995.1.1 = {
 		holder = Codd_25
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
 	}
 	8018.1.1 = {
@@ -2595,12 +2608,12 @@ c_greygrave = {
 	8289.6.1 = {
 		liege = k_the_iron_islands
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
 }
 c_orkwood = {
-	1.1.1 = {
+	2917.1.1 = {
 		liege = d_orkmont
 		succession_laws = { male_only_law single_heir_succession_law }
 	}
@@ -2622,7 +2635,7 @@ c_orkwood = {
 	7994.1.1 = {
 		holder = Orkwood_13
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
 	}
 	8013.1.1 = {
@@ -2667,12 +2680,12 @@ c_orkwood = {
 	8289.6.1 = {
 		liege = k_the_iron_islands
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
 }
 c_trawling = {
-	1.1.1 = {
+	34.1.1 = {
 		liege = e_the_iron_islands
 		succession_laws = { male_only_law single_heir_succession_law }
 	}
@@ -2736,7 +2749,7 @@ c_trawling = {
 	7880.1.1 = {
 		holder = Hoare_25
 	}
-	7923.1.1 = {
+	7901.1.3 = {
 		holder = Hoare_28
 	}
 	7933.1.1 = {
@@ -2751,7 +2764,7 @@ c_trawling = {
 	7974.1.1 = {
 		holder = Netley_12
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
 	}
 	8020.1.1 = {
@@ -2793,12 +2806,12 @@ c_trawling = {
 	8289.6.1 = {
 		liege = k_the_iron_islands
 	}
-	8299.3.4 = {
+	8299.5.29 = {
 		liege = e_the_iron_islands
 	}
 }
 d_east_wyk = {
-	1.1.1 = {
+	34.1.1 = {
 		liege = e_the_iron_islands
 		succession_laws = { male_only_law single_heir_succession_law }
 	}
@@ -2862,21 +2875,21 @@ d_east_wyk = {
 	7880.1.1 = {
 		holder = Hoare_25
 	}
-	7923.1.1 = {
+	7901.1.3 = {
 		holder = Hoare_28
 	}
-	7956.1.1 = {
+	7943.1.1 = {
 		holder = Hoare_30
 	}
 	7960.1.1 = {
 		holder = Hoare_31
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		holder = 0
 	}
 }
 c_pebbleton = {
-	1.1.1 = {
+	3670.1.1 = {
 		liege = d_east_wyk
 		succession_laws = { male_only_law single_heir_succession_law }
 	}
@@ -2904,7 +2917,7 @@ c_pebbleton = {
 	7988.1.1 = {
 		holder = Merlyn_12
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = d_hardstone_hills
 		holder = Merlyn_13
 	}
@@ -2920,7 +2933,7 @@ c_pebbleton = {
 	8115.1.1 = {
 		holder = Merlyn_17
 	}
-	8124.1.1 = {
+	8126.1.1 = {
 		holder = Merlyn_18
 	}
 	8152.1.1 = {
@@ -2937,7 +2950,7 @@ c_pebbleton = {
 	}
 }
 c_axfirth = {
-	1.1.1 = {
+	3670.1.1 = {
 		liege = d_east_wyk
 		succession_laws = { male_only_law single_heir_succession_law }
 	}
@@ -2956,7 +2969,7 @@ c_axfirth = {
 	7979.1.1 = {
 		holder = Sharp_15
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = d_hardstone_hills
 	}
 	8010.1.1 = {
@@ -2994,7 +3007,7 @@ c_axfirth = {
 	}
 }
 c_blackblood = {
-	1.1.1 = {
+	3670.1.1 = {
 		liege = d_east_wyk
 		succession_laws = { male_only_law single_heir_succession_law }
 	}
@@ -3058,20 +3071,17 @@ c_blackblood = {
 	7880.1.1 = {
 		holder = Hoare_25
 	}
-	7923.1.1 = {
+	7901.1.3 = {
 		holder = Hoare_28
 	}
-	7956.1.1 = {
+	7943.1.1 = {
 		holder = Hoare_30
 	}
 	7960.1.1 = {
 		holder = Hoare_31
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = d_hardstone_hills
-		holder = Salt_18
-	}
-	7999.1.1 = {
 		holder = Salt_19
 	}
 	8025.1.1 = {
@@ -3106,11 +3116,9 @@ c_blackblood = {
 	}
 }
 b_hoare_castle = {
-	1.1.1 = {
-		succession_laws = { male_only_law single_heir_succession_law }
-	}
 	3670.1.1 = {
 		holder = Hoare_1
+		succession_laws = { male_only_law single_heir_succession_law }
 	}
 	6584.1.1 = {
 		holder = Hoare_3
@@ -3159,11 +3167,9 @@ b_hoare_castle = {
 	}
 }
 c_fishbourne = {
-	1.1.1 = {
+	3670.1.1 = {
 		liege = d_east_wyk
 		succession_laws = { male_only_law single_heir_succession_law }
-	}
-	3670.1.1 = {
 		holder = Hoare_1
 	}
 	6584.1.1 = {
@@ -3223,7 +3229,7 @@ c_fishbourne = {
 	7880.1.1 = {
 		holder = Hoare_25
 	}
-	7923.1.1 = {
+	7901.1.3 = {
 		holder = Hoare_28
 	}
 	7933.1.1 = {
@@ -3235,11 +3241,11 @@ c_fishbourne = {
 	7980.1.1 = {
 		holder = Humble_14
 	}
-	7998.2.1 = {
-		liege = d_hardstone_hills
-	}
 	7999.1.1 = {
 		holder = Humble_15
+	}
+	7999.8.15 = {
+		liege = d_hardstone_hills
 	}
 	8025.1.1 = {
 		holder = Humble_16
@@ -3279,11 +3285,9 @@ c_fishbourne = {
 	}
 }
 c_tiller = {
-	1.1.1 = {
+	3670.1.1 = {
 		liege = d_east_wyk
 		succession_laws = { male_only_law single_heir_succession_law }
-	}
-	3670.1.1 = {
 		holder = Hoare_1
 	}
 	6584.1.1 = {
@@ -3358,7 +3362,7 @@ c_tiller = {
 	7990.1.1 = {
 		holder = Shepherd_14
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = d_hardstone_hills
 	}
 	8015.1.1 = {
@@ -3396,7 +3400,7 @@ c_tiller = {
 	}
 }
 d_saltcliffe = {
-	1.1.1 = {
+	34.1.1 = {
 		liege = e_the_iron_islands
 		succession_laws = { male_only_law single_heir_succession_law }
 	}
@@ -3420,7 +3424,7 @@ c_saltcliffe = {
 	7994.1.1 = {
 		holder = Saltcliffe_10
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
 	}
 	8012.1.1 = {
@@ -3485,8 +3489,10 @@ c_bloatstone = {
 	7990.1.1 = {
 		holder = Sunderly_13
 	}
-	7998.2.1 = {
+	7999.8.15 = {
 		liege = k_the_iron_islands
+	}
+	8000.2.1 = {
 		holder = Sunderly_14
 	}
 	8036.1.1 = {
@@ -3521,7 +3527,7 @@ c_bloatstone = {
 	}
 }
 c_stonehouse = {
-	900.1.1 = {
+	100.1.1 = {
 		succession_laws = { male_only_law single_heir_succession_law }
 		liege = d_old_wyk
 	}

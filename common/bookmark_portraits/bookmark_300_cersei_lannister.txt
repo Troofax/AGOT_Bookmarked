@@ -1,10 +1,10 @@
 # Auto generated file, do not edit manually. Created using console command dump_bookmark_portraits
 # History database id:Lannister_6
-bookmark_298_cersei_lannister={
+bookmark_300_cersei_lannister={
 	type=female
 	id=59605
 	random_seed=2377142401
-	age=0.320000
+	age=0.340000
 	genes={ 		hair_color={ 201 10 201 10 }
  		skin_color={ 36 19 120 90 }
  		eye_color={ 165 110 122 137 }
@@ -15,7 +15,7 @@ bookmark_298_cersei_lannister={
  		gene_eye_depth={ "eye_depth_pos" 123 "eye_depth_pos" 123 }
  		gene_eye_height={ "eye_height_neg" 137 "eye_height_neg" 105 }
  		gene_eye_distance={ "eye_distance_neg" 113 "eye_distance_neg" 112 }
- 		gene_eye_shut={ "eye_shut_pos" 181 "eye_shut_pos" 142 }
+ 		gene_eye_shut={ "eye_shut_pos" 232 "eye_shut_pos" 142 }
  		gene_forehead_angle={ "forehead_angle_pos" 145 "forehead_angle_pos" 145 }
  		gene_forehead_brow_height={ "forehead_brow_height_neg" 159 "forehead_brow_height_neg" 123 }
  		gene_forehead_roundness={ "forehead_roundness_pos" 133 "forehead_roundness_pos" 208 }
@@ -107,7 +107,7 @@ bookmark_298_cersei_lannister={
  		gene_hair_type={ "hair_straight" 161 "hair_straight" 161 }
  		gene_baldness={ "no_baldness" 255 "no_baldness" 255 }
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
- 		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
+ 		eye_accessory={ "bloodshot_eyes" 127 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
  		eyelashes_accessory={ "dark_eyelashes" 37 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
@@ -183,6 +183,7 @@ bookmark_298_cersei_lannister={
  		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		gene_beauty_details={ "beauty_details" 25 "beauty_details" 0 }
+ 		gene_drunkard={ "drunkard" 208 "drunkard" 0 }
  		beards={ "ep2_beards" 49 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 204 "all_hairstyles" 0 }
@@ -203,6 +204,7 @@ bookmark_298_cersei_lannister={
  		headgear={ "no_headgear" 189 "no_headgear" 0 }
  		special_accessories_jewelry={ "female_westerosi_necklace_01" 255 "no_jewelry" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
+		props_right={ "bp1_goblet" 255 "no_props" 0 }
  }
 	entity={ 2268070609 2268070609 }
 	tags={ {

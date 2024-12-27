@@ -1,33 +1,41 @@
 ﻿k_the_crownlands = {
 	# AGOT Bookmarked Added
-	7998.1.2 = {
-		holder = 0
-	}
-	7998.2.1 = {
+	7998.1.1 = {
 		holder = Targaryen_27
 		liege = e_the_iron_throne
 	}
+	# AGOT Bookmarked Disabled
+	# 7999.4.1 = {
+		# holder = Targaryen_27
+		# liege = e_the_iron_throne
+	# }
 	8037.9.9 = {
 		holder = Targaryen_30
 	}
-	8042.1.1 = {
+	8042.3.1 = {
 		holder = Targaryen_31
 	}
 	8048.3.7 = {
 		holder = Targaryen_35
 	}
-	8103.1.1 = {
-		holder = Targaryen_60
+	8092.6.8 = {
+		succession_laws = { male_only_law } # Baelon declared heir
+	}
+	8103.10.3 = {
+		holder = Targaryen_60		#Viserys I
+		succession_laws = { male_preference_law }
+	}
+	8105.9.10 = {
+		succession_laws = { equal_law } # Rhaenyra declared heir
 	}
 	8129.3.3 = {
-		holder = Targaryen_65
+		holder = Targaryen_65	 # Aegon II
+		succession_laws = { male_preference_law }
 	}
-	8129.4.1 = {
-	}
-	8131.1.8 = {
+	8131.1.14 = {
 		holder = Targaryen_78
 	}
-	8157.1.1 = {
+	8157.1.13 = {
 		holder = Targaryen_81
 	}
 	8161.6.9 = {
@@ -42,9 +50,7 @@
 	8184.1.1 = {
 		holder = Targaryen_91
 	}
-	8195.3.7 = {
-	}
-	8209.6.1 = {
+	8209.9.1 = {
 		holder = Targaryen_108
 	}
 	8221.1.1 = {
@@ -59,10 +65,10 @@
 	8262.1.1 = {
 		holder = Targaryen_1
 	}
-	8283.6.1 = {
+	8283.9.1 = {
 		holder = Baratheon_2
 	}
-	8298.10.28 = {
+	8298.10.24 = {
 		holder = Baratheon_5
 	}
 	8300.1.1 = {
@@ -70,40 +76,46 @@
 	}
 }
 d_kings_landing = {
-	1.1.1 = {
+	2.1.1 = {
 		de_jure_liege = k_the_riverlands
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = k_the_crownlands
 	}
-	7998.2.1 = {
+	7999.4.1 = {
 		holder = Targaryen_27
-		liege = e_the_iron_throne
+		liege = k_the_crownlands
 		# AGOT Bookmarked Disabled
 		# de_jure_liege = k_the_crownlands
 	}
 	8037.9.9 = {
 		holder = Targaryen_30
 	}
-	8042.1.1 = {
+	8042.3.1 = {
 		holder = Targaryen_31
 	}
 	8048.3.7 = {
 		holder = Targaryen_35
 	}
-	8103.1.1 = {
-		holder = Targaryen_60
+	8092.6.8 = {
+		succession_laws = { male_only_law } # Baelon declared heir
+	}
+	8103.10.3 = {
+		holder = Targaryen_60		#Viserys I
+		succession_laws = { male_preference_law }
+	}
+	8105.9.10 = {
+		succession_laws = { equal_law } # Rhaenyra declared heir
 	}
 	8129.3.3 = {
-		holder = Targaryen_65
+		holder = Targaryen_65	 # Aegon II
+		succession_laws = { male_preference_law }
 	}
-	8129.4.1 = {
-	}
-	8131.1.8 = {
+	8131.1.14 = {
 		holder = Targaryen_78
 	}
-	8157.1.1 = {
+	8157.1.13 = {
 		holder = Targaryen_81
 	}
 	8161.6.9 = {
@@ -118,9 +130,7 @@ d_kings_landing = {
 	8184.1.1 = {
 		holder = Targaryen_91
 	}
-	8195.3.7 = {
-	}
-	8209.6.1 = {
+	8209.9.1 = {
 		holder = Targaryen_108
 	}
 	8221.1.1 = {
@@ -132,15 +142,13 @@ d_kings_landing = {
 	8259.6.1 = {
 		holder = Targaryen_127
 	}
-	8259.11.1 = {
-	}
 	8262.1.1 = {
 		holder = Targaryen_1
 	}
-	8283.6.1 = {
+	8283.9.1 = {
 		holder = Baratheon_2
 	}
-	8298.10.28 = {
+	8298.10.24 = {
 		holder = Baratheon_5
 	}
 	8300.1.1 = {
@@ -148,8 +156,18 @@ d_kings_landing = {
 	}
 }
 c_kings_landing = {
-	800.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
+		effect = {
+			title:d_kings_landing = { set_title_name = d_blackwater_bay }
+			set_title_name = c_rush_hills
+			title:b_the_red_keep = { set_title_name = b_high_hill }
+			title:b_rhaenyss_hill = { set_title_name = b_north_hill }
+			title:b_visenyas_hill = { set_title_name = b_river_hill }
+			title:b_goldguard_heights = { set_title_name = b_black_valley }
+			title:b_hookmarket = { set_title_name = b_mudside }
+			title:b_landingfield = { set_title_name = b_north_verge }
+		}
 	}
 	7760.1.1 = {
 		holder = Durrandon_73
@@ -163,53 +181,98 @@ c_kings_landing = {
 	7867.1.1 = {
 		holder = Durrandon_76
 	}
-	7921.1.1 = {
+	7896.1.1 = {
 		holder = Durrandon_77
 	}
-	7925.1.1 = {
-		holder = Durrandon_79
-	}
-	7932.1.1 = {
+	7898.1.1 = {
 		holder = Durrandon_81
 	}
-	7933.1.1 = {
-		holder = Hoare_28
+	7902.1.1 = {
+		liege = e_the_stormlands
 	}
-	7956.1.1 = {
+	7925.1.1 = {
+		holder = Durrandon_85
+	}
+	7947.1.1 = {
 		holder = Hoare_30
+		liege = e_the_riverlands
 	}
 	7960.1.1 = {
 		holder = Hoare_31
 	}
-	7998.2.1 = {
+	7999.4.1 = {
 		holder = Targaryen_27
+		effect = {
+			title:d_kings_landing = { reset_title_name = yes }
+			reset_title_name = yes
+			title:b_the_red_keep = { set_title_name = b_aegonfort }
+			title:b_rhaenyss_hill = { reset_title_name = yes }
+			title:b_visenyas_hill = { reset_title_name = yes }
+			title:b_hookmarket = { set_title_name = b_kings_landing }
+			title:b_landingfield = { reset_title_name = yes }
+		}
 	}
-	8000.1.1 = {
+	8010.1.1 = {
+		effect = {
+			title:b_goldguard_heights = { set_title_name = b_cobblers_square }
+			title:b_hookmarket = { reset_title_name = yes }
+		}
 	}
-	8009.1.1 = {
+	8026.1.1 = {
+		effect = {
+			title:b_goldguard_heights = { set_title_name = b_gate_of_the_gods }
+		}
 	}
-	8018.1.1 = {
-	}
-	8027.1.1 = {
-	}
-	8036.1.1 = {
+	8042.1.1 = {
+		effect = {
+			title:b_the_red_keep = { reset_title_name = yes }
+		}
 	}
 	8037.9.9 = {
 		holder = Targaryen_30
 	}
-	8042.1.1 = {
+	8042.3.1 = {
 		holder = Targaryen_31
 	}
-	8045.1.1 = {
+	8042.4.1 = {
+		effect = {
+			set_variable = has_dragonkeeper_order
+			if = {
+				limit = {
+					has_ep1_dlc_trigger = yes
+					holder.primary_title.tier >= tier_kingdom
+					holder = { agot_can_use_dragonpit_amenities = yes }
+				}
+				holder = {
+					set_amenity_level = {
+						type = agot_dragonpit_amenities
+						value = 4 # High
+					}
+				}
+			}
+		}
 	}
 	8048.3.7 = {
 		holder = Targaryen_35
 	}
-	8103.1.1 = {
-		holder = Targaryen_60
+	8092.6.8 = {
+		succession_laws = { male_only_law } # Baelon declared heir
+	}
+	8103.10.3 = {
+		holder = Targaryen_60		#Viserys I
+		succession_laws = { male_preference_law }
+	}
+	8104.7.12 = {
+		effect = {
+			title:b_goldguard_heights = { reset_title_name = yes }
+		}
+	}
+	8105.9.10 = {
+		succession_laws = { equal_law } # Rhaenyra declared heir
 	}
 	8129.3.3 = {
-		holder = Targaryen_65
+		holder = Targaryen_65	 # Aegon II
+		succession_laws = { male_preference_law }
 	}
 	8130.6.28 = {
 		holder = Truefyre_1
@@ -217,10 +280,15 @@ c_kings_landing = {
 	8130.7.1 = {
 		holder = Targaryen_65
 	}
-	8131.1.8 = {
+	8130.10.9 = {
+		effect = {
+			remove_variable = has_dragonkeeper_order
+		}
+	}
+	8131.1.14 = {
 		holder = Targaryen_78
 	}
-	8157.1.1 = {
+	8157.1.13 = {
 		holder = Targaryen_81
 	}
 	8161.6.9 = {
@@ -235,7 +303,7 @@ c_kings_landing = {
 	8184.1.1 = {
 		holder = Targaryen_91
 	}
-	8209.6.1 = {
+	8209.9.1 = {
 		holder = Targaryen_108
 	}
 	8221.1.1 = {
@@ -250,10 +318,10 @@ c_kings_landing = {
 	8262.1.1 = {
 		holder = Targaryen_1
 	}
-	8283.6.1 = {
+	8283.9.1 = {
 		holder = Baratheon_2
 	}
-	8298.10.28 = {
+	8298.10.24 = {
 		holder = Baratheon_5
 	}
 	8300.1.1 = {
@@ -262,75 +330,114 @@ c_kings_landing = {
 }
 b_goldguard_heights = {
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		holder = 0
 	}
-	7998.2.1 = {
-		holder = Targaryen_27
+	8010.1.1 = {
+		holder = Scales_24 # Aethan Scales (nc)
+	}
+	8018.1.1 = {
+		holder = Fell_54 # Sarmion Storm (nc)
+	}
+	8025.1.1 = {
+		holder = Keath_27 # Kavan Keath (nc)
+	}
+	8033.1.1 = {
+		holder = Varner_25 # Erryk Varner (nc)
+	}
+	8041.1.1 = {
+		holder = Manning_22 # Manly Manning (m)
+	}
+	8048.3.7 = {
+		holder = Targaryen_35 # Qarl Corbray (C) is landed
 	}
 	8059.2.1 = {
-		holder = Redwyne_30
+		holder = Redwyne_30 # Robert Redwyne (C)
 	}
 	8090.1.1 = {
-		holder = Targaryen_35
+		holder = Conklyn_37 # Clement Conklyn (nc)
 	}
-	8104.5.1 = {
-		holder = Targaryen_61
+	8104.7.12 = {
+		holder = Targaryen_61 # Daemon Targaryen (C)
 	}
-	8105.12.12 = { # Daemon leaves for Stepstones, goes to Harwin
-		holder = Strong_30
+	8105.9.12 = { # Daemon leaves for Stepstones, goes to Harwin
+		holder = Strong_30 # Harwin Strong (C)
 	}
-	8113.1.1 = { # Harwin goes with Rhaenyra, goes to Luthor
-		holder = Largent_1
+	8113.1.1 = {
+		holder = Langward_26 # Hareth Langward (m)
 	}
-	8130.5.22 = {
-		holder = Byrch_18
+	8129.3.3 = {
+		holder = Largent_1 # Luthor Largent
 	}
-	8133.8.1 = {
-		holder = Leygood_28
+	8130.2.28 = { # Luthor gets his own county
+		holder = Byrch_18 # Balon Byrch (C)
+	}
+	8130.10.12 = {
+		holder = Truefyre_hh_1 # Perkin the Flea (C)
+	}
+	8131.1.28 = {
+		holder = Sunglass_38 # Petyr Sunglass (m)
+	}
+	8133.2.3 = {
+		holder = Byrne_35 # Braxton Byrne (m)
+	}
+	8133.2.12 = {
+		holder = Targaryen_78 # UNFILLED
+	}
+	8133.6.2 = {
+		holder = Leygood_28 # Lucas Leygood (C)
 	}
 	8136.1.1 = {
-		holder = Thorne_16
+		holder = Thorne_16 # Adrian Thorne (C)
 	}
 	8150.1.1 = {
-		holder = Harte_19
+		holder = Harte_19 # Richard Harte (sc)
 	}
 	8159.12.27 = {
-		holder = Smallwood_30
+		holder = Targaryen_81 # UNFILLED (sc)
+	}
+	8160.1.13 = {
+		holder = Saltcliffe_26 # Dagur Saltcliffe (sc)
 	}
 	8162.1.4 = {
-		holder = Harte_19
+		holder = Harte_19 # Richard Harte (sc)
 	}
 	8165.1.1 = {
-		holder = Dargood_19
+		holder = Smallwood_30 # Luthor Rivers (sc)
+	}
+	8188.1.1 = {
+		holder = Dargood_19 # Jeremy Dargood (nc)
 	}
 	8211.1.1 = {
-		holder = Bentley_40
+		holder = Bentley_40 # Byron Bentley (nc)
 	}
 	8246.1.1 = {
-		holder = Wendwater_34
+		holder = Wendwater_34 # Tarell Wendwater (nc)
 	}
 	8265.1.1 = {
-		holder = Stokeworth_2
+		holder = Stokeworth_2 # Manly Stokeworth (C)
 	}
-	8283.6.1 = {
-		holder = Slynt_1
+	8283.9.1 = {
+		holder = Slynt_1 # Janos Slynt (C)
 	}
-	8298.11.2 = {
-		holder = Bywater_5
+	8298.12.23 = {
+		holder = Deem_1 # Allar Deem
 	}
-	8299.7.2 = {
-		holder = Marbrand_43
+	8299.1.22 = {
+		holder = Bywater_5 # Jacelyn Bywater (C)
 	}
-	8300.2.9 = {
-		holder = Kettleblack_3
+	8299.9.8 = {
+		holder = Marbrand_4 # Addam Marbrand (C)
+	}
+	8300.2.7 = {
+		holder = Kettleblack_3 # Osfryd Kettleblack (C)
 	}
 	8300.5.17 = {
-		holder = 696969106
+		holder = Mallery_25 # Humfrey Waters (C)
 	}
 }
 c_blackstripe = {
-	800.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
 		de_jure_liege = d_the_baywater_woods
 	}
@@ -346,29 +453,33 @@ c_blackstripe = {
 	7867.1.1 = {
 		holder = Durrandon_76
 	}
-	7921.1.1 = {
+	7867.1.1 = {
+		holder = Durrandon_76
+	}
+	7896.1.1 = {
 		holder = Durrandon_77
 	}
-	7925.1.1 = {
-		holder = Durrandon_79
-	}
-	7932.1.1 = {
+	7898.1.1 = {
 		holder = Durrandon_81
 	}
-	7945.1.1 = {
+	7902.1.1 = {
+		liege = e_the_stormlands
+	}
+	7925.1.1 = {
 		holder = Durrandon_85
 	}
-	7955.1.1 = {
+	7947.1.1 = {
 		holder = Durrandon_87
 	}
 	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7998.1.1 = {
 		de_jure_liege = d_kings_landing
 	}
-	7998.2.1 = {
-		holder = Targaryen_27
+	7999.9.10 = {
+		holder = Durrandon_88 # Argella
 	}
-	7998.2.27 = {
+	7999.9.15 = {
+		holder = Targaryen_27
 		liege = d_kings_landing
 		# AGOT Bookmarked Disabled
 		# de_jure_liege = d_kings_landing
@@ -376,17 +487,25 @@ c_blackstripe = {
 	8037.9.9 = {
 		holder = Targaryen_30
 	}
-	8042.1.1 = {
+	8042.3.1 = {
 		holder = Targaryen_31
 	}
 	8048.3.7 = {
 		holder = Targaryen_35
 	}
-	8103.1.1 = {
-		holder = Targaryen_60
+	8092.6.8 = {
+		succession_laws = { male_only_law } # Baelon declared heir
+	}
+	8103.10.3 = {
+		holder = Targaryen_60		#Viserys I
+		succession_laws = { male_preference_law }
+	}
+	8105.9.10 = {
+		succession_laws = { equal_law } # Rhaenyra declared heir
 	}
 	8129.3.3 = {
-		holder = Targaryen_65
+		holder = Targaryen_65	 # Aegon II
+		succession_laws = { male_preference_law }
 	}
 	8130.6.28 = {
 		holder = Truefyre_1
@@ -394,10 +513,10 @@ c_blackstripe = {
 	8130.7.1 = {
 		holder = Targaryen_65
 	}
-	8131.1.8 = {
+	8131.1.14 = {
 		holder = Targaryen_78
 	}
-	8157.1.1 = {
+	8157.1.13 = {
 		holder = Targaryen_81
 	}
 	8161.6.9 = {
@@ -412,11 +531,10 @@ c_blackstripe = {
 	8184.1.1 = {
 		holder = Targaryen_91
 	}
-	8209.6.1 = {
+	8209.9.1 = {
 		holder = Targaryen_108
 	}
 	8212.1.1 = {
-		liege = e_the_iron_throne
 		holder = Longwaters_1
 	}
 	8261.1.1 = {
@@ -430,162 +548,142 @@ c_blackstripe = {
 	}
 }
 c_bramsfort = {
-	7600.1.1 = {
+	7653.1.1 = {
 		liege = e_the_riverlands
 	}
-	7842.1.1 = {
+	7837.1.1 = {
 		holder = Chelsted_8
 	}
 	7862.1.1 = {
-		holder = Chelsted_9
-	}
-	7888.1.1 = {
 		holder = Chelsted_10
 	}
-	7908.1.1 = {
-		holder = Chelsted_11
-	}
-	7957.1.1 = {
-		holder = Chelsted_12
-	}
-	7963.1.1 = {
+	7892.1.1 = {
 		holder = Chelsted_13
 	}
-	7998.2.27 = {
-		liege = d_kings_landing
+	7902.1.1 = {
+		liege = e_the_stormlands
 	}
-	8015.1.1 = {
-		holder = Chelsted_14
+	7910.1.1 = {
+		holder = Chelsted_16
 	}
-	8036.1.1 = {
-		holder = Chelsted_15
-	}
-	8044.1.1 = {
-		holder = Chelsted_17
-	}
-	8078.1.1 = {
-		holder = Chelsted_18
-	}
-	8107.1.1 = {
-		holder = Chelsted_19
-	}
-	8117.1.1 = {
+	7935.1.1 = {
 		holder = Chelsted_20
 	}
-	8129.4.1 = {
+	7947.1.1 = {
+		liege = e_the_riverlands
 	}
-	8130.5.1 = {
-		holder = Chelsted_22
+	7968.1.1 = {
+		holder = Chelsted_37
 	}
-	8136.1.1 = {
-		holder = Chelsted_23
+	7985.1.1 = {
+		holder = Chelsted_41
 	}
-	8193.1.1 = {
-		holder = Chelsted_24
-	}
-	8196.1.1 = {
-		holder = Chelsted_25
+	7999.5.1 = {
 		liege = d_kings_landing
 	}
-	8243.1.1 = {
-		holder = Chelsted_26
+	8004.1.1 = {
+		holder = Chelsted_42
 	}
-	8270.1.1 = {
-		holder = Chelsted_27
+	8018.1.1 = {
+		holder = Chelsted_44
 	}
-	8274.1.1 = {
+	8026.1.1 = {
+		holder = Chelsted_75
+	}
+	8046.1.1 = {
+		holder = Chelsted_46
+	}
+	8048.1.1 = {
+		holder = Chelsted_47
+	}
+	8077.1.1 = {
+		holder = Chelsted_49
+	}
+	8100.1.1 = {
+		holder = Chelsted_50
+	}
+	8138.1.1 = {
+		holder = Chelsted_51
+	}
+	8145.1.1 = {
+		holder = Chelsted_55
+	}
+	8177.1.1 = {
+		holder = Chelsted_60
+	}
+	8213.1.1 = {
+		holder = Chelsted_61
+	}
+	8271.1.1 = {
 		holder = Chelsted_1
 	}
-	8284.1.1 = {
-		holder = Chelsted_6
-	}
-}
-b_castle_rushbank = {
-	8120.1.1 = {
-		holder = 88000503
-	}
-	8130.5.22 = {
-		holder = Chelsted_22
-	}
-	8136.1.1 = {
-		holder = Chelsted_23
-	}
-	8193.1.1 = {
-		holder = Chelsted_24
-	}
-	8196.1.1 = {
-		holder = Chelsted_25
-	}
-	8243.1.1 = {
-		holder = Chelsted_26
-	}
-	8270.1.1 = {
-		holder = Chelsted_27
-	}
-	8274.1.1 = {
-		holder = Chelsted_1
-	}
-	8284.1.1 = {
+	8283.8.17 = {
 		holder = Chelsted_6
 	}
 }
 c_briarcrest = {
-	800.1.1 = {
-		liege = e_the_stormlands
+	90.1.1 = {
 		de_jure_liege = d_tumbleton
 	}
-	7880.1.1 = {
+	7873.1.1 = {
+		liege = d_tumbleton
+	}
+	7881.1.1 = {
 		holder = Greenhill_5
 	}
 	7894.1.1 = {
-		holder = Greenhill_6
+		holder = Greenhill_3
 	}
-	7932.1.1 = {
-		holder = Greenhill_7
-	}
-	7961.1.1 = {
-		holder = Greenhill_8
-	}
-	7979.1.1 = {
-		holder = Greenhill_9
-	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
-		de_jure_liege = d_kings_landing
-	}
-	7998.2.27 = {
-		liege = d_kings_landing
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = d_kings_landing
-	}
-	8003.1.1 = {
-		holder = Greenhill_10
-	}
-	8042.1.1 = {
+	7915.1.1 = {
 		holder = Greenhill_11
 	}
-	8069.1.1 = {
-		holder = Greenhill_12
-	}
-	8077.1.1 = {
-		holder = Greenhill_13
-	}
-	8105.1.1 = {
-		holder = Greenhill_14
-	}
-	8131.1.1 = {
-		holder = Greenhill_15
-	}
-	8190.1.1 = {
+	7955.1.1 = {
 		holder = Greenhill_16
 	}
-	8199.1.1 = {
+	7976.1.1 = {
 		holder = Greenhill_17
 	}
-	8243.1.1 = {
-		holder = Greenhill_18
+	7998.1.1 = {
+		holder = Greenhill_35
 	}
-	8252.1.1 = {
+	8000.1.1 = {
+		holder = Greenhill_67
+	}
+	8000.5.1 = {
+		liege = d_kings_landing
+		de_jure_liege = d_kings_landing
+	}
+	8038.1.1 = {
+		holder = Greenhill_68
+	}
+	8062.1.1 = {
+		holder = Greenhill_39
+	}
+	8065.1.1 = {
+		holder = Greenhill_41
+	}
+	8090.1.1 = {
+		holder = Greenhill_42
+	}
+	8120.1.1 = {
+		holder = Greenhill_43
+	}
+	8149.1.1 = {
+		holder = Greenhill_44
+	}
+	8161.1.1 = {
+		holder = Greenhill_51
+	}
+	8180.1.1 = {
+		holder = Greenhill_52
+	}
+	8195.1.1 = {
+		holder = Greenhill_55
+	}
+	8213.1.1 = {
+		holder = Greenhill_57
+	}
+	8274.1.1 = {
 		holder = Greenhill_20
 	}
 	8300.1.1 = {
@@ -593,58 +691,65 @@ c_briarcrest = {
 	}
 }
 c_riverline = {
-	7600.1.1 = {
+	7653.1.1 = {
 		liege = e_the_riverlands
 	}
-	7850.1.1 = {
+	7873.1.1 = {
 		holder = Mallery_3
 	}
 	7878.1.1 = {
 		holder = Mallery_4
 	}
-	7900.1.1 = {
+	7896.1.1 = {
 		holder = Mallery_5
 	}
-	7913.1.1 = {
-		holder = Mallery_6
-	}
-	7939.1.1 = {
+	7900.1.1 = {
 		holder = Mallery_7
 	}
-	7966.1.1 = {
+	7902.1.1 = {
+		liege = e_the_stormlands
+	}
+	7911.1.1 = {
 		holder = Mallery_8
 	}
-	7998.2.1 = {
-		liege = d_kings_landing
+	7947.1.1 = {
+		liege = e_the_riverlands
 	}
-	7999.1.1 = {
+	7952.1.1 = {
 		holder = Mallery_9
 	}
-	8010.1.1 = {
+	7994.1.1 = {
 		holder = Mallery_10
 	}
-	8039.1.1 = {
-		holder = Mallery_11
+	7999.5.1 = {
+		liege = d_kings_landing
 	}
-	8053.1.1 = {
-		holder = Mallery_13
+	8009.1.1 = {
+		holder = Mallery_28
 	}
-	8107.1.1 = {
-		holder = Mallery_14
+	8058.1.1 = {
+		holder = Mallery_30
 	}
-	8123.1.1 = {
-		holder = Mallery_15
+	8077.1.1 = {
+		holder = Mallery_32
 	}
-	8129.4.1 = {
+	8111.1.1 = {
+		holder = Mallery_34
 	}
-	8133.1.1 = {
-		holder = Mallery_16
+	8131.1.1 = {
+		holder = Mallery_35
 	}
-	8184.1.1 = {
-		holder = Mallery_17
+	8142.1.1 = {
+		holder = Mallery_38
 	}
-	8192.1.1 = {
-		holder = Mallery_18
+	8181.1.1 = {
+		holder = Mallery_42
+	}
+	8200.1.1 = {
+		holder = Mallery_43
+	}
+	8218.1.1 = {
+		holder = Mallery_45
 	}
 	8222.1.1 = {
 		holder = Mallery_19
@@ -663,52 +768,61 @@ c_riverline = {
 	}
 }
 c_shinebridge = {
-	800.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
 	}
-	7855.1.1 = {
+	7856.1.1 = {
 		holder = Thorne_4
 	}
 	7869.1.1 = {
-		holder = Thorne_5
-	}
-	7901.1.1 = {
 		holder = Thorne_6
 	}
-	7917.1.1 = {
+	7902.1.1 = {
+		liege = e_the_stormlands
+	}
+	7923.1.1 = {
 		holder = Thorne_7
 	}
-	7938.1.1 = {
-		holder = Thorne_8
-	}
-	7968.1.1 = {
-		holder = Thorne_9
-	}
-	7998.2.27 = {
-		liege = d_kings_landing
-	}
-	8006.1.1 = {
-		holder = Thorne_10
-	}
-	8028.1.1 = {
-		holder = Thorne_11
-	}
-	8043.1.1 = {
-		holder = Thorne_12
-	}
-	8059.1.1 = {
+	7944.1.1 = {
 		holder = Thorne_13
 	}
-	8080.1.1 = {
-		holder = Thorne_14
+	7947.1.1 = {
+		liege = e_the_riverlands
 	}
-	8108.1.1 = {
-		holder = Thorne_15
+	7961.1.1 = {
+		holder = Thorne_49
 	}
-	8157.1.1 = {
-		holder = Thorne_21
+	7968.1.1 = {
+		holder = Thorne_54
 	}
-	8166.1.1 = {
+	7984.1.1 = {
+		holder = Thorne_56
+	}
+	7999.5.1 = {
+		liege = d_kings_landing
+	}
+	8037.1.1 = {
+		holder = Thorne_58
+	}
+	8054.1.1 = {
+		holder = Thorne_59
+	}
+	8060.1.1 = {
+		holder = Thorne_60
+	}
+	8086.1.1 = {
+		holder = Thorne_64
+	}
+	8092.1.1 = {
+		holder = Thorne_66
+	}
+	8103.1.1 = {
+		holder = Thorne_67
+	}
+	8139.1.1 = {
+		holder = Thorne_70
+	}
+	8160.1.1 = {
 		holder = Thorne_23
 	}
 	8200.1.1 = {
@@ -725,38 +839,33 @@ c_shinebridge = {
 	}
 }
 c_wings_pass = {
-	800.1.1 = {
+	20.1.1 = {
 		liege = e_the_stormlands
 		de_jure_liege = d_the_baywater_woods
 	}
-	7830.1.1 = {
+	7856.1.1 = {
 		holder = Belgrave_6
 	}
 	7888.1.1 = {
 		holder = Belgrave_7
 	}
-	7905.1.1 = {
-		holder = Belgrave_8
-	}
-	7930.1.1 = {
-		holder = Belgrave_9
-	}
-	7958.1.1 = {
-		holder = Belgrave_10
-	}
-	7980.1.1 = {
+	7914.1.1 = {
 		holder = Belgrave_11
 	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7938.1.1 = {
+		holder = Belgrave_34
+	}
+	7953.1.1 = {
+		holder = Belgrave_36
+	}
+	7961.1.1 = {
+		holder = Belgrave_38
+	}
+	7999.9.15 = {
+		liege = d_kings_landing
 		de_jure_liege = d_kings_landing
 	}
-	7998.2.27 = {
-		liege = d_kings_landing
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = d_kings_landing
-	}
-	8007.1.1 = {
+	8014.1.1 = {
 		holder = Belgrave_12
 	}
 	8035.1.1 = {
@@ -791,7 +900,7 @@ c_wings_pass = {
 	}
 }
 d_crackclaw_point = {
-	1.1.1 = {
+	3306.1.1 = {
 		de_jure_liege = k_the_riverlands
 	}
 	5050.1.1 = {
@@ -815,59 +924,52 @@ d_crackclaw_point = {
 	7902.1.1 = {
 		holder = 0
 	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7999.11.15 = {
 		de_jure_liege = k_the_crownlands
 	}
-	# AGOT Bookmarked Disabled
-	# 7998.2.1 = {
-		# de_jure_liege = k_the_crownlands
-	# }
 }
 c_dyre_den = {
-	5000.1.1 = {
-		liege = d_crackclaw_point
-	}
 	5025.1.1 = {
 		holder = Brune_9
 	}
 	5050.1.1 = {
+		liege = d_crackclaw_point
 		holder = Brune_10
 	}
-	7853.1.1 = {
+	7840.1.1 = {
 		holder = Brune_12
 	}
 	7869.1.1 = {
 		holder = Brune_13
 	}
-	7901.1.1 = {
-		holder = Brune_14
-	}
-	7919.1.1 = {
+	7896.1.1 = {
 		holder = Brune_15
 	}
-	7938.1.1 = {
-		holder = Brune_16
-	}
-	7968.1.1 = {
-		holder = Brune_17
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-	}
-	8011.1.1 = {
+	7935.1.1 = {
 		holder = Brune_18
 	}
-	8024.1.1 = {
+	7975.1.1 = {
 		holder = Brune_19
 	}
-	8070.1.1 = {
+	7981.1.1 = {
+		holder = Brune_20
+	}
+	7999.11.15 = {
+		liege = k_the_crownlands
+	}
+	8025.1.1 = {
 		holder = Brune_22
 	}
-	8078.1.1 = {
+	8046.1.1 = {
 		holder = Brune_23
 	}
-	8103.1.1 = {
+	8069.1.1 = {
+		holder = Brune_38
+	}
+	8089.1.1 = {
+		holder = Brune_46
+	}
+	8122.1.1 = {
 		holder = Brune_24
 	}
 	8150.1.1 = {
@@ -877,62 +979,56 @@ c_dyre_den = {
 		holder = Brune_26
 	}
 	8197.1.1 = {
-		holder = Brune_28
+		holder = Brune_58
 	}
-	8211.1.1 = {
-		holder = Brune_29
+	8219.1.1 = {
+		holder = Brune_69
 	}
-	8231.1.1 = {
-		holder = Brune_30
-	}
-	8264.1.1 = {
+	8260.1.1 = {
 		holder = Brune_1
 	}
 }
 c_bronzeholm = {
-	7600.1.1 = {
+	5050.1.1 = {
 		liege = d_crackclaw_point
 	}
-	7862.1.1 = {
+	7870.1.1 = {
 		holder = Boggs_14
 	}
 	7871.1.1 = {
-		holder = Boggs_15
-	}
-	7898.1.1 = {
-		holder = Boggs_16
-	}
-	7922.1.1 = {
 		holder = Boggs_17
 	}
-	7956.1.1 = {
-		holder = Boggs_18
-	}
-	7968.1.1 = {
-		holder = Boggs_19
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-	}
-	8011.1.1 = {
-		holder = Boggs_20
-	}
-	8027.1.1 = {
-		holder = Boggs_21
-	}
-	8052.1.1 = {
-		holder = Boggs_22
-	}
-	8076.1.1 = {
-		holder = Boggs_23
-	}
-	8097.1.1 = {
-		holder = Boggs_24
-	}
-	8123.1.1 = {
+	7902.1.1 = {
 		holder = Boggs_25
 	}
-	8152.1.1 = {
+	7918.1.1 = {
+		holder = Boggs_52
+	}
+	7959.1.1 = {
+		holder = Boggs_55
+	}
+	7984.1.1 = {
+		holder = Boggs_56
+	}
+	7991.1.1 = {
+		holder = Boggs_61
+	}
+	7999.11.15 = {
+		liege = k_the_crownlands
+	}
+	8016.1.1 = {
+		holder = Boggs_62
+	}
+	8050.1.1 = {
+		holder = Boggs_70
+	}
+	8107.1.1 = {
+		holder = Boggs_73
+	}
+	8140.1.1 = {
+		holder = Boggs_78
+	}
+	8156.1.1 = {
 		holder = Boggs_26
 	}
 	8160.1.1 = {
@@ -958,49 +1054,47 @@ c_bronzeholm = {
 	}
 }
 c_brownhollow = {
-	5000.1.1 = {
-		liege = d_crackclaw_point
-	}
 	5025.1.1 = {
 		holder = Brune_9
 	}
 	5050.1.1 = {
+		liege = d_crackclaw_point
 		holder = Brownhollow_5
 	}
-	7840.1.1 = {
+	7874.1.1 = {
 		holder = Brownhollow_7
 	}
 	7885.1.1 = {
 		holder = Brownhollow_8
 	}
-	7909.1.1 = {
-		holder = Brownhollow_9
-	}
-	7935.1.1 = {
-		holder = Brownhollow_10
-	}
-	7960.1.1 = {
-		holder = Brownhollow_11
-	}
-	7996.1.1 = {
-		holder = Brownhollow_12
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-	}
-	8006.1.1 = {
+	7914.1.1 = {
 		holder = Brownhollow_14
 	}
-	8057.1.1 = {
+	7938.1.1 = {
 		holder = Brownhollow_15
 	}
-	8089.1.1 = {
-		holder = Brownhollow_16
+	7942.1.1 = {
+		holder = Brownhollow_46
 	}
-	8100.1.1 = {
-		holder = Brownhollow_17
+	7963.1.1 = {
+		holder = Brownhollow_47
 	}
-	8125.1.1 = {
+	7999.11.15 = {
+		liege = k_the_crownlands
+	}
+	8010.1.1 = {
+		holder = Brownhollow_50
+	}
+	8022.1.1 = {
+		holder = Brownhollow_52
+	}
+	8061.1.1 = {
+		holder = Brownhollow_54
+	}
+	8086.1.1 = {
+		holder = Brownhollow_58
+	}
+	8119.1.1 = {
 		holder = Brownhollow_18
 	}
 	8136.1.1 = {
@@ -1032,58 +1126,61 @@ c_brownhollow = {
 	}
 }
 c_hazewood = {
-	7600.1.1 = {
+	5050.1.1 = {
 		liege = d_crackclaw_point
 	}
-	7868.1.1 = {
-		holder = Bush_5
+	7865.1.1 = {
+		holder = Bush_31
 	}
-	7901.1.1 = {
-		holder = Bush_6
+	7885.1.1 = {
+		holder = Bush_2
+	}
+	7891.1.1 = {
+		holder = Bush_4
 	}
 	7912.1.1 = {
-		holder = Bush_7
-	}
-	7968.1.1 = {
 		holder = Bush_8
 	}
-	7978.1.1 = {
-		holder = Bush_9
-	}
-	7983.1.1 = {
-		holder = Bush_10
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-	}
-	8027.1.1 = {
-		holder = Bush_11
-	}
-	8070.1.1 = {
-		holder = Bush_12
-	}
-	8098.1.1 = {
-		holder = Bush_13
-	}
-	8134.1.1 = {
-		holder = Bush_14
-	}
-	8135.1.1 = {
-		holder = Bush_15
-	}
-	8156.1.1 = {
+	7974.1.1 = {
 		holder = Bush_16
 	}
-	8172.1.1 = {
-		holder = Bush_17
+	7989.1.1 = {
+		holder = Bush_32
+	}
+	7999.11.15 = {
+		liege = k_the_crownlands
+	}
+	8006.1.1 = {
+		holder = Bush_42
+	}
+	8051.1.1 = {
+		holder = Bush_46
+	}
+	8068.1.1 = {
+		holder = Bush_50
+	}
+	8088.1.1 = {
+		holder = Bush_52
+	}
+	8102.1.1 = {
+		holder = Bush_58
+	}
+	8157.1.1 = {
+		holder = Bush_62
+	}
+	8173.1.1 = {
+		holder = Bush_63
+	}
+	8207.1.1 = {
+		holder = Bush_67
 	}
 	8211.1.1 = {
-		holder = Bush_18
+		holder = Bush_76
 	}
-	8241.1.1 = {
-		holder = Bush_19
+	8223.1.1 = {
+		holder = Bush_77
 	}
-	8272.1.1 = {
+	8268.1.1 = {
 		holder = Bush_20
 	}
 	8280.1.1 = {
@@ -1091,67 +1188,61 @@ c_hazewood = {
 	}
 }
 c_needlewater = {
-	7600.1.1 = {
+	5050.1.1 = {
 		liege = d_crackclaw_point
 	}
-	7845.1.1 = {
+	7854.1.1 = {
+		holder = Pyne_27
+	}
+	7861.1.1 = {
 		holder = Pyne_3
 	}
-	7905.1.1 = {
-		holder = Pyne_4
-	}
-	7920.1.1 = {
-		holder = Pyne_5
-	}
-	7945.1.1 = {
+	7865.1.1 = {
 		holder = Pyne_6
 	}
-	7970.1.1 = {
-		holder = Pyne_7
-	}
-	7990.1.1 = {
-		holder = Pyne_8
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-	}
-	8011.1.1 = {
+	7927.1.1 = {
 		holder = Pyne_9
 	}
-	8027.1.1 = {
-		holder = Pyne_10
-	}
-	8052.1.1 = {
+	7946.1.1 = {
 		holder = Pyne_11
 	}
-	8076.1.1 = {
+	7977.1.1 = {
 		holder = Pyne_12
 	}
-	8097.1.1 = {
+	7985.1.1 = {
 		holder = Pyne_13
 	}
-	8123.1.1 = {
-		holder = Pyne_14
+	7999.11.15 = {
+		liege = k_the_crownlands
 	}
-	8152.1.1 = {
+	8005.1.1 = {
 		holder = Pyne_16
 	}
-	8176.1.1 = {
-		holder = Pyne_17
-	}
-	8196.1.1 = {
-		holder = Pyne_18
-	}
-	8215.1.1 = {
+	8025.1.1 = {
 		holder = Pyne_20
 	}
-	8219.1.1 = {
-		holder = Blackfyre_6
+	8070.1.1 = {
+		holder = Pyne_38
 	}
-	8220.1.1 = {
-		holder = Pyne_20
+	8098.1.1 = {
+		holder = Pyne_39
 	}
-	8254.1.1 = {
+	8129.1.1 = {
+		holder = Pyne_41
+	}
+	8148.1.1 = {
+		holder = Pyne_46
+	}
+	8149.1.1 = {
+		holder = Pyne_49
+	}
+	8197.1.1 = {
+		holder = Pyne_52
+	}
+	8223.1.1 = {
+		holder = Pyne_59
+	}
+	8256.1.1 = {
 		holder = Pyne_1
 	}
 	8258.1.1 = {
@@ -1159,7 +1250,7 @@ c_needlewater = {
 	}
 }
 c_pointside = {
-	900.1.1 = {
+	5050.1.1 = {
 		liege = d_crackclaw_point
 	}
 	7854.1.1 = {
@@ -1169,113 +1260,107 @@ c_pointside = {
 		holder = Hardy_12
 	}
 	7915.1.1 = {
-		holder = Hardy_13
-	}
-	7937.1.1 = {
 		holder = Hardy_14
 	}
-	7990.1.1 = {
-		holder = Hardy_15
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-	}
-	8011.1.1 = {
-		holder = Hardy_16
-	}
-	8030.1.1 = {
-		holder = Hardy_17
-	}
-	8042.1.1 = {
+	7963.1.1 = {
 		holder = Hardy_18
 	}
-	8052.1.1 = {
-		holder = Hardy_19
-	}
-	8076.1.1 = {
-		holder = Hardy_20
-	}
-	8097.1.1 = {
-		holder = Hardy_21
-	}
-	8123.1.1 = {
-		holder = Hardy_22
-	}
-	8152.1.1 = {
+	7973.1.1 = {
 		holder = Hardy_23
 	}
-	8176.1.1 = {
+	7999.11.15 = {
+		liege = k_the_crownlands
+	}
+	8014.1.1 = {
 		holder = Hardy_27
 	}
-	8196.6.1 = {
-		holder = Hardy_28
+	8021.1.1 = {
+		holder = Hardy_32
 	}
-	8215.1.1 = {
-		holder = Hardy_29
+	8066.1.1 = {
+		holder = Hardy_34
 	}
-	8254.1.1 = {
+	8099.1.1 = {
+		holder = Hardy_35
+	}
+	8109.1.1 = {
+		holder = Hardy_39
+	}
+	8134.1.1 = {
+		holder = Hardy_40
+	}
+	8141.1.1 = {
+		holder = Hardy_37
+	}
+	8154.1.1 = {
+		holder = Hardy_44
+	}
+	8172.1.1 = {
+		holder = Hardy_45
+	}
+	8195.1.1 = {
+		holder = Hardy_46
+	}
+	8207.1.1 = {
+		holder = Hardy_49
+	}
+	8236.1.1 = {
 		holder = Hardy_1
 	}
 	8263.1.1 = {
 		holder = Hardy_2
 	}
-	8283.3.1 = {
+	8283.8.4 = {
 		holder = Hardy_6
 	}
 }
 c_strongbox = {
-	7600.1.1 = {
+	5050.1.1 = {
 		liege = d_crackclaw_point
 	}
-	7830.1.1 = {
+	7863.1.1 = {
 		holder = Cave_30
 	}
-	7880.1.1 = {
+	7884.1.1 = {
 		holder = Cave_31
 	}
-	7905.1.1 = {
-		holder = Cave_32
-	}
-	7930.1.1 = {
-		holder = Cave_33
-	}
-	7955.1.1 = {
-		holder = Cave_34
-	}
-	7980.1.1 = {
-		holder = Cave_35
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-	}
-	8011.1.1 = {
-		holder = Cave_36
-	}
-	8027.1.1 = {
-		holder = Cave_37
-	}
-	8052.1.1 = {
-		holder = Cave_38
-	}
-	8076.1.1 = {
-		holder = Cave_39
-	}
-	8097.1.1 = {
-		holder = Cave_41
-	}
-	8123.1.1 = {
-		holder = Cave_42
-	}
-	8152.1.1 = {
+	7895.1.1 = {
 		holder = Cave_43
 	}
-	8176.1.1 = {
+	7952.1.1 = {
 		holder = Cave_45
 	}
-	8196.6.1 = {
-		holder = Cave_46
+	7959.1.1 = {
+		holder = Cave_56
 	}
-	8215.1.1 = {
+	7990.1.1 = {
+		holder = Cave_58
+	}
+	7999.11.15 = {
+		liege = k_the_crownlands
+	}
+	8038.1.1 = {
+		holder = Cave_60
+	}
+	8057.1.1 = {
+		holder = Cave_66
+	}
+	8088.1.1 = {
+		holder = Cave_68
+	}
+	8091.1.1 = {
+		holder = Cave_73
+	}
+	8133.1.1 = {
+		holder = Cave_76
+	}
+	8156.1.1 = {
+		holder = Cave_81
+	}
+	8203.1.1 = {
+		holder = Cave_82
+	}
+	8223.1.1 = {
 		holder = Cave_47
 	}
 	8254.1.1 = {
@@ -1287,43 +1372,37 @@ c_strongcliffs = {
 		liege = d_crackclaw_point
 		holder = Crabb_13
 	}
-	7860.1.1 = {
+	7871.1.1 = {
 		holder = Crabb_15
 	}
 	7877.1.1 = {
 		holder = Crabb_16
 	}
-	7915.1.1 = {
-		holder = Crabb_17
-	}
-	7926.1.1 = {
-		holder = Crabb_18
-	}
-	7938.1.1 = {
-		holder = Crabb_19
-	}
-	7940.1.1 = {
-		holder = Crabb_20
-	}
-	7990.1.1 = {
-		holder = Crabb_21
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-	}
-	8022.1.1 = {
-		holder = Crabb_22
-	}
-	8036.1.1 = {
-		holder = Crabb_23
-	}
-	8067.1.1 = {
-		holder = Crabb_24
-	}
-	8080.1.1 = {
+	7918.1.1 = {
 		holder = Crabb_25
 	}
-	8102.1.1 = {
+	7931.1.1 = {
+		holder = Crabb_45
+	}
+	7969.1.1 = {
+		holder = Crabb_47
+	}
+	7993.1.1 = {
+		holder = Crabb_54
+	}
+	7999.11.15 = {
+		liege = k_the_crownlands
+	}
+	8030.1.1 = {
+		holder = Crabb_56
+	}
+	8059.1.1 = {
+		holder = Crabb_57
+	}
+	8075.1.1 = {
+		holder = Crabb_58
+	}
+	8094.1.1 = {
 		holder = Crabb_26
 	}
 	8135.1.1 = {
@@ -1346,44 +1425,39 @@ c_strongcliffs = {
 	}
 }
 d_deerfield = {
-	800.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
 		de_jure_liege = k_the_riverlands
 	}
-	7868.1.1 = {
+	7888.1.1 = {
 		holder = Buckwell_8
 	}
-	7884.1.1 = {
-		holder = Buckwell_9
-	}
-	7901.1.1 = {
-		holder = Buckwell_10
-	}
-	7920.1.1 = {
+	7895.1.1 = {
 		holder = Buckwell_11
 	}
-	7942.1.1 = {
+	7902.1.1 = {
+		liege = e_the_stormlands
+	}
+	7920.1.1 = {
 		holder = Buckwell_12
 	}
-	7966.1.1 = {
-		holder = Buckwell_13
+	7947.1.1 = {
+		liege = e_the_riverlands
 	}
-	7990.1.1 = {
+	7952.1.1 = {
 		holder = Buckwell_14
 	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7969.1.1 = {
+		holder = Buckwell_47
+	}
+	7999.6.1 = {
+		liege = k_the_crownlands
 		de_jure_liege = k_the_crownlands
 	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
+	8004.1.1 = {
+		holder = Buckwell_53
 	}
-	8001.1.1 = {
-		holder = Buckwell_15
-	}
-	8013.1.1 = {
+	8037.1.1 = {
 		holder = Buckwell_16
 	}
 	8057.1.1 = {
@@ -1395,13 +1469,13 @@ d_deerfield = {
 	8100.1.1 = {
 		holder = Buckwell_20
 	}
-	8129.10.1 = {
+	8129.11.21 = {
 		holder = Buckwell_26
 	}
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8175.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1420,31 +1494,25 @@ d_deerfield = {
 c_antlers = {
 	800.1.1 = {
 	}
-	7868.1.1 = {
+	7888.1.1 = {
 		holder = Buckwell_8
 	}
-	7884.1.1 = {
-		holder = Buckwell_9
-	}
-	7901.1.1 = {
-		holder = Buckwell_10
-	}
-	7920.1.1 = {
+	7895.1.1 = {
 		holder = Buckwell_11
 	}
-	7942.1.1 = {
+	7920.1.1 = {
 		holder = Buckwell_12
 	}
-	7966.1.1 = {
-		holder = Buckwell_13
-	}
-	7990.1.1 = {
+	7952.1.1 = {
 		holder = Buckwell_14
 	}
-	8001.1.1 = {
-		holder = Buckwell_15
+	7969.1.1 = {
+		holder = Buckwell_47
 	}
-	8013.1.1 = {
+	8004.1.1 = {
+		holder = Buckwell_53
+	}
+	8037.1.1 = {
 		holder = Buckwell_16
 	}
 	8057.1.1 = {
@@ -1456,13 +1524,13 @@ c_antlers = {
 	8100.1.1 = {
 		holder = Buckwell_20
 	}
-	8129.10.1 = {
+	8129.11.21 = {
 		holder = Buckwell_26
 	}
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8175.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1479,92 +1547,87 @@ c_antlers = {
 	}
 }
 c_brackworth = {
-	800.1.1 = {
-		liege = d_deerfield
+	7826.1.1 = {
+		holder = Holk_33
 	}
-	7877.1.1 = {
-		holder = Harte_7
+	7853.1.1 = {
+		holder = Holk_2
 	}
 	7886.1.1 = {
-		holder = Harte_8
+		holder = Holk_4
 	}
-	7900.1.1 = {
-		holder = Harte_9
+	7888.1.1 = {
+		liege = d_deerfield
 	}
-	7944.1.1 = {
-		holder = Harte_10
+	7891.1.1 = {
+		holder = Holk_9
 	}
-	7966.1.1 = {
-		holder = Harte_11
+	7904.1.1 = {
+		holder = Holk_10
 	}
-	8016.1.1 = {
-		holder = Harte_12
+	7947.1.1 = {
+		holder = Holk_12
 	}
-	8030.1.1 = {
-		holder = Harte_13
+	7990.1.1 = {
+		holder = Holk_14
 	}
-	8046.1.1 = {
-		holder = Harte_14
+	8012.1.1 = {
+		holder = Holk_17
 	}
-	8064.1.1 = {
-		holder = Harte_15
+	8040.1.1 = {
+		holder = Holk_19
 	}
-	8102.1.1 = {
-		holder = Harte_16
+	8043.1.1 = {
+		holder = Holk_22
 	}
-	8129.8.1 = {
-		holder = Harte_18
+	8063.1.1 = {
+		holder = Holk_35
 	}
-	8143.1.1 = {
-		holder = Harte_21
+	8076.1.1 = {
+		holder = Holk_41
 	}
-	8179.1.1 = {
-		holder = Harte_23
+	8131.1.1 = {
+		holder = Holk_50
 	}
-	8196.1.1 = {
-		holder = Harte_24
+	8154.1.1 = {
+		holder = Holk_54
 	}
-	8225.1.1 = {
-		holder = Harte_25
+	8198.1.1 = {
+		holder = Holk_56
 	}
-	8244.1.1 = {
-		holder = Harte_26
+	8221.1.1 = {
+		holder = Holk_63
 	}
-	8259.1.1 = {
-		holder = Harte_27
+	8262.1.1 = {
+		holder = Holk_23
 	}
-	8272.1.1 = {
-		holder = Harte_1
+	8294.1.1 = {
+		holder = Holk_24
 	}
 }
 c_point_square = {
-	800.1.1 = {
-	}
 	7868.1.1 = {
 		holder = Buckwell_8
 	}
-	7884.1.1 = {
-		holder = Buckwell_9
+	7888.1.1 = {
+		liege = d_deerfield
 	}
-	7901.1.1 = {
-		holder = Buckwell_10
-	}
-	7920.1.1 = {
+	7895.1.1 = {
 		holder = Buckwell_11
 	}
-	7942.1.1 = {
+	7920.1.1 = {
 		holder = Buckwell_12
 	}
-	7966.1.1 = {
-		holder = Buckwell_13
-	}
-	7990.1.1 = {
+	7952.1.1 = {
 		holder = Buckwell_14
 	}
-	8001.1.1 = {
-		holder = Buckwell_15
+	7969.1.1 = {
+		holder = Buckwell_47
 	}
-	8013.1.1 = {
+	8004.1.1 = {
+		holder = Buckwell_53
+	}
+	8037.1.1 = {
 		holder = Buckwell_16
 	}
 	8057.1.1 = {
@@ -1576,13 +1639,13 @@ c_point_square = {
 	8100.1.1 = {
 		holder = Buckwell_20
 	}
-	8129.10.1 = {
+	8129.11.21 = {
 		holder = Buckwell_26
 	}
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8175.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1599,33 +1662,28 @@ c_point_square = {
 	}
 }
 c_tuskford = {
-	800.1.1 = {
-	}
 	7868.1.1 = {
 		holder = Buckwell_8
 	}
-	7884.1.1 = {
-		holder = Buckwell_9
+	7888.1.1 = {
+		liege = d_deerfield
 	}
-	7901.1.1 = {
-		holder = Buckwell_10
-	}
-	7920.1.1 = {
+	7895.1.1 = {
 		holder = Buckwell_11
 	}
-	7942.1.1 = {
+	7920.1.1 = {
 		holder = Buckwell_12
 	}
-	7966.1.1 = {
-		holder = Buckwell_13
-	}
-	7990.1.1 = {
+	7952.1.1 = {
 		holder = Buckwell_14
 	}
-	8001.1.1 = {
-		holder = Buckwell_15
+	7969.1.1 = {
+		holder = Buckwell_47
 	}
-	8013.1.1 = {
+	8004.1.1 = {
+		holder = Buckwell_53
+	}
+	8037.1.1 = {
 		holder = Buckwell_16
 	}
 	8057.1.1 = {
@@ -1637,13 +1695,13 @@ c_tuskford = {
 	8100.1.1 = {
 		holder = Buckwell_20
 	}
-	8129.10.1 = {
+	8129.11.21 = {
 		holder = Buckwell_26
 	}
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8175.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1660,66 +1718,71 @@ c_tuskford = {
 	}
 }
 c_vairs_head = {
-	800.1.1 = {
-		liege = d_deerfield
-	}
-	7877.1.1 = {
+	7859.1.1 = {
 		holder = Harte_7
 	}
 	7886.1.1 = {
 		holder = Harte_8
 	}
-	7900.1.1 = {
-		holder = Harte_9
+	7888.1.1 = {
+		liege = d_deerfield
 	}
-	7944.1.1 = {
+	7923.1.1 = {
 		holder = Harte_10
 	}
-	7966.1.1 = {
+	7926.1.1 = {
 		holder = Harte_11
 	}
-	8016.1.1 = {
-		holder = Harte_12
-	}
-	8030.1.1 = {
+	7934.1.1 = {
 		holder = Harte_13
 	}
-	8046.1.1 = {
+	7991.1.1 = {
+		holder = Harte_42
+	}
+	7992.1.1 = {
+		holder = Harte_29
+	}
+	8008.1.1 = {
 		holder = Harte_14
 	}
-	8064.1.1 = {
-		holder = Harte_15
+	8050.1.1 = {
+		holder = Harte_31
 	}
-	8102.1.1 = {
+	8101.1.1 = {
 		holder = Harte_16
 	}
-	8129.8.1 = {
+	8129.9.5 = {
 		holder = Harte_18
 	}
 	8143.1.1 = {
 		holder = Harte_21
 	}
 	8179.1.1 = {
-		holder = Harte_23
+		holder = Harte_33
 	}
-	8196.1.1 = {
-		holder = Harte_24
+	8214.1.1 = {
+		holder = Harte_35
 	}
-	8225.1.1 = {
-		holder = Harte_25
+	8233.1.1 = {
+		holder = Harte_37
 	}
-	8244.1.1 = {
-		holder = Harte_26
+	8242.1.1 = {
+		holder = Harte_40
 	}
-	8259.1.1 = {
-		holder = Harte_27
-	}
-	8272.1.1 = {
+	8287.1.1 = {
 		holder = Harte_1
 	}
 }
+b_fallowpoint = {
+	8283.9.1 = {
+		holder = Bartheld_1
+	}
+	8297.6.1 = {
+		holder = Bartheld_7
+	}
+}
 d_duskendale = {
-	800.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
 		de_jure_liege = k_the_riverlands
 	}
@@ -1729,23 +1792,22 @@ d_duskendale = {
 	7881.1.1 = {
 		holder = Darklyn_2
 	}
-	7899.1.1 = {
-		holder = Darklyn_3
+	7898.1.1 = {
+		holder = Darklyn_63
 	}
-	7922.1.1 = {
-		holder = Darklyn_4
+	7902.1.1 = {
+		liege = e_the_stormlands
 	}
-	7956.1.1 = {
+	7947.1.1 = {
+		holder = Darklyn_66
+		liege = e_the_riverlands
+	}
+	7966.1.1 = {
 		holder = Darklyn_5
 	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7999.6.1 = {
+		liege = k_the_crownlands
 		de_jure_liege = k_the_crownlands
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
 		holder = Darklyn_7
 	}
 	8018.1.1 = {
@@ -1766,9 +1828,7 @@ d_duskendale = {
 	8120.1.1 = {
 		holder = Darklyn_19
 	}
-	8129.4.1 = {
-	}
-	8129.9.1 = {
+	8129.10.3 = {
 		holder = Darklyn_29
 	}
 	8174.1.1 = {
@@ -1797,25 +1857,28 @@ d_duskendale = {
 	}
 }
 c_duskendale = {
-	800.1.1 = {
-		liege = d_duskendale
-	}
 	7862.1.1 = {
+		liege = d_duskendale
 		holder = Darklyn_1
+		effect = {
+			dynasty:dynn_Darklyn ?= {
+				set_coa = dynn_Darklyn_0KG
+			}
+		}
 	}
 	7881.1.1 = {
 		holder = Darklyn_2
 	}
-	7899.1.1 = {
-		holder = Darklyn_3
+	7898.1.1 = {
+		holder = Darklyn_63
 	}
-	7922.1.1 = {
-		holder = Darklyn_4
+	7947.1.1 = {
+		holder = Darklyn_66
 	}
-	7956.1.1 = {
+	7966.1.1 = {
 		holder = Darklyn_5
 	}
-	7998.2.1 = {
+	7999.6.1 = {
 		holder = Darklyn_7
 	}
 	8018.1.1 = {
@@ -1830,14 +1893,35 @@ c_duskendale = {
 	8057.1.1 = {
 		holder = Darklyn_16
 	}
+	8078.1.1 = {
+		effect = {
+			dynasty:dynn_Darklyn ?= {
+				set_coa = dynn_Darklyn_3KG
+			}
+		}
+	}
+	8093.1.1 = {
+		effect = {
+			dynasty:dynn_Darklyn ?= {
+				set_coa = dynn_Darklyn_4KG
+			}
+		}
+	}
 	8100.1.1 = {
 		holder = Darklyn_17
 	}
 	8120.1.1 = {
 		holder = Darklyn_19
 	}
-	8129.9.1 = {
+	8129.10.3 = {
 		holder = Darklyn_29
+	}
+	8133.6.1 = {
+		effect = {
+			dynasty:dynn_Darklyn ?= {
+				set_coa = dynn_Darklyn_5KG
+			}
+		}
 	}
 	8174.1.1 = {
 		holder = Darklyn_34
@@ -1845,8 +1929,22 @@ c_duskendale = {
 	8189.1.1 = {
 		holder = Darklyn_38
 	}
+	8222.1.1 = {
+		effect = {
+			dynasty:dynn_Darklyn ?= {
+				set_coa = dynn_Darklyn_6KG
+			}
+		}
+	}
 	8229.1.1 = {
 		holder = Darklyn_40
+	}
+	8236.3.2 = {
+		effect = {
+			dynasty:dynn_Darklyn ?= {
+				set_coa = dynn_Darklyn
+			}
+		}
 	}
 	8243.1.1 = {
 		holder = Darklyn_42
@@ -1865,80 +1963,78 @@ c_duskendale = {
 	}
 }
 b_highley = {
-	900.1.1 = {
+	8028.1.1 = {
+		holder = Dargood_9
 	}
-	7946.1.1 = {
-		holder = Leek_6
+	8032.1.1 = {
+		holder = Dargood_10
 	}
-	8011.1.1 = {
-		holder = Leek_7
+	8079.1.1 = {
+		holder = Dargood_11
 	}
-	8036.1.1 = {
-		holder = Leek_9
+	8087.1.1 = {
+		holder = Dargood_20
 	}
-	8083.1.1 = {
-		holder = Leek_10
+	8121.1.1 = {
+		holder = Dargood_22
 	}
-	8124.1.1 = {
-		holder = Leek_11
+	8132.1.1 = {
+		holder = Dargood_23
 	}
-	8130.1.1 = {
-		holder = Leek_13
+	8161.1.1 = {
+		holder = Dargood_31
 	}
-	8133.1.1 = {
-		holder = Leek_12
+	8188.1.1 = {
+		holder = Dargood_39
 	}
-	8152.1.1 = {
-		holder = Leek_14
+	8227.1.1 = {
+		holder = Dargood_46
 	}
-	8173.1.1 = {
-		holder = Leek_15
+	8267.1.1 = {
+		holder = Dargood_1
 	}
-	8212.1.1 = {
-		holder = Leek_16
+	8273.1.1 = {
+		holder = Dargood_2
 	}
-	8247.1.1 = {
-		holder = Leek_17
-	}
-	8255.1.1 = {
-		holder = Leek_1
+	8292.1.1 = {
+		holder = Dargood_3
 	}
 }
 c_bluntmark = {
-	900.1.1 = {
+	7862.1.1 = {
 		liege = d_duskendale
 	}
-	7840.1.1 = {
+	7891.1.1 = {
 		holder = Rykker_7
 	}
-	7890.1.1 = {
-		holder = Rykker_8
-	}
-	7915.1.1 = {
+	7897.1.1 = {
 		holder = Rykker_9
 	}
-	7940.1.1 = {
-		holder = Rykker_10
-	}
-	7965.1.1 = {
+	7928.1.1 = {
 		holder = Rykker_11
 	}
-	7990.1.1 = {
-		holder = Rykker_12
-	}
-	7998.2.1 = {
-		holder = Rykker_13
-	}
-	8050.1.1 = {
+	7931.1.1 = {
 		holder = Rykker_14
 	}
-	8085.1.1 = {
+	7960.1.1 = {
 		holder = Rykker_15
 	}
-	8092.1.1 = {
-		holder = Rykker_16
+	7987.1.1 = {
+		holder = Rykker_40
 	}
-	8139.1.1 = {
+	8024.1.1 = {
+		holder = Rykker_42
+	}
+	8056.1.1 = {
+		holder = Rykker_46
+	}
+	8070.1.1 = {
+		holder = Rykker_47
+	}
+	8095.1.1 = {
+		holder = Rykker_48
+	}
+	8114.1.1 = {
 		holder = Rykker_17
 	}
 	8149.1.1 = {
@@ -1950,7 +2046,7 @@ c_bluntmark = {
 	8206.1.1 = {
 		holder = Rykker_23
 	}
-	8209.6.1 = {
+	8209.9.1 = {
 		holder = Rykker_29
 	}
 	8254.1.1 = {
@@ -1961,46 +2057,49 @@ c_bluntmark = {
 	}
 }
 c_crownback = {
-	800.1.1 = {
-		liege = d_duskendale
-	}
-	7859.1.1 = {
+	7848.1.1 = {
 		holder = Hollard_12
+	}
+	7862.1.1 = {
+		liege = d_duskendale
 	}
 	7873.1.1 = {
 		holder = Hollard_13
 	}
-	7905.1.1 = {
+	7921.1.1 = {
 		holder = Hollard_14
 	}
-	7939.1.1 = {
+	7922.1.1 = {
 		holder = Hollard_15
 	}
-	7959.1.1 = {
-		holder = Hollard_16
-	}
-	7983.1.1 = {
-		holder = Hollard_17
-	}
-	8021.1.1 = {
-		holder = Hollard_18
-	}
-	8033.1.1 = {
+	7950.1.1 = {
 		holder = Hollard_19
 	}
-	8069.1.1 = {
-		holder = Hollard_20
-	}
-	8076.1.1 = {
+	7990.1.1 = {
 		holder = Hollard_21
 	}
-	8083.1.1 = {
-		holder = Hollard_22
+	8033.1.1 = {
+		holder = Hollard_35
 	}
-	8112.1.1 = {
-		holder = Hollard_23
+	8057.1.1 = {
+		holder = Hollard_37
 	}
-	8133.1.1 = {
+	8084.1.1 = {
+		holder = Hollard_38
+	}
+	8100.1.1 = {
+		holder = Hollard_44
+	}
+	8107.1.1 = {
+		holder = Hollard_46
+	}
+	8118.1.1 = {
+		holder = Hollard_45
+	}
+	8122.1.1 = {
+		holder = Hollard_49
+	}
+	8152.1.1 = {
 		holder = Hollard_25
 	}
 	8174.1.1 = {
@@ -2026,25 +2125,23 @@ c_crownback = {
 	}
 }
 c_darkwoods_mull = {
-	800.1.1 = {
-		liege = d_duskendale
-	}
 	7862.1.1 = {
+		liege = d_duskendale
 		holder = Darklyn_1
 	}
 	7881.1.1 = {
 		holder = Darklyn_2
 	}
-	7899.1.1 = {
-		holder = Darklyn_3
+	7898.1.1 = {
+		holder = Darklyn_63
 	}
-	7922.1.1 = {
-		holder = Darklyn_4
+	7947.1.1 = {
+		holder = Darklyn_66
 	}
-	7956.1.1 = {
+	7966.1.1 = {
 		holder = Darklyn_5
 	}
-	7998.2.1 = {
+	7999.6.1 = {
 		holder = Darklyn_7
 	}
 	8018.1.1 = {
@@ -2054,50 +2151,51 @@ c_darkwoods_mull = {
 		holder = Darkwood_7
 	}
 	8046.1.1 = {
-		holder = Darkwood_8
-	}
-	8080.1.1 = {
-		holder = Darkwood_9
-	}
-	8105.1.1 = {
-		holder = Darkwood_10
-	}
-	8143.1.1 = {
 		holder = Darkwood_11
 	}
-	8164.9.1 = {
+	8053.1.1 = {
 		holder = Darkwood_12
 	}
-	8206.1.1 = {
+	8118.1.1 = {
 		holder = Darkwood_14
 	}
-	8222.1.1 = {
+	8127.1.1 = {
 		holder = Darkwood_15
 	}
-	8256.1.1 = {
+	8144.1.1 = {
+		holder = Darkwood_18
+	}
+	8185.1.1 = {
+		holder = Darkwood_21
+	}
+	8205.1.1 = {
+		holder = Darkwood_27
+	}
+	8228.1.1 = {
+		holder = Darkwood_37
+	}
+	8254.1.1 = {
 		holder = Darkwood_1
 	}
 }
 c_shadowshield = {
-	900.1.1 = {
-		liege = d_duskendale
-	}
 	7862.1.1 = {
+		liege = d_duskendale
 		holder = Darklyn_1
 	}
 	7881.1.1 = {
 		holder = Darklyn_2
 	}
-	7899.1.1 = {
-		holder = Darklyn_3
+	7898.1.1 = {
+		holder = Darklyn_63
 	}
-	7922.1.1 = {
-		holder = Darklyn_4
+	7947.1.1 = {
+		holder = Darklyn_66
 	}
-	7956.1.1 = {
+	7966.1.1 = {
 		holder = Darklyn_5
 	}
-	7998.2.1 = {
+	7999.6.1 = {
 		holder = Darklyn_7
 	}
 	8018.1.1 = {
@@ -2113,7 +2211,7 @@ c_shadowshield = {
 		holder = Darklyn_16
 	}
 	8065.1.1 = {
-		holder = Darke_rs_3
+		holder = Duskendale_1
 	}
 	8075.1.1 = {
 		holder = Darke_5
@@ -2147,107 +2245,114 @@ c_shadowshield = {
 	}
 }
 c_spinney = {
-	800.1.1 = {
-		liege = d_duskendale
-	}
 	7862.1.1 = {
+		liege = d_duskendale
 		holder = Darklyn_1
 	}
 	7881.1.1 = {
 		holder = Darklyn_2
 	}
-	7899.1.1 = {
-		holder = Darklyn_3
+	7898.1.1 = {
+		holder = Darklyn_63
 	}
-	7922.1.1 = {
-		holder = Darklyn_4
+	7947.1.1 = {
+		holder = Darklyn_66
 	}
-	7956.1.1 = {
+	7966.1.1 = {
 		holder = Darklyn_5
 	}
-	7997.1.1 = {
-		holder = Dargood_9
+	7999.6.1 = {
+		holder = Darklyn_7
 	}
-	8032.1.1 = {
-		holder = Dargood_10
+	8006.1.1 = {
+		holder = Leek_6
 	}
-	8066.1.1 = {
-		holder = Dargood_11
+	8011.1.1 = {
+		holder = Leek_5
 	}
-	8099.1.1 = {
-		holder = Dargood_12
+	8031.1.1 = {
+		holder = Leek_7
 	}
-	8134.1.1 = {
-		holder = Dargood_13
+	8048.1.1 = {
+		holder = Leek_10
 	}
-	8141.1.1 = {
-		holder = Dargood_14
+	8086.1.1 = {
+		holder = Leek_12
 	}
-	8167.1.1 = {
-		holder = Dargood_15
+	8129.10.3 = {
+		holder = Leek_17
 	}
-	8201.9.1 = {
-		holder = Dargood_16
+	8154.1.1 = {
+		holder = Leek_21
 	}
-	8213.1.1 = {
-		holder = Dargood_17
+	8166.1.1 = {
+		holder = Leek_22
 	}
-	8246.1.1 = {
-		holder = Dargood_1
+	8197.1.1 = {
+		holder = Leek_28
 	}
-	8273.1.1 = {
-		holder = Dargood_2
+	8237.1.1 = {
+		holder = Leek_41
 	}
-	8292.1.1 = {
-		holder = Dargood_3
+	8287.1.1 = {
+		holder = Leek_1
 	}
 }
 c_yellowstars = {
-	900.1.1 = {
+	7862.1.1 = {
 		liege = d_duskendale
 	}
-	7878.1.1 = {
+	7890.1.1 = {
 		holder = Rychard_5
 	}
 	7901.1.1 = {
-		holder = Rychard_6
+		holder = Rychard_2
 	}
-	7906.1.1 = {
+	7922.1.1 = {
 		holder = Rychard_7
 	}
-	7954.1.1 = {
-		holder = Rychard_8
-	}
-	7990.1.1 = {
-		holder = Rychard_9
-	}
-	8024.1.1 = {
-		holder = Rychard_11
-	}
-	8061.1.1 = {
+	7975.1.1 = {
 		holder = Rychard_12
 	}
-	8067.1.1 = {
-		holder = Rychard_13
+	7995.1.1 = {
+		holder = Rychard_45
 	}
-	8106.1.1 = {
-		holder = Rychard_14
+	8021.1.1 = {
+		holder = Rychard_46
 	}
-	8136.1.1 = {
-		holder = Rychard_15
+	8035.1.1 = {
+		holder = Rychard_52
 	}
-	8174.1.1 = {
-		holder = Rychard_16
+	8061.1.1 = {
+		holder = Rychard_57
 	}
-	8212.1.1 = {
-		holder = Rychard_17
+	8079.1.1 = {
+		holder = Rychard_59
 	}
-	8236.1.1 = {
+	8084.1.1 = {
+		holder = Rychard_62
+	}
+	8149.1.1 = {
+		holder = Rychard_63
+	}
+	8162.1.1 = {
+		holder = Rychard_66
+	}
+	8188.1.1 = {
+		holder = Rychard_71
+	}
+	8220.1.1 = {
+		holder = Rychard_74
+	}
+	8225.1.1 = {
+		holder = Rychard_81
+	}
+	8249.1.1 = {
 		holder = Rychard_19
 	}
 }
 d_hayford = {
-	800.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
 		de_jure_liege = k_the_riverlands
 	}
@@ -2255,44 +2360,43 @@ d_hayford = {
 		holder = Hayford_3
 	}
 	7877.1.1 = {
-		holder = Hayford_4
-	}
-	7900.1.1 = {
 		holder = Hayford_5
 	}
-	7931.1.1 = {
-		holder = Hayford_6
+	7902.1.1 = {
+		liege = e_the_stormlands
 	}
-	7966.1.1 = {
-		holder = Hayford_7
+	7908.1.1 = {
+		holder = Hayford_11
 	}
-	7984.1.1 = {
-		holder = Hayford_8
+	7938.1.1 = {
+		holder = Hayford_28
 	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7947.1.1 = {
+		liege = e_the_riverlands
+	}
+	7955.1.1 = {
+		holder = Hayford_34
+	}
+	7976.1.1 = {
+		holder = Hayford_38
+	}
+	7999.5.1 = {
+		liege = k_the_crownlands
 		de_jure_liege = k_the_crownlands
 	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
-	}
-	8023.1.1 = {
+	8014.1.1 = {
 		holder = Hayford_9
 	}
 	8048.3.1 = {
-		holder = Hayford_10
+		holder = Hayford_43
 	}
-	8052.1.1 = {
-		holder = Hayford_11
+	8062.1.1 = {
+		holder = Hayford_44
 	}
-	8114.1.1 = {
+	8107.1.1 = {
 		holder = Hayford_12
 	}
-	8129.4.1 = {
-	}
-	8129.8.1 = {
+	8129.9.5 = {
 		holder = Hayford_13
 	}
 	8175.1.1 = {
@@ -2301,7 +2405,7 @@ d_hayford = {
 	8196.6.1 = {
 		holder = Hayford_20
 	}
-	8209.6.1 = {
+	8209.9.1 = {
 		holder = Hayford_21
 	}
 	8221.1.1 = {
@@ -2318,42 +2422,38 @@ d_hayford = {
 	}
 }
 c_hayford = {
-	7600.1.1 = {
-		liege = d_hayford
-	}
 	7858.1.1 = {
+		liege = d_hayford
 		holder = Hayford_3
 	}
 	7877.1.1 = {
-		holder = Hayford_4
-	}
-	7900.1.1 = {
 		holder = Hayford_5
 	}
-	7931.1.1 = {
-		holder = Hayford_6
+	7908.1.1 = {
+		holder = Hayford_11
 	}
-	7966.1.1 = {
-		holder = Hayford_7
+	7938.1.1 = {
+		holder = Hayford_28
 	}
-	7984.1.1 = {
-		holder = Hayford_8
+	7955.1.1 = {
+		holder = Hayford_34
 	}
-	8023.1.1 = {
+	7976.1.1 = {
+		holder = Hayford_38
+	}
+	8014.1.1 = {
 		holder = Hayford_9
 	}
 	8048.3.1 = {
-		holder = Hayford_10
+		holder = Hayford_43
 	}
-	8052.1.1 = {
-		holder = Hayford_11
+	8062.1.1 = {
+		holder = Hayford_44
 	}
-	8114.1.1 = {
+	8107.1.1 = {
 		holder = Hayford_12
 	}
-	8129.4.1 = {
-	}
-	8129.8.1 = {
+	8129.9.5 = {
 		holder = Hayford_13
 	}
 	8175.1.1 = {
@@ -2362,7 +2462,7 @@ c_hayford = {
 	8196.6.1 = {
 		holder = Hayford_20
 	}
-	8209.6.1 = {
+	8209.9.1 = {
 		holder = Hayford_21
 	}
 	8221.1.1 = {
@@ -2379,178 +2479,173 @@ c_hayford = {
 	}
 }
 c_old_yore = {
-	1.1.1 = {
+	7858.1.1 = {
 		liege = d_hayford
 	}
-	7862.1.1 = {
+	7853.1.1 = {
 		holder = Yore_4
 	}
 	7885.1.1 = {
 		holder = Yore_5
 	}
-	7902.1.1 = {
-		holder = Yore_6
-	}
-	7925.1.1 = {
-		holder = Yore_7
-	}
-	7949.1.1 = {
-		holder = Yore_8
-	}
-	7972.1.1 = {
-		holder = Yore_9
-	}
-	7992.1.1 = {
+	7908.1.1 = {
 		holder = Yore_10
 	}
-	8003.1.1 = {
-		holder = Yore_11
-	}
-	8052.1.1 = {
-		holder = Yore_12
-	}
-	8080.1.1 = {
+	7924.1.1 = {
 		holder = Yore_14
 	}
-	8083.1.1 = {
-		holder = Yore_15
-	}
-	8111.1.1 = {
-		holder = Yore_16
-	}
-	8142.1.1 = {
-		holder = Yore_17
-	}
-	8157.1.1 = {
+	7958.1.1 = {
 		holder = Yore_18
 	}
-	8195.1.1 = {
-		holder = Yore_19
+	7996.1.1 = {
+		holder = Yore_24
 	}
-	8213.1.1 = {
-		holder = Yore_20
+	8026.1.1 = {
+		holder = Yore_25
 	}
-	8253.1.1 = {
-		holder = Yore_22
+	8042.1.1 = {
+		holder = Yore_27
 	}
-	8277.1.1 = {
+	8062.1.1 = {
+		holder = Yore_31
+	}
+	8089.1.1 = {
+		holder = Yore_40
+	}
+	8117.1.1 = {
+		holder = Yore_16
+	}
+	8137.1.1 = {
+		holder = Yore_46
+	}
+	8183.1.1 = {
+		holder = Yore_50
+	}
+	8206.1.1 = {
+		holder = Yore_68
+	}
+	8237.1.1 = {
+		holder = Yore_70
+	}
+	8251.1.1 = {
+		holder = Yore_74
+	}
+	8287.1.1 = {
 		holder = Yore_1
 	}
 }
 c_proudwell = {
-	7600.1.1 = {
+	7858.1.1 = {
 		liege = d_hayford
 	}
-	7873.1.1 = {
+	7876.1.1 = {
 		holder = Cressey_3
 	}
 	7884.1.1 = {
-		holder = Cressey_4
-	}
-	7920.1.1 = {
 		holder = Cressey_5
 	}
-	7952.1.1 = {
-		holder = Cressey_6
-	}
-	7975.1.1 = {
-		holder = Cressey_7
-	}
-	7991.1.1 = {
-		holder = Cressey_8
-	}
-	8005.1.1 = {
-		holder = Cressey_9
-	}
-	8021.1.1 = {
+	7937.1.1 = {
 		holder = Cressey_10
 	}
-	8060.1.1 = {
+	7956.1.1 = {
 		holder = Cressey_11
 	}
-	8082.1.1 = {
-		holder = Cressey_12
+	7970.1.1 = {
+		holder = Cressey_13
 	}
-	8108.1.1 = {
-		holder = Cressey_14
-	}
-	8129.4.1 = {
-	}
-	8146.1.1 = {
+	8008.1.1 = {
 		holder = Cressey_15
 	}
-	8176.1.1 = {
-		holder = Cressey_16
-	}
-	8193.1.1 = {
+	8030.1.1 = {
 		holder = Cressey_17
 	}
-	8212.1.1 = {
+	8058.1.1 = {
 		holder = Cressey_18
 	}
-	8266.1.1 = {
+	8077.1.1 = {
 		holder = Cressey_19
+	}
+	8104.1.1 = {
+		holder = Cressey_29
+	}
+	8149.1.1 = {
+		holder = Cressey_30
+	}
+	8151.1.1 = {
+		holder = Cressey_32
+	}
+	8209.1.1 = {
+		holder = Cressey_33
+	}
+	8216.1.1 = {
+		holder = Cressey_36
+	}
+	8249.1.1 = {
+		holder = Cressey_39
 	}
 	8281.1.1 = {
 		holder = Cressey_20
 	}
-	8294.1.1 = {
+	8293.1.1 = {
 		holder = Cressey_1
 	}
 }
 c_sows_horn = {
-	800.1.1 = {
-		liege = d_hayford
-	}
-	7852.1.1 = {
+	7851.1.1 = {
 		holder = Hogg_4
+	}
+	7858.1.1 = {
+		liege = d_hayford
 	}
 	7859.1.1 = {
 		holder = Hogg_5
 	}
-	7899.1.1 = {
-		holder = Hogg_6
-	}
-	7912.1.1 = {
-		holder = Hogg_7
-	}
-	7947.1.1 = {
-		holder = Hogg_8
-	}
-	7966.1.1 = {
+	7910.1.1 = {
 		holder = Hogg_9
 	}
-	8004.1.1 = {
-		holder = Hogg_10
-	}
-	8016.1.1 = {
+	7935.1.1 = {
 		holder = Hogg_11
 	}
-	8025.1.1 = {
+	7947.1.1 = {
+		holder = Hogg_21
+	}
+	7965.1.1 = {
+		holder = Hogg_34
+	}
+	7979.1.1 = {
+		holder = Hogg_36
+	}
+	8006.1.1 = {
+		holder = Hogg_43
+	}
+	8035.1.1 = {
 		holder = Hogg_12
 	}
 	8044.1.1 = {
-		holder = Hogg_13
+		holder = Hogg_51
 	}
-	8083.1.1 = {
-		holder = Hogg_15
+	8066.1.1 = {
+		holder = Hogg_52
 	}
-	8108.1.1 = {
-		holder = Hogg_16
+	8119.1.1 = {
+		holder = Hogg_54
 	}
-	8159.1.1 = {
-		holder = Hogg_18
+	8145.1.1 = {
+		holder = Hogg_56
 	}
-	8191.1.1 = {
-		holder = Hogg_20
+	8183.1.1 = {
+		holder = Hogg_57
 	}
-	8219.1.1 = {
-		holder = Hogg_21
+	8203.1.1 = {
+		holder = Hogg_58
 	}
-	8262.1.1 = {
-		holder = Hogg_22
+	8226.1.1 = {
+		holder = Hogg_60
 	}
-	8290.1.1 = {
+	8248.1.1 = {
+		holder = Hogg_65
+	}
+	8263.1.1 = {
 		holder = Hogg_1
 	}
 }
@@ -2581,40 +2676,35 @@ d_masseys_hook = {
 		liege = e_the_stormlands
 		holder = 0
 	}
-	7844.1.1 = {
+	7859.1.1 = {
 		holder = Massey_19
 	}
 	7875.1.1 = {
 		holder = Massey_20
 	}
-	7888.1.1 = {
+	7900.1.1 = {
 		holder = Massey_21
 	}
-	7910.1.1 = {
+	7909.1.1 = {
 		holder = Massey_22
 	}
-	7932.1.1 = {
-		holder = Massey_23
+	7925.1.1 = {
+		holder = Massey_88
 	}
-	7952.1.1 = {
-		holder = Massey_24
+	7976.1.1 = {
+		holder = Massey_93
 	}
 	7992.1.1 = {
 		holder = Massey_25
 	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7999.4.1 = {
+		liege = k_the_crownlands
 		de_jure_liege = k_the_crownlands
-	}
-	7998.2.27 = {
-		liege = e_the_iron_throne
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
 	}
 	8023.1.1 = {
 		holder = Massey_27
 	}
-	8042.6.1 = {
+	8042.3.2 = {
 		holder = Massey_29
 	}
 	8047.1.1 = {
@@ -2626,7 +2716,7 @@ d_masseys_hook = {
 	8128.1.1 = {
 		holder = Massey_38
 	}
-	8129.4.1 = {
+	8129.12.6 = {
 		holder = Massey_40
 	}
 	8165.2.19 = {
@@ -2647,7 +2737,8 @@ d_masseys_hook = {
 	8258.1.1 = {
 		holder = Massey_1
 	}
-	8299.2.11 = {
+	8298.10.24 = {
+		liege = 0
 	}
 }
 c_stonedance = {
@@ -2670,23 +2761,23 @@ c_stonedance = {
 	6544.1.1 = {
 		holder = Massey_16
 	}
-	7844.1.1 = {
+	7859.1.1 = {
 		holder = Massey_19
 	}
 	7875.1.1 = {
 		holder = Massey_20
 	}
-	7888.1.1 = {
+	7900.1.1 = {
 		holder = Massey_21
 	}
-	7910.1.1 = {
+	7909.1.1 = {
 		holder = Massey_22
 	}
-	7932.1.1 = {
-		holder = Massey_23
+	7925.1.1 = {
+		holder = Massey_88
 	}
-	7952.1.1 = {
-		holder = Massey_24
+	7976.1.1 = {
+		holder = Massey_93
 	}
 	7992.1.1 = {
 		holder = Massey_25
@@ -2694,7 +2785,7 @@ c_stonedance = {
 	8023.1.1 = {
 		holder = Massey_27
 	}
-	8042.6.1 = {
+	8042.3.2 = {
 		holder = Massey_29
 	}
 	8047.1.1 = {
@@ -2706,7 +2797,7 @@ c_stonedance = {
 	8128.1.1 = {
 		holder = Massey_38
 	}
-	8129.4.1 = {
+	8129.12.6 = {
 		holder = Massey_40
 	}
 	8165.2.19 = {
@@ -2729,126 +2820,114 @@ c_stonedance = {
 	}
 }
 c_chancedoor = {
-	7600.1.1 = {
+	185.1.1 = {
 		liege = d_masseys_hook
 	}
-	7845.1.1 = {
+	7899.1.1 = {
 		holder = Rambton_5
 	}
 	7900.1.1 = {
-		holder = Rambton_6
+		holder = Rambton_30
 	}
-	7920.1.1 = {
-		holder = Rambton_7
+	7929.1.1 = {
+		holder = Rambton_32
 	}
-	7950.1.1 = {
-		holder = Rambton_8
+	7939.1.1 = {
+		holder = Rambton_34
 	}
-	7980.1.1 = {
-		holder = Rambton_9
+	7991.1.1 = {
+		holder = Rambton_39
 	}
-	8000.1.1 = {
-		holder = Rambton_10
-	}
-	8011.1.1 = {
-		holder = Rambton_11
+	8007.1.1 = {
+		holder = Rambton_40
 	}
 	8027.1.1 = {
-		holder = Rambton_12
+		holder = Rambton_41
 	}
-	8052.1.1 = {
-		holder = Rambton_13
+	8056.1.1 = {
+		holder = Rambton_43
 	}
-	8076.1.1 = {
-		holder = Rambton_14
+	8080.1.1 = {
+		holder = Rambton_44
 	}
-	8097.1.1 = {
-		holder = Rambton_15
+	8124.1.1 = {
+		holder = Rambton_45
 	}
-	8123.1.1 = {
-		holder = Rambton_16
+	8154.1.1 = {
+		holder = Rambton_47
 	}
-	8130.1.1 = {
-		holder = Rambton_18
+	8162.1.1 = {
+		holder = Rambton_50
 	}
-	8176.1.1 = {
-		holder = Rambton_20
+	8189.1.1 = {
+		holder = Rambton_53
 	}
-	8196.6.1 = {
-		holder = Rambton_21
+	8210.1.1 = {
+		holder = Rambton_61
 	}
-	8215.1.1 = {
-		holder = Rambton_22
+	8230.1.1 = {
+		holder = Rambton_63
 	}
-	8260.1.1 = {
-		holder = Rambton_23
-	}
-	8276.1.1 = {
+	8273.1.1 = {
 		holder = Rambton_1
 	}
-	8299.1.1 = {
+	8299.3.3 = {
 		holder = Rambton_25
 	}
 }
 c_glasswater = {
-	7600.1.1 = {
+	185.1.1 = {
 		liege = d_masseys_hook
 	}
-	7871.1.1 = {
+	7856.1.1 = {
 		holder = Chyttering_7
 	}
 	7884.1.1 = {
-		holder = Chyttering_8
+		holder = Chyttering_29
 	}
-	7911.1.1 = {
-		holder = Chyttering_9
+	7914.1.1 = {
+		holder = Chyttering_31
 	}
-	7942.1.1 = {
-		holder = Chyttering_10
+	7930.1.1 = {
+		holder = Chyttering_32
 	}
-	7968.1.1 = {
-		holder = Chyttering_11
+	7975.1.1 = {
+		holder = Chyttering_35
 	}
-	7976.1.1 = {
-		holder = Chyttering_12
+	8004.1.1 = {
+		holder = Chyttering_41
 	}
-	8023.1.1 = {
-		holder = Chyttering_13
+	8015.1.1 = {
+		holder = Chyttering_42
 	}
-	8039.1.1 = {
-		holder = Chyttering_14
+	8058.1.1 = {
+		holder = Chyttering_45
 	}
-	8054.1.1 = {
-		holder = Chyttering_15
+	8062.1.1 = {
+		holder = Chyttering_47
 	}
-	8075.1.1 = {
-		holder = Chyttering_16
+	8102.1.1 = {
+		holder = Chyttering_48
 	}
-	8081.1.1 = {
-		holder = Chyttering_17
+	8118.1.1 = {
+		holder = Chyttering_49
 	}
-	8122.1.1 = {
-		holder = Chyttering_18
+	8139.1.1 = {
+		holder = Chyttering_55
 	}
-	8143.1.1 = {
-		holder = Chyttering_19
+	8186.1.1 = {
+		holder = Chyttering_62
 	}
-	8195.1.1 = {
-		holder = Chyttering_20
+	8223.1.1 = {
+		holder = Chyttering_68
 	}
-	8216.1.1 = {
-		holder = Chyttering_21
+	8236.1.1 = {
+		holder = Chyttering_71
 	}
-	8239.1.1 = {
-		holder = Chyttering_22
-	}
-	8262.1.1 = {
-		holder = Chyttering_23
-	}
-	8270.1.1 = {
+	8281.1.1 = {
 		holder = Chyttering_1
 	}
-	8299.7.1 = {
+	8299.9.8 = {
 		holder = Chyttering_2
 	}
 }
@@ -2856,93 +2935,99 @@ c_seedskull = {
 	185.1.1 = {
 		liege = d_masseys_hook
 	}
-	7893.1.1 = {
+	7898.1.1 = {
 		holder = Bean_5
 	}
 	7919.1.1 = {
-		holder = Bean_6
+		holder = Bean_3
 	}
-	7941.1.1 = {
+	7950.1.1 = {
 		holder = Bean_7
 	}
-	7968.1.1 = {
+	7965.1.1 = {
 		holder = Bean_8
 	}
-	8008.1.1 = {
-		holder = Bean_9
-	}
-	8030.1.1 = {
-		holder = Bean_10
-	}
-	8069.1.1 = {
+	8001.1.1 = {
 		holder = Bean_12
 	}
-	8076.1.1 = {
-		holder = Bean_13
+	8041.1.1 = {
+		holder = Bean_11
 	}
-	8118.1.1 = {
+	8043.1.1 = {
 		holder = Bean_14
 	}
-	8141.1.1 = {
+	8057.1.1 = {
 		holder = Bean_16
 	}
-	8181.1.1 = {
-		holder = Bean_17
+	8082.1.1 = {
+		holder = Bean_31
 	}
-	8203.1.1 = {
-		holder = Bean_18
+	8100.1.1 = {
+		holder = Bean_34
 	}
-	8238.1.1 = {
-		holder = Bean_19
+	8117.1.1 = {
+		holder = Bean_35
 	}
-	8279.1.1 = {
+	8153.1.1 = {
+		holder = Bean_37
+	}
+	8210.1.1 = {
+		holder = Bean_38
+	}
+	8227.1.1 = {
+		holder = Bean_43
+	}
+	8252.1.1 = {
 		holder = Bean_20
 	}
 }
 c_sweetmont = {
-	6000.1.1 = {
+	185.1.1 = {
 		liege = d_masseys_hook
 	}
-	7835.1.1 = {
+	7836.1.1 = {
 		holder = Sweet_11
 	}
-	7885.1.1 = {
-		holder = Sweet_12
-	}
-	7910.1.1 = {
-		holder = Sweet_13
-	}
-	7935.1.1 = {
+	7887.1.1 = {
 		holder = Sweet_14
 	}
-	7960.1.1 = {
-		holder = Sweet_15
-	}
-	7985.1.1 = {
+	7907.1.1 = {
 		holder = Sweet_16
 	}
-	8010.1.1 = {
-		holder = Sweet_17
+	7930.1.1 = {
+		holder = Sweet_23
 	}
-	8058.1.1 = {
-		holder = Sweet_18
+	7945.1.1 = {
+		holder = Sweet_25
 	}
-	8083.1.1 = {
-		holder = Sweet_19
+	7962.1.1 = {
+		holder = Sweet_31
 	}
-	8102.1.1 = {
-		holder = Sweet_20
+	8015.1.1 = {
+		holder = Sweet_38
 	}
-	8123.1.1 = {
-		holder = Sweet_21
+	8044.1.1 = {
+		holder = Sweet_39
 	}
-	8148.1.1 = {
-		holder = Sweet_22
+	8068.1.1 = {
+		holder = Sweet_46
 	}
-	8201.1.1 = {
-		holder = Sweet_26
+	8095.1.1 = {
+		holder = Sweet_48
 	}
-	8221.1.1 = {
+	8128.1.1 = {
+		holder = Sweet_60
+	}
+	8139.1.1 = {
+		holder = Sweet_64
+	}
+	8174.1.1 = {
+		holder = Sweet_70
+	}
+	8175.1.1 = {
+		holder = Sweet_71
+	}
+	8204.1.1 = {
 		holder = Sweet_1
 	}
 	8250.1.1 = {
@@ -2953,60 +3038,22 @@ c_sweetmont = {
 	}
 }
 b_kings_mountain = {
-	6000.1.1 = {
-	}
-	7835.1.1 = {
-		holder = Sweet_11
-	}
-	7885.1.1 = {
-		holder = Sweet_12
-	}
-	7910.1.1 = {
-		holder = Sweet_13
-	}
-	7935.1.1 = {
-		holder = Sweet_14
-	}
-	7960.1.1 = {
-		holder = Sweet_15
-	}
-	7985.1.1 = {
-		holder = Sweet_16
-	}
-	8010.1.1 = {
-		holder = Sweet_17
-	}
-	8058.1.1 = {
-		holder = Sweet_18
-	}
-	8083.1.1 = {
-		holder = Sweet_19
-	}
-	8102.1.1 = {
-		holder = Sweet_20
-	}
-	8123.1.1 = {
-		holder = Sweet_21
-	}
-	8148.1.1 = {
-		holder = Sweet_22
-	}
-	8178.1.1 = {
+	8199.1.1 = {
 		holder = Kings_Mountain_2
 	}
 	8203.1.1 = {
 		holder = Kings_Mountain_3
 	}
-	8223.1.1 = {
-		holder = Kings_Mountain_4
+	8226.1.1 = {
+		holder = Kings_Mountain_9
 	}
-	8231.1.1 = {
-		holder = Kings_Mountain_5
+	8260.1.1 = {
+		holder = Kings_Mountain_10
 	}
-	8270.1.1 = {
-		holder = Kings_Mountain_6
+	8269.1.1 = {
+		holder = Kings_Mountain_12
 	}
-	8283.1.1 = {
+	8290.1.1 = {
 		holder = Kings_Mountain_1
 	}
 }
@@ -3014,43 +3061,43 @@ c_winded_glade = {
 	185.1.1 = {
 		liege = d_masseys_hook
 	}
-	7897.1.1 = {
+	7890.1.1 = {
+		holder = Bentley_70
+	}
+	7919.1.1 = {
 		holder = Bentley_5
 	}
 	7930.1.1 = {
-		holder = Bentley_6
+		holder = Bentley_3
 	}
-	7949.1.1 = {
-		holder = Bentley_7
-	}
-	7971.1.1 = {
-		holder = Bentley_8
-	}
-	8045.1.1 = {
-		holder = Bentley_9
-	}
-	8047.1.1 = {
+	7983.1.1 = {
 		holder = Bentley_10
 	}
-	8080.1.1 = {
-		holder = Bentley_11
-	}
-	8108.1.1 = {
-		holder = Bentley_12
-	}
-	8135.1.1 = {
-		holder = Bentley_13
-	}
-	8181.1.1 = {
+	8004.1.1 = {
 		holder = Bentley_15
 	}
-	8201.1.1 = {
-		holder = Bentley_16
+	8052.1.1 = {
+		holder = Bentley_34
 	}
-	8236.1.1 = {
-		holder = Bentley_17
+	8078.1.1 = {
+		holder = Bentley_41
 	}
-	8267.1.1 = {
+	8096.1.1 = {
+		holder = Bentley_67
+	}
+	8124.1.1 = {
+		holder = Bentley_50
+	}
+	8152.1.1 = {
+		holder = Bentley_53
+	}
+	8178.1.1 = {
+		holder = Bentley_57
+	}
+	8214.1.1 = {
+		holder = Bentley_59
+	}
+	8250.1.1 = {
 		holder = Bentley_19
 	}
 	8288.1.1 = {
@@ -3058,47 +3105,44 @@ c_winded_glade = {
 	}
 }
 c_wisewood = {
-	7600.1.1 = {
+	185.1.1 = {
 		liege = d_masseys_hook
 	}
-	7862.1.1 = {
+	7874.1.1 = {
 		holder = Follard_5
 	}
 	7880.1.1 = {
 		holder = Follard_6
 	}
-	7903.1.1 = {
-		holder = Follard_7
-	}
-	7927.1.1 = {
-		holder = Follard_8
-	}
-	7940.1.1 = {
-		holder = Follard_9
-	}
-	7966.1.1 = {
-		holder = Follard_10
-	}
-	7987.1.1 = {
-		holder = Follard_11
-	}
-	8006.1.1 = {
-		holder = Follard_12
-	}
-	8032.1.1 = {
-		holder = Follard_13
-	}
-	8076.1.1 = {
+	7898.1.1 = {
 		holder = Follard_14
 	}
-	8077.1.1 = {
-		holder = Follard_15
+	7904.1.1 = {
+		holder = Follard_21
 	}
-	8128.1.1 = {
-		holder = Follard_16
+	7949.1.1 = {
+		holder = Follard_25
+	}
+	7991.1.1 = {
+		holder = Follard_29
+	}
+	8006.1.1 = {
+		holder = Follard_30
+	}
+	8023.1.1 = {
+		holder = Follard_31
+	}
+	8067.1.1 = {
+		holder = Follard_34
+	}
+	8095.1.1 = {
+		holder = Follard_45
+	}
+	8106.1.1 = {
+		holder = Follard_46
 	}
 	8138.1.1 = {
-		holder = Follard_21
+		holder = Follard_48
 	}
 	8180.1.1 = {
 		holder = Follard_18
@@ -3114,7 +3158,7 @@ c_wisewood = {
 	}
 }
 d_rooks_rest = {
-	800.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
 		de_jure_liege = k_the_riverlands
 	}
@@ -3122,28 +3166,29 @@ d_rooks_rest = {
 		holder = Staunton_4
 	}
 	7871.1.1 = {
-		holder = Staunton_5
-	}
-	7912.1.1 = {
 		holder = Staunton_6
 	}
-	7923.1.1 = {
-		holder = Staunton_7
+	7902.1.1 = {
+		liege = e_the_stormlands
 	}
-	7962.1.1 = {
+	7921.1.1 = {
+		holder = Staunton_50
+	}
+	7940.1.1 = {
+		holder = Staunton_54
+	}
+	7947.1.1 = {
+		liege = e_the_riverlands
+	}
+	7951.1.1 = {
 		holder = Staunton_8
 	}
 	7975.1.1 = {
 		holder = Staunton_9
 	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7999.6.1 = {
 		de_jure_liege = k_the_crownlands
-	}
-	7998.2.1 = {
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
-		liege = e_the_iron_throne
+		liege = k_the_crownlands
 	}
 	8006.1.1 = {
 		holder = Staunton_10
@@ -3157,7 +3202,7 @@ d_rooks_rest = {
 	8083.1.1 = {
 		holder = Staunton_19
 	}
-	8129.9.2 = {
+	8129.11.21 = {
 		holder = Staunton_25
 	}
 	8174.9.2 = {
@@ -3177,22 +3222,20 @@ d_rooks_rest = {
 	}
 }
 c_rooks_rest = {
-	7600.1.1 = {
-		liege = d_rooks_rest
-	}
 	7855.1.1 = {
+		liege = d_rooks_rest
 		holder = Staunton_4
 	}
 	7871.1.1 = {
-		holder = Staunton_5
-	}
-	7912.1.1 = {
 		holder = Staunton_6
 	}
-	7923.1.1 = {
-		holder = Staunton_7
+	7921.1.1 = {
+		holder = Staunton_50
 	}
-	7962.1.1 = {
+	7940.1.1 = {
+		holder = Staunton_54
+	}
+	7951.1.1 = {
 		holder = Staunton_8
 	}
 	7975.1.1 = {
@@ -3210,7 +3253,7 @@ c_rooks_rest = {
 	8083.1.1 = {
 		holder = Staunton_19
 	}
-	8129.9.2 = {
+	8129.11.21 = {
 		holder = Staunton_25
 	}
 	8174.9.2 = {
@@ -3230,78 +3273,79 @@ c_rooks_rest = {
 	}
 }
 c_pepperwood = {
-	7600.1.1 = {
+	7855.1.1 = {
 		liege = d_rooks_rest
 	}
-	7869.1.1 = {
+	7866.1.1 = {
 		holder = Langward_5
 	}
 	7877.1.1 = {
-		holder = Langward_6
-	}
-	7907.1.1 = {
 		holder = Langward_7
 	}
-	7913.1.1 = {
-		holder = Langward_8
-	}
-	7942.1.1 = {
-		holder = Langward_9
-	}
-	7975.1.1 = {
+	7912.1.1 = {
 		holder = Langward_10
 	}
-	8012.1.1 = {
+	7947.1.1 = {
+		holder = Langward_11
+	}
+	7957.1.1 = {
 		holder = Langward_13
 	}
-	8046.1.1 = {
-		holder = Langward_14
+	7970.1.1 = {
+		holder = Langward_18
 	}
-	8059.1.1 = {
-		holder = Langward_15
-	}
-	8079.1.1 = {
-		holder = Langward_16
-	}
-	8107.1.1 = {
-		holder = Langward_17
-	}
-	8133.1.1 = {
-		holder = Langward_19
-	}
-	8135.1.1 = {
-		holder = Langward_21
-	}
-	8156.1.1 = {
-		holder = Langward_22
-	}
-	8206.1.1 = {
-		holder = Langward_23
-	}
-	8240.1.1 = {
+	8015.1.1 = {
 		holder = Langward_24
 	}
-	8286.1.1 = {
+	8049.1.1 = {
+		holder = Langward_25
+	}
+	8075.1.1 = {
+		holder = Langward_28
+	}
+	8095.1.1 = {
+		holder = Langward_29
+	}
+	8119.1.1 = {
+		holder = Langward_37
+	}
+	8136.1.1 = {
+		holder = Langward_39
+	}
+	8144.1.1 = {
+		holder = Langward_41
+	}
+	8189.1.1 = {
+		holder = Langward_42
+	}
+	8217.1.1 = {
+		holder = Langward_45
+	}
+	8239.1.1 = {
+		holder = Langward_46
+	}
+	8260.1.1 = {
+		holder = Langward_48
+	}
+	8279.1.1 = {
 		holder = Langward_1
 	}
 }
 c_risegrave = {
-	7600.1.1 = {
-		liege = d_rooks_rest
-	}
 	7855.1.1 = {
+		liege = d_rooks_rest
 		holder = Staunton_4
 	}
 	7871.1.1 = {
-		holder = Staunton_5
-	}
-	7912.1.1 = {
 		holder = Staunton_6
 	}
-	7923.1.1 = {
-		holder = Staunton_7
+	7921.1.1 = {
+		holder = Staunton_50
 	}
-	7962.1.1 = {
+	7940.1.1 = {
+		holder = Staunton_54
+	}
+	7951.1.1 = {
 		holder = Staunton_8
 	}
 	7975.1.1 = {
@@ -3319,7 +3363,7 @@ c_risegrave = {
 	8083.1.1 = {
 		holder = Staunton_19
 	}
-	8129.9.2 = {
+	8129.11.21 = {
 		holder = Staunton_25
 	}
 	8174.9.2 = {
@@ -3339,63 +3383,66 @@ c_risegrave = {
 	}
 }
 c_stellarstake = {
-	7600.1.1 = {
+	7855.1.1 = {
 		liege = d_rooks_rest
 	}
-	7869.1.1 = {
+	7866.1.1 = {
 		holder = Langward_5
 	}
 	7877.1.1 = {
-		holder = Langward_6
-	}
-	7907.1.1 = {
 		holder = Langward_7
 	}
-	7913.1.1 = {
-		holder = Langward_8
-	}
-	7942.1.1 = {
-		holder = Langward_9
-	}
-	7975.1.1 = {
+	7912.1.1 = {
 		holder = Langward_10
 	}
-	8012.1.1 = {
+	7947.1.1 = {
+		holder = Langward_11
+	}
+	7957.1.1 = {
 		holder = Langward_13
 	}
-	8046.1.1 = {
-		holder = Langward_14
+	7970.1.1 = {
+		holder = Langward_18
 	}
-	8059.1.1 = {
-		holder = Langward_15
-	}
-	8079.1.1 = {
-		holder = Langward_16
-	}
-	8107.1.1 = {
-		holder = Langward_17
-	}
-	8133.1.1 = {
-		holder = Langward_19
-	}
-	8135.1.1 = {
-		holder = Langward_21
-	}
-	8156.1.1 = {
-		holder = Langward_22
-	}
-	8206.1.1 = {
-		holder = Langward_23
-	}
-	8240.1.1 = {
+	8015.1.1 = {
 		holder = Langward_24
 	}
-	8286.1.1 = {
+	8049.1.1 = {
+		holder = Langward_25
+	}
+	8075.1.1 = {
+		holder = Langward_28
+	}
+	8095.1.1 = {
+		holder = Langward_29
+	}
+	8119.1.1 = {
+		holder = Langward_37
+	}
+	8136.1.1 = {
+		holder = Langward_39
+	}
+	8144.1.1 = {
+		holder = Langward_41
+	}
+	8189.1.1 = {
+		holder = Langward_42
+	}
+	8217.1.1 = {
+		holder = Langward_45
+	}
+	8239.1.1 = {
+		holder = Langward_46
+	}
+	8260.1.1 = {
+		holder = Langward_48
+	}
+	8279.1.1 = {
 		holder = Langward_1
 	}
 }
 d_rosby = {
-	800.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
 		de_jure_liege = k_the_riverlands
 	}
@@ -3405,32 +3452,27 @@ d_rosby = {
 	7885.1.1 = {
 		holder = Rosby_6
 	}
-	7933.1.1 = {
+	7902.1.1 = {
 		liege = e_the_stormlands
 	}
-	7937.1.1 = {
-		holder = Rosby_7
+	7921.1.1 = {
+		holder = Rosby_47
 	}
-	7954.1.1 = {
-		holder = Rosby_8
-	}
-	7958.1.1 = {
+	7947.1.1 = {
 		liege = e_the_riverlands
 	}
-	7973.1.1 = {
-		holder = Rosby_9
+	7954.1.1 = {
+		holder = Rosby_48
 	}
-	7980.1.1 = {
+	7967.1.1 = {
+		holder = Rosby_49
+	}
+	7996.1.1 = {
 		holder = Rosby_10
 	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
+	7999.5.1 = {
+		liege = k_the_crownlands
 		de_jure_liege = k_the_crownlands
-	}
-	7998.2.1 = {
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
-		liege = e_the_iron_throne
 	}
 	8005.1.1 = {
 		holder = Rosby_11
@@ -3444,9 +3486,7 @@ d_rosby = {
 	8123.1.1 = {
 		holder = Rosby_16
 	}
-	8129.4.1 = {
-	}
-	8130.1.26 = {
+	8130.2.28 = {
 		holder = Rosby_22
 	}
 	8141.1.1 = {
@@ -3470,27 +3510,28 @@ d_rosby = {
 	8266.1.1 = {
 		holder = Rosby_4
 	}
+	8300.5.15 = {
+		holder = Blackwater_1 # Most probable outcome
+	}
 }
 c_rosby = {
-	7600.1.1 = {
-		liege = d_rosby
-	}
 	7869.1.1 = {
+		liege = d_rosby
 		holder = Rosby_5
 	}
 	7885.1.1 = {
 		holder = Rosby_6
 	}
-	7937.1.1 = {
-		holder = Rosby_7
+	7921.1.1 = {
+		holder = Rosby_47
 	}
 	7954.1.1 = {
-		holder = Rosby_8
+		holder = Rosby_48
 	}
-	7973.1.1 = {
-		holder = Rosby_9
+	7967.1.1 = {
+		holder = Rosby_49
 	}
-	7980.1.1 = {
+	7996.1.1 = {
 		holder = Rosby_10
 	}
 	8005.1.1 = {
@@ -3505,7 +3546,7 @@ c_rosby = {
 	8123.1.1 = {
 		holder = Rosby_16
 	}
-	8130.1.26 = {
+	8130.2.28 = {
 		holder = Rosby_22
 	}
 	8141.1.1 = {
@@ -3529,66 +3570,58 @@ c_rosby = {
 	8266.1.1 = {
 		holder = Rosby_4
 	}
+	8300.5.15 = {
+		holder = Blackwater_1 # Most probable outcome
+	}
 }
 c_edgerton = {
-	800.1.1 = {
-		liege = d_rosby
-	}
-	7849.1.1 = {
+	7856.1.1 = {
 		holder = Edgerton_4
 	}
 	7869.1.1 = {
+		liege = d_rosby
 		holder = Edgerton_5
 	}
-	7904.1.1 = {
+	7891.1.1 = {
 		holder = Edgerton_6
 	}
-	7908.1.1 = {
-		holder = Edgerton_7
-	}
-	7941.1.1 = {
+	7922.1.1 = {
 		holder = Edgerton_8
 	}
-	7963.1.1 = {
-		holder = Edgerton_9
-	}
-	7991.1.1 = {
-		holder = Edgerton_10
-	}
-	8008.1.1 = {
-		holder = Edgerton_11
-	}
-	8017.1.1 = {
-		holder = Edgerton_12
-	}
-	8064.1.1 = {
-		holder = Edgerton_13
-	}
-	8081.1.1 = {
+	7946.1.1 = {
 		holder = Edgerton_14
 	}
-	8091.1.1 = {
-		holder = Edgerton_15
-	}
-	8114.1.1 = {
+	7986.1.1 = {
 		holder = Edgerton_16
 	}
-	8124.1.1 = {
-		holder = Edgerton_17
+	7987.1.1 = {
+		holder = Edgerton_26
 	}
-	8153.1.1 = {
-		holder = Edgerton_18
+	8027.1.1 = {
+		holder = Edgerton_27
 	}
-	8176.1.1 = {
-		holder = Edgerton_19
+	8042.1.1 = {
+		holder = Edgerton_32
 	}
-	8189.1.1 = {
-		holder = Edgerton_20
+	8089.1.1 = {
+		holder = Edgerton_48
 	}
-	8192.1.1 = {
-		holder = Edgerton_21
+	8115.1.1 = {
+		holder = Edgerton_50
 	}
-	8260.1.1 = {
+	8142.1.1 = {
+		holder = Edgerton_56
+	}
+	8160.1.1 = {
+		holder = Edgerton_59
+	}
+	8205.1.1 = {
+		holder = Edgerton_63
+	}
+	8240.1.1 = {
+		holder = Edgerton_64
+	}
+	8264.1.1 = {
 		holder = Edgerton_23
 	}
 	8291.1.1 = {
@@ -3596,52 +3629,58 @@ c_edgerton = {
 	}
 }
 c_greensward = {
-	7600.1.1 = {
+	7869.1.1 = {
 		liege = d_rosby
 	}
-	7872.1.1 = {
+	7874.1.1 = {
 		holder = Blount_10
 	}
 	7883.1.1 = {
-		holder = Blount_11
-	}
-	7927.1.1 = {
 		holder = Blount_12
 	}
-	7949.1.1 = {
+	7921.1.1 = {
 		holder = Blount_13
 	}
-	7975.1.1 = {
-		holder = Blount_14
-	}
-	7994.1.1 = {
+	7925.1.1 = {
 		holder = Blount_15
 	}
-	8001.1.1 = {
-		holder = Blount_16
+	7969.1.1 = {
+		holder = Blount_24
 	}
-	8041.1.1 = {
-		holder = Blount_17
+	8003.1.1 = {
+		holder = Blount_30
 	}
-	8075.1.1 = {
-		holder = Blount_18
+	8018.1.1 = {
+		holder = Blount_33
 	}
-	8107.1.1 = {
-		holder = Blount_19
+	8065.1.1 = {
+		holder = Blount_36
 	}
-	8138.1.1 = {
-		holder = Blount_20
+	8070.1.1 = {
+		holder = Blount_37
 	}
-	8167.1.1 = {
-		holder = Blount_21
+	8087.1.1 = {
+		holder = Blount_43
 	}
-	8216.1.1 = {
-		holder = Blount_22
+	8145.1.1 = {
+		holder = Blount_45
 	}
-	8229.1.1 = {
-		holder = Blount_23
+	8165.1.1 = {
+		holder = Blount_47
 	}
-	8263.1.1 = {
+	8185.1.1 = {
+		holder = Blount_51
+	}
+	8187.1.1 = {
+		holder = Blount_56
+	}
+	8230.1.1 = {
+		holder = Blount_57
+	}
+	8266.1.1 = {
+		holder = Blount_58
+	}
+	8277.1.1 = {
 		holder = Blount_1
 	}
 	8288.1.1 = {
@@ -3649,79 +3688,68 @@ c_greensward = {
 	}
 }
 c_redbend = {
-	800.1.1 = {
-		liege = d_rosby
-	}
-	7849.1.1 = {
+	7856.1.1 = {
 		holder = Edgerton_4
 	}
 	7869.1.1 = {
+		liege = d_rosby
 		holder = Edgerton_5
 	}
-	7904.1.1 = {
+	7891.1.1 = {
 		holder = Edgerton_6
 	}
-	7908.1.1 = {
-		holder = Edgerton_7
-	}
-	7941.1.1 = {
+	7922.1.1 = {
 		holder = Edgerton_8
 	}
-	7963.1.1 = {
-		holder = Edgerton_9
-	}
-	7991.1.1 = {
-		holder = Edgerton_10
-	}
-	8008.1.1 = {
-		holder = Edgerton_11
-	}
-	8017.1.1 = {
-		holder = Edgerton_12
-	}
-	8064.1.1 = {
-		holder = Edgerton_13
-	}
-	8081.1.1 = {
+	7946.1.1 = {
 		holder = Edgerton_14
 	}
-	8091.1.1 = {
-		holder = Edgerton_15
-	}
-	8114.1.1 = {
+	7986.1.1 = {
 		holder = Edgerton_16
 	}
-	8124.1.1 = {
-		holder = Edgerton_17
+	7987.1.1 = {
+		holder = Edgerton_26
 	}
-	8153.1.1 = {
-		holder = Edgerton_18
+	8027.1.1 = {
+		holder = Edgerton_27
 	}
-	8176.1.1 = {
-		holder = Edgerton_19
+	8042.1.1 = {
+		holder = Edgerton_32
 	}
-	8189.1.1 = {
-		holder = Edgerton_20
+	8089.1.1 = {
+		holder = Edgerton_48
 	}
-	8192.1.1 = {
-		holder = Edgerton_21
+	8115.1.1 = {
+		holder = Edgerton_50
 	}
-	8260.1.1 = {
+	8142.1.1 = {
+		holder = Edgerton_56
+	}
+	8160.1.1 = {
+		holder = Edgerton_59
+	}
+	8205.1.1 = {
+		holder = Edgerton_63
+	}
+	8240.1.1 = {
+		holder = Edgerton_64
+	}
+	8264.1.1 = {
 		holder = Edgerton_23
 	}
 	8291.1.1 = {
 		holder = Edgerton_1
 	}
-	8299.1.4 = {
+	8299.2.24 = {
 		holder = Slynt_2
 	}
 }
 c_strongmead = {
-	800.1.1 = {
-		liege = d_rosby
-	}
 	7830.1.1 = {
 		holder = Cargyll_1
+	}
+	7869.1.1 = {
+		liege = d_rosby
 	}
 	7880.1.1 = {
 		holder = Cargyll_2
@@ -3762,51 +3790,48 @@ c_strongmead = {
 	8210.1.1 = {
 		holder = Cargyll_23
 	}
-	8215.1.1 = {
+	8217.1.1 = {
 		holder = Cargyll_25
 	}
-	8259.6.7 = {
+	8259.6.1 = {
 		holder = Cargyll_26
 	}
-	8283.6.1 = {
+	8283.1.1 = {
 		holder = Cargyll_27
 	}
 }
 c_whiteplate = {
-	7600.1.1 = {
+	7869.1.1 = {
 		liege = d_rosby
 	}
-	7897.1.1 = {
+	7889.1.1 = {
 		holder = Whitfield_5
 	}
 	7929.1.1 = {
-		holder = Whitfield_6
+		holder = Whitfield_2
 	}
-	7967.1.1 = {
-		holder = Whitfield_7
+	7953.1.1 = {
+		holder = Whitfield_3
 	}
-	7972.1.1 = {
+	7978.1.1 = {
 		holder = Whitfield_8
 	}
-	8020.1.1 = {
-		holder = Whitfield_9
-	}
-	8028.1.1 = {
-		holder = Whitfield_10
-	}
-	8044.1.1 = {
-		holder = Whitfield_11
-	}
-	8080.1.1 = {
-		holder = Whitfield_12
-	}
-	8112.1.1 = {
+	8013.1.1 = {
 		holder = Whitfield_13
 	}
-	8137.1.1 = {
-		holder = Whitfield_14
+	8024.1.1 = {
+		holder = Whitfield_43
 	}
-	8148.1.1 = {
+	8050.1.1 = {
+		holder = Whitfield_45
+	}
+	8083.1.1 = {
+		holder = Whitfield_48
+	}
+	8086.1.1 = {
+		holder = Whitfield_50
+	}
+	8139.1.1 = {
 		holder = Whitfield_15
 	}
 	8172.1.1 = {
@@ -3823,7 +3848,7 @@ c_whiteplate = {
 	}
 }
 d_stokeworth = {
-	800.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
 		de_jure_liege = k_the_riverlands
 	}
@@ -3833,34 +3858,32 @@ d_stokeworth = {
 	7875.1.1 = {
 		holder = Stokeworth_9
 	}
-	7919.1.1 = {
+	7902.1.1 = {
+		liege = e_the_stormlands
+	}
+	7914.1.1 = {
 		holder = Stokeworth_10
 	}
-	7934.1.1 = {
-		holder = Stokeworth_11
-	}
-	7961.1.1 = {
-		holder = Stokeworth_12
-	}
-	7985.1.1 = {
-		holder = Stokeworth_13
-	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
-		de_jure_liege = k_the_crownlands
-	}
-	7998.2.1 = {
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
-		liege = e_the_iron_throne
-	}
-	8000.1.1 = {
+	7939.1.1 = {
 		holder = Stokeworth_14
 	}
-	8026.1.1 = {
+	7947.1.1 = {
+		liege = e_the_riverlands
+	}
+	7970.1.1 = {
+		holder = Stokeworth_31
+	}
+	7996.1.1 = {
+		holder = Stokeworth_35
+	}
+	7999.5.1 = {
+		liege = k_the_crownlands
+		de_jure_liege = k_the_crownlands
+	}
+	8031.1.1 = {
 		holder = Stokeworth_15
 	}
-	8038.1.1 = {
+	8038.6.1 = {
 		holder = Stokeworth_17
 	}
 	8063.1.1 = {
@@ -3872,9 +3895,7 @@ d_stokeworth = {
 	8120.1.1 = {
 		holder = Stokeworth_21
 	}
-	8129.4.1 = {
-	}
-	8130.1.26 = {
+	8130.2.28 = {
 		holder = Stokeworth_24
 	}
 	8183.1.1 = {
@@ -3889,39 +3910,34 @@ d_stokeworth = {
 	8285.1.1 = {
 		holder = Stokeworth_3
 	}
-	8300.3.1 = {
+	8300.5.8 = {
 		holder = Blackwater_1
 	}
 }
 c_stokeworth = {
-	7600.1.1 = {
-		liege = d_stokeworth
-	}
 	7859.1.1 = {
+		liege = d_stokeworth
 		holder = Stokeworth_8
 	}
 	7875.1.1 = {
 		holder = Stokeworth_9
 	}
-	7919.1.1 = {
+	7914.1.1 = {
 		holder = Stokeworth_10
 	}
-	7934.1.1 = {
-		holder = Stokeworth_11
-	}
-	7961.1.1 = {
-		holder = Stokeworth_12
-	}
-	7985.1.1 = {
-		holder = Stokeworth_13
-	}
-	8000.1.1 = {
+	7939.1.1 = {
 		holder = Stokeworth_14
 	}
-	8026.1.1 = {
+	7970.1.1 = {
+		holder = Stokeworth_31
+	}
+	7996.1.1 = {
+		holder = Stokeworth_35
+	}
+	8031.1.1 = {
 		holder = Stokeworth_15
 	}
-	8038.1.1 = {
+	8038.6.1 = {
 		holder = Stokeworth_17
 	}
 	8063.1.1 = {
@@ -3933,7 +3949,7 @@ c_stokeworth = {
 	8120.1.1 = {
 		holder = Stokeworth_21
 	}
-	8130.1.26 = {
+	8130.2.28 = {
 		holder = Stokeworth_24
 	}
 	8183.1.1 = {
@@ -3948,198 +3964,259 @@ c_stokeworth = {
 	8285.1.1 = {
 		holder = Stokeworth_3
 	}
-	8300.3.1 = {
+	8300.5.8 = {
 		holder = Blackwater_1
 	}
 }
 c_bentbranch = {
-	900.1.1 = {
+	7570.1.1 = {
+		holder = Baxter_30 # Baelor
+	}
+	7578.1.1 = {
+		holder = Baxter_29 # Alyn
+	}
+	7621.1.1 = {
+		holder = Baxter_28 # Herman
+	}
+	7638.1.1 = {
+		holder = Baxter_27 # Jate
+	}
+	7670.1.1 = {
+		holder = Baxter_26 # Brannad
+	}
+	7680.1.1 = {
+		holder = Baxter_25 # Ammon
+	}
+	7707.1.1 = {
+		holder = Baxter_24 # Harys
+	}
+	7715.1.1 = {
+		holder = Baxter_23 # Vaellyn
+	}
+	7748.1.1 = {
+		holder = Baxter_22 # Harrold
+	}
+	7760.1.1 = {
+		holder = Baxter_21 # Willas
+	}
+	7798.1.1 = {
+		holder = Baxter_20 # Quenton
+	}
+	7801.1.1 = {
+		holder = Baxter_19 # Beron
+	}
+	7817.1.1 = {
+		holder = Baxter_19
+	}
+	7825.1.1 = {
+		holder = Baxter_3
+	}
+	7859.1.1 = {
 		liege = d_stokeworth
 	}
-	7900.1.1 = {
-		holder = Holk_1
+	7875.1.1 = {
+		holder = Baxter_4
 	}
-	7906.1.1 = {
-		holder = Holk_2
+	7899.1.1 = {
+		holder = Baxter_5
 	}
-	7935.1.1 = {
-		holder = Holk_3
+	7934.1.1 = {
+		holder = Baxter_6
 	}
-	7963.1.1 = {
-		holder = Holk_5
+	7952.1.1 = {
+		holder = Baxter_8
 	}
-	7980.1.1 = {
-		holder = Holk_6
+	7968.1.1 = {
+		holder = Baxter_11
 	}
-	7999.1.1 = {
-		holder = Holk_7
+	8020.1.1 = {
+		holder = Baxter_18
 	}
-	8005.1.1 = {
-		holder = Holk_9
+	8029.1.1 = {
+		holder = Baxter_39
 	}
-	8055.1.1 = {
-		holder = Holk_10
+	8063.1.1 = {
+		holder = Baxter_41
 	}
-	8077.1.1 = {
-		holder = Holk_11
+	8091.1.1 = {
+		holder = Baxter_47
 	}
-	8100.1.1 = {
-		holder = Holk_12
+	8118.1.1 = {
+		holder = Baxter_48
 	}
-	8121.1.1 = {
-		holder = Holk_13
+	8137.1.1 = {
+		holder = Baxter_49
 	}
-	8131.1.1 = {
-		holder = Holk_18
+	8151.1.1 = {
+		holder = Baxter_50
 	}
-	8190.1.1 = {
-		holder = Holk_19
+	8205.1.1 = {
+		holder = Baxter_52
 	}
-	8192.1.1 = {
-		holder = Holk_20
+	8232.1.1 = {
+		holder = Baxter_53
 	}
-	8209.6.1 = {
-		holder = Holk_22
+	8257.1.1 = {
+		holder = Baxter_2 # Manly
 	}
-	8262.1.1 = {
-		holder = Holk_23
-	}
-	8294.1.1 = {
-		holder = Holk_24
+	8296.1.1 = {
+		holder = Baxter_32 # Osmund
 	}
 }
 c_cantondale = {
-	900.1.1 = {
-		liege = d_stokeworth
+	7791.1.1 = {
+		holder = Branfield_23
 	}
-	7900.1.1 = {
+	7811.1.1 = {
 		holder = Branfield_3
 	}
-	7958.1.1 = {
-		holder = Branfield_4
+	7859.1.1 = {
+		liege = d_stokeworth
 	}
-	7969.1.1 = {
-		holder = Branfield_5
-	}
-	8020.1.1 = {
-		holder = Branfield_6
-	}
-	8032.1.1 = {
-		holder = Branfield_7
-	}
-	8054.1.1 = {
+	7871.1.1 = {
 		holder = Branfield_8
 	}
-	8071.1.1 = {
-		holder = Branfield_9
-	}
-	8113.1.1 = {
-		holder = Branfield_10
-	}
-	8126.1.1 = {
-		holder = Branfield_11
-	}
-	8151.1.1 = {
-		holder = Branfield_12
-	}
-	8186.1.1 = {
+	7886.1.1 = {
 		holder = Branfield_13
 	}
-	8207.1.1 = {
+	7921.1.1 = {
 		holder = Branfield_14
 	}
-	8256.1.1 = {
-		holder = Branfield_15
+	7939.1.1 = {
+		holder = Branfield_19
 	}
-	8267.1.1 = {
+	7970.1.1 = {
+		holder = Branfield_20
+	}
+	7988.1.1 = {
+		holder = Branfield_21
+	}
+	8008.1.1 = {
+		holder = Branfield_22
+	}
+	8034.1.1 = {
+		holder = Branfield_25
+	}
+	8061.1.1 = {
+		holder = Branfield_29
+	}
+	8107.1.1 = {
+		holder = Branfield_30
+	}
+	8117.1.1 = {
+		holder = Branfield_41
+	}
+	8150.1.1 = {
+		holder = Branfield_51
+	}
+	8162.1.1 = {
+		holder = Branfield_52
+	}
+	8208.1.1 = {
+		holder = Branfield_54
+	}
+	8220.1.1 = {
+		holder = Branfield_56
+	}
+	8266.1.1 = {
 		holder = Branfield_16
 	}
-	8283.4.1 = {
+	8283.9.4 = {
 		holder = Stokeworth_1
 	}
 	8285.1.1 = {
 		holder = Stokeworth_3
 	}
-	8300.3.1 = {
+	8300.5.8 = {
 		holder = Blackwater_1
 	}
 }
 c_grainside = {
-	7600.1.1 = {
+	7859.1.1 = {
 		liege = d_stokeworth
 	}
-	7972.1.1 = {
-		holder = Wheaton_1
+	7859.1.1 = {
+		holder = Wheaton_23
 	}
-	8034.1.1 = {
-		holder = Wheaton_2
-	}
-	8049.1.1 = {
+	7873.1.1 = {
 		holder = Wheaton_3
 	}
-	8056.1.1 = {
+	7905.1.1 = {
 		holder = Wheaton_4
 	}
-	8075.1.1 = {
-		holder = Wheaton_5
-	}
-	8114.1.1 = {
+	7930.1.1 = {
 		holder = Wheaton_6
 	}
-	8129.9.1 = {
+	7969.1.1 = {
+		holder = Wheaton_17
+	}
+	7996.1.1 = {
+		holder = Wheaton_27
+	}
+	8013.1.1 = {
+		holder = Wheaton_30
+	}
+	8025.1.1 = {
+		holder = Wheaton_33
+	}
+	8072.1.1 = {
+		holder = Wheaton_36
+	}
+	8101.1.1 = {
+		holder = Wheaton_40
+	}
+	8109.1.1 = {
 		holder = Wheaton_8
 	}
 	8135.1.1 = {
-		holder = Wheaton_9
+		holder = Wheaton_42
 	}
-	8187.1.1 = {
-		holder = Wheaton_10
+	8149.1.1 = {
+		holder = Wheaton_43
 	}
-	8202.1.1 = {
-		holder = Wheaton_11
+	8172.1.1 = {
+		holder = Wheaton_45
 	}
-	8229.1.1 = {
-		holder = Wheaton_12
+	8195.1.1 = {
+		holder = Wheaton_49
 	}
-	8261.1.1 = {
+	8203.1.1 = {
+		holder = Wheaton_51
+	}
+	8258.1.1 = {
 		holder = Wheaton_13
 	}
 	8280.1.1 = {
 		holder = Wheaton_14
 	}
-	8283.3.1 = {
+	8283.8.4 = {
 		holder = Wheaton_15
 	}
 }
 c_nessing = {
-	7600.1.1 = {
-		liege = d_stokeworth
-	}
 	7859.1.1 = {
+		liege = d_stokeworth
 		holder = Stokeworth_8
 	}
 	7875.1.1 = {
 		holder = Stokeworth_9
 	}
-	7919.1.1 = {
+	7914.1.1 = {
 		holder = Stokeworth_10
 	}
-	7934.1.1 = {
-		holder = Stokeworth_11
-	}
-	7961.1.1 = {
-		holder = Stokeworth_12
-	}
-	7985.1.1 = {
-		holder = Stokeworth_13
-	}
-	8000.1.1 = {
+	7939.1.1 = {
 		holder = Stokeworth_14
 	}
-	8026.1.1 = {
+	7970.1.1 = {
+		holder = Stokeworth_31
+	}
+	7996.1.1 = {
+		holder = Stokeworth_35
+	}
+	8031.1.1 = {
 		holder = Stokeworth_15
 	}
-	8038.1.1 = {
+	8038.6.1 = {
 		holder = Stokeworth_17
 	}
 	8063.1.1 = {
@@ -4151,10 +4228,10 @@ c_nessing = {
 	8120.1.1 = {
 		holder = Stokeworth_21
 	}
-	8130.1.1 = {
+	8130.2.28 = {
 		holder = Largent_1
 	}
-	8130.5.22 = {
+	8130.10.8 = {
 		holder = Largent_2
 	}
 	8197.1.1 = {
@@ -4174,52 +4251,61 @@ c_nessing = {
 	}
 }
 c_silverhead = {
-	800.1.1 = {
+	7859.1.1 = {
 		liege = d_stokeworth
 	}
-	7865.1.1 = {
+	7855.1.1 = {
 		holder = Byrch_7
 	}
 	7884.1.1 = {
 		holder = Byrch_8
 	}
-	7903.1.1 = {
+	7919.1.1 = {
 		holder = Byrch_9
 	}
-	7932.1.1 = {
+	7921.1.1 = {
 		holder = Byrch_10
 	}
-	7954.1.1 = {
-		holder = Byrch_11
-	}
-	7990.1.1 = {
+	7948.1.1 = {
 		holder = Byrch_12
 	}
-	7994.1.1 = {
+	7970.1.1 = {
 		holder = Byrch_13
 	}
-	8035.1.1 = {
+	7994.1.1 = {
 		holder = Byrch_14
 	}
-	8072.1.1 = {
-		holder = Byrch_15
+	8027.1.1 = {
+		holder = Byrch_16
 	}
-	8110.1.1 = {
-		holder = Byrch_17
-	}
-	8146.1.1 = {
-		holder = Byrch_19
-	}
-	8170.1.1 = {
+	8069.1.1 = {
 		holder = Byrch_20
 	}
-	8196.1.1 = {
-		holder = Byrch_21
+	8094.1.1 = {
+		holder = Byrch_27
 	}
-	8204.1.1 = {
-		holder = Byrch_22
+	8108.1.1 = {
+		holder = Byrch_33
 	}
-	8266.1.1 = {
+	8126.1.1 = {
+		holder = Byrch_39
+	}
+	8141.1.1 = {
+		holder = Byrch_45
+	}
+	8189.1.1 = {
+		holder = Byrch_49
+	}
+	8206.1.1 = {
+		holder = Byrch_50
+	}
+	8247.1.1 = {
+		holder = Byrch_51
+	}
+	8252.1.1 = {
+		holder = Byrch_52
+	}
+	8280.1.1 = {
 		holder = Byrch_1
 	}
 	8287.1.1 = {
@@ -4227,11 +4313,11 @@ c_silverhead = {
 	}
 }
 d_the_baywater_woods = {
-	800.1.1 = {
+	7600.1.1 = {
 		liege = e_the_stormlands
 		de_jure_liege = k_the_stormlands
 	}
-	7998.2.27 = {
+	7999.9.15 = {
 		de_jure_liege = k_the_crownlands
 	}
 }
@@ -4239,55 +4325,52 @@ c_the_gauntlet = {
 	7600.1.1 = {
 		liege = e_the_stormlands
 	}
-	7851.1.1 = {
+	7850.1.1 = {
 		holder = Gaunt_8
 	}
 	7862.1.1 = {
-		holder = Gaunt_9
-	}
-	7887.1.1 = {
 		holder = Gaunt_10
 	}
-	7936.1.1 = {
-		holder = Gaunt_11
-	}
-	7981.1.1 = {
-		holder = Gaunt_12
-	}
-	7985.1.1 = {
-		holder = Gaunt_13
-	}
-	7998.2.27 = {
-		liege = e_the_iron_throne
-	}
-	8001.1.1 = {
-		holder = Gaunt_14
-	}
-	8050.1.1 = {
-		holder = Gaunt_15
-	}
-	8067.1.1 = {
-		holder = Gaunt_16
-	}
-	8085.1.1 = {
+	7914.1.1 = {
 		holder = Gaunt_17
 	}
-	8099.1.1 = {
+	7942.1.1 = {
 		holder = Gaunt_18
 	}
-	8132.1.1 = {
-		holder = Gaunt_19
-	}
-	8144.1.1 = {
-		holder = Gaunt_20
-	}
-	8186.1.1 = {
-		holder = Gaunt_22
-	}
-	8224.1.1 = {
+	7980.1.1 = {
 		holder = Gaunt_23
 	}
-	8232.1.1 = {
+	7999.9.15 = {
+		liege = k_the_crownlands
+	}
+	8004.1.1 = {
+		holder = Gaunt_27
+	}
+	8014.1.1 = {
+		holder = Gaunt_36
+	}
+	8045.1.1 = {
+		holder = Gaunt_38
+	}
+	8086.1.1 = {
+		holder = Gaunt_40
+	}
+	8110.1.1 = {
+		holder = Gaunt_43
+	}
+	8125.1.1 = {
+		holder = Gaunt_49
+	}
+	8134.1.1 = {
+		holder = Gaunt_58
+	}
+	8165.1.1 = {
+		holder = Gaunt_59
+	}
+	8200.1.1 = {
+		holder = Gaunt_60
+	}
+	8250.1.1 = {
 		holder = Gaunt_1
 	}
 	8275.1.1 = {
@@ -4298,46 +4381,61 @@ c_brushmill = {
 	7600.1.1 = {
 		liege = e_the_stormlands
 	}
-	7921.1.1 = {
-		holder = Miller_1
+	7818.1.1 = {
+		holder = Miller_25
 	}
-	7965.1.1 = {
+	7849.1.1 = {
 		holder = Miller_2
 	}
-	7998.2.27 = {
-		liege = e_the_iron_throne
-	}
-	8000.1.1 = {
-		holder = Miller_3
-	}
-	8020.1.1 = {
-		holder = Miller_4
-	}
-	8058.1.1 = {
-		holder = Miller_5
-	}
-	8086.1.1 = {
+	7875.1.1 = {
 		holder = Miller_6
 	}
-	8123.1.1 = {
-		holder = Miller_7
-	}
-	8144.1.1 = {
-		holder = Miller_8
-	}
-	8152.1.1 = {
+	7896.1.1 = {
 		holder = Miller_9
 	}
-	8187.1.1 = {
-		holder = Miller_10
+	7906.1.1 = {
+		holder = Miller_20
 	}
-	8205.1.1 = {
-		holder = Miller_11
+	7932.1.1 = {
+		holder = Miller_22
 	}
-	8210.1.1 = {
-		holder = Miller_12
+	7972.1.1 = {
+		holder = Miller_23
 	}
-	8235.1.1 = {
+	7981.1.1 = {
+		holder = Miller_27
+	}
+	7999.9.15 = {
+		liege = k_the_crownlands
+	}
+	8017.1.1 = {
+		holder = Miller_29
+	}
+	8023.1.1 = {
+		holder = Miller_30
+	}
+	8037.1.1 = {
+		holder = Miller_36
+	}
+	8063.1.1 = {
+		holder = Miller_38
+	}
+	8102.1.1 = {
+		holder = Miller_42
+	}
+	8151.1.1 = {
+		holder = Miller_43
+	}
+	8157.1.1 = {
+		holder = Miller_46
+	}
+	8209.1.1 = {
+		holder = Miller_50
+	}
+	8221.1.1 = {
+		holder = Miller_54
+	}
+	8239.1.1 = {
 		holder = Miller_13
 	}
 	8282.1.1 = {
@@ -4348,43 +4446,40 @@ c_bywater = {
 	7600.1.1 = {
 		liege = e_the_stormlands
 	}
-	7853.1.1 = {
+	7851.1.1 = {
 		holder = Bywater_6
 	}
 	7866.1.1 = {
 		holder = Bywater_7
 	}
-	7900.1.1 = {
-		holder = Bywater_8
-	}
-	7934.1.1 = {
-		holder = Bywater_9
-	}
-	7961.1.1 = {
-		holder = Bywater_10
-	}
-	7968.1.1 = {
-		holder = Bywater_11
-	}
-	7994.1.1 = {
+	7903.1.1 = {
 		holder = Bywater_12
 	}
-	7998.2.27 = {
-		liege = e_the_iron_throne
-	}
-	8025.1.1 = {
-		holder = Bywater_13
-	}
-	8063.1.1 = {
-		holder = Bywater_14
-	}
-	8072.1.1 = {
+	7950.1.1 = {
 		holder = Bywater_15
 	}
-	8109.1.1 = {
-		holder = Bywater_16
+	7983.1.1 = {
+		holder = Bywater_29
 	}
-	8112.1.1 = {
+	7989.1.1 = {
+		holder = Bywater_33
+	}
+	7999.9.15 = {
+		liege = k_the_crownlands
+	}
+	8040.1.1 = {
+		holder = Bywater_34
+	}
+	8050.1.1 = {
+		holder = Bywater_38
+	}
+	8080.1.1 = {
+		holder = Bywater_39
+	}
+	8087.1.1 = {
+		holder = Bywater_47
+	}
+	8111.1.1 = {
 		holder = Bywater_17
 	}
 	8153.1.1 = {
@@ -4413,58 +4508,61 @@ c_greyhelm = {
 	7600.1.1 = {
 		liege = e_the_stormlands
 	}
-	7849.1.1 = {
+	7865.1.1 = {
 		holder = Pyle_4
 	}
 	7870.1.1 = {
 		holder = Pyle_5
 	}
-	7911.1.1 = {
-		holder = Pyle_6
-	}
-	7931.1.1 = {
-		holder = Pyle_7
-	}
-	7971.1.1 = {
-		holder = Pyle_8
-	}
-	7992.1.1 = {
-		holder = Pyle_9
-	}
-	7998.2.27 = {
-		liege = e_the_iron_throne
-	}
-	8021.1.1 = {
-		holder = Pyle_10
-	}
-	8051.1.1 = {
+	7914.1.1 = {
 		holder = Pyle_11
 	}
-	8072.1.1 = {
-		holder = Pyle_12
-	}
-	8091.1.1 = {
-		holder = Pyle_13
-	}
-	8127.1.1 = {
+	7924.1.1 = {
 		holder = Pyle_14
 	}
-	8153.1.1 = {
-		holder = Pyle_15
+	7948.1.1 = {
+		holder = Pyle_22
 	}
-	8164.1.1 = {
-		holder = Pyle_16
+	7999.9.15 = {
+		liege = k_the_crownlands
 	}
-	8178.1.1 = {
-		holder = Pyle_17
+	8003.1.1 = {
+		holder = Pyle_27
 	}
-	8210.1.1 = {
-		holder = Pyle_18
+	8036.1.1 = {
+		holder = Pyle_30
+	}
+	8053.1.1 = {
+		holder = Pyle_31
+	}
+	8061.1.1 = {
+		holder = Pyle_32
+	}
+	8076.1.1 = {
+		holder = Pyle_34
+	}
+	8127.1.1 = {
+		holder = Pyle_35
+	}
+	8156.1.1 = {
+		holder = Pyle_36
+	}
+	8160.1.1 = {
+		holder = Pyle_39
+	}
+	8175.1.1 = {
+		holder = Pyle_40
+	}
+	8199.1.1 = {
+		holder = Pyle_42
 	}
 	8238.1.1 = {
-		holder = Pyle_19
+		holder = Pyle_49
 	}
-	8259.1.1 = {
+	8241.1.1 = {
+		holder = Pyle_50
+	}
+	8252.1.1 = {
 		holder = Pyle_1
 	}
 }
@@ -4472,10 +4570,10 @@ d_the_blackwater_rush = {
 	800.1.1 = {
 		de_jure_liege = k_the_riverlands
 	}
-	7998.2.1 = {
+	7999.5.1 = {
 		de_jure_liege = k_the_crownlands
 	}
-	8195.3.7 = {
+	8184.2.1 = {
 		holder = Targaryen_94
 	}
 	8196.6.1 = {
@@ -4483,61 +4581,64 @@ d_the_blackwater_rush = {
 	}
 }
 c_rollingford = {
-	800.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
 	}
-	7874.1.1 = {
+	7862.1.1 = {
 		holder = Rollingford_4
 	}
 	7882.1.1 = {
 		holder = Rollingford_5
 	}
-	7912.1.1 = {
+	7902.1.1 = {
+		liege = e_the_stormlands
+	}
+	7910.1.1 = {
 		holder = Rollingford_6
 	}
-	7949.1.1 = {
-		holder = Rollingford_7
-	}
-	7964.1.1 = {
+	7934.1.1 = {
 		holder = Rollingford_8
 	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
+	7947.1.1 = {
+		liege = e_the_riverlands
 	}
-	8007.1.1 = {
-		holder = Rollingford_9
-	}
-	8038.1.1 = {
-		holder = Rollingford_10
-	}
-	8057.1.1 = {
-		holder = Rollingford_11
-	}
-	8081.1.1 = {
+	7987.1.1 = {
 		holder = Rollingford_12
 	}
-	8087.1.1 = {
-		holder = Rollingford_13
+	7999.5.1 = {
+		liege = k_the_crownlands
 	}
-	8111.1.1 = {
-		holder = Rollingford_14
-	}
-	8163.1.1 = {
-		holder = Rollingford_16
-	}
-	8177.1.1 = {
+	8016.1.1 = {
 		holder = Rollingford_17
 	}
-	8185.1.1 = {
+	8022.1.1 = {
+		holder = Rollingford_28
+	}
+	8086.1.1 = {
+		holder = Rollingford_35
+	}
+	8109.1.1 = {
+		holder = Rollingford_37
+	}
+	8124.1.1 = {
+		holder = Rollingford_40
+	}
+	8150.1.1 = {
+		holder = Rollingford_45
+	}
+	8176.1.1 = {
+		holder = Rollingford_46
+	}
+	8184.2.1 = {
 		liege = d_the_blackwater_rush
 	}
 	8196.6.1 = {
-		liege = e_the_iron_throne
+		liege = k_the_crownlands
 	}
-	8222.1.1 = {
-		holder = Rollingford_18
+	8208.1.1 = {
+		holder = Rollingford_50
 	}
-	8242.1.1 = {
+	8227.1.1 = {
 		holder = Rollingford_19
 	}
 	8266.1.1 = {
@@ -4545,61 +4646,62 @@ c_rollingford = {
 	}
 }
 c_great_fork = {
-	7600.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
 	}
-	7858.1.1 = {
+	7853.1.1 = {
 		holder = Bourney_22
 	}
 	7872.1.1 = {
 		holder = Bourney_23
 	}
-	7903.1.1 = {
-		holder = Bourney_24
+	7902.1.1 = {
+		liege = e_the_stormlands
 	}
-	7932.1.1 = {
-		holder = Bourney_25
-	}
-	7950.1.1 = {
+	7915.1.1 = {
 		holder = Bourney_26
 	}
-	7980.1.1 = {
-		holder = Bourney_27
+	7935.1.1 = {
+		holder = Bourney_41
 	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
+	7947.1.1 = {
+		liege = e_the_riverlands
 	}
-	8005.1.1 = {
-		holder = Bourney_30
+	7984.1.1 = {
+		holder = Bourney_42
 	}
-	8037.1.1 = {
-		holder = Bourney_31
+	7998.1.1 = {
+		holder = Bourney_44
 	}
-	8054.1.1 = {
-		holder = Bourney_33
+	7999.5.1 = {
+		liege = k_the_crownlands
 	}
-	8100.1.1 = {
-		holder = Bourney_34
+	8027.1.1 = {
+		holder = Bourney_49
 	}
-	8123.1.1 = {
+	8044.1.1 = {
+		holder = Bourney_57
+	}
+	8061.1.1 = {
+		holder = Bourney_60
+	}
+	8086.1.1 = {
+		holder = Bourney_63
+	}
+	8109.1.1 = {
 		holder = Bourney_35
 	}
-	8129.4.1 = {
+	8130.6.1 = {
+		holder = Bourney_70
 	}
-	8130.5.5 = {
-		holder = Bourney_36
-	}
-	8151.1.1 = {
-		holder = Bourney_38
-	}
-	8175.1.1 = {
+	8177.1.1 = {
 		holder = Bourney_40
 	}
-	8185.1.1 = {
+	8184.2.1 = {
 		liege = d_the_blackwater_rush
 	}
 	8196.6.1 = {
-		liege = e_the_iron_throne
+		liege = k_the_crownlands
 	}
 	8209.1.1 = {
 		holder = Bourney_2
@@ -4610,62 +4712,70 @@ c_great_fork = {
 }
 c_longgrass = {
 	800.1.1 = {
-		liege = e_the_reach
 		de_jure_liege = d_tumbleton
+		effect = {
+			title:b_redgrass_field  = { set_title_name = b_longgrass_field }
+		}
 	}
-	7830.1.1 = {
+	7858.1.1 = {
 		holder = Corne_22
 	}
-	7880.1.1 = {
-		holder = Corne_23
+	7873.1.1 = {
+		liege = d_tumbleton
 	}
-	7905.1.1 = {
+	7892.1.1 = {
 		holder = Corne_24
 	}
-	7930.1.1 = {
-		holder = Corne_25
-	}
-	7955.1.1 = {
+	7908.1.1 = {
 		holder = Corne_26
 	}
-	7980.1.1 = {
-		holder = Corne_28
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-		de_jure_liege = d_the_blackwater_rush
-	}
-	8001.1.1 = {
-		holder = Corne_29
-	}
-	8012.1.1 = {
-		holder = Corne_30
-	}
-	8068.1.1 = {
-		holder = Corne_31
-	}
-	8070.1.1 = {
+	7940.1.1 = {
 		holder = Corne_32
 	}
-	8096.1.1 = {
-		holder = Corne_33
+	7981.1.1 = {
+		holder = Corne_28
 	}
-	8113.1.1 = {
+	7982.1.1 = {
+		holder = Corne_76
+	}
+	7992.1.1 = {
+		holder = Corne_79
+	}
+	8000.5.1 = {
+		liege = k_the_crownlands
+		de_jure_liege = d_the_blackwater_rush
+	}
+	8038.1.1 = {
+		holder = Corne_83
+	}
+	8058.1.1 = {
+		holder = Corne_86
+	}
+	8097.1.1 = {
+		holder = Corne_88
+	}
+	8119.1.1 = {
+		holder = Corne_94
+	}
+	8129.1.1 = {
 		holder = Corne_34
 	}
-	8130.5.5 = {
+	8130.6.1 = {
 		holder = Corne_35
 	}
 	8151.1.1 = {
 		holder = Corne_37
 	}
-	8185.1.1 = {
+	8184.2.1 = {
 		liege = d_the_blackwater_rush
 		holder = Targaryen_94
 	}
 	8196.6.1 = {
-		liege = e_the_iron_throne
+		liege = k_the_crownlands
 		holder = Corne_50
+		effect = {
+			title:b_redgrass_field  = { reset_title_name = yes }
+		}
 	}
 	8258.6.1 = {
 		holder = Corne_1
@@ -4678,67 +4788,67 @@ c_longgrass = {
 	}
 }
 c_middleton = {
-	1.1.1 = {
+	3306.1.1 = {
 		liege = e_the_riverlands
 	}
-	7835.1.1 = {
+	7883.1.1 = {
 		holder = Hall_4
 	}
 	7885.1.1 = {
-		holder = Hall_5
-	}
-	7910.1.1 = {
 		holder = Hall_6
 	}
-	7935.1.1 = {
-		holder = Hall_7
+	7902.1.1 = {
+		liege = e_the_stormlands
 	}
-	7960.1.1 = {
-		holder = Hall_8
+	7921.1.1 = {
+		holder = Hall_15
 	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
+	7947.1.1 = {
+		liege = e_the_riverlands
 	}
-	7999.1.1 = {
-		holder = Hall_9
-	}
-	8006.1.1 = {
-		holder = Hall_11
-	}
-	8037.1.1 = {
-		holder = Hall_12
-	}
-	8042.1.1 = {
-		holder = Hall_13
-	}
-	8076.1.1 = {
+	7968.1.1 = {
 		holder = Hall_16
 	}
-	8102.1.1 = {
-		holder = Hall_17
+	7984.1.1 = {
+		holder = Hall_29
 	}
-	8121.1.1 = {
-		holder = Hall_18
+	7999.5.1 = {
+		liege = k_the_crownlands
 	}
-	8150.1.1 = {
-		holder = Hall_20
+	8023.1.1 = {
+		holder = Hall_33
 	}
-	8179.1.1 = {
-		holder = Hall_22
+	8048.1.1 = {
+		holder = Hall_34
 	}
-	8185.1.1 = {
+	8063.1.1 = {
+		holder = Hall_37
+	}
+	8096.1.1 = {
+		holder = Hall_39
+	}
+	8122.1.1 = {
+		holder = Hall_47
+	}
+	8172.1.1 = {
+		holder = Hall_52
+	}
+	8184.2.1 = {
 		liege = d_the_blackwater_rush
 	}
-	8195.1.1 = {
-		holder = Hall_23
+	8193.1.1 = {
+		holder = Hall_54
 	}
 	8196.6.1 = {
-		liege = e_the_iron_throne
+		liege = k_the_crownlands
 	}
-	8237.1.1 = {
-		holder = Hall_24
+	8228.1.1 = {
+		holder = Hall_58
 	}
-	8243.1.1 = {
+	8252.1.1 = {
+		holder = Hall_66
+	}
+	8273.1.1 = {
 		holder = Hall_25
 	}
 	8293.1.1 = {
@@ -4747,63 +4857,65 @@ c_middleton = {
 }
 c_pikemouth = {
 	800.1.1 = {
-		liege = e_the_reach
 		de_jure_liege = d_tumbleton
 	}
-	7830.1.1 = {
+	7858.1.1 = {
 		holder = Corne_22
 	}
-	7880.1.1 = {
-		holder = Corne_23
+	7873.1.1 = {
+		liege = d_tumbleton
 	}
-	7905.1.1 = {
+	7892.1.1 = {
 		holder = Corne_24
 	}
-	7930.1.1 = {
-		holder = Corne_25
-	}
-	7955.1.1 = {
+	7908.1.1 = {
 		holder = Corne_26
 	}
-	7980.1.1 = {
-		holder = Corne_28
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-		de_jure_liege = d_the_blackwater_rush
-	}
-	8001.1.1 = {
-		holder = Corne_29
-	}
-	8012.1.1 = {
-		holder = Corne_30
-	}
-	8068.1.1 = {
-		holder = Corne_31
-	}
-	8070.1.1 = {
+	7940.1.1 = {
 		holder = Corne_32
 	}
-	8096.1.1 = {
-		holder = Corne_33
+	7981.1.1 = {
+		holder = Corne_28
 	}
-	8113.1.1 = {
+	7982.1.1 = {
+		holder = Corne_76
+	}
+	7992.1.1 = {
+		holder = Corne_79
+	}
+	8000.5.1 = {
+		liege = k_the_crownlands
+		de_jure_liege = d_the_blackwater_rush
+	}
+	8038.1.1 = {
+		holder = Corne_83
+	}
+	8058.1.1 = {
+		holder = Corne_86
+	}
+	8097.1.1 = {
+		holder = Corne_88
+	}
+	8119.1.1 = {
+		holder = Corne_94
+	}
+	8129.1.1 = {
 		holder = Corne_34
 	}
-	8130.5.5 = {
+	8130.6.1 = {
 		holder = Corne_35
 	}
 	8151.1.1 = {
 		holder = Corne_37
 	}
-	8185.1.1 = {
+	8184.2.1 = {
 		liege = d_the_blackwater_rush
 	}
 	8186.1.1 = {
 		holder = Corne_38
 	}
 	8196.6.1 = {
-		liege = e_the_iron_throne
+		liege = k_the_crownlands
 		holder = Corne_50
 	}
 	8258.6.1 = {
@@ -4817,7 +4929,7 @@ c_pikemouth = {
 	}
 }
 d_wendwater_forest = {
-	800.1.1 = {
+	20.1.1 = {
 		liege = e_the_stormlands
 		de_jure_liege = k_the_stormlands
 	}
@@ -4827,90 +4939,97 @@ d_wendwater_forest = {
 	7881.1.1 = {
 		holder = Farring_8
 	}
-	7912.1.1 = {
-		holder = Farring_9
-	}
-	7942.1.1 = {
+	7929.1.1 = {
 		holder = Farring_10
 	}
-	7961.1.1 = {
-		holder = Farring_11
-	}
-	# AGOT Bookmarked Added
-	7998.1.2 = {
-		de_jure_liege = k_the_crownlands
-	}
-	7998.2.1 = {
-		liege = e_the_iron_throne
-		# AGOT Bookmarked Disabled
-		# de_jure_liege = k_the_crownlands
-	}
-	8012.1.1 = {
+	7935.1.1 = {
 		holder = Farring_13
 	}
-	8055.1.1 = {
-		holder = Farring_14
-	}
-	8078.1.1 = {
+	7962.1.1 = {
 		holder = Farring_15
 	}
-	8126.1.1 = {
-		holder = Farring_16
-	}
-	8134.1.1 = {
-		holder = Farring_17
-	}
-	8159.1.1 = {
-		holder = Farring_18
-	}
-	8203.1.1 = {
-		holder = Farring_19
-	}
-	8229.1.1 = {
+	7989.1.1 = {
 		holder = Farring_20
 	}
-	8239.1.1 = {
+	7999.9.15 = {
+		liege = k_the_crownlands
+		de_jure_liege = k_the_crownlands
+	}
+	8002.1.1 = {
+		holder = Farring_29
+	}
+	8034.1.1 = {
+		holder = Farring_31
+	}
+	8063.1.1 = {
+		holder = Farring_39
+	}
+	8080.1.1 = {
+		holder = Farring_44
+	}
+	8120.1.1 = {
+		holder = Farring_50
+	}
+	8151.1.1 = {
+		holder = Farring_51
+	}
+	8177.1.1 = {
+		holder = Farring_55
+	}
+	8191.1.1 = {
+		holder = Farring_59
+	}
+	8226.1.1 = {
+		holder = Farring_63
+	}
+	8258.1.1 = {
 		holder = Farring_21
 	}
 	8270.1.1 = {
 		holder = Farring_1
 	}
+	8298.10.24 = {
+		liege = 0
+	}
 }
 c_wendwater_fork = {
-	7600.1.1 = {
+	7870.1.1 = {
 		liege = d_wendwater_forest
 	}
-	7860.1.1 = {
+	7874.1.1 = {
 		holder = Wendwater_4
 	}
 	7880.1.1 = {
 		holder = Wendwater_5
 	}
-	7906.1.1 = {
-		holder = Wendwater_6
-	}
-	7914.1.1 = {
-		holder = Wendwater_7
-	}
-	7939.1.1 = {
-		holder = Wendwater_8
-	}
-	7956.1.1 = {
-		holder = Wendwater_9
-	}
-	7993.1.1 = {
-		holder = Wendwater_28
-	}
-	8030.1.1 = {
+	7883.1.1 = {
 		holder = Wendwater_10
 	}
-	8035.1.1 = {
+	7884.1.1 = {
+		holder = Wendwater_6
+	}
+	7888.1.1 = {
 		holder = Wendwater_11
 	}
-	8071.1.1 = {
-		holder = Wendwater_12
+	7936.1.1 = {
+		holder = Wendwater_28
 	}
-	8088.1.1 = {
+	7967.1.1 = {
+		holder = Wendwater_37
+	}
+	7991.1.1 = {
+		holder = Wendwater_41
+	}
+	8037.1.1 = {
+		holder = Wendwater_43
+	}
+	8048.1.1 = {
+		holder = Wendwater_44
+	}
+	8102.1.1 = {
+		holder = Wendwater_48
+	}
+	8111.1.1 = {
 		holder = Wendwater_13
 	}
 	8123.1.1 = {
@@ -4939,49 +5058,53 @@ c_wendwater_fork = {
 	}
 }
 c_farring_cross = {
-	7600.1.1 = {
-		liege = d_wendwater_forest
-	}
 	7870.1.1 = {
 		holder = Farring_7
+		liege = d_wendwater_forest
 	}
 	7881.1.1 = {
 		holder = Farring_8
 	}
-	7912.1.1 = {
-		holder = Farring_9
-	}
-	7942.1.1 = {
+	7929.1.1 = {
 		holder = Farring_10
 	}
-	7961.1.1 = {
-		holder = Farring_11
-	}
-	8012.1.1 = {
+	7935.1.1 = {
 		holder = Farring_13
 	}
-	8055.1.1 = {
-		holder = Farring_14
-	}
-	8078.1.1 = {
+	7962.1.1 = {
 		holder = Farring_15
 	}
-	8126.1.1 = {
-		holder = Farring_16
-	}
-	8134.1.1 = {
-		holder = Farring_17
-	}
-	8159.1.1 = {
-		holder = Farring_18
-	}
-	8203.1.1 = {
-		holder = Farring_19
-	}
-	8229.1.1 = {
+	7989.1.1 = {
 		holder = Farring_20
 	}
-	8239.1.1 = {
+	8002.1.1 = {
+		holder = Farring_29
+	}
+	8034.1.1 = {
+		holder = Farring_31
+	}
+	8063.1.1 = {
+		holder = Farring_39
+	}
+	8080.1.1 = {
+		holder = Farring_44
+	}
+	8120.1.1 = {
+		holder = Farring_50
+	}
+	8151.1.1 = {
+		holder = Farring_51
+	}
+	8177.1.1 = {
+		holder = Farring_55
+	}
+	8191.1.1 = {
+		holder = Farring_59
+	}
+	8226.1.1 = {
+		holder = Farring_63
+	}
+	8258.1.1 = {
 		holder = Farring_21
 	}
 	8270.1.1 = {
@@ -4989,10 +5112,25 @@ c_farring_cross = {
 	}
 }
 c_darkgroves = {
-	7600.1.1 = {
+	7817.1.1 = {
+		holder = Groves_34
+	}
+	7819.1.1 = {
+		holder = Groves_35
+	}
+	7848.1.1 = {
+		holder = Groves_39
+	}
+	7870.1.1 = {
 		liege = d_wendwater_forest
 	}
-	7947.1.1 = {
+	7893.1.1 = {
+		holder = Groves_41
+	}
+	7924.1.1 = {
+		holder = Groves_48
+	}
+	7972.1.1 = {
 		holder = Groves_1
 	}
 	7978.11.1 = {
@@ -5036,111 +5174,117 @@ c_darkgroves = {
 	}
 }
 c_noblewood = {
-	800.1.1 = {
+	7870.1.1 = {
 		liege = d_wendwater_forest
 	}
-	7900.1.1 = {
+		7837.1.1 = {
+		holder = Correy_31
+	}
+	7844.1.1 = {
 		holder = Correy_2
 	}
-	7950.1.1 = {
-		holder = Correy_3
-	}
-	7968.1.1 = {
-		holder = Correy_4
-	}
-	7995.1.1 = {
-		holder = Correy_5
-	}
-	8011.1.1 = {
+	7881.1.1 = {
 		holder = Correy_6
 	}
-	8030.1.1 = {
-		holder = Correy_7
-	}
-	8062.1.1 = {
+	7906.1.1 = {
 		holder = Correy_8
 	}
-	8080.1.1 = {
-		holder = Correy_10
-	}
-	8111.1.1 = {
-		holder = Correy_11
-	}
-	8134.1.1 = {
+	7933.1.1 = {
 		holder = Correy_12
 	}
-	8150.1.1 = {
+	7957.1.1 = {
 		holder = Correy_15
 	}
-	8155.1.1 = {
-		holder = Correy_16
+	7983.1.1 = {
+		holder = Correy_28
 	}
-	8195.1.1 = {
-		holder = Correy_17
+	8009.1.1 = {
+		holder = Correy_30
 	}
-	8209.6.1 = {
-		holder = Correy_18
+	8011.1.1 = {
+		holder = Correy_32
 	}
-	8255.1.1 = {
-		holder = Correy_19
+	8073.1.1 = {
+		holder = Correy_40
 	}
-	8270.1.1 = {
-		holder = Correy_20
+	8092.1.1 = {
+		holder = Correy_41
 	}
-	8275.1.1 = {
+	8125.1.1 = {
+		holder = Correy_44
+	}
+	8152.1.1 = {
+		holder = Correy_49
+	}
+	8176.1.1 = {
+		holder = Correy_51
+	}
+	8210.1.1 = {
+		holder = Correy_54
+	}
+	8232.1.1 = {
+		holder = Correy_59
+	}
+	8266.1.1 = {
+		holder = Correy_60
+	}
+	8268.1.1 = {
 		holder = Correy_21
 	}
 }
 c_stripeharbor = {
-	7600.1.1 = {
+	7870.1.1 = {
 		liege = d_wendwater_forest
 	}
-	7845.1.1 = {
+	7875.1.1 = {
 		holder = Manning_5
 	}
 	7895.1.1 = {
-		holder = Manning_6
-	}
-	7920.1.1 = {
 		holder = Manning_7
 	}
 	7945.1.1 = {
-		holder = Manning_8
-	}
-	7970.1.1 = {
-		holder = Manning_9
-	}
-	7995.1.1 = {
-		holder = Manning_10
-	}
-	8020.1.1 = {
-		holder = Manning_11
-	}
-	8045.1.1 = {
-		holder = Manning_12
-	}
-	8070.1.1 = {
-		holder = Manning_13
-	}
-	8095.1.1 = {
-		holder = Manning_14
-	}
-	8120.1.1 = {
-		holder = Manning_15
-	}
-	8145.1.1 = {
 		holder = Manning_16
 	}
-	8170.1.1 = {
-		holder = Manning_17
-	}
-	8195.1.1 = {
-		holder = Manning_19
-	}
-	8220.1.1 = {
+	7954.1.1 = {
 		holder = Manning_20
 	}
-	8245.1.1 = {
+	7991.1.1 = {
+		holder = Manning_26
+	}
+	8024.1.1 = {
+		holder = Manning_27
+	}
+	8025.1.1 = {
+		holder = Manning_28
+	}
+	8042.1.1 = {
+		holder = Manning_29
+	}
+	8060.1.1 = {
+		holder = Manning_30
+	}
+	8074.1.1 = {
+		holder = Manning_32
+	}
+	8099.1.1 = {
+		holder = Manning_34
+	}
+	8134.1.1 = {
+		holder = Manning_35
+	}
+	8168.1.1 = {
+		holder = Manning_43
+	}
+	8178.1.1 = {
+		holder = Manning_45
+	}
+	8204.1.1 = {
+		holder = Manning_52
+	}
+	8216.1.1 = {
+		holder = Manning_61
+	}
+	8258.1.1 = {
 		holder = Manning_21
 	}
 	8270.1.1 = {
