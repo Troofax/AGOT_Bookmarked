@@ -1,4 +1,4 @@
-﻿cv_historical_characters_accessories = {
+﻿7899_historical_characters_accessories = {
 	usage = game
 	selection_behavior = max
 	priority = 2

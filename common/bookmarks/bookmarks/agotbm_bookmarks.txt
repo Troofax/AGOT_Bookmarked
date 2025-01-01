@@ -10,7 +10,7 @@
 # Year 7899 The Century of Blood #
 #################################
 
-agot_bm_centuryofblood = {
+agot_bm_7899 = {
 	start_date = 7899.7.22
 	is_playable = yes
 	group = agot_bm_group_agotbm
