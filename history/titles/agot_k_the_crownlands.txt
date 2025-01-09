@@ -2102,10 +2102,10 @@ c_crownback = {
 	8152.1.1 = {
 		holder = Hollard_25
 	}
-	8174.1.1 = {
+	8169.1.1 = {
 		holder = Hollard_30
 	}
-	8204.1.1 = {
+	8174.1.1 = {
 		holder = Hollard_33
 	}
 	8219.1.1 = {

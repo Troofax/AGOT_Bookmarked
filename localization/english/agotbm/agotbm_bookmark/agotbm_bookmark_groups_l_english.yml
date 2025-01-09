@@ -3,11 +3,9 @@
 ###################
 
 l_english:
-
- #8277
- agot_bm_8277:0 "Defiance of Duskendale"
- agot_bm_8277_desc:0 "The Defiance began in 277 AC when Lord Denys Darklyn ceased to pay his taxes, to demonstrate his anger. Aware of the strained relationship between King Aerys II Targaryen and Lord Tywin Lannister, Denys invited Aerys to come to Duskendale to hear his petition. When Tywin advised him not to go, Aerys, who wished to distance himself from his Hand, decided to deal with the problem personally. Aerys travelled to Duskendale with a small escort led by only one Kingsguard knight, Ser Gwayne Gaunt, to bring the defiant Lord Darklyn to heel. Upon arrival, however, the king was imprisoned. Now Aerys finds himself in a Darklyn jail cell. What will become of the King?"
- agot_bm_group_DOD:0 "277 A.C."
+ #7899
+ agot_bm_7899:0 "The Century of Blood"
+ agot_bm_7899_desc:0 "The Valyrian Freehold has fallen, collapsing when the peninsula was destroyed in the Doom. Within mere hours, Valyria was gone and the Freehold was destroyed. House Targaryen had relocated to Dragonstone, the westernmost outpost of Valyria located in the narrow sea, thereby ensuring their survival.\n\nSome other dragonlords — those who had not been in Valyria when the Doom occurred — survived as well. In Tyrosh, Lys and Qohor, it is said that dragonlords were spared the destruction and were now unsure of what their futures held. #bold \n\nAurion Varezys, a dragonlord who had been visiting Qohor, proclaimed himself the first Emperor of Valyria and raised forces from the Qohorik. With his dragon and an army of thirty thousand men he marches to claim Valyria's remains...#!"
 
  #8298
  agot_bm_8298:0 "War of the Five Kings"

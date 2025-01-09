@@ -726,6 +726,7 @@ Stark_7 = {
 			}
 		}
 	}
+	8299.12.9 = { employer = Slynt_1 } # Janos Slynt
 	8299.12.15 = {
 		effect = {
 			if = {
@@ -737,7 +738,6 @@ Stark_7 = {
 			}
 		}
 	}
-	8299.12.9 = { employer = Slynt_1 } # Janos Slynt
 	8300.1.25 = {
 		effect = {
 			if = {
@@ -2443,6 +2443,7 @@ Manderly_6 = {
 }
 Manderly_rs_3 = {
 	name = Jeyne
+	dna = Manderly_rs_3
 	female = yes
 
 	religion = the_seven_main
@@ -3275,6 +3276,7 @@ Umber_4 = {
 }
 Umber_rs_4 = {
 	name = Maege
+	dna = Umber_rs_4
 	female = yes
 
 	religion = old_gods_south
@@ -3421,6 +3423,7 @@ Umber_8 = {
 }
 Umber_rs_5 = {
 	name = Raya
+	dna = Umber_rs_5
 	female = yes
 
 	religion = old_gods_south
@@ -3588,6 +3591,7 @@ Umber_11 = {
 Umber_12 = {
 	name = Eddard # Mentioned
 	dynasty = dynn_Umber
+	dna = Umber_12
 
 	religion = old_gods_south
 	culture = northman
@@ -3685,6 +3689,7 @@ Umber_15 = {
 Umber_16 = {
 	name = Maynard # Semi-Canon
 	dynasty = dynn_Umber
+	dna = Umber_16
 
 	religion = old_gods_south
 	culture = northman
@@ -3704,6 +3709,7 @@ Umber_16 = {
 Umber_17 = {
 	name = Cedric # Semi-Canon
 	dynasty = dynn_Umber
+	dna = Umber_17
 
 	religion = old_gods_south
 	culture = northman
@@ -3725,6 +3731,7 @@ Umber_17 = {
 Umber_18 = {
 	name = Brandon # Semi-Canon
 	dynasty = dynn_Umber
+	dna = Umber_18
 
 	religion = old_gods_south
 	culture = northman
@@ -3746,6 +3753,7 @@ Umber_18 = {
 Umber_19 = {
 	name = Kear # Semi-Canon, Night's Watch
 	dynasty = dynn_Umber
+	dna = Umber_19
 
 	religion = old_gods_south
 	culture = northman
@@ -3775,6 +3783,7 @@ Umber_19 = {
 Umber_20 = {
 	name = Finn # Semi-Canon
 	dynasty = dynn_Umber
+	dna = Umber_20
 
 	religion = old_gods_south
 	culture = northman
@@ -3795,6 +3804,7 @@ Umber_20 = {
 Umber_22 = {
 	name = Emilia # Semi-Canon, married Jore Blackbrow
 	dynasty = dynn_Umber
+	dna = Umber_22
 	female = yes
 
 	religion = old_gods_south
@@ -3814,6 +3824,7 @@ Umber_22 = {
 Umber_21 = {
 	name = Iain # Semi-Canon
 	dynasty = dynn_Umber
+	dna = Umber_21
 
 	religion = old_gods_south
 	culture = northman
@@ -3835,6 +3846,7 @@ Umber_21 = {
 Umber_23 = {
 	name = Morgana # Semi-Canon
 	dynasty = dynn_Umber
+	dna = Umber_23
 	female = yes
 
 	religion = old_gods_south
@@ -3855,6 +3867,7 @@ Umber_23 = {
 Umber_24 = {
 	name = Benya # Semi-Canon
 	dynasty = dynn_Umber
+	dna = Umber_24
 	female = yes
 
 	religion = old_gods_south
@@ -3875,6 +3888,7 @@ Umber_24 = {
 Umber_25 = {
 	name = Tulip # Semi-Canon
 	dynasty = dynn_Umber
+	dna = Umber_25
 	female = yes
 
 	religion = old_gods_south
@@ -3894,6 +3908,7 @@ Umber_25 = {
 Umber_61 = {
 	name = Caren # Semi-Canon
 	dynasty = dynn_Umber
+	dna = Umber_61
 	female = yes
 
 	religion = old_gods_south
@@ -3914,6 +3929,7 @@ Umber_61 = {
 Umber_26 = {
 	name = Iain # Semi-Canon
 	dynasty = dynn_Umber
+	dna = Umber_26
 
 	religion = old_gods_south
 	culture = northman
@@ -3934,6 +3950,7 @@ Umber_26 = {
 Umber_62 = {
 	name = Hoarfrost
 	dynasty = dynn_Umber
+	dna = Umber_62
 
 	religion = old_gods_south
 	culture = northman
@@ -3947,6 +3964,7 @@ Umber_62 = {
 Umber_63 = {
 	name = Osric
 	dynasty = dynn_Umber
+	dna = Umber_63
 
 	religion = old_gods_south
 	culture = northman
@@ -4971,6 +4989,8 @@ Bolton_5 = {
 
 	father = Bolton_1
 
+	trait = legitimized_bastard # Caution: succession error
+	
 	trait = education_martial_2
 	trait = beauty_bad_1
 	trait = intellect_good_1
@@ -4983,7 +5003,7 @@ Bolton_5 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
-		effect = { add_trait = bastard }
+		add_character_flag = unlegitimize_on_load
 	}
 	8285.1.1 = {
 		effect = {
@@ -5026,7 +5046,7 @@ Bolton_5 = {
 	8299.12.15 = {
 		trait = murderer
 		effect = {
-			remove_trait = bastard
+			remove_character_flag = unlegitimize_on_load
 			if = {
 				limit = { character:Stark_7 = { is_alive = yes } }
 				reverse_add_opinion = {
@@ -5090,7 +5110,6 @@ Bolton_5 = {
 				}
 			}
 		}
-		add_trait = legitimized_bastard
 	}
 	8300.6.14 = { add_spouse = Poole_Dummy_3 } # Jeyne Pool as Arya Stark
 }
@@ -8006,7 +8025,7 @@ Mormont_3 = {
 		}
 	}
 	8293.6.1 = { # Exiled
-		employer = Ormollen_1 # Tregar Ormollen
+		# employer = Ormollen_1 # Tregar Ormollen
 		effect = {
 			if = {
 				limit = { character:Stark_3 = { is_alive = yes } }
@@ -9160,6 +9179,7 @@ Greenleaf_14 = {
 Greenleaf_15 = {
 	name = Marya # Semi-Canon, married Finn Umber
 	dynasty = dynn_Greenleaf
+	dna = Greenleaf_15
 	female = yes
 
 	religion = old_gods_south
@@ -9854,25 +9874,6 @@ Orlych_hh_1 = {
 			}
 		}
 	}
-}
-Orlych_hh_2 = {
-	name = Byron # Semi-Canon
-	# AGOT TODO: Assign him to some minor house in RIVERLANDS
-
-	religion = the_seven_main
-	culture = riverlander
-
-	trait = bastard
-
-	trait = education_martial_2
-
-	8269.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_semicanon
-		make_trait_inactive = surname_rivers
-	}
-	8285.1.1 = { trait = knight }
-	8290.1.1 = { employer = Orlych_45 } # Brandon Orlych
 }
 
 

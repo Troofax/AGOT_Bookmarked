@@ -2802,21 +2802,17 @@ Greyjoy_59 = { # Dance of the Dragons
 		}
 	}
 	8129.1.1 = { trait = aggressive_attacker }
-	8130.2.21 = {
+	8130.2.20 = {
 		effect = {
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Lannister_rs_2 # Jeyne, Jason Lannister's mistress
+			}
 			if = {
 				limit = { character:Lannister_103 = { is_alive = yes } }
 				reverse_add_opinion = {
 					target = character:Lannister_103 # Loreon Lannister
 					modifier = raided_me_opinion
 				}
-			}
-		}
-	}
-	8130.2.20 = {
-		effect = {
-			agot_safe_concubine_history_effect = {
-				TARGET = character:Lannister_rs_2 # Jeyne, Jason Lannister's mistress
 			}
 		}
 	}
@@ -13508,6 +13504,33 @@ Ironmaker_30 = {
 	8238.1.1 = { death = yes }
 }
 
+###### RANDOM CAPTAINS
+############################
+###
+###
+Knight_Iron_Isles_1 = {
+	name = Ralf # Landless Adventurer
+
+	religion = drowned_god_main
+	culture = ironborn
+
+	trait = education_intrigue_3
+	trait = physique_bad_2
+	trait = weak
+	trait = deceitful
+	trait = temperate
+	trait = callous
+	trait = charming
+
+	disallow_random_traits = yes
+
+	8058.1.1 = {
+		birth = yes
+		give_nickname = nick_bonesuckled
+	}
+	8087.1.1 = { death = yes }
+}
+
 ###### DROWNED MEN
 ############################
 ###
@@ -13607,31 +13630,4 @@ Drowned_Men_4 = {
 			killer = Greyjoy_41 # Goren Greyjoy
 		}
 	}
-}
-
-### LAAMPS
-Knight_Iron_Isles_1 = {
-	name = Ralf # Modcanon - LAAMP
-
-	religion = drowned_god_main
-	culture = ironborn
-
-	trait = physique_bad_2
-	trait = weak
-
-	trait = deceitful
-	trait = temperate
-	trait = callous
-	trait = charming
-
-	disallow_random_traits = yes
-
-	8058.1.1 = {
-		birth = yes
-		give_nickname = nick_bonesuckled
-	}
-	8074.1.1 = {
-		trait = education_intrigue_3
-	}
-	8087.1.1 = { death = yes }
 }

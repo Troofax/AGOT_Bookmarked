@@ -1778,7 +1778,7 @@ e_three_daughters = {
 	}
 	# Lyseni Term
 	8129.1.1 = {
-		holder = Haen_8
+		holder = Dagareon_60
 	}
 	# Daughters War
 	8132.1.1 = {
