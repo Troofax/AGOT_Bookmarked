@@ -2,7 +2,7 @@
 # History database id:Stark_6
 bookmark_298_robb_stark={
 	type=boy
-	id=62789
+	id=68839
 	random_seed=1376885717
 	age=0.150000
 	genes={ 		hair_color={ 235 216 235 216 }
@@ -97,7 +97,7 @@ bookmark_298_robb_stark={
  		expression_other={ "cheek_wrinkles_right_01" 94 "cheek_wrinkles_right_01" 94 }
  		complexion={ "complexion_16" 123 "complexion_16" 123 }
  		gene_height={ "normal_height" 134 "normal_height" 134 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 119 "body_fat_head_fat_low" 119 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 112 "body_fat_head_fat_low" 119 }
  		gene_bs_body_shape={ "body_shape_average" 137 "body_shape_average" 76 }
  		gene_bs_bust={ "bust_clothes" 85 "bust_shape_1_half" 134 }
  		gene_age={ "old_beauty_1" 255 "old_beauty_1" 255 }
@@ -151,7 +151,7 @@ bookmark_298_robb_stark={
  		gene_dragon_snout_end_width={ "dragon_snout_end_width" 127 "dragon_snout_end_width" 127 }
  		gene_dragon_neck_length={ "dragon_neck_length" 127 "dragon_neck_length" 127 }
  		gene_dragon_tail_length={ "dragon_tail_length" 127 "dragon_tail_length" 127 }
- 		gene_dragon_scales_effect={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
+ 		gene_dragon_metallic_scales_strength={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
  		gene_dragon_wounded={ "dragon_scarred" 0 "dragon_scarred" 0 }
  		gene_dragon_body_shading={ "dragon_body_shading_lower_black" 0 "dragon_body_shading_lower_black" 0 }
  		gene_dragon_wings_shading={ "dragon_wings_shading_back_black" 0 "dragon_wings_shading_back_black" 0 }

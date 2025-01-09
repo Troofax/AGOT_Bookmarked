@@ -2,7 +2,7 @@
 # History database id:Targaryen_67
 bookmark_129_aemond_targaryen={
 	type=male
-	id=36806
+	id=41656
 	random_seed=1334315873
 	age=0.190000
 	genes={ 		hair_color={ 2 2 2 2 }
@@ -151,7 +151,7 @@ bookmark_129_aemond_targaryen={
  		gene_dragon_snout_end_width={ "dragon_snout_end_width" 127 "dragon_snout_end_width" 127 }
  		gene_dragon_neck_length={ "dragon_neck_length" 127 "dragon_neck_length" 127 }
  		gene_dragon_tail_length={ "dragon_tail_length" 127 "dragon_tail_length" 127 }
- 		gene_dragon_scales_effect={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
+ 		gene_dragon_metallic_scales_strength={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
  		gene_dragon_wounded={ "dragon_scarred" 0 "dragon_scarred" 0 }
  		gene_dragon_body_shading={ "dragon_body_shading_lower_black" 0 "dragon_body_shading_lower_black" 0 }
  		gene_dragon_wings_shading={ "dragon_wings_shading_back_black" 0 "dragon_wings_shading_back_black" 0 }
@@ -199,9 +199,12 @@ bookmark_129_aemond_targaryen={
  		clothes={ "valyrian_war_nobility_clothes" 139 "most_clothes" 0 }
  		headgear={ "no_headgear" 198 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
- 		props_right={ "ep1_artisan_sword_byzantine" 255 "no_props" 0 }
+ 		props_right={ "marshal_swords" 255 "no_props" 0 }
+ 		props_left={ "ep1_western_shield_01" 255 "no_props" 0 }
+ 		gene_additive_animations_fat={ "fat_additive" 2 "fat_additive" 0 }
+ 		gene_additive_animations_dwarf={ "dwarf_additive" 0 "dwarf_additive" 0 }
  }
-	entity={ 912297863 912297863 }
+	entity={ 1083207840 1083207840 }
 	tags={ {
 			hash=2125534279
 			invert=no

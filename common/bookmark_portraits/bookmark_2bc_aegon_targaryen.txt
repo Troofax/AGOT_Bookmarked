@@ -2,7 +2,7 @@
 # History database id:Targaryen_27
 bookmark_2bc_aegon_targaryen={
 	type=male
-	id=19242
+	id=21781
 	random_seed=2417614156
 	age=0.230000
 	genes={ 		hair_color={ 14 39 14 39 }
@@ -97,8 +97,8 @@ bookmark_2bc_aegon_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 24 "cheek_wrinkles_both_01" 24 }
  		complexion={ "complexion_38" 84 "complexion_38" 84 }
  		gene_height={ "normal_height" 147 "normal_height" 147 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 121 "body_fat_head_fat_low" 130 }
- 		gene_bs_body_shape={ "body_shape_hourglass_half" 117 "body_shape_hourglass_half" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 123 "body_fat_head_fat_low" 130 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_half" 96 "body_shape_hourglass_half" 0 }
  		gene_bs_bust={ "bust_clothes" 115 "bust_shape_2_full" 180 }
  		gene_age={ "old_beauty_1" 3 "old_beauty_1" 3 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 203 "avg_spacing_low_thickness" 203 }
@@ -151,7 +151,7 @@ bookmark_2bc_aegon_targaryen={
  		gene_dragon_snout_end_width={ "dragon_snout_end_width" 127 "dragon_snout_end_width" 127 }
  		gene_dragon_neck_length={ "dragon_neck_length" 127 "dragon_neck_length" 127 }
  		gene_dragon_tail_length={ "dragon_tail_length" 127 "dragon_tail_length" 127 }
- 		gene_dragon_scales_effect={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
+ 		gene_dragon_metallic_scales_strength={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
  		gene_dragon_wounded={ "dragon_scarred" 0 "dragon_scarred" 0 }
  		gene_dragon_body_shading={ "dragon_body_shading_lower_black" 0 "dragon_body_shading_lower_black" 0 }
  		gene_dragon_wings_shading={ "dragon_wings_shading_back_black" 0 "dragon_wings_shading_back_black" 0 }

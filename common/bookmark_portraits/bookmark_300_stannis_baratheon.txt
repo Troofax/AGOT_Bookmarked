@@ -2,7 +2,7 @@
 # History database id:Baratheon_3
 bookmark_300_stannis_baratheon={
 	type=male
-	id=59133
+	id=65173
 	random_seed=4220886731
 	age=0.360000
 	genes={ 		hair_color={ 0 244 0 244 }
@@ -97,7 +97,7 @@ bookmark_300_stannis_baratheon={
  		expression_other={ "nose_wrinkles_01" 0 "nose_wrinkles_01" 134 }
  		complexion={ "complexion_9" 0 "complexion_8" 72 }
  		gene_height={ "normal_height" 150 "normal_height" 150 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 132 "body_fat_head_fat_full" 131 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 131 "body_fat_head_fat_full" 131 }
  		gene_bs_body_shape={ "body_shape_average" 117 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 22 "bust_shape_3_full" 165 }
  		gene_age={ "old_2" 218 "old_1" 25 }
@@ -151,7 +151,7 @@ bookmark_300_stannis_baratheon={
  		gene_dragon_snout_end_width={ "dragon_snout_end_width" 127 "dragon_snout_end_width" 127 }
  		gene_dragon_neck_length={ "dragon_neck_length" 127 "dragon_neck_length" 127 }
  		gene_dragon_tail_length={ "dragon_tail_length" 127 "dragon_tail_length" 127 }
- 		gene_dragon_scales_effect={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
+ 		gene_dragon_metallic_scales_strength={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
  		gene_dragon_wounded={ "dragon_scarred" 0 "dragon_scarred" 0 }
  		gene_dragon_body_shading={ "dragon_body_shading_lower_black" 0 "dragon_body_shading_lower_black" 0 }
  		gene_dragon_wings_shading={ "dragon_wings_shading_back_black" 0 "dragon_wings_shading_back_black" 0 }

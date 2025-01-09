@@ -2,7 +2,7 @@
 # History database id:Lannister_1
 bookmark_298_tywin_lannister={
 	type=male
-	id=55060
+	id=61053
 	random_seed=1963653823
 	age=0.560000
 	genes={ 		hair_color={ 214 14 198 28 }
@@ -97,8 +97,8 @@ bookmark_298_tywin_lannister={
  		expression_other={ "cheek_wrinkles_both_01" 26 "cheek_wrinkles_both_01" 85 }
  		complexion={ "complexion_10" 0 "complexion_12" 0 }
  		gene_height={ "normal_height" 149 "normal_height" 126 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 124 "body_fat_head_fat_low" 126 }
- 		gene_bs_body_shape={ "body_shape_average" 112 "body_shape_average" 71 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_shape={ "body_shape_average" 122 "body_shape_average" 71 }
  		gene_bs_bust={ "bust_clothes" 25 "bust_shape_1_half" 154 }
  		gene_age={ "old_4" 148 "old_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 147 "avg_spacing_lower_thickness" 212 }
@@ -151,7 +151,7 @@ bookmark_298_tywin_lannister={
  		gene_dragon_snout_end_width={ "dragon_snout_end_width" 127 "dragon_snout_end_width" 127 }
  		gene_dragon_neck_length={ "dragon_neck_length" 127 "dragon_neck_length" 127 }
  		gene_dragon_tail_length={ "dragon_tail_length" 127 "dragon_tail_length" 127 }
- 		gene_dragon_scales_effect={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
+ 		gene_dragon_metallic_scales_strength={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
  		gene_dragon_wounded={ "dragon_scarred" 0 "dragon_scarred" 0 }
  		gene_dragon_body_shading={ "dragon_body_shading_lower_black" 0 "dragon_body_shading_lower_black" 0 }
  		gene_dragon_wings_shading={ "dragon_wings_shading_back_black" 0 "dragon_wings_shading_back_black" 0 }

@@ -2,7 +2,7 @@
 # History database id:Greyjoy_5
 bookmark_298_balon_greyjoy={
 	type=male
-	id=57634
+	id=63666
 	random_seed=2429303481
 	age=0.410000
 	genes={ 		hair_color={ 8 242 8 242 }
@@ -97,7 +97,7 @@ bookmark_298_balon_greyjoy={
  		expression_other={ "cheek_wrinkles_both_01" 0 "cheek_wrinkles_both_01" 126 }
  		complexion={ "complexion_5" 158 "complexion_5" 158 }
  		gene_height={ "normal_height" 140 "normal_height" 129 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 122 "body_fat_head_fat_low" 119 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 124 "body_fat_head_fat_low" 119 }
  		gene_bs_body_shape={ "body_shape_average" 234 "body_shape_average" 51 }
  		gene_bs_bust={ "bust_clothes" 45 "bust_shape_1_half" 35 }
  		gene_age={ "old_1" 82 "old_1" 82 }
@@ -151,7 +151,7 @@ bookmark_298_balon_greyjoy={
  		gene_dragon_snout_end_width={ "dragon_snout_end_width" 127 "dragon_snout_end_width" 127 }
  		gene_dragon_neck_length={ "dragon_neck_length" 127 "dragon_neck_length" 127 }
  		gene_dragon_tail_length={ "dragon_tail_length" 127 "dragon_tail_length" 127 }
- 		gene_dragon_scales_effect={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
+ 		gene_dragon_metallic_scales_strength={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
  		gene_dragon_wounded={ "dragon_scarred" 0 "dragon_scarred" 0 }
  		gene_dragon_body_shading={ "dragon_body_shading_lower_black" 0 "dragon_body_shading_lower_black" 0 }
  		gene_dragon_wings_shading={ "dragon_wings_shading_back_black" 0 "dragon_wings_shading_back_black" 0 }

@@ -2,7 +2,7 @@
 # History database id:Stark_66
 bookmark_2bc_torrhen_stark={
 	type=male
-	id=17204
+	id=19427
 	random_seed=3054899977
 	age=0.400000
 	genes={ 		hair_color={ 37 241 37 241 }
@@ -97,8 +97,8 @@ bookmark_2bc_torrhen_stark={
  		expression_other={ "cheek_wrinkles_both_01" 147 "cheek_wrinkles_both_01" 147 }
  		complexion={ "complexion_11" 29 "complexion_11" 29 }
  		gene_height={ "normal_height" 131 "normal_height" 131 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 112 "body_fat_head_fat_low" 121 }
- 		gene_bs_body_shape={ "body_shape_average" 132 "body_shape_average" 51 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 128 "body_fat_head_fat_low" 121 }
+ 		gene_bs_body_shape={ "body_shape_average" 153 "body_shape_average" 51 }
  		gene_bs_bust={ "bust_clothes" 30 "bust_shape_1_half" 38 }
  		gene_age={ "old_beauty_1" 255 "old_beauty_1" 255 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 255 "avg_spacing_lower_thickness" 255 }
@@ -151,7 +151,7 @@ bookmark_2bc_torrhen_stark={
  		gene_dragon_snout_end_width={ "dragon_snout_end_width" 127 "dragon_snout_end_width" 127 }
  		gene_dragon_neck_length={ "dragon_neck_length" 127 "dragon_neck_length" 127 }
  		gene_dragon_tail_length={ "dragon_tail_length" 127 "dragon_tail_length" 127 }
- 		gene_dragon_scales_effect={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
+ 		gene_dragon_metallic_scales_strength={ "dragon_scales_metallic" 127 "dragon_scales_metallic" 127 }
  		gene_dragon_wounded={ "dragon_scarred" 0 "dragon_scarred" 0 }
  		gene_dragon_body_shading={ "dragon_body_shading_lower_black" 0 "dragon_body_shading_lower_black" 0 }
  		gene_dragon_wings_shading={ "dragon_wings_shading_back_black" 0 "dragon_wings_shading_back_black" 0 }
