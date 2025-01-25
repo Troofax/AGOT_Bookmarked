@@ -6,4 +6,4 @@ tags={
 }
 name="1AGOT Bookmarked"
 picture="thumbnail.png"
-supported_version="1.13.*.*"
+supported_version="1.14.*.*"
