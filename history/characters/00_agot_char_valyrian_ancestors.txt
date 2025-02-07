@@ -2995,7 +2995,7 @@ Targaryen_65 = {
 	father = Targaryen_60
 	mother = Hightower_97 # Alicent Hightower
 
-	trait = education_stewardship_3
+	trait = education_martial_2
 	trait = beauty_good_1
 	trait = rowdy
 
@@ -4187,6 +4187,7 @@ Targaryen_82 = {
 			every_living_character = {
 				limit = {
 					location.province_owner.primary_title = { any_de_jure_top_liege = { has_title = title:e_the_iron_throne } }
+					NOT = { THIS = ROOT }
 				}
 				if = {
 					limit = {
@@ -10050,6 +10051,7 @@ Velaryon_rs_70 = {
 Velaryon_90 = {
 	name = Gael # married Annos Celtigar
 	dynasty = dynn_Velaryon
+	dna = Velaryon_90
 	female = yes
 
 	religion = the_seven_main
