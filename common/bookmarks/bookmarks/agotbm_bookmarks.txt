@@ -343,7 +343,7 @@ agot_bm_8129 = {
 
 	# Aegon II Targaryen (The Iron Throne) ID: Targaryen_65
 	character = {
-		name = "bookmark_129_aegon_targaryen"
+		name = "bookmark_129_aegon_targaryen_2"
 		dynasty = dynn_Targaryen
 		dynasty_splendor_level = 4
 		type = male

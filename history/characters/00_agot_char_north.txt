@@ -534,6 +534,11 @@ Stark_6 = {
 					target = character:Baratheon_5 # Joffrey Baratheon
 				}
 			}
+			create_alliance = {
+				target = character:Frey_1 # Walder Frey
+				allied_through_owner = character:Stark_6 # Robb Stark
+				allied_through_target = character:Frey_82 # Roslin Frey
+			}
 		}
 	}
 	8299.1.9 = { give_nickname = nick_the_young_wolf }
@@ -544,11 +549,7 @@ Stark_6 = {
 					character:Tully_1 = { is_alive = yes }
 					character:Tully_4 = { is_alive = yes }
 				}
-				create_alliance = { # Grandfather-Grandchild
-					target = character:Tully_1 # Hoster Tully
-					allied_through_owner = ROOT
-					allied_through_target = character:Tully_4 # Catelyn Tully
-				}
+				create_alliance = character:Tully_1 # Hoster Tully
 			}
 			agot_set_as_loyalist_history_effect = { LOYALIST = character:Manderly_6 } # Wyman Manderly
 			agot_set_as_loyalist_history_effect = { LOYALIST = character:Umber_8 } # Greatjon Umber
@@ -869,7 +870,6 @@ Stark_8 = {
 Stark_Dummy_8 = {
 	name = Dummy # Sansa Stark continued here
 	female = yes
-	#dna = "cghhgcgbdbu"
 
 	martial = 2
 	diplomacy = 6
@@ -994,7 +994,6 @@ Stark_9 = {
 Stark_Dummy_9 = {
 	name = Dummy # Arya Stark continued here
 	female = yes
-	#dna = "dghgarcgech"
 
 	martial = 6
 	diplomacy = 2
@@ -1128,7 +1127,6 @@ Stark_10 = {
 }
 Stark_Dummy_10 = {
 	name = Dummy # Brandon Stark continued here
-	#dna = "dagig0afcb0"
 
 	religion = old_gods_south
 	culture = northman
@@ -1251,7 +1249,6 @@ Stark_11 = {
 }
 Stark_Dummy_11 = {
 	name = Dummy
-	#dna = "bcgmg0bfcb0"
 
 	religion = old_gods_south
 	culture = northman
@@ -1508,7 +1505,6 @@ Stark_hh_6 = {
 }
 Stark_hh_7 = {
 	name = Tomard # Canon, AKA: Fat Tom
-	#dna = "obcoruqnzfy"
 
 	martial = 5
 	intrigue = 2
@@ -4105,7 +4101,6 @@ Karstark_rs_1 = {
 Karstark_5 = {
 	name = Cregan # Canon
 	dynasty_house = house_Karstark
-	#dna = "bljka0kbba0"
 
 	prowess = 6
 
@@ -5850,8 +5845,6 @@ Cassel_3 = {
 	dynasty_house = house_Cassel
 	dna = Cassel_3
 
-	#dna = "ceddd0gccf0"
-
 	martial = 8
 	diplomacy = 8
 	intrigue = 5
@@ -6081,8 +6074,6 @@ Cassel_5 = {
 	dynasty_house = house_Cassel
 	female = yes
 	dna = Cassel_5
-
-	#dna = "ccfdd0icdc0"
 
 	religion = old_gods_south
 	culture = northman
@@ -7921,7 +7912,6 @@ Mormont_4 = {
 	dynasty = dynn_Mormont
 	female = yes
 	dna = Mormont_4
-	#dna = "clfddfgbgaz"
 
 	martial = 7
 	diplomacy = 5
@@ -8066,7 +8056,6 @@ Mormont_5 = {
 	dynasty = dynn_Mormont
 	female = yes
 	dna = Mormont_5
-	#dna = "ckjebujbgaj"
 
 	martial = 7
 	diplomacy = 6
@@ -9940,6 +9929,7 @@ Dustin_47 = {
 }
 Dustin_rs_7 = {
 	name = Sarra
+	dna = Dustin_rs_7
 	female = yes
 
 	religion = old_gods_south
@@ -9999,6 +9989,7 @@ Dustin_1 = {
 Dustin_2 = {
 	name = Jon
 	dynasty = dynn_Dustin
+	dna = Dustin_2
 
 	religion = old_gods_south
 	culture = barrowman
@@ -10018,6 +10009,7 @@ Dustin_2 = {
 }
 Dustin_rs_1 = {
 	name = Alys
+	dna = Dustin_rs_1
 	female = yes
 
 	religion = old_gods_south
@@ -10027,6 +10019,7 @@ Dustin_rs_1 = {
 }
 Dustin_3 = {
 	name = Alaric
+	dna = Dustin_3
 	dynasty = dynn_Dustin
 
 	religion = old_gods_south
@@ -10048,6 +10041,7 @@ Dustin_3 = {
 Dustin_4 = {
 	name = Barbrey
 	dynasty = dynn_Dustin
+	dna = Dustin_4
 	female = yes
 
 	religion = old_gods_south
@@ -10068,6 +10062,7 @@ Dustin_4 = {
 Dustin_5 = {
 	name = Denys
 	dynasty = dynn_Dustin
+	dna = Dustin_5
 
 	religion = old_gods_south
 	culture = barrowman
@@ -10112,6 +10107,7 @@ Dustin_6 = {
 }
 Dustin_rs_2 = {
 	name = Berena
+	dna = Dustin_rs_2
 	female = yes
 
 	religion = old_gods_south
@@ -10139,6 +10135,7 @@ Dustin_7 = {
 }
 Dustin_rs_3 = {
 	name = Maege
+	dna = Dustin_rs_3
 	female = yes
 
 	religion = old_gods_south
@@ -10150,6 +10147,7 @@ Dustin_rs_3 = {
 Dustin_8 = {
 	name = Bethany
 	dynasty = dynn_Dustin
+	dna = Dustin_8
 	female = yes
 
 	religion = old_gods_south
@@ -10170,6 +10168,7 @@ Dustin_8 = {
 Dustin_9 = {
 	name = Roderick
 	dynasty = dynn_Dustin
+	dna = Dustin_9
 
 	prowess = 12
 
@@ -10193,6 +10192,7 @@ Dustin_9 = {
 Dustin_10 = {
 	name = Cregan
 	dynasty = dynn_Dustin
+	dna = Dustin_10
 
 	religion = old_gods_south
 	culture = barrowman
@@ -10212,6 +10212,7 @@ Dustin_10 = {
 Dustin_11 = {
 	name = Robyn
 	dynasty = dynn_Dustin
+	dna = Dustin_11
 	female = yes
 
 	religion = old_gods_south

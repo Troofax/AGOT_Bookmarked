@@ -1475,7 +1475,7 @@ d_deerfield = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8175.1.1 = {
+	8174.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1530,7 +1530,7 @@ c_antlers = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8175.1.1 = {
+	8174.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1645,7 +1645,7 @@ c_point_square = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8175.1.1 = {
+	8174.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1701,7 +1701,7 @@ c_tuskford = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8175.1.1 = {
+	8174.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {

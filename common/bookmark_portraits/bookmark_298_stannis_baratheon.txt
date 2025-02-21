@@ -2,7 +2,7 @@
 # History database id:Baratheon_3
 bookmark_298_stannis_baratheon={
 	type=male
-	id=65173
+	id=68128
 	random_seed=4220886731
 	age=0.340000
 	genes={ 		hair_color={ 0 244 0 244 }
@@ -97,8 +97,8 @@ bookmark_298_stannis_baratheon={
  		expression_other={ "nose_wrinkles_01" 0 "nose_wrinkles_01" 134 }
  		complexion={ "complexion_9" 0 "complexion_8" 72 }
  		gene_height={ "normal_height" 150 "normal_height" 150 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 131 "body_fat_head_fat_full" 131 }
- 		gene_bs_body_shape={ "body_shape_average" 142 "body_shape_average" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 124 "body_fat_head_fat_full" 131 }
+ 		gene_bs_body_shape={ "body_shape_average" 66 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 22 "bust_shape_3_full" 165 }
  		gene_age={ "old_2" 218 "old_1" 25 }
  		gene_eyebrows_shape={ "avg_spacing_high_thickness" 255 "avg_spacing_low_thickness" 201 }
@@ -182,9 +182,9 @@ bookmark_298_stannis_baratheon={
  		gene_bs_eye_shape={ "eye_shape_01" 0 "eye_shape_01" 0 }
  		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "vanilla_hair_aging" 0 "vanilla_hair_aging" 0 }
- 		beards={ "no_beard" 0 "no_beard" 0 }
+ 		beards={ "all_beards" 59 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 29 "all_hairstyles" 0 }
+ 		hairstyles={ "all_hairstyles" 176 "all_hairstyles" 0 }
  		legwear={ "agot_all_legwear" 14 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
@@ -196,7 +196,7 @@ bookmark_298_stannis_baratheon={
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		clothes={ "agot_house_clothes" 180 "most_clothes" 0 }
- 		headgear={ "agot_crowns" 65 "no_headgear" 0 }
+ 		headgear={ "agot_crowns" 47 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 3942081117 3942081117 }
@@ -214,6 +214,10 @@ bookmark_298_stannis_baratheon={
 		}
  {
 			hash=681013727
+			invert=no
+		}
+ {
+			hash=2793867254
 			invert=no
 		}
  {

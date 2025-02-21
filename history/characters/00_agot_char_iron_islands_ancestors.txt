@@ -3508,6 +3508,7 @@ Greyjoy_66 = {
 Greyjoy_67 = {
 	name = Donel
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_67
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -3652,6 +3653,7 @@ Greyjoy_72 = {
 }
 Greyjoy_rs_72 = {
 	name = Yara
+	dna = Greyjoy_rs_72
 	female = yes
 
 	religion = drowned_god_main
@@ -3664,6 +3666,7 @@ Greyjoy_rs_72 = {
 Greyjoy_73 = {
 	name = Rodrik
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_73
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -3689,6 +3692,7 @@ Greyjoy_rs_73 = {
 Greyjoy_74 = {
 	name = Dalton
 	dynasty = dynn_Greyjoy
+	dna = Greyjoy_74
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -3702,6 +3706,7 @@ Greyjoy_74 = {
 }
 Greyjoy_rs_74 = {
 	name = Falyse
+	dna = Greyjoy_rs_74
 	female = yes
 
 	religion = drowned_god_main
@@ -40376,6 +40381,7 @@ Orkwood_24 = {
 Orkwood_25 = {
 	name = Aeron # a lord
 	dynasty = dynn_Orkwood
+	dna = Orkwood_25
 
 	religion = drowned_god_main
 	culture = ironborn
@@ -40388,6 +40394,7 @@ Orkwood_25 = {
 Orkwood_26 = {
 	name = Yara
 	dynasty = dynn_Orkwood
+	dna = Orkwood_26
 	female = yes
 
 	religion = drowned_god_main
@@ -40402,6 +40409,7 @@ Orkwood_26 = {
 Orkwood_27 = {
 	name = Lorren # a lord
 	dynasty = dynn_Orkwood
+	dna = Orkwood_27
 
 	religion = drowned_god_main
 	culture = ironborn

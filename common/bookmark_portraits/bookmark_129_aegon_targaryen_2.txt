@@ -1,8 +1,8 @@
 # Auto generated file, do not edit manually. Created using console command dump_bookmark_portraits
 # History database id:Targaryen_65
-bookmark_129_aegon_targaryen={
+bookmark_129_aegon_targaryen_2={
 	type=male
-	id=41119
+	id=43105
 	random_seed=3888723332
 	age=0.220000
 	genes={ 		hair_color={ 8 66 8 66 }
@@ -97,8 +97,8 @@ bookmark_129_aegon_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 0 "cheek_wrinkles_both_01" 0 }
  		complexion={ "complexion_11" 109 "complexion_11" 109 }
  		gene_height={ "normal_height" 120 "normal_height" 135 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 148 "body_fat_head_fat_low" 147 }
- 		gene_bs_body_shape={ "body_shape_hourglass_full" 76 "body_shape_hourglass_full" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 150 "body_fat_head_fat_low" 147 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_full" 60 "body_shape_hourglass_full" 0 }
  		gene_bs_bust={ "bust_clothes" 57 "bust_shape_3_half" 91 }
  		gene_age={ "old_beauty_1" 28 "old_beauty_1" 28 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 178 "avg_spacing_lower_thickness" 178 }
@@ -109,7 +109,7 @@ bookmark_129_aegon_targaryen={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "bloodshot_eyes" 127 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 32 "normal_eyelashes" 0 }
+ 		eyelashes_accessory={ "dark_eyelashes" 23 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -183,10 +183,10 @@ bookmark_129_aegon_targaryen={
  		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "late_hair_aging" 124 "late_hair_aging" 124 }
  		gene_beauty_details={ "beauty_details" 25 "beauty_details" 0 }
- 		gene_drunkard={ "drunkard" 215 "drunkard" 0 }
+ 		gene_drunkard={ "drunkard" 193 "drunkard" 0 }
  		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "agot_coa_cloaks_ep2" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 74 "all_hairstyles" 0 }
+ 		hairstyles={ "all_hairstyles" 68 "all_hairstyles" 0 }
  		legwear={ "western_common_legwear" 82 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
@@ -198,9 +198,8 @@ bookmark_129_aegon_targaryen={
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		clothes={ "valyrian_war_nobility_clothes" 83 "most_clothes" 0 }
- 		headgear={ "agot_crowns" 2 "no_headgear" 0 }
+ 		headgear={ "agot_crowns" 1 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
-		props_right={ "agot_artifact_weapon_blackfyre" 255 "no_props" 0 }
  }
 	entity={ 979141817 979141817 }
 	tags={ {

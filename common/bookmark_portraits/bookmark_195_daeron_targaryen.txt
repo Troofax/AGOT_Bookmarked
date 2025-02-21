@@ -2,7 +2,7 @@
 # History database id:Targaryen_91
 bookmark_195_daeron_targaryen={
 	type=male
-	id=48791
+	id=51170
 	random_seed=1301798007
 	age=0.410000
 	genes={ 		hair_color={ 22 16 22 16 }
@@ -97,8 +97,8 @@ bookmark_195_daeron_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 113 "cheek_wrinkles_both_01" 113 }
  		complexion={ "complexion_41" 0 "complexion_41" 0 }
  		gene_height={ "normal_height" 142 "normal_height" 142 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 130 }
- 		gene_bs_body_shape={ "body_shape_average" 116 "body_shape_average" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 135 "body_fat_head_fat_low" 130 }
+ 		gene_bs_body_shape={ "body_shape_average" 91 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 85 "bust_shape_1_half" 107 }
  		gene_age={ "old_2" 255 "old_2" 255 }
  		gene_eyebrows_shape={ "far_spacing_lower_thickness" 160 "far_spacing_lower_thickness" 160 }
@@ -184,7 +184,7 @@ bookmark_195_daeron_targaryen={
  		hair_aging={ "vanilla_hair_aging" 38 "vanilla_hair_aging" 38 }
  		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "sp3_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 155 "all_hairstyles" 0 }
+ 		hairstyles={ "all_hairstyles" 149 "all_hairstyles" 0 }
  		legwear={ "agot_trousers" 169 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
@@ -196,7 +196,7 @@ bookmark_195_daeron_targaryen={
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		clothes={ "agot_royal_doublet_clothes" 126 "most_clothes" 0 }
- 		headgear={ "agot_crowns" 29 "no_headgear" 0 }
+ 		headgear={ "agot_crowns" 19 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 3942081117 3942081117 }

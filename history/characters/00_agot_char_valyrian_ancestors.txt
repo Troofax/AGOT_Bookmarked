@@ -1559,7 +1559,7 @@ Targaryen_41 = {
 	8054.12.1 = { trait = dragonrider } # Balerion (C)
 	8056.3.14 = {
 		trait = ill # Valyrian mysterious sickness
-		death = { death_reason = death_ill }
+		death = { death_reason = death_fire_worms }
 	}
 }
 Targaryen_42 = {
@@ -3534,6 +3534,7 @@ Targaryen_75 = {
 	8114.11.29 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		add_character_flag = do_not_assign_strong_seed
 		effect = {
 			set_real_father = character:Strong_30 # Harwin Strong
 			clear_traits = yes # Character dead as a child
@@ -3546,10 +3547,6 @@ Targaryen_75 = {
 			add_trait = disputed_heritage
 			add_trait = charming
 		}
-		# AGOT Bookmarked Added
-		add_character_flag = do_not_assign_strong_seed
-		make_trait_inactive = brown_eyes
-		make_trait_inactive = brown_hair
 	}
 	8118.11.1 = {
 		effect = {
@@ -3606,6 +3603,7 @@ Targaryen_76 = {
 	8115.10.3 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		add_character_flag = do_not_assign_strong_seed
 		effect = {
 			set_real_father = character:Strong_30 # Harwin Strong
 			clear_traits = yes # Character dead as a child
@@ -3615,10 +3613,6 @@ Targaryen_76 = {
 			add_trait = disputed_heritage
 			add_trait = curious
 		}
-		# AGOT Bookmarked Added
-		add_character_flag = do_not_assign_strong_seed
-		make_trait_inactive = brown_eyes
-		make_trait_inactive = brown_hair
 	}
 	8118.11.1 = {
 		effect = {
@@ -3674,6 +3668,7 @@ Targaryen_77 = {
 	8117.3.14 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		add_character_flag = do_not_assign_strong_seed
 		effect = {
 			set_real_father = character:Strong_30 # Harwin Strong
 			clear_traits = yes # Character dead as a child
@@ -3682,10 +3677,6 @@ Targaryen_77 = {
 			add_trait = disputed_heritage
 			add_trait = rowdy
 		}
-		# AGOT Bookmarked Added
-		add_character_flag = do_not_assign_strong_seed
-		make_trait_inactive = brown_eyes
-		make_trait_inactive = brown_hair
 	}
 	8123.4.1 = {
 		trait = brave
@@ -3779,7 +3770,10 @@ Targaryen_78 = {
 				limit = { character:Palehair_1 = { is_alive = yes } }
 				set_relation_friend = character:Palehair_1 # Gaemon Palehair
 			}
-			give_nickname = nick_the_younger # to differentiate him from Aegon the Elder
+			if = {
+				limit = { has_any_nickname = no }
+				give_nickname = nick_the_younger # to differentiate him from Aegon the Elder
+			}
 		}
 	}
 	8131.7.7 = {
@@ -4318,7 +4312,6 @@ Targaryen_84 = {
 		add_character_flag = canon_status_canon
 	}
 	8163.9.2 = {
-		trait = septon # Septa
 		effect = {
 			title:e_the_iron_throne.holder = { # Baelor Targaryen
 				imprison = {
@@ -4333,6 +4326,7 @@ Targaryen_84 = {
 		}
 	}
 	8171.1.1 = {
+		trait = septon # Septa
 		effect = { release_from_prison = yes }
 	}
 	8203.1.1 = { death = yes }
@@ -5414,7 +5408,10 @@ Targaryen_95 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_tyrosh }
 			if = {
-				limit = { character:Blackfyre_5 ?= { is_alive = yes } }
+				limit = {
+					exists = character:Blackfyre_5
+					character:Blackfyre_5 = { is_alive = yes }
+				}
 				add_opinion = {
 					target = character:Blackfyre_5
 					modifier = agot_unworthy_opinion
@@ -5499,6 +5496,7 @@ Targaryen_96 = {
 	stewardship = 13
 	prowess = 5
 	fertility = 0.1
+	health = 9
 
 	religion = old_gods_south
 	culture = high_valyrian
@@ -6378,6 +6376,39 @@ Targaryen_122 = {
 	}
 	8220.1.1 = { add_spouse = Blackwood_87 } # Betha Blackwood
 	8233.6.1 = { give_nickname = nick_the_unlikely }
+	8237.1.1 = {
+		effect = {
+			if = {
+				limit = { game_start_date < 8239.2.1 }
+				create_alliance = {
+					target = character:Baratheon_71 # Lyonel Baratheon
+					allied_through_owner = character:Targaryen_126 # Duncan Targaryen
+					allied_through_target = character:Baratheon_76 # Cassandra Baratheon 
+				}
+			}
+			if = {
+				limit = { game_start_date < 8240.1.1 }
+				create_alliance = {
+					target = character:Tully_66 # Steffon Tully
+					allied_through_owner = character:Targaryen_127 # Jaehaerys II Targaryen
+					allied_through_target = character:Tully_68 # Celia Tully 
+				}
+				create_alliance = {
+					target = character:Tyrell_1 # Garlan Tyrell
+					allied_through_owner = character:Targaryen_128 # Shaera Targaryen
+					allied_through_target = character:Tyrell_4 # Luthor Tyrell 
+				}
+			}
+			if = {
+				limit = { game_start_date < 8246.1.1 }
+				create_alliance = {
+					target = character:Redwyne_43 # Runceford Redwyne
+					allied_through_owner = character:Targaryen_129 # Daeron Targaryen
+					allied_through_target = character:Redwyne_2 # Olenna Redwyne 
+				}
+			}
+		}
+	}
 	8239.1.1 = { # Marriage of Duncan and Jenny
 		effect = {
 			if = {
@@ -6385,6 +6416,18 @@ Targaryen_122 = {
 				reverse_add_opinion = {
 					target = character:Baratheon_71 # Lyonel Baratheon
 					modifier = broke_betrothal_opinion
+				}
+			}
+		}
+	}
+	8239.2.1 = {
+		effect = {
+			if = {
+				limit = { character:Baratheon_71 = { is_alive = yes } }
+				create_alliance = {
+					target = character:Baratheon_71 # Lyonel Baratheon
+					allied_through_owner = character:Targaryen_130 # Rhaelle Targaryen
+					allied_through_target = character:Baratheon_75 # Ormund Baratheon 
 				}
 			}
 		}
@@ -6520,6 +6563,7 @@ Targaryen_125 = {
 			add_pressed_claim = title:c_kings_landing
 		}
 	}
+	8248.1.1 = { trait = knight }
 	8259.6.1 = {
 		death = {
 			death_reason = death_burned # Tragedy at Summerhall
@@ -6650,7 +6694,7 @@ Targaryen_127 = {
 			agot_safe_betrothal_history_effect = { TARGET = character:Tully_68 } # Celia Tully
 		}
 	}
-	8239.1.1 = {
+	8239.1.15 = {
 		effect = {
 			if = {
 				limit = { character:Targaryen_128 = { is_alive = yes } }
@@ -9181,6 +9225,7 @@ Velaryon_35 = {
 Velaryon_37 = {
 	name = Vaemond # Canon, protested succession of Driftmark
 	dynasty = dynn_Velaryon
+	dna = Velaryon_37
 
 	martial = 10
 	prowess = 6
@@ -9600,6 +9645,7 @@ Velaryon_44 = {
 Velaryon_47 = {
 	name = Daemion # Canon, took his claim to council and reconciled with Alyn
 	dynasty = dynn_Velaryon
+	dna = Velaryon_47
 
 	martial = 7
 
@@ -9622,12 +9668,16 @@ Velaryon_47 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	8112.1.1 = { add_spouse = Hayford_14 } # Ermesande Hayford
+	8112.1.1 = { 
+		add_spouse = Hayford_14 # Ermesande Hayford
+		trait = knight 
+	}
 	8153.1.1 = { death = yes }
 }
 Velaryon_50 = {
 	name = Daeron # Canon, took his claim to council and reconciled with Alyn
 	dynasty = dynn_Velaryon
+	dna = Velaryon_50
 
 	martial = 7
 
@@ -9650,6 +9700,7 @@ Velaryon_50 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
+	8118.1.1 = { trait = knight }
 	8125.1.1 = { add_spouse = Harte_20 } # Hazel Harte
 	8133.6.1 = { death = { death_reason = death_battle } } # Stepstones
 }
@@ -9772,7 +9823,7 @@ Velaryon_51 = {
 	name = Laena # Canon
 	dynasty = dynn_Velaryon
 	female = yes
-	#dna = Velaryon_51
+	dna = Velaryon_51
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -9791,6 +9842,7 @@ Velaryon_51 = {
 Velaryon_52 = {
 	name = Corlys # a lord
 	dynasty = dynn_Velaryon
+	dna = Velaryon_52
 
 	religion = the_seven_main
 	culture = high_valyrian
@@ -10640,6 +10692,7 @@ Celtigar_24 = { # Dance of the Dragons
 		add_character_flag = canon_status_canon
 	}
 	8101.4.1 = { add_spouse = Bar_Emmon_21 } # Alarra Bar Emmon
+	8102.1.1 = { trait = knight }
 	8130.10.8 = {
 		trait = eunuch_1
 		death = {
@@ -10696,6 +10749,7 @@ Celtigar_26 = { # Conquest of Dorne
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
+	8123.1.1 = { trait = knight }
 	8130.1.1 = { add_spouse = Connington_33 } # Caronne Connington
 	8167.1.1 = {
 		death = { death_reason = death_accident }
@@ -11067,6 +11121,7 @@ Celtigar_40 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
 	}
+	8178.1.1 = { trait = knight }
 	8207.1.1 = { death = yes }
 }
 ### Issue of Amrell
@@ -13640,7 +13695,6 @@ Kingsguard_6 = {
 Kingsguard_7 = {
 	name = Donnel # Canon
 	# of Duskendale
-	#dna = "bacekziedcz"
 
 	prowess = 12
 

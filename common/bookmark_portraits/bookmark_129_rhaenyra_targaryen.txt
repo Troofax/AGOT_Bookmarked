@@ -2,7 +2,7 @@
 # History database id:Targaryen_63
 bookmark_129_rhaenyra_targaryen={
 	type=female
-	id=39552
+	id=41449
 	random_seed=4243651233
 	age=0.320000
 	genes={ 		hair_color={ 56 10 56 10 }
@@ -97,8 +97,8 @@ bookmark_129_rhaenyra_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 77 "cheek_wrinkles_both_01" 77 }
  		complexion={ "complexion_beauty_1" 0 "complexion_46" 0 }
  		gene_height={ "normal_height" 129 "normal_height" 129 }
- 		gene_bs_body_type={ "body_fat_head_fat_medium" 138 "body_fat_head_fat_medium" 141 }
- 		gene_bs_body_shape={ "body_shape_hourglass_full" 81 "body_shape_hourglass_full" 25 }
+ 		gene_bs_body_type={ "body_fat_head_fat_medium" 133 "body_fat_head_fat_medium" 141 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_full" 60 "body_shape_hourglass_full" 25 }
  		gene_bs_bust={ "bust_clothes" 153 "bust_shape_3_half" 192 }
  		gene_age={ "old_beauty_1" 3 "old_beauty_1" 3 }
  		gene_eyebrows_shape={ "far_spacing_lower_thickness" 179 "far_spacing_lower_thickness" 179 }
@@ -109,7 +109,7 @@ bookmark_129_rhaenyra_targaryen={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 26 "normal_eyelashes" 0 }
+ 		eyelashes_accessory={ "dark_eyelashes" 18 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -185,35 +185,37 @@ bookmark_129_rhaenyra_targaryen={
  		gene_beauty_details={ "beauty_details" 25 "beauty_details" 0 }
  		beards={ "ep2_beards" 53 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 248 "all_hairstyles" 0 }
+ 		hairstyles={ "all_hairstyles" 245 "all_hairstyles" 0 }
  		legwear={ "western_common_legwear" 79 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_shrink_agot={ "shrink_bodice" 255 "shrink_bodice" 0 }
  		gene_agot_special_bust_cleavage={ "shrink_cleavage" 255 "shrink_cleavage" 0 }
  		gene_agot_special_bust_meereen={ "shrink_meereen" 255 "shrink_meereen" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
+ 		gene_agot_special_bust_cleavage_02={ "base_cleavage" 255 "base_cleavage" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
- 		cosmetics_eyeshadow={ "eyeshadow_none" 255 "eyeshadow_none" 0 }
+ 		cosmetics_eyeliner={ "byzantine_1" 255 "eyeliner_none" 0 }
+ 		cosmetics_eyeshadow={ "byzantine_1" 191 "eyeshadow_none" 0 }
  		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
- 		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
- 		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
- 		clothes={ "sp2_western_royalty_clothes" 255 "most_clothes" 0 }
- 		headgear={ "no_headgear" 167 "no_headgear" 0 }
+ 		cosmetics_blush={ "byzantine_1" 0 "blush_none" 0 }
+ 		cosmetics_lipcolor={ "byzantine_1" 191 "lipcolor_none" 0 }
+ 		clothes={ "agot_historic_characters" 167 "most_clothes" 0 }
+ 		headgear={ "agot_crowns" 9 "no_headgear" 0 }
+ 		special_accessories_jewelry={ "female_westerosi_necklace_03_rhaenyra" 255 "no_jewelry" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 979141817 979141817 }
 	tags={ {
-			hash=2125534279
+			hash=2307069394
 			invert=no
 		}
  {
-			hash=2670398845
+			hash=1500963499
 			invert=no
 		}
  {
-			hash=681013727
+			hash=1563190100
 			invert=no
 		}
  }

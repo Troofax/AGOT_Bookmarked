@@ -2,7 +2,7 @@
 # History database id:Targaryen_110
 bookmark_195_maekar_targaryen={
 	type=male
-	id=51645
+	id=54225
 	random_seed=196456032
 	age=0.210000
 	genes={ 		hair_color={ 22 16 22 16 }
@@ -97,8 +97,8 @@ bookmark_195_maekar_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 80 "cheek_wrinkles_both_01" 80 }
  		complexion={ "complexion_45" 60 "complexion_45" 60 }
  		gene_height={ "normal_height" 142 "normal_height" 142 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 128 "body_fat_head_fat_low" 130 }
- 		gene_bs_body_shape={ "body_shape_hourglass_full" 255 "body_shape_hourglass_full" 160 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 130 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_full" 251 "body_shape_hourglass_full" 160 }
  		gene_bs_bust={ "bust_clothes" 85 "bust_shape_1_half" 107 }
  		gene_age={ "old_2" 255 "old_2" 255 }
  		gene_eyebrows_shape={ "avg_spacing_high_thickness" 214 "avg_spacing_high_thickness" 214 }
@@ -182,9 +182,9 @@ bookmark_195_maekar_targaryen={
  		gene_bs_eye_shape={ "eye_shape_01" 159 "eye_shape_01" 159 }
  		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "vanilla_hair_aging" 0 "vanilla_hair_aging" 0 }
- 		beards={ "all_beards" 169 "no_beard" 0 }
+ 		beards={ "all_beards" 164 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 74 "all_hairstyles" 0 }
+ 		hairstyles={ "all_hairstyles" 68 "all_hairstyles" 0 }
  		legwear={ "western_common_legwear" 133 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
