@@ -20,8 +20,8 @@ Certain aspects of the bookmark scenarios(if they didn't already exist in the ba
 # Installation instructions:
 
 1. Extract the archive into your `C:\Users\username\Documents\Paradox Interactive\Crusader Kings III\mod` folder.
-2. Open the now extracted `AGOT_Bookmarked-release` folder to find the `AGOT_Bookmarked.mod` file.
-3. Copy & paste the `AGOT_Bookmarked.mod` file into the `C:\Users\username\Documents\Paradox Interactive\Crusader Kings III\mod` folder so that you have both a folder named `AGOT_Bookmarked-release` and the `AGOT_Bookmarked.mod` together.
+2. Open the now extracted `AGOT_Bookmarked-(version_number)` folder to find the `AGOT_Bookmarked.mod` file.
+3. Copy & paste the `AGOT_Bookmarked.mod` file into the `C:\Users\username\Documents\Paradox Interactive\Crusader Kings III\mod` folder so that you have both a folder named `AGOT_Bookmarked-(version_number)` and the `AGOT_Bookmarked.mod` together.
 4. Start the launcher and add AGOT Bookmarked to a playset, select that playset and start the game.
 
 # Other download links:
