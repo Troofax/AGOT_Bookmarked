@@ -1,4 +1,61 @@
-﻿###################
+﻿challenge_character_rowan = {
+	start_date = 8106.4.18
+	character = {
+		name = "bookmark_106_mathis_rowan"
+		dynasty = dynn_Rowan
+		dynasty_splendor_level = 3
+		type = male
+		birth = 8060.1.1
+		title = k_goldengrove
+		religion = the_seven_main
+		culture = reachman
+		government = lp_feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Rowan_23
+
+		animation = personality_rational
+	}
+}
+
+challenge_character_blackwood = {
+	start_date = 8239.1.11
+	character = {
+		name = "bookmark_239_bennifer_blackwood"
+		dynasty = dynn_Blackwood
+		dynasty_splendor_level = 3
+		type = male
+		birth = 8188.1.1
+		title = d_blackwood_vale
+		religion = old_gods_south
+		culture = riverlander
+		government = lp_feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Blackwood_83
+
+		animation = marshal
+	}
+}
+
+challenge_character_forrester = {
+	start_date = 8284.6.2
+	character = {
+		name = "bookmark_284_gregor_forrester"
+		dynasty = dynn_Forrester
+		dynasty_splendor_level = 2
+		type = male
+		birth = 8250.1.1
+		title = c_ironrath
+		religion = old_gods_south
+		culture = wolfswood_clansman
+		government = lp_feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Forrester_2
+
+		animation = personality_honorable
+	}
+}
+
+###################
 ############ Eggs #
 ###################
 
