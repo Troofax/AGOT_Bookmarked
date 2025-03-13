@@ -6,7 +6,7 @@
 		dynasty_splendor_level = 3
 		type = male
 		birth = 8060.1.1
-		title = k_goldengrove
+		title = d_goldengrove
 		religion = the_seven_main
 		culture = reachman
 		government = lp_feudal_government
