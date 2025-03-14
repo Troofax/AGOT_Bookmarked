@@ -2,7 +2,7 @@
 # History database id:Lannister_6
 bookmark_299_cersei_lannister={
 	type=female
-	id=68603
+	id=68605
 	random_seed=2377142401
 	age=0.330000
 	genes={ 		hair_color={ 201 10 201 10 }
@@ -97,8 +97,8 @@ bookmark_299_cersei_lannister={
  		expression_other={ "nose_wrinkles_01" 124 "cheek_wrinkles_both_01" 85 }
  		complexion={ "complexion_9" 0 "complexion_12" 255 }
  		gene_height={ "normal_height" 126 "normal_height" 138 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 126 }
- 		gene_bs_body_shape={ "body_shape_average" 64 "body_shape_average" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 123 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_shape={ "body_shape_average" 39 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 154 "bust_shape_1_full" 156 }
  		gene_age={ "old_1" 148 "old_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 212 "avg_spacing_lower_thickness" 212 }
@@ -109,7 +109,7 @@ bookmark_299_cersei_lannister={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 5 "normal_eyelashes" 0 }
+ 		eyelashes_accessory={ "dark_eyelashes" 32 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -194,6 +194,8 @@ bookmark_299_cersei_lannister={
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_agot_special_bust_cleavage_02={ "base_cleavage" 255 "base_cleavage" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
+ 		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
+ 		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
  		cosmetics_eyeshadow={ "european_1" 191 "eyeshadow_none" 0 }

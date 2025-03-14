@@ -2,7 +2,7 @@
 # History database id:Targaryen_66
 bookmark_129_helaena_targaryen={
 	type=female
-	id=43459
+	id=43461
 	random_seed=1192577605
 	age=0.200000
 	genes={ 		hair_color={ 21 16 21 16 }
@@ -97,7 +97,7 @@ bookmark_129_helaena_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 51 "cheek_wrinkles_both_01" 0 }
  		complexion={ "complexion_10" 109 "complexion_10" 109 }
  		gene_height={ "normal_height" 134 "normal_height" 134 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 158 "body_fat_head_fat_low" 155 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 160 "body_fat_head_fat_low" 155 }
  		gene_bs_body_shape={ "body_shape_hourglass_full" 55 "body_shape_hourglass_full" 0 }
  		gene_bs_bust={ "bust_clothes" 109 "bust_shape_1_half" 116 }
  		gene_age={ "old_beauty_1" 28 "old_beauty_1" 28 }
@@ -193,6 +193,8 @@ bookmark_129_helaena_targaryen={
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_agot_special_bust_cleavage_02={ "base_cleavage" 255 "base_cleavage" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
+ 		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
+ 		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
  		cosmetics_eyeshadow={ "eyeshadow_none" 255 "eyeshadow_none" 0 }

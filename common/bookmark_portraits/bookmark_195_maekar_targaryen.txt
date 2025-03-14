@@ -2,7 +2,7 @@
 # History database id:Targaryen_110
 bookmark_195_maekar_targaryen={
 	type=male
-	id=54225
+	id=54227
 	random_seed=196456032
 	age=0.210000
 	genes={ 		hair_color={ 22 16 22 16 }
@@ -91,15 +91,15 @@ bookmark_195_maekar_targaryen={
  		face_detail_nose_ridge_def={ "nose_ridge_def_neg" 30 "nose_ridge_def_neg" 30 }
  		face_detail_nose_tip_def={ "nose_tip_def_02" 168 "nose_tip_def_02" 168 }
  		face_detail_temple_def={ "temple_def" 146 "temple_def" 146 }
- 		expression_brow_wrinkles={ "brow_wrinkles_03" 25 "brow_wrinkles_03" 25 }
- 		expression_eye_wrinkles={ "eye_wrinkles_03" 135 "eye_wrinkles_03" 128 }
+ 		expression_brow_wrinkles={ "brow_wrinkles_03" 194 "brow_wrinkles_03" 25 }
+ 		expression_eye_wrinkles={ "eye_wrinkles_03" 128 "eye_wrinkles_03" 128 }
  		expression_forehead_wrinkles={ "forehead_wrinkles_02" 142 "forehead_wrinkles_02" 142 }
  		expression_other={ "cheek_wrinkles_both_01" 80 "cheek_wrinkles_both_01" 80 }
  		complexion={ "complexion_45" 60 "complexion_45" 60 }
  		gene_height={ "normal_height" 142 "normal_height" 142 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 130 }
- 		gene_bs_body_shape={ "body_shape_hourglass_full" 251 "body_shape_hourglass_full" 160 }
- 		gene_bs_bust={ "bust_clothes" 85 "bust_shape_1_half" 107 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 130 "body_fat_head_fat_low" 130 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_full" 255 "body_shape_hourglass_full" 160 }
+ 		gene_bs_bust={ "bust_clothes" 68 "bust_shape_1_half" 107 }
  		gene_age={ "old_2" 255 "old_2" 255 }
  		gene_eyebrows_shape={ "avg_spacing_high_thickness" 214 "avg_spacing_high_thickness" 214 }
  		gene_eyebrows_fullness={ "layer_2_high_thickness" 203 "layer_2_high_thickness" 203 }
@@ -182,25 +182,30 @@ bookmark_195_maekar_targaryen={
  		gene_bs_eye_shape={ "eye_shape_01" 159 "eye_shape_01" 159 }
  		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "vanilla_hair_aging" 0 "vanilla_hair_aging" 0 }
- 		beards={ "all_beards" 164 "no_beard" 0 }
+ 		beards={ "all_beards" 154 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 68 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 133 "all_legwear" 0 }
+ 		hairstyles={ "all_hairstyles" 62 "all_hairstyles" 0 }
+ 		legwear={ "valyrian_war_legwear" 35 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
+ 		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
+ 		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
  		cosmetics_eyeshadow={ "eyeshadow_none" 255 "eyeshadow_none" 0 }
  		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
- 		clothes={ "ep2_western_era3_high_nobility_clothes" 241 "most_clothes" 0 }
+ 		clothes={ "valyrian_war_nobility_clothes" 27 "most_clothes" 0 }
  		headgear={ "no_headgear" 117 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
- 		props_right={ "ep1_artisan_sword_byzantine" 255 "no_props" 0 }
+		props_right={ "ep1_artisan_sword_byzantine" 255 "no_props" 0 }
+ 		gene_additive_animations_fat={ "fat_additive" 0 "fat_additive" 0 }
+ 		gene_additive_animations_dwarf={ "dwarf_additive" 0 "dwarf_additive" 0 }
+ 		gene_retargeting_fix={ "female_prop" 0 "female_prop" 0 }
  }
-	entity={ 979141817 979141817 }
+	entity={ 912297863 3775113363 }
 	tags={ {
 			hash=2125534279
 			invert=no
@@ -222,7 +227,7 @@ bookmark_195_maekar_targaryen={
 			invert=no
 		}
  {
-			hash=1945936758
+			hash=4068197184
 			invert=no
 		}
  }

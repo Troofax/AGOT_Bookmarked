@@ -2,7 +2,7 @@
 # History database id:Frey_1
 bookmark_298_walder_frey={
 	type=male
-	id=58821
+	id=58823
 	random_seed=3035448379
 	age=0.850000
 	genes={ 		hair_color={ 25 138 25 138 }
@@ -97,8 +97,8 @@ bookmark_298_walder_frey={
  		expression_other={ "cheek_wrinkles_both_01" 114 "cheek_wrinkles_both_01" 114 }
  		complexion={ "complexion_5" 0 "complexion_5" 0 }
  		gene_height={ "normal_height" 119 "normal_height" 119 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 111 "body_fat_head_fat_low" 123 }
- 		gene_bs_body_shape={ "body_shape_pear_full" 70 "body_shape_pear_full" 51 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 106 "body_fat_head_fat_low" 123 }
+ 		gene_bs_body_shape={ "body_shape_pear_full" 57 "body_shape_pear_full" 51 }
  		gene_bs_bust={ "bust_clothes" 103 "bust_shape_1_half" 129 }
  		gene_age={ "old_4" 0 "old_4" 0 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 139 "avg_spacing_lower_thickness" 139 }
@@ -184,11 +184,13 @@ bookmark_298_walder_frey={
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		beards={ "ep2_beards" 35 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 146 "all_hairstyles" 0 }
+ 		hairstyles={ "all_hairstyles" 140 "all_hairstyles" 0 }
  		legwear={ "agot_boots_legwear" 193 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
+ 		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
+ 		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
  		cosmetics_eyeshadow={ "eyeshadow_none" 255 "eyeshadow_none" 0 }
@@ -218,6 +220,10 @@ bookmark_298_walder_frey={
 		}
  {
 			hash=2793867254
+			invert=no
+		}
+ {
+			hash=75156179
 			invert=no
 		}
  }

@@ -2,7 +2,7 @@
 # History database id:Greyjoy_6
 bookmark_300_euron_greyjoy={
 	type=male
-	id=66793
+	id=66795
 	random_seed=240050020
 	age=0.420000
 	genes={ 		hair_color={ 11 242 11 242 }
@@ -97,8 +97,8 @@ bookmark_300_euron_greyjoy={
  		expression_other={ "nose_wrinkles_01" 80 "nose_wrinkles_01" 80 }
  		complexion={ "complexion_beauty_1" 54 "complexion_13" 54 }
  		gene_height={ "normal_height" 146 "normal_height" 146 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 117 "body_fat_head_fat_low" 123 }
- 		gene_bs_body_shape={ "body_shape_average" 79 "body_shape_rectangle_half" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 124 "body_fat_head_fat_low" 123 }
+ 		gene_bs_body_shape={ "body_shape_average" 86 "body_shape_rectangle_half" 0 }
  		gene_bs_bust={ "bust_clothes" 48 "bust_default" 77 }
  		gene_age={ "old_beauty_1" 191 "old_4" 191 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 248 "far_spacing_low_thickness" 248 }
@@ -182,13 +182,15 @@ bookmark_300_euron_greyjoy={
  		gene_bs_eye_shape={ "eye_shape_01" 11 "eye_shape_01" 11 }
  		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
- 		special_headgear_eye_patch={ "eye_patch" 127 "eye_patch" 0 }
+ 		special_headgear_spectacles={ "eye_patch" 127 "spectacles" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 113 "all_hairstyles" 0 }
+ 		hairstyles={ "all_hairstyles" 107 "all_hairstyles" 0 }
  		legwear={ "western_common_legwear" 203 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
+ 		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
+ 		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		heterochromia_eye={ "heterochromia_eye_black2" 255 "heterochromia_eye_random" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
@@ -213,6 +215,10 @@ bookmark_300_euron_greyjoy={
 		}
  {
 			hash=2793867254
+			invert=no
+		}
+ {
+			hash=75156179
 			invert=no
 		}
  {

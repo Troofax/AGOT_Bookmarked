@@ -2,7 +2,7 @@
 # History database id:Lannister_1
 bookmark_298_tywin_lannister={
 	type=male
-	id=63980
+	id=63982
 	random_seed=1963653823
 	age=0.560000
 	genes={ 		hair_color={ 214 14 198 28 }
@@ -97,8 +97,8 @@ bookmark_298_tywin_lannister={
  		expression_other={ "cheek_wrinkles_both_01" 26 "cheek_wrinkles_both_01" 85 }
  		complexion={ "complexion_10" 0 "complexion_12" 0 }
  		gene_height={ "normal_height" 149 "normal_height" 126 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 124 "body_fat_head_fat_low" 126 }
- 		gene_bs_body_shape={ "body_shape_average" 95 "body_shape_average" 71 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 131 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_shape={ "body_shape_average" 89 "body_shape_average" 71 }
  		gene_bs_bust={ "bust_clothes" 25 "bust_shape_1_half" 154 }
  		gene_age={ "old_4" 148 "old_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 147 "avg_spacing_lower_thickness" 212 }
@@ -189,13 +189,15 @@ bookmark_298_tywin_lannister={
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
+ 		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
+ 		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
  		cosmetics_eyeshadow={ "eyeshadow_none" 255 "eyeshadow_none" 0 }
  		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
- 		clothes={ "agot_house_clothes" 107 "most_clothes" 0 }
+ 		clothes={ "agot_house_clothes" 94 "most_clothes" 0 }
  		headgear={ "no_headgear" 50 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
