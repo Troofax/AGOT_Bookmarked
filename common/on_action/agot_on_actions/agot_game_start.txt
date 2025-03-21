@@ -8,8 +8,6 @@ on_game_start = {
 		agot_vassal_contracts
 		agot_crown_authority
 		agot_house_feuds
-		# Moonclans yeet
-		# agot_province_neighbors
 		agot_ruins
 		agot_artifacts_sell
 	}
@@ -24,6 +22,37 @@ agot_on_game_start = {
 		}
 
 		##### General setup start #####
+
+		# Magic Level set up
+		if = {
+			limit = {
+				any_living_dragon = {
+					count = 0
+				}
+			}
+			set_global_variable = {
+				name = magic_level
+				value = 0 # no magic
+			}
+		}
+		else_if = {
+			limit = {
+				any_living_dragon = {
+					count < 10
+				}
+			}
+
+			set_global_variable = {
+				name = magic_level
+				value = 1 # some magic
+			}
+		}
+		else = {
+			set_global_variable = {
+				name = magic_level
+				value = 2 # more magic
+			}
+		}
 
 		# House Customizer Dummies Spawn
 		agot_house_customizer_spawn_dummies_effect = yes
@@ -813,6 +842,9 @@ agot_on_game_start = {
 
 			#Set Birthplace - Human
 			agot_birthplace_game_start = yes
+
+			#language setup
+			agot_learn_appropiate_languages = yes
 
 			#Prevent the change of the Dynasty names on gaining land
 			if = {
@@ -1993,37 +2025,6 @@ agot_on_game_start = {
 		}
 		agot_seed_archmaesters_effect = yes
 		agot_seed_maesters_effect = yes
-
-		# Magic Level set up
-		if = {
-			limit = {
-				any_living_dragon = {
-					count = 0
-				}
-			}
-			set_global_variable = {
-				name = magic_level
-				value = 0 # no magic
-			}
-		}
-		else_if = {
-			limit = {
-				any_living_dragon = {
-					count < 10
-				}
-			}
-
-			set_global_variable = {
-				name = magic_level
-				value = 1 # some magic
-			}
-		}
-		else = {
-			set_global_variable = {
-				name = magic_level
-				value = 2 # more magic
-			}
-		}
 
 		## Gold Cloak Setup
 		if = {
@@ -3226,7 +3227,6 @@ agot_on_game_start_after_lobby = {
 		}
 	}
 	events = {
-		agot_house_maintenance.0001
 		agot_adventurers_events.0001
 		# agot_nightswatch_maintenance.0001 # Removes female courtiers
 	}

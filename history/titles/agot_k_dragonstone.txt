@@ -292,9 +292,7 @@ c_dragonstone = {
 		holder = Targaryen_13
 		effect = {
 			if = {
-				limit = {
-					any_living_dragon = { exists = yes }
-				}
+				limit = { agot_dragon_population_alive = yes }
 				set_variable = has_dragonkeeper_order
 			}
 			if = {
