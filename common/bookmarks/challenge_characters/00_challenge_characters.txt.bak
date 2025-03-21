@@ -161,10 +161,6 @@ challenge_character_egg5 = {
 	}
 }
 
-###################
-############ Fish #
-###################
-
 # Steffon Tully: Tully_66
 challenge_character_ls_tully = {
 	start_date = 8239.1.11
@@ -224,10 +220,6 @@ challenge_character_codd = {
 		animation = personality_callous
 	}
 }
-
-####################
-############ Trees #
-####################
 
 challenge_character_rowan = {
 	start_date = 8106.4.18
