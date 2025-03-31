@@ -16,7 +16,7 @@ agot_bm_7899 = {
 	group = agot_bm_group_agotbm
 
 	weight = {
-		value = 0
+		value = 8
 	}
 
 	# Arrec Durrandon ID: Durrandon_81
@@ -102,6 +102,7 @@ agot_bm_7899 = {
 		}
 
 	}
+
 	# Garland VI Gardener ID: Gardener_83
 	character = {
 		name = "bookmark_99_garland_gardener"
@@ -143,6 +144,7 @@ agot_bm_7899 = {
 		}
 
 	}
+
 	# Tommen II Lannister ID: Lannister_62
 	character = {
 		name = "bookmark_99_tommen_lannister"
@@ -183,6 +185,7 @@ agot_bm_7899 = {
 			animation = personality_callous
 		}
 	}
+
 	# Aurion Varezys ID: Varezys_1
 	character = {
 		name = "bookmark_99_aurion_varezys"
@@ -213,7 +216,9 @@ agot_bm_7998 = {
 	is_playable = yes
 	group = agot_bm_group_agotbm # Aegon's Conquest
 
-	weight = { value = 50 }
+	weight = {
+		value = 6
+	}
 
 	# Aegon I Targaryen (Dragonstone) ID: Targaryen_27
 	character = {
@@ -339,7 +344,9 @@ agot_bm_8129 = {
 	is_playable = yes
 	group = agot_bm_group_agotbm # Dance of the Dragons
 
-	weight = { value = 35 }
+	weight = {
+		value = 7
+	}
 
 	# Aegon II Targaryen (The Iron Throne) ID: Targaryen_65
 	character = {
@@ -440,7 +447,7 @@ agot_bm_8195 = {
 	is_playable = yes
 	group = agot_bm_group_agotbm # The Blackfyre Rebellion
 
-	weight = { value = 25 }
+	weight = { value = 5 }
 
 	# Daeron Targaryen (The Iron Throne) ID: Targaryen_81
 	character = {
@@ -545,7 +552,7 @@ agot_bm_8298 = {
 	is_playable = yes
 	group = agot_bm_group_agotbm # War of the Five Kings
 
-	weight = { value = 40 }
+	weight = { value = 4 }
 
 	# Robb Stark (The North) ID: Stark_6
 	character = {
@@ -753,7 +760,7 @@ agot_bm_8299 = {
 	is_playable = yes
 	group = agot_bm_group_agotbm # A Clash of Kings
 
-	weight = { value = 30 }
+	weight = { value = 3 }
 
 	# Robb Stark (The North) ID: Stark_6
 	character = {
@@ -948,7 +955,7 @@ agot_bm_8300 = {
 	is_playable = yes
 	group = agot_bm_group_agotbm # A Clash of Kings
 
-	weight = { value = 20 }
+	weight = { value = 1 }
 
 	# Tommen Baratheon (The Iron Throne) ID: Baratheon_7
 	character = {
