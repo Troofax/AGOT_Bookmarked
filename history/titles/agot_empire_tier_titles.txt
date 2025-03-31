@@ -155,6 +155,9 @@ e_the_iron_throne = {
 			# }
 		# }
 	}
+	8300.8.17 = {
+		holder = Scaly_1
+	}
 }
 
 # The REAL Seven Kingdoms

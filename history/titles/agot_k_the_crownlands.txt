@@ -18,6 +18,12 @@
 	8048.3.7 = {
 		holder = Targaryen_35
 	}
+	8082.1.1 = {
+		holder = Cargyll_11
+	}
+	8082.1.2 = {
+		holder = Targaryen_35
+	}
 	8092.6.8 = {
 		succession_laws = { male_only_law } # Baelon declared heir
 	}
@@ -73,6 +79,9 @@
 	}
 	8300.1.1 = {
 		holder = Baratheon_7
+	}
+	8300.8.17 = {
+		holder = Scaly_1
 	}
 }
 d_kings_landing = {
@@ -153,6 +162,9 @@ d_kings_landing = {
 	}
 	8300.1.1 = {
 		holder = Baratheon_7
+	}
+	8300.8.17 = {
+		holder = Scaly_1
 	}
 }
 c_kings_landing = {
@@ -326,6 +338,9 @@ c_kings_landing = {
 	}
 	8300.1.1 = {
 		holder = Baratheon_7
+	}
+	8300.8.17 = {
+		holder = Scaly_1
 	}
 }
 b_goldguard_heights = {
@@ -3483,6 +3498,12 @@ d_rosby = {
 	8059.2.1 = {
 		holder = Rosby_15
 	}
+	8082.1.1 = {
+		holder = Cargyll_11
+	}
+	8082.1.2 = {
+		holder = Rosby_15
+	}
 	8123.1.1 = {
 		holder = Rosby_16
 	}
@@ -3773,6 +3794,12 @@ c_strongmead = {
 		holder = Cargyll_8
 	}
 	8073.1.1 = {
+		holder = Cargyll_9
+	}
+	8082.1.1 = {
+		holder = Cargyll_11
+	}
+	8082.1.2 = {
 		holder = Cargyll_9
 	}
 	8099.1.1 = {
