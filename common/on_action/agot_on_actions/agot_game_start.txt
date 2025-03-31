@@ -2406,6 +2406,11 @@ agot_on_game_start_after_lobby = {
 
 				agot_8299_3_3_acok_scenario_setup = yes
 			}
+			if = { # manage 8300.3.1 A Feast for Crows scenario
+				limit = { game_start_date = 8300.3.1 }
+
+				agot_8300_3_1_affc_scenario_setup = yes
+			}
 			if = { # manage 8129.4.1 The Dance of Dragons scenario
 				limit = { game_start_date = 8129.4.1 }
 

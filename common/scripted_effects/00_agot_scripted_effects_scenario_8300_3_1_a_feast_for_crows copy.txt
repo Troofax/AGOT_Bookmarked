@@ -1,0 +1,201 @@
+﻿###################
+# AGOT Bookmarked #
+###################
+
+#############################
+# A Feast for Crows Scenario #
+#############################
+agot_8300_3_1_affc_scenario_setup = {
+	title:e_the_iron_throne.holder = { save_scope_as = historical_setup }
+
+	# Titles
+	agotbm_8300_vassal_assignment = yes
+
+	### CANON CHILDREN STORY CYCLE SETUP ###
+	agot_canon_children_setup_story_cycles_effect = yes
+	######
+}
+
+agotbm_8300_vassal_assignment = {
+	# Vale
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:k_the_vale.holder = {
+		change_liege = {
+			liege = title:e_the_iron_throne.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Stormlands
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:k_the_stormlands.holder = {
+		change_liege = {
+			liege = title:e_the_iron_throne.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Dorne
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:k_dorne.holder = {
+		change_liege = {
+			liege = title:e_the_iron_throne.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Dragonstone
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:k_dragonstone.holder = {
+		change_liege = {
+			liege = title:e_the_iron_throne.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Massey's Hook (Crownlands)
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:d_masseys_hook.holder = {
+		change_liege = {
+			liege = title:k_the_crownlands.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Wendwater Forest (Crownlands)
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:d_wendwater_forest.holder = {
+		change_liege = {
+			liege = title:k_the_crownlands.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Fieldlands (Westerlands)
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:d_the_fieldlands.holder = {
+		change_liege = {
+			liege = title:k_the_westerlands.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Tarth (Stormlands)
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:d_tarth.holder = {
+		change_liege = {
+			liege = title:k_the_stormlands.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Estermont Isles (Stormlands)
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:d_estermont_isles.holder = {
+		change_liege = {
+			liege = title:k_the_stormlands.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Blueburn (Reach)
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:d_blueburn.holder = {
+		change_liege = {
+			liege = title:k_the_reach.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Brightwater (Reach)
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:d_brightwater.holder = {
+		change_liege = {
+			liege = title:k_the_reach.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Westmarch (Reach)
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:d_the_westmarch.holder = {
+		change_liege = {
+			liege = title:k_the_reach.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
+	# Arbor (Reach)
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:d_the_arbor.holder = {
+		change_liege = {
+			liege = title:k_the_reach.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+}
