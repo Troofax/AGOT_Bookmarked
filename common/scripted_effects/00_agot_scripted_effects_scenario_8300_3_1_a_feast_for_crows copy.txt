@@ -17,6 +17,20 @@ agot_8300_3_1_affc_scenario_setup = {
 }
 
 agotbm_8300_vassal_assignment = {
+	# Riverlands
+	create_title_and_vassal_change = {
+		type = swear_fealty
+		save_scope_as = flty
+		add_claim_on_loss = no
+	}
+	title:k_the_riverlands.holder = {
+		change_liege = {
+			liege = title:e_the_iron_throne.holder
+			change = scope:flty
+		}
+	}
+	resolve_title_and_vassal_change = scope:flty
+
 	# Vale
 	create_title_and_vassal_change = {
 		type = swear_fealty
