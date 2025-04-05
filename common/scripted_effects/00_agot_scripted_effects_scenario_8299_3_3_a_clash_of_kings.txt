@@ -107,8 +107,10 @@ agot_8299_3_3_acok_scenario_setup = {
 		title:k_the_stormlands.holder = {
 			save_scope_as = mw_rebel_leader_stannis
 			agot_mw_scenario_rebel_setup = { # Set up story
-				MODE = flag:mw_internal
-				REBEL_MAY_VASSALIZE = no
+				SOURCE = flag:mw_internal
+				MODE = flag:mw_regular
+				REALM_BREAK_UP = flag:yes
+				REBEL_MAY_VASSALIZE = flag:no
 				HELD_TITLE = title:k_the_stormlands
 				CASUS_BELLI = claim_cb
 				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
@@ -152,8 +154,10 @@ agot_8299_3_3_acok_scenario_setup = {
 		title:k_the_north.holder = {
 			save_scope_as = mw_rebel_leader_robb
 			agot_mw_scenario_rebel_setup = { # Set up story
-				MODE = flag:mw_internal
-				REBEL_MAY_VASSALIZE = no
+				SOURCE = flag:mw_internal
+				MODE = flag:mw_regular
+				REALM_BREAK_UP = flag:yes
+				REBEL_MAY_VASSALIZE = flag:no
 				HELD_TITLE = title:k_the_north
 				CASUS_BELLI = rv_revenge_war
 				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
@@ -185,8 +189,10 @@ agot_8299_3_3_acok_scenario_setup = {
 		title:k_the_iron_islands.holder = {
 			save_scope_as = mw_rebel_leader_balon
 			agot_mw_scenario_rebel_setup = { # Set up story
-				MODE = flag:mw_internal
-				REBEL_MAY_VASSALIZE = no
+				SOURCE = flag:mw_internal
+				MODE = flag:mw_regular
+				REALM_BREAK_UP = flag:yes
+				REBEL_MAY_VASSALIZE = flag:no
 				HELD_TITLE = title:k_the_iron_islands
 				CASUS_BELLI = agot_independence_war
 				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
@@ -214,7 +220,11 @@ agot_8299_3_3_acok_scenario_setup = {
 	}
 
 	### SET UP CROWN
-	agot_mw_scenario_crown_setup = { HELD_TITLE = title:e_the_iron_throne }
+	agot_mw_scenario_crown_setup = {
+		MODE = flag:mw_regular
+		REALM_BREAK_UP = flag:yes
+		HELD_TITLE = title:e_the_iron_throne
+	}
 	# ADD LOYALISTS #
 	# Add vassal loyalists
 	title:e_the_iron_throne.holder = {

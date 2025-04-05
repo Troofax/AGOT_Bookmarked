@@ -68,22 +68,11 @@ e_the_iron_throne = {
 	8048.6.2 = {
 		#law = investiture_law_1 # AGOT TODO
 	}
-	# 8060.1.1 = { # AGOT TODO
-		# law = first_night_0 #First Night abolished
-	# }
-	8092.6.8 = {
-		succession_laws = { male_only_law } # Baelon declared heir
-	}
 	8103.10.3 = {
 		holder = Targaryen_60		#Viserys I
-		succession_laws = { male_preference_law }
-	}
-	8105.9.10 = {
-		succession_laws = { equal_law } # Rhaenyra declared heir
 	}
 	8129.3.3 = {
 		holder = Targaryen_65	 # Aegon II
-		succession_laws = { male_preference_law }
 	}
 	8131.1.14 = {
 		holder = Targaryen_78	 # Aegon III the Unlucky
@@ -94,10 +83,10 @@ e_the_iron_throne = {
 	8161.6.9 = {
 		holder = Targaryen_82		#Baelor I the Blessed
 	}
-	8171.1.1 = {
+	8171.1.20 = {
 		holder = Targaryen_79		#Viserys II
 	}
-	8172.1.1 = {
+	8172.3.28 = {
 		holder = Targaryen_88	 # Aegon IV the Unworthy
 	}
 	8184.1.1 = {
@@ -155,9 +144,6 @@ e_the_iron_throne = {
 			# }
 		# }
 	}
-	8300.8.17 = {
-		holder = Scaly_1
-	}
 }
 
 # The REAL Seven Kingdoms
@@ -166,7 +152,6 @@ e_dorne = {
 	#House Martell
 	7300.1.1 = { # About 700 years before the events of the books Nymeria landed.
 		#law = centralization_2 # AGOT TODO
-		#law = first_night_1 # AGOT TODO
 		#law = slavery_0 # AGOT TODO
 		#law = investiture_law_2 # AGOT TODO
 		holder = Martell_23 #Mors
@@ -234,14 +219,17 @@ e_dorne = {
 	7835.1.1 = {
 		holder = Martell_47 # Nymeria (nc)
 	}
-	7875.1.1 = {
-		holder = Martell_49 # Perros (nc)
+	7839.1.1 = {
+		holder = Martell_49
 	}
-	7895.1.1 = {
-		holder = Martell_50 # Trystane (nc)
+	7857.1.1 = {
+		holder = Martell_96
 	}
-	7920.1.1 = {
-		holder = Martell_51 # Ryon (nc)
+	7903.1.1 = {
+		holder = Martell_99
+	}
+	7935.1.1 = {
+		holder = Martell_51
 	}
 	7940.1.1 = {
 		holder = Martell_53 # Meria (C)
@@ -299,7 +287,6 @@ e_dorne = {
 	}
 	8187.6.1 = { # Dorne joins the Seven Kingdoms via marriage
 		holder = 0
-		#law = first_night_0 # AGOT TODO
 	}
 }
 
@@ -309,7 +296,6 @@ e_the_iron_islands = {
 		#law = succ_kingsmoot_elective # AGOT TODO
 		#law = centralization_1 # AGOT TODO
 		#law = slavery_3 # AGOT TODO
-		#law = first_night_1 # AGOT TODO
 	}
 	1001.1.1 = {
 		holder = 0
@@ -507,9 +493,6 @@ e_the_iron_islands = {
 	7999.8.15 = {
 		holder = 0
 	}
-	8060.1.1 = {
-		#law = first_night_0 #First Night abolished
-	}
 	8289.1.1 = {
 		holder = Greyjoy_5 #Balon
 	}
@@ -531,7 +514,6 @@ e_the_north = {
 	20.1.1 = {
 		holder = Stark_12 # Brandon the Builder (C)
 		#law = centralization_2 # AGOT TODO
-		#law = first_night_1 # AGOT TODO
 		#law = slavery_0 # AGOT TODO
 	}
 	110.1.1 = {
@@ -645,9 +627,6 @@ e_the_north = {
 	8000.12.1 = {
 		holder = 0
 	}
-	# 8060.1.1 = {
-		# law = first_night_0 #First Night abolished # AGOT TODO
-	# }
 	# AGOT Bookmarked Modified
 	# 8299.1.16 = {
 		# holder = Stark_6 #Robb Stark
@@ -678,7 +657,6 @@ e_the_reach = {
 	3.1.1 = {
 		#law = centralization_1 # AGOT TODO
 		#law = investiture_law_2 # AGOT TODO
-		#law = first_night_1 # AGOT TODO
 	}
 	20.1.1 = {
 		holder = Gardener_1 # Garth I
@@ -908,9 +886,6 @@ e_the_reach = {
 	8048.6.2 = {
 		#law = investiture_law_1 # AGOT TODO
 	}
-	8060.1.1 = {
-		#law = first_night_0 #First Night abolished # AGOT TODO
-	}
 }
 
 e_the_stormlands = {
@@ -918,7 +893,6 @@ e_the_stormlands = {
 		holder = Durrandon_1 #Durran Godsgrief
 		#law = centralization_1 # AGOT TODO
 		#law = investiture_law_2 # AGOT TODO
-		#law = first_night_1 # AGOT TODO
 		#law = slavery_0 # AGOT TODO
 	}
 	90.1.1 = {
@@ -1164,9 +1138,6 @@ e_the_stormlands = {
 	8048.6.2 = {
 		#law = investiture_law_1 # AGOT TODO
 	}
-	8060.1.1 = {
-		#law = first_night_0 #First Night abolished # AGOT TODO
-	}
 	8239.6.1 = {
 		holder = Baratheon_71 # Lyonel Baratheon (C) Took the mantle of the Storm Kings after a broken betrothal.
 	}
@@ -1178,7 +1149,6 @@ e_the_stormlands = {
 e_the_riverlands = {
 	900.1.1 = {
 		#law = investiture_law_2 # AGOT TODO
-		#law = first_night_1 # AGOT TODO
 		#law = slavery_0 # AGOT TODO
 	}
 
@@ -1396,21 +1366,17 @@ e_the_riverlands = {
 	}
 	7999.8.15 = {
 		holder = 0
-		succession_laws = { male_preference_law }
+		remove_succession_laws = yes
 	}
 	8048.6.2 = {
 		#law = investiture_law_1 # AGOT TODO
 	}
-	# 8060.1.1 = {
-		# law = first_night_0 #First Night abolished # AGOT TODO
-	# }
 }
 
 e_the_vale = {
 	2500.1.1 = {
 		#law = centralization_1 # AGOT TODO
 		#law = investiture_law_2 # AGOT TODO
-		#law = first_night_1 # AGOT TODO
 		#law = slavery_0 # AGOT TODO
 	}
 
@@ -1513,16 +1479,12 @@ e_the_vale = {
 	8048.6.2 = {
 		#law = investiture_law_1 # AGOT TODO
 	}
-	8060.1.1 = {
-		#law = first_night_0 #First Night abolished # AGOT TODO
-	}
 }
 
 e_the_westerlands = {
 	3.1.1 = {
 		#law = centralization_1 # AGOT TODO
 		#law = investiture_law_2 # AGOT TODO
-		#law = first_night_1 # AGOT TODO
 		#law = slavery_0 # AGOT TODO
 	}
 	198.1.1 = {
@@ -1649,9 +1611,6 @@ e_the_westerlands = {
 	8048.6.2 = {
 		#law = investiture_law_1 # AGOT TODO
 	}
-	8060.1.1 = {
-		#law = first_night_0 #First Night abolished # AGOT TODO
-	}
 }
 
 e_the_wall = {
@@ -1712,8 +1671,7 @@ e_three_daughters = {
 	# Myrish Term
 	8096.1.1 = {
 		holder = Mallar_82
-		succession_laws = { equal_law magisterial_limited_succession_law }
-		government = free_city_government
+		government = administrative_government
 		effect = {
 			holder ?= {
 				set_realm_capital = title:c_the_spar
@@ -1795,7 +1753,7 @@ e_blackfyre_rebellion = {
 	8195.3.7 = {
 		holder = Targaryen_94 # Daemon I Blackfyre
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		holder = 0
 	}
 	# Second Blackfyre Rebellion
@@ -1813,7 +1771,7 @@ e_blackfyre_rebellion = {
 		holder = 0
 	}
 	# Fourth Blackfyre Rebellion
-	8236.1.1 = {
+	8236.2.13 = {
 		holder = Blackfyre_11 # Daemon III Blackfyre
 	}
 	8236.3.2 = {

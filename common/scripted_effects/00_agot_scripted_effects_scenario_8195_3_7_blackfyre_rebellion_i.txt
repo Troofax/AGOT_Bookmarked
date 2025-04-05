@@ -57,8 +57,10 @@ agot_8195_3_7_br_i_scenario_setup = {
 	title:d_the_blackwater_rush.holder = {
 		save_scope_as = mw_rebel_leader_daemon
 		agot_mw_scenario_rebel_setup = {
-			MODE = flag:mw_internal
-			REBEL_MAY_VASSALIZE = no
+			SOURCE = flag:mw_internal
+			MODE = flag:mw_regular
+			REALM_BREAK_UP = flag:yes
+			REBEL_MAY_VASSALIZE = flag:no
 			HELD_TITLE = title:d_the_blackwater_rush
 			CASUS_BELLI = claim_cb
 			PRE_WAR_LIEGE = title:e_the_iron_throne.holder
@@ -179,7 +181,11 @@ agot_8195_3_7_br_i_scenario_setup = {
 	######
 
 	### SET UP CROWN
-	agot_mw_scenario_crown_setup = { HELD_TITLE = title:e_the_iron_throne }
+	agot_mw_scenario_crown_setup = {
+		MODE = flag:mw_regular
+		REALM_BREAK_UP = flag:yes
+		HELD_TITLE = title:e_the_iron_throne
+	}
 
 	### ADD LOYALISTS ###
 	title:e_the_iron_throne.holder = {

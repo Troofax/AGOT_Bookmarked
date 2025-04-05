@@ -50,7 +50,7 @@
 	8195.3.7 = {
 		liege = 0
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		liege = e_the_iron_throne
 	}
 	8206.1.1 = {
@@ -1065,7 +1065,7 @@ c_scatterchain = {
 	5087.1.1 = {
 		liege = d_hardstone_hills
 	}
-	7904.1.1 = {
+	7881.1.1 = {
 		holder = Freeborn_14
 	}
 	7909.1.1 = {
@@ -1183,7 +1183,7 @@ c_seastone_isles = {
 	5087.1.1 = {
 		liege = d_hardstone_hills
 	}
-	7905.1.1 = {
+	7891.1.1 = {
 		holder = Tidewood_18
 	}
 	7911.1.1 = {

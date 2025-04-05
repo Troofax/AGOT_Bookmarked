@@ -73,16 +73,12 @@
 	}
 	8092.6.8 = {
 		holder = Targaryen_46
-		succession_laws = { male_only_law }
 	}
 	8101.2.3 = {
 		holder = Targaryen_35
 	}
 	8101.12.3 = {
 		holder = Targaryen_60
-	}
-	8103.10.3 = {
-		succession_laws = { male_preference_law }
 	}
 	8105.9.10 = {
 		holder = Targaryen_63
@@ -99,10 +95,10 @@
 	8161.6.9 = {
 		holder = Targaryen_82
 	}
-	8171.1.1 = {
+	8171.1.20 = {
 		holder = Targaryen_88
 	}
-	8172.1.1 = {
+	8172.3.28 = {
 		holder = Targaryen_91
 	}
 	8184.1.1 = {
@@ -211,16 +207,12 @@ d_dragonstone = {
 	}
 	8092.6.8 = {
 		holder = Targaryen_46
-		succession_laws = { male_only_law }
 	}
 	8101.2.3 = {
 		holder = Targaryen_35
 	}
 	8101.12.3 = {
 		holder = Targaryen_60
-	}
-	8103.10.3 = {
-		succession_laws = { male_preference_law }
 	}
 	8105.9.10 = {
 		holder = Targaryen_63
@@ -237,10 +229,10 @@ d_dragonstone = {
 	8161.6.9 = {
 		holder = Targaryen_82
 	}
-	8171.1.1 = {
+	8171.1.20 = {
 		holder = Targaryen_88
 	}
-	8172.1.1 = {
+	8172.3.28 = {
 		holder = Targaryen_91
 	}
 	8184.1.1 = {
@@ -385,10 +377,10 @@ c_dragonstone = {
 	8161.6.9 = {
 		holder = Targaryen_82
 	}
-	8171.1.1 = {
+	8171.1.20 = {
 		holder = Targaryen_88
 	}
-	8172.1.1 = {
+	8172.3.28 = {
 		holder = Targaryen_91
 	}
 	8184.1.1 = {
@@ -488,7 +480,7 @@ c_longbar = {
 	8186.1.1 = {
 		holder = Bullock_11
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		holder = Bullock_12
 	}
 	8244.1.1 = {
@@ -535,10 +527,10 @@ d_driftmark = {
 	8132.3.6 = {
 		holder = Velaryon_44
 	}
-	8175.1.1 = {
+	8175.8.29 = {
 		holder = Velaryon_52
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		holder = Velaryon_54
 	}
 	8235.1.1 = {
@@ -597,10 +589,10 @@ c_driftmark = {
 	8132.3.6 = {
 		holder = Velaryon_44
 	}
-	8175.1.1 = {
+	8175.8.29 = {
 		holder = Velaryon_52
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		holder = Velaryon_54
 	}
 	8235.1.1 = {
@@ -699,10 +691,10 @@ c_high_tide = {
 	8132.3.6 = {
 		holder = Velaryon_44
 	}
-	8175.1.1 = {
+	8175.8.29 = {
 		holder = Velaryon_52
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		holder = Velaryon_54
 	}
 	8235.1.1 = {
@@ -734,10 +726,10 @@ b_blackhull = {
 	8133.6.1 = {
 		holder = Velaryon_44
 	}
-	8175.1.1 = {
+	8175.8.29 = {
 		holder = Velaryon_52
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		holder = Velaryon_54
 	}
 	8235.1.1 = {

@@ -10,7 +10,7 @@ Targaryen_13_A = {
 	dynasty = dynn_Targaryen
 	# AGOT TODO dna = agot_dna_Targaryen_13_A
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	7821.1.1 = { birth = yes }
@@ -26,7 +26,7 @@ Targaryen_13_B = {
 	female = yes
 	# AGOT TODO dna = agot_dna_Targaryen_13_B
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	7825.1.1 = { birth = yes }
@@ -43,7 +43,7 @@ Targaryen_13_C = {
 	father = Targaryen_13_A
 	mother = Targaryen_13_B
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	7842.4.23 = {
@@ -63,7 +63,7 @@ Targaryen_13 = {
 	intrigue = 5
 	stewardship = 2
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_13_A
@@ -95,7 +95,7 @@ Targaryen_13_D = {
 	father = Targaryen_13_A
 	mother = Targaryen_13_B
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	7851.1.1 = {
@@ -114,7 +114,7 @@ Targaryen_14 = {
 
 	prowess = 10
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_13
@@ -145,7 +145,7 @@ Targaryen_15 = {
 	female = yes
 	dna = Targaryen_15
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_13
@@ -178,7 +178,7 @@ Targaryen_13_E = {
 	female = yes
 	# AGOT TODO dna = agot_dna_Targaryen_13_E
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_13_D
@@ -195,7 +195,7 @@ Targaryen_16 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_16
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_14
@@ -215,7 +215,7 @@ Targaryen_17 = {
 	female = yes
 	dna = Targaryen_17
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_14
@@ -234,7 +234,7 @@ Targaryen_18 = {
 	female = yes
 	# AGOT TODO dna = agot_dna_Targaryen_18
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_14
@@ -253,7 +253,7 @@ Targaryen_19 = {
 	dynasty = dynn_Targaryen
 	# AGOT TODO dna = agot_dna_Targaryen_19
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_16
@@ -273,7 +273,7 @@ Targaryen_20 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_20
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_16
@@ -295,7 +295,7 @@ Targaryen_21 = {
 	female = yes
 	dna = Targaryen_21
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_16
@@ -313,7 +313,7 @@ Targaryen_22 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_22
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_20
@@ -337,7 +337,7 @@ Targaryen_23 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_23
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_20
@@ -378,7 +378,7 @@ Targaryen_24 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_24
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_20
@@ -398,7 +398,7 @@ Targaryen_138 = {
 	female = yes
 	dna = Targaryen_138
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_20
@@ -416,7 +416,7 @@ Targaryen_25 = {
 	female = yes
 	dna = Targaryen_25
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_20
@@ -443,7 +443,7 @@ Targaryen_137 = {
 	female = yes
 	dna = Targaryen_137
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_22
@@ -472,7 +472,7 @@ Targaryen_137 = {
 		effect = { remove_trait = depressed_1 }
 		trait = poet
 	}
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	7994.1.1 = { death = yes }
 }
 ### Issue of Daemion
@@ -481,7 +481,7 @@ Targaryen_26 = {
 	dynasty = dynn_Targaryen
 	# AGOT TODO dna = agot_dna_Targaryen_26
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_24
@@ -508,7 +508,7 @@ Targaryen_28 = {
 	stewardship = 2
 	prowess = 12
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_26
@@ -535,10 +535,10 @@ Targaryen_28 = {
 		trait = lifestyle_mystic
 	}
 	# AGOT Bookmarked Disabled
-	# 7992.1.1 = { religion = the_seven_main }
+	# 7992.1.1 = { religion = fots_seven }
 	# 7997.1.1 = { trait = incestuous } # Aegon I Targaryen
 	# AGOT Bookmarked Added
-	8000.1.1 = { religion = the_seven_main }
+	8000.1.1 = { religion = fots_seven }
 	# 8042.1.1 = { trait = suspected_kinslayer } # Aenys Targaryen, AGOT TODO trait
 	8044.7.1 = {
 		death = { death_reason = death_old_age }
@@ -557,7 +557,7 @@ Targaryen_27 = { # Aegon's Conquest
 	prowess = 5
 	fertility = 0.25
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_26
@@ -600,7 +600,7 @@ Targaryen_27 = { # Aegon's Conquest
 		}
 	}
 	# AGOT Bookmarked Disabled
-	# 7992.1.1 = { religion = the_seven_main }
+	# 7992.1.1 = { religion = fots_seven }
 	7996.1.1 = {
 		effect = {
 			if = {
@@ -654,7 +654,7 @@ Targaryen_27 = { # Aegon's Conquest
 		}
 	}
 	# AGOT Bookmarked Added
-	8000.1.1 = { religion = the_seven_main }
+	8000.1.1 = { religion = fots_seven }
 	8000.5.1 = { # Field of Fire
 		effect = { add_prestige_level = 1 }
 	}
@@ -717,7 +717,7 @@ Targaryen_29 = {
 	learning = 7
 	prowess = 12
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Targaryen_26
@@ -740,14 +740,14 @@ Targaryen_29 = {
 	}
 	7991.1.1 = { trait = poet }
 	# AGOT Bookmarked Disabled
-	# 7992.1.1 = { religion = the_seven_main }
+	# 7992.1.1 = { religion = fots_seven }
 	7996.1.1 = {
 		trait = dragonrider # Meraxes (C)
 		# AGOT Bookmarked Disabled
 		# trait = incestuous # Aegon I Targaryen
 	}
 	# AGOT Bookmarked Added
-	8000.1.1 = { religion = the_seven_main }
+	8000.1.1 = { religion = fots_seven }
 	8010.1.1 = {
 		add_spouse = Targaryen_27 # for history sake
 		death = {
@@ -768,7 +768,7 @@ Targaryen_30 = {
 	stewardship = 2
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_27
@@ -838,7 +838,7 @@ Targaryen_31 = {
 	prowess = 4
 	fertility = 0.25
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_27
@@ -1016,7 +1016,7 @@ Targaryen_32 = {
 	intrigue = 7
 	stewardship = 8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = homosexual
 
@@ -1151,7 +1151,7 @@ Targaryen_33 = {
 	stewardship = 8
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_30
@@ -1212,7 +1212,7 @@ Targaryen_34 = {
 	stewardship = 6
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_30
@@ -1256,7 +1256,7 @@ Targaryen_35 = {
 	prowess = 5
 	health = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = heterosexual
 
@@ -1342,6 +1342,11 @@ Targaryen_35 = {
 		}
 	}
 	8090.1.1 = { give_nickname = nick_the_old_king }
+	8092.6.8 = {
+		effect = {
+			add_realm_law_skip_effects = male_only_law
+		}
+	}
 	8100.7.1 = {
 		trait = widowed
 		trait = infirm
@@ -1364,7 +1369,7 @@ Targaryen_36 = {
 	health = 6
 	fertility = 0.75
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = heterosexual
 
@@ -1440,7 +1445,7 @@ Targaryen_37 = {
 	female = yes
 	# AGOT TODO dna = agot_dna_Targaryen_37
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_30
@@ -1462,7 +1467,7 @@ Targaryen_38 = {
 	dynasty = dynn_Targaryen
 	# AGOT TODO dna = agot_dna_Targaryen_38
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_31
@@ -1483,7 +1488,7 @@ Targaryen_39 = {
 	dynasty = dynn_Targaryen
 	# AGOT TODO dna = agot_dna_Targaryen_39
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_31
@@ -1505,7 +1510,7 @@ Targaryen_40 = {
 	female = yes
 	# AGOT TODO dna = agot_dna_Targaryen_40
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_31
@@ -1528,7 +1533,7 @@ Targaryen_41 = {
 
 	dna = Targaryen_41
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_33
@@ -1569,7 +1574,7 @@ Targaryen_42 = {
 
 	dna = Targaryen_42
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_33
@@ -1617,7 +1622,7 @@ Targaryen_43 = {
 	dynasty = dynn_Targaryen
 	# AGOT TODO dna = agot_dna_Targaryen_43
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_35
@@ -1637,7 +1642,7 @@ Targaryen_44 = {
 	female = yes
 	dna = Targaryen_44
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_35
@@ -1665,7 +1670,7 @@ Targaryen_45 = {
 	prowess = 12
 	fertility = 0.1
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_35
@@ -1724,7 +1729,7 @@ Targaryen_46 = {
 	stewardship = 5
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_35
@@ -1788,7 +1793,7 @@ Targaryen_47 = {
 
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_35
@@ -1829,7 +1834,7 @@ Targaryen_48 = {
 	father = Targaryen_35
 	mother = Targaryen_36
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	trait = education_diplomacy_4
@@ -1865,7 +1870,7 @@ Targaryen_49 = {
 
 	learning = 10
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = asexual
 
@@ -1914,7 +1919,7 @@ Targaryen_50 = {
 	female = yes
 	dna = Targaryen_50
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_35
@@ -1943,7 +1948,7 @@ Targaryen_51 = {
 	female = yes
 	dna = Targaryen_51
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = heterosexual
 
@@ -2037,7 +2042,7 @@ Targaryen_52 = {
 
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_35
@@ -2079,7 +2084,7 @@ Targaryen_53 = {
 	name = Gaemon # Canon
 	dynasty = dynn_Targaryen
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_35
@@ -2098,7 +2103,7 @@ Targaryen_54 = {
 	name = Valerion # Canon
 	dynasty = dynn_Targaryen
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_35
@@ -2120,7 +2125,7 @@ Targaryen_55 = {
 
 	dna = Targaryen_55
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_35
@@ -2153,7 +2158,7 @@ Targaryen_55_B = {
 	name = Aelor # Mentioned, bastard of Gael and a Singer
 	dynasty = dynn_Targaryen
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	mother = Targaryen_55
@@ -2171,7 +2176,7 @@ Targaryen_56 = {
 	name = Maegor # Mentioned
 	dna = Targaryen_56
 
-	religion = weeping_lady
+	religion = fc_pan_lys
 	culture = lyseni
 
 	father = Orthys_49 # Drazendro Orthys
@@ -2198,7 +2203,7 @@ Targaryen_56 = {
 Targaryen_57 = {
 	name = Jaenys # Mentioned
 
-	religion = rhllor
+	religion = fc_pan_lys
 	culture = lyseni
 
 	father = Sellos_65 # Moniro Sellos
@@ -2226,7 +2231,7 @@ Targaryen_58 = {
 	name = Aegon # Mentioned, bastard of Triarch of Volantis
 	dynasty = dynn_Maegyr
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = volantene
 
 	#father = 115174371 # AGOT TODO Reenable once Essos added
@@ -2265,7 +2270,7 @@ Targaryen_59 = {
 	intrigue = 4
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = heterosexual
 
@@ -2336,7 +2341,7 @@ Targaryen_60 = {
 	stewardship = 9
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = heterosexual
 
@@ -2406,6 +2411,11 @@ Targaryen_60 = {
 			}
 		}
 	}
+	8105.9.10 = {
+		effect = {
+			set_designated_heir = character:Targaryen_63
+		}
+	}
 	8106.4.12 = {
 		add_spouse = Hightower_97 # Alicent Hightower
 		effect = {
@@ -2439,7 +2449,7 @@ Targaryen_61 = {
 	learning = 5
 	prowess = 10
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_46
@@ -2594,7 +2604,7 @@ Targaryen_62 = {
 	name = Aegon # Canon
 	dynasty = dynn_Targaryen
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_46
@@ -2612,7 +2622,7 @@ Targaryen_131 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_131
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_60
@@ -2638,7 +2648,7 @@ Targaryen_63 = {
 	stewardship = 8
 	prowess = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_60
@@ -2962,7 +2972,7 @@ Targaryen_64 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_64
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_60
@@ -2989,7 +2999,7 @@ Targaryen_65 = {
 	stewardship = 5
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_60
@@ -3166,7 +3176,7 @@ Targaryen_66 = {
 	stewardship = 4
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_60
@@ -3216,7 +3226,7 @@ Targaryen_67 = {
 	stewardship = 4
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_60
@@ -3296,7 +3306,7 @@ Targaryen_68 = {
 	intrigue = 4
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_60
@@ -3366,7 +3376,7 @@ Targaryen_71 = {
 
 	dna = Targaryen_71
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_65
@@ -3410,7 +3420,7 @@ Targaryen_72 = {
 
 	dna = Targaryen_72
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_65
@@ -3436,7 +3446,7 @@ Targaryen_73 = {
 
 	dna = Targaryen_73
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_65
@@ -3467,7 +3477,7 @@ Targaryen_74 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_74
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_67
@@ -3513,7 +3523,7 @@ Targaryen_75 = {
 	diplomacy = 5
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_35 # Laenor Velaryon
@@ -3573,9 +3583,7 @@ Targaryen_75 = {
 		}
 	}
 	8130.1.5 = {
-		death = {
-			death_reason = death_battle # Battle of the Gullet
-		}
+		death = { death_reason = death_battle } # Battle of the Gullet
 	}
 }
 Targaryen_76 = {
@@ -3585,7 +3593,7 @@ Targaryen_76 = {
 
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_35 # Laenor Velaryon
@@ -3651,7 +3659,7 @@ Targaryen_77 = {
 
 	prowess = 7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_35 # Laenor Velaryon
@@ -3694,14 +3702,14 @@ Targaryen_77 = {
 		# trait = squire # AGOT TODO trait
 		# effect = { add_trait = squire }
 	}
+	8129.3.30 = {
+		effect = {
+			agot_set_as_ward_history_effect = { GUARDIAN = character:Grafton_27 } # Gawen Grafton
+		}
+	}
 	8130.2.28 = {
 		effect = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Targaryen_63 } # Rhaenyra Targaryen
-		}
-	}
-	8130.4.1 = {
-		effect = {
-			agot_set_as_ward_history_effect = { GUARDIAN = character:Grafton_27 } # Gawen Grafton
 		}
 	}
 	8130.10.9 = {
@@ -3723,7 +3731,7 @@ Targaryen_78 = {
 	stewardship = 7
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_61 # Daemon Targaryen
@@ -3811,7 +3819,7 @@ Targaryen_79 = {
 	stewardship = 14
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_61 # Daemon Targaryen
@@ -3882,7 +3890,7 @@ Targaryen_79 = {
 		}
 	}
 	8145.1.1 = { trait = widowed }
-	8172.1.1 = {
+	8172.3.28 = {
 		trait = ill
 		death = { death_reason = death_ill }
 		# death = {
@@ -3897,7 +3905,7 @@ Targaryen_80 = {
 	female = yes
 	dna = Targaryen_80
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_61 # Daemon Targaryen
@@ -3926,7 +3934,7 @@ Targaryen_69 = {
 	father = Targaryen_61
 	mother = Velaryon_34 # Laena Velaryon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	trait = education_diplomacy_3
@@ -3945,7 +3953,6 @@ Targaryen_69 = {
 		add_character_flag = canon_status_canon
 	}
 	8121.1.1 = { employer = Targaryen_63 } # Rhaenyra Targaryen
-	8129.2.1 = { trait = lustful }
 	8130.1.1 = {
 		effect = { add_trait = dragonrider } # Moondancer (C)
 	}
@@ -3966,7 +3973,8 @@ Targaryen_69 = {
 			add_unpressed_claim = title:c_kings_landing
 		}
 	}
-	8182.1.1 = { death = yes }
+	8131.1.1 = { trait = lustful }
+	8172.1.1 = { death = yes }
 }
 Targaryen_70 = {
 	name = Rhaena # Canon, married Corwyn Corbray and Garmund Hightower
@@ -3974,7 +3982,7 @@ Targaryen_70 = {
 	female = yes
 	dna = Targaryen_70
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_61
@@ -3997,7 +4005,7 @@ Targaryen_70 = {
 		add_character_flag = canon_status_canon
 	}
 	8121.1.1 = { employer = Targaryen_63 } # Rhaenyra Targaryen
-	8129.4.1 = {
+	8129.3.30 = {
 		effect = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Grafton_27 } # Gawen Grafton
 		}
@@ -4027,7 +4035,7 @@ Targaryen_70_B = {
 	name = Haegon # Mentioned
 	dynasty = dynn_Targaryen
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_61
@@ -4055,7 +4063,7 @@ Targaryen_81 = {
 	learning = 7
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_78
@@ -4125,7 +4133,7 @@ Targaryen_82 = {
 	stewardship = 2
 	learning = 8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_78
@@ -4174,6 +4182,15 @@ Targaryen_82 = {
 			}
 		}
 	}
+	8162.2.1 = {
+		effect = {
+			add_truce_both_ways = {
+				character = title:e_dorne.holder
+				years = 10
+				name = TRUCE_COLLABORATION
+			}
+		}
+	}
 	8163.8.2 = {
 		remove_spouse = Targaryen_83 # Daena Targaryen
 		effect = {
@@ -4188,7 +4205,7 @@ Targaryen_82 = {
 						OR = {
 							has_trait = cynical
 							has_trait = lustful
-							faith = { NOT = { religion_tag = faith_of_the_seven_religion } }
+							faith = { NOT = { religion_tag = the_seven_religion } }
 						}
 					}
 					add_opinion = {
@@ -4211,7 +4228,7 @@ Targaryen_82 = {
 		trait = septon # Septon
 		effect = { add_piety_level = 1 }
 	}
-	8171.1.1 = {
+	8171.1.20 = {
 		death = { death_reason = death_starved } # Starved from fasting, officially
 		# death = {
 			# death_reason = death_poison
@@ -4231,7 +4248,7 @@ Targaryen_83 = {
 	stewardship = 3
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_78
@@ -4262,6 +4279,7 @@ Targaryen_83 = {
 					target = character:Targaryen_82 # Baelor Targaryen
 					modifier = insulted_opinion # Does not consummate marriage
 				}
+				set_relation_historical_unfruitful_marriage = character:Targaryen_82 # Baelor Targaryen
 			}
 		}
 	}
@@ -4279,12 +4297,21 @@ Targaryen_83 = {
 					modifier = imprisoned_me
 				}
 			}
+			if = {
+				limit = { character:Targaryen_82 = { is_alive = yes } }
+				set_relation_grudge = {
+					reason = grudge_maidenvault_desc
+					target = character:Targaryen_82 # Baelor Targaryen
+				}
+				add_character_modifier = locked_in_maidenvault
+			}
 		}
 	}
-	8171.1.1 = {
+	8170.6.11 = { trait = fornicator } #pregnant with Daemon
+	8171.1.20 = {
 		effect = { release_from_prison = yes }
 	}
-	8200.1.1 = { death = yes }
+	8194.6.1 = { death = yes }
 }
 Targaryen_84 = {
 	name = Rhaena # Canon
@@ -4292,7 +4319,7 @@ Targaryen_84 = {
 	female = yes
 	dna = Targaryen_84
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_78
@@ -4323,6 +4350,7 @@ Targaryen_84 = {
 					modifier = imprisoned_me
 				}
 			}
+			add_character_modifier = locked_in_maidenvault
 		}
 	}
 	8171.1.1 = {
@@ -4339,7 +4367,7 @@ Targaryen_85 = {
 
 	stewardship = 10
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	mother = Velaryon_53
@@ -4370,26 +4398,38 @@ Targaryen_85 = {
 					modifier = imprisoned_me
 				}
 			}
+			if = {
+				limit = { character:Targaryen_82 = { is_alive = yes } }
+				set_relation_grudge = {
+					reason = grudge_maidenvault_desc
+					target = character:Targaryen_82 # Baelor Targaryen
+				}
+				add_character_modifier = locked_in_maidenvault
+			}
 		}
 	}
 	8166.1.1 = { trait = shrewd }
-	8171.1.1 = {
+	8171.1.20 = {
 		effect = { release_from_prison = yes }
 	}
 	8173.1.1 = {
-		trait = fornicator # Alyn Velaryon
 		effect = {
 			if = {
 				limit = { character:Velaryon_44 = { is_alive = yes } }
 				set_relation_lover = character:Velaryon_44 # Alyn Velaryon
 			}
+		}
+	}
+	8175.1.16 = { # Three years later than in Blood of Dragons
+		trait = fornicator # Alyn Velaryon
+		effect = {
 			agot_safe_reveal_lovers_history_effect = yes
 		}
 	}
-	8176.6.1 = {
+	8176.11.1 = {
 		effect = {
 			if = {
-				limit = { game_start_date < 8177.2.1 }
+				limit = { game_start_date < 8177.7.1 }
 				make_pregnant = {
 					father = character:Plumm_18 # Ossifer Plumm
 				}
@@ -4421,7 +4461,7 @@ Targaryen_88 = {
 	learning = 3
 	prowess = 10
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_79
@@ -4536,20 +4576,20 @@ Targaryen_88 = {
 				remove_relation_lover = character:Vaith_45 # Cassella Vaith
 			}
 			if = {
-				limit = { character:Otherys_2 = { is_alive = yes } }
-				set_relation_lover = character:Otherys_2 # Bellegere Otherys
+				limit = { character:Otherys_56_A = { is_alive = yes } }
+				set_relation_lover = character:Otherys_56_A # Bellegere Otherys
 			}
 		}
 	}
-	8171.1.1 = {
+	8171.1.20 = {
 		effect = {
 			if = {
-				limit = { character:Otherys_2 = { is_alive = yes } }
-				remove_relation_lover = character:Otherys_2 # Bellegere Otherys
+				limit = { character:Otherys_56_A = { is_alive = yes } }
+				remove_relation_lover = character:Otherys_56_A # Bellegere Otherys
 			}
 		}
 	}
-	8172.1.1 = {
+	8172.3.28 = {
 		effect = {
 			if = {
 				limit = { character:Bracken_76 = { is_alive = yes } }
@@ -4636,7 +4676,7 @@ Targaryen_89 = {
 	stewardship = 2
 	prowess = 10
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_79
@@ -4695,7 +4735,7 @@ Targaryen_89 = {
 	8157.1.1 = {
 		effect = {
 			agot_join_kingsguard_char_history_effect = { # Predecessor: Dennis Whitfield
-				KING = character:Targaryen_81 # Baelor I Targaryen
+				KING = character:Targaryen_81 # Daeron I Targaryen
 			}
 		}
 	}
@@ -4710,7 +4750,7 @@ Targaryen_89 = {
 	8161.6.9 = {
 		effect = {
 			agot_lc_kingsguard_char_history_effect = { # Previous Lord Commander: Reynard Caron
-				KING = character:Targaryen_81 # Baelor Targaryen
+				KING = character:Targaryen_82 # Baelor Targaryen
 			}
 			add_prestige_level = 1
 			title:c_wyl.holder = { # Guerin Wyl
@@ -4754,7 +4794,7 @@ Targaryen_90 = {
 	intrigue = 2
 	stewardship = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_79
@@ -4810,7 +4850,7 @@ Targaryen_91 = {
 	learning = 6
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_88
@@ -4835,8 +4875,11 @@ Targaryen_91 = {
 			agot_safe_betrothal_history_effect = { TARGET = character:Martell_79 } # Myriah Martell
 		}
 	}
-	8169.1.1 = { add_spouse = Martell_79 } # Myriah Martell
-	8172.1.1 = {
+	8170.1.2 = { 
+		add_spouse = Martell_79 # Myriah Martell
+		employer = Targaryen_82 # Baelor Targaryen
+	}
+	8172.3.28 = {
 		trait = scholar
 		trait = education_martial_prowess_1
 		effect = {
@@ -4885,7 +4928,7 @@ Targaryen_134 = {
 	dynasty = dynn_Targaryen
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_88
@@ -4901,7 +4944,7 @@ Targaryen_132 = {
 	name = Viserys # Mentioned
 	dynasty = dynn_Targaryen
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_88
@@ -4919,7 +4962,7 @@ Targaryen_133 = {
 	name = Baelon # Mentioned
 	dynasty = dynn_Targaryen
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_88
@@ -4947,7 +4990,7 @@ Targaryen_92 = {
 	learning = 6
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_88
@@ -4976,7 +5019,7 @@ Targaryen_93 = {
 	name = Viserys # Mentioned
 	dynasty = dynn_Targaryen
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_88
@@ -4994,7 +5037,7 @@ Targaryen_135 = {
 	name = Haegon # Mentioned
 	dynasty = dynn_Targaryen
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_88
@@ -5013,7 +5056,7 @@ Targaryen_98 = {
 	female = yes
 	dna = Targaryen_98
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Targaryen_88
@@ -5045,7 +5088,7 @@ Targaryen_99 = {
 	female = yes
 	dna = Targaryen_99
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Targaryen_88
@@ -5077,7 +5120,7 @@ Targaryen_100 = {
 	female = yes
 	dna = Targaryen_100
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Targaryen_88
@@ -5109,7 +5152,7 @@ Targaryen_101 = {
 	female = yes
 	dna = Targaryen_101
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Targaryen_88
@@ -5135,96 +5178,7 @@ Targaryen_101 = {
 	8184.1.1 = { remove_character_flag = unlegitimize_on_load }
 	8208.1.1 = { death = yes }
 }
-Targaryen_102 = {
-	name = Bellenora # Canon
-	dynasty = dynn_Otherys
-	female = yes
-	dna = Targaryen_102
 
-	#religion = moonsingers
-	religion = princely_arbiter
-	culture = braavosi
-
-	father = Targaryen_88
-	mother = Otherys_2 # Bellegere Otherys
-	
-	trait = legitimized_bastard # Caution: succession error
-
-	trait = beauty_good_2
-
-	8163.1.1 = {
-		birth = yes
-		add_character_flag = has_scripted_appearance
-		add_character_flag = canon_status_canon
-		add_character_flag = unlegitimize_on_load
-		effect = {
-			# agot_safe_set_location_history_effect = { CASTLE = title:k_braavos }
-		}
-	}
-	8184.1.1 = { remove_character_flag = unlegitimize_on_load }
-	8185.1.1 = {
-		#trait = courtesan # AGOT TODO trait
-		trait = refusing_marriage
-		give_nickname = nick_black_pearl
-	}
-	8219.1.1 = { effect = { remove_nickname = yes } }
-	8223.1.1 = { death = yes }
-}
-Targaryen_103 = {
-	name = Narha # Canon
-	dynasty = dynn_Otherys
-	female = yes
-	dna = Targaryen_103
-
-	#religion = moonsingers
-	religion = princely_arbiter
-	culture = braavosi
-
-	father = Targaryen_88
-	mother = Otherys_2 # Bellegere Otherys
-
-	trait = legitimized_bastard # Caution: succession error
-
-	8165.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
-		add_character_flag = unlegitimize_on_load
-		effect = {
-			# agot_safe_set_location_history_effect = { CASTLE = title:k_braavos }
-		}
-	}
-	8184.1.1 = { remove_character_flag = unlegitimize_on_load }
-	8215.1.1 = { death = yes }
-}
-Targaryen_104 = {
-	name = Balerion # Canon
-	dynasty = dynn_Otherys
-	dna = Targaryen_104
-
-	#religion = moonsingers
-	religion = princely_arbiter
-	culture = braavosi
-
-	father = Targaryen_88
-	mother = Otherys_2 # Bellegere Otherys
-	
-	trait = legitimized_bastard # Caution: succession error
-
-	trait = beauty_good_1
-
-	8168.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
-		add_character_flag = unlegitimize_on_load
-		effect = {
-			# agot_safe_set_location_history_effect = { CASTLE = title:k_braavos }
-		}
-	}
-	8184.1.1 = { remove_character_flag = unlegitimize_on_load }
-	8223.1.1 = { death = yes }
-}
 Targaryen_94 = {
 	name = Daemon # Canon, AKA: Daemon Blackfyre, progenitor of house Blackfyre
 	dynasty = dynn_Targaryen
@@ -5236,10 +5190,10 @@ Targaryen_94 = {
 	stewardship = 5
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
-	father = Targaryen_88
+	# father = Targaryen_88
 	mother = Targaryen_83 # Daena Targaryen
 
 	trait = legitimized_bastard # Caution: succession error
@@ -5252,7 +5206,7 @@ Targaryen_94 = {
 
 	disallow_random_traits = yes
 
-	8170.1.1 = {
+	8170.12.11 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 		add_character_flag = has_scripted_appearance
@@ -5260,12 +5214,14 @@ Targaryen_94 = {
 		effect = {
 			add_character_flag = potential_targ_lunatic
 			make_trait_inactive = surname_waters
+			set_real_father = character:Targaryen_88 # Aegon IV Targaryen
 		}
 	}
+	8172.3.28 = { set_father = character:Targaryen_88 } # Aegon IV Targaryen
 	8176.8.1 = { trait = gregarious }
 	8178.8.1 = { trait = brave }
 	8180.8.1 = { trait = honest }
-	8182.1.1 = { # Aegon give him Blackfyre
+	8182.12.11 = { # Aegon give him Blackfyre
 		trait = knight
 		effect = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Targaryen_88 } # Aegon IV Targaryen
@@ -5327,7 +5283,7 @@ Targaryen_94 = {
 			}
 		}
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		death = {
 			death_reason = death_battle # Redgrass Field
 			killer = Targaryen_96 # Brynden Rivers
@@ -5346,7 +5302,7 @@ Targaryen_95 = {
 	prowess = 5
 	fertility = 0.1
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Targaryen_88
@@ -5404,7 +5360,7 @@ Targaryen_95 = {
 	}
 	8190.1.1 = { employer = Targaryen_94 } # Daemon Blackfyre
 	8194.6.1 = { add_matrilineal_spouse = Blackfyre_3 } # Calla Blackfyre
-	8196.6.1 = {
+	8196.11.22 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_tyrosh }
 			if = {
@@ -5439,7 +5395,7 @@ Targaryen_105 = {
 	female = yes
 	dna = Targaryen_105
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Targaryen_88
@@ -5465,7 +5421,7 @@ Targaryen_106 = {
 	female = yes
 	dna = Targaryen_106
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Targaryen_88
@@ -5498,7 +5454,7 @@ Targaryen_96 = {
 	fertility = 0.1
 	health = 9
 
-	religion = old_gods_south
+	religion = old_gods_wnw
 	culture = high_valyrian
 
 	father = Targaryen_88
@@ -5546,7 +5502,7 @@ Targaryen_96 = {
 			}
 		}
 	}
-	8196.6.1 = { # Redgrass Field
+	8196.11.22 = { # Redgrass Field
 		trait = one_eyed
 		trait = kinslayer_3 # Daemon Blackfyre
 		trait = scarred
@@ -5598,7 +5554,7 @@ Targaryen_97 = {
 	learning = 14
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	trait = legitimized_bastard # Caution: succession error
@@ -5663,7 +5619,7 @@ Targaryen_107 = {
 	learning = 4
 	prowess = 10
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_91
@@ -5674,7 +5630,7 @@ Targaryen_107 = {
 
 	disallow_random_traits = yes
 
-	8170.1.1 = {
+	8170.11.7 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
@@ -5683,7 +5639,7 @@ Targaryen_107 = {
 	8178.8.1 = { trait = compassionate }
 	8180.8.1 = { trait = just }
 	8182.1.1 = { trait = brave }
-	8186.1.1 = {
+	8186.11.7 = {
 		trait = knight
 		trait = education_martial_prowess_4
 		trait = aggressive_attacker
@@ -5699,7 +5655,7 @@ Targaryen_107 = {
 		}
 	}
 	8189.1.1 = { add_spouse = Dondarrion_39 } # Jena Dondarrion
-	8196.6.1 = {
+	8196.11.22 = {
 		effect = { # Hand of the King
 			agot_appoint_as_councillor_for_castle_history_effect = {
 				CASTLE = title:e_the_iron_throne
@@ -5728,7 +5684,7 @@ Targaryen_108 = {
 	learning = 8
 	prowess = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = asexual
 
@@ -5772,7 +5728,7 @@ Targaryen_109 = {
 	stewardship = 1
 	learning = 2
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_91
@@ -5813,7 +5769,7 @@ Targaryen_110 = {
 	learning = 4
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_91
@@ -5848,10 +5804,7 @@ Targaryen_110 = {
 	8207.1.1 = { trait = widowed }
 	8209.2.1 = { trait = kinslayer_3 } # Baelor Breakspear
 	8233.6.1 = {
-		death = {
-			death_reason = death_battle # Siege of Starpike
-			killer = Peake_66 # Estyn Peake
-		}
+		death = { death_reason = death_battle } # Siege of Starpike
 	}
 }
 ### Issue of Baelor Breakspear
@@ -5863,7 +5816,7 @@ Targaryen_111 = {
 	martial = 7
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_107
@@ -5910,7 +5863,7 @@ Targaryen_112 = {
 	martial = 6
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_107
@@ -5940,7 +5893,7 @@ Targaryen_113 = {
 	dynasty = dynn_Targaryen
 	# AGOT TODO dna = agot_dna_Targaryen_113
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_111
@@ -5957,7 +5910,7 @@ Targaryen_114 = {
 	dynasty = dynn_Targaryen
 	# AGOT TODO dna = agot_dna_Targaryen_114
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_111
@@ -5977,7 +5930,7 @@ Targaryen_115 = {
 
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_109
@@ -6007,7 +5960,7 @@ Targaryen_116 = {
 	female = yes
 	dna = Targaryen_116
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_109
@@ -6033,7 +5986,7 @@ Targaryen_117 = {
 	female = yes
 	dna = Targaryen_117
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_109
@@ -6058,7 +6011,7 @@ Targaryen_118 = {
 	stewardship = 2
 	prowess = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_110
@@ -6075,7 +6028,7 @@ Targaryen_118 = {
 		add_character_flag = canon_status_canon
 		effect = { add_character_flag = potential_targ_lunatic }
 	}
-	8196.8.1 = { trait = compassionate }
+	8196.12.1 = { trait = compassionate }
 	8198.8.1 = { trait = craven }
 	8199.1.1 = { trait = dragon_dreams }
 	8200.8.1 = { trait = fickle }
@@ -6103,7 +6056,7 @@ Targaryen_119 = {
 	stewardship = 2
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_110
@@ -6190,7 +6143,7 @@ Targaryen_120 = {
 	health = 9
 	prowess = 2
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_110
@@ -6268,7 +6221,7 @@ Targaryen_121 = {
 	female = yes
 	dna = Targaryen_121
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_110
@@ -6315,7 +6268,7 @@ Targaryen_122 = {
 	learning = 5
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_110
@@ -6379,7 +6332,7 @@ Targaryen_122 = {
 	8237.1.1 = {
 		effect = {
 			if = {
-				limit = { game_start_date < 8239.2.1 }
+				limit = { game_start_date < 8239.1.1 }
 				create_alliance = {
 					target = character:Baratheon_71 # Lyonel Baratheon
 					allied_through_owner = character:Targaryen_126 # Duncan Targaryen
@@ -6475,7 +6428,7 @@ Targaryen_123 = {
 	female = yes
 	dna = Targaryen_123
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_110
@@ -6499,7 +6452,7 @@ Targaryen_124 = {
 	female = yes
 	dna = Targaryen_124
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_118
@@ -6543,7 +6496,7 @@ Targaryen_125 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_125
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_119
@@ -6584,7 +6537,7 @@ Targaryen_126 = {
 	learning = 5
 	prowess = 10
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = heterosexual
 
@@ -6666,7 +6619,7 @@ Targaryen_127 = {
 	stewardship = 7
 	prowess = 1
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_122
@@ -6718,17 +6671,6 @@ Targaryen_127 = {
 		}
 	}
 	8241.1.1 = { trait = knight }
-	8259.9.1 = {
-		effect = {
-			# Iron bank Loan
-			add_character_flag = loaned_from_iron_bank_flag
-			add_character_flag = first_tier_iron_bank_loan_flag
-			trigger_event = {
-				id =  agot_braavos_iron_bank.0002
-				months = 18
-			}
-		}
-	}
 	8262.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -6740,7 +6682,7 @@ Targaryen_128 = {
 	female = yes
 	dna = Targaryen_128
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_122
@@ -6780,7 +6722,7 @@ Targaryen_129 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = homosexual
 
@@ -6848,9 +6790,7 @@ Targaryen_129 = {
 		}
 	}
 	8251.1.1 = {
-		death = {
-			death_reason = death_battle # Rebellion of the Rat, the Hawk and the Pig
-		}
+		death = { death_reason = death_battle } # Rebellion of the Rat, the Hawk and the Pig
 	}
 }
 Targaryen_130 = {
@@ -6859,7 +6799,7 @@ Targaryen_130 = {
 	female = yes
 	dna = Targaryen_130
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_122
@@ -6893,7 +6833,7 @@ Blackfyre_1 = {
 	martial = 8
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_94
@@ -6918,7 +6858,7 @@ Blackfyre_1 = {
 			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Targaryen_94 } # Daemon Blackfyre
 		}
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		trait = squire
 		death = {
 			death_reason = death_battle # Redgrass Field
@@ -6934,7 +6874,7 @@ Blackfyre_2 = {
 	martial = 8
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_94
@@ -6959,7 +6899,7 @@ Blackfyre_2 = {
 			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Targaryen_94 } # Daemon Blackfyre
 		}
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		trait = squire
 		death = {
 			death_reason = death_battle # Redgrass Field
@@ -6973,7 +6913,7 @@ Blackfyre_3 = {
 	female = yes
 	dna = Blackfyre_3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_94
@@ -6992,7 +6932,7 @@ Blackfyre_3 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_blackfyre }
 		effect = {
 			add_character_modifier = {
@@ -7015,7 +6955,7 @@ Blackfyre_4 = {
 	female = yes
 	dna = Blackfyre_4
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_94
@@ -7033,7 +6973,7 @@ Blackfyre_4 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_blackfyre }
 			add_unpressed_claim = title:e_the_iron_throne
@@ -7061,7 +7001,7 @@ Blackfyre_5 = {
 	martial = 8
 	prowess = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = homosexual
 
@@ -7090,7 +7030,7 @@ Blackfyre_5 = {
 			}
 		}
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		effect = {
 			add_pressed_claim = title:e_the_iron_throne
 			add_pressed_claim = title:k_the_crownlands
@@ -7101,7 +7041,7 @@ Blackfyre_5 = {
 			add_pressed_claim = title:c_dragonstone
 		}
 	}
-	8196.8.1 = {
+	8196.12.1 = {
 		trait = brave
 		trait = lifestyle_mystic
 	}
@@ -7147,7 +7087,7 @@ Blackfyre_6 = {
 	martial = 3
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_94
@@ -7166,7 +7106,7 @@ Blackfyre_6 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_blackfyre }
 			add_pressed_claim = title:e_the_iron_throne
@@ -7188,10 +7128,7 @@ Blackfyre_6 = {
 		}
 	}
 	8220.1.1 = {
-		death = {
-			death_reason = death_battle # Third Blackfyre Rebellion
-			killer = Targaryen_110 # Maekar Targaryen
-		}
+		death = { death_reason = death_battle } # Third Blackfyre Rebellion
 	}
 }
 Blackfyre_7 = {
@@ -7206,7 +7143,7 @@ Blackfyre_7 = {
 	intrigue = 2
 	martial = 2
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_94
@@ -7226,7 +7163,7 @@ Blackfyre_7 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		effect = {
 			add_character_modifier = {
 				modifier = spirit_of_sapphire_hair_dye
@@ -7262,7 +7199,7 @@ Blackfyre_8 = {
 
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_94
@@ -7281,7 +7218,7 @@ Blackfyre_8 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_blackfyre }
 			add_pressed_claim = title:e_the_iron_throne
@@ -7314,7 +7251,7 @@ Blackfyre_9 = {
 	learning = 5
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_94
@@ -7329,7 +7266,7 @@ Blackfyre_9 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_blackfyre }
 			add_pressed_claim = title:e_the_iron_throne
@@ -7362,7 +7299,7 @@ Blackfyre_10 = {
 	dna = Blackfyre_10
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_94
@@ -7382,7 +7319,7 @@ Blackfyre_10 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_blackfyre }
 			add_unpressed_claim = title:e_the_iron_throne
@@ -7414,7 +7351,7 @@ Blackfyre_11 = {
 
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Blackfyre_6
@@ -7458,7 +7395,7 @@ Blackfyre_12 = {
 
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Blackfyre_6
@@ -7490,9 +7427,7 @@ Blackfyre_12 = {
 	}
 	8228.1.1 = { trait = knight }
 	8236.3.2 = {
-		death = {
-			death_reason = death_battle # Battle of Wendwater Bridge
-		}
+		death = { death_reason = death_battle } # Battle of Wendwater Bridge
 	}
 }
 ### Issue of Aenys
@@ -7504,7 +7439,7 @@ Blackfyre_13 = {
 	martial = 4
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Blackfyre_7
@@ -7553,7 +7488,7 @@ Blackfyre_14 = {
 	prowess = 6
 	fertility = 1.8 #Compensate for Ugly/Disfigured so he's not an instant game over
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Blackfyre_8
@@ -7624,7 +7559,7 @@ Blackfyre_15 = {
 	dynasty_house = house_Blackfyre
 	dna = Blackfyre_15
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Blackfyre_14
@@ -7652,7 +7587,7 @@ Blackfyre_16 = {
 	female = yes
 	dna = Blackfyre_16
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Blackfyre_13
@@ -7661,6 +7596,7 @@ Blackfyre_16 = {
 	8236.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
+		effect = { agot_join_golden_company_history_effect = yes }
 	}
 	8252.11.11 = {
 		add_spouse = Jayn_52 # Morgo Jayn
@@ -7682,7 +7618,7 @@ Brightflame_7 = {
 	dynasty = dynn_Targaryen
 	dna = Brightflame_7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_119
@@ -7709,7 +7645,7 @@ Brightflame_2 = {
 	dynasty = dynn_Targaryen
 	dna = Brightflame_2
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_119
@@ -7738,7 +7674,7 @@ Brightflame_rs_2 = {
 	name = Elaena
 	female = yes
 
-	religion = weeping_lady
+	religion = fc_pan_lys
 	culture = lyseni
 
 	8216.1.1 = { birth = yes }
@@ -7749,7 +7685,7 @@ Brightflame_8 = {
 	dynasty = dynn_Targaryen
 	dna = Brightflame_8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Targaryen_119
@@ -7778,7 +7714,7 @@ Brightflame_rs_8 = {
 	name = Daenerys
 	female = yes
 
-	religion = weeping_lady
+	religion = fc_pan_lys
 	culture = lyseni
 
 	8216.1.1 = { birth = yes }
@@ -7800,7 +7736,7 @@ Farseed_1 = {
 	intrigue = 8
 	diplomacy = 4
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_intrigue_2
@@ -7831,7 +7767,7 @@ Hammer_2 = {
 	name = Hendry # Mentioned, Hugh's father
 	dna = Hammer_2
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_stewardship_1
@@ -7857,7 +7793,7 @@ Hammer_3 = {
 	female = yes
 	dna = Hammer_3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	trait = bastard
@@ -7887,7 +7823,7 @@ Hammer_1 = {
 	diplomacy = 1
 	prowess = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Hammer_2
@@ -7947,7 +7883,7 @@ White_1 = {
 	diplomacy = 5
 	prowess = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	trait = education_martial_1
@@ -8003,7 +7939,7 @@ Truefyre_1 = {
 	diplomacy = 5
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	trait = bastard
@@ -8067,7 +8003,7 @@ Truefyre_hh_1 = {
 	diplomacy = 4
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_martial_2
@@ -8116,7 +8052,7 @@ Palehair_1 = {
 	intrigue = 4
 	diplomacy = 7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	mother = Palehair_hh_1 # Essie
@@ -8174,7 +8110,7 @@ Palehair_hh_1 = {
 	intrigue = 4
 	diplomacy = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_diplomacy_2
@@ -8212,7 +8148,7 @@ Palehair_hh_2 = {
 	intrigue = 7
 	diplomacy = 2
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = salt_dornish
 
 	trait = bastard
@@ -8263,7 +8199,7 @@ Velaryon_6 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_6
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	7828.1.1 = {
@@ -8279,7 +8215,7 @@ Velaryon_7 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_7
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_6
@@ -8298,7 +8234,7 @@ Velaryon_7_B = {
 	female = yes
 	dna = Velaryon_7_B
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_6
@@ -8313,7 +8249,7 @@ Velaryon_8 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_8
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_7 # Vaemond Velaryon
@@ -8331,7 +8267,7 @@ Velaryon_9 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_9
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_8
@@ -8346,7 +8282,7 @@ Velaryon_10 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_10
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_9
@@ -8364,7 +8300,7 @@ Velaryon_11 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_11
 
-	religion = valyrian # Potentially the Valyrian Old Religon. Dragonstone and vassals only converted a short while before the Conquest
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_10
@@ -8407,7 +8343,7 @@ Velaryon_12 = {
 	female = yes
 	dna = Velaryon_12
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_10
@@ -8426,7 +8362,7 @@ Velaryon_84 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_84
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_10
@@ -8434,7 +8370,7 @@ Velaryon_84 = {
 
 	7954.1.1 = { birth = yes }
 	7972.1.1 = { add_spouse = Celtigar_14 } # Alysanne Celtigar
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	8001.1.1 = { death = yes }
 }
 ### Issue of Daemon
@@ -8450,7 +8386,7 @@ Velaryon_13 = {
 	learning = 5
 	prowess = 12
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_11
@@ -8470,7 +8406,7 @@ Velaryon_13 = {
 	7986.8.1 = { trait = diligent }
 	7992.1.1 = {
 		add_spouse = Massey_26 # Alarra Massey
-		religion = the_seven_main
+		religion = fots_seven
 	}
 	7999.7.10 = {
 		effect = { # Master of Ships
@@ -8488,14 +8424,14 @@ Velaryon_14 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_14
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_11
 	mother = Targaryen_137
 
 	7977.1.1 = { birth = yes }
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	8000.1.1 = {
 		trait = knight
 		add_spouse = Bar_Emmon_15 # Alys Bar Emmon
@@ -8514,7 +8450,7 @@ Velaryon_15 = {
 	learning = 4
 	prowess = 24
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_11
@@ -8532,7 +8468,7 @@ Velaryon_15 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	7996.1.1 = { trait = content }
 	# AGOT Bookmarked Added
 	7998.1.2 = {
@@ -8568,7 +8504,7 @@ Velaryon_83 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_83
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_11
@@ -8577,7 +8513,7 @@ Velaryon_83 = {
 	trait = beauty_good_1
 
 	7986.1.1 = { birth = yes }
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	8003.1.1 = { add_spouse = Staunton_47 } # Sybell Staunton
 	8052.1.1 = { death = yes }
 }
@@ -8588,7 +8524,7 @@ Velaryon_16 = {
 	female = yes
 	dna = Velaryon_16
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Velaryon_84
@@ -8600,7 +8536,7 @@ Velaryon_16 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
 	}
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	8067.1.1 = { death = yes }
 }
 ### Issue of Aelor
@@ -8610,7 +8546,7 @@ Velaryon_85 = {
 	female = yes
 	dna = Velaryon_85
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_83
@@ -8623,7 +8559,7 @@ Velaryon_86 = {
 	name = Valarr
 	dynasty = dynn_Velaryon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_83
@@ -8640,7 +8576,7 @@ Velaryon_17 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_17
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_14
@@ -8657,7 +8593,7 @@ Velaryon_18 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_18
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_14
@@ -8674,7 +8610,7 @@ Velaryon_19 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_19
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_14
@@ -8701,7 +8637,7 @@ Velaryon_20 = {
 	prowess = 6
 	health = 8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_13
@@ -8747,7 +8683,7 @@ Velaryon_21 = {
 
 	dna = Velaryon_21
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_13
@@ -8768,7 +8704,7 @@ Velaryon_23 = {
 
 	dna = Velaryon_23
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_13
@@ -8790,7 +8726,7 @@ Velaryon_24 = {
 
 	intrigue = 9
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_13
@@ -8831,7 +8767,7 @@ Velaryon_22 = {
 	female = yes
 	dna = Velaryon_22
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = homosexual
 
@@ -8856,7 +8792,7 @@ Velaryon_25 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_25
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_20
@@ -8875,7 +8811,7 @@ Velaryon_26 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_26
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_20
@@ -8896,7 +8832,7 @@ Velaryon_27 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_27
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_20
@@ -8915,7 +8851,7 @@ Velaryon_28 = {
 	female = yes
 	dna = Velaryon_28
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_20
@@ -8937,7 +8873,7 @@ Velaryon_29 = {
 	female = yes
 	dna = Velaryon_29
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_20
@@ -8958,7 +8894,7 @@ Velaryon_30 = {
 	female = yes
 	dna = Velaryon_30
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_20
@@ -8979,7 +8915,7 @@ Velaryon_36 = {
 	female = yes
 	dna = Velaryon_36
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_20
@@ -9006,7 +8942,7 @@ Velaryon_31 = { # Dance of the Dragons
 	prowess = 6
 	health = 7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = heterosexual
 
@@ -9092,7 +9028,7 @@ Velaryon_32 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_32
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_25
@@ -9107,7 +9043,7 @@ Velaryon_33 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_33
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_25
@@ -9128,7 +9064,7 @@ Velaryon_34 = {
 
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_31
@@ -9152,7 +9088,7 @@ Velaryon_34 = {
 	8104.1.1 = { trait = dragonrider } # Vhagar (C)
 	8106.3.25 = {
 		effect = {
-			agot_safe_betrothal_history_effect = { TARGET = character:temp_laena_suitor } # Unnamed son of Sealord
+			agot_safe_betrothal_history_effect = { TARGET = character:Zalyne_31_B } # Unnamed son of Sealord
 		}
 	}
 	8120.1.6 = {
@@ -9167,7 +9103,7 @@ Velaryon_35 = {
 
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 	sexuality = homosexual
 
@@ -9230,7 +9166,7 @@ Velaryon_37 = {
 	martial = 10
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_32
@@ -9266,7 +9202,7 @@ Velaryon_38 = {
 
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_33
@@ -9310,7 +9246,7 @@ Velaryon_39 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_33
@@ -9355,7 +9291,7 @@ Velaryon_40 = {
 	martial = 7
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_33
@@ -9399,7 +9335,7 @@ Velaryon_41 = {
 
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_33
@@ -9446,7 +9382,7 @@ Velaryon_42 = {
 
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_33
@@ -9497,7 +9433,7 @@ Velaryon_rs_8 = {
 	female = yes
 	dna = Velaryon_rs_8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_stewardship_4
@@ -9528,7 +9464,7 @@ Velaryon_43 = {
 	martial = 9
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	mother = Velaryon_rs_8
@@ -9579,7 +9515,7 @@ Velaryon_44 = {
 	learning = 4
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	mother = Velaryon_rs_8
@@ -9619,9 +9555,12 @@ Velaryon_44 = {
 	8133.6.1 = {
 		give_nickname = nick_oakenfist
 		effect = { # Master of Ships, first term
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:e_the_iron_throne
-				POSITION = councillor_admiral
+			if = {
+				limit = { game_start_date < 8136.2.15 }
+				agot_appoint_as_councillor_for_castle_history_effect = {
+					CASTLE = title:e_the_iron_throne
+					POSITION = councillor_admiral
+				}
 			}
 		}
 	}
@@ -9636,8 +9575,8 @@ Velaryon_44 = {
 	8157.6.6 = {
 		effect = { add_prestige_level = 1 } # Battle of the Greenblood
 	}
-	8173.1.1 = { trait = adulterer } # Elaena Targaryen
-	8175.1.1 = {
+	8175.1.16 = { trait = fornicator } # Elaena Targaryen
+	8175.8.29 = { # Three years later than in Blood of Dragons
 		death = { death_reason = death_lost_at_sea }
 	}
 }
@@ -9649,7 +9588,7 @@ Velaryon_47 = {
 
 	martial = 7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_37
@@ -9681,7 +9620,7 @@ Velaryon_50 = {
 
 	martial = 7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_37
@@ -9708,9 +9647,10 @@ Velaryon_50 = {
 Velaryon_48 = {
 	name = Amaena # Semi-Canon, married Lormon Buckler
 	dynasty = dynn_Velaryon
+	dna = Velaryon_48
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_47
@@ -9725,8 +9665,9 @@ Velaryon_48 = {
 Velaryon_71 = {
 	name = Aelyx
 	dynasty = dynn_Velaryon
+	dna = Velaryon_71
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_47
@@ -9739,11 +9680,12 @@ Velaryon_71 = {
 Velaryon_49 = {
 	name = Galfrid # Semi-Canon, Kingsguard
 	dynasty = dynn_Velaryon
+	dna = Velaryon_49
 
 	martial = 7
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_47
@@ -9797,7 +9739,7 @@ Velaryon_53 = {
 
 	prowess = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_50
@@ -9825,7 +9767,7 @@ Velaryon_51 = {
 	female = yes
 	dna = Velaryon_51
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_44
@@ -9844,7 +9786,7 @@ Velaryon_52 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_52
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_44
@@ -9854,7 +9796,7 @@ Velaryon_52 = {
 
 	8137.1.1 = { birth = yes }
 	8160.1.1 = { add_spouse = Rosby_30_B } # Adya Rosby
-	8196.6.1 = { death = { death_reason = death_battle } } # Redgrass Field
+	8196.11.22 = { death = { death_reason = death_battle } } # Redgrass Field
 }
 Velaryon_45 = {
 	name = Jon # Canon, progenitor of house Longwaters
@@ -9863,7 +9805,7 @@ Velaryon_45 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_44
@@ -9876,7 +9818,7 @@ Velaryon_45 = {
 	trait = twin
 	trait = brave
 
-	8175.1.1 = {
+	8175.3.9 = { # Three years later than in Blood of Dragons
 		birth = yes
 		add_character_flag = canon_status_canon
 		make_trait_inactive = surname_waters
@@ -9891,7 +9833,7 @@ Velaryon_46 = {
 	female = yes
 	#dna = Velaryon_46
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_44
@@ -9902,7 +9844,7 @@ Velaryon_46 = {
 	trait = beauty_good_1
 	trait = twin
 
-	8175.1.1 = {
+	8175.3.9 = { # Three years later than in Blood of Dragons
 		birth = yes
 		add_character_flag = canon_status_canon
 		make_trait_inactive = surname_waters
@@ -9915,7 +9857,7 @@ Velaryon_54 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_54
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_52
@@ -9933,7 +9875,7 @@ Velaryon_55 = {
 	name = Daemon
 	dynasty = dynn_Velaryon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_52
@@ -9951,7 +9893,7 @@ Velaryon_64 = {
 	name = Matarys # Night's Watch, Commander of Eastwatch-By-The-Sea
 	dynasty = dynn_Velaryon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_55
@@ -9976,7 +9918,7 @@ Velaryon_56 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_56
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_54
@@ -9996,7 +9938,7 @@ Velaryon_57 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_57
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_56
@@ -10014,7 +9956,7 @@ Velaryon_87 = {
 	name = Aenar
 	dynasty = dynn_Velaryon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_56
@@ -10028,7 +9970,7 @@ Velaryon_87 = {
 Velaryon_hh_1 = {
 	name = Kelvyn # Semi-Canon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = moonman
 
 	trait = education_learning_3
@@ -10053,7 +9995,7 @@ Velaryon_hh_2 = {
 	name = Bendamure # Canon
 
 	culture = vineman
-	religion = the_seven_main
+	religion = fots_seven
 
 	trait = education_learning_3
 
@@ -10079,9 +10021,10 @@ Velaryon_hh_2 = {
 Velaryon_70 = {
 	name = Rhaena # a lord
 	dynasty = dynn_Velaryon
+	dna = Velaryon_70
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_71
@@ -10093,7 +10036,7 @@ Velaryon_70 = {
 Velaryon_rs_70 = {
 	name = Baelon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	8151.1.1 = { birth = yes }
@@ -10106,7 +10049,7 @@ Velaryon_90 = {
 	dna = Velaryon_90
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_71
@@ -10120,7 +10063,7 @@ Velaryon_67 = {
 	dynasty = dynn_Velaryon
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_rs_70
@@ -10128,6 +10071,7 @@ Velaryon_67 = {
 
 	8179.1.1 = { birth = yes }
 	8198.1.1 = { add_matrilineal_spouse = Velaryon_rs_67 }
+	8200.1.1 = { trait = strong }
 	8232.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -10135,7 +10079,7 @@ Velaryon_67 = {
 Velaryon_rs_67 = {
 	name = Vaegon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	8173.1.1 = { birth = yes }
@@ -10147,7 +10091,7 @@ Velaryon_68 = {
 	dynasty = dynn_Velaryon
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_rs_70
@@ -10163,7 +10107,7 @@ Velaryon_69 = {
 	name = Aeryn
 	dynasty = dynn_Velaryon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_rs_67
@@ -10178,7 +10122,7 @@ Velaryon_72 = {
 	name = Matarys # a lord
 	dynasty = dynn_Velaryon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_rs_67
@@ -10196,7 +10140,7 @@ Velaryon_rs_72 = {
 	name = Viserra
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	8203.1.1 = { birth = yes }
@@ -10207,7 +10151,7 @@ Velaryon_66 = {
 	name = Maegon # a lord
 	dynasty = dynn_Velaryon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_72
@@ -10222,7 +10166,7 @@ Velaryon_rs_66 = {
 	name = Vaella
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	8232.1.1 = { birth = yes }
@@ -10233,7 +10177,7 @@ Velaryon_75 = {
 	dynasty = dynn_Velaryon
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_72
@@ -10246,7 +10190,7 @@ Velaryon_76 = {
 	dynasty = dynn_Velaryon
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_72
@@ -10265,7 +10209,7 @@ Celtigar_8 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_8
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	7832.1.1 = { birth = yes }
@@ -10276,7 +10220,7 @@ Celtigar_9 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_9
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Celtigar_8
@@ -10290,7 +10234,7 @@ Celtigar_10 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_10
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Celtigar_9
@@ -10304,7 +10248,7 @@ Celtigar_10_A = {
 	female = yes
 	dna = Celtigar_10_A
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Celtigar_9
@@ -10318,7 +10262,7 @@ Celtigar_11 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_11
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Celtigar_10
@@ -10333,7 +10277,7 @@ Celtigar_12 = {
 	female = yes
 	dna = Celtigar_12
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Celtigar_11
@@ -10346,7 +10290,7 @@ Celtigar_13 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_13
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_11
@@ -10360,7 +10304,7 @@ Celtigar_rs_13 = {
 	female = yes
 	dna = Celtigar_rs_13
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	7930.1.1 = { birth = yes }
@@ -10374,7 +10318,7 @@ Celtigar_15 = {
 
 	stewardship = 9
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_13
@@ -10412,7 +10356,7 @@ Celtigar_rs_15 = {
 	female = yes
 	dna = Celtigar_rs_15
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	7951.1.1 = { birth = yes }
@@ -10424,7 +10368,7 @@ Celtigar_14 = {
 	female = yes
 	dna = Celtigar_14
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	father = Celtigar_13
@@ -10444,7 +10388,7 @@ Celtigar_16 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_15
@@ -10480,7 +10424,7 @@ Celtigar_17 = {
 	father = Celtigar_15
 	mother = Celtigar_rs_15
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	7977.1.1 = { birth = yes }
@@ -10497,7 +10441,7 @@ Celtigar_18 = {
 	intrigue = 3
 	diplomacy = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_16
@@ -10545,19 +10489,23 @@ Celtigar_62 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_62
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_16
 	mother = Sunglass_17
 
 	trait = education_martial_3
+	trait = physique_good_1
 
 	8000.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	8017.1.1 = { trait = knight }
+	8017.1.1 = { 
+		trait = knight
+		trait = education_martial_prowess_2 
+	}
 	8025.1.1 = {
 		effect = {
 			agot_join_kingsguard_char_history_effect = { # Predecessor: Griffith Goode
@@ -10576,7 +10524,7 @@ Celtigar_19 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_19
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_18
@@ -10599,7 +10547,7 @@ Celtigar_20 = {
 	female = yes
 	dna = Celtigar_20
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_18
@@ -10620,7 +10568,7 @@ Celtigar_21 = {
 	female = yes
 	dna = Celtigar_21
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_18
@@ -10641,7 +10589,7 @@ Celtigar_22 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_22
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_19
@@ -10658,7 +10606,7 @@ Celtigar_23 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_23
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_22
@@ -10672,7 +10620,7 @@ Celtigar_24 = { # Dance of the Dragons
 	dynasty = dynn_Celtigar
 	dna = Celtigar_24
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_23
@@ -10705,7 +10653,7 @@ Celtigar_61 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_61
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_23
@@ -10721,7 +10669,7 @@ Celtigar_25 = {
 	dna = Celtigar_25
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_24
@@ -10738,7 +10686,7 @@ Celtigar_26 = { # Conquest of Dorne
 	dynasty = dynn_Celtigar
 	dna = Celtigar_26
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_24
@@ -10760,7 +10708,7 @@ Celtigar_27 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_27
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_24
@@ -10782,7 +10730,7 @@ Celtigar_30 = {
 	dna = Celtigar_30
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_24
@@ -10803,7 +10751,7 @@ Celtigar_29 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_24
@@ -10826,7 +10774,7 @@ Celtigar_28 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_61
@@ -10851,7 +10799,7 @@ Celtigar_31 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_31
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	mother = Celtigar_30
@@ -10875,7 +10823,7 @@ Celtigar_32 = {
 
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_27
@@ -10901,7 +10849,7 @@ Celtigar_33 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_27
@@ -10933,7 +10881,7 @@ Celtigar_34 = {
 	dna = Celtigar_34
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_27
@@ -10953,7 +10901,7 @@ Celtigar_35 = {
 	dna = Celtigar_35
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_27
@@ -10970,7 +10918,7 @@ Celtigar_36 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_36
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_27
@@ -10994,7 +10942,7 @@ Celtigar_43 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_43
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_26
@@ -11015,7 +10963,7 @@ Celtigar_37 = {
 	dna = Celtigar_37
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_26
@@ -11033,7 +10981,7 @@ Celtigar_38 = {
 	dna = Celtigar_38
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_26
@@ -11050,7 +10998,7 @@ Celtigar_39 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_39
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_26
@@ -11071,7 +11019,7 @@ Celtigar_42 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_42
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_26 # Clement Celtigar
@@ -11093,7 +11041,7 @@ Celtigar_41 = {
 	dna = Celtigar_41
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_26 # Clement Celtigar
@@ -11111,7 +11059,7 @@ Celtigar_40 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_40
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_39
@@ -11131,7 +11079,7 @@ Celtigar_44 = {
 	dna = Celtigar_44
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_43
@@ -11148,7 +11096,7 @@ Celtigar_45 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_45
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_43
@@ -11166,7 +11114,7 @@ Celtigar_46 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_46
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_43
@@ -11190,7 +11138,7 @@ Celtigar_47 = {
 	dna = Celtigar_47
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_43
@@ -11208,7 +11156,7 @@ Celtigar_48 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_48
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_45
@@ -11222,7 +11170,7 @@ Celtigar_rs_48 = {
 	name = Elysa
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8178.1.1 = { birth = yes }
@@ -11234,7 +11182,7 @@ Celtigar_49 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_49
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_48
@@ -11248,7 +11196,7 @@ Celtigar_p_1 = {
 	female = yes
 	dna = Celtigar_p_1
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8193.1.1 = { birth = yes }
@@ -11260,7 +11208,7 @@ Celtigar_56 = {
 	female = yes
 	dna = Celtigar_56
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_48
@@ -11274,7 +11222,7 @@ Celtigar_50 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_50
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_49
@@ -11289,7 +11237,7 @@ Celtigar_rs_50 = {
 	female = yes
 	dna = Celtigar_rs_50
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8221.1.1 = { birth = yes }
@@ -11300,11 +11248,13 @@ Celtigar_58 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_58
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_49
 	mother = Celtigar_p_1
+
+	trait = beauty_good_2
 
 	8223.1.1 = { birth = yes }
 	8245.1.1 = { add_spouse = Celtigar_p_2 }
@@ -11314,7 +11264,7 @@ Celtigar_p_2 = {
 	name = Maegelle
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8223.1.1 = { birth = yes }
@@ -11326,7 +11276,7 @@ Celtigar_51 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_51
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_46 # Marell Celtigar
@@ -11340,7 +11290,7 @@ Celtigar_52 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_52
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_51
@@ -11354,7 +11304,7 @@ Celtigar_53 = {
 	dynasty = dynn_Celtigar
 	dna = Celtigar_53
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Celtigar_52
@@ -11370,7 +11320,7 @@ Celtigar_p_3 = {
 	name = Casella
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8220.1.1 = { birth = yes }
@@ -11385,7 +11335,7 @@ Scales_23 = {
 	name = Elyas # a lord
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	7819.1.1 = { birth = yes }
@@ -11396,7 +11346,7 @@ Scales_rs_23 = {
 	name = Alyssa
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	7820.1.1 = { birth = yes }
@@ -11407,7 +11357,7 @@ Scales_6 = {
 	name = Terrence # a lord
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_23
@@ -11425,7 +11375,7 @@ Scales_rs_6 = {
 	name = Jyana
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	7845.1.1 = { birth = yes }
@@ -11436,7 +11386,7 @@ Scales_7 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_23
@@ -11454,7 +11404,7 @@ Scales_9 = {
 	name = Morland
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_23
@@ -11472,7 +11422,7 @@ Scales_rs_9 = {
 	name = Aurana
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	7850.1.1 = { birth = yes }
@@ -11483,7 +11433,7 @@ Scales_10 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_23
@@ -11499,7 +11449,7 @@ Scales_11 = {
 	name = Rennifer
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_9
@@ -11515,7 +11465,7 @@ Scales_rs_11 = {
 	name = Elaena
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	7879.1.1 = { birth = yes }
@@ -11526,7 +11476,7 @@ Scales_12 = {
 	name = Vaemond # a lord
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_6
@@ -11543,7 +11493,7 @@ Scales_rs_12 = {
 	name = Prunella
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	7872.1.1 = { birth = yes }
@@ -11553,7 +11503,7 @@ Scales_13 = {
 	name = Bartimos
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_6
@@ -11569,7 +11519,7 @@ Scales_rs_13 = {
 	name = Syrella
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	7866.1.1 = { birth = yes }
@@ -11581,7 +11531,7 @@ Scales_69 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_11
@@ -11595,7 +11545,7 @@ Scales_70 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_11
@@ -11611,7 +11561,7 @@ Scales_17 = {
 	name = Veran # a lord
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_12
@@ -11630,7 +11580,7 @@ Scales_8_B = {
 	female = yes
 	dna = Scales_8_B
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_12
@@ -11645,7 +11595,7 @@ Scales_25 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_17
@@ -11660,7 +11610,7 @@ Scales_25 = {
 Scales_rs_25 = {
 	name = Elyas
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	7929.1.1 = { birth = yes }
@@ -11672,7 +11622,7 @@ Scales_14 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_13
@@ -11688,7 +11638,7 @@ Scales_15 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_13
@@ -11704,7 +11654,7 @@ Scales_16 = {
 	name = Corlys
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_13
@@ -11718,7 +11668,7 @@ Scales_rs_16 = {
 	name = Semella
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	7892.1.1 = { birth = yes }
@@ -11730,14 +11680,14 @@ Scales_26 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_rs_25
 	mother = Scales_25
 
 	7954.1.1 = { birth = yes }
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	8015.1.1 = {
 		death = { death_reason = death_murder }
 	}
@@ -11746,7 +11696,7 @@ Scales_27 = {
 	name = Morland # a lord
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_rs_25
@@ -11754,7 +11704,7 @@ Scales_27 = {
 
 	7957.1.1 = { birth = yes }
 	7981.1.1 = { add_spouse = Scales_rs_27 }
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	7994.1.1 = { trait = knight }
 	8025.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -11764,7 +11714,7 @@ Scales_rs_27 = {
 	name = Jarella
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	7958.1.1 = { birth = yes }
@@ -11774,7 +11724,7 @@ Scales_28 = {
 	name = Ardrian
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_rs_25
@@ -11788,7 +11738,7 @@ Scales_rs_28 = {
 	name = Calla
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	7962.1.1 = { birth = yes }
@@ -11798,7 +11748,7 @@ Scales_24 = {
 	name = Aethan # Commander of the Gold Cloaks
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_rs_25
@@ -11807,7 +11757,7 @@ Scales_24 = {
 	trait = education_martial_3
 
 	7965.1.1 = { birth = yes }
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	7994.1.1 = { trait = knight }
 	8018.1.1 = { death = yes }
 }
@@ -11817,14 +11767,14 @@ Scales_29 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_28
 	mother = Scales_rs_28
 
 	7983.1.1 = { birth = yes }
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	8048.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -11834,14 +11784,14 @@ Scales_30 = {
 	name = Tasmund # a lord
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_27
 	mother = Scales_rs_27
 
 	7985.1.1 = { birth = yes }
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	8002.1.1 = { trait = knight }
 	8011.1.1 = { add_spouse = Scales_rs_30 }
 	8044.1.1 = {
@@ -11852,7 +11802,7 @@ Scales_rs_30 = {
 	name = Jeyne
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	7992.1.1 = { birth = yes }
@@ -11863,14 +11813,14 @@ Scales_31 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_27
 	mother = Scales_rs_27
 
 	7987.1.1 = { birth = yes }
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	8008.1.1 = {
 		trait = gout_ridden
 		death = { death_reason = death_gout_ridden }
@@ -11880,14 +11830,14 @@ Scales_32 = {
 	name = Lucerys
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_27
 	mother = Scales_rs_27
 
 	7989.1.1 = { birth = yes }
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	8006.1.1 = { trait = knight }
 	8016.1.1 = { add_spouse = Scales_rs_32 }
 	8054.1.1 = {
@@ -11899,7 +11849,7 @@ Scales_rs_32 = {
 	name = Jeyn
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	7998.1.1 = { birth = yes }
@@ -11909,14 +11859,14 @@ Scales_33 = {
 	name = Rolland
 	dynasty = dynn_Scales
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
 	father = Scales_27
 	mother = Scales_rs_27
 
 	7990.1.1 = { birth = yes }
-	7992.1.1 = { religion = the_seven_main }
+	7992.1.1 = { religion = fots_seven }
 	8006.1.1 = { add_spouse = Scales_rs_33 }
 	8009.1.1 = { trait = knight }
 	8051.1.1 = {
@@ -11928,7 +11878,7 @@ Scales_rs_33 = {
 	name = Jarella
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	7985.1.1 = { birth = yes }
@@ -11941,7 +11891,7 @@ Scales_20 = {
 	martial = 6
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_27
@@ -11978,7 +11928,7 @@ Scales_18 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_16
@@ -11994,7 +11944,7 @@ Scales_19 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_16
@@ -12011,7 +11961,7 @@ Scales_34 = {
 	name = Benethon
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_33
@@ -12028,7 +11978,7 @@ Scales_rs_34 = {
 	name = Oreyne
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8014.1.1 = { birth = yes }
@@ -12038,7 +11988,7 @@ Scales_35 = {
 	name = Gaemon
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_33
@@ -12056,7 +12006,7 @@ Scales_rs_35 = {
 	name = Maenylla
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8016.1.1 = { birth = yes }
@@ -12067,7 +12017,7 @@ Scales_36 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_33
@@ -12082,7 +12032,7 @@ Scales_37 = {
 	name = Lucerys
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_33
@@ -12099,7 +12049,7 @@ Scales_rs_37 = {
 	name = Lianna
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8018.1.1 = { birth = yes }
@@ -12110,7 +12060,7 @@ Scales_72 = {
 	name = Crispian
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_35
@@ -12126,7 +12076,7 @@ Scales_73 = {
 	name = Joffrey
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_35
@@ -12143,7 +12093,7 @@ Scales_74 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_35
@@ -12159,7 +12109,7 @@ Scales_75 = {
 	name = Rennifer
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_37
@@ -12173,7 +12123,7 @@ Scales_76 = {
 	name = Kaeron
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_37
@@ -12190,7 +12140,7 @@ Scales_77 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_37
@@ -12207,7 +12157,7 @@ Scales_38 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_30
@@ -12223,7 +12173,7 @@ Scales_39 = {
 	name = Philbert # a lord
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_30
@@ -12240,7 +12190,7 @@ Scales_rs_39 = {
 	name = Amyana
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8013.1.1 = { birth = yes }
@@ -12251,7 +12201,7 @@ Scales_44 = {
 	name = Trystane
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_32
@@ -12268,7 +12218,7 @@ Scales_rs_44 = {
 	name = Prunella
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8028.1.1 = { birth = yes }
@@ -12279,7 +12229,7 @@ Scales_45 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_32
@@ -12296,7 +12246,7 @@ Scales_71 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_34
@@ -12310,7 +12260,7 @@ Scales_78 = {
 	name = Daeron
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_44
@@ -12327,7 +12277,7 @@ Scales_41 = {
 	name = Marell # a lord
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_39
@@ -12344,7 +12294,7 @@ Scales_rs_41 = {
 	name = Shiera
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8040.1.1 = { birth = yes }
@@ -12354,7 +12304,7 @@ Scales_40 = {
 	name = Edwell
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_39
@@ -12369,7 +12319,7 @@ Scales_rs_40 = {
 	name = Amaena
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8037.1.1 = { birth = yes }
@@ -12380,7 +12330,7 @@ Scales_42 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_39
@@ -12398,7 +12348,7 @@ Scales_46 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_40
@@ -12414,7 +12364,7 @@ Scales_47 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_40
@@ -12430,7 +12380,7 @@ Scales_48 = {
 	name = Benethon # a lord
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_40
@@ -12447,7 +12397,7 @@ Scales_rs_48 = {
 	name = Calla
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8065.1.1 = { birth = yes }
@@ -12458,7 +12408,7 @@ Scales_49 = {
 	name = Aloran # a lord
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_48
@@ -12475,7 +12425,7 @@ Scales_rs_49 = {
 	name = Larissa
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8086.1.1 = { birth = yes }
@@ -12486,7 +12436,7 @@ Scales_50 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_48
@@ -12501,7 +12451,7 @@ Scales_50 = {
 Scales_rs_50 = {
 	name = Benethon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8083.1.1 = { birth = yes }
@@ -12514,7 +12464,7 @@ Scales_51 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_49
@@ -12529,7 +12479,7 @@ Scales_43 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_41
@@ -12547,7 +12497,7 @@ Scales_52 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_rs_50
@@ -12562,7 +12512,7 @@ Scales_53 = {
 	name = Orys
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_rs_50
@@ -12579,7 +12529,7 @@ Scales_54 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_rs_50
@@ -12596,7 +12546,7 @@ Scales_55 = {
 	name = Terrence # a lord
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_rs_50
@@ -12615,7 +12565,7 @@ Scales_rs_55 = {
 	name = Jarella
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8125.1.1 = { birth = yes }
@@ -12626,7 +12576,7 @@ Scales_56 = {
 	name = Alyn # a lord
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_55
@@ -12644,7 +12594,7 @@ Scales_rs_56 = {
 	name = Nerys
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8151.1.1 = { birth = yes }
@@ -12654,7 +12604,7 @@ Scales_57 = {
 	name = Rolland
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_55
@@ -12673,7 +12623,7 @@ Scales_rs_57 = {
 	name = Maelane
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8150.1.1 = { birth = yes }
@@ -12683,7 +12633,7 @@ Scales_58 = {
 	name = Aurion
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_55
@@ -12700,7 +12650,7 @@ Scales_rs_58 = {
 	name = Alaerys
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8161.1.1 = { birth = yes }
@@ -12711,7 +12661,7 @@ Scales_61 = {
 	name = Elyas
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_57
@@ -12726,7 +12676,7 @@ Scales_rs_61 = {
 	name = Laena
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8170.1.1 = { birth = yes }
@@ -12737,7 +12687,7 @@ Scales_62 = {
 	name = Orys # a lord
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_56
@@ -12754,7 +12704,7 @@ Scales_rs_62 = {
 	name = Oreyne
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8183.1.1 = { birth = yes }
@@ -12764,7 +12714,7 @@ Scales_63 = {
 	name = Benethon
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_56
@@ -12779,7 +12729,7 @@ Scales_rs_63 = {
 	name = Syrella
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8186.1.1 = { birth = yes }
@@ -12791,7 +12741,7 @@ Scales_59 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_58
@@ -12807,7 +12757,7 @@ Scales_60 = {
 	name = Corlys
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_58
@@ -12824,7 +12774,7 @@ Scales_rs_60 = {
 	name = Larissa
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8186.1.1 = { birth = yes }
@@ -12835,7 +12785,7 @@ Scales_79 = {
 	name = Jon
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_61
@@ -12850,7 +12800,7 @@ Scales_80 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_61
@@ -12866,7 +12816,7 @@ Scales_81 = {
 	name = Monterys
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_61
@@ -12882,7 +12832,7 @@ Scales_82 = {
 	name = Terrence
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_61
@@ -12899,7 +12849,7 @@ Scales_64 = {
 	name = Clement
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_63
@@ -12916,7 +12866,7 @@ Scales_67 = {
 	name = Daemion
 	dynasty = dynn_Scales
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_60
@@ -12935,7 +12885,7 @@ Scales_68 = {
 	dynasty = dynn_Scales
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_60
@@ -12961,7 +12911,7 @@ Longwaters_1 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Velaryon_45 # Jon Waters
@@ -12999,7 +12949,7 @@ Varezys_1 = {
 	name = Aurion # Canon, Emperor of Valyria
 	dynasty = dynn_Varezys # House uncertain
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	trait = education_martial_4
@@ -13033,7 +12983,7 @@ Mataeryon_1_mother = {
 	dynasty = dynn_Mataeryon
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	trait = education_intrigue_2
@@ -13048,7 +12998,7 @@ Mataeryon_1 = {
 	name = Jaehaelor # Semi-Canon
 	dynasty = dynn_Mataeryon
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	mother = Mataeryon_1_mother
@@ -13090,7 +13040,7 @@ Belaerys_1 = {
 	dynasty = dynn_Belaerys
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	trait = education_martial_3
@@ -13119,7 +13069,7 @@ Urnebar_3 = {
 	name = Maegon
 	dynasty = dynn_Urnebar
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	7822.1.1 = { birth = yes }
@@ -13130,7 +13080,7 @@ Urnebar_4 = {
 	name = Valerion
 	dynasty = dynn_Urnebar
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Urnebar_3
@@ -13142,7 +13092,7 @@ Urnebar_1 = {
 	name = Rhogar # Mentioned, Tyroshi dragonlord
 	dynasty = dynn_Urnebar
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Urnebar_3
@@ -13180,7 +13130,7 @@ Urnebar_5 = {
 	dynasty = dynn_Urnebar
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Urnebar_3
@@ -13192,7 +13142,7 @@ Urnebar_6 = {
 	name = Daemion
 	dynasty = dynn_Urnebar
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Urnebar_3
@@ -13205,7 +13155,7 @@ Urnebar_2 = {
 	name = Aeryn
 	dynasty = dynn_Urnebar
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Urnebar_1
@@ -13238,7 +13188,7 @@ Urnebar_7 = {
 	name = Vaegon
 	dynasty = dynn_Urnebar
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Urnebar_4
@@ -13253,7 +13203,7 @@ Urnebar_8 = {
 	dynasty = dynn_Urnebar
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Urnebar_4
@@ -13272,7 +13222,7 @@ Sonaryen_1 = {
 	name = Aelyx # Mentioned, Lyseni dragonlord
 	dynasty = dynn_Sonaryen
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	trait = education_diplomacy_1
@@ -13304,7 +13254,7 @@ Sonaryen_2 = {
 	dynasty = dynn_Sonaryen
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Sonaryen_1
@@ -13322,7 +13272,7 @@ Sonaryen_3 = {
 	dynasty = dynn_Sonaryen
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	father = Sonaryen_1
@@ -13367,7 +13317,7 @@ Tall_1 = {
 	martial = 8
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_martial_2
@@ -13440,7 +13390,7 @@ Kingsguard_1 = {
 
 	prowess = 24
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = stormlander
 
 	trait = education_martial_2
@@ -13479,7 +13429,7 @@ Kingsguard_2 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = valeman
 
 	trait = education_martial_2
@@ -13518,7 +13468,7 @@ Kingsguard_3 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_martial_2
@@ -13553,7 +13503,7 @@ Kingsguard_4 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_martial_2
@@ -13591,7 +13541,7 @@ Kingsguard_5 = {
 
 	prowess = 24
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_martial_3
@@ -13631,7 +13581,7 @@ Kingsguard_6 = {
 
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	mother = Tangletongue_2
@@ -13698,7 +13648,7 @@ Kingsguard_7 = {
 
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_martial_2
@@ -13726,7 +13676,7 @@ Kingsguard_8 = {
 
 	prowess = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_martial_2
@@ -13762,7 +13712,7 @@ Kingsguard_9 = {
 	martial = 6
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_intrigue_1
@@ -13796,10 +13746,7 @@ Kingsguard_9 = {
 	}
 	8220.1.1 = {
 		trait = kingsguard # Successor: Clarence Crabb
-		death = {
-			death_reason = death_battle # Third Blackfyre Rebellion
-			killer = Targaryen_96 # Brynden Bloodraven
-		}
+		death = { death_reason = death_battle } # Third Blackfyre Rebellion
 	}
 }
 Kingsguard_11 = {
@@ -13808,7 +13755,7 @@ Kingsguard_11 = {
 	martial = 10
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_martial_1
@@ -13840,7 +13787,7 @@ Kingsguard_11 = {
 Kingsguard_10 = {
 	name = Aleryn # Mentioned, a Kingsguard
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_martial_1
@@ -13896,7 +13843,7 @@ Septon_Kings_Landing_1 = {
 	intrigue = 4
 	diplomacy = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_2
@@ -13939,7 +13886,7 @@ Septon_Kings_Landing_2 = {
 	intrigue = 10
 	diplomacy = 7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_learning_5
@@ -13979,7 +13926,7 @@ Septon_Kings_Landing_2 = {
 Septon_Kings_Landing_3 = {
 	name = Oswyck # Canon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = valeman
 
 	trait = education_learning_3
@@ -14022,7 +13969,7 @@ Grand_Maester_1 = {
 
 	learning = 9
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_learning_4
@@ -14073,7 +14020,7 @@ Grand_Maester_2 = {
 
 	learning = 8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerman
 
 	trait = education_learning_3
@@ -14105,7 +14052,7 @@ Grand_Maester_3 = {
 
 	learning = 9
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerman
 
 	trait = education_learning_3
@@ -14141,7 +14088,7 @@ Grand_Maester_4 = {
 
 	learning = 9
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_learning_3
@@ -14177,7 +14124,7 @@ Grand_Maester_5 = {
 
 	learning = 5
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_3
@@ -14206,7 +14153,7 @@ Grand_Maester_6 = {
 
 	learning = 9
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_4
@@ -14243,7 +14190,7 @@ Grand_Maester_7 = {
 
 	learning = 8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = stormlander
 
 	trait = education_learning_4
@@ -14274,7 +14221,7 @@ Grand_Maester_8 = {
 
 	learning = 7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_3
@@ -14298,7 +14245,7 @@ Grand_Maester_9 = {
 
 	learning = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_learning_3
@@ -14323,7 +14270,7 @@ Grand_Maester_10 = {
 
 	learning = 8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_learning_3
@@ -14351,7 +14298,7 @@ Grand_Maester_12 = {
 
 	learning = 8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_learning_3
@@ -14376,7 +14323,7 @@ Grand_Maester_13 = {
 
 	learning = 9
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_3
@@ -14399,7 +14346,7 @@ Grand_Maester_13 = {
 Grand_Maester_15 = {
 	name = Utherydes # XV
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = vineman
 
 	trait = education_learning_3
@@ -14417,7 +14364,7 @@ Grand_Maester_15 = {
 Grand_Maester_16 = {
 	name = Moslander # XVI
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_4
@@ -14435,7 +14382,7 @@ Grand_Maester_16 = {
 Grand_Maester_17 = {
 	name = Portifer # XVII
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_4
@@ -14455,7 +14402,7 @@ Grand_Maester_18 = {
 
 	learning = 8
 
-	religion = drowned_god_main
+	religion = drowned_god
 	culture = ironborn
 
 	trait = education_learning_3
@@ -14481,7 +14428,7 @@ Grand_Maester_18 = {
 Grand_Maester_19 = {
 	name = Murenmure # XIX
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_3
@@ -14499,7 +14446,7 @@ Grand_Maester_19 = {
 Grand_Maester_20 = {
 	name = Perceon # XX
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = marcher
 
 	trait = education_learning_4
@@ -14517,7 +14464,7 @@ Grand_Maester_20 = {
 Grand_Maester_21 = {
 	name = Halbert # XXI
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerman
 
 	trait = education_learning_3
@@ -14537,7 +14484,7 @@ Grand_Maester_22 = {
 
 	learning = 7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_3
@@ -14563,7 +14510,7 @@ Grand_Maester_22 = {
 Grand_Maester_23 = {
 	name = Alesandor # XXIII
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = valeman
 
 	trait = education_learning_4
@@ -14584,7 +14531,7 @@ Grand_Maester_23 = {
 Grand_Maester_24 = {
 	name = Harstyn # XXIV
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_3
@@ -14605,7 +14552,7 @@ Grand_Maester_24 = {
 Grand_Maester_25 = {
 	name = Runceford # XXV
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = honeywiner
 
 	trait = education_learning_4
@@ -14630,7 +14577,7 @@ Grand_Maester_25 = {
 Grand_Maester_26 = {
 	name = Jarreth # XXVI
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = sand_dornish
 
 	trait = education_learning_4
@@ -14653,7 +14600,7 @@ Grand_Maester_26 = {
 Grand_Maester_27 = {
 	name = Bonifer # Mentioned, XXVII, Grand Maester steeped in sorcery
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = stormlander
 
 	trait = education_learning_4
@@ -14679,7 +14626,7 @@ Grand_Maester_27 = {
 Grand_Maester_28 = {
 	name = Ossifer # XXVIII
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerman
 
 	trait = education_learning_3
@@ -14699,7 +14646,7 @@ Grand_Maester_29 = {
 
 	learning = 8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_4
@@ -14725,7 +14672,7 @@ Grand_Maester_29 = {
 Grand_Maester_30 = {
 	name = Thurgood # XXX
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = stormlander
 
 	trait = education_learning_3
@@ -14745,7 +14692,7 @@ Grand_Maester_31 = {
 
 	learning = 6
 
-	religion = old_gods_south
+	religion = old_gods_wnw
 	culture = northman
 
 	trait = education_learning_2
@@ -14775,7 +14722,7 @@ Grand_Maester_31 = {
 Grand_Maester_32 = {
 	name = Jeomar # XXXII
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = clawman
 
 	trait = education_learning_4
@@ -14793,7 +14740,7 @@ Grand_Maester_32 = {
 Grand_Maester_33 = {
 	name = Urmen # XXXIII
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = stormlander
 
 	trait = education_learning_3
@@ -14813,7 +14760,7 @@ Grand_Maester_34 = {
 
 	learning = 8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_4
@@ -14836,7 +14783,7 @@ Grand_Maester_34 = {
 Grand_Maester_35 = {
 	name = Wynton # XXXV
 
-	religion = weirwood_of_the_seven
+	religion = fots_oldnew
 	culture = harborman
 
 	trait = education_learning_3
@@ -14854,7 +14801,7 @@ Grand_Maester_35 = {
 Grand_Maester_36 = {
 	name = Jonothor # XXXVI
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_3
@@ -14872,7 +14819,7 @@ Grand_Maester_36 = {
 Grand_Maester_37 = {
 	name = Eldrick # XXXVII
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerman
 
 	trait = education_learning_3
@@ -14890,7 +14837,7 @@ Grand_Maester_37 = {
 Grand_Maester_38 = {
 	name = Garrison # XXXVIII
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerman
 
 	trait = education_learning_3
@@ -14910,7 +14857,7 @@ Grand_Maester_39 = {
 
 	learning = 7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = salt_dornish
 
 	trait = education_learning_3
@@ -14947,7 +14894,7 @@ Grand_Maester_40 = {
 
 	learning = 8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_4
@@ -14972,7 +14919,7 @@ Grand_Maester_41 = {
 
 	learning = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_3
@@ -14995,7 +14942,7 @@ Grand_Maester_42 = {
 
 	learning = 7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_3
@@ -15021,7 +14968,7 @@ Grand_Maester_42 = {
 Maester_Kings_Landing_3 = {
 	name = Culiper # Canon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = stormlander
 
 	learning = 10
@@ -15062,7 +15009,7 @@ Maester_Kings_Landing_3 = {
 Maester_Kings_Landing_4 = {
 	name = Anselm # Canon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	learning = 6
@@ -15103,7 +15050,7 @@ Maester_Kings_Landing_5 = {
 
 	learning = 9
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_4
@@ -15142,7 +15089,7 @@ Maester_Kings_Landing_6 = {
 
 	learning = 8
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_3
@@ -15166,7 +15113,7 @@ Maester_Kings_Landing_7 = {
 
 	learning = 7
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = stone_dornish
 
 	trait = education_learning_3
@@ -15197,7 +15144,7 @@ Maester_Kings_Landing_8 = {
 
 	learning = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_learning_2
@@ -15210,7 +15157,7 @@ Maester_Kings_Landing_8 = {
 		trait = maester_historical
 		effect = { agot_maester_starting_setup_history_effect = yes }
 	}
-	8196.6.1 = {
+	8196.11.22 = {
 		effect = { # Maester of Summerhall
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:c_summerfield
@@ -15225,7 +15172,7 @@ Maester_Kings_Landing_9 = {
 
 	learning = 10
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_3
@@ -15257,7 +15204,7 @@ Maester_Kings_Landing_9 = {
 Maester_Kings_Landing_10 = {
 	name = Mickon # Semi-Canon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_3
@@ -15291,7 +15238,7 @@ Knight_Kings_Landing_5 = {
 
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	8003.1.1 = {
@@ -15318,7 +15265,7 @@ Poor_Fellows_1 = {
 	learning = 3
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_stewardship_1
@@ -15354,7 +15301,7 @@ Poor_Fellows_2 = {
 	martial = 8
 	learning = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerman
 
 	trait = bastard
@@ -15384,7 +15331,7 @@ Poor_Fellows_3 = {
 	dynasty = dynn_Poore
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_martial_3
@@ -15413,7 +15360,7 @@ Poor_Fellows_3 = {
 Poor_Fellows_4 = {
 	name = Moon # Canon, AKA: Septon Moon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_3
@@ -15448,7 +15395,7 @@ Poor_Fellows_4 = {
 Poor_Fellows_5 = {
 	name = Dennis # Canon, Dennis the Lame
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerman
 
 	trait = zealous
@@ -15467,7 +15414,7 @@ Poor_Fellows_5 = {
 Poor_Fellows_6 = {
 	name = Silas # Canon, AKA: Ragged Silas
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = zealous
@@ -15485,7 +15432,7 @@ Poor_Fellows_6 = {
 Poor_Fellows_7 = {
 	name = Lorcas # Canon, AKA: Lorcas the Learned
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_learning_2
@@ -15505,7 +15452,7 @@ Poor_Fellows_7 = {
 Poor_Fellows_8 = {
 	name = Rob # Canon, AKA: Rob the Starvling
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_martial_1
@@ -15534,7 +15481,7 @@ Tyanna_1 = {
 	name = Tyanna # Canon, AKA: Tyanna of the Tower, married Maegor Targaryen
 	female = yes
 
-	religion = princely_arbiter
+	religion = fc_pan_pentos
 	culture = pentoshi
 	sexuality = bisexual
 
@@ -15587,7 +15534,7 @@ Knight_Kings_Landing_6 = {
 
 	prowess = 10
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_martial_2
@@ -15610,7 +15557,7 @@ Knight_Kings_Landing_7 = {
 
 	prowess = 3
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_diplomacy_2
@@ -15642,7 +15589,7 @@ Septon_Kings_Landing_5 = {
 	learning = 12
 	diplomacy = 12
 
-	religion = princely_arbiter
+	religion = fc_pan_pentos
 	culture = pentoshi
 
 	trait = education_learning_4
@@ -15658,7 +15605,7 @@ Septon_Kings_Landing_5 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	8033.1.1 = { religion = the_seven_main }
+	8033.1.1 = { religion = fots_seven }
 	8040.1.1 = {
 		trait = septon # Septon
 		trait = scholar
@@ -15671,7 +15618,7 @@ Septon_Kings_Landing_6 = {
 
 	intrigue = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = valeman
 
 	trait = education_learning_2
@@ -15701,7 +15648,7 @@ Septon_Kings_Landing_7 = {
 
 	intrigue = 1
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = vineman
 
 	trait = education_learning_3
@@ -15726,7 +15673,7 @@ Septon_Kings_Landing_8 = {
 	name = Violante # Canon, Seven Speakers
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_2
@@ -15753,7 +15700,7 @@ Septon_Kings_Landing_9 = {
 	name = Maris # Canon, Seven Speakers
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = valeman
 
 	trait = education_learning_3
@@ -15794,7 +15741,7 @@ Targaryen_hh_3 = {
 	learning = 1
 	fertility = 0.25
 
-	religion = rhllor
+	religion = fc_pan_lys
 	culture = lyseni
 
 	trait = education_intrigue_4
@@ -15861,7 +15808,7 @@ Targaryen_hh_4 = {
 	intrigue = 5
 	diplomacy = 1
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_intrigue_1
@@ -15888,7 +15835,7 @@ Targaryen_hh_4 = {
 			}
 		}
 	}
-	8129.3.3 = {
+	8128.12.15 = {
 		effect = { # Court Jester of Dragonstone
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:c_dragonstone
@@ -15909,7 +15856,7 @@ Targaryen_hh_4 = {
 Targaryen_hh_5 = {
 	name = Ummet # Canon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_stewardship_1
@@ -15938,7 +15885,7 @@ Targaryen_hh_5 = {
 Lowborn_Kings_Landing_2 = {
 	name = Hobb # Canon, AKA: Hobb the Hewer
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_stewardship_1
@@ -15970,7 +15917,7 @@ Septon_Kings_Landing_4 = {
 	intrigue = 4
 	diplomacy = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_learning_4
@@ -16008,13 +15955,40 @@ Septon_Kings_Landing_4 = {
 	}
 	8147.1.1 = { death = yes }
 }
+Septon_Kings_Landing_10 = {
+	name = Marlow # Semi-Canon
+	female = yes
+
+	religion = fots_seven
+	culture = honeywiner
+
+	trait = education_learning_3
+	trait = wrathful
+
+	8063.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
+	8085.1.1 = { trait = septon } # Septa
+	8100.1.1 = {
+		effect = { # Septa of the Red Keep
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_kings_landing
+				POSITION = septa_court_position
+			}
+		}
+	}
+	8125.1.1 = {
+		death = { death_reason = death_apoplexy }
+	}
+}
 Knight_Kings_Landing_8 = {
 	name = Harmon # Canon, AKA: The Iron Banger, one of the Seven who Rode
 	# of the Reeds
 
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = diligent
@@ -16041,7 +16015,7 @@ Knight_Kings_Landing_9 = {
 
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_martial_1
@@ -16069,7 +16043,7 @@ Knight_Kings_Landing_9 = {
 Knight_Kings_Landing_10 = {
 	name = Randyll # Semi-Canon, Randyll Barret, captain of the Gold Cloaks
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = education_martial_1
@@ -16096,7 +16070,7 @@ Knight_Kings_Landing_10 = {
 Knight_Kings_Landing_16 = {
 	name = Eddard # Semi-Canon, a Kingsguard
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	trait = bastard
@@ -16138,7 +16112,7 @@ Knight_Kings_Landing_16 = {
 Knight_Kings_Landing_17 = {
 	name = The_Burning_Knight # Canon
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_martial_1
@@ -16177,7 +16151,7 @@ Silver_Denys_1 = {
 	name = Maegelle
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	trait = bastard
@@ -16203,7 +16177,7 @@ Silver_Denys_2 = {
 	name = Barba
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	mother = Silver_Denys_1
@@ -16231,7 +16205,7 @@ Silver_Denys_3 = {
 	diplomacy = 4
 	prowess = 6
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = high_valyrian
 
 	mother = Silver_Denys_2
@@ -16265,7 +16239,7 @@ Silver_Denys_rs_3 = {
 	name = Falyse
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	8075.1.1 = { birth = yes }
@@ -16274,7 +16248,7 @@ Silver_Denys_rs_3 = {
 Silver_Denys_5 = {
 	name = Quenton # Mentioned, Denys' son
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Silver_Denys_3
@@ -16298,7 +16272,7 @@ Silver_Denys_5 = {
 Silver_Denys_6 = {
 	name = Alyn # Mentioned, Denys' son
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Silver_Denys_3
@@ -16321,7 +16295,7 @@ Silver_Denys_6 = {
 Tangletongue_1 = {
 	name = Tom
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	8062.1.1 = { birth = yes }
@@ -16331,7 +16305,7 @@ Tangletongue_2 = {
 	name = Jenny # Mentioned, Marston Waters' mother
 	female = yes
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	father = Tangletongue_1
@@ -16345,7 +16319,7 @@ Tangletongue_2 = {
 Tangletongue_3 = {
 	name = Tom # Canon, AKA: Tom Tanglebeard
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	father = Tangletongue_1
@@ -16381,7 +16355,7 @@ Tangletongue_3 = {
 Tangletongue_4 = {
 	name = Tom # Canon, AKA: Tom Tangletongue
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	father = Tangletongue_3
@@ -16418,7 +16392,7 @@ Tangletongue_4 = {
 The_Shepherd_1 = {
 	name = The_Shepherd # Canon, Moon of the Three Kings
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_learning_1
@@ -16461,7 +16435,7 @@ Targaryen_hh_6 = {
 	martial = 6
 	prowess = 12
 
-	religion = rhllor
+	religion = rhllor_fc
 	culture = volantene
 
 	trait = education_martial_1
@@ -16514,8 +16488,7 @@ Targaryen_hh_7 = {
 	martial = 10
 	prowess = 12
 
-	#religion = harpy AGOT TODO
-	religion = princely_arbiter
+	religion = sc_harpy
 	culture = meereenese
 
 	trait = education_martial_1
@@ -16558,7 +16531,7 @@ Lowborn_Kings_Landing_3 = {
 	stewardship = 1
 	learning = 1
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_intrigue_1
@@ -16593,7 +16566,7 @@ Lowborn_Kings_Landing_4 = {
 	stewardship = 2
 	learning = 1
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_martial_1
@@ -16614,7 +16587,7 @@ Lowborn_Kings_Landing_4 = {
 Lowborn_Kings_Landing_5 = {
 	name = Pate # Canon, AKA: Quickfinger
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = valeman
 
 	trait = education_intrigue_3
@@ -16633,7 +16606,7 @@ Knight_Kings_Landing_11 = {
 	martial = 8
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = crownlander
 
 	trait = education_martial_3
@@ -16651,7 +16624,7 @@ Knight_Kings_Landing_11 = {
 		give_nickname = nick_the_grey
 	}
 	8190.1.1 = { employer = Targaryen_94 } # Daemon Blackfyre
-	8196.6.1 = { agot_join_golden_company_history_effect = yes }
+	8196.11.22 = { agot_join_golden_company_history_effect = yes }
 	8220.1.1 = { death = yes }
 }
 Knight_Kings_Landing_12 = {
@@ -16660,7 +16633,7 @@ Knight_Kings_Landing_12 = {
 	martial = 6
 	prowess = 12
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = reachman
 
 	trait = bastard
@@ -16680,7 +16653,7 @@ Knight_Kings_Landing_12 = {
 		give_nickname = nick_the_black_prefix
 	}
 	8190.1.1 = { employer = Targaryen_94 } # Daemon Blackfyre
-	8196.6.1 = { agot_join_golden_company_history_effect = yes }
+	8196.11.22 = { agot_join_golden_company_history_effect = yes }
 	8215.1.1 = { death = yes }
 }
 
@@ -16689,7 +16662,7 @@ Knight_Kings_Landing_12 = {
 Knight_Kings_Landing_13 = {
 	name = Randor # Semi-Canon, AKA: Randor the Exile, participated in Ashford Tourney in 209 AC
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = westerosi_valyrian
 
 	trait = education_diplomacy_3
@@ -16710,7 +16683,7 @@ Knight_Kings_Landing_13 = {
 		trait = knight
 		employer = Targaryen_94 # Daemon Blackfyre
 	}
-	8196.6.1 = { # Ten years of exile
+	8196.11.22 = { # Ten years of exile
 		employer = Erosenes_5 # Sambarro Erosenes, Lys
 		trait = scholar
 	}
@@ -16724,7 +16697,7 @@ Knight_Kings_Landing_14 = {
 	name = Walder # Semi-Canon, participated in Ashford Tourney in 209 AC
 	# of Woodmere
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_martial_2
@@ -16742,7 +16715,7 @@ Knight_Kings_Landing_14 = {
 Knight_Kings_Landing_15 = {
 	name = Thomas # Semi-Canon, AKA: Thomas the Threadbare, participated in Ashford Tourney in 209 AC
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_martial_2
@@ -16765,7 +16738,7 @@ Targaryen_hh_10 = {
 
 	prowess = 3 #Death to girlboss Jenny
 
-	religion = the_seven_main
+	religion = fots_seven
 	culture = riverlander
 
 	trait = education_diplomacy_2
@@ -16789,67 +16762,5 @@ Targaryen_hh_10 = {
 			death_reason = death_burned # Tragedy at Summerhall
 			killer = Targaryen_122 # Aegon V Targaryen
 		}
-	}
-}
-
-
-############################     ESSOSI FOR EXPORT      ############################
-####################################################################################
-
-###### HOUSE OTHERYS (id = dynn_Otherys}
-############################
-###
-###
-Otherys_1 = {
-	name = Zonario # Mentioned, Bellegere's Father, son of Sealord of Braavos
-	dynasty = dynn_Otherys
-
-	religion = weeping_lady
-	culture = braavosi
-
-	8121.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_mentioned
-	}
-	8171.1.1 = {
-		trait = ill
-		death = { death_reason = death_ill }
-	}
-}
-Otherys_rs_1 = {
-	name = Kojja # Mentioned, dynasty is AGOT TODO, Summer Islander princess
-	female = yes
-
-	#religion = summer_rel AGOT TODO
-	religion = princely_arbiter
-	culture = jhalani
-
-	8121.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_mentioned
-	}
-	8171.1.1 = {
-		death = { death_reason = death_ill }
-	}
-}
-### Issue of Zonario
-Otherys_2 = {
-	name = Bellegere # Canon, Mistress of Aegon IV Targaryen
-	dynasty = dynn_Otherys
-	female = yes
-
-	religion = weeping_lady
-	culture = braavosi
-
-	father = Otherys_1
-	mother = Otherys_rs_1
-
-	8141.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_canon
-	}
-	8200.1.1 = {
-		trait = ill
-		death = { death_reason = death_ill }
 	}
 }
