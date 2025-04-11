@@ -890,7 +890,7 @@ Targaryen_31 = {
 		}
 	}
 	8039.10.1 = { # Exiled after marrying Alys Harroway
-		employer = Estatis_11 # Kysollo Estatis, Pentos
+		employer = Estatis_75 # Oddio Estatis, Pentos
 		trait = excommunicated
 		trait = adulterer
 		effect = {
@@ -5215,6 +5215,7 @@ Targaryen_94 = {
 			add_character_flag = potential_targ_lunatic
 			make_trait_inactive = surname_waters
 			set_real_father = character:Targaryen_88 # Aegon IV Targaryen
+			add_character_flag = father_aware_of_bastard
 		}
 	}
 	8172.3.28 = { set_father = character:Targaryen_88 } # Aegon IV Targaryen

@@ -43,10 +43,16 @@ agot_on_game_start = {
 							NOT = {
 								has_culture = culture:andalosi
 							}	
-						highest_held_title_tier >= tier_county 					
+							highest_held_title_tier >= tier_county
 						} 
 					}
-					change_government = administrative_government
+					if = {
+						limit = { has_dlc_feature = admin_gov }
+						change_government = administrative_government
+					}
+					else = {
+						change_government = republic_government
+					}
 				}
 			}
 		}
@@ -61,10 +67,16 @@ agot_on_game_start = {
 							NOT = {
 								has_culture = culture:andalosi
 							}	
-						highest_held_title_tier >= tier_county 					
+							highest_held_title_tier >= tier_county
 						} 
 					}
-					change_government = administrative_government
+					if = {
+						limit = { has_dlc_feature = admin_gov }
+						change_government = administrative_government
+					}
+					else = {
+						change_government = republic_government
+					}
 				}
 			}
 		}
@@ -75,7 +87,13 @@ agot_on_game_start = {
 			holder = {
 				every_vassal_or_below = {
 					limit = { highest_held_title_tier >= tier_county }
-					change_government = administrative_government
+					if = {
+						limit = { has_dlc_feature = admin_gov }
+						change_government = administrative_government
+					}
+					else = {
+						change_government = republic_government
+					}
 				}
 			}
 			set_variable = {
@@ -90,7 +108,13 @@ agot_on_game_start = {
 			holder = {
 				every_vassal_or_below = {
 					limit = { highest_held_title_tier >= tier_county }
-					change_government = administrative_government
+					if = {
+						limit = { has_dlc_feature = admin_gov }
+						change_government = administrative_government
+					}
+					else = {
+						change_government = republic_government
+					}
 				}
 			}
 			set_variable = {
@@ -106,7 +130,13 @@ agot_on_game_start = {
 			holder = {
 				every_vassal_or_below = {
 					limit = { highest_held_title_tier >= tier_county }
-					change_government = administrative_government
+					if = {
+						limit = { has_dlc_feature = admin_gov }
+						change_government = administrative_government
+					}
+					else = {
+						change_government = republic_government
+					}
 				}
 			}
 			set_variable = {
@@ -566,6 +596,7 @@ agot_on_game_start = {
 			}
 		}
 
+		agot_lord_commander_house_head_setter = yes
 		agot_house_head_setter = yes
 
 		###
@@ -1445,6 +1476,72 @@ agot_on_game_start = {
 				}
 				add_trait = bastard
 				remove_character_flag = unlegitimize_on_load
+			}
+			if = { #Bastard Secrets, unmarried mother
+				limit = {
+					exists = real_father
+					NOT = { exists = father }
+					mother ?= { is_alive = yes }
+				}
+				save_scope_as = bastard
+				mother = {
+					add_secret = {
+						type = secret_unmarried_illegitimate_child
+						target = scope:bastard
+					}
+				}
+			}
+			else_if = { #Bastard Secrets, married mother
+				limit = {
+					exists = real_father
+					NOT = { real_father = father }
+					mother ?= { is_alive = yes }
+				}
+				save_scope_as = bastard
+				mother = {
+					add_secret = {
+						type = secret_disputed_heritage
+						target = scope:bastard
+					}
+				}
+			}
+			if = { #Bastard Secrets, real father, unmarried mother
+				limit = {
+					has_character_flag = father_aware_of_bastard
+					exists = mother
+					real_father ?= { is_alive = yes }
+					NOT = { exists = father }
+				}
+				save_scope_as = bastard
+				mother = {
+					random_secret = {
+						limit = {
+							secret_type = secret_unmarried_illegitimate_child
+							secret_target = scope:bastard
+						}
+						save_scope_as = secret
+						reveal_to_without_events_effect = { CHARACTER = scope:bastard.real_father }
+					}
+				}
+			}
+			else_if = { #Bastard Secrets, real father, married mother
+				limit = {
+					has_character_flag = father_aware_of_bastard
+					exists = mother
+					real_father ?= { is_alive = yes }
+					NOT = { real_father = father }
+				}
+				save_scope_as = bastard
+				mother = {
+					random_secret = {
+						limit = {
+							secret_type = secret_disputed_heritage
+							secret_target = scope:bastard
+						}
+						save_scope_as = secret
+						reveal_to_without_events_effect = { CHARACTER = scope:bastard.real_father }
+					}
+				}
 			}
 		}
 
@@ -2929,6 +3026,7 @@ agot_administrative_setup = {
 						owner.dynasty = dynasty:dynn_Varghan
 						owner.dynasty = dynasty:dynn_Myrahar
 						owner.dynasty = dynasty:dynn_Curaze
+						owner.dynasty = dynasty:dynn_Nericos
 						#Pentos
 						owner.dynasty = dynasty:dynn_Garvanis
 						owner.dynasty = dynasty:dynn_Elisys
@@ -3187,7 +3285,12 @@ agot_nf_estate_locations = {
 				move_domicile = title:b_lysayn.title_province
 			}
 			else_if = {
-				limit = { owner.dynasty = dynasty:dynn_Varghan }
+				limit = { 
+					OR = {
+						owner.dynasty = dynasty:dynn_Varghan
+						owner.dynasty = dynasty:dynn_Nericos
+					} 
+				}
 				move_domicile = title:b_antyne.title_province
 			}
 			else_if = {
@@ -3222,10 +3325,13 @@ agot_nf_estate_locations = {
 						owner.dynasty = dynasty:dynn_Myrakis
 						owner.dynasty = dynasty:dynn_Valduran
 						owner.dynasty = dynasty:dynn_Annadho
-						owner.dynasty = dynasty:dynn_Quaranis
 					}
 				}
 				move_domicile = title:b_pentos.title_province
+			}
+			else_if = {
+				limit = { owner.dynasty = dynasty:dynn_Quaranis }
+				move_domicile = title:b_sunrise_market.title_province
 			}
 			else_if = {
 				limit = { owner.dynasty = dynasty:dynn_Draz }
@@ -3272,13 +3378,12 @@ agot_nf_estate_locations = {
 				move_domicile = title:b_samaal.title_province
 			}
 			else_if = {
-				limit = {
-					OR = {
-						owner.dynasty = dynasty:dynn_Elisys
-						owner.dynasty = dynasty:dynn_Garvanis
-					} 
-				}
+				limit = { owner.dynasty = dynasty:dynn_Garvanis }
 				move_domicile = title:b_mummer_lane.title_province
+			}
+			else_if = {
+				limit = { owner.dynasty = dynasty:dynn_Elisys }
+				move_domicile = title:b_cheesemongers_manse.title_province
 			}
 			else_if = {
 				limit = { owner.dynasty = dynasty:dynn_Lyakis }

@@ -1676,6 +1676,15 @@ e_three_daughters = {
 			holder ?= {
 				set_realm_capital = title:c_the_spar
 			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_government
+				}
+			}
 		}
 		# effect = {
 		# 	holder ?= {
