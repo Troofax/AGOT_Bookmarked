@@ -58,7 +58,7 @@ agot_8299_6_13_acok_scenario_setup = {
 
 		title:k_the_north.holder = {
 			start_war = {
-				cb = rv_revenge_war
+				cb = agot_independence_war
 				target = title:e_the_iron_throne.holder
 			}
 			every_character_war = {
@@ -159,7 +159,7 @@ agot_8299_6_13_acok_scenario_setup = {
 				REALM_BREAK_UP = flag:yes
 				REBEL_MAY_VASSALIZE = flag:no
 				HELD_TITLE = title:k_the_north
-				CASUS_BELLI = rv_revenge_war
+				CASUS_BELLI = agot_independence_war
 				PRE_WAR_LIEGE = title:e_the_iron_throne.holder
 				MW_TARGET = title:e_the_iron_throne.holder
 			}
