@@ -102,9 +102,20 @@ Targaryen_13_D = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
+	7875.1.1 = { add_spouse = Targaryen_rs_13_D }
 	7880.1.1 = { trait = widowed }
 	7890.1.1 = { trait = dragonrider } # Archonei (nc)
 	7907.1.1 = { death = yes }
+}
+Targaryen_rs_13_D = {
+	name = Rhaenys
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	7857.1.1 = { birth = yes }
+	7880.1.1 = { death = yes }
 }
 ### Issue of Aenar
 Targaryen_14 = {
@@ -140,7 +151,7 @@ Targaryen_14 = {
 	7930.1.1 = { death = yes }
 }
 Targaryen_15 = {
-	name = Daenys # Canon, AKA: Daenys the Dreamer, predicted Doom of Valyria in her dreams
+	name = Daenys # Canon, AKA: Daenys the Dreamer, predicted Doom of Valyria in her dreams, married Gaemon Targaryen
 	dynasty = dynn_Targaryen
 	female = yes
 	dna = Targaryen_15
@@ -182,6 +193,7 @@ Targaryen_13_E = {
 	culture = high_valyrian
 
 	father = Targaryen_13_D
+	mother = Targaryen_rs_13_D
 
 	7879.1.1 = {
 		birth = yes
@@ -2174,6 +2186,7 @@ Targaryen_55_B = {
 ### Issue of Saera
 Targaryen_56 = {
 	name = Maegor # Mentioned
+	dynasty = dynn_Orthys
 	dna = Targaryen_56
 
 	religion = fc_pan_lys
@@ -2202,6 +2215,7 @@ Targaryen_56 = {
 }
 Targaryen_57 = {
 	name = Jaenys # Mentioned
+	dynasty = dynn_Sellos
 
 	religion = fc_pan_lys
 	culture = lyseni
@@ -2237,7 +2251,8 @@ Targaryen_58 = {
 	#father = 115174371 # AGOT TODO Reenable once Essos added
 	mother = Targaryen_51
 
-	trait = bastard
+	# trait = bastard
+	trait = bastard_founder # AGOT TODO, replace with bastard once house Maegyr is added. I mean it, if you're here to restore his father, change it please
 
 	8088.1.1 = {
 		effect = {
@@ -2409,11 +2424,6 @@ Targaryen_60 = {
 			agot_history_set_dragonlore = {
 				VALUE = 10 # Visited Harrenhall
 			}
-		}
-	}
-	8105.9.10 = {
-		effect = {
-			set_designated_heir = character:Targaryen_63
 		}
 	}
 	8106.4.12 = {
@@ -4029,7 +4039,7 @@ Targaryen_70 = {
 			participants = { dead_dragon = character:dragon_morning }
 		}
 	}
-	8178.1.1 = { death = yes }
+	8160.1.1 = { death = yes }
 }
 Targaryen_70_B = {
 	name = Haegon # Mentioned
@@ -4044,7 +4054,7 @@ Targaryen_70_B = {
 	trait = hunchbacked
 	trait = spindly
 
-	8120.1.7 = {
+	8120.1.6 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_sickly }
@@ -4193,36 +4203,7 @@ Targaryen_82 = {
 	}
 	8163.8.2 = {
 		remove_spouse = Targaryen_83 # Daena Targaryen
-		effect = {
-			add_piety_level = 1
-			every_living_character = {
-				limit = {
-					location.province_owner.primary_title = { any_de_jure_top_liege = { has_title = title:e_the_iron_throne } }
-					NOT = { THIS = ROOT }
-				}
-				if = {
-					limit = {
-						OR = {
-							has_trait = cynical
-							has_trait = lustful
-							faith = { NOT = { religion_tag = the_seven_religion } }
-						}
-					}
-					add_opinion = {
-						target = ROOT
-						modifier = angry_opinion
-						opinion = -25
-					}
-				}
-				else = {
-					add_opinion = {
-						target = ROOT
-						modifier = pious_opinion
-						opinion = 25
-					}
-				}
-			}
-		}
+		effect = { add_piety_level = 1 }
 	}
 	8165.12.20 = {
 		trait = septon # Septon
@@ -4237,7 +4218,7 @@ Targaryen_82 = {
 	}
 }
 Targaryen_83 = {
-	name = Daena # Canon, AKA: Daena the Defiant, mother of Daemon Blackfyre
+	name = Daena # Canon, AKA: Daena the Defiant, mother of Daemon Blackfyre, married Baelor Targaryen
 	dynasty = dynn_Targaryen
 	female = yes
 	dna = Targaryen_83
@@ -5558,6 +5539,9 @@ Targaryen_97 = {
 	religion = fots_seven
 	culture = high_valyrian
 
+	father = Targaryen_88
+	mother = Sellos_56 # Serenei of Lys
+
 	trait = legitimized_bastard # Caution: succession error
 
 	trait = education_diplomacy_5
@@ -5566,9 +5550,6 @@ Targaryen_97 = {
 	trait = heterochromia_eyes
 
 	disallow_random_traits = yes
-
-	father = Targaryen_88
-	mother = Sellos_56 # Serenei of Lys
 
 	8181.1.1 = {
 		birth = yes
@@ -6469,7 +6450,7 @@ Targaryen_124 = {
 
 	disallow_random_traits = yes
 
-	give_nickname = nick_the_simple
+	give_nickname = nick_the_simple_vaella
 
 	8222.1.1 = {
 		birth = yes
@@ -7764,6 +7745,26 @@ Farseed_1 = {
 	}
 }
 ### Hugh Hammer
+Hammer_4 = {
+	name = Helen # Hugh's grandmother so bastard secret can be revealed
+	female = yes
+
+	religion = fots_seven
+	culture = crownlander
+
+	trait = beauty_good_1
+
+	8059.1.1 = { 
+		birth = yes
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
+		}
+	}
+	8099.1.1 = {
+		trait = pneumonic
+		death = { death_reason = death_pneumonic }
+	}
+}
 Hammer_2 = {
 	name = Hendry # Mentioned, Hugh's father
 	dna = Hammer_2
@@ -7796,6 +7797,8 @@ Hammer_3 = {
 
 	religion = fots_seven
 	culture = high_valyrian
+
+	mother = Hammer_4
 
 	trait = bastard
 
@@ -7873,6 +7876,25 @@ Hammer_1 = {
 	}
 }
 ### Ulf White
+White_2 = {
+	name = Willow # Ulf's mother so bastard secret can be revealed
+	female = yes
+
+	religion = fots_seven
+	culture = crownlander
+
+	trait = beauty_good_2
+
+	8059.1.1 = { 
+		birth = yes
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:b_blackglass_port }
+		}
+	}
+	8121.1.1 = {
+		death = { death_reason = death_old_age }
+	}
+}
 White_1 = {
 	name = Ulf # Canon, Ulf White
 	dna = White_1
@@ -7886,6 +7908,8 @@ White_1 = {
 
 	religion = fots_seven
 	culture = high_valyrian
+
+	mother = White_2
 
 	trait = education_martial_1
 	trait = brave
@@ -7930,6 +7954,25 @@ White_1 = {
 	}
 }
 ### Court of Trystane Truefyre
+Truefyre_2 = {
+	name = Jeyne # Trystane's mother so bastard secret can be revealed
+	female = yes
+
+	religion = fots_seven
+	culture = crownlander
+
+	trait = beauty_good_1
+
+	8091.1.1 = { 
+		birth = yes
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
+		}
+	}
+	8125.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
 Truefyre_1 = {
 	name = Trystane # Canon, Moon of the Three Kings
 
@@ -7942,6 +7985,8 @@ Truefyre_1 = {
 
 	religion = fots_seven
 	culture = high_valyrian
+
+	mother = Truefyre_2
 
 	trait = bastard
 
@@ -8890,7 +8935,7 @@ Velaryon_29 = {
 	}
 }
 Velaryon_30 = {
-	name = Valaena # Mentioned
+	name = Valaena # Mentioned, married Gargon Bar Emmon
 	dynasty = dynn_Velaryon
 	female = yes
 	dna = Velaryon_30
@@ -9676,7 +9721,18 @@ Velaryon_71 = {
 
 	8118.1.1 = { birth = yes }
 	8142.1.1 = { trait = knight }
+	8144.1.1 = { add_spouse = Velaryon_rs_71 }
 	8178.1.1 = { death = yes }
+}
+Velaryon_rs_71 = {
+	name = Daella
+	female = yes
+
+	religion = fots_seven
+	culture = high_valyrian
+
+	8124.1.1 = { birth = yes }
+	8181.1.1 = { death = yes }
 }
 Velaryon_49 = {
 	name = Galfrid # Semi-Canon, Kingsguard
@@ -9700,7 +9756,7 @@ Velaryon_49 = {
 	}
 	8141.1.1 = {
 		trait = knight
-		trait = gluttonous # Easter-Egg, he likes lasagna
+		trait = gluttonous # Easter Egg, he likes lasagna
 		trait = brave
 		trait = lifestyle_blademaster
 	}
@@ -9829,7 +9885,7 @@ Velaryon_45 = {
 	8235.1.1 = { death = yes }
 }
 Velaryon_46 = {
-	name = Jeyne # Canon
+	name = Jeyne # Canon, married Harys Stillman
 	dynasty = dynn_Velaryon
 	female = yes
 	#dna = Velaryon_46
@@ -9884,10 +9940,21 @@ Velaryon_55 = {
 
 	8173.1.1 = { birth = yes }
 	8193.1.1 = { trait = knight }
+	8198.1.1 = { add_spouse = Velaryon_rs_55 }
 	8209.9.1 = {
 		trait = spring_sickness
 		death = { death_reason = death_spring_sickness } # Great Spring Sickness
 	}
+}
+Velaryon_rs_55 = {
+	name = Shaena
+	female = yes
+
+	religion = fots_seven
+	culture = high_valyrian
+
+	8182.1.1 = { birth = yes }
+	8202.1.1 = { death = yes }
 }
 ### Issue of Daemon
 Velaryon_64 = {
@@ -9898,6 +9965,7 @@ Velaryon_64 = {
 	culture = high_valyrian
 
 	father = Velaryon_55
+	mother = Velaryon_rs_55
 
 	8200.1.1 = { birth = yes }
 	8220.1.1 = { trait = knight }
@@ -10016,6 +10084,26 @@ Velaryon_hh_2 = {
 	}
 	8181.1.1 = { death = yes }
 }
+Velaryon_hh_3 = {
+	name = Falena # Nerys' mother so bastard secret can be revealed
+	female = yes
+
+	religion = fots_seven
+	culture = crownlander
+
+	trait = intellect_good_1
+	trait = beauty_good_1
+
+	8120.1.1 = { 
+		birth = yes
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_driftmark }
+		}
+	}
+	8188.1.1 = {
+		death = { death_reason = death_old_age }
+	}
+}
 
 ### Silverhorse Branch
 ############################
@@ -10029,6 +10117,7 @@ Velaryon_70 = {
 	culture = high_valyrian
 
 	father = Velaryon_71
+	mother = Velaryon_rs_71
 
 	8147.1.1 = { birth = yes }
 	8175.1.1 = { add_matrilineal_spouse = Velaryon_rs_70 }
@@ -10054,6 +10143,7 @@ Velaryon_90 = {
 	culture = high_valyrian
 
 	father = Velaryon_71
+	mother = Velaryon_rs_71
 
 	8153.1.1 = { birth = yes }
 	8222.1.1 = { death = yes }
@@ -10214,7 +10304,18 @@ Celtigar_8 = {
 	culture = high_valyrian
 
 	7832.1.1 = { birth = yes }
+	7848.1.1 = { add_spouse = Celtigar_rs_8 }
 	7883.1.1 = { death = yes }
+}
+Celtigar_rs_8 = {
+	name = Aemma
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	7834.1.1 = { birth = yes }
+	7878.1.1 = { death = yes }
 }
 Celtigar_9 = {
 	name = Ardrian # a lord
@@ -10225,9 +10326,21 @@ Celtigar_9 = {
 	culture = high_valyrian
 
 	father = Celtigar_8
+	mother = Celtigar_rs_8
 
 	7851.1.1 = { birth = yes }
+	7879.1.1 = { add_spouse = Celtigar_rs_9 }
 	7900.1.1 = { death = yes }
+}
+Celtigar_rs_9 = {
+	name = Shaena
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	7860.1.1 = { birth = yes }
+	7911.1.1 = { death = yes }
 }
 ### Issue of Ardrian
 Celtigar_10 = {
@@ -10239,9 +10352,21 @@ Celtigar_10 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_9
+	mother = Celtigar_rs_9
 
 	7880.1.1 = { birth = yes }
+	7902.1.1 = { add_spouse = Celtigar_rs_10 }
 	7957.1.1 = { death = yes }
+}
+Celtigar_rs_10 = {
+	name = Lianna
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = westerosi_valyrian
+
+	7888.1.1 = { birth = yes }
+	7933.1.1 = { death = yes }
 }
 Celtigar_10_A = {
 	name = Jenette # married Daemion Velaryon
@@ -10253,6 +10378,7 @@ Celtigar_10_A = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_9
+	mother = Celtigar_rs_9
 
 	7883.1.1 = { birth = yes }
 	7938.1.1 = { death = yes }
@@ -10267,9 +10393,21 @@ Celtigar_11 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_10
+	mother = Celtigar_rs_10
 
 	7905.1.1 = { birth = yes }
+	7926.1.1 = { add_spouse = Celtigar_rs_11 }
 	7968.1.1 = { death = yes }
+}
+Celtigar_rs_11 = {
+	name = Maelane
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = westerosi_valyrian
+
+	7908.1.1 = { birth = yes }
+	7953.1.1 = { death = yes }
 }
 ### Issue of Crispian
 Celtigar_12 = {
@@ -10282,6 +10420,7 @@ Celtigar_12 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_11
+	mother = Celtigar_rs_11
 
 	7928.1.1 = { birth = yes }
 	7975.1.1 = { death = yes }
@@ -10295,6 +10434,7 @@ Celtigar_13 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_11
+	mother = Celtigar_rs_11
 
 	7930.1.1 = { birth = yes }
 	7946.1.1 = { add_spouse = Celtigar_rs_13 }
@@ -10598,9 +10738,20 @@ Celtigar_22 = {
 
 	8048.1.1 = { birth = yes }
 	8065.1.1 = { trait = drunkard }
+	8065.1.1 = { add_spouse = Celtigar_rs_22 }
 	8087.1.1 = {
 		death = { death_reason = death_ill }
 	}
+}
+Celtigar_rs_22 = {
+	name = Elleria
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	8046.1.1 = { birth = yes }
+	8090.1.1 = { death = yes }
 }
 Celtigar_23 = {
 	name = Harrold # a lord
@@ -10611,9 +10762,21 @@ Celtigar_23 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_22
+	mother = Celtigar_rs_22
 
 	8066.1.1 = { birth = yes }
+	8082.1.1 = { add_spouse = Celtigar_rs_23 }
 	8114.1.1 = { death = yes }
+}
+Celtigar_rs_23 = {
+	name = Monica
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	8066.1.1 = { birth = yes }
+	8112.1.1 = { death = yes }
 }
 ### Issue of Harrold
 Celtigar_24 = { # Dance of the Dragons
@@ -10625,6 +10788,7 @@ Celtigar_24 = { # Dance of the Dragons
 	culture = westerosi_valyrian
 
 	father = Celtigar_23
+	mother = Celtigar_rs_23
 
 	trait = education_stewardship_1
 	trait = wrathful
@@ -10658,10 +10822,22 @@ Celtigar_61 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_23
+	mother = Celtigar_rs_23
 
 	8085.1.1 = { birth = yes }
 	8103.1.1 = { trait = knight }
+	8113.1.1 = { add_spouse = Celtigar_rs_61 }
 	8128.1.1 = { death = yes }
+}
+Celtigar_rs_61 = {
+	name = Jeyne
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	8095.1.1 = { birth = yes }
+	8126.1.1 = { death = yes }
 }
 ### Issue of Bartimos
 Celtigar_25 = {
@@ -10779,6 +10955,7 @@ Celtigar_28 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_61
+	mother = Celtigar_rs_61
 
 	trait = brave
 
@@ -11131,7 +11308,18 @@ Celtigar_46 = {
 		}
 	}
 	8171.1.1 = { trait = knight }
+	8177.1.1 = { add_spouse = Celtigar_rs_46 }
 	8202.1.1 = { death = yes }
+}
+Celtigar_rs_46 = {
+	name = Maella
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	8162.1.1 = { birth = yes }
+	8179.1.1 = { death = yes }
 }
 Celtigar_47 = {
 	name = Jeyne # Semi-Canon, Jeyn Celtigar, married Enfren Bar Emmon
@@ -11187,6 +11375,7 @@ Celtigar_49 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_48
+	mother = Celtigar_rs_48
 
 	8193.1.1 = { birth = yes }
 	8220.1.1 = { add_spouse = Celtigar_p_1 }
@@ -11213,6 +11402,7 @@ Celtigar_56 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_48
+	mother = Celtigar_rs_48
 
 	8199.1.1 = { birth = yes }
 	8244.1.1 = { death = yes }
@@ -11281,10 +11471,22 @@ Celtigar_51 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_46 # Marell Celtigar
+	mother = Celtigar_rs_46
 
 	8178.1.1 = { birth = yes }
 	8194.1.1 = { trait = knight }
+	8194.1.1 = { add_spouse = Celtigar_rs_51 }
 	8222.1.1 = { death = yes }
+}
+Celtigar_rs_51 = {
+	name = Amaena
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	8179.1.1 = { birth = yes }
+	8213.1.1 = { death = yes }
 }
 Celtigar_52 = {
 	name = Crispian
@@ -11295,10 +11497,22 @@ Celtigar_52 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_51
+	mother = Celtigar_rs_51
 
 	8197.1.1 = { birth = yes }
 	8213.1.1 = { trait = knight }
+	8217.1.1 = { add_spouse = Celtigar_rs_52 }
 	8250.1.1 = { death = yes }
+}
+Celtigar_rs_52 = {
+	name = Jeyn
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	8196.1.1 = { birth = yes }
+	8232.1.1 = { death = yes }
 }
 Celtigar_53 = {
 	name = Clement
@@ -11309,6 +11523,7 @@ Celtigar_53 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_52
+	mother = Celtigar_rs_52
 
 	8220.1.1 = { birth = yes }
 	8236.1.1 = { trait = knight }
@@ -12611,6 +12826,8 @@ Scales_57 = {
 	father = Scales_55
 	mother = Scales_rs_55
 
+	trait = depressed_genetic
+
 	8150.1.1 = { birth = yes }
 	8167.1.1 = {
 		add_spouse = Scales_rs_57
@@ -12979,7 +13196,7 @@ Varezys_1 = {
 ############################
 ###
 ###
-Mataeryon_1_mother = {
+Mataeryon_2 = {
 	name = Jaehaera # Semi-Canon, mentioned
 	dynasty = dynn_Mataeryon
 	female = yes
@@ -12993,7 +13210,18 @@ Mataeryon_1_mother = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
 	}
+	7868.1.1 = { add_matrilineal_spouse = Mataeryon_rs_2 }
 	7890.1.1 = { death = { death_reason = death_poison } }
+}
+Mataeryon_rs_2 = {
+	name = Baelor
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	7848.1.1 = { birth = yes }
+	7864.1.1 = { trait = knight }
+	7884.1.1 = { death = yes }
 }
 Mataeryon_1 = {
 	name = Jaehaelor # Semi-Canon
@@ -13002,7 +13230,8 @@ Mataeryon_1 = {
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
-	mother = Mataeryon_1_mother
+	father = Mataeryon_rs_2
+	mother = Mataeryon_2
 
 	trait = education_learning_4
 	trait = curious
@@ -13074,7 +13303,18 @@ Urnebar_3 = {
 	culture = high_valyrian
 
 	7822.1.1 = { birth = yes }
+	7852.1.1 = { add_spouse = Urnebar_rs_3 }
 	7884.1.1 = { death = yes }
+}
+Urnebar_rs_3 = {
+	name = Alyssa
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	7832.1.1 = { birth = yes }
+	7876.1.1 = { death = yes }
 }
 ### Issue of Maegon
 Urnebar_4 = {
@@ -13085,9 +13325,21 @@ Urnebar_4 = {
 	culture = high_valyrian
 
 	father = Urnebar_3
+	mother = Urnebar_rs_3
 
 	7853.1.1 = { birth = yes }
+	7873.1.1 = { add_spouse = Urnebar_rs_4 }
 	7898.1.1 = { death = { death_reason = death_burned } } # Doom of Valyria
+}
+Urnebar_rs_4 = {
+	name = Shaera
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	7858.1.1 = { birth = yes }
+	7895.1.1 = { death = yes }
 }
 Urnebar_1 = {
 	name = Rhogar # Mentioned, Tyroshi dragonlord
@@ -13097,6 +13349,7 @@ Urnebar_1 = {
 	culture = high_valyrian
 
 	father = Urnebar_3
+	mother = Urnebar_rs_3
 
 	trait = education_martial_3
 	trait = stubborn
@@ -13111,6 +13364,7 @@ Urnebar_1 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
+	7874.1.1 = { add_spouse = Urnebar_rs_1 }
 	7887.1.1 = { trait = dragonrider } # Rovax (nc)
 	7899.1.1 = {
 		effect = {
@@ -13126,6 +13380,16 @@ Urnebar_1 = {
 		}
 	}
 }
+Urnebar_rs_1 = {
+	name = Daella
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	7854.1.1 = { birth = yes }
+	7892.1.1 = { death = yes }
+}
 Urnebar_5 = {
 	name = Daeryssa
 	dynasty = dynn_Urnebar
@@ -13135,6 +13399,7 @@ Urnebar_5 = {
 	culture = high_valyrian
 
 	father = Urnebar_3
+	mother = Urnebar_rs_3
 
 	7858.1.1 = { birth = yes }
 	7899.1.1 = { death = { death_reason = death_burned } } # Doom of Valyria
@@ -13147,6 +13412,7 @@ Urnebar_6 = {
 	culture = high_valyrian
 
 	father = Urnebar_3
+	mother = Urnebar_rs_3
 
 	7860.1.1 = { birth = yes }
 	7899.1.1 = { death = { death_reason = death_burned } } # Doom of Valyria
@@ -13160,6 +13426,7 @@ Urnebar_2 = {
 	culture = high_valyrian
 
 	father = Urnebar_1
+	mother = Urnebar_rs_1
 
 	trait = education_martial_2
 	trait = callous
@@ -13193,6 +13460,7 @@ Urnebar_7 = {
 	culture = high_valyrian
 
 	father = Urnebar_4
+	mother = Urnebar_rs_4
 
 	trait = twin
 
@@ -13208,6 +13476,7 @@ Urnebar_8 = {
 	culture = high_valyrian
 
 	father = Urnebar_4
+	mother = Urnebar_rs_4
 
 	trait = twin
 
@@ -13240,6 +13509,7 @@ Sonaryen_1 = {
 		add_character_flag = canon_status_mentioned
 	}
 	7879.1.1 = { trait = dragonrider } # Neltharion (nc)
+	7885.1.1 = { add_spouse = Sonaryen_rs_1 }
 	7891.1.1 = { trait = lifestyle_reveler }
 	7899.1.1 = {
 		effect = {
@@ -13248,6 +13518,16 @@ Sonaryen_1 = {
 		}
 	}
 	7904.1.1 = { death = { death_reason = death_poison } }
+}
+Sonaryen_rs_1 = {
+	name = Alysanne
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	7869.1.1 = { birth = yes }
+	7899.1.1 = { death = { death_reason = death_burned } } # Doom of Valyria
 }
 ### Issue of Aelyx
 Sonaryen_2 = {
@@ -13259,6 +13539,7 @@ Sonaryen_2 = {
 	culture = high_valyrian
 
 	father = Sonaryen_1
+	mother = Sonaryen_rs_1
 
 	7889.1.1 = { birth = yes }
 	7899.1.1 = {
@@ -13277,6 +13558,7 @@ Sonaryen_3 = {
 	culture = high_valyrian
 
 	father = Sonaryen_1
+	mother = Sonaryen_rs_1
 
 	7895.1.1 = { birth = yes }
 	7899.1.1 = {
@@ -13448,7 +13730,7 @@ Kingsguard_2 = {
 	8026.1.1 = { trait = knight }
 	8030.1.1 = {
 		employer = Royce_29 # Allard Royce
-		give_nickname = nick_the_valiant
+		give_nickname = nick_the_valiant_victor
 	}
 	8049.7.14 = {
 		effect = {
@@ -16148,12 +16430,34 @@ Knight_Kings_Landing_17 = {
 	}
 }
 ### Family of Silver Denys
+Silver_Denys_7 = {
+	name = Palla # Silver Denys' ancestor so bastard secret can be revealed
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	trait = physique_good_1
+
+	8010.1.1 = { 
+		birth = yes
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:b_blackglass_port }
+		}
+	}
+	8061.1.1 = {
+		trait = pneumonic
+		death = { death_reason = death_pneumonic }
+	}
+}
 Silver_Denys_1 = {
 	name = Maegelle
 	female = yes
 
 	religion = fots_seven
 	culture = high_valyrian
+
+	mother = Silver_Denys_7
 
 	trait = bastard
 
@@ -16508,7 +16812,7 @@ Targaryen_hh_7 = {
 		trait = poet
 		trait = loyal
 		trait = disfigured
-		give_nickname = nick_the_shadow
+		give_nickname = nick_the_shadow_sandoq
 	}
 	8125.1.1 = {
 		employer = Rogare_2 # Lysandro Rogare

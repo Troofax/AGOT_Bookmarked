@@ -696,7 +696,7 @@ agot_on_game_start = {
 					}
 					scope:agot_crown = { add_courtier = prev }
 				}
-				agot_create_artifact_kingsguard_armour_effect = { OWNER = this }
+				agot_create_artifact_kingsguard_armor_effect = { OWNER = this }
 				agot_create_artifact_kingsguard_sword_effect = { OWNER = this }
 				if = {
 					limit = {
@@ -1635,9 +1635,7 @@ agot_on_game_start = {
 			name = hall_of_faces
 			value = title:b_purple_harbor
 		}
-		global_var:hall_of_faces.holder = {
-			trigger_event = agot_faceless_decision.0010 # generates a few faces
-		}
+
 		##### Basic setup end #####
 
 		### Scenario setup
@@ -1943,6 +1941,23 @@ agot_on_game_start = {
 						years = 5
 					}
 
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				game_start_date >= 8105.9.10
+			}
+			if = {
+				limit = {
+					exists = character:Targaryen_60
+					character:Targaryen_60 = {
+						is_alive = yes
+						is_landed = yes
+					}
+				}
+				character:Targaryen_60 = {
+					set_designated_heir = character:Targaryen_63
 				}
 			}
 		}
@@ -2687,14 +2702,14 @@ agot_on_game_start_after_lobby = {
 				agot_8284_6_2_scenario_setup = yes
 			}
 			if = { # manage 8298.12.21 War of the Five Kings scenario
-				limit = { game_start_date = 8298.12.21 }
+				limit = { game_start_date = 8299.1.17 }
 
-				agot_8298_12_21_wotfk_scenario_setup = yes
+				agot_8299_1_17_wotfk_scenario_setup = yes
 			}
 			if = { # manage 8299.3.3 A Clash of Kings scenario
-				limit = { game_start_date = 8299.3.3 }
+				limit = { game_start_date = 8299.6.13 }
 
-				agot_8299_3_3_acok_scenario_setup = yes
+				agot_8299_6_13_acok_scenario_setup = yes
 			}
 			if = { # manage 8300.3.1 A Feast for Crows scenario
 				limit = { game_start_date = 8300.3.1 }
@@ -2862,6 +2877,7 @@ agot_on_game_start_after_lobby = {
 	}
 	events = {
 		agot_adventurers_events.0001
+		agot_faceless_decision.0010
 		# agot_nightswatch_maintenance.0001 # Removes female courtiers
 	}
 	on_actions = {

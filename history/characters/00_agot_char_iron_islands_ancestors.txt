@@ -168,7 +168,7 @@ Greyiron_2 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	2929.1.1 = { give_nickname = nick_the_ugly }
+	2929.1.1 = { give_nickname = nick_the_ugly_erich }
 	2965.1.1 = { death = yes }
 }
 Greyiron_3 = {
@@ -1316,7 +1316,7 @@ Hoare_25 = { # Doom of Valyria
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	7861.1.1 = { give_nickname = nick_the_cunning }
+	7861.1.1 = { give_nickname = nick_the_cunning_qhorwyn }
 	7865.1.1 = { add_spouse = Wynch_9 } # Wylla Wynch
 	7878.1.1 = { add_spouse = Sunderly_25 } # Siglynd Sunderly
 	7899.1.1 = {
@@ -3565,7 +3565,7 @@ Greyjoy_67 = {
 	8235.1.1 = { death = yes }
 }
 Greyjoy_68 = {
-	name = Gwin
+	name = Gwin # married Theon Harlaw
 	dynasty = dynn_Greyjoy
 	dna = Greyjoy_68
 	female = yes
@@ -3612,7 +3612,7 @@ Greyjoy_69 = {
 		add_character_flag = canon_status_canon
 	}
 	8211.1.1 = {
-		give_nickname = nick_the_bard
+		give_nickname = nick_the_bard_loron
 		effect = {
 			if = {
 				limit = { character:Mallister_52 = { is_alive = yes } }
@@ -5183,12 +5183,23 @@ Goodbrother_50 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
+	8098.1.1 = { add_spouse = Goodbrother_rs_50 }
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
 			killer = Westerling_28 # Johanna Westerling
 		}
 	}
+}
+Goodbrother_rs_50 = {
+	name = Esgred
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8080.1.1 = { birth = yes }
+	8133.1.1 = { death = yes }
 }
 Goodbrother_111 = {
 	name = Drennan
@@ -5274,6 +5285,7 @@ Goodbrother_51 = {
 	culture = ironborn
 
 	father = Goodbrother_50
+	mother = Goodbrother_rs_50
 
 	trait = education_martial_2
 	trait = strong
@@ -5309,6 +5321,7 @@ Goodbrother_52 = {
 	culture = ironborn
 
 	father = Goodbrother_50
+	mother = Goodbrother_rs_50
 
 	trait = education_martial_2
 	trait = wrathful
@@ -5318,7 +5331,18 @@ Goodbrother_52 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
+	8127.1.1 = { add_spouse = Goodbrother_rs_52 }
 	8165.1.1 = { death = yes }
+}
+Goodbrother_rs_52 = {
+	name = Alrya
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8112.1.1 = { birth = yes }
+	8151.1.1 = { death = yes }
 }
 ### Issue of Arthur
 Goodbrother_53 = {
@@ -5329,12 +5353,24 @@ Goodbrother_53 = {
 	culture = ironborn
 
 	father = Goodbrother_52
+	mother = Goodbrother_rs_52
 
 	8132.1.1 = { birth = yes }
+	8177.1.1 = { add_spouse = Goodbrother_rs_53 }
 	8197.1.1 = { death = yes }
 }
+Goodbrother_rs_53 = {
+	name = Rina
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8163.1.1 = { birth = yes }
+	8192.1.1 = { death = yes }
+}
 Goodbrother_54 = {
-	name = Gwynesse # Semi-Canon
+	name = Gwynesse # Semi-Canon, married Quellon Greyjoy
 	dynasty = dynn_Goodbrother
 	female = yes
 
@@ -5342,6 +5378,7 @@ Goodbrother_54 = {
 	culture = ironborn
 
 	father = Goodbrother_52
+	mother = Goodbrother_rs_52
 
 	8131.1.1 = {
 		birth = yes
@@ -5358,12 +5395,24 @@ Goodbrother_55 = {
 	culture = ironborn
 
 	father = Goodbrother_53
+	mother = Goodbrother_rs_53
 
 	8183.1.1 = { birth = yes }
+	8219.1.1 = { add_spouse = Goodbrother_rs_55 }
 	8242.1.1 = { death = yes }
 }
+Goodbrother_rs_55 = {
+	name = Rhiannyn
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8198.1.1 = { birth = yes }
+	8223.1.1 = { death = yes }
+}
 Goodbrother_56 = {
-	name = Shierle
+	name = Shierle # married Dagon Greyjoy
 	dynasty = dynn_Goodbrother
 	female = yes
 	dna = Goodbrother_56
@@ -5372,6 +5421,7 @@ Goodbrother_56 = {
 	culture = ironborn
 
 	father = Goodbrother_53
+	mother = Goodbrother_rs_53
 
 	8180.1.1 = { birth = yes }
 	8242.1.1 = { death = yes }
@@ -5387,6 +5437,7 @@ Goodbrother_57 = {
 	culture = ironborn
 
 	father = Goodbrother_55
+	mother = Goodbrother_rs_55
 
 	8220.1.1 = {
 		birth = yes
@@ -6523,6 +6574,8 @@ GoodbrotherSS_35 = {
 
 	father = GoodbrotherSS_33
 	mother = GoodbrotherSS_rs_33
+
+	trait = giant
 
 	8122.1.1 = { birth = yes }
 	8143.1.1 = { add_spouse = GoodbrotherSS_rs_35 }
@@ -7880,7 +7933,7 @@ GoodbrotherCPK_37 = {
 	8122.1.1 = { birth = yes }
 	8141.1.1 = { add_spouse = GoodbrotherCPK_rs_37 }
 	8180.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 GoodbrotherCPK_rs_37 = {
@@ -8133,6 +8186,7 @@ GoodbrotherCPK_35 = {
 	mother = GoodbrotherCPK_rs_28
 
 	8132.1.1 = { birth = yes }
+	8148.1.1 = { trait = dull }
 	8149.1.1 = { add_spouse = GoodbrotherCPK_rs_35 }
 	8177.1.1 = { death = yes }
 }
@@ -8392,7 +8446,7 @@ GoodbrotherCPK_67 = {
 	8153.1.1 = { birth = yes }
 	8170.1.1 = { add_spouse = GoodbrotherCPK_rs_67 }
 	8220.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 GoodbrotherCPK_rs_67 = {
@@ -10293,7 +10347,18 @@ Farwynd_28 = {
 	father = Farwynd_10
 
 	7845.1.1 = { birth = yes }
+	7867.1.1 = { add_spouse = Farwynd_rs_28 }
 	7900.1.1 = { death = yes }
+}
+Farwynd_rs_28 = {
+	name = Asha
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7850.1.1 = { birth = yes }
+	7888.1.1 = { death = yes }
 }
 Farwynd_11 = {
 	name = Gylbert # a lord of Lonely Light
@@ -10305,8 +10370,19 @@ Farwynd_11 = {
 	father = Farwynd_10
 
 	7847.1.1 = { birth = yes }
+	7866.1.1 = { add_spouse = Farwynd_rs_11 }
 	7875.1.1 = { dynasty_house = house_FarwyndLL }
 	7888.1.1 = { death = yes }
+}
+Farwynd_rs_11 = {
+	name = Ulfara
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7848.1.1 = { birth = yes }
+	7880.1.1 = { death = yes }
 }
 
 ### Sealskin Point Branch
@@ -10319,6 +10395,7 @@ Farwynd_29 = {
 	culture = ironborn
 
 	father = Farwynd_28 # Ulf Farwynd
+	mother = Farwynd_rs_28
 
 	7870.1.1 = { birth = yes }
 	7886.1.1 = { add_spouse = Farwynd_rs_29 }
@@ -11212,6 +11289,7 @@ Farwynd_39 = {
 	mother = Farwynd_rs_33
 
 	trait = twin
+	trait = dwarf
 
 	8069.1.1 = { birth = yes }
 	8122.1.1 = {
@@ -11266,7 +11344,7 @@ Farwynd_56 = {
 	8096.1.1 = { birth = yes }
 	8122.1.1 = { add_spouse = Farwynd_rs_56 }
 	8149.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Farwynd_rs_56 = {
@@ -11345,7 +11423,7 @@ Farwynd_59 = {
 
 	8102.1.1 = { birth = yes }
 	8170.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Farwynd_60 = {
@@ -12282,6 +12360,7 @@ FarwyndLL_5 = {
 	culture = ironborn
 
 	father = Farwynd_11 # Gylbert Farwynd
+	mother = Farwynd_rs_11
 
 	7870.1.1 = { birth = yes }
 	7875.1.1 = { dynasty_house = house_FarwyndLL }
@@ -12732,6 +12811,8 @@ FarwyndLL_27 = {
 	father = FarwyndLL_23
 	mother = FarwyndLL_rs_23
 
+	trait = physique_good_2
+
 	8046.1.1 = { birth = yes }
 	8064.1.1 = { add_spouse = FarwyndLL_rs_27 }
 	8108.1.1 = {
@@ -12796,7 +12877,7 @@ FarwyndLL_36 = {
 
 	8064.1.1 = { birth = yes }
 	8101.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 FarwyndLL_37 = {
@@ -13907,6 +13988,7 @@ FarwyndDL_10 = {
 	culture = ironborn
 
 	father = Farwynd_28 # Ulf Farwynd
+	mother = Farwynd_rs_28
 
 	7873.1.1 = { birth = yes }
 	7894.1.1 = { add_spouse = FarwyndDL_rs_10 }
@@ -16472,12 +16554,23 @@ Harlaw_42 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
+	8101.1.1 = { add_spouse = Harlaw_rs_42 }
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
 			killer = Westerling_28 # Johanna Westerling
 		}
 	}
+}
+Harlaw_rs_42 = {
+	name = Morissa
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8086.1.1 = { birth = yes }
+	8109.1.1 = { death = yes }
 }
 ### Issue of Kromm
 Harlaw_85 = {
@@ -16541,9 +16634,21 @@ Harlaw_43 = {
 	culture = ironborn
 
 	father = Harlaw_42
+	mother = Harlaw_rs_42
 
 	8105.1.1 = { birth = yes }
+	8129.1.1 = { add_spouse = Harlaw_rs_43 }
 	8163.1.1 = { death = yes }
+}
+Harlaw_rs_43 = {
+	name = Falia
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8113.1.1 = { birth = yes }
+	8160.1.1 = { death = yes }
 }
 ### Issue of Euron
 Harlaw_44 = {
@@ -16558,6 +16663,7 @@ Harlaw_44 = {
 	sexuality = heterosexual
 
 	father = Harlaw_43
+	mother = Harlaw_rs_43
 
 	trait = education_stewardship_4
 	trait = diligent
@@ -16671,6 +16777,7 @@ Harlaw_45 = {
 	culture = ironborn
 
 	father = Harlaw_43
+	mother = Harlaw_rs_43
 
 	8140.1.1 = {
 		birth = yes
@@ -16805,7 +16912,18 @@ Volmark_5 = {
 	father = Grey_King_14
 
 	7834.1.1 = { birth = yes }
+	7857.1.1 = { add_spouse = Volmark_rs_5 }
 	7879.1.1 = { death = yes }
+}
+Volmark_rs_5 = {
+	name = Unella
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7836.1.1 = { birth = yes }
+	7864.1.1 = { death = yes }
 }
 Volmark_6 = {
 	name = Lenwood # a lord
@@ -16815,9 +16933,21 @@ Volmark_6 = {
 	culture = ironborn
 
 	father = Volmark_5
+	mother = Volmark_rs_5
 
 	7859.1.1 = { birth = yes }
+	7880.1.1 = { add_spouse = Volmark_rs_6 }
 	7902.1.1 = { death = { death_reason = death_battle } }
+}
+Volmark_rs_6 = {
+	name = Zia
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7864.1.1 = { birth = yes }
+	7889.1.1 = { death = yes }
 }
 ### Issue of Lenwood
 Volmark_7 = {
@@ -16828,6 +16958,7 @@ Volmark_7 = {
 	culture = ironborn
 
 	father = Volmark_6
+	mother = Volmark_rs_6
 
 	7881.1.1 = { birth = yes }
 	7902.1.1 = { death = { death_reason = death_battle } }
@@ -16840,6 +16971,7 @@ Volmark_8 = {
 	culture = ironborn
 
 	father = Volmark_6
+	mother = Volmark_rs_6
 
 	7887.1.1 = {
 		birth = yes
@@ -16987,12 +17119,23 @@ Volmark_14 = {
 		birth = yes # Newly born at the time of his father's death
 		add_character_flag = canon_status_mentioned
 	}
+	8026.1.1 = { add_spouse = Volmark_rs_14 }
 	8033.1.1 = {
 		death = {
 			death_reason = death_execution # Rebelled against Greyjoys
 			killer = Greyjoy_41 # Goren Greyjoy
 		}
 	}
+}
+Volmark_rs_14 = {
+	name = Ulfhild
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8014.1.1 = { birth = yes }
+	8041.1.1 = { death = yes }
 }
 ### Main Line
 Volmark_15 = {
@@ -17003,9 +17146,21 @@ Volmark_15 = {
 	culture = ironborn
 
 	father = Volmark_14 # Harren Volmark
+	mother = Volmark_rs_14
 
 	8030.1.1 = { birth = yes }
+	8052.1.1 = { add_spouse = Volmark_rs_15 }
 	8084.1.1 = { death = yes }
+}
+Volmark_rs_15 = {
+	name = Jonna
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8036.1.1 = { birth = yes }
+	8078.1.1 = { death = yes }
 }
 Volmark_16 = {
 	name = Alvyn # a lord
@@ -17015,9 +17170,21 @@ Volmark_16 = {
 	culture = ironborn
 
 	father = Volmark_15
+	mother = Volmark_rs_15
 
 	8056.1.1 = { birth = yes }
+	8079.1.1 = { add_spouse = Volmark_rs_16 }
 	8112.1.1 = { death = yes }
+}
+Volmark_rs_16 = {
+	name = Ursila
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8064.1.1 = { birth = yes }
+	8096.1.1 = { death = yes }
 }
 ### Issue of Alvyn
 Volmark_17 = {
@@ -17028,17 +17195,29 @@ Volmark_17 = {
 	culture = ironborn
 
 	father = Volmark_16
+	mother = Volmark_rs_16
 
 	8080.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
+	8097.1.1 = { add_spouse = Volmark_rs_17 }
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
 			killer = Westerling_28 # Johanna Westerling
 		}
 	}
+}
+Volmark_rs_17 = {
+	name = Jonna
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8077.1.1 = { birth = yes }
+	8113.1.1 = { death = yes }
 }
 Volmark_28 = {
 	name = Harra # married Andrik Salt
@@ -17049,6 +17228,9 @@ Volmark_28 = {
 	culture = ironborn
 
 	father = Volmark_16
+	mother = Volmark_rs_16
+
+	trait = giant
 
 	8083.1.1 = { birth = yes }
 	8134.4.1 = { death = yes }
@@ -17062,9 +17244,21 @@ Volmark_18 = {
 	culture = ironborn
 
 	father = Volmark_17
+	mother = Volmark_rs_17
 
 	8098.1.1 = { birth = yes }
+	8119.1.1 = { add_spouse = Volmark_rs_18 }
 	8161.1.1 = { death = yes }
+}
+Volmark_rs_18 = {
+	name = Sigrid
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8106.1.1 = { birth = yes }
+	8149.1.1 = { death = yes }
 }
 ### Issue of Donnel
 Volmark_19 = {
@@ -17076,6 +17270,7 @@ Volmark_19 = {
 	culture = ironborn
 
 	father = Volmark_18
+	mother = Volmark_rs_18
 
 	8123.1.1 = {
 		birth = yes
@@ -17091,9 +17286,21 @@ Volmark_20 = {
 	culture = ironborn
 
 	father = Volmark_18
+	mother = Volmark_rs_18
 
 	8130.1.1 = { birth = yes }
+	8161.1.1 = { add_spouse = Volmark_rs_20 }
 	8181.1.1 = { death = yes }
+}
+Volmark_rs_20 = {
+	name = Gertrud
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8144.1.1 = { birth = yes }
+	8165.1.1 = { death = yes }
 }
 Volmark_21 = {
 	name = Kemmett # Semi-Canon
@@ -17103,6 +17310,7 @@ Volmark_21 = {
 	culture = ironborn
 
 	father = Volmark_18
+	mother = Volmark_rs_18
 
 	8132.1.1 = {
 		birth = yes
@@ -17120,9 +17328,21 @@ Volmark_22 = {
 	culture = ironborn
 
 	father = Volmark_20
+	mother = Volmark_rs_20
 
 	8163.1.1 = { birth = yes }
+	8191.1.1 = { add_spouse = Volmark_rs_22 }
 	8235.1.1 = { death = yes }
+}
+Volmark_rs_22 = {
+	name = Alla
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8175.1.1 = { birth = yes }
+	8206.1.1 = { death = yes }
 }
 ### Issue of Ralf
 Volmark_23 = {
@@ -17133,6 +17353,7 @@ Volmark_23 = {
 	culture = ironborn
 
 	father = Volmark_22
+	mother = Volmark_rs_22
 
 	8194.1.1 = { birth = yes }
 	8238.1.1 = { death = yes }
@@ -17145,6 +17366,7 @@ Volmark_24 = {
 	culture = ironborn
 
 	father = Volmark_22
+	mother = Volmark_rs_22
 
 	8196.1.1 = { birth = yes }
 	8214.1.1 = { add_spouse = Volmark_rs_24 }
@@ -18283,7 +18505,7 @@ Wynch_66 = {
 
 	8089.1.1 = { birth = yes }
 	8143.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 ### Issue of Alyn
@@ -18633,6 +18855,8 @@ Wynch_55 = {
 
 	father = Wynch_45
 	mother = Wynch_rs_45
+
+	trait = albino
 
 	8079.1.1 = { birth = yes }
 	8145.1.1 = {
@@ -19841,6 +20065,8 @@ Botley_65 = {
 	father = Botley_56
 	mother = Botley_rs_56
 
+	trait = physique_bad_3
+
 	8055.1.1 = { birth = yes }
 	8073.1.1 = { add_spouse = Botley_rs_65 }
 	8112.1.1 = {
@@ -19891,12 +20117,23 @@ Botley_30 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
+	8106.1.1 = { add_spouse = Botley_rs_30 }
 	8134.5.1 = {
 		death = {
 			death_reason = death_execution
 			killer = Westerling_28 # Johanna Westerling
 		}
 	}
+}
+Botley_rs_30 = {
+	name = Snela
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8091.1.1 = { birth = yes }
+	8125.1.1 = { death = yes }
 }
 Botley_68 = {
 	name = Wulfe
@@ -20214,6 +20451,7 @@ Botley_31 = {
 	culture = ironborn
 
 	father = Botley_30
+	mother = Botley_rs_30
 
 	8110.1.1 = {
 		birth = yes
@@ -20224,7 +20462,7 @@ Botley_31 = {
 }
 ### Issue of Harrag
 Botley_32 = {
-	name = Belona # Semi-Canon
+	name = Belona # Semi-Canon, married Kemmett Volmark
 	dynasty = dynn_Botley
 	female = yes
 
@@ -20312,7 +20550,18 @@ Botley_37 = {
 	mother = Botley_rs_33
 
 	8166.1.1 = { birth = yes }
+	8183.1.1 = { add_spouse = Botley_rs_37 }
 	8195.1.1 = { death = yes }
+}
+Botley_rs_37 = {
+	name = Gysella
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8169.1.1 = { birth = yes }
+	8204.1.1 = { death = yes }
 }
 Botley_36 = {
 	name = Alla # Semi-Canon
@@ -20341,9 +20590,21 @@ Botley_38 = {
 	culture = ironborn
 
 	father = Botley_37 # Urrigon Botley
+	mother = Botley_rs_37
 
 	8187.1.1 = { birth = yes }
+	8203.1.1 = { add_spouse = Botley_rs_38 }
 	8205.1.1 = { death = yes }
+}
+Botley_rs_38 = {
+	name = Rina
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8184.1.1 = { birth = yes }
+	8232.1.1 = { death = yes }
 }
 Botley_39 = {
 	name = Sargon # a lord
@@ -20353,9 +20614,21 @@ Botley_39 = {
 	culture = ironborn
 
 	father = Botley_38
+	mother = Botley_rs_38
 
 	8204.1.1 = { birth = yes }
+	8228.1.1 = { add_spouse = Botley_rs_39 }
 	8256.1.1 = { death = yes }
+}
+Botley_rs_39 = {
+	name = Falia
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8210.1.1 = { birth = yes }
+	8245.1.1 = { death = yes }
 }
 
 ###### HOUSE SALTCLIFFE (id = dynn_Saltcliffe)
@@ -21650,7 +21923,7 @@ Saltcliffe_24 = {
 }
 ### Issue of Ralf
 Saltcliffe_25 = {
-	name = Tanda # Semi-Canon
+	name = Tanda # Semi-Canon, married Boremund Harlaw
 	dynasty = dynn_Saltcliffe
 	female = yes
 
@@ -21723,8 +21996,19 @@ Saltcliffe_27 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
 	}
+	8174.1.1 = { add_spouse = Saltcliffe_rs_27 }
 	8175.1.1 = { add_spouse = Westerling_41 } # Calynne Westerling
 	8210.1.1 = { death = yes }
+}
+Saltcliffe_rs_27 = {
+	name = Shierle
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8154.1.1 = { birth = yes }
+	8179.1.1 = { death = yes }
 }
 Saltcliffe_28 = {
 	name = Gran # Semi-Canon
@@ -21904,9 +22188,21 @@ Saltcliffe_37 = {
 	culture = ironborn
 
 	father = Saltcliffe_27 # Roryn Saltcliffe
+	mother = Saltcliffe_rs_27
 
 	8176.1.1 = { birth = yes }
+	8195.1.1 = { add_spouse = Saltcliffe_rs_37 }
 	8229.1.1 = { death = yes }
+}
+Saltcliffe_rs_37 = {
+	name = Sallei
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8180.1.1 = { birth = yes }
+	8207.1.1 = { death = yes }
 }
 Saltcliffe_38 = {
 	name = Theon # a lord
@@ -21916,9 +22212,21 @@ Saltcliffe_38 = {
 	culture = ironborn
 
 	father = Saltcliffe_37
+	mother = Saltcliffe_rs_37
 
 	8199.1.1 = { birth = yes }
+	8219.1.1 = { add_spouse = Saltcliffe_rs_38 }
 	8241.1.1 = { death = yes }
+}
+Saltcliffe_rs_38 = {
+	name = Rosalynd
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8202.1.1 = { birth = yes }
+	8226.1.1 = { death = yes }
 }
 Saltcliffe_39 = {
 	name = Eldiss # a lord
@@ -21928,6 +22236,7 @@ Saltcliffe_39 = {
 	culture = ironborn
 
 	father = Saltcliffe_38
+	mother = Saltcliffe_rs_38
 
 	8220.1.1 = { birth = yes }
 	8234.1.1 = { add_spouse = Saltcliffe_rs_39 }
@@ -23899,7 +24208,7 @@ Sunderly_81 = {
 	8148.1.1 = { birth = yes }
 	8168.1.1 = { add_spouse = Sunderly_rs_81 }
 	8205.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Sunderly_rs_81 = {
@@ -24770,7 +25079,7 @@ Myre_43 = {
 
 	7985.1.1 = { birth = yes }
 	8051.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Myre_44 = {
@@ -25232,7 +25541,7 @@ Myre_77 = {
 
 	8050.1.1 = { birth = yes }
 	8116.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 ### Issue of Qhored
@@ -25327,7 +25636,7 @@ Myre_63 = {
 	8031.1.1 = { birth = yes }
 	8060.1.1 = { add_spouse = Myre_rs_63 }
 	8083.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Myre_rs_63 = {
@@ -25775,6 +26084,7 @@ Myre_70 = {
 	mother = Myre_rs_68
 
 	trait = twin
+	trait = intellect_bad_3
 
 	8099.1.1 = { birth = yes }
 	8128.1.1 = { add_spouse = Myre_rs_70 }
@@ -26023,6 +26333,8 @@ Myre_99 = {
 
 	father = Myre_73
 	mother = Myre_rs_73
+
+	trait = intellect_bad_1
 
 	8170.1.1 = { birth = yes }
 	8203.1.1 = {
@@ -29269,7 +29581,18 @@ Stonetree_16 = {
 	mother = Stonetree_rs_48
 
 	8085.1.1 = { birth = yes }
+	8106.1.1 = { add_spouse = Stonetree_rs_16 }
 	8129.1.1 = { death = yes }
+}
+Stonetree_rs_16 = {
+	name = Ynys
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8088.1.1 = { birth = yes }
+	8121.1.1 = { death = yes }
 }
 Stonetree_56 = {
 	name = Harl
@@ -29341,9 +29664,21 @@ Stonetree_17 = {
 	culture = ironborn
 
 	father = Stonetree_16
+	mother = Stonetree_rs_16
 
 	8110.1.1 = { birth = yes }
+	8150.1.1 = { add_spouse = Stonetree_rs_17 }
 	8159.1.1 = { death = yes }
+}
+Stonetree_rs_17 = {
+	name = Hegga
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8129.1.1 = { birth = yes }
+	8177.1.1 = { death = yes }
 }
 Stonetree_18 = {
 	name = Tormund # Semi-Canon
@@ -29355,6 +29690,7 @@ Stonetree_18 = {
 	culture = ironborn
 
 	father = Stonetree_16
+	mother = Stonetree_rs_16
 
 	trait = education_martial_2
 
@@ -29394,9 +29730,21 @@ Stonetree_19 = {
 	culture = ironborn
 
 	father = Stonetree_17
+	mother = Stonetree_rs_17
 
 	8151.1.1 = { birth = yes }
+	8168.1.1 = { add_spouse = Stonetree_rs_19 }
 	8205.1.1 = { death = yes }
+}
+Stonetree_rs_19 = {
+	name = Jonna
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8147.1.1 = { birth = yes }
+	8190.1.1 = { death = yes }
 }
 ### Issue of Tormund
 Stonetree_20 = {
@@ -29440,9 +29788,21 @@ Stonetree_22 = {
 	culture = ironborn
 
 	father = Stonetree_19
+	mother = Stonetree_rs_19
 
 	8169.1.1 = { birth = yes }
+	8196.1.1 = { add_spouse = Stonetree_rs_22 }
 	8249.1.1 = { death = yes }
+}
+Stonetree_rs_22 = {
+	name = Disa
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8181.1.1 = { birth = yes }
+	8200.1.1 = { death = yes }
 }
 
 ###### HOUSE TAWNEY (id = dynn_Tawney)
@@ -30476,7 +30836,7 @@ Tawney_55 = {
 	8077.1.1 = { birth = yes }
 	8093.1.1 = { add_spouse = Tawney_rs_55 }
 	8136.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Tawney_rs_55 = {
@@ -31317,7 +31677,18 @@ Blacktyde_9 = {
 	give_nickname = nick_maidensbane
 
 	4449.1.1 = { birth = yes }
+	7848.1.1 = { add_spouse = Blacktyde_rs_9 }
 	7851.1.1 = { death = yes }
+}
+Blacktyde_rs_9 = {
+	name = Riga
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7832.1.1 = { birth = yes }
+	7871.1.1 = { death = yes }
 }
 Blacktyde_10 = {
 	name = Goren # a lord
@@ -31327,6 +31698,7 @@ Blacktyde_10 = {
 	culture = ironborn
 
 	father = Blacktyde_9
+	mother = Blacktyde_rs_9
 
 	7851.1.1 = { birth = yes }
 	7868.1.1 = { add_spouse = Blacktyde_rs_10 }
@@ -32187,7 +32559,18 @@ Blacktyde_19 = {
 		add_character_flag = canon_status_semicanon
 	}
 	8163.1.1 = { give_nickname = nick_the_trueborn }
+	8174.1.1 = { add_spouse = Blacktyde_rs_19 }
 	8189.1.1 = { death = yes }
+}
+Blacktyde_rs_19 = {
+	name = Gysella
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8161.1.1 = { birth = yes }
+	8198.1.1 = { death = yes }
 }
 Blacktyde_20 = {
 	name = Esgred # Semi-Canon
@@ -32250,6 +32633,7 @@ Blacktyde_65 = {
 	culture = ironborn
 
 	father = Blacktyde_19
+	mother = Blacktyde_rs_19
 
 	8177.1.1 = { birth = yes }
 	8203.1.1 = { add_spouse = Blacktyde_rs_65 }
@@ -32474,7 +32858,7 @@ Blacktyde_70 = {
 
 	8199.1.1 = { birth = yes }
 	8261.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Blacktyde_71 = {
@@ -33409,7 +33793,18 @@ Drumm_17 = {
 		add_character_flag = canon_status_canon
 	}
 	7990.1.1 = { give_nickname = nick_the_cunning }
+	8001.1.1 = { add_spouse = Drumm_rs_17 }
 	8018.1.1 = { death = yes }
+}
+Drumm_rs_17 = {
+	name = Ulfara
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7987.1.1 = { birth = yes }
+	8031.1.1 = { death = yes }
 }
 Drumm_33 = {
 	name = Erika
@@ -33470,6 +33865,7 @@ Drumm_36 = {
 	culture = ironborn
 
 	father = Drumm_17
+	mother = Drumm_rs_17
 
 	8004.1.1 = { birth = yes }
 	8034.1.1 = { add_spouse = Drumm_rs_36 }
@@ -33579,6 +33975,7 @@ Drumm_40 = {
 
 	8090.1.1 = { birth = yes }
 	8107.1.1 = { add_spouse = Drumm_rs_40 }
+	8111.1.1 = { trait = dull }
 	8147.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -34130,7 +34527,7 @@ Stonehouse_14 = {
 	7885.1.1 = { birth = yes }
 	7913.1.1 = { add_spouse = Stonehouse_rs_14 }
 	7953.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Stonehouse_rs_14 = {
@@ -34346,7 +34743,7 @@ Stonehouse_78 = {
 
 	7914.1.1 = { birth = yes }
 	7953.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Stonehouse_79 = {
@@ -35832,7 +36229,7 @@ Sparr_25 = {
 
 	7961.1.1 = { birth = yes }
 	8019.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Sparr_26 = {
@@ -36786,10 +37183,12 @@ Sparr_84 = {
 	father = Sparr_82
 	mother = Sparr_rs_82
 
+	trait = beauty_bad_1
+
 	8145.1.1 = { birth = yes }
 	8175.1.1 = { add_spouse = Sparr_rs_84 }
 	8210.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Sparr_rs_84 = {
@@ -38451,7 +38850,7 @@ Merlyn_59 = {
 	8159.1.1 = { death = yes }
 }
 Merlyn_19 = {
-	name = Rina # Semi-Canon
+	name = Rina # Semi-Canon, married Ralf Saltcliffe
 	dynasty = dynn_Merlyn
 	female = yes
 
@@ -38534,7 +38933,7 @@ Merlyn_62 = {
 	}
 }
 Merlyn_20 = {
-	name = Alrya # Semi-Canon
+	name = Alrya # Semi-Canon, married Vickon Greyjoy
 	dynasty = dynn_Merlyn
 	female = yes
 
@@ -38639,7 +39038,7 @@ Merlyn_70 = {
 
 	8153.1.1 = { birth = yes }
 	8173.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Merlyn_71 = {
@@ -39705,7 +40104,7 @@ Orkwood_41 = {
 	7963.1.1 = { birth = yes }
 	7984.1.1 = { add_spouse = Orkwood_rs_41 }
 	8023.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Orkwood_rs_41 = {
@@ -40329,7 +40728,18 @@ Orkwood_17 = {
 	mother = Orkwood_rs_47
 
 	8051.1.1 = { birth = yes }
+	8070.1.1 = { add_spouse = Orkwood_rs_17 }
 	8090.1.1 = { death = yes }
+}
+Orkwood_rs_17 = {
+	name = Estred
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8056.1.1 = { birth = yes }
+	8077.1.1 = { death = yes }
 }
 ### Issue of Burton
 Orkwood_18 = {
@@ -40340,9 +40750,21 @@ Orkwood_18 = {
 	culture = ironborn
 
 	father = Orkwood_17
+	mother = Orkwood_rs_17
 
 	8073.1.1 = { birth = yes }
+	8098.1.1 = { add_spouse = Orkwood_rs_18 }
 	8148.1.1 = { death = yes }
+}
+Orkwood_rs_18 = {
+	name = Siglind
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8078.1.1 = { birth = yes }
+	8128.1.1 = { death = yes }
 }
 Orkwood_19 = {
 	name = Lorren
@@ -40352,6 +40774,9 @@ Orkwood_19 = {
 	culture = ironborn
 
 	father = Orkwood_17
+	mother = Orkwood_rs_17
+
+	trait = beauty_bad_2
 
 	8075.1.1 = { birth = yes }
 	8132.1.1 = { death = yes }
@@ -40395,9 +40820,21 @@ Orkwood_21 = {
 	culture = ironborn
 
 	father = Orkwood_18
+	mother = Orkwood_rs_18
 
 	8100.1.1 = { birth = yes }
+	8126.1.1 = { add_spouse = Orkwood_rs_21 }
 	8156.1.1 = { death = { death_reason = death_murder } }
+}
+Orkwood_rs_21 = {
+	name = Jyanna
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8107.1.1 = { birth = yes }
+	8149.1.1 = { death = yes }
 }
 ### Issue of Dagon
 Orkwood_22 = {
@@ -40408,6 +40845,7 @@ Orkwood_22 = {
 	culture = ironborn
 
 	father = Orkwood_21
+	mother = Orkwood_rs_21
 
 	8127.1.1 = { birth = yes }
 	8161.1.1 = { death = yes }
@@ -40420,9 +40858,21 @@ Orkwood_23 = {
 	culture = ironborn
 
 	father = Orkwood_21
+	mother = Orkwood_rs_21
 
 	8130.1.1 = { birth = yes }
+	8155.1.1 = { add_spouse = Orkwood_rs_23 }
 	8180.1.1 = { death = yes }
+}
+Orkwood_rs_23 = {
+	name = Ranni
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8140.1.1 = { birth = yes }
+	8183.1.1 = { death = yes }
 }
 ### Issue of Ralf
 Orkwood_24 = {
@@ -40433,9 +40883,21 @@ Orkwood_24 = {
 	culture = ironborn
 
 	father = Orkwood_23
+	mother = Orkwood_rs_23
 
 	8159.1.1 = { birth = yes }
+	8181.1.1 = { add_spouse = Orkwood_rs_24 }
 	8209.1.1 = { death = yes }
+}
+Orkwood_rs_24 = {
+	name = Victaria
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8165.1.1 = { birth = yes }
+	8193.1.1 = { death = yes }
 }
 ### Issue of Werlag
 Orkwood_25 = {
@@ -40447,12 +40909,24 @@ Orkwood_25 = {
 	culture = ironborn
 
 	father = Orkwood_24
+	mother = Orkwood_rs_24
 
 	8184.1.1 = { birth = yes }
+	8204.1.1 = { add_spouse = Orkwood_rs_25 }
 	8214.1.1 = { death = yes }
 }
+Orkwood_rs_25 = {
+	name = Gudrun
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8189.1.1 = { birth = yes }
+	8227.1.1 = { death = yes }
+}
 Orkwood_26 = {
-	name = Yara
+	name = Yara # married Donel Greyjoy
 	dynasty = dynn_Orkwood
 	dna = Orkwood_26
 	female = yes
@@ -40461,6 +40935,7 @@ Orkwood_26 = {
 	culture = ironborn
 
 	father = Orkwood_24
+	mother = Orkwood_rs_24
 
 	8185.1.1 = { birth = yes }
 	8244.1.1 = { death = yes }
@@ -40475,9 +40950,21 @@ Orkwood_27 = {
 	culture = ironborn
 
 	father = Orkwood_25 # Aeron Orkwood
+	mother = Orkwood_rs_25
 
 	8207.1.1 = { birth = yes }
+	8229.1.1 = { add_spouse = Orkwood_rs_27 }
 	8249.1.1 = { death = yes }
+}
+Orkwood_rs_27 = {
+	name = Estred
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8210.1.1 = { birth = yes }
+	8258.1.1 = { death = yes }
 }
 Orkwood_28 = {
 	name = Urek # a lord
@@ -40489,6 +40976,7 @@ Orkwood_28 = {
 	culture = ironborn
 
 	father = Orkwood_27
+	mother = Orkwood_rs_27
 
 	8233.1.1 = {
 		birth = yes
@@ -40809,7 +41297,18 @@ Codd_25 = {
 	mother = Codd_rs_24
 
 	7960.1.1 = { birth = yes }
+	7976.1.1 = { add_spouse = Codd_rs_25 }
 	8018.1.1 = { death = yes }
+}
+Codd_rs_25 = {
+	name = Esgred
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7957.1.1 = { birth = yes }
+	8005.1.1 = { death = yes }
 }
 Codd_26 = {
 	name = Werlag
@@ -40819,12 +41318,24 @@ Codd_26 = {
 	culture = ironborn
 
 	father = Codd_25
+	mother = Codd_rs_25
 
 	7978.1.1 = { birth = yes }
+	7994.1.1 = { add_spouse = Codd_rs_26 }
 	7996.1.1 = { employer = Hoare_31 } # Harren Hoare
 	8000.2.1 = {
 		death = { death_reason = death_battle } # Maybe killed in chaos after Harren's death
 	}
+}
+Codd_rs_26 = {
+	name = Rosalynd
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7973.1.1 = { birth = yes }
+	8024.1.1 = { death = yes }
 }
 ### Issue of Werlag
 Codd_27 = {
@@ -40835,6 +41346,7 @@ Codd_27 = {
 	culture = ironborn
 
 	father = Codd_26
+	mother = Codd_rs_26
 
 	7996.1.1 = { birth = yes }
 	8019.1.1 = {
@@ -40852,6 +41364,7 @@ Codd_28 = {
 	culture = ironborn
 
 	father = Codd_26
+	mother = Codd_rs_26
 
 	7998.1.1 = { birth = yes }
 	8019.1.1 = { trait = incestuous }
@@ -40869,7 +41382,18 @@ Codd_29 = {
 	mother = Codd_28 # Yara Codd
 
 	8028.1.1 = { birth = yes }
+	8054.1.1 = { add_spouse = Codd_rs_29 }
 	8079.1.1 = { death = yes }
+}
+Codd_rs_29 = {
+	name = Perra
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8037.1.1 = { birth = yes }
+	8069.1.1 = { death = yes }
 }
 Codd_30 = {
 	name = Romny # a lord
@@ -40879,8 +41403,20 @@ Codd_30 = {
 	culture = ironborn
 
 	father = Codd_29
+	mother = Codd_rs_29
 
 	8056.1.1 = { birth = yes }
+	8081.1.1 = { add_spouse = Codd_rs_30 }
+	8096.1.1 = { death = yes }
+}
+Codd_rs_30 = {
+	name = Frynne
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8067.1.1 = { birth = yes }
 	8096.1.1 = { death = yes }
 }
 Codd_31 = {
@@ -40891,9 +41427,21 @@ Codd_31 = {
 	culture = ironborn
 
 	father = Codd_30
+	mother = Codd_rs_30
 
 	8084.1.1 = { birth = yes }
+	8100.1.1 = { add_spouse = Codd_rs_31 }
 	8151.1.1 = { death = yes }
+}
+Codd_rs_31 = {
+	name = Ynys
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8079.1.1 = { birth = yes }
+	8122.1.1 = { death = yes }
 }
 ### Issue of Gyles
 Codd_32 = {
@@ -40905,6 +41453,7 @@ Codd_32 = {
 	culture = ironborn
 
 	father = Codd_31
+	mother = Codd_rs_31
 
 	8103.1.1 = { birth = yes }
 	8120.1.1 = { trait = incestuous }
@@ -40918,6 +41467,7 @@ Codd_34 = {
 	culture = ironborn
 
 	father = Codd_31
+	mother = Codd_rs_31
 
 	8104.1.1 = { birth = yes }
 	8120.1.1 = { trait = incestuous }
@@ -40931,6 +41481,7 @@ Codd_35 = {
 	culture = ironborn
 
 	father = Codd_31
+	mother = Codd_rs_31
 
 	8106.1.1 = { birth = yes }
 	8124.1.1 = {
@@ -41003,7 +41554,7 @@ Codd_rs_37 = {
 }
 ### Issue of Quellon and Jonella
 Codd_38 = {
-	name = Alannys
+	name = Alannys # married Sawane Codd
 	dynasty = dynn_Codd
 	female = yes
 
@@ -41049,7 +41600,18 @@ Codd_40 = {
 	mother = Codd_38 # Alannys Codd
 
 	8168.1.1 = { birth = yes }
+	8189.1.1 = { add_spouse = Codd_rs_40 }
 	8219.1.1 = { death = yes }
+}
+Codd_rs_40 = {
+	name = Mera
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8169.1.1 = { birth = yes }
+	8202.1.1 = { death = yes }
 }
 Codd_41 = {
 	name = Alyn # a lord
@@ -41059,9 +41621,21 @@ Codd_41 = {
 	culture = ironborn
 
 	father = Codd_40
+	mother = Codd_rs_40
 
 	8190.1.1 = { birth = yes }
+	8211.1.1 = { add_spouse = Codd_rs_41 }
 	8266.1.1 = { death = yes }
+}
+Codd_rs_41 = {
+	name = Ranni
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8193.1.1 = { birth = yes }
+	8219.1.1 = { death = yes }
 }
 ### Issue of Alyn
 Codd_42 = {
@@ -41072,8 +41646,20 @@ Codd_42 = {
 	culture = ironborn
 
 	father = Codd_41
+	mother = Codd_rs_41
 
 	8214.1.1 = { birth = yes }
+	8241.1.1 = { add_spouse = Codd_rs_42 }
+	8248.1.1 = { death = yes }
+}
+Codd_rs_42 = {
+	name = Myrna
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8227.1.1 = { birth = yes }
 	8248.1.1 = { death = yes }
 }
 Codd_43 = {
@@ -41084,9 +41670,21 @@ Codd_43 = {
 	culture = ironborn
 
 	father = Codd_41
+	mother = Codd_rs_41
 
 	8216.1.1 = { birth = yes }
+	8237.1.1 = { add_spouse = Codd_rs_43 }
 	8257.1.1 = { death = yes }
+}
+Codd_rs_43 = {
+	name = Katla
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8222.1.1 = { birth = yes }
+	8272.1.1 = { death = yes }
 }
 
 ###### HOUSE HUMBLE (id = dynn_Humble)
@@ -44108,7 +44706,7 @@ Shepherd_81 = {
 
 	7959.1.1 = { birth = yes }
 	8014.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Shepherd_82 = {
@@ -44284,6 +44882,7 @@ Shepherd_68 = {
 	mother = Shepherd_rs_61
 
 	8126.1.1 = { birth = yes }
+	8143.1.1 = { trait = shrewd }
 	8189.1.1 = {
 		trait = pneumonic
 		death = { death_reason = death_pneumonic }
@@ -45776,6 +46375,7 @@ Weaver_34 = {
 	mother = Weaver_rs_29
 
 	trait = twin
+	trait = intellect_good_2
 
 	8071.1.1 = { birth = yes }
 	8129.1.1 = {
@@ -46255,6 +46855,8 @@ Weaver_72 = {
 	father = Weaver_70
 	mother = Weaver_rs_70
 
+	trait = physique_good_1
+
 	8158.1.1 = { birth = yes }
 	8181.1.1 = { add_spouse = Weaver_rs_72 }
 	8211.1.1 = {
@@ -46406,7 +47008,7 @@ Weaver_92 = {
 
 	8185.1.1 = { birth = yes }
 	8217.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 
@@ -47233,6 +47835,8 @@ Netley_75 = {
 	father = Netley_56
 	mother = Netley_rs_56
 
+	trait = dwarf
+
 	8167.1.1 = { birth = yes }
 	8193.1.1 = { add_spouse = Netley_rs_75 }
 	8234.1.1 = {
@@ -47620,7 +48224,7 @@ Netley_96 = {
 
 	8199.1.1 = { birth = yes }
 	8260.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Netley_97 = {
@@ -47840,7 +48444,7 @@ Netley_25 = {
 	8049.1.1 = { birth = yes }
 	8079.1.1 = { add_spouse = Netley_rs_25 }
 	8117.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Netley_rs_25 = {
@@ -47931,7 +48535,7 @@ Netley_39 = {
 
 	8085.1.1 = { birth = yes }
 	8147.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 ### Issue of Theomore
@@ -48432,7 +49036,7 @@ Sharp_12 = {
 	7886.1.1 = { birth = yes }
 	7909.1.1 = { add_spouse = Sharp_rs_12 }
 	7954.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Sharp_rs_12 = {
@@ -50444,7 +51048,7 @@ Sharp_91 = {
 	}
 }
 
-###### HOUSE SALT (id = dynn_Salt)
+###### HOUSE SALT (id = house_Salt)
 ############################
 ### We Bleed Black
 ###
@@ -51266,7 +51870,7 @@ Salt_47 = {
 	8134.1.1 = { birth = yes }
 	8152.1.1 = { add_spouse = Salt_rs_47 }
 	8201.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Salt_rs_47 = {
@@ -51342,6 +51946,7 @@ Salt_54 = {
 	mother = Salt_rs_45
 
 	trait = twin
+	trait = intellect_good_1
 
 	8133.1.1 = { birth = yes }
 	8197.1.1 = {
@@ -53052,7 +53657,7 @@ Freeborn_83 = {
 
 	8145.1.1 = { birth = yes }
 	8203.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Freeborn_84 = {
@@ -53141,6 +53746,7 @@ Freeborn_88 = {
 	mother = Freeborn_rs_85
 
 	trait = twin
+	trait = beauty_good_1
 
 	8166.1.1 = { birth = yes }
 	8182.1.1 = { add_spouse = Freeborn_rs_88 }
@@ -53267,7 +53873,7 @@ Freeborn_75 = {
 
 	8152.1.1 = { birth = yes }
 	8197.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Freeborn_76 = {
@@ -53405,7 +54011,7 @@ Tidewood_21 = {
 	7926.1.1 = { birth = yes }
 	7952.1.1 = { add_spouse = Tidewood_rs_21 }
 	7984.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Tidewood_rs_21 = {
@@ -54269,7 +54875,7 @@ Tidewood_79 = {
 
 	8048.1.1 = { birth = yes }
 	8115.1.1 = {
-		death = { death_reason = death_attempted_treatment }
+		death = { death_reason = death_treatment }
 	}
 }
 Tidewood_80 = {
@@ -54833,6 +55439,8 @@ Tidewood_92 = {
 
 	father = Tidewood_86
 	mother = Tidewood_rs_86
+
+	trait = beauty_good_2
 
 	8065.1.1 = { birth = yes }
 	8116.1.1 = {
@@ -55794,6 +56402,8 @@ Ironmaker_36 = {
 
 	father = Ironmaker_35
 	mother = Ironmaker_rs_35
+
+	trait = giant
 
 	8069.1.1 = { birth = yes }
 	8096.1.1 = { add_spouse = Ironmaker_rs_36 }

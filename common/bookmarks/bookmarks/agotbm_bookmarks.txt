@@ -548,7 +548,7 @@ agot_bm_8195 = {
 # Year 8298 War of the Five Kings #
 ###################################
 agot_bm_8298 = {
-	start_date = 8298.12.21
+	start_date = 8299.1.17
 	is_playable = yes
 	group = agot_bm_group_agotbm # War of the Five Kings
 
@@ -756,7 +756,7 @@ agot_bm_8298 = {
 # Year 8299 A Clash of Kings #
 ##############################
 agot_bm_8299 = {
-	start_date = 8299.3.3
+	start_date = 8299.6.13
 	is_playable = yes
 	group = agot_bm_group_agotbm # A Clash of Kings
 

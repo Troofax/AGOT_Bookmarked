@@ -5,7 +5,7 @@
 #############################
 # A Clash of Kings Scenario #
 #############################
-agot_8299_3_3_acok_scenario_setup = {
+agot_8299_6_13_acok_scenario_setup = {
 	### RULER DESIGNER FIX ###
 	# Stannis aganist Lannisters
 	if = { # fire only if you used ruler designer; else there is no war
