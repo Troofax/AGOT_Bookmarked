@@ -7480,7 +7480,6 @@ Blackfyre_14 = {
 
 	trait = education_martial_3
 	trait = strong
-	trait = hunchbacked
 	trait = giant
 	trait = beauty_bad_3
 	trait = physique_good_3
@@ -10125,6 +10124,7 @@ Velaryon_70 = {
 }
 Velaryon_rs_70 = {
 	name = Baelon
+	dna = Velaryon_rs_70
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -10152,6 +10152,7 @@ Velaryon_90 = {
 Velaryon_67 = {
 	name = Daena # a lord
 	dynasty = dynn_Velaryon
+	dna = Velaryon_67
 	female = yes
 
 	religion = fots_seven
@@ -15762,6 +15763,7 @@ Poor_Fellows_8 = {
 }
 Tyanna_1 = {
 	name = Tyanna # Canon, AKA: Tyanna of the Tower, married Maegor Targaryen
+	dna = Tyanna_1
 	female = yes
 
 	religion = fc_pan_pentos

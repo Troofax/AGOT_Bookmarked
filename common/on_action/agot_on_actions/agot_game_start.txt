@@ -950,7 +950,7 @@ agot_on_game_start = {
 						}
 						prev = {
 							designate_diarch = prev
-							start_diarchy = second_magister
+							try_start_diarchy = second_magister
 							set_diarchy_swing = 40
 						}
 					}
@@ -963,7 +963,7 @@ agot_on_game_start = {
 						}
 						prev = {
 							designate_diarch = prev
-							start_diarchy = high_councilor
+							try_start_diarchy = high_councilor
 							set_diarchy_swing = 40
 						}
 					}
@@ -973,14 +973,14 @@ agot_on_game_start = {
 						}
 						prev = {
 							designate_diarch = prev
-							start_diarchy = tyniate
+							try_start_diarchy = tyniate
 							set_diarchy_swing = 40
 						}
 					}
 					else = {
 						prev = {
 							designate_diarch = prev
-							start_diarchy = gonfaloniere
+							try_start_diarchy = gonfaloniere
 							set_diarchy_swing = 40
 						}
 					}
@@ -2701,12 +2701,12 @@ agot_on_game_start_after_lobby = {
 
 				agot_8284_6_2_scenario_setup = yes
 			}
-			if = { # manage 8298.12.21 War of the Five Kings scenario
+			if = { # manage 8299.1.17 War of the Five Kings scenario
 				limit = { game_start_date = 8299.1.17 }
 
 				agot_8299_1_17_wotfk_scenario_setup = yes
 			}
-			if = { # manage 8299.3.3 A Clash of Kings scenario
+			if = { # manage 8299.6.13 A Clash of Kings scenario
 				limit = { game_start_date = 8299.6.13 }
 
 				agot_8299_6_13_acok_scenario_setup = yes
