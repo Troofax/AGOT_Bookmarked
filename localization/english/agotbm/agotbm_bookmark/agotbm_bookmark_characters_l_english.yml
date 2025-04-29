@@ -69,20 +69,6 @@ l_english:
  bookmark_195_harys_bracken_desc:0 "Lord Harys Bracken's nephew, Aegor Bittersteel, has entangled him in a war of succession. This could prove to further the status of house Bracken for years to come. Will he succeed in their cause or meet an untimely death?"
  bookmark_195_aegor_targaryen:0 "Aegor 'Bittersteel' Targaryen"
 
- #8277
- bookmark_277_tywin_lannister:0 "Lord Tywin Lannister"
- bookmark_277_tywin_lannister_desc:0 "Outrage was the response to this news from Duskendale. As Hand of the King, it fell to Lord Tywin Lannister to resolve the crisis. He massed an army and laid siege to the town in what became known as the Defiance of Duskendale. The situation remained in a stalemate for six months, with Lord Denys threatening to execute the king at the first sign that Tywin intended to storm the town. In the end, will the king be rescued or will his rulership be cut short when there comes another who is younger and more beautiful?"
- bookmark_277_cersei_lannister:0 "Cersei Lannister"
- bookmark_277_jaime_lannister:0 "Jaime Lannister"
-
- bookmark_277_denys_darklyn:0 "Lord Denys Darklyn"
- bookmark_277_denys_darklyn_desc:0 "Lord Denys asked King Aerys II for certain rights for his citizens and a new town charter for Duskendale. The king refused and Denys refused to pay taxes to the crown. This led to an escalation of events that saw the capture of Aerys and the death of Ser Gwayne Gaunt of the Kingsguard by Ser Symon Hollard during the taking. Will he choose to negotiate or will he take matters into his own hands?"
-
- bookmark_277_aerys_targaryen:0 "King Aerys II Targaryen"
- bookmark_277_aerys_targaryen_desc:0 "Having noticed the deteriorated relationship between Aerys and Tywin, Lord Denys Darklyn of Duskendale decided to withhold his payments to the crown, and instead invited the king to Duskendale to hear his petition for a new charter. While Aerys had intended to decline the invitation, the king changed his mind when Lord Tywin advised him to refuse in the strongest possible terms. Eager to demonstrate his ability to handle the situation without the help of his Hand, Aerys decided to settle the issue personally and bring the defiant Lord Darklyn to heel. Aerys traveled to Duskendale taking a small force led by Ser Gwayne Gaunt of the Kingsguard, against Lord Tywin's advice. The invitation proved to be a trap, however, and Aerys walked right into it. Aerys was taken prisoner, will he escape or perish as a prisoner of war?"
- bookmark_277_rhaella_targaryen:0 "Queen Rhaella Targaryen"
- bookmark_277_rhaegar_targaryen:0 "Prince Rhaegar Targaryen"
-
  #8298
  bookmark_298_robb_stark:0 "King Robb Stark"
  bookmark_298_robb_stark_desc:0 "Recently crowned King in the North Robb Stark, known as the Young Wolf, has discovered his father Ned has been executed by the tyrannical King Joffrey Baratheon. You have taken the Kingslayer, Jaime Lannister as your prisoner. Will winter come for the Lannisters, or will your efforts be cut short by those who oppose your cause?"
@@ -158,24 +144,3 @@ l_english:
  bookmark_153_aegon_targaryen_desc:0 "For twenty-two years, Aegon ‘the Unlucky’ has reigned from atop the Iron Throne. He has no shortage of heirs, with two sons — Daeron and Baelor — being reared at court, and two nephews through his brother Viserys. Despite the certainty of his succession, the safety of his House is in constant question. \n\n#bold With the death of the dragons, the source of Targaryen power is waning; marriages must now be negotiated, and deals struck, if the House of the Dragon is to remain in its high seat of power.#!"
  bookmark_178_aegon_targaryen:0 "King Aegon IV ‘the Unworthy’"
  bookmark_178_aegon_targaryen_desc:0 "Aegon Targaryen, the Fourth of His Name, has reigned for only six years, but in that time he has proven himself a decadent, degenerate, and corrupt ruler with little regard for affairs of state. Between strife with his eldest son — and sole trueborn heir — Daeron, mutual hatred with his well-loved brother Aemon ‘the Dragonknight,’ and fraught relationship with his sister-wife Naerys, Aegon has proven himself a weak-willed king ruled more by his own pleasures than any duty to the realm.\n\n#bold Though his bastards may well be countless, Aegon’s so-called “Great Bastards” may determine the fate of the realm as Aegon navigates the mess he has made of the House of the Dragon.#!"
-
- bookmark_239_steffon_tully:0 "Lord Paramount Steffon Tully"
- bookmark_239_steffon_tully_desc:0 "With Prince Duncan's reckless marriage and subsequent disinheritance, the Tullys have stumbled on a rare prize: young Celia’s engagement to Jaehaerys will make her queen someday. #bold That is, as long as as the betrothal lasts...#!"
- bookmark_282_hoster_tully:0 "Lord Paramount Hoster Tully"
- bookmark_282_hoster_tully_desc:0 "Having negotiated two marriages for his daughters to the newly-minted rebel leaders, Hoster Tully has taken a heavy gamble on the success of Robert’s Rebellion. A success would only strengthen these heavy alliances, while #bold a loss could lead to the devastation of the dynasty.#!"
- bookmark_284_qalen_codd:0 "Lord Qalen Codd"
- bookmark_284_qalen_codd_desc:0 "#bold Though All Men Do Despise Us.#!"
-
- bookmark_106_mathis_rowan:0 "Lord Mathis Rowan"
- bookmark_106_mathis_rowan_desc:0 "The Lord of Goldengrove and head of House Rowan, Mathis may seek to bring fresh glory to his family, and spread the golden tree banner across the Reach. #bold Will this tree grow mighty? Or burn to ash?#!"
- bookmark_239_bennifer_blackwood:0 "Lord Bennifer Blackwood"
- bookmark_239_bennifer_blackwood_desc:0 "The older brother of Queen Betha Blackwood, Bennifer has found himself in the good graces of King Aegon the Unlikely. Bennifer is not the same young man who had taken part in the fateful tourney of Ashford Meadow, but with the king for an ally he may yet have something to show the realm, even as the the storm of war gathers. #bold In sight of the Old Gods, he may yet bring his House to greatness.#!"
- bookmark_284_gregor_forrester:0 "Lord Gregor ‘the Good’"
- bookmark_284_gregor_forrester_desc:0 "Lord Gregor Forrester sits in Ironrath, his seat in the far North. His House are of the Wolfswood, and loyal to their lieges Houses Glover and Stark. #bold Will Gregor 'the Good' stretch the ironwood tree out in the sun? Or shrink in the frosts of the North?#!"
-
- bookmark_106_jeyne_arryn:0 "Lady Jeyne Arryn"
- bookmark_106_jeyne_arryn_desc:0 "Lady Jeyne Arryn inherited the Vale at the tender age of three. Neither her youth nor her gender inspires much confidence among her vassals, while ambitious male relatives bide their time, eager for any chance to overthrow her. #bold Will she survive the challenges of her regency and manage to hold onto her throne?#!"
- bookmark_258_tancred_crane:0 "Lord Tancred Crane"
- bookmark_258_tancred_crane_desc:0 "As the son of a Targaryen princess, Tancred commands a level of prestige and influence that far exceeds what his title alone would afford. Recently, he was honored with a personal invitation from the king to attend a grand celebration at Summerhall, celebrating the next generation of Targaryens. #bold What future lies in store for those who gather there?#!"
- bookmark_284_franklyn_fowler:0 "Lord Franklyn ‘Old Hawk’"
- bookmark_284_franklyn_fowler_desc:0 "The Fowlers have served as the Wardens of the Prince's Pass for generations. While their role has grown less significant since Dorne’s integration into the Iron Throne, the escalating tensions between the throne and Dorne—exacerbated by the brutal murder of Princess Elia and her children—may soon make their position vital once more. #bold As these tensions mount, what unforeseen dangers lie ahead for those caught in the storm?#!"

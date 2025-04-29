@@ -6,5 +6,5 @@ tags={
 }
 name="AGOT Bookmarked"
 picture="thumbnail.png"
-supported_version="1.15.*.*"
+supported_version="1.16.*.*"
 path="mod/AGOT_Bookmarked-1.0.7"
