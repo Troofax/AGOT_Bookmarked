@@ -2877,7 +2877,7 @@ agot_on_game_start_after_lobby = {
 	}
 	events = {
 		agot_adventurers_events.0001
-		agot_faceless_decision.0010
+		agot_faceless_decision.9000
 		# agot_nightswatch_maintenance.0001 # Removes female courtiers
 	}
 	on_actions = {
