@@ -2684,11 +2684,11 @@ Greyjoy_105 = {
 	culture = ironborn
 
 	trait = bastard
-	
+
 	father = Greyjoy_49 # Harlon Greyjoy
 
-	8115.1.1 = { 
-		birth = yes 
+	8115.1.1 = {
+		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
 	8169.1.1 = { death = yes }
@@ -2702,7 +2702,7 @@ Greyjoy_106 = {
 
 	father = Greyjoy_105
 
-	8140.1.1 = { 
+	8140.1.1 = {
 		birth = yes
 		set_to_lowborn = yes
 		make_trait_inactive = surname_pyke
@@ -2718,13 +2718,13 @@ Greyjoy_107 = {
 
 	father = Greyjoy_106
 
-	8161.1.1 = { 
+	8161.1.1 = {
 		birth = yes
-		set_to_lowborn = yes 
-		make_trait_inactive = surname_pyke 
+		set_to_lowborn = yes
+		make_trait_inactive = surname_pyke
 	}
 	8202.1.1 = { death = yes }
-} 
+}
 ### Issue of Aeron
 Greyjoy_51 = {
 	name = Vickon # Mentioned, a lord
@@ -17424,6 +17424,7 @@ Volmark_26 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
+	8287.1.1 = { add_spouse = Goodbrother_5 } # Helya Goodbrother
 }
 Volmark_27 = {
 	name = Alannys
@@ -49204,7 +49205,7 @@ Sharp_23 = {
 	trait = twin
 
 	7935.1.1 = { birth = yes }
-	7954.1.1 = { 
+	7954.1.1 = {
 		trait = nightswatch_historical
 		effect = {
 			agot_join_nightswatch_history_effect = {
@@ -51697,7 +51698,7 @@ Salt_40 = {
 	}
 }
 Salt_41 = {
-	name = Steffar 
+	name = Steffar
 	dynasty_house = house_Salt
 
 	religion = drowned_god

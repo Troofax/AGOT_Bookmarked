@@ -901,7 +901,7 @@ c_crow_spike = {
 	7913.1.1 = {
 		holder = Goodbrother_45
 	}
-	7962.1.1 = {	
+	7962.1.1 = {
 		holder = Goodbrother_49
 	}
 	7988.1.1 = {
@@ -1596,7 +1596,7 @@ c_grey_garden = {
 c_dulewood = {
 	4337.1.1 = {
 		liege = d_harlaw
-	}	
+	}
 	7868.1.1 = {
 		holder = Myre_6
 	}

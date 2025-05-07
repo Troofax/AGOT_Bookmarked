@@ -4682,7 +4682,7 @@ c_longgrass = {
 	800.1.1 = {
 		de_jure_liege = d_tumbleton
 		effect = {
-			title:b_redgrass_field  = { set_title_name = b_longgrass_field }
+			title:b_redgrass_field = { set_title_name = b_longgrass_field }
 		}
 	}
 	7858.1.1 = {
@@ -4742,7 +4742,7 @@ c_longgrass = {
 		liege = k_the_crownlands
 		holder = Corne_50
 		effect = {
-			title:b_redgrass_field  = { reset_title_name = yes }
+			title:b_redgrass_field = { reset_title_name = yes }
 		}
 	}
 	8258.6.1 = {

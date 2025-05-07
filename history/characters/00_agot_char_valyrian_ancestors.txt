@@ -4856,7 +4856,7 @@ Targaryen_91 = {
 			agot_safe_betrothal_history_effect = { TARGET = character:Martell_79 } # Myriah Martell
 		}
 	}
-	8170.1.2 = { 
+	8170.1.2 = {
 		add_spouse = Martell_79 # Myriah Martell
 		employer = Targaryen_82 # Baelor Targaryen
 	}
@@ -5042,7 +5042,7 @@ Targaryen_98 = {
 
 	father = Targaryen_88
 	mother = Lowborn_Kings_Landing_3 # Merry Megette
-	
+
 	trait = legitimized_bastard # Caution: succession error
 
 	trait = education_learning_1
@@ -5106,7 +5106,7 @@ Targaryen_100 = {
 
 	father = Targaryen_88
 	mother = Lowborn_Kings_Landing_3 # Merry Megette
-	
+
 	trait = legitimized_bastard # Caution: succession error
 
 	trait = education_learning_1
@@ -5289,7 +5289,7 @@ Targaryen_95 = {
 
 	father = Targaryen_88
 	mother = Bracken_76 # Barbara Braken
-	
+
 	trait = legitimized_bastard # Caution: succession error
 
 	trait = education_martial_5
@@ -6318,7 +6318,7 @@ Targaryen_122 = {
 				create_alliance = {
 					target = character:Baratheon_71 # Lyonel Baratheon
 					allied_through_owner = character:Targaryen_126 # Duncan Targaryen
-					allied_through_target = character:Baratheon_76 # Cassandra Baratheon 
+					allied_through_target = character:Baratheon_76 # Cassandra Baratheon
 				}
 			}
 			if = {
@@ -6326,12 +6326,12 @@ Targaryen_122 = {
 				create_alliance = {
 					target = character:Tully_66 # Steffon Tully
 					allied_through_owner = character:Targaryen_127 # Jaehaerys II Targaryen
-					allied_through_target = character:Tully_68 # Celia Tully 
+					allied_through_target = character:Tully_68 # Celia Tully
 				}
 				create_alliance = {
 					target = character:Tyrell_1 # Garlan Tyrell
 					allied_through_owner = character:Targaryen_128 # Shaera Targaryen
-					allied_through_target = character:Tyrell_4 # Luthor Tyrell 
+					allied_through_target = character:Tyrell_4 # Luthor Tyrell
 				}
 			}
 			if = {
@@ -6339,7 +6339,7 @@ Targaryen_122 = {
 				create_alliance = {
 					target = character:Redwyne_43 # Runceford Redwyne
 					allied_through_owner = character:Targaryen_129 # Daeron Targaryen
-					allied_through_target = character:Redwyne_2 # Olenna Redwyne 
+					allied_through_target = character:Redwyne_2 # Olenna Redwyne
 				}
 			}
 		}
@@ -6362,7 +6362,7 @@ Targaryen_122 = {
 				create_alliance = {
 					target = character:Baratheon_71 # Lyonel Baratheon
 					allied_through_owner = character:Targaryen_130 # Rhaelle Targaryen
-					allied_through_target = character:Baratheon_75 # Ormund Baratheon 
+					allied_through_target = character:Baratheon_75 # Ormund Baratheon
 				}
 			}
 		}
@@ -6622,7 +6622,7 @@ Targaryen_127 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
-		add_character_flag = sexuality_ensure_heterosexual	
+		add_character_flag = sexuality_ensure_heterosexual
 	}
 	8237.1.1 = {
 		effect = {
@@ -7630,7 +7630,7 @@ Brightflame_2 = {
 	culture = high_valyrian
 
 	father = Targaryen_119
-	
+
 	trait = bastard_founder # Caution: succession error
 
 	trait = twin
@@ -7670,7 +7670,7 @@ Brightflame_8 = {
 	culture = high_valyrian
 
 	father = Targaryen_119
-	
+
 	trait = bastard_founder # Caution: succession error
 
 	trait = twin
@@ -7753,7 +7753,7 @@ Hammer_4 = {
 
 	trait = beauty_good_1
 
-	8059.1.1 = { 
+	8059.1.1 = {
 		birth = yes
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
@@ -7884,7 +7884,7 @@ White_2 = {
 
 	trait = beauty_good_2
 
-	8059.1.1 = { 
+	8059.1.1 = {
 		birth = yes
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_blackglass_port }
@@ -7962,7 +7962,7 @@ Truefyre_2 = {
 
 	trait = beauty_good_1
 
-	8091.1.1 = { 
+	8091.1.1 = {
 		birth = yes
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
@@ -9652,9 +9652,9 @@ Velaryon_47 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	8112.1.1 = { 
+	8112.1.1 = {
 		add_spouse = Hayford_14 # Ermesande Hayford
-		trait = knight 
+		trait = knight
 	}
 	8153.1.1 = { death = yes }
 }
@@ -10093,7 +10093,7 @@ Velaryon_hh_3 = {
 	trait = intellect_good_1
 	trait = beauty_good_1
 
-	8120.1.1 = { 
+	8120.1.1 = {
 		birth = yes
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_driftmark }
@@ -10644,9 +10644,9 @@ Celtigar_62 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	8017.1.1 = { 
+	8017.1.1 = {
 		trait = knight
-		trait = education_martial_prowess_2 
+		trait = education_martial_prowess_2
 	}
 	8025.1.1 = {
 		effect = {
@@ -15746,7 +15746,7 @@ Poor_Fellows_8 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	8032.1.1 = {  give_nickname = nick_the_starvling }
+	8032.1.1 = { give_nickname = nick_the_starvling }
 	# 8043.1.1 = { employer = Poor_Fellows_2 } # Horys Hill AGOT TODO
 	# 8045.6.1 = { employer = Poor_Fellows_4 } # Septon Moon AGOT TODO
 	8048.6.2 = {
@@ -16441,7 +16441,7 @@ Silver_Denys_7 = {
 
 	trait = physique_good_1
 
-	8010.1.1 = { 
+	8010.1.1 = {
 		birth = yes
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_blackglass_port }

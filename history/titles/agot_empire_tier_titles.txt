@@ -1006,7 +1006,7 @@ e_the_stormlands = {
 	6363.1.1 = {
 		holder = Durrandon_41 #Ormund II Durrandon (NC)
 	}
-	6393.1.1 = {
+	6373.1.1 = {
 		holder = Durrandon_42 #Durran XVII Durrandon (NC)
 	}
 	6423.1.1 = {

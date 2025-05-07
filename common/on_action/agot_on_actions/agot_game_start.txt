@@ -41,9 +41,9 @@ agot_on_game_start = {
 							AND = {
 								NOT = {
 									has_culture = culture:andalosi
-								}	
+								}
 								highest_held_title_tier >= tier_county
-							} 
+							}
 						}
 						if = {
 							limit = { has_dlc_feature = admin_gov }
@@ -65,9 +65,9 @@ agot_on_game_start = {
 							AND = {
 								NOT = {
 									has_culture = culture:andalosi
-								}	
+								}
 								highest_held_title_tier >= tier_county
-							} 
+							}
 						}
 						if = {
 							limit = { has_dlc_feature = admin_gov }
@@ -3001,7 +3001,7 @@ agot_administrative_setup = {
 						owner.dynasty = dynasty:dynn_Draz
 						owner.dynasty = dynasty:dynn_Quaranis
 						owner.dynasty = dynasty:dynn_Sentanis
-						owner.dynasty = dynasty:dynn_Enrosaena				
+						owner.dynasty = dynasty:dynn_Enrosaena
 					}
 				}
 				# Game screams if the previous level isn't built yet
@@ -3130,7 +3130,7 @@ agot_administrative_setup = {
 				}
 			}
 		}
-		
+
 		# Temp bugfix for game-over after Prince is dead
 		title:k_pentos.holder ?= {
 			if = {
@@ -3143,7 +3143,7 @@ agot_administrative_setup = {
 					title:k_pentos.holder = { get_title = PREV }
 				}
 			}
-		} 
+		}
 	}
 }
 
@@ -3301,18 +3301,18 @@ agot_nf_estate_locations = {
 				move_domicile = title:b_lysayn.title_province
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					OR = {
 						owner.dynasty = dynasty:dynn_Varghan
 						owner.dynasty = dynasty:dynn_Nericos
-					} 
+					}
 				}
 				move_domicile = title:b_antyne.title_province
 			}
 			else_if = {
 				limit = {
 					OR = {
-						owner.dynasty = dynasty:dynn_Rhegan 
+						owner.dynasty = dynasty:dynn_Rhegan
 						owner.dynasty = dynasty:dynn_Sordios
 					}
 				}
@@ -3336,7 +3336,7 @@ agot_nf_estate_locations = {
 			}
 			# Pentos
 			else_if = {
-				limit = { 
+				limit = {
 					OR = {
 						owner.dynasty = dynasty:dynn_Myrakis
 						owner.dynasty = dynasty:dynn_Valduran
