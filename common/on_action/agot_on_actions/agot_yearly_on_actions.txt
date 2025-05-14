@@ -246,7 +246,7 @@ agot_yearly_playable_pulse = {
 	}
 	on_actions = {
 		on_wall_election
-		on_yearly_btw_struggle
+		on_yearly_btw_maintenance
 	}
 	effect = {
 		if = {

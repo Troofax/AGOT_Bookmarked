@@ -2690,7 +2690,7 @@ d_masseys_hook = {
 	8165.2.19 = {
 		holder = Massey_55
 	}
-	8170.1.1 = {
+	8174.1.1 = {
 		holder = Massey_63
 	}
 	8179.1.1 = {
@@ -2771,7 +2771,7 @@ c_stonedance = {
 	8165.2.19 = {
 		holder = Massey_55
 	}
-	8170.1.1 = {
+	8174.1.1 = {
 		holder = Massey_63
 	}
 	8179.1.1 = {

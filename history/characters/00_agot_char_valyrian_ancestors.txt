@@ -4753,7 +4753,7 @@ Targaryen_89 = {
 			}
 		}
 	}
-	# 8174.1.1 = {
+	# 8177.1.1 = {
 		# effect = { add_character_modifier = { name = vicious_rumors duration = -1 } } #Slandered
 	# }
 	8178.6.1 = {
@@ -4811,7 +4811,7 @@ Targaryen_90 = {
 			}
 		}
 	}
-	8174.1.1 = {
+	8177.1.1 = {
 		# effect = { add_character_modifier = { name = vicious_rumors duration = -1 } } #Slandered
 	}
 	8179.6.1 = {
@@ -4885,7 +4885,7 @@ Targaryen_91 = {
 			}
 		}
 	}
-	8174.1.1 = { trait = disputed_heritage }
+	8177.1.1 = { trait = disputed_heritage }
 	8187.6.1 = {
 		effect = {
 			if = {

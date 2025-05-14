@@ -1833,6 +1833,62 @@ c_the_flenches = {
 		holder = Kenning_3
 	}
 }
+b_cloudstone = {	
+	7850.1.1 = {
+		holder = Stormdrunk_71
+	}
+	7859.1.1 = {
+		holder = Stormdrunk_4
+	}
+	7898.1.1 = {
+		holder = Stormdrunk_7
+	}
+	7909.1.1 = {
+		holder = Stormdrunk_8
+	}
+	7957.1.1 = {
+		holder = Stormdrunk_9
+	}
+	7969.1.1 = {
+		holder = Stormdrunk_11
+	}
+	7977.1.1 = {
+		holder = Stormdrunk_14
+	}
+	8035.1.1 = {
+		holder = Stormdrunk_15
+	}
+	8037.1.1 = {
+		holder = Stormdrunk_17
+	}
+	8063.1.1 = {
+		holder = Stormdrunk_20
+	}
+	8075.1.1 = {
+		holder = Stormdrunk_25
+	}
+	8097.1.1 = {
+		holder = Stormdrunk_34
+	}
+	8151.1.1 = {
+		holder = Stormdrunk_36
+	}
+	8181.1.1 = {
+		holder = Stormdrunk_37
+	}
+	8201.1.1 = {
+		holder = Stormdrunk_39
+	}
+	8223.1.1 = {
+		holder = Stormdrunk_47
+	}
+	8265.1.1 = {
+		holder = Stormdrunk_50
+	}
+	8268.1.1 = {
+		holder = Stormdrunk_53
+	}
+}
 c_volmark = {
 	100.1.1 = {
 		succession_laws = { male_only_law single_heir_succession_law }
@@ -2997,6 +3053,59 @@ c_pebbleton = {
 	}
 	8291.1.1 = {
 		holder = Merlyn_1
+	}
+}
+b_mouldering = {
+	7886.1.1 = {
+		holder = Ironspite_1
+	}
+	7894.1.1 = {
+		holder = Ironspite_7
+	}
+	7923.1.1 = {
+		holder = Ironspite_12
+	}
+	7955.1.1 = {
+		holder = Ironspite_14
+	}
+	7980.1.1 = {
+		holder = Ironspite_28
+	}
+	7995.1.1 = {
+		holder = Ironspite_33
+	}
+	8056.1.1 = {
+		holder = Ironspite_37
+	}
+	8079.1.1 = {
+		holder = Ironspite_45
+	}
+	8096.1.1 = {
+		holder = Ironspite_46
+	}
+	8103.1.1 = {
+		holder = Ironspite_48
+	}
+	8109.1.1 = {
+		holder = Ironspite_54
+	}
+	8155.1.1 = {
+		holder = Ironspite_67
+	}
+	8189.1.1 = {
+		holder = Ironspite_77
+	}
+	8201.1.1 = {
+		holder = Ironspite_79
+	}
+	8228.1.1 = {
+		holder = Ironspite_81
+	}
+	8263.1.1 = {
+		holder = Ironspite_86
+	}
+	8274.1.1 = {
+		holder = Ironspite_88
 	}
 }
 c_axfirth = {

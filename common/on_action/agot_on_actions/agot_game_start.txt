@@ -22,13 +22,40 @@ agot_on_game_start = {
 			value = yes
 		}
 
-		#Assign duchies temp, keep years since election
-		title:e_three_daughters = {
-			if = {
-				limit = { exists = holder }
-				set_variable = {
-					name = years_since_election
-					value = title_held_years
+		# Three Daughters Steup
+		if = {
+			limit = {
+				game_start_date < 8132.1.1
+				game_start_date >= 8096.1.1
+				OR = {
+					exists = title:k_lys.holder
+					exists = title:k_myr.holder
+					exists = title:k_tyrosh.holder
+				}
+			}
+			title:k_lys.holder ?= { # It doesn't matter who the Triarchy is spawned on, but use Tyrosh or Lys since Myr's green clashes with the Stepstones' green
+				create_confederation = {
+					name = e_three_daughters
+				}
+				scope:new_confederation = {
+					set_variable = agot_confederation_is_3_daughters
+					set_global_variable = {
+						name = three_daughters_confederation
+						value = scope:new_confederation
+					}
+					if = {
+						limit = {
+							exists = title:k_myr.holder
+						}
+						add_confederation_member = title:k_myr.holder
+					}
+					if = {
+						limit = {
+							exists = title:k_tyrosh.holder
+						}
+						add_confederation_member = title:k_tyrosh.holder
+					}
+					set_coa = e_three_daughters
 				}
 			}
 		}
@@ -411,25 +438,25 @@ agot_on_game_start = {
 			}
 		}
 		culture:fangman = {
-			set_variable =  wildling_culture
+			set_variable = wildling_culture
 		}
 		culture:forestman = {
-			set_variable =  wildling_culture
+			set_variable = wildling_culture
 		}
 		culture:nightrunner = {
-			set_variable =  wildling_culture
+			set_variable = wildling_culture
 		}
 		culture:frozen_shoreman = {
-			set_variable =  wildling_culture
+			set_variable = wildling_culture
 		}
 		culture:hornfoot = {
-			set_variable =  wildling_culture
+			set_variable = wildling_culture
 		}
 		culture:lakeman = {
-			set_variable =  wildling_culture
+			set_variable = wildling_culture
 		}
 		culture:thenn = {
-			set_variable =  wildling_culture
+			set_variable = wildling_culture
 		}
 		### Buildings set up
 		# This is done to avoid errors, if the error 'No room left for adding a building' happens, add the province and the building here
@@ -531,7 +558,7 @@ agot_on_game_start = {
 		every_ruler = {
 			limit = {
 				is_lowborn = no
-				current_date >= 8282.9.15 # AGOT TODO; set proper dates for each house
+				current_date >= 8282.9.15 #AGOT TODO; set proper dates for each house
 			}
 
 			if = {
@@ -2148,10 +2175,6 @@ agot_north_holding_cost = {
 			add_county_modifier = agot_holding_build_speed_north
 		}
 		every_county_in_region = {
-			region = world_westeros_beyond_the_wall
-			add_county_modifier = agot_holding_build_speed_btw
-		}
-		every_county_in_region = {
 			region = world_westeros_the_wall
 			add_county_modifier = agot_holding_build_speed_north
 		}
@@ -2389,6 +2412,18 @@ agot_barony_ruins = {
 agot_on_game_start_after_lobby = {
 	effect = {
 		##### General setup start #####
+		if = {
+			limit = {
+				game_start_date < 8132.1.1
+				game_start_date >= 8096.1.1
+				OR = {
+					exists = title:k_lys.holder
+					exists = title:k_myr.holder
+					exists = title:k_tyrosh.holder
+				}
+			}
+			setup_triarchy_disputed_land_tributaries_effect = yes
+		}
 		# Targaryen Exiles Scripted Invasion
 		if = {
 			limit = {
@@ -2646,12 +2681,6 @@ agot_on_game_start_after_lobby = {
 
 			# 	agot_blackfyre_rebellion_I_scenario_setup = yes
 			# }
-			# AGOT Bookmarked Added
-			if = { # manage 7998.1.2 Aegon's Conquest scenario
-				limit = { game_start_date = 7998.1.2 }
-
-				agot_7998_1_1_conquest_scenario_setup = yes
-			}
 			if = { # manage 8170.12.11 Titan's March scenario
 				limit = { game_start_date = 8170.12.11 }
 
@@ -2661,11 +2690,6 @@ agot_on_game_start_after_lobby = {
 				limit = { game_start_date = 8106.4.18 }
 
 				agot_8106_4_18_scenario_setup = yes
-			}
-			if = { # manage 8195.3.7 1st Blackfyre Rebellion scenario
-				limit = { game_start_date = 8195.3.7 }
-
-				agot_8195_3_7_br_i_scenario_setup = yes
 			}
 			if = {
 				limit = { game_start_date = 8233.2.8 }
@@ -2701,6 +2725,22 @@ agot_on_game_start_after_lobby = {
 
 				agot_8284_6_2_scenario_setup = yes
 			}
+			if = { # manage 8299.3.3 A Clash of Kings scenario
+				limit = { game_start_date = 8299.3.3 }
+
+				agot_8299_3_3_acok_scenario_setup = yes
+			}
+			# AGOT Bookmarked Added
+			if = { # manage 7998.1.2 Aegon's Conquest scenario
+				limit = { game_start_date = 7998.1.2 }
+
+				agot_7998_1_1_conquest_scenario_setup = yes
+			}
+			if = { # manage 8195.3.7 1st Blackfyre Rebellion scenario
+				limit = { game_start_date = 8195.3.7 }
+
+				agot_8195_3_7_br_i_scenario_setup = yes
+			}
 			if = { # manage 8299.1.17 War of the Five Kings scenario
 				limit = { game_start_date = 8299.1.17 }
 
@@ -2719,14 +2759,14 @@ agot_on_game_start_after_lobby = {
 			if = { # manage 8129.4.1 The Dance of Dragons scenario
 				limit = { game_start_date = 8129.4.1 }
 
-				agot_8129_4_1_dotd_scenario_setup = yes
-				# AGOT Bookmarked Disabled
+				# AGOT Bookmarked Modified
 				# character:Targaryen_76  = {
 					# agot_create_artifact_lucerys_gun_effect  = { OWNER = this }
 					# scope:newly_created_artifact = {
 						# equip_artifact_to_owner_replace = yes
 					# }
 				# }
+				agot_8129_4_1_dotd_scenario_setup = yes
 			}
 			#Bookmarks after the Dance of the Dragons will start with +1 on the War of Succession counter for House Targaryen
 			if = {
@@ -2780,7 +2820,7 @@ agot_on_game_start_after_lobby = {
 		every_player = { # Send exposition events
 			limit = {
 				#is_valid_exposition_event_receiver = yes
-				always = no # AGOT TODO disabled cause I don't know
+				always = no #AGOT TODO disabled cause I don't know
 			}
 			if = {
 				limit = {

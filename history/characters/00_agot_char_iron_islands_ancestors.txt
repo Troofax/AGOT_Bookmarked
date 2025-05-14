@@ -57053,6 +57053,910 @@ Ironmaker_64 = {
 	}
 }
 
+###### HOUSE STORMDRUNK (id = dynn_Stormdrunk)
+############################
+###
+###
+Stormdrunk_71 = {
+	name = Rodrik # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	7805.1.1 = { birth = yes }
+	7832.1.1 = { add_spouse = Stormdrunk_rs_71 }
+	7859.1.1 = { death = yes }
+}
+Stormdrunk_rs_71 = {
+	name = Estred
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7815.1.1 = { birth = yes }
+	7868.1.1 = { death = yes }
+}
+### Issue of Rodrik
+Stormdrunk_2 = {
+	name = Ingrid
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_71
+	mother = Stormdrunk_rs_71
+
+	trait = twin
+
+	7833.1.1 = { birth = yes }
+	7884.1.1 = {
+		death = { death_reason = death_murder }
+	}
+}
+Stormdrunk_3 = {
+	name = Yara
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_71
+	mother = Stormdrunk_rs_71
+
+	trait = twin
+
+	7833.1.1 = { birth = yes }
+	7892.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+Stormdrunk_4 = {
+	name = Adrack # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_71
+	mother = Stormdrunk_rs_71
+
+	7835.1.1 = { birth = yes }
+	7858.1.1 = { add_spouse = Stormdrunk_rs_4 }
+	7898.1.1 = {
+		death = { death_reason = death_tumultuous_guts }
+	}
+}
+Stormdrunk_rs_4 = {
+	name = Rhonda
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7836.1.1 = { birth = yes }
+	7898.1.1 = { death = yes }
+}
+Stormdrunk_5 = {
+	name = Jonnela
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_71
+	mother = Stormdrunk_rs_71
+
+	7836.1.1 = { birth = yes }
+	7904.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Stormdrunk_6 = {
+	name = Mera
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_71
+	mother = Stormdrunk_rs_71
+
+	7839.1.1 = { birth = yes }
+	7904.1.1 = {
+		death = { death_reason = death_stress }
+	}
+}
+### Issue of Adrack
+Stormdrunk_7 = {
+	name = Rolfe # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_4
+	mother = Stormdrunk_rs_4
+
+	7860.1.1 = { birth = yes }
+	7888.1.1 = { add_spouse = Stormdrunk_rs_7 }
+	7909.1.1 = { death = yes }
+}
+Stormdrunk_rs_7 = {
+	name = Zia
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7867.1.1 = { birth = yes }
+	7901.1.1 = { death = yes }
+}
+### Issue of Rolfe
+Stormdrunk_8 = {
+	name = Aeron # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_7
+	mother = Stormdrunk_rs_7
+
+	7891.1.1 = { birth = yes }
+	7910.1.1 = { add_spouse = Stormdrunk_rs_8 }
+	7957.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+Stormdrunk_rs_8 = {
+	name = Rosalynd
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7893.1.1 = { birth = yes }
+	7914.1.1 = { death = yes }
+}
+### Issue of Aeron
+Stormdrunk_9 = {
+	name = Ambrode # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_8
+	mother = Stormdrunk_rs_8
+
+	7912.1.1 = { birth = yes }
+	7940.1.1 = { add_spouse = Stormdrunk_rs_9 }
+	7969.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Stormdrunk_rs_9 = {
+	name = Margot
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7912.1.1 = { birth = yes }
+	7960.1.1 = { death = yes }
+}
+### Issue of Ambrode
+Stormdrunk_10 = {
+	name = Hilda
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_9
+	mother = Stormdrunk_rs_9
+
+	7943.1.1 = { birth = yes }
+	7986.1.1 = {
+		death = { death_reason = death_drank_to_death }
+	}
+}
+Stormdrunk_11 = {
+	name = Emmond # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_9
+	mother = Stormdrunk_rs_9
+
+	7945.1.1 = { birth = yes }
+	7965.1.1 = { add_spouse = Stormdrunk_rs_11 }
+	7977.1.1 = {
+		death = { death_reason = death_stress }
+	}
+}
+Stormdrunk_rs_11 = {
+	name = Maeva
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7945.1.1 = { birth = yes }
+	7974.1.1 = { death = yes }
+}
+Stormdrunk_12 = {
+	name = Skyte
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_9
+	mother = Stormdrunk_rs_9
+
+	7949.1.1 = { birth = yes }
+	7965.1.1 = { add_spouse = Stormdrunk_rs_12 }
+	8018.1.1 = {
+		death = { death_reason = death_drank_to_death }
+	}
+}
+Stormdrunk_rs_12 = {
+	name = Disa
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7945.1.1 = { birth = yes }
+	7988.1.1 = { death = yes }
+}
+### Issue of Emmond
+Stormdrunk_14 = {
+	name = Torwyn # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_11
+	mother = Stormdrunk_rs_11
+
+	7969.1.1 = { birth = yes }
+	7995.1.1 = { add_spouse = Stormdrunk_rs_14 }
+	8035.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Stormdrunk_rs_14 = {
+	name = Hegga
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7976.1.1 = { birth = yes }
+	8023.1.1 = { death = yes }
+}
+Stormdrunk_15 = {
+	name = Arthur # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_11
+	mother = Stormdrunk_rs_11
+
+	7970.1.1 = { birth = yes }
+	7995.1.1 = { add_spouse = Stormdrunk_rs_15 }
+	8037.1.1 = {
+		trait = cancer
+		death = { death_reason = death_cancer }
+	}
+}
+Stormdrunk_rs_15 = {
+	name = Shaella
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7973.1.1 = { birth = yes }
+	8003.1.1 = { death = yes }
+}
+### Issue of Skyte
+Stormdrunk_13 = {
+	name = Frynne
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_12
+	mother = Stormdrunk_rs_12
+
+	7967.1.1 = { birth = yes }
+	8026.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+### Issue of Torwyn
+Stormdrunk_18 = {
+	name = Tanda
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_14
+	mother = Stormdrunk_rs_14
+
+	7999.1.1 = { birth = yes }
+	8027.1.1 = { death = yes }
+}
+Stormdrunk_19 = {
+	name = Tanda
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_14
+	mother = Stormdrunk_rs_14
+
+	8000.1.1 = { birth = yes }
+	8047.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+### Issue of Arthur
+Stormdrunk_16 = {
+	name = Dags
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_15
+	mother = Stormdrunk_rs_15
+
+	trait = twin
+
+	7996.1.1 = { birth = yes }
+	8038.1.1 = { death = yes }
+}
+Stormdrunk_17 = {
+	name = Hilmar # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_15
+	mother = Stormdrunk_rs_15
+
+	trait = twin
+
+	7996.1.1 = { birth = yes }
+	8018.1.1 = { add_spouse = Stormdrunk_rs_17 }
+	8063.1.1 = {
+		death = { death_reason = death_treatment }
+	}
+}
+Stormdrunk_rs_17 = {
+	name = Hilde
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8001.1.1 = { birth = yes }
+	8035.1.1 = { death = yes }
+}
+### Issue of Hilmar
+Stormdrunk_20 = {
+	name = Hilmar # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_17
+	mother = Stormdrunk_rs_17
+
+	8019.1.1 = { birth = yes }
+	8041.1.1 = { add_spouse = Stormdrunk_rs_20 }
+	8075.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Stormdrunk_rs_20 = {
+	name = Erika
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8020.1.1 = { birth = yes }
+	8073.1.1 = { death = yes }
+}
+Stormdrunk_21 = {
+	name = Dagon
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_17
+	mother = Stormdrunk_rs_17
+
+	8022.1.1 = { birth = yes }
+	8046.1.1 = { add_spouse = Stormdrunk_rs_21 }
+	8058.1.1 = { death = yes }
+}
+Stormdrunk_rs_21 = {
+	name = Margot
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8028.1.1 = { birth = yes }
+	8079.1.1 = { death = yes }
+}
+Stormdrunk_22 = {
+	name = Jorelle
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_17
+	mother = Stormdrunk_rs_17
+
+	8026.1.1 = { birth = yes }
+	8093.1.1 = {
+		death = { death_reason = death_heart_attack }
+	}
+}
+Stormdrunk_23 = {
+	name = Jonnela
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_17
+	mother = Stormdrunk_rs_17
+
+	8030.1.1 = { birth = yes }
+	8079.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+### Issue of Hilmar
+Stormdrunk_25 = {
+	name = Eurik # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_20
+	mother = Stormdrunk_rs_20
+
+	8043.1.1 = { birth = yes }
+	8062.1.1 = { add_spouse = Stormdrunk_rs_25 }
+	8097.1.1 = {
+		death = { death_reason = death_choked }
+	}
+}
+Stormdrunk_rs_25 = {
+	name = Astrid
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8045.1.1 = { birth = yes }
+	8065.1.1 = { death = yes }
+}
+Stormdrunk_26 = {
+	name = Urriga
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_20
+	mother = Stormdrunk_rs_20
+
+	8046.1.1 = { birth = yes }
+	8077.1.1 = {
+		death = { death_reason = death_drank_to_death }
+	}
+}
+Stormdrunk_27 = {
+	name = Harras
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_20
+	mother = Stormdrunk_rs_20
+
+	8047.1.1 = { birth = yes }
+	8071.1.1 = { add_spouse = Stormdrunk_rs_27 }
+	8095.1.1 = { death = yes }
+}
+Stormdrunk_rs_27 = {
+	name = Ulfara
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8048.1.1 = { birth = yes }
+	8105.1.1 = { death = yes }
+}
+Stormdrunk_28 = {
+	name = Keryn
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_20
+	mother = Stormdrunk_rs_20
+
+	8050.1.1 = { birth = yes }
+	8103.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Stormdrunk_29 = {
+	name = Gwin
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_20
+	mother = Stormdrunk_rs_20
+
+	8054.1.1 = { birth = yes }
+	8120.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+### Issue of Harras
+Stormdrunk_30 = {
+	name = Sigrid
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_27
+	mother = Stormdrunk_rs_27
+
+	8075.1.1 = { birth = yes }
+	8138.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+Stormdrunk_31 = {
+	name = Haereg
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_27
+	mother = Stormdrunk_rs_27
+
+	8078.1.1 = { birth = yes }
+	8087.1.1 = {
+		death = { death_reason = death_drank_to_death }
+	}
+}
+Stormdrunk_32 = {
+	name = Disa
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_27
+	mother = Stormdrunk_rs_27
+
+	8079.1.1 = { birth = yes }
+	8139.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Stormdrunk_33 = {
+	name = Oshara
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_27
+	mother = Stormdrunk_rs_27
+
+	8083.1.1 = { birth = yes }
+	8138.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Stormdrunk_34 = {
+	name = Dale # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_27
+	mother = Stormdrunk_rs_27
+
+	8085.1.1 = { birth = yes }
+	8114.1.1 = { add_spouse = Stormdrunk_rs_34 }
+	8151.1.1 = {
+		trait = pneumonic
+		death = { death_reason = death_pneumonic }
+	}
+}
+Stormdrunk_rs_34 = {
+	name = Brella
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8092.1.1 = { birth = yes }
+	8121.1.1 = { death = yes }
+}
+### Issue of Eurik
+Stormdrunk_35 = {
+	name = Wylla
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_25
+	mother = Stormdrunk_rs_25
+
+	8065.1.1 = { birth = yes }
+	8130.1.1 = {
+		trait = gout_ridden
+		death = { death_reason = death_gout_ridden }
+	}
+}
+### Issue of Dagon
+Stormdrunk_24 = {
+	name = Ranni
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_21
+	mother = Stormdrunk_rs_21
+
+	8049.1.1 = { birth = yes }
+	8116.1.1 = {
+		death = { death_reason = death_drank_to_death }
+	}
+}
+### Issue of Dale
+Stormdrunk_36 = {
+	name = Cragorn # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_34
+	mother = Stormdrunk_rs_34
+
+	8116.1.1 = { birth = yes }
+	8132.1.1 = { add_spouse = Stormdrunk_rs_36 }
+	8181.1.1 = {
+		death = { death_reason = death_heart_attack }
+	}
+}
+Stormdrunk_rs_36 = {
+	name = Gwynesse
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8105.1.1 = { birth = yes }
+	8145.1.1 = { death = yes }
+}
+### Issue of Cragorn
+Stormdrunk_37 = {
+	name = Kromm # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_36
+	mother = Stormdrunk_rs_36
+
+	8135.1.1 = { birth = yes }
+	8163.1.1 = { add_spouse = Stormdrunk_rs_37 }
+	8201.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+Stormdrunk_rs_37 = {
+	name = Harra
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8143.1.1 = { birth = yes }
+	8170.1.1 = { death = yes }
+}
+### Issue of Kromm
+Stormdrunk_38 = {
+	name = Victarion
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_37
+	mother = Stormdrunk_rs_37
+
+	8164.1.1 = { birth = yes }
+	8184.1.1 = { add_spouse = Stormdrunk_rs_38 }
+	8201.1.1 = {
+		death = { death_reason = death_drowned }
+	}
+}
+Stormdrunk_rs_38 = {
+	name = Siglind
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8165.1.1 = { birth = yes }
+	8211.1.1 = { death = yes }
+}
+### Issue of Victarion
+Stormdrunk_39 = {
+	name = Urras # a lord
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_38
+	mother = Stormdrunk_rs_38
+
+	8185.1.1 = { birth = yes }
+	8203.1.1 = { add_spouse = Stormdrunk_rs_39 }
+	8223.1.1 = { death = yes }
+}
+Stormdrunk_rs_39 = {
+	name = Belona
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8185.1.1 = { birth = yes }
+	8248.1.1 = { death = yes }
+}
+Stormdrunk_40 = {
+	name = Will
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_38
+	mother = Stormdrunk_rs_38
+
+	8189.1.1 = { birth = yes }
+	8208.1.1 = { add_spouse = Stormdrunk_rs_40 }
+	8250.1.1 = {
+		death = { death_reason = death_horse_riding_accident }
+	}
+}
+Stormdrunk_rs_40 = {
+	name = Talla
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8191.1.1 = { birth = yes }
+	8246.1.1 = { death = yes }
+}
+Stormdrunk_41 = {
+	name = Disa
+	dynasty = dynn_Stormdrunk
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_38
+	mother = Stormdrunk_rs_38
+
+	8193.1.1 = { birth = yes }
+	8260.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+Stormdrunk_42 = {
+	name = Gyles
+	dynasty = dynn_Stormdrunk
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stormdrunk_38
+	mother = Stormdrunk_rs_38
+
+	8196.1.1 = { birth = yes }
+	8221.1.1 = { add_spouse = Stormdrunk_rs_42 }
+	8238.1.1 = {
+		death = { death_reason = death_contest_joust_accident }
+	}
+}
+Stormdrunk_rs_42 = {
+	name = Shera
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8199.1.1 = { birth = yes }
+	8254.1.1 = { death = yes }
+}
+
 ###### RANDOM CAPTAINS
 ############################
 ###
@@ -57179,4 +58083,1637 @@ Drowned_Men_4 = {
 			killer = Greyjoy_41 # Goren Greyjoy
 		}
 	}
+}
+
+
+############################      MODCANON HOUSES       ############################
+####################################################################################
+
+###### HOUSE IRONSPITE (id = dynn_Ironspite)
+############################
+###
+###
+Ironspite_1 = {
+	name = Gelmarr # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	7822.1.1 = { birth = yes }
+	7850.1.1 = { add_spouse = Ironspite_rs_1 }
+	7894.1.1 = { death = yes }
+}
+Ironspite_rs_1 = {
+	name = Dacey
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7824.1.1 = { birth = yes }
+	7887.1.1 = { death = yes }
+}
+### Issue of Gelmarr
+Ironspite_2 = {
+	name = Carys
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_1
+	mother = Ironspite_rs_1
+
+	trait = twin
+
+	7851.1.1 = { birth = yes }
+	7893.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+Ironspite_3 = {
+	name = Hanna
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_1
+	mother = Ironspite_rs_1
+
+	trait = twin
+
+	7851.1.1 = { birth = yes }
+	7904.1.1 = {
+		death = { death_reason = death_fire }
+	}
+}
+Ironspite_4 = {
+	name = Alrya
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_1
+	mother = Ironspite_rs_1
+
+	trait = twin
+
+	7851.1.1 = { birth = yes }
+	7913.1.1 = {
+		trait = consumption
+		death = { death_reason = death_consumption }
+	}
+}
+Ironspite_5 = {
+	name = Alannys
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_1
+	mother = Ironspite_rs_1
+
+	7852.1.1 = { birth = yes }
+	7920.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_6 = {
+	name = Yohn
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_1
+	mother = Ironspite_rs_1
+
+	7855.1.1 = { birth = yes }
+	7877.1.1 = { add_spouse = Ironspite_rs_6 }
+	7893.1.1 = { death = yes }
+}
+Ironspite_rs_6 = {
+	name = Gysella
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7855.1.1 = { birth = yes }
+	7900.1.1 = { death = yes }
+}
+Ironspite_7 = {
+	name = Qalen # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_1
+	mother = Ironspite_rs_1
+
+	7858.1.1 = { birth = yes }
+	7884.1.1 = { add_spouse = Ironspite_rs_7 }
+	7923.1.1 = {
+		trait = cancer
+		death = { death_reason = death_cancer }
+	}
+}
+Ironspite_rs_7 = {
+	name = Helya
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7865.1.1 = { birth = yes }
+	7913.1.1 = { death = yes }
+}
+Ironspite_8 = {
+	name = Frenya
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_1
+	mother = Ironspite_rs_1
+
+	7861.1.1 = { birth = yes }
+	7928.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+Ironspite_9 = {
+	name = Eldred
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_1
+	mother = Ironspite_rs_1
+
+	7862.1.1 = { birth = yes }
+	7880.1.1 = { add_spouse = Ironspite_rs_9 }
+	7919.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_rs_9 = {
+	name = Asha
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7862.1.1 = { birth = yes }
+	7910.1.1 = { death = yes }
+}
+Ironspite_10 = {
+	name = Artag
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_1
+	mother = Ironspite_rs_1
+
+	7863.1.1 = { birth = yes }
+	7879.1.1 = { add_spouse = Ironspite_rs_10 }
+	7887.1.1 = {
+		death = { death_reason = death_horse_riding_accident }
+	}
+}
+Ironspite_rs_10 = {
+	name = Malora
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7860.1.1 = { birth = yes }
+	7912.1.1 = { death = yes }
+}
+### Issue of Artag
+Ironspite_11 = {
+	name = Eldred
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_10
+	mother = Ironspite_rs_10
+
+	7882.1.1 = { birth = yes }
+	7927.1.1 = {
+		death = { death_reason = death_murder }
+	}
+}
+### Issue of Eldred
+Ironspite_20 = {
+	name = Sallei
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_9
+	mother = Ironspite_rs_9
+
+	7883.1.1 = { birth = yes }
+	7927.1.1 = {
+		death = { death_reason = death_choked }
+	}
+}
+Ironspite_21 = {
+	name = Estred
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_9
+	mother = Ironspite_rs_9
+
+	7885.1.1 = { birth = yes }
+	7931.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+Ironspite_22 = {
+	name = Sigrik
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_9
+	mother = Ironspite_rs_9
+
+	7888.1.1 = { birth = yes }
+	7904.1.1 = { add_spouse = Ironspite_rs_22 }
+	7955.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_rs_22 = {
+	name = Morna
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7876.1.1 = { birth = yes }
+	7944.1.1 = { death = yes }
+}
+Ironspite_23 = {
+	name = Rhonda
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_9
+	mother = Ironspite_rs_9
+
+	7891.1.1 = { birth = yes }
+	7954.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+Ironspite_24 = {
+	name = Gorold
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_9
+	mother = Ironspite_rs_9
+
+	7893.1.1 = { birth = yes }
+	7923.1.1 = { add_spouse = Ironspite_rs_24 }
+	7961.1.1 = {
+		trait = consumption
+		death = { death_reason = death_consumption }
+	}
+}
+Ironspite_rs_24 = {
+	name = Myrna
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7900.1.1 = { birth = yes }
+	7961.1.1 = { death = yes }
+}
+### Issue of Sigrik
+Ironspite_40 = {
+	name = Shera
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_22
+	mother = Ironspite_rs_22
+
+	7908.1.1 = { birth = yes }
+	7959.1.1 = {
+		death = { death_reason = death_tumultuous_guts }
+	}
+}
+Ironspite_41 = {
+	name = Malora
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_22
+	mother = Ironspite_rs_22
+
+	7912.1.1 = { birth = yes }
+	7941.1.1 = {
+		death = { death_reason = death_horse_riding_accident }
+	}
+}
+Ironspite_42 = {
+	name = Belona
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_22
+	mother = Ironspite_rs_22
+
+	7915.1.1 = { birth = yes }
+	7940.1.1 = { death = yes }
+}
+### Issue of Gorold
+Ironspite_29 = {
+	name = Aladale
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_24
+	mother = Ironspite_rs_24
+
+	7926.1.1 = { birth = yes }
+	7991.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+### Issue of Yohn
+Ironspite_18 = {
+	name = Rhonda
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_6
+	mother = Ironspite_rs_6
+
+	7878.1.1 = { birth = yes }
+	7902.1.1 = {
+		trait = cancer
+		death = { death_reason = death_cancer }
+	}
+}
+### Issue of Qalen
+Ironspite_12 = {
+	name = Bennick # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_7
+	mother = Ironspite_rs_7
+
+	7886.1.1 = { birth = yes }
+	7916.1.1 = { add_spouse = Ironspite_rs_12 }
+	7955.1.1 = {
+		death = { death_reason = death_heart_attack }
+	}
+}
+Ironspite_rs_12 = {
+	name = Shera
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7896.1.1 = { birth = yes }
+	7943.1.1 = { death = yes }
+}
+### Issue of Bennick
+Ironspite_13 = {
+	name = Morissa
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_12
+	mother = Ironspite_rs_12
+
+	7917.1.1 = { birth = yes }
+	7964.1.1 = { death = yes }
+}
+Ironspite_14 = {
+	name = Hagon # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_12
+	mother = Ironspite_rs_12
+
+	7919.1.1 = { birth = yes }
+	7935.1.1 = { add_spouse = Ironspite_rs_14 }
+	7980.1.1 = {
+		death = { death_reason = death_feast_accident }
+	}
+}
+Ironspite_rs_14 = {
+	name = Esgred
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7915.1.1 = { birth = yes }
+	7960.1.1 = { death = yes }
+}
+Ironspite_15 = {
+	name = Siglind
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_12
+	mother = Ironspite_rs_12
+
+	7921.1.1 = { birth = yes }
+	7975.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+Ironspite_16 = {
+	name = Tanda
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_12
+	mother = Ironspite_rs_12
+
+	7922.1.1 = { birth = yes }
+	7988.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_17 = {
+	name = Sigfry
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_12
+	mother = Ironspite_rs_12
+
+	7924.1.1 = { birth = yes }
+	7945.1.1 = { add_spouse = Ironspite_rs_17 }
+	7978.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_rs_17 = {
+	name = Sif
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7928.1.1 = { birth = yes }
+	7976.1.1 = { death = yes }
+}
+### Issue of Hagon
+Ironspite_25 = {
+	name = Hilda
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_14
+	mother = Ironspite_rs_14
+
+	7936.1.1 = { birth = yes }
+	7999.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_26 = {
+	name = Lenwood
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_14
+	mother = Ironspite_rs_14
+
+	7937.1.1 = { birth = yes }
+	7954.1.1 = { add_spouse = Ironspite_rs_26 }
+	7970.1.1 = { death = yes }
+}
+Ironspite_rs_26 = {
+	name = Gretchel
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7937.1.1 = { birth = yes }
+	7995.1.1 = { death = yes }
+}
+Ironspite_27 = {
+	name = Perra
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_14
+	mother = Ironspite_rs_14
+
+	7941.1.1 = { birth = yes }
+	7992.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+### Issue of Sigfry
+Ironspite_19 = {
+	name = Belona
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_17
+	mother = Ironspite_rs_17
+
+	7947.1.1 = { birth = yes }
+	8015.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+### Issue of Lenwood
+Ironspite_28 = {
+	name = Haereg # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_26
+	mother = Ironspite_rs_26
+
+	7955.1.1 = { birth = yes }
+	7981.1.1 = { add_spouse = Ironspite_rs_28 }
+	7995.1.1 = { death = yes }
+}
+Ironspite_rs_28 = {
+	name = Margot
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7958.1.1 = { birth = yes }
+	8001.1.1 = { death = yes }
+}
+### Issue of Haereg
+Ironspite_30 = {
+	name = Urriga
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_28
+	mother = Ironspite_rs_28
+
+	7982.1.1 = { birth = yes }
+	8014.1.1 = { death = yes }
+}
+Ironspite_31 = {
+	name = Victaria
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_28
+	mother = Ironspite_rs_28
+
+	7983.1.1 = { birth = yes }
+	8049.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+Ironspite_32 = {
+	name = Inga
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_28
+	mother = Ironspite_rs_28
+
+	7984.1.1 = { birth = yes }
+	8046.1.1 = {
+		death = { death_reason = death_treatment }
+	}
+}
+Ironspite_33 = {
+	name = Alton # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_28
+	mother = Ironspite_rs_28
+
+	7988.1.1 = { birth = yes }
+	8011.1.1 = { add_spouse = Ironspite_rs_33 }
+	8056.1.1 = {
+		trait = cancer
+		death = { death_reason = death_cancer }
+	}
+}
+Ironspite_rs_33 = {
+	name = Carys
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	7988.1.1 = { birth = yes }
+	8057.1.1 = { death = yes }
+}
+Ironspite_34 = {
+	name = Nessa
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_28
+	mother = Ironspite_rs_28
+
+	7991.1.1 = { birth = yes }
+	8057.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_35 = {
+	name = Shierle
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_28
+	mother = Ironspite_rs_28
+
+	7994.1.1 = { birth = yes }
+	8061.1.1 = {
+		death = { death_reason = death_treatment }
+	}
+}
+### Issue of Alton
+Ironspite_36 = {
+	name = Morissa
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_33
+	mother = Ironspite_rs_33
+
+	8015.1.1 = { birth = yes }
+	8041.1.1 = {
+		trait = pneumonic
+		death = { death_reason = death_pneumonic }
+	}
+}
+Ironspite_37 = {
+	name = Qalen # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_33
+	mother = Ironspite_rs_33
+
+	8017.1.1 = { birth = yes }
+	8046.1.1 = { add_spouse = Ironspite_rs_37 }
+	8079.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_rs_37 = {
+	name = Jonnela
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8028.1.1 = { birth = yes }
+	8078.1.1 = { death = yes }
+}
+Ironspite_38 = {
+	name = Ambrode
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_33
+	mother = Ironspite_rs_33
+
+	8021.1.1 = { birth = yes }
+	8037.1.1 = { add_spouse = Ironspite_rs_38 }
+	8072.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_rs_38 = {
+	name = Ranni
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8018.1.1 = { birth = yes }
+	8073.1.1 = { death = yes }
+}
+Ironspite_39 = {
+	name = Inga
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_33
+	mother = Ironspite_rs_33
+
+	8023.1.1 = { birth = yes }
+	8084.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+### Issue of Ambrode
+Ironspite_43 = {
+	name = Drennan
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_38
+	mother = Ironspite_rs_38
+
+	8040.1.1 = { birth = yes }
+	8061.1.1 = { add_spouse = Ironspite_rs_43 }
+	8092.1.1 = {
+		death = { death_reason = death_poison }
+	}
+}
+Ironspite_rs_43 = {
+	name = Esgred
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8042.1.1 = { birth = yes }
+	8090.1.1 = { death = yes }
+}
+### Issue of Qalen
+Ironspite_44 = {
+	name = Inga
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_37
+	mother = Ironspite_rs_37
+
+	8047.1.1 = { birth = yes }
+	8095.1.1 = {
+		trait = gout_ridden
+		death = { death_reason = death_gout_ridden }
+	}
+}
+Ironspite_45 = {
+	name = Dunstan # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_37
+	mother = Ironspite_rs_37
+
+	8050.1.1 = { birth = yes }
+	8078.1.1 = { add_spouse = Ironspite_rs_45 }
+	8096.1.1 = {
+		death = { death_reason = death_contest_melee_accident }
+	}
+}
+Ironspite_rs_45 = {
+	name = Sigrid
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8055.1.1 = { birth = yes }
+	8108.1.1 = { death = yes }
+}
+Ironspite_46 = {
+	name = Jon # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_37
+	mother = Ironspite_rs_37
+
+	8054.1.1 = { birth = yes }
+	8075.1.1 = { add_spouse = Ironspite_rs_46 }
+	8103.1.1 = { death = yes }
+}
+Ironspite_rs_46 = {
+	name = Dyssa
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8057.1.1 = { birth = yes }
+	8103.1.1 = { death = yes }
+}
+Ironspite_47 = {
+	name = Frynne
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_37
+	mother = Ironspite_rs_37
+
+	8055.1.1 = { birth = yes }
+	8118.1.1 = {
+		death = { death_reason = death_treatment }
+	}
+}
+### Issue of Dunstan
+Ironspite_51 = {
+	name = Erika
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_45
+	mother = Ironspite_rs_45
+
+	8082.1.1 = { birth = yes }
+	8148.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+### Issue of Drennan
+Ironspite_52 = {
+	name = Dagmer
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_43
+	mother = Ironspite_rs_43
+
+	8064.1.1 = { birth = yes }
+	8119.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+### Issue of Jon
+Ironspite_48 = {
+	name = Hake # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_46
+	mother = Ironspite_rs_46
+
+	8076.1.1 = { birth = yes }
+	8095.1.1 = { add_spouse = Ironspite_rs_48 }
+	8109.1.1 = {
+		trait = consumption
+		death = { death_reason = death_consumption }
+	}
+}
+Ironspite_rs_48 = {
+	name = Mera
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8077.1.1 = { birth = yes }
+	8125.1.1 = { death = yes }
+}
+Ironspite_49 = {
+	name = Hilde
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_46
+	mother = Ironspite_rs_46
+
+	8079.1.1 = { birth = yes }
+	8146.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_50 = {
+	name = Gwynesse
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_46
+	mother = Ironspite_rs_46
+
+	8081.1.1 = { birth = yes }
+	8141.1.1 = {
+		trait = cancer
+		death = { death_reason = death_cancer }
+	}
+}
+### Issue of Hake
+Ironspite_53 = {
+	name = Jorelle
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_48
+	mother = Ironspite_rs_48
+
+	8097.1.1 = { birth = yes }
+	8131.1.1 = { death = yes }
+}
+Ironspite_54 = {
+	name = Lucas # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_48
+	mother = Ironspite_rs_48
+
+	8098.1.1 = { birth = yes }
+	8120.1.1 = { add_spouse = Ironspite_rs_54 }
+	8155.1.1 = {
+		death = { death_reason = death_heart_attack }
+	}
+}
+Ironspite_rs_54 = {
+	name = Arwyn
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8100.1.1 = { birth = yes }
+	8124.1.1 = { death = yes }
+}
+Ironspite_55 = {
+	name = Drennan
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_48
+	mother = Ironspite_rs_48
+
+	8099.1.1 = { birth = yes }
+	8121.1.1 = { add_spouse = Ironspite_rs_55 }
+	8162.1.1 = {
+		trait = consumption
+		death = { death_reason = death_consumption }
+	}
+}
+Ironspite_rs_55 = {
+	name = Ryella
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8103.1.1 = { birth = yes }
+	8148.1.1 = { death = yes }
+}
+Ironspite_56 = {
+	name = Gertrud
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_48
+	mother = Ironspite_rs_48
+
+	8103.1.1 = { birth = yes }
+	8143.1.1 = { death = yes }
+}
+Ironspite_57 = {
+	name = Vickon
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_48
+	mother = Ironspite_rs_48
+
+	8104.1.1 = { birth = yes }
+	8123.1.1 = { add_spouse = Ironspite_rs_57 }
+	8157.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_rs_57 = {
+	name = Inga
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8106.1.1 = { birth = yes }
+	8159.1.1 = { death = yes }
+}
+Ironspite_58 = {
+	name = Sylas
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_48
+	mother = Ironspite_rs_48
+
+	8108.1.1 = { birth = yes }
+	8129.1.1 = { add_spouse = Ironspite_rs_58 }
+	8132.1.1 = {
+		death = { death_reason = death_hunting_accident }
+	}
+}
+Ironspite_rs_58 = {
+	name = Meredyth
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8108.1.1 = { birth = yes }
+	8137.1.1 = { death = yes }
+}
+### Issue of Drennan
+Ironspite_65 = {
+	name = Urrathon
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_55
+	mother = Ironspite_rs_55
+
+	8123.1.1 = { birth = yes }
+	8142.1.1 = { add_spouse = Ironspite_rs_65 }
+	8191.1.1 = {
+		trait = gout_ridden
+		death = { death_reason = death_gout_ridden }
+	}
+}
+Ironspite_rs_65 = {
+	name = Sallei
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8123.1.1 = { birth = yes }
+	8145.1.1 = { death = yes }
+}
+Ironspite_66 = {
+	name = Ingrid
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_55
+	mother = Ironspite_rs_55
+
+	8125.1.1 = { birth = yes }
+	8193.1.1 = {
+		trait = gout_ridden
+		death = { death_reason = death_gout_ridden }
+	}
+}
+### Issue of Sylas
+Ironspite_64 = {
+	name = Dykk
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_58
+	mother = Ironspite_rs_58
+
+	8130.1.1 = { birth = yes }
+	8158.1.1 = { add_spouse = Ironspite_rs_64 }
+	8189.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_rs_64 = {
+	name = Sona
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8136.1.1 = { birth = yes }
+	8197.1.1 = { death = yes }
+}
+### Issue of Vickon
+Ironspite_59 = {
+	name = Cragorn
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_57
+	mother = Ironspite_rs_57
+
+	8126.1.1 = { birth = yes }
+	8145.1.1 = { add_spouse = Ironspite_rs_59 }
+	8177.1.1 = {
+		death = { death_reason = death_poison }
+	}
+}
+Ironspite_rs_59 = {
+	name = Disa
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8128.1.1 = { birth = yes }
+	8150.1.1 = { death = yes }
+}
+Ironspite_60 = {
+	name = Jorelle
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_57
+	mother = Ironspite_rs_57
+
+	8128.1.1 = { birth = yes }
+	8183.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+Ironspite_61 = {
+	name = Erika
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_57
+	mother = Ironspite_rs_57
+
+	8132.1.1 = { birth = yes }
+	8172.1.1 = {
+		death = { death_reason = death_choked }
+	}
+}
+Ironspite_62 = {
+	name = Cragorn
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_57
+	mother = Ironspite_rs_57
+
+	8133.1.1 = { birth = yes }
+	8158.1.1 = { add_spouse = Ironspite_rs_62 }
+	8200.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_rs_62 = {
+	name = Sallei
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8141.1.1 = { birth = yes }
+	8208.1.1 = { death = yes }
+}
+Ironspite_63 = {
+	name = Siglynd
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_57
+	mother = Ironspite_rs_57
+
+	8137.1.1 = { birth = yes }
+	8182.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+### Issue of Dykk
+Ironspite_68 = {
+	name = Bennarion
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_64
+	mother = Ironspite_rs_64
+
+	8161.1.1 = { birth = yes }
+	8180.1.1 = { add_spouse = Ironspite_rs_68 }
+	8214.1.1 = {
+		trait = gout_ridden
+		death = { death_reason = death_gout_ridden }
+	}
+}
+Ironspite_rs_68 = {
+	name = Disa
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8163.1.1 = { birth = yes }
+	8223.1.1 = { death = yes }
+}
+### Issue of Urrathon
+Ironspite_74 = {
+	name = Steffaria
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_65
+	mother = Ironspite_rs_65
+
+	8143.1.1 = { birth = yes }
+	8208.1.1 = {
+		trait = cancer
+		death = { death_reason = death_cancer }
+	}
+}
+### Issue of Lucas
+Ironspite_67 = {
+	name = Tristifer # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_54
+	mother = Ironspite_rs_54
+
+	8122.1.1 = { birth = yes }
+	8143.1.1 = { add_spouse = Ironspite_rs_67 }
+	8189.1.1 = {
+		trait = gout_ridden
+		death = { death_reason = death_gout_ridden }
+	}
+}
+Ironspite_rs_67 = {
+	name = Wynafryd
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8122.1.1 = { birth = yes }
+	8190.1.1 = { death = yes }
+}
+### Issue of Tristifer
+Ironspite_75 = {
+	name = Megga
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_67
+	mother = Ironspite_rs_67
+
+	8146.1.1 = { birth = yes }
+	8185.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+Ironspite_76 = {
+	name = Brella
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_67
+	mother = Ironspite_rs_67
+
+	8148.1.1 = { birth = yes }
+	8197.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+Ironspite_77 = {
+	name = Fergon # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_67
+	mother = Ironspite_rs_67
+
+	8151.1.1 = { birth = yes }
+	8176.1.1 = { add_spouse = Ironspite_rs_77 }
+	8201.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+Ironspite_rs_77 = {
+	name = Gretchel
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8151.1.1 = { birth = yes }
+	8211.1.1 = { death = yes }
+}
+### Issue of Fergon
+Ironspite_79 = {
+	name = Loron # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_77
+	mother = Ironspite_rs_77
+
+	8177.1.1 = { birth = yes }
+	8194.1.1 = { add_spouse = Ironspite_rs_79 }
+	8228.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+Ironspite_rs_79 = {
+	name = Asha
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8177.1.1 = { birth = yes }
+	8241.1.1 = { death = yes }
+}
+Ironspite_80 = {
+	name = Nessa
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_77
+	mother = Ironspite_rs_77
+
+	8178.1.1 = { birth = yes }
+	8216.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+### Issue of Loron
+Ironspite_81 = {
+	name = Meldred # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_79
+	mother = Ironspite_rs_79
+
+	8198.1.1 = { birth = yes }
+	8222.1.1 = { add_spouse = Ironspite_rs_81 }
+	8263.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Ironspite_rs_81 = {
+	name = Mera
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8198.1.1 = { birth = yes }
+	8233.1.1 = { death = yes }
+}
+### Issue of Cragorn
+Ironspite_69 = {
+	name = Greydon
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_62
+	mother = Ironspite_rs_62
+
+	8160.1.1 = { birth = yes }
+	8184.1.1 = { add_spouse = Ironspite_rs_69 }
+	8215.1.1 = {
+		death = { death_reason = death_heart_attack }
+	}
+}
+Ironspite_rs_69 = {
+	name = Ynys
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8161.1.1 = { birth = yes }
+	8223.1.1 = { death = yes }
+}
+### Issue of Cragorn
+Ironspite_70 = {
+	name = Sona
+	dynasty = dynn_Ironspite
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_59
+	mother = Ironspite_rs_59
+
+	8147.1.1 = { birth = yes }
+	8172.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+### Issue of Meldred
+Ironspite_86 = {
+	name = Ragnor # a lord
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Ironspite_81
+	mother = Ironspite_rs_81
+
+	8226.1.1 = { birth = yes }
+	8246.1.1 = { add_spouse = Ironspite_rs_86 }
+	8274.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+Ironspite_rs_86 = {
+	name = Hilde
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8227.1.1 = { birth = yes }
+	8295.1.1 = { death = yes }
 }
