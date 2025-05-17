@@ -463,8 +463,6 @@ agot_on_game_start = {
 		agot_add_buildings_on_start = yes
 		agot_add_camp_buildings_on_start = yes
 		agot_add_estate_buildings_on_start = yes
-		# AGOT Bookmarked Added
-		agotbm_centuryofblood_add_camp_buildings_on_start = yes
 
 		every_province = {
 			limit = {
@@ -2731,6 +2729,11 @@ agot_on_game_start_after_lobby = {
 				agot_8299_3_3_acok_scenario_setup = yes
 			}
 			# AGOT Bookmarked Added
+			if = { # manage 7899.7.22 The Century of Blood scenario
+				limit = { game_start_date < 7998.1.2 }
+
+				agotbm_centuryofblood_add_camp_buildings_on_start = yes
+			}
 			if = { # manage 7998.1.2 Aegon's Conquest scenario
 				limit = { game_start_date = 7998.1.2 }
 

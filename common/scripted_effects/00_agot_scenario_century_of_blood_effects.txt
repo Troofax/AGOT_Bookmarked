@@ -55,6 +55,5 @@
 			add_domicile_building = mess_tent_brewers
 			add_domicile_building = supply_tent_arsenal
 		}
-
 	}
 }
