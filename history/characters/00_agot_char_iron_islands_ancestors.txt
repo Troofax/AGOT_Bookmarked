@@ -1218,7 +1218,7 @@ Hoare_20 = {
 	7764.1.1 = { death = yes }
 }
 Hoare_21 = {
-	name = Harrald # Canon, AKA: Harrald Half-Drowned
+	name = Harrald # Canon, AKA: Harrald Halfdrowned
 	dynasty = dynn_Hoare # House uncertain
 
 	religion = drowned_god
@@ -1232,7 +1232,7 @@ Hoare_21 = {
 	}
 	7800.1.1 = {
 		trait = drowned_man # Drowned Man
-		give_nickname = nick_the_half_drowned
+		give_nickname = nick_halfdrowned
 	}
 	7815.1.1 = {
 		death = {

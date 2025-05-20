@@ -1668,8 +1668,8 @@ Targaryen_44 = {
 		add_character_flag = canon_status_canon
 	}
 	8060.1.1 = {
-		trait = ill
-		death = { death_reason = death_ill } # Died of Shivers
+		trait = shivers
+		death = { death_reason = death_shivers } # Died of Shivers
 	}
 }
 Targaryen_45 = {
@@ -8868,8 +8868,8 @@ Velaryon_26 = {
 	}
 	8035.1.1 = { trait = knight }
 	8059.2.1 = {
-		trait = ill
-		death = { death_reason = death_ill } # Died of Shivers
+		trait = shivers
+		death = { death_reason = death_shivers } # Died of Shivers
 	}
 }
 Velaryon_27 = {
@@ -8908,8 +8908,8 @@ Velaryon_28 = {
 	}
 	8055.1.1 = { employer = Estermont_19 } # Lomas Estermont
 	8059.2.1 = {
-		trait = ill
-		death = { death_reason = death_ill } # Died of Shivers
+		trait = shivers
+		death = { death_reason = death_shivers } # Died of Shivers
 	}
 }
 Velaryon_29 = {
@@ -8929,8 +8929,8 @@ Velaryon_29 = {
 		add_character_flag = canon_status_mentioned
 	}
 	8059.2.1 = {
-		trait = ill
-		death = { death_reason = death_ill } # Died of Shivers
+		trait = shivers
+		death = { death_reason = death_shivers } # Died of Shivers
 	}
 }
 Velaryon_30 = {
@@ -8950,8 +8950,8 @@ Velaryon_30 = {
 		add_character_flag = canon_status_mentioned
 	}
 	8059.2.1 = {
-		trait = ill
-		death = { death_reason = death_ill } # Died of Shivers
+		trait = shivers
+		death = { death_reason = death_shivers } # Died of Shivers
 	}
 }
 Velaryon_36 = {
@@ -10622,8 +10622,8 @@ Celtigar_18 = {
 		}
 	}
 	8059.2.1 = {
-		trait = ill
-		death = { death_reason = death_ill } # Died of Shivers
+		trait = shivers
+		death = { death_reason = death_shivers } # Died of Shivers
 	}
 }
 Celtigar_62 = {
@@ -10678,9 +10678,9 @@ Celtigar_19 = {
 		add_character_flag = canon_status_mentioned
 	}
 	8042.1.1 = { add_spouse = Massey_32 } # Elinor Massey
-	8059.2.1 = { trait = ill }
+	8059.2.1 = { trait = shivers }
 	8059.2.4 = {
-		death = { death_reason = death_ill } # Died of Shivers
+		death = { death_reason = death_shivers } # Died of Shivers
 	}
 }
 Celtigar_20 = {
@@ -13743,8 +13743,8 @@ Kingsguard_2 = {
 	}
 	8059.2.1 = {
 		trait = kingsguard # Successor: Ryam Redwyne
-		trait = ill
-		death = { death_reason = death_ill } # Died of Shivers
+		trait = shivers
+		death = { death_reason = death_shivers } # Died of Shivers
 	}
 }
 Kingsguard_3 = {
@@ -13855,9 +13855,9 @@ Kingsguard_5 = {
 		employer = Targaryen_35 # Jaehaerys I Targaryen
 	}
 	8059.2.1 = {
-		trait = ill
+		trait = shivers
 		trait = kingsguard # Successor: Robin Shaw
-		death = { death_reason = death_ill } # Died of Shivers
+		death = { death_reason = death_shivers } # Died of Shivers
 	}
 }
 Kingsguard_6 = {
@@ -14465,8 +14465,8 @@ Grand_Maester_6 = {
 	}
 	8048.3.7 = { employer = Targaryen_35 } # Jaehaerys I Targaryen
 	8059.2.1 = {
-		trait = ill
-		death = { death_reason = death_ill } # Died of Shivers
+		trait = shivers
+		death = { death_reason = death_shivers } # Died of Shivers
 	}
 }
 Grand_Maester_7 = {
