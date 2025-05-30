@@ -896,9 +896,30 @@ agot_on_game_start = {
 			limit = {
 				exists = holder
 				holder.highest_held_title_tier = tier_barony
-				holder.faith = faith:old_gods_wnw
 			}
-			holder = { add_realm_law = male_preference_law }
+			holder = {
+				if = {
+					limit = { faith = faith:old_gods_wnw }
+					add_realm_law = male_preference_law
+				}
+				if = {
+					limit = {
+						culture = culture:high_valyrian
+						NOR = {
+							has_character_flag = canon_status_canon
+							has_character_flag = canon_status_semicanon
+							has_character_flag = canon_status_mentioned
+						}
+					}
+					if = {
+						limit = { capital_province = { geographical_region = world_westeros } }
+						set_culture = culture:westerosi_valyrian
+					}
+					else = {
+						set_culture = culture:essosi_valyrian
+					}
+				}
+			}
 		}
 
 		every_ruler = {
@@ -1206,7 +1227,13 @@ agot_on_game_start = {
 						has_culture = culture:high_valyrian
 					}
 				}
-				set_culture = culture:westerosi_valyrian
+				if = {
+					limit = { location ?= { geographical_region = world_westeros } }
+					set_culture = culture:westerosi_valyrian
+				}
+				else = {
+					set_culture = culture:essosi_valyrian
+				}
 			}
 
 			if = { # Get rid of lingering Guardianships
@@ -2525,7 +2552,26 @@ agot_on_game_start_after_lobby = {
 			}
 		}
 
-		### House Customizer related setup
+		### Player Customizer related setup
+		if = {
+			limit = {
+				any_player = { has_trait = vs_customizer }
+			}
+			title:c_ruins.holder = {
+				save_scope_as = ruler_scope
+				create_character = {
+					template = qohorik_master_smith_character
+					location = scope:ruler_scope.location
+					save_scope_as = court_smith
+				}
+				scope:court_smith = {
+					change_first_name = The_Swordsman
+				}
+			}
+			agot_spawn_vs_forgeables_for_selection_effect = yes
+			
+		}
+
 		every_player = {
 			if = {
 				limit = {
@@ -2535,10 +2581,39 @@ agot_on_game_start_after_lobby = {
 					id = agot_house_customizer.0001
 				}
 			}
+
 			if = {
 				limit = { has_trait = heterochromia_customizer }
 				trigger_event = agot_heterochromia_customizer.1000
 			}
+
+			if = {
+				limit = { has_trait = vs_customizer }
+				trigger_event = agot_valyrian_steel.8100
+			}
+
+			# Ruler Designer Dragon Riders
+			if = {
+				limit = {
+					has_trait = dragonrider
+					is_from_ruler_designer = yes
+				}
+				if = {
+					limit = {
+						capital_county.title_province ?= {
+							OR = {
+								geographical_region = world_westeros_beyond_the_wall
+								geographical_region = world_westeros_the_wall
+							}
+						}
+					}
+					trigger_event = agot_dragon_designer.2000
+				}
+				else = {
+					trigger_event = agot_dragon_designer.0001
+				}
+			}
+
 			# RP Events
 			if = {
 				limit = {
@@ -2893,28 +2968,6 @@ agot_on_game_start_after_lobby = {
 					NOT = { is_courtier_of = var:target_employer }
 				}
 				var:target_employer = { add_courtier = PREV }
-			}
-		}
-
-		# Ruler Designer Dragon Riders
-		every_player = {
-			limit = {
-				has_trait = dragonrider
-				is_from_ruler_designer = yes
-			}
-			if = {
-				limit = {
-					capital_county.title_province ?= {
-						OR = {
-							geographical_region = world_westeros_beyond_the_wall
-							geographical_region = world_westeros_the_wall
-						}
-					}
-				}
-				trigger_event = agot_dragon_designer.2000
-			}
-			else = {
-				trigger_event = agot_dragon_designer.0001
 			}
 		}
 	}

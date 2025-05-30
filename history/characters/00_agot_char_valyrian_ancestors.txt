@@ -2439,6 +2439,11 @@ Targaryen_60 = {
 			}
 		}
 	}
+	8107.1.10 = {
+		effect = {
+			set_designated_heir = character:Targaryen_63 #Cannot be set until after Aegon is born
+		}
+	}
 	8128.6.3 = {
 		trait = ill
 		trait = gout_ridden
