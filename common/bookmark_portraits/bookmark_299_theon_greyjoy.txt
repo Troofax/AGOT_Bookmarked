@@ -2,7 +2,7 @@
 # History database id:Greyjoy_14
 bookmark_299_theon_greyjoy={
 	type=male
-	id=90128
+	id=105312
 	random_seed=2419813954
 	age=0.200000
 	genes={ 		hair_color={ 8 242 8 242 }
@@ -91,15 +91,15 @@ bookmark_299_theon_greyjoy={
  		face_detail_nose_ridge_def={ "nose_ridge_def_pos" 7 "nose_ridge_def_pos" 7 }
  		face_detail_nose_tip_def={ "nose_tip_def" 206 "nose_tip_def" 206 }
  		face_detail_temple_def={ "temple_def" 92 "temple_def" 92 }
- 		expression_brow_wrinkles={ "brow_wrinkles_01" 99 "brow_wrinkles_01" 99 }
- 		expression_eye_wrinkles={ "eye_wrinkles_02" 101 "eye_wrinkles_02" 85 }
+ 		expression_brow_wrinkles={ "brow_wrinkles_01" 229 "brow_wrinkles_01" 99 }
+ 		expression_eye_wrinkles={ "eye_wrinkles_02" 85 "eye_wrinkles_02" 85 }
  		expression_forehead_wrinkles={ "forehead_wrinkles_01" 130 "forehead_wrinkles_01" 130 }
  		expression_other={ "cheek_wrinkles_both_01" 60 "cheek_wrinkles_both_01" 120 }
  		complexion={ "complexion_48" 0 "complexion_48" 0 }
  		gene_height={ "normal_height" 140 "normal_height" 140 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 121 "body_fat_head_fat_low" 119 }
- 		gene_bs_body_shape={ "body_shape_rectangle_half" 93 "body_shape_apple_half" 0 }
- 		gene_bs_bust={ "bust_clothes" 20 "bust_shape_1_half" 80 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 104 "body_fat_head_fat_low" 119 }
+ 		gene_bs_body_shape={ "body_shape_rectangle_half" 100 "body_shape_apple_half" 0 }
+ 		gene_bs_bust={ "bust_clothes" 16 "bust_shape_1_half" 80 }
  		gene_age={ "old_1" 82 "old_beauty_1" 82 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 238 "avg_spacing_lower_thickness" 238 }
  		gene_eyebrows_fullness={ "layer_2_avg_thickness" 255 "layer_2_avg_thickness" 255 }
@@ -109,7 +109,7 @@ bookmark_299_theon_greyjoy={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 16 "normal_eyelashes" 127 }
+ 		eyelashes_accessory={ "dark_eyelashes" 27 "normal_eyelashes" 127 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -188,22 +188,24 @@ bookmark_299_theon_greyjoy={
  		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
+ 		legwear={ "ironborn_war_legwear" 255 "all_legwear" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 80 "all_hairstyles" 0 }
- 		legwear={ "western_common_legwear" 204 "all_legwear" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
  		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "fp1_high_nobility_clothes" 124 "most_clothes" 0 }
+ 		clothes={ "ironborn_war_nobility_clothes" 255 "most_clothes" 0 }
  		headgear={ "no_headgear" 225 "no_headgear" 0 }
  		beards={ "no_beard" 0 "no_beard" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
- 		gene_cloak={ "cloak_additive" 255 "cloak_additive" 0 }
+ 		props_right={ "fp1_marshal_sword" 255 "no_props" 0 }
+ 		gene_additive_animations_fat={ "fat_additive" 28 "fat_additive" 0 }
+ 		gene_additive_animations_dwarf={ "dwarf_additive" 0 "dwarf_additive" 0 }
  }
-	entity={ 979141817 979141817 }
+	entity={ 1083207840 1083207840 }
 	tags={ {
 			hash=2125534279
 			invert=no
@@ -213,7 +215,11 @@ bookmark_299_theon_greyjoy={
 			invert=no
 		}
  {
-			hash=4280794887
+			hash=271767718
+			invert=no
+		}
+ {
+			hash=726151402
 			invert=no
 		}
  {
@@ -222,10 +228,6 @@ bookmark_299_theon_greyjoy={
 		}
  {
 			hash=1563190100
-			invert=no
-		}
- {
-			hash=1945936758
 			invert=no
 		}
  }
