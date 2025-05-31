@@ -1,7 +1,7 @@
-﻿challenge_character_jeyne_arryn = {
+﻿challenge_character_106_jeyne_arryn = {
 	start_date = 8106.4.18
 	character = {
-		name = "bookmark_106_jeyne_arryn"
+		name = "challenge_character_106_jeyne_arryn"
 		dynasty = dynn_Arryn
 		dynasty_splendor_level = 4
 		type = female
@@ -17,10 +17,10 @@
 	}
 }
 
-challenge_character_steffon_tully = {
+challenge_character_239_steffon_tully = {
 	start_date = 8239.1.11
 	character = {
-		name = "bookmark_239_steffon_tully"
+		name = "challenge_character_239_steffon_tully"
 		dynasty = dynn_Tully
 		dynasty_splendor_level = 4
 		type = male
@@ -36,10 +36,10 @@ challenge_character_steffon_tully = {
 	}
 }
 
-challenge_character_tancred_crane = {
+challenge_character_259_tancred_crane = {
 	start_date = 8258.12.21
 	character = {
-		name = "bookmark_258_tancred_crane"
+		name = "challenge_character_259_tancred_crane"
 		dynasty = dynn_Crane
 		dynasty_splendor_level = 3
 		type = male
@@ -55,10 +55,10 @@ challenge_character_tancred_crane = {
 	}
 }
 
-challenge_character_rhaenyra_targaryen = {
+challenge_character_106_rhaenyra_targaryen = {
 	start_date = 8106.4.18
 	character = {
-		name = "bookmark_106_rhaenyra_targaryen"
+		name = "challenge_character_106_rhaenyra_targaryen"
 		dynasty = dynn_Targaryen
 		dynasty_splendor_level = 5
 		type = female
@@ -74,10 +74,10 @@ challenge_character_rhaenyra_targaryen = {
 	}
 }
 
-challenge_character_danelle_lothston = {
+challenge_character_209_danelle_lothston = {
 	start_date = 8209.2.1
 	character = {
-		name = "bookmark_209_danelle_lothston"
+		name = "challenge_character_209_danelle_lothston"
 		dynasty = dynn_Lothston
 		dynasty_splendor_level = 2
 		type = female
@@ -93,10 +93,10 @@ challenge_character_danelle_lothston = {
 	}
 }
 
-challenge_character_viserys_plumm = {
+challenge_character_209_viserys_plumm = {
 	start_date = 8209.2.1
 	character = {
-		name = "bookmark_209_viserys_plumm"
+		name = "challenge_character_209_viserys_plumm"
 		dynasty = dynn_Plumm
 		dynasty_splendor_level = 2
 		type = male
@@ -112,10 +112,10 @@ challenge_character_viserys_plumm = {
 	}
 }
 
-challenge_character_gerold_lannister = {
+challenge_character_239_gerold_lannister = {
 	start_date = 8239.1.11
 	character = {
-		name = "bookmark_239_gerold_lannister"
+		name = "challenge_character_239_gerold_lannister"
 		dynasty = dynn_Lannister
 		dynasty_splendor_level = 4
 		type = male
@@ -131,10 +131,10 @@ challenge_character_gerold_lannister = {
 	}
 }
 
-challenge_character_aemon_tarth = {
+challenge_character_259_aemon_tarth = {
 	start_date = 8258.12.21
 	character = {
-		name = "bookmark_258_aemon_tarth"
+		name = "challenge_character_259_aemon_tarth"
 		dynasty = dynn_Tarth
 		dynasty_splendor_level = 3
 		type = male
@@ -150,10 +150,10 @@ challenge_character_aemon_tarth = {
 	}
 }
 
-challenge_character_loreza_martell = {
+challenge_character_277_loreza_martell = {
 	start_date = 8277.1.1
 	character = {
-		name = "bookmark_277_loreza_martell"
+		name = "challenge_character_277_loreza_martell"
 		dynasty = dynn_Martell
 		dynasty_splendor_level = 4
 		type = female
@@ -169,10 +169,10 @@ challenge_character_loreza_martell = {
 	}
 }
 
-challenge_character_beric_dayne = {
+challenge_character_277_beric_dayne = {
 	start_date = 8277.1.1
 	character = {
-		name = "bookmark_277_beric_dayne"
+		name = "challenge_character_277_beric_dayne"
 		dynasty = dynn_Dayne
 		dynasty_splendor_level = 3
 		type = male
@@ -188,10 +188,10 @@ challenge_character_beric_dayne = {
 	}
 }
 
-challenge_character_walter_whent = {
+challenge_character_282_walter_whent = {
 	start_date = 8282.9.15
 	character = {
-		name = "bookmark_282_walter_whent"
+		name = "challenge_character_282_walter_whent"
 		dynasty = dynn_Whent
 		dynasty_splendor_level = 3
 		type = male
@@ -207,10 +207,10 @@ challenge_character_walter_whent = {
 	}
 }
 
-challenge_character_walder_frey = {
+challenge_character_282_walder_frey = {
 	start_date = 8282.9.15
 	character = {
-		name = "bookmark_282_walder_frey"
+		name = "challenge_character_282_walder_frey"
 		dynasty = dynn_Frey
 		dynasty_splendor_level = 3
 		type = male
@@ -226,10 +226,10 @@ challenge_character_walder_frey = {
 	}
 }
 
-challenge_character_jon_arryn = {
+challenge_character_284_jon_arryn = {
 	start_date = 8284.6.2
 	character = {
-		name = "bookmark_284_jon_arryn"
+		name = "challenge_character_284_jon_arryn"
 		dynasty = dynn_Arryn
 		dynasty_splendor_level = 4
 		type = male
@@ -245,10 +245,10 @@ challenge_character_jon_arryn = {
 	}
 }
 
-challenge_character_petyr_baelish = {
+challenge_character_284_petyr_baelish = {
 	start_date = 8284.6.2
 	character = {
-		name = "bookmark_284_petyr_baelish"
+		name = "challenge_character_284_petyr_baelish"
 		dynasty = dynn_Baelish
 		dynasty_splendor_level = 1
 		type = male

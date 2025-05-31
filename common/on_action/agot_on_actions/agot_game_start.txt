@@ -221,36 +221,7 @@ agot_on_game_start = {
 			character:Targaryen_127 ?= { historical_loan_on_game_start = yes }
 		}
 
-		# Magic Level set up
-		if = {
-			limit = {
-				any_living_dragon = {
-					count = 0
-				}
-			}
-			set_global_variable = {
-				name = magic_level
-				value = 0 # no magic
-			}
-		}
-		else_if = {
-			limit = {
-				any_living_dragon = {
-					count < 10
-				}
-			}
-
-			set_global_variable = {
-				name = magic_level
-				value = 1 # some magic
-			}
-		}
-		else = {
-			set_global_variable = {
-				name = magic_level
-				value = 2 # more magic
-			}
-		}
+		agot_init_magic_level_effect = yes
 
 		##### General setup start #####
 		if = {
@@ -927,14 +898,12 @@ agot_on_game_start = {
 			if = {
 				limit = {
 					agot_is_valid_lp_feudal_government_target = yes
-					NOT = { has_government = ruins_government }
 				}
 				change_government = lp_feudal_government
 			}
 			if = {
 				limit = {
 					agot_is_valid_pirate_government_target = yes
-					NOT = { has_government = ruins_government }
 				}
 				change_government = pirate_government
 			}
@@ -2215,22 +2184,14 @@ agot_ruins = {
 				}
 				clear_traits = yes
 				add_trait = ruin
+				add_trait = incapable
 				refund_all_perks = yes
 				add_diplomacy_lifestyle_perk_points = -10
 				add_stewardship_lifestyle_perk_points = -10
 				add_martial_lifestyle_perk_points = -10
 				add_learning_lifestyle_perk_points = -10
 				add_intrigue_lifestyle_perk_points = -10
-				add_trait = incapable
 			}
-		}
-		if = { # AGOT Bookmarked Added
-			limit = { game_start_date > 8130.1.1 }
-		character:Ruin_Empress = { designate_diarch = character:Ruin_Regent }
-		remove_generated_diarch_consequences_effect = {
-			NEW_DIARCH = character:Ruin_Regent
-			LIEGE = character:Ruin_Empress
-		}
 		}
 	}
 }
