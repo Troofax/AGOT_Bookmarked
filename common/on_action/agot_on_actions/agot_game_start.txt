@@ -63,6 +63,12 @@ agot_on_game_start = {
 			if = {
 				limit = { exists = holder }
 				holder = {
+					save_scope_as = new_ruler
+					title:c_braavos = { save_scope_as = capital }
+					trigger_event = {
+						id = free_city_events.9996
+						days = 1
+					}
 					every_vassal_or_below = {
 						limit = {
 							AND = {
@@ -87,6 +93,12 @@ agot_on_game_start = {
 			if = {
 				limit = { exists = holder }
 				holder = {
+					save_scope_as = new_ruler
+					title:c_princes_quarter = { save_scope_as = capital }
+					trigger_event = {
+						id = free_city_events.9996
+						days = 1
+					}
 					every_vassal_or_below = {
 						limit = {
 							AND = {
@@ -111,6 +123,12 @@ agot_on_game_start = {
 			if = {
 				limit = { exists = holder }
 				holder = {
+					save_scope_as = new_ruler
+					title:c_myr = { save_scope_as = capital }
+					trigger_event = {
+						id = free_city_events.9996
+						days = 1
+					}
 					every_vassal_or_below = {
 						limit = { highest_held_title_tier >= tier_county }
 						if = {
@@ -132,6 +150,12 @@ agot_on_game_start = {
 			if = {
 				limit = { exists = holder }
 				holder = {
+					save_scope_as = new_ruler
+					title:c_tyrosh = { save_scope_as = capital }
+					trigger_event = {
+						id = free_city_events.9996
+						days = 1
+					}
 					every_vassal_or_below = {
 						limit = { highest_held_title_tier >= tier_county }
 						if = {
@@ -154,6 +178,12 @@ agot_on_game_start = {
 			if = {
 				limit = { exists = holder }
 				holder = {
+					save_scope_as = new_ruler
+					title:c_lys = { save_scope_as = capital }
+					trigger_event = {
+						id = free_city_events.9996
+						days = 1
+					}
 					every_vassal_or_below = {
 						limit = { highest_held_title_tier >= tier_county }
 						if = {
