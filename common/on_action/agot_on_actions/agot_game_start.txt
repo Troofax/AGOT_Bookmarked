@@ -456,6 +456,9 @@ agot_on_game_start = {
 		culture:lakeman = {
 			set_variable = wildling_culture
 		}
+		culture:ice_riverman = {
+			set_variable = wildling_culture
+		}
 		culture:thenn = {
 			set_variable = wildling_culture
 		}
@@ -484,6 +487,17 @@ agot_on_game_start = {
 				faith:fots_seven = { NOT = { has_doctrine = agot_exceptionalism_doctrine } }
 			}
 			faith:fots_seven = { add_doctrine = agot_exceptionalism_doctrine }
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						any_secret = { secret_type = secret_incest }
+					}
+					every_secret = {
+						limit = { secret_type = secret_incest }
+						remove_secret = yes
+					}
+				}
+			}
 		}
 		faith:fots_stars = {
 			set_variable = { name = has_been_reformed }
@@ -1735,35 +1749,35 @@ agot_on_game_start = {
 			# Nightswatch cleanup TO-DO set up by date
 			character:Qorgyle_69 = {
 				if = {
-					limit = { is_alive  = yes }
+					limit = { is_alive = yes }
 					move_to_pool_at = character:Qorgyle_4.capital_province
 					set_employer = character:Qorgyle_4
 				}
 			}
 			character:Qorgyle_10 = {
 				if = {
-					limit = { is_alive  = yes }
+					limit = { is_alive = yes }
 					move_to_pool_at = character:Qorgyle_4.capital_province
 					set_employer = character:Qorgyle_4
 				}
 			}
 			character:Qorgyle_11 = {
 				if = {
-					limit = { is_alive  = yes }
+					limit = { is_alive = yes }
 					move_to_pool_at = character:Qorgyle_4.capital_province
 					set_employer = character:Qorgyle_4
 				}
 			}
 			character:Qorgyle_12 = {
 				if = {
-					limit = { is_alive  = yes }
+					limit = { is_alive = yes }
 					move_to_pool_at = character:Qorgyle_4.capital_province
 					set_employer = character:Qorgyle_4
 				}
 			}
 			character:Brook_19 = {
 				if = {
-					limit = { is_alive  = yes }
+					limit = { is_alive = yes }
 					move_to_pool_at = character:Qorgyle_4.capital_province
 					set_employer = character:Qorgyle_4
 				}
@@ -2560,7 +2574,7 @@ agot_on_game_start_after_lobby = {
 				}
 			}
 			agot_spawn_vs_forgeables_for_selection_effect = yes
-			
+
 		}
 
 		every_player = {
@@ -2829,8 +2843,8 @@ agot_on_game_start_after_lobby = {
 				limit = { game_start_date = 8129.4.1 }
 
 				# AGOT Bookmarked Modified
-				# character:Targaryen_76  = {
-					# agot_create_artifact_lucerys_gun_effect  = { OWNER = this }
+				# character:Targaryen_76 = {
+					# agot_create_artifact_lucerys_gun_effect = { OWNER = this }
 					# scope:newly_created_artifact = {
 						# equip_artifact_to_owner_replace = yes
 					# }
@@ -3371,7 +3385,7 @@ agot_nf_estate_locations = {
 						owner.dynasty = dynasty:dynn_Taeryhen
 					}
 				}
-				move_domicile = title:b_perfumed_garden.title_province
+				move_domicile = title:b_twilight_sanctuary.title_province
 			}
 			else_if = {
 				limit = { owner.dynasty = dynasty:dynn_Taradys }
