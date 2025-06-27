@@ -79,6 +79,7 @@ Targaryen_13 = {
 
 	7846.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7866.1.1 = { add_spouse = Targaryen_13_C } # Elaena Targaryen
@@ -176,6 +177,7 @@ Targaryen_15 = {
 
 	7870.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7878.1.1 = { trait = lifestyle_mystic_2_history }
@@ -215,6 +217,7 @@ Targaryen_16 = {
 
 	7890.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7907.1.1 = { trait = dragonrider } # Archonei (nc)
@@ -235,6 +238,7 @@ Targaryen_17 = {
 
 	7891.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7910.1.1 = { trait = dragonrider } # Balerion (C)
@@ -295,6 +299,7 @@ Targaryen_20 = {
 
 	7911.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7927.1.1 = { add_spouse = Targaryen_21 } # Rhaella Targaryen
@@ -315,7 +320,10 @@ Targaryen_21 = {
 
 	trait = twin
 
-	7911.1.1 = { birth = yes }
+	7911.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7930.1.1 = { trait = dragonrider } # Meraxes (C)
 	7953.1.1 = { death = yes }
 }
@@ -333,6 +341,7 @@ Targaryen_22 = {
 
 	7928.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7947.1.1 = { add_spouse = Targaryen_138 } # Rhae Targaryen
@@ -357,6 +366,7 @@ Targaryen_23 = {
 
 	7929.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7933.1.1 = {
@@ -398,6 +408,7 @@ Targaryen_24 = {
 
 	7930.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7948.1.1 = { add_spouse = Celtigar_12 } # Caerys Celtigar
@@ -418,7 +429,10 @@ Targaryen_138 = {
 
 	trait = beauty_good_2
 
-	7931.1.1 = { birth = yes }
+	7931.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7955.6.1 = { employer = Velaryon_9 } # Monterys Velaryon
 	7981.1.1 = { death = yes }
 }
@@ -436,6 +450,7 @@ Targaryen_25 = {
 
 	7933.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	7948.1.1 = {
@@ -465,6 +480,7 @@ Targaryen_137 = {
 
 	7955.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	7955.6.1 = {
@@ -1665,6 +1681,7 @@ Targaryen_44 = {
 
 	8053.7.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8060.1.1 = {
@@ -2209,6 +2226,7 @@ Targaryen_56 = {
 			add_unpressed_claim = title:c_dragonstone
 		}
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8124.1.1 = { death = yes }
@@ -2426,6 +2444,11 @@ Targaryen_60 = {
 			}
 		}
 	}
+	8105.9.3 = {
+		effect = {
+			add_character_flag = designated_rhaenyra_heir
+		}
+	}
 	8106.4.12 = {
 		add_spouse = Hightower_97 # Alicent Hightower
 		effect = {
@@ -2441,12 +2464,15 @@ Targaryen_60 = {
 	}
 	8107.1.10 = {
 		effect = {
+			remove_character_flag = designated_rhaenyra_heir
 			set_designated_heir = character:Targaryen_63 #Cannot be set until after Aegon is born
 		}
 	}
+	8120.1.1 = {
+		trait = gout_ridden
+	}
 	8128.6.3 = {
 		trait = ill
-		trait = gout_ridden
 	}
 	8129.3.3 = {
 		death = { death_reason = death_ill }
@@ -2534,6 +2560,16 @@ Targaryen_61 = {
 		effect = {
 			agot_history_set_dragonlore = {
 				VALUE = 10 # Visited HH
+			}
+			add_trait_xp = {
+				trait = dragonrider
+				track = dragon_bond
+				value = 40
+			}
+			add_trait_xp = {
+				trait = dragonrider
+				track = dragon_training
+				value = 60
 			}
 		}
 	}
@@ -2647,6 +2683,7 @@ Targaryen_131 = {
 
 	8094.2.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8095.6.1 = { death = { death_reason = death_sickly } }
@@ -2997,6 +3034,7 @@ Targaryen_64 = {
 
 	8105.9.2 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8105.9.3 = {
@@ -3508,6 +3546,7 @@ Targaryen_74 = {
 
 	8130.8.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 		effect = {
 			add_pressed_claim = title:e_the_iron_throne
@@ -3558,6 +3597,7 @@ Targaryen_75 = {
 
 	8114.11.29 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = do_not_assign_strong_seed
 		effect = {
@@ -3625,6 +3665,7 @@ Targaryen_76 = {
 
 	8115.10.3 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = do_not_assign_strong_seed
 		effect = {
@@ -3690,6 +3731,7 @@ Targaryen_77 = {
 
 	8117.3.14 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = do_not_assign_strong_seed
 		effect = {
@@ -3933,6 +3975,7 @@ Targaryen_80 = {
 
 	8129.3.25 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		death = { death_reason = death_delivery }
 	}
@@ -4092,6 +4135,7 @@ Targaryen_81 = {
 
 	8143.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = { add_character_flag = potential_targ_lunatic }
 	}
@@ -4166,6 +4210,7 @@ Targaryen_82 = {
 
 	8143.9.9 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8157.9.9 = { trait = celibate }
@@ -4251,6 +4296,7 @@ Targaryen_83 = {
 
 	8145.11.24 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8157.1.1 = {
@@ -4322,6 +4368,7 @@ Targaryen_84 = {
 
 	8147.8.27 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8163.9.2 = {
@@ -4370,6 +4417,7 @@ Targaryen_85 = {
 
 	8150.10.15 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8163.9.2 = {
@@ -5690,11 +5738,12 @@ Targaryen_108 = {
 
 	8172.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_asexual
 		effect = { add_character_flag = potential_targ_lunatic }
 	}
-	8187.1.1 = {
+	8194.1.1 = {
 		add_spouse = Penrose_35 # Aelinor Penrose, his cousin
 		trait = celibate
 		trait = scholar
@@ -5789,7 +5838,7 @@ Targaryen_110 = {
 		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_110 COA_KEY = maekar_targaryen_personal_arms }
 	}
 	8207.1.1 = { trait = widowed }
-	8209.2.1 = { trait = kinslayer_3 } # Baelor Breakspear
+	8209.2.1 = { trait = accidental_kinslayer } # Baelor Breakspear
 	8233.6.1 = {
 		death = { death_reason = death_battle } # Siege of Starpike
 	}
@@ -5927,6 +5976,7 @@ Targaryen_115 = {
 
 	8201.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8216.1.1 = {
@@ -5957,6 +6007,7 @@ Targaryen_116 = {
 
 	8201.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8217.1.1 = {
@@ -6146,6 +6197,7 @@ Targaryen_120 = {
 
 	8198.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8204.1.1 = {
@@ -6216,6 +6268,7 @@ Targaryen_121 = {
 
 	8199.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8215.1.1 = {
@@ -6423,6 +6476,7 @@ Targaryen_123 = {
 
 	8202.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8259.6.1 = {
@@ -6447,7 +6501,7 @@ Targaryen_124 = {
 
 	trait = education_diplomacy_1
 	trait = intellect_bad_3 # Mental disability
-	trait = lunatic_1
+	# trait = lunatic_1 # She was simple, not insane
 	trait = compassionate
 	trait = content
 	trait = trusting
@@ -6838,6 +6892,7 @@ Blackfyre_1 = {
 
 	8184.10.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8194.1.1 = {
@@ -6879,6 +6934,7 @@ Blackfyre_2 = {
 
 	8184.10.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8194.1.1 = {
@@ -6917,6 +6973,7 @@ Blackfyre_3 = {
 
 	8185.10.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8196.11.22 = {
@@ -6958,6 +7015,7 @@ Blackfyre_4 = {
 
 	8187.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8196.11.22 = {
@@ -7005,6 +7063,7 @@ Blackfyre_5 = {
 
 	8188.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_homosexual
 	}
@@ -7091,6 +7150,7 @@ Blackfyre_6 = {
 
 	8189.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8196.11.22 = {
@@ -7148,6 +7208,7 @@ Blackfyre_7 = {
 
 	8190.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8196.11.22 = {
@@ -7251,6 +7312,7 @@ Blackfyre_9 = {
 
 	8193.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8196.11.22 = {
@@ -7354,6 +7416,7 @@ Blackfyre_11 = {
 
 	8212.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		effect = { agot_join_golden_company_history_effect = yes }
 	}
 	8220.1.1 = {
@@ -7398,6 +7461,7 @@ Blackfyre_12 = {
 
 	8214.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 		effect = { agot_join_golden_company_history_effect = yes }
 	}
@@ -7581,6 +7645,7 @@ Blackfyre_16 = {
 
 	8236.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 		effect = { agot_join_golden_company_history_effect = yes }
 	}
@@ -7613,6 +7678,7 @@ Brightflame_7 = {
 
 	8211.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 		add_character_flag = unlegitimize_on_load
 		effect = {
@@ -7642,6 +7708,7 @@ Brightflame_2 = {
 
 	8216.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 		add_character_flag = unlegitimize_on_load
 		effect = {
@@ -7682,6 +7749,7 @@ Brightflame_8 = {
 
 	8216.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 		add_character_flag = unlegitimize_on_load
 		effect = {
@@ -7736,6 +7804,7 @@ Farseed_1 = {
 
 	8113.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = historical_dragonseed
 		employer = Targaryen_63 # Rhaenyra Targaryen
@@ -7787,6 +7856,7 @@ Hammer_2 = {
 
 	8064.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_blackglass_port }
@@ -7808,6 +7878,7 @@ Hammer_3 = {
 
 	8080.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 		culture = westerosi_valyrian
 		effect = {
@@ -7852,6 +7923,7 @@ Hammer_1 = {
 
 	8095.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = historical_dragonseed
 		culture = westerosi_valyrian
@@ -7926,6 +7998,7 @@ White_1 = {
 
 	8091.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = historical_dragonseed
 		effect = {
@@ -8111,6 +8184,7 @@ Palehair_1 = {
 
 	8126.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		culture = crownlander
 		effect = {
@@ -8174,6 +8248,7 @@ Palehair_hh_1 = {
 
 	8092.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_bisexual
 		effect = {
@@ -8290,7 +8365,10 @@ Velaryon_7_B = {
 	father = Velaryon_6
 	mother = Ormollen_18_B
 
-	7863.1.1 = { birth = yes }
+	7863.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7920.1.1 = { death = yes }
 }
 ### Main Line
@@ -8323,7 +8401,10 @@ Velaryon_9 = {
 	father = Velaryon_8
 	mother = Celtigar_10_A
 
-	7909.1.1 = { birth = yes }
+	7909.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7928.1.1 = { add_spouse = Scales_8_B } # Shiera Scales
 	7968.1.1 = { death = yes }
 }
@@ -8340,7 +8421,10 @@ Velaryon_10 = {
 
 	trait = beauty_good_1
 
-	7930.1.1 = { birth = yes }
+	7930.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7950.1.1 = { add_spouse = Targaryen_25 } # Viserra Targaryen
 	7990.1.1 = { death = yes }
 }
@@ -8366,6 +8450,7 @@ Velaryon_11 = {
 
 	7951.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7970.1.1 = { add_spouse = Targaryen_137 } # Aeriana Targaryen
@@ -8403,6 +8488,7 @@ Velaryon_12 = {
 
 	7952.6.9 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7994.1.1 = { death = yes }
@@ -8418,7 +8504,10 @@ Velaryon_84 = {
 	father = Velaryon_10
 	mother = Targaryen_25
 
-	7954.1.1 = { birth = yes }
+	7954.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7972.1.1 = { add_spouse = Celtigar_14 } # Alysanne Celtigar
 	7992.1.1 = { religion = fots_seven }
 	8001.1.1 = { death = yes }
@@ -8449,6 +8538,7 @@ Velaryon_13 = {
 
 	7974.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7982.8.1 = { trait = brave }
@@ -8480,7 +8570,10 @@ Velaryon_14 = {
 	father = Velaryon_11
 	mother = Targaryen_137
 
-	7977.1.1 = { birth = yes }
+	7977.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7992.1.1 = { religion = fots_seven }
 	8000.1.1 = {
 		trait = knight
@@ -8516,6 +8609,7 @@ Velaryon_15 = {
 
 	7980.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7992.1.1 = { religion = fots_seven }
@@ -8562,7 +8656,10 @@ Velaryon_83 = {
 
 	trait = beauty_good_1
 
-	7986.1.1 = { birth = yes }
+	7986.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7992.1.1 = { religion = fots_seven }
 	8003.1.1 = { add_spouse = Staunton_47 } # Sybell Staunton
 	8052.1.1 = { death = yes }
@@ -8584,6 +8681,7 @@ Velaryon_16 = {
 
 	7988.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	7992.1.1 = { religion = fots_seven }
@@ -8602,7 +8700,10 @@ Velaryon_85 = {
 	father = Velaryon_83
 	mother = Staunton_47
 
-	8004.1.1 = { birth = yes }
+	8004.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8070.1.1 = { death = yes }
 }
 Velaryon_86 = {
@@ -8634,6 +8735,7 @@ Velaryon_17 = {
 
 	8003.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8062.1.1 = { death = yes }
@@ -8651,6 +8753,7 @@ Velaryon_18 = {
 
 	8004.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8054.1.1 = { death = yes }
@@ -8668,6 +8771,7 @@ Velaryon_19 = {
 
 	8006.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8049.1.1 = { death = yes }
@@ -8826,6 +8930,7 @@ Velaryon_22 = {
 
 	8030.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_homosexual
 	}
@@ -8850,6 +8955,7 @@ Velaryon_25 = {
 
 	8017.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8033.1.1 = { trait = knight }
@@ -8869,6 +8975,7 @@ Velaryon_26 = {
 
 	8019.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8035.1.1 = { trait = knight }
@@ -8890,6 +8997,7 @@ Velaryon_27 = {
 
 	8020.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8036.1.1 = { trait = knight }
@@ -8909,6 +9017,7 @@ Velaryon_28 = {
 
 	8021.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8055.1.1 = { employer = Estermont_19 } # Lomas Estermont
@@ -8931,6 +9040,7 @@ Velaryon_29 = {
 
 	8023.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8059.2.1 = {
@@ -8952,6 +9062,7 @@ Velaryon_30 = {
 
 	8024.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8059.2.1 = {
@@ -8973,6 +9084,7 @@ Velaryon_36 = {
 
 	8026.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8078.1.1 = { death = yes }
@@ -9030,7 +9142,7 @@ Velaryon_31 = { # Dance of the Dragons
 			}
 		}
 	}
-	8089.1.1 = {
+	8090.7.7 = {
 		add_spouse = Targaryen_59 # Rhaenys Targaryen
 		effect = { # Master of Ships
 			agot_appoint_as_councillor_for_castle_history_effect = {
@@ -9084,7 +9196,10 @@ Velaryon_32 = {
 	father = Velaryon_25
 	mother = Rosby_13
 
-	8056.1.1 = { birth = yes }
+	8056.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8075.1.1 = { add_spouse = Tarth_27_B } # Jeyne Tarth
 	8115.1.1 = { death = yes }
 }
@@ -9101,7 +9216,10 @@ Velaryon_33 = {
 
 	trait = education_martial_3
 
-	8057.3.1 = { birth = yes }
+	8057.3.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8080.1.1 = { add_spouse = Bar_Emmon_19_B } # Endra Bar Emmon
 	8110.7.1 = { death = { death_reason = death_accident } }
 }
@@ -9233,6 +9351,7 @@ Velaryon_37 = {
 
 	8076.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8094.1.1 = { trait = knight }
@@ -9269,6 +9388,7 @@ Velaryon_38 = {
 
 	8081.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8097.1.1 = { trait = knight }
@@ -9313,6 +9433,7 @@ Velaryon_39 = {
 
 	8084.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8100.1.1 = { trait = knight }
@@ -9358,6 +9479,7 @@ Velaryon_40 = {
 
 	8086.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8102.1.1 = { trait = knight }
@@ -9402,6 +9524,7 @@ Velaryon_41 = {
 
 	8087.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8103.1.1 = { trait = knight }
@@ -9449,6 +9572,7 @@ Velaryon_42 = {
 
 	8088.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8104.1.1 = { trait = knight }
@@ -9498,6 +9622,7 @@ Velaryon_rs_8 = {
 
 	8097.6.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_hull }
@@ -9601,7 +9726,7 @@ Velaryon_44 = {
 		trait = desert_warrior
 		trait = knight
 	}
-	8132.1.1 = { add_spouse = Targaryen_69 } # Baela Targaryen
+	8132.4.1 = { add_spouse = Targaryen_69 } # Baela Targaryen
 	8133.6.1 = {
 		give_nickname = nick_oakenfist
 		effect = { # Master of Ships, first term
@@ -9655,6 +9780,7 @@ Velaryon_47 = {
 
 	8096.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8112.1.1 = {
@@ -9687,6 +9813,7 @@ Velaryon_50 = {
 
 	8102.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8118.1.1 = { trait = knight }
@@ -9708,6 +9835,7 @@ Velaryon_48 = {
 
 	8113.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8150.1.1 = { death = { death_reason = death_accident } }
@@ -9723,7 +9851,10 @@ Velaryon_71 = {
 	father = Velaryon_47
 	mother = Hayford_14
 
-	8118.1.1 = { birth = yes }
+	8118.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8142.1.1 = { trait = knight }
 	8144.1.1 = { add_spouse = Velaryon_rs_71 }
 	8178.1.1 = { death = yes }
@@ -9756,6 +9887,7 @@ Velaryon_49 = {
 
 	8125.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8141.1.1 = {
@@ -9817,13 +9949,14 @@ Velaryon_53 = {
 
 	8127.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8172.1.1 = { death = yes }
 }
 ### Issue of Alyn
 Velaryon_51 = {
-	name = Laena # Canon
+	name = Laena # Canon, dowager lady Penrose whose sons were slain by Fireball
 	dynasty = dynn_Velaryon
 	female = yes
 	dna = Velaryon_51
@@ -9838,12 +9971,32 @@ Velaryon_51 = {
 
 	8134.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8201.1.1 = { death = yes }
 }
+Velaryon_91 = {
+	name = Visenya # Mentioned, child from Baela's second pregnancy
+	dynasty = dynn_Velaryon
+	female = yes
+
+	religion = fots_seven
+	culture = high_valyrian
+
+	father = Velaryon_44
+	mother = Targaryen_69
+
+	trait = beauty_good_1
+
+	8137.1.1 = { 
+		birth = yes 
+		add_character_flag = canon_status_mentioned		
+	}
+	8190.1.1 = { death = yes }
+}
 Velaryon_52 = {
-	name = Corlys # a lord
+	name = Corlys # Semi-Canon, a lord
 	dynasty = dynn_Velaryon
 	dna = Velaryon_52
 
@@ -9855,7 +10008,12 @@ Velaryon_52 = {
 
 	trait = beauty_good_1
 
-	8137.1.1 = { birth = yes }
+	8140.1.1 = {
+		birth = yes # MUSH has his birth date listed as 140, so the child born in 137 was probably a girl
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_semicanon
+	}
+	8156.1.1 = { trait = knight }
 	8160.1.1 = { add_spouse = Rosby_30_B } # Adya Rosby
 	8196.11.22 = { death = { death_reason = death_battle } } # Redgrass Field
 }
@@ -9881,6 +10039,7 @@ Velaryon_45 = {
 
 	8175.3.9 = { # Three years later than in Blood of Dragons
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		make_trait_inactive = surname_waters
 	}
@@ -10123,7 +10282,10 @@ Velaryon_70 = {
 	father = Velaryon_71
 	mother = Velaryon_rs_71
 
-	8147.1.1 = { birth = yes }
+	8147.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8175.1.1 = { add_matrilineal_spouse = Velaryon_rs_70 }
 	8211.1.1 = { death = yes }
 }
@@ -10134,7 +10296,10 @@ Velaryon_rs_70 = {
 	religion = fots_seven
 	culture = high_valyrian
 
-	8151.1.1 = { birth = yes }
+	8151.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8168.1.1 = { trait = knight }
 	8196.1.1 = { death = yes }
 }
@@ -10150,7 +10315,10 @@ Velaryon_90 = {
 	father = Velaryon_71
 	mother = Velaryon_rs_71
 
-	8153.1.1 = { birth = yes }
+	8153.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8222.1.1 = { death = yes }
 }
 ### Issue of Rhaena
@@ -10166,7 +10334,10 @@ Velaryon_67 = {
 	father = Velaryon_rs_70
 	mother = Velaryon_70
 
-	8179.1.1 = { birth = yes }
+	8179.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8198.1.1 = { add_matrilineal_spouse = Velaryon_rs_67 }
 	8200.1.1 = { trait = strong }
 	8232.1.1 = {
@@ -10193,6 +10364,8 @@ Velaryon_68 = {
 
 	father = Velaryon_rs_70
 	mother = Velaryon_70
+
+	trait = physique_bad_1
 
 	8180.1.1 = { birth = yes }
 	8214.1.1 = {
@@ -10309,7 +10482,10 @@ Celtigar_8 = {
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
-	7832.1.1 = { birth = yes }
+	7832.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7848.1.1 = { add_spouse = Celtigar_rs_8 }
 	7883.1.1 = { death = yes }
 }
@@ -10334,7 +10510,10 @@ Celtigar_9 = {
 	father = Celtigar_8
 	mother = Celtigar_rs_8
 
-	7851.1.1 = { birth = yes }
+	7851.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7879.1.1 = { add_spouse = Celtigar_rs_9 }
 	7900.1.1 = { death = yes }
 }
@@ -10360,7 +10539,10 @@ Celtigar_10 = {
 	father = Celtigar_9
 	mother = Celtigar_rs_9
 
-	7880.1.1 = { birth = yes }
+	7880.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7902.1.1 = { add_spouse = Celtigar_rs_10 }
 	7957.1.1 = { death = yes }
 }
@@ -10386,7 +10568,10 @@ Celtigar_10_A = {
 	father = Celtigar_9
 	mother = Celtigar_rs_9
 
-	7883.1.1 = { birth = yes }
+	7883.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7938.1.1 = { death = yes }
 }
 ### Issue of Arthor
@@ -10401,7 +10586,10 @@ Celtigar_11 = {
 	father = Celtigar_10
 	mother = Celtigar_rs_10
 
-	7905.1.1 = { birth = yes }
+	7905.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7926.1.1 = { add_spouse = Celtigar_rs_11 }
 	7968.1.1 = { death = yes }
 }
@@ -10428,7 +10616,10 @@ Celtigar_12 = {
 	father = Celtigar_11
 	mother = Celtigar_rs_11
 
-	7928.1.1 = { birth = yes }
+	7928.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7975.1.1 = { death = yes }
 }
 Celtigar_13 = {
@@ -10442,7 +10633,10 @@ Celtigar_13 = {
 	father = Celtigar_11
 	mother = Celtigar_rs_11
 
-	7930.1.1 = { birth = yes }
+	7930.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7946.1.1 = { add_spouse = Celtigar_rs_13 }
 	7980.1.1 = { death = yes }
 }
@@ -10454,7 +10648,10 @@ Celtigar_rs_13 = {
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	7930.1.1 = { birth = yes }
+	7930.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7987.1.1 = { death = yes }
 }
 ### Issue of Terrence
@@ -10506,7 +10703,10 @@ Celtigar_rs_15 = {
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	7951.1.1 = { birth = yes }
+	7951.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8006.1.1 = { death = yes }
 }
 Celtigar_14 = {
@@ -10523,7 +10723,10 @@ Celtigar_14 = {
 
 	trait = beauty_good_1
 
-	7953.1.1 = { birth = yes }
+	7953.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7968.1.1 = { trait = arrogant }
 	8004.1.1 = { death = yes }
 }
@@ -10574,7 +10777,10 @@ Celtigar_17 = {
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	7977.1.1 = { birth = yes }
+	7977.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8017.1.1 = { death = yes }
 }
 ### Issue of Alton
@@ -10742,7 +10948,10 @@ Celtigar_22 = {
 	father = Celtigar_19
 	mother = Massey_32
 
-	8048.1.1 = { birth = yes }
+	8048.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8065.1.1 = { trait = drunkard }
 	8065.1.1 = { add_spouse = Celtigar_rs_22 }
 	8087.1.1 = {
@@ -10770,7 +10979,10 @@ Celtigar_23 = {
 	father = Celtigar_22
 	mother = Celtigar_rs_22
 
-	8066.1.1 = { birth = yes }
+	8066.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8082.1.1 = { add_spouse = Celtigar_rs_23 }
 	8114.1.1 = { death = yes }
 }
@@ -10830,7 +11042,10 @@ Celtigar_61 = {
 	father = Celtigar_23
 	mother = Celtigar_rs_23
 
-	8085.1.1 = { birth = yes }
+	8085.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8103.1.1 = { trait = knight }
 	8113.1.1 = { add_spouse = Celtigar_rs_61 }
 	8128.1.1 = { death = yes }
@@ -10860,6 +11075,7 @@ Celtigar_25 = {
 
 	8104.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8166.1.1 = { death = yes }
@@ -10899,6 +11115,7 @@ Celtigar_27 = {
 
 	8111.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8131.1.1 = {
@@ -10921,6 +11138,7 @@ Celtigar_30 = {
 
 	8119.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8136.1.1 = { trait = poet }
@@ -10942,6 +11160,7 @@ Celtigar_29 = {
 
 	8122.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8140.1.1 = { trait = knight }
@@ -10967,6 +11186,7 @@ Celtigar_28 = {
 
 	8115.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	# 8125.1.1 = { trait = squire } # AGOT TODO trait
@@ -10994,6 +11214,7 @@ Celtigar_31 = {
 
 	8139.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8157.1.1 = { trait = poet }
@@ -11017,6 +11238,7 @@ Celtigar_32 = {
 
 	8131.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8147.1.1 = { trait = knight }
@@ -11051,6 +11273,7 @@ Celtigar_33 = {
 
 	8135.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8151.1.1 = {
@@ -11075,6 +11298,7 @@ Celtigar_34 = {
 
 	8137.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8199.1.1 = { death = yes }
@@ -11093,6 +11317,7 @@ Celtigar_35 = {
 
 	8142.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8214.1.1 = { death = yes }
@@ -11110,6 +11335,7 @@ Celtigar_36 = {
 
 	8147.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8158.1.1 = {
@@ -11134,6 +11360,7 @@ Celtigar_43 = {
 
 	8131.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8148.1.1 = { trait = knight }
@@ -11155,6 +11382,7 @@ Celtigar_37 = {
 
 	8136.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8177.1.1 = { death = yes }
@@ -11173,6 +11401,7 @@ Celtigar_38 = {
 
 	8141.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8197.1.1 = { death = yes }
@@ -11190,6 +11419,7 @@ Celtigar_39 = {
 
 	8139.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8160.1.1 = {
@@ -11211,6 +11441,7 @@ Celtigar_42 = {
 
 	8142.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8160.1.1 = {
@@ -11233,6 +11464,7 @@ Celtigar_41 = {
 
 	8144.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8207.1.1 = { death = yes }
@@ -11251,6 +11483,7 @@ Celtigar_40 = {
 
 	8160.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8178.1.1 = { trait = knight }
@@ -11271,6 +11504,7 @@ Celtigar_44 = {
 
 	8152.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8190.1.1 = { death = yes }
@@ -11288,6 +11522,7 @@ Celtigar_45 = {
 
 	8154.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8172.1.1 = { add_spouse = Velaryon_90 } # Gael Velaryon
@@ -11306,6 +11541,7 @@ Celtigar_46 = {
 
 	8155.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8166.1.1 = {
@@ -11341,6 +11577,7 @@ Celtigar_47 = {
 
 	8156.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8221.1.1 = { death = yes }
@@ -11357,7 +11594,10 @@ Celtigar_48 = {
 	father = Celtigar_45
 	mother = Velaryon_90
 
-	8173.1.1 = { birth = yes }
+	8173.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8190.1.1 = { add_spouse = Celtigar_rs_48 }
 	8248.1.1 = { death = yes }
 }
@@ -11383,7 +11623,10 @@ Celtigar_49 = {
 	father = Celtigar_48
 	mother = Celtigar_rs_48
 
-	8193.1.1 = { birth = yes }
+	8193.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8220.1.1 = { add_spouse = Celtigar_p_1 }
 	8238.1.1 = { death = yes }
 }
@@ -11395,7 +11638,10 @@ Celtigar_p_1 = {
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	8193.1.1 = { birth = yes }
+	8193.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8250.1.1 = { death = yes }
 }
 Celtigar_56 = {
@@ -11410,7 +11656,10 @@ Celtigar_56 = {
 	father = Celtigar_48
 	mother = Celtigar_rs_48
 
-	8199.1.1 = { birth = yes }
+	8199.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8244.1.1 = { death = yes }
 }
 ### Issue of Alton
@@ -11425,7 +11674,10 @@ Celtigar_50 = {
 	father = Celtigar_49
 	mother = Celtigar_p_1
 
-	8221.1.1 = { birth = yes }
+	8221.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8239.1.1 = { add_spouse = Celtigar_rs_50 }
 	8280.1.1 = { death = yes }
 }
@@ -11437,7 +11689,10 @@ Celtigar_rs_50 = {
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	8221.1.1 = { birth = yes }
+	8221.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8280.1.1 = { death = yes }
 }
 Celtigar_58 = {
@@ -11453,7 +11708,10 @@ Celtigar_58 = {
 
 	trait = beauty_good_2
 
-	8223.1.1 = { birth = yes }
+	8223.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8245.1.1 = { add_spouse = Celtigar_p_2 }
 	8275.1.1 = { death = yes }
 }
@@ -11479,7 +11737,10 @@ Celtigar_51 = {
 	father = Celtigar_46 # Marell Celtigar
 	mother = Celtigar_rs_46
 
-	8178.1.1 = { birth = yes }
+	8178.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8194.1.1 = { trait = knight }
 	8194.1.1 = { add_spouse = Celtigar_rs_51 }
 	8222.1.1 = { death = yes }
@@ -11505,7 +11766,10 @@ Celtigar_52 = {
 	father = Celtigar_51
 	mother = Celtigar_rs_51
 
-	8197.1.1 = { birth = yes }
+	8197.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8213.1.1 = { trait = knight }
 	8217.1.1 = { add_spouse = Celtigar_rs_52 }
 	8250.1.1 = { death = yes }
@@ -11531,7 +11795,10 @@ Celtigar_53 = {
 	father = Celtigar_52
 	mother = Celtigar_rs_52
 
-	8220.1.1 = { birth = yes }
+	8220.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8236.1.1 = { trait = knight }
 	8245.1.1 = { add_spouse = Celtigar_p_3 }
 	8260.1.1 = {
@@ -11808,7 +12075,10 @@ Scales_8_B = {
 	father = Scales_12
 	mother = Scales_rs_12
 
-	7905.1.1 = { birth = yes }
+	7905.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	7939.1.1 = { death = yes }
 }
 ### Issue of Prunella
@@ -13148,15 +13418,14 @@ Longwaters_1 = {
 
 	8196.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
-	8212.1.1 = {
-		trait = knight
-		trait = arrogant
-		trait = brave
-		trait = vengeful
-		trait = stubborn
-	}
+	8204.1.1 = { trait = stubborn }
+	8206.1.1 = { trait = vengeful }
+	8208.1.1 = { trait = brave }
+	8210.1.1 = { trait = arrogant }
+	8212.1.1 = { trait = knight }
 	8217.1.1 = { add_spouse = Celtigar_56 } # Valaena Celtigar
 	8261.1.1 = { death = yes }
 }
@@ -14190,6 +14459,7 @@ Septon_Kings_Landing_2 = {
 
 	8027.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8043.1.1 = {
@@ -15785,6 +16055,7 @@ Tyanna_1 = {
 
 	8020.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_bisexual
 	}
@@ -16047,6 +16318,7 @@ Targaryen_hh_3 = {
 
 	8084.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_lys }
@@ -16853,6 +17125,7 @@ Lowborn_Kings_Landing_3 = {
 
 	8137.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		employer = Shawney_52 # Symond Shawney, Fairmarket
 	}

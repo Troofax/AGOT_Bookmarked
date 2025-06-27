@@ -306,7 +306,46 @@ Greyiron_11 = {
 	disallow_random_traits = yes
 
 	3658.1.1 = { birth = yes }
-	4129.1.1 = { death = yes }
+	4080.1.1 = { death = yes }
+}
+Greyiron_33 = {
+	name = Erich # II
+	dynasty = dynn_Greyiron
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Greyiron_11
+
+	4080.1.1 = {
+		birth = yes
+	}
+	4130.1.1 = { death = yes }
+}
+Greyiron_34 = {
+	name = Hagon # Canon, Hagon the Terrible
+	dynasty = dynn_Greyiron
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Greyiron_11
+
+	trait = education_martial_2
+	trait = wrathful
+	trait = vengeful
+	trait = brave
+	trait = callous
+	trait = rowdy
+
+	disallow_random_traits = yes
+
+	4105.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	4130.1.1 = {give_nickname = nick_the_terrible}
+	4159.1.1 = { death = yes }
 }
 Greyiron_12 = {
 	name = Balon # III
@@ -315,7 +354,7 @@ Greyiron_12 = {
 	religion = drowned_god
 	culture = ironborn
 
-	father = Greyiron_11
+	father = Greyiron_34
 
 	4129.1.1 = { birth = yes }
 	4177.1.1 = { death = yes }
@@ -793,7 +832,7 @@ Hoare_3 = {
 		trait = one_handed
 		trait = maimed
 	}
-	6602.1.1 = { death = yes }
+	6614.1.1 = { death = yes } # ruled for thirty years
 }
 ### Issue of Harras
 Hoare_4 = {
@@ -892,7 +931,7 @@ Hoare_5 = {
 }
 ### Issue of Ravos
 Hoare_6 = {
-	name = Erich # Canon, Erich II, AKA: Erich the Eagle
+	name = Erich # Canon, AKA: Erich the Eagle
 	dynasty = dynn_Hoare
 
 	prowess = 10
@@ -946,7 +985,7 @@ Hoare_9 = {
 		add_character_flag = canon_status_canon
 	}
 	6723.1.1 = { give_nickname = nick_priestkiller }
-	6742.1.1 = { death = yes }
+	6734.1.1 = { death = yes }
 }
 Hoare_10 = {
 	name = Balon # VIII
@@ -2434,7 +2473,10 @@ Greyjoy_43 = {
 	father = Greyjoy_100
 	mother = Greyjoy_rs_100
 
-	8039.1.1 = { birth = yes }
+	8039.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8057.1.1 = { add_spouse = Greyjoy_rs_7 }
 	8102.1.1 = { death = yes }
 }
@@ -2446,7 +2488,10 @@ Greyjoy_rs_7 = {
 	religion = drowned_god
 	culture = ironborn
 
-	8039.1.1 = { birth = yes }
+	8039.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8102.1.1 = { death = yes }
 }
 Greyjoy_104 = {
@@ -2492,7 +2537,10 @@ Greyjoy_44 = {
 	father = Greyjoy_43
 	mother = Greyjoy_rs_7
 
-	8068.1.1 = { birth = yes }
+	8068.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8086.1.1 = { add_spouse = Greyjoy_rs_8 }
 	8124.3.7 = { death = { death_reason = death_battle } }
 }
@@ -2504,7 +2552,10 @@ Greyjoy_rs_8 = {
 	religion = drowned_god
 	culture = ironborn
 
-	8068.1.1 = { birth = yes }
+	8068.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8130.1.1 = { death = yes }
 }
 Greyjoy_45 = {
@@ -2518,7 +2569,10 @@ Greyjoy_45 = {
 	father = Greyjoy_43
 	mother = Greyjoy_rs_7
 
-	8070.1.1 = { birth = yes }
+	8070.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8086.1.1 = { add_spouse = Greyjoy_rs_9 }
 	8125.1.1 = { death = { death_reason = death_murder } }
 }
@@ -2530,7 +2584,10 @@ Greyjoy_rs_9 = {
 	religion = drowned_god
 	culture = ironborn
 
-	8065.1.1 = { birth = yes }
+	8065.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8127.1.1 = { death = yes }
 }
 ### Issue of Maron, first cousins once removed to Dalton
@@ -2552,6 +2609,7 @@ Greyjoy_46 = {
 
 	8086.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8112.1.1 = { add_spouse = Greyjoy_rs_46 }
@@ -2591,6 +2649,7 @@ Greyjoy_47 = {
 
 	8087.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2619,6 +2678,7 @@ Greyjoy_48 = {
 
 	8088.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2647,6 +2707,7 @@ Greyjoy_49 = {
 
 	8089.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2671,6 +2732,7 @@ Greyjoy_50 = {
 
 	8093.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8135.1.1 = { death = yes }
@@ -2747,12 +2809,13 @@ Greyjoy_51 = {
 
 	disallow_random_traits = yes
 
-	8097.1.1 = {
+	8090.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
-	8112.1.1 = { add_spouse = Greyjoy_rs_11 }
-	8113.1.1 = {
+	8109.1.1 = { add_spouse = Greyjoy_rs_11 }
+	8110.1.1 = {
 		trait = arrogant
 		trait = sadistic
 	}
@@ -2766,7 +2829,10 @@ Greyjoy_rs_11 = {
 	religion = drowned_god
 	culture = ironborn
 
-	8097.1.1 = { birth = yes }
+	8090.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8145.1.1 = { death = yes }
 }
 Greyjoy_52 = {
@@ -2793,6 +2859,7 @@ Greyjoy_52 = {
 
 	8099.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8113.1.1 = { add_spouse = Greyjoy_rs_52 }
@@ -2835,6 +2902,7 @@ Greyjoy_53 = {
 
 	8100.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8114.1.1 = { trait = drunkard }
@@ -3033,6 +3101,68 @@ Greyjoy_58 = {
 	}
 }
 ### Issue of Vickon
+Greyjoy_109 = {
+	name = Asha # Mentioned
+	dynasty = dynn_Greyjoy
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Greyjoy_51
+	mother = Greyjoy_rs_11
+
+	trait = education_intrigue_1
+	trait = greedy
+	trait = sadistic
+	trait = brave
+	trait = rowdy
+
+	disallow_random_traits = yes
+
+	8110.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	8134.5.1 = {
+		death = {
+			death_reason = death_execution
+			killer = Westerling_28 # Johanna Westerling
+		}
+	}
+}
+Greyjoy_61 = {
+	name = Gwin # Mentioned
+	dynasty = dynn_Greyjoy
+	female = yes
+	dna = Greyjoy_61
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Greyjoy_51
+	mother = Greyjoy_rs_11
+
+	trait = education_stewardship_1
+	trait = ambitious
+	trait = sadistic
+	trait = wrathful
+	trait = rowdy
+
+	disallow_random_traits = yes
+
+	8111.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		add_character_flag = canon_status_mentioned
+	}
+	8134.5.1 = {
+		death = {
+			death_reason = death_execution
+			killer = Westerling_28 # Johanna Westerling
+		}
+	}
+}
 Greyjoy_59 = { # Dance of the Dragons
 	name = Dalton # Canon, AKA: The Red Kraken, a lord
 	dynasty = dynn_Greyjoy
@@ -3171,6 +3301,7 @@ Greyjoy_rs_14 = {
 
 	8113.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8127.1.1 = {
@@ -3249,7 +3380,10 @@ Greyjoy_rs_17 = {
 	trait = education_diplomacy_2
 	trait = beauty_good_2
 
-	8109.1.1 = { birth = yes }
+	8109.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8127.1.1 = {
 		effect = {
 			if = {
@@ -3284,6 +3418,7 @@ Greyjoy_60 = {
 
 	8114.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8127.1.1 = {
@@ -3299,37 +3434,6 @@ Greyjoy_60 = {
 	}
 	8132.1.1 = { # Died before his brother
 		death = { death_reason = death_battle }
-	}
-}
-Greyjoy_61 = {
-	name = Gwin # Mentioned
-	dynasty = dynn_Greyjoy
-	female = yes
-	dna = Greyjoy_61
-
-	religion = drowned_god
-	culture = ironborn
-
-	father = Greyjoy_51
-	mother = Greyjoy_rs_11
-
-	trait = education_stewardship_1
-	trait = ambitious
-	trait = sadistic
-	trait = wrathful
-	trait = rowdy
-
-	disallow_random_traits = yes
-
-	8115.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_mentioned
-	}
-	8134.5.1 = {
-		death = {
-			death_reason = death_execution
-			killer = Westerling_28 # Johanna Westerling
-		}
 	}
 }
 Greyjoy_62 = {
@@ -3352,16 +3456,12 @@ Greyjoy_62 = {
 
 	disallow_random_traits = yes
 
-	8116.1.1 = {
+	8115.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
-	8134.5.1 = {
-		death = {
-			death_reason = death_execution
-			killer = Westerling_28 # Johanna Westerling
-		}
-	}
+	8153.1.1 = { death = yes } # One sister survived
 }
 ### Issue of Dalton
 Greyjoy_63 = {
@@ -3381,6 +3481,7 @@ Greyjoy_63 = {
 
 	8128.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8133.12.1 = {
@@ -3405,7 +3506,10 @@ Greyjoy_rs_18 = {
 	religion = drowned_god
 	culture = ironborn
 
-	8125.1.1 = { birth = yes }
+	8125.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8181.1.1 = { death = yes }
 }
 Greyjoy_64 = {
@@ -3423,6 +3527,7 @@ Greyjoy_64 = {
 
 	8129.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8133.12.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -3485,6 +3590,7 @@ Greyjoy_65 = {
 
 	8151.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8168.1.1 = { add_spouse = Greyjoy_rs_65 }
@@ -3560,7 +3666,10 @@ Greyjoy_67 = {
 	father = Greyjoy_65
 	mother = Greyjoy_rs_65
 
-	8180.1.1 = { birth = yes }
+	8180.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8210.1.1 = { add_spouse = Orkwood_26 } # Yara Orkwood
 	8235.1.1 = { death = yes }
 }
@@ -3576,7 +3685,10 @@ Greyjoy_68 = {
 	father = Greyjoy_65
 	mother = Greyjoy_rs_65
 
-	8182.1.1 = { birth = yes }
+	8182.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8244.1.1 = { death = yes }
 }
 ### Issue of Dagon
@@ -3609,6 +3721,7 @@ Greyjoy_69 = {
 
 	8196.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8211.1.1 = {
@@ -3634,7 +3747,10 @@ Greyjoy_70 = {
 	father = Greyjoy_66
 	mother = Goodbrother_56
 
-	8197.1.1 = { birth = yes }
+	8197.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8222.1.1 = { death = yes }
 }
 Greyjoy_71 = {
@@ -3665,6 +3781,7 @@ Greyjoy_71 = {
 
 	8198.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8216.1.1 = { add_spouse = Greyjoy_rs_20 }
@@ -3678,7 +3795,10 @@ Greyjoy_rs_20 = {
 	religion = drowned_god
 	culture = ironborn
 
-	8198.1.1 = { birth = yes }
+	8198.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8250.1.1 = { death = yes }
 }
 Greyjoy_72 = {
@@ -3694,7 +3814,10 @@ Greyjoy_72 = {
 
 	trait = physique_good_1
 
-	8205.1.1 = { birth = yes }
+	8205.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8223.1.1 = { add_spouse = Greyjoy_rs_72 }
 	8265.1.1 = { death = yes }
 }
@@ -3706,7 +3829,10 @@ Greyjoy_rs_72 = {
 	religion = drowned_god
 	culture = ironborn
 
-	8205.1.1 = { birth = yes }
+	8205.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8265.1.1 = { death = yes }
 }
 ### Issue of Toron
@@ -3723,7 +3849,10 @@ Greyjoy_73 = {
 
 	trait = beauty_good_1
 
-	8227.1.1 = { birth = yes }
+	8227.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8245.1.1 = { add_spouse = Greyjoy_rs_73 }
 	8290.1.1 = { death = yes }
 }
@@ -3751,7 +3880,10 @@ Greyjoy_74 = {
 
 	trait = physique_good_1
 
-	8216.1.1 = { birth = yes }
+	8216.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8234.1.1 = { add_spouse = Greyjoy_rs_74 }
 	8254.1.1 = { death = yes }
 }
@@ -3763,7 +3895,10 @@ Greyjoy_rs_74 = {
 	religion = drowned_god
 	culture = ironborn
 
-	8216.1.1 = { birth = yes }
+	8216.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8254.1.1 = { death = yes }
 }
 ### Household
@@ -3841,6 +3976,7 @@ Greyjoy_75 = {
 
 	8113.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8130.1.1 = { add_spouse = Wynch_21 } # Shera Wynch
@@ -3864,6 +4000,7 @@ Greyjoy_77 = {
 
 	8116.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8139.1.1 = { add_spouse = Stonehouse_19 } # Sona Stonehouse
@@ -3883,6 +4020,7 @@ Greyjoy_76 = {
 
 	8120.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8192.1.1 = { death = yes }
@@ -3902,6 +4040,7 @@ Greyjoy_78 = {
 
 	8124.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8145.1.1 = {
@@ -4026,6 +4165,7 @@ Greyjoy_84 = {
 
 	8140.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8186.1.1 = { death = yes }
@@ -4043,6 +4183,7 @@ Greyjoy_85 = {
 
 	8142.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8200.1.1 = { death = yes }
@@ -4060,6 +4201,7 @@ Greyjoy_86 = {
 
 	8147.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8199.1.1 = { death = yes }
@@ -4078,6 +4220,7 @@ Greyjoy_87 = {
 
 	8153.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8215.1.1 = { death = yes }
@@ -4098,6 +4241,7 @@ Greyjoy_88 = {
 
 	8148.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8181.1.1 = { death = yes }
@@ -4115,6 +4259,7 @@ Greyjoy_89 = {
 
 	8152.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8201.1.1 = { death = yes }
@@ -4134,6 +4279,7 @@ Greyjoy_91 = {
 
 	8151.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8202.1.1 = { death = yes }
@@ -4152,6 +4298,7 @@ Greyjoy_92 = {
 
 	8154.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8156.1.1 = {
@@ -4173,6 +4320,7 @@ Greyjoy_94 = {
 
 	8157.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8198.1.1 = { death = yes }
@@ -4191,6 +4339,7 @@ Greyjoy_90 = {
 
 	8145.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8214.1.1 = { death = yes }
@@ -4209,6 +4358,7 @@ Greyjoy_93 = {
 
 	8156.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8226.1.1 = { death = yes }
@@ -5423,7 +5573,10 @@ Goodbrother_56 = {
 	father = Goodbrother_53
 	mother = Goodbrother_rs_53
 
-	8180.1.1 = { birth = yes }
+	8180.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8242.1.1 = { death = yes }
 }
 ### Issue of Dykk
@@ -16667,12 +16820,14 @@ Harlaw_44 = {
 
 	trait = education_stewardship_4
 	trait = diligent
+	trait = ambitious
 	trait = curious
 
 	disallow_random_traits = yes
 
 	8132.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_heterosexual
 	}
@@ -16852,6 +17007,7 @@ Harlaw_49 = {
 
 	8180.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8208.1.1 = { add_spouse = Greyjoy_68 } # Gwin Greyjoy
@@ -20442,6 +20598,36 @@ Botley_75 = {
 	}
 }
 ### Issue of Harren
+Botley_76 = {
+	name = Tristifer # Mentioned
+	dynasty = dynn_Botley # house unknown
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Botley_30
+	mother = Botley_rs_30
+
+	trait = education_martial_2
+	trait = wrathful
+	trait = arrogant
+	trait = vengeful
+	trait = rowdy
+
+	disallow_random_traits = yes
+
+	8107.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	8129.1.1 = { add_spouse = Greyjoy_109 } # Dalton's eldest sister
+	8134.5.1 = {
+		death = {
+			death_reason = death_execution
+			killer = Westerling_28 # Johanna Westerling
+		}
+	}
+}
 Botley_31 = {
 	name = Harrag # Semi-Canon, a lord
 	dynasty = dynn_Botley
@@ -25798,8 +25984,8 @@ Myre_rs_79 = {
 	8091.1.1 = { birth = yes }
 	8134.1.1 = { death = yes }
 }
-Myre_80 = {
-	name = Nute
+Myre_84 = {
+	name = Rurik # a lord
 	dynasty = dynn_Myre
 
 	religion = drowned_god
@@ -25809,20 +25995,20 @@ Myre_80 = {
 	mother = Myre_rs_65
 
 	8093.1.1 = { birth = yes }
-	8119.1.1 = { add_spouse = Myre_rs_80 }
-	8147.1.1 = {
+	8124.1.1 = { add_spouse = Myre_rs_84 }
+	8162.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
 }
-Myre_rs_80 = {
-	name = Ryella
+Myre_rs_84 = {
+	name = Meredyth
 	female = yes
 
 	religion = drowned_god
 	culture = ironborn
 
-	8096.1.1 = { birth = yes }
-	8129.1.1 = { death = yes }
+	8102.1.1 = { birth = yes }
+	8151.1.1 = { death = yes }
 }
 Myre_81 = {
 	name = Gretchel
@@ -25884,8 +26070,8 @@ Myre_83 = {
 		death = { death_reason = death_choked }
 	}
 }
-Myre_84 = {
-	name = Rurik # a lord
+Myre_80 = {
+	name = Nute
 	dynasty = dynn_Myre
 
 	religion = drowned_god
@@ -25894,23 +26080,53 @@ Myre_84 = {
 	father = Myre_65
 	mother = Myre_rs_65
 
-	8101.1.1 = { birth = yes }
-	8124.1.1 = { add_spouse = Myre_rs_84 }
-	8162.1.1 = {
+	8099.1.1 = { birth = yes }
+	8119.1.1 = { add_spouse = Myre_rs_80 }
+	8147.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
 }
-Myre_rs_84 = {
-	name = Meredyth
+Myre_rs_80 = {
+	name = Ryella
 	female = yes
 
 	religion = drowned_god
 	culture = ironborn
 
-	8102.1.1 = { birth = yes }
-	8151.1.1 = { death = yes }
+	8096.1.1 = { birth = yes }
+	8129.1.1 = { death = yes }
 }
 ### Issue of Rogin
+Myre_116 = {
+	name = Maron # Mentioned
+	dynasty = dynn_Myre # house unknown
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Myre_79
+	mother = Myre_rs_79
+
+	trait = education_intrigue_1
+	trait = greedy
+	trait = callous
+	trait = brave
+	trait = rowdy
+
+	disallow_random_traits = yes
+
+	8109.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	8129.1.1 = { add_spouse = Greyjoy_61 } # Dalton's middle sister
+	8134.5.1 = {
+		death = {
+			death_reason = death_execution
+			killer = Westerling_28 # Johanna Westerling
+		}
+	}
+}
 Myre_88 = {
 	name = Burton
 	dynasty = dynn_Myre
@@ -35514,6 +35730,36 @@ Stonehouse_57 = {
 	}
 }
 ### Issue of Daegon
+Stonehouse_83 = {
+	name = Steffarion # Mentioned
+	dynasty = dynn_Stonehouse # house unknown
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Stonehouse_54
+	mother = Stonehouse_rs_54
+
+	trait = education_martial_1
+	trait = deceitful
+	trait = impatient
+	trait = vengeful
+	trait = rowdy
+
+	disallow_random_traits = yes
+
+	8113.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	8129.1.1 = { add_spouse = Greyjoy_62 } # Dalton's youngest sister
+	8134.5.1 = {
+		death = {
+			death_reason = death_execution
+			killer = Westerling_28 # Johanna Westerling
+		}
+	}
+}
 Stonehouse_58 = {
 	name = Urron # a lord
 	dynasty = dynn_Stonehouse
@@ -40912,7 +41158,10 @@ Orkwood_25 = {
 	father = Orkwood_24
 	mother = Orkwood_rs_24
 
-	8184.1.1 = { birth = yes }
+	8184.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8204.1.1 = { add_spouse = Orkwood_rs_25 }
 	8214.1.1 = { death = yes }
 }
@@ -40938,7 +41187,10 @@ Orkwood_26 = {
 	father = Orkwood_24
 	mother = Orkwood_rs_24
 
-	8185.1.1 = { birth = yes }
+	8185.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8244.1.1 = { death = yes }
 }
 ### Main Line
@@ -40953,7 +41205,10 @@ Orkwood_27 = {
 	father = Orkwood_25 # Aeron Orkwood
 	mother = Orkwood_rs_25
 
-	8207.1.1 = { birth = yes }
+	8207.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8229.1.1 = { add_spouse = Orkwood_rs_27 }
 	8249.1.1 = { death = yes }
 }

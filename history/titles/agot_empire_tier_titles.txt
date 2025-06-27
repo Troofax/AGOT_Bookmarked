@@ -345,6 +345,12 @@ e_the_iron_islands = {
 	3745.1.1 = {
 		holder = 0
 	}
+	4110.1.1 = {
+		holder = Greyiron_33 #Erich II Greyiron (nc)
+	}
+	4130.1.1 = {
+		holder = Greyiron_34 #Hagon the Terrible
+	}
 	4159.1.1 = {
 		holder = Greyiron_12 #Balon III Greyiron (nc)
 	}
@@ -420,10 +426,13 @@ e_the_iron_islands = {
 	6584.1.1 = {
 		holder = Hoare_3 #Harras Hoare
 	}
-	6602.1.1 = {
+	6614.1.1 = {
 		holder = Hoare_4 #Harrag Hoare (NC)
 	}
 	6629.1.1 = {
+		holder = Hoare_6 # Erich the Eagle
+	}
+	6645.1.1 = {
 		holder = Hoare_7 #Wulfgar Hoare
 	}
 	6670.1.1 = {

@@ -287,6 +287,10 @@ agot_yearly_dragon_aging = {
 				age < 6
 				number_of_personality_traits < 1
 				number_of_personality_traits < personality_trait_limit
+				trigger_if = {
+					limit = { has_game_rule = agot_canon_dragons_enabled_traits }
+					NOT = { has_character_flag = agot_developing_canon_dragon_traits }
+				}
 			}
 			random_list = {
 				50 = { # 50% chance to not get trait
@@ -326,6 +330,10 @@ agot_yearly_dragon_aging = {
 				age < 10
 				number_of_personality_traits < 2
 				number_of_personality_traits < personality_trait_limit
+				trigger_if = {
+					limit = { has_game_rule = agot_canon_dragons_enabled_traits }
+					NOT = { has_character_flag = agot_developing_canon_dragon_traits }
+				}
 			}
 			random_list = {
 				50 = { # 50% chance to not get trait
@@ -365,6 +373,10 @@ agot_yearly_dragon_aging = {
 				age < 15
 				number_of_personality_traits < 3
 				number_of_personality_traits < personality_trait_limit
+				trigger_if = {
+					limit = { has_game_rule = agot_canon_dragons_enabled_traits }
+					NOT = { has_character_flag = agot_developing_canon_dragon_traits }
+				}
 			}
 			random_list = {
 				50 = { # 50% chance to not get trait
@@ -585,7 +597,8 @@ agot_yearly_dragon_mate_pulse = {
 
 agot_yearly_dragon_cull = {
 	trigger = {
-		any_living_dragon = {
+		any_in_global_list = {
+			variable = living_dragons
 			count > agot_dragon_cull_limit
 		}
 		trigger_if = { # Don't kill last dragon of a location

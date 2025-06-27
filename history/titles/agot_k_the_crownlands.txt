@@ -1443,7 +1443,7 @@ d_deerfield = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8184.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1498,7 +1498,7 @@ c_antlers = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8184.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1613,7 +1613,7 @@ c_point_square = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8184.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -1669,7 +1669,7 @@ c_tuskford = {
 	8149.12.2 = {
 		holder = Buckwell_31
 	}
-	8174.1.1 = {
+	8184.1.1 = {
 		holder = Buckwell_40
 	}
 	8202.1.1 = {
@@ -2083,7 +2083,7 @@ c_crownback = {
 		holder = Hollard_2
 	}
 	8270.1.1 = {
-		holder = Hollard_34
+		holder = Hollard_5
 	}
 	8277.10.1 = {
 		holder = Dunkel_1
@@ -2691,9 +2691,9 @@ d_masseys_hook = {
 		holder = Massey_55
 	}
 	8174.1.1 = {
-		holder = Massey_63
+		holder = Massey_61
 	}
-	8179.1.1 = {
+	8190.1.1 = {
 		holder = Massey_65
 	}
 	8205.1.1 = {
@@ -2772,9 +2772,9 @@ c_stonedance = {
 		holder = Massey_55
 	}
 	8174.1.1 = {
-		holder = Massey_63
+		holder = Massey_61
 	}
-	8179.1.1 = {
+	8190.1.1 = {
 		holder = Massey_65
 	}
 	8205.1.1 = {
@@ -3746,16 +3746,16 @@ c_strongmead = {
 	8099.1.1 = {
 		holder = Cargyll_10
 	}
-	8129.1.1 = {
+	8119.1.1 = {
 		holder = Cargyll_13
 	}
-	8148.1.1 = {
+	8130.2.28 = {
+		holder = Cargyll_15
+	}
+	8175.10.1 = {
 		holder = Cargyll_20
 	}
-	8167.1.1 = {
-		holder = Cargyll_22
-	}
-	8210.1.1 = {
+	8187.1.1 = {
 		holder = Cargyll_23
 	}
 	8217.1.1 = {

@@ -270,6 +270,23 @@ agot_8299_6_13_acok_scenario_setup = {
 	agot_mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_balon }
 	######
 
+
+	##### SCENARIO STORY CYCLE SETUP #####
+	#title:e_the_iron_throne.holder = {
+	#	create_story = { # Initialize A Clash of Kings # TODO
+	#		type = story_agot_scenario_acok
+	#		save_scope_as = scenario_rr_story
+	#	}
+	#	scope:scenario_acok_story = { # TODO
+	#		set_variable = { name = agot_rr_linked_war value = scope:current_war }
+	#		set_variable = {
+	#			name	= agot_acok_wars_status
+	#			value	= flag:ongoing
+	#		}
+	#	}
+	#}
+	#######
+
 	### CANON CHILDREN STORY CYCLE SETUP ###
 	agot_canon_children_setup_story_cycles_effect = yes
 	######

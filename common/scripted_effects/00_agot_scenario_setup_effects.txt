@@ -1,0 +1,91 @@
+﻿### SETUP EFFECTS ###
+
+agot_historical_scenario_setup = {
+	if = { # 8082.1.1 Reign of the Conciliator
+		limit = { game_start_date = 8082.1.1 }
+
+		#No setup effect
+	}
+	else_if = { # 8106.2.10 The Rogue Prince
+		limit = { game_start_date = 8106.4.18 }
+
+		agot_8106_4_18_scenario_setup = yes
+	}
+	else_if = { # 8129.4.1 The Dance of Dragons
+		limit = { game_start_date = 8129.4.1 }
+
+		# AGOT Bookmarked Disabled
+		# character:Targaryen_76 = {
+			# agot_create_artifact_lucerys_gun_effect = { OWNER = this }
+			# scope:newly_created_artifact = {
+				# equip_artifact_to_owner_replace = yes
+			# }
+		# }
+		agot_8129_4_1_dotd_scenario_setup = yes
+	}
+	else_if = { # 8170.12.11 Titan Marches
+		limit = { game_start_date = 8170.12.11 }
+
+		agot_8170_12_11_scenario_setup = yes
+	}
+	else_if = { # 8209.2.1 Shadows of Ashford
+		limit = { game_start_date = 8209.2.1 }
+
+		agot_8209_2_1_scenario_setup = yes
+	}
+	else_if = { # 8233.2.8 The Peake Uprising
+		limit = { game_start_date = 8233.2.8 }
+
+		agot_8233_peake_uprising_setup = yes
+	}
+	else_if = { # 8258.12.21 The Laughing Storm Rebellion
+		limit = { game_start_date = 8239.1.11 }
+
+		agot_8239_1_11_laughing_storm_setup = yes
+	}
+	else_if = { # 8258.12.21 The Ninepenny Kings
+		limit = { game_start_date = 8258.12.21 }
+
+		agot_8259_11_1_ninepenny_setup = yes
+	}
+	else_if = { # 8277.1.1 Defiance of Duskendale
+		limit = { game_start_date = 8277.1.1 }
+
+		agot_8277_1_1_dd_scenario_setup = yes
+	}
+	else_if = { # 8282.9.15 Robert's Rebellion
+		limit = { game_start_date = 8282.9.15 }
+
+		agot_8282_9_15_rr_scenario_setup = yes
+	}
+	else_if = { # 8284.6.2 Crowned Stag
+		limit = { game_start_date = 8284.6.2 }
+
+		agot_8284_6_2_scenario_setup = yes
+	}
+	# AGOT Bookmarked Added
+	else_if = { # 7899.7.22 The Century of Blood
+		limit = { game_start_date < 7998.1.2 }
+		agotbm_centuryofblood_add_camp_buildings_on_start = yes
+	}
+	else_if = { # 7998.1.2 Aegon's Conquest
+		limit = { game_start_date = 7998.1.2 }
+		agot_7998_1_1_conquest_scenario_setup = yes
+	}
+	else_if = { # 8195.3.7 1st Blackfyre Rebellion
+		limit = { game_start_date = 8195.3.7 }
+		agot_8195_3_7_br_i_scenario_setup = yes
+	}
+	else_if = { # 8299.1.17 War of the Five Kings
+		limit = { game_start_date = 8299.1.17 }
+		agot_8299_1_17_wotfk_scenario_setup = yes
+	}
+	else_if = { # 8299.6.13 A Clash of Kings
+		limit = { game_start_date = 8299.6.13 }
+		agot_8299_6_13_acok_scenario_setup = yes
+	}
+	else_if = { # 8300.3.1 A Feast for Crows
+		limit = { game_start_date = 8300.3.1 }
+		agot_8300_3_1_affc_scenario_setup = yes
+	}
+}

@@ -272,11 +272,7 @@ agot_8195_3_7_br_i_scenario_setup = {
 	#		save_scope_as = scenario_rr_story
 	#	}
 	#	scope:scenario_rr_story = { # TODO
-	#		set_variable = { name = usurper_war value = scope:current_war }
-	#		set_variable = {
-	#			name	= agot_rr_war_status
-	#			value	= flag:ongoing
-	#		}
+	#		set_variable = { name = agot_rr_linked_war value = scope:current_war }
 	#	}
 	#}
 	#######
