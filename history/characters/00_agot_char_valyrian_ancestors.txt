@@ -1677,7 +1677,7 @@ Targaryen_44 = {
 	mother = Targaryen_36
 
 	trait = brave
-	trait = bossy
+	trait = curious
 
 	8053.7.1 = {
 		birth = yes
@@ -6350,6 +6350,7 @@ Targaryen_122 = {
 			}
 			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Tall_1 } # Duncan the Tall
 			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_Tall_1 } # Duncan the Tall
+			add_character_modifier = agot_incest_aversion_modifier
 		}
 	}
 	8211.3.25 = { trait = just }
@@ -9884,18 +9885,31 @@ Velaryon_49 = {
 	mother = Hayford_14
 
 	trait = education_martial_3
+	trait = content
+	trait = charming
+
+	disallow_random_traits = yes
 
 	8125.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
-	8141.1.1 = {
+	8135.1.1 = {
+		effect = {
+			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Celtigar_26 } # Clement Celtigar
+		}
+	}
+	8140.1.1 = {
 		trait = knight
-		trait = gluttonous # Easter Egg, he likes lasagna
+		effect = {
+			agot_knighted_char_history_effect = { KNIGHT = character:Celtigar_26 } # Clement Celtigar
+		}
+		trait = temperate # slender
 		trait = brave
 		trait = lifestyle_blademaster
 	}
+	8152.1.1 = { add_spouse = Celtigar_64 } # Janna Celtigar
 	8163.4.29 = {
 		effect = {
 			agot_join_kingsguard_char_history_effect = { # Predecessor: Reynard Caron
@@ -11197,6 +11211,34 @@ Celtigar_28 = {
 		}
 	}
 }
+Celtigar_63 = {
+	name = Alyn
+	dynasty = dynn_Celtigar
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_61
+	mother = Celtigar_rs_61
+
+	8116.1.1 = {
+		birth = yes
+	}
+	8133.1.1 = { add_spouse = Celtigar_rs_63 }
+	8150.1.1 = { death = yes }
+}
+Celtigar_rs_63 = {
+	name = Odette
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	8116.1.1 = {
+		birth = yes
+	}
+	8150.1.1 = { death = yes }
+}
 ### Issue of Semella
 Celtigar_31 = {
 	name = Malion # Semi-Canon
@@ -11346,6 +11388,28 @@ Celtigar_36 = {
 	8163.1.1 = { trait = knight }
 	8187.1.1 = { death = yes }
 }
+### Issue of Alyn
+Celtigar_64 = {
+	name = Janna # Semi-Canon, mentioned only in Galfrid's backstory, missing from MUSH family trees
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_63
+	mother = Celtigar_rs_63
+
+	trait = beauty_good_1
+
+	8133.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_semicanon
+	}
+	8153.1.1 = {
+		death = { death_reason = death_drowned } # Shipwrecked
+	}
+}
 ### Issue of Clement
 Celtigar_43 = {
 	name = Amrell # Semi-Canon, a lord
@@ -11357,6 +11421,15 @@ Celtigar_43 = {
 
 	father = Celtigar_26
 	mother = Connington_33
+
+	trait = education_intrigue_2
+	trait = shrewd
+	trait = patient
+	trait = ambitious
+	trait = callous
+	trait = pensive
+
+	disallow_random_traits = yes
 
 	8131.1.1 = {
 		birth = yes
@@ -17247,8 +17320,8 @@ Knight_Kings_Landing_12 = {
 Knight_Kings_Landing_13 = {
 	name = Randor # Semi-Canon, AKA: Randor the Exile, participated in Ashford Tourney in 209 AC
 
-	religion = fots_seven
-	culture = westerosi_valyrian
+	religion = old_gods_btw_sas
+	culture = skagosi
 
 	trait = education_diplomacy_3
 	trait = intellect_good_2
@@ -17263,18 +17336,17 @@ Knight_Kings_Landing_13 = {
 	8175.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
+		employer = Magnar_50
 	}
 	8194.1.1 = {
 		trait = knight
-		employer = Targaryen_94 # Daemon Blackfyre
-	}
-	8196.11.22 = { # Ten years of exile
-		employer = Erosenes_5 # Sambarro Erosenes, Lys
+		give_nickname = nick_the_exile
+		religion = fots_seven
+		employer = Arryn_104 # Donnel Arryn
 		trait = scholar
 	}
 	8206.6.1 = {
 		effect = { move_to_pool = yes }
-		give_nickname = nick_the_exile
 	}
 	8233.1.1 = { death = yes }
 }

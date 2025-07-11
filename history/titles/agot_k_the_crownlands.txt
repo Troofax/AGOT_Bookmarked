@@ -2193,7 +2193,7 @@ c_shadowshield = {
 	8141.1.1 = {
 		holder = Darke_9
 	}
-	8146.6.1 = {
+	8156.6.1 = {
 		holder = Darke_10
 	}
 	8188.1.1 = {

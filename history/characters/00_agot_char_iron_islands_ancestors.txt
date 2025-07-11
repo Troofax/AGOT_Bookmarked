@@ -16835,94 +16835,13 @@ Harlaw_44 = {
 		trait = lustful
 		trait = irritable
 	}
-	8148.1.1 = { add_spouse = Harlaw_rs_44_A }
-	8153.1.1 = { add_spouse = Harlaw_rs_44_B }
-	8165.1.1 = { add_spouse = Harlaw_rs_44_C }
-	8179.1.1 = { add_spouse = Harlaw_rs_44_D }
-	8182.1.1 = { add_spouse = Harlaw_rs_44_E }
-	8192.1.1 = { add_spouse = Harlaw_rs_44_F }
+	8149.1.1 = { add_spouse = Kenning_97 } # Frynne Kenning
+	8154.1.1 = { add_spouse = Tawney_62 } # Morissa Tawney
+	8165.1.1 = { add_spouse = Drumm_44 } # Jorelle Drumm
+	8179.1.1 = { add_spouse = Blacktyde_55 } # Yara Blacktyde
+	8182.1.1 = { add_spouse = Wynch_82 } # Victaria Wynch
+	8192.1.1 = { add_spouse = Myre_106 } # Wylla Myre
 	8201.1.1 = { death = yes }
-}
-Harlaw_rs_44_A = {
-	name = Jeyne # Mentioned
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8115.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_mentioned
-	}
-	8152.1.1 = { death = { death_reason = death_accident } }
-}
-Harlaw_rs_44_B = {
-	name = Yara # Mentioned
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8131.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_mentioned
-	}
-	8162.1.1 = {
-		trait = ill
-		death = { death_reason = death_ill }
-	}
-}
-Harlaw_rs_44_C = {
-	name = Wylla # Mentioned
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8127.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_mentioned
-	}
-	8178.1.1 = { death = yes }
-}
-Harlaw_rs_44_D = {
-	name = Tanda # Mentioned
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8153.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_mentioned
-	}
-	8180.1.1 = { death = { death_reason = death_accident } }
-}
-Harlaw_rs_44_E = {
-	name = Alannys # Mentioned
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8150.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_mentioned
-	}
-	8190.1.1 = { death = yes }
-}
-Harlaw_rs_44_F = {
-	name = Steffaria # Mentioned
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8135.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_mentioned
-	}
-	8208.1.1 = { death = yes }
 }
 Harlaw_45 = {
 	name = Boremund # Semi-Canon
@@ -16950,7 +16869,7 @@ Harlaw_46 = {
 	culture = ironborn
 
 	father = Harlaw_44
-	mother = Harlaw_rs_44_C
+	mother = Drumm_44
 
 	8166.1.1 = {
 		birth = yes
@@ -16966,7 +16885,7 @@ Harlaw_47 = {
 	culture = ironborn
 
 	father = Harlaw_44
-	mother = Harlaw_rs_44_C
+	mother = Drumm_44
 
 	8169.1.1 = {
 		birth = yes
@@ -16982,7 +16901,7 @@ Harlaw_48 = {
 	culture = ironborn
 
 	father = Harlaw_44
-	mother = Harlaw_rs_44_C
+	mother = Drumm_44
 
 	8175.1.1 = {
 		birth = yes
@@ -17001,7 +16920,7 @@ Harlaw_49 = {
 	culture = ironborn
 
 	father = Harlaw_44
-	mother = Harlaw_rs_44_D
+	mother = Blacktyde_55
 
 	trait = education_martial_2
 
@@ -17583,8 +17502,8 @@ Volmark_26 = {
 	8287.1.1 = { add_spouse = Goodbrother_5 } # Helya Goodbrother
 }
 Volmark_27 = {
-	name = Alannys
-	dynasty = dynn_Volmark
+	name = Alannys # Mentioned, married Victarion Greyjoy, second wife 
+	dynasty = dynn_Volmark # House uncertain
 	female = yes
 
 	dna = Volmark_27
@@ -17597,7 +17516,12 @@ Volmark_27 = {
 
 	8262.1.1 = {
 		birth = yes
+		add_character_flag = canon_status_mentioned
 		add_character_flag = has_scripted_appearance
+	}
+	8290.1.1 = {
+		trait = smallpox
+		death = { death_reason = death_smallpox }
 	}
 }
 
@@ -19076,8 +19000,8 @@ Wynch_rs_81 = {
 }
 ### Issue of Torwold
 Wynch_82 = {
-	name = Victaria
-	dynasty = dynn_Wynch
+	name = Victaria # Mentioned, married Theomore Harlaw, fifth wife
+	dynasty = dynn_Wynch # House uncertain
 	female = yes
 
 	religion = drowned_god
@@ -19086,10 +19010,11 @@ Wynch_82 = {
 	father = Wynch_81
 	mother = Wynch_rs_81
 
-	8155.1.1 = { birth = yes }
-	8203.1.1 = {
-		death = { death_reason = death_fire }
+	8155.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
 	}
+	8190.1.1 = { death = yes }
 }
 Wynch_83 = {
 	name = Roggon # a lord
@@ -26621,8 +26546,8 @@ Myre_91 = {
 }
 ### Issue of Wulfgar
 Myre_106 = {
-	name = Wylla
-	dynasty = dynn_Myre
+	name = Wylla # Mentioned, married Theomore Harlaw, sixth wife 
+	dynasty = dynn_Myre # House uncertain
 	female = yes
 
 	religion = drowned_god
@@ -26631,8 +26556,11 @@ Myre_106 = {
 	father = Myre_100
 	mother = Myre_rs_100
 
-	8174.1.1 = { birth = yes }
-	8200.1.1 = { death = yes }
+	8174.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	8208.1.1 = { death = yes }
 }
 Myre_107 = {
 	name = Addila
@@ -28577,8 +28505,8 @@ Kenning_rs_96 = {
 	8176.1.1 = { death = yes }
 }
 Kenning_97 = {
-	name = Frynne
-	dynasty = dynn_Kenning
+	name = Frynne # Mentioned, married Theomore Harlaw, first wife
+	dynasty = dynn_Kenning # House uncertain
 	female = yes
 
 	religion = drowned_god
@@ -28587,10 +28515,11 @@ Kenning_97 = {
 	father = Kenning_95
 	mother = Kenning_rs_95
 
-	8133.1.1 = { birth = yes }
-	8172.1.1 = {
-		death = { death_reason = death_accident }
+	8133.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
 	}
+	8152.1.1 = { death = { death_reason = death_accident } }
 }
 ### Issue of Rafe
 Kenning_98 = {
@@ -31404,8 +31333,8 @@ Tawney_rs_61 = {
 }
 ### Issue of Rook
 Tawney_62 = {
-	name = Morissa
-	dynasty = dynn_Tawney
+	name = Morissa # Mentioned, married Theomore Harlaw, second wife
+	dynasty = dynn_Tawney # House uncertain
 	female = yes
 
 	religion = drowned_god
@@ -31414,8 +31343,11 @@ Tawney_62 = {
 	father = Tawney_61
 	mother = Tawney_rs_61
 
-	8138.1.1 = { birth = yes }
-	8195.1.1 = {
+	8138.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	8162.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
 	}
@@ -32703,8 +32635,8 @@ Blacktyde_rs_54 = {
 	8183.1.1 = { death = yes }
 }
 Blacktyde_55 = {
-	name = Yara
-	dynasty = dynn_Blacktyde
+	name = Yara # Mentioned, married Theomore Harlaw, fourth wife
+	dynasty = dynn_Blacktyde # House uncertain
 	female = yes
 
 	religion = drowned_god
@@ -32715,10 +32647,11 @@ Blacktyde_55 = {
 
 	trait = twin
 
-	8144.1.1 = { birth = yes }
-	8177.1.1 = {
-		death = { death_reason = death_fall }
+	8144.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
 	}
+	8180.1.1 = { death = { death_reason = death_accident } }
 }
 Blacktyde_56 = {
 	name = Cragorn
@@ -34279,8 +34212,8 @@ Drumm_rs_43 = {
 	8166.1.1 = { death = yes }
 }
 Drumm_44 = {
-	name = Jorelle
-	dynasty = dynn_Drumm
+	name = Jorelle # Mentioned, married Theomore Harlaw, third wife
+	dynasty = dynn_Drumm # House uncertain
 	female = yes
 
 	religion = drowned_god
@@ -34289,8 +34222,11 @@ Drumm_44 = {
 	father = Drumm_41
 	mother = Drumm_rs_41
 
-	8138.1.1 = { birth = yes }
-	8207.1.1 = {
+	8138.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	8178.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
 }

@@ -814,10 +814,10 @@ d_sharp_point = {
 	8059.2.1 = {
 		holder = Bar_Emmon_87
 	}
-	8112.1.1 = {
+	8102.1.1 = {
 		holder = Bar_Emmon_20
 	}
-	8139.1.1 = {
+	8119.1.1 = {
 		holder = Bar_Emmon_22
 	}
 	8145.1.1 = {
@@ -1008,10 +1008,10 @@ c_sharp_point = {
 	8059.2.1 = {
 		holder = Bar_Emmon_87
 	}
-	8112.1.1 = {
+	8102.1.1 = {
 		holder = Bar_Emmon_20
 	}
-	8139.1.1 = {
+	8119.1.1 = {
 		holder = Bar_Emmon_22
 	}
 	8145.1.1 = {
