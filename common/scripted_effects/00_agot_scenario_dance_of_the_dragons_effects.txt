@@ -10,15 +10,22 @@ agot_8129_4_1_dotd_scenario_setup = {
 		title:k_dragonstone.holder = {
 			# spawn_rhaenyras_dragons = yes
 			add_character_flag = { flag = mw_init_event_blocker days = 7 }
-			start_war = {
-				cb = claim_cb
-				claimant = title:k_dragonstone.holder
-				target = title:e_the_iron_throne.holder
-				target_title = title:e_the_iron_throne
-				target_title = title:k_the_crownlands
-				target_title = title:d_kings_landing
-				target_title = title:c_kings_landing
+			save_scope_as = crown_theft_king_legit_heir
+			title:e_the_iron_throne.holder = { save_scope_as = crown_thief }
+			add_character_flag = {
+				flag = succession_war_claimant
+				days = 40
 			}
+			agot_succession_war_faction_selection_effect = yes
+			war_of_succession_number_effect = yes
+
+			scope:crown_theft_king_legit_heir = {
+				add_character_flag = {
+					flag = dance_name
+					days = 40
+				}
+			}
+			agot_succession_war_start_effect = yes
 			every_character_war = {
 				add_attacker = title:d_driftmark.holder # Changes Sides #
 				add_attacker = title:k_the_vale.holder
