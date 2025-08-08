@@ -2,7 +2,7 @@
 # History database id:Targaryen_88
 bookmark_178_aegon_targaryen={
 	type=male
-	id=61689
+	id=71967
 	random_seed=14465307
 	age=0.430000
 	genes={ 		hair_color={ 67 7 67 7 }
@@ -97,7 +97,7 @@ bookmark_178_aegon_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 121 "cheek_wrinkles_both_01" 91 }
  		complexion={ "complexion_42" 91 "complexion_42" 91 }
  		gene_height={ "normal_height" 144 "normal_height" 144 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 138 "body_fat_head_fat_full" 130 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 123 "body_fat_head_fat_full" 130 }
  		gene_bs_body_shape={ "body_shape_hourglass_half" 15 "body_shape_hourglass_half" 0 }
  		gene_bs_bust={ "bust_clothes" 65 "bust_shape_3_full" 103 }
  		gene_age={ "old_beauty_1" 255 "old_beauty_1" 255 }
@@ -109,7 +109,7 @@ bookmark_178_aegon_targaryen={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "bloodshot_eyes" 127 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 27 "normal_eyelashes" 0 }
+ 		eyelashes_accessory={ "dark_eyelashes" 6 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -189,17 +189,17 @@ bookmark_178_aegon_targaryen={
  		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
+ 		legwear={ "agot_trousers" 169 "all_legwear" 0 }
  		beards={ "all_beards" 147 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 92 "all_hairstyles" 0 }
- 		legwear={ "agot_trousers" 169 "all_legwear" 0 }
+ 		hairstyles={ "all_hairstyles" 79 "all_hairstyles" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
  		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "agot_all_clothes" 14 "most_clothes" 0 }
+ 		clothes={ "agot_all_clothes" 11 "most_clothes" 0 }
  		headgear={ "agot_crowns" 19 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
