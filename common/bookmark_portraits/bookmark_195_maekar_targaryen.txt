@@ -2,7 +2,7 @@
 # History database id:Targaryen_110
 bookmark_195_maekar_targaryen={
 	type=male
-	id=81099
+	id=81169
 	random_seed=196456032
 	age=0.210000
 	genes={ 		hair_color={ 22 16 22 16 }
@@ -97,8 +97,8 @@ bookmark_195_maekar_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 80 "cheek_wrinkles_both_01" 80 }
  		complexion={ "complexion_45" 60 "complexion_45" 60 }
  		gene_height={ "normal_height" 142 "normal_height" 142 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 137 "body_fat_head_fat_low" 130 }
- 		gene_bs_body_shape={ "body_shape_hourglass_full" 255 "body_shape_hourglass_full" 160 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 130 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_full" 248 "body_shape_hourglass_full" 160 }
  		gene_bs_bust={ "bust_clothes" 85 "bust_shape_1_half" 107 }
  		gene_age={ "old_2" 255 "old_2" 255 }
  		gene_eyebrows_shape={ "avg_spacing_high_thickness" 214 "avg_spacing_high_thickness" 214 }

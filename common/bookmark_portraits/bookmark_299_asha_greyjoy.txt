@@ -2,7 +2,7 @@
 # History database id:Greyjoy_13
 bookmark_299_asha_greyjoy={
 	type=female
-	id=104494
+	id=104587
 	random_seed=2638286092
 	age=0.230000
 	genes={ 		hair_color={ 7 243 7 243 }
@@ -97,7 +97,7 @@ bookmark_299_asha_greyjoy={
  		expression_other={ "cheek_wrinkles_both_01" 43 "cheek_wrinkles_both_01" 43 }
  		complexion={ "complexion_9" 0 "complexion_9" 0 }
  		gene_height={ "normal_height" 140 "normal_height" 140 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 104 "body_fat_head_fat_low" 119 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 110 "body_fat_head_fat_low" 119 }
  		gene_bs_body_shape={ "body_shape_apple_half" 126 "body_shape_apple_half" 50 }
  		gene_bs_bust={ "bust_clothes" 59 "bust_shape_3_half" 93 }
  		gene_age={ "old_beauty_1" 82 "old_beauty_1" 82 }
@@ -109,7 +109,7 @@ bookmark_299_asha_greyjoy={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 15 "normal_eyelashes" 0 }
+ 		eyelashes_accessory={ "dark_eyelashes" 2 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -204,11 +204,8 @@ bookmark_299_asha_greyjoy={
  		clothes={ "ironborn_war_nobility_clothes" 255 "most_clothes" 0 }
  		headgear={ "no_headgear" 185 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
- 		props_right={ "ep2_northern_mace" 135 "no_props" 0 }
- 		props_left={ "ep1_western_shield_01" 255 "no_props" 0 }
- 		gene_additive_animations_fat={ "fat_additive" 28 "fat_additive" 0 }
+ 		gene_additive_animations_fat={ "fat_additive" 17 "fat_additive" 0 }
  		gene_additive_animations_dwarf={ "dwarf_additive" 0 "dwarf_additive" 0 }
- 		gene_retargeting_fix={ "female_prop" 255 "female_prop" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
 	entity={ 1083207840 1083207840 }

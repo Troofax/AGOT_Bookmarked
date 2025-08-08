@@ -2,7 +2,7 @@
 # History database id:Baratheon_7
 bookmark_298_tommen_baratheon={
 	type=boy
-	id=107832
+	id=107924
 	random_seed=1891335821
 	age=0.080000
 	genes={ 		hair_color={ 214 14 214 14 }
@@ -97,7 +97,7 @@ bookmark_298_tommen_baratheon={
  		expression_other={ "cheek_wrinkles_both_01" 85 "cheek_wrinkles_both_01" 85 }
  		complexion={ "complexion_12" 0 "complexion_12" 0 }
  		gene_height={ "normal_height" 137 "normal_height" 137 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 126 }
  		gene_bs_body_shape={ "body_shape_average" 70 "body_shape_average" 51 }
  		gene_bs_bust={ "bust_clothes" 62 "bust_shape_1_half" 78 }
  		gene_age={ "old_1" 148 "old_1" 148 }

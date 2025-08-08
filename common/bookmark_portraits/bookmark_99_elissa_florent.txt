@@ -2,7 +2,7 @@
 # History database id:Florent_22
 bookmark_99_elissa_florent={
 	type=female
-	id=10392
+	id=10403
 	random_seed=4273823064
 	age=0.290000
 	genes={ 		hair_color={ 230 233 230 233 }
@@ -93,12 +93,12 @@ bookmark_99_elissa_florent={
  		face_detail_temple_def={ "temple_def" 217 "temple_def" 217 }
  		expression_brow_wrinkles={ "brow_wrinkles_02" 68 "brow_wrinkles_02" 68 }
  		expression_eye_wrinkles={ "eye_wrinkles_03" 122 "eye_wrinkles_03" 122 }
- 		expression_forehead_wrinkles={ "forehead_wrinkles_02" 255 "forehead_wrinkles_02" 125 }
+ 		expression_forehead_wrinkles={ "forehead_wrinkles_02" 125 "forehead_wrinkles_02" 125 }
  		expression_other={ "cheek_wrinkles_both_01" 0 "cheek_wrinkles_both_01" 0 }
  		complexion={ "complexion_22" 115 "complexion_22" 115 }
  		gene_height={ "normal_height" 127 "normal_height" 127 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 114 "body_fat_head_fat_low" 122 }
- 		gene_bs_body_shape={ "body_shape_hourglass_half" 31 "body_shape_hourglass_half" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 122 "body_fat_head_fat_low" 122 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_half" 3 "body_shape_hourglass_half" 0 }
  		gene_bs_bust={ "bust_clothes" 115 "bust_shape_3_full" 144 }
  		gene_age={ "old_4" 22 "old_4" 22 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 231 "avg_spacing_lower_thickness" 231 }
@@ -205,7 +205,7 @@ bookmark_99_elissa_florent={
  		headgear={ "agot_crowns" 206 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
-	entity={ 2678666023 2678666023 }
+	entity={ 3942081117 3942081117 }
 	tags={ {
 			hash=2125534279
 			invert=no

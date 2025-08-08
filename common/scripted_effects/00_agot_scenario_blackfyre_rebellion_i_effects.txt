@@ -268,11 +268,15 @@ agot_8195_3_7_br_i_scenario_setup = {
 	##### SCENARIO STORY CYCLE SETUP #####
 	#title:d_the_blackwater_rush.holder = {
 	#	create_story = { # Initialize Blackfyre Rebellion # TODO
-	#		type = story_agot_scenario_rr
-	#		save_scope_as = scenario_rr_story
+	#		type = story_agot_scenario_br1
+	#		save_scope_as = scenario_br1_story
 	#	}
-	#	scope:scenario_rr_story = { # TODO
-	#		set_variable = { name = agot_rr_linked_war value = scope:current_war }
+	#	scope:scenario_br1_story = { # TODO
+	#		set_variable = { name = agot_br1_linked_war value = scope:current_war }
+	#		set_variable = {
+	#			name	= agot_br1_war_status
+	#			value	= flag:ongoing
+	#		}
 	#	}
 	#}
 	#######

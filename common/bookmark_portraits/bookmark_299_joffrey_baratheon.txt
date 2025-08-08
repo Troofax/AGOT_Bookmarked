@@ -2,7 +2,7 @@
 # History database id:Baratheon_5
 bookmark_299_joffrey_baratheon={
 	type=boy
-	id=107074
+	id=107165
 	random_seed=2840729241
 	age=0.130000
 	genes={ 		hair_color={ 201 7 0 0 }
@@ -97,7 +97,7 @@ bookmark_299_joffrey_baratheon={
  		expression_other={ "cheek_wrinkles_both_01" 133 "nose_wrinkles_01" 124 }
  		complexion={ "complexion_44" 0 "complexion_9" 0 }
  		gene_height={ "normal_height" 144 "normal_height" 126 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 126 }
  		gene_bs_body_shape={ "body_shape_hourglass_full" 31 "body_shape_hourglass_full" 50 }
  		gene_bs_bust={ "bust_clothes" 123 "bust_shape_3_full" 156 }
  		gene_age={ "old_beauty_1" 148 "old_beauty_1" 148 }
@@ -109,7 +109,7 @@ bookmark_299_joffrey_baratheon={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 14 "normal_eyelashes" 0 }
+ 		eyelashes_accessory={ "dark_eyelashes" 8 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -191,7 +191,7 @@ bookmark_299_joffrey_baratheon={
  		legwear={ "agot_boots_legwear" 97 "all_legwear" 0 }
  		beards={ "no_beard" 0 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 110 "all_hairstyles" 0 }
+ 		hairstyles={ "all_hairstyles" 95 "all_hairstyles" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }

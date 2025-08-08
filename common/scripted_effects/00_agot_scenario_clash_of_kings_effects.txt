@@ -275,12 +275,12 @@ agot_8299_6_13_acok_scenario_setup = {
 	#title:e_the_iron_throne.holder = {
 	#	create_story = { # Initialize A Clash of Kings # TODO
 	#		type = story_agot_scenario_acok
-	#		save_scope_as = scenario_rr_story
+	#		save_scope_as = scenario_acok_story
 	#	}
 	#	scope:scenario_acok_story = { # TODO
 	#		set_variable = { name = agot_rr_linked_war value = scope:current_war }
 	#		set_variable = {
-	#			name	= agot_acok_wars_status
+	#			name	= agot_acok_war_status
 	#			value	= flag:ongoing
 	#		}
 	#	}

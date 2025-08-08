@@ -2,7 +2,7 @@
 # History database id:Baratheon_6
 bookmark_299_myrcella_baratheon={
 	type=girl
-	id=107674
+	id=107765
 	random_seed=2672320258
 	age=0.090000
 	genes={ 		hair_color={ 181 51 198 28 }
@@ -97,8 +97,8 @@ bookmark_299_myrcella_baratheon={
  		expression_other={ "cheek_wrinkles_both_01" 104 "nose_wrinkles_01" 124 }
  		complexion={ "complexion_13" 0 "complexion_12" 163 }
  		gene_height={ "normal_height" 136 "normal_height" 140 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 126 }
- 		gene_bs_body_shape={ "body_shape_hourglass_full" 19 "body_shape_average" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 126 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_full" 31 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 41 "bust_shape_3_full" 124 }
  		gene_age={ "old_beauty_1" 148 "old_beauty_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 150 "avg_spacing_lower_thickness" 212 }
