@@ -204,7 +204,6 @@ bookmark_298_asha_greyjoy={
  		clothes={ "ironborn_war_nobility_clothes" 255 "most_clothes" 0 }
  		headgear={ "no_headgear" 185 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
- 		props_right={ "ep2_northern_mace" 135 "no_props" 0 }
  		gene_additive_animations_fat={ "fat_additive" 17 "fat_additive" 0 }
  		gene_additive_animations_dwarf={ "dwarf_additive" 0 "dwarf_additive" 0 }
  		gene_retargeting_fix={ "female_prop" 255 "female_prop" 0 }

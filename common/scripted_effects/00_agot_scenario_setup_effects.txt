@@ -89,3 +89,12 @@ agot_historical_scenario_setup = {
 		agot_8300_3_1_affc_scenario_setup = yes
 	}
 }
+
+agot_sandbox_scenario_setup = {
+	if = { # 8282.9.15 Robert's Rebellion
+		limit = { game_start_date = 8282.9.15 }
+
+		#This is too tangled in story cycle to extract
+		agot_8282_9_15_rr_scenario_setup = yes
+	}
+}
