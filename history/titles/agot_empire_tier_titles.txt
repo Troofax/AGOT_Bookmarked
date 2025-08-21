@@ -1,10 +1,11 @@
 ﻿# The Seven Kingdoms
 e_the_iron_throne = {
-	# AGOT Bookmarked Added
+	# AGOT Bookmarked Modified
+	# 7999.4.1 = {
 	7998.1.1 = {
-		holder = Targaryen_27
+		holder = Targaryen_27	 # Aegon I 'the Conqueror'
+		# law = slavery_0
 		effect = {
-			set_variable = kingsguard
 			agot_set_empire_tier_realm_paramountcy = yes
 			if = {	# Set Court Language to Common
 				limit = {
@@ -19,32 +20,13 @@ e_the_iron_throne = {
 					}
 				}
 			}
-		}
-	}
-	# AGOT Bookmarked Disabled
-	# 7999.4.1 = {
-		# holder = Targaryen_27	 # Aegon I 'the Conqueror'
-		#law = slavery_0
-		# effect = { # AGOT TODO
-			# agot_set_empire_tier_realm_paramountcy = yes
-			# if = {	# Set Court Language to Common
-				# limit = {
-					# exists = holder
-					# has_dlc_feature = royal_court
-				# }
-				# holder = {
-					# set_court_language = language_common
-					# if = {
-						# limit = { NOT = { knows_court_language_of = this } }
-						# learn_court_language_of = this
-					# }
-				# }
-			# }
 			# set_global_flag = e_iron_throne_created
 			# set_title_flag = aegons_crown #record which crowns have been forged for crown forgin event
 			# holder_scope = { add_character_flag = iron_throne_crown_event }
-		# }
-	# }
+			# AGOT Bookmarked Added
+			set_variable = kingsguard
+		}
+	}
 	# 8001.6.1 = { # AGOT TODO
 		# reset_name = yes
 		# reset_adjective = yes
@@ -636,21 +618,11 @@ e_the_north = {
 	8000.12.1 = {
 		holder = 0
 	}
-	# AGOT Bookmarked Modified
-	# 8299.1.16 = {
-		# holder = Stark_6 #Robb Stark
-		# effect = { # AGOT TODO
-			# # AGOT Bookmarked Added
-			# if = {
-				# limit = { character:Stark_6 = { is_alive = yes } }
-				# agot_set_empire_tier_realm_paramountcy = yes
-			# }
-		# }
-	# }
-	8298.12.20 = {
+	8299.1.16 = {
 		holder = Stark_6 #Robb Stark
 		effect = { # AGOT TODO
-			# AGOT Bookmarked Added
+			# AGOT Bookmarked Modified
+			# agot_set_empire_tier_realm_paramountcy = yes
 			if = {
 				limit = { character:Stark_6 = { is_alive = yes } }
 				agot_set_empire_tier_realm_paramountcy = yes

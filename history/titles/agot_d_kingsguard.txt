@@ -1,16 +1,11 @@
 ﻿d_kingsguard = {
-	# AGOT Bookmarked Added
+	# AGOT Bookmarked Modified
+	# 8010.1.1 = {
 	7998.1.2 = {
 		liege = e_the_iron_throne
 		government = kingsguard_government
 		holder = Velaryon_15 # Corlys Velaryon
 	}
-	# AGOT Bookmarked Disabled
-	# 8010.1.1 = {
-		# liege = e_the_iron_throne
-		# government = kingsguard_government
-		# holder = Velaryon_15 # Corlys Velaryon
-	# }
 	8030.1.1 = {
 		holder = Errol_12 #Serwyn Errol
 	}

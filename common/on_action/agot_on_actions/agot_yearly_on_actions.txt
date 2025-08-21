@@ -212,21 +212,7 @@ agot_banking = {
 
 agot_yearly_high_val_conversion = {
 	effect = {
-		if = {
-			limit = {
-				is_lowborn = yes
-				has_culture = culture:high_valyrian
-				#stop bastards from getting converted before they are assigned a house
-				trigger_if = {
-					limit = {
-						exists = mother
-						exists = mother.dynasty
-					}
-					NOT = { mother.culture = culture:high_valyrian }
-				}
-			}
-			set_culture = culture:westerosi_valyrian
-		}
+		agot_high_valyrian_conversion = yes
 	}
 }
 

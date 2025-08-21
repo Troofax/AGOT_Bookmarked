@@ -795,16 +795,15 @@ d_sharp_point = {
 	8002.1.1 = {
 		holder = Bar_Emmon_14
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		liege = k_dragonstone
-		de_jure_liege = k_dragonstone
-	}
-	# AGOT Bookmarked Disabled
+	# AGOT Bookmarked Modified
 	# 7999.4.1 = {
 		# liege = k_dragonstone
 		# de_jure_liege = k_dragonstone
 	# }
+	7998.1.1 = {
+		liege = k_dragonstone
+		de_jure_liege = k_dragonstone
+	}
 	8031.1.1 = {
 		holder = Bar_Emmon_16
 	}

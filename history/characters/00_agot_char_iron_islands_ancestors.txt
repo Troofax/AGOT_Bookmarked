@@ -1195,6 +1195,8 @@ Hoare_18 = {
 		trait = blind
 		trait = disfigured
 		trait = mute # Tongue removed
+		make_trait_inactive = visible_disfigurement_3
+		add_character_modifier = wearing_disfigurement_mask_modifier
 	}
 	7622.1.1 = {
 		death = {
@@ -1232,6 +1234,7 @@ Hoare_19 = {
 	7622.1.1 = {
 		trait = blind
 		trait = disfigured # Lips, ears, eyelids and tongue removed
+		make_trait_inactive = visible_disfigurement_3
 		death = {
 			death_reason = death_execution
 			killer = Crakehall_13 # Aubrey Crakehall

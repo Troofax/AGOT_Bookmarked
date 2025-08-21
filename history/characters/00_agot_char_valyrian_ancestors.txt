@@ -2789,8 +2789,8 @@ Targaryen_63 = {
 	}
 	8114.2.9 = {
 		add_spouse = Velaryon_35 # Laenor Velaryon
+		trait = vengeful
 		effect = {
-			add_trait = patient
 			remove_nickname = yes
 			if = {
 				limit = { character:Strong_30 = { is_alive = yes } }
@@ -3004,10 +3004,6 @@ Targaryen_63 = {
 		effect = {
 			add_trait = kinslayer_2 # Maelor Targaryen (blamed)
 		}
-	}
-	8130.4.28 = { # First Battle of Tumbleton
-		effect = { remove_trait = patient }
-		trait = paranoid
 	}
 	8130.10.8 = { # Death of Helaena
 		trait = kinslayer_3 # Helaena committed "suicide"
@@ -4218,6 +4214,7 @@ Targaryen_82 = {
 	intrigue = 2
 	stewardship = 2
 	learning = 8
+	prowess = 0
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -5284,7 +5281,7 @@ Targaryen_94 = {
 	8176.8.1 = { trait = gregarious }
 	8178.8.1 = { trait = brave }
 	8180.8.1 = { trait = honest }
-	8182.12.11 = { # Aegon give him Blackfyre
+	8182.12.11 = { # Aegon gives him Blackfyre
 		trait = knight
 		effect = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Targaryen_88 } # Aegon IV Targaryen
@@ -5296,9 +5293,9 @@ Targaryen_94 = {
 		give_nickname = nick_agot_historical_the_black_dragon
 	}
 	8184.1.1 = { # Legitimised on death bed
-		trait = education_martial_prowess_4
 		remove_character_flag = unlegitimize_on_load
 		effect = {
+			add_trait = education_martial_prowess_4
 			add_pressed_claim = title:e_the_iron_throne
 			add_pressed_claim = title:k_the_crownlands
 			add_pressed_claim = title:d_kings_landing
@@ -5340,6 +5337,8 @@ Targaryen_94 = {
 	}
 	8190.1.1 = {
 		effect = {
+			remove_trait = education_martial_prowess_4
+			add_trait = education_martial_prowess_5
 			if = {
 				limit = { character:Ball_23 = { is_alive = yes } }
 				set_relation_friend = character:Ball_23 # Quentyn Fireball
@@ -5556,6 +5555,7 @@ Targaryen_96 = {
 	8195.1.1 = {
 		trait = knight
 		trait = spider
+		add_trait = education_martial_prowess_4
 	}
 	8195.3.7 = {
 		effect = { # Master of Whisperers
@@ -8666,19 +8666,7 @@ Velaryon_15 = {
 	}
 	7992.1.1 = { religion = fots_seven }
 	7996.1.1 = { trait = content }
-	# AGOT Bookmarked Added
-	7998.1.2 = {
-		trait = knight
-		effect = {
-			agot_join_kingsguard_char_history_effect = { # Original Kingsguard
-				KING = character:Targaryen_27 # Aegon I Targaryen
-			}
-			agot_lc_kingsguard_char_history_effect = { # Original Lord Commander of the Kingsguard
-				KING = character:Targaryen_27 # Aegon I Targaryen
-			}
-		}
-	}
-	# AGOT Bookmarked Disabled
+	# AGOT Bookmarked Modified
 	# 8001.1.1 = { trait = knight }
 	# 8010.1.1 = {
 		# effect = {
@@ -8690,6 +8678,17 @@ Velaryon_15 = {
 			# }
 		# }
 	# }
+	7998.1.2 = {
+		trait = knight
+		effect = {
+			agot_join_kingsguard_char_history_effect = { # Original Kingsguard
+				KING = character:Targaryen_27 # Aegon I Targaryen
+			}
+			agot_lc_kingsguard_char_history_effect = { # Original Lord Commander of the Kingsguard
+				KING = character:Targaryen_27 # Aegon I Targaryen
+			}
+		}
+	}
 	8030.1.1 = {
 		trait = kingsguard # Successor: Davos Darklyn; Next Lord Commander: Serwyn Errol
 		death = yes
@@ -14679,15 +14678,7 @@ Grand_Maester_1 = {
 		trait = archmaester
 		effect = { make_trait_inactive = archmaester_bronze }
 	}
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		employer = Targaryen_27 # Aegon I Targaryen
-		effect = {
-			remove_trait = archmaester_bronze
-			make_trait_inactive = grandmaester
-		}
-	}
-	# AGOT Bookmarked Disabled
+	# AGOT Bookmarked Modified
 	# 8005.1.1 = {
 		# employer = Targaryen_27 # Aegon I Targaryen
 		# effect = {
@@ -14695,6 +14686,13 @@ Grand_Maester_1 = {
 			# make_trait_inactive = grandmaester
 		# }
 	# }
+	7998.1.1 = {
+		employer = Targaryen_27 # Aegon I Targaryen
+		effect = {
+			remove_trait = archmaester_bronze
+			make_trait_inactive = grandmaester
+		}
+	}
 	8005.10.1 = { death = yes }
 }
 Grand_Maester_2 = {
@@ -17214,6 +17212,9 @@ Targaryen_hh_7 = {
 		trait = poet
 		trait = loyal
 		trait = disfigured
+		make_trait_inactive = visible_disfigurement_4
+		add_character_flag = disfigurement_fully_masked
+		add_character_modifier = wearing_disfigurement_mask_modifier
 		give_nickname = nick_agot_historical_the_shadow_sandoq
 	}
 	8125.1.1 = {

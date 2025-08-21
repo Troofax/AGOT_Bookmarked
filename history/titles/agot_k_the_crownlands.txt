@@ -1,14 +1,13 @@
 ﻿k_the_crownlands = {
-	# AGOT Bookmarked Added
-	7998.1.1 = {
-		holder = Targaryen_27
-		liege = e_the_iron_throne
-	}
-	# AGOT Bookmarked Disabled
+	# AGOT Bookmarked Modified
 	# 7999.4.1 = {
 		# holder = Targaryen_27
 		# liege = e_the_iron_throne
 	# }
+	7998.1.1 = {
+		holder = Targaryen_27
+		liege = e_the_iron_throne
+	}
 	8037.9.9 = {
 		holder = Targaryen_30
 	}
