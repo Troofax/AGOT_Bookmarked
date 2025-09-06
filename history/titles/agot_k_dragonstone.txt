@@ -797,9 +797,6 @@ d_sharp_point = {
 	}
 	# AGOT Bookmarked Modified
 	# 7999.4.1 = {
-		# liege = k_dragonstone
-		# de_jure_liege = k_dragonstone
-	# }
 	7998.1.1 = {
 		liege = k_dragonstone
 		de_jure_liege = k_dragonstone

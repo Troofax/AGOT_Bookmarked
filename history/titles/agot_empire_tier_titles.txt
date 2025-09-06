@@ -4,7 +4,7 @@ e_the_iron_throne = {
 	# 7999.4.1 = {
 	7998.1.1 = {
 		holder = Targaryen_27	 # Aegon I 'the Conqueror'
-		# law = slavery_0
+		#law = slavery_0
 		effect = {
 			agot_set_empire_tier_realm_paramountcy = yes
 			if = {	# Set Court Language to Common
@@ -468,7 +468,7 @@ e_the_iron_islands = {
 	7880.1.1 = {
 		holder = Hoare_25 # Qhorwyn
 	}
-	7901.1.3 = {
+	7904.1.3 = {
 		holder = Hoare_28 # Harwyn
 	}
 	7943.1.1 = {
@@ -1285,16 +1285,16 @@ e_the_riverlands = {
 		holder = Teague_6 	 # Humfrey (C)
 	}
 	7680.1.1 = {
-		holder = Teague_8 	 # Humfrey II( C)
+		holder = Teague_8 	 # Humfrey II (C)
 	}
 	7680.1.2 = {
-		holder = Teague_9 	 # Hollis ( C)
+		holder = Teague_9 	 # Hollis (C)
 	}
 	7680.1.3 = {
-		holder = Teague_10 	 # Tyler C)
+		holder = Teague_10 	 # Tyler (C)
 	}
 	7680.1.4 = {
-		holder = Teague_7 	 # Damon( C)
+		holder = Teague_7 	 # Damon (C)
 	}
 
 	#Durrandons of the Stormlands
@@ -1329,7 +1329,7 @@ e_the_riverlands = {
 		holder = Durrandon_81 # Arrec III
 	}
 	#Hoares of the Iron Islands conquer Riverlands
-	7902.1.1 = {
+	7905.1.1 = {
 		holder = Hoare_28 # Harwyn
 		succession_laws = { male_only_law }
 	}

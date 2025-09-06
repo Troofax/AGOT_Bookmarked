@@ -32,7 +32,7 @@
 			}
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
-			destroy_landless_title_no_dlc_effect = { DATE = 7900.1.1  }
+			destroy_landless_title_no_dlc_effect = { DATE = 7900.1.1 }
 		}
 	}
 	7900.1.1 = {
@@ -59,7 +59,7 @@ d_laamp_Mataeryon_1 = {
 			}
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
-			destroy_landless_title_no_dlc_effect = { DATE = 7900.1.1  }
+			destroy_landless_title_no_dlc_effect = { DATE = 7900.1.1 }
 		}
 	}
 	7900.1.1 = {
@@ -86,7 +86,7 @@ d_laamp_Urnebar_1 = { #Tyroshi Dragonlord
 			}
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
-			destroy_landless_title_no_dlc_effect = { DATE = 7900.1.1  }
+			destroy_landless_title_no_dlc_effect = { DATE = 7900.1.1 }
 		}
 	}
 	7900.1.1 = {
@@ -113,7 +113,7 @@ d_laamp_Sonaryen_1 = { #Lyseni Dragonlord
 			}
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
-			destroy_landless_title_no_dlc_effect = { DATE = 7900.1.1  }
+			destroy_landless_title_no_dlc_effect = { DATE = 7900.1.1 }
 		}
 	}
 	7900.1.1 = {

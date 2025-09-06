@@ -137,6 +137,8 @@ game_rule.1001 = { #by Mathilda Bjarnehed
 		#AGOT Added, Only enable this for wildlings with tribal government
 		government_has_flag = government_is_tribal
 		culture = { agot_is_wildling_culture = yes }
+		NOT = { has_character_flag = canon_status_canon }
+		NOT = { has_character_flag = canon_status_semicanon }
 	}
 
 

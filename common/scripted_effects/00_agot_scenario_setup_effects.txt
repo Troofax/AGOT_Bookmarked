@@ -21,6 +21,7 @@ agot_historical_scenario_setup = {
 				# equip_artifact_to_owner_replace = yes
 			# }
 		# }
+		# AGOT Bookmarked Added
 		agot_8129_4_1_dotd_scenario_setup = yes
 	}
 	else_if = { # 8170.12.11 Titan Marches

@@ -2603,9 +2603,7 @@ Targaryen_61 = {
 			if = {
 				limit = { character:Targaryen_hh_3 = { is_alive = yes } }
 				set_relation_friend = character:Targaryen_hh_3 # Mysaria the White Worm
-			}
-			agot_safe_paramour_history_effect = {
-				TARGET = character:Targaryen_hh_3 # Mysaria the White Worm
+				set_relation_lover = character:Targaryen_hh_3 # Mysaria the White Worm
 			}
 		}
 	}
@@ -2641,6 +2639,14 @@ Targaryen_61 = {
 	8115.4.1 = {
 		add_spouse = Velaryon_34 # Laena Velaryon
 		employer = Haratis_8_B # Reggio Haratis, Pentos
+	}
+	8120.1.1 = {
+		effect = {
+			if = {
+				limit = { character:Targaryen_hh_3 = { is_alive = yes } }
+				remove_relation_lover = character:Targaryen_hh_3 # Mysaria the White Worm
+			}
+		}
 	}
 	8120.5.1 = {
 		employer = Targaryen_63 # Rhaenyra Targaryen
@@ -2998,16 +3004,6 @@ Targaryen_63 = {
 				}
 			}
 		}
-	}
-	8130.3.10 = { # Death of Maelor Targaryen
-		trait = murderer # Maelor Targaryen (blamed)
-		effect = {
-			add_trait = kinslayer_2 # Maelor Targaryen (blamed)
-		}
-	}
-	8130.10.8 = { # Death of Helaena
-		trait = kinslayer_3 # Helaena committed "suicide"
-		effect = { remove_trait = kinslayer_2 }
 	}
 	8130.10.9 = { # Death of Joffrey Velaryon
 		effect = {
@@ -5619,6 +5615,7 @@ Targaryen_97 = {
 
 	religion = fots_seven
 	culture = high_valyrian
+	sexuality = heterosexual
 
 	father = Targaryen_88
 	mother = Sellos_56 # Serenei of Lys
@@ -5637,6 +5634,8 @@ Targaryen_97 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = unlegitimize_on_load
+		add_character_flag = sexuality_ensure_not_homosexual
+		add_character_flag = sexuality_ensure_not_asexual
 		effect = {
 			make_trait_inactive = heterochromia_blue2
 			make_trait_inactive = surname_waters
@@ -5668,7 +5667,7 @@ Targaryen_97 = {
 	8211.1.1 = { employer = Targaryen_108 } # Aerys I Targaryen
 	8225.1.1 = { death = yes }
 }
-### Issue of Dareon II
+### Issue of Daeron II
 Targaryen_107 = {
 	name = Baelor # Canon, AKA: Baelor Breakspear
 	dynasty = dynn_Targaryen
@@ -7772,17 +7771,7 @@ Brightflame_2 = {
 		remove_character_flag = unlegitimize_on_load
 	}
 	8233.1.1 = { trait = knight }
-	8237.1.1 = { add_spouse = Brightflame_rs_2 }
-	8275.1.1 = { death = yes }
-}
-Brightflame_rs_2 = {
-	name = Elaena
-	female = yes
-
-	religion = fc_pan_lys
-	culture = lyseni
-
-	8216.1.1 = { birth = yes }
+	8237.1.1 = { add_spouse = Forel_76 } # Zabella Forel
 	8275.1.1 = { death = yes }
 }
 Brightflame_8 = {
@@ -7813,17 +7802,7 @@ Brightflame_8 = {
 		remove_character_flag = unlegitimize_on_load
 	}
 	8235.1.1 = { trait = knight }
-	8247.1.1 = { add_spouse = Brightflame_rs_8 }
-	8272.1.1 = { death = yes }
-}
-Brightflame_rs_8 = {
-	name = Daenerys
-	female = yes
-
-	religion = fc_pan_lys
-	culture = lyseni
-
-	8216.1.1 = { birth = yes }
+	8247.1.1 = { add_spouse = Morrigen_56 } # Arrene Morrigen
 	8272.1.1 = { death = yes }
 }
 
@@ -8423,7 +8402,7 @@ Velaryon_7_B = {
 	}
 	7920.1.1 = { death = yes }
 }
-### Main Line
+### Issue of Vaemond and Daenerys
 Velaryon_8 = {
 	name = Daemion # a lord
 	dynasty = dynn_Velaryon
@@ -8442,6 +8421,104 @@ Velaryon_8 = {
 	7901.1.1 = { add_spouse = Celtigar_10_A } # Jenette Celtigar
 	7941.1.1 = { death = yes }
 }
+Velaryon_92 = {
+	name = Maekar
+	dynasty = dynn_Velaryon
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	father = Velaryon_7 # Vaemond Velaryon
+	mother = Velaryon_7_B # Daenerys Velaryon
+
+	7886.1.1 = { birth = yes }
+	7903.1.1 = { add_spouse = Phassios_13 } # Fadrana Phassios
+	7955.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+### Issue of Maekar
+Velaryon_93 = {
+	name = Aenys
+	dynasty = dynn_Velaryon
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	father = Velaryon_92
+	mother = Phassios_13
+
+	7905.1.1 = { birth = yes }
+	7922.1.1 = { add_spouse = Celtigar_74 } # Valaena Celtigar
+	7954.1.1 = { death = yes }
+}
+Velaryon_94 = {
+	name = Vaella # married Crispian Celtigar
+	dynasty = dynn_Velaryon
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	father = Velaryon_92
+	mother = Phassios_13
+
+	7908.1.1 = { birth = yes }
+	7969.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Velaryon_95 = {
+	name = Aerion
+	dynasty = dynn_Velaryon
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	father = Velaryon_92
+	mother = Phassios_13
+
+	7910.1.1 = { birth = yes }
+	7932.1.1 = { add_spouse = Staedmon_15 } # Lynett Staedmon
+	7974.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+### Issue of Aerion
+Velaryon_97 = {
+	name = Rhaelle # married Harpalo Bazanne
+	dynasty = dynn_Velaryon
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	father = Velaryon_95
+	mother = Staedmon_15
+
+	7934.1.1 = { birth = yes }
+	8003.1.1 = {
+		death = { death_reason = death_treatment }
+	}
+}
+### Issue of Aenys
+Velaryon_96 = {
+	name = Elaena # married Errano Rogare
+	dynasty = dynn_Velaryon
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	father = Velaryon_93
+	mother = Celtigar_74
+
+	7925.1.1 = { birth = yes }
+	7983.1.1 = {
+		death = { death_reason = death_heart_attack }
+	}
+}
+### Issue of Daemion
 Velaryon_9 = {
 	name = Monterys # a lord
 	dynasty = dynn_Velaryon
@@ -9186,7 +9263,7 @@ Velaryon_31 = { # Dance of the Dragons
 	8075.1.1 = {
 		give_nickname = nick_agot_historical_the_sea_snake
 		effect = { # Went on great voyages that made him rich
-			add_prestige_level = 1
+			add_prestige_level = 2
 			if = {
 				limit = { NOT = { game_start_date = 8130.1.6 } } # Treasures lost in the Dance
 				add_gold = 2000
@@ -9200,6 +9277,7 @@ Velaryon_31 = { # Dance of the Dragons
 				CASTLE = title:e_the_iron_throne
 				POSITION = councillor_admiral
 			}
+			add_prestige_level = 1
 		}
 	}
 	8126.3.1 = {
@@ -9376,7 +9454,7 @@ Velaryon_35 = {
 		}
 	}
 }
-### Issue of Luceon, nephews to Corlys the Sea Snake
+### Issue of Daemon, nephews to Corlys the Sea Snake
 Velaryon_37 = {
 	name = Vaemond # Canon, protested succession of Driftmark
 	dynasty = dynn_Velaryon
@@ -9414,7 +9492,7 @@ Velaryon_37 = {
 		}
 	}
 }
-### Issue of Daemion, nephews to Corlys the Sea Snake
+### Issue of Monterys, nephews to Corlys the Sea Snake
 Velaryon_38 = {
 	name = Jacaerys # Mentioned
 	dynasty = dynn_Velaryon
@@ -9908,6 +9986,7 @@ Velaryon_71 = {
 	}
 	8142.1.1 = { trait = knight }
 	8144.1.1 = { add_spouse = Velaryon_rs_71 }
+	8151.1.1 = { add_spouse = Cupps_51 } # Daena Cupps
 	8178.1.1 = { death = yes }
 }
 Velaryon_rs_71 = {
@@ -9918,7 +9997,7 @@ Velaryon_rs_71 = {
 	culture = high_valyrian
 
 	8124.1.1 = { birth = yes }
-	8181.1.1 = { death = yes }
+	8150.1.1 = { death = yes }
 }
 Velaryon_49 = {
 	name = Galfrid # Semi-Canon, Kingsguard
@@ -10041,7 +10120,7 @@ Velaryon_51 = {
 	8201.1.1 = { death = yes }
 }
 Velaryon_91 = {
-	name = Visenya # Mentioned, child from Baela's second pregnancy
+	name = Visenya # Mentioned, child from Baela's second pregnancy, married Steffon Stokeworth
 	dynasty = dynn_Velaryon
 	female = yes
 
@@ -10167,21 +10246,11 @@ Velaryon_55 = {
 
 	8173.1.1 = { birth = yes }
 	8193.1.1 = { trait = knight }
-	8198.1.1 = { add_spouse = Velaryon_rs_55 }
+	8198.1.1 = { add_spouse = Cupps_57 } # Ysalaine Cupps
 	8209.9.1 = {
 		trait = spring_sickness
 		death = { death_reason = death_spring_sickness } # Great Spring Sickness
 	}
-}
-Velaryon_rs_55 = {
-	name = Shaena
-	female = yes
-
-	religion = fots_seven
-	culture = high_valyrian
-
-	8182.1.1 = { birth = yes }
-	8202.1.1 = { death = yes }
 }
 ### Issue of Daemon
 Velaryon_64 = {
@@ -10192,7 +10261,7 @@ Velaryon_64 = {
 	culture = high_valyrian
 
 	father = Velaryon_55
-	mother = Velaryon_rs_55
+	mother = Cupps_57
 
 	8200.1.1 = { birth = yes }
 	8220.1.1 = { trait = knight }
@@ -10350,22 +10419,8 @@ Velaryon_70 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	8175.1.1 = { add_matrilineal_spouse = Velaryon_rs_70 }
+	8175.1.1 = { add_matrilineal_spouse = Redwyne_58 } # Paxter Redwyne
 	8211.1.1 = { death = yes }
-}
-Velaryon_rs_70 = {
-	name = Baelon
-	dna = Velaryon_rs_70
-
-	religion = fots_seven
-	culture = high_valyrian
-
-	8151.1.1 = {
-		birth = yes
-		add_character_flag = has_scripted_appearance
-	}
-	8168.1.1 = { trait = knight }
-	8196.1.1 = { death = yes }
 }
 Velaryon_90 = {
 	name = Gael # married Annos Celtigar
@@ -10377,7 +10432,7 @@ Velaryon_90 = {
 	culture = high_valyrian
 
 	father = Velaryon_71
-	mother = Velaryon_rs_71
+	mother = Cupps_51
 
 	8153.1.1 = {
 		birth = yes
@@ -10395,43 +10450,38 @@ Velaryon_67 = {
 	religion = fots_seven
 	culture = high_valyrian
 
-	father = Velaryon_rs_70
+	father = Redwyne_58
 	mother = Velaryon_70
 
 	8179.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	8198.1.1 = { add_matrilineal_spouse = Velaryon_rs_67 }
+	8198.1.1 = { add_matrilineal_spouse = Haratis_87 } # Hyllio Haratis
 	8200.1.1 = { trait = strong }
 	8232.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
-}
-Velaryon_rs_67 = {
-	name = Vaegon
-
-	religion = fots_seven
-	culture = high_valyrian
-
-	8173.1.1 = { birth = yes }
-	8189.1.1 = { trait = knight }
-	8229.1.1 = { death = yes }
 }
 Velaryon_68 = {
 	name = Jaenara
 	dynasty = dynn_Velaryon
 	female = yes
 
+	dna = Velaryon_68
+
 	religion = fots_seven
 	culture = high_valyrian
 
-	father = Velaryon_rs_70
+	father = Redwyne_58
 	mother = Velaryon_70
 
 	trait = physique_bad_1
 
-	8180.1.1 = { birth = yes }
+	8180.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8214.1.1 = {
 		death = { death_reason = death_drank_to_death }
 	}
@@ -10441,13 +10491,18 @@ Velaryon_69 = {
 	name = Aeryn
 	dynasty = dynn_Velaryon
 
+	dna = Velaryon_69
+
 	religion = fots_seven
 	culture = high_valyrian
 
-	father = Velaryon_rs_67
+	father = Haratis_87
 	mother = Velaryon_67
 
-	8200.1.1 = { birth = yes }
+	8200.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8216.1.1 = {
 		death = { death_reason = death_horse_riding_accident }
 	}
@@ -10456,54 +10511,45 @@ Velaryon_72 = {
 	name = Matarys # a lord
 	dynasty = dynn_Velaryon
 
+	dna = Velaryon_72
+
 	religion = fots_seven
 	culture = high_valyrian
 
-	father = Velaryon_rs_67
+	father = Haratis_87
 	mother = Velaryon_67
 
-	8201.1.1 = { birth = yes }
+	8201.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8218.1.1 = { trait = knight }
-	8228.1.1 = { add_spouse = Velaryon_rs_72 }
+	8228.1.1 = { add_spouse = Scales_66 } # Jyana Scales
 	8265.1.1 = {
 		trait = pneumonic
 		death = { death_reason = death_pneumonic }
 	}
-}
-Velaryon_rs_72 = {
-	name = Viserra
-	female = yes
-
-	religion = fots_seven
-	culture = high_valyrian
-
-	8203.1.1 = { birth = yes }
-	8252.1.1 = { death = yes }
 }
 ### Issue of Matarys
 Velaryon_66 = {
 	name = Maegon # a lord
 	dynasty = dynn_Velaryon
 
+	dna = Velaryon_66
+
 	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_72
-	mother = Velaryon_rs_72
+	mother = Scales_66
 
-	8232.1.1 = { birth = yes }
-	8248.1.1 = { add_spouse = Velaryon_rs_66 }
-	8258.1.1 = { trait = knight }
-	8273.1.1 = { death = yes }
-}
-Velaryon_rs_66 = {
-	name = Vaella
-	female = yes
-
-	religion = fots_seven
-	culture = high_valyrian
-
-	8232.1.1 = { birth = yes }
+	8232.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
+	8248.1.1 = { add_spouse = Peasebury_70 } # Daria Peasebury
+	8249.1.1 = { trait = knight }
+	8254.1.1 = { add_spouse = Zheyme_69 } # Arana Zheyme
 	8273.1.1 = { death = yes }
 }
 Velaryon_75 = {
@@ -10511,26 +10557,36 @@ Velaryon_75 = {
 	dynasty = dynn_Velaryon
 	female = yes
 
+	dna = Velaryon_75
+
 	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_72
-	mother = Velaryon_rs_72
+	mother = Scales_66
 
-	8233.1.1 = { birth = yes }
+	8233.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 }
 Velaryon_76 = {
 	name = Rhaenys # married Gulian Quince
 	dynasty = dynn_Velaryon
 	female = yes
 
+	dna = Velaryon_76
+
 	religion = fots_seven
 	culture = high_valyrian
 
 	father = Velaryon_72
-	mother = Velaryon_rs_72
+	mother = Scales_66
 
-	8237.1.1 = { birth = yes }
+	8237.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+	}
 	8278.1.1 = { death = yes }
 }
 
@@ -10551,6 +10607,7 @@ Celtigar_8 = {
 		add_character_flag = has_scripted_appearance
 	}
 	7848.1.1 = { add_spouse = Celtigar_rs_8 }
+	7868.1.1 = { add_spouse = Scales_10 } # Jeyn Scales
 	7883.1.1 = { death = yes }
 }
 Celtigar_rs_8 = {
@@ -10563,6 +10620,7 @@ Celtigar_rs_8 = {
 	7834.1.1 = { birth = yes }
 	7878.1.1 = { death = yes }
 }
+### Issue of Bartimos
 Celtigar_9 = {
 	name = Ardrian # a lord
 	dynasty = dynn_Celtigar
@@ -10578,18 +10636,91 @@ Celtigar_9 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	7879.1.1 = { add_spouse = Celtigar_rs_9 }
+	7879.1.1 = { add_spouse = Dunford_16 } # Elissa Dunford
+	7883.1.1 = { add_spouse = Tudbury_10 } # Malin Tudbury
 	7900.1.1 = { death = yes }
 }
-Celtigar_rs_9 = {
-	name = Shaena
+Celtigar_57 = {
+	name = Elaena # married Ademar Martell
+	dynasty = dynn_Celtigar
 	female = yes
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
+	father = Celtigar_8
+	mother = Celtigar_rs_8
+
+	7856.1.1 = { birth = yes }
+	7916.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Celtigar_65 = {
+	name = Jaehaerys
+	dynasty = dynn_Celtigar
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	father = Celtigar_8
+	mother = Celtigar_rs_8
+
+	7857.1.1 = { birth = yes }
+	7876.1.1 = { add_spouse = Tarth_52 } # Malia Tarth
+	7913.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Celtigar_66 = {
+	name = Rhaegar
+	dynasty = dynn_Celtigar
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	father = Celtigar_8
+	mother = Celtigar_rs_8
+
 	7860.1.1 = { birth = yes }
-	7911.1.1 = { death = yes }
+	7887.1.1 = { add_spouse = Gower_17 } # Joy Gower
+	7927.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+Celtigar_67 = {
+	name = Visenya # married Zaanio Gaergyn
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	father = Celtigar_8
+	mother = Celtigar_rs_8
+
+	7864.1.1 = { birth = yes }
+	7927.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Celtigar_68 = {
+	name = Shaera # married Ladono Haen
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	father = Celtigar_8
+	mother = Celtigar_rs_8
+
+	7867.1.1 = { birth = yes }
+	7920.1.1 = {
+		trait = cancer
+		death = { death_reason = death_cancer }
+	}
 }
 ### Issue of Ardrian
 Celtigar_10 = {
@@ -10601,24 +10732,14 @@ Celtigar_10 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_9
-	mother = Celtigar_rs_9
+	mother = Dunford_16
 
 	7880.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	7902.1.1 = { add_spouse = Celtigar_rs_10 }
+	7902.1.1 = { add_spouse = Redwyne_46 } # Lanette Redwyne
 	7957.1.1 = { death = yes }
-}
-Celtigar_rs_10 = {
-	name = Lianna
-	female = yes
-
-	religion = valyrian_pan_freehold
-	culture = westerosi_valyrian
-
-	7888.1.1 = { birth = yes }
-	7933.1.1 = { death = yes }
 }
 Celtigar_10_A = {
 	name = Jenette # married Daemion Velaryon
@@ -10630,7 +10751,7 @@ Celtigar_10_A = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_9
-	mother = Celtigar_rs_9
+	mother = Tudbury_10
 
 	7883.1.1 = {
 		birth = yes
@@ -10648,24 +10769,128 @@ Celtigar_11 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_10
-	mother = Celtigar_rs_10
+	mother = Redwyne_46
 
 	7905.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	7926.1.1 = { add_spouse = Celtigar_rs_11 }
+	7926.1.1 = { add_spouse = Velaryon_94 } # Vaella Velaryon
 	7968.1.1 = { death = yes }
 }
-Celtigar_rs_11 = {
-	name = Maelane
+### Issue of Rhaegar
+Celtigar_69 = {
+	name = Daeryssa
+	dynasty = dynn_Celtigar
 	female = yes
 
 	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
-	7908.1.1 = { birth = yes }
-	7953.1.1 = { death = yes }
+	father = Celtigar_66
+	mother = Gower_17
+
+	7891.1.1 = { birth = yes }
+	7914.1.1 = {
+		death = { death_reason = death_drowned }
+	}
+}
+### Issue of Jaehaerys
+Celtigar_70 = {
+	name = Aeryn
+	dynasty = dynn_Celtigar
+
+	religion = valyrian_pan_freehold
+	culture = westerosi_valyrian
+
+	father = Celtigar_65
+	mother = Tarth_52
+
+	7879.1.1 = { birth = yes }
+	7898.1.1 = { add_spouse = Ferren_12 } # Arrena Ferren
+	7920.1.1 = { death = yes }
+}
+Celtigar_71 = {
+	name = Helaena # married Phario Phalys
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = westerosi_valyrian
+
+	father = Celtigar_65
+	mother = Tarth_52
+
+	7880.1.1 = { birth = yes }
+	7946.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+Celtigar_72 = {
+	name = Daeryssa # married Silvario Moratyr
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = westerosi_valyrian
+
+	father = Celtigar_65
+	mother = Tarth_52
+
+	7881.1.1 = { birth = yes }
+	7944.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+### Issue of Aeryn
+Celtigar_73 = {
+	name = Maekar
+	dynasty = dynn_Celtigar
+
+	religion = valyrian_pan_freehold
+	culture = westerosi_valyrian
+
+	father = Celtigar_70
+	mother = Ferren_12
+
+	7899.1.1 = { birth = yes }
+	7920.1.1 = { add_spouse = Cupps_61 } # Sansara Cupps
+	7949.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+Celtigar_74 = {
+	name = Valaena # married Aenys Velaryon
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = westerosi_valyrian
+
+	father = Celtigar_70
+	mother = Ferren_12
+
+	7900.1.1 = { birth = yes }
+	7960.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+### Issue of Maekar
+Celtigar_75 = {
+	name = Helaena # married Rolland Caron
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = westerosi_valyrian
+
+	father = Celtigar_73
+	mother = Cupps_61
+
+	7921.1.1 = { birth = yes }
+	7949.1.1 = {
+		death = { death_reason = death_fall }
+	}
 }
 ### Issue of Crispian
 Celtigar_12 = {
@@ -10678,7 +10903,7 @@ Celtigar_12 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_11
-	mother = Celtigar_rs_11
+	mother = Velaryon_94
 
 	7928.1.1 = {
 		birth = yes
@@ -10695,28 +10920,15 @@ Celtigar_13 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_11
-	mother = Celtigar_rs_11
+	mother = Velaryon_94
 
 	7930.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	7946.1.1 = { add_spouse = Celtigar_rs_13 }
+	7946.1.1 = { add_spouse = Combe_8 } # Margaery Combe
+	7960.1.1 = { add_spouse = Wormwood_48 } # Obany Wormwood
 	7980.1.1 = { death = yes }
-}
-Celtigar_rs_13 = {
-	name = Orella
-	female = yes
-	dna = Celtigar_rs_13
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	7930.1.1 = {
-		birth = yes
-		add_character_flag = has_scripted_appearance
-	}
-	7987.1.1 = { death = yes }
 }
 ### Issue of Terrence
 Celtigar_15 = {
@@ -10730,7 +10942,7 @@ Celtigar_15 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_13
-	mother = Celtigar_rs_13
+	mother = Combe_8
 
 	trait = education_stewardship_3
 
@@ -10739,7 +10951,7 @@ Celtigar_15 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
-	7969.1.1 = { add_spouse = Celtigar_rs_15 }
+	7969.1.1 = { add_spouse = Massey_94 } # Myrena Massey
 	7998.1.1 = {
 		effect = { # Master of Coin
 			agot_appoint_as_councillor_for_castle_history_effect = {
@@ -10759,20 +10971,6 @@ Celtigar_15 = {
 	8000.1.1 = { trait = knight }
 	8006.1.1 = { death = yes }
 }
-Celtigar_rs_15 = {
-	name = Jeyne
-	female = yes
-	dna = Celtigar_rs_15
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	7951.1.1 = {
-		birth = yes
-		add_character_flag = has_scripted_appearance
-	}
-	8006.1.1 = { death = yes }
-}
 Celtigar_14 = {
 	name = Alysanne # married Rhogar Velaryon
 	dynasty = dynn_Celtigar
@@ -10783,7 +10981,7 @@ Celtigar_14 = {
 	culture = high_valyrian
 
 	father = Celtigar_13
-	mother = Celtigar_rs_13
+	mother = Combe_8
 
 	trait = beauty_good_1
 
@@ -10793,6 +10991,142 @@ Celtigar_14 = {
 	}
 	7968.1.1 = { trait = arrogant }
 	8004.1.1 = { death = yes }
+}
+Celtigar_76 = {
+	name = Jorgen
+	dynasty = dynn_Celtigar
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_13
+	mother = Wormwood_48
+
+	7961.1.1 = { birth = yes }
+	7978.1.1 = { trait = knight }
+	7979.1.1 = { add_spouse = Scales_26 } # Amaena Scales
+	8014.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+Celtigar_77 = {
+	name = Quenton
+	dynasty = dynn_Celtigar
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_13
+	mother = Wormwood_48
+
+	7963.1.1 = { birth = yes }
+	7980.1.1 = { add_spouse = Cupps_41 } # Elara Cupps
+	7982.1.1 = { trait = knight }
+	8013.1.1 = { death = yes }
+}
+Celtigar_78 = {
+	name = Prunella # married Morgo Adarys
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_13
+	mother = Wormwood_48
+
+	7964.1.1 = { birth = yes }
+	8016.1.1 = {
+		death = { death_reason = death_drank_to_death }
+	}
+}
+### Issue of Jorgen
+Celtigar_80 = {
+	name = Jacaerys
+	dynasty = dynn_Celtigar
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_76
+	mother = Scales_26
+
+	7980.1.1 = { birth = yes }
+	7997.1.1 = { add_spouse = Cupps_33 } # Elara Cupps
+	7997.1.1 = { trait = knight }
+	8036.1.1 = {
+		trait = consumption
+		death = { death_reason = death_consumption }
+	}
+}
+Celtigar_81 = {
+	name = Prunella
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_76
+	mother = Scales_26
+
+	7984.1.1 = { birth = yes }
+	8007.1.1 = {
+		death = { death_reason = death_treatment }
+	}
+}
+Celtigar_82 = {
+	name = Daenaera # married Rolland Scales
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_76
+	mother = Scales_26
+
+	7986.1.1 = { birth = yes }
+	8050.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+### Issue of Jacaerys
+Celtigar_83 = {
+	name = Gargon
+	dynasty = dynn_Celtigar
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_80
+	mother = Cupps_33
+
+	8000.1.1 = { birth = yes }
+	8016.1.1 = { add_spouse = Potter_25 } # Eldara Potter
+	8018.1.1 = { trait = knight }
+	8060.1.1 = {
+		death = { death_reason = death_heart_attack }
+	}
+}
+### Issue of Quenton
+Celtigar_79 = {
+	name = Syrella # married Nenio Targrave
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_77
+	mother = Cupps_41
+
+	7981.1.1 = { birth = yes }
+	8016.1.1 = {
+		death = { death_reason = death_drank_to_death }
+	}
 }
 ### Issue of Crispian
 Celtigar_16 = {
@@ -10806,7 +11140,7 @@ Celtigar_16 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_15
-	mother = Celtigar_rs_15
+	mother = Massey_94
 
 	trait = education_stewardship_3
 	trait = diligent
@@ -10836,7 +11170,7 @@ Celtigar_17 = {
 	dna = Celtigar_17
 
 	father = Celtigar_15
-	mother = Celtigar_rs_15
+	mother = Massey_94
 
 	religion = fots_seven
 	culture = westerosi_valyrian
@@ -11000,7 +11334,57 @@ Celtigar_21 = {
 	}
 	8064.1.1 = { death = yes }
 }
-### Main Line
+### Issue of Gargon
+Celtigar_84 = {
+	name = Victor # married Belandra Curaze
+	dynasty = dynn_Celtigar
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_83
+	mother = Potter_25
+
+	8020.1.1 = { birth = yes }
+	8038.1.1 = { trait = knight }
+	8066.1.1 = {
+		death = { death_reason = death_murder }
+	}
+}
+Celtigar_85 = {
+	name = Laena # married Tyros Rotilys
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_83
+	mother = Potter_25
+
+	8022.1.1 = { birth = yes }
+	8062.1.1 = {
+		death = { death_reason = death_tumultuous_guts }
+	}
+}
+Celtigar_86 = {
+	name = Syrella
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_83
+	mother = Potter_25
+
+	8023.1.1 = { birth = yes }
+	8090.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+### Issue of Arthor
 Celtigar_22 = {
 	name = Rolland # a lord
 	dynasty = dynn_Celtigar
@@ -11017,21 +11401,44 @@ Celtigar_22 = {
 		add_character_flag = has_scripted_appearance
 	}
 	8065.1.1 = { trait = drunkard }
-	8065.1.1 = { add_spouse = Celtigar_rs_22 }
+	8065.1.1 = { add_spouse = Grandison_56 } # Olyssa Grandison
 	8087.1.1 = {
 		death = { death_reason = death_ill }
 	}
 }
-Celtigar_rs_22 = {
-	name = Elleria
+Celtigar_87 = {
+	name = Jeyne # married Gorlas Rotilys
+	dynasty = dynn_Celtigar
 	female = yes
 
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	8046.1.1 = { birth = yes }
-	8090.1.1 = { death = yes }
+	father = Celtigar_19
+	mother = Massey_32
+
+	8049.1.1 = { birth = yes }
+	8116.1.1 = {
+		death = { death_reason = death_horse_riding_accident }
+	}
 }
+Celtigar_88 = {
+	name = Laena # married Oro Zalyne
+	dynasty = dynn_Celtigar
+	female = yes
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_19
+	mother = Massey_32
+
+	8050.1.1 = { birth = yes }
+	8100.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+### Issue of Rolland
 Celtigar_23 = {
 	name = Harrold # a lord
 	dynasty = dynn_Celtigar
@@ -11041,24 +11448,64 @@ Celtigar_23 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_22
-	mother = Celtigar_rs_22
+	mother = Grandison_56
 
 	8066.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	8082.1.1 = { add_spouse = Celtigar_rs_23 }
+	8082.1.1 = { add_spouse = Scales_47 } # Jeyn Scales
 	8114.1.1 = { death = yes }
 }
-Celtigar_rs_23 = {
-	name = Monica
+Celtigar_89 = {
+	name = Quenton
+	dynasty = dynn_Celtigar
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_22
+	mother = Grandison_56
+
+	8069.1.1 = { birth = yes }
+	8087.1.1 = { trait = knight }
+	8148.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+Celtigar_90 = {
+	name = Aloran # married Syneta Valagel
+	dynasty = dynn_Celtigar
+
+	religion = fots_seven
+	culture = westerosi_valyrian
+
+	father = Celtigar_22
+	mother = Grandison_56
+
+	8073.1.1 = { birth = yes }
+	8089.1.1 = { trait = knight }
+	8116.1.1 = {
+		trait = consumption
+		death = { death_reason = death_consumption }
+	}
+}
+Celtigar_91 = {
+	name = Elaena # married Faro Marnel
+	dynasty = dynn_Celtigar
 	female = yes
 
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	8066.1.1 = { birth = yes }
-	8112.1.1 = { death = yes }
+	father = Celtigar_22
+	mother = Grandison_56
+
+	8077.1.1 = { birth = yes }
+	8151.1.1 = {
+		death = { death_reason = death_accident }
+	}
 }
 ### Issue of Harrold
 Celtigar_24 = { # Dance of the Dragons
@@ -11070,7 +11517,7 @@ Celtigar_24 = { # Dance of the Dragons
 	culture = westerosi_valyrian
 
 	father = Celtigar_23
-	mother = Celtigar_rs_23
+	mother = Scales_47
 
 	trait = education_stewardship_1
 	trait = wrathful
@@ -11104,25 +11551,15 @@ Celtigar_61 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_23
-	mother = Celtigar_rs_23
+	mother = Scales_47
 
 	8085.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
 	8103.1.1 = { trait = knight }
-	8113.1.1 = { add_spouse = Celtigar_rs_61 }
+	8113.1.1 = { add_spouse = Hollard_59 } # Elissa Hollard
 	8128.1.1 = { death = yes }
-}
-Celtigar_rs_61 = {
-	name = Jeyne
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8095.1.1 = { birth = yes }
-	8126.1.1 = { death = yes }
 }
 ### Issue of Bartimos
 Celtigar_25 = {
@@ -11244,7 +11681,7 @@ Celtigar_28 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_61
-	mother = Celtigar_rs_61
+	mother = Hollard_59
 
 	trait = brave
 
@@ -11269,24 +11706,12 @@ Celtigar_63 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_61
-	mother = Celtigar_rs_61
+	mother = Hollard_59
 
 	8116.1.1 = {
 		birth = yes
 	}
-	8133.1.1 = { add_spouse = Celtigar_rs_63 }
-	8150.1.1 = { death = yes }
-}
-Celtigar_rs_63 = {
-	name = Odette
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8116.1.1 = {
-		birth = yes
-	}
+	8133.1.1 = { add_spouse = Cupps_48 } # Leyla Cupps
 	8150.1.1 = { death = yes }
 }
 ### Issue of Semella
@@ -11448,7 +11873,7 @@ Celtigar_64 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_63
-	mother = Celtigar_rs_63
+	mother = Cupps_48
 
 	trait = beauty_good_1
 
@@ -11673,18 +12098,8 @@ Celtigar_46 = {
 		}
 	}
 	8171.1.1 = { trait = knight }
-	8177.1.1 = { add_spouse = Celtigar_rs_46 }
+	8177.1.1 = { add_spouse = Redwyne_56 } # Alysanne Redwyne
 	8202.1.1 = { death = yes }
-}
-Celtigar_rs_46 = {
-	name = Maella
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8162.1.1 = { birth = yes }
-	8179.1.1 = { death = yes }
 }
 Celtigar_47 = {
 	name = Jeyne # Semi-Canon, Jeyn Celtigar, married Enfren Bar Emmon
@@ -11722,6 +12137,7 @@ Celtigar_48 = {
 		add_character_flag = has_scripted_appearance
 	}
 	8190.1.1 = { add_spouse = Celtigar_rs_48 }
+	8198.1.1 = { add_spouse = Tudbury_45 } # Alarra Tudbury
 	8248.1.1 = { death = yes }
 }
 Celtigar_rs_48 = {
@@ -11732,7 +12148,7 @@ Celtigar_rs_48 = {
 	culture = westerosi_valyrian
 
 	8178.1.1 = { birth = yes }
-	8226.1.1 = { death = yes }
+	8194.1.1 = { death = yes }
 }
 ### Issue of Bartimos
 Celtigar_49 = {
@@ -11750,22 +12166,8 @@ Celtigar_49 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	8220.1.1 = { add_spouse = Celtigar_p_1 }
+	8220.1.1 = { add_spouse = Scales_80 } # Alyssa Scales
 	8238.1.1 = { death = yes }
-}
-Celtigar_p_1 = {
-	name = Elinor
-	female = yes
-	dna = Celtigar_p_1
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8193.1.1 = {
-		birth = yes
-		add_character_flag = has_scripted_appearance
-	}
-	8250.1.1 = { death = yes }
 }
 Celtigar_56 = {
 	name = Valaena # married Daemon Longwaters
@@ -11777,7 +12179,7 @@ Celtigar_56 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_48
-	mother = Celtigar_rs_48
+	mother = Tudbury_45
 
 	8199.1.1 = {
 		birth = yes
@@ -11795,27 +12197,13 @@ Celtigar_50 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_49
-	mother = Celtigar_p_1
+	mother = Scales_80
 
 	8221.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	8239.1.1 = { add_spouse = Celtigar_rs_50 }
-	8280.1.1 = { death = yes }
-}
-Celtigar_rs_50 = {
-	name = Alynne
-	female = yes
-	dna = Celtigar_rs_50
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8221.1.1 = {
-		birth = yes
-		add_character_flag = has_scripted_appearance
-	}
+	8239.1.1 = { add_spouse = Rollingford_62 } # Dorcas Rollingford
 	8280.1.1 = { death = yes }
 }
 Celtigar_58 = {
@@ -11827,7 +12215,7 @@ Celtigar_58 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_49
-	mother = Celtigar_p_1
+	mother = Scales_80
 
 	trait = beauty_good_2
 
@@ -11835,17 +12223,7 @@ Celtigar_58 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
-	8245.1.1 = { add_spouse = Celtigar_p_2 }
-	8275.1.1 = { death = yes }
-}
-Celtigar_p_2 = {
-	name = Maegelle
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8223.1.1 = { birth = yes }
+	8245.1.1 = { add_spouse = Blount_59 } # Alarra Blount
 	8275.1.1 = { death = yes }
 }
 ### Line of Corbin and Casella
@@ -11858,25 +12236,15 @@ Celtigar_51 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_46 # Marell Celtigar
-	mother = Celtigar_rs_46
+	mother = Redwyne_56
 
 	8178.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
 	8194.1.1 = { trait = knight }
-	8194.1.1 = { add_spouse = Celtigar_rs_51 }
+	8194.1.1 = { add_spouse = Cupps_55 } # Elyn Cupps
 	8222.1.1 = { death = yes }
-}
-Celtigar_rs_51 = {
-	name = Amaena
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8179.1.1 = { birth = yes }
-	8213.1.1 = { death = yes }
 }
 Celtigar_52 = {
 	name = Crispian
@@ -11887,25 +12255,15 @@ Celtigar_52 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_51
-	mother = Celtigar_rs_51
+	mother = Cupps_55
 
 	8197.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
 	8213.1.1 = { trait = knight }
-	8217.1.1 = { add_spouse = Celtigar_rs_52 }
+	8217.1.1 = { add_spouse = Morles_41 } # Semiona Morles
 	8250.1.1 = { death = yes }
-}
-Celtigar_rs_52 = {
-	name = Jeyn
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8196.1.1 = { birth = yes }
-	8232.1.1 = { death = yes }
 }
 Celtigar_53 = {
 	name = Clement
@@ -11916,27 +12274,17 @@ Celtigar_53 = {
 	culture = westerosi_valyrian
 
 	father = Celtigar_52
-	mother = Celtigar_rs_52
+	mother = Morles_41
 
 	8220.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 	}
 	8236.1.1 = { trait = knight }
-	8245.1.1 = { add_spouse = Celtigar_p_3 }
+	8245.1.1 = { add_spouse = Morles_44 } # Elenei Morles
 	8260.1.1 = {
 		death = { death_reason = death_battle } # War of Ninepenny Kings
 	}
-}
-Celtigar_p_3 = {
-	name = Casella
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8220.1.1 = { birth = yes }
-	8275.1.1 = { death = yes }
 }
 
 ###### HOUSE SCALES (id = dynn_Scales)
@@ -11951,18 +12299,8 @@ Scales_23 = {
 	culture = westerosi_valyrian
 
 	7819.1.1 = { birth = yes }
-	7839.1.1 = { add_spouse = Scales_rs_23 }
+	7839.1.1 = { add_spouse = Oates_8 } # Leyla Oates
 	7888.1.1 = { death = yes }
-}
-Scales_rs_23 = {
-	name = Alyssa
-	female = yes
-
-	religion = valyrian_pan_freehold
-	culture = westerosi_valyrian
-
-	7820.1.1 = { birth = yes }
-	7874.1.1 = { death = yes }
 }
 ### Issue of Elyas
 Scales_6 = {
@@ -11973,28 +12311,18 @@ Scales_6 = {
 	culture = westerosi_valyrian
 
 	father = Scales_23
-	mother = Scales_rs_23
+	mother = Oates_8
 
 	trait = twin
 
 	7841.1.1 = { birth = yes }
-	7862.1.1 = { add_spouse = Scales_rs_6 }
+	7862.1.1 = { add_spouse = Bolander_8 } # Cara Bolander
 	7900.1.1 = {
 		death = { death_reason = death_accident }
 	}
 }
-Scales_rs_6 = {
-	name = Jyana
-	female = yes
-
-	religion = valyrian_pan_freehold
-	culture = westerosi_valyrian
-
-	7845.1.1 = { birth = yes }
-	7884.1.1 = { death = yes }
-}
 Scales_7 = {
-	name = Aelinor
+	name = Aelinor # married Sebaston Manwoody
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12002,7 +12330,7 @@ Scales_7 = {
 	culture = westerosi_valyrian
 
 	father = Scales_23
-	mother = Scales_rs_23
+	mother = Oates_8
 
 	trait = twin
 
@@ -12020,28 +12348,18 @@ Scales_9 = {
 	culture = westerosi_valyrian
 
 	father = Scales_23
-	mother = Scales_rs_23
+	mother = Oates_8
 
 	trait = twin
 
 	7844.1.1 = { birth = yes }
-	7873.1.1 = { add_spouse = Scales_rs_9 }
+	7873.1.1 = { add_spouse = Peasebury_5 } # Elyana Peasebury
 	7882.1.1 = {
 		death = { death_reason = death_poison }
 	}
 }
-Scales_rs_9 = {
-	name = Aurana
-	female = yes
-
-	religion = valyrian_pan_freehold
-	culture = westerosi_valyrian
-
-	7850.1.1 = { birth = yes }
-	7913.1.1 = { death = yes }
-}
 Scales_10 = {
-	name = Jeyn
+	name = Jeyn # married Bartimos Celtigar
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12049,7 +12367,7 @@ Scales_10 = {
 	culture = westerosi_valyrian
 
 	father = Scales_23
-	mother = Scales_rs_23
+	mother = Oates_8
 
 	trait = twin
 
@@ -12065,23 +12383,13 @@ Scales_11 = {
 	culture = westerosi_valyrian
 
 	father = Scales_9
-	mother = Scales_rs_9
+	mother = Peasebury_5
 
 	7877.1.1 = { birth = yes }
-	7897.1.1 = { add_spouse = Scales_rs_11 }
+	7897.1.1 = { add_spouse = Berry_5 } # Siane Berry
 	7912.1.1 = {
 		death = { death_reason = death_contest_melee_accident }
 	}
-}
-Scales_rs_11 = {
-	name = Elaena
-	female = yes
-
-	religion = valyrian_pan_freehold
-	culture = westerosi_valyrian
-
-	7879.1.1 = { birth = yes }
-	7904.1.1 = { death = yes }
 }
 ### Issue of Terrence
 Scales_12 = {
@@ -12092,24 +12400,15 @@ Scales_12 = {
 	culture = westerosi_valyrian
 
 	father = Scales_6
-	mother = Scales_rs_6
+	mother = Bolander_8
 
 	7865.1.1 = { birth = yes }
-	7893.1.1 = { add_spouse = Scales_rs_12 }
+	7893.1.1 = { add_spouse = Noonan_7 } # Adena Noonan
+	7903.1.1 = { add_spouse = Draper_8 } # Desmera Draper
 	7933.1.1 = {
 		trait = cancer
 		death = { death_reason = death_cancer }
 	}
-}
-Scales_rs_12 = {
-	name = Prunella
-	female = yes
-
-	religion = valyrian_pan_freehold
-	culture = westerosi_valyrian
-
-	7872.1.1 = { birth = yes }
-	7912.1.1 = { death = yes }
 }
 Scales_13 = {
 	name = Bartimos
@@ -12119,27 +12418,17 @@ Scales_13 = {
 	culture = westerosi_valyrian
 
 	father = Scales_6
-	mother = Scales_rs_6
+	mother = Bolander_8
 
 	7866.1.1 = { birth = yes }
-	7883.1.1 = { add_spouse = Scales_rs_13 }
+	7883.1.1 = { add_spouse = Lavett_9 } # Arwyn Lovett
 	7929.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
 }
-Scales_rs_13 = {
-	name = Syrella
-	female = yes
-
-	religion = valyrian_pan_freehold
-	culture = westerosi_valyrian
-
-	7866.1.1 = { birth = yes }
-	7931.1.1 = { death = yes }
-}
 ### Issue of Rennifer
 Scales_69 = {
-	name = Elleria
+	name = Elleria # married Timon Hildreath
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12147,13 +12436,13 @@ Scales_69 = {
 	culture = westerosi_valyrian
 
 	father = Scales_11
-	mother = Scales_rs_11
+	mother = Berry_5
 
 	7901.1.1 = { birth = yes }
 	7950.1.1 = { death = yes }
 }
 Scales_70 = {
-	name = Shiera
+	name = Shiera # married Dontario Saldaaris
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12161,7 +12450,7 @@ Scales_70 = {
 	culture = westerosi_valyrian
 
 	father = Scales_11
-	mother = Scales_rs_11
+	mother = Berry_5
 
 	7903.1.1 = { birth = yes }
 	7968.1.1 = {
@@ -12177,7 +12466,7 @@ Scales_17 = {
 	culture = westerosi_valyrian
 
 	father = Scales_12
-	mother = Scales_rs_12
+	mother = Noonan_7
 
 	7897.1.1 = { birth = yes }
 	7916.1.1 = { add_spouse = Targaryen_18 } # Daena Targaryen
@@ -12196,7 +12485,7 @@ Scales_8_B = {
 	culture = westerosi_valyrian
 
 	father = Scales_12
-	mother = Scales_rs_12
+	mother = Noonan_7
 
 	7905.1.1 = {
 		birth = yes
@@ -12204,7 +12493,7 @@ Scales_8_B = {
 	}
 	7939.1.1 = { death = yes }
 }
-### Issue of Prunella
+### Issue of Veran
 Scales_25 = {
 	name = Monica # a lord
 	dynasty = dynn_Scales
@@ -12217,23 +12506,14 @@ Scales_25 = {
 	mother = Targaryen_18
 
 	7929.1.1 = { birth = yes }
-	7950.1.1 = { add_matrilineal_spouse = Scales_rs_25 }
+	7950.1.1 = { add_matrilineal_spouse = Ross_66 } # Ganwell Ross
 	7988.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
 }
-Scales_rs_25 = {
-	name = Elyas
-
-	religion = valyrian_pan_freehold
-	culture = westerosi_valyrian
-
-	7929.1.1 = { birth = yes }
-	7981.1.1 = { death = yes }
-}
 ### Issue of Bartimos
 Scales_14 = {
-	name = Larissa
+	name = Larissa # married Owen Ginett
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12241,7 +12521,7 @@ Scales_14 = {
 	culture = westerosi_valyrian
 
 	father = Scales_13
-	mother = Scales_rs_13
+	mother = Lavett_9
 
 	7885.1.1 = { birth = yes }
 	7933.1.1 = {
@@ -12249,7 +12529,7 @@ Scales_14 = {
 	}
 }
 Scales_15 = {
-	name = Maelane
+	name = Maelane # married Aemon Astley
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12257,7 +12537,7 @@ Scales_15 = {
 	culture = westerosi_valyrian
 
 	father = Scales_13
-	mother = Scales_rs_13
+	mother = Lavett_9
 
 	7887.1.1 = { birth = yes }
 	7938.1.1 = {
@@ -12273,32 +12553,22 @@ Scales_16 = {
 	culture = westerosi_valyrian
 
 	father = Scales_13
-	mother = Scales_rs_13
+	mother = Lavett_9
 
 	7889.1.1 = { birth = yes }
-	7909.1.1 = { add_spouse = Scales_rs_16 }
+	7909.1.1 = { add_spouse = Tudbury_15 } # Shireen Tudbury
 	7928.1.1 = { death = yes }
-}
-Scales_rs_16 = {
-	name = Semella
-	female = yes
-
-	religion = valyrian_pan_freehold
-	culture = westerosi_valyrian
-
-	7892.1.1 = { birth = yes }
-	7958.1.1 = { death = yes }
 }
 ### Issue of Monica
 Scales_26 = {
-	name = Amaena
+	name = Amaena # married Jorgen Celtigar
 	dynasty = dynn_Scales
 	female = yes
 
 	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
-	father = Scales_rs_25
+	father = Ross_66
 	mother = Scales_25
 
 	7954.1.1 = { birth = yes }
@@ -12314,11 +12584,12 @@ Scales_27 = {
 	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
-	father = Scales_rs_25
+	father = Ross_66
 	mother = Scales_25
 
 	7957.1.1 = { birth = yes }
 	7981.1.1 = { add_spouse = Scales_rs_27 }
+	7989.1.1 = { add_spouse = Dabell_65 } # Richela Dabell
 	7992.1.1 = { religion = fots_seven }
 	7994.1.1 = { trait = knight }
 	8025.1.1 = {
@@ -12342,31 +12613,21 @@ Scales_28 = {
 	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
-	father = Scales_rs_25
+	father = Ross_66
 	mother = Scales_25
 
 	7960.1.1 = { birth = yes }
-	7981.1.1 = { add_spouse = Scales_rs_28 }
+	7981.1.1 = { add_spouse = Draper_30 } # Eldara Draper
 	7984.1.1 = { death = yes }
 }
-Scales_rs_28 = {
-	name = Calla
-	female = yes
-
-	religion = valyrian_pan_freehold
-	culture = westerosi_valyrian
-
-	7962.1.1 = { birth = yes }
-	8028.1.1 = { death = yes }
-}
 Scales_24 = {
-	name = Aethan # Commander of the Gold Cloaks
+	name = Aethan # Commander of the Gold Cloaks # married Arana Stonecrab
 	dynasty = dynn_Scales
 
 	religion = valyrian_pan_freehold
 	culture = westerosi_valyrian
 
-	father = Scales_rs_25
+	father = Ross_66
 	mother = Scales_25
 
 	trait = education_martial_3
@@ -12378,7 +12639,7 @@ Scales_24 = {
 }
 ### Issue of Ardrian
 Scales_29 = {
-	name = Shiera
+	name = Shiera # married Trellio Manterys
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12386,7 +12647,7 @@ Scales_29 = {
 	culture = westerosi_valyrian
 
 	father = Scales_28
-	mother = Scales_rs_28
+	mother = Draper_30
 
 	7983.1.1 = { birth = yes }
 	7992.1.1 = { religion = fots_seven }
@@ -12408,23 +12669,13 @@ Scales_30 = {
 	7985.1.1 = { birth = yes }
 	7992.1.1 = { religion = fots_seven }
 	8002.1.1 = { trait = knight }
-	8011.1.1 = { add_spouse = Scales_rs_30 }
+	8011.1.1 = { add_spouse = Stonecrab_12 } # Vanera Stonecrab
 	8044.1.1 = {
 		death = { death_reason = death_mysterious }
 	}
 }
-Scales_rs_30 = {
-	name = Jeyne
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	7992.1.1 = { birth = yes }
-	8036.1.1 = { death = yes }
-}
 Scales_31 = {
-	name = Laena
+	name = Laena # married Aimery Noonan
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12454,21 +12705,11 @@ Scales_32 = {
 	7989.1.1 = { birth = yes }
 	7992.1.1 = { religion = fots_seven }
 	8006.1.1 = { trait = knight }
-	8016.1.1 = { add_spouse = Scales_rs_32 }
+	8016.1.1 = { add_spouse = Blackmont_68 } # Denyse Blackmont
 	8054.1.1 = {
 		trait = consumption
 		death = { death_reason = death_consumption }
 	}
-}
-Scales_rs_32 = {
-	name = Jeyn
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	7998.1.1 = { birth = yes }
-	8062.1.1 = { death = yes }
 }
 Scales_33 = {
 	name = Rolland
@@ -12482,22 +12723,12 @@ Scales_33 = {
 
 	7990.1.1 = { birth = yes }
 	7992.1.1 = { religion = fots_seven }
-	8006.1.1 = { add_spouse = Scales_rs_33 }
+	8006.1.1 = { add_spouse = Celtigar_82 } # Daenaera Celtigar
 	8009.1.1 = { trait = knight }
 	8051.1.1 = {
 		trait = pneumonic
 		death = { death_reason = death_pneumonic }
 	}
-}
-Scales_rs_33 = {
-	name = Jarella
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	7985.1.1 = { birth = yes }
-	8028.1.1 = { death = yes }
 }
 Scales_20 = {
 	name = Elyas # Canon
@@ -12539,7 +12770,7 @@ Scales_20 = {
 }
 ### Issue of Corlys
 Scales_18 = {
-	name = Syrella
+	name = Syrella # married Gannos Morden
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12547,7 +12778,7 @@ Scales_18 = {
 	culture = westerosi_valyrian
 
 	father = Scales_16
-	mother = Scales_rs_16
+	mother = Tudbury_15
 
 	7913.1.1 = { birth = yes }
 	7980.1.1 = {
@@ -12555,7 +12786,7 @@ Scales_18 = {
 	}
 }
 Scales_19 = {
-	name = Jyana
+	name = Jyana # married Daven Converlon
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12563,7 +12794,7 @@ Scales_19 = {
 	culture = westerosi_valyrian
 
 	father = Scales_16
-	mother = Scales_rs_16
+	mother = Tudbury_15
 
 	7915.1.1 = { birth = yes }
 	7982.1.1 = {
@@ -12580,24 +12811,14 @@ Scales_34 = {
 	culture = westerosi_valyrian
 
 	father = Scales_33
-	mother = Scales_rs_33
+	mother = Celtigar_82
 
 	8009.1.1 = { birth = yes }
 	8026.1.1 = { trait = knight }
-	8034.1.1 = { add_spouse = Scales_rs_34 }
+	8034.1.1 = { add_spouse = Grandison_52 } # Melianne Grandison
 	8069.1.1 = {
 		death = { death_reason = death_heart_attack }
 	}
-}
-Scales_rs_34 = {
-	name = Oreyne
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8014.1.1 = { birth = yes }
-	8072.1.1 = { death = yes }
 }
 Scales_35 = {
 	name = Gaemon
@@ -12607,28 +12828,18 @@ Scales_35 = {
 	culture = westerosi_valyrian
 
 	father = Scales_33
-	mother = Scales_rs_33
+	mother = Celtigar_82
 
 	8013.1.1 = { birth = yes }
 	8031.1.1 = { trait = knight }
-	8035.1.1 = { add_spouse = Scales_rs_35 }
+	8035.1.1 = { add_spouse = Lindhorn_21 } # Bellena Lindhorn
 	8066.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
 	}
 }
-Scales_rs_35 = {
-	name = Maenylla
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8016.1.1 = { birth = yes }
-	8074.1.1 = { death = yes }
-}
 Scales_36 = {
-	name = Valaena
+	name = Valaena # married Goodwin Hargraves
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12636,7 +12847,7 @@ Scales_36 = {
 	culture = westerosi_valyrian
 
 	father = Scales_33
-	mother = Scales_rs_33
+	mother = Celtigar_82
 
 	8015.1.1 = { birth = yes }
 	8075.1.1 = {
@@ -12651,35 +12862,25 @@ Scales_37 = {
 	culture = westerosi_valyrian
 
 	father = Scales_33
-	mother = Scales_rs_33
+	mother = Celtigar_82
 
 	8017.1.1 = { birth = yes }
 	8034.1.1 = { trait = knight }
-	8035.1.1 = { add_spouse = Scales_rs_37 }
+	8035.1.1 = { add_spouse = Swale_31 } # Wylla Swale
 	8062.1.1 = {
 		death = { death_reason = death_fall }
 	}
 }
-Scales_rs_37 = {
-	name = Lianna
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8018.1.1 = { birth = yes }
-	8064.1.1 = { death = yes }
-}
 ### Issue of Gaemon
 Scales_72 = {
-	name = Crispian
+	name = Crispian # married Lysadra Lornel
 	dynasty = dynn_Scales
 
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_35
-	mother = Scales_rs_35
+	mother = Lindhorn_21
 
 	8036.1.1 = { birth = yes }
 	8053.1.1 = { trait = knight }
@@ -12695,7 +12896,7 @@ Scales_73 = {
 	culture = westerosi_valyrian
 
 	father = Scales_35
-	mother = Scales_rs_35
+	mother = Lindhorn_21
 
 	8037.1.1 = { birth = yes }
 	8054.1.1 = { trait = knight }
@@ -12704,7 +12905,7 @@ Scales_73 = {
 	}
 }
 Scales_74 = {
-	name = Jeyne
+	name = Jeyne # married Agreo Trellos
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12712,7 +12913,7 @@ Scales_74 = {
 	culture = westerosi_valyrian
 
 	father = Scales_35
-	mother = Scales_rs_35
+	mother = Lindhorn_21
 
 	8038.1.1 = { birth = yes }
 	8101.1.1 = {
@@ -12728,21 +12929,21 @@ Scales_75 = {
 	culture = westerosi_valyrian
 
 	father = Scales_37
-	mother = Scales_rs_37
+	mother = Swale_31
 
 	8036.1.1 = { birth = yes }
 	8054.1.1 = { trait = knight }
 	8070.1.1 = { death = yes }
 }
 Scales_76 = {
-	name = Kaeron
+	name = Kaeron # married Gilda Dodges
 	dynasty = dynn_Scales
 
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_37
-	mother = Scales_rs_37
+	mother = Swale_31
 
 	8039.1.1 = { birth = yes }
 	8055.1.1 = { trait = knight }
@@ -12751,7 +12952,7 @@ Scales_76 = {
 	}
 }
 Scales_77 = {
-	name = Ashera
+	name = Ashera # married Joris Trevanion
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12759,7 +12960,7 @@ Scales_77 = {
 	culture = westerosi_valyrian
 
 	father = Scales_37
-	mother = Scales_rs_37
+	mother = Swale_31
 
 	8043.1.1 = { birth = yes }
 	8085.1.1 = {
@@ -12768,7 +12969,7 @@ Scales_77 = {
 }
 ### Issue of Tasmund
 Scales_38 = {
-	name = Jenette
+	name = Jenette # married Albert Headingley
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12776,7 +12977,7 @@ Scales_38 = {
 	culture = westerosi_valyrian
 
 	father = Scales_30
-	mother = Scales_rs_30
+	mother = Stonecrab_12
 
 	8012.1.1 = { birth = yes }
 	8040.1.1 = {
@@ -12792,24 +12993,14 @@ Scales_39 = {
 	culture = westerosi_valyrian
 
 	father = Scales_30
-	mother = Scales_rs_30
+	mother = Stonecrab_12
 
 	8013.1.1 = { birth = yes }
 	8030.1.1 = { trait = knight }
-	8033.1.1 = { add_spouse = Scales_rs_39 }
+	8033.1.1 = { add_spouse = Ross_29 } # Ceryse Ross
 	8082.1.1 = {
 		death = { death_reason = death_fall }
 	}
-}
-Scales_rs_39 = {
-	name = Amyana
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8013.1.1 = { birth = yes }
-	8059.1.1 = { death = yes }
 }
 ### Issue of Lucerys
 Scales_44 = {
@@ -12820,27 +13011,17 @@ Scales_44 = {
 	culture = westerosi_valyrian
 
 	father = Scales_32
-	mother = Scales_rs_32
+	mother = Blackmont_68
 
 	8019.1.1 = { birth = yes }
 	8036.1.1 = { trait = knight }
-	8049.1.1 = { add_spouse = Scales_rs_44 }
+	8049.1.1 = { add_spouse = Draper_32 } # Megga Draper
 	8086.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
 }
-Scales_rs_44 = {
-	name = Prunella
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8028.1.1 = { birth = yes }
-	8058.1.1 = { death = yes }
-}
 Scales_45 = {
-	name = Laena
+	name = Laena # married Aimery Snapper
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12848,7 +13029,7 @@ Scales_45 = {
 	culture = westerosi_valyrian
 
 	father = Scales_32
-	mother = Scales_rs_32
+	mother = Blackmont_68
 
 	8022.1.1 = { birth = yes }
 	8073.1.1 = {
@@ -12857,7 +13038,7 @@ Scales_45 = {
 }
 ### Issue of Benethon
 Scales_71 = {
-	name = Elleria
+	name = Elleria # married Raymund Festune
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12865,21 +13046,21 @@ Scales_71 = {
 	culture = westerosi_valyrian
 
 	father = Scales_34
-	mother = Scales_rs_34
+	mother = Grandison_52
 
 	8036.1.1 = { birth = yes }
 	8085.1.1 = { death = yes }
 }
 ### Issue of Trystane
 Scales_78 = {
-	name = Daeron
+	name = Daeron # married Adella Ravencroft
 	dynasty = dynn_Scales
 
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_44
-	mother = Scales_rs_44
+	mother = Draper_32
 
 	8050.1.1 = { birth = yes }
 	8069.1.1 = { trait = knight }
@@ -12896,24 +13077,14 @@ Scales_41 = {
 	culture = westerosi_valyrian
 
 	father = Scales_39
-	mother = Scales_rs_39
+	mother = Ross_29
 
 	8035.1.1 = { birth = yes }
 	8053.1.1 = { trait = knight }
-	8063.1.1 = { add_spouse = Scales_rs_41 }
+	8063.1.1 = { add_spouse = Harrow_35 } # Moryssa Harrow
 	8105.1.1 = {
 		death = { death_reason = death_accident }
 	}
-}
-Scales_rs_41 = {
-	name = Shiera
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8040.1.1 = { birth = yes }
-	8085.1.1 = { death = yes }
 }
 Scales_40 = {
 	name = Edwell
@@ -12923,25 +13094,15 @@ Scales_40 = {
 	culture = westerosi_valyrian
 
 	father = Scales_39
-	mother = Scales_rs_39
+	mother = Ross_29
 
 	8036.1.1 = { birth = yes }
 	8053.1.1 = { trait = knight }
-	8054.1.1 = { add_spouse = Scales_rs_40 }
+	8054.1.1 = { add_spouse = Asrig_55 } # Colianne Asrig
 	8081.1.1 = { death = yes }
 }
-Scales_rs_40 = {
-	name = Amaena
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8037.1.1 = { birth = yes }
-	8098.1.1 = { death = yes }
-}
 Scales_42 = {
-	name = Jarella
+	name = Jarella # married Nevio Torone
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12949,7 +13110,7 @@ Scales_42 = {
 	culture = westerosi_valyrian
 
 	father = Scales_39
-	mother = Scales_rs_39
+	mother = Ross_29
 
 	8039.1.1 = { birth = yes }
 	8096.1.1 = {
@@ -12959,7 +13120,7 @@ Scales_42 = {
 }
 ### Issue of Edwell
 Scales_46 = {
-	name = Nerys
+	name = Nerys # married Eldred Upshall
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12967,7 +13128,7 @@ Scales_46 = {
 	culture = westerosi_valyrian
 
 	father = Scales_40
-	mother = Scales_rs_40
+	mother = Asrig_55
 
 	8055.1.1 = { birth = yes }
 	8106.1.1 = {
@@ -12975,7 +13136,7 @@ Scales_46 = {
 	}
 }
 Scales_47 = {
-	name = Jeyn
+	name = Jeyn # married Harrold Celtigar
 	dynasty = dynn_Scales
 	female = yes
 
@@ -12983,7 +13144,7 @@ Scales_47 = {
 	culture = westerosi_valyrian
 
 	father = Scales_40
-	mother = Scales_rs_40
+	mother = Asrig_55
 
 	8058.1.1 = { birth = yes }
 	8116.1.1 = {
@@ -12999,24 +13160,14 @@ Scales_48 = {
 	culture = westerosi_valyrian
 
 	father = Scales_40
-	mother = Scales_rs_40
+	mother = Asrig_55
 
 	8060.1.1 = { birth = yes }
 	8076.1.1 = { trait = knight }
-	8082.1.1 = { add_spouse = Scales_rs_48 }
+	8082.1.1 = { add_spouse = Dripps_38 } # Merei Dripps
 	8122.1.1 = {
 		death = { death_reason = death_horse }
 	}
-}
-Scales_rs_48 = {
-	name = Calla
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8065.1.1 = { birth = yes }
-	8121.1.1 = { death = yes }
 }
 ### Issue of Benethon
 Scales_49 = {
@@ -13027,24 +13178,14 @@ Scales_49 = {
 	culture = westerosi_valyrian
 
 	father = Scales_48
-	mother = Scales_rs_48
+	mother = Dripps_38
 
 	8083.1.1 = { birth = yes }
 	8102.1.1 = { trait = knight }
-	8104.1.1 = { add_spouse = Scales_rs_49 }
+	8104.1.1 = { add_spouse = Tempers_60 } # Tynalla Tempers
 	8133.1.1 = {
 		death = { death_reason = death_tumultuous_guts }
 	}
-}
-Scales_rs_49 = {
-	name = Larissa
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8086.1.1 = { birth = yes }
-	8149.1.1 = { death = yes }
 }
 Scales_50 = {
 	name = Calla # a lord
@@ -13055,23 +13196,13 @@ Scales_50 = {
 	culture = westerosi_valyrian
 
 	father = Scales_48
-	mother = Scales_rs_48
+	mother = Dripps_38
 
 	8085.1.1 = { birth = yes }
-	8112.1.1 = { add_matrilineal_spouse = Scales_rs_50 }
+	8112.1.1 = { add_matrilineal_spouse = Bettley_63 } # Lyman Bettley
 	8142.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
-}
-Scales_rs_50 = {
-	name = Benethon
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8083.1.1 = { birth = yes }
-	8100.1.1 = { trait = knight }
-	8140.1.1 = { death = yes }
 }
 ### Issue of Aloran
 Scales_51 = {
@@ -13083,7 +13214,7 @@ Scales_51 = {
 	culture = westerosi_valyrian
 
 	father = Scales_49
-	mother = Scales_rs_49
+	mother = Tempers_60
 
 	8108.1.1 = { birth = yes }
 	8134.1.1 = { death = yes }
@@ -13098,7 +13229,7 @@ Scales_43 = {
 	culture = westerosi_valyrian
 
 	father = Scales_41
-	mother = Scales_rs_41
+	mother = Harrow_35
 
 	8066.1.1 = { birth = yes }
 	8099.1.1 = {
@@ -13108,14 +13239,14 @@ Scales_43 = {
 }
 ### Issue of Calla
 Scales_52 = {
-	name = Lianna
+	name = Lianna # married Richard Cowley
 	dynasty = dynn_Scales
 	female = yes
 
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	father = Scales_rs_50
+	father = Bettley_63
 	mother = Scales_50
 
 	8114.1.1 = { birth = yes }
@@ -13130,7 +13261,7 @@ Scales_53 = {
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	father = Scales_rs_50
+	father = Bettley_63
 	mother = Scales_50
 
 	8116.1.1 = { birth = yes }
@@ -13140,14 +13271,14 @@ Scales_53 = {
 	}
 }
 Scales_54 = {
-	name = Maelane
+	name = Maelane # married Bedwyck Tannicks
 	dynasty = dynn_Scales
 	female = yes
 
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	father = Scales_rs_50
+	father = Bettley_63
 	mother = Scales_50
 
 	trait = twin
@@ -13164,27 +13295,17 @@ Scales_55 = {
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	father = Scales_rs_50
+	father = Bettley_63
 	mother = Scales_50
 
 	trait = twin
 
 	8120.1.1 = { birth = yes }
 	8136.1.1 = { trait = knight }
-	8145.1.1 = { add_spouse = Scales_rs_55 }
+	8145.1.1 = { add_spouse = Sentikis_122 } # Laressa Sentikis
 	8173.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
-}
-Scales_rs_55 = {
-	name = Jarella
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8125.1.1 = { birth = yes }
-	8184.1.1 = { death = yes }
 }
 ### Issue of Terrence
 Scales_56 = {
@@ -13195,25 +13316,15 @@ Scales_56 = {
 	culture = westerosi_valyrian
 
 	father = Scales_55
-	mother = Scales_rs_55
+	mother = Sentikis_122
 
 	8149.1.1 = { birth = yes }
 	8165.1.1 = { trait = knight }
-	8178.1.1 = { add_spouse = Scales_rs_56 }
+	8178.1.1 = { add_spouse = Stonecrab_37 } # Rylene Stonecrab
 	8214.1.1 = {
 		trait = depressed_1
 		death = { death_reason = death_depressed }
 	}
-}
-Scales_rs_56 = {
-	name = Nerys
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8151.1.1 = { birth = yes }
-	8212.1.1 = { death = yes }
 }
 Scales_57 = {
 	name = Rolland
@@ -13223,28 +13334,18 @@ Scales_57 = {
 	culture = westerosi_valyrian
 
 	father = Scales_55
-	mother = Scales_rs_55
+	mother = Sentikis_122
 
 	trait = depressed_genetic
 
 	8150.1.1 = { birth = yes }
 	8167.1.1 = {
-		add_spouse = Scales_rs_57
+		add_spouse = Rochalan_74 # Elorra Rochalan
 		trait = knight
 	}
 	8211.1.1 = {
 		death = { death_reason = death_murder }
 	}
-}
-Scales_rs_57 = {
-	name = Maelane
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8150.1.1 = { birth = yes }
-	8181.1.1 = { death = yes }
 }
 Scales_58 = {
 	name = Aurion
@@ -13254,24 +13355,14 @@ Scales_58 = {
 	culture = westerosi_valyrian
 
 	father = Scales_55
-	mother = Scales_rs_55
+	mother = Sentikis_122
 
 	8153.1.1 = { birth = yes }
 	8172.1.1 = { trait = knight }
-	8178.1.1 = { add_spouse = Scales_rs_58 }
+	8178.1.1 = { add_spouse = Vyrwel_64 } # Melessa Vyrwel
 	8208.1.1 = {
 		death = { death_reason = death_heart_attack }
 	}
-}
-Scales_rs_58 = {
-	name = Alaerys
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8161.1.1 = { birth = yes }
-	8220.1.1 = { death = yes }
 }
 ### Issue of Rolland
 Scales_61 = {
@@ -13282,22 +13373,12 @@ Scales_61 = {
 	culture = westerosi_valyrian
 
 	father = Scales_57
-	mother = Scales_rs_57
+	mother = Rochalan_74
 
 	8170.1.1 = { birth = yes }
 	8188.1.1 = { trait = knight }
-	8193.1.1 = { add_spouse = Scales_rs_61 }
+	8193.1.1 = { add_spouse = Warl_59 } # Alenna Warl
 	8209.1.1 = { death = yes }
-}
-Scales_rs_61 = {
-	name = Laena
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8170.1.1 = { birth = yes }
-	8210.1.1 = { death = yes }
 }
 ### Issue of Alyn
 Scales_62 = {
@@ -13308,24 +13389,14 @@ Scales_62 = {
 	culture = westerosi_valyrian
 
 	father = Scales_56
-	mother = Scales_rs_56
+	mother = Stonecrab_37
 
 	8182.1.1 = { birth = yes }
 	8199.1.1 = { trait = knight }
-	8200.1.1 = { add_spouse = Scales_rs_62 }
+	8200.1.1 = { add_spouse = Draper_59 } # Alyce Draper
 	8243.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
-}
-Scales_rs_62 = {
-	name = Oreyne
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8183.1.1 = { birth = yes }
-	8220.1.1 = { death = yes }
 }
 Scales_63 = {
 	name = Benethon
@@ -13335,26 +13406,16 @@ Scales_63 = {
 	culture = westerosi_valyrian
 
 	father = Scales_56
-	mother = Scales_rs_56
+	mother = Stonecrab_37
 
 	8186.1.1 = { birth = yes }
-	8203.1.1 = { add_spouse = Scales_rs_63 }
+	8203.1.1 = { add_spouse = Densmore_39 } # Elyana Densmore
 	8204.1.1 = { trait = knight }
 	8230.1.1 = { death = yes }
 }
-Scales_rs_63 = {
-	name = Syrella
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8186.1.1 = { birth = yes }
-	8206.1.1 = { death = yes }
-}
 ### Issue of Aurion
 Scales_59 = {
-	name = Laena
+	name = Laena # married Ulwyn Weekes
 	dynasty = dynn_Scales
 	female = yes
 
@@ -13362,7 +13423,7 @@ Scales_59 = {
 	culture = westerosi_valyrian
 
 	father = Scales_58
-	mother = Scales_rs_58
+	mother = Vyrwel_64
 
 	8180.1.1 = { birth = yes }
 	8219.1.1 = {
@@ -13378,24 +13439,14 @@ Scales_60 = {
 	culture = westerosi_valyrian
 
 	father = Scales_58
-	mother = Scales_rs_58
+	mother = Vyrwel_64
 
 	8181.1.1 = { birth = yes }
 	8199.1.1 = { trait = knight }
-	8208.1.1 = { add_spouse = Scales_rs_60 }
+	8208.1.1 = { add_spouse = Claught_74 } # Elenda Claught
 	8217.1.1 = {
 		death = { death_reason = death_poison }
 	}
-}
-Scales_rs_60 = {
-	name = Larissa
-	female = yes
-
-	religion = fots_seven
-	culture = westerosi_valyrian
-
-	8186.1.1 = { birth = yes }
-	8212.1.1 = { death = yes }
 }
 ### Issue of Elyas
 Scales_79 = {
@@ -13406,22 +13457,24 @@ Scales_79 = {
 	culture = westerosi_valyrian
 
 	father = Scales_61
-	mother = Scales_rs_61
+	mother = Warl_59
 
 	8195.1.1 = { birth = yes }
 	8213.1.1 = { trait = knight }
 	8245.1.1 = { death = yes }
 }
 Scales_80 = {
-	name = Alyssa
+	name = Alyssa # married Alton Celtigar
 	dynasty = dynn_Scales
 	female = yes
+
+	dna = Scales_80
 
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_61
-	mother = Scales_rs_61
+	mother = Warl_59
 
 	8199.1.1 = { birth = yes }
 	8256.1.1 = {
@@ -13430,14 +13483,14 @@ Scales_80 = {
 	}
 }
 Scales_81 = {
-	name = Monterys
+	name = Monterys # married Meria Clarisse
 	dynasty = dynn_Scales
 
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_61
-	mother = Scales_rs_61
+	mother = Warl_59
 
 	8200.1.1 = { birth = yes }
 	8219.1.1 = { trait = knight }
@@ -13453,7 +13506,7 @@ Scales_82 = {
 	culture = westerosi_valyrian
 
 	father = Scales_61
-	mother = Scales_rs_61
+	mother = Warl_59
 
 	8203.1.1 = { birth = yes }
 	8220.1.1 = { trait = knight }
@@ -13470,7 +13523,7 @@ Scales_64 = {
 	culture = westerosi_valyrian
 
 	father = Scales_63
-	mother = Scales_rs_63
+	mother = Densmore_39
 
 	8204.1.1 = { birth = yes }
 	8222.1.1 = { trait = knight }
@@ -13487,7 +13540,7 @@ Scales_67 = {
 	culture = westerosi_valyrian
 
 	father = Scales_60
-	mother = Scales_rs_60
+	mother = Claught_74
 
 	trait = twin
 
@@ -13498,7 +13551,7 @@ Scales_67 = {
 	}
 }
 Scales_68 = {
-	name = Maella
+	name = Maella # married Togosh Vallel
 	dynasty = dynn_Scales
 	female = yes
 
@@ -13506,7 +13559,7 @@ Scales_68 = {
 	culture = westerosi_valyrian
 
 	father = Scales_60
-	mother = Scales_rs_60
+	mother = Claught_74
 
 	trait = twin
 
@@ -13565,6 +13618,8 @@ Varezys_1 = {
 	name = Aurion # Canon, Emperor of Valyria
 	dynasty = dynn_Varezys # House uncertain
 
+	dna = Varezys_1
+
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
@@ -13575,6 +13630,7 @@ Varezys_1 = {
 
 	7869.1.1 = {
 		birth = yes
+		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7885.1.1 = {
@@ -16243,12 +16299,18 @@ Knight_Kings_Landing_7 = {
 	culture = crownlander
 
 	trait = education_diplomacy_2
-	trait = gregarious
-	trait = rude
+	trait = ambitious
+	trait = charming
+
+	disallow_random_traits = yes
 
 	8022.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+	}
+	8034.1.1 = {
+		trait = gregarious
+		trait = rude
 	}
 	8038.1.1 = {
 		trait = knight
@@ -16456,15 +16518,7 @@ Targaryen_hh_3 = {
 	8105.12.30 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_lys }
-		}
-		trait = infertile # After losing her child
-	}
-	8120.1.1 = {
-		effect = {
-			if = {
-				limit = { character:Targaryen_61 = { is_alive = yes } }
-				remove_relation_lover = character:Targaryen_61 # Daemon Targaryen
-			}
+			add_character_modifier = no_more_children_modifier # After losing her child
 		}
 	}
 	8129.3.3 = {
