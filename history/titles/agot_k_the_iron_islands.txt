@@ -35,12 +35,6 @@
 	8128.8.2 = {
 		holder = Greyjoy_59
 	}
-	8129.4.1 = {
-		liege = 0
-	}
-	8131.1.14 = {
-		liege = e_the_iron_throne
-	}
 	8133.12.1 = {
 		holder = Greyjoy_63
 	}
@@ -56,12 +50,8 @@
 	8206.1.1 = {
 		holder = Greyjoy_66
 	}
-	8211.1.1 = {
-		liege = 0
-	}
 	8216.1.1 = {
 		holder = Greyjoy_69
-		liege = e_the_iron_throne
 	}
 	8225.1.1 = {
 		holder = Greyjoy_71
