@@ -794,8 +794,8 @@ Hoare_1 = {
 	3671.1.1 = { give_nickname = nick_agot_historical_the_cruel }
 	3745.1.1 = { death = yes }
 }
-Hoare_2 = {
-	name = Line_of_Qhored
+Hoare_39 = {
+	name = Qhored # II
 	dynasty = dynn_Hoare
 
 	religion = drowned_god
@@ -803,10 +803,23 @@ Hoare_2 = {
 
 	father = Hoare_1
 
+	3678.1.1 = { birth = yes }
+	3745.1.1 = { trait = infirm }
+	3755.1.1 = { death = yes }
+}
+Hoare_2 = {
+	name = Line_of_Qhored
+	dynasty = dynn_Hoare
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Hoare_39
+
 	trait = line_of_char
 	disallow_random_traits = yes
 
-	3745.1.1 = { birth = yes }
+	3755.1.1 = { birth = yes }
 	6553.1.1 = { death = yes }
 }
 Hoare_3 = {
@@ -1304,7 +1317,7 @@ Hoare_22 = {
 	}
 }
 Hoare_23 = {
-	name = Harrald # II
+	name = Qhored # III
 	dynasty = dynn_Hoare
 
 	religion = drowned_god
@@ -1376,7 +1389,7 @@ Hoare_38 = {
 
 	father = Hoare_23
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	7840.1.1 = { birth = yes }
 	7889.1.1 = { death = yes }
@@ -3293,7 +3306,7 @@ Greyjoy_63 = {
 	father = Greyjoy_59
 	mother = Greyjoy_rs_14
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	8128.1.1 = {
 		birth = yes
@@ -3325,7 +3338,7 @@ Greyjoy_64 = {
 	father = Greyjoy_59
 	mother = Greyjoy_rs_17
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	8129.1.1 = {
 		birth = yes
@@ -3503,7 +3516,7 @@ Greyjoy_69 = {
 
 	trait = education_intrigue_2
 	trait = gregarious
-	trait = poet
+	trait = lifestyle_poet
 	trait = cynical
 	trait = lazy
 	trait = arbitrary
@@ -3784,7 +3797,7 @@ Greyjoy_78 = {
 		add_character_flag = canon_status_semicanon
 	}
 	8145.1.1 = {
-		trait = poet
+		trait = lifestyle_poet
 		give_nickname = nick_agot_historical_the_raven
 		add_spouse = Mallister_36 # Darna Mallister
 	}
@@ -33973,7 +33986,7 @@ Codd_11 = {
 	father = Codd_10
 	mother = Codd_rs_10
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	7800.1.1 = { birth = yes }
 	7818.1.1 = {
@@ -34046,7 +34059,7 @@ Codd_14 = {
 	father = Codd_13
 	mother = Codd_rs_13
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	7849.1.1 = { birth = yes }
 	7870.1.1 = { trait = incestuous } # Brella Codd
@@ -34096,7 +34109,7 @@ Codd_17 = {
 	father = Codd_13
 	mother = Codd_rs_13
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	trait = inbred
 
@@ -34320,7 +34333,7 @@ Codd_25 = {
 	father = Codd_24
 	mother = Codd_rs_24
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	7960.1.1 = { birth = yes }
 	7976.1.1 = { add_spouse = Tawney_32 } # Asha Tawney
@@ -34352,7 +34365,7 @@ Codd_48 = {
 	father = Codd_24
 	mother = Codd_rs_24
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	7963.1.1 = { birth = yes }
 	7990.1.1 = { add_spouse = Shepherd_84 } # Frenya Shepherd
@@ -35902,7 +35915,7 @@ Humble_12 = {
 	religion = drowned_god
 	culture = ironborn
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	7910.1.1 = { birth = yes }
 	7926.1.1 = { add_spouse = Ironspite_40 } # Shera Ironspite
@@ -38636,7 +38649,7 @@ Shepherd_92 = {
 	}
 }
 Shepherd_93 = {
-	name = Stavryn
+	name = Jon # Easter Egg
 	dynasty = dynn_Shepherd
 
 	religion = drowned_god
@@ -38645,14 +38658,26 @@ Shepherd_93 = {
 	father = Shepherd_76
 	mother = Freeborn_73
 
-	8176.1.1 = { birth = yes }
+	trait = education_martial_2
+	trait = twin
+	trait = brave
+	trait = diligent
+	trait = compassionate
+	trait = patient
+	trait = rowdy
+
+	disallow_random_traits = yes
+
+	8173.1.1 = { birth = yes }
+	8189.1.1 = { trait = strong }
 	8230.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
 }
 Shepherd_94 = {
-	name = Meldred
+	name = Jeyne # Easter Egg
 	dynasty = dynn_Shepherd
+	female = yes
 
 	religion = drowned_god
 	culture = ironborn
@@ -38660,7 +38685,21 @@ Shepherd_94 = {
 	father = Shepherd_76
 	mother = Freeborn_73
 
-	8177.1.1 = { birth = yes }
+	trait = education_martial_2
+	trait = twin
+	trait = brave
+	trait = diligent
+	trait = vengeful
+	trait = rude
+	trait = rowdy
+
+	disallow_random_traits = yes
+
+	8173.1.1 = { birth = yes }
+	8189.1.1 = { 
+		trait = strong
+		trait = shieldmaiden 
+	}
 	8219.1.1 = { death = yes }
 }
 ### Issue of Robin
@@ -40188,7 +40227,7 @@ Netley_9 = {
 	religion = drowned_god
 	culture = ironborn
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	7899.1.1 = { birth = yes }
 	7926.1.1 = { add_spouse = Myre_25 } # Hilde Myre
@@ -43424,9 +43463,9 @@ Salt_14 = {
 	religion = drowned_god
 	culture = ironborn
 
-	father = Hoare_38 # Horgan Hoare, salt son of Harrald Hoare
+	father = Hoare_38 # Horgan Hoare, salt son of Qhored Hoare
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	7862.1.1 = { birth = yes }
 	7892.1.1 = { add_spouse = Tawney_9 } # Steffaria Tawney
@@ -44346,7 +44385,7 @@ Freeborn_14 = {
 	religion = drowned_god
 	culture = ironborn
 
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	7862.1.1 = { birth = yes }
 	7878.1.1 = { add_spouse = Ironspite_8 } # Frenya Ironspite

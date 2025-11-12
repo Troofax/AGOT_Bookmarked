@@ -325,6 +325,9 @@ e_the_iron_islands = {
 		holder = Hoare_1 #Qhored Hoare
 	}
 	3745.1.1 = {
+		holder = Hoare_39 # Qhored II Hoare (nc)
+	}
+	3755.1.1 = {
 		holder = 0
 	}
 	4110.1.1 = {
@@ -463,7 +466,7 @@ e_the_iron_islands = {
 		holder = Hoare_21 # Harrald Half-Drowned
 	}
 	7815.1.1 = {
-		holder = Hoare_23 # Harrald II
+		holder = Hoare_23 # Qhored III
 	}
 	7880.1.1 = {
 		holder = Hoare_25 # Qhorwyn

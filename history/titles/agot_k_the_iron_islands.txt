@@ -2798,6 +2798,9 @@ c_trawling = {
 	3670.1.1 = {
 		holder = Hoare_1
 	}
+	3745.1.1 = {
+		holder = Hoare_39
+	}
 	6584.1.1 = {
 		holder = Hoare_3
 	}
@@ -2926,6 +2929,9 @@ d_east_wyk = {
 	}
 	3670.1.1 = {
 		holder = Hoare_1
+	}
+	3745.1.1 = {
+		holder = Hoare_39
 	}
 	6584.1.1 = {
 		holder = Hoare_3
@@ -3181,6 +3187,9 @@ c_blackblood = {
 	3670.1.1 = {
 		holder = Hoare_1
 	}
+	3745.1.1 = {
+		holder = Hoare_39
+	}
 	6584.1.1 = {
 		holder = Hoare_3
 	}
@@ -3293,6 +3302,9 @@ b_hoare_castle = {
 		holder = Hoare_1
 		succession_laws = { male_only_law single_heir_succession_law }
 	}
+	3745.1.1 = {
+		holder = Hoare_39
+	}
 	6584.1.1 = {
 		holder = Hoare_3
 	}
@@ -3344,6 +3356,9 @@ c_fishbourne = {
 		liege = d_east_wyk
 		succession_laws = { male_only_law single_heir_succession_law }
 		holder = Hoare_1
+	}
+	3745.1.1 = {
+		holder = Hoare_39
 	}
 	6584.1.1 = {
 		holder = Hoare_3
@@ -3465,6 +3480,9 @@ c_tiller = {
 		liege = d_east_wyk
 		succession_laws = { male_only_law single_heir_succession_law }
 		holder = Hoare_1
+	}
+	3745.1.1 = {
+		holder = Hoare_39
 	}
 	6584.1.1 = {
 		holder = Hoare_3

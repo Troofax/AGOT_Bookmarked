@@ -8,6 +8,7 @@
 		agot_legitimate_house_maintenance
 		agot_faegon_invasion
 		agot_banking
+		agot_dragonrider_forced_duel_list_yearly
 	}
 }
 
@@ -883,6 +884,21 @@ agot_legitimate_house_maintenance = {
 						HOUSE = holder.house
 					}
 				}
+			}
+		}
+	}
+}
+
+agot_dragonrider_forced_duel_list_yearly = {
+	trigger = {
+		exists = title:b_ruins.holder
+	}
+	effect = {
+		title:b_ruins.holder = {
+			trigger_event = agot_dragon_combat.1012
+			trigger_event = {
+				id = agot_dragon_combat.1012
+				months = 6
 			}
 		}
 	}

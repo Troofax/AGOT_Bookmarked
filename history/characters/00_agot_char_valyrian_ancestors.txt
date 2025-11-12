@@ -498,7 +498,7 @@ Targaryen_137 = {
 	}
 	7970.1.1 = { # She's got no tears left to cry
 		effect = { remove_trait = depressed_1 }
-		trait = poet
+		trait = lifestyle_poet
 	}
 	7992.1.1 = { religion = fots_seven }
 	7994.1.1 = { death = yes }
@@ -766,7 +766,7 @@ Targaryen_29 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_canon
 	}
-	7991.1.1 = { trait = poet }
+	7991.1.1 = { trait = lifestyle_poet }
 	# AGOT Bookmarked Disabled
 	# 7992.1.1 = { religion = fots_seven }
 	7996.1.1 = {
@@ -826,7 +826,7 @@ Targaryen_30 = {
 	8017.8.1 = { trait = trusting }
 	8022.1.1 = {
 		add_spouse = Velaryon_24 # Alyssa Velaryon
-		trait = poet
+		trait = lifestyle_poet
 		trait = lifestyle_mystic
 	}
 	8023.1.1 = {
@@ -1985,7 +1985,7 @@ Targaryen_50 = {
 	8068.1.1 = { trait = compassionate }
 	8072.1.1 = { trait = shy }
 	8076.1.1 = { trait = craven }
-	8082.1.2 = { death = { death_reason = death_childbirth } }
+	8082.9.1 = { death = { death_reason = death_childbirth } }
 }
 Targaryen_51 = {
 	name = Saera # Canon, sent to Silent Sisters, fled across the Narrow Sea
@@ -2691,7 +2691,7 @@ Targaryen_62 = {
 }
 ### Issue of Viserys
 Targaryen_131 = {
-	name = Aemon # Mentioned
+	name = Jaehaerys # Mentioned
 	dynasty = dynn_Targaryen
 	dna = Targaryen_131
 
@@ -2703,12 +2703,12 @@ Targaryen_131 = {
 
 	trait = sickly
 
-	8094.2.1 = {
+	8096.2.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
-	8095.6.1 = { death = { death_reason = death_sickly } }
+	8096.6.1 = { death = { death_reason = death_sickly } }
 }
 Targaryen_63 = {
 	name = Rhaenyra # Canon, THE Rhaenyra
@@ -4174,7 +4174,7 @@ Targaryen_81 = {
 		give_nickname = nick_agot_historical_the_boy_king
 	}
 	8158.1.3 = { # Conquers Dorne, but the land is not pacified
-		trait = poet
+		trait = lifestyle_poet
 		give_nickname = nick_agot_historical_the_young_dragon
 		effect = {
 			every_vassal_or_below = {
@@ -4876,7 +4876,7 @@ Targaryen_90 = {
 	8140.1.1 = {
 		effect = { remove_trait = sickly }
 	}
-	8154.6.1 = { trait = poet }
+	8154.6.1 = { trait = lifestyle_poet }
 	8172.12.1 = {
 		effect = {
 			if = {
@@ -4996,8 +4996,9 @@ Targaryen_134 = {
 	}
 }
 Targaryen_132 = {
-	name = Viserys # Mentioned
+	name = Baela # Mentioned
 	dynasty = dynn_Targaryen
+	female = yes
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -5448,7 +5449,7 @@ Targaryen_95 = {
 	}
 }
 Targaryen_105 = {
-	name = Mya # Canon
+	name = Mya # Canon, married Triston Massey
 	dynasty = dynn_Targaryen
 	female = yes
 	dna = Targaryen_105
@@ -5496,8 +5497,17 @@ Targaryen_106 = {
 		add_character_flag = unlegitimize_on_load
 		effect = { make_trait_inactive = surname_rivers }
 	}
-	8184.1.1 = { remove_character_flag = unlegitimize_on_load }
-	8238.1.1 = { death = yes }
+	8184.1.1 = { 
+		employer = Targaryen_91 # Daeron II Targaryen
+		remove_character_flag = unlegitimize_on_load 
+	}
+	8209.9.1 = {
+		employer = Targaryen_108 # Aerys I
+	}
+	8221.1.1 = {
+		employer = Targaryen_110 #Maekar I
+	}
+	8228.1.1 = { death = yes }
 }
 Targaryen_96 = {
 	name = Brynden # Canon, AKA: Bloodraven, Lord Commander of the Night's Watch
@@ -6241,9 +6251,13 @@ Targaryen_120 = {
 			}
 		}
 	}
+	8209.1.1 = {
+		effect = {
+			agot_maester_forge_link_history_effect = { METAL = yellow_gold }			
+		}
+	}
 	8212.1.1 = {
 		effect = {
-			agot_maester_forge_link_history_effect = { METAL = yellow_gold }
 			agot_maester_forge_link_history_effect = { METAL = lead }
 			agot_maester_forge_link_history_effect = { METAL = tin }
 		}
@@ -7150,7 +7164,7 @@ Blackfyre_5 = {
 		trait = knight
 		trait = education_martial_prowess_2
 		trait = fashionable
-		trait = poet
+		trait = lifestyle_poet
 		effect = {
 			if = {
 				limit = { character:Cockshaw_22 = { is_alive = yes } }
@@ -8746,15 +8760,6 @@ Velaryon_15 = {
 	# AGOT Bookmarked Modified
 	# 8001.1.1 = { trait = knight }
 	# 8010.1.1 = {
-		# effect = {
-			# agot_join_kingsguard_char_history_effect = { # Original Kingsguard
-				# KING = character:Targaryen_27 # Aegon I Targaryen
-			# }
-			# agot_lc_kingsguard_char_history_effect = { # Original Lord Commander of the Kingsguard
-				# KING = character:Targaryen_27 # Aegon I Targaryen
-			# }
-		# }
-	# }
 	7998.1.2 = {
 		trait = knight
 		effect = {
@@ -10244,6 +10249,8 @@ Velaryon_55 = {
 	father = Velaryon_52
 	mother = Rosby_30_B
 
+	trait = physique_bad_1
+
 	8173.1.1 = { birth = yes }
 	8193.1.1 = { trait = knight }
 	8198.1.1 = { add_spouse = Cupps_57 } # Ysalaine Cupps
@@ -10326,6 +10333,8 @@ Velaryon_87 = {
 
 	father = Velaryon_56
 	mother = Blackberry_9_B
+
+	trait = beauty_bad_1
 
 	8229.1.1 = { birth = yes }
 	8244.1.1 = { add_spouse = Bar_Emmon_49 } # Melianne Bar Emmon
@@ -11642,7 +11651,7 @@ Celtigar_30 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
-	8136.1.1 = { trait = poet }
+	8136.1.1 = { trait = lifestyle_poet }
 	8139.1.1 = { give_nickname = nick_agot_historical_seaspray }
 	8179.1.1 = { death = { death_reason = death_murder } }
 }
@@ -11734,7 +11743,7 @@ Celtigar_31 = {
 		add_character_flag = has_scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
-	8157.1.1 = { trait = poet }
+	8157.1.1 = { trait = lifestyle_poet }
 	8201.1.1 = { death = yes }
 }
 ### Issue of Rolland
@@ -13476,7 +13485,10 @@ Scales_80 = {
 	father = Scales_61
 	mother = Warl_59
 
+	trait = beauty_good_1
+
 	8199.1.1 = { birth = yes }
+	8214.1.1 = { trait = fashionable }
 	8256.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -14736,12 +14748,6 @@ Grand_Maester_1 = {
 	}
 	# AGOT Bookmarked Modified
 	# 8005.1.1 = {
-		# employer = Targaryen_27 # Aegon I Targaryen
-		# effect = {
-			# remove_trait = archmaester_bronze
-			# make_trait_inactive = grandmaester
-		# }
-	# }
 	7998.1.1 = {
 		employer = Targaryen_27 # Aegon I Targaryen
 		effect = {
@@ -16314,7 +16320,7 @@ Knight_Kings_Landing_7 = {
 	}
 	8038.1.1 = {
 		trait = knight
-		trait = poet
+		trait = lifestyle_poet
 		give_nickname = nick_agot_historical_the_strummer
 	}
 	8051.1.1 = {
@@ -17263,7 +17269,7 @@ Targaryen_hh_7 = {
 	8115.1.1 = {
 		trait = mute
 		trait = scarred
-		trait = poet
+		trait = lifestyle_poet
 		trait = loyal
 		trait = disfigured
 		make_trait_inactive = visible_disfigurement_4
