@@ -2,7 +2,7 @@
 # History database id:Baratheon_5
 bookmark_298_joffrey_baratheon={
 	type=boy
-	id=107165
+	id=100372
 	random_seed=2840729241
 	age=0.120000
 	genes={ 		hair_color={ 201 7 0 0 }
@@ -109,7 +109,7 @@ bookmark_298_joffrey_baratheon={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 8 "normal_eyelashes" 0 }
+ 		eyelashes_accessory={ "dark_eyelashes" 27 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -183,23 +183,23 @@ bookmark_298_joffrey_baratheon={
  		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		gene_beauty_details={ "beauty_details" 25 "beauty_details" 0 }
+ 		legwear={ "agot_boots_legwear" 97 "all_legwear" 0 }
+ 		beards={ "no_beard" 0 "no_beard" 0 }
+ 		cloaks={ "no_cloak" 255 "no_cloak" 0 }
+ 		hairstyles={ "all_hairstyles" 142 "all_hairstyles" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
  		cosmetics_eyeshadow={ "eyeshadow_none" 255 "eyeshadow_none" 0 }
  		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
- 		legwear={ "agot_boots_legwear" 97 "all_legwear" 0 }
- 		beards={ "no_beard" 0 "no_beard" 0 }
- 		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 95 "all_hairstyles" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
  		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "agot_stormlander_high_fabrics" 251 "most_clothes" 0 }
- 		headgear={ "agot_crowns" 31 "no_headgear" 0 }
+ 		clothes={ "agot_stormlander_high_fabrics" 97 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 0 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "agot_artifact_weapon_widows_wail" 255 "no_props" 0 }
  }
@@ -213,15 +213,15 @@ bookmark_298_joffrey_baratheon={
 			invert=no
 		}
  {
-			hash=1500963499
-			invert=no
-		}
- {
 			hash=681013727
 			invert=no
 		}
  {
 			hash=1563190100
+			invert=no
+		}
+ {
+			hash=4248726513
 			invert=no
 		}
  {

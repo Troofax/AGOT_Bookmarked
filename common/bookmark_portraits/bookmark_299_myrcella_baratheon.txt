@@ -2,7 +2,7 @@
 # History database id:Baratheon_6
 bookmark_299_myrcella_baratheon={
 	type=girl
-	id=107765
+	id=101147
 	random_seed=2672320258
 	age=0.090000
 	genes={ 		hair_color={ 181 51 198 28 }
@@ -98,7 +98,7 @@ bookmark_299_myrcella_baratheon={
  		complexion={ "complexion_13" 0 "complexion_12" 163 }
  		gene_height={ "normal_height" 136 "normal_height" 140 }
  		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 126 }
- 		gene_bs_body_shape={ "body_shape_hourglass_full" 31 "body_shape_average" 0 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_full" 22 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 41 "bust_shape_3_full" 124 }
  		gene_age={ "old_beauty_1" 148 "old_beauty_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 150 "avg_spacing_lower_thickness" 212 }
@@ -183,15 +183,15 @@ bookmark_299_myrcella_baratheon={
  		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "vanilla_hair_aging" 127 "vanilla_hair_aging" 127 }
  		gene_beauty_details={ "beauty_details" 25 "beauty_details" 0 }
+ 		legwear={ "western_common_legwear" 22 "all_legwear" 0 }
+ 		beards={ "no_beard" 33 "no_beard" 0 }
+ 		cloaks={ "no_cloak" 255 "no_cloak" 0 }
+ 		hairstyles={ "agot_all_hairstyles" 122 "all_hairstyles" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
  		cosmetics_eyeshadow={ "eyeshadow_none" 255 "eyeshadow_none" 0 }
  		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
- 		legwear={ "western_common_legwear" 22 "all_legwear" 0 }
- 		beards={ "no_beard" 33 "no_beard" 0 }
- 		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 188 "all_hairstyles" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_shrink_agot={ "shrink_bodice" 255 "shrink_bodice" 0 }
  		gene_agot_special_bust_cleavage={ "shrink_cleavage" 255 "shrink_cleavage" 0 }
@@ -218,6 +218,10 @@ bookmark_299_myrcella_baratheon={
 		}
  {
 			hash=681013727
+			invert=no
+		}
+ {
+			hash=4248726513
 			invert=no
 		}
  }

@@ -2,7 +2,7 @@
 # History database id:Targaryen_67
 bookmark_129_aemond_targaryen={
 	type=male
-	id=65606
+	id=60090
 	random_seed=1334315873
 	age=0.190000
 	genes={ 		hair_color={ 2 2 2 2 }
@@ -97,7 +97,7 @@ bookmark_129_aemond_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 104 "cheek_wrinkles_both_01" 104 }
  		complexion={ "complexion_10" 109 "complexion_10" 109 }
  		gene_height={ "normal_height" 132 "normal_height" 132 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 131 "body_fat_head_fat_full" 126 }
+ 		gene_bs_body_type={ "body_fat_head_fat_full" 128 "body_fat_head_fat_full" 126 }
  		gene_bs_body_shape={ "body_shape_hourglass_half" 73 "body_shape_hourglass_half" 0 }
  		gene_bs_bust={ "bust_clothes" 58 "bust_shape_3_half" 116 }
  		gene_age={ "old_beauty_1" 3 "old_beauty_1" 3 }
@@ -183,30 +183,29 @@ bookmark_129_aemond_targaryen={
  		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "late_hair_aging" 126 "late_hair_aging" 126 }
  		special_headgear_spectacles={ "eye_patch" 127 "no_spectacles" 0 }
+ 		legwear={ "agot_all_legwear" 62 "all_legwear" 0 }
+ 		beards={ "no_beard" 0 "no_beard" 0 }
+ 		cloaks={ "no_cloak" 255 "no_cloak" 0 }
+ 		hairstyles={ "agot_all_hairstyles" 62 "all_hairstyles" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
  		cosmetics_eyeshadow={ "eyeshadow_none" 255 "eyeshadow_none" 0 }
  		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
- 		legwear={ "valyrian_war_legwear" 94 "all_legwear" 0 }
- 		beards={ "no_beard" 0 "no_beard" 0 }
- 		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 173 "all_hairstyles" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
  		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "valyrian_war_nobility_clothes" 124 "most_clothes" 0 }
+ 		clothes={ "agot_all_armors" 11 "most_clothes" 0 }
  		headgear={ "no_headgear" 198 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
- 		gene_additive_animations_fat={ "fat_additive" 10 "fat_additive" 0 }
+ 		gene_additive_animations_fat={ "fat_additive" 5 "fat_additive" 0 }
  		gene_additive_animations_dwarf={ "dwarf_additive" 0 "dwarf_additive" 0 }
- 		gene_retargeting_fix={ "female_prop" 0 "female_prop" 0 }
- 		props_right={ "marshal_swords" 255 "no_props" 0 }
+		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
-	entity={ 912297863 3775113363 }
+	entity={ 1083207840 1083207840 }
 	tags={ {
 			hash=2125534279
 			invert=no
@@ -221,6 +220,10 @@ bookmark_129_aemond_targaryen={
 		}
  {
 			hash=1563190100
+			invert=no
+		}
+ {
+			hash=4248726513
 			invert=no
 		}
  {
