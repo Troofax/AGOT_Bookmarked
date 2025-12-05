@@ -1664,7 +1664,8 @@ Targaryen_42 = {
 Targaryen_43 = {
 	name = Aegon # Canon
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_43
+	dna = Targaryen_43
+
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -10199,7 +10200,8 @@ Velaryon_46 = {
 	name = Jeyne # Canon, married Harys Stillman
 	dynasty = dynn_Velaryon
 	female = yes
-	#dna = Velaryon_46
+	dna = Velaryon_46
+
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -10242,6 +10244,8 @@ Velaryon_54 = {
 Velaryon_55 = {
 	name = Daemon
 	dynasty = dynn_Velaryon
+
+	dna = Velaryon_55
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -10327,6 +10331,8 @@ Velaryon_57 = {
 Velaryon_87 = {
 	name = Aenar
 	dynasty = dynn_Velaryon
+
+	dna = Velaryon_87
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -13378,6 +13384,8 @@ Scales_61 = {
 	name = Elyas
 	dynasty = dynn_Scales
 
+	dna = Scales_61
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
@@ -15750,6 +15758,8 @@ Maester_Kings_Landing_3 = {
 }
 Maester_Kings_Landing_4 = {
 	name = Anselm # Canon
+
+	dna = Farman_24
 
 	religion = fots_seven
 	culture = reachman

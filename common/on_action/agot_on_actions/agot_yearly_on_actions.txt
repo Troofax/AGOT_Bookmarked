@@ -211,9 +211,15 @@ agot_banking = {
 	}
 }
 
-agot_yearly_high_val_conversion = {
+agot_yearly_culture_conversion = {
 	effect = {
-		agot_high_valyrian_conversion = yes
+		agot_automatic_culture_conversion = yes
+	}
+}
+
+agot_yearly_faith_conversion = {
+	effect = {
+		agot_automatic_faith_conversion = yes
 	}
 }
 
