@@ -3123,7 +3123,7 @@ Greyjoy_rs_14 = {
 	dna = Greyjoy_rs_14
 
 	religion = summer_gods_pan
-	culture = jhalani
+	culture = jhalai
 
 	trait = education_intrigue_1
 	trait = beauty_good_1
@@ -3155,7 +3155,7 @@ Greyjoy_rs_15 = {
 	female = yes
 
 	religion = summer_gods_pan
-	culture = jhalani
+	culture = jhalai
 
 	trait = education_intrigue_2
 	trait = strong
@@ -3179,7 +3179,7 @@ Greyjoy_rs_16 = {
 	female = yes
 
 	religion = sc_harpy
-	culture = ghiscari
+	culture = ghiscari_original
 
 	trait = education_diplomacy_1
 	trait = beauty_good_1
@@ -5132,7 +5132,7 @@ Goodbrother_hh_2 = {
 	name = Kirth # Canon
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_2
 
@@ -34001,7 +34001,7 @@ Codd_12 = {
 	female = yes
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	father = Codd_10
 	mother = Fisher_riverlands_duplicate_9
@@ -34043,7 +34043,7 @@ Codd_rs_13 = {
 	female = yes
 
 	religion = fots_seven
-	culture = westerman
+	culture = westerman_main
 
 	7822.1.1 = { birth = yes }
 	7876.1.1 = { death = yes }
@@ -34234,7 +34234,7 @@ Codd_rs_24 = {
 	female = yes
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	7940.1.1 = { birth = yes }
 	8020.1.1 = { death = yes }

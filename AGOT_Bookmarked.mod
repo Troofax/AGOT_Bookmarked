@@ -1,4 +1,4 @@
-version="1.0.20"
+version="1.0.21"
 tags={
 	"Historical"
 	"Bookmarks"
@@ -7,4 +7,4 @@ tags={
 name="AGOT Bookmarked"
 picture="thumbnail.png"
 supported_version="1.18.*.*"
-path="mod/AGOT_Bookmarked-1.0.20"
+path="mod/AGOT_Bookmarked-1.0.21"

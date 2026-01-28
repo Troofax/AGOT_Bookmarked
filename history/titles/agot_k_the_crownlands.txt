@@ -145,6 +145,7 @@ c_kings_landing = {
 			title:b_rhaenyss_hill = { set_title_name = b_north_hill }
 			title:b_visenyas_hill = { set_title_name = b_river_hill }
 			title:b_goldguard_heights = { set_title_name = b_black_valley }
+			title:b_flea_bottom = { set_title_name = b_bayslide }
 			title:b_hookmarket = { set_title_name = b_mudside }
 			title:b_landingfield = { set_title_name = b_north_verge }
 		}
@@ -180,6 +181,7 @@ c_kings_landing = {
 			title:b_visenyas_hill = { reset_title_name = yes }
 			title:b_hookmarket = { set_title_name = b_kings_landing }
 			title:b_landingfield = { reset_title_name = yes }
+			title:b_flea_bottom = { reset_title_name = yes }
 		}
 	}
 	8010.1.1 = {

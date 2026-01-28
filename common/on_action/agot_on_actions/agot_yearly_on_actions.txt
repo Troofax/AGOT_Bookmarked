@@ -612,45 +612,47 @@ agot_yearly_dragon_cull = {
 			49 = {}
 			1 = {
 				if = { # Owned dragons
-					limit = {
-						has_character_flag = owned_dragon
-					}
-					random_list = { # Ways to kill owned dragons
-						1 = { # Old age
-							trigger = {
-								age > 200
-							}
-							death = { death_reason = death_old_age }
+					limit = { has_character_flag = owned_dragon }
+					if = {
+						limit = {
+							age > 120
+							has_trait = dragon_depressed
 						}
-						1 = { # Flew away to Valyria
-							trigger = {
-								age > 80
-								NOT = { has_character_flag = in_dragonpit }
-								NOT = { exists = var:current_rider }
-							}
-							random_list = {
-								75 = { death = { death_reason = death_flew_away_to_valyria } }
-								25 = { death = { death_reason = death_flew_away_to_sothoryos } }
-							}
+						death = { death_reason = death_depressed }
+					}
+					else_if = {
+						limit = { age > 200 }
+						death = { death_reason = death_old_age }
+					}
+					else_if = {
+						limit = {
+							age > 80
+							NOT = { has_character_flag = in_dragonpit }
+							NOT = { exists = var:current_rider }
+						}
+						random_list = {
+							75 = { death = { death_reason = death_flew_away_to_valyria } }
+							25 = { death = { death_reason = death_flew_away_to_sothoryos } }
 						}
 					}
 				}
 				else = { # Wild dragons
-					random_list = { # Ways to kill wild dragons
-						1 = { # Old age
-							trigger = {
-								age > 200
-							}
-							death = { death_reason = death_old_age }
+					if = {
+						limit = {
+							age > 120
+							has_trait = dragon_depressed
 						}
-						1 = { # Flew away
-							trigger = {
-								age > 80
-							}
-							random_list = {
-								75 = { death = { death_reason = death_flew_away_to_valyria } }
-								25 = { death = { death_reason = death_flew_away_to_sothoryos } }
-							}
+						death = { death_reason = death_depressed }
+					}
+					else_if = {
+						limit = { age > 200 }
+						death = { death_reason = death_old_age }
+					}
+					else_if = {
+						limit = { age > 80 }
+						random_list = {
+							75 = { death = { death_reason = death_flew_away_to_valyria } }
+							25 = { death = { death_reason = death_flew_away_to_sothoryos } }
 						}
 					}
 				}

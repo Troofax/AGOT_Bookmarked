@@ -5413,13 +5413,20 @@ Targaryen_95 = {
 		give_nickname = nick_agot_historical_bittersteel
 		trait = unyielding_defender
 		trait = organizer
-		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_95 COA_KEY = Bittersteel_personal_coa }
 		effect = {
+			if = {
+				limit = { game_start_date < 8188.11.1 }
+				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_95 COA_KEY = Bittersteel_personal_coa }
+			}
 			add_character_modifier = bittersteel_modifier
 		}
 	}
 	8190.1.1 = { employer = Targaryen_94 } # Daemon Blackfyre
-	8194.6.1 = { add_matrilineal_spouse = Blackfyre_3 } # Calla Blackfyre
+	8194.6.1 = { add_spouse = Blackfyre_3 } # Calla Blackfyre
+	8195.3.7 = {
+		# Bittersteel House on start of Blackfyre Rebellion
+		dynasty_house = house_Bittersteel
+	}
 	8196.11.22 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_tyrosh }
@@ -6332,6 +6339,14 @@ Targaryen_121 = {
 			}
 		}
 	}
+	8220.1.1 = {
+		effect = {
+			if = {
+				limit = { character:Tall_1 = { is_alive = yes } }
+				remove_relation_lover = character:Tall_1 # Duncan the Tall
+			}
+		}
+	}
 	8259.6.1 = {
 		death = {
 			death_reason = death_burned # Tragedy at Summerhall
@@ -6629,8 +6644,6 @@ Targaryen_126 = {
 	father = Targaryen_122
 	mother = Blackwood_87
 
-	give_nickname = nick_agot_historical_the_small
-
 	trait = education_martial_2
 	trait = charming
 
@@ -6644,11 +6657,22 @@ Targaryen_126 = {
 		effect = {
 			add_character_flag = do_not_assign_strong_seed
 			make_trait_inactive = black_hair
+			give_nickname = nick_agot_historical_the_small
+		}
+	}
+	8227.1.1 = {
+		effect = {
+			set_focus = education_martial
 		}
 	}
 	8227.8.1 = { trait = compassionate }
 	8229.8.1 = { trait = brave }
 	8231.8.1 = { trait = generous }
+	8233.1.1 = {
+		effect = {
+			education_point_acquisition_effect = yes
+		}
+	}
 	8235.1.1 = { trait = stubborn }
 	8237.1.1 = {
 		trait = knight
@@ -6660,6 +6684,7 @@ Targaryen_126 = {
 	8239.1.1 = {
 		add_spouse = Targaryen_hh_10 # Jenny of Oldstones
 		trait = disinherited
+		give_nickname = nick_agot_historical_the_prince_of_dragonflies
 		effect = {
 			add_character_flag = historical_disinheritance
 			if = {
@@ -7056,6 +7081,9 @@ Blackfyre_3 = {
 			add_unpressed_claim = title:d_dragonstone
 			add_unpressed_claim = title:c_dragonstone
 		}
+	}
+	8236.2.13 = {
+		agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_golden_company }
 	}
 	8249.1.1 = { death = yes }
 }
@@ -7497,6 +7525,9 @@ Blackfyre_11 = {
 		}
 	}
 	8228.1.1 = { trait = knight }
+	8236.2.13 = {
+		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Blackfyre_11 COA_KEY = daemon_iii_blackfyre_personal_arms }
+	}
 	8236.3.2 = {
 		death = {
 			death_reason = death_duel # Battle of Wendwater Bridge
@@ -10351,7 +10382,7 @@ Velaryon_hh_1 = {
 	name = Kelvyn # Semi-Canon
 
 	religion = fots_seven
-	culture = moonman
+	culture = valeman_upper
 
 	trait = education_learning_3
 
@@ -14147,7 +14178,7 @@ Kingsguard_1 = {
 	prowess = 24
 
 	religion = fots_seven
-	culture = stormlander
+	culture = stormlander_main
 
 	trait = education_martial_2
 	trait = diligent
@@ -14186,7 +14217,7 @@ Kingsguard_2 = {
 	prowess = 12
 
 	religion = fots_seven
-	culture = valeman
+	culture = valeman_main
 
 	trait = education_martial_2
 	trait = just
@@ -14225,7 +14256,7 @@ Kingsguard_3 = {
 	prowess = 12
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_martial_2
 	trait = diligent
@@ -14433,7 +14464,7 @@ Kingsguard_8 = {
 	prowess = 3
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_martial_2
 	trait = ambitious
@@ -14684,7 +14715,7 @@ Septon_Kings_Landing_3 = {
 	name = Oswyck # Canon
 
 	religion = fots_seven
-	culture = valeman
+	culture = valeman_main
 
 	trait = education_learning_3
 	trait = compassionate
@@ -14771,7 +14802,7 @@ Grand_Maester_2 = {
 	learning = 8
 
 	religion = fots_seven
-	culture = westerman
+	culture = westerman_main
 
 	trait = education_learning_3
 	trait = diligent
@@ -14803,7 +14834,7 @@ Grand_Maester_3 = {
 	learning = 9
 
 	religion = fots_seven
-	culture = westerman
+	culture = westerman_main
 
 	trait = education_learning_3
 	trait = just
@@ -14875,7 +14906,7 @@ Grand_Maester_5 = {
 	learning = 5
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_3
 
@@ -14941,7 +14972,7 @@ Grand_Maester_7 = {
 	learning = 8
 
 	religion = fots_seven
-	culture = stormlander
+	culture = stormlander_main
 
 	trait = education_learning_4
 	trait = diligent
@@ -15074,7 +15105,7 @@ Grand_Maester_13 = {
 	learning = 9
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_3
 
@@ -15215,7 +15246,7 @@ Grand_Maester_21 = {
 	name = Halbert # XXI
 
 	religion = fots_seven
-	culture = westerman
+	culture = westerman_main
 
 	trait = education_learning_3
 
@@ -15235,7 +15266,7 @@ Grand_Maester_22 = {
 	learning = 7
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_3
 	trait = inquisitive
@@ -15261,7 +15292,7 @@ Grand_Maester_23 = {
 	name = Alesandor # XXIII
 
 	religion = fots_seven
-	culture = valeman
+	culture = valeman_main
 
 	trait = education_learning_4
 
@@ -15282,7 +15313,7 @@ Grand_Maester_24 = {
 	name = Harstyn # XXIV
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_3
 
@@ -15351,7 +15382,7 @@ Grand_Maester_27 = {
 	name = Bonifer # Mentioned, XXVII, Grand Maester steeped in sorcery
 
 	religion = fots_seven
-	culture = stormlander
+	culture = stormlander_main
 
 	trait = education_learning_4
 
@@ -15377,7 +15408,7 @@ Grand_Maester_28 = {
 	name = Ossifer # XXVIII
 
 	religion = fots_seven
-	culture = westerman
+	culture = westerman_main
 
 	trait = education_learning_3
 
@@ -15423,7 +15454,7 @@ Grand_Maester_30 = {
 	name = Thurgood # XXX
 
 	religion = fots_seven
-	culture = stormlander
+	culture = stormlander_main
 
 	trait = education_learning_3
 
@@ -15491,7 +15522,7 @@ Grand_Maester_33 = {
 	name = Urmen # XXXIII
 
 	religion = fots_seven
-	culture = stormlander
+	culture = stormlander_main
 
 	trait = education_learning_3
 
@@ -15552,7 +15583,7 @@ Grand_Maester_36 = {
 	name = Jonothor # XXXVI
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_3
 
@@ -15570,7 +15601,7 @@ Grand_Maester_37 = {
 	name = Eldrick # XXXVII
 
 	religion = fots_seven
-	culture = westerman
+	culture = westerman_main
 
 	trait = education_learning_3
 
@@ -15588,7 +15619,7 @@ Grand_Maester_38 = {
 	name = Garrison # XXXVIII
 
 	religion = fots_seven
-	culture = westerman
+	culture = westerman_main
 
 	trait = education_learning_3
 
@@ -15645,7 +15676,7 @@ Grand_Maester_40 = {
 	learning = 8
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_4
 	trait = honest
@@ -15670,7 +15701,7 @@ Grand_Maester_41 = {
 	learning = 6
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_3
 
@@ -15693,7 +15724,7 @@ Grand_Maester_42 = {
 	learning = 7
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_3
 
@@ -15719,7 +15750,7 @@ Maester_Kings_Landing_3 = {
 	name = Culiper # Canon
 
 	religion = fots_seven
-	culture = stormlander
+	culture = stormlander_main
 
 	learning = 10
 	health = 8
@@ -15925,7 +15956,7 @@ Maester_Kings_Landing_9 = {
 	learning = 10
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_3
 	trait = callous
@@ -16054,7 +16085,7 @@ Poor_Fellows_2 = {
 	learning = 3
 
 	religion = fots_seven
-	culture = westerman
+	culture = westerman_main
 
 	trait = bastard
 
@@ -16113,7 +16144,7 @@ Poor_Fellows_4 = {
 	name = Moon # Canon, AKA: Septon Moon
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_3
 	trait = physique_good_2
@@ -16148,7 +16179,7 @@ Poor_Fellows_5 = {
 	name = Dennis # Canon, Dennis the Lame
 
 	religion = fots_seven
-	culture = westerman
+	culture = westerman_main
 
 	trait = zealous
 	trait = brave
@@ -16167,7 +16198,7 @@ Poor_Fellows_6 = {
 	name = Silas # Canon, AKA: Ragged Silas
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = zealous
 	trait = brave
@@ -16289,7 +16320,7 @@ Knight_Kings_Landing_6 = {
 	prowess = 10
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_martial_2
 	trait = intellect_good_2
@@ -16379,7 +16410,7 @@ Septon_Kings_Landing_6 = {
 	intrigue = 12
 
 	religion = fots_seven
-	culture = valeman
+	culture = valeman_main
 
 	trait = education_learning_2
 	trait = intellect_good_1
@@ -16434,7 +16465,7 @@ Septon_Kings_Landing_8 = {
 	female = yes
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_2
 	trait = gregarious
@@ -16461,7 +16492,7 @@ Septon_Kings_Landing_9 = {
 	female = yes
 
 	religion = fots_seven
-	culture = valeman
+	culture = valeman_main
 
 	trait = education_learning_3
 	trait = gregarious
@@ -16671,7 +16702,7 @@ Septon_Kings_Landing_4 = {
 	diplomacy = 6
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_learning_4
 	trait = patient
@@ -17310,7 +17341,7 @@ Lowborn_Kings_Landing_3 = {
 	learning = 1
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_intrigue_1
 	trait = beauty_good_2
@@ -17346,7 +17377,7 @@ Lowborn_Kings_Landing_4 = {
 	learning = 1
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_martial_1
 	trait = wrathful
@@ -17367,7 +17398,7 @@ Lowborn_Kings_Landing_5 = {
 	name = Pate # Canon, AKA: Quickfinger
 
 	religion = fots_seven
-	culture = valeman
+	culture = valeman_main
 
 	trait = education_intrigue_3
 
@@ -17476,7 +17507,7 @@ Knight_Kings_Landing_14 = {
 	# of Woodmere
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_martial_2
 
@@ -17494,7 +17525,7 @@ Knight_Kings_Landing_15 = {
 	name = Thomas # Semi-Canon, AKA: Thomas the Threadbare, participated in Ashford Tourney in 209 AC
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_martial_2
 
@@ -17517,7 +17548,7 @@ Targaryen_hh_10 = {
 	prowess = 3 #Death to girlboss Jenny
 
 	religion = fots_seven
-	culture = riverlander
+	culture = riverman_main
 
 	trait = education_diplomacy_2
 	trait = beauty_good_2

@@ -13,7 +13,7 @@ e_the_iron_throne = {
 					has_dlc_feature = royal_court
 				}
 				holder = {
-					set_court_language = language_common
+					set_court_language = language_agot_westeros
 					if = {
 						limit = { NOT = { knows_court_language_of = this } }
 						learn_court_language_of = this
@@ -1675,7 +1675,7 @@ e_blackfyre_rebellion = {
 		holder = 0
 	}
 	# Fourth Blackfyre Rebellion
-	8236.2.13 = {
+	8236.2.14 = {
 		holder = Blackfyre_11 # Daemon III Blackfyre
 	}
 	8236.3.2 = {

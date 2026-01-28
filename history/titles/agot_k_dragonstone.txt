@@ -38,7 +38,7 @@
 					has_dlc_feature = royal_court
 				}
 				holder = {
-					set_court_language = language_common
+					set_court_language = language_agot_westeros
 					if = {
 						limit = { NOT = { knows_court_language_of = this } }
 						learn_court_language_of = this

@@ -34,10 +34,20 @@ agot_historical_scenario_setup = {
 
 		agot_8209_2_1_scenario_setup = yes
 	}
+	else_if = { # 211.3.1 After the Spring
+		limit = { game_start_date = 8211.3.1 }
+
+		agot_8211_3_1_ats_scenario_setup = yes
+	}
 	else_if = { # 8233.2.8 The Peake Uprising
 		limit = { game_start_date = 8233.2.8 }
 
 		agot_8233_peake_uprising_setup = yes
+	}
+	else_if = { # 8236.2.13 The Fourth Blackfyre Rebellion
+		limit = { game_start_date = 8236.2.13 }
+
+		agot_8236_fourth_blackfyre_rebellion_setup = yes
 	}
 	else_if = { # 8258.12.21 The Laughing Storm Rebellion
 		limit = { game_start_date = 8239.1.11 }
@@ -97,5 +107,17 @@ agot_sandbox_scenario_setup = {
 
 		#This is too tangled in story cycle to extract
 		agot_8282_9_15_rr_scenario_setup = yes
+	}
+}
+
+### Context: "agot_on_game_start_historical_scenario_setup"
+# This effect is from "agot_on_game_start" and exists to handle scenario setups such as the 4th Blackfyre Rebellion,
+# where the character is designed for unlanded play, but must be landed for total playability.
+# As this ensures the provided effect runs before game rules/history, it is useful for landless -> landed scenarios,
+# example usage: ensuring landless Daemon III is landed before lobby when host does not have DLC
+agot_on_game_start_historical_scenario_setup = {
+	if = { # 8236.2.13 Fourth Blackfyre Rebellion
+		limit = { game_start_date = 8236.2.13 }
+		agot_8236_on_game_start_setup = yes
 	}
 }
