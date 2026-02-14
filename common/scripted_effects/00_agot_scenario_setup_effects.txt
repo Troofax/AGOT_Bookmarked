@@ -76,7 +76,7 @@ agot_historical_scenario_setup = {
 	}
 	# AGOT Bookmarked Added
 	else_if = { # 7899.7.22 The Century of Blood
-		limit = { game_start_date < 7998.1.2 }
+		limit = { game_start_date < 7899.7.22 }
 		agotbm_centuryofblood_add_camp_buildings_on_start = yes
 	}
 	else_if = { # 7998.1.2 Aegon's Conquest
