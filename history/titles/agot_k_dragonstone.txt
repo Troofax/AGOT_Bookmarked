@@ -30,8 +30,9 @@
 		holder = Targaryen_27
 	}
 	7999.4.1 = {
-		liege = e_the_iron_throne
+		liege = e_the_crownlands
 		effect = {
+			agot_turn_westerosi_kingdom_into_lordship_history_effect = { YEAR = 8000 }
 			if = {	# Set Court Language to Common
 				limit = {
 					exists = holder
@@ -56,7 +57,7 @@
 	8041.6.1 = {
 		holder = Targaryen_33
 	}
-	8043.11.2 = {
+	8042.3.1 = {
 		holder = Targaryen_31
 	}
 	8048.3.7 = {
@@ -114,6 +115,9 @@
 		holder = Targaryen_115
 	}
 	8217.1.1 = {
+		holder = Targaryen_116
+	}
+	8219.1.1 = {
 		holder = Targaryen_110
 	}
 	8221.1.1 = {
@@ -179,7 +183,7 @@ d_dragonstone = {
 		holder = Targaryen_27
 	}
 	7999.4.1 = {
-		liege = e_the_iron_throne
+		liege = h_the_iron_throne
 	}
 	8025.6.1 = {
 		holder = Targaryen_31
@@ -190,7 +194,7 @@ d_dragonstone = {
 	8041.6.1 = {
 		holder = Targaryen_33
 	}
-	8043.11.2 = {
+	8042.3.1 = {
 		holder = Targaryen_31
 	}
 	8048.3.7 = {
@@ -248,6 +252,9 @@ d_dragonstone = {
 		holder = Targaryen_115
 	}
 	8217.1.1 = {
+		holder = Targaryen_116
+	}
+	8219.1.1 = {
 		holder = Targaryen_110
 	}
 	8221.1.1 = {
@@ -338,7 +345,7 @@ c_dragonstone = {
 	8041.6.1 = {
 		holder = Targaryen_33
 	}
-	8043.11.2 = {
+	8042.3.1 = {
 		holder = Targaryen_31
 	}
 	8048.3.7 = {
@@ -396,6 +403,9 @@ c_dragonstone = {
 		holder = Targaryen_115
 	}
 	8217.1.1 = {
+		holder = Targaryen_116
+	}
+	8219.1.1 = {
 		holder = Targaryen_110
 	}
 	8221.1.1 = {
@@ -749,26 +759,30 @@ b_blackhull = {
 	}
 }
 d_sharp_point = {
-	20.1.1 = {
+	2185.1.1 = {
 		liege = e_the_stormlands
-		de_jure_liege = k_the_stormlands
+		de_jure_liege = k_the_hook
+		holder = Massey_10
 	}
-	6453.1.1 = {
+	3500.1.1 = {
+		holder = Massey_105
+	}
+	3520.1.1 = {
+		holder = Massey_106
+	}
+	5753.1.1 = {
 		holder = Massey_12
 	}
-	6473.1.1 = {
+	5773.1.1 = {
 		holder = Massey_13
 	}
-	6512.1.1 = {
+	5812.1.1 = {
 		holder = Massey_14
 	}
-	6534.1.1 = {
+	5834.1.1 = {
 		holder = Massey_15
 	}
-	6544.1.1 = {
-		holder = Massey_16
-	}
-	6546.1.1 = {
+	5838.1.1 = {
 		holder = Bar_Emmon_5
 	}
 	7850.1.1 = {
@@ -952,23 +966,20 @@ c_blackmark = {
 	}
 }
 c_sharp_point = {
-	6453.1.1 = {
+	5753.1.1 = {
 		liege = d_sharp_point
 		holder = Massey_12
 	}
-	6473.1.1 = {
+	5773.1.1 = {
 		holder = Massey_13
 	}
-	6512.1.1 = {
+	5812.1.1 = {
 		holder = Massey_14
 	}
-	6534.1.1 = {
+	5834.1.1 = {
 		holder = Massey_15
 	}
-	6544.1.1 = {
-		holder = Massey_16
-	}
-	6546.1.1 = {
+	5838.1.1 = {
 		holder = Bar_Emmon_5
 	}
 	7850.1.1 = {
@@ -1171,7 +1182,16 @@ c_the_scales = {
 	7868.1.1 = {
 		liege = d_claw_isle
 	}
-	7877.1.1 = {
+	7762.1.1 = {
+		holder = Saerygan_1
+	}
+	7779.1.1 = {
+		holder = Saerygan_2
+	}
+	7799.1.1 = {
+		holder = Saerygan_7
+	}
+	7820.1.1 = {
 		holder = Scales_23
 	}
 	7888.1.1 = {

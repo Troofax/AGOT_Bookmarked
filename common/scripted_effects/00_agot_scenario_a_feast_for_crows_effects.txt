@@ -6,14 +6,10 @@
 # A Feast for Crows Scenario #
 #############################
 agot_8300_3_1_affc_scenario_setup = {
-	title:e_the_iron_throne.holder = { save_scope_as = historical_setup }
+	title:h_the_iron_throne.holder = { save_scope_as = historical_setup }
 
 	# Titles
 	agotbm_8300_vassal_assignment = yes
-
-	### CANON CHILDREN STORY CYCLE SETUP ###
-	agot_canon_children_setup_story_cycles_effect = yes
-	######
 }
 
 agotbm_8300_vassal_assignment = {
@@ -23,9 +19,9 @@ agotbm_8300_vassal_assignment = {
 		save_scope_as = flty
 		add_claim_on_loss = no
 	}
-	title:k_the_riverlands.holder = {
+	title:e_the_riverlands.holder = {
 		change_liege = {
-			liege = title:e_the_iron_throne.holder
+			liege = title:h_the_iron_throne.holder
 			change = scope:flty
 		}
 	}
@@ -37,9 +33,9 @@ agotbm_8300_vassal_assignment = {
 		save_scope_as = flty
 		add_claim_on_loss = no
 	}
-	title:k_the_vale.holder = {
+	title:e_the_vale.holder = {
 		change_liege = {
-			liege = title:e_the_iron_throne.holder
+			liege = title:h_the_iron_throne.holder
 			change = scope:flty
 		}
 	}
@@ -51,9 +47,9 @@ agotbm_8300_vassal_assignment = {
 		save_scope_as = flty
 		add_claim_on_loss = no
 	}
-	title:k_the_stormlands.holder = {
+	title:e_the_stormlands.holder = {
 		change_liege = {
-			liege = title:e_the_iron_throne.holder
+			liege = title:h_the_iron_throne.holder
 			change = scope:flty
 		}
 	}
@@ -65,9 +61,9 @@ agotbm_8300_vassal_assignment = {
 		save_scope_as = flty
 		add_claim_on_loss = no
 	}
-	title:k_dorne.holder = {
+	title:e_dorne.holder = {
 		change_liege = {
-			liege = title:e_the_iron_throne.holder
+			liege = title:h_the_iron_throne.holder
 			change = scope:flty
 		}
 	}
@@ -81,7 +77,7 @@ agotbm_8300_vassal_assignment = {
 	}
 	title:k_dragonstone.holder = {
 		change_liege = {
-			liege = title:e_the_iron_throne.holder
+			liege = title:h_the_iron_throne.holder
 			change = scope:flty
 		}
 	}
@@ -95,7 +91,7 @@ agotbm_8300_vassal_assignment = {
 	}
 	title:d_masseys_hook.holder = {
 		change_liege = {
-			liege = title:k_the_crownlands.holder
+			liege = title:e_the_crownlands.holder
 			change = scope:flty
 		}
 	}
@@ -109,7 +105,7 @@ agotbm_8300_vassal_assignment = {
 	}
 	title:d_wendwater_forest.holder = {
 		change_liege = {
-			liege = title:k_the_crownlands.holder
+			liege = title:e_the_crownlands.holder
 			change = scope:flty
 		}
 	}
@@ -123,7 +119,7 @@ agotbm_8300_vassal_assignment = {
 	}
 	title:d_the_fieldlands.holder = {
 		change_liege = {
-			liege = title:k_the_westerlands.holder
+			liege = title:e_the_westerlands.holder
 			change = scope:flty
 		}
 	}
@@ -137,7 +133,7 @@ agotbm_8300_vassal_assignment = {
 	}
 	title:d_tarth.holder = {
 		change_liege = {
-			liege = title:k_the_stormlands.holder
+			liege = title:e_the_stormlands.holder
 			change = scope:flty
 		}
 	}
@@ -151,7 +147,7 @@ agotbm_8300_vassal_assignment = {
 	}
 	title:d_estermont_isles.holder = {
 		change_liege = {
-			liege = title:k_the_stormlands.holder
+			liege = title:e_the_stormlands.holder
 			change = scope:flty
 		}
 	}
@@ -165,7 +161,7 @@ agotbm_8300_vassal_assignment = {
 	}
 	title:d_blueburn.holder = {
 		change_liege = {
-			liege = title:k_the_reach.holder
+			liege = title:e_the_reach.holder
 			change = scope:flty
 		}
 	}
@@ -179,7 +175,7 @@ agotbm_8300_vassal_assignment = {
 	}
 	title:d_brightwater.holder = {
 		change_liege = {
-			liege = title:k_the_reach.holder
+			liege = title:e_the_reach.holder
 			change = scope:flty
 		}
 	}
@@ -193,7 +189,7 @@ agotbm_8300_vassal_assignment = {
 	}
 	title:d_the_westmarch.holder = {
 		change_liege = {
-			liege = title:k_the_reach.holder
+			liege = title:e_the_reach.holder
 			change = scope:flty
 		}
 	}
@@ -207,7 +203,7 @@ agotbm_8300_vassal_assignment = {
 	}
 	title:d_the_arbor.holder = {
 		change_liege = {
-			liege = title:k_the_reach.holder
+			liege = title:e_the_reach.holder
 			change = scope:flty
 		}
 	}

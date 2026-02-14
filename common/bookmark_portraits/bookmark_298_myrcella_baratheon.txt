@@ -2,7 +2,7 @@
 # History database id:Baratheon_6
 bookmark_298_myrcella_baratheon={
 	type=girl
-	id=101147
+	id=103471
 	random_seed=2672320258
 	age=0.090000
 	genes={ 		hair_color={ 181 51 198 28 }
@@ -98,13 +98,13 @@ bookmark_298_myrcella_baratheon={
  		complexion={ "complexion_13" 0 "complexion_12" 163 }
  		gene_height={ "normal_height" 136 "normal_height" 140 }
  		gene_bs_body_type={ "body_fat_head_fat_low" 126 "body_fat_head_fat_low" 126 }
- 		gene_bs_body_shape={ "body_shape_hourglass_full" 31 "body_shape_average" 0 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_full" 25 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 41 "bust_shape_3_full" 124 }
  		gene_age={ "old_beauty_1" 148 "old_beauty_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 150 "avg_spacing_lower_thickness" 212 }
  		gene_eyebrows_fullness={ "layer_2_avg_thickness" 154 "layer_2_avg_thickness" 172 }
  		gene_body_hair={ "body_hair_sparse_low_stubble" 79 "body_hair_sparse_low_stubble" 88 }
- 		gene_hair_type={ "hair_straight" 161 "hair_curly" 161 }
+ 		gene_hair_type={ "hair_wavy" 161 "hair_straight" 161 }
  		gene_baldness={ "no_baldness" 255 "no_baldness" 255 }
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
@@ -193,6 +193,7 @@ bookmark_298_myrcella_baratheon={
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
+ 		gene_ear_stretch={ "ear_stretch" 255 "ear_stretch" 0 }
  		gene_shrink_agot={ "shrink_bodice" 255 "shrink_bodice" 0 }
  		gene_agot_special_bust_cleavage={ "shrink_cleavage" 255 "shrink_cleavage" 0 }
  		gene_agot_special_bust_meereen={ "shrink_meereen" 255 "shrink_meereen" 0 }
@@ -201,8 +202,9 @@ bookmark_298_myrcella_baratheon={
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
  		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
+ 		gene_enclosed_helmet={ "enclosed_helmet" 255 "enclosed_helmet" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "ep2_western_era3_high_nobility_clothes" 224 "most_clothes" 0 }
+ 		clothes={ "agot_house_clothes" 99 "most_clothes" 0 }
  		headgear={ "no_headgear" 0 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  		gene_cloak={ "cloak_additive" 255 "cloak_additive" 0 }
@@ -218,6 +220,10 @@ bookmark_298_myrcella_baratheon={
 		}
  {
 			hash=681013727
+			invert=no
+		}
+ {
+			hash=1563190100
 			invert=no
 		}
  {

@@ -2,7 +2,7 @@
 # History database id:Lannister_7
 bookmark_299_jaime_lannister={
 	type=male
-	id=95180
+	id=97495
 	random_seed=1702982382
 	age=0.330000
 	genes={ 		hair_color={ 201 10 201 10 }
@@ -104,12 +104,12 @@ bookmark_299_jaime_lannister={
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 175 "avg_spacing_lower_thickness" 175 }
  		gene_eyebrows_fullness={ "layer_2_low_thickness" 159 "layer_2_low_thickness" 159 }
  		gene_body_hair={ "body_hair_sparse_low_stubble" 88 "body_hair_sparse_low_stubble" 88 }
- 		gene_hair_type={ "hair_straight" 161 "hair_straight" 161 }
+ 		gene_hair_type={ "hair_wavy" 161 "hair_straight" 161 }
  		gene_baldness={ "no_baldness" 255 "no_baldness" 255 }
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 91 "normal_eyes" 91 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 2 "normal_eyelashes" 6 }
+ 		eyelashes_accessory={ "dark_eyelashes" 29 "normal_eyelashes" 6 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -193,10 +193,12 @@ bookmark_299_jaime_lannister={
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
+ 		gene_ear_stretch={ "ear_stretch" 255 "ear_stretch" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
  		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
+ 		gene_enclosed_helmet={ "enclosed_helmet" 255 "enclosed_helmet" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "agot_all_armors" 214 "most_clothes" 0 }
  		headgear={ "no_headgear" 81 "no_headgear" 0 }

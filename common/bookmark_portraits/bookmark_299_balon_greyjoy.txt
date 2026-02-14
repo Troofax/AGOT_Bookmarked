@@ -2,7 +2,7 @@
 # History database id:Greyjoy_5
 bookmark_299_balon_greyjoy={
 	type=male
-	id=92567
+	id=94880
 	random_seed=2429303481
 	age=0.420000
 	genes={ 		hair_color={ 8 242 8 242 }
@@ -97,8 +97,8 @@ bookmark_299_balon_greyjoy={
  		expression_other={ "cheek_wrinkles_both_01" 0 "cheek_wrinkles_both_01" 126 }
  		complexion={ "complexion_5" 158 "complexion_5" 158 }
  		gene_height={ "normal_height" 140 "normal_height" 129 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 120 "body_fat_head_fat_low" 119 }
- 		gene_bs_body_shape={ "body_shape_rectangle_full" 162 "body_shape_average" 51 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 119 "body_fat_head_fat_low" 119 }
+ 		gene_bs_body_shape={ "body_shape_rectangle_full" 133 "body_shape_average" 51 }
  		gene_bs_bust={ "bust_clothes" 45 "bust_shape_1_half" 35 }
  		gene_age={ "old_1" 82 "old_1" 82 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 176 "avg_spacing_lower_thickness" 155 }
@@ -191,13 +191,16 @@ bookmark_299_balon_greyjoy={
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
+ 		gene_ear_stretch={ "ear_stretch" 255 "ear_stretch" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
  		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
+ 		gene_enclosed_helmet={ "enclosed_helmet" 255 "enclosed_helmet" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "northern_high_nobility_clothes" 222 "most_clothes" 0 }
- 		headgear={ "agot_crowns" 59 "no_headgear" 0 }
+ 		headgear={ "no_headgear" 9 "no_headgear" 0 }
+ 		beards={ "no_beard" 0 "no_beard" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  		gene_cloak={ "cloak_additive" 255 "cloak_additive" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }
@@ -212,15 +215,15 @@ bookmark_299_balon_greyjoy={
 			invert=no
 		}
  {
+			hash=4248726513
+			invert=no
+		}
+ {
 			hash=75156179
 			invert=no
 		}
  {
 			hash=2670398845
-			invert=no
-		}
- {
-			hash=1500963499
 			invert=no
 		}
  {

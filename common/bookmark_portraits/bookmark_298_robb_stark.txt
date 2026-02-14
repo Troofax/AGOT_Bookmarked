@@ -2,12 +2,12 @@
 # History database id:Stark_6
 bookmark_298_robb_stark={
 	type=boy
-	id=99673
+	id=101995
 	random_seed=1376885717
 	age=0.150000
 	genes={ 		hair_color={ 235 216 235 216 }
  		skin_color={ 39 36 39 36 }
- 		eye_color={ 216 38 227 46 }
+ 		eye_color={ 227 46 227 46 }
  		gene_chin_forward={ "chin_forward_pos" 137 "chin_forward_pos" 137 }
  		gene_chin_height={ "chin_height_neg" 128 "chin_height_neg" 128 }
  		gene_chin_width={ "chin_width_neg" 141 "chin_width_neg" 141 }
@@ -192,12 +192,14 @@ bookmark_298_robb_stark={
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
+ 		gene_ear_stretch={ "ear_stretch" 255 "ear_stretch" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
  		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
+ 		gene_enclosed_helmet={ "enclosed_helmet" 255 "enclosed_helmet" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "north_high_winter_high_clothes" 66 "most_clothes" 0 }
+ 		clothes={ "north_high_winter_high_clothes" 151 "most_clothes" 0 }
  		headgear={ "agot_crowns" 41 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }

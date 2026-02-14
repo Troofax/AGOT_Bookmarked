@@ -2,7 +2,7 @@
 	# AGOT Bookmarked Modified
 	# 8010.1.1 = {
 	7998.1.2 = {
-		liege = e_the_iron_throne
+		liege = h_the_iron_throne
 		government = kingsguard_government
 		holder = Velaryon_15 # Corlys Velaryon
 	}

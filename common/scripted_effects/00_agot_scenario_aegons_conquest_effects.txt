@@ -11,19 +11,19 @@ agot_7998_1_1_conquest_scenario_setup = {
 			limit = { character:Targaryen_27 = { has_title = title:c_dragonstone } }
 			title:c_dragonstone.holder = {
 				# spawn_conquest_dragons = yes
-				add_pressed_claim = title:k_the_crownlands
+				add_pressed_claim = title:e_the_crownlands
 				add_pressed_claim = title:d_kings_landing
 				add_pressed_claim = title:c_kings_landing
 			}
 			character:Velaryon_15 = {
 				add_character_flag = lord_commander
-				title:e_the_iron_throne.holder = {
+				title:h_the_iron_throne.holder = {
 					assign_councillor_type = {
 						type = kingsguard_lord_commander
 						target = prev
 					}
 				}
-				title:e_the_iron_throne = {
+				title:h_the_iron_throne = {
 					set_variable = {
 						name = kingsguard_lord_commander
 						value = prev
@@ -38,8 +38,4 @@ agot_7998_1_1_conquest_scenario_setup = {
 			}
 		}
 	}
-
-	### CANON CHILDREN STORY CYCLE SETUP ###
-	agot_canon_children_setup_story_cycles_effect = yes
-	######
 }

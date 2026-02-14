@@ -11,7 +11,7 @@ agot_8129_4_1_dotd_scenario_setup = {
 			# spawn_rhaenyras_dragons = yes
 			add_character_flag = { flag = mw_init_event_blocker days = 7 }
 			save_scope_as = crown_theft_king_legit_heir
-			title:e_the_iron_throne.holder = { save_scope_as = crown_thief }
+			title:h_the_iron_throne.holder = { save_scope_as = crown_thief }
 			add_character_flag = {
 				flag = succession_war_claimant
 				days = 40
@@ -28,7 +28,7 @@ agot_8129_4_1_dotd_scenario_setup = {
 			agot_succession_war_start_effect = yes
 			every_character_war = {
 				add_attacker = title:d_driftmark.holder # Changes Sides #
-				add_attacker = title:k_the_vale.holder
+				add_attacker = title:e_the_vale.holder
 				add_attacker = title:d_sharp_point.holder #
 				add_attacker = title:c_honeyholt.holder
 				add_attacker = title:c_flockshade.holder
@@ -72,7 +72,7 @@ agot_8129_4_1_dotd_scenario_setup = {
 				add_attacker = title:d_goldengrove.holder
 				add_attacker = title:d_runestone.holder
 				add_attacker = title:c_acorns_ridge.holder
-				add_attacker = title:k_the_north.holder
+				add_attacker = title:e_the_north.holder
 				add_attacker = title:d_rooks_rest.holder
 				add_attacker = title:d_the_sisters.holder
 				add_attacker = title:d_the_westmarch.holder
@@ -82,19 +82,19 @@ agot_8129_4_1_dotd_scenario_setup = {
 				add_attacker = title:c_summer_cove.holder
 			}
 		}
-		title:e_the_iron_throne.holder = {
+		title:h_the_iron_throne.holder = {
 			# spawn_aegons_dragons = yes
 			add_character_flag = { flag = mw_init_event_blocker days = 7 }
 			every_character_war = {
 				add_defender = title:c_torrentpeak.holder
-				add_defender = title:k_the_stormlands.holder
+				add_defender = title:e_the_stormlands.holder
 				add_defender = title:c_great_fork.holder
 				add_defender = title:c_milkstone.holder
 				add_defender = title:d_crakehall.holder
 				add_defender = title:d_orchard_way.holder
 				add_defender = title:c_holyhall.holder
 				add_defender = title:d_oldtown.holder
-				add_defender = title:k_the_westerlands.holder
+				add_defender = title:e_the_westerlands.holder
 				add_defender = title:d_the_golden_tooth.holder
 				add_defender = title:c_estryck.holder
 				add_defender = title:d_maidenpool.holder
@@ -119,7 +119,7 @@ agot_8129_4_1_dotd_scenario_setup = {
 		# Invalidation For Custom Character
 		if = {
 			limit = {
-				NOT = { title:e_the_iron_throne.holder = character:Targaryen_65 }
+				NOT = { title:h_the_iron_throne.holder = character:Targaryen_65 }
 			}
 			character:Targaryen_63 = {
 				random_character_war = {
@@ -144,8 +144,4 @@ agot_8129_4_1_dotd_scenario_setup = {
 		}
 		debug_log = "Dance of the Dragons Invalidated"
 	}
-
-	### CANON CHILDREN STORY CYCLE SETUP ###
-	agot_canon_children_setup_story_cycles_effect = yes
-	######
 }

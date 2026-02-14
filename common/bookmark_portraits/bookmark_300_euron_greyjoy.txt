@@ -2,7 +2,7 @@
 # History database id:Greyjoy_6
 bookmark_300_euron_greyjoy={
 	type=male
-	id=92827
+	id=95140
 	random_seed=240050020
 	age=0.420000
 	genes={ 		hair_color={ 11 242 11 242 }
@@ -97,8 +97,8 @@ bookmark_300_euron_greyjoy={
  		expression_other={ "cheek_wrinkles_both_01" 136 "cheek_wrinkles_both_01" 86 }
  		complexion={ "complexion_beauty_1" 54 "complexion_beauty_1" 54 }
  		gene_height={ "normal_height" 146 "normal_height" 146 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 132 "body_fat_head_fat_low" 131 }
- 		gene_bs_body_shape={ "body_shape_hourglass_half" 109 "body_shape_hourglass_half" 30 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 131 "body_fat_head_fat_low" 131 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_half" 106 "body_shape_hourglass_half" 30 }
  		gene_bs_bust={ "bust_clothes" 0 "bust_shape_1_full" 0 }
  		gene_age={ "old_beauty_1" 191 "old_beauty_1" 191 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 255 "avg_spacing_low_thickness" 255 }
@@ -192,10 +192,12 @@ bookmark_300_euron_greyjoy={
  		cosmetics_blush={ "blush_none" 255 "blush_none" 0 }
  		cosmetics_lipcolor={ "lipcolor_none" 255 "lipcolor_none" 0 }
  		gene_shrink_body={ "shrink_all" 255 "" 0 }
+ 		gene_ear_stretch={ "ear_stretch" 255 "ear_stretch" 0 }
  		gene_bs_additive_headgears={ "additive_headgears" 255 "" 0 }
  		gene_bs_cloak_offset={ "cloak_offset" 255 "" 0 }
  		gene_bs_cloak_offset2={ "cloak_offset2" 255 "cloak_offset2" 0 }
  		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
+ 		gene_enclosed_helmet={ "enclosed_helmet" 255 "enclosed_helmet" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		heterochromia_eye={ "heterochromia_eye_black2" 255 "heterochromia_eye_random" 0 }
  		clothes={ "fp1_high_nobility_clothes" 65 "most_clothes" 0 }
