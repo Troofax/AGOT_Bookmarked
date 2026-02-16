@@ -2057,13 +2057,13 @@ Targaryen_51 = {
 	8079.1.1 = { trait = lustful }
 	8082.1.1 = {
 		effect = {
-			agot_safe_crush_mutual_history_effect = {
+			agot_safe_lover_history_effect = {
 				TARGET = character:Beesbury_22 # Braxton Beesbury
 			}
-			agot_safe_crush_mutual_history_effect = {
+			agot_safe_lover_history_effect = {
 				TARGET = character:Mooton_27 # Jonah Mooton
 			}
-			agot_safe_crush_mutual_history_effect = {
+			agot_safe_lover_history_effect = {
 				TARGET = character:Connington_27 # Roy Connington
 			}
 			if = {
@@ -2088,23 +2088,7 @@ Targaryen_51 = {
 			}
 		}
 	}
-	8083.1.1 = { 
-		trait = ambitious
-		effect = {
-			if = {
-				limit = { character:Beesbury_22 = { is_alive = yes } }
-				set_relation_lover = character:Beesbury_22 # Braxton Beesbury
-			}
-			if = {
-				limit = { character:Mooton_27 = { is_alive = yes } }
-				set_relation_lover = character:Mooton_27 # Jonah Mooton
-			}
-			if = {
-				limit = { character:Connington_27 = { is_alive = yes } }
-				set_relation_lover = character:Connington_27 # Roy Connington
-			}
-		} 
-	}
+	8083.1.1 = { trait = ambitious }
 	8084.1.1 = {
 		effect = {
 			add_trait = silent_sister
