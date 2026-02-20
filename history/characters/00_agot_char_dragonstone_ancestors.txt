@@ -13,7 +13,11 @@ Targaryen_13_A = {
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
-	7821.1.1 = { birth = yes }
+	7821.1.1 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
 	7841.1.1 = {
 		add_spouse = Targaryen_13_B # Gael Targaryen
 		trait = dragonrider # Vermithrax (nc)
@@ -48,6 +52,8 @@ Targaryen_13_C = {
 
 	7842.4.23 = {
 		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_4
 		add_character_flag = canon_status_semicanon
 	}
 	7856.1.1 = { trait = dragonrider } # Nessarion (nc)
@@ -79,7 +85,9 @@ Targaryen_13 = {
 
 	7846.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_8
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7866.1.1 = { add_spouse = Targaryen_13_C } # Elaena Targaryen
@@ -101,6 +109,8 @@ Targaryen_13_D = {
 
 	7851.1.1 = {
 		birth = yes
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_1
 		add_character_flag = canon_status_mentioned
 	}
 	7875.1.1 = { add_spouse = Targaryen_rs_13_D }
@@ -143,7 +153,9 @@ Targaryen_14 = {
 
 	7868.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_7
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7888.1.1 = { add_spouse = Targaryen_15 } # Daenys Targaryen
@@ -177,7 +189,9 @@ Targaryen_15 = {
 
 	7870.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_8
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7878.1.1 = { trait = lifestyle_mystic_2_history }
@@ -199,6 +213,8 @@ Targaryen_13_E = {
 
 	7879.1.1 = {
 		birth = yes
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_11
 		add_character_flag = canon_status_mentioned
 	}
 	7932.1.1 = { death = yes }
@@ -217,7 +233,9 @@ Targaryen_16 = {
 
 	7890.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7907.1.1 = { trait = dragonrider } # Archonei (nc)
@@ -238,7 +256,9 @@ Targaryen_17 = {
 
 	7891.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_8
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7910.1.1 = { trait = dragonrider } # Balerion (C)
@@ -258,6 +278,8 @@ Targaryen_18 = {
 
 	7896.1.1 = {
 		birth = yes
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_11
 		add_character_flag = canon_status_mentioned
 	}
 	7930.1.1 = { trait = dragonrider } # Anogaros (nc)
@@ -279,6 +301,8 @@ Targaryen_19 = {
 
 	7910.1.1 = {
 		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_8
 		add_character_flag = canon_status_canon
 	}
 	7935.1.1 = { trait = dragonrider } # Archonei (nc)
@@ -299,7 +323,9 @@ Targaryen_20 = {
 
 	7911.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7927.1.1 = { add_spouse = Targaryen_21 } # Rhaella Targaryen
@@ -322,7 +348,9 @@ Targaryen_21 = {
 
 	7911.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_6
+		make_trait_inactive = scripted_appearance
 	}
 	7930.1.1 = { trait = dragonrider } # Meraxes (C)
 	7953.1.1 = { death = yes }
@@ -341,7 +369,9 @@ Targaryen_22 = {
 
 	7928.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7947.1.1 = { add_spouse = Targaryen_138 } # Rhae Targaryen
@@ -366,7 +396,9 @@ Targaryen_23 = {
 
 	7929.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7933.1.1 = {
@@ -408,7 +440,9 @@ Targaryen_24 = {
 
 	7930.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_10
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7948.1.1 = { add_spouse = Celtigar_12 } # Caerys Celtigar
@@ -431,7 +465,9 @@ Targaryen_138 = {
 
 	7931.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 	}
 	7955.6.1 = { employer = Velaryon_9 } # Monterys Velaryon
 	7981.1.1 = { death = yes }
@@ -450,7 +486,9 @@ Targaryen_25 = {
 
 	7933.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_7
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	7948.1.1 = {
@@ -480,7 +518,9 @@ Targaryen_137 = {
 
 	7955.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_6
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	7955.6.1 = {
@@ -517,6 +557,8 @@ Targaryen_26 = {
 
 	7950.1.1 = {
 		birth = yes
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_2
 		add_character_flag = canon_status_canon
 	}
 	7970.1.1 = { add_spouse = Velaryon_12 } # Valaena Velaryon
@@ -554,7 +596,9 @@ Targaryen_28 = {
 
 	7972.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_10
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7991.1.1 = {
@@ -603,7 +647,7 @@ Targaryen_27 = { # Aegon's Conquest
 
 	7974.1.15 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7986.1.1 = { trait = dragonrider } # Balerion (C)
@@ -770,7 +814,9 @@ Targaryen_29 = {
 
 	7976.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7991.1.1 = { trait = lifestyle_poet }
@@ -816,7 +862,9 @@ Targaryen_30 = {
 
 	8007.1.1 = { # AGOT TODO
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			add_trait = sickly
@@ -891,7 +939,9 @@ Targaryen_31 = {
 
 	8012.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_6
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			add_character_flag = potential_targ_lunatic
@@ -962,7 +1012,6 @@ Targaryen_31 = {
 		effect = { add_trait = wounded_3 }
 	}
 	8042.4.1 = { # Burning Sept of Rememberance
-		give_nickname = nick_agot_historical_the_cruel
 		trait = torturer
 		trait = lunatic_1
 		effect = {
@@ -982,6 +1031,7 @@ Targaryen_31 = {
 	8043.11.2 = { # Battle beneath the God's Eye
 		trait = kinslayer_2 # Aegon Uncrowned
 		effect = { add_dread = major_dread_gain }
+		give_nickname = nick_agot_historical_the_cruel
 	}
 	8044.2.17 = { # Murdered Viserys Targaryen
 		trait = murderer # Viserys Targaryen
@@ -1069,7 +1119,9 @@ Targaryen_32 = {
 
 	8023.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_11
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_homosexual
 	}
@@ -1209,7 +1261,9 @@ Targaryen_33 = {
 
 	8026.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_13
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8038.1.1 = { trait = ambitious }
@@ -1275,7 +1329,9 @@ Targaryen_34 = {
 
 	8029.2.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			clear_traits = yes # Character dead as a child
@@ -1327,7 +1383,9 @@ Targaryen_35 = {
 
 	8034.9.20 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_11
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			add_character_flag = sexuality_ensure_not_homosexual
@@ -1444,7 +1502,9 @@ Targaryen_36 = {
 
 	8036.6.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_not_homosexual
 		add_character_flag = sexuality_ensure_not_asexual
@@ -1515,6 +1575,8 @@ Targaryen_37 = {
 
 	8039.1.1 = {
 		birth = yes
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_15
 		add_character_flag = canon_status_canon
 	}
 	8039.3.1 = {
@@ -1539,6 +1601,8 @@ Targaryen_38 = {
 
 	8044.6.1 = {
 		birth = yes
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_8
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_delivery }
 	}
@@ -1560,6 +1624,8 @@ Targaryen_39 = {
 
 	8047.11.1 = {
 		birth = yes
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_15
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_delivery }
 	}
@@ -1581,6 +1647,8 @@ Targaryen_40 = {
 
 	8047.10.1 = {
 		birth = yes
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_4
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_delivery }
 	}
@@ -1607,7 +1675,9 @@ Targaryen_41 = {
 
 	8042.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_8
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			clear_traits = yes # Character dead as a child
@@ -1664,7 +1734,9 @@ Targaryen_42 = {
 
 	8042.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_8
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			if = { # Pre-swap
@@ -1714,7 +1786,9 @@ Targaryen_43 = {
 
 	8052.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_12
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8052.1.4 = { death = { death_reason = death_sickly } }
@@ -1736,7 +1810,9 @@ Targaryen_44 = {
 
 	8053.7.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_13
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8060.1.1 = {
@@ -1767,7 +1843,9 @@ Targaryen_45 = {
 
 	8055.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_14
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8059.1.1 = { trait = compassionate }
@@ -1828,7 +1906,9 @@ Targaryen_46 = {
 
 	8057.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_10
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8059.1.1 = { give_nickname = nick_agot_historical_the_brave_baelor } # Smacked Balerion at the age of two years old
@@ -1891,7 +1971,9 @@ Targaryen_47 = {
 
 	8060.6.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_13
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = historical_tomboy
 		effect = {
@@ -1929,7 +2011,9 @@ Targaryen_48 = {
 
 	8062.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_15
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8068.1.1 = {
@@ -1970,7 +2054,9 @@ Targaryen_49 = {
 
 	8063.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_16
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_asexual
 	}
@@ -2018,7 +2104,9 @@ Targaryen_50 = {
 
 	8064.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8068.1.1 = { trait = compassionate }
@@ -2047,7 +2135,9 @@ Targaryen_51 = {
 
 	8067.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_not_homosexual
 		add_character_flag = sexuality_ensure_not_asexual
@@ -2057,13 +2147,13 @@ Targaryen_51 = {
 	8079.1.1 = { trait = lustful }
 	8082.1.1 = {
 		effect = {
-			agot_safe_lover_history_effect = {
+			agot_safe_crush_mutual_history_effect = {
 				TARGET = character:Beesbury_22 # Braxton Beesbury
 			}
-			agot_safe_lover_history_effect = {
+			agot_safe_crush_mutual_history_effect = {
 				TARGET = character:Mooton_27 # Jonah Mooton
 			}
-			agot_safe_lover_history_effect = {
+			agot_safe_crush_mutual_history_effect = {
 				TARGET = character:Connington_27 # Roy Connington
 			}
 			if = {
@@ -2088,7 +2178,23 @@ Targaryen_51 = {
 			}
 		}
 	}
-	8083.1.1 = { trait = ambitious }
+	8083.1.1 = { 
+		trait = ambitious
+		effect = {
+			if = {
+				limit = { character:Beesbury_22 = { is_alive = yes } }
+				set_relation_lover = character:Beesbury_22 # Braxton Beesbury
+			}
+			if = {
+				limit = { character:Mooton_27 = { is_alive = yes } }
+				set_relation_lover = character:Mooton_27 # Jonah Mooton
+			}
+			if = {
+				limit = { character:Connington_27 = { is_alive = yes } }
+				set_relation_lover = character:Connington_27 # Roy Connington
+			}
+		} 
+	}
 	8084.1.1 = {
 		effect = {
 			add_trait = silent_sister
@@ -2140,7 +2246,9 @@ Targaryen_52 = {
 
 	8071.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_10
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = { add_character_flag = potential_targ_lunatic }
 	}
@@ -2179,6 +2287,8 @@ Targaryen_53 = {
 
 	8073.10.1 = {
 		birth = yes
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_4
 		add_character_flag = canon_status_canon
 	}
 	8073.12.25 = { death = { death_reason = death_sickly } }
@@ -2198,6 +2308,8 @@ Targaryen_54 = {
 
 	8077.1.15 = {
 		birth = yes
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_8
 		add_character_flag = canon_status_canon
 	}
 	8078.1.1 = { death = { death_reason = death_sickly } }
@@ -2224,7 +2336,9 @@ Targaryen_55 = {
 
 	8080.6.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_14
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		give_nickname = nick_agot_historical_the_winter_child
 	}
@@ -2251,6 +2365,8 @@ Targaryen_55_B = {
 
 	8099.8.1 = {
 		birth = yes
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_5
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_delivery }
 	}
@@ -2285,7 +2401,7 @@ Targaryen_56 = {
 			add_unpressed_claim = title:c_dragonstone
 		}
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8124.1.1 = { death = yes }
@@ -2324,7 +2440,7 @@ Targaryen_58 = {
 	dynasty = dynn_Maegyr
 
 	religion = valyrian_pan_freehold
-	culture = volantene
+	culture = essosi_valyrian
 
 	#father = 115174371 # AGOT TODO Reenable once Essos added
 	mother = Targaryen_51
@@ -2383,7 +2499,7 @@ Targaryen_59 = {
 
 	8074.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_not_asexual
 		add_character_flag = sexuality_ensure_not_homosexual
@@ -2451,7 +2567,9 @@ Targaryen_60 = {
 
 	8077.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_14
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_not_asexual
 		add_character_flag = sexuality_ensure_not_homosexual
@@ -2569,7 +2687,9 @@ Targaryen_61 = {
 
 	8081.3.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance # Forty nine at his death
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_7
+		make_trait_inactive = scripted_appearance # Forty nine at his death
 		add_character_flag = canon_status_canon
 		effect = {
 			add_character_flag = potential_targ_lunatic
@@ -2737,6 +2857,9 @@ Targaryen_62 = {
 
 	8084.4.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_2
 		add_character_flag = canon_status_canon
 	}
 	8085.3.1 = { death = yes } # Died shortly after mother
@@ -2757,7 +2880,9 @@ Targaryen_131 = {
 
 	8096.2.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_9
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8096.6.1 = { death = { death_reason = death_sickly } }
@@ -2790,7 +2915,9 @@ Targaryen_63 = {
 
 	8097.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_2
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			add_character_flag = potential_targ_lunatic
@@ -3095,7 +3222,9 @@ Targaryen_64 = {
 
 	8105.9.2 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8105.9.3 = {
@@ -3127,7 +3256,9 @@ Targaryen_65 = {
 
 	8107.1.10 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = { add_character_flag = potential_targ_lunatic }
 	}
@@ -3308,7 +3439,9 @@ Targaryen_66 = {
 
 	8109.3.4 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_15
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8119.1.1 = { trait = dragonrider } # Dreamfyre (C)
@@ -3354,7 +3487,9 @@ Targaryen_67 = {
 
 	8110.1.23 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_12
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		employer = Targaryen_60 # Viserys I Targaryen
 		effect = { add_character_flag = potential_targ_lunatic }
@@ -3375,6 +3510,10 @@ Targaryen_67 = {
 			}
 		}
 		trait = one_eyed
+		effect = {
+			add_character_flag = standard_eyepatch
+			add_character_flag = one_eyed_healed
+		}
 		trait = lifestyle_blademaster
 		trait = dragonrider # Vhagar (C)
 		trait = education_martial_prowess_3
@@ -3401,6 +3540,7 @@ Targaryen_67 = {
 		}
 	}
 	8130.5.22 = {
+		make_trait_inactive = standard_eyepatch
 		death = {
 			death_reason = death_dragon_duel # Battle above the God's Eye
 			killer = Targaryen_61 # Daemon Targaryen
@@ -3435,7 +3575,9 @@ Targaryen_68 = {
 
 	8114.12.27 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_6
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			add_character_flag = potential_targ_lunatic
@@ -3506,7 +3648,9 @@ Targaryen_71 = {
 
 	8123.4.13 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			clear_traits = yes # Character dead as a child
@@ -3555,7 +3699,9 @@ Targaryen_72 = {
 
 	8123.4.13 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8129.4.26 = {
@@ -3579,7 +3725,9 @@ Targaryen_73 = {
 
 	8127.5.8 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_4
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8129.4.26 = {
@@ -3621,7 +3769,9 @@ Targaryen_74 = {
 
 	8130.8.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_16
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 		effect = {
 			add_pressed_claim = title:h_the_iron_throne
@@ -3677,7 +3827,7 @@ Targaryen_75 = {
 
 	8114.11.29 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = do_not_assign_strong_seed
 		effect = {
@@ -3748,7 +3898,7 @@ Targaryen_76 = {
 
 	8115.10.3 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = do_not_assign_strong_seed
 		effect = {
@@ -3817,7 +3967,7 @@ Targaryen_77 = {
 
 	8117.3.14 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = do_not_assign_strong_seed
 		effect = {
@@ -3889,7 +4039,9 @@ Targaryen_78 = {
 
 	8120.12.28 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_12
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			add_character_flag = potential_targ_lunatic
@@ -3978,7 +4130,9 @@ Targaryen_79 = {
 
 	8122.1.13 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_13
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8126.1.1 = {
@@ -4059,7 +4213,9 @@ Targaryen_80 = {
 
 	8129.3.25 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_13
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		death = { death_reason = death_delivery }
 	}
@@ -4092,7 +4248,9 @@ Targaryen_69 = {
 
 	8116.1.15 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_not_homosexual
 		add_character_flag = sexuality_ensure_not_asexual
@@ -4147,7 +4305,9 @@ Targaryen_70 = {
 
 	8116.1.15 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_6
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8121.1.1 = { employer = Targaryen_63 } # Rhaenyra Targaryen
@@ -4193,6 +4353,8 @@ Targaryen_70_B = {
 
 	8120.1.6 = {
 		birth = yes
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_4
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_sickly }
 	}
@@ -4224,7 +4386,9 @@ Targaryen_81 = {
 
 	8143.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_4
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = { add_character_flag = potential_targ_lunatic }
 	}
@@ -4301,7 +4465,9 @@ Targaryen_82 = {
 
 	8143.9.9 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_14
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8157.9.9 = { trait = celibate }
@@ -4388,7 +4554,9 @@ Targaryen_83 = {
 
 	8145.11.24 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_16
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = historical_tomboy
 	}
@@ -4459,7 +4627,9 @@ Targaryen_84 = {
 
 	8147.8.27 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8163.9.2 = {
@@ -4506,7 +4676,9 @@ Targaryen_85 = {
 
 	8150.10.15 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_11
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8163.9.2 = {
@@ -4596,7 +4768,9 @@ Targaryen_88 = {
 
 	8135.3.14 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_heterosexual
 	}
@@ -4813,7 +4987,9 @@ Targaryen_89 = {
 
 	8136.5.3 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_13
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_heterosexual
 	}
@@ -4931,7 +5107,9 @@ Targaryen_90 = {
 
 	8138.6.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_heterosexual
 		effect = { add_trait = sickly }
@@ -4985,7 +5163,9 @@ Targaryen_91 = {
 
 	8153.12.31 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_7
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8162.2.1 = {
@@ -5057,6 +5237,9 @@ Targaryen_134 = {
 
 	8158.10.11 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_13
 		add_character_flag = canon_status_semicanon
 		death = { death_reason = death_delivery }
 	}
@@ -5076,6 +5259,8 @@ Targaryen_132 = {
 
 	8164.5.8 = {
 		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_delivery }
 	}
@@ -5094,6 +5279,8 @@ Targaryen_133 = {
 
 	8164.5.8 = {
 		birth = yes
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_13
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_delivery }
 	}
@@ -5131,7 +5318,9 @@ Targaryen_92 = {
 
 	8172.11.14 = { # Born a fortnight after Bittersteel
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_11
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8184.1.1 = {
@@ -5160,7 +5349,9 @@ Targaryen_93 = {
 
 	8172.11.14 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_4
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_delivery }
 	}
@@ -5177,6 +5368,8 @@ Targaryen_135 = {
 
 	8179.6.1 = {
 		birth = yes
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_2
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_delivery }
 	}
@@ -5203,8 +5396,10 @@ Targaryen_98 = {
 
 	8155.10.1 = {
 		birth = yes
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_9
 		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = unlegitimize_on_load
 		effect = { make_trait_inactive = surname_waters }
 	}
@@ -5238,8 +5433,10 @@ Targaryen_99 = {
 
 	8156.9.1 = {
 		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_13
 		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = unlegitimize_on_load
 		effect = { make_trait_inactive = surname_waters }
 	}
@@ -5273,8 +5470,10 @@ Targaryen_100 = {
 
 	8157.8.1 = {
 		birth = yes
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_13
 		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = unlegitimize_on_load
 		effect = { make_trait_inactive = surname_waters }
 	}
@@ -5308,8 +5507,10 @@ Targaryen_101 = {
 
 	8158.7.1 = {
 		birth = yes
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_2
 		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = unlegitimize_on_load
 		effect = { make_trait_inactive = surname_waters }
 	}
@@ -5354,8 +5555,10 @@ Targaryen_94 = {
 
 	8170.12.11 = {
 		birth = yes
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_6
 		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = unlegitimize_on_load
 		effect = {
 			add_character_flag = potential_targ_lunatic
@@ -5468,11 +5671,13 @@ Targaryen_95 = {
 
 	8172.11.1 = {
 		birth = yes
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_8
 		add_character_flag = canon_status_canon
 		add_character_flag = unlegitimize_on_load
 		effect = { make_trait_inactive = surname_rivers }
 		employer = Targaryen_88 # Aegon IV Targaryen
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8176.1.1 = {
 		trait = wrathful
@@ -5508,7 +5713,6 @@ Targaryen_95 = {
 				limit = { game_start_date < 8188.11.1 }
 				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_95 COA_KEY = Bittersteel_personal_coa }
 			}
-			add_character_modifier = bittersteel_modifier
 		}
 	}
 	8190.1.1 = { employer = Targaryen_94 } # Daemon Blackfyre
@@ -5567,8 +5771,10 @@ Targaryen_105 = {
 
 	8173.8.1 = {
 		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_13
 		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = unlegitimize_on_load
 		effect = { make_trait_inactive = surname_rivers }
 	}
@@ -5596,8 +5802,10 @@ Targaryen_106 = {
 
 	8174.6.1 = {
 		birth = yes
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_12
 		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = unlegitimize_on_load
 		effect = { make_trait_inactive = surname_rivers }
 	}
@@ -5647,8 +5855,10 @@ Targaryen_96 = {
 
 	8175.8.23 = {
 		birth = yes
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = unlegitimize_on_load
 		effect = { make_trait_inactive = surname_rivers }
 	}
@@ -5680,6 +5890,10 @@ Targaryen_96 = {
 	}
 	8196.11.22 = { # Redgrass Field
 		trait = one_eyed
+		effect = {
+			add_character_flag = no_eyepatch
+			add_character_flag = one_eyed_healed
+		}
 		trait = kinslayer_3 # Daemon Blackfyre
 		trait = scarred
 	}
@@ -5713,6 +5927,7 @@ Targaryen_96 = {
 		}
 	}
 	8252.6.1 = {
+		make_trait_inactive = standard_eyepatch
 		death = { death_reason = death_disappeared_on_ranging }
 	}
 }
@@ -5751,7 +5966,9 @@ Targaryen_97 = {
 
 	8181.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_13
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = unlegitimize_on_load
 		add_character_flag = sexuality_ensure_not_homosexual
@@ -5814,13 +6031,23 @@ Targaryen_107 = {
 
 	8170.11.7 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_9
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8176.8.1 = { trait = generous }
 	8178.8.1 = { trait = compassionate }
 	8180.8.1 = { trait = just }
-	8182.1.1 = { trait = brave }
+	8182.1.1 = { 
+		trait = brave
+		effect = {
+			if = {
+				limit = { character:Targaryen_110 = { is_alive = yes } }
+				set_relation_friend = character:Targaryen_110 # Maekar Targaryen
+			}
+		} 
+	}
 	8186.11.7 = {
 		trait = knight
 		trait = education_martial_prowess_4
@@ -5885,7 +6112,9 @@ Targaryen_108 = {
 
 	8172.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_16
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_asexual
 		effect = { add_character_flag = potential_targ_lunatic }
@@ -5930,7 +6159,9 @@ Targaryen_109 = {
 
 	8173.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8192.1.1 = {
@@ -5967,7 +6198,9 @@ Targaryen_110 = {
 
 	8174.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_9
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8180.8.1 = { trait = irritable }
@@ -6017,8 +6250,10 @@ Targaryen_111 = {
 
 	8190.1.1 = {
 		birth = yes
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_11
 		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8199.1.1 = { give_nickname = nick_agot_historical_the_young_prince }
 	8206.1.1 = {
@@ -6056,12 +6291,13 @@ Targaryen_112 = {
 
 	8194.1.1 = {
 		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_9
 		add_character_flag = canon_status_canon
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8206.1.1 = {
 		employer = Targaryen_91 # Daeron II Targaryen
-		give_nickname = nick_agot_historical_the_even_younger_prince
 		effect = {
 			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Crakehall_50 } # Roland Crakehall
 		}
@@ -6076,7 +6312,8 @@ Targaryen_112 = {
 Targaryen_113 = {
 	name = Daeron # Mentioned
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_113
+	dna = Targaryen_113
+
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -6086,6 +6323,9 @@ Targaryen_113 = {
 
 	8206.11.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_15
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_delivery }
 	}
@@ -6093,7 +6333,8 @@ Targaryen_113 = {
 Targaryen_114 = {
 	name = Baelor # Mentioned
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_114
+	dna = Targaryen_114
+
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -6103,6 +6344,9 @@ Targaryen_114 = {
 
 	8208.8.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_9
 		add_character_flag = canon_status_mentioned
 		death = { death_reason = death_delivery }
 	}
@@ -6125,7 +6369,9 @@ Targaryen_115 = {
 
 	8201.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_16
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8216.1.1 = {
@@ -6156,7 +6402,9 @@ Targaryen_116 = {
 
 	8201.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8217.1.1 = {
@@ -6182,7 +6430,9 @@ Targaryen_117 = {
 
 	8213.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_10
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8245.1.1 = { death = yes }
@@ -6212,7 +6462,9 @@ Targaryen_118 = {
 
 	8190.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_16
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = { add_character_flag = potential_targ_lunatic }
 	}
@@ -6259,7 +6511,9 @@ Targaryen_119 = {
 
 	8192.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_10
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8208.1.1 = {
@@ -6347,7 +6601,9 @@ Targaryen_120 = {
 
 	8198.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_9
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8204.1.1 = {
@@ -6422,7 +6678,9 @@ Targaryen_121 = {
 
 	8199.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8215.1.1 = {
@@ -6484,7 +6742,9 @@ Targaryen_122 = {
 
 	8200.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_11
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_heterosexual
 		effect = { add_character_flag = potential_targ_lunatic }
@@ -6640,7 +6900,9 @@ Targaryen_123 = {
 
 	8202.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_11
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8259.6.1 = {
@@ -6677,7 +6939,9 @@ Targaryen_124 = {
 
 	8222.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_7
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8233.6.1 = {
@@ -6710,7 +6974,9 @@ Targaryen_125 = {
 
 	8232.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_9
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = { add_character_flag = potential_targ_lunatic }
 	}
@@ -6758,7 +7024,7 @@ Targaryen_126 = {
 
 	8221.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_heterosexual
 		effect = {
@@ -6855,7 +7121,9 @@ Targaryen_127 = {
 
 	8225.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_6
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_heterosexual
 	}
@@ -6916,7 +7184,9 @@ Targaryen_128 = {
 
 	8226.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_4
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_heterosexual
 	}
@@ -6958,7 +7228,9 @@ Targaryen_129 = {
 
 	8228.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_homosexual
 	}
@@ -7027,7 +7299,9 @@ Targaryen_130 = {
 
 	8230.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_13
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8239.2.1 = {
@@ -7067,7 +7341,9 @@ Blackfyre_1 = {
 
 	8184.10.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_12
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			clear_traits = yes # Character dead as a child
@@ -7121,7 +7397,9 @@ Blackfyre_2 = {
 
 	8184.10.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_2
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			clear_traits = yes # Character dead as a child
@@ -7174,7 +7452,9 @@ Blackfyre_3 = {
 
 	8185.10.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8196.11.22 = {
@@ -7219,7 +7499,9 @@ Blackfyre_4 = {
 
 	8187.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_12
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8196.11.22 = {
@@ -7268,7 +7550,9 @@ Blackfyre_5 = {
 
 	8188.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_8
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_homosexual
 	}
@@ -7355,7 +7639,9 @@ Blackfyre_6 = {
 
 	8189.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_16
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8196.11.22 = {
@@ -7414,7 +7700,9 @@ Blackfyre_7 = {
 
 	8190.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8196.11.22 = {
@@ -7467,7 +7755,9 @@ Blackfyre_8 = {
 
 	8192.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8196.11.22 = {
@@ -7517,7 +7807,9 @@ Blackfyre_9 = {
 
 	8193.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_14
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8196.11.22 = {
@@ -7571,7 +7863,9 @@ Blackfyre_10 = {
 
 	8195.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_14
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8196.11.22 = {
@@ -7623,7 +7917,9 @@ Blackfyre_11 = {
 
 	8212.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		effect = { agot_join_golden_company_history_effect = yes }
 	}
 	8220.1.1 = {
@@ -7672,7 +7968,9 @@ Blackfyre_12 = {
 
 	8214.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 		effect = { agot_join_golden_company_history_effect = yes }
 	}
@@ -7717,7 +8015,9 @@ Blackfyre_13 = {
 
 	8217.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = { agot_join_golden_company_history_effect = yes }
 	}
@@ -7772,7 +8072,9 @@ Blackfyre_14 = {
 
 	8220.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = { agot_join_golden_company_history_effect = yes }
 	}
@@ -7834,7 +8136,9 @@ Blackfyre_15 = {
 
 	8255.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_10
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8259.1.1 = {
@@ -7859,7 +8163,9 @@ Blackfyre_16 = {
 
 	8236.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 		effect = { agot_join_golden_company_history_effect = yes }
 	}
@@ -7892,7 +8198,9 @@ Brightflame_7 = {
 
 	8211.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_2
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 		add_character_flag = unlegitimize_on_load
 		effect = {
@@ -7922,7 +8230,9 @@ Brightflame_2 = {
 
 	8216.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_7
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 		add_character_flag = unlegitimize_on_load
 		effect = {
@@ -7953,7 +8263,9 @@ Brightflame_8 = {
 
 	8216.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_10
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 		add_character_flag = unlegitimize_on_load
 		effect = {
@@ -7998,7 +8310,7 @@ Farseed_1 = {
 
 	8113.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = historical_dragonseed
 		employer = Targaryen_63 # Rhaenyra Targaryen
@@ -8051,7 +8363,7 @@ Hammer_2 = {
 
 	8064.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_blackglass_port }
@@ -8073,7 +8385,7 @@ Hammer_3 = {
 
 	8080.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 		culture = westerosi_valyrian
 		effect = {
@@ -8121,7 +8433,7 @@ Hammer_1 = {
 
 	8095.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = historical_dragonseed
 		culture = westerosi_valyrian
@@ -8198,7 +8510,7 @@ White_1 = {
 
 	8091.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = historical_dragonseed
 		effect = {
@@ -8280,7 +8592,7 @@ Truefyre_1 = {
 
 	8115.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		culture = crownlander
 		effect = {
@@ -8395,7 +8707,7 @@ Palehair_1 = {
 
 	8126.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		culture = crownlander
 		effect = {
@@ -8460,7 +8772,7 @@ Palehair_hh_1 = {
 
 	8092.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_bisexual
 		effect = {
@@ -8541,7 +8853,9 @@ Velaryon_6 = {
 
 	7828.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	7853.1.1 = { add_spouse = Ormollen_18_B } # Danara Ormollen
 	7891.1.1 = { death = yes }
@@ -8560,7 +8874,9 @@ Velaryon_7 = {
 
 	7860.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = seafoam_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	7882.1.1 = { add_spouse = Velaryon_7_B } # Daenerys Velaryon
 	7912.1.1 = { death = yes }
@@ -8579,7 +8895,9 @@ Velaryon_7_B = {
 
 	7863.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_8
+		make_trait_inactive = scripted_appearance
 	}
 	7920.1.1 = { death = yes }
 }
@@ -8597,7 +8915,9 @@ Velaryon_8 = {
 
 	7882.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = seafoam_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	7901.1.1 = { add_spouse = Celtigar_10_A } # Jenette Celtigar
 	7941.1.1 = { death = yes }
@@ -8612,7 +8932,11 @@ Velaryon_92 = {
 	father = Velaryon_7 # Vaemond Velaryon
 	mother = Velaryon_7_B # Daenerys Velaryon
 
-	7886.1.1 = { birth = yes }
+	7886.1.1 = {
+		birth = yes
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = seaglass_eyes
+	}
 	7903.1.1 = { add_spouse = Phassios_13 } # Fadrana Phassios
 	7955.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -8629,7 +8953,11 @@ Velaryon_93 = {
 	father = Velaryon_92
 	mother = Phassios_13
 
-	7905.1.1 = { birth = yes }
+	7905.1.1 = {
+		birth = yes
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = seaglass_eyes
+	}
 	7922.1.1 = { add_spouse = Celtigar_74 } # Valaena Celtigar
 	7954.1.1 = { death = yes }
 }
@@ -8644,7 +8972,11 @@ Velaryon_94 = {
 	father = Velaryon_92
 	mother = Phassios_13
 
-	7908.1.1 = { birth = yes }
+	7908.1.1 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_2
+	}
 	7969.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -8659,7 +8991,11 @@ Velaryon_95 = {
 	father = Velaryon_92
 	mother = Phassios_13
 
-	7910.1.1 = { birth = yes }
+	7910.1.1 = {
+		birth = yes
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = seaglass_eyes
+	}
 	7932.1.1 = { add_spouse = Staedmon_15 } # Lynett Staedmon
 	7974.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -8677,7 +9013,11 @@ Velaryon_97 = {
 	father = Velaryon_95
 	mother = Staedmon_15
 
-	7934.1.1 = { birth = yes }
+	7934.1.1 = {
+		birth = yes
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = seaglass_eyes
+	}
 	8003.1.1 = {
 		death = { death_reason = death_treatment }
 	}
@@ -8694,7 +9034,11 @@ Velaryon_96 = {
 	father = Velaryon_93
 	mother = Celtigar_74
 
-	7925.1.1 = { birth = yes }
+	7925.1.1 = {
+		birth = yes
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_6
+	}
 	7983.1.1 = {
 		death = { death_reason = death_heart_attack }
 	}
@@ -8713,7 +9057,9 @@ Velaryon_9 = {
 
 	7909.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = seafoam_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	7928.1.1 = { add_spouse = Scales_8_B } # Shiera Scales
 	7968.1.1 = { death = yes }
@@ -8733,7 +9079,9 @@ Velaryon_10 = {
 
 	7930.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_6
+		make_trait_inactive = scripted_appearance
 	}
 	7950.1.1 = { add_spouse = Targaryen_25 } # Viserra Targaryen
 	7990.1.1 = { death = yes }
@@ -8760,7 +9108,9 @@ Velaryon_11 = {
 
 	7951.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7970.1.1 = { add_spouse = Targaryen_137 } # Aeriana Targaryen
@@ -8799,7 +9149,9 @@ Velaryon_12 = {
 
 	7952.6.9 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_15
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7981.1.1 = { culture = westerosi_valyrian }
@@ -8818,7 +9170,9 @@ Velaryon_84 = {
 
 	7954.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_10
+		make_trait_inactive = scripted_appearance
 	}
 	7972.1.1 = { add_spouse = Celtigar_14 } # Alysanne Celtigar
 	7981.1.1 = { culture = westerosi_valyrian }
@@ -8851,7 +9205,9 @@ Velaryon_13 = {
 
 	7974.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_12
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7981.1.1 = { culture = westerosi_valyrian }
@@ -8886,7 +9242,9 @@ Velaryon_14 = {
 
 	7977.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_12
+		make_trait_inactive = scripted_appearance
 	}
 	7981.1.1 = { culture = westerosi_valyrian }
 	7992.1.1 = { religion = fots_seven }
@@ -8924,7 +9282,9 @@ Velaryon_15 = {
 
 	7980.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_5
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7981.1.1 = { culture = westerosi_valyrian }
@@ -8964,7 +9324,9 @@ Velaryon_83 = {
 
 	7986.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 	}
 	7992.1.1 = { religion = fots_seven }
 	8003.1.1 = { add_spouse = Staunton_47 } # Sybell Staunton
@@ -8987,7 +9349,9 @@ Velaryon_16 = {
 
 	7988.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_10
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	7992.1.1 = { religion = fots_seven }
@@ -9008,7 +9372,9 @@ Velaryon_85 = {
 
 	8004.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 	}
 	8070.1.1 = { death = yes }
 }
@@ -9024,6 +9390,8 @@ Velaryon_86 = {
 
 	8009.1.1 = {
 		birth = yes
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = seafoam_eyes
 		death = { death_reason = death_delivery }
 	}
 }
@@ -9041,7 +9409,9 @@ Velaryon_17 = {
 
 	8003.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8062.1.1 = { death = yes }
@@ -9059,7 +9429,9 @@ Velaryon_18 = {
 
 	8004.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8054.1.1 = { death = yes }
@@ -9077,7 +9449,9 @@ Velaryon_19 = {
 
 	8006.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8049.1.1 = { death = yes }
@@ -9110,7 +9484,9 @@ Velaryon_20 = {
 
 	7998.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_4
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8001.1.1 = { trait = brave }
@@ -9151,7 +9527,9 @@ Velaryon_21 = {
 
 	8002.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = seafoam_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8028.1.1 = { add_spouse = Stokeworth_15_B } # Demerei Stokeworth
@@ -9172,7 +9550,9 @@ Velaryon_23 = {
 
 	8003.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = seafoam_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8062.1.1 = { death = yes }
@@ -9204,7 +9584,9 @@ Velaryon_24 = {
 
 	8007.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_8
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8043.11.2 = { employer = Targaryen_31 } # Maegor Targaryen
@@ -9236,7 +9618,9 @@ Velaryon_22 = {
 
 	8030.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_8
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_homosexual
 	}
@@ -9261,7 +9645,9 @@ Velaryon_25 = {
 
 	8017.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8033.1.1 = { trait = knight }
@@ -9281,7 +9667,9 @@ Velaryon_26 = {
 
 	8019.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8035.1.1 = { trait = knight }
@@ -9303,7 +9691,9 @@ Velaryon_27 = {
 
 	8020.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8036.1.1 = { trait = knight }
@@ -9323,7 +9713,9 @@ Velaryon_28 = {
 
 	8021.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_11
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8055.1.1 = { employer = Estermont_19 } # Lomas Estermont
@@ -9346,7 +9738,9 @@ Velaryon_29 = {
 
 	8023.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8059.2.1 = {
@@ -9368,7 +9762,9 @@ Velaryon_30 = {
 
 	8024.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = seafoam_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8059.2.1 = {
@@ -9390,7 +9786,9 @@ Velaryon_36 = {
 
 	8026.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_4
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8078.1.1 = { death = yes }
@@ -9429,7 +9827,7 @@ Velaryon_31 = { # Dance of the Dragons
 
 	8052.10.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_not_asexual
 		add_character_flag = sexuality_ensure_not_homosexual
@@ -9501,7 +9899,9 @@ Velaryon_32 = {
 
 	8056.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = seafoam_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	8075.1.1 = { add_spouse = Tarth_27_B } # Jeyne Tarth
 	8115.1.1 = { death = yes }
@@ -9521,7 +9921,9 @@ Velaryon_33 = {
 
 	8057.3.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_8
+		make_trait_inactive = scripted_appearance
 	}
 	8080.1.1 = { add_spouse = Bar_Emmon_19_B } # Endra Bar Emmon
 	8110.7.1 = { death = { death_reason = death_accident } }
@@ -9553,7 +9955,9 @@ Velaryon_34 = {
 
 	8092.10.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8104.1.1 = { trait = dragonrider } # Vhagar (C)
@@ -9593,7 +9997,9 @@ Velaryon_35 = {
 
 	8094.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_homosexual
 	}
@@ -9654,7 +10060,9 @@ Velaryon_37 = {
 
 	8076.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8094.1.1 = { trait = knight }
@@ -9691,7 +10099,9 @@ Velaryon_38 = {
 
 	8081.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = purple_eyes_9
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8097.1.1 = { trait = knight }
@@ -9736,7 +10146,9 @@ Velaryon_39 = {
 
 	8084.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_4
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8100.1.1 = { trait = knight }
@@ -9782,7 +10194,9 @@ Velaryon_40 = {
 
 	8086.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8102.1.1 = { trait = knight }
@@ -9827,7 +10241,9 @@ Velaryon_41 = {
 
 	8087.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8103.1.1 = { trait = knight }
@@ -9875,7 +10291,9 @@ Velaryon_42 = {
 
 	8088.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_15
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8104.1.1 = { trait = knight }
@@ -9925,7 +10343,7 @@ Velaryon_rs_8 = {
 
 	8097.6.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_hull }
@@ -9963,7 +10381,7 @@ Velaryon_43 = {
 
 	8114.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = historical_dragonseed
 		add_character_flag = unlegitimize_on_load
@@ -10013,7 +10431,7 @@ Velaryon_44 = {
 
 	8115.6.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = unlegitimize_on_load
 		effect = { set_real_father = character:Velaryon_31 } # Corlys Velaryon
@@ -10089,7 +10507,9 @@ Velaryon_47 = {
 
 	8096.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = seafoam_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8112.1.1 = {
@@ -10122,7 +10542,9 @@ Velaryon_50 = {
 
 	8102.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_12
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8118.1.1 = { trait = knight }
@@ -10144,7 +10566,9 @@ Velaryon_48 = {
 
 	8113.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_8
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8150.1.1 = { death = { death_reason = death_accident } }
@@ -10162,7 +10586,9 @@ Velaryon_71 = {
 
 	8118.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = seafoam_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	8142.1.1 = { trait = knight }
 	8144.1.1 = { add_spouse = Velaryon_rs_71 }
@@ -10201,7 +10627,9 @@ Velaryon_49 = {
 
 	8125.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_14
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8135.1.1 = {
@@ -10272,7 +10700,9 @@ Velaryon_53 = {
 
 	8127.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8172.1.1 = { death = yes }
@@ -10294,7 +10724,9 @@ Velaryon_51 = {
 
 	8134.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8201.1.1 = { death = yes }
@@ -10314,6 +10746,8 @@ Velaryon_91 = {
 
 	8137.1.1 = {
 		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = canon_status_mentioned		
 	}
 	8190.1.1 = { death = yes }
@@ -10333,7 +10767,9 @@ Velaryon_52 = {
 
 	8140.1.1 = {
 		birth = yes # MUSH has his birth date listed as 140, so the child born in 137 was probably a girl
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_12
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8156.1.1 = { trait = knight }
@@ -10365,7 +10801,9 @@ Velaryon_45 = {
 
 	8175.3.9 = { # Three years later than in Blood of Dragons
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		make_trait_inactive = surname_waters
 	}
@@ -10396,7 +10834,9 @@ Velaryon_46 = {
 
 	8175.3.9 = { # Three years later than in Blood of Dragons
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_1
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		make_trait_inactive = surname_waters
 	}
@@ -10416,7 +10856,9 @@ Velaryon_54 = {
 
 	8170.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	8190.1.1 = { trait = knight }
 	8201.1.1 = { add_spouse = Staunton_35_B } # Keleria Staunton
@@ -10438,7 +10880,9 @@ Velaryon_55 = {
 
 	8173.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_6
+		make_trait_inactive = scripted_appearance
 	}
 	8193.1.1 = { trait = knight }
 	8198.1.1 = { add_spouse = Cupps_57 } # Ysalaine Cupps
@@ -10452,13 +10896,20 @@ Velaryon_64 = {
 	name = Matarys # Night's Watch, Commander of Eastwatch-By-The-Sea
 	dynasty = dynn_Velaryon
 
+	dna = Velaryon_64
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Velaryon_55
 	mother = Cupps_57
 
-	8200.1.1 = { birth = yes }
+	8200.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_1
+	}
 	8220.1.1 = { trait = knight }
 	8233.6.1 = {
 		trait = nightswatch_historical
@@ -10486,7 +10937,9 @@ Velaryon_56 = {
 
 	8203.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_2
+		make_trait_inactive = scripted_appearance
 	}
 	8221.1.1 = { trait = knight }
 	8224.1.1 = { add_spouse = Blackberry_9_B } # Tansy Blackberry
@@ -10506,7 +10959,9 @@ Velaryon_57 = {
 
 	8225.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_9
+		make_trait_inactive = scripted_appearance
 	}
 	8243.1.1 = { add_spouse = Grafton_1_A } # Grenna Grafton
 	8245.1.1 = { trait = knight }
@@ -10528,7 +10983,9 @@ Velaryon_87 = {
 
 	8229.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = purple_eyes_2
+		make_trait_inactive = scripted_appearance
 	}
 	8244.1.1 = { add_spouse = Bar_Emmon_49 } # Melianne Bar Emmon
 	8276.1.1 = { death = yes }
@@ -10619,7 +11076,9 @@ Velaryon_70 = {
 
 	8147.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = seafoam_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	8175.1.1 = { add_matrilineal_spouse = Redwyne_58 } # Paxter Redwyne
 	8211.1.1 = { death = yes }
@@ -10638,7 +11097,9 @@ Velaryon_90 = {
 
 	8153.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = seafoam_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	8222.1.1 = { death = yes }
 }
@@ -10657,7 +11118,9 @@ Velaryon_67 = {
 
 	8179.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	8198.1.1 = { add_matrilineal_spouse = Haratis_87 } # Hyllio Haratis
 	8200.1.1 = { trait = strong }
@@ -10682,7 +11145,9 @@ Velaryon_68 = {
 
 	8180.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_blonde_hair
+		make_trait_inactive = purple_eyes_15
+		make_trait_inactive = scripted_appearance
 	}
 	8214.1.1 = {
 		death = { death_reason = death_drank_to_death }
@@ -10703,7 +11168,9 @@ Velaryon_69 = {
 
 	8200.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	8216.1.1 = {
 		death = { death_reason = death_horse_riding_accident }
@@ -10723,7 +11190,9 @@ Velaryon_72 = {
 
 	8201.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_14
+		make_trait_inactive = scripted_appearance
 	}
 	8218.1.1 = { trait = knight }
 	8228.1.1 = { add_spouse = Scales_66 } # Jyana Scales
@@ -10747,7 +11216,9 @@ Velaryon_66 = {
 
 	8232.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = neutral_silver_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 	}
 	8248.1.1 = { add_spouse = Peasebury_70 } # Daria Peasebury
 	8249.1.1 = { trait = knight }
@@ -10769,7 +11240,9 @@ Velaryon_75 = {
 
 	8233.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = silver_gold_hair
+		make_trait_inactive = seaglass_eyes
+		make_trait_inactive = scripted_appearance
 	}
 }
 Velaryon_76 = {
@@ -10787,7 +11260,9 @@ Velaryon_76 = {
 
 	8237.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_16
+		make_trait_inactive = scripted_appearance
 	}
 	8278.1.1 = { death = yes }
 }
@@ -10806,7 +11281,7 @@ Celtigar_8 = {
 
 	7832.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	7848.1.1 = { add_spouse = Celtigar_rs_8 }
 	7868.1.1 = { add_spouse = Scales_10 } # Jeyn Scales
@@ -10836,7 +11311,7 @@ Celtigar_9 = {
 
 	7851.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	7879.1.1 = { add_spouse = Dunford_16 } # Elissa Dunford
 	7883.1.1 = { add_spouse = Tudbury_10 } # Malin Tudbury
@@ -10938,7 +11413,7 @@ Celtigar_10 = {
 
 	7880.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	7902.1.1 = { add_spouse = Redwyne_46 } # Lanette Redwyne
 	7903.1.1 = { culture = westerosi_valyrian }
@@ -10958,7 +11433,7 @@ Celtigar_10_A = {
 
 	7883.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	7903.1.1 = { culture = westerosi_valyrian }
 	7938.1.1 = { death = yes }
@@ -10977,7 +11452,7 @@ Celtigar_11 = {
 
 	7905.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	7926.1.1 = { add_spouse = Velaryon_94 } # Vaella Velaryon
 	7968.1.1 = { death = yes }
@@ -11115,7 +11590,7 @@ Celtigar_12 = {
 
 	7928.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	7975.1.1 = { death = yes }
 }
@@ -11132,7 +11607,7 @@ Celtigar_13 = {
 
 	7930.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	7946.1.1 = { add_spouse = Combe_8 } # Margaery Combe
 	7960.1.1 = { add_spouse = Wormwood_48 } # Obany Wormwood
@@ -11156,7 +11631,7 @@ Celtigar_15 = {
 
 	7951.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7969.1.1 = { add_spouse = Massey_94 } # Myrena Massey
@@ -11195,7 +11670,7 @@ Celtigar_14 = {
 
 	7953.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	7968.1.1 = { trait = arrogant }
 	8004.1.1 = { death = yes }
@@ -11356,7 +11831,7 @@ Celtigar_16 = {
 
 	7970.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7997.1.1 = { add_spouse = Sunglass_17 } # Elinor Sunglass
@@ -11385,7 +11860,7 @@ Celtigar_17 = {
 
 	7977.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8017.1.1 = { death = yes }
 }
@@ -11417,7 +11892,7 @@ Celtigar_18 = {
 
 	7998.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8017.1.1 = { trait = knight }
@@ -11459,7 +11934,7 @@ Celtigar_62 = {
 
 	8000.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8017.1.1 = {
 		trait = knight
@@ -11491,7 +11966,7 @@ Celtigar_19 = {
 
 	8026.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8042.1.1 = { add_spouse = Massey_32 } # Elinor Massey
@@ -11516,7 +11991,7 @@ Celtigar_20 = {
 
 	8034.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8092.1.1 = { death = { death_reason = death_accident } }
@@ -11537,7 +12012,7 @@ Celtigar_21 = {
 
 	8035.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8064.1.1 = { death = yes }
@@ -11606,7 +12081,7 @@ Celtigar_22 = {
 
 	8048.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8065.1.1 = { trait = drunkard }
 	8065.1.1 = { add_spouse = Grandison_56 } # Olyssa Grandison
@@ -11660,7 +12135,7 @@ Celtigar_23 = {
 
 	8066.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8082.1.1 = { add_spouse = Scales_47 } # Jeyn Scales
 	8114.1.1 = { death = yes }
@@ -11738,7 +12213,7 @@ Celtigar_24 = { # Dance of the Dragons
 
 	8085.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8101.4.1 = { add_spouse = Bar_Emmon_21 } # Alarra Bar Emmon
@@ -11763,7 +12238,7 @@ Celtigar_61 = {
 
 	8085.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8103.1.1 = { trait = knight }
 	8113.1.1 = { add_spouse = Hollard_59 } # Elissa Hollard
@@ -11784,7 +12259,7 @@ Celtigar_25 = {
 
 	8104.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8166.1.1 = { death = yes }
@@ -11802,7 +12277,7 @@ Celtigar_26 = { # Conquest of Dorne
 
 	8107.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8123.1.1 = { trait = knight }
@@ -11824,7 +12299,7 @@ Celtigar_27 = {
 
 	8111.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8131.1.1 = {
@@ -11847,7 +12322,7 @@ Celtigar_30 = {
 
 	8119.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8136.1.1 = { trait = lifestyle_poet }
@@ -11869,7 +12344,7 @@ Celtigar_29 = {
 
 	8122.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8140.1.1 = { trait = knight }
@@ -11895,7 +12370,7 @@ Celtigar_28 = {
 
 	8115.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	# 8125.1.1 = { trait = squire } # AGOT TODO trait
@@ -11940,7 +12415,7 @@ Celtigar_31 = {
 	8139.1.1 = {
 		birth = yes
 		make_trait_inactive = surname_waters
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8157.1.1 = { trait = lifestyle_poet }
@@ -11964,7 +12439,7 @@ Celtigar_32 = {
 
 	8131.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8147.1.1 = { trait = knight }
@@ -11999,7 +12474,7 @@ Celtigar_33 = {
 
 	8135.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8151.1.1 = {
@@ -12024,7 +12499,7 @@ Celtigar_34 = {
 
 	8137.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8199.1.1 = { death = yes }
@@ -12043,7 +12518,7 @@ Celtigar_35 = {
 
 	8142.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8214.1.1 = { death = yes }
@@ -12061,7 +12536,7 @@ Celtigar_36 = {
 
 	8147.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8158.1.1 = {
@@ -12117,7 +12592,7 @@ Celtigar_43 = {
 
 	8131.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8148.1.1 = { trait = knight }
@@ -12139,7 +12614,7 @@ Celtigar_37 = {
 
 	8136.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8177.1.1 = { death = yes }
@@ -12158,7 +12633,7 @@ Celtigar_38 = {
 
 	8141.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8197.1.1 = { death = yes }
@@ -12176,7 +12651,7 @@ Celtigar_39 = {
 
 	8139.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8160.1.1 = {
@@ -12198,7 +12673,7 @@ Celtigar_42 = {
 
 	8142.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8160.1.1 = {
@@ -12221,7 +12696,7 @@ Celtigar_41 = {
 
 	8144.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8207.1.1 = { death = yes }
@@ -12240,7 +12715,7 @@ Celtigar_40 = {
 
 	8160.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8178.1.1 = { trait = knight }
@@ -12261,7 +12736,7 @@ Celtigar_44 = {
 
 	8152.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8190.1.1 = { death = yes }
@@ -12279,7 +12754,7 @@ Celtigar_45 = {
 
 	8154.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8172.1.1 = { add_spouse = Velaryon_90 } # Gael Velaryon
@@ -12298,7 +12773,7 @@ Celtigar_46 = {
 
 	8155.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8166.1.1 = {
@@ -12324,7 +12799,7 @@ Celtigar_47 = {
 
 	8156.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8221.1.1 = { death = yes }
@@ -12343,7 +12818,7 @@ Celtigar_48 = {
 
 	8173.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8190.1.1 = { add_spouse = Celtigar_rs_48 }
 	8198.1.1 = { add_spouse = Tudbury_45 } # Alarra Tudbury
@@ -12373,7 +12848,7 @@ Celtigar_49 = {
 
 	8193.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8220.1.1 = { add_spouse = Scales_80 } # Alyssa Scales
 	8238.1.1 = { death = yes }
@@ -12392,7 +12867,7 @@ Celtigar_56 = {
 
 	8199.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8244.1.1 = { death = yes }
 }
@@ -12410,7 +12885,7 @@ Celtigar_50 = {
 
 	8221.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8239.1.1 = { add_spouse = Rollingford_62 } # Dorcas Rollingford
 	8280.1.1 = { death = yes }
@@ -12430,7 +12905,7 @@ Celtigar_58 = {
 
 	8223.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8245.1.1 = { add_spouse = Blount_59 } # Alarra Blount
 	8275.1.1 = { death = yes }
@@ -12449,7 +12924,7 @@ Celtigar_51 = {
 
 	8178.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8194.1.1 = { trait = knight }
 	8194.1.1 = { add_spouse = Cupps_55 } # Elyn Cupps
@@ -12468,7 +12943,7 @@ Celtigar_52 = {
 
 	8197.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8213.1.1 = { trait = knight }
 	8217.1.1 = { add_spouse = Morles_41 } # Semiona Morles
@@ -12487,7 +12962,7 @@ Celtigar_53 = {
 
 	8220.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8236.1.1 = { trait = knight }
 	8245.1.1 = { add_spouse = Morles_44 } # Elenei Morles
@@ -13030,7 +13505,7 @@ Scales_8_B = {
 
 	7905.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	7939.1.1 = { death = yes }
 }
@@ -13920,7 +14395,7 @@ Scales_61 = {
 
 	8170.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8188.1.1 = { trait = knight }
 	8193.1.1 = { add_spouse = Warl_59 } # Alenna Warl
@@ -14026,7 +14501,7 @@ Scales_80 = {
 
 	8199.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8214.1.1 = { trait = fashionable }
 	8256.1.1 = {
@@ -14068,7 +14543,7 @@ Scales_82 = {
 }
 ### Issue of Benethon
 Scales_64 = {
-	name = Clement
+	name = Clement # father of vanity char Vanity_Nightswatch_6 - Zachery Waters 
 	dynasty_house = house_Scales
 
 	religion = fots_seven
@@ -14146,7 +14621,9 @@ Longwaters_1 = {
 
 	8196.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = cool_neutral_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8204.1.1 = { trait = stubborn }
@@ -14185,7 +14662,7 @@ Tall_1 = {
 
 	8192.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_heterosexual
 		set_to_lowborn = yes
@@ -14417,7 +14894,13 @@ Kingsguard_5 = {
 		give_nickname = nick_agot_historical_of_sour_hill
 	}
 	8006.1.1 = { trait = scarred }
-	8016.1.1 = { trait = one_eyed }
+	8016.1.1 = {
+		trait = one_eyed
+		effect = {
+			add_character_flag = standard_eyepatch
+			add_character_flag = one_eyed_healed
+		}
+	}
 	8049.7.14 = {
 		effect = {
 			agot_join_kingsguard_char_history_effect = { # Post-Maegor Reconstruction
@@ -14429,6 +14912,7 @@ Kingsguard_5 = {
 	8059.2.1 = {
 		trait = shivers
 		trait = kingsguard # Successor: Robin Shaw
+		make_trait_inactive = standard_eyepatch
 		death = { death_reason = death_shivers } # Died of Shivers
 	}
 }
@@ -14785,7 +15269,7 @@ Septon_Kings_Landing_2 = {
 
 	8027.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8043.1.1 = {
@@ -15898,7 +16382,7 @@ Maester_Kings_Landing_4 = {
 
 	7998.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8020.1.1 = {
@@ -16378,7 +16862,7 @@ Tyanna_1 = {
 
 	8020.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_bisexual
 	}
@@ -16649,7 +17133,7 @@ Targaryen_hh_3 = {
 
 	8084.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_bisexual
 		effect = {
@@ -17457,7 +17941,7 @@ Lowborn_Kings_Landing_3 = {
 
 	8137.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		employer = Shawney_52 # Symond Shawney, Fairmarket
 	}
@@ -17653,6 +18137,7 @@ Targaryen_hh_10 = {
 	female = yes
 
 	prowess = 3 #Death to girlboss Jenny
+	fertility = 0.25
 
 	religion = fots_seven
 	culture = riverman_main
@@ -17670,7 +18155,7 @@ Targaryen_hh_10 = {
 
 	8222.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8259.6.1 = {

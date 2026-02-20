@@ -887,6 +887,8 @@ Hoare_1 = {
 
 	6150.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	6170.1.1 = { give_nickname = nick_agot_historical_the_cruel }
@@ -901,7 +903,11 @@ Hoare_24 = {
 
 	father = Hoare_1
 
-	6168.1.1 = { birth = yes }
+	6168.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	6229.1.1 = { death = yes }
 }
 Hoare_11 = {
@@ -913,7 +919,11 @@ Hoare_11 = {
 
 	father = Hoare_24
 
-	6188.1.1 = { birth = yes }
+	6188.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	6239.1.1 = { death = yes }
 }
 Hoare_39 = {
@@ -925,7 +935,11 @@ Hoare_39 = {
 
 	father = Hoare_11
 
-	6208.1.1 = { birth = yes }
+	6208.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	6255.1.1 = { death = yes }
 }
 Hoare_4 = {
@@ -954,6 +968,8 @@ Hoare_4 = {
 
 	6228.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	6290.1.1 = { death = yes }
@@ -984,6 +1000,8 @@ Hoare_5 = {
 
 	6252.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	6270.1.1 = {
@@ -1010,6 +1028,8 @@ Hoare_6 = {
 
 	6271.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	6298.1.1 = { give_nickname = nick_agot_historical_the_eagle }
@@ -1024,7 +1044,11 @@ Hoare_40 = {
 
 	father = Hoare_6
 
-	6298.1.1 = { birth = yes }
+	6298.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	6355.1.1 = { death = yes }
 }
 Hoare_2 = {
@@ -1064,6 +1088,8 @@ Hoare_3 = {
 
 	6973.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7000.1.1 = {
@@ -1084,6 +1110,8 @@ Hoare_21 = {
 
 	7004.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7040.1.1 = {
@@ -1109,6 +1137,8 @@ Hoare_22 = {
 
 	7024.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_mentioned
 	}
 	7045.1.1 = {
@@ -1137,6 +1167,8 @@ Hoare_7 = {
 
 	7029.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7046.1.1 = { give_nickname = nick_agot_historical_the_widowmaker }
@@ -1154,7 +1186,11 @@ Hoare_8 = {
 
 	father = Hoare_7 # Wulfgar Hoare
 
-	7050.1.1 = { birth = yes }
+	7050.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7121.1.1 = { death = yes }
 }
 Hoare_10 = {
@@ -1166,7 +1202,11 @@ Hoare_10 = {
 
 	father = Hoare_8
 
-	7072.1.1 = { birth = yes }
+	7072.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7124.1.1 = { death = yes }
 }
 Hoare_9 = {
@@ -1188,6 +1228,8 @@ Hoare_9 = {
 
 	7090.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7123.1.1 = { give_nickname = nick_agot_historical_priestkiller }
@@ -1214,6 +1256,8 @@ Hoare_12 = {
 
 	7119.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7138.1.1 = { give_nickname = nick_agot_historical_the_fierce }
@@ -1239,6 +1283,8 @@ Hoare_13 = {
 
 	7145.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7170.1.1 = { give_nickname = nick_agot_historical_the_soulless }
@@ -1263,6 +1309,8 @@ Hoare_14 = {
 
 	7166.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7218.1.1 = { give_nickname = nick_agot_historical_the_demonlover }
@@ -1288,6 +1336,8 @@ Hoare_15 = {
 
 	7188.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7229.1.1 = { give_nickname = nick_agot_historical_of_the_red_smile }
@@ -1312,6 +1362,8 @@ Hoare_16 = {
 
 	7215.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7241.1.1 = { give_nickname = nick_agot_historical_the_host }
@@ -1336,6 +1388,8 @@ Hoare_17 = {
 
 	7240.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7266.1.1 = {
@@ -1367,6 +1421,8 @@ Hoare_18 = {
 
 	7268.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7284.1.1 = { give_nickname = nick_agot_historical_the_handsome }
@@ -1408,6 +1464,8 @@ Hoare_19 = {
 
 	7270.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7293.1.1 = { give_nickname = nick_agot_historical_the_heartless }
@@ -1448,7 +1506,11 @@ Hoare_23 = {
 
 	father = Hoare_20
 
-	7805.1.1 = { birth = yes }
+	7805.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7860.1.1 = { death = yes }
 }
 ### Issue of Harrald
@@ -1502,7 +1564,11 @@ Hoare_38 = {
 
 	trait = child_of_concubine_male
 
-	7840.1.1 = { birth = yes }
+	7840.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7889.1.1 = { death = yes }
 }
 ### Issue of Qhorwyn
@@ -1518,6 +1584,8 @@ Hoare_26 = {
 
 	7868.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_mentioned
 	}
 	7899.1.1 = {
@@ -1539,6 +1607,8 @@ Hoare_27 = {
 
 	7873.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7903.12.28 = {
@@ -1577,6 +1647,8 @@ Hoare_28 = {
 
 	7879.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7894.1.1 = { trait = lustful }
@@ -1633,6 +1705,8 @@ Hoare_29 = {
 
 	7890.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_mentioned
 	}
 	7945.1.1 = { death = yes }
@@ -1661,6 +1735,8 @@ Hoare_30 = {
 
 	7912.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	7930.1.1 = { trait = torturer }
@@ -1697,7 +1773,9 @@ Hoare_31 = {
 
 	7940.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	7970.1.1 = { add_spouse = Greyjoy_39 } # Gwynesse Greyjoy
@@ -1747,7 +1825,9 @@ Hoare_32 = {
 
 	7947.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	7969.1.1 = {
@@ -1790,6 +1870,8 @@ Hoare_33 = {
 
 	7974.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_mentioned
 	}
 	7999.8.15 = {
@@ -1811,6 +1893,8 @@ Hoare_34 = {
 
 	7976.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_mentioned
 	}
 	7999.8.15 = {
@@ -1832,6 +1916,8 @@ Hoare_35 = {
 
 	7978.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_mentioned
 	}
 	7999.8.1 = {
@@ -1853,6 +1939,8 @@ Hoare_36 = {
 
 	7979.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_mentioned
 	}
 	7999.8.15 = {
@@ -1874,6 +1962,8 @@ Hoare_37 = {
 
 	7980.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_mentioned
 	}
 	7999.8.1 = {
@@ -1947,7 +2037,12 @@ Greyjoy_22 = {
 
 	disallow_random_traits = yes
 
-	3927.1.1 = { birth = yes }
+	3927.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	3956.1.1 = { give_nickname = nick_agot_historical_the_great_kraken }
 	3983.1.1 = { death = yes }
 }
@@ -1975,7 +2070,12 @@ Greyjoy_23 = {
 
 	father = Greyjoy_24
 
-	6031.1.1 = { birth = yes }
+	6031.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	6070.1.1 = { death = yes }
 }
 Greyjoy_27 = {
@@ -1987,7 +2087,12 @@ Greyjoy_27 = {
 
 	father = Greyjoy_23
 
-	6059.1.1 = { birth = yes }
+	6059.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	6114.1.1 = { death = yes }
 }
 Greyjoy_31 = {
@@ -2014,7 +2119,12 @@ Greyjoy_30 = {
 
 	father = Greyjoy_31
 
-	6232.1.1 = { birth = yes }
+	6232.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	6274.1.1 = { death = yes }
 }
 Greyjoy_25 = {
@@ -2042,6 +2152,9 @@ Greyjoy_25 = {
 
 	6256.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_canon
 	}
 	6298.1.1 = {
@@ -2069,6 +2182,9 @@ Greyjoy_28 = {
 
 	6278.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_canon
 	}
 	6304.1.1 = { give_nickname = nick_agot_historical_coldwind }
@@ -2083,7 +2199,12 @@ Greyjoy_26 = {
 
 	father = Greyjoy_28
 
-	6305.1.1 = { birth = yes }
+	6305.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	6367.1.1 = { death = yes }
 }
 Greyjoy_21 = {
@@ -2107,6 +2228,9 @@ Greyjoy_21 = {
 
 	6343.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_canon
 	}
 	6408.1.1 = { give_nickname = nick_agot_historical_the_old_kraken }
@@ -2138,7 +2262,12 @@ Greyjoy_32 = {
 
 	father = Greyjoy_29
 
-	7822.1.1 = { birth = yes }
+	7822.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	7846.1.1 = { add_spouse = Drumm_15 } # Morna Drumm
 	7875.1.1 = { death = yes }
 }
@@ -2153,7 +2282,12 @@ Greyjoy_33 = {
 	father = Greyjoy_32
 	mother = Drumm_15
 
-	7847.1.1 = { birth = yes }
+	7847.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	7873.1.1 = { add_spouse = Kenning_17 } # Ulfara Kenning
 	7914.1.1 = {
 		trait = cancer
@@ -2171,7 +2305,12 @@ Greyjoy_34 = {
 	father = Greyjoy_33
 	mother = Kenning_17
 
-	7874.1.1 = { birth = yes }
+	7874.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	7906.1.1 = { add_spouse = Botley_28 } # Gretchel Botley
 	7934.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -2193,6 +2332,9 @@ Greyjoy_35 = {
 
 	7875.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_mentioned
 	}
 	7891.1.1 = {
@@ -2223,7 +2365,12 @@ Greyjoy_36 = {
 	father = Greyjoy_34
 	mother = Botley_28
 
-	7908.1.1 = { birth = yes }
+	7908.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	7971.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -2240,7 +2387,12 @@ Greyjoy_37 = {
 	father = Greyjoy_34
 	mother = Botley_28
 
-	7911.1.1 = { birth = yes }
+	7911.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	7978.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -2255,7 +2407,12 @@ Greyjoy_38 = {
 	father = Greyjoy_34
 	mother = Botley_28
 
-	7914.1.1 = { birth = yes }
+	7914.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	7941.1.1 = { add_spouse = Bracken_111 } # Tansy Bracken
 	7949.1.1 = { add_spouse = Blacktyde_82 } # Maeva Blacktyde
 	7960.1.1 = { death = yes }
@@ -2271,7 +2428,12 @@ Greyjoy_42 = {
 	father = Greyjoy_38
 	mother = Bracken_111
 
-	7945.1.1 = { birth = yes }
+	7945.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	7965.1.1 = { add_spouse = Bracken_127 } # Bea Bracken
 	7993.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -2288,7 +2450,12 @@ Greyjoy_39 = {
 	father = Greyjoy_38
 	mother = Blacktyde_82
 
-	7950.1.1 = { birth = yes }
+	7950.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	7999.8.15 = {
 		death = {
 			death_reason = death_dragon_siege # Burning of Harrenhal
@@ -2341,7 +2508,12 @@ Greyjoy_95 = {
 	father = Greyjoy_42
 	mother = Bracken_127
 
-	7968.1.1 = { birth = yes }
+	7968.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	8019.1.1 = {
 		death = { death_reason = death_horse }
 	}
@@ -2357,7 +2529,12 @@ Greyjoy_96 = {
 	father = Greyjoy_42
 	mother = Bracken_127
 
-	7972.1.1 = { birth = yes }
+	7972.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	8023.1.1 = {
 		death = { death_reason = death_choked }
 	}
@@ -2373,7 +2550,12 @@ Greyjoy_97 = {
 	father = Greyjoy_42
 	mother = Bracken_127
 
-	7975.1.1 = { birth = yes }
+	7975.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	8030.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -2388,7 +2570,12 @@ Greyjoy_98 = {
 	father = Greyjoy_42
 	mother = Bracken_127
 
-	7976.1.1 = { birth = yes }
+	7976.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	7993.1.1 = { add_spouse = Harlaw_66 } # Hilda Harlaw
 	8033.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -2406,7 +2593,12 @@ Greyjoy_99 = {
 	father = Greyjoy_98
 	mother = Harlaw_66
 
-	7994.1.1 = { birth = yes }
+	7994.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	8062.1.1 = {
 		trait = consumption
 		death = { death_reason = death_consumption }
@@ -2441,6 +2633,9 @@ Greyjoy_41 = {
 
 	7995.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_canon
 	}
 	8013.1.1 = { add_spouse = Orkwood_53 } # Ulfhild Orkwood
@@ -2457,7 +2652,12 @@ Greyjoy_100 = {
 	father = Greyjoy_41
 	mother = Orkwood_53
 
-	8014.1.1 = { birth = yes }
+	8014.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	8037.1.1 = { add_spouse = Kenning_83 } # Shaella Kenning
 	8062.1.1 = {
 		death = { death_reason = death_drowned }
@@ -2473,7 +2673,12 @@ Greyjoy_101 = {
 	father = Greyjoy_41
 	mother = Orkwood_53
 
-	8017.1.1 = { birth = yes }
+	8017.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	8045.1.1 = { add_spouse = Orkwood_70 } # Megga Orkwood
 	8079.1.1 = {
 		death = { death_reason = death_fire }
@@ -2491,7 +2696,12 @@ Greyjoy_103 = {
 	father = Greyjoy_100
 	mother = Kenning_83
 
-	8038.1.1 = { birth = yes }
+	8038.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	8107.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -2510,7 +2720,10 @@ Greyjoy_43 = {
 
 	8039.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 	}
 	8057.1.1 = { add_spouse = Saltcliffe_77 } # Malora Saltcliffe
 	8102.1.1 = { death = yes }
@@ -2525,7 +2738,12 @@ Greyjoy_104 = {
 	father = Greyjoy_100
 	mother = Kenning_83
 
-	8040.1.1 = { birth = yes }
+	8040.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	8102.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -2541,7 +2759,12 @@ Greyjoy_102 = {
 	father = Greyjoy_101
 	mother = Orkwood_70
 
-	8049.1.1 = { birth = yes }
+	8049.1.1 = {
+		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+	}
 	8110.1.1 = {
 		death = { death_reason = death_horse_riding_accident }
 	}
@@ -2560,7 +2783,10 @@ Greyjoy_44 = {
 
 	8068.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 	}
 	8086.1.1 = { add_spouse = Stonehouse_48 } # Urriga Stonehouse
 	8124.3.7 = { death = { death_reason = death_battle } }
@@ -2578,7 +2804,10 @@ Greyjoy_45 = {
 
 	8070.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 	}
 	8086.1.1 = { add_spouse = Saltcliffe_87 } # Ursila Saltcliffe
 	8125.1.1 = { death = { death_reason = death_murder } }
@@ -2602,7 +2831,10 @@ Greyjoy_46 = {
 
 	8086.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8112.1.1 = { add_spouse = Stonehouse_55 } # Rosalynd Stonehouse
@@ -2632,7 +2864,10 @@ Greyjoy_47 = {
 
 	8087.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2661,7 +2896,10 @@ Greyjoy_48 = {
 
 	8088.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2690,7 +2928,10 @@ Greyjoy_49 = {
 
 	8089.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2715,7 +2956,10 @@ Greyjoy_50 = {
 
 	8093.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8135.1.1 = { death = yes }
@@ -2734,6 +2978,9 @@ Greyjoy_105 = {
 
 	8115.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		make_trait_inactive = surname_pyke
 		add_character_flag = canon_status_mentioned
 	}
@@ -2795,7 +3042,10 @@ Greyjoy_51 = {
 
 	8090.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8103.1.1 = {
@@ -2829,7 +3079,10 @@ Greyjoy_52 = {
 
 	8099.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8113.1.1 = { add_spouse = Langward_43 } # Gwenys Langward
@@ -2862,7 +3115,10 @@ Greyjoy_53 = {
 
 	8100.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8114.1.1 = { trait = drunkard }
@@ -2894,6 +3150,9 @@ Greyjoy_54 = {
 
 	8115.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_mentioned
 	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2926,6 +3185,9 @@ Greyjoy_55 = {
 
 	8116.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_mentioned
 	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2958,6 +3220,9 @@ Greyjoy_56 = {
 
 	8117.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_mentioned
 	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -2991,6 +3256,9 @@ Greyjoy_57 = {
 
 	8116.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_mentioned
 	}
 	8130.2.20 = {
@@ -3033,6 +3301,9 @@ Greyjoy_58 = {
 
 	8117.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_mentioned
 	}
 	8130.2.20 = {
@@ -3072,6 +3343,9 @@ Greyjoy_109 = {
 
 	8110.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_mentioned
 	}
 	8134.5.1 = {
@@ -3103,7 +3377,10 @@ Greyjoy_61 = {
 
 	8111.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8134.5.1 = {
@@ -3139,7 +3416,7 @@ Greyjoy_59 = { # Dance of the Dragons
 
 	8113.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8116.1.1 = { trait = brave }
@@ -3251,7 +3528,7 @@ Greyjoy_rs_14 = {
 
 	8113.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8127.1.1 = {
@@ -3332,7 +3609,7 @@ Greyjoy_rs_17 = {
 
 	8109.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8127.1.1 = {
 		effect = {
@@ -3368,7 +3645,10 @@ Greyjoy_60 = {
 
 	8114.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8127.1.1 = {
@@ -3408,7 +3688,10 @@ Greyjoy_62 = {
 
 	8115.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8153.1.1 = { death = yes } # One sister survived
@@ -3431,7 +3714,10 @@ Greyjoy_63 = {
 
 	8128.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8133.12.1 = {
@@ -3463,7 +3749,10 @@ Greyjoy_64 = {
 
 	8129.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8133.12.1 = { employer = Harlaw_42 } # Maron Harlaw
@@ -3525,7 +3814,10 @@ Greyjoy_65 = {
 
 	8151.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8168.1.1 = { add_spouse = Vance_Atranta_67 } # Dianessa Vance of Atranta
@@ -3564,7 +3856,10 @@ Greyjoy_66 = {
 
 	8178.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8196.1.1 = { add_spouse = Goodbrother_56 } # Shierle Goodbrother
@@ -3593,7 +3888,10 @@ Greyjoy_67 = {
 
 	8180.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 	}
 	8210.1.1 = { add_spouse = Orkwood_26 } # Yara Orkwood
 	8235.1.1 = { death = yes }
@@ -3612,7 +3910,10 @@ Greyjoy_68 = {
 
 	8182.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 	}
 	8244.1.1 = { death = yes }
 }
@@ -3646,7 +3947,10 @@ Greyjoy_69 = {
 
 	8196.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8211.1.1 = {
@@ -3674,7 +3978,10 @@ Greyjoy_70 = {
 
 	8197.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 	}
 	8222.1.1 = { death = yes }
 }
@@ -3706,7 +4013,10 @@ Greyjoy_71 = {
 
 	8198.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
 	8216.1.1 = { add_spouse = Blacktyde_70 } # Oshara Blacktyde
@@ -3727,7 +4037,10 @@ Greyjoy_72 = {
 
 	8205.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 	}
 	8223.1.1 = { add_spouse = Saltcliffe_8 } # Hilda Saltcliffe
 	8265.1.1 = { death = yes }
@@ -3748,7 +4061,10 @@ Greyjoy_73 = {
 
 	8227.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 	}
 	8245.1.1 = { add_spouse = Farwynd_111 } # Frida Farwynd
 	8290.1.1 = { death = yes }
@@ -3769,7 +4085,10 @@ Greyjoy_74 = {
 
 	8216.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 	}
 	8234.1.1 = { add_spouse = Farwynd_98 } # Inga Farwynd
 	8254.1.1 = { death = yes }
@@ -3849,7 +4168,10 @@ Greyjoy_75 = {
 
 	8113.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8130.1.1 = { add_spouse = Wynch_21 } # Shera Wynch
@@ -3873,7 +4195,10 @@ Greyjoy_77 = {
 
 	8116.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8139.1.1 = { add_spouse = Stonehouse_19 } # Sona Stonehouse
@@ -3893,7 +4218,10 @@ Greyjoy_76 = {
 
 	8120.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8192.1.1 = { death = yes }
@@ -3913,7 +4241,10 @@ Greyjoy_78 = {
 
 	8124.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8145.1.1 = {
@@ -3936,6 +4267,9 @@ Greyjoy_79 = {
 
 	8131.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_semicanon
 	}
 	8142.1.1 = { add_spouse = Goodbrother_54 } # Gwynesse Goodbrother
@@ -3953,6 +4287,9 @@ Greyjoy_80 = {
 
 	8134.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_semicanon
 	}
 	8155.1.1 = {
@@ -3981,6 +4318,9 @@ Greyjoy_81 = {
 
 	8138.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_semicanon
 	}
 	8193.1.1 = { death = yes }
@@ -3998,6 +4338,9 @@ Greyjoy_82 = {
 
 	8144.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_semicanon
 	}
 	8155.1.1 = { death = yes }
@@ -4014,6 +4357,9 @@ Greyjoy_83 = {
 
 	8146.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_semicanon
 	}
 	8158.1.1 = {
@@ -4038,7 +4384,10 @@ Greyjoy_84 = {
 
 	8140.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8186.1.1 = { death = yes }
@@ -4056,7 +4405,10 @@ Greyjoy_85 = {
 
 	8142.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8200.1.1 = { death = yes }
@@ -4074,7 +4426,10 @@ Greyjoy_86 = {
 
 	8147.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8199.1.1 = { death = yes }
@@ -4093,7 +4448,10 @@ Greyjoy_87 = {
 
 	8153.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8215.1.1 = { death = yes }
@@ -4114,7 +4472,10 @@ Greyjoy_88 = {
 
 	8148.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8181.1.1 = { death = yes }
@@ -4132,7 +4493,10 @@ Greyjoy_89 = {
 
 	8152.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8201.1.1 = { death = yes }
@@ -4152,7 +4516,10 @@ Greyjoy_91 = {
 
 	8151.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8202.1.1 = { death = yes }
@@ -4171,7 +4538,10 @@ Greyjoy_92 = {
 
 	8154.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8156.1.1 = {
@@ -4193,7 +4563,10 @@ Greyjoy_94 = {
 
 	8157.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8198.1.1 = { death = yes }
@@ -4212,8 +4585,11 @@ Greyjoy_90 = {
 
 	8145.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		make_trait_inactive = surname_pyke
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8214.1.1 = { death = yes }
@@ -4232,8 +4608,11 @@ Greyjoy_93 = {
 
 	8156.1.1 = {
 		birth = yes
+		make_trait_inactive = black_hair
+		make_trait_inactive = black_eyes
+		make_trait_inactive = smol_tol
 		make_trait_inactive = surname_pyke
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
 	8226.1.1 = { death = yes }
@@ -5391,7 +5770,7 @@ Goodbrother_56 = {
 
 	8180.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8242.1.1 = { death = yes }
 }
@@ -5410,7 +5789,7 @@ Goodbrother_57 = {
 
 	8220.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8245.1.1 = { add_spouse = FarwyndDL_82 } # Gertrud Farwynd of Deadlock
 	8276.1.1 = { death = yes }
@@ -10080,7 +10459,7 @@ Farwynd_64 = {
 
 	8120.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8178.1.1 = {
 		trait = gout_ridden
@@ -10780,7 +11159,7 @@ Farwynd_98 = {
 
 	8211.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8249.1.1 = {
 		death = { death_reason = death_horse_riding_accident }
@@ -14349,7 +14728,7 @@ Harlaw_44 = {
 
 	8132.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 		add_character_flag = sexuality_ensure_heterosexual
 	}
@@ -14448,7 +14827,7 @@ Harlaw_49 = {
 
 	8180.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
 	}
 	8208.1.1 = { add_spouse = Greyjoy_68 } # Gwin Greyjoy
@@ -14899,7 +15278,7 @@ Volmark_26 = {
 
 	8259.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8287.1.1 = { add_spouse = Goodbrother_5 } # Helya Goodbrother
 }
@@ -14919,7 +15298,7 @@ Volmark_27 = {
 	8262.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8290.1.1 = {
 		trait = smallpox
@@ -18185,7 +18564,7 @@ Saltcliffe_87 = {
 
 	8066.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8133.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -18380,7 +18759,7 @@ Saltcliffe_81 = {
 
 	8089.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8157.1.1 = {
 		death = { death_reason = death_drowned }
@@ -18879,7 +19258,7 @@ Saltcliffe_8 = {
 
 	8205.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8263.1.1 = {
 		trait = ill
@@ -27652,7 +28031,7 @@ Blacktyde_70 = {
 
 	8199.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8261.1.1 = {
 		death = { death_reason = death_treatment }
@@ -27741,7 +28120,7 @@ Blacktyde_66 = {
 
 	8206.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8258.1.1 = {
 		death = { death_reason = death_fire }
@@ -29829,7 +30208,7 @@ Stonehouse_48 = {
 
 	8070.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8116.1.1 = {
 		death = { death_reason = death_drowned }
@@ -31180,7 +31559,7 @@ Sparr_77 = {
 	8161.1.1 = { death = yes }
 }
 Sparr_78 = {
-	name = Garmon
+	name = Garmon # Night's Watch
 	dynasty = dynn_Sparr
 
 	religion = drowned_god
@@ -31189,10 +31568,22 @@ Sparr_78 = {
 	father = Sparr_71
 	mother = GoodbrotherCPK_27
 
+	trait = education_martial_2
+	trait = callous
+
 	8117.1.1 = { birth = yes }
+	8145.1.1 = {
+		trait = nightswatch_historical
+		effect = {
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_eastwatch
+				NW_JOIN_AGE = 28
+			}
+		}
+	}
 	8170.1.1 = {
-		trait = depressed_1
-		death = { death_reason = death_depressed }
+		death = { death_reason = death_scuffle_with_soldiers }
 	}
 }
 Sparr_79 = {
@@ -34274,7 +34665,7 @@ Orkwood_25 = {
 
 	8184.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8204.1.1 = { add_spouse = Ironmaker_57 } # Esgred Ironmaker
 	8214.1.1 = { death = yes }
@@ -34293,7 +34684,7 @@ Orkwood_26 = {
 
 	8185.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8244.1.1 = { death = yes }
 }
@@ -34311,7 +34702,7 @@ Orkwood_27 = {
 
 	8207.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8229.1.1 = { add_spouse = Merlyn_82 } # Ulfhild Merlyn
 	8249.1.1 = { death = yes }
@@ -34330,7 +34721,7 @@ Orkwood_28 = {
 
 	8233.1.1 = {
 		birth = yes
-		add_character_flag = has_scripted_appearance
+		make_trait_inactive = scripted_appearance
 	}
 	8251.1.1 = { add_spouse = Saltcliffe_15 } # Frynne Saltcliffe
 	8285.1.1 = { death = yes }
@@ -43877,7 +44268,11 @@ Salt_14 = {
 
 	trait = child_of_concubine_male
 
-	7862.1.1 = { birth = yes }
+	7862.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7892.1.1 = { add_spouse = Tawney_9 } # Steffaria Tawney
 	7909.1.1 = { death = yes }
 }
@@ -43892,7 +44287,11 @@ Salt_15 = {
 	father = Salt_14
 	mother = Tawney_9
 
-	7894.1.1 = { birth = yes }
+	7894.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7911.1.1 = { add_spouse = Kenning_22 } # Dacey Kenning
 	7916.1.1 = {
 		death = { death_reason = death_hunting_accident }
@@ -43908,7 +44307,11 @@ Salt_16 = {
 	father = Salt_14
 	mother = Tawney_9
 
-	7896.1.1 = { birth = yes }
+	7896.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7918.1.1 = { add_spouse = Weller_18 } # Balissa Weller
 	7959.1.1 = {
 		death = { death_reason = death_heart_attack }
@@ -43925,7 +44328,11 @@ Salt_17 = {
 	father = Salt_14
 	mother = Tawney_9
 
-	7899.1.1 = { birth = yes }
+	7899.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7962.1.1 = {
 		trait = cancer
 		death = { death_reason = death_cancer }
@@ -43941,7 +44348,11 @@ Salt_18 = {
 	father = Salt_14
 	mother = Tawney_9
 
-	7903.1.1 = { birth = yes }
+	7903.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7924.1.1 = { add_spouse = Saltcliffe_47 } # Shera Saltcliffe
 	7947.1.1 = {
 		death = { death_reason = death_drank_to_death }
@@ -43958,7 +44369,11 @@ Salt_19 = {
 	father = Salt_14
 	mother = Tawney_9
 
-	7905.1.1 = { birth = yes }
+	7905.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7934.1.1 = {
 		death = { death_reason = death_choked }
 	}
@@ -43975,7 +44390,11 @@ Salt_24 = {
 	father = Salt_15
 	mother = Kenning_22
 
-	7912.1.1 = { birth = yes }
+	7912.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7979.1.1 = {
 		death = { death_reason = death_fall }
 	}
@@ -43990,7 +44409,11 @@ Salt_25 = {
 	father = Salt_15
 	mother = Kenning_22
 
-	7913.1.1 = { birth = yes }
+	7913.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7942.1.1 = { add_spouse = Sunderly_16 } # Snela Sunderly
 	7973.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -44006,7 +44429,11 @@ Salt_26 = {
 	father = Salt_15
 	mother = Kenning_22
 
-	7915.1.1 = { birth = yes }
+	7915.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7939.1.1 = { add_spouse = Stonehouse_21 } # Victaria Stonehouse
 	7974.1.1 = {
 		trait = ill
@@ -44024,7 +44451,11 @@ Salt_20 = {
 	father = Salt_18
 	mother = Saltcliffe_47
 
-	7927.1.1 = { birth = yes }
+	7927.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7953.1.1 = { add_spouse = Shepherd_34 } # Astrid Shepherd
 	7972.1.1 = { death = yes }
 }
@@ -44040,7 +44471,11 @@ Salt_21 = {
 	father = Salt_16
 	mother = Weller_18
 
-	7919.1.1 = { birth = yes }
+	7919.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7987.1.1 = {
 		death = { death_reason = death_drowned }
 	}
@@ -44057,7 +44492,11 @@ Salt_65 = {
 	father = Salt_26
 	mother = Stonehouse_21
 
-	7942.1.1 = { birth = yes }
+	7942.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7988.1.1 = { death = yes }
 }
 ### Issue of Sigrik
@@ -44072,7 +44511,11 @@ Salt_63 = {
 	father = Salt_25
 	mother = Sunderly_16
 
-	7946.1.1 = { birth = yes }
+	7946.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7979.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -44088,7 +44531,11 @@ Salt_64 = {
 	father = Salt_25
 	mother = Sunderly_16
 
-	7948.1.1 = { birth = yes }
+	7948.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8017.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -44105,7 +44552,11 @@ Salt_22 = {
 	father = Salt_20
 	mother = Shepherd_34
 
-	7955.1.1 = { birth = yes }
+	7955.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	7985.1.1 = { add_spouse = Kenning_62 } # Ingrid Kenning
 	8015.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -44122,7 +44573,11 @@ Salt_27 = {
 	father = Salt_22
 	mother = Kenning_62
 
-	7989.1.1 = { birth = yes }
+	7989.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8013.1.1 = { add_spouse = Ironspite_35 } # Shierle Ironspite
 	8033.1.1 = {
 		trait = consumption
@@ -44140,7 +44595,11 @@ Salt_28 = {
 	father = Salt_27
 	mother = Ironspite_35
 
-	8014.1.1 = { birth = yes }
+	8014.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8032.1.1 = { add_spouse = Sunderly_56 } # Morna Sunderly
 	8083.1.1 = {
 		death = { death_reason = death_horse_riding_accident }
@@ -44156,7 +44615,11 @@ Salt_29 = {
 	father = Salt_27
 	mother = Ironspite_35
 
-	8018.1.1 = { birth = yes }
+	8018.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8044.1.1 = { add_spouse = Weaver_46 } # Hanna Weaver
 	8086.1.1 = {
 		trait = ill
@@ -44173,7 +44636,11 @@ Salt_30 = {
 	father = Salt_27
 	mother = Ironspite_35
 
-	8022.1.1 = { birth = yes }
+	8022.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8050.1.1 = { add_spouse = Sunderly_93 } # Ranni Sunderly
 	8055.1.1 = { death = yes }
 }
@@ -44187,7 +44654,11 @@ Salt_31 = {
 	father = Salt_27
 	mother = Ironspite_35
 
-	8025.1.1 = { birth = yes }
+	8025.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8054.1.1 = { add_spouse = Tidewood_78 } # Estred Tidewood
 	8083.1.1 = {
 		trait = ill
@@ -44205,7 +44676,11 @@ Salt_32 = {
 	father = Salt_27
 	mother = Ironspite_35
 
-	8028.1.1 = { birth = yes }
+	8028.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8086.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -44223,7 +44698,11 @@ Salt_33 = {
 	father = Salt_31
 	mother = Tidewood_78
 
-	8056.1.1 = { birth = yes }
+	8056.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8108.1.1 = {
 		trait = consumption
 		death = { death_reason = death_consumption }
@@ -44241,7 +44720,11 @@ Salt_37 = {
 	father = Salt_30
 	mother = Sunderly_93
 
-	8053.1.1 = { birth = yes }
+	8053.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8112.1.1 = {
 		trait = gout_ridden
 		death = { death_reason = death_gout_ridden }
@@ -44257,7 +44740,11 @@ Salt_38 = {
 	father = Salt_30
 	mother = Sunderly_93
 
-	8054.1.1 = { birth = yes }
+	8054.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8080.1.1 = { add_spouse = Blacktyde_39 } # Alla Blacktyde
 	8113.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -44275,7 +44762,11 @@ Salt_36 = {
 	father = Salt_28
 	mother = Sunderly_56
 
-	8033.1.1 = { birth = yes }
+	8033.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8069.1.1 = { death = yes }
 }
 ### Issue of Daegon
@@ -44290,7 +44781,11 @@ Salt_34 = {
 	father = Salt_29
 	mother = Weaver_46
 
-	8045.1.1 = { birth = yes }
+	8045.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8099.1.1 = {
 		death = { death_reason = death_horse_riding_accident }
 	}
@@ -44305,7 +44800,11 @@ Salt_35 = {
 	father = Salt_29
 	mother = Weaver_46
 
-	8046.1.1 = { birth = yes }
+	8046.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8068.1.1 = { add_spouse = Shepherd_49 } # Sif Shepherd
 	8092.1.1 = {
 		death = { death_reason = death_fire }
@@ -44322,7 +44821,11 @@ Salt_23 = {
 	father = Salt_35
 	mother = Shepherd_49
 
-	8070.1.1 = { birth = yes }
+	8070.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8100.1.1 = { add_spouse = Volmark_28 } # Harra Volmark
 	8134.5.1 = {
 		death = { death_reason = death_battle }
@@ -44339,7 +44842,11 @@ Salt_39 = {
 	father = Salt_35
 	mother = Shepherd_49
 
-	8072.1.1 = { birth = yes }
+	8072.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8087.1.1 = {
 		death = { death_reason = death_accident }
 	}
@@ -44355,7 +44862,11 @@ Salt_40 = {
 	father = Salt_35
 	mother = Shepherd_49
 
-	8073.1.1 = { birth = yes }
+	8073.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8127.1.1 = {
 		death = { death_reason = death_drank_to_death }
 	}
@@ -44372,7 +44883,11 @@ Salt_41 = {
 
 	trait = twin
 
-	8075.1.1 = { birth = yes }
+	8075.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8098.1.1 = { add_spouse = Ironspite_50 } # Gwynesse Ironspite
 	8127.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -44390,7 +44905,11 @@ Salt_42 = {
 
 	trait = twin
 
-	8075.1.1 = { birth = yes }
+	8075.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8095.1.1 = { add_spouse = Wynch_64 } # Mera Wynch
 	8109.1.1 = { death = yes }
 }
@@ -44419,6 +44938,8 @@ Salt_1 = {
 
 	8101.1.1 = {
 		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
 	8104.1.1 = { employer = Goodbrother_50 } # Rodrik Goodbrother
@@ -44447,7 +44968,11 @@ Salt_44 = {
 	father = Salt_41
 	mother = Ironspite_50
 
-	8099.1.1 = { birth = yes }
+	8099.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8161.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -44463,7 +44988,11 @@ Salt_45 = {
 	father = Salt_41
 	mother = Ironspite_50
 
-	8100.1.1 = { birth = yes }
+	8100.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8130.1.1 = { add_spouse = Weaver_53 } # Estred Weaver
 	8148.1.1 = {
 		death = { death_reason = death_treatment }
@@ -44479,7 +45008,11 @@ Salt_46 = {
 	father = Salt_41
 	mother = Ironspite_50
 
-	8103.1.1 = { birth = yes }
+	8103.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8132.1.1 = { add_spouse = GoodbrotherCPK_39 } # Victaria Goodbrother of Crow's Spike Keep
 	8164.1.1 = {
 		trait = ill
@@ -44497,7 +45030,11 @@ Salt_47 = {
 	father = Salt_46
 	mother = GoodbrotherCPK_39
 
-	8134.1.1 = { birth = yes }
+	8134.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8152.1.1 = { add_spouse = Netley_44 } # Alannys Netley
 	8201.1.1 = {
 		death = { death_reason = death_treatment }
@@ -44515,7 +45052,11 @@ Salt_51 = {
 	father = Salt_45
 	mother = Weaver_53
 
-	8131.1.1 = { birth = yes }
+	8131.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8174.1.1 = {
 		death = { death_reason = death_accident }
 	}
@@ -44531,7 +45072,11 @@ Salt_52 = {
 	father = Salt_45
 	mother = Weaver_53
 
-	8132.1.1 = { birth = yes }
+	8132.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8195.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -44549,7 +45094,11 @@ Salt_53 = {
 
 	trait = twin
 
-	8133.1.1 = { birth = yes }
+	8133.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8194.1.1 = {
 		death = { death_reason = death_stress }
 	}
@@ -44568,7 +45117,11 @@ Salt_54 = {
 	trait = twin
 	trait = intellect_good_1
 
-	8133.1.1 = { birth = yes }
+	8133.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8197.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -44583,7 +45136,11 @@ Salt_55 = {
 	father = Salt_45
 	mother = Weaver_53
 
-	8137.1.1 = { birth = yes }
+	8137.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8161.1.1 = { add_spouse = Netley_54 } # Snela Netley
 	8202.1.1 = {
 		death = { death_reason = death_accident }
@@ -44600,7 +45157,11 @@ Salt_43 = {
 	father = Salt_42
 	mother = Wynch_64
 
-	8098.1.1 = { birth = yes }
+	8098.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8124.1.1 = { add_spouse = GoodbrotherSS_67 } # Tanda Goodbrother of Shatterstone
 	8152.1.1 = {
 		trait = ill
@@ -44619,7 +45180,11 @@ Salt_48 = {
 	father = Salt_43
 	mother = GoodbrotherSS_67
 
-	8128.1.1 = { birth = yes }
+	8128.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8181.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -44634,7 +45199,11 @@ Salt_49 = {
 	father = Salt_43
 	mother = GoodbrotherSS_67
 
-	8132.1.1 = { birth = yes }
+	8132.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8162.1.1 = { add_spouse = Freeborn_84 } # Morissa Freeborn
 	8187.1.1 = {
 		trait = ill
@@ -44652,7 +45221,11 @@ Salt_66 = {
 	father = Salt_47
 	mother = Netley_44
 
-	8153.1.1 = { birth = yes }
+	8153.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8184.1.1 = { death = yes }
 }
 ### Issue of Aeron
@@ -44666,7 +45239,11 @@ Salt_50 = {
 	father = Salt_38
 	mother = Blacktyde_39
 
-	8081.1.1 = { birth = yes }
+	8081.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8110.1.1 = { add_spouse = Wynch_72 } # Ranni Wynch
 	8145.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -44684,7 +45261,11 @@ Salt_60 = {
 	father = Salt_50
 	mother = Wynch_72
 
-	8113.1.1 = { birth = yes }
+	8113.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8134.1.1 = { death = yes }
 }
 Salt_61 = {
@@ -44698,7 +45279,11 @@ Salt_61 = {
 	father = Salt_50
 	mother = Wynch_72
 
-	8117.1.1 = { birth = yes }
+	8117.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8186.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -44714,7 +45299,11 @@ Salt_62 = {
 	father = Salt_50
 	mother = Wynch_72
 
-	8121.1.1 = { birth = yes }
+	8121.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8161.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -44732,7 +45321,11 @@ Salt_56 = {
 	father = Salt_55
 	mother = Netley_54
 
-	8163.1.1 = { birth = yes }
+	8163.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8220.1.1 = {
 		death = { death_reason = death_mysterious }
 	}
@@ -44748,7 +45341,11 @@ Salt_57 = {
 	father = Salt_49
 	mother = Freeborn_84
 
-	8165.1.1 = { birth = yes }
+	8165.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8189.1.1 = { add_spouse = Netley_80 } # Talla Netley
 	8229.1.1 = {
 		trait = ill
@@ -44766,7 +45363,11 @@ Salt_58 = {
 	father = Salt_49
 	mother = Freeborn_84
 
-	8166.1.1 = { birth = yes }
+	8166.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8228.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -44783,7 +45384,11 @@ Salt_59 = {
 	father = Salt_57
 	mother = Netley_80
 
-	8192.1.1 = { birth = yes }
+	8192.1.1 = {
+		birth = yes
+		make_trait_inactive = black_eyes
+		make_trait_inactive = black_hair
+	}
 	8210.1.1 = { add_spouse = Netley_94 } # Disa Netley
 	8253.1.1 = {
 		death = { death_reason = death_natural_causes }

@@ -63,7 +63,7 @@
 	8259.6.1 = {
 		holder = Hightower_3 # The White Bull
 	}
-	8284.1.1 = {
+	8283.10.20 = {
 		holder = Selmy_3 #Barristan the Bold
 	}
 	8298.12.23 = {

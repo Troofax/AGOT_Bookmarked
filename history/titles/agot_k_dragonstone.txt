@@ -806,14 +806,14 @@ d_sharp_point = {
 	7982.1.1 = {
 		holder = Bar_Emmon_62
 	}
-	8002.1.1 = {
-		holder = Bar_Emmon_14
-	}
 	# AGOT Bookmarked Modified
 	# 7999.4.1 = {
 	7998.1.1 = {
 		liege = k_dragonstone
 		de_jure_liege = k_dragonstone
+	}
+	8002.1.1 = {
+		holder = Bar_Emmon_14
 	}
 	8031.1.1 = {
 		holder = Bar_Emmon_16
@@ -915,9 +915,6 @@ c_blackmark = {
 	7870.1.1 = {
 		liege = d_driftmark
 		holder = Blackberry_24 # Illister
-	}
-	7863.1.1 = {
-		holder = Blackberry_24
 	}
 	7876.1.1 = {
 		holder = Blackberry_25
@@ -1072,12 +1069,12 @@ c_gullet_isle = {
 	7988.1.1 = {
 		holder = Quince_1
 	}
-	8004.1.1 = {
-		holder = Quince_22
-	}
 	7999.4.1 = {
 		liege = d_driftmark
 		de_jure_liege = d_driftmark
+	}
+	8004.1.1 = {
+		holder = Quince_22
 	}
 	8048.1.1 = {
 		holder = Quince_24
@@ -1179,9 +1176,6 @@ c_sweetport_sound = {
 	}
 }
 c_the_scales = {
-	7868.1.1 = {
-		liege = d_claw_isle
-	}
 	7762.1.1 = {
 		holder = Saerygan_1
 	}
@@ -1193,6 +1187,9 @@ c_the_scales = {
 	}
 	7820.1.1 = {
 		holder = Scales_23
+	}
+	7868.1.1 = {
+		liege = d_claw_isle
 	}
 	7888.1.1 = {
 		holder = Scales_6

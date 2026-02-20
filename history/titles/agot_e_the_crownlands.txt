@@ -1,5 +1,5 @@
 ﻿e_the_crownlands = {
-	30.1.1 = {	
+	30.1.1 = {
 		effect = {
 			set_title_name = e_blackwater_bay
 		}
@@ -366,7 +366,7 @@ c_kings_landing = {
 	7996.1.1 = {
 		holder = Rosby_10
 	}
-	# AGOT Modified
+	# AGOT Bookmarked Modified
 	# 7999.4.1 = {
 	7998.1.1 = {
 		holder = Targaryen_27
@@ -393,13 +393,13 @@ c_kings_landing = {
 			title:b_goldguard_heights = { set_title_name = b_gate_of_the_gods }
 		}
 	}
+	8037.9.9 = {
+		holder = Targaryen_30
+	}
 	8042.1.1 = {
 		effect = {
 			title:b_the_red_keep = { reset_title_name = yes }
 		}
-	}
-	8037.9.9 = {
-		holder = Targaryen_30
 	}
 	8042.3.1 = {
 		holder = Targaryen_31
@@ -549,7 +549,7 @@ b_goldguard_heights = {
 	8133.6.2 = {
 		holder = Leygood_28 # Lucas Leygood (C)
 	}
-	8136.1.1 = {
+	8135.11.1 = {
 		holder = Thorne_16 # Adrian Thorne (C)
 	}
 	8150.1.1 = {
@@ -2679,11 +2679,11 @@ b_brickdale = {
 	}
 }
 c_old_yore = {
-	7858.1.1 = {
-		liege = d_hayford
-	}
 	7853.1.1 = {
 		holder = Yore_4
+	}
+	7858.1.1 = {
+		liege = d_hayford
 	}
 	7885.1.1 = {
 		holder = Yore_5
@@ -3995,9 +3995,6 @@ c_redbend = {
 		holder = Hazeley_1
 		liege = d_rosby
 	}
-	7844.1.1 = {
-		holder = Hazeley_1
-	}
 	7860.1.1 = {
 		holder = Hazeley_3
 	}
@@ -4414,7 +4411,7 @@ c_cantondale = {
 		holder = Bartheld_7
 	}
 }
-b_winfield = {	
+b_winfield = {
 	7850.1.1 = {
 		holder = Asrig_1
 	}
@@ -4593,11 +4590,11 @@ c_nessing = {
 	}
 }
 c_silverhead = {
-	7859.1.1 = {
-		liege = d_stokeworth
-	}
 	7855.1.1 = {
 		holder = Byrch_7
+	}
+	7859.1.1 = {
+		liege = d_stokeworth
 	}
 	7884.1.1 = {
 		holder = Byrch_8
@@ -4902,6 +4899,7 @@ c_greyhelm = {
 d_the_blackwater_rush = {
 	8184.2.1 = {
 		holder = Targaryen_94
+		liege = k_the_blackwater
 	}
 	8196.11.22 = {
 		holder = 0
@@ -5030,7 +5028,7 @@ c_great_fork = {
 	8196.11.22 = {
 		liege = k_the_blackwater
 	}
-	8209.1.1 = {
+	8207.1.1 = {
 		holder = Bourney_2
 	}
 	8262.1.1 = {
@@ -5493,14 +5491,14 @@ c_darkgroves = {
 	}
 }
 c_noblewood = {
-	7870.1.1 = {
-		liege = d_wendwater_forest
-	}
 	7837.1.1 = {
 		holder = Correy_31
 	}
 	7844.1.1 = {
 		holder = Correy_2
+	}
+	7870.1.1 = {
+		liege = d_wendwater_forest
 	}
 	7881.1.1 = {
 		holder = Correy_6
@@ -5667,5 +5665,5 @@ b_waterwood_post = {
 	}
 	8291.1.1 = {
 		holder = Ran_Horst_59
-	}	
+	}
 }
