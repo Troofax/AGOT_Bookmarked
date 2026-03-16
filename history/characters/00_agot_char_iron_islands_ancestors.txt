@@ -20,12 +20,19 @@ Grey_King_1 = {
 	trait = physique_good_3
 	trait = just
 	trait = brave
+	trait = authoritative
 	trait = pensive
 
 	disallow_random_traits = yes
 
 	950.1.1 = { birth = yes }
-	968.1.1 = { trait = lifestyle_mystic_3_history }
+	968.1.1 = {
+		trait = lifestyle_mystic
+		add_trait_xp = {
+			trait = lifestyle_mystic
+			value = trait_third_level
+		}
+	}
 	1001.1.1 = { death = yes }
 }
 Grey_King_2 = {
@@ -54,7 +61,13 @@ Grey_King_2 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	992.1.1 = { trait = lifestyle_mystic_3_history }
+	992.1.1 = {
+		trait = lifestyle_mystic
+		add_trait_xp = {
+			trait = lifestyle_mystic
+			value = trait_third_level
+		}
+	}
 	1999.1.1 = { death = yes } # reigned for 1007 years
 }
 
@@ -75,6 +88,7 @@ Grey_King_3 = {
 
 	trait = education_martial_4
 	trait = physique_good_3
+	trait = ambitious
 	trait = brave
 	trait = diligent
 	trait = reaver
@@ -829,6 +843,7 @@ Grey_King_5 = {
 	trait = intellect_good_2
 	trait = brave
 	trait = callous
+	trait = arrogant
 	trait = bossy
 
 	disallow_random_traits = yes
@@ -1736,9 +1751,9 @@ Hoare_30 = {
 		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
-	7930.1.1 = { 
+	7930.1.1 = {
 		agot_safe_buy_torturer_perk_history_effect = yes
-		trait = torturer 
+		trait = torturer
 	}
 	7936.1.1 = { add_spouse = Volmark_9 } # Alannys Volmark
 	7960.1.1 = { death = yes }
@@ -1992,8 +2007,9 @@ Grey_King_7 = {
 
 	trait = education_martial_4
 	trait = ambitious
-	trait = reaver
 	trait = brave
+	trait = authoritative
+	trait = reaver
 	trait = bossy
 
 	disallow_random_traits = yes
@@ -2494,6 +2510,10 @@ Greyjoy_40 = { # Aegon's Conquest
 		add_character_flag = canon_status_canon
 	}
 	7985.1.1 = { add_spouse = Kenning_46 } # Rhiannyn Kenning
+	8010.1.1 = {
+		agot_safe_buy_diplomat_perk_history_effect = yes
+		trait = diplomat
+	}
 	8033.1.1 = { death = yes }
 }
 Greyjoy_95 = {
@@ -2638,6 +2658,10 @@ Greyjoy_41 = {
 		add_character_flag = canon_status_canon
 	}
 	8013.1.1 = { add_spouse = Orkwood_53 } # Ulfhild Orkwood
+	8038.1.1 = {
+		agot_safe_buy_overseer_perk_history_effect = yes
+		trait = overseer
+	}
 	8052.1.1 = { death = yes }
 }
 ### Issue of Goren
@@ -3015,9 +3039,6 @@ Greyjoy_51 = {
 	dynasty = dynn_Greyjoy
 	dna = Greyjoy_51
 
-	martial = 8
-	prowess = 6
-
 	religion = drowned_god
 	culture = ironborn
 
@@ -3050,9 +3071,6 @@ Greyjoy_52 = {
 	name = Euron # Mentioned
 	dynasty = dynn_Greyjoy
 	dna = Greyjoy_52
-
-	martial = 5
-	prowess = 6
 
 	religion = drowned_god
 	culture = ironborn
@@ -3796,6 +3814,10 @@ Greyjoy_65 = {
 	}
 	8163.1.1 = { trait = lunatic_1 }
 	8168.1.1 = { add_spouse = Vance_Atranta_67 } # Dianessa Vance of Atranta
+	8194.1.1 = {
+		agot_safe_buy_theologian_perk_history_effect = yes
+		trait = theologian
+	}
 	8195.3.7 = { # Blackfyre Rebellion
 		give_nickname = nick_agot_historical_the_holy_fool
 	}
@@ -3821,6 +3843,7 @@ Greyjoy_66 = {
 	mother = Vance_Atranta_67
 
 	trait = education_martial_3
+	trait = education_martial_prowess_4
 	trait = brave
 	trait = zealous
 	trait = ambitious
@@ -3844,6 +3867,7 @@ Greyjoy_66 = {
 			add_gold = 200
 			add_prestige = 350
 		}
+		trait = viking
 	}
 	8216.1.1 = {
 		give_nickname = nick_agot_historical_the_last_reaver
@@ -3995,6 +4019,10 @@ Greyjoy_71 = {
 		add_character_flag = canon_status_canon
 	}
 	8216.1.1 = { add_spouse = Blacktyde_70 } # Oshara Blacktyde
+	8241.1.1 = {
+		agot_safe_buy_schemer_perk_history_effect = yes
+		trait = schemer
+	}
 	8250.1.1 = { death = yes }
 }
 Greyjoy_72 = {
@@ -4073,7 +4101,6 @@ Greyjoy_hh_20 = {
 	name = Artag # Semi-Canon
 
 	martial = 6
-	prowess = 6
 
 	religion = drowned_god
 	culture = ironborn
@@ -4618,6 +4645,7 @@ Grey_King_9 = {
 	trait = intellect_good_2
 	trait = brave
 	trait = content
+	trait = just
 	trait = bossy
 
 	disallow_random_traits = yes
@@ -4626,10 +4654,14 @@ Grey_King_9 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
 	}
-	996.1.1 = { 
-		trait = lifestyle_mystic_3_history
+	996.1.1 = {
+		trait = lifestyle_mystic
+		add_trait_xp = {
+			trait = lifestyle_mystic
+			value = trait_third_level
+		}
 		agot_safe_buy_family_man_perk_history_effect = yes
-		trait = family_first 
+		trait = family_first
 	}
 	1400.1.1 = { death = yes }
 }
@@ -8810,7 +8842,10 @@ GoodbrotherOM_31 = {
 	father = GoodbrotherOM_20
 	mother = Sparr_81
 
-	8143.1.1 = { birth = yes }
+	8143.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8198.1.1 = {
 		death = { death_reason = death_fall }
 	}
@@ -13823,6 +13858,7 @@ Grey_King_11 = {
 	trait = physique_good_3
 	trait = brave
 	trait = diligent
+	trait = ambitious
 	trait = reaver
 	trait = bossy
 
@@ -13868,9 +13904,9 @@ Harlaw_86 = {
 	disallow_random_traits = yes
 
 	4080.1.1 = { birth = yes }
-	4112.1.1 = { 
+	4112.1.1 = {
 		trait = torturer
-		give_nickname = nick_agot_historical_thrallsbane 
+		give_nickname = nick_agot_historical_thrallsbane
 	}
 	4156.1.1 = { death = yes }
 }
@@ -14808,6 +14844,10 @@ Harlaw_44 = {
 	8149.1.1 = { add_spouse = Kenning_97 } # Frynne Kenning
 	8154.1.1 = { add_spouse = Tawney_62 } # Morissa Tawney
 	8165.1.1 = { add_spouse = Drumm_44 } # Jorelle Drumm
+	8175.1.1 = {
+		agot_safe_buy_architect_perk_history_effect = yes
+		trait = architect
+	}
 	8179.1.1 = { add_spouse = Blacktyde_55 } # Yara Blacktyde
 	8182.1.1 = { add_spouse = Wynch_82 } # Victaria Wynch
 	8192.1.1 = { add_spouse = Myre_106 } # Wylla Myre
@@ -14917,6 +14957,7 @@ Grey_King_13 = {
 	father = Grey_King_2 # The Grey King
 
 	trait = education_martial_4
+	trait = diligent
 	trait = gluttonous
 	trait = brave
 	trait = reaver
@@ -14965,8 +15006,8 @@ Volmark_29 = {
 	disallow_random_traits = yes
 
 	4127.1.1 = { birth = yes }
-	4156.1.1 = { 
-		give_nickname = nick_agot_historical_the_leviathan 
+	4156.1.1 = {
+		give_nickname = nick_agot_historical_the_leviathan
 		effect = { change_current_weight = 60 }
 	}
 	4179.1.1 = { death = yes }
@@ -14978,7 +15019,7 @@ Volmark_30 = {
 	religion = drowned_god
 	culture = ironborn
 
-	father = Volmark_29 
+	father = Volmark_29
 
 	trait = line_of_char
 	disallow_random_traits = yes
@@ -15431,6 +15472,7 @@ Grey_King_15 = {
 
 	trait = education_martial_4
 	trait = physique_good_3
+	trait = callous
 	trait = brave
 	trait = diligent
 	trait = reaver
@@ -16941,6 +16983,7 @@ Grey_King_17 = {
 
 	trait = education_martial_4
 	trait = physique_good_3
+	trait = patient
 	trait = brave
 	trait = diligent
 	trait = reaver
@@ -17927,7 +17970,7 @@ Botley_36 = {
 	}
 	8179.1.1 = { death = yes }
 }
-### Main Line
+### Issue of Urrigon
 Botley_38 = {
 	name = Aeron # a lord
 	dynasty = dynn_Botley
@@ -17935,13 +17978,71 @@ Botley_38 = {
 	religion = drowned_god
 	culture = ironborn
 
-	father = Botley_37 # Urrigon Botley
+	father = Botley_37
 	mother = Ironmaker_49
 
 	8187.1.1 = { birth = yes }
 	8203.1.1 = { add_spouse = Ironmaker_62 } # Rosalynd Ironmaker
 	8205.1.1 = { death = yes }
 }
+Botley_77 = {
+	name = Sam
+	dynasty = dynn_Botley
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Botley_37
+	mother = Ironmaker_49
+
+	8188.1.1 = { birth = yes }
+	8205.1.1 = { add_spouse = Botley_rs_77 }
+	8232.1.1 = {
+		death = { death_reason = death_accident }
+	}
+}
+Botley_rs_77 = {
+	name = Wylla
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	8188.1.1 = { birth = yes }
+	8216.1.1 = { death = yes }
+}
+Botley_78 = {
+	name = Estred
+	dynasty = dynn_Botley
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Botley_37
+	mother = Ironmaker_49
+
+	8189.1.1 = { birth = yes }
+	8254.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+### Issue of Sam
+Botley_79 = {
+	name = Ryella
+	dynasty = dynn_Botley
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Botley_77
+	mother = Botley_rs_77
+
+	8209.1.1 = { birth = yes }
+	8258.1.1 = { death = yes }
+}
+### Issue of Aeron
 Botley_39 = {
 	name = Sargon # a lord
 	dynasty = dynn_Botley
@@ -17974,6 +18075,7 @@ Grey_King_19 = {
 
 	trait = education_martial_4
 	trait = physique_good_3
+	trait = ambitious
 	trait = brave
 	trait = diligent
 	trait = reaver
@@ -21162,6 +21264,7 @@ Grey_King_21 = {
 
 	trait = education_martial_4
 	trait = physique_good_3
+	trait = callous
 	trait = brave
 	trait = diligent
 	trait = reaver
@@ -22974,6 +23077,7 @@ Grey_King_23 = {
 
 	trait = education_martial_4
 	trait = physique_good_3
+	trait = authoritative
 	trait = brave
 	trait = diligent
 	trait = reaver
@@ -23010,7 +23114,7 @@ Kenning_109 = {
 	culture = ironborn
 
 	father = Grey_King_24
-	
+
 	trait = education_intrigue_4
 	trait = intellect_good_1
 	trait = calm
@@ -23048,8 +23152,8 @@ Kenning_10 = {
 	religion = drowned_god
 	culture = ironborn
 
-	father = Kenning_110 
-	
+	father = Kenning_110
+
 	trait = education_martial_2
 	trait = sadistic
 	trait = lustful
@@ -24611,6 +24715,7 @@ Grey_King_25 = {
 	trait = physique_good_3
 	trait = brave
 	trait = diligent
+	trait = calm
 	trait = reaver
 	trait = rowdy
 
@@ -28480,7 +28585,11 @@ Drumm_4 = {
 	}
 	1974.1.1 = {
 		give_nickname = nick_agot_historical_the_necromancer
-		trait = lifestyle_mystic_3_history
+		trait = lifestyle_mystic
+		add_trait_xp = {
+			trait = lifestyle_mystic
+			value = trait_third_level
+		}
 	}
 	2018.1.1 = { death = yes }
 }
@@ -29006,6 +29115,10 @@ Drumm_17 = {
 	}
 	7990.1.1 = { give_nickname = nick_agot_historical_the_cunning_Drumm_17 }
 	8001.1.1 = { add_spouse = Stonehouse_33 } # Ranni Stonehouse
+	8007.1.1 = {
+		agot_safe_buy_schemer_perk_history_effect = yes
+		trait = schemer
+	}
 	8018.1.1 = { death = yes }
 }
 Drumm_33 = {
@@ -29077,7 +29190,13 @@ Drumm_58 = {
 	disallow_random_traits = yes
 
 	7969.1.1 = { birth = yes }
-	7985.1.1 = { trait = lifestyle_blademaster_2_history }
+	7985.1.1 = {
+		trait = lifestyle_blademaster
+		add_trait_xp = {
+			trait = lifestyle_blademaster
+			value = trait_second_level
+		}
+	}
 	7995.1.1 = {
 		effect = { # Master-at-Arms at Harrenhal
 			agot_appoint_as_councillor_for_castle_history_effect = {
@@ -29455,6 +29574,7 @@ Grey_King_29 = {
 	trait = education_martial_4
 	trait = brave
 	trait = callous
+	trait = diligent
 	trait = reaver
 	trait = pensive
 
@@ -32175,6 +32295,7 @@ Grey_King_31 = {
 	trait = physique_good_3
 	trait = brave
 	trait = diligent
+	trait = authoritative
 	trait = reaver
 	trait = bossy
 
@@ -33596,6 +33717,7 @@ Grey_King_33 = {
 	trait = physique_good_3
 	trait = brave
 	trait = diligent
+	trait = patient
 	trait = reaver
 	trait = rowdy
 
@@ -36645,7 +36767,7 @@ Codd_39 = {
 
 	father = Codd_37
 	mother = Codd_rs_37
-	
+
 	trait = twin
 
 	8150.1.1 = { birth = yes }
@@ -36664,7 +36786,7 @@ Codd_120 = {
 
 	father = Codd_37
 	mother = Codd_rs_37
-	
+
 	trait = twin
 
 	8150.1.1 = { birth = yes }
@@ -48938,7 +49060,10 @@ Ironmaker_45 = {
 
 	trait = twin
 
-	8133.1.1 = { birth = yes }
+	8133.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8159.1.1 = { add_spouse = GoodbrotherOM_31 } # Maeva Goodbrother of Orkmont
 	8199.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -49189,7 +49314,10 @@ Ironmaker_53 = {
 	father = Ironmaker_45
 	mother = GoodbrotherOM_31
 
-	8163.1.1 = { birth = yes }
+	8163.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8183.1.1 = { add_spouse = Blacktyde_81 } # Sif Blacktyde
 	8226.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -50157,7 +50285,7 @@ Knight_Iron_Isles_1 = {
 	8058.1.1 = {
 		birth = yes
 		give_nickname = nick_agot_historical_bonesuckled
-		set_to_lowborn = yes # Lowborn Laamp Bugfix 
+		set_to_lowborn = yes # Lowborn Laamp Bugfix
 	}
 	8087.1.1 = { death = yes }
 }
@@ -50220,7 +50348,7 @@ Drowned_Men_3 = {
 	}
 }
 Drowned_Men_4 = {
-	name = Lodos # Canon, priest who claimed to be Lodos reborn
+	name = Dummy # Canon, priest who claimed to be Lodos reborn
 
 	learning = 10
 	diplomacy = 6
@@ -50248,6 +50376,7 @@ Drowned_Men_4 = {
 		}
 	}
 	8037.9.9 = { # Replaces Lodos
+		name = Lodos
 		effect = {
 			clear_traits = yes
 			copy_traits = character:Drowned_Men_3 # Lodos

@@ -84,8 +84,12 @@
 	8105.9.10 = {
 		holder = Targaryen_63
 	}
+	8129.4.1 = {
+		liege = 0
+	}
 	8130.10.22 = {
 		holder = Targaryen_65
+		liege = h_the_iron_throne
 	}
 	8131.1.14 = {
 		holder = Targaryen_78
@@ -562,7 +566,10 @@ c_driftmark = {
 		liege = d_driftmark
 		holder = Velaryon_6
 		effect = {
-			title:b_hull = { set_title_name = b_driftage_shore }
+			title:b_hull = {
+				save_title_name_change_data = yes
+				set_title_name = b_driftage_shore
+			}
 		}
 	}
 	7891.1.1 = {
@@ -588,7 +595,10 @@ c_driftmark = {
 	}
 	8082.1.1 = {
 		effect = {
-			title:b_hull = { reset_title_name = yes }
+			title:b_hull = {
+				save_title_name_change_data = yes
+				reset_title_name = yes
+			}
 		}
 	}
 	8086.1.1 = {
@@ -656,9 +666,16 @@ c_high_tide = {
 		liege = d_driftmark
 		holder = Velaryon_6
 		effect = {
+			save_title_name_change_data = yes
 			set_title_name = c_mermont
-			title:b_high_tide = { set_title_name = b_mermont }
-			title:b_spicetown = { set_title_name = b_flotsam_coast }
+			title:b_high_tide = {
+				save_title_name_change_data = yes
+				set_title_name = b_mermont
+			}
+			title:b_spicetown = {
+				save_title_name_change_data = yes
+				set_title_name = b_flotsam_coast
+			}
 		}
 	}
 	7891.1.1 = {
@@ -684,7 +701,10 @@ c_high_tide = {
 	}
 	8077.1.1 = {
 		effect = {
-			title:b_spicetown = { reset_title_name = yes }
+			title:b_spicetown = {
+				save_title_name_change_data = yes
+				reset_title_name = yes
+			}
 		}
 	}
 	8086.1.1 = {
@@ -692,8 +712,12 @@ c_high_tide = {
 	}
 	8088.1.1 = {
 		effect = {
+			save_title_name_change_data = yes
 			reset_title_name = yes
-			title:b_high_tide = { reset_title_name = yes }
+			title:b_high_tide = {
+				save_title_name_change_data = yes
+				reset_title_name = yes
+			}
 		}
 	}
 	8132.3.6 = {
