@@ -21,13 +21,17 @@ agot_historical_scenario_setup = {
 				# equip_artifact_to_owner_replace = yes
 			# }
 		# }
-		# AGOT Bookmarked Added
 		agot_8129_4_1_dotd_scenario_setup = yes
 	}
 	else_if = { # 8170.12.11 Titan Marches
 		limit = { game_start_date = 8170.12.11 }
 
 		agot_8170_12_11_scenario_setup = yes
+	}
+	else_if = { # 8195.3.7 The Blackfyre Rebellion
+		limit = { game_start_date = 8195.3.7 }
+
+		agot_8195_3_7_br_i_scenario_setup = yes
 	}
 	else_if = { # 8209.2.1 Shadows of Ashford
 		limit = { game_start_date = 8209.2.1 }
@@ -74,18 +78,19 @@ agot_historical_scenario_setup = {
 
 		agot_8284_6_2_scenario_setup = yes
 	}
+	else_if = { # 8299.4.1 Clash of Kings
+		limit = { game_start_date = 8299.4.1 }
+
+		agot_8299_4_1_acok_scenario_setup = yes
+	}
 	# AGOT Bookmarked Added
 	else_if = { # 7899.7.22 The Century of Blood
-		limit = { game_start_date < 7899.7.22 }
+		limit = { game_start_date = 7899.7.22 }
 		agotbm_centuryofblood_add_camp_buildings_on_start = yes
 	}
 	else_if = { # 7998.1.2 Aegon's Conquest
 		limit = { game_start_date = 7998.1.2 }
 		agot_7998_1_1_conquest_scenario_setup = yes
-	}
-	else_if = { # 8195.3.7 1st Blackfyre Rebellion
-		limit = { game_start_date = 8195.3.7 }
-		agot_8195_3_7_br_i_scenario_setup = yes
 	}
 	else_if = { # 8299.1.17 War of the Five Kings
 		limit = { game_start_date = 8299.1.17 }

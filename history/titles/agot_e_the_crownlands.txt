@@ -525,7 +525,7 @@ b_goldguard_heights = {
 	8105.9.12 = { # Daemon leaves for Stepstones, goes to Harwin
 		holder = Strong_30 # Harwin Strong (C)
 	}
-	8113.1.1 = {
+	8113.8.24 = {
 		holder = Langward_26 # Hareth Langward (m)
 	}
 	8129.3.3 = {
@@ -807,8 +807,14 @@ c_briarcrest = {
 	8129.1.1 = {
 		holder = Greenhill_44
 	}
+	8129.4.1 = {
+		liege = 0
+	}
 	8130.4.28 = {
 		holder = Greenhill_51
+	}
+	8131.1.14 = {
+		liege = d_kings_landing
 	}
 	8180.1.1 = {
 		holder = Greenhill_52
@@ -1102,6 +1108,12 @@ c_dyre_den = {
 	8122.1.1 = {
 		holder = Brune_24
 	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
+	}
 	8150.1.1 = {
 		holder = Brune_25
 	}
@@ -1154,6 +1166,12 @@ c_bronzeholm = {
 	}
 	8107.1.1 = {
 		holder = Boggs_73
+	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
 	}
 	8140.1.1 = {
 		holder = Boggs_78
@@ -1227,6 +1245,12 @@ c_brownhollow = {
 	8119.1.1 = {
 		holder = Brownhollow_18
 	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
+	}
 	8136.1.1 = {
 		holder = Brownhollow_21
 	}
@@ -1292,6 +1316,12 @@ c_hazewood = {
 	8102.1.1 = {
 		holder = Bush_58
 	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
+	}
 	8157.1.1 = {
 		holder = Bush_62
 	}
@@ -1340,13 +1370,16 @@ c_needlewater = {
 		holder = Pyne_13
 	}
 	7999.11.15 = {
-		liege = e_the_crownlands
+		liege = d_rooks_rest
 	}
 	8005.1.1 = {
 		holder = Pyne_16
 	}
 	8025.1.1 = {
 		holder = Pyne_20
+	}
+	8048.4.10 = {
+		liege = e_the_crownlands
 	}
 	8070.1.1 = {
 		holder = Pyne_38
@@ -1356,6 +1389,12 @@ c_needlewater = {
 	}
 	8129.1.1 = {
 		holder = Pyne_41
+	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
 	}
 	8148.1.1 = {
 		holder = Pyne_46
@@ -1413,6 +1452,12 @@ c_pointside = {
 	8109.1.1 = {
 		holder = Hardy_39
 	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
+	}
 	8134.1.1 = {
 		holder = Hardy_40
 	}
@@ -1464,10 +1509,13 @@ c_strongbox = {
 		holder = Cave_58
 	}
 	7999.11.15 = {
-		liege = e_the_crownlands
+		liege = d_rooks_rest
 	}
 	8038.1.1 = {
 		holder = Cave_60
+	}
+	8048.4.10 = {
+		liege = e_the_crownlands
 	}
 	8057.1.1 = {
 		holder = Cave_66
@@ -1477,6 +1525,12 @@ c_strongbox = {
 	}
 	8091.1.1 = {
 		holder = Cave_73
+	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
 	}
 	8133.1.1 = {
 		holder = Cave_76
@@ -1531,6 +1585,12 @@ c_strongcliffs = {
 	}
 	8094.1.1 = {
 		holder = Crabb_26
+	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
 	}
 	8135.1.1 = {
 		holder = Crabb_29
@@ -1594,8 +1654,14 @@ d_deerfield = {
 	8100.1.1 = {
 		holder = Buckwell_20
 	}
+	8129.4.1 = {
+		liege = 0
+	}
 	8129.11.21 = {
 		holder = Buckwell_26
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
 	}
 	8149.12.2 = {
 		holder = Buckwell_31
@@ -1958,8 +2024,14 @@ d_duskendale = {
 	8120.1.1 = {
 		holder = Darklyn_19
 	}
+	8129.4.1 = {
+		liege = 0
+	}
 	8129.10.3 = {
 		holder = Darklyn_29
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
 	}
 	8174.1.1 = {
 		holder = Darklyn_34
@@ -2273,6 +2345,13 @@ c_crownback = {
 		holder = Dunkel_3
 	}
 }
+b_threecrowns = {
+	8277.10.1 = {
+		effect = {
+			set_capital_barony = yes #Defiance of Duskendale
+		}
+	}
+}
 c_darkwoods_mull = {
 	7862.1.1 = {
 		liege = d_duskendale
@@ -2543,8 +2622,14 @@ d_hayford = {
 	8107.1.1 = {
 		holder = Hayford_12
 	}
+	8129.4.1 = {
+		liege = 0
+	}
 	8129.9.5 = {
 		holder = Hayford_13
+	}
+	8131.1.14 = {
+		liege = k_the_blackwater
 	}
 	8175.1.1 = {
 		holder = Hayford_18
@@ -2953,8 +3038,14 @@ d_masseys_hook = {
 	8128.1.1 = {
 		holder = Massey_38
 	}
+	8129.4.1 = {
+		liege = 0
+	}
 	8129.12.6 = {
 		holder = Massey_40
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
 	}
 	8164.12.26 = {
 		holder = Scourgeborn_1
@@ -3453,8 +3544,14 @@ d_rooks_rest = {
 	8083.1.1 = {
 		holder = Staunton_19
 	}
+	8129.4.1 = {
+		liege = 0
+	}
 	8129.11.21 = {
 		holder = Staunton_25
+	}
+	8131.1.14 = {
+		liege = e_the_crownlands
 	}
 	8174.9.2 = {
 		holder = Staunton_31
@@ -3729,6 +3826,12 @@ d_rosby = {
 	}
 	8123.1.1 = {
 		holder = Rosby_16
+	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8129.9.5 = {
+		liege = e_the_crownlands
 	}
 	8130.2.28 = {
 		holder = Rosby_22
@@ -4199,6 +4302,12 @@ d_stokeworth = {
 	8120.1.1 = {
 		holder = Stokeworth_21
 	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8129.9.5 = {
+		liege = e_the_crownlands
+	}
 	8130.2.28 = {
 		holder = Stokeworth_24
 	}
@@ -4354,7 +4463,7 @@ c_cantondale = {
 		holder = Branfield_3
 	}
 	7859.1.1 = {
-		liege = d_stokeworth
+		liege = d_duskendale
 	}
 	7871.1.1 = {
 		holder = Branfield_8
@@ -4379,6 +4488,9 @@ c_cantondale = {
 	}
 	8034.1.1 = {
 		holder = Branfield_25
+	}
+	8048.4.10 = {
+		liege = d_stokeworth
 	}
 	8061.1.1 = {
 		holder = Branfield_29
@@ -4948,6 +5060,12 @@ c_rollingford = {
 	8124.1.1 = {
 		holder = Rollingford_40
 	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8131.1.14 = {
+		liege = k_the_blackwater
+	}
 	8150.1.1 = {
 		holder = Rollingford_45
 	}
@@ -5016,6 +5134,12 @@ c_great_fork = {
 	8109.1.1 = {
 		holder = Bourney_35
 	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8130.4.28 = {
+		liege = k_the_blackwater
+	}
 	8130.6.1 = {
 		holder = Bourney_70
 	}
@@ -5078,6 +5202,12 @@ c_longgrass = {
 	}
 	8125.1.1 = {
 		holder = Shallows_27
+	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8131.1.14 = {
+		liege = k_the_blackwater
 	}
 	8138.1.1 = {
 		holder = Shallows_36
@@ -5148,6 +5278,12 @@ c_middleton = {
 	}
 	8122.1.1 = {
 		holder = Hall_47
+	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8131.1.14 = {
+		liege = k_the_blackwater
 	}
 	8172.1.1 = {
 		holder = Hall_52
@@ -5221,6 +5357,12 @@ c_pikemouth = {
 	8129.1.1 = {
 		holder = Corne_34
 	}
+	8129.4.1 = {
+		liege = 0
+	}
+	8130.4.28 = {
+		liege = k_the_blackwater
+	}
 	8130.6.1 = {
 		holder = Corne_35
 	}
@@ -5251,52 +5393,61 @@ d_wendwater_forest = {
 	20.1.1 = {
 		liege = e_the_stormlands
 	}
-	7870.1.1 = {
-		holder = Farring_7
+	7874.1.1 = {
+		holder = Wendwater_4
 	}
-	7881.1.1 = {
-		holder = Farring_8
+	7880.1.1 = {
+		holder = Wendwater_5
 	}
-	7929.1.1 = {
-		holder = Farring_10
+	7883.1.1 = {
+		holder = Wendwater_10
 	}
-	7935.1.1 = {
-		holder = Farring_13
+	7884.1.1 = {
+		holder = Wendwater_6
 	}
-	7962.1.1 = {
-		holder = Farring_15
+	7888.1.1 = {
+		holder = Wendwater_11
 	}
-	7989.1.1 = {
-		holder = Farring_20
+	7936.1.1 = {
+		holder = Wendwater_28
+	}
+	7967.1.1 = {
+		holder = Wendwater_37
+	}
+	7991.1.1 = {
+		holder = Wendwater_41
 	}
 	7999.9.15 = {
 		liege = e_the_crownlands
 	}
-	8002.1.1 = {
-		holder = Farring_29
+	8037.1.1 = {
+		holder = Wendwater_43
 	}
-	8034.1.1 = {
-		holder = Farring_31
+	8048.1.1 = {
+		holder = Wendwater_44
 	}
-	8063.1.1 = {
-		holder = Farring_39
+	8102.1.1 = {
+		holder = Wendwater_48
 	}
-	8080.1.1 = {
-		holder = Farring_44
+	8111.1.1 = {
+		holder = Wendwater_13
 	}
-	8120.1.1 = {
-		holder = Farring_50
+	8123.1.1 = {
+		holder = Wendwater_15
 	}
-	8151.1.1 = {
-		holder = Farring_51
+	8146.1.1 = {
+		holder = Wendwater_20
 	}
-	8177.1.1 = {
-		holder = Farring_55
+	8179.1.1 = {
+		holder = Wendwater_23
 	}
-	8191.1.1 = {
-		holder = Farring_59
+	8203.1.1 = {
+		holder = Wendwater_24
 	}
-	8226.1.1 = {
+	8220.1.1 = {
+		holder = Wendwater_25
+	}
+	8236.5.22 = {
 		holder = Farring_63
 	}
 	8258.1.1 = {

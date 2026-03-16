@@ -451,9 +451,6 @@ c_longbar = {
 		holder = Bar_Emmon_9
 	}
 	7925.1.1 = {
-		holder = Bar_Emmon_10
-	}
-	7946.1.1 = {
 		holder = Bar_Emmon_55
 	}
 	7973.1.1 = {
@@ -557,6 +554,7 @@ d_driftmark = {
 	}
 	8299.9.8 = {
 		holder = Velaryon_3
+		liege = h_the_iron_throne
 	}
 }
 c_driftmark = {
@@ -795,9 +793,6 @@ d_sharp_point = {
 		holder = Bar_Emmon_9
 	}
 	7925.1.1 = {
-		holder = Bar_Emmon_10
-	}
-	7946.1.1 = {
 		holder = Bar_Emmon_55
 	}
 	7973.1.1 = {
@@ -910,6 +905,9 @@ d_claw_isle = {
 	8280.1.1 = {
 		holder = Celtigar_2
 	}
+	8299.9.8 = {
+		liege = h_the_iron_throne
+	}
 }
 c_blackmark = {
 	7870.1.1 = {
@@ -989,9 +987,6 @@ c_sharp_point = {
 		holder = Bar_Emmon_9
 	}
 	7925.1.1 = {
-		holder = Bar_Emmon_10
-	}
-	7946.1.1 = {
 		holder = Bar_Emmon_55
 	}
 	7973.1.1 = {
@@ -1055,9 +1050,6 @@ c_gullet_isle = {
 		holder = Bar_Emmon_9
 	}
 	7925.1.1 = {
-		holder = Bar_Emmon_10
-	}
-	7946.1.1 = {
 		holder = Bar_Emmon_55
 	}
 	7973.1.1 = {

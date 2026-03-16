@@ -7,6 +7,38 @@
 #############################
 agot_8299_6_13_acok_scenario_setup = {
 	### RULER DESIGNER FIX ###
+	# Renly aganist Lannisters
+	if = { # fire only if you used ruler designer; else there is no war
+		limit = { NOT = { title:e_the_stormlands.holder = character:Baratheon_4 } }
+
+		title:e_the_stormlands.holder = {
+			start_war = {
+				cb = claim_cb
+				target = title:h_the_iron_throne.holder
+				target_title = title:h_the_iron_throne
+				target_title = title:e_the_crownlands
+				target_title = title:k_the_blackwater
+				target_title = title:d_kings_landing
+				target_title = title:c_kings_landing
+				target_title = title:d_dragonstone
+				target_title = title:c_dragonstone
+			}
+			every_character_war = {
+				add_attacker = title:e_the_reach.holder
+			}
+		}
+	}
+	if = { # fire only if you used ruler designer; else there is no war
+		limit = { NOT = { title:h_the_iron_throne.holder = character:Baratheon_5 } }
+
+		title:h_the_iron_throne.holder = {
+			add_character_flag = { flag = mw_init_event_blocker days = 2 }
+			every_character_war = {
+				add_defender = title:e_the_westerlands.holder
+			}
+		}
+	}
+
 	# Stannis aganist Lannisters
 	if = { # fire only if you used ruler designer; else there is no war
 		limit = { NOT = { title:k_dragonstone.holder = character:Baratheon_3 } }
@@ -26,6 +58,7 @@ agot_8299_6_13_acok_scenario_setup = {
 			every_character_war = {
 				add_attacker = title:d_wendwater_forest.holder
 				add_attacker = title:d_masseys_hook.holder
+				add_attacker = title:d_saans_stones.holder
 			}
 		}
 	}
@@ -39,8 +72,6 @@ agot_8299_6_13_acok_scenario_setup = {
 			}
 		}
 	}
-
-	title:h_the_iron_throne.holder = { save_scope_as = historical_setup }
 
 	# Starks aganist Lannisters
 	if = { # fire only if you used ruler designer; else there is no war
@@ -67,39 +98,18 @@ agot_8299_6_13_acok_scenario_setup = {
 		}
 	}
 
-	# Greyjoys aganist Lannisters
-	if = { # fire only if you used ruler designer; else there is no war
-		limit = { NOT = { title:e_the_iron_islands.holder = character:Greyjoy_5 } }
-
-		title:e_the_iron_islands.holder = {
-			start_war = {
-				cb = agot_independence_war
-				target = title:h_the_iron_throne.holder
-			}
-		}
-	}
-	if = { # fire only if you used ruler designer; else there is no war
-		limit = { NOT = { title:h_the_iron_throne.holder = character:Baratheon_5  } }
-
-		title:h_the_iron_throne.holder = {
-			add_character_flag = { flag = mw_init_event_blocker days = 2 }
-			every_character_war = {
-				add_defender = title:e_the_westerlands.holder
-			}
-		}
-	}
-	###
+	title:h_the_iron_throne.holder = { save_scope_as = historical_setup }
 
 	### SET UP REBEL LEADERS
 	hidden_effect = { # Stannis aganist Lannisters
-		title:e_the_stormlands.holder = {
+		title:k_dragonstone.holder = {
 			save_scope_as = mw_rebel_leader_stannis
 			agot_mw_scenario_rebel_setup = { # Set up story
 				SOURCE = flag:mw_internal
 				MODE = flag:mw_regular
 				REALM_BREAK_UP = flag:yes
 				REBEL_MAY_VASSALIZE = flag:no
-				HELD_TITLE = title:e_the_stormlands
+				HELD_TITLE = title:k_dragonstone
 				CASUS_BELLI = claim_cb
 				PRE_WAR_LIEGE = title:h_the_iron_throne.holder
 				MW_TARGET = title:h_the_iron_throne.holder
@@ -107,7 +117,10 @@ agot_8299_6_13_acok_scenario_setup = {
 			# ADD REBEL SUPPORTERS #
 			# Add vassal rebels
 			every_vassal_or_below = {
-				limit = { primary_title.tier > tier_barony }
+				limit = {
+					primary_title.tier > tier_barony
+					agot_is_high_septon = no
+				}
 
 				scope:mw_rebel_story = {
 					add_to_variable_list = {
@@ -150,9 +163,7 @@ agot_8299_6_13_acok_scenario_setup = {
 			every_vassal_or_below = {
 				limit = {
 					primary_title.tier > tier_barony
-					NOR = {
-						primary_title = title:k_the_most_devout
-					}
+					agot_is_high_septon = no
 				}
 
 				scope:mw_rebel_story = {
@@ -188,7 +199,10 @@ agot_8299_6_13_acok_scenario_setup = {
 			# ADD REBEL SUPPORTERS #
 			# Add vassal rebels
 			every_vassal_or_below = {
-				limit = { primary_title.tier > tier_barony }
+				limit = {
+					primary_title.tier > tier_barony
+					agot_is_high_septon = no
+				}
 
 				scope:mw_rebel_story = {
 					add_to_variable_list = {
@@ -253,12 +267,7 @@ agot_8299_6_13_acok_scenario_setup = {
 		every_vassal_or_below = {
 			limit = {
 				primary_title.tier > tier_barony
-				NOT = {
-					OR = {
-						primary_title = title:k_the_most_devout
-						primary_title = title:d_kingsguard
-					}
-				}
+				agot_is_high_septon = no
 			}
 
 			scope:mw_crown_story = {
@@ -285,10 +294,28 @@ agot_8299_6_13_acok_scenario_setup = {
 		PRE_WAR_LIEGE_SCOPE = title:h_the_iron_throne.holder
 	}
 	agot_mw_add_character_to_mw_list = {
-		CHARACTER_SCOPE = title:k_the_arbor.holder
+		CHARACTER_SCOPE = title:e_the_iron_islands.holder
 		STORY_SCOPE = scope:mw_crown_story
 		LIST = mw_neutral_list
 		PRE_WAR_LIEGE_SCOPE = title:h_the_iron_throne.holder
+	}
+	agot_mw_add_character_to_mw_list = {
+		CHARACTER_SCOPE = title:k_the_arbor.holder
+		STORY_SCOPE = scope:mw_crown_story
+		LIST = mw_neutral_list
+		PRE_WAR_LIEGE_SCOPE = title:e_the_reach.holder
+	}
+	agot_mw_add_character_to_mw_list = {
+		CHARACTER_SCOPE = title:d_red_watch.holder
+		STORY_SCOPE = scope:mw_crown_story
+		LIST = mw_neutral_list
+		PRE_WAR_LIEGE_SCOPE = title:e_the_stormlands.holder
+	}
+	agot_mw_add_character_to_mw_list = {
+		CHARACTER_SCOPE = title:d_blackhaven.holder
+		STORY_SCOPE = scope:mw_crown_story
+		LIST = mw_neutral_list
+		PRE_WAR_LIEGE_SCOPE = title:e_the_stormlands.holder
 	}
 	######
 
