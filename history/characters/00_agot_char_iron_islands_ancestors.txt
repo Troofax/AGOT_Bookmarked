@@ -67,6 +67,7 @@ Grey_King_2 = {
 			trait = lifestyle_mystic
 			value = trait_third_level
 		}
+		trait = dragonslayer
 	}
 	1999.1.1 = { death = yes } # reigned for 1007 years
 }
@@ -139,6 +140,7 @@ Greyiron_1 = {
 	trait = brave
 	trait = ambitious
 	trait = bossy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -453,6 +455,7 @@ Greyiron_34 = {
 	trait = brave
 	trait = callous
 	trait = rowdy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -499,6 +502,7 @@ Greyiron_35 = {
 	trait = education_martial_1
 	trait = impatient
 	trait = arrogant
+	trait = viking
 
 	6275.1.1 = {
 		birth = yes
@@ -608,6 +612,7 @@ Greyiron_20 = {
 	trait = ambitious
 	trait = diligent
 	trait = curious
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -751,6 +756,7 @@ Greyiron_27 = {
 	trait = arbitrary
 	trait = wrathful
 	trait = bossy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -898,6 +904,7 @@ Hoare_1 = {
 	trait = authoritative
 	trait = zealous
 	trait = rowdy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -979,6 +986,7 @@ Hoare_4 = {
 	trait = sadistic
 	trait = diligent
 	trait = rowdy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -1011,6 +1019,7 @@ Hoare_5 = {
 	trait = wrathful
 	trait = ambitious
 	trait = rowdy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -1041,6 +1050,8 @@ Hoare_6 = {
 	culture = ironborn
 
 	father = Hoare_5
+
+	trait = viking
 
 	6271.1.1 = {
 		birth = yes
@@ -1097,6 +1108,7 @@ Hoare_3 = {
 	trait = ambitious
 	trait = brave
 	trait = bossy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -1123,6 +1135,8 @@ Hoare_21 = {
 	culture = ironborn
 
 	father = Hoare_3
+
+	trait = viking
 
 	7004.1.1 = {
 		birth = yes
@@ -1656,6 +1670,7 @@ Hoare_28 = {
 	trait = callous
 	trait = ambitious
 	trait = rowdy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -1683,12 +1698,14 @@ Hoare_28 = {
 		#trait = suspected_kinslayer # AGOT TODO trait
 	}
 	7907.1.1 = {
-		add_spouse = Goodbrother_42 # Gysella Goodbrother
 		effect = {
 			agot_safe_concubine_history_effect = {
 				TARGET = character:Charlton_10 # Walda Charlton
 			}
 		}
+	}
+	7911.1.1 = {
+		add_spouse = Goodbrother_42 # Gysella Goodbrother
 	}
 	7912.1.1 = {
 		effect = {
@@ -1754,6 +1771,7 @@ Hoare_30 = {
 	7930.1.1 = {
 		agot_safe_buy_torturer_perk_history_effect = yes
 		trait = torturer
+		add_dread = massive_dread_gain
 	}
 	7936.1.1 = { add_spouse = Volmark_9 } # Alannys Volmark
 	7960.1.1 = { death = yes }
@@ -1800,6 +1818,7 @@ Hoare_31 = {
 		trait = architect
 		#trait = slave_owner AGOT TODO Trait
 		effect = { add_tyranny = massive_tyranny_gain }
+		trait = unyielding_defender
 	}
 	7996.1.1 = {
 		effect = {
@@ -2051,6 +2070,7 @@ Greyjoy_22 = {
 	trait = zealous
 	trait = brave
 	trait = bossy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -2164,6 +2184,7 @@ Greyjoy_25 = {
 	trait = arrogant
 	trait = wrathful
 	trait = bossy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -2196,6 +2217,7 @@ Greyjoy_28 = {
 	trait = education_martial_3
 	trait = diligent
 	trait = authoritative
+	trait = viking
 
 	6278.1.1 = {
 		birth = yes
@@ -2242,6 +2264,7 @@ Greyjoy_21 = {
 
 	trait = education_martial_4
 	trait = ambitious
+	trait = viking
 
 	6343.1.1 = {
 		birth = yes
@@ -2657,7 +2680,12 @@ Greyjoy_41 = {
 		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_canon
 	}
-	8013.1.1 = { add_spouse = Orkwood_53 } # Ulfhild Orkwood
+	8013.1.1 = { 
+		add_spouse = Orkwood_53 # Ulfhild Orkwood
+		effect = {
+			agot_set_signature_weapon_history_effect  = { WEAPON = flag:axe }
+		}
+	}
 	8038.1.1 = {
 		agot_safe_buy_overseer_perk_history_effect = yes
 		trait = overseer
@@ -2934,6 +2962,7 @@ Greyjoy_49 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Greyjoy_45
 	mother = Saltcliffe_87
@@ -2948,6 +2977,8 @@ Greyjoy_49 = {
 		make_trait_inactive = smol_tol
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
 	8134.1.1 = { employer = Harlaw_42 } # Maron Harlaw
 	8134.5.1 = {
@@ -3023,6 +3054,7 @@ Greyjoy_107 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Greyjoy_106
 
@@ -3030,6 +3062,8 @@ Greyjoy_107 = {
 		birth = yes
 		set_to_lowborn = yes
 		make_trait_inactive = surname_pyke
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
 	8202.1.1 = { death = yes }
 }
@@ -3408,6 +3442,7 @@ Greyjoy_59 = { # Dance of the Dragons
 	trait = education_martial_3
 	trait = intellect_good_2
 	trait = rowdy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -3421,6 +3456,7 @@ Greyjoy_59 = { # Dance of the Dragons
 	8121.8.1 = { trait = callous }
 	8123.1.1 = { # Reaving with his uncle
 		effect = {
+			agot_set_signature_weapon_history_effect = { WEAPON = flag:sword }
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Greyjoy_52 } # Euron Greyjoy, uncle who died raiding Stepstones
 			if = {
 				limit = { character:Greyjoy_55 = { is_alive = yes } }
@@ -3463,7 +3499,12 @@ Greyjoy_59 = { # Dance of the Dragons
 			add_gold = 100
 		}
 	}
-	8129.1.1 = { trait = aggressive_attacker }
+	8129.1.1 = { 
+		add_trait_xp = {
+			trait = reaver
+			value = 100
+		} 
+	}
 	8130.2.20 = {
 		effect = {
 			agot_safe_concubine_history_effect = {
@@ -3863,6 +3904,10 @@ Greyjoy_66 = {
 	8196.1.1 = { add_spouse = Goodbrother_56 } # Shierle Goodbrother
 	8211.1.1 = {
 		trait = reaver
+		add_trait_xp = {
+			trait = reaver
+			value = 100
+		} 
 		effect = {
 			add_gold = 200
 			add_prestige = 350
@@ -4118,6 +4163,10 @@ Greyjoy_hh_20 = {
 				CASTLE = title:c_pyke
 				POSITION = councillor_marshal
 			}
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_pyke
+				POSITION = master_at_arms_court_position
+			}
 		}
 	}
 	8156.1.1 = {
@@ -4264,6 +4313,7 @@ Greyjoy_79 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Greyjoy_75
 	mother = Wynch_21 # Shera Wynch
@@ -4274,8 +4324,10 @@ Greyjoy_79 = {
 		make_trait_inactive = black_eyes
 		make_trait_inactive = smol_tol
 		add_character_flag = canon_status_semicanon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
-	8142.1.1 = { add_spouse = Goodbrother_54 } # Gwynesse Goodbrother
+	8148.1.1 = { add_spouse = Goodbrother_54 } # Gwynesse Goodbrother
 	8188.1.1 = { death = yes }
 }
 Greyjoy_80 = {
@@ -4711,6 +4763,7 @@ Goodbrother_123 = {
 	trait = callous
 	trait = brave
 	trait = rowdy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -4834,6 +4887,7 @@ Goodbrother_126 = {
 	trait = education_martial_1
 	trait = greedy
 	trait = vengeful
+	trait = viking
 
 	6300.1.1 = {
 		birth = yes
@@ -4996,7 +5050,7 @@ Goodbrother_42 = {
 	father = Goodbrother_43
 	mother = Tawney_10
 
-	7897.1.1 = { birth = yes }
+	7896.1.1 = { birth = yes }
 	7945.1.1 = { death = yes }
 }
 Goodbrother_44 = {
@@ -5678,6 +5732,7 @@ Goodbrother_51 = {
 	trait = wrathful
 	trait = vengeful
 	trait = rowdy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -5712,6 +5767,7 @@ Goodbrother_52 = {
 	trait = education_martial_2
 	trait = wrathful
 	trait = brave
+	trait = viking
 
 	8106.1.1 = {
 		birth = yes
@@ -9198,7 +9254,7 @@ GoodbrotherOM_66 = {
 }
 ### Issue of Harrald
 GoodbrotherOM_52 = {
-	name = Estred
+	name = Estred # married Sam Botley
 	dynasty_house = house_GoodbrotherOM
 	female = yes
 
@@ -9215,7 +9271,7 @@ GoodbrotherOM_52 = {
 }
 ### Issue of Cromm
 GoodbrotherOM_42 = {
-	name = Gudrun
+	name = Gudrun # married Will Stormdrunk
 	dynasty_house = house_GoodbrotherOM
 	female = yes
 
@@ -9380,7 +9436,7 @@ GoodbrotherOM_44 = {
 }
 ### Issue of Aeron
 GoodbrotherOM_56 = {
-	name = Disa
+	name = Disa # married Lorren Reaves
 	dynasty_house = house_GoodbrotherOM
 	female = yes
 
@@ -9398,7 +9454,7 @@ GoodbrotherOM_56 = {
 	}
 }
 GoodbrotherOM_57 = {
-	name = Shierle
+	name = Shierle # married Ambrode Jeyne
 	dynasty_house = house_GoodbrotherOM
 	female = yes
 
@@ -13573,7 +13629,7 @@ FarwyndDL_53 = {
 }
 ### Issue of Roggon
 FarwyndDL_60 = {
-	name = Hilda
+	name = Hilda # married Ulf Reaves
 	dynasty_house = house_FarwyndDL
 	female = yes
 
@@ -13900,6 +13956,7 @@ Harlaw_86 = {
 	trait = wrathful
 	trait = sadistic
 	trait = bossy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -13922,6 +13979,7 @@ Harlaw_87 = {
 	trait = education_diplomacy_3
 	trait = patient
 	trait = temperate
+	trait = viking
 
 	4097.1.1 = { birth = yes }
 	4179.8.1 = { trait = infirm }
@@ -13987,6 +14045,7 @@ Harlaw_30 = {
 	trait = education_martial_3
 	trait = ambitious
 	trait = authoritative
+	trait = viking
 
 	6333.1.1 = {
 		birth = yes
@@ -14008,6 +14067,7 @@ Harlaw_31 = {
 	trait = education_martial_2
 	trait = strong
 	trait = brave
+	trait = viking
 
 	6357.1.1 = {
 		birth = yes
@@ -15002,6 +15062,7 @@ Volmark_29 = {
 	trait = gluttonous
 	trait = brave
 	trait = bossy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -15153,6 +15214,7 @@ Volmark_11 = {
 	trait = arrogant
 	trait = impatient
 	trait = rowdy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -16019,7 +16081,7 @@ Wynch_37 = {
 }
 ### Issue of Earl
 Wynch_46 = {
-	name = Dyssa
+	name = Dyssa # married Meldrik Fross
 	dynasty = dynn_Wynch
 	female = yes
 
@@ -16037,7 +16099,7 @@ Wynch_46 = {
 	}
 }
 Wynch_47 = {
-	name = Frenya
+	name = Frenya # married Jon Ironspite
 	dynasty = dynn_Wynch
 	female = yes
 
@@ -17892,6 +17954,7 @@ Botley_33 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Botley_31
 	mother = Saltcliffe_17
@@ -17899,6 +17962,8 @@ Botley_33 = {
 	8138.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
 	8165.1.1 = { add_spouse = Weaver_76 } # Ulfhild Weaver
 	8183.1.1 = { death = yes }
@@ -17996,20 +18061,10 @@ Botley_77 = {
 	mother = Ironmaker_49
 
 	8188.1.1 = { birth = yes }
-	8205.1.1 = { add_spouse = Botley_rs_77 }
+	8205.1.1 = { add_spouse = GoodbrotherOM_52 } # Estred Goodbrotherom
 	8232.1.1 = {
 		death = { death_reason = death_accident }
 	}
-}
-Botley_rs_77 = {
-	name = Wylla
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8188.1.1 = { birth = yes }
-	8216.1.1 = { death = yes }
 }
 Botley_78 = {
 	name = Estred
@@ -18037,7 +18092,7 @@ Botley_79 = {
 	culture = ironborn
 
 	father = Botley_77
-	mother = Botley_rs_77
+	mother = GoodbrotherOM_52
 
 	8209.1.1 = { birth = yes }
 	8258.1.1 = { death = yes }
@@ -19083,6 +19138,7 @@ Saltcliffe_22 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Saltcliffe_20
 	mother = Volmark_19
@@ -19090,6 +19146,8 @@ Saltcliffe_22 = {
 	8138.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_semicanon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
 	8176.1.1 = { death = yes }
 }
@@ -19193,6 +19251,7 @@ Saltcliffe_26 = {
 		add_character_flag = sexuality_ensure_heterosexual
 	}
 	8154.1.1 = { trait = lustful }
+	8156.1.1 = { trait = fornicator }
 	8157.1.1 = {
 		trait = disinherited
 		add_character_flag = historical_disinheritance
@@ -19425,7 +19484,7 @@ Saltcliffe_38 = {
 	mother = Terrick_59
 
 	8199.1.1 = { birth = yes }
-	8219.1.1 = { add_spouse = Shepherd_91 } # Hegga Shepherd
+	8217.1.1 = { add_spouse = Shepherd_91 } # Hegga Shepherd
 	8241.1.1 = { death = yes }
 }
 Saltcliffe_7 = {
@@ -19561,7 +19620,7 @@ Saltcliffe_39 = {
 	father = Saltcliffe_38
 	mother = Shepherd_91
 
-	8220.1.1 = { birth = yes }
+	8218.1.1 = { birth = yes }
 	8234.1.1 = { add_spouse = Netley_102 } # Hanna Netley
 	8282.1.1 = { death = yes }
 }
@@ -20094,11 +20153,16 @@ Sunderly_23 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Sunderly_33
 	mother = Merlyn_52
 
-	7968.1.1 = { birth = yes }
+	7968.1.1 = { 
+		birth = yes
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual 
+	}
 	8000.2.1 = {
 		trait = nightswatch_historical
 		effect = {
@@ -21078,7 +21142,7 @@ Sunderly_107 = {
 }
 ### Issue of Maron
 Sunderly_76 = {
-	name = Alrya
+	name = Alrya # married Norfryd Fross
 	dynasty = dynn_Sunderly
 	female = yes
 
@@ -25677,6 +25741,10 @@ Stonetree_18 = {
 				CASTLE = title:c_blacktyde
 				POSITION = councillor_marshal
 			}
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_blacktyde
+				POSITION = master_at_arms_court_position
+			}
 		}
 	}
 	8150.1.1 = {
@@ -25685,6 +25753,10 @@ Stonetree_18 = {
 			agot_appoint_as_councillor_for_castle_history_effect = {
 				CASTLE = title:c_pyke
 				POSITION = councillor_marshal
+			}
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_pyke
+				POSITION = master_at_arms_court_position
 			}
 		}
 	}
@@ -27254,6 +27326,7 @@ Blacktyde_83 = {
 	trait = education_martial_1
 	trait = stubborn
 	trait = wrathful
+	trait = viking
 
 	6285.1.1 = {
 		birth = yes
@@ -27347,6 +27420,7 @@ Blacktyde_8 = {
 	trait = ambitious
 	trait = authoritative
 	trait = rowdy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -27509,6 +27583,22 @@ Blacktyde_17 = {
 		death = { death_reason = death_consumption }
 	}
 }
+Blacktyde_21 = {
+	name = Astrid # married Maron Stonehouse
+	dynasty = dynn_Blacktyde
+	female = yes
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Blacktyde_13
+	mother = Tawney_17
+
+	trait = twin
+
+	7930.1.1 = { birth = yes }
+	7976.1.1 = { death = yes }
+}
 Blacktyde_82 = {
 	name = Maeva # married Harren Greyjoy
 	dynasty = dynn_Blacktyde
@@ -27527,22 +27617,6 @@ Blacktyde_82 = {
 		trait = consumption
 		death = { death_reason = death_consumption }
 	}
-}
-Blacktyde_21 = {
-	name = Astrid # married Maron Stonehouse
-	dynasty = dynn_Blacktyde
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	father = Blacktyde_13
-	mother = Tawney_17
-
-	trait = twin
-
-	7930.1.1 = { birth = yes }
-	7976.1.1 = { death = yes }
 }
 ### Issue of Gran
 Blacktyde_22 = {
@@ -28630,6 +28704,7 @@ Drumm_6 = {
 	trait = brave
 	trait = diligent
 	trait = bossy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -28699,6 +28774,7 @@ Drumm_8 = {
 	trait = ambitious
 	trait = brave
 	trait = rowdy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -28756,6 +28832,7 @@ Drumm_11 = {
 	trait = sadistic
 	trait = brave
 	trait = bossy
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -29106,6 +29183,7 @@ Drumm_17 = {
 	trait = arbitrary
 	trait = greedy
 	trait = pensive
+	trait = viking
 
 	disallow_random_traits = yes
 
@@ -29113,7 +29191,17 @@ Drumm_17 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	7990.1.1 = { give_nickname = nick_agot_historical_the_cunning_Drumm_17 }
+	7980.1.1 = {
+		effect = {
+			agot_set_signature_weapon_history_effect = { WEAPON = flag:mace }
+		}
+	}
+	7990.1.1 = { 
+		give_nickname = nick_agot_historical_the_cunning_Drumm_17
+		effect = {
+			agot_set_signature_weapon_history_effect = { WEAPON = flag:sword }
+		} 
+	}
 	8001.1.1 = { add_spouse = Stonehouse_33 } # Ranni Stonehouse
 	8007.1.1 = {
 		agot_safe_buy_schemer_perk_history_effect = yes
@@ -29200,8 +29288,12 @@ Drumm_58 = {
 	7995.1.1 = {
 		effect = { # Master-at-Arms at Harrenhal
 			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:e_the_iron_islands
+				CASTLE = title:c_harrenhal
 				POSITION = councillor_marshal
+			}
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_harrenhal
+				POSITION = master_at_arms_court_position
 			}
 		}
 	}
@@ -34814,13 +34906,18 @@ Orkwood_19 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Orkwood_17
 	mother = Botley_63
 
 	trait = beauty_bad_2
 
-	8075.1.1 = { birth = yes }
+	8075.1.1 = { 
+		birth = yes
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual 
+	}
 	8132.1.1 = { death = yes }
 }
 ### Issue of Lorren
@@ -34848,6 +34945,10 @@ Orkwood_20 = {
 			agot_appoint_as_councillor_for_castle_history_effect = {
 				CASTLE = title:c_saltcliffe
 				POSITION = councillor_marshal
+			}
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_saltcliffe
+				POSITION = master_at_arms_court_position
 			}
 		}
 	}
@@ -34997,12 +35098,15 @@ Codd_10 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	7760.1.1 = { birth = yes }
 	7798.1.1 = {
 		effect = {
 			agot_safe_concubine_history_effect = { TARGET = character:Codd_rs_10 }
 		}
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
 	7803.1.1 = {
 		death = {
@@ -35101,13 +35205,18 @@ Codd_14 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Codd_13
 	mother = Codd_rs_13
 
 	trait = child_of_concubine_male
 
-	7849.1.1 = { birth = yes }
+	7849.1.1 = { 
+		birth = yes
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual 
+	}
 	7870.1.1 = { trait = incestuous } # Brella Codd
 	7880.1.1 = { add_spouse = Brightmoon_8 } # Marla Brightmoon
 	7919.1.1 = { death = { death_reason = death_accident } }
@@ -35119,14 +35228,20 @@ Codd_15 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Codd_13
 	mother = Codd_rs_13
 
 	trait = child_of_concubine_female
 
-	7852.1.1 = { birth = yes }
+	7852.1.1 = { 
+		birth = yes
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual  
+	}
 	7870.1.1 = { trait = incestuous } # Hilmar Codd
+	# 7872.1.1 = { trait = fornicator } # Disabled until Imprisonment by AI bug is fixed
 	7900.1.1 = { death = yes }
 }
 Codd_16 = {
@@ -35546,7 +35661,9 @@ Codd_26 = {
 	father = Codd_25
 	mother = Tawney_32
 
-	7978.1.1 = { birth = yes }
+	trait = twin
+
+	7977.1.1 = { birth = yes }
 	7994.1.1 = { add_spouse = Codd_56 } # Meredyth Codd
 	7996.1.1 = { employer = Hoare_31 } # Harren Hoare
 	8000.2.1 = {
@@ -35563,8 +35680,10 @@ Codd_60 = {
 	father = Codd_25
 	mother = Tawney_32
 
-	7980.1.1 = { birth = yes }
-	7990.1.1 = { add_spouse = Finch_65 } # Randa Finch
+	trait = twin
+
+	7977.1.1 = { birth = yes }
+	7992.1.1 = { add_spouse = Finch_65 } # Randa Finch
 	8000.1.1 = { add_spouse = Harlaw_70 } # Ulfara Harlaw
 	8027.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -35762,11 +35881,16 @@ Codd_27 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Codd_26
 	mother = Codd_56
 
-	7996.1.1 = { birth = yes }
+	7996.1.1 = { 
+		birth = yes
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual 
+	}
 	8027.1.1 = { add_spouse = Wynch_42 } # Herrika Wynch
 	8030.1.1 = { trait = incestuous } # Yara Codd
 	8033.1.1 = { add_spouse = Sunderly_54 } # Jonna Sunderly
@@ -35779,12 +35903,18 @@ Codd_28 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Codd_26
 	mother = Codd_56
 
-	7998.1.1 = { birth = yes }
+	7998.1.1 = { 
+		birth = yes
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual  
+	}
 	8019.1.1 = { trait = incestuous }
+	# 8033.1.1 = { trait = fornicator } # Disabled until Imprisonment by AI bug is fixed
 	8056.1.1 = { death = yes }
 }
 ### Issue of Triston
@@ -36156,12 +36286,18 @@ Codd_32 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Codd_31
 	mother = Shepherd_56
 
-	8103.1.1 = { birth = yes }
+	8103.1.1 = { 
+		birth = yes
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual 
+	}
 	8120.1.1 = { trait = incestuous }
+	# 8120.1.1 = { trait = fornicator } # Disabled until Imprisonment by AI bug is fixed
 	8151.1.1 = { death = yes }
 }
 Codd_34 = {
@@ -36170,11 +36306,16 @@ Codd_34 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Codd_31
 	mother = Shepherd_56
 
-	8104.1.1 = { birth = yes }
+	8104.1.1 = { 
+		birth = yes
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual 
+	}
 	8120.1.1 = { trait = incestuous }
 	8161.1.1 = { death = yes }
 }
@@ -36315,6 +36456,7 @@ Codd_36 = {
 
 	religion = drowned_god
 	culture = ironborn
+	sexuality = heterosexual
 
 	father = Codd_34
 	mother = Codd_32
@@ -36324,6 +36466,8 @@ Codd_36 = {
 	8120.1.1 = {
 		birth = yes
 		make_trait_inactive = surname_pyke
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
 	8141.1.1 = { trait = incestuous }
 	8161.1.1 = { death = yes }
@@ -37514,7 +37658,7 @@ Humble_44 = {
 }
 ### Issue of Quenton
 Humble_53 = {
-	name = Ranni
+	name = Ranni # married Lodos Fross
 	dynasty = dynn_Humble
 	female = yes
 
@@ -39326,7 +39470,7 @@ Shepherd_65 = {
 }
 ### Issue of Fradwyr
 Shepherd_40 = {
-	name = Myrna
+	name = Myrna # married Sauron Fross
 	dynasty = dynn_Shepherd
 	female = yes
 
@@ -39590,7 +39734,7 @@ Shepherd_66 = {
 }
 ### Issue of Steffarion
 Shepherd_54 = {
-	name = Erika
+	name = Erika # married Cromm Jeyne
 	dynasty = dynn_Shepherd
 	female = yes
 
@@ -43423,7 +43567,7 @@ Sharp_38 = {
 }
 ### Issue of Bennick
 Sharp_33 = {
-	name = Ranni
+	name = Ranni # married Lenwood Ironspite
 	dynasty = dynn_Sharp
 	female = yes
 
@@ -44368,7 +44512,7 @@ Sharp_99 = {
 }
 ### Issue of Uller
 Sharp_108 = {
-	name = Oshara
+	name = Oshara # married Norfryd Jeyne
 	dynasty = dynn_Sharp
 	female = yes
 
@@ -45571,7 +45715,7 @@ Salt_62 = {
 }
 ### Issue of Hotho
 Salt_56 = {
-	name = Gysella
+	name = Gysella # married Bennarion Ironspite
 	dynasty_house = house_Salt
 	female = yes
 
@@ -47604,7 +47748,7 @@ Tidewood_68 = {
 }
 ### Issue of Harrag
 Tidewood_75 = {
-	name = Estred
+	name = Estred # married Hilmar Stormdrunk
 	dynasty = dynn_Tidewood
 	female = yes
 
@@ -48457,7 +48601,7 @@ Tidewood_103 = {
 	}
 }
 Tidewood_104 = {
-	name = Katla
+	name = Katla # married Symond Strand
 	dynasty = dynn_Tidewood
 	female = yes
 
@@ -49840,20 +49984,10 @@ Stormdrunk_17 = {
 	trait = twin
 
 	7996.1.1 = { birth = yes }
-	8018.1.1 = { add_spouse = Stormdrunk_rs_17 }
+	8018.1.1 = { add_spouse = Tidewood_75 } # Estred Tidewood
 	8063.1.1 = {
 		death = { death_reason = death_treatment }
 	}
-}
-Stormdrunk_rs_17 = {
-	name = Hilde
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8001.1.1 = { birth = yes }
-	8035.1.1 = { death = yes }
 }
 ### Issue of Hilmar
 Stormdrunk_20 = {
@@ -49864,7 +49998,7 @@ Stormdrunk_20 = {
 	culture = ironborn
 
 	father = Stormdrunk_17
-	mother = Stormdrunk_rs_17
+	mother = Tidewood_75
 
 	8019.1.1 = { birth = yes }
 	8041.1.1 = { add_spouse = Rushmoor_52 } # Jannia Rushmoor
@@ -49880,7 +50014,7 @@ Stormdrunk_21 = {
 	culture = ironborn
 
 	father = Stormdrunk_17
-	mother = Stormdrunk_rs_17
+	mother = Tidewood_75
 
 	8022.1.1 = { birth = yes }
 	8046.1.1 = { add_spouse = Nayland_58 } # Shiera Nayland
@@ -49895,7 +50029,7 @@ Stormdrunk_22 = {
 	culture = ironborn
 
 	father = Stormdrunk_17
-	mother = Stormdrunk_rs_17
+	mother = Tidewood_75
 
 	8026.1.1 = { birth = yes }
 	8093.1.1 = {
@@ -49911,7 +50045,7 @@ Stormdrunk_23 = {
 	culture = ironborn
 
 	father = Stormdrunk_17
-	mother = Stormdrunk_rs_17
+	mother = Tidewood_75
 
 	8030.1.1 = { birth = yes }
 	8079.1.1 = {
@@ -50213,20 +50347,10 @@ Stormdrunk_40 = {
 	mother = Stormdrunk_rs_38
 
 	8189.1.1 = { birth = yes }
-	8208.1.1 = { add_spouse = Stormdrunk_rs_40 }
+	8208.1.1 = { add_spouse = GoodbrotherOM_42 } # Gudrun Goodbrotherom
 	8250.1.1 = {
 		death = { death_reason = death_horse_riding_accident }
 	}
-}
-Stormdrunk_rs_40 = {
-	name = Talla
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8191.1.1 = { birth = yes }
-	8246.1.1 = { death = yes }
 }
 Stormdrunk_41 = {
 	name = Disa # married Gillam Rushmoor
@@ -50348,7 +50472,7 @@ Drowned_Men_3 = {
 	}
 }
 Drowned_Men_4 = {
-	name = Dummy # Canon, priest who claimed to be Lodos reborn
+	name = Pate # Canon, priest who claimed to be Lodos reborn
 
 	learning = 10
 	diplomacy = 6
@@ -50371,7 +50495,7 @@ Drowned_Men_4 = {
 		effect = {
 			if = { # Kill off character if the game is loaded before Lodos came back from dead
 				limit = { game_start_date < 8037.9.9 }
-				death = { death_reason = death_suicide }
+				death = { death_reason = death_erased_for_script }
 			}
 		}
 	}
@@ -50381,7 +50505,6 @@ Drowned_Men_4 = {
 			clear_traits = yes
 			copy_traits = character:Drowned_Men_3 # Lodos
 			copy_inheritable_appearance_from = character:Drowned_Men_3 # Lodos
-			change_first_name = Lodos
 		}
 	}
 	8038.3.1 = {
@@ -50907,18 +51030,8 @@ Ironspite_26 = {
 	mother = Hickory_19
 
 	7937.1.1 = { birth = yes }
-	7954.1.1 = { add_spouse = Ironspite_rs_26 }
+	7954.1.1 = { add_spouse = Sharp_33 } # Ranni Sharp
 	7970.1.1 = { death = yes }
-}
-Ironspite_rs_26 = {
-	name = Gretchel
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	7937.1.1 = { birth = yes }
-	7995.1.1 = { death = yes }
 }
 Ironspite_27 = {
 	name = Perra # married Dagmer Farwynd of Lonely Light
@@ -50964,7 +51077,7 @@ Ironspite_28 = {
 	culture = ironborn
 
 	father = Ironspite_26
-	mother = Ironspite_rs_26
+	mother = Sharp_33
 
 	7955.1.1 = { birth = yes }
 	7981.1.1 = { add_spouse = Sparr_23 } # Ulfara Sparr
@@ -51206,17 +51319,7 @@ Ironspite_46 = {
 	mother = Wotlin_41
 
 	8054.1.1 = { birth = yes }
-	8075.1.1 = { add_spouse = Ironspite_rs_46 }
-	8103.1.1 = { death = yes }
-}
-Ironspite_rs_46 = {
-	name = Dyssa
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8057.1.1 = { birth = yes }
+	8075.1.1 = { add_spouse = Wynch_47 } # Frenya Wynch
 	8103.1.1 = { death = yes }
 }
 Ironspite_47 = {
@@ -51278,7 +51381,7 @@ Ironspite_48 = {
 	culture = ironborn
 
 	father = Ironspite_46
-	mother = Ironspite_rs_46
+	mother = Wynch_47
 
 	8076.1.1 = { birth = yes }
 	8095.1.1 = { add_spouse = Stormdrunk_32 } # Disa Stormdrunk
@@ -51296,7 +51399,7 @@ Ironspite_49 = {
 	culture = ironborn
 
 	father = Ironspite_46
-	mother = Ironspite_rs_46
+	mother = Wynch_47
 
 	8079.1.1 = { birth = yes }
 	8146.1.1 = {
@@ -51312,7 +51415,7 @@ Ironspite_50 = {
 	culture = ironborn
 
 	father = Ironspite_46
-	mother = Ironspite_rs_46
+	mother = Wynch_47
 
 	8081.1.1 = { birth = yes }
 	8141.1.1 = {
@@ -51599,21 +51702,11 @@ Ironspite_68 = {
 	mother = Perryn_70
 
 	8161.1.1 = { birth = yes }
-	8180.1.1 = { add_spouse = Ironspite_rs_68 }
+	8180.1.1 = { add_spouse = Salt_56 } # Gysella Salt
 	8214.1.1 = {
 		trait = gout_ridden
 		death = { death_reason = death_gout_ridden }
 	}
-}
-Ironspite_rs_68 = {
-	name = Disa
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8163.1.1 = { birth = yes }
-	8223.1.1 = { death = yes }
 }
 ### Issue of Urrathon
 Ironspite_74 = {
@@ -51809,18 +51902,8 @@ Ironspite_86 = {
 	mother = Netley_98
 
 	8226.1.1 = { birth = yes }
-	8246.1.1 = { add_spouse = Ironspite_rs_86 }
+	8246.1.1 = { add_spouse = Stormdrunk_56 } # Ryella Stormdrunk
 	8274.1.1 = {
 		death = { death_reason = death_accident }
 	}
-}
-Ironspite_rs_86 = {
-	name = Hilde
-	female = yes
-
-	religion = drowned_god
-	culture = ironborn
-
-	8227.1.1 = { birth = yes }
-	8295.1.1 = { death = yes }
 }

@@ -6,7 +6,7 @@
 		government = kingsguard_government
 		holder = Velaryon_15 # Corlys Velaryon
 	}
-	8030.1.1 = {
+	8030.4.15 = {
 		holder = Errol_12 #Serwyn Errol
 	}
 	8038.1.1 = {

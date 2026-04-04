@@ -1,7 +1,7 @@
 ﻿e_the_crownlands = {
 	30.1.1 = {
 		effect = {
-			save_title_name_change_data = yes
+			#save_title_name_change_data = yes
 			set_title_name = e_blackwater_bay
 		}
 	}
@@ -11,7 +11,7 @@
 		holder = Targaryen_27	 # Aegon I 'the Conqueror'
 		de_jure_liege = h_the_iron_throne
 		effect = {
-			save_title_name_change_data = yes
+			#save_title_name_change_data = yes
 			set_title_name = e_the_crownlands
 		}
 	}
@@ -340,37 +340,37 @@ c_kings_landing = {
 		liege = d_rosby
 		effect = {
 			title:d_kings_landing = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = d_blackwater_bay
 			}
-			save_title_name_change_data = yes
+			#save_title_name_change_data = yes
 			set_title_name = c_rush_hills
 			title:b_the_red_keep = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_high_hill
 			}
 			title:b_rhaenyss_hill = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_north_hill
 			}
 			title:b_visenyas_hill = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_river_hill
 			}
 			title:b_goldguard_heights = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_black_valley
 			}
 			title:b_flea_bottom = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_bayslide
 			}
 			title:b_hookmarket = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_mudside
 			}
 			title:b_landingfield = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_north_verge
 			}
 		}
@@ -400,33 +400,33 @@ c_kings_landing = {
 		liege = d_kings_landing
 		effect = {
 			title:d_kings_landing = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				reset_title_name = yes
 			}
-			save_title_name_change_data = yes
+			#save_title_name_change_data = yes
 			reset_title_name = yes
 			title:b_the_red_keep = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_aegonfort
 			}
 			title:b_rhaenyss_hill = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				reset_title_name = yes
 			}
 			title:b_visenyas_hill = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				reset_title_name = yes 
 			}
 			title:b_hookmarket = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_kings_landing
 			}
 			title:b_landingfield = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				reset_title_name = yes
 			}
 			title:b_flea_bottom = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				reset_title_name = yes
 			}
 		}
@@ -434,11 +434,11 @@ c_kings_landing = {
 	8010.1.1 = {
 		effect = {
 			title:b_goldguard_heights = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_cobblers_square
 			}
 			title:b_hookmarket = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				reset_title_name = yes
 			}
 		}
@@ -446,7 +446,7 @@ c_kings_landing = {
 	8026.1.1 = {
 		effect = {
 			title:b_goldguard_heights = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_gate_of_the_gods
 			}
 		}
@@ -457,7 +457,7 @@ c_kings_landing = {
 	8042.1.1 = {
 		effect = {
 			title:b_the_red_keep = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				reset_title_name = yes
 			}
 		}
@@ -492,7 +492,7 @@ c_kings_landing = {
 	8104.7.12 = {
 		effect = {
 			title:b_goldguard_heights = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				reset_title_name = yes
 			}
 		}
@@ -5228,7 +5228,7 @@ c_longgrass = {
 		de_jure_liege = d_tumbleton
 		effect = {
 			title:b_redgrass_field = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				set_title_name = b_longgrass_field
 			}
 		}
@@ -5291,7 +5291,7 @@ c_longgrass = {
 		holder = Cadence_1
 		effect = {
 			title:b_redgrass_field = {
-				save_title_name_change_data = yes
+				#save_title_name_change_data = yes
 				reset_title_name = yes
 			}
 		}

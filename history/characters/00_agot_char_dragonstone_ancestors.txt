@@ -8,7 +8,6 @@
 Targaryen_13_A = {
 	name = Maegor
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_13_A
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
@@ -21,6 +20,16 @@ Targaryen_13_A = {
 	7841.1.1 = {
 		add_spouse = Targaryen_13_B # Gael Targaryen
 		trait = dragonrider # Vermithrax (nc)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
 	}
 	7873.1.1 = { death = yes }
 }
@@ -28,7 +37,6 @@ Targaryen_13_B = {
 	name = Gael # married Maegor Targaryen
 	# dynasty = dynn_Targaryen # Family-Tree fix, consider making dummy dynasty just for her
 	female = yes
-	# AGOT TODO dna = agot_dna_Targaryen_13_B
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
@@ -42,7 +50,6 @@ Targaryen_13_C = {
 	name = Elaena # Semi-Canon, married Aenar Targaryen
 	dynasty = dynn_Targaryen
 	female = yes
-	# AGOT TODO dna = agot_dna_Targaryen_13_C
 
 	father = Targaryen_13_A
 	mother = Targaryen_13_B
@@ -56,7 +63,19 @@ Targaryen_13_C = {
 		make_trait_inactive = purple_eyes_4
 		add_character_flag = canon_status_semicanon
 	}
-	7856.1.1 = { trait = dragonrider } # Nessarion (nc)
+	7856.1.1 = { 
+		trait = dragonrider # Nessarion (nc)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	}
 	7894.1.1 = { death = yes }
 }
 Targaryen_13 = {
@@ -92,7 +111,19 @@ Targaryen_13 = {
 	}
 	7866.1.1 = { add_spouse = Targaryen_13_C } # Elaena Targaryen
 	7866.2.1 = { add_spouse = Orthys_17_B } # Maegelle Orthys
-	7873.1.1 = { trait = dragonrider } # Vermithrax (nc)
+	7873.1.1 = { 
+		trait = dragonrider # Vermithrax (nc)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	} 
 	7887.1.1 = { give_nickname = nick_agot_historical_the_exile_Targaryen_13 }
 	7889.1.1 = {
 		agot_safe_buy_scholar_perk_history_effect = yes
@@ -103,7 +134,6 @@ Targaryen_13 = {
 Targaryen_13_D = {
 	name = Valarr # Mentioned
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_13_D
 
 	father = Targaryen_13_A
 	mother = Targaryen_13_B
@@ -119,7 +149,19 @@ Targaryen_13_D = {
 	}
 	7875.1.1 = { add_spouse = Targaryen_rs_13_D }
 	7880.1.1 = { trait = widowed }
-	7890.1.1 = { trait = dragonrider } # Archonei (nc)
+	7890.1.1 = { 
+		trait = dragonrider # Archonei (nc)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}	
+	}
 	7907.1.1 = { death = yes }
 }
 Targaryen_rs_13_D = {
@@ -163,7 +205,19 @@ Targaryen_14 = {
 		add_character_flag = canon_status_canon
 	}
 	7888.1.1 = { add_spouse = Targaryen_15 } # Daenys Targaryen
-	7889.1.1 = { trait = dragonrider } # Anogaros (nc)
+	7889.1.1 = { 
+		trait = dragonrider # Anogaros (nc)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 100
+		}
+	}		
 	7900.1.1 = { give_nickname = nick_agot_historical_the_glorious }
 	7911.1.1 = {
 		agot_safe_buy_august_perk_history_effect = yes
@@ -209,7 +263,19 @@ Targaryen_15 = {
 			value = trait_second_level
 		}
 	}
-	7887.1.1 = { trait = dragonrider } # Balerion (C)
+	7887.1.1 = {
+		trait = dragonrider # Balerion (nc)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	}
 	7930.1.1 = { death = yes }
 }
 ### Issue of Valarr
@@ -217,7 +283,6 @@ Targaryen_13_E = {
 	name = Baela # Mentioned, married Gormon Bar Emmon
 	dynasty = dynn_Targaryen
 	female = yes
-	# AGOT TODO dna = agot_dna_Targaryen_13_E
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
@@ -252,7 +317,19 @@ Targaryen_16 = {
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
-	7907.1.1 = { trait = dragonrider } # Archonei (nc)
+	7907.1.1 = { 
+		trait = dragonrider # Archonei (nc)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
+		}	
+	}
 	7909.1.1 = { add_spouse = Targaryen_17 } # Elaena Targaryen
 	7935.1.1 = { death = yes }
 }
@@ -275,14 +352,25 @@ Targaryen_17 = {
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
-	7910.1.1 = { trait = dragonrider } # Balerion (C)
+	7910.1.1 = { 
+		trait = dragonrider # Balerion (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
+		}
+	}
 	7950.1.1 = { death = yes }
 }
 Targaryen_18 = {
 	name = Daena # Mentioned, married Veran Scales, a minor lord, her descendant made a claim during Great Council of 8101
 	dynasty = dynn_Targaryen
 	female = yes
-	# AGOT TODO dna = agot_dna_Targaryen_18
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
@@ -296,14 +384,25 @@ Targaryen_18 = {
 		make_trait_inactive = purple_eyes_11
 		add_character_flag = canon_status_mentioned
 	}
-	7930.1.1 = { trait = dragonrider } # Anogaros (nc)
+	7930.1.1 = { 
+		trait = dragonrider # Anogaros (nc)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	}
 	7954.1.1 = { death = yes }
 }
 ### Issue of Aegon and Elaena
 Targaryen_19 = {
 	name = Maegon # Canon, a lord
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_19
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
@@ -319,7 +418,19 @@ Targaryen_19 = {
 		make_trait_inactive = purple_eyes_8
 		add_character_flag = canon_status_canon
 	}
-	7935.1.1 = { trait = dragonrider } # Archonei (nc)
+	7935.1.1 = { 
+		trait = dragonrider # Archonei (nc)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	}
 	7950.1.1 = { death = yes }
 }
 Targaryen_20 = {
@@ -343,7 +454,19 @@ Targaryen_20 = {
 		add_character_flag = canon_status_canon
 	}
 	7927.1.1 = { add_spouse = Targaryen_21 } # Rhaella Targaryen
-	7950.1.1 = { trait = dragonrider } # Balerion (C)
+	7950.1.1 = { 
+		trait = dragonrider # Balerion (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	}
 	7955.1.1 = { death = yes }
 }
 Targaryen_21 = {
@@ -366,7 +489,19 @@ Targaryen_21 = {
 		make_trait_inactive = purple_eyes_6
 		make_trait_inactive = scripted_appearance
 	}
-	7930.1.1 = { trait = dragonrider } # Meraxes (C)
+	7930.1.1 = { 
+		trait = dragonrider # Meraxes (C) 
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
+		}
+	}
 	7953.1.1 = { death = yes }
 }
 ### Issue of Aerys and Rhaella
@@ -388,8 +523,28 @@ Targaryen_22 = {
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
+	7942.1.1 = {
+		effect = {
+			if = {
+				limit = { character:Targaryen_23 = { is_alive = yes } }
+				set_relation_nemesis = character:Targaryen_23 # Baelon Targaryen
+			}
+		}
+	}
 	7947.1.1 = { add_spouse = Targaryen_138 } # Rhae Targaryen
-	7950.1.1 = { add_trait = dragonrider } # Archonei (nc)
+	7950.1.1 = { 
+		add_trait = dragonrider # Archonei (nc)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	}
 	7955.6.1 = {
 		death = {
 			death_reason = death_dragon_duel
@@ -423,7 +578,19 @@ Targaryen_23 = {
 		}
 	}
 	7954.1.1 = {
-		effect = { add_trait = dragonrider } # Anogaros (nc)
+		effect = { 
+			add_trait = dragonrider # Anogaros (nc)
+			add_trait_xp = {
+				trait = dragonrider
+				track = dragon_bond
+				value = 65
+			}
+			add_trait_xp = {
+				trait = dragonrider
+				track = dragon_training
+				value = 30
+			}
+		}
 	}
 	7955.6.1 = {
 		trait = burned
@@ -464,7 +631,19 @@ Targaryen_24 = {
 		add_character_flag = canon_status_canon
 	}
 	7948.1.1 = { add_spouse = Celtigar_12 } # Caerys Celtigar
-	7953.1.1 = { trait = dragonrider } # Meraxes (C)
+	7953.1.1 = { 
+		trait = dragonrider # Meraxes (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
+		}
+	}
 	7971.1.1 = { death = yes }
 }
 Targaryen_138 = {
@@ -565,22 +744,40 @@ Targaryen_137 = {
 Targaryen_26 = {
 	name = Aerion # Canon, a lord
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_26
+
+	dna = Targaryen_26
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
+	sexuality = heterosexual
 
 	father = Targaryen_24
 	mother = Celtigar_12
 
 	7950.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		make_trait_inactive = silver_blonde_hair
 		make_trait_inactive = purple_eyes_2
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
 	7970.1.1 = { add_spouse = Velaryon_12 } # Valaena Velaryon
-	7971.1.1 = { trait = dragonrider } # Meraxes (C)
+	7971.1.1 = { 
+		trait = dragonrider # Meraxes (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	}
+	7978.1.1 = { trait = adulterer }
 	7996.1.1 = { death = yes }
 }
 ### Issue of Aerion
@@ -623,6 +820,16 @@ Targaryen_28 = {
 		trait = dragonrider # Vhagar (C)
 		trait = open_terrain_expert
 		trait = lifestyle_mystic
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 100
+		}
 	}
 	# AGOT Bookmarked Disabled
 	# 7992.1.1 = { religion = fots_seven }
@@ -671,9 +878,21 @@ Targaryen_27 = { # Aegon's Conquest
 		add_character_flag = sexuality_ensure_not_homosexual
 		add_character_flag = sexuality_ensure_not_asexual
 	}
-	7986.1.1 = { trait = dragonrider } # Balerion (C)
+	7986.1.1 = { 
+		trait = dragonrider # Balerion (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 100
+		}
+	}
 	7990.1.1 = {
-		trait = aggressive_attacker
+		trait = military_engineer
 		trait = open_terrain_expert
 		add_spouse = Targaryen_28 # Visenya Targaryen
 		effect = {
@@ -860,6 +1079,16 @@ Targaryen_29 = {
 		trait = dragonrider # Meraxes (C)
 		# AGOT Bookmarked Disabled
 		# trait = incestuous # Aegon I Targaryen
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
+		}
 	}
 	# AGOT Bookmarked Added
 	8000.1.1 = { religion = fots_seven }
@@ -963,7 +1192,7 @@ Targaryen_31 = {
 	mother = Targaryen_28
 
 	trait = education_martial_3
-	trait = education_martial_prowess_4
+	trait = education_martial_prowess_5
 	trait = strong
 	trait = physique_good_2
 	trait = rowdy
@@ -997,11 +1226,57 @@ Targaryen_31 = {
 	8028.1.1 = {
 		trait = aggressive_attacker
 		trait = knight
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = horse
+			value = 30
+		}
+		add_trait_xp = {
+			trait = tourney_participant
+			track = foot
+			value = 65
+		}
 		effect = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Targaryen_27 } # Aegon Targaryen
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword_and_shield }
 		}
 	}
-	8037.9.9 = { trait = dragonrider } # Balerion (C)
+	8028.2.1 = {
+		effect = {
+			if = {
+				limit = { character:Velaryon_13 = { is_alive = yes } }
+				create_alliance = { # Pirate Coalition
+					target = character:Velaryon_13 # Aethan Velaryon
+					allied_through_owner = ROOT # MAegor Targaryen
+					allied_through_target = character:Velaryon_13 # Aethan Velaryon
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { character:Strong_7 = { is_alive = yes } }
+				create_alliance = { # Pirate Coalition
+					target = character:Strong_7 # Osmund Strong
+					allied_through_owner = ROOT # Maegor Targaryen
+					allied_through_target = character:Strong_7 # Osmund Strong
+				}
+			}
+		}
+	}
+	8037.9.9 = { 
+		trait = dragonrider # Balerion (C) 
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 100
+		}
+	}
 	8038.1.1 = {
 		effect = { # Hand of the King
 			agot_appoint_as_councillor_for_castle_history_effect = {
@@ -1326,7 +1601,18 @@ Targaryen_33 = {
 	}
 	8042.1.1 = {
 		trait = knight
+		trait = cautious_leader
 		trait = dragonrider # Quicksilver (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
+		}
 	}
 	8042.3.1 = {
 		effect = {
@@ -1450,7 +1736,14 @@ Targaryen_35 = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Targaryen_28 } # Visenya Targaryen
 		}
 	}
-	8044.1.1 = { trait = dragonrider } # Vermithor (C)
+	8044.1.1 = { 
+		trait = dragonrider # Vermithor (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
+	}
 	8044.7.1 = { employer = Baratheon_20 } # Rogar Baratheon
 	8044.8.1 = { trait = patient }
 	8047.1.1 = {
@@ -1561,7 +1854,19 @@ Targaryen_36 = {
 		add_character_flag = sexuality_ensure_not_asexual
 	}
 	8040.6.1 = { trait = compassionate }
-	8042.1.1 = { trait = dragonrider } # Silverwing (C)
+	8042.1.1 = { 
+		trait = dragonrider # Silverwing (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	}
 	8043.11.2 = {
 		employer = Targaryen_31 # Maegor Targaryen
 		effect = {
@@ -1615,7 +1920,6 @@ Targaryen_37 = {
 	name = Vaella # Canon
 	dynasty = dynn_Targaryen
 	female = yes
-	# AGOT TODO dna = agot_dna_Targaryen_37
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -1639,7 +1943,6 @@ Targaryen_37 = {
 Targaryen_38 = {
 	name = Aegon # Mentioned
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_38
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -1662,7 +1965,6 @@ Targaryen_38 = {
 Targaryen_39 = {
 	name = Viserys # Mentioned
 	dynasty = dynn_Targaryen
-	# AGOT TODO dna = agot_dna_Targaryen_39
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -1686,7 +1988,6 @@ Targaryen_40 = {
 	name = Rhaenys # Mentioned
 	dynasty = dynn_Targaryen
 	female = yes
-	# AGOT TODO dna = agot_dna_Targaryen_40
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -1759,6 +2060,16 @@ Targaryen_41 = {
 	8054.12.1 = {
 		trait = dragonrider # Balerion (C)
 		effect = { add_trait = dragonrider } # Balerion (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
+		}
 	}
 	8056.3.14 = {
 		trait = ill # Valyrian mysterious sickness
@@ -1877,6 +2188,7 @@ Targaryen_45 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_45
 
+	diplomacy = 7
 	martial = 5
 	stewardship = 6
 	prowess = 8
@@ -1924,6 +2236,25 @@ Targaryen_45 = {
 	8072.1.1 = {
 		trait = knight
 		trait = dragonrider # Caraxes (C)
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = horse
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
+		}
 	}
 	8080.1.1 = {
 		effect = { # Master of Laws
@@ -1977,8 +2308,25 @@ Targaryen_46 = {
 		trait = brave
 		trait = dragonrider # Vhagar (C)
 		trait = knight
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = horse
+			value = 30
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
+		}
 		effect = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Redwyne_31 } # Rickard Redwyne
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword_and_shield }
 		}
 	}
 	8075.1.1 = {
@@ -2056,7 +2404,19 @@ Targaryen_47 = {
 	8064.1.1 = { trait = diligent }
 	8068.1.1 = { trait = gregarious }
 	8072.1.1 = { trait = brave }
-	8075.1.1 = { trait = dragonrider } # Meleys (C)
+	8075.1.1 = { 
+		trait = dragonrider # Meleys (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	}
 	8084.4.1 = {
 		trait = ill # Became weak after last childbirth
 		effect = { remove_trait = strong }
@@ -2300,6 +2660,7 @@ Targaryen_51 = {
 		}
 	}
 	# 8096.1.1 = { } # AGOT TODO she should be in Volantis
+	# 8086.1.1 = { trait = fornicator } # Disabled until Imprisonment by AI bug is fixed
 	8124.1.1 = { death = yes }
 }
 Targaryen_52 = {
@@ -2401,6 +2762,7 @@ Targaryen_55 = {
 
 	religion = fots_seven
 	culture = high_valyrian
+	sexuality = heterosexual
 
 	father = Targaryen_35
 	mother = Targaryen_36
@@ -2418,6 +2780,8 @@ Targaryen_55 = {
 		make_trait_inactive = purple_eyes_14
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 		give_nickname = nick_agot_historical_the_winter_child
 	}
 	8086.6.1 = {
@@ -2426,6 +2790,7 @@ Targaryen_55 = {
 	}
 	8092.6.1 = { trait = compassionate }
 	8099.8.1 = {
+		trait = fornicator
 		trait = depressed_1
 		death = { death_reason = death_suicide } # Drowned herself in a river
 	}
@@ -2443,6 +2808,9 @@ Targaryen_55_B = {
 	father = Targaryen_hh_12
 
 	trait = bastard
+
+	# canon_children_bastard_parent_status unmarried_father_unmarried_mother
+	# canon_children_bastard_reveal canon_bastard_known_father_public
 
 	8099.8.1 = {
 		birth = yes
@@ -2465,8 +2833,9 @@ Targaryen_56 = {
 	father = Orthys_49 # Drazendro Orthys
 	mother = Targaryen_51
 
-	trait = bastard
+	trait = wild_oat
 	trait = beauty_good_1
+	trait = ambitious
 
 	# canon_children_bastard_parent_status married_father_unmarried_mother
 	# canon_children_bastard_reveal canon_bastard_known_father_public
@@ -2498,7 +2867,8 @@ Targaryen_57 = {
 	father = Sellos_65 # Moniro Sellos
 	mother = Targaryen_51
 
-	trait = bastard
+	trait = wild_oat
+	trait = ambitious
 
 	8087.1.1 = {
 		effect = {
@@ -2529,6 +2899,7 @@ Targaryen_58 = {
 
 	# trait = bastard
 	trait = bastard_founder # AGOT TODO, replace with bastard once house Maegyr is added. I mean it, if you're here to restore his father, change it please
+	trait = ambitious
 
 	8088.1.1 = {
 		effect = {
@@ -2592,7 +2963,19 @@ Targaryen_59 = {
 			make_trait_inactive = purple_eyes_1
 		}
 	}
-	8087.1.1 = { trait = dragonrider } # Meleys (C)
+	8087.1.1 = { 
+		trait = dragonrider # Meleys (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
+		}
+	}
 	8103.10.3 = {
 		effect = {
 			add_pressed_claim = title:h_the_iron_throne
@@ -2686,6 +3069,16 @@ Targaryen_60 = {
 				type = agot_tamed_a_dragon
 				participants = { tamed_dragon = character:dragon_balerion }
 			}
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
 		}
 	}
 	8093.9.1 = { # Death of Balerion
@@ -2813,6 +3206,7 @@ Targaryen_61 = {
 			value = trait_second_level
 		}
 		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
 			if = {
 				limit = { character:Royce_37 = { is_alive = yes } }
 				character:Royce_37 = { # Rhea Royce
@@ -2836,7 +3230,9 @@ Targaryen_61 = {
 			}
 		}
 	}
-	8099.1.1 = { trait = dragonrider } # Caraxes (C)
+	8099.1.1 = { 
+		trait = dragonrider # Caraxes (C)
+	}
 	8101.12.3 = {
 		effect = {
 			agot_history_set_dragonlore = {
@@ -2845,12 +3241,12 @@ Targaryen_61 = {
 			add_trait_xp = {
 				trait = dragonrider
 				track = dragon_bond
-				value = 40
+				value = 65
 			}
 			add_trait_xp = {
 				trait = dragonrider
 				track = dragon_training
-				value = 60
+				value = 100
 			}
 		}
 	}
@@ -3046,6 +3442,16 @@ Targaryen_63 = {
 			give_nickname = nick_agot_historical_the_realms_delight
 			add_trait = fashionable
 			add_trait = dragonrider # Syrax (C)
+			add_trait_xp = {
+				trait = dragonrider
+				track = dragon_bond
+				value = 65
+			}
+			add_trait_xp = {
+				trait = dragonrider
+				track = dragon_training
+				value = 30
+			}
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Targaryen_60 } # Viserys I Targaryen
 			agot_history_set_dragonlore = {
 				VALUE = 9
@@ -3369,6 +3775,7 @@ Targaryen_65 = {
 
 	religion = fots_seven
 	culture = high_valyrian
+	sexuality = heterosexual
 
 	father = Targaryen_60
 	mother = Hightower_97 # Alicent Hightower
@@ -3386,12 +3793,24 @@ Targaryen_65 = {
 		make_trait_inactive = purple_eyes_3
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
 		effect = { add_character_flag = potential_targ_lunatic }
 	}
 	8118.1.1 = {
 		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:dagger }
 			add_trait = dragonrider # Sunfyre (C)
 			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_65 COA_KEY = aegon_ii_personal_arms }
+			add_trait_xp = {
+				trait = dragonrider
+				track = dragon_bond
+				value = 100
+			}
+			add_trait_xp = {
+				trait = dragonrider
+				track = dragon_training
+				value = 30
+			}
 		}
 	}
 	8122.7.5 = {
@@ -3579,7 +3998,14 @@ Targaryen_66 = {
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
-	8119.1.1 = { trait = dragonrider } # Dreamfyre (C)
+	8119.1.1 = { 
+		trait = dragonrider # Dreamfyre (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+	}
 	8129.4.26 = { # Death of Jaehaerys Targaryen
 		trait = depressed_1
 		trait = lunatic_1
@@ -3640,6 +4066,7 @@ Targaryen_67 = {
 	}
 	8120.2.20 = { # Laenor's Funeral
 		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
 			if = {
 				limit = { character:Targaryen_76 = { is_alive = yes } }
 				set_relation_rival = {
@@ -3655,6 +4082,16 @@ Targaryen_67 = {
 		}
 		trait = lifestyle_blademaster
 		trait = dragonrider # Vhagar (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
+		}
 		trait = sadistic
 		give_nickname = nick_agot_historical_one_eye_historical_Targaryen_67
 	}
@@ -3750,6 +4187,16 @@ Targaryen_68 = {
 			add_trait = dragonrider # Tessarion (C)
 			add_trait = humble
 			add_trait = brave
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
 		}
 	}
 	8129.3.3 = { employer = Hightower_92 } # Ormund Hightower
@@ -3926,7 +4373,19 @@ Targaryen_74 = {
 			make_trait_inactive = surname_rivers
 		}
 	}
-	8144.1.1 = { trait = dragonrider } # Nightfyre (nc)
+	8144.1.1 = { 
+		trait = dragonrider # Nightfyre (nc)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	}
 	8146.8.1 = {
 		trait = knight
 		trait = arrogant
@@ -3998,10 +4457,21 @@ Targaryen_75 = {
 	}
 	8129.1.1 = {
 		trait = dragonrider # Vermax (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
 		trait = gregarious
 		effect = {
 			add_trait = dragonrider # Vermax (C)
 			add_trait = gregarious
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
 		}
 	}
 	8129.5.1 = {
@@ -4070,6 +4540,11 @@ Targaryen_76 = {
 	}
 	8129.1.1 = {
 		trait = dragonrider # Arrax (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
 		trait = brave
 		trait = honest
 		effect = {
@@ -4318,6 +4793,9 @@ Targaryen_79 = {
 	8138.6.1 = {
 		trait = knight
 		trait = authoritative
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
+		}
 	}
 	8139.6.1 = { # His wife leaves him
 		effect = { remove_trait = gregarious }
@@ -4409,6 +4887,16 @@ Targaryen_69 = {
 	8121.1.1 = { employer = Targaryen_63 } # Rhaenyra Targaryen
 	8130.1.1 = {
 		effect = { add_trait = dragonrider } # Moondancer (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
 	}
 	8130.4.30 = {
 		effect = { remove_trait = dragonrider }
@@ -4478,6 +4966,11 @@ Targaryen_70 = {
 	}
 	8135.3.3 = {
 		effect = { add_trait = dragonrider } # Morning (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
 	}
 	8151.1.1 = {
 		effect = { remove_trait = dragonrider }
@@ -4557,11 +5050,22 @@ Targaryen_81 = {
 	8153.8.1 = { trait = authoritative }
 	8157.1.1 = {
 		trait = organizer
+		add_trait_xp = {
+			trait = organizer
+			value = 100
+		}
 		trait = aggressive_attacker
+		add_trait_xp = {
+			trait = aggressive_attacker
+			value = 66
+		}
 		trait = knight
 		agot_safe_buy_strategist_perk_history_effect = yes
 		trait = strategist
 		give_nickname = nick_agot_historical_the_boy_king
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
+		}
 	}
 	8158.1.3 = { # Conquers Dorne, but the land is not pacified
 		trait = lifestyle_poet
@@ -4695,6 +5199,7 @@ Targaryen_83 = {
 
 	religion = fots_seven
 	culture = high_valyrian
+	sexuality = heterosexual
 
 	father = Targaryen_78
 	mother = Velaryon_53
@@ -4714,6 +5219,8 @@ Targaryen_83 = {
 		make_trait_inactive = purple_eyes_16
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 		add_character_flag = historical_tomboy
 	}
 	8157.1.1 = {
@@ -4757,7 +5264,15 @@ Targaryen_83 = {
 			}
 		}
 	}
-	8170.6.11 = { trait = fornicator } #pregnant with Daemon
+	8170.6.11 = { trait = fornicator } # Pregnant with Daemon
+	8177.3.3 = {
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = horse
+			value = 65
+		}
+	}
 	8194.6.1 = { death = yes }
 }
 Targaryen_84 = {
@@ -4956,6 +5471,7 @@ Targaryen_88 = {
 			value = trait_third_level
 		}
 		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:spear }
 			if = {
 				limit = { character:Targaryen_78 = { is_alive = yes } }
 				every_secret = {
@@ -5181,6 +5697,17 @@ Targaryen_89 = {
 		add_trait_xp = {
 			trait = lifestyle_blademaster
 			value = trait_third_level
+		}
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = horse
+			value = 100
+		}
+		add_trait_xp = {
+			trait = tourney_participant
+			track = foot
+			value = 100
 		}
 		give_nickname = nick_agot_historical_the_dragonknight_historic
 	}
@@ -5427,6 +5954,8 @@ Targaryen_132 = {
 	dynasty = dynn_Targaryen
 	female = yes
 
+	dna = Targaryen_132
+
 	religion = fots_seven
 	culture = high_valyrian
 
@@ -5437,6 +5966,7 @@ Targaryen_132 = {
 
 	8164.5.8 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_3
 		add_character_flag = canon_status_mentioned
@@ -5447,6 +5977,8 @@ Targaryen_133 = {
 	name = Baelon # Mentioned
 	dynasty = dynn_Targaryen
 
+	dna = Targaryen_133
+
 	religion = fots_seven
 	culture = high_valyrian
 
@@ -5457,6 +5989,7 @@ Targaryen_133 = {
 
 	8164.5.8 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		make_trait_inactive = silver_blonde_hair
 		make_trait_inactive = purple_eyes_13
 		add_character_flag = canon_status_mentioned
@@ -5508,7 +6041,6 @@ Targaryen_92 = {
 			}
 		}
 	}
-	8187.6.1 = { trait = depressed_1 }
 	8220.1.1 = { death = yes }
 }
 Targaryen_93 = {
@@ -5538,6 +6070,8 @@ Targaryen_135 = {
 	name = Haegon # Mentioned
 	dynasty = dynn_Targaryen
 
+	dna = Targaryen_135
+
 	religion = fots_seven
 	culture = high_valyrian
 
@@ -5546,6 +6080,7 @@ Targaryen_135 = {
 
 	8179.6.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		make_trait_inactive = neutral_silver_hair
 		make_trait_inactive = purple_eyes_2
 		add_character_flag = canon_status_mentioned
@@ -5721,10 +6256,11 @@ Targaryen_94 = {
 	trait = legitimized_bastard # Caution: succession error
 
 	trait = education_martial_3
+	trait = education_martial_prowess_5
 	trait = beauty_good_3
 	trait = physique_good_1
 	trait = strong
-	trait = charming
+	trait = bossy
 
 	disallow_random_traits = yes
 
@@ -5757,6 +6293,7 @@ Targaryen_94 = {
 	8182.12.11 = { # Aegon gives him Blackfyre
 		trait = knight
 		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
 			agot_knighted_char_history_effect = { KNIGHT = character:Targaryen_88 } # Aegon IV Targaryen
 			add_prestige_level = 1
 			agot_remove_bastard_nickname_effect = yes #Removes surname
@@ -5795,9 +6332,17 @@ Targaryen_94 = {
 		trait = aggressive_attacker
 		agot_safe_buy_gallant_perk_history_effect = yes
 		trait = gallant
-	}
-	8186.12.11 = {
-		effect = { add_trait = education_martial_prowess_4 }
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = horse
+			value = 100
+		}
+		add_trait_xp = {
+			trait = tourney_participant
+			track = foot
+			value = 100
+		}
 	}
 	8187.6.1 = {
 		create_character_memory = {
@@ -5817,9 +6362,7 @@ Targaryen_94 = {
 		}
 	}
 	8190.1.1 = {
-		trait = education_martial_prowess_5
 		effect = {
-			remove_trait = education_martial_prowess_4
 			if = {
 				limit = { character:Ball_23 = { is_alive = yes } }
 				set_relation_friend = character:Ball_23 # Quentyn Fireball
@@ -5838,7 +6381,7 @@ Targaryen_95 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_95
 
-	martial = 8
+	martial = 11
 	diplomacy = 2
 	intrigue = 5
 	stewardship = 3
@@ -5903,6 +6446,7 @@ Targaryen_95 = {
 		trait = unyielding_defender
 		trait = organizer
 		effect = {
+			agot_set_signature_weapon_history_effect = { WEAPON = flag:sword_and_shield }
 			if = {
 				limit = { game_start_date < 8188.11.1 }
 				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_95 COA_KEY = Bittersteel_personal_coa }
@@ -5945,7 +6489,7 @@ Targaryen_95 = {
 		trait = adventurer_follower
 		make_trait_inactive = left_second_sons
 	}
-	8241.1.1 = { # 69 on death
+	8241.11.21 = {
 		death = { death_reason = death_battle }
 	}
 }
@@ -6080,12 +6624,16 @@ Targaryen_96 = {
 	8186.1.1 = { trait = just }
 	8187.1.1 = { trait = callous }
 	8191.8.23 = {
+		trait = loyal
 		effect = { agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_96 COA_KEY = bloodraven_personal_coa } }
 	}
 	8195.1.1 = {
 		trait = knight
 		agot_safe_buy_spider_perk_history_effect = yes
 		trait = spider
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
+		}
 	}
 	8195.3.7 = {
 		effect = { # Master of Whisperers
@@ -6275,13 +6823,22 @@ Targaryen_107 = {
 	8186.11.7 = {
 		trait = knight
 		trait = aggressive_attacker
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
+		}
 	}
 	8187.6.1 = {
 		give_nickname = nick_agot_historical_breakspear
-		trait = lifestyle_blademaster
+		trait = tourney_participant
 		add_trait_xp = {
-			trait = lifestyle_blademaster
-			value = trait_second_level
+			trait = tourney_participant
+			track = horse
+			value = 100
+		}
+		add_trait_xp = {
+			trait = tourney_participant
+			track = foot
+			value = 30
 		}
 		create_character_memory = {
 			type = agot_tournament_winner # Tourney in honor of Daenerys' wedding
@@ -6308,6 +6865,7 @@ Targaryen_107 = {
 			add_prestige_level = 1 # Redgrass Field
 		}
 	}
+	8207.1.1 = { trait = widowed }
 	8209.2.1 = {
 		trait = wounded_3
 		death = {
@@ -6444,19 +7002,22 @@ Targaryen_110 = {
 		add_character_flag = sexuality_ensure_not_homosexual
 		add_character_flag = sexuality_ensure_not_asexual
 	}
-	8180.8.1 = { trait = irritable }
 	8182.8.1 = { trait = stubborn }
 	#8184.1.1 = { trait = scarred } # Pox scars
 	8184.8.1 = { trait = diligent } # Energetic
 	8188.1.1 = {
 		trait = callous
 		trait = cynical
+		trait = irritable
 	}
 	8190.1.1 = {
 		trait = unyielding_defender
 		trait = knight
 		add_spouse = Dayne_69 # Dyanna Dayne
 		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_110 COA_KEY = maekar_targaryen_personal_arms }
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:mace }
+		}
 	}
 	8194.1.1 = {
 		effect = {
@@ -6525,6 +7086,9 @@ Targaryen_111 = {
 		}
 		add_spouse = Camardoon_7_A # Kiera of Tyrosh
 		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_111 COA_KEY = valarr_targaryen_personal_coa }
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:spear_and_shield }
+		}
 	}
 	8209.2.1 = {
 		effect = { # Hand of the King
@@ -6550,12 +7114,29 @@ Targaryen_112 = {
 	father = Targaryen_107
 	mother = Dondarrion_39
 
+	trait = education_diplomacy_2
+	trait = compassionate
+	trait = calm
+	trait = humble
+	trait = honest
+	trait = pensive
+
+	# disallow_random_traits = yes # FORBIDDEN - use agot_scripted_effects_posthistory_effects instead
+
 	8194.1.1 = {
 		birth = yes
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_9
 		add_character_flag = canon_status_canon
 		make_trait_inactive = scripted_appearance
+		effect = {
+			clear_traits = yes
+			add_trait = compassionate
+			add_trait = calm
+			add_trait = humble
+			add_trait = honest
+			add_trait = pensive
+		}
 	}
 	8206.1.1 = {
 		employer = Targaryen_91 # Daeron II Targaryen
@@ -6566,6 +7147,10 @@ Targaryen_112 = {
 	8209.9.1 = {
 		trait = squire
 		trait = spring_sickness
+		effect = {
+			add_trait = squire
+			add_trait = spring_sickness
+		}
 		death = { death_reason = death_spring_sickness } # Great Spring Sickness
 	}
 }
@@ -6757,6 +7342,7 @@ Targaryen_119 = {
 
 	religion = fots_seven
 	culture = high_valyrian
+	sexuality = heterosexual
 
 	father = Targaryen_110
 	mother = Dayne_69
@@ -6774,6 +7360,8 @@ Targaryen_119 = {
 		make_trait_inactive = purple_eyes_10
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
 	8203.1.1 = { trait = lunatic_1 }
 	8208.1.1 = {
@@ -6786,6 +7374,9 @@ Targaryen_119 = {
 		trait = lifestyle_mystic
 		give_nickname = nick_agot_historical_brightflame
 		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_119 COA_KEY = aerion_targaryen_personal_arms }
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:mace_and_shield }
+		}
 	}
 	8209.2.1 = {
 		effect = {
@@ -6811,6 +7402,7 @@ Targaryen_119 = {
 		}
 		employer = Erosenes_5 # Sambarro Erosenes, Lys
 	}
+	8211.1.1 = { trait = fornicator }
 	# 8213.1.1 = { # AGOT TODO - extend Second Sons
 		# effect = {
 			# if = {
@@ -7492,6 +8084,7 @@ Targaryen_129 = {
 	dynasty = dynn_Targaryen
 	dna = Targaryen_129
 
+	martial = 10
 	prowess = 10
 
 	religion = fots_seven
@@ -7507,6 +8100,7 @@ Targaryen_129 = {
 	trait = stubborn
 	trait = compassionate
 	trait = just
+	trait = brave
 	trait = rowdy
 
 	disallow_random_traits = yes
@@ -7548,6 +8142,7 @@ Targaryen_129 = {
 		trait = knight
 		effect = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Tyrell_1 } # Denys Tyrell
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:spear_and_shield }
 		}
 	}
 	8246.1.1 = {
@@ -7876,6 +8471,7 @@ Blackfyre_5 = {
 		trait = lifestyle_poet
 		trait = tourney_participant
 		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:spear_and_shield }
 			if = {
 				limit = { character:Cockshaw_22 = { is_alive = yes } }
 				set_relation_lover = character:Cockshaw_22 # Alyn Cockshaw
@@ -7945,6 +8541,9 @@ Blackfyre_6 = {
 	8205.1.1 = {
 		add_spouse = Blackfyre_4 # Daenerys Blackfyre
 		trait = knight
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
+		}
 	}
 	8212.1.1 = {
 		effect = {
@@ -8611,6 +9210,11 @@ Farseed_1 = {
 	8129.12.6 = {
 		trait = dragonrider # Sheepstealer (C)
 		dynasty = dynn_Farseed
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
 	}
 	8130.5.3 = { # Never seen again after the dance
 		make_unprunable = yes
@@ -8624,15 +9228,20 @@ Hammer_4 = {
 
 	religion = fots_seven
 	culture = crownlander
+	sexuality = heterosexual
 
 	trait = beauty_good_1
 
 	8059.1.1 = {
 		birth = yes
+		make_trait_inactive = neutral_silver_hair
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
 		}
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
+	# 8080.1.1 = { trait = fornicator } # Disabled until Imprisonment by AI bug is fixed
 	8099.1.1 = {
 		trait = pneumonic
 		death = { death_reason = death_pneumonic }
@@ -8644,6 +9253,7 @@ Hammer_2 = {
 
 	religion = fots_seven
 	culture = crownlander
+	sexuality = heterosexual
 
 	trait = education_stewardship_1
 	trait = physique_good_2
@@ -8658,10 +9268,13 @@ Hammer_2 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_blackglass_port }
 		}
 	}
+	8095.1.1 = { trait = fornicator }
 	8121.1.1 = { death = yes }
 }
 Hammer_3 = {
@@ -8670,7 +9283,8 @@ Hammer_3 = {
 	dna = Hammer_3
 
 	religion = fots_seven
-	culture = high_valyrian
+	culture = crownlander
+	sexuality = heterosexual
 
 	mother = Hammer_4
 
@@ -8679,13 +9293,16 @@ Hammer_3 = {
 	8080.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
+		make_trait_inactive = neutral_silver_hair
 		add_character_flag = canon_status_semicanon
-		culture = westerosi_valyrian
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 		effect = {
 			set_real_father = character:Targaryen_35 # Jaehaerys I Targaryen
 			agot_safe_set_location_history_effect = { CASTLE = title:b_blackglass_port }
 		}
 	}
+	# 8095.1.1 = { trait = fornicator } # Disabled until Imprisonment by AI bug is fixed
 	8109.1.1 = {
 		trait = ill
 		death = { death_reason = death_ill }
@@ -8703,7 +9320,7 @@ Hammer_1 = {
 	prowess = 4
 
 	religion = fots_seven
-	culture = high_valyrian
+	culture = crownlander
 
 	father = Hammer_2
 	mother = Hammer_3
@@ -8727,15 +9344,25 @@ Hammer_1 = {
 	8095.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
+		make_trait_inactive = neutral_silver_hair
 		add_character_flag = canon_status_canon
 		add_character_flag = historical_dragonseed
-		culture = westerosi_valyrian
 	}
 	8105.9.10 = { employer = Targaryen_63 } # Rhaenyra Targaryen
-	8114.1.1 = { give_nickname = nick_agot_historical_hard }
+	8114.1.1 = { 
+		give_nickname = nick_agot_historical_hard 
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:hammer }
+		}
+	}
 	8129.12.6 = {
 		trait = dragonrider # Vermithor (C)
 		dynasty = dynn_Hammer
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
 	}
 	8130.2.28 = { trait = knight }
 	8130.4.28 = { # First Battle of Tumbleton
@@ -8788,7 +9415,7 @@ White_1 = {
 	prowess = 3
 
 	religion = fots_seven
-	culture = high_valyrian
+	culture = crownlander
 
 	mother = White_2
 
@@ -8810,7 +9437,6 @@ White_1 = {
 			make_trait_inactive = neutral_silver_hair
 			set_real_father = character:Targaryen_46 # Baelon the Brave
 		}
-		culture = westerosi_valyrian
 	}
 	8105.9.10 = { employer = Targaryen_63 } # Rhaenyra Targaryen
 	8107.1.1 = { trait = drunkard }
@@ -8844,6 +9470,7 @@ Truefyre_2 = {
 
 	religion = fots_seven
 	culture = crownlander
+	sexuality = heterosexual
 
 	trait = beauty_good_1
 
@@ -8852,7 +9479,10 @@ Truefyre_2 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
 		}
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
+	# 8110.1.1 = { trait = fornicator } # Disabled until Imprisonment by AI bug is fixed
 	8125.1.1 = {
 		death = { death_reason = death_accident }
 	}
@@ -8870,7 +9500,7 @@ Truefyre_1 = {
 	dna = Truefyre_1
 
 	religion = fots_seven
-	culture = high_valyrian
+	culture = crownlander
 
 	mother = Truefyre_2
 
@@ -8886,8 +9516,8 @@ Truefyre_1 = {
 	8115.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
+		make_trait_inactive = neutral_silver_hair
 		add_character_flag = canon_status_canon
-		culture = crownlander
 		effect = {
 			set_real_father = character:Targaryen_60 # Viserys I Targaryen
 			clear_traits = yes # Character dead as a child
@@ -9236,10 +9866,20 @@ Velaryon_92 = {
 		make_trait_inactive = neutral_silver_hair
 		make_trait_inactive = seaglass_eyes
 	}
-	7903.1.1 = { add_spouse = Phassios_13 } # Fadrana Phassios
+	7903.1.1 = { add_spouse = Velaryon_rs_92 }
 	7955.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
+}
+Velaryon_rs_92 = {
+	name = Shaera
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+
+	7883.1.1 = { birth = yes }
+	7934.1.1 = { death = yes }
 }
 ### Issue of Maekar
 Velaryon_93 = {
@@ -9250,7 +9890,7 @@ Velaryon_93 = {
 	culture = high_valyrian
 
 	father = Velaryon_92
-	mother = Phassios_13
+	mother = Velaryon_rs_92
 
 	7905.1.1 = {
 		birth = yes
@@ -9269,7 +9909,7 @@ Velaryon_94 = {
 	culture = high_valyrian
 
 	father = Velaryon_92
-	mother = Phassios_13
+	mother = Velaryon_rs_92
 
 	7908.1.1 = {
 		birth = yes
@@ -9288,7 +9928,7 @@ Velaryon_95 = {
 	culture = high_valyrian
 
 	father = Velaryon_92
-	mother = Phassios_13
+	mother = Velaryon_rs_92
 
 	7910.1.1 = {
 		birth = yes
@@ -9391,6 +10031,9 @@ Velaryon_11 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_11
 
+	martial = 7
+	prowess = 5
+
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
@@ -9488,10 +10131,10 @@ Velaryon_13 = {
 	dynasty = dynn_Velaryon
 	dna = Velaryon_13
 
-	martial = 5
+	martial = 8
 	diplomacy = 6
 	intrigue = 3
-	stewardship = 4
+	stewardship = 5
 	learning = 5
 	prowess = 8
 
@@ -9559,7 +10202,12 @@ Velaryon_14 = {
 		trait = knight
 		add_spouse = Bar_Emmon_15 # Alys Bar Emmon
 	}
-	8035.1.1 = { death = yes }
+	8030.4.15 = { 
+		death = {
+			death_reason = death_battle
+			killer = Uthis_49
+		}
+	}
 }
 Velaryon_15 = {
 	name = Corlys # Canon, First Lord Commander of the Kingsguard
@@ -9599,10 +10247,15 @@ Velaryon_15 = {
 	7992.1.1 = { religion = fots_seven }
 	7996.1.1 = { trait = content }
 	# AGOT Bookmarked Modified
-	# 8001.1.1 = { trait = knight }
-	# 8010.1.1 = {
+	# 8001.1.1 = { 
 	7998.1.2 = {
-		trait = knight
+		trait = knight 
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword_and_shield }
+		}
+	# AGOT Bookmarked Disabled
+	# }
+	# 8010.1.1 = {
 		effect = {
 			agot_join_kingsguard_char_history_effect = { # Original Kingsguard
 				KING = character:Targaryen_27 # Aegon I Targaryen
@@ -9616,9 +10269,12 @@ Velaryon_15 = {
 		agot_safe_buy_gallant_perk_history_effect = yes
 		trait = gallant
 	}
-	8030.1.1 = {
+	8030.4.15 = {
 		trait = kingsguard # Successor: Davos Darklyn; Next Lord Commander: Serwyn Errol
-		death = yes
+		death = {
+			death_reason = death_battle
+			killer = Uhoris_52 # Ghazar Uhoris
+		}
 	}
 }
 Velaryon_83 = {
@@ -9884,6 +10540,8 @@ Velaryon_24 = {
 
 	dna = Velaryon_24
 
+	diplomacy = 7
+	stewardship = 7
 	intrigue = 9
 
 	religion = fots_seven
@@ -10297,7 +10955,19 @@ Velaryon_34 = {
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
-	8104.1.1 = { trait = dragonrider } # Vhagar (C)
+	8104.1.1 = { 
+		trait = dragonrider # Vhagar (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 100
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
+	}
 	8106.3.25 = {
 		effect = {
 			agot_safe_betrothal_history_effect = { TARGET = character:Zalyne_31_B } # Unnamed son of Sealord
@@ -10350,11 +11020,26 @@ Velaryon_35 = {
 	}
 	8112.1.1 = {
 		trait = dragonrider # Seasmoke (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 65
+		}
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
+		}
 	}
 	8114.1.1 = {
 		effect = { add_trait = depressed_1 } # Death of Joffrey Lonmouth
 	}
-	8114.1.26 = { trait = knight }
+	8114.1.26 = { 
+		trait = knight
+	}
 	8115.1.1 = {
 		effect = {
 			remove_trait = depressed_1
@@ -10658,6 +11343,7 @@ Velaryon_rs_8 = {
 
 	religion = fots_seven
 	culture = crownlander
+	sexuality = heterosexual
 
 	trait = education_stewardship_4
 	trait = beauty_good_1
@@ -10673,10 +11359,13 @@ Velaryon_rs_8 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_hull }
 		}
 	}
+	# 8114.1.1 = { trait = fornicator } # Disabled until Imprisonment by AI bug is fixed
 	8117.1.1 = { give_nickname = nick_agot_historical_the_mouse }
 	8129.12.6 = { employer = Velaryon_31 } # Corlys Velaryon
 	8151.1.1 = { death = yes }
@@ -10719,6 +11408,16 @@ Velaryon_43 = {
 		employer = Targaryen_63 # Rhaenyra Targaryen
 		trait = diligent
 		trait = dragonrider # Seasmoke (C)
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 65
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = 30
+		}
 		remove_character_flag = unlegitimize_on_load
 		dynasty = dynn_Velaryon
 		effect = { set_father = character:Velaryon_35 } # Laenor Velaryon
@@ -10782,7 +11481,10 @@ Velaryon_44 = {
 		agot_safe_buy_strategist_perk_history_effect = yes
 		trait = strategist
 		trait = aggressive_attacker
-		trait = desert_warrior
+		add_trait_xp = {
+			trait = aggressive_attacker
+			value = 66
+		}
 		trait = knight
 	}
 	8132.4.1 = { add_spouse = Targaryen_69 } # Baela Targaryen
@@ -10956,6 +11658,7 @@ Velaryon_49 = {
 	mother = Hayford_14
 
 	trait = education_martial_3
+	trait = education_martial_prowess_3
 	trait = content
 	trait = charming
 
@@ -10981,6 +11684,12 @@ Velaryon_49 = {
 		trait = temperate # slender
 		trait = brave
 		trait = lifestyle_blademaster
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = horse
+			value = 65
+		}
 	}
 	8152.1.1 = { add_spouse = Celtigar_64 } # Janna Celtigar
 	8163.4.29 = {
@@ -11198,6 +11907,17 @@ Velaryon_54 = {
 	father = Velaryon_52
 	mother = Rosby_30_B
 
+	trait = loyal
+	trait = education_martial_3
+	trait = education_martial_prowess_2
+	trait = brave
+	trait = generous
+	trait = content
+	trait = forgiving
+	trait = rowdy
+
+	disallow_random_traits = yes
+
 	8170.1.1 = {
 		birth = yes
 		make_trait_inactive = silver_gold_hair
@@ -11206,6 +11926,16 @@ Velaryon_54 = {
 	}
 	8190.1.1 = { trait = knight }
 	8201.1.1 = { add_spouse = Staunton_35_B } # Keleria Staunton
+	8209.1.1 = {
+		effect = { # Master of Ships (nc)
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_admiral
+			}
+		}
+		agot_safe_buy_strategist_perk_history_effect = yes
+		trait = strategist
+	}
 	8235.1.1 = { death = yes }
 }
 Velaryon_55 = {
@@ -11229,6 +11959,12 @@ Velaryon_55 = {
 		make_trait_inactive = scripted_appearance
 	}
 	8193.1.1 = { trait = knight }
+	8197.1.1 = { 
+		agot_appoint_as_court_position_for_castle_history_effect = { # Sea Watch Commander (nc)
+			CASTLE = title:c_kings_landing
+			POSITION = sea_watch_commander_court_position
+		}
+	}
 	8198.1.1 = { add_spouse = Cupps_57 } # Ysalaine Cupps
 	8209.9.1 = {
 		trait = spring_sickness
@@ -11301,6 +12037,16 @@ Velaryon_57 = {
 	father = Velaryon_56
 	mother = Blackberry_9_B
 
+	trait = education_martial_3
+	trait = education_martial_prowess_3
+	trait = brave
+	trait = eccentric
+	trait = gregarious
+	trait = lustful
+	trait = rowdy
+
+	disallow_random_traits = yes
+
 	8225.1.1 = {
 		birth = yes
 		make_trait_inactive = silver_blonde_hair
@@ -11309,6 +12055,14 @@ Velaryon_57 = {
 	}
 	8243.1.1 = { add_spouse = Grafton_1_A } # Grenna Grafton
 	8245.1.1 = { trait = knight }
+	8258.1.1 = {
+		effect = { # Master of Ships
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_admiral
+			}
+		}
+	}
 	8271.1.1 = { death = yes }
 }
 Velaryon_87 = {
@@ -11331,7 +12085,13 @@ Velaryon_87 = {
 		make_trait_inactive = purple_eyes_2
 		make_trait_inactive = scripted_appearance
 	}
-	8244.1.1 = { add_spouse = Bar_Emmon_49 } # Melianne Bar Emmon
+	8248.1.1 = { add_spouse = Bar_Emmon_49 } # Melianne Bar Emmon
+	8253.1.1 = { 
+		agot_appoint_as_court_position_for_castle_history_effect = { # Sea Watch Commander (nc)
+			CASTLE = title:c_kings_landing
+			POSITION = sea_watch_commander_court_position
+		}
+	}
 	8276.1.1 = { death = yes }
 }
 ### Household
@@ -11389,6 +12149,7 @@ Velaryon_hh_3 = {
 
 	religion = fots_seven
 	culture = crownlander
+	sexuality = heterosexual
 
 	trait = intellect_good_1
 	trait = beauty_good_1
@@ -11398,7 +12159,10 @@ Velaryon_hh_3 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_driftmark }
 		}
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
+	# 8146.1.1 = { trait = fornicator } # Disabled until Imprisonment by AI bug is fixed
 	8188.1.1 = {
 		death = { death_reason = death_old_age }
 	}
@@ -11638,7 +12402,7 @@ Celtigar_rs_8 = {
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
-	7834.1.1 = { birth = yes }
+	7832.1.1 = { birth = yes }
 	7878.1.1 = { death = yes }
 }
 ### Issue of Bartimos
@@ -11727,7 +12491,7 @@ Celtigar_67 = {
 	}
 }
 Celtigar_68 = {
-	name = Shaera # married Ladono Haen
+	name = Shaera 
 	dynasty = dynn_Celtigar
 	female = yes
 
@@ -11836,7 +12600,7 @@ Celtigar_70 = {
 	7920.1.1 = { death = yes }
 }
 Celtigar_71 = {
-	name = Helaena # married Phario Phalys
+	name = Helaena 
 	dynasty = dynn_Celtigar
 	female = yes
 
@@ -11853,7 +12617,7 @@ Celtigar_71 = {
 	}
 }
 Celtigar_72 = {
-	name = Daeryssa # married Silvario Moratyr
+	name = Daeryssa 
 	dynasty = dynn_Celtigar
 	female = yes
 
@@ -12053,7 +12817,7 @@ Celtigar_77 = {
 	8013.1.1 = { death = yes }
 }
 Celtigar_78 = {
-	name = Prunella # married Morgo Adarys
+	name = Prunella 
 	dynasty = dynn_Celtigar
 	female = yes
 
@@ -12080,8 +12844,10 @@ Celtigar_80 = {
 	mother = Scales_26
 
 	7980.1.1 = { birth = yes }
-	7997.1.1 = { add_spouse = Cupps_33 } # Elara Cupps
-	7997.1.1 = { trait = knight }
+	7997.1.1 = {
+		add_spouse = Cupps_33 # Elara Cupps
+		trait = knight
+	}
 	8036.1.1 = {
 		trait = consumption
 		death = { death_reason = death_consumption }
@@ -12140,7 +12906,7 @@ Celtigar_83 = {
 }
 ### Issue of Quenton
 Celtigar_79 = {
-	name = Syrella # married Nenio Targrave
+	name = Syrella 
 	dynasty = dynn_Celtigar
 	female = yes
 
@@ -12160,6 +12926,10 @@ Celtigar_16 = {
 	name = Alton # Canon, a lord
 	dynasty = dynn_Celtigar
 	dna = Celtigar_16
+
+	diplomacy = 7
+	intrigue = 7 
+	stewardship = 9
 
 	religion = fots_seven
 	culture = westerosi_valyrian
@@ -12278,6 +13048,12 @@ Celtigar_62 = {
 	trait = education_martial_3
 	trait = education_martial_prowess_2
 	trait = physique_good_1
+	trait = calm
+	trait = gregarious
+	trait = diligent
+	trait = cynical
+
+	disallow_random_traits = yes
 
 	8000.1.1 = {
 		birth = yes
@@ -12363,7 +13139,7 @@ Celtigar_21 = {
 }
 ### Issue of Gargon
 Celtigar_84 = {
-	name = Victor # married Belandra Curaze
+	name = Victor 
 	dynasty = dynn_Celtigar
 
 	religion = fots_seven
@@ -12379,7 +13155,7 @@ Celtigar_84 = {
 	}
 }
 Celtigar_85 = {
-	name = Laena # married Tyros Rotilys
+	name = Laena 
 	dynasty = dynn_Celtigar
 	female = yes
 
@@ -12427,14 +13203,16 @@ Celtigar_22 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 	}
-	8065.1.1 = { trait = drunkard }
-	8065.1.1 = { add_spouse = Grandison_56 } # Olyssa Grandison
+	8065.1.1 = {
+		trait = drunkard
+		add_spouse = Grandison_56 # Olyssa Grandison
+	}
 	8087.1.1 = {
 		death = { death_reason = death_ill }
 	}
 }
 Celtigar_87 = {
-	name = Jeyne # married Gorlas Rotilys
+	name = Jeyne 
 	dynasty = dynn_Celtigar
 	female = yes
 
@@ -12450,7 +13228,7 @@ Celtigar_87 = {
 	}
 }
 Celtigar_88 = {
-	name = Laena # married Oro Zalyne
+	name = Laena 
 	dynasty = dynn_Celtigar
 	female = yes
 
@@ -12502,7 +13280,7 @@ Celtigar_89 = {
 	}
 }
 Celtigar_90 = {
-	name = Aloran # married Syneta Valagel
+	name = Aloran 
 	dynasty = dynn_Celtigar
 
 	religion = fots_seven
@@ -12519,7 +13297,7 @@ Celtigar_90 = {
 	}
 }
 Celtigar_91 = {
-	name = Elaena # married Faro Marnel
+	name = Elaena 
 	dynasty = dynn_Celtigar
 	female = yes
 
@@ -12664,6 +13442,7 @@ Celtigar_30 = {
 
 	religion = fots_seven
 	culture = westerosi_valyrian
+	sexuality = heterosexual
 
 	father = Celtigar_24
 	mother = Bar_Emmon_21
@@ -12672,9 +13451,14 @@ Celtigar_30 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
 	}
 	8136.1.1 = { trait = lifestyle_poet }
-	8139.1.1 = { give_nickname = nick_agot_historical_seaspray }
+	8139.1.1 = { 
+		give_nickname = nick_agot_historical_seaspray
+		# trait = fornicator # Disabled until Imprisonment by AI bug is fixed
+	}
 	8179.1.1 = { death = { death_reason = death_murder } }
 }
 Celtigar_29 = {
@@ -12967,7 +13751,7 @@ Celtigar_37 = {
 	8177.1.1 = { death = yes }
 }
 Celtigar_38 = {
-	name = Oreyne # Semi-Canon
+	name = Oreyne # Semi-Canon, married Harmon Massey
 	dynasty = dynn_Celtigar
 	dna = Celtigar_38
 	female = yes
@@ -13178,7 +13962,7 @@ Celtigar_rs_48 = {
 	religion = fots_seven
 	culture = westerosi_valyrian
 
-	8178.1.1 = { birth = yes }
+	8174.1.1 = { birth = yes }
 	8194.1.1 = { death = yes }
 }
 ### Issue of Bartimos
@@ -13255,6 +14039,12 @@ Celtigar_58 = {
 		make_trait_inactive = scripted_appearance
 	}
 	8245.1.1 = { add_spouse = Blount_59 } # Alarra Blount
+	8251.1.1 = { 
+		agot_appoint_as_court_position_for_castle_history_effect = { # Household Guard Captain (nc)
+			CASTLE = title:c_kings_landing
+			POSITION = household_guard_court_position
+		}
+	}
 	8275.1.1 = { death = yes }
 }
 ### Line of Corbin and Casella
@@ -13273,8 +14063,10 @@ Celtigar_51 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 	}
-	8194.1.1 = { trait = knight }
-	8194.1.1 = { add_spouse = Cupps_55 } # Elyn Cupps
+	8194.1.1 = {
+		trait = knight
+		add_spouse = Cupps_55 # Elyn Cupps
+	}
 	8222.1.1 = { death = yes }
 }
 Celtigar_52 = {
@@ -13331,6 +14123,7 @@ Saerygan_1 = {
 
 	7725.1.1 = { birth = yes }
 	7749.1.1 = { add_spouse = Saerygan_rs_1 }
+	7762.1.1 = { add_spouse = Saerygan_rs_1_B }
 	7779.1.1 = { death = yes }
 }
 Saerygan_rs_1 = {
@@ -13341,6 +14134,16 @@ Saerygan_rs_1 = {
 	culture = westerosi_valyrian
 
 	7725.1.1 = { birth = yes }
+	7786.1.1 = { death = yes }
+}
+Saerygan_rs_1_B = {
+	name = Amaena
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = westerosi_valyrian
+
+	7740.1.1 = { birth = yes }
 	7786.1.1 = { death = yes }
 }
 ### Issue of Maelor
@@ -13419,7 +14222,7 @@ Saerygan_5 = {
 	culture = westerosi_valyrian
 
 	father = Saerygan_1
-	mother = Saerygan_rs_1
+	mother = Saerygan_rs_1_B
 
 	7762.1.1 = { birth = yes }
 	7791.1.1 = { add_matrilineal_spouse = Saerygan_rs_5 }
@@ -13568,7 +14371,7 @@ Saerygan_9 = {
 }
 ### Issue of Alyssa
 Saerygan_16 = {
-	name = Joffrey
+	name = Joffrey # married Elona Merrell
 	dynasty = dynn_Saerygan
 
 	religion = valyrian_pan_freehold
@@ -13582,7 +14385,7 @@ Saerygan_16 = {
 }
 ### Issue of Alton
 Saerygan_12 = {
-	name = Alyssa
+	name = Alyssa # married Ondred Belmore
 	dynasty = dynn_Saerygan
 	female = yes
 
@@ -13599,7 +14402,7 @@ Saerygan_12 = {
 	}
 }
 Saerygan_11 = {
-	name = Edmyn
+	name = Edmyn # married Elissa Clifton
 	dynasty = dynn_Saerygan
 
 	religion = valyrian_pan_freehold
@@ -13614,7 +14417,7 @@ Saerygan_11 = {
 	}
 }
 Saerygan_13 = {
-	name = Malentine
+	name = Malentine # married Leonella Lanster
 	dynasty = dynn_Saerygan
 
 	religion = valyrian_pan_freehold
@@ -13805,7 +14608,7 @@ Scales_69 = {
 	7950.1.1 = { death = yes }
 }
 Scales_70 = {
-	name = Shiera # married Dontario Saldaaris
+	name = Shiera # married Olymer Thistle
 	dynasty_house = house_Scales
 	female = yes
 
@@ -14002,7 +14805,7 @@ Scales_24 = {
 }
 ### Issue of Ardrian
 Scales_29 = {
-	name = Shiera # married Trellio Manterys
+	name = Shiera # married Yohn Jesper
 	dynasty_house = house_Scales
 	female = yes
 
@@ -14120,12 +14923,19 @@ Scales_20 = {
 		trait = gregarious
 		trait = trusting
 		trait = diligent
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword_and_shield }
+		}
 	}
 	8048.1.1 = {
 		effect = { # Master-at-arms at Dragonstone
 			agot_appoint_as_councillor_for_castle_history_effect = {
 				CASTLE = title:c_dragonstone
 				POSITION = councillor_marshal
+			}
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_dragonstone
+				POSITION = master_at_arms_court_position
 			}
 		}
 	}
@@ -14236,7 +15046,7 @@ Scales_37 = {
 }
 ### Issue of Gaemon
 Scales_72 = {
-	name = Crispian # married Lysadra Lornel
+	name = Crispian 
 	dynasty_house = house_Scales
 
 	religion = fots_seven
@@ -14268,7 +15078,7 @@ Scales_73 = {
 	}
 }
 Scales_74 = {
-	name = Jeyne # married Agreo Trellos
+	name = Jeyne # married Arwood Garland
 	dynasty_house = house_Scales
 	female = yes
 
@@ -14465,7 +15275,7 @@ Scales_40 = {
 	8081.1.1 = { death = yes }
 }
 Scales_42 = {
-	name = Jarella # married Nevio Torone
+	name = Jarella # married Beric Spurn
 	dynasty_house = house_Scales
 	female = yes
 
@@ -14665,7 +15475,7 @@ Scales_55 = {
 
 	8120.1.1 = { birth = yes }
 	8136.1.1 = { trait = knight }
-	8145.1.1 = { add_spouse = Sentikis_122 } # Laressa Sentikis
+	8145.1.1 = { add_spouse = Waterman_45 } # Jeyne Waterman
 	8173.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -14679,7 +15489,7 @@ Scales_56 = {
 	culture = westerosi_valyrian
 
 	father = Scales_55
-	mother = Sentikis_122
+	mother = Waterman_45
 
 	8149.1.1 = { birth = yes }
 	8165.1.1 = { trait = knight }
@@ -14699,7 +15509,7 @@ Scales_57 = {
 	culture = westerosi_valyrian
 
 	father = Scales_55
-	mother = Sentikis_122
+	mother = Waterman_45
 
 	trait = depressed_genetic
 
@@ -14723,7 +15533,7 @@ Scales_58 = {
 	culture = westerosi_valyrian
 
 	father = Scales_55
-	mother = Sentikis_122
+	mother = Waterman_45
 
 	8153.1.1 = { birth = yes }
 	8172.1.1 = { trait = knight }
@@ -14905,12 +15715,18 @@ Scales_64 = {
 
 	religion = fots_seven
 	culture = westerosi_valyrian
+	sexuality = heterosexual
 
 	father = Scales_63
 	mother = Densmore_39
 
-	8204.1.1 = { birth = yes }
+	8204.1.1 = { 
+		birth = yes
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual 
+	}
 	8222.1.1 = { trait = knight }
+	8227.6.15 = { trait = fornicator }
 	8252.1.1 = {
 		death = { death_reason = death_accident }
 	}
@@ -14935,7 +15751,7 @@ Scales_67 = {
 	}
 }
 Scales_68 = {
-	name = Maella # married Togosh Vallel
+	name = Maella # married Eldon Ginett
 	dynasty_house = house_Scales
 	female = yes
 
@@ -15062,6 +15878,9 @@ Tall_1 = {
 			track = foot
 			value = 30
 		}
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:mace_and_shield }
+		}
 	}
 	8209.2.1 = {
 		effect = {
@@ -15166,6 +15985,12 @@ Kingsguard_2 = {
 		employer = Royce_29 # Allard Royce
 	}
 	8049.7.14 = {
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = foot
+			value = 65
+		}
 		effect = {
 			agot_join_kingsguard_char_history_effect = { # Post-Maegor Reconstruction
 				KING = character:Targaryen_35 # Jaehaerys I Targaryen
@@ -15205,6 +16030,12 @@ Kingsguard_3 = {
 	}
 	8048.1.1 = { employer = Smallwood_15 } # Myles Smallwood
 	8049.7.14 = {
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = foot
+			value = 65
+		}
 		effect = {
 			agot_join_kingsguard_char_history_effect = { # Post-Maegor Reconstruction
 				KING = character:Targaryen_35 # Jaehaerys I Targaryen
@@ -15239,10 +16070,12 @@ Kingsguard_4 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	8046.1.1 = { give_nickname = nick_agot_historical_the_woodcock }
+	8046.1.1 = { 
+		give_nickname = nick_agot_historical_the_woodcock
+		trait = lifestyle_blademaster 
+	}
 	8049.7.14 = {
 		trait = knight
-		trait = lifestyle_blademaster
 		effect = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Doggett_12 } # Joffrey Doggett
 			agot_join_kingsguard_char_history_effect = { # Post-Maegor Reconstruction
@@ -15293,6 +16126,12 @@ Kingsguard_5 = {
 		}
 	}
 	8049.7.14 = {
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = foot
+			value = 65
+		}
 		effect = {
 			agot_join_kingsguard_char_history_effect = { # Post-Maegor Reconstruction
 				KING = character:Targaryen_35 # Jaehaerys I Targaryen
@@ -15348,6 +16187,7 @@ Kingsguard_6 = {
 	8130.10.22 = {
 		trait = knight
 		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword_and_shield }
 			agot_join_kingsguard_char_history_effect = { # Aegon's late appointment
 				KING = character:Targaryen_65 # Aegon II Targaryen
 			}
@@ -15397,7 +16237,12 @@ Kingsguard_7 = {
 	}
 	8193.1.1 = {
 		trait = knight
-		trait = lifestyle_blademaster
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = horse
+			value = 65
+		}
 	}
 	8207.1.1 = {
 		effect = {
@@ -15415,7 +16260,7 @@ Kingsguard_8 = {
 	name = Sorin # Semi-Canon, a Kingsguard
 	# of Sevenstreams
 
-	prowess = 6
+	prowess = 9
 
 	religion = fots_seven
 	culture = riverman_main
@@ -15613,6 +16458,7 @@ Septon_Kings_Landing_1 = {
 	martial = 0
 	intrigue = 4
 	diplomacy = 5
+	prowess = 1
 
 	religion = fots_seven
 	culture = crownlander
@@ -15656,6 +16502,7 @@ Septon_Kings_Landing_2 = {
 	martial = 2
 	intrigue = 10
 	diplomacy = 7
+	prowess = 1
 
 	religion = fots_seven
 	culture = reachman
@@ -17000,13 +17847,18 @@ Targaryen_hh_11 = {
 
 	religion = fots_seven
 	culture = riverman_main
+	sexuality = heterosexual
 
-	7957.1.1 = {
+	7957.1.1 = { 
 		birth = yes
 		make_trait_inactive = scripted_appearance
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual 
 	}
-	#7977.2.1 = { trait = fornicator }
-	7978.1.1 = { death = { death_reason = death_childbirth } }
+	7978.1.1 = { 
+		trait = fornicator
+		death = { death_reason = death_childbirth } 
+	}
 }
 
 ### Sons of the Dragon Arc
@@ -17063,8 +17915,14 @@ Poor_Fellows_1 = {
 		add_character_flag = canon_status_canon
 	}
 	8028.1.1 = {
+		trait = holy_warrior
 		trait = knight
+		make_trait_inactive = agot_poor_fellow
+		trait = order_member # Poor Fellows
 		give_nickname = nick_agot_historical_the_hewer_Poor_Fellows_1
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:k_the_most_devout }
+		}
 	}
 	8042.8.1 = {
 		trait = wounded_3
@@ -17101,7 +17959,15 @@ Poor_Fellows_2 = {
 		add_character_flag = canon_status_canon
 		make_trait_inactive = surname_hill
 	}
-	8028.1.1 = { trait = knight }
+	8028.1.1 = { 
+		trait = knight 
+		trait = holy_warrior
+		make_trait_inactive = agot_poor_fellow
+		trait = order_member # Poor Fellows
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:k_the_most_devout }
+		}
+	}
 	8045.6.1 = {
 		death = { death_reason = death_battle } # Attempt to free Jeyne Poore
 	}
@@ -17127,8 +17993,17 @@ Poor_Fellows_3 = {
 	8026.8.1 = { trait = brave }
 	8028.8.1 = { trait = zealous }
 	8030.8.1 = { trait = authoritative }
-	8040.1.1 = { trait = lovers_pox }
-	# 8043.1.1 = { employer = Poor_Fellows_2 } # Horys Hill AGOT TODO
+	8037.1.1 = {
+		make_trait_inactive = agot_poor_fellow
+		trait = order_member # Poor Fellows
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:k_the_most_devout }
+		}
+	}
+	8040.1.1 = {
+		trait = lovers_pox
+		trait = forest_fighter
+	}
 	8045.6.1 = {
 		trait = witch
 		death = {
@@ -17171,7 +18046,6 @@ Poor_Fellows_4 = {
 			value = trait_second_level
 		}
 	}
-	# 8043.1.1 = { employer = Poor_Fellows_2 } # Horys Hill AGOT TODO
 	8048.6.1 = {
 		death = { death_reason = death_murder }
 	}
@@ -17191,8 +18065,13 @@ Poor_Fellows_5 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	# 8043.1.1 = { employer = Poor_Fellows_2 } # Horys Hill AGOT TODO
-	# 8045.6.1 = { employer = Poor_Fellows_4 } # Septon Moon AGOT TODO
+	8040.1.1 = {
+		make_trait_inactive = agot_poor_fellow
+		trait = order_member # Poor Fellows
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:k_the_most_devout }
+		}
+	}
 	8055.1.1 = { death = yes }
 }
 Poor_Fellows_6 = {
@@ -17208,9 +18087,14 @@ Poor_Fellows_6 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	8039.1.1 = { give_nickname = nick_agot_historical_ragged }
-	# 8043.1.1 = { employer = Poor_Fellows_2 } # Horys Hill AGOT TODO
-	# 8045.6.1 = { employer = Poor_Fellows_4 } # Septon Moon AGOT TODO
+	8039.1.1 = { 
+		give_nickname = nick_agot_historical_ragged
+		make_trait_inactive = agot_poor_fellow
+		trait = order_member # Poor Fellows 
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:k_the_most_devout }
+		}
+	}
 	8050.1.1 = { death = yes }
 }
 Poor_Fellows_7 = {
@@ -17229,9 +18113,12 @@ Poor_Fellows_7 = {
 		agot_safe_buy_scholar_perk_history_effect = yes
 		trait = scholar
 		give_nickname = nick_agot_historical_the_learned_Poor_Fellows_7
+		make_trait_inactive = agot_poor_fellow
+		trait = order_member # Poor Fellows
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:k_the_most_devout }
+		}
 	}
-	# 8043.1.1 = { employer = Poor_Fellows_2 } # Horys Hill AGOT TODO
-	# 8045.6.1 = { employer = Poor_Fellows_4 } # Septon Moon AGOT TODO
 	8048.6.2 = { death = { death_reason = death_battle } }
 }
 Poor_Fellows_8 = {
@@ -17247,9 +18134,14 @@ Poor_Fellows_8 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	8032.1.1 = { give_nickname = nick_agot_historical_the_starvling }
-	# 8043.1.1 = { employer = Poor_Fellows_2 } # Horys Hill AGOT TODO
-	# 8045.6.1 = { employer = Poor_Fellows_4 } # Septon Moon AGOT TODO
+	8032.1.1 = { 
+		give_nickname = nick_agot_historical_the_starvling
+		make_trait_inactive = agot_poor_fellow
+		trait = order_member # Poor Fellows 
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:k_the_most_devout }
+		}
+	}
 	8048.6.2 = {
 		trait = nightswatch_historical
 		effect = {
@@ -17266,6 +18158,11 @@ Tyanna_1 = {
 	name = Tyanna # Canon, AKA: Tyanna of the Tower, married Maegor Targaryen
 	dna = Tyanna_1
 	female = yes
+
+	martial = 4
+	diplomacy = 4
+	intrigue = 10
+	learning = 10
 
 	religion = fc_pan_pentos
 	culture = pentoshi
@@ -17342,6 +18239,12 @@ Knight_Kings_Landing_6 = {
 		trait = callous
 		trait = knight
 		give_nickname = nick_agot_historical_the_cunning_Knight_Kings_Landing_6
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = foot
+			value = 30 
+		}
 	}
 	8063.1.1 = { death = yes }
 }
@@ -17369,6 +18272,12 @@ Knight_Kings_Landing_7 = {
 		trait = knight
 		trait = lifestyle_poet
 		give_nickname = nick_agot_historical_the_strummer
+		trait = tourney_participant
+		add_trait_xp = {
+			trait = tourney_participant
+			track = foot
+			value = 30
+		}
 	}
 	8051.1.1 = {
 		effect = { # Court Musician of the Red Keep
@@ -17539,6 +18448,7 @@ Targaryen_hh_12 = {
 
 	religion = fots_seven
 	culture = reachman
+	sexuality = heterosexual
 
 	trait = education_diplomacy_2
 	trait = charming
@@ -17549,26 +18459,18 @@ Targaryen_hh_12 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_mentioned
+		add_character_flag = sexuality_ensure_heterosexual
 	}
-	8081.1.1 = {
-		trait = gregarious
-	}
-	8083.1.1 = {
-		trait = arbitrary
-	}
-	8085.1.1 = {
-		trait = ambitious
-	}
-	8086.1.1 = {
-		trait = lustful
-	}
-	8090.1.1 = {
-		trait = lifestyle_poet
-	}
+	8081.1.1 = { trait = gregarious }
+	8083.1.1 = { trait = arbitrary }
+	8085.1.1 = { trait = ambitious }
+	8086.1.1 = { trait = lustful }
+	8090.1.1 = { trait = lifestyle_poet }
 	8094.1.1 = {
 		trait = seducer
 		agot_safe_buy_seducer_perk_history_effect = yes
 	}
+	8099.8.1 = { trait = fornicator }
 	8103.1.1 = {
 		death = { death_reason = death_hunted_by_wild_beast }
 	}
@@ -17952,7 +18854,7 @@ Knight_Kings_Landing_16 = {
 	}
 }
 Knight_Kings_Landing_17 = {
-	name = The_Burning_Knight # Canon
+	name = Allard # Canon, AKA: The Burning Knight
 
 	religion = fots_seven
 	culture = crownlander
@@ -17972,7 +18874,6 @@ Knight_Kings_Landing_17 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 		effect = {
-			change_first_name = Allard
 			agot_safe_set_location_history_effect = { CASTLE = title:b_hookmarket }
 		}
 	}
@@ -17981,6 +18882,7 @@ Knight_Kings_Landing_17 = {
 	}
 	8130.10.9 = {
 		trait = burned
+		name = The_Burning_Knight
 		add_trait_xp = {
 			trait = burned
 			value = trait_third_level
@@ -18015,8 +18917,7 @@ Silver_Denys_7 = {
 	}
 }
 Silver_Denys_1 = {
-	name = Maegelle
-	female = yes
+	name = Joss
 
 	religion = fots_seven
 	culture = high_valyrian
@@ -18049,7 +18950,7 @@ Silver_Denys_2 = {
 	religion = fots_seven
 	culture = high_valyrian
 
-	mother = Silver_Denys_1
+	father = Silver_Denys_1
 
 	8055.1.1 = {
 		birth = yes
@@ -18176,13 +19077,17 @@ Tangletongue_2 = {
 
 	religion = fots_seven
 	culture = crownlander
+	sexuality = heterosexual
 
 	father = Tangletongue_1
 
 	8090.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_mentioned
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual 
 	}
+	# 8105.1.1 = { trait = fornicator } # Disabled until Imprisonment by AI bug is fixed
 	8143.1.1 = { death = yes }
 }
 Tangletongue_3 = {
@@ -18259,7 +19164,7 @@ Tangletongue_4 = {
 }
 ### The Shepherd
 The_Shepherd_1 = {
-	name = The_Shepherd # Canon, Moon of the Three Kings
+	name = Pate # Canon, AKA: The Shepherd, Moon of the Three Kings
 
 	religion = fots_seven
 	culture = crownlander
@@ -18277,7 +19182,6 @@ The_Shepherd_1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 		effect = {
-			change_first_name = Pate
 			agot_safe_set_location_history_effect = { CASTLE = title:b_goldguard_heights }
 		}
 	}
@@ -18285,7 +19189,7 @@ The_Shepherd_1 = {
 		trait = one_handed
 		trait = lunatic_1
 		trait = uncouth
-		effect = { change_first_name = The_Shepherd }
+		name = The_Shepherd
 	}
 	8130.10.8 = { trait = peasant_leader }
 	8130.12.25 = {
@@ -18331,6 +19235,7 @@ Targaryen_hh_6 = {
 				POSITION = household_guard_court_position
 			}
 		}
+		trait = lifestyle_blademaster
 	}
 	8133.6.1 = {
 		effect = {
@@ -18361,6 +19266,7 @@ Targaryen_hh_7 = {
 	culture = meereenese
 
 	trait = education_martial_1
+	trait = education_martial_prowess_5
 	trait = strong
 	trait = physique_good_3
 	trait = brave
@@ -18376,6 +19282,11 @@ Targaryen_hh_7 = {
 		trait = lifestyle_poet
 		trait = loyal
 		trait = disfigured
+		trait = lifestyle_blademaster
+		add_trait_xp = {
+			trait = lifestyle_blademaster
+			value = trait_second_level
+		}
 		make_trait_inactive = visible_disfigurement_4
 		add_character_flag = disfigurement_fully_masked
 		add_character_modifier = wearing_disfigurement_mask_modifier
@@ -18427,6 +19338,7 @@ Lowborn_Kings_Landing_3 = {
 		employer = Targaryen_78 # Aegon III Targaryen
 		give_nickname = nick_agot_historical_merry
 	}
+	# 8155.10.1 = { trait = fornicator } # Disabled until Imprisonment by AI bug is fixed
 	8157.1.13 = { employer = Targaryen_81 } # Daeron I Targaryen
 	8159.11.14 = { employer = Shawney_16 } # Oscar Shawney, Fairmarket
 	8160.11.14 = {
@@ -18475,7 +19387,15 @@ Lowborn_Kings_Landing_5 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	8190.1.1 = { give_nickname = nick_agot_historical_the_quickfinger }
+	8190.1.1 = { 
+		give_nickname = nick_agot_historical_the_quickfinger 
+		trait = gallowsbait
+		add_trait_xp = {
+			trait = gallowsbait
+			track = thief
+			value = 100
+		}
+	}
 	8195.3.7 = { employer = Targaryen_94 } # Daemon Blackfyre
 	8196.3.1 = { death = { death_reason = death_execution } }
 }
@@ -18514,6 +19434,7 @@ Knight_Kings_Landing_13 = {
 	8206.6.1 = {
 		effect = { move_to_pool = yes }
 	}
+	8209.2.1 = { trait = tourney_participant }
 	8233.1.1 = { death = yes }
 }
 Knight_Kings_Landing_14 = {
@@ -18533,6 +19454,7 @@ Knight_Kings_Landing_14 = {
 	8200.1.1 = {
 		effect = { move_to_pool = yes }
 	}
+	8209.2.1 = { trait = tourney_participant }
 	8224.1.1 = { death = yes }
 }
 Knight_Kings_Landing_15 = {
@@ -18552,6 +19474,7 @@ Knight_Kings_Landing_15 = {
 		trait = knight
 		give_nickname = nick_agot_historical_the_threadbare
 	}
+	8209.2.1 = { trait = tourney_participant }
 	8224.1.1 = { death = yes }
 }
 Targaryen_hh_10 = {
