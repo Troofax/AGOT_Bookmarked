@@ -1658,6 +1658,8 @@ Hoare_28 = {
 	learning = 3
 	prowess = 11
 
+	dna = Hoare_28
+
 	religion = drowned_god
 	culture = ironborn
 
@@ -1676,6 +1678,7 @@ Hoare_28 = {
 
 	7879.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		make_trait_inactive = black_eyes
 		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
@@ -1747,6 +1750,8 @@ Hoare_30 = {
 	name = Halleck # Canon, a lord, continued brutal domination
 	dynasty = dynn_Hoare
 
+	dna = Hoare_30
+
 	religion = drowned_god
 	culture = ironborn
 
@@ -1764,6 +1769,7 @@ Hoare_30 = {
 
 	7912.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		make_trait_inactive = black_eyes
 		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
@@ -5044,13 +5050,18 @@ Goodbrother_42 = {
 	dynasty = dynn_Goodbrother
 	female = yes
 
+	dna = Goodbrother_42
+
 	religion = drowned_god
 	culture = ironborn
 
 	father = Goodbrother_43
 	mother = Tawney_10
 
-	7896.1.1 = { birth = yes }
+	7896.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	7945.1.1 = { death = yes }
 }
 Goodbrother_44 = {
@@ -15162,13 +15173,18 @@ Volmark_9 = {
 	dynasty = dynn_Volmark
 	female = yes
 
+	dna = Volmark_9
+
 	religion = drowned_god
 	culture = ironborn
 
 	father = Volmark_8
 	mother = Hoare_29
 
-	7914.1.1 = { birth = yes }
+	7914.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	7945.1.1 = {
 		effect = { add_unpressed_claim = title:e_the_iron_islands }
 	}

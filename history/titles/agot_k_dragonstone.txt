@@ -567,7 +567,7 @@ c_driftmark = {
 		holder = Velaryon_6
 		effect = {
 			title:b_hull = {
-				#save_title_name_change_data = yes
+				save_title_name_change_data = { TRANSFER_VAR = no }
 				set_title_name = b_driftage_shore
 			}
 		}
@@ -596,7 +596,7 @@ c_driftmark = {
 	8082.1.1 = {
 		effect = {
 			title:b_hull = {
-				#save_title_name_change_data = yes
+				save_title_name_change_data = { TRANSFER_VAR = no }
 				reset_title_name = yes
 			}
 		}
@@ -666,14 +666,14 @@ c_high_tide = {
 		liege = d_driftmark
 		holder = Velaryon_6
 		effect = {
-			#save_title_name_change_data = yes
+			save_title_name_change_data = { TRANSFER_VAR = no }
 			set_title_name = c_mermont
 			title:b_high_tide = {
-				#save_title_name_change_data = yes
+				save_title_name_change_data = { TRANSFER_VAR = no }
 				set_title_name = b_mermont
 			}
 			title:b_spicetown = {
-				#save_title_name_change_data = yes
+				save_title_name_change_data = { TRANSFER_VAR = no }
 				set_title_name = b_flotsam_coast
 			}
 		}
@@ -702,7 +702,7 @@ c_high_tide = {
 	8077.1.1 = {
 		effect = {
 			title:b_spicetown = {
-				#save_title_name_change_data = yes
+				save_title_name_change_data = { TRANSFER_VAR = no }
 				reset_title_name = yes
 			}
 		}
@@ -712,10 +712,10 @@ c_high_tide = {
 	}
 	8088.1.1 = {
 		effect = {
-			#save_title_name_change_data = yes
+			save_title_name_change_data = { TRANSFER_VAR = no }
 			reset_title_name = yes
 			title:b_high_tide = {
-				#save_title_name_change_data = yes
+				save_title_name_change_data = { TRANSFER_VAR = no }
 				reset_title_name = yes
 			}
 		}

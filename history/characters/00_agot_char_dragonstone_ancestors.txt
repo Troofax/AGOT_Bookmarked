@@ -372,6 +372,8 @@ Targaryen_18 = {
 	dynasty = dynn_Targaryen
 	female = yes
 
+	dna = Targaryen_18
+
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
@@ -380,6 +382,7 @@ Targaryen_18 = {
 
 	7896.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_neutral_silver_hair
 		make_trait_inactive = purple_eyes_11
 		add_character_flag = canon_status_mentioned
@@ -404,6 +407,8 @@ Targaryen_19 = {
 	name = Maegon # Canon, a lord
 	dynasty = dynn_Targaryen
 
+	dna = Targaryen_19
+
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
@@ -414,6 +419,7 @@ Targaryen_19 = {
 
 	7910.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_8
 		add_character_flag = canon_status_canon
