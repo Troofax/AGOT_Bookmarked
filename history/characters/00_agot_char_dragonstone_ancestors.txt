@@ -2821,6 +2821,7 @@ Targaryen_55_B = {
 	8099.8.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
+		make_trait_inactive = surname_waters
 		make_trait_inactive = silver_blonde_hair
 		make_trait_inactive = purple_eyes_5
 		add_character_flag = canon_status_mentioned
@@ -3306,6 +3307,7 @@ Targaryen_61 = {
 		}
 		give_nickname = nick_agot_historical_the_rogue_prince
 	}
+	8106.4.17 = { add_character_flag = should_not_be_a_pirate }
 	8109.2.16 = {
 		effect = { add_prestige_level = 1 } # Conquered Stepstones
 	}
@@ -7017,9 +7019,9 @@ Targaryen_110 = {
 		trait = irritable
 	}
 	8190.1.1 = {
+		add_spouse = Dayne_69 # Dyanna Dayne
 		trait = unyielding_defender
 		trait = knight
-		add_spouse = Dayne_69 # Dyanna Dayne
 		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_110 COA_KEY = maekar_targaryen_personal_arms }
 		effect = {
 			agot_set_signature_weapon_history_effect= { WEAPON = flag:mace }
@@ -7310,7 +7312,7 @@ Targaryen_118 = {
 
 	disallow_random_traits = yes
 
-	8190.1.1 = {
+	8190.10.1 = {
 		birth = yes
 		make_trait_inactive = silver_blonde_hair
 		make_trait_inactive = purple_eyes_16
@@ -9004,6 +9006,7 @@ Blackfyre_14 = {
 			generate_golden_company_special_troops = { LOCATION = root.capital_province ORIGIN = root.capital_province ARMY_NAME = the_golden_company_name }
 		}
 	}
+	8259.1.1 = { add_character_flag = should_not_be_a_pirate }
 	8260.10.1 = {
 		death = {
 			death_reason = death_duel
@@ -11517,6 +11520,7 @@ Velaryon_44 = {
 	8157.6.6 = {
 		effect = { add_prestige_level = 1 } # Battle of the Greenblood
 	}
+	8167.6.22 = { add_character_flag = should_not_be_a_pirate }
 	8175.1.16 = { trait = fornicator } # Elaena Targaryen
 	8175.8.29 = { # Three years later than in Blood of Dragons
 		death = { death_reason = death_lost_at_sea }
@@ -13368,7 +13372,7 @@ Celtigar_61 = {
 	father = Celtigar_23
 	mother = Scales_47
 
-	8085.1.1 = {
+	8086.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 	}

@@ -13997,7 +13997,7 @@ Harlaw_87 = {
 	4180.1.1 = { death = yes }
 }
 Harlaw_88 = {
-	name = Balon # not a lord
+	name = Balon
 	dynasty = dynn_Harlaw
 
 	religion = drowned_god
@@ -14009,7 +14009,7 @@ Harlaw_88 = {
 	4178.1.1 = { death = yes }
 }
 Harlaw_89 = {
-	name = Dagon # not a lord
+	name = Dagon
 	dynasty = dynn_Harlaw
 
 	religion = drowned_god
@@ -14785,6 +14785,8 @@ Harlaw_82 = {
 	father = Harlaw_76
 	mother = Weaver_30
 
+	trait = twin
+
 	8083.1.1 = { birth = yes }
 	8124.1.1 = {
 		death = { death_reason = death_scuffle_with_soldiers }
@@ -14799,6 +14801,8 @@ Harlaw_42 = {
 
 	father = Harlaw_76
 	mother = Weaver_30
+
+	trait = twin
 
 	8083.1.1 = {
 		birth = yes
