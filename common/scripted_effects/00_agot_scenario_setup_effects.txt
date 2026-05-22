@@ -115,6 +115,71 @@ agot_sandbox_scenario_setup = {
 	}
 }
 
+agot_scenario_coa_setup_effect = {
+	#Darklyn
+	if = {
+		limit = {
+			game_start_date < 8078.1.1
+		}
+		dynasty:dynn_Darklyn ?= {
+			set_coa = dynn_Darklyn_0KG
+		}
+	}
+	if = {
+		limit = {
+			game_start_date >= 8078.1.1
+			game_start_date < 8093.1.1
+		}
+		dynasty:dynn_Darklyn ?= {
+			set_coa = dynn_Darklyn_3KG
+		}
+	}
+	if = {
+		limit = {
+			game_start_date >= 8093.1.1
+			game_start_date < 8133.1.1
+		}
+		dynasty:dynn_Darklyn ?= {
+			set_coa = dynn_Darklyn_4KG
+		}
+	}
+	if = {
+		limit = {
+			game_start_date >= 8133.1.1
+			game_start_date < 8222.1.1
+		}
+		dynasty:dynn_Darklyn ?= {
+			set_coa = dynn_Darklyn_5KG
+		}
+	}
+	if = {
+		limit = {
+			game_start_date >= 8222.1.1
+			game_start_date < 8236.1.1
+		}
+		dynasty:dynn_Darklyn ?= {
+			set_coa = dynn_Darklyn_6KG
+		}
+	}
+	if = {
+		limit = {
+			game_start_date >= 8236.1.1
+		}
+		dynasty:dynn_Darklyn ?= {
+			set_coa = dynn_Darklyn
+		}
+	}
+	#Targaryen
+	if = {
+		limit = {
+			game_start_date < 7999.4.1
+		}
+		dynasty:dynn_Targaryen ?= {
+			set_coa = dynn_Targaryen_Pre_Conquest
+		}
+	}
+}
+
 ### Context: "agot_on_game_start_historical_scenario_setup"
 # This effect is from "agot_on_game_start" and exists to handle scenario setups such as the 4th Blackfyre Rebellion,
 # where the character is designed for unlanded play, but must be landed for total playability.

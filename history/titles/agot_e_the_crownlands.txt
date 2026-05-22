@@ -2126,11 +2126,6 @@ c_duskendale = {
 	5780.1.1 = {
 		liege = d_duskendale
 		holder = Darklyn_80
-		effect = {
-			dynasty:dynn_Darklyn ?= {
-				set_coa = dynn_Darklyn_0KG
-			}
-		}
 	}
 	5832.1.1 = {
 		holder = Darklyn_81
@@ -2168,20 +2163,6 @@ c_duskendale = {
 	8057.1.1 = {
 		holder = Darklyn_16
 	}
-	8078.1.1 = {
-		effect = {
-			dynasty:dynn_Darklyn ?= {
-				set_coa = dynn_Darklyn_3KG
-			}
-		}
-	}
-	8093.1.1 = {
-		effect = {
-			dynasty:dynn_Darklyn ?= {
-				set_coa = dynn_Darklyn_4KG
-			}
-		}
-	}
 	8100.1.1 = {
 		holder = Darklyn_17
 	}
@@ -2191,25 +2172,11 @@ c_duskendale = {
 	8129.10.3 = {
 		holder = Darklyn_29
 	}
-	8133.6.1 = {
-		effect = {
-			dynasty:dynn_Darklyn ?= {
-				set_coa = dynn_Darklyn_5KG
-			}
-		}
-	}
 	8174.1.1 = {
 		holder = Darklyn_34
 	}
 	8189.1.1 = {
 		holder = Darklyn_38
-	}
-	8222.1.1 = {
-		effect = {
-			dynasty:dynn_Darklyn ?= {
-				set_coa = dynn_Darklyn_6KG
-			}
-		}
 	}
 	8229.1.1 = {
 		holder = Darklyn_40
