@@ -5261,6 +5261,7 @@ c_longgrass = {
 				save_title_name_change_data = { TRANSFER_VAR = no }
 				reset_title_name = yes
 			}
+			agot_save_landed_knight_creation_date = yes
 		}
 	}
 	8233.1.1 = {
