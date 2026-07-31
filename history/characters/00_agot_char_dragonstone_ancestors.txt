@@ -5898,6 +5898,7 @@ Targaryen_91 = {
 					target = character:Targaryen_88 # Aegon IV Targaryen
 					reason = rival_daeronii_aegoniv
 				}
+				add_character_flag = historical_disinheritance_blocker
 			}
 			if = {
 				limit = { character:Targaryen_89 = { is_alive = yes } }
