@@ -17,6 +17,44 @@
 	}
 }
 
+challenge_character_182_aegon_iv_targaryen = {
+	start_date = 8182.11.11
+	character = {
+		name = "challenge_character_182_aegon_iv_targaryen"
+		dynasty = dynn_Targaryen
+		dynasty_splendor_level = 8
+		type = male
+		birth = 8135.3.14
+		title = h_the_iron_throne
+		religion = fots_seven
+		culture = high_valyrian
+		government = lp_feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Targaryen_88
+
+		animation = personality_callous
+	}
+}
+
+challenge_character_182_aaf_aat_caham = {
+	start_date = 8182.11.11
+	character = {
+		name = "challenge_character_182_aaf_aat_caham"
+		dynasty = dynn_Aat_Caham
+		dynasty_splendor_level = 2
+		type = male
+		birth = 8117.1.1
+		title = d_the_bit
+		religion = ib_ven_sound
+		culture = ibbenese
+		government = feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = Aat_Caham_88
+
+		animation = personality_bold
+	}
+}
+
 challenge_character_239_steffon_tully = {
 	start_date = 8239.1.11
 	character = {

@@ -2,12 +2,12 @@
 # History database id:Targaryen_27
 bookmark_2bc_aegon_targaryen={
 	type=male
-	id=33041
+	id=42446
 	random_seed=2417614156
 	age=0.230000
 	genes={ 		hair_color={ 14 39 14 39 }
  		skin_color={ 2 28 2 28 }
- 		eye_color={ 251 48 251 48 }
+ 		eye_color={ 249 38 249 38 }
  		gene_chin_forward={ "chin_forward_pos" 141 "chin_forward_pos" 141 }
  		gene_chin_height={ "chin_height_neg" 132 "chin_height_neg" 132 }
  		gene_chin_width={ "chin_width_pos" 127 "chin_width_pos" 127 }
@@ -97,8 +97,8 @@ bookmark_2bc_aegon_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 24 "cheek_wrinkles_both_01" 24 }
  		complexion={ "complexion_38" 84 "complexion_38" 84 }
  		gene_height={ "normal_height" 147 "normal_height" 147 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 130 "body_fat_head_fat_low" 130 }
- 		gene_bs_body_shape={ "body_shape_hourglass_half" 86 "body_shape_hourglass_half" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 137 "body_fat_head_fat_low" 130 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_half" 114 "body_shape_hourglass_half" 0 }
  		gene_bs_bust={ "bust_clothes" 115 "bust_shape_2_full" 180 }
  		gene_age={ "old_beauty_1" 3 "old_beauty_1" 3 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 203 "avg_spacing_low_thickness" 203 }
@@ -201,6 +201,7 @@ bookmark_2bc_aegon_targaryen={
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "agot_western_high_nobility_clothes_male_pants" 126 "most_clothes" 0 }
  		headgear={ "agot_crowns" 248 "no_headgear" 0 }
+ 		clothes_hoods={ "hoods" 47 "no_clothes_hood" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  		gene_cloak={ "cloak_additive" 255 "cloak_additive" 0 }
 		props_right={ "agot_artifact_weapon_blackfyre" 255 "no_props" 0 }

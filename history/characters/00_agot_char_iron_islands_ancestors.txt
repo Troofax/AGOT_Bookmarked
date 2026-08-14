@@ -1803,9 +1803,7 @@ Hoare_31 = {
 
 	trait = education_stewardship_3
 	trait = arrogant
-	trait = sadistic
 	trait = arbitrary
-	trait = ambitious
 	trait = bossy
 
 	disallow_random_traits = yes
@@ -1817,9 +1815,11 @@ Hoare_31 = {
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
+	7952.1.1 = { trait = sadistic }
+	7956.1.1 = { trait = ambitious }
 	7970.1.1 = { add_spouse = Greyjoy_39 } # Gwynesse Greyjoy
 	7980.1.1 = {
-		give_nickname = nick_agot_historical_the_black_harren
+		give_nickname = nick_agot_historical_the_black_Hoare_31
 		agot_safe_buy_architect_perk_history_effect = yes
 		trait = architect
 		#trait = slave_owner AGOT TODO Trait
@@ -4534,7 +4534,15 @@ Greyjoy_88 = {
 	father = Greyjoy_78
 	mother = Mallister_36
 
+	trait = education_martial_2
+	trait = education_martial_prowess_2 # Fine fighter on horse
 	trait = clubfooted # Lame from birth
+	trait = brave
+	trait = honest
+	trait = just
+	trait = rowdy
+
+	disallow_random_traits = yes
 
 	8148.1.1 = {
 		birth = yes
@@ -4544,7 +4552,22 @@ Greyjoy_88 = {
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 	}
-	8181.1.1 = { death = yes }
+	8168.1.1 = { # converted to the faith
+		trait = knight
+		religion = fots_seven
+		effect = {
+			agot_knighted_char_history_effect = { KNIGHT = character:Hightower_102 } # Lyonel Hightower
+		}
+	}
+	8170.1.1 = {
+		effect = { # Captain of the Guard at Oldtown
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_oldtown
+				POSITION = household_guard_court_position
+			}
+		}
+	}
+	8191.1.1 = { death = yes }
 }
 Greyjoy_89 = {
 	name = Sigrik # Semi-Canon
@@ -19265,6 +19288,8 @@ Saltcliffe_26 = {
 
 	prowess = 9
 
+	dna = Saltcliffe_26
+
 	religion = drowned_god
 	culture = ironborn
 	sexuality = heterosexual
@@ -19282,6 +19307,7 @@ Saltcliffe_26 = {
 
 	8140.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_semicanon
 		add_character_flag = sexuality_ensure_heterosexual
 	}
@@ -19293,6 +19319,11 @@ Saltcliffe_26 = {
 		religion = fots_seven
 		trait = knight
 		give_nickname = nick_agot_historical_the_iron_serpent
+		trait = lifestyle_mariner
+		add_trait_xp = {
+			trait = lifestyle_mariner
+			value = trait_second_level
+		}
 	}
 	8159.1.1 = { add_spouse = Tyrell_86 } # Reyna Tyrell
 	8162.9.8 = {
@@ -43186,7 +43217,7 @@ Sharp_18 = {
 }
 ### Issue of Skyte
 Sharp_23 = {
-	name = Urrathon # Commander of Castle Black
+	name = Urrathon # Commander of the Nightfort
 	dynasty = dynn_Sharp
 
 	religion = drowned_god

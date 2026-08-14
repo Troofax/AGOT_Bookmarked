@@ -2,7 +2,7 @@
 # History database id:Greyjoy_6
 bookmark_300_euron_greyjoy={
 	type=male
-	id=95140
+	id=116637
 	random_seed=240050020
 	age=0.420000
 	genes={ 		hair_color={ 11 242 11 242 }
@@ -98,7 +98,7 @@ bookmark_300_euron_greyjoy={
  		complexion={ "complexion_beauty_1" 54 "complexion_beauty_1" 54 }
  		gene_height={ "normal_height" 146 "normal_height" 146 }
  		gene_bs_body_type={ "body_fat_head_fat_low" 131 "body_fat_head_fat_low" 131 }
- 		gene_bs_body_shape={ "body_shape_hourglass_half" 106 "body_shape_hourglass_half" 30 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_half" 115 "body_shape_hourglass_half" 10 }
  		gene_bs_bust={ "bust_clothes" 0 "bust_shape_1_full" 0 }
  		gene_age={ "old_beauty_1" 191 "old_beauty_1" 191 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 255 "avg_spacing_low_thickness" 255 }
@@ -179,13 +179,15 @@ bookmark_300_euron_greyjoy={
  		face_detail_eye_upper_lid_def={ "upper_lid_def" 200 "upper_lid_def" 200 }
  		gene_eyebrow_inner_width={ "eyebrow_inner_width_min" 127 "eyebrow_inner_width_min" 127 }
  		gene_bs_eye_lower_lid_size={ "eye_lower_lid_size" 115 "eye_lower_lid_size" 115 }
- 		gene_bs_eye_shape={ "eye_shape_01" 47 "eye_shape_01" 47 }
+ 		gene_bs_eye_shape={ "eye_shape_02" 95 "eye_shape_01" 47 }
  		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "late_hair_aging" 65 "late_hair_aging" 65 }
- 		special_headgear_spectacles={ "eye_patch" 127 "no_spectacles" 0 }
+ 		gene_scars_eye={ "scars_eye" 255 "scars_eye" 0 }
+ 		special_headgear_spectacles={ "round_eyepatch" 255 "no_spectacles" 0 }
  		legwear={ "western_common_legwear" 203 "all_legwear" 0 }
+ 		beards={ "all_beards" 46 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 126 "all_hairstyles" 0 }
+ 		hairstyles={ "all_hairstyles" 125 "all_hairstyles" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
  		cosmetics_eyeshadow={ "eyeshadow_none" 255 "eyeshadow_none" 0 }
  		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
@@ -201,8 +203,8 @@ bookmark_300_euron_greyjoy={
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		heterochromia_eye={ "heterochromia_eye_black2" 255 "heterochromia_eye_random" 0 }
  		clothes={ "fp1_high_nobility_clothes" 65 "most_clothes" 0 }
- 		headgear={ "agot_crowns" 59 "no_headgear" 0 }
- 		beards={ "all_beards" 46 "no_beard" 0 }
+ 		headgear={ "agot_crowns" 56 "no_headgear" 0 }
+ 		clothes_hoods={ "hoods" 129 "no_clothes_hood" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }
  }

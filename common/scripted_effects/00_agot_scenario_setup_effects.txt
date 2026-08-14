@@ -28,6 +28,11 @@ agot_historical_scenario_setup = {
 
 		agot_8170_12_11_scenario_setup = yes
 	}
+	else_if = { # 8182.11.11 Bells of War
+		limit = { game_start_date = 8182.11.11 }
+
+		agot_8182_12_11_scenario_setup = yes
+	}
 	else_if = { # 8195.3.7 The Blackfyre Rebellion
 		limit = { game_start_date = 8195.3.7 }
 

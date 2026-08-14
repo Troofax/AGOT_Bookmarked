@@ -2,7 +2,7 @@
 # History database id:Stark_6
 bookmark_299_robb_stark={
 	type=boy
-	id=101995
+	id=124676
 	random_seed=1376885717
 	age=0.150000
 	genes={ 		hair_color={ 235 216 235 216 }
@@ -98,7 +98,7 @@ bookmark_299_robb_stark={
  		complexion={ "complexion_16" 123 "complexion_16" 123 }
  		gene_height={ "normal_height" 134 "normal_height" 134 }
  		gene_bs_body_type={ "body_fat_head_fat_low" 119 "body_fat_head_fat_low" 119 }
- 		gene_bs_body_shape={ "body_shape_average" 131 "body_shape_average" 76 }
+ 		gene_bs_body_shape={ "body_shape_average" 45 "body_shape_average" 10 }
  		gene_bs_bust={ "bust_clothes" 85 "bust_shape_1_half" 134 }
  		gene_age={ "old_beauty_1" 255 "old_beauty_1" 255 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 253 "avg_spacing_low_thickness" 253 }
@@ -184,8 +184,8 @@ bookmark_299_robb_stark={
  		hair_aging={ "late_hair_aging" 89 "late_hair_aging" 89 }
  		legwear={ "dragon_rider_legwear" 84 "all_legwear" 0 }
  		beards={ "no_beard" 0 "no_beard" 0 }
- 		cloaks={ "agot_coa_cloaks_fp1_dynamic_stark" 22 "no_cloak" 0 }
- 		hairstyles={ "all_hairstyles" 138 "all_hairstyles" 0 }
+ 		cloaks={ "agot_coa_cloaks_fp1_dynamic_stark" 187 "no_cloak" 0 }
+ 		hairstyles={ "all_hairstyles" 134 "all_hairstyles" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
  		cosmetics_eyeshadow={ "eyeshadow_none" 255 "eyeshadow_none" 0 }
  		cosmetics_foundation={ "foundation_none" 255 "foundation_none" 0 }
@@ -199,8 +199,8 @@ bookmark_299_robb_stark={
  		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_enclosed_helmet={ "enclosed_helmet" 255 "enclosed_helmet" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "north_high_winter_high_clothes" 151 "most_clothes" 0 }
- 		headgear={ "agot_crowns" 41 "no_headgear" 0 }
+ 		clothes={ "north_high_winter_high_clothes" 131 "most_clothes" 0 }
+ 		headgear={ "no_headgear" 0 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
@@ -214,15 +214,15 @@ bookmark_299_robb_stark={
 			invert=no
 		}
  {
-			hash=1500963499
-			invert=no
-		}
- {
 			hash=681013727
 			invert=no
 		}
  {
 			hash=1563190100
+			invert=no
+		}
+ {
+			hash=4248726513
 			invert=no
 		}
  }

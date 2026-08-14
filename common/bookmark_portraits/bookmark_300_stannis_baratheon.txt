@@ -2,7 +2,7 @@
 # History database id:Baratheon_3
 bookmark_300_stannis_baratheon={
 	type=male
-	id=96884
+	id=118681
 	random_seed=4220886731
 	age=0.360000
 	genes={ 		hair_color={ 0 244 0 244 }
@@ -13,7 +13,7 @@ bookmark_300_stannis_baratheon={
  		gene_chin_width={ "chin_width_neg" 142 "chin_width_neg" 142 }
  		gene_eye_angle={ "eye_angle_neg" 121 "eye_angle_neg" 121 }
  		gene_eye_depth={ "eye_depth_pos" 160 "eye_depth_pos" 160 }
- 		gene_eye_height={ "eye_height_pos" 167 "eye_height_pos" 167 }
+ 		gene_eye_height={ "eye_height_pos" 155 "eye_height_pos" 167 }
  		gene_eye_distance={ "eye_distance_pos" 86 "eye_distance_pos" 86 }
  		gene_eye_shut={ "eye_shut_pos" 185 "eye_shut_pos" 185 }
  		gene_forehead_angle={ "forehead_angle_neg" 103 "forehead_angle_neg" 103 }
@@ -34,7 +34,7 @@ bookmark_300_stannis_baratheon={
  		gene_mouth_corner_height={ "mouth_corner_height_pos" 118 "mouth_corner_height_pos" 118 }
  		gene_mouth_forward={ "mouth_forward_neg" 137 "mouth_forward_neg" 137 }
  		gene_mouth_height={ "mouth_height_neg" 155 "mouth_height_neg" 155 }
- 		gene_mouth_width={ "mouth_width_neg" 97 "mouth_width_neg" 97 }
+ 		gene_mouth_width={ "mouth_width_neg" 119 "mouth_width_neg" 97 }
  		gene_mouth_upper_lip_size={ "mouth_upper_lip_size_neg" 75 "mouth_upper_lip_size_neg" 75 }
  		gene_mouth_lower_lip_size={ "mouth_lower_lip_size_pos" 97 "mouth_lower_lip_size_pos" 97 }
  		gene_mouth_open={ "mouth_open_neg" 36 "mouth_open_neg" 36 }
@@ -50,7 +50,7 @@ bookmark_300_stannis_baratheon={
  		gene_bs_ear_size={ "ear_size_pos" 21 "ear_size_pos" 21 }
  		gene_bs_eye_corner_depth={ "eye_corner_depth_pos" 229 "eye_corner_depth_pos" 229 }
  		gene_bs_eye_fold_shape={ "eye_fold_shape_neg" 93 "eye_fold_shape_neg" 93 }
- 		gene_bs_eye_size={ "eye_size_neg" 55 "eye_size_neg" 55 }
+ 		gene_bs_eye_size={ "eye_size_neg" 75 "eye_size_neg" 55 }
  		gene_bs_eye_upper_lid_size={ "eye_upper_lid_size_pos" 33 "eye_upper_lid_size_pos" 33 }
  		gene_bs_forehead_brow_curve={ "forehead_brow_curve_neg" 145 "forehead_brow_curve_neg" 145 }
  		gene_bs_forehead_brow_forward={ "forehead_brow_forward_pos" 145 "forehead_brow_forward_pos" 145 }
@@ -63,8 +63,8 @@ bookmark_300_stannis_baratheon={
  		gene_bs_mouth_lower_lip_pad={ "mouth_lower_lip_pad_neg" 17 "mouth_lower_lip_pad_neg" 17 }
  		gene_bs_mouth_lower_lip_width={ "mouth_lower_lip_width_neg" 73 "mouth_lower_lip_width_neg" 73 }
  		gene_bs_mouth_philtrum_def={ "mouth_philtrum_def_pos" 130 "mouth_philtrum_def_pos" 130 }
- 		gene_bs_mouth_philtrum_shape={ "mouth_philtrum_shape_neg" 5 "mouth_philtrum_shape_neg" 5 }
- 		gene_bs_mouth_philtrum_width={ "mouth_philtrum_width_pos" 1 "mouth_philtrum_width_pos" 1 }
+ 		gene_bs_mouth_philtrum_shape={ "mouth_philtrum_shape_pos" 35 "mouth_philtrum_shape_neg" 5 }
+ 		gene_bs_mouth_philtrum_width={ "mouth_philtrum_width_neg" 23 "mouth_philtrum_width_pos" 1 }
  		gene_bs_mouth_upper_lip_def={ "mouth_upper_lip_def_pos" 122 "mouth_upper_lip_def_pos" 122 }
  		gene_bs_mouth_upper_lip_full={ "mouth_upper_lip_full_neg" 15 "mouth_upper_lip_full_neg" 15 }
  		gene_bs_mouth_upper_lip_profile={ "mouth_upper_lip_profile_pos" 67 "mouth_upper_lip_profile_pos" 67 }
@@ -96,9 +96,9 @@ bookmark_300_stannis_baratheon={
  		expression_forehead_wrinkles={ "forehead_wrinkles_02" 188 "forehead_wrinkles_02" 188 }
  		expression_other={ "nose_wrinkles_01" 0 "nose_wrinkles_01" 0 }
  		complexion={ "complexion_9" 0 "complexion_9" 0 }
- 		gene_height={ "normal_height" 150 "normal_height" 150 }
- 		gene_bs_body_type={ "body_fat_head_fat_full" 131 "body_fat_head_fat_full" 131 }
- 		gene_bs_body_shape={ "body_shape_triangle_half" 84 "body_shape_triangle_half" 15 }
+ 		gene_height={ "normal_height" 145 "normal_height" 150 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 131 "body_fat_head_fat_full" 131 }
+ 		gene_bs_body_shape={ "body_shape_triangle_half" 64 "body_shape_triangle_half" 10 }
  		gene_bs_bust={ "bust_clothes" 17 "bust_shape_1_half" 22 }
  		gene_age={ "old_2" 218 "old_2" 218 }
  		gene_eyebrows_shape={ "avg_spacing_high_thickness" 255 "avg_spacing_high_thickness" 255 }
@@ -164,7 +164,7 @@ bookmark_300_stannis_baratheon={
  		gene_bs_nose_septum_width={ "nose_septum_width_pos" 2 "nose_septum_width_pos" 2 }
  		gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 71 "lower_lip_profile" 71 }
  		gene_bs_eye_outer_width={ "eye_outer_width" 11 "eye_outer_width" 11 }
- 		gene_bs_head_asymmetry_1={ "head_asymmetry_10" 111 "head_asymmetry_10" 111 }
+ 		gene_bs_head_asymmetry_1={ "head_asymmetry_10" 40 "head_asymmetry_10" 40 }
  		gene_bs_mouth_center_curve={ "mouth_center_curve_max" 0 "mouth_center_curve_max" 0 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 132 "eyebrow_straight" 132 }
  		gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
@@ -179,11 +179,11 @@ bookmark_300_stannis_baratheon={
  		face_detail_eye_upper_lid_def={ "upper_lid_def" 138 "upper_lid_def" 138 }
  		gene_eyebrow_inner_width={ "eyebrow_inner_width_min" 146 "eyebrow_inner_width_min" 146 }
  		gene_bs_eye_lower_lid_size={ "eye_lower_lid_size" 0 "eye_lower_lid_size" 0 }
- 		gene_bs_eye_shape={ "eye_shape_01" 0 "eye_shape_01" 0 }
+ 		gene_bs_eye_shape={ "eye_shape_01" 26 "eye_shape_01" 0 }
  		gene_no_portrait={ "normal_portrait" 127 "normal_portrait" 127 }
  		hair_aging={ "vanilla_hair_aging" 0 "vanilla_hair_aging" 0 }
  		legwear={ "agot_boots_legwear" 169 "all_legwear" 0 }
- 		beards={ "no_beard" 0 "no_beard" 0 }
+ 		beards={ "all_beards" 46 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 35 "all_hairstyles" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
@@ -201,6 +201,7 @@ bookmark_300_stannis_baratheon={
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "agot_historic_characters" 56 "most_clothes" 0 }
  		headgear={ "agot_crowns" 33 "no_headgear" 0 }
+ 		clothes_hoods={ "hoods" 78 "no_clothes_hood" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
@@ -223,6 +224,10 @@ bookmark_300_stannis_baratheon={
 		}
  {
 			hash=1563190100
+			invert=no
+		}
+ {
+			hash=2793867254
 			invert=no
 		}
  }

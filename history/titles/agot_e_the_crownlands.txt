@@ -1318,7 +1318,7 @@ c_brownhollow = {
 	8136.1.1 = {
 		holder = Brownhollow_21
 	}
-	8183.1.1 = {
+	8178.1.1 = {
 		holder = Brownhollow_27
 	}
 	8193.1.1 = {

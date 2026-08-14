@@ -2,7 +2,7 @@
 # History database id:Baratheon_6
 bookmark_299_myrcella_baratheon={
 	type=girl
-	id=103471
+	id=126379
 	random_seed=2672320258
 	age=0.090000
 	genes={ 		hair_color={ 181 51 198 28 }

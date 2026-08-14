@@ -2,7 +2,7 @@
 # History database id:Targaryen_29
 bookmark_2bc_rhaenys_targaryen={
 	type=female
-	id=33294
+	id=42762
 	random_seed=3624556101
 	age=0.220000
 	genes={ 		hair_color={ 43 14 43 14 }
@@ -97,8 +97,8 @@ bookmark_2bc_rhaenys_targaryen={
  		expression_other={ "cheek_wrinkles_both_01" 40 "cheek_wrinkles_both_01" 40 }
  		complexion={ "complexion_38" 192 "complexion_38" 192 }
  		gene_height={ "normal_height" 142 "normal_height" 142 }
- 		gene_bs_body_type={ "body_fat_head_fat_low" 130 "body_fat_head_fat_low" 130 }
- 		gene_bs_body_shape={ "body_shape_hourglass_half" 110 "body_shape_average" 0 }
+ 		gene_bs_body_type={ "body_fat_head_fat_low" 137 "body_fat_head_fat_low" 130 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_half" 57 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 101 "bust_shape_3_half" 127 }
  		gene_age={ "old_beauty_1" 3 "old_beauty_1" 3 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 155 "avg_spacing_lower_thickness" 155 }
@@ -109,7 +109,7 @@ bookmark_2bc_rhaenys_targaryen={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 35 "normal_eyelashes" 0 }
+ 		eyelashes_accessory={ "dark_eyelashes" 19 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -184,7 +184,7 @@ bookmark_2bc_rhaenys_targaryen={
  		hair_aging={ "late_hair_aging" 124 "late_hair_aging" 124 }
  		gene_beauty_details={ "beauty_details" 25 "beauty_details" 0 }
  		legwear={ "western_common_legwear" 219 "all_legwear" 0 }
- 		beards={ "ep2_beards" 61 "no_beard" 0 }
+ 		beards={ "western_beards_curly" 49 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "all_hairstyles" 119 "all_hairstyles" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
@@ -206,6 +206,7 @@ bookmark_2bc_rhaenys_targaryen={
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "western_high_nobility_clothes" 142 "most_clothes" 0 }
  		headgear={ "agot_crowns" 3 "no_headgear" 0 }
+ 		clothes_hoods={ "hoods" 62 "no_clothes_hood" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }
  }

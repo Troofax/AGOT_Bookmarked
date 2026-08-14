@@ -6,14 +6,17 @@
 ### Fire and Blood
 ###
 Targaryen_13_A = {
-	name = Maegor
+	name = Maegor # a lord
 	dynasty = dynn_Targaryen
+
+	dna = Targaryen_13_A
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	7821.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_3
 	}
@@ -38,10 +41,15 @@ Targaryen_13_B = {
 	# dynasty = dynn_Targaryen # Family-Tree fix, consider making dummy dynasty just for her
 	female = yes
 
+	dna = Targaryen_13_B
+
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
-	7825.1.1 = { birth = yes }
+	7825.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	7838.1.1 = { trait = dragonrider } # Anogaros (nc)
 	7889.1.1 = { death = yes }
 }
@@ -54,11 +62,14 @@ Targaryen_13_C = {
 	father = Targaryen_13_A
 	mother = Targaryen_13_B
 
+	dna = Targaryen_13_C
+
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	7842.4.23 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_4
 		add_character_flag = canon_status_semicanon
@@ -138,11 +149,14 @@ Targaryen_13_D = {
 	father = Targaryen_13_A
 	mother = Targaryen_13_B
 
+	dna = Targaryen_13_D
+
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	7851.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_neutral_silver_hair
 		make_trait_inactive = purple_eyes_1
 		add_character_flag = canon_status_mentioned
@@ -1536,9 +1550,8 @@ Targaryen_32 = {
 	8054.1.1 = {
 		effect = {
 			remove_trait = incestuous # Doctrine of Exceptionalism
-			if = {
-				limit = { character:Farman_23 = { is_alive = yes } }
-				remove_relation_lover = character:Farman_23 # Elissa Farman
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Farman_23 # Elissa Farman
 			}
 			if = {
 				limit = { character:Staunton_15 = { is_alive = yes } }
@@ -1802,9 +1815,8 @@ Targaryen_35 = {
 	}
 	8087.1.1 = { # First Quarrel
 		effect = {
-			if = {
-				limit = { character:Targaryen_36 = { is_alive = yes } }
-				remove_relation_lover = character:Targaryen_36 # Alysanne Targaryen
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Targaryen_36 # Alysanne Targaryen
 			}
 		}
 	}
@@ -2032,7 +2044,7 @@ Targaryen_41 = {
 
 	# disallow_random_traits = yes # FORBIDDEN - use agot_scripted_effects_posthistory_effects instead
 
-	8042.1.1 = {
+	8042.11.15 = {
 		birth = yes
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_8
@@ -2048,10 +2060,6 @@ Targaryen_41 = {
 				add_trait = rowdy
 			}
 			add_trait = twin
-		}
-	}
-	8042.3.1 = {
-		effect = { # Aegon Uncrowned
 			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_Targaryen_33 }
 		}
 	}
@@ -2101,7 +2109,7 @@ Targaryen_42 = {
 
 	disallow_random_traits = yes
 
-	8042.1.1 = {
+	8042.11.15 = {
 		birth = yes
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_8
@@ -2114,11 +2122,7 @@ Targaryen_42 = {
 				add_trait = rowdy
 			}
 		}
-	}
-	8042.3.1 = {
-		effect = { # Aegon Uncrowned
-			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_Targaryen_33 }
-		}
+		agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_Targaryen_33 }
 	}
 	8047.1.1 = {
 		effect = {
@@ -2641,17 +2645,14 @@ Targaryen_51 = {
 	8084.1.1 = {
 		effect = {
 			add_trait = silent_sister
-			if = {
-				limit = { character:Beesbury_22 = { is_alive = yes } }
-				remove_relation_lover = character:Beesbury_22 # Braxton Beesbury
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Beesbury_22 # Braxton Beesbury
 			}
-			if = {
-				limit = { character:Mooton_27 = { is_alive = yes } }
-				remove_relation_lover = character:Mooton_27 # Jonah Mooton
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Mooton_27 # Jonah Mooton
 			}
-			if = {
-				limit = { character:Connington_27 = { is_alive = yes } }
-				remove_relation_lover = character:Connington_27 # Roy Connington
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Connington_27 # Roy Connington
 			}
 		}
 	}
@@ -3317,9 +3318,8 @@ Targaryen_61 = {
 	}
 	8120.1.1 = {
 		effect = {
-			if = {
-				limit = { character:Targaryen_hh_3 = { is_alive = yes } }
-				remove_relation_lover = character:Targaryen_hh_3 # Mysaria the White Worm
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Targaryen_hh_3 # Mysaria the White Worm
 			}
 		}
 	}
@@ -3512,9 +3512,11 @@ Targaryen_63 = {
 					reason = lover_rhaenyra_harwin
 				}
 			}
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Cole_11 # Criston Cole
+			}
 			if = {
 				limit = { character:Cole_11 = { is_alive = yes } }
-				remove_relation_lover = character:Cole_11 # Criston Cole
 				set_relation_rival = {
 					target = character:Cole_11 # Criston Cole
 					reason = rival_rhaenyra_criston
@@ -3849,7 +3851,21 @@ Targaryen_65 = {
 		trait = lustful
 		trait = drunkard
 	}
-	8129.3.3 = { trait = adulterer }
+	8129.3.3 = { 
+		trait = adulterer
+		effect = {
+			if = {
+				limit = { character:Hightower_92 = { is_alive = yes } }
+				create_alliance = character:Hightower_92 # Ormund Hightower
+				character:Hightower_92 = {
+					add_opinion = {
+						target = ROOT
+						modifier = event_negotiated_alliance_opinion
+					}
+				}
+			}
+		}
+	}
 	8129.3.30 = {
 		effect = {
 			if = {
@@ -5281,7 +5297,7 @@ Targaryen_83 = {
 			value = 65
 		}
 	}
-	8194.6.1 = { death = yes }
+	8177.12.1 = { death = yes }
 }
 Targaryen_84 = {
 	name = Rhaena # Canon
@@ -5519,9 +5535,8 @@ Targaryen_88 = {
 					opinion = -40
 				}
 			}
-			if = {
-				limit = { character:Stokeworth_23 = { is_alive = yes } }
-				remove_relation_lover = character:Stokeworth_23 # Falena Stokeworth
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Stokeworth_23 # Falena Stokeworth
 			}
 		}
 		trait = knight
@@ -5545,9 +5560,8 @@ Targaryen_88 = {
 	8159.11.14 = {
 		trait = adulterer
 		effect = {
-			if = {
-				limit = { character:Lowborn_Kings_Landing_3 = { is_alive = yes } }
-				remove_relation_lover = character:Lowborn_Kings_Landing_3 # Merry Megette
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Lowborn_Kings_Landing_3 # Merry Megette
 			}
 			agot_safe_reveal_lovers_history_effect = yes
 		}
@@ -5555,9 +5569,8 @@ Targaryen_88 = {
 	8161.6.9 = {
 		employer = Targaryen_82 # Baelor Targaryen
 		effect = {
-			if = {
-				limit = { character:Vaith_45 = { is_alive = yes } }
-				remove_relation_lover = character:Vaith_45 # Cassella Vaith
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Vaith_45 # Cassella Vaith
 			}
 			if = {
 				limit = { character:Otherys_56_A = { is_alive = yes } }
@@ -5567,9 +5580,8 @@ Targaryen_88 = {
 	}
 	8171.1.20 = {
 		effect = {
-			if = {
-				limit = { character:Otherys_56_A = { is_alive = yes } }
-				remove_relation_lover = character:Otherys_56_A # Bellegere Otherys
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Otherys_56_A # Bellegere Otherys
 			}
 		}
 	}
@@ -5580,13 +5592,13 @@ Targaryen_88 = {
 				set_relation_lover = character:Bracken_76 # Barba Bracken
 			}
 			agot_safe_reveal_lovers_history_effect = yes
+			change_current_weight = 20
 		}
 	}
 	8172.12.1 = {
 		effect = {
-			if = {
-				limit = { character:Bracken_76 = { is_alive = yes } }
-				remove_relation_lover = character:Bracken_76 # Barba Bracken
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Bracken_76 # Barba Bracken
 			}
 			if = {
 				limit = { character:Blackwood_81 = { is_alive = yes } }
@@ -5597,15 +5609,16 @@ Targaryen_88 = {
 	}
 	8176.1.1 = {
 		give_nickname = nick_agot_historical_the_unworthy
-		trait = infirm
 		trait = gout_ridden
-		effect = { add_tyranny = medium_tyranny_gain }
+		effect = { 
+			add_tyranny = medium_tyranny_gain 
+			change_current_weight = 30
+		}
 	}
 	8177.3.1 = {
 		effect = {
-			if = {
-				limit = { character:Blackwood_81 = { is_alive = yes } }
-				remove_relation_lover = character:Blackwood_81 # Melissa Blackwood
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Blackwood_81 # Melissa Blackwood
 			}
 			if = {
 				limit = { character:Bracken_75 = { is_alive = yes } }
@@ -5617,22 +5630,21 @@ Targaryen_88 = {
 	8178.6.1 = {
 		trait = lovers_pox
 		effect = {
-			if = {
-				limit = { character:Bracken_75 = { is_alive = yes } }
-				remove_relation_lover = character:Bracken_75 # Bethany Bracken
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Bracken_75 # Bethany Bracken
 			}
 			if = {
 				limit = { character:Lothston_14 = { is_alive = yes } }
 				set_relation_lover = character:Lothston_14 # Jeyne Lothston
 			}
 			agot_safe_reveal_lovers_history_effect = yes
+			change_current_weight = 20
 		}
 	}
 	8179.1.1 = {
 		effect = {
-			if = {
-				limit = { character:Lothston_14 = { is_alive = yes } }
-				remove_relation_lover = character:Lothston_14 # Jeyne Lothston
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Lothston_14 # Jeyne Lothston
 			}
 		}
 	}
@@ -5643,9 +5655,12 @@ Targaryen_88 = {
 				set_relation_lover = character:Sellos_56 # Serenei of Lys
 			}
 			agot_safe_reveal_lovers_history_effect = yes
+			change_current_weight = 30
 		}
 	}
+	8183.4.1 = { trait = infirm }
 	8184.1.1 = {
+		make_trait_inactive = historical_overweight_100
 		make_trait_inactive = equipped_crown_aegon_iv_artifact
 		death = { death_reason = death_incapable }
 	}
@@ -5851,12 +5866,13 @@ Targaryen_91 = {
 	martial = 2
 	diplomacy = 7
 	intrigue = 3
-	stewardship = 5
+	stewardship = 11
 	learning = 6
 	prowess = 3
 
 	religion = fots_seven
 	culture = high_valyrian
+	sexuality = heterosexual
 
 	father = Targaryen_88
 	mother = Targaryen_90
@@ -5877,6 +5893,8 @@ Targaryen_91 = {
 		make_trait_inactive = purple_eyes_7
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_not_homosexual
+		add_character_flag = sexuality_ensure_not_asexual
 	}
 	8162.2.1 = {
 		effect = {
@@ -5886,9 +5904,23 @@ Targaryen_91 = {
 	8170.1.2 = {
 		add_spouse = Martell_79 # Myriah Martell
 		employer = Targaryen_82 # Baelor Targaryen
+		effect = {
+			if = {
+				limit = {
+					character:Martell_79 = { is_alive = yes }
+					character:Martell_80 = { is_alive = yes }
+				}
+				create_alliance = { # By marriage
+					target = title:e_dorne.holder # Maron Martell
+					allied_through_owner = ROOT # Daeron II Targaryen
+					allied_through_target = character:Martell_79 # Myriah Martell
+				}
+			}
+		}
 	}
 	8171.1.1 = { trait = knight }
 	8172.3.28 = {
+		trait = shrewd
 		agot_safe_buy_scholar_perk_history_effect = yes
 		trait = scholar
 		effect = {
@@ -5917,7 +5949,15 @@ Targaryen_91 = {
 			}
 		}
 	}
-	8177.1.1 = { trait = disputed_heritage }
+	8177.1.1 = { 
+		trait = disputed_heritage
+		effect = {
+			if = {
+				limit = { character:Martell_79 = { is_alive = yes } }
+				set_relation_lover = character:Martell_79 # Myriah Martell 
+			}
+		} 
+	}
 	8187.6.1 = {
 		effect = {
 			if = {
@@ -5963,6 +6003,7 @@ Targaryen_132 = {
 	dynasty = dynn_Targaryen
 	female = yes
 
+	# canon_children_skip
 	dna = Targaryen_132
 
 	religion = fots_seven
@@ -5986,6 +6027,7 @@ Targaryen_133 = {
 	name = Baelon # Mentioned
 	dynasty = dynn_Targaryen
 
+	# canon_children_skip
 	dna = Targaryen_133
 
 	religion = fots_seven
@@ -6258,6 +6300,7 @@ Targaryen_94 = {
 
 	religion = fots_seven
 	culture = high_valyrian
+	sexuality = heterosexual
 
 	# father = Targaryen_88
 	mother = Targaryen_83 # Daena Targaryen
@@ -6289,15 +6332,30 @@ Targaryen_94 = {
 			set_real_father = character:Targaryen_88 # Aegon IV Targaryen
 			add_character_flag = father_aware_of_bastard
 		}
+		add_character_flag = sexuality_ensure_not_homosexual
+		add_character_flag = sexuality_ensure_not_asexual
 	}
-	8172.3.28 = { set_father = character:Targaryen_88 } # Aegon IV Targaryen
+	8171.1.20 = { employer = Targaryen_88 } # Aegon IV Targaryen
 	8176.8.1 = { trait = gregarious }
-	8178.8.1 = { trait = brave }
-	8180.8.1 = { trait = honest }
-	8182.1.1 = {
+	8177.12.1 = { # Daena's death, script revealing the secret no longer triggers after that
 		effect = {
-			agot_safe_betrothal_history_effect = { TARGET = character:Atuhoris_26 } # Rohanne of Tyrosh
+			if = {
+				limit = { NOT = { exists = this.father } }
+				real_father = {
+					add_secret = {
+						type = secret_unmarried_illegitimate_child
+						target = ROOT
+					}
+				}
+			}
 		}
+	}
+	8178.8.1 = { trait = brave }
+	8180.8.1 = { 
+		trait = honest
+		effect = {
+			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Lannister_113 } # Jason Lannister
+		} 
 	}
 	8182.12.11 = { # Aegon gives him Blackfyre
 		trait = knight
@@ -6306,10 +6364,16 @@ Targaryen_94 = {
 			agot_knighted_char_history_effect = { KNIGHT = character:Targaryen_88 } # Aegon IV Targaryen
 			add_prestige_level = 1
 			agot_remove_bastard_nickname_effect = yes #Removes surname
+			set_father = character:Targaryen_88 # Aegon IV Targaryen
 		}
 		trait = ambitious
 		dynasty_house = house_Blackfyre
 		give_nickname = nick_agot_historical_the_black_dragon
+	}
+	8183.2.1 = {
+		effect = {
+			agot_safe_betrothal_history_effect = { TARGET = character:Atuhoris_26 } # Rohanne of Tyrosh
+		}
 	}
 	8184.1.1 = { # Legitimised on death bed
 		remove_character_flag = unlegitimize_on_load
@@ -6432,8 +6496,12 @@ Targaryen_95 = {
 		employer = Bracken_73 # Kennoth Bracken
 	}
 	8178.6.1 = { employer = Bracken_77 } # Harys Bracken
-	8181.6.1 = { trait = ambitious }
-	8182.1.1 = { trait = brave }
+	8181.6.1 = { trait = brave }
+	8182.1.1 = {
+		effect = {
+			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Bracken_71 } # Othan Blackmane
+		} 
+	}
 	8184.1.1 = {
 		remove_character_flag = unlegitimize_on_load
 		effect = {
@@ -6447,6 +6515,7 @@ Targaryen_95 = {
 			}
 		}
 	}
+	8185.1.1 = { trait = ambitious }
 	8188.11.1 = {
 		trait = knight
 		agot_safe_buy_strategist_perk_history_effect = yes
@@ -6456,6 +6525,7 @@ Targaryen_95 = {
 		trait = organizer
 		effect = {
 			agot_set_signature_weapon_history_effect = { WEAPON = flag:sword_and_shield }
+			agot_knighted_char_history_effect = { KNIGHT = character:Bracken_71 } # Othan Blackmane
 			if = {
 				limit = { game_start_date < 8188.11.1 }
 				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_95 COA_KEY = Bittersteel_personal_coa }
@@ -6508,7 +6578,7 @@ Targaryen_105 = {
 	female = yes
 	dna = Targaryen_105
 
-	religion = fots_seven
+	religion = old_gods_wnw
 	culture = westerosi_valyrian
 
 	father = Targaryen_88
@@ -6539,7 +6609,7 @@ Targaryen_106 = {
 	female = yes
 	dna = Targaryen_106
 
-	religion = fots_seven
+	religion = old_gods_wnw
 	culture = westerosi_valyrian
 
 	father = Targaryen_88
@@ -6820,6 +6890,11 @@ Targaryen_107 = {
 	8176.8.1 = { trait = generous }
 	8178.8.1 = { trait = compassionate }
 	8180.8.1 = { trait = just }
+	8181.1.1 = {
+		effect = {
+			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Velaryon_52 } # Corlys Velaryon
+		}
+	}
 	8182.1.1 = {
 		trait = brave
 		effect = {
@@ -6833,6 +6908,7 @@ Targaryen_107 = {
 		trait = knight
 		trait = aggressive_attacker
 		effect = {
+			agot_knighted_char_history_effect = { KNIGHT = character:Velaryon_52 } # Corlys Velaryon
 			agot_set_signature_weapon_history_effect= { WEAPON = flag:sword }
 		}
 	}
@@ -7011,7 +7087,12 @@ Targaryen_110 = {
 		add_character_flag = sexuality_ensure_not_homosexual
 		add_character_flag = sexuality_ensure_not_asexual
 	}
-	8182.8.1 = { trait = stubborn }
+	8182.8.1 = { 
+		trait = stubborn
+		effect = {
+			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Darry_48 } # Kenric Darry
+		} 
+	}
 	#8184.1.1 = { trait = scarred } # Pox scars
 	8184.8.1 = { trait = diligent } # Energetic
 	8188.1.1 = {
@@ -7025,6 +7106,7 @@ Targaryen_110 = {
 		trait = knight
 		agot_create_personal_coa_for_historical_ai = { ACTOR = character:Targaryen_110 COA_KEY = maekar_targaryen_personal_arms }
 		effect = {
+			agot_knighted_char_history_effect = { KNIGHT = character:Darry_48 } # Kenric Darry
 			agot_set_signature_weapon_history_effect= { WEAPON = flag:mace }
 		}
 	}
@@ -7567,9 +7649,8 @@ Targaryen_121 = {
 	}
 	8220.1.1 = {
 		effect = {
-			if = {
-				limit = { character:Tall_1 = { is_alive = yes } }
-				remove_relation_lover = character:Tall_1 # Duncan the Tall
+			agot_safe_remove_relation_lover = {
+				TARGET = character:Tall_1 # Duncan the Tall
 			}
 		}
 	}
@@ -11950,7 +12031,17 @@ Velaryon_54 = {
 		make_trait_inactive = seaglass_eyes
 		make_trait_inactive = scripted_appearance
 	}
-	8190.1.1 = { trait = knight }
+	8181.1.1 = {
+		effect = {
+			agot_set_as_ward_and_squire_history_effect = { KNIGHT = character:Bar_Emmon_34 } # Kaeron Bar Emmon
+		}
+	}
+	8190.1.1 = { 
+		effect = {
+			agot_knighted_char_history_effect = { KNIGHT = character:Bar_Emmon_34 } # Kaeron Bar Emmon
+		}
+		trait = knight 
+	}
 	8201.1.1 = { add_spouse = Staunton_35_B } # Keleria Staunton
 	8209.1.1 = {
 		effect = { # Master of Ships (nc)
@@ -13506,6 +13597,13 @@ Celtigar_29 = {
 		add_character_flag = canon_status_semicanon
 	}
 	8140.1.1 = { trait = knight }
+	8150.1.1 = {
+		trait = lifestyle_mariner
+		add_trait_xp = {
+			trait = lifestyle_mariner
+			value = trait_second_level
+		}
+	}
 	8174.9.1 = {
 		death = { death_reason = death_drowned } # Sunk with his ship
 	}
@@ -13637,6 +13735,13 @@ Celtigar_33 = {
 	8151.1.1 = {
 		trait = knight
 		give_nickname = nick_agot_historical_the_crackclaw
+	}
+	8154.1.1 = {
+		trait = lifestyle_mariner
+		add_trait_xp = {
+			trait = lifestyle_mariner
+			value = trait_second_level
+		}
 	}
 	8203.1.1 = { death = yes }
 }
@@ -15289,13 +15394,18 @@ Scales_40 = {
 	name = Edwell
 	dynasty_house = house_Scales
 
+	dna = Scales_40
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_39
 	mother = Ross_29
 
-	8036.1.1 = { birth = yes }
+	8036.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8053.1.1 = { trait = knight }
 	8054.1.1 = { add_spouse = Asrig_55 } # Colianne Asrig
 	8081.1.1 = { death = yes }
@@ -15323,13 +15433,18 @@ Scales_46 = {
 	dynasty_house = house_Scales
 	female = yes
 
+	dna = Scales_46
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_40
 	mother = Asrig_55
 
-	8055.1.1 = { birth = yes }
+	8055.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8106.1.1 = {
 		death = { death_reason = death_accident }
 	}
@@ -15339,13 +15454,18 @@ Scales_47 = {
 	dynasty_house = house_Scales
 	female = yes
 
+	dna = Scales_47
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_40
 	mother = Asrig_55
 
-	8058.1.1 = { birth = yes }
+	8058.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8116.1.1 = {
 		trait = pneumonic
 		death = { death_reason = death_pneumonic }
@@ -15355,13 +15475,18 @@ Scales_48 = {
 	name = Benethon # a lord
 	dynasty_house = house_Scales
 
+	dna = Scales_48
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_40
 	mother = Asrig_55
 
-	8060.1.1 = { birth = yes }
+	8060.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8076.1.1 = { trait = knight }
 	8082.1.1 = { add_spouse = Dripps_38 } # Merei Dripps
 	8122.1.1 = {
@@ -15373,14 +15498,36 @@ Scales_49 = {
 	name = Aloran # a lord
 	dynasty_house = house_Scales
 
+	dna = Scales_49
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_48
 	mother = Dripps_38
 
-	8083.1.1 = { birth = yes }
+	trait = education_diplomacy_3
+	trait = patient
+	trait = gregarious
+	trait = calm
+	trait = forgiving
+	trait = charming
+
+	disallow_random_traits = yes
+
+	8083.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8102.1.1 = { trait = knight }
+	8104.1.1 = {
+		trait = lifestyle_hunter
+		add_trait_xp = {
+			trait = lifestyle_hunter
+			track = hunter
+			value = trait_second_level
+		}
+	}
 	8104.1.1 = { add_spouse = Tempers_60 } # Tynalla Tempers
 	8133.1.1 = {
 		death = { death_reason = death_tumultuous_guts }
@@ -15391,13 +15538,18 @@ Scales_50 = {
 	dynasty_house = house_Scales
 	female = yes
 
+	dna = Scales_50
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_48
 	mother = Dripps_38
 
-	8085.1.1 = { birth = yes }
+	8085.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8112.1.1 = { add_matrilineal_spouse = Bettley_63 } # Lyman Bettley
 	8142.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -15409,14 +15561,34 @@ Scales_51 = {
 	dynasty_house = house_Scales
 	female = yes
 
+	dna = Scales_51
+
 	religion = fots_seven
 	culture = westerosi_valyrian
+	sexuality = bisexual
 
 	father = Scales_49
 	mother = Tempers_60
 
-	8108.1.1 = { birth = yes }
-	8134.1.1 = { death = yes }
+	trait = education_learning_3
+	trait = beauty_good_1
+	trait = inquisitive
+	trait = gregarious
+	trait = trusting
+	trait = pensive
+
+	disallow_random_traits = yes
+
+	8108.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
+	8118.1.1 = { trait = loyal }
+	8129.1.1 = { trait = confider }
+	8134.1.1 = {
+		trait = lifestyle_hunter
+		death = { death_reason = death_roe }
+	}
 }
 ### Issue of Marell
 Scales_43 = {
@@ -15442,13 +15614,18 @@ Scales_52 = {
 	dynasty_house = house_Scales
 	female = yes
 
+	dna = Scales_52
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Bettley_63
 	mother = Scales_50
 
-	8114.1.1 = { birth = yes }
+	8114.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8167.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -15457,13 +15634,18 @@ Scales_53 = {
 	name = Orys
 	dynasty_house = house_Scales
 
+	dna = Scales_53
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Bettley_63
 	mother = Scales_50
 
-	8116.1.1 = { birth = yes }
+	8116.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8134.1.1 = { trait = knight }
 	8137.1.1 = {
 		death = { death_reason = death_accident }
@@ -15474,6 +15656,8 @@ Scales_54 = {
 	dynasty_house = house_Scales
 	female = yes
 
+	dna = Scales_54
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
@@ -15482,7 +15666,10 @@ Scales_54 = {
 
 	trait = twin
 
-	8120.1.1 = { birth = yes }
+	8120.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8169.1.1 = {
 		death = { death_reason = death_choked }
 	}
@@ -15491,6 +15678,8 @@ Scales_55 = {
 	name = Terrence # a lord
 	dynasty_house = house_Scales
 
+	dna = Scales_55
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
@@ -15499,7 +15688,10 @@ Scales_55 = {
 
 	trait = twin
 
-	8120.1.1 = { birth = yes }
+	8120.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8136.1.1 = { trait = knight }
 	8145.1.1 = { add_spouse = Waterman_45 } # Jeyne Waterman
 	8173.1.1 = {
@@ -15511,13 +15703,18 @@ Scales_56 = {
 	name = Alyn # a lord
 	dynasty_house = house_Scales
 
+	dna = Scales_56
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_55
 	mother = Waterman_45
 
-	8149.1.1 = { birth = yes }
+	8149.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8165.1.1 = { trait = knight }
 	8178.1.1 = { add_spouse = Stonecrab_37 } # Rylene Stonecrab
 	8214.1.1 = {
@@ -15667,13 +15864,18 @@ Scales_79 = {
 	name = Jon
 	dynasty_house = house_Scales
 
+	dna = Scales_79
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_61
 	mother = Warl_59
 
-	8195.1.1 = { birth = yes }
+	8195.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8213.1.1 = { trait = knight }
 	8245.1.1 = { death = yes }
 }
@@ -15706,13 +15908,18 @@ Scales_81 = {
 	name = Monterys # married Meria Clarisse
 	dynasty_house = house_Scales
 
+	dna = Scales_81
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_61
 	mother = Warl_59
 
-	8200.1.1 = { birth = yes }
+	8200.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8219.1.1 = { trait = knight }
 	8268.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -15722,13 +15929,18 @@ Scales_82 = {
 	name = Terrence
 	dynasty_house = house_Scales
 
+	dna = Scales_82
+
 	religion = fots_seven
 	culture = westerosi_valyrian
 
 	father = Scales_61
 	mother = Warl_59
 
-	8203.1.1 = { birth = yes }
+	8203.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
 	8220.1.1 = { trait = knight }
 	8265.1.1 = {
 		death = { death_reason = death_treatment }
@@ -16398,52 +16610,6 @@ Kingsguard_11 = {
 		trait = kingsguard # Successor: Long Tom Costayne
 		make_unprunable = yes
 		death = { death_reason = death_accident }
-	}
-}
-Kingsguard_10 = {
-	name = Aleryn # Mentioned, a Kingsguard
-
-	religion = fots_seven
-	culture = crownlander
-
-	trait = education_martial_1
-	trait = ambitious
-	trait = vengeful
-	trait = brave
-	trait = deceitful
-	trait = rowdy
-
-	disallow_random_traits = yes
-
-	8101.1.1 = {
-		birth = yes
-		add_character_flag = canon_status_mentioned
-	}
-	8120.1.1 = { trait = lifestyle_blademaster }
-	8127.1.1 = { trait = knight }
-	8129.3.3 = { employer = Targaryen_65 } # Aegon II Targaryen
-	8130.12.25 = {
-		effect = {
-			agot_join_kingsguard_char_history_effect = { # Aegon's late appointment
-				KING = character:Targaryen_65 # Aegon II Targaryen
-			}
-		}
-	}
-	8131.1.28 = {
-		trait = nightswatch_historical
-		effect = {
-			agot_leave_kingsguard_char_history_effect = yes # Hour of the Wolf
-			agot_join_nightswatch_history_effect = {
-				ORDER = ranger
-				CASTLE = title:c_the_shadow_tower
-				NW_JOIN_AGE = 30
-			}
-		}
-	}
-	8155.1.1 = {
-		trait = former_kingsguard
-		make_unprunable = yes
-		death = yes
 	}
 }
 ### Relatives
@@ -18863,9 +19029,9 @@ Knight_Kings_Landing_16 = {
 		employer = Targaryen_60 # Viserys I Targaryen
 	}
 	8129.3.3 = { employer = Targaryen_65 } # Aegon II Targaryen
-	8129.9.14 = {
+	8129.3.30 = {
 		effect = {
-			agot_join_kingsguard_char_history_effect = { # Predecessor: Arryk Cargyll
+			agot_join_kingsguard_char_history_effect = { # Predecessor: Lorent Marbrand
 				KING = character:Targaryen_65 # Aegon II Targaryen
 			}
 		}

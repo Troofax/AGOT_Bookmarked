@@ -2,7 +2,7 @@
 # History database id:Baratheon_4
 bookmark_298_renly_baratheon={
 	type=male
-	id=100255
+	id=122660
 	random_seed=3974839329
 	age=0.220000
 	genes={ 		hair_color={ 0 244 0 244 }
@@ -98,7 +98,7 @@ bookmark_298_renly_baratheon={
  		complexion={ "complexion_12" 0 "complexion_12" 72 }
  		gene_height={ "normal_height" 140 "normal_height" 140 }
  		gene_bs_body_type={ "body_fat_head_fat_full" 131 "body_fat_head_fat_full" 131 }
- 		gene_bs_body_shape={ "body_shape_average" 181 "body_shape_average" 0 }
+ 		gene_bs_body_shape={ "body_shape_average" 64 "body_shape_average" 0 }
  		gene_bs_bust={ "bust_clothes" 80 "bust_shape_1_half" 35 }
  		gene_age={ "old_2" 218 "old_1" 25 }
  		gene_eyebrows_shape={ "avg_spacing_low_thickness" 255 "avg_spacing_low_thickness" 201 }
@@ -109,7 +109,7 @@ bookmark_298_renly_baratheon={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 16 "normal_eyelashes" 0 }
+ 		eyelashes_accessory={ "dark_eyelashes" 18 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -164,7 +164,7 @@ bookmark_298_renly_baratheon={
  		gene_bs_nose_septum_width={ "nose_septum_width_pos" 2 "nose_septum_width_pos" 2 }
  		gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 71 "lower_lip_profile" 71 }
  		gene_bs_eye_outer_width={ "eye_outer_width" 11 "eye_outer_width" 11 }
- 		gene_bs_head_asymmetry_1={ "head_asymmetry_6" 63 "head_asymmetry_10" 111 }
+ 		gene_bs_head_asymmetry_1={ "head_asymmetry_6" 40 "head_asymmetry_10" 40 }
  		gene_bs_mouth_center_curve={ "mouth_center_curve_max" 0 "mouth_center_curve_max" 7 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 132 "eyebrow_straight" 48 }
  		gene_bs_head_shape={ "head_round_shape" 154 "head_round_shape" 0 }
@@ -202,6 +202,7 @@ bookmark_298_renly_baratheon={
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
  		clothes={ "agot_historic_characters" 75 "most_clothes" 0 }
  		headgear={ "agot_crowns" 35 "no_headgear" 0 }
+ 		clothes_hoods={ "hoods" 15 "no_clothes_hood" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
 		props_right={ "marshal_swords" 255 "no_props" 0 }
  }

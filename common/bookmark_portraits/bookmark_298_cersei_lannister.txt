@@ -2,7 +2,7 @@
 # History database id:Lannister_6
 bookmark_298_cersei_lannister={
 	type=female
-	id=97494
+	id=119371
 	random_seed=2377142401
 	age=0.330000
 	genes={ 		hair_color={ 201 10 201 10 }
@@ -98,7 +98,7 @@ bookmark_298_cersei_lannister={
  		complexion={ "complexion_47" 0 "complexion_47" 0 }
  		gene_height={ "normal_height" 130 "normal_height" 130 }
  		gene_bs_body_type={ "body_fat_head_fat_medium" 126 "body_fat_head_fat_medium" 126 }
- 		gene_bs_body_shape={ "body_shape_hourglass_half" 30 "body_shape_hourglass_half" 0 }
+ 		gene_bs_body_shape={ "body_shape_hourglass_half" 48 "body_shape_hourglass_half" 0 }
  		gene_bs_bust={ "bust_clothes" 148 "bust_shape_1_half" 186 }
  		gene_age={ "old_beauty_1" 148 "old_beauty_1" 148 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 143 "avg_spacing_lower_thickness" 143 }
@@ -109,7 +109,7 @@ bookmark_298_cersei_lannister={
  		gene_face_dacals={ "no_face_dacal" 0 "no_face_dacal" 0 }
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
- 		eyelashes_accessory={ "dark_eyelashes" 18 "normal_eyelashes" 0 }
+ 		eyelashes_accessory={ "dark_eyelashes" 14 "normal_eyelashes" 0 }
  		gene_dragon={ "human_body" 0 "human_body" 0 }
  		gene_dragon_shadow={ "no_shadow" 0 "no_shadow" 0 }
  		gene_dragon_saddle={ "no_saddle" 0 "no_saddle" 0 }
@@ -184,7 +184,7 @@ bookmark_298_cersei_lannister={
  		hair_aging={ "late_hair_aging" 127 "late_hair_aging" 127 }
  		gene_beauty_details={ "beauty_details" 25 "beauty_details" 0 }
  		legwear={ "agot_all_legwear" 20 "all_legwear" 0 }
- 		beards={ "ep2_beards" 49 "no_beard" 0 }
+ 		beards={ "no_beard" 189 "no_beard" 0 }
  		cloaks={ "no_cloak" 255 "no_cloak" 0 }
  		hairstyles={ "agot_all_hairstyles" 140 "all_hairstyles" 0 }
  		cosmetics_eyeliner={ "eyeliner_none" 255 "eyeliner_none" 0 }
@@ -204,9 +204,10 @@ bookmark_298_cersei_lannister={
  		gene_bs_cloak_offset3={ "cloak_offset3" 255 "cloak_offset3" 0 }
  		gene_enclosed_helmet={ "enclosed_helmet" 255 "enclosed_helmet" 0 }
  		gene_bs_long_beard={ "long_beard" 255 "" 0 }
- 		clothes={ "agot_all_clothes" 149 "most_clothes" 0 }
+ 		clothes={ "agot_all_clothes" 146 "most_clothes" 0 }
  		headgear={ "no_headgear" 189 "no_headgear" 0 }
  		special_accessories_jewelry={ "pearl_necklace" 255 "no_jewelry" 0 }
+ 		clothes_hoods={ "hoods" 71 "no_clothes_hood" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  }
 	entity={ 2268070609 2268070609 }
