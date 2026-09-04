@@ -819,7 +819,7 @@ Targaryen_28 = {
 	father = Targaryen_26
 	mother = Velaryon_12
 
-	trait = education_martial_2
+	trait = education_martial_3
 	trait = diligent
 	trait = brave
 	trait = arrogant
@@ -1317,13 +1317,6 @@ Targaryen_31 = {
 				limit = { character:Harroway_11 = { is_alive = yes } }
 				set_relation_lover = character:Harroway_11 # Alys Harroway
 			}
-			if = {
-				limit = { character:Tyanna_1 = { is_alive = yes } }
-				set_relation_lover = {
-					target = character:Tyanna_1 # Tyanna of the Tower
-					reason = lover_maegor_tyanna
-				}
-			}
 			agot_safe_reveal_lovers_history_effect = yes
 		}
 	}
@@ -1355,6 +1348,13 @@ Targaryen_31 = {
 			add_tyranny = massive_tyranny_gain
 			remove_trait = wounded_3
 			add_piety = -250
+			if = {
+				limit = { character:Tyanna_1 = { is_alive = yes } }
+				set_relation_lover = {
+					target = character:Tyanna_1 # Tyanna of the Tower
+					reason = lover_maegor_tyanna
+				}
+			}
 		}
 	}
 	8042.9.1 = { # Battle at the Great Fork
@@ -1717,7 +1717,7 @@ Targaryen_35 = {
 	diplomacy = 10
 	intrigue = 8
 	stewardship = 10
-	prowess = 5
+	prowess = 7
 	health = 6
 
 	religion = fots_seven
@@ -1728,7 +1728,7 @@ Targaryen_35 = {
 	mother = Velaryon_24
 
 	trait = education_stewardship_5
-	trait = education_martial_prowess_2
+	trait = education_martial_prowess_3
 	trait = bossy
 
 	disallow_random_traits = yes
@@ -1747,6 +1747,12 @@ Targaryen_35 = {
 	8040.8.1 = {
 		trait = diligent
 		trait = shrewd
+	}
+	8042.3.1 = {
+		employer = Velaryon_20 # Daemon Velaryon
+		effect = {
+			agot_set_as_ward_history_effect = { GUARDIAN = character:Velaryon_24 } # Alyssa Velaryon
+		}
 	}
 	8042.8.1 = { trait = just }
 	8043.11.2 = {
@@ -1883,6 +1889,12 @@ Targaryen_36 = {
 			trait = dragonrider
 			track = dragon_training
 			value = 30
+		}
+	}
+	8042.3.1 = {
+		employer = Velaryon_20 # Daemon Velaryon
+		effect = {
+			agot_set_as_ward_history_effect = { GUARDIAN = character:Velaryon_24 } # Alyssa Velaryon
 		}
 	}
 	8043.11.2 = {
@@ -2211,6 +2223,7 @@ Targaryen_45 = {
 	mother = Targaryen_36
 
 	trait = education_stewardship_3
+	trait = education_martial_prowess_3
 	trait = pensive
 
 	disallow_random_traits = yes
@@ -2295,6 +2308,7 @@ Targaryen_46 = {
 	mother = Targaryen_36
 
 	trait = education_stewardship_3
+	trait = education_martial_prowess_3
 	trait = rowdy
 
 	disallow_random_traits = yes
@@ -2393,6 +2407,7 @@ Targaryen_47 = {
 	mother = Targaryen_36
 
 	trait = education_diplomacy_2
+	trait = education_martial_prowess_2
 	trait = rowdy
 	trait = heterochromia_eyes
 
@@ -5229,6 +5244,7 @@ Targaryen_83 = {
 	mother = Velaryon_53
 
 	trait = education_martial_1
+	trait = education_martial_prowess_2
 	trait = beauty_good_3
 	trait = stubborn
 	trait = brave
@@ -6316,6 +6332,7 @@ Targaryen_94 = {
 
 	disallow_random_traits = yes
 
+	# canon_children_alt_name = Rhaenyra
 	# canon_children_bastard_parent_status married_father_unmarried_mother
 	# canon_children_bastard_reveal canon_bastard_known_father_private
 
@@ -6463,6 +6480,7 @@ Targaryen_95 = {
 
 	religion = fots_seven
 	culture = riverman_main # raised by Brackens in Stone Hedge
+	sexuality = heterosexual
 
 	father = Targaryen_88
 	mother = Bracken_76 # Barbara Braken
@@ -6485,6 +6503,7 @@ Targaryen_95 = {
 		make_trait_inactive = purple_eyes_8
 		add_character_flag = canon_status_canon
 		add_character_flag = unlegitimize_on_load
+		add_character_flag = sexuality_ensure_heterosexual
 		effect = { make_trait_inactive = surname_rivers }
 		employer = Targaryen_88 # Aegon IV Targaryen
 		make_trait_inactive = scripted_appearance
@@ -7991,7 +8010,10 @@ Targaryen_126 = {
 	}
 	8227.1.1 = {
 		effect = {
-			set_focus = education_martial
+			if = {
+				limit = { is_adult = no }
+				set_focus = education_martial
+			}
 		}
 	}
 	8227.8.1 = { trait = compassionate }
@@ -9298,7 +9320,10 @@ Farseed_1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
-		add_character_flag = historical_dragonseed
+		add_to_global_variable_list = {
+			name = historical_dragonseed
+			target = character:Farseed_1
+		}
 		employer = Targaryen_63 # Rhaenyra Targaryen
 		add_character_flag = sexuality_ensure_not_asexual
 		add_character_flag = sexuality_ensure_not_homosexual
@@ -9442,7 +9467,10 @@ Hammer_1 = {
 		make_trait_inactive = scripted_appearance
 		make_trait_inactive = neutral_silver_hair
 		add_character_flag = canon_status_canon
-		add_character_flag = historical_dragonseed
+		add_to_global_variable_list = {
+			name = historical_dragonseed
+			target = character:Hammer_1
+		}
 	}
 	8105.9.10 = { employer = Targaryen_63 } # Rhaenyra Targaryen
 	8114.1.1 = { 
@@ -9528,7 +9556,10 @@ White_1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
-		add_character_flag = historical_dragonseed
+		add_to_global_variable_list = {
+			name = historical_dragonseed
+			target = character:White_1
+		}
 		effect = {
 			make_trait_inactive = neutral_silver_hair
 			set_real_father = character:Targaryen_46 # Baelon the Brave
@@ -10663,6 +10694,7 @@ Velaryon_24 = {
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
 	}
+	8042.3.1 = { employer = Velaryon_20 } # Daemon Velaryon
 	8043.11.2 = { employer = Targaryen_31 } # Maegor Targaryen
 	8044.7.1 = { employer = Baratheon_20 } # Rogar Baratheon
 	8048.3.7 = {
@@ -11501,7 +11533,10 @@ Velaryon_43 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
-		add_character_flag = historical_dragonseed
+		add_to_global_variable_list = {
+			name = historical_dragonseed
+			target = character:Velaryon_43
+		}
 		add_character_flag = unlegitimize_on_load
 		effect = { set_real_father = character:Velaryon_31 } # Corlys Velaryon
 	}
@@ -14078,10 +14113,21 @@ Celtigar_48 = {
 	father = Celtigar_45
 	mother = Velaryon_90
 
+	trait = education_martial_2
+	trait = education_martial_prowess_2
+	trait = authoritative
+	trait = arrogant
+	trait = patient
+	trait = honest
+	trait = curious
+
+	disallow_random_traits = yes
+
 	8173.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 	}
+	8189.1.1 = { trait = lifestyle_mariner }
 	8190.1.1 = { add_spouse = Celtigar_rs_48 }
 	8198.1.1 = { add_spouse = Tudbury_45 } # Alarra Tudbury
 	8248.1.1 = { death = yes }
@@ -16311,6 +16357,9 @@ Kingsguard_4 = {
 	8046.1.1 = { 
 		give_nickname = nick_agot_historical_the_woodcock
 		trait = lifestyle_blademaster 
+		effect = {
+			agot_set_signature_weapon_history_effect= { WEAPON = flag:spear }
+		}
 	}
 	8049.7.14 = {
 		trait = knight
@@ -18390,8 +18439,8 @@ Tyanna_1 = {
 		}
 	}
 	8039.10.1 = { trait = fornicator } # Maegor Targaryen
-	8042.1.1 = {
-		give_nickname = nick_agot_historical_of_the_tower
+	8042.1.1 = { give_nickname = nick_agot_historical_of_the_tower }
+	8042.4.1 = {
 		effect = { # Mistress of Whisperers
 			agot_appoint_as_councillor_for_castle_history_effect = {
 				CASTLE = title:h_the_iron_throne

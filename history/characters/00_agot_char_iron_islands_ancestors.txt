@@ -1577,7 +1577,7 @@ Hoare_25 = { # Doom of Valyria
 	7878.1.1 = { add_spouse = Sunderly_25 } # Siglynd Sunderly
 	7899.1.1 = { trait = infirm }
 	7902.1.1 = { trait = ill }
-	7904.1.3 = {
+	7909.1.3 = {
 		death = { death_reason = death_ill }
 	}
 }
@@ -1610,13 +1610,13 @@ Hoare_26 = {
 	father = Hoare_25
 	mother = Wynch_9 # Wylla Wynch
 
-	7868.1.1 = {
+	7873.1.1 = {
 		birth = yes
 		make_trait_inactive = black_eyes
 		make_trait_inactive = black_hair
 		add_character_flag = canon_status_mentioned
 	}
-	7899.1.1 = {
+	7906.6.1 = {
 		trait = greyscale
 		death = { death_reason = death_greyscale }
 	}
@@ -1633,13 +1633,13 @@ Hoare_27 = {
 	father = Hoare_25
 	mother = Wynch_9 # Wylla Wynch
 
-	7873.1.1 = {
+	7875.1.1 = {
 		birth = yes
 		make_trait_inactive = black_eyes
 		make_trait_inactive = black_hair
 		add_character_flag = canon_status_canon
 	}
-	7903.12.28 = {
+	7908.12.28 = {
 		death = {
 			death_reason = death_horse_riding_accident # Officially
 			# death_reason = death_murder_known
@@ -1694,18 +1694,11 @@ Hoare_28 = {
 			# agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_second_sons }
 		# }
 	# }
-	7903.12.28 = {
+	7908.12.28 = {
 		trait = adventurer_follower
 		make_trait_inactive = left_second_sons
 		give_nickname = nick_agot_historical_hardhand
 		#trait = suspected_kinslayer # AGOT TODO trait
-	}
-	7907.1.1 = {
-		effect = {
-			agot_safe_concubine_history_effect = {
-				TARGET = character:Charlton_10 # Walda Charlton
-			}
-		}
 	}
 	7911.1.1 = {
 		add_spouse = Goodbrother_42 # Gysella Goodbrother
@@ -1714,6 +1707,13 @@ Hoare_28 = {
 		effect = {
 			agot_safe_concubine_history_effect = {
 				TARGET = character:Paege_11 # Sylwa Paege
+			}
+		}
+	}
+	7917.1.1 = {
+		effect = {
+			agot_safe_concubine_history_effect = {
+				TARGET = character:Charlton_10 # Walda Charlton
 			}
 		}
 	}
@@ -15637,7 +15637,7 @@ Wynch_9 = {
 	mother = Brimer_5
 
 	7848.1.1 = { birth = yes }
-	7873.1.1 = { death = { death_reason = death_childbirth } }
+	7875.1.1 = { death = { death_reason = death_childbirth } }
 }
 Wynch_8 = {
 	name = Romny # a lord
